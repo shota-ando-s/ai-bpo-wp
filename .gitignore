@@ -1,0 +1,43 @@
+# WordPress自動生成ファイル
+uploads/
+upgrade/
+cache/
+backup*/
+
+# WordPressコア（Git管理しない）
+index.php
+wp-activate.php
+wp-admin/
+wp-blog-header.php
+wp-comments-post.php
+wp-config.php
+wp-config-sample.php
+wp-cron.php
+wp-includes/
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
+wp-config-docker.php
+
+# プラグイン・テーマの自動生成
+plugins/akismet/
+themes/twenty*/
+**/node_modules/
+**/.DS_Store
+**/dist/
+**/*.log
+
+# 環境別設定
+.env
+.env.*
+
+# エディタ
+.idea/
+.vscode/
+*.swp
+*.swo
