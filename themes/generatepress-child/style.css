@@ -59,6 +59,14 @@ a:active {
   display: block;
 }
 
+.site-tagline {
+  font-size: 0.72rem;
+  color: #667;
+  margin: 4px 0 0;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+}
+
 @media (max-width: 768px) {
   .site-branding {
     padding-left: 20px;

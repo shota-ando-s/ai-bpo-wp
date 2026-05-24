@@ -22,6 +22,14 @@ add_filter( 'comments_open', '__return_false', 20, 2 );
 add_filter( 'pings_open', '__return_false', 20, 2 );
 add_filter( 'comments_array', '__return_empty_array', 10, 2 );
 
+// ロゴの下にキャッチフレーズを表示
+add_action( 'generate_after_logo', function() {
+	$description = get_bloginfo( 'description' );
+	if ( $description ) {
+		echo '<p class="site-tagline">' . esc_html( $description ) . '</p>';
+	}
+} );
+
 // フッター著作権表示
 add_action( 'generate_credits', 'generate_add_footer_info' );
 function generate_add_footer_info() {
