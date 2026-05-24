@@ -387,7 +387,103 @@ get_header();
 						<li>画面レイアウトが変わっても柔軟に対応（従来RPA比）</li>
 					</ul>
 				</div>
-				<div class="lp-two-col-img" aria-hidden="true">🤖</div>
+				<div class="lp-two-col-img" style="background:none;padding:0;" aria-label="AI RPAロボットが入力フォームを操作するイラスト">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" style="width:100%;height:auto;display:block;">
+						<defs>
+							<linearGradient id="rpa-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+								<stop offset="0%" stop-color="#e8ecff"/>
+								<stop offset="100%" stop-color="#c7d2fe"/>
+							</linearGradient>
+							<filter id="rpa-shadow" x="-10%" y="-10%" width="120%" height="130%">
+								<feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#1a56db" flood-opacity="0.15"/>
+							</filter>
+						</defs>
+
+						<!-- 背景円 -->
+						<circle cx="240" cy="185" r="170" fill="url(#rpa-bg)"/>
+
+						<!-- モニター本体 -->
+						<rect x="48" y="24" width="384" height="272" rx="10" fill="white" filter="url(#rpa-shadow)"/>
+
+						<!-- ブラウザバー -->
+						<rect x="48" y="24" width="384" height="34" rx="10" fill="#1a56db"/>
+						<rect x="48" y="46" width="384" height="12" fill="#1a56db"/>
+
+						<!-- ドット -->
+						<circle cx="70" cy="41" r="5" fill="#ff5f57" opacity=".85"/>
+						<circle cx="86" cy="41" r="5" fill="#ffbd2e" opacity=".85"/>
+						<circle cx="102" cy="41" r="5" fill="#28c840" opacity=".85"/>
+
+						<!-- URLバー -->
+						<rect x="126" y="31" width="220" height="18" rx="9" fill="rgba(255,255,255,.15)"/>
+						<text x="236" y="44" text-anchor="middle" fill="rgba(255,255,255,.75)" font-size="9" font-family="monospace">https://system.client.co.jp/nyuryoku</text>
+
+						<!-- フォームエリア背景 -->
+						<rect x="48" y="58" width="384" height="238" fill="#fafbff"/>
+
+						<!-- フォームヘッダー -->
+						<rect x="48" y="58" width="384" height="28" fill="#f0f4ff"/>
+						<text x="68" y="77" fill="#1a2f5e" font-size="11" font-weight="bold" font-family="sans-serif">受注データ入力フォーム</text>
+						<text x="390" y="77" text-anchor="end" fill="#1a56db" font-size="10" font-family="sans-serif">3 / 4 完了</text>
+
+						<!-- フィールド1: 取引先名（完了） -->
+						<text x="68" y="104" fill="#888" font-size="10" font-family="sans-serif">取引先名</text>
+						<rect x="68" y="108" width="234" height="24" rx="4" fill="#f0fff4" stroke="#22c55e" stroke-width="1.5"/>
+						<text x="78" y="124" fill="#1a2f5e" font-size="11" font-family="sans-serif">株式会社テスト商事</text>
+						<circle cx="318" cy="120" r="9" fill="#22c55e"/>
+						<path d="M313 120 L317 124 L324 115" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+						<!-- フィールド2: 金額（完了） -->
+						<text x="68" y="148" fill="#888" font-size="10" font-family="sans-serif">金額（税抜）</text>
+						<rect x="68" y="152" width="234" height="24" rx="4" fill="#f0fff4" stroke="#22c55e" stroke-width="1.5"/>
+						<text x="78" y="168" fill="#1a2f5e" font-size="11" font-family="sans-serif">¥ 125,000</text>
+						<circle cx="318" cy="164" r="9" fill="#22c55e"/>
+						<path d="M313 164 L317 168 L324 159" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+						<!-- フィールド3: 担当者（入力中） -->
+						<text x="68" y="192" fill="#1a56db" font-size="10" font-weight="bold" font-family="sans-serif">担当者</text>
+						<rect x="68" y="196" width="234" height="24" rx="4" fill="white" stroke="#1a56db" stroke-width="2"/>
+						<text x="78" y="212" fill="#1a2f5e" font-size="11" font-family="sans-serif">田中 太郎</text>
+						<!-- 点滅カーソル -->
+						<rect x="147" y="200" width="1.5" height="16" fill="#1a56db">
+							<animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/>
+						</rect>
+
+						<!-- フィールド4: 日付（未入力） -->
+						<text x="68" y="236" fill="#bbb" font-size="10" font-family="sans-serif">処理日付</text>
+						<rect x="68" y="240" width="234" height="24" rx="4" fill="#fafafa" stroke="#e0e0e0" stroke-width="1"/>
+						<text x="78" y="256" fill="#ccc" font-size="11" font-family="sans-serif">自動入力待ち...</text>
+
+						<!-- 進捗バー -->
+						<rect x="68" y="278" width="344" height="5" rx="2.5" fill="#e8ecff"/>
+						<rect x="68" y="278" width="258" height="5" rx="2.5" fill="#1a56db">
+							<animate attributeName="width" from="0" to="258" dur="1.5s" fill="freeze"/>
+						</rect>
+						<text x="68" y="294" fill="#888" font-size="9" font-family="sans-serif">自動化進捗: 75%</text>
+
+						<!-- AIロボットカーソル（アニメーション移動） -->
+						<g>
+							<animateTransform attributeName="transform" type="translate"
+								values="296,145; 296,145; 296,145; 220,196; 220,196; 220,196"
+								keyTimes="0; 0.1; 0.4; 0.55; 0.8; 1"
+								dur="4s" repeatCount="indefinite"/>
+							<!-- カーソル矢印 -->
+							<path d="M0 0 L0 20 L5 15 L8 23 L12 21 L9 13 L15 13 Z" fill="#ff6b35" stroke="white" stroke-width="1.2"/>
+							<!-- AIバッジ -->
+							<circle cx="20" cy="-5" r="13" fill="#1a56db" stroke="white" stroke-width="2"/>
+							<text x="20" y="-1" text-anchor="middle" fill="white" font-size="9" font-weight="bold" font-family="sans-serif">AI</text>
+							<!-- クリック波紋 -->
+							<circle cx="0" cy="0" r="0" fill="none" stroke="#ff6b35" stroke-width="1.5" opacity="0">
+								<animate attributeName="r" values="0;20" dur="0.5s" begin="0.5s;4.5s" repeatCount="indefinite"/>
+								<animate attributeName="opacity" values="0.8;0" dur="0.5s" begin="0.5s;4.5s" repeatCount="indefinite"/>
+							</circle>
+						</g>
+
+						<!-- モニタースタンド -->
+						<rect x="208" y="296" width="64" height="10" rx="3" fill="#c7d2fe"/>
+						<rect x="188" y="306" width="104" height="6" rx="3" fill="#a5b4fc"/>
+					</svg>
+				</div>
 			</div>
 		</div>
 	</section>
