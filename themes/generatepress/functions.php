@@ -121,3 +121,12 @@ require $theme_dir . '/inc/structure/navigation.php';
 require $theme_dir . '/inc/structure/post-meta.php';
 require $theme_dir . '/inc/structure/sidebars.php';
 require $theme_dir . '/inc/structure/search-modal.php';
+
+add_action( 'wp_enqueue_scripts', function() {
+	wp_enqueue_style(
+		'generatepress-custom',
+		get_template_directory_uri() . '/custom.css',
+		array( 'generate-style' ),
+		'1.0.0'
+	);
+} );
