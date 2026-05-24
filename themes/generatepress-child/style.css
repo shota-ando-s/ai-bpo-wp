@@ -68,8 +68,18 @@ a:active {
 }
 
 @media (max-width: 768px) {
-  .site-branding {
+  .site-branding-container {
     padding-left: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+  .site-logo img {
+    max-width: 140px;
+  }
+  .site-description {
+    font-size: 0.72rem;
+    margin: 0;
   }
 }
 
