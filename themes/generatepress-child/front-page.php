@@ -12,13 +12,25 @@ if ( ! defined( 'ABSPATH' ) ) {
 add_action( 'wp_head', function() {
 	?>
 	<style>
+	/* ===== GeneratePress コンテナ解除 ===== */
+	body.home #content.site-content,
+	body.home .site-content.grid-container,
+	body.home .inside-page-wrapper {
+		max-width: 100% !important;
+		width: 100% !important;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+
 	/* ===== LP 共通 ===== */
-	.lp-wrap { font-family: 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif; color: #1a1a2e; }
-	.lp-section { padding: 80px 20px; }
-	.lp-inner { max-width: 960px; margin: 0 auto; }
+	.lp-wrap { font-family: 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif; color: #1a1a2e; width: 100%; overflow-x: hidden; }
+	.lp-section { padding: 96px 40px; }
+	.lp-inner { max-width: 1400px; margin: 0 auto; padding: 0 40px; box-sizing: border-box; }
 	.lp-section-label { font-size: 13px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; color: #1a56db; margin-bottom: 12px; }
-	.lp-h2 { font-size: clamp(1.5rem, 4vw, 2.2rem); font-weight: 800; line-height: 1.35; margin: 0 0 20px; }
-	.lp-lead { font-size: 1.05rem; color: #4a4a6a; line-height: 1.8; margin-bottom: 0; }
+	.lp-h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 800; line-height: 1.35; margin: 0 0 20px; }
+	.lp-lead { font-size: 1.1rem; color: #4a4a6a; line-height: 1.85; margin-bottom: 0; }
 	.lp-bg-white  { background: #fff; }
 	.lp-bg-light  { background: #f5f7ff; }
 	.lp-bg-dark   { background: #0d1b4b; color: #fff; }
@@ -27,10 +39,12 @@ add_action( 'wp_head', function() {
 	.lp-hero {
 		background: linear-gradient(135deg, #0d1b4b 0%, #1a56db 100%);
 		color: #fff;
-		padding: 100px 20px 90px;
+		padding: 120px 40px 110px;
 		text-align: center;
 		position: relative;
 		overflow: hidden;
+		width: 100%;
+		box-sizing: border-box;
 	}
 	.lp-hero::before {
 		content: '';
@@ -265,9 +279,16 @@ add_action( 'wp_head', function() {
 	}
 	.lp-btn-secondary:hover { background: rgba(255,255,255,.2); border-color: rgba(255,255,255,.7); }
 
-	/* ===== モバイル調整 ===== */
+	/* ===== タブレット・モバイル調整 ===== */
+	@media (max-width: 768px) {
+		.lp-section { padding: 72px 24px; }
+		.lp-inner { padding: 0 24px; }
+		.lp-hero { padding: 80px 24px 72px; }
+	}
 	@media (max-width: 480px) {
 		.lp-section { padding: 60px 16px; }
+		.lp-inner { padding: 0 16px; }
+		.lp-hero { padding: 64px 16px 56px; }
 		.lp-chart-label { flex: 0 0 80px; font-size: 12px; }
 		.lp-cta-section { padding: 70px 16px; }
 	}
