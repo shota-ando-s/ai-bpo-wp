@@ -5,7 +5,7 @@ cache/
 backup*/
 
 # WordPressコア（Git管理しない）
-index.php
+/index.php
 wp-activate.php
 wp-admin/
 wp-blog-header.php
