@@ -68,7 +68,6 @@ if ( ! function_exists( 'generate_footer_bar' ) ) {
 }
 
 if ( ! function_exists( 'generate_add_footer_info' ) ) {
-	add_action( 'generate_credits', 'generate_add_footer_info' );
 	/**
 	 * Add the copyright to the footer
 	 *
