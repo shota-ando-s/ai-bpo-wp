@@ -378,13 +378,13 @@ get_header();
 			<div class="lp-two-col">
 				<div>
 					<div class="lp-section-label">AI Automation</div>
-					<h2 class="lp-h2">画面を見て、入力する<br>その操作もAIが行います</h2>
-					<p class="lp-lead">AIは人間と同じようにPCの画面を認識し、クリック・入力・確認まで自律的に実行。RPAより柔軟に、例外にも対応します。</p>
+					<h2 class="lp-h2">画面を見て、入力する<br>AI RPAロボットが自動で操作</h2>
+					<p class="lp-lead">ヒキツギAIでは<strong>AI RPAロボット</strong>を活用し、人間と同じようにPCの画面を認識してクリック・入力・確認まで自律的に実行します。従来のRPAより柔軟で、画面の変更や例外ケースにも対応可能です。</p>
 					<ul class="lp-step-list">
-						<li>画面キャプチャから状況を理解し、適切な操作を判断</li>
-						<li>Webブラウザ・デスクトップアプリを問わず操作可能</li>
-						<li>ログイン・ナビゲーション・データ入力・送信まで一貫実行</li>
-						<li>RPAと異なり、画面変更があっても柔軟に対応</li>
+						<li>AI RPAロボットが画面を認識し、状況に応じた操作を自律判断</li>
+						<li>Webブラウザ・デスクトップアプリ・基幹システムを問わず操作</li>
+						<li>ログイン・データ入力・確認・送信まで一連の業務を無人実行</li>
+						<li>画面レイアウトが変わっても柔軟に対応（従来RPA比）</li>
 					</ul>
 				</div>
 				<div class="lp-two-col-img" aria-hidden="true">🤖</div>
