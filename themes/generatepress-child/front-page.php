@@ -307,7 +307,7 @@ get_header();
 			<div class="lp-hero-eyebrow">AI × BPO — 次世代の業務委託</div>
 			<h1>AIで業務コストを<em>半額</em>に<br>現場の業務をそのままAIが自動化</h1>
 			<p class="lp-hero-sub">ExcelもFAXも紙帳票も、複雑な業務フローもすべて対応。<br>AIが得意なスタッフが品質を守り、コストを大幅に削減します。</p>
-			<a href="#contact" class="lp-hero-cta">無料相談はこちら →</a>
+			<a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="lp-hero-cta">無料相談はこちら →</a>
 			<p class="lp-hero-note">※ 初回相談無料・導入実績多数</p>
 		</div>
 	</section>
