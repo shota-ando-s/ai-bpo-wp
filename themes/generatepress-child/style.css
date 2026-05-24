@@ -68,6 +68,10 @@ a:active {
 }
 
 @media (max-width: 768px) {
+  .inside-header {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .site-branding-container {
     padding-left: 20px;
     flex-direction: column;
