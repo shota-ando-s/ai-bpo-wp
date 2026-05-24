@@ -75,13 +75,17 @@ if ( ! function_exists( 'generate_add_footer_info' ) ) {
 	 * @since 0.1
 	 */
 	function generate_add_footer_info() {
-		?>
-		<div class="footer-copyright">
-			<span>&copy; <?php echo esc_html( date( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?></span>
-			<a href="<?php echo esc_url( home_url( '/privacy-policy/' ) ); ?>">プライバシーポリシー</a>
-			<a href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">お問い合わせ</a>
-		</div>
-		<?php
+		$copyright = sprintf(
+			'<span class="copyright">&copy; %1$s %2$s</span> &bull; %4$s <a href="%3$s"%6$s>%5$s</a>',
+			date( 'Y' ), // phpcs:ignore
+			get_bloginfo( 'name' ),
+			esc_url( 'https://generatepress.com' ),
+			_x( 'Built with', 'GeneratePress', 'generatepress' ),
+			__( 'GeneratePress', 'generatepress' ),
+			'microdata' === generate_get_schema_type() ? ' itemprop="url"' : ''
+		);
+
+		echo apply_filters( 'generate_copyright', $copyright ); // phpcs:ignore
 	}
 }
 
