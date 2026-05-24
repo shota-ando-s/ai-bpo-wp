@@ -60,13 +60,8 @@ a:active {
 }
 
 @media (max-width: 768px) {
-  .site-logo,
   .site-branding {
-    text-align: center;
-    flex: 1;
-  }
-  .site-logo img {
-    margin: 0 auto;
+    padding-left: 20px;
   }
 }
 
