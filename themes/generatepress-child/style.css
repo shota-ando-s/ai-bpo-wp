@@ -53,10 +53,15 @@ a:active {
   letter-spacing: 0.05em;
 }
 
-.custom-logo {
+.site-logo img {
   max-width: 160px;
   height: auto;
   display: block;
+}
+
+/* ロゴ画像がある場合はテキストのサイト名を非表示 */
+.site-logo ~ .site-branding .main-title {
+  display: none;
 }
 
 .main-navigation .main-nav ul li a {
