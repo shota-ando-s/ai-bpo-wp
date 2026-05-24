@@ -492,7 +492,100 @@ get_header();
 	<section class="lp-section lp-bg-light" id="staff">
 		<div class="lp-inner">
 			<div class="lp-two-col">
-				<div class="lp-two-col-img" aria-hidden="true">🧑‍💼</div>
+				<div class="lp-two-col-img" style="background:none;padding:0;" aria-label="人間がエラーを検知してクリック修正するイラスト">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" style="width:100%;height:auto;display:block;">
+						<defs>
+							<linearGradient id="hum-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+								<stop offset="0%" stop-color="#fff4f0"/>
+								<stop offset="100%" stop-color="#ffe4d6"/>
+							</linearGradient>
+							<filter id="hum-shadow" x="-10%" y="-10%" width="120%" height="130%">
+								<feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#e85d04" flood-opacity="0.12"/>
+							</filter>
+						</defs>
+
+						<!-- 背景円 -->
+						<circle cx="240" cy="185" r="170" fill="url(#hum-bg)"/>
+
+						<!-- モニター本体 -->
+						<rect x="48" y="24" width="384" height="272" rx="10" fill="white" filter="url(#hum-shadow)"/>
+
+						<!-- ブラウザバー（エラー色） -->
+						<rect x="48" y="24" width="384" height="34" rx="10" fill="#dc2626"/>
+						<rect x="48" y="46" width="384" height="12" fill="#dc2626"/>
+
+						<!-- ドット -->
+						<circle cx="70" cy="41" r="5" fill="#ff5f57" opacity=".85"/>
+						<circle cx="86" cy="41" r="5" fill="#ffbd2e" opacity=".85"/>
+						<circle cx="102" cy="41" r="5" fill="#28c840" opacity=".85"/>
+
+						<!-- URLバー -->
+						<rect x="126" y="31" width="220" height="18" rx="9" fill="rgba(255,255,255,.15)"/>
+						<text x="236" y="44" text-anchor="middle" fill="rgba(255,255,255,.75)" font-size="9" font-family="monospace">https://system.client.co.jp/nyuryoku</text>
+
+						<!-- フォームエリア -->
+						<rect x="48" y="58" width="384" height="238" fill="#fafbff"/>
+
+						<!-- フォームヘッダー -->
+						<rect x="48" y="58" width="384" height="28" fill="#fff0f0"/>
+						<text x="68" y="77" fill="#dc2626" font-size="11" font-weight="bold" font-family="sans-serif">受注データ入力フォーム</text>
+
+						<!-- エラーバナー -->
+						<rect x="68" y="94" width="344" height="36" rx="6" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5"/>
+						<text x="86" y="111" fill="#dc2626" font-size="11" font-weight="bold" font-family="sans-serif">⚠ エラー: 金額フォーマットが不正です</text>
+						<text x="86" y="124" fill="#ef4444" font-size="10" font-family="sans-serif">AIが検知 → 人による確認・修正が必要です</text>
+
+						<!-- フィールド1: 取引先名（正常） -->
+						<text x="68" y="150" fill="#888" font-size="10" font-family="sans-serif">取引先名</text>
+						<rect x="68" y="154" width="234" height="24" rx="4" fill="#f0fff4" stroke="#22c55e" stroke-width="1.5"/>
+						<text x="78" y="170" fill="#1a2f5e" font-size="11" font-family="sans-serif">株式会社テスト商事</text>
+						<circle cx="318" cy="166" r="9" fill="#22c55e"/>
+						<path d="M313 166 L317 170 L324 161" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+						<!-- フィールド2: 金額（エラー） -->
+						<text x="68" y="194" fill="#dc2626" font-size="10" font-weight="bold" font-family="sans-serif">金額（税抜） ← 修正してください</text>
+						<rect x="68" y="198" width="234" height="24" rx="4" fill="#fff0f0" stroke="#dc2626" stroke-width="2"/>
+						<text x="78" y="214" fill="#dc2626" font-size="11" font-family="sans-serif">125000円</text>
+						<!-- エラーアイコン -->
+						<circle cx="318" cy="210" r="9" fill="#dc2626"/>
+						<text x="318" y="214" text-anchor="middle" fill="white" font-size="12" font-weight="bold" font-family="sans-serif">!</text>
+
+						<!-- フィールド3: 担当者（正常） -->
+						<text x="68" y="238" fill="#888" font-size="10" font-family="sans-serif">担当者</text>
+						<rect x="68" y="242" width="234" height="24" rx="4" fill="#f0fff4" stroke="#22c55e" stroke-width="1.5"/>
+						<text x="78" y="258" fill="#1a2f5e" font-size="11" font-family="sans-serif">田中 太郎</text>
+						<circle cx="318" cy="254" r="9" fill="#22c55e"/>
+						<path d="M313 254 L317 258 L324 249" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+						<!-- 修正ボタン -->
+						<rect x="68" y="274" width="100" height="26" rx="13" fill="#dc2626"/>
+						<text x="118" y="291" text-anchor="middle" fill="white" font-size="11" font-weight="bold" font-family="sans-serif">修正する</text>
+
+						<!-- キャンセルボタン -->
+						<rect x="178" y="274" width="80" height="26" rx="13" fill="none" stroke="#ccc" stroke-width="1.5"/>
+						<text x="218" y="291" text-anchor="middle" fill="#999" font-size="11" font-family="sans-serif">スキップ</text>
+
+						<!-- 人間の手カーソル（修正ボタンをクリックしに行く） -->
+						<g>
+							<animateTransform attributeName="transform" type="translate"
+								values="280,230; 280,230; 118,268; 118,268; 118,268; 280,230"
+								keyTimes="0; 0.2; 0.45; 0.6; 0.8; 1"
+								dur="4s" repeatCount="indefinite"/>
+							<!-- 手の形（人差し指カーソル） -->
+							<path d="M6 22 C6 22 4 20 4 15 L4 6 C4 4.3 5.3 3 7 3 C8.7 3 10 4.3 10 6 L10 12 C10.4 11.4 11.1 11 12 11 C13.1 11 14 11.9 14 13 L14 14 C14.4 13.4 15.1 13 16 13 C17.1 13 18 13.9 18 15 L18 16 C18.4 15.4 19.1 15 20 15 C21.1 15 22 15.9 22 17 L22 22 C22 26.4 18.4 30 14 30 L12 30 C9.8 30 7.8 29.1 6.3 27.6 Z"
+								fill="#f97316" stroke="white" stroke-width="1"/>
+							<!-- クリック波紋（ボタン上で発生） -->
+							<circle cx="9" cy="16" r="0" fill="none" stroke="#f97316" stroke-width="1.5" opacity="0">
+								<animate attributeName="r" values="0;22" dur="0.5s" begin="1.9s;5.9s" repeatCount="indefinite"/>
+								<animate attributeName="opacity" values="0.8;0" dur="0.5s" begin="1.9s;5.9s" repeatCount="indefinite"/>
+							</circle>
+						</g>
+
+						<!-- モニタースタンド -->
+						<rect x="208" y="296" width="64" height="10" rx="3" fill="#fca5a5"/>
+						<rect x="188" y="306" width="104" height="6" rx="3" fill="#f87171"/>
+					</svg>
+				</div>
 				<div>
 					<div class="lp-section-label">Human + AI</div>
 					<h2 class="lp-h2">AIが得意なスタッフが<br>不備を即修正・品質を担保</h2>
