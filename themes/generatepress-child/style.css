@@ -53,6 +53,12 @@ a:active {
   letter-spacing: 0.05em;
 }
 
+.custom-logo {
+  max-width: 160px;
+  height: auto;
+  display: block;
+}
+
 .main-navigation .main-nav ul li a {
   font-weight: 700;
   font-size: 0.9rem;
