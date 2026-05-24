@@ -54,7 +54,7 @@ a:active {
 }
 
 .site-logo img {
-  max-width: 230px;
+  max-width: 184px;
   height: auto;
   display: block;
 }
@@ -79,7 +79,7 @@ a:active {
     gap: 2px;
   }
   .site-logo img {
-    max-width: 140px;
+    max-width: 112px;
   }
   .site-description {
     font-size: 0.72rem;
