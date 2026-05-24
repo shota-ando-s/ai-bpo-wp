@@ -27,4 +27,40 @@
 ```
 themes/generatepress/   → ~/www/aibpo/wp-content/themes/generatepress (symlink)
 plugins/*/              → ~/www/aibpo/wp-content/plugins/* (symlink)
+articles/               → WordPressへの投稿記事（Markdown形式）
+```
+
+## 記事の自動投稿
+
+「〇〇について記事を書いて投稿して」と言われたら：
+
+1. `articles/YYYY-MM-DD-slug.md` を作成（YAMLフロントマター付き）
+2. 記事内容をMarkdownで記述
+3. 以下を実行して投稿：
+
+```bash
+python3 post.py articles/ファイル名.md
+```
+
+### 記事ファイルの形式
+
+```markdown
+---
+title: 記事タイトル
+categories: [カテゴリ名]
+tags: [タグ1, タグ2]
+status: publish
+---
+
+本文（Markdown形式）
+```
+
+### 初回セットアップ（.envファイル）
+
+`.env` ファイルが必要。WordPressの「ユーザー → プロフィール → アプリケーションパスワード」で発行：
+
+```
+WP_URL=http://ai-bpo.site
+WP_USER=ユーザー名
+WP_APP_PASSWORD=xxxx xxxx xxxx xxxx xxxx xxxx
 ```
