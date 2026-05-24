@@ -59,6 +59,17 @@ a:active {
   display: block;
 }
 
+@media (max-width: 768px) {
+  .site-logo,
+  .site-branding {
+    text-align: center;
+    flex: 1;
+  }
+  .site-logo img {
+    margin: 0 auto;
+  }
+}
+
 /* ロゴ画像がある場合はテキストのサイト名を非表示 */
 .site-logo ~ .site-branding .main-title {
   display: none;
