@@ -17,6 +17,11 @@ add_action( 'wp_enqueue_scripts', function () {
 	);
 } );
 
+// コメント機能を全無効化
+add_filter( 'comments_open', '__return_false', 20, 2 );
+add_filter( 'pings_open', '__return_false', 20, 2 );
+add_filter( 'comments_array', '__return_empty_array', 10, 2 );
+
 // フッター著作権表示
 add_action( 'generate_credits', 'generate_add_footer_info' );
 function generate_add_footer_info() {
