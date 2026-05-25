@@ -80,6 +80,10 @@ def parse_frontmatter(text):
             return yaml.safe_load(parts[1]) or {}, parts[2].strip()
     return {}, text.strip()
 
+def find_post_by_slug(slug):
+    results = api(f"posts?slug={urllib.parse.quote(slug)}&status=any&per_page=1")
+    return results[0] if results else None
+
 def post_article(filepath):
     with open(filepath, encoding="utf-8") as f:
         raw = f.read()
@@ -110,8 +114,14 @@ def post_article(filepath):
     if excerpt:
         payload["excerpt"] = excerpt
 
-    result = api("posts", method="POST", data=payload)
-    print(f"投稿完了: {result['link']}")
+    # slug が既存記事と一致する場合は更新（upsert）
+    existing = find_post_by_slug(slug) if slug else None
+    if existing:
+        result = api(f"posts/{existing['id']}", method="POST", data=payload)
+        print(f"更新完了: {result['link']}")
+    else:
+        result = api("posts", method="POST", data=payload)
+        print(f"投稿完了: {result['link']}")
     return result
 
 if __name__ == "__main__":
