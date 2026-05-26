@@ -758,3 +758,219 @@ a:active {
   padding-bottom: 1.5rem;
   margin-bottom: 2.5rem;
 }
+
+/* =============================
+   サイドバーウィジェット共通
+   ============================= */
+.sidebar-widget {
+  margin-bottom: 32px;
+}
+
+.sidebar-widget-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #1a2f5e;
+  letter-spacing: 0.06em;
+  margin: 0 0 14px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #1a3a6e;
+  text-transform: uppercase;
+}
+
+/* =============================
+   サイドバー: 正方形CTAバナー
+   ============================= */
+.sidebar-cta {
+  background: linear-gradient(140deg, #1a3a6e 0%, #2563eb 100%);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.sidebar-cta-inner {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 24px;
+  text-align: center;
+  gap: 10px;
+}
+
+.sidebar-cta-label {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.sidebar-cta-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.55;
+  margin: 4px 0 0;
+}
+
+.sidebar-cta-text {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.75;
+  margin: 0;
+}
+
+.sidebar-cta-btn {
+  display: inline-block;
+  background: #fff;
+  color: #1a3a6e !important;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 10px 22px;
+  border-radius: 4px;
+  text-decoration: none !important;
+  margin-top: 6px;
+  transition: background 0.2s, transform 0.15s;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+.sidebar-cta-btn:hover {
+  background: #e8f0fe;
+  transform: translateY(-1px);
+  color: #1a3a6e !important;
+}
+
+/* =============================
+   サイドバー: カテゴリ
+   ============================= */
+.sidebar-cat-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-cat-item a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f2f7;
+  text-decoration: none !important;
+  color: #2a3a5e;
+  font-size: 0.88rem;
+  font-weight: 500;
+  transition: color 0.15s, padding-left 0.15s;
+}
+
+.sidebar-cat-item a:hover {
+  color: #2563eb;
+  padding-left: 6px;
+}
+
+.sidebar-cat-item a::before {
+  content: '›';
+  margin-right: 8px;
+  color: #1a3a6e;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.sidebar-cat-name {
+  flex: 1;
+}
+
+.sidebar-cat-count {
+  background: #eef2fa;
+  color: #1a3a6e;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 10px;
+  min-width: 24px;
+  text-align: center;
+}
+
+/* =============================
+   サイドバー: ランキング
+   ============================= */
+.sidebar-rank-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-rank-item {
+  border-bottom: 1px solid #f0f2f7;
+}
+
+.sidebar-rank-item:last-child {
+  border-bottom: none;
+}
+
+.sidebar-rank-item a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  text-decoration: none !important;
+  color: inherit;
+  transition: background 0.15s;
+}
+
+.sidebar-rank-item a:hover .sidebar-rank-title {
+  color: #2563eb;
+}
+
+.sidebar-rank-num {
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-style: italic;
+  min-width: 30px;
+  text-align: center;
+  color: #c8d4e4;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.sidebar-rank-num.rank-1 { color: #c9a227; }
+.sidebar-rank-num.rank-2 { color: #8d9fad; }
+.sidebar-rank-num.rank-3 { color: #a0643a; }
+
+.sidebar-rank-thumb {
+  width: 64px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #e0e8f4;
+}
+
+.sidebar-rank-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.sidebar-rank-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #dde5f5 0%, #bccce8 100%);
+}
+
+.sidebar-rank-title {
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.6;
+  color: #1a2f5e;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

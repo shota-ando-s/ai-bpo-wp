@@ -125,6 +125,86 @@ add_action( 'generate_before_footer', function() {
 	<?php
 } );
 
+// 投稿ページ: 右サイドバーを強制表示
+add_filter( 'generate_sidebar_layout', function( $layout ) {
+	if ( is_single() ) return 'right-sidebar';
+	return $layout;
+} );
+
+// 投稿ページ: サイドバーにCTA・カテゴリ・ランキングを出力
+add_action( 'generate_before_right_sidebar_content', function() {
+	if ( ! is_single() ) return;
+	?>
+
+	<div class="sidebar-widget sidebar-cta">
+		<div class="sidebar-cta-inner">
+			<span class="sidebar-cta-label">無料相談受付中</span>
+			<p class="sidebar-cta-title">AI・BPOで<br>業務をスリム化</p>
+			<p class="sidebar-cta-text">まずはお気軽にご相談ください。専門スタッフが課題を整理します。</p>
+			<a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="sidebar-cta-btn">無料で相談する →</a>
+		</div>
+	</div>
+
+	<div class="sidebar-widget sidebar-categories">
+		<h3 class="sidebar-widget-title">カテゴリ</h3>
+		<ul class="sidebar-cat-list">
+			<?php
+			$cats = get_categories( [ 'hide_empty' => false ] );
+			foreach ( $cats as $cat ) : ?>
+				<li class="sidebar-cat-item">
+					<a href="<?php echo esc_url( get_category_link( $cat->term_id ) ); ?>">
+						<span class="sidebar-cat-name"><?php echo esc_html( $cat->name ); ?></span>
+						<span class="sidebar-cat-count"><?php echo (int) $cat->count; ?></span>
+					</a>
+				</li>
+			<?php endforeach; ?>
+		</ul>
+	</div>
+
+	<div class="sidebar-widget sidebar-ranking">
+		<h3 class="sidebar-widget-title">ランキング</h3>
+		<ol class="sidebar-rank-list">
+			<?php
+			$has_views = get_posts( [
+				'posts_per_page' => 1,
+				'meta_key'       => 'post_views_count',
+				'fields'         => 'ids',
+			] );
+			$rank_args = ! empty( $has_views ) ? [
+				'posts_per_page' => 5,
+				'post_status'    => 'publish',
+				'meta_key'       => 'post_views_count',
+				'orderby'        => 'meta_value_num',
+				'order'          => 'DESC',
+			] : [
+				'posts_per_page' => 5,
+				'post_status'    => 'publish',
+				'orderby'        => 'date',
+				'order'          => 'DESC',
+			];
+			$ranking = new WP_Query( $rank_args );
+			$rank = 1;
+			while ( $ranking->have_posts() ) : $ranking->the_post(); ?>
+				<li class="sidebar-rank-item">
+					<a href="<?php the_permalink(); ?>">
+						<span class="sidebar-rank-num rank-<?php echo (int) $rank; ?>"><?php echo (int) $rank; ?></span>
+						<div class="sidebar-rank-thumb">
+							<?php if ( has_post_thumbnail() ) :
+								the_post_thumbnail( 'thumbnail' );
+							else : ?>
+								<div class="sidebar-rank-placeholder"></div>
+							<?php endif; ?>
+						</div>
+						<p class="sidebar-rank-title"><?php the_title(); ?></p>
+					</a>
+				</li>
+			<?php $rank++; endwhile; wp_reset_postdata(); ?>
+		</ol>
+	</div>
+
+	<?php
+} );
+
 // フッター著作権表示
 add_action( 'generate_credits', 'generate_add_footer_info' );
 function generate_add_footer_info() {
