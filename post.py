@@ -12,12 +12,16 @@
     status: publish  # または draft
     ---
     本文...
+
+.envにOPENAI_API_KEYを設定するとH2ごとにDALL-E 3で画像を自動生成・挿入します。
 """
 
 import sys
 import os
+import io
 import json
 import base64
+import re
 import urllib.request
 import urllib.error
 import urllib.parse
@@ -84,6 +88,103 @@ def find_post_by_slug(slug):
     results = api(f"posts?slug={urllib.parse.quote(slug)}&status=any&per_page=1")
     return results[0] if results else None
 
+def dalle_generate(heading, article_title):
+    """gpt-image-1でH2テーマに合ったビジネス画像を生成し、画像バイトを返す"""
+    api_key = os.environ.get("OPENAI_API_KEY", "")
+    if not api_key:
+        return None
+    prompt = (
+        f"A clean, professional illustration for a Japanese business blog article titled '{article_title}'. "
+        f"Section theme: '{heading}'. "
+        "Wide landscape format, modern flat design style, no text, no letters, no words anywhere in the image. "
+        "Use soft business colors (blue, white, light gray). High quality, visually appealing."
+    )
+    body = json.dumps({
+        "model": "gpt-image-1",
+        "prompt": prompt,
+        "n": 1,
+        "size": "1536x1024",
+        "quality": "medium",
+    }).encode()
+    req = urllib.request.Request(
+        "https://api.openai.com/v1/images/generations",
+        data=body,
+        headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            data = json.loads(r.read())
+        b64 = data["data"][0].get("b64_json") or data["data"][0].get("url")
+        if data["data"][0].get("b64_json"):
+            return base64.b64decode(b64)
+        # url形式の場合はダウンロード
+        with urllib.request.urlopen(b64) as r:
+            return r.read()
+    except urllib.error.HTTPError as e:
+        err_body = e.read().decode()
+        print(f"画像生成エラー ({heading}): {e.code} {err_body}", file=sys.stderr)
+        return None
+    except Exception as e:
+        print(f"画像生成エラー ({heading}): {e}", file=sys.stderr)
+        return None
+
+def upload_image_to_wp(image_bytes, filename, alt_text=""):
+    """画像バイトをWordPressメディアライブラリにアップロードしてURLを返す"""
+    base = os.environ.get("WP_URL", "http://ai-bpo.site").rstrip("/")
+    upload_url = f"{base}/wp-json/wp/v2/media"
+
+    headers = auth_header()
+    headers["Content-Disposition"] = f'attachment; filename="{filename}"'
+    headers["Content-Type"] = "image/png"
+
+    req = urllib.request.Request(upload_url, data=image_bytes, headers=headers, method="POST")
+    try:
+        with urllib.request.urlopen(req) as r:
+            result = json.loads(r.read())
+        return result.get("source_url")
+    except urllib.error.HTTPError as e:
+        print(f"WPアップロードエラー {e.code}: {e.read().decode()}", file=sys.stderr)
+        return None
+    except Exception as e:
+        print(f"WPアップロードエラー: {e}", file=sys.stderr)
+        return None
+
+def insert_h2_images(html, h2_texts, article_title):
+    """H2タグの直前にDALL-E 3生成画像を挿入する"""
+    if not h2_texts:
+        return html
+
+    for i, heading_text in enumerate(h2_texts):
+        print(f"  [{i+1}/{len(h2_texts)}] 生成中: {heading_text}")
+        image_bytes = dalle_generate(heading_text, article_title)
+        if not image_bytes:
+            print(f"  スキップ: {heading_text}", file=sys.stderr)
+            continue
+
+        ascii_part = re.sub(r"[^\x00-\x7F]", "", heading_text)
+        safe_name = re.sub(r"[^\w]", "-", ascii_part).strip("-")[:40] or f"h2-{i}"
+        wp_url = upload_image_to_wp(image_bytes, f"{safe_name}.png", heading_text)
+        if not wp_url:
+            continue
+
+        img_block = (
+            f'<figure class="wp-block-image size-large h2-section-image">'
+            f'<img src="{wp_url}" alt="{heading_text}" loading="lazy"/>'
+            f'</figure>'
+        )
+
+        escaped = re.escape(heading_text)
+        html = re.sub(
+            rf"(<h2[^>]*>)({escaped})(</h2>)",
+            lambda m: m.group(0) + img_block,
+            html,
+            count=1,
+        )
+        print(f"  完了: {wp_url}")
+
+    return html
+
 def post_article(filepath):
     with open(filepath, encoding="utf-8") as f:
         raw = f.read()
@@ -98,6 +199,12 @@ def post_article(filepath):
     excerpt = meta.get("excerpt")
 
     html = md_lib.markdown(body, extensions=["nl2br", "tables", "fenced_code"])
+
+    # H2見出しを抽出してDALL-E 3画像を生成・挿入
+    h2_texts = re.findall(r"^## (.+)$", body, re.MULTILINE)
+    if h2_texts and os.environ.get("OPENAI_API_KEY"):
+        print(f"H2画像生成中... ({len(h2_texts)}件、1枚あたり約15秒)")
+        html = insert_h2_images(html, h2_texts, title)
 
     category_ids = [get_or_create_term("categories", c) for c in categories]
     tag_ids = [get_or_create_term("tags", t) for t in tags]
