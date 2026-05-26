@@ -27,7 +27,7 @@ add_action( 'wp_head', function() {
 	/* ===== LP 共通 ===== */
 	.lp-wrap { font-family: 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif; color: #1a1a2e; width: 100%; overflow-x: hidden; }
 	.lp-section { padding: 96px 40px; }
-	.lp-inner { max-width: 1400px; margin: 0 auto; padding: 0 40px; box-sizing: border-box; }
+	.lp-inner { max-width: 1400px; margin: 0 auto; padding: 0 40px; box-sizing: border-box; position: relative; z-index: 1; }
 	.lp-section-label { font-size: 13px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; color: #1a56db; margin-bottom: 12px; }
 	.lp-h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 800; line-height: 1.35; margin: 0 0 20px; }
 	.lp-lead { font-size: 1.1rem; color: #4a4a6a; line-height: 1.85; margin-bottom: 0; }
@@ -50,6 +50,7 @@ add_action( 'wp_head', function() {
 		content: '';
 		position: absolute; inset: 0;
 		background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+		pointer-events: none;
 	}
 	.lp-hero-eyebrow {
 		display: inline-block;
