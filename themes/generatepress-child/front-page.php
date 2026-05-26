@@ -707,56 +707,39 @@ get_header();
 		</div>
 	</section>
 
-	<!-- ===== Section 5: 業務フロー管理 ===== -->
+	<!-- ===== Section 5: 導入の流れ ===== -->
 	<section class="lp-section lp-bg-white" id="workflow">
 		<div class="lp-inner">
-			<div class="lp-section-label">Workflow Management</div>
-			<h2 class="lp-h2">複雑な業務フローも<br>AIで一元管理</h2>
-			<p class="lp-lead">受付→処理→確認→通知→アーカイブまで、複数ステップにまたがる業務フロー全体をAIが自動でオーケストレーション。担当者への通知や例外処理も含めて管理します。</p>
+			<div class="lp-section-label">How It Works</div>
+			<h2 class="lp-h2">導入の流れ</h2>
+			<p class="lp-lead">最短1か月で開始可能。業務範囲や難易度によって変動しますが、まずはヒアリングから気軽にスタートできます。</p>
 
-			<div class="lp-flow-wrap" style="margin-top:48px;gap:0;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;row-gap:16px;">
+			<div class="lp-flow-wrap" style="margin-top:48px;display:flex;flex-direction:column;gap:0;">
 				<?php
-				$flow_steps = [
-					['📥', '受付<br>（FAX/Web/<br>メール）'],
-					['🔍', 'AI読取<br>&amp;分類'],
-					['⚙️', 'AI自動<br>処理・入力'],
-					['✅', 'スタッフ<br>品質確認'],
-					['📤', '完了通知<br>&amp;アーカイブ'],
+				$intro_steps = [
+					['01', '現在の業務内容をヒアリング',           '現状の業務プロセス・量・課題点をお聞きします。'],
+					['02', 'AI向きの業務と人間が行う業務の切り分け', 'どの工程をAIに任せ、どの工程を人が担うかを整理します。'],
+					['03', '簡易版AIアプリの開発・試運転',          '小さく作って実際の業務で試します。'],
+					['04', '精度の調整と切り替え判断',              '試運転の結果をもとに精度を高め、本番移行を判断します。'],
+					['05', '本格導入',                             '運用開始後も継続的にサポートします。'],
 				];
-				$last = count($flow_steps) - 1;
-				foreach ($flow_steps as $i => $step) {
+				foreach ($intro_steps as $step) {
 					?>
-					<div class="lp-flow-step">
-						<div class="lp-flow-box">
-							<span class="flow-icon"><?php echo $step[0]; ?></span>
-							<?php echo $step[1]; ?>
+					<div style="display:flex;align-items:flex-start;gap:24px;padding:28px 0;border-bottom:1px solid #e8eaf6;">
+						<div style="flex-shrink:0;width:56px;height:56px;border-radius:50%;background:#1a56db;color:#fff;font-size:1.1rem;font-weight:900;display:flex;align-items:center;justify-content:center;"><?php echo $step[0]; ?></div>
+						<div>
+							<div style="font-size:1.05rem;font-weight:700;color:#1a1a3c;margin-bottom:6px;"><?php echo $step[1]; ?></div>
+							<div style="font-size:.9rem;color:#5a5a7a;"><?php echo $step[2]; ?></div>
 						</div>
-						<?php if ($i < $last): ?>
-						<div class="lp-flow-arrow">→</div>
-						<?php endif; ?>
 					</div>
 					<?php
 				}
 				?>
 			</div>
 
-			<div style="margin-top:48px;background:#f0f4ff;border-radius:16px;padding:32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:24px;text-align:center;">
-				<div>
-					<div style="font-size:2rem;font-weight:900;color:#1a56db;">99<small style="font-size:.5em">%</small></div>
-					<div style="font-size:.85rem;color:#5a5a7a;margin-top:4px;">処理完了率<br>（月次平均）</div>
-				</div>
-				<div>
-					<div style="font-size:2rem;font-weight:900;color:#1a56db;">24h</div>
-					<div style="font-size:.85rem;color:#5a5a7a;margin-top:4px;">自動処理対応<br>深夜・休日も稼働</div>
-				</div>
-				<div>
-					<div style="font-size:2rem;font-weight:900;color:#1a56db;">50<small style="font-size:.5em">%↓</small></div>
-					<div style="font-size:.85rem;color:#5a5a7a;margin-top:4px;">平均コスト削減率<br>（導入実績より）</div>
-				</div>
-				<div>
-					<div style="font-size:2rem;font-weight:900;color:#1a56db;">2<small style="font-size:.5em">週間</small></div>
-					<div style="font-size:.85rem;color:#5a5a7a;margin-top:4px;">最短導入期間<br>（標準業務の場合）</div>
-				</div>
+			<div style="margin-top:40px;background:#f0f4ff;border-radius:16px;padding:24px 32px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+				<div style="font-size:2rem;font-weight:900;color:#1a56db;flex-shrink:0;">最短1か月</div>
+				<div style="font-size:.95rem;color:#3a3a5c;">で開始可能（業務範囲・難易度などにより変動します）</div>
 			</div>
 		</div>
 	</section>
