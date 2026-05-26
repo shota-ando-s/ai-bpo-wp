@@ -750,6 +750,24 @@ a:active {
   color: #aab3c6;
   letter-spacing: 0.03em;
   margin-bottom: 2rem;
+  text-align: right;
+}
+
+.single .entry-header .entry-meta .posted-on {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.15rem;
+}
+
+/* 更新日ラベル */
+.single .entry-header .entry-meta time.updated::before {
+  content: "更新日 ";
+}
+
+/* 投稿日ラベル（更新日がある時だけ表示） */
+.single .entry-header .entry-meta time.updated + time.entry-date.published::before {
+  content: "投稿日 ";
 }
 
 /* 著者名を非表示 */
