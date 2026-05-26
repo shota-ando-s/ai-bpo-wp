@@ -265,11 +265,81 @@ add_action( 'wp_head', function() {
 	}
 	.lp-btn-secondary:hover { background: rgba(255,255,255,.2); border-color: rgba(255,255,255,.7); }
 
+	/* ===== こんな課題ありませんか ===== */
+	.lp-pain {
+		background: #fff8f5;
+		border-top: 4px solid #ff6b35;
+		padding: 80px 20px;
+	}
+	.lp-pain-label {
+		font-size: 13px;
+		font-weight: 700;
+		letter-spacing: .15em;
+		text-transform: uppercase;
+		color: #ff6b35;
+		margin-bottom: 12px;
+	}
+	.lp-pain-items {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+		gap: 20px;
+		margin-top: 40px;
+	}
+	.lp-pain-item {
+		background: #fff;
+		border-radius: 16px;
+		padding: 28px 24px;
+		border: 2px solid #ffe0d0;
+		display: flex;
+		gap: 16px;
+		align-items: flex-start;
+		box-shadow: 0 2px 12px rgba(255,107,53,.07);
+	}
+	.lp-pain-item-icon {
+		flex-shrink: 0;
+		width: 48px;
+		height: 48px;
+		background: linear-gradient(135deg, #ff6b35, #e85d04);
+		border-radius: 12px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.5rem;
+	}
+	.lp-pain-item-body h3 {
+		font-size: 1rem;
+		font-weight: 800;
+		margin: 0 0 6px;
+		color: #1a1a2e;
+		line-height: 1.5;
+	}
+	.lp-pain-item-body p {
+		font-size: .88rem;
+		color: #6a5a50;
+		margin: 0;
+		line-height: 1.7;
+	}
+	.lp-pain-cta {
+		margin-top: 40px;
+		text-align: center;
+		font-size: 1.05rem;
+		font-weight: 700;
+		color: #1a1a2e;
+	}
+	.lp-pain-cta span {
+		display: inline-block;
+		background: linear-gradient(90deg, #ff6b35, #e85d04);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
 	/* ===== モバイル調整 ===== */
 	@media (max-width: 480px) {
 		.lp-section { padding: 60px 16px; }
 		.lp-chart-label { flex: 0 0 80px; font-size: 12px; }
 		.lp-cta-section { padding: 70px 16px; }
+		.lp-pain { padding: 60px 16px; }
 	}
 	</style>
 	<?php
@@ -288,6 +358,40 @@ get_header();
 			<p class="lp-hero-sub">ExcelもFAXも紙帳票も、複雑な業務フローもすべて対応。<br>AIが得意なスタッフが品質を守り、コストを大幅に削減します。</p>
 			<a href="#contact" class="lp-hero-cta">無料相談はこちら →</a>
 			<p class="lp-hero-note">※ 初回相談無料・導入実績多数</p>
+		</div>
+	</section>
+
+	<!-- ===== こんな課題ありませんか ===== -->
+	<section class="lp-pain">
+		<div class="lp-inner">
+			<div class="lp-pain-label">Your Challenges</div>
+			<h2 class="lp-h2">こんな課題、<br>ありませんか？</h2>
+
+			<div class="lp-pain-items">
+				<div class="lp-pain-item">
+					<div class="lp-pain-item-icon">🧓</div>
+					<div class="lp-pain-item-body">
+						<h3>ベテラン社員の<br>退職が決まった</h3>
+						<p>長年の業務知識やノウハウが属人化していて、退職後の引き継ぎが不安…</p>
+					</div>
+				</div>
+				<div class="lp-pain-item">
+					<div class="lp-pain-item-icon">🔍</div>
+					<div class="lp-pain-item-body">
+						<h3>採用・育成できず<br>業務が回らない</h3>
+						<p>求人を出しても集まらず、育てる余裕もない。現場のしわ寄せが続いている…</p>
+					</div>
+				</div>
+				<div class="lp-pain-item">
+					<div class="lp-pain-item-icon">📋</div>
+					<div class="lp-pain-item-body">
+						<h3>事務作業が増えすぎて<br>お客様と話せない</h3>
+						<p>入力・集計・確認作業に追われて、本来やるべき顧客対応の時間が取れない…</p>
+					</div>
+				</div>
+			</div>
+
+			<p class="lp-pain-cta">その課題、<span>AIと専任スタッフの組み合わせ</span>で解決できます。</p>
 		</div>
 	</section>
 
