@@ -753,7 +753,7 @@ a:active {
 }
 
 /* 著者名を非表示 */
-.posted-by {
+.byline {
   display: none !important;
 }
 
