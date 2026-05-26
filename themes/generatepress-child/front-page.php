@@ -708,38 +708,62 @@ get_header();
 	</section>
 
 	<!-- ===== Section 5: 導入の流れ ===== -->
-	<section class="lp-section lp-bg-white" id="workflow">
+	<section class="lp-section" id="workflow" style="background:linear-gradient(160deg,#f0f4ff 0%,#f8faff 60%,#ede9fe 100%);">
 		<div class="lp-inner">
 			<div class="lp-section-label">How It Works</div>
 			<h2 class="lp-h2">導入の流れ</h2>
-			<p class="lp-lead">最短1か月で開始可能。業務範囲や難易度によって変動しますが、まずはヒアリングから気軽にスタートできます。</p>
+			<p class="lp-lead">難しい準備は不要。現在の業務をお聞かせいただくところからスタートします。</p>
 
-			<div class="lp-flow-wrap" style="margin-top:48px;display:flex;flex-direction:column;gap:0;">
+			<div style="position:relative;margin-top:56px;max-width:680px;margin-left:auto;margin-right:auto;">
+
+				<!-- 縦ライン -->
+				<div style="position:absolute;left:35px;top:72px;bottom:72px;width:3px;background:linear-gradient(to bottom,#1a56db 0%,#7c3aed 100%);border-radius:2px;opacity:.25;"></div>
+
 				<?php
 				$intro_steps = [
-					['01', '現在の業務内容をヒアリング',           '現状の業務プロセス・量・課題点をお聞きします。'],
-					['02', 'AI向きの業務と人間が行う業務の切り分け', 'どの工程をAIに任せ、どの工程を人が担うかを整理します。'],
-					['03', '簡易版AIアプリの開発・試運転',          '小さく作って実際の業務で試します。'],
-					['04', '精度の調整と切り替え判断',              '試運転の結果をもとに精度を高め、本番移行を判断します。'],
-					['05', '本格導入',                             '運用開始後も継続的にサポートします。'],
+					['01', '📋', '現在の業務内容をヒアリング',           '現状の業務プロセス・量・課題点をお聞きします。担当者の方から直接伺い、ボトルネックを把握します。',                 '1〜2週間'],
+					['02', '🔍', 'AI向きの業務と人間が行う業務の切り分け', 'どの工程をAIに任せ、どの工程を人が担うかを整理します。コスト試算もこの段階でご提示します。',               '1週間'],
+					['03', '⚡', '簡易版AIアプリの開発・試運転',          '小さく作って実際の業務で試します。リスクを最小化しながら効果を早期に検証します。',                           '2〜3週間'],
+					['04', '🎯', '精度の調整と切り替え判断',              '試運転の結果をもとに精度を高め、本番移行のタイミングを一緒に決定します。',                                   '1〜2週間'],
+					['05', '🚀', '本格導入',                             '運用開始後も継続サポート。データが蓄積されるほど精度が向上し、対応範囲を広げていけます。',                        '継続的'],
 				];
-				foreach ($intro_steps as $step) {
+				$colors = ['#1a56db','#2563eb','#4f46e5','#7c3aed','#6d28d9'];
+				foreach ($intro_steps as $i => $step) {
+					$is_last = ($i === count($intro_steps) - 1);
+					$color   = $colors[$i];
 					?>
-					<div style="display:flex;align-items:flex-start;gap:24px;padding:28px 0;border-bottom:1px solid #e8eaf6;">
-						<div style="flex-shrink:0;width:56px;height:56px;border-radius:50%;background:#1a56db;color:#fff;font-size:1.1rem;font-weight:900;display:flex;align-items:center;justify-content:center;"><?php echo $step[0]; ?></div>
-						<div>
-							<div style="font-size:1.05rem;font-weight:700;color:#1a1a3c;margin-bottom:6px;"><?php echo $step[1]; ?></div>
-							<div style="font-size:.9rem;color:#5a5a7a;"><?php echo $step[2]; ?></div>
+					<div style="display:flex;gap:20px;align-items:flex-start;margin-bottom:<?php echo $is_last ? '0' : '20px'; ?>;">
+
+						<!-- ステップ番号サークル -->
+						<div style="flex-shrink:0;position:relative;z-index:1;width:70px;height:70px;border-radius:50%;background:#fff;border:3px solid <?php echo $color; ?>;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(99,102,241,.18);">
+							<span style="font-size:.6rem;font-weight:900;color:<?php echo $color; ?>;letter-spacing:.08em;line-height:1;"><?php echo $step[0]; ?></span>
+							<span style="font-size:1.5rem;line-height:1.2;"><?php echo $step[1]; ?></span>
 						</div>
+
+						<!-- カード -->
+						<div style="flex:1;background:#fff;border-radius:18px;padding:22px 26px;box-shadow:0 2px 20px rgba(99,102,241,.09);border:1.5px solid rgba(99,102,241,.1);margin-top:6px;">
+							<div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:10px;">
+								<span style="font-size:1rem;font-weight:800;color:#1a1a3c;flex:1;min-width:0;"><?php echo $step[2]; ?></span>
+								<span style="font-size:.72rem;font-weight:700;color:#fff;background:<?php echo $color; ?>;border-radius:20px;padding:3px 12px;white-space:nowrap;flex-shrink:0;"><?php echo $step[4]; ?></span>
+							</div>
+							<p style="font-size:.88rem;color:#5a5a7a;margin:0;line-height:1.75;"><?php echo $step[3]; ?></p>
+						</div>
+
 					</div>
 					<?php
 				}
 				?>
 			</div>
 
-			<div style="margin-top:40px;background:#f0f4ff;border-radius:16px;padding:24px 32px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
-				<div style="font-size:2rem;font-weight:900;color:#1a56db;flex-shrink:0;">最短1か月</div>
-				<div style="font-size:.95rem;color:#3a3a5c;">で開始可能（業務範囲・難易度などにより変動します）</div>
+			<!-- 最短1か月バッジ -->
+			<div style="margin-top:52px;text-align:center;">
+				<div style="display:inline-flex;align-items:center;gap:18px;background:linear-gradient(135deg,#1a56db 0%,#7c3aed 100%);border-radius:50px;padding:22px 44px;color:#fff;box-shadow:0 10px 36px rgba(99,102,241,.35);">
+					<span style="font-size:2.2rem;line-height:1;">🗓️</span>
+					<div style="text-align:left;">
+						<div style="font-size:1.5rem;font-weight:900;line-height:1.2;letter-spacing:-.01em;">最短1か月で開始可能</div>
+						<div style="font-size:.8rem;opacity:.8;margin-top:5px;">業務範囲・難易度などにより変動します</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
