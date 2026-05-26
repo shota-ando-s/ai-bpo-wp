@@ -200,6 +200,7 @@ add_action( 'generate_before_right_sidebar_content', function() {
 				</li>
 			<?php $rank++; endwhile; wp_reset_postdata(); ?>
 		</ol>
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="sidebar-ranking-more">もっとみる</a>
 	</div>
 
 	<?php

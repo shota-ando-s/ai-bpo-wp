@@ -974,3 +974,20 @@ a:active {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+.sidebar-ranking-more {
+  display: block;
+  text-align: center;
+  margin-top: 12px;
+  font-size: 0.82rem;
+  color: #1a2f5e;
+  text-decoration: none;
+  border: 1px solid #c8d0dc;
+  border-radius: 4px;
+  padding: 6px 0;
+  transition: background 0.2s, color 0.2s;
+}
+.sidebar-ranking-more:hover {
+  background: #1a2f5e;
+  color: #fff;
+}

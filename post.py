@@ -185,7 +185,106 @@ def insert_h2_images(html, h2_texts, article_title):
 
     return html
 
-def post_article(filepath):
+def convert_to_blocks(html):
+    """HTML を WordPress Gutenberg ブロック形式に変換する"""
+    # li → wp:list-item（ul/ol wrapping の前に処理）
+    html = re.sub(
+        r'<li>(.*?)</li>',
+        r'<!-- wp:list-item --><li>\1</li><!-- /wp:list-item -->',
+        html, flags=re.DOTALL
+    )
+    # ul → wp:list
+    html = re.sub(
+        r'<ul>(.*?)</ul>',
+        r'<!-- wp:list --><ul class="wp-block-list">\1</ul><!-- /wp:list -->',
+        html, flags=re.DOTALL
+    )
+    # ol → wp:list ordered
+    html = re.sub(
+        r'<ol>(.*?)</ol>',
+        r'<!-- wp:list {"ordered":true} --><ol class="wp-block-list">\1</ol><!-- /wp:list -->',
+        html, flags=re.DOTALL
+    )
+    # h2 〜 h4 → wp:heading
+    for level in [2, 3, 4]:
+        html = re.sub(
+            rf'<h{level}>(.*?)</h{level}>',
+            rf'<!-- wp:heading {{"level":{level}}} --><h{level} class="wp-block-heading">\1</h{level}><!-- /wp:heading -->',
+            html, flags=re.DOTALL
+        )
+    # p → wp:paragraph
+    html = re.sub(
+        r'<p>(.*?)</p>',
+        r'<!-- wp:paragraph --><p>\1</p><!-- /wp:paragraph -->',
+        html, flags=re.DOTALL
+    )
+    # table → wp:table
+    html = re.sub(
+        r'<table>(.*?)</table>',
+        r'<!-- wp:table --><figure class="wp-block-table"><table>\1</table></figure><!-- /wp:table -->',
+        html, flags=re.DOTALL
+    )
+    # wp-block-image figure（画像挿入後に呼ぶこと）→ wp:image
+    html = re.sub(
+        r'(<figure class="wp-block-image[^"]*">.*?</figure>)',
+        r'<!-- wp:image -->\1<!-- /wp:image -->',
+        html, flags=re.DOTALL
+    )
+    return html
+
+
+def insert_intro_image(html, article_title):
+    """記事冒頭（最初の<p>の直前）にDALL-E生成画像を1枚挿入する"""
+    image_bytes = dalle_generate(article_title, article_title)
+    if not image_bytes:
+        print("イントロ画像生成失敗", file=sys.stderr)
+        return html
+
+    ascii_part = re.sub(r"[^\x00-\x7F]", "", article_title)
+    safe_name = re.sub(r"[^\w]", "-", ascii_part).strip("-")[:40] or "intro"
+    wp_url = upload_image_to_wp(image_bytes, f"{safe_name}-intro.png", article_title)
+    if not wp_url:
+        return html
+
+    img_block = (
+        f'<figure class="wp-block-image size-large intro-image">'
+        f'<img src="{wp_url}" alt="{article_title}" loading="lazy"/>'
+        f'</figure>'
+    )
+    html = re.sub(r"(<p)", img_block + r"\1", html, count=1)
+    print(f"イントロ画像挿入完了: {wp_url}")
+    return html
+
+
+def add_intro_image_to_existing_post(filepath):
+    """既存WPコンテンツを取得して冒頭に画像を1枚挿入する（H2画像を保持）"""
+    with open(filepath, encoding="utf-8") as f:
+        raw = f.read()
+    meta, _ = parse_frontmatter(raw)
+    slug = meta.get("slug")
+    title = meta.get("title") or os.path.splitext(os.path.basename(filepath))[0]
+
+    existing = find_post_by_slug(slug) if slug else None
+    if not existing:
+        print("既存記事が見つかりません。通常投稿を使ってください。", file=sys.stderr)
+        return
+
+    # WPに保存されている現在のHTMLを取得（H2画像込み）
+    post_data = api(f"posts/{existing['id']}?context=edit")
+    current_html = post_data.get("content", {}).get("raw", "")
+
+    if not os.environ.get("OPENAI_API_KEY"):
+        print("OPENAI_API_KEY が設定されていません", file=sys.stderr)
+        return
+
+    print("イントロ画像生成中...")
+    current_html = insert_intro_image(current_html, title)
+
+    result = api(f"posts/{existing['id']}", method="POST", data={"content": current_html})
+    print(f"更新完了: {result['link']}")
+
+
+def post_article(filepath, rebuild_images=False):
     with open(filepath, encoding="utf-8") as f:
         raw = f.read()
 
@@ -200,11 +299,20 @@ def post_article(filepath):
 
     html = md_lib.markdown(body, extensions=["nl2br", "tables", "fenced_code"])
 
-    # H2見出しを抽出してDALL-E 3画像を生成・挿入
+    existing = find_post_by_slug(slug) if slug else None
     h2_texts = re.findall(r"^## (.+)$", body, re.MULTILINE)
-    if h2_texts and os.environ.get("OPENAI_API_KEY"):
+    # 新規投稿 or --rebuild-images 時にH2画像を生成
+    if h2_texts and os.environ.get("OPENAI_API_KEY") and (not existing or rebuild_images):
         print(f"H2画像生成中... ({len(h2_texts)}件、1枚あたり約15秒)")
         html = insert_h2_images(html, h2_texts, title)
+
+    if rebuild_images and os.environ.get("OPENAI_API_KEY"):
+        print("イントロ画像生成中...")
+        html = insert_intro_image(html, title)
+
+    # 新規投稿はブロックエディタ形式で出力（更新時はWP既存コンテンツを使うためスキップ）
+    if not existing:
+        html = convert_to_blocks(html)
 
     category_ids = [get_or_create_term("categories", c) for c in categories]
     tag_ids = [get_or_create_term("tags", t) for t in tags]
@@ -222,7 +330,6 @@ def post_article(filepath):
         payload["excerpt"] = excerpt
 
     # slug が既存記事と一致する場合は更新（upsert）
-    existing = find_post_by_slug(slug) if slug else None
     if existing:
         result = api(f"posts/{existing['id']}", method="POST", data=payload)
         print(f"更新完了: {result['link']}")
@@ -231,9 +338,44 @@ def post_article(filepath):
         print(f"投稿完了: {result['link']}")
     return result
 
+def update_excerpt_only(filepath):
+    with open(filepath, encoding="utf-8") as f:
+        raw = f.read()
+    meta, _ = parse_frontmatter(raw)
+    slug = meta.get("slug")
+    excerpt = meta.get("excerpt")
+    if not excerpt:
+        print(f"excerpt が見つかりません: {filepath}", file=sys.stderr)
+        return
+    existing = find_post_by_slug(slug) if slug else None
+    if not existing:
+        print(f"記事が見つかりません (slug={slug}): {filepath}", file=sys.stderr)
+        return
+    result = api(f"posts/{existing['id']}", method="POST", data={"excerpt": excerpt})
+    print(f"抜粋更新完了: {result['link']}")
+
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print(f"使い方: python3 {sys.argv[0]} <記事.md>", file=sys.stderr)
+        print(f"使い方: python3 {sys.argv[0]} [--excerpt-only|--add-intro-image] <記事.md>", file=sys.stderr)
         sys.exit(1)
     load_env()
-    post_article(sys.argv[1])
+    if sys.argv[1] == "--excerpt-only":
+        if len(sys.argv) < 3:
+            print(f"使い方: python3 {sys.argv[0]} --excerpt-only <記事.md>", file=sys.stderr)
+            sys.exit(1)
+        for filepath in sys.argv[2:]:
+            update_excerpt_only(filepath)
+    elif sys.argv[1] == "--add-intro-image":
+        if len(sys.argv) < 3:
+            print(f"使い方: python3 {sys.argv[0]} --add-intro-image <記事.md>", file=sys.stderr)
+            sys.exit(1)
+        for filepath in sys.argv[2:]:
+            add_intro_image_to_existing_post(filepath)
+    elif sys.argv[1] == "--rebuild-images":
+        if len(sys.argv) < 3:
+            print(f"使い方: python3 {sys.argv[0]} --rebuild-images <記事.md>", file=sys.stderr)
+            sys.exit(1)
+        for filepath in sys.argv[2:]:
+            post_article(filepath, rebuild_images=True)
+    else:
+        post_article(sys.argv[1])
