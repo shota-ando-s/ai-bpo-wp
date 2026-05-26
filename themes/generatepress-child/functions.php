@@ -17,6 +17,15 @@ add_action( 'wp_enqueue_scripts', function () {
 	);
 } );
 
+// 著者名（by aibpo）を非表示
+add_filter( 'generate_post_meta', function( $meta ) {
+	$key = array_search( 'author', $meta );
+	if ( false !== $key ) {
+		unset( $meta[ $key ] );
+	}
+	return $meta;
+} );
+
 // コメント機能を全無効化
 add_filter( 'comments_open', '__return_false', 20, 2 );
 add_filter( 'pings_open', '__return_false', 20, 2 );
