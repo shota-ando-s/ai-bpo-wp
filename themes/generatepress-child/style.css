@@ -752,6 +752,11 @@ a:active {
   margin-bottom: 2rem;
 }
 
+/* 著者名を非表示 */
+.posted-by {
+  display: none !important;
+}
+
 /* 記事ヘッダー下の区切り */
 .single .entry-header {
   border-bottom: 1px solid #e8edf4;
