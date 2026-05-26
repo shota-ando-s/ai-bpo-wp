@@ -732,7 +732,7 @@ get_header();
 					$is_last = ($i === count($intro_steps) - 1);
 					$color   = $colors[$i];
 					?>
-					<div style="display:flex;gap:20px;align-items:flex-start;margin-bottom:<?php echo $is_last ? '0' : '20px'; ?>;">
+					<div style="display:flex;gap:20px;align-items:center;margin-bottom:<?php echo $is_last ? '0' : '20px'; ?>;">
 
 						<!-- ステップ番号サークル -->
 						<div style="flex-shrink:0;position:relative;z-index:1;width:70px;height:70px;border-radius:50%;background:#fff;border:3px solid <?php echo $color; ?>;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(99,102,241,.18);">
@@ -741,7 +741,7 @@ get_header();
 						</div>
 
 						<!-- カード -->
-						<div style="flex:1;background:#fff;border-radius:18px;padding:22px 26px;box-shadow:0 2px 20px rgba(99,102,241,.09);border:1.5px solid rgba(99,102,241,.1);margin-top:6px;">
+						<div style="flex:1;min-width:0;background:#fff;border-radius:18px;padding:22px 26px;box-shadow:0 2px 20px rgba(99,102,241,.09);border:1.5px solid rgba(99,102,241,.1);">
 							<div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:10px;">
 								<span style="font-size:1rem;font-weight:800;color:#1a1a3c;flex:1;min-width:0;"><?php echo $step[2]; ?></span>
 								<span style="font-size:.72rem;font-weight:700;color:#fff;background:<?php echo $color; ?>;border-radius:20px;padding:3px 12px;white-space:nowrap;flex-shrink:0;"><?php echo $step[4]; ?></span>
