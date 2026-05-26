@@ -302,6 +302,54 @@ def insert_intro_image(html, article_title):
     return html
 
 
+def set_featured_image_for_post(filepath):
+    """記事タイトルで画像を生成し、WordPressのアイキャッチ画像として設定する"""
+    with open(filepath, encoding="utf-8") as f:
+        raw = f.read()
+    meta, _ = parse_frontmatter(raw)
+    slug = meta.get("slug")
+    title = meta.get("title") or os.path.splitext(os.path.basename(filepath))[0]
+
+    existing = find_post_by_slug(slug) if slug else None
+    if not existing:
+        print("既存記事が見つかりません。", file=sys.stderr)
+        return
+
+    if not os.environ.get("OPENAI_API_KEY"):
+        print("OPENAI_API_KEY が設定されていません", file=sys.stderr)
+        return
+
+    print(f"アイキャッチ画像生成中: {title}")
+    image_bytes = dalle_generate(title, title)
+    if not image_bytes:
+        print("画像生成失敗", file=sys.stderr)
+        return
+
+    # アップロードしてメディアIDを取得
+    base = os.environ.get("WP_URL", "http://ai-bpo.site").rstrip("/")
+    upload_url = f"{base}/wp-json/wp/v2/media"
+    headers = auth_header()
+    ascii_part = re.sub(r"[^\x00-\x7F]", "", title)
+    safe_name = re.sub(r"[^\w]", "-", ascii_part).strip("-")[:40] or "featured"
+    headers["Content-Disposition"] = f'attachment; filename="{safe_name}-featured.png"'
+    headers["Content-Type"] = "image/png"
+
+    req = urllib.request.Request(upload_url, data=image_bytes, headers=headers, method="POST")
+    try:
+        with urllib.request.urlopen(req) as r:
+            media = json.loads(r.read())
+    except urllib.error.HTTPError as e:
+        print(f"アップロードエラー {e.code}: {e.read().decode()}", file=sys.stderr)
+        return
+
+    media_id = media.get("id")
+    media_url = media.get("source_url")
+    print(f"アップロード完了: {media_url} (ID: {media_id})")
+
+    result = api(f"posts/{existing['id']}", method="POST", data={"featured_media": media_id})
+    print(f"アイキャッチ設定完了: {result['link']}")
+
+
 def add_intro_image_to_existing_post(filepath):
     """既存WPコンテンツを取得して冒頭に画像を1枚挿入する（H2画像を保持）"""
     with open(filepath, encoding="utf-8") as f:
@@ -424,6 +472,12 @@ if __name__ == "__main__":
             sys.exit(1)
         for filepath in sys.argv[2:]:
             add_intro_image_to_existing_post(filepath)
+    elif sys.argv[1] == "--featured-image":
+        if len(sys.argv) < 3:
+            print(f"使い方: python3 {sys.argv[0]} --featured-image <記事.md>", file=sys.stderr)
+            sys.exit(1)
+        for filepath in sys.argv[2:]:
+            set_featured_image_for_post(filepath)
     elif sys.argv[1] == "--rebuild-images":
         if len(sys.argv) < 3:
             print(f"使い方: python3 {sys.argv[0]} --rebuild-images <記事.md>", file=sys.stderr)
