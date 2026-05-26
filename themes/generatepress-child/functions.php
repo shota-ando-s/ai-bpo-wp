@@ -100,7 +100,7 @@ add_action( 'generate_before_footer', function() {
 							<span class="top-rank-num rank-<?php echo (int) $rank; ?>"><?php echo (int) $rank; ?></span>
 							<div class="top-rank-thumb">
 								<?php if ( has_post_thumbnail() ) :
-									the_post_thumbnail( 'thumbnail' );
+									the_post_thumbnail( 'medium' );
 								else : ?>
 									<div class="top-card-thumb-placeholder"></div>
 								<?php endif; ?>
@@ -190,7 +190,7 @@ add_action( 'generate_before_right_sidebar_content', function() {
 						<span class="sidebar-rank-num rank-<?php echo (int) $rank; ?>"><?php echo (int) $rank; ?></span>
 						<div class="sidebar-rank-thumb">
 							<?php if ( has_post_thumbnail() ) :
-								the_post_thumbnail( 'thumbnail' );
+								the_post_thumbnail( 'medium' );
 							else : ?>
 								<div class="sidebar-rank-placeholder"></div>
 							<?php endif; ?>
