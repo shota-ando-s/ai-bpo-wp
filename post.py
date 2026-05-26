@@ -233,6 +233,52 @@ def convert_to_blocks(html):
     return html
 
 
+_H2_SPLIT_RE = re.compile(
+    r'((?:<!-- wp:heading \{"level":2\} -->[ \t]*)?<h2[^>]*>.*?</h2>(?:[ \t]*<!-- /wp:heading -->)?)',
+    re.DOTALL,
+)
+
+def _split_sections(html):
+    """H2を境界にセクション分割。[(h2_text or None, html_chunk), ...]"""
+    parts = _H2_SPLIT_RE.split(html)
+    sections = []
+    if parts[0].strip():
+        sections.append((None, parts[0]))
+    for i in range(1, len(parts), 2):
+        h2_html = parts[i]
+        content = parts[i + 1] if i + 1 < len(parts) else ""
+        h2_text = re.sub(r'<!--.*?-->', '', h2_html, flags=re.DOTALL)
+        h2_text = re.sub(r'<[^>]+>', '', h2_text).strip()
+        sections.append((h2_text, h2_html + content))
+    return sections
+
+def _section_text(html):
+    """比較用: blockコメント・画像・HTMLタグを除いた正規化テキスト"""
+    text = re.sub(r'<!--.*?-->', '', html, flags=re.DOTALL)
+    text = re.sub(r'<figure[^>]*>.*?</figure>', '', text, flags=re.DOTALL)
+    text = re.sub(r'<[^>]+>', '', text)
+    return re.sub(r'\s+', ' ', text).strip()
+
+def merge_sections(wp_html, new_html):
+    """H2セクション単位でdiff。変更なし→WP保持（画像・WP直接編集を維持）、変更あり→新HTML採用"""
+    wp_dict = {h2: chunk for h2, chunk in _split_sections(wp_html)}
+    result = []
+    changed = []
+    for h2_text, new_chunk in _split_sections(new_html):
+        wp_chunk = wp_dict.get(h2_text)
+        if wp_chunk and _section_text(wp_chunk) == _section_text(new_chunk):
+            result.append(wp_chunk)
+        else:
+            result.append(new_chunk)
+            label = h2_text or "(冒頭)"
+            changed.append(label)
+    if changed:
+        print(f"  差分あり ({len(changed)}件): {', '.join(changed)}")
+    else:
+        print("  差分なし")
+    return "\n".join(result)
+
+
 def insert_intro_image(html, article_title):
     """記事冒頭（最初の<p>の直前）にDALL-E生成画像を1枚挿入する"""
     image_bytes = dalle_generate(article_title, article_title)
@@ -310,9 +356,16 @@ def post_article(filepath, rebuild_images=False):
         print("イントロ画像生成中...")
         html = insert_intro_image(html, title)
 
-    # 新規投稿はブロックエディタ形式で出力（更新時はWP既存コンテンツを使うためスキップ）
-    if not existing:
-        html = convert_to_blocks(html)
+    # ブロック形式に変換
+    html = convert_to_blocks(html)
+
+    # 更新時: WP既存コンテンツとH2セクション単位でマージ
+    # （rebuild_imagesは全画像再生成なのでマージ不要）
+    if existing and not rebuild_images:
+        print("セクション差分チェック中...")
+        post_data = api(f"posts/{existing['id']}?context=edit")
+        wp_html = post_data.get("content", {}).get("raw", "")
+        html = merge_sections(wp_html, html)
 
     category_ids = [get_or_create_term("categories", c) for c in categories]
     tag_ids = [get_or_create_term("tags", t) for t in tags]
