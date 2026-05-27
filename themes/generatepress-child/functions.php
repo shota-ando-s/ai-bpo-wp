@@ -17,6 +17,11 @@ add_action( 'wp_enqueue_scripts', function () {
 	);
 } );
 
+// カードサムネイル用に 1200×670 のカスタムサイズを登録
+add_action( 'after_setup_theme', function () {
+	add_image_size( 'card-thumb', 1200, 670, true );
+} );
+
 // 著者名（by aibpo）を非表示
 add_filter( 'generate_post_author', '__return_false' );
 
@@ -51,7 +56,7 @@ add_action( 'generate_before_footer', function() {
 					<a class="top-card" href="<?php the_permalink(); ?>">
 						<div class="top-card-thumb">
 							<?php if ( has_post_thumbnail() ) :
-								the_post_thumbnail( 'medium_large' );
+								the_post_thumbnail( 'card-thumb' );
 							else : ?>
 								<div class="top-card-thumb-placeholder"></div>
 							<?php endif; ?>
