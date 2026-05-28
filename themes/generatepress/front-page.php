@@ -10,6 +10,105 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 add_action( 'wp_head', function() {
+	$site_url = home_url();
+	$logo_url = $site_url . '/wp-content/themes/generatepress/assets/images/logo.png';
+	$schema = [
+		'@context' => 'https://schema.org',
+		'@graph'   => [
+			[
+				'@type'       => 'Organization',
+				'@id'         => $site_url . '/#organization',
+				'name'        => 'ヒキツギAI（AI-BPO）',
+				'url'         => $site_url,
+				'logo'        => [
+					'@type' => 'ImageObject',
+					'url'   => $logo_url,
+				],
+				'description' => '経理・総務・人事・労務など、あらゆるバックオフィス業務をAIと専門スタッフが担います。コアビジネスに集中できる環境を、中小企業に。',
+				'contactPoint' => [
+					'@type'           => 'ContactPoint',
+					'contactType'     => '相談・お問い合わせ',
+					'url'             => $site_url . '/contact/',
+					'availableLanguage' => 'Japanese',
+				],
+			],
+			[
+				'@type'           => 'WebSite',
+				'@id'             => $site_url . '/#website',
+				'url'             => $site_url,
+				'name'            => 'ヒキツギAI',
+				'description'     => 'AIと専門スタッフによるバックオフィス業務代行（AI-BPO）サービス',
+				'publisher'       => [ '@id' => $site_url . '/#organization' ],
+				'inLanguage'      => 'ja',
+			],
+			[
+				'@type'     => 'Service',
+				'@id'       => $site_url . '/#service',
+				'name'      => 'AI-BPOサービス（AIバックオフィス業務代行）',
+				'provider'  => [ '@id' => $site_url . '/#organization' ],
+				'description' => 'AIと専任スタッフが経理・総務・人事・労務などバックオフィス業務を代行。従来型BPOと比べ約50%のコスト削減を実現します。ExcelもFAXも紙帳票もあらゆる業務形式に対応。',
+				'areaServed'  => '日本',
+				'serviceType' => 'バックオフィス業務代行（BPO）',
+				'offers'      => [
+					'@type'       => 'Offer',
+					'description' => '初回相談無料',
+					'price'       => '0',
+					'priceCurrency' => 'JPY',
+					'url'         => $site_url . '/contact/',
+				],
+			],
+			[
+				'@type'      => 'FAQPage',
+				'@id'        => $site_url . '/#faq',
+				'mainEntity' => [
+					[
+						'@type'          => 'Question',
+						'name'           => 'AI-BPOサービスとは何ですか？',
+						'acceptedAnswer' => [
+							'@type' => 'Answer',
+							'text'  => 'AIと専任スタッフが経理・総務・人事・労務などバックオフィス業務を代行するサービスです。AIが自動化できる業務はAIが処理し、例外・複雑なケースはAIと協働が得意なスタッフが対応します。従来型BPOと比べ約50%のコスト削減を実現します。',
+						],
+					],
+					[
+						'@type'          => 'Question',
+						'name'           => 'どのような業務に対応していますか？',
+						'acceptedAnswer' => [
+							'@type' => 'Answer',
+							'text'  => 'Excel集計・転記、Webシステムへのデータ入力・照合、FAXや紙帳票のOCR読取・自動入力など、あらゆるバックオフィス業務に対応しています。既存の業務フローやツールを変える必要はありません。',
+						],
+					],
+					[
+						'@type'          => 'Question',
+						'name'           => '導入費用はどのくらいかかりますか？',
+						'acceptedAnswer' => [
+							'@type' => 'Answer',
+							'text'  => '業務内容・規模によりますが、従来型BPOと比べて約50%のコスト削減が可能です（目安：月25万円〜）。まずは無料相談でお見積もりをご提案します。',
+						],
+					],
+					[
+						'@type'          => 'Question',
+						'name'           => '導入までどのくらいの期間がかかりますか？',
+						'acceptedAnswer' => [
+							'@type' => 'Answer',
+							'text'  => '標準的な業務であれば最短2週間での導入が可能です。既存システムや業務フローに合わせて柔軟にカスタマイズします。',
+						],
+					],
+					[
+						'@type'          => 'Question',
+						'name'           => 'AIが対応できない例外業務はどうなりますか？',
+						'acceptedAnswer' => [
+							'@type' => 'Answer',
+							'text'  => 'AIが判断できない例外ケースや複雑な業務は、AIと協働が得意な専任スタッフが迅速に対処します。AIとスタッフのハイブリッド体制で品質を担保し、月次レポートで稼働状況・精度・削減効果をご報告します。',
+						],
+					],
+				],
+			],
+		],
+	];
+	echo '<script type="application/ld+json">' . wp_json_encode( $schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT ) . '</script>' . "\n";
+}, 5 );
+
+add_action( 'wp_head', function() {
 	?>
 	<style>
 	/* ===== LP 共通 ===== */
