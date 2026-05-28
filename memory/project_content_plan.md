@@ -35,6 +35,12 @@ metadata:
 | ⑥ | AI BPOで失敗する7つのパターンと回避策 | AI BPO 失敗 | ✅ 完成・投稿済み | 2026-05-25-ai-bpo-shippai.md |
 | ⑦ | 中小企業のためのAI BPO入門｜月5万円から始める業務効率化 | 中小企業 AI BPO | ✅ 完成・投稿済み | 2026-05-26-sme-ai-bpo-guide.md |
 
+## 追加ピラーページ
+
+| # | タイトル | キーワード | ステータス | ファイル |
+|---|---|---|---|---|
+| P | AI業務自動化とは？中小企業向け導入ステップ・費用・事例を完全解説【2026年版】 | AI業務自動化 | ✅ 完成・投稿済み | 2026-05-28-ai-gyomu-jidoka-guide.md |
+
 ## Phase 3 — 業種・業務特化ページ（2〜4ヶ月後）
 
 | # | タイトル | キーワード | ステータス |
@@ -45,6 +51,22 @@ metadata:
 | D | データ入力・入力代行AI BPOサービス比較 | データ入力 AI BPO | ✅ 完成・投稿済み | 2026-05-28-data-entry-ai-bpo-guide.md |
 | E | 製造業向けAI BPOの活用事例と導入ポイント | 製造業 AI BPO | ✅ 完成・投稿済み | 2026-05-28-manufacturing-ai-bpo-guide.md |
 | F | 医療・クリニック向けAI BPO（レセプト・予約管理） | 医療 クリニック AI BPO | ✅ 完成・投稿済み | 2026-05-28-medical-ai-bpo-guide.md |
+
+## 導入プロセスシリーズ（新シリーズ）
+
+ハブ記事 + Step1〜8の計9記事。「BPO導入をプロジェクトとして進める」実践者向けHowToシリーズ。既存記事（リサーチフェーズ向け）と補完関係。
+
+| # | タイトル | キーワード | ステータス | ファイル |
+|---|---|---|---|---|
+| Hub | AI BPO導入ロードマップ完全版｜全8ステップ | AI BPO 導入 手順 | ✅ 投稿済み | 2026-05-28-ai-bpo-roadmap.md |
+| Step1 | 業務棚卸し・現状分析 | BPO 業務棚卸し | ✅ 投稿済み | 2026-05-28-ai-bpo-step1-gyomu-analysis.md |
+| Step2 | アウトソース範囲の決定 | BPO アウトソース 範囲 | ✅ 投稿済み | 2026-05-28-ai-bpo-step2-scope.md |
+| Step3 | 要件定義・RFP作成 | BPO RFP 作り方 | ✅ 投稿済み | 2026-05-28-ai-bpo-step3-rfp.md |
+| Step4 | ベンダー評価・選定 | BPO ベンダー選定 | ✅ 投稿済み | 2026-05-28-ai-bpo-step4-vendor-selection.md |
+| Step5 | 契約・SLA設計 | BPO 契約書 SLA | ✅ 投稿済み | 2026-05-28-ai-bpo-step5-contract-sla.md |
+| Step6 | 業務マニュアル・移行準備 | BPO 引き継ぎ マニュアル | ✅ 投稿済み | 2026-05-28-ai-bpo-step6-migration.md |
+| Step7 | パイロット運用 | BPO パイロット | ✅ 投稿済み | 2026-05-28-ai-bpo-step7-pilot.md |
+| Step8 | 本格稼働・継続改善 | BPO 運用 管理 | ✅ 投稿済み | 2026-05-28-ai-bpo-step8-operations.md |
 
 ---
 

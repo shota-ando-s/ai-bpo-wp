@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 post.py articles/2026-05-28-hikitsugi-ai-support-hub.md)",
+      "Bash(python3 post.py articles/2026-05-28-hikitsugi-ai-step1-gyomu-analysis-support.md)",
+      "Bash(python3 post.py articles/2026-05-28-hikitsugi-ai-step2-scope-support.md)",
+      "Bash(python3 post.py articles/2026-05-28-hikitsugi-ai-step3-rfp-support.md)",
+      "Bash(python3 post.py articles/2026-05-28-hikitsugi-ai-step4-vendor-support.md)",
+      "Bash(python3 post.py articles/2026-05-28-hikitsugi-ai-step5-contract-support.md)",
+      "Bash(python3 post.py articles/2026-05-28-hikitsugi-ai-step6-migration-support.md)",
+      "Bash(python3 post.py articles/2026-05-28-hikitsugi-ai-step7-pilot-support.md)",
+      "Bash(python3 post.py articles/2026-05-28-hikitsugi-ai-step8-operations-support.md)",
+      "Bash(wait)",
+      "Bash(python3 -c \"print\\('done'\\)\")"
+    ]
+  }
+}
