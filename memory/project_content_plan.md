@@ -39,12 +39,12 @@ metadata:
 
 | # | タイトル | キーワード | ステータス |
 |---|---|---|---|
-| A | 経理・会計業務のAI BPO導入ガイド | 経理 AI BPO | 🔲 未着手 |
-| B | コールセンター・カスタマーサポートのAI BPO化 | コールセンター AI BPO | 🔲 未着手 |
-| C | 人事・採用業務をAI BPOで効率化する方法 | 人事 AI BPO | 🔲 未着手 |
-| D | データ入力・入力代行AI BPOサービス比較 | データ入力 AI BPO | 🔲 未着手 |
-| E | 製造業向けAI BPOの活用事例と導入ポイント | 製造業 AI BPO | 🔲 未着手 |
-| F | 医療・クリニック向けAI BPO（レセプト・予約管理） | 医療 クリニック AI BPO | 🔲 未着手 |
+| A | 経理・会計業務のAI BPO導入ガイド | 経理 AI BPO | ✅ 完成・投稿済み | 2026-05-28-keiri-ai-bpo-guide.md |
+| B | コールセンター・カスタマーサポートのAI BPO化 | コールセンター AI BPO | ✅ 完成・投稿済み | 2026-05-28-callcenter-ai-bpo-guide.md |
+| C | 人事・採用業務をAI BPOで効率化する方法 | 人事 AI BPO | ✅ 完成・投稿済み | 2026-05-28-jinji-ai-bpo-guide.md |
+| D | データ入力・入力代行AI BPOサービス比較 | データ入力 AI BPO | ✅ 完成・投稿済み | 2026-05-28-data-entry-ai-bpo-guide.md |
+| E | 製造業向けAI BPOの活用事例と導入ポイント | 製造業 AI BPO | ✅ 完成・投稿済み | 2026-05-28-manufacturing-ai-bpo-guide.md |
+| F | 医療・クリニック向けAI BPO（レセプト・予約管理） | 医療 クリニック AI BPO | ✅ 完成・投稿済み | 2026-05-28-medical-ai-bpo-guide.md |
 
 ---
 
