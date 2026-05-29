@@ -73,7 +73,7 @@ add_action( 'generate_before_footer', function() {
 				<?php endwhile; wp_reset_postdata(); ?>
 			</div>
 			<div class="top-section-more">
-				<a href="<?php echo esc_url( home_url( '/blog/' ) ); ?>" class="top-more-btn">記事一覧を見る</a>
+				<a href="<?php echo esc_url( home_url( '/archives/' ) ); ?>" class="top-more-btn">記事一覧を見る</a>
 			</div>
 		</section>
 
