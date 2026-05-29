@@ -120,4 +120,8 @@ require $theme_dir . '/inc/structure/header.php';
 require $theme_dir . '/inc/structure/navigation.php';
 require $theme_dir . '/inc/structure/post-meta.php';
 require $theme_dir . '/inc/structure/sidebars.php';
+
+add_action( 'wp_head', function() {
+	echo '<link rel="icon" type="image/png" href="' . get_template_directory_uri() . '/assets/images/favicon.png">' . "\n";
+} );
 require $theme_dir . '/inc/structure/search-modal.php';
