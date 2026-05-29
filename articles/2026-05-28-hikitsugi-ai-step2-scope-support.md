@@ -3,6 +3,7 @@ title: 【ヒキツギAI】AI-BPO導入支援Step2｜スコープ定義を私た
 categories: [AI BPO, 導入支援サービス]
 tags: [ヒキツギAI, スコープ定義支援, BPO 範囲決定, アウトソース判断, 伴走支援]
 status: publish
+slug: handover-ai-step2-scope
 excerpt: ヒキツギAIが「スコープ定義（何をアウトソースするか）」をどう支援するかを解説。ワークショップ形式の意思決定支援・判断基準フレームワーク・スコープ定義書の作成まで、具体的なサポート内容と成果物を公開します。
 ---
 

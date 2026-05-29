@@ -3,6 +3,7 @@ title: 【ヒキツギAI】AI-BPO導入支援Step7｜パイロット運用を私
 categories: [AI BPO, 導入支援サービス]
 tags: [ヒキツギAI, パイロット運用支援, BPO 試験運用, 品質モニタリング, 伴走支援]
 status: publish
+slug: handover-ai-step7-pilot
 excerpt: ヒキツギAIがAI-BPO「パイロット運用」をどう支援するか解説。モニタリング指標の設計から進捗管理・問題分析・本格稼働判断まで、私たちが担う具体的なサポート内容と成果物を公開します。
 ---
 

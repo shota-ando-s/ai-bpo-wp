@@ -11,7 +11,23 @@
       "Bash(python3 post.py articles/2026-05-28-hikitsugi-ai-step7-pilot-support.md)",
       "Bash(python3 post.py articles/2026-05-28-hikitsugi-ai-step8-operations-support.md)",
       "Bash(wait)",
-      "Bash(python3 -c \"print\\('done'\\)\")"
+      "Bash(python3 -c \"print\\('done'\\)\")",
+      "WebFetch(domain:www.pasona.co.jp)",
+      "WebFetch(domain:www.yano.co.jp)",
+      "Bash(python3 post.py articles/2026-05-29-bpo-towa.md)",
+      "Bash(python3 post.py articles/2026-05-29-bpo-vs-haken.md)",
+      "Bash(python3 post.py articles/2026-05-29-ito-vs-bpo.md)",
+      "Bash(python3 post.py articles/2026-05-29-keiri-bpo-towa.md)",
+      "Bash(python3 post.py articles/2026-05-29-hr-bpo-guide.md)",
+      "Bash(python3 post.py articles/2026-05-29-offshore-bpo-philippines.md)",
+      "Bash(find /Users/ando/Desktop ~/Downloads -name \"*favicon*\" -o -name \"*ヒキツギ*\" -o -name \"*hikitsugi*\" 2>/dev/null | head -20)",
+      "Read(//Users/ando/Desktop/**)",
+      "Bash(mkdir -p /Users/ando/Dropbox/allsrc/ai-bpo-wp/themes/generatepress/assets/images && cp /Users/ando/Downloads/favicon.png /Users/ando/Dropbox/allsrc/ai-bpo-wp/themes/generatepress/assets/images/favicon.png && echo \"Copied successfully\")",
+      "Bash(xargs -I{} sh -c 'grep -l \"^slug:\" \"{}\" > /dev/null 2>&1 || echo \"{}\"')",
+      "Bash(sort -t: -k3)"
+    ],
+    "additionalDirectories": [
+      "/Users/ando/Downloads"
     ]
   }
 }

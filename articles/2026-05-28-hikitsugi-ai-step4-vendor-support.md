@@ -3,6 +3,7 @@ title: 【ヒキツギAI】AI-BPO導入支援Step4｜ベンダー評価・選定
 categories: [AI BPO, 導入支援サービス]
 tags: [ヒキツギAI, ベンダー選定支援, BPO ベンダー評価, 提案審査支援, 伴走支援]
 status: publish
+slug: handover-ai-step4-vendor
 excerpt: ヒキツギAIがAI-BPO「ベンダー評価・選定」をどう支援するか解説。候補ベンダーのリストアップから提案書評価・デモ審査・交渉同席まで、私たちが担う具体的なサポート内容と成果物を公開します。
 ---
 

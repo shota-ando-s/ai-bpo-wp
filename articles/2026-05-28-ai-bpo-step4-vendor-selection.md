@@ -3,6 +3,7 @@ title: AI BPO導入Step4｜ベンダー選定・比較の手順｜AI評価シー
 categories: [AI BPO, 導入ガイド]
 tags: [AI BPO, ベンダー選定, 業者選び, 提案書評価, 交渉]
 status: publish
+slug: ai-bpo-step4-vendor-selection
 excerpt: AI BPO導入で最も失敗が多いのがベンダー選定。提案書の評価軸設定・スコアリングシートの使い方・LLMによる提案書比較・交渉のポイントまで、感覚ではなく客観的な基準で最適なパートナーを選ぶ手順を解説します。
 ---
 

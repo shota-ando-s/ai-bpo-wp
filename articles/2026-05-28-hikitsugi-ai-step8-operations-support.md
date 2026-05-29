@@ -3,6 +3,7 @@ title: 【ヒキツギAI】AI-BPO導入支援Step8｜本格稼働・継続改善
 categories: [AI BPO, 導入支援サービス]
 tags: [ヒキツギAI, BPO 運用管理支援, KPI管理, 継続改善支援, 伴走支援]
 status: publish
+slug: handover-ai-step8-operations
 excerpt: ヒキツギAIがAI-BPO「本格稼働・継続改善」をどう支援するか解説。KPI管理・月次レビュー・ベンダー管理・業務範囲の拡張検討まで、私たちが担う長期伴走サポートの内容と成果物を公開します。
 ---
 

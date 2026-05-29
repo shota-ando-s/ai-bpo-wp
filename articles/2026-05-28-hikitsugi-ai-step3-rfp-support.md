@@ -3,6 +3,7 @@ title: 【ヒキツギAI】AI-BPO導入支援Step3｜要件定義・RFP作成を
 categories: [AI BPO, 導入支援サービス]
 tags: [ヒキツギAI, RFP作成支援, 要件定義支援, BPO 提案依頼書, 伴走支援]
 status: publish
+slug: handover-ai-step3-rfp
 excerpt: ヒキツギAIがAI-BPO導入の「要件定義・RFP作成」をどう支援するか解説。テンプレート提供から要件整理・レビューまで、私たちが担う具体的なサポート内容と成果物を公開します。RFPなしで発注するリスクも詳説。
 ---
 

@@ -3,6 +3,7 @@ title: AI BPO導入Step1｜業務棚卸しの正しいやり方とAIで工数分
 categories: [AI BPO, 導入ガイド]
 tags: [AI BPO, 業務棚卸し, 現状分析, プロセスマイニング, 業務効率化]
 status: publish
+slug: ai-bpo-step1-operations-analysis
 excerpt: AI BPO導入の第一歩は「業務棚卸し」。全業務の可視化・工数計測・コスト計算の手順と、プロセスマイニングなどAIツールで分析を自動化するやり方を中小企業向けに解説。BPO適性スコアリングのテンプレート付き。
 ---
 

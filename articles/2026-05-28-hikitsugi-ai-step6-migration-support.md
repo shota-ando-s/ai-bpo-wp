@@ -3,6 +3,7 @@ title: 【ヒキツギAI】AI-BPO導入支援Step6｜マニュアル・移行準
 categories: [AI BPO, 導入支援サービス]
 tags: [ヒキツギAI, 業務マニュアル作成支援, 引き継ぎ支援, BPO 移行準備, 伴走支援]
 status: publish
+slug: handover-ai-step6-migration
 excerpt: ヒキツギAIがAI-BPO「マニュアル・移行準備」をどう支援するか解説。業務フロー文書化・引き継ぎ計画・スタッフトレーニングまで、私たちが担う具体的なサポート内容と成果物を公開します。
 ---
 

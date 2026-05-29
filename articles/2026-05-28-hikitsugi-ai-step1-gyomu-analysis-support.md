@@ -3,6 +3,7 @@ title: 【ヒキツギAI】AI-BPO導入支援Step1｜業務棚卸し・現状分
 categories: [AI BPO, 導入支援サービス]
 tags: [ヒキツギAI, 業務棚卸し支援, 現状分析, BPO 適性評価, 伴走支援]
 status: publish
+slug: handover-ai-step1-operations-analysis
 excerpt: ヒキツギAIがAI-BPO導入の第一歩「業務棚卸し・現状分析」をどのように支援するか解説。ヒアリング設計から現場インタビュー、工数分析、BPO適性スコアリングまで、私たちが担う具体的なサポート内容と成果物を公開します。
 ---
 

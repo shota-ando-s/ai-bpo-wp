@@ -3,6 +3,7 @@ title: 【ヒキツギAI】AI-BPO導入支援Step5｜契約・SLA設計を私た
 categories: [AI BPO, 導入支援サービス]
 tags: [ヒキツギAI, SLA設計支援, 契約書レビュー, BPO 契約, 伴走支援]
 status: publish
+slug: handover-ai-step5-contract
 excerpt: ヒキツギAIがAI-BPO「契約・SLA設計」をどう支援するか解説。SLAチェックリスト・契約書レビュー・条件交渉支援まで、私たちが担う具体的なサポート内容と成果物を公開。知らないと損するSLAの落とし穴も解説します。
 ---
 

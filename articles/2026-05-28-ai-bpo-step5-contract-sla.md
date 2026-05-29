@@ -3,6 +3,7 @@ title: AI BPO導入Step5｜BPO契約書・SLAの設計完全ガイド｜AIでリ
 categories: [AI BPO, 導入ガイド]
 tags: [AI BPO, 契約書, SLA, サービスレベル合意, リスク管理, 法務]
 status: publish
+slug: ai-bpo-step5-contract-sla
 excerpt: AI BPO導入の契約・SLA設計を完全解説。BPO契約書の必須チェックポイント、SLAの数値設定方法、ペナルティ条項の設計、AI契約書レビューツールで不利な条項を事前検出する手順まで詳しく紹介します。
 ---
 
