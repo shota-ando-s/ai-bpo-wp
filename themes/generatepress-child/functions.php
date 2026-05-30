@@ -17,9 +17,9 @@ add_action( 'wp_enqueue_scripts', function () {
 	);
 } );
 
-// カードサムネイル用に 1200×670 のカスタムサイズを登録
+// カードサムネイル用に 1280×670 のカスタムサイズを登録
 add_action( 'after_setup_theme', function () {
-	add_image_size( 'card-thumb', 1200, 670, true );
+	add_image_size( 'card-thumb', 1280, 670, true );
 } );
 
 // 著者名（by aibpo）を非表示
