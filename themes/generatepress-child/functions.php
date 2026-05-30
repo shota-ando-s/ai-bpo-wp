@@ -56,7 +56,7 @@ add_action( 'generate_before_footer', function() {
 					<a class="top-card" href="<?php the_permalink(); ?>">
 						<div class="top-card-thumb">
 							<?php if ( has_post_thumbnail() ) :
-								the_post_thumbnail( 'card-thumb' );
+								the_post_thumbnail( 'full' );
 							else : ?>
 								<div class="top-card-thumb-placeholder"></div>
 							<?php endif; ?>
