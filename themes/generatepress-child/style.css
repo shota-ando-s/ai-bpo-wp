@@ -512,7 +512,7 @@ a:active {
 .top-rank-thumb img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   display: block;
 }
 
@@ -976,7 +976,7 @@ a:active {
 .sidebar-rank-thumb img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   display: block;
 }
 
