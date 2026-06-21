@@ -409,7 +409,7 @@ get_header();
 		<div class="lp-inner">
 			<div class="lp-hero-eyebrow">オフボード ｜ 退職・引き継ぎ業務の引き取りサービス</div>
 			<h1>担当者が辞める。<br>その<em>引き継ぎ書</em>、本当に足りていますか？</h1>
-			<p class="lp-hero-sub">引き継ぎ書をつくっても「その人しか知らない作業」「たまにしか発生しない作業」はこぼれがち。<br>オフボードは、退職・休職する社員の業務を<strong>AIで引き継ぎ、そのまま巻き取り</strong>ます。</p>
+			<p class="lp-hero-sub">完璧な引き継ぎ書は、作れない。<br>だからオフボードは、退職・休職する社員の業務を<strong>AIで引き継ぎ、そのまま巻き取り</strong>ます。</p>
 			<div class="lp-hero-btns">
 				<a href="<?php echo esc_url( $offboard_tool_url ); ?>" target="_blank" rel="noopener" class="lp-hero-cta">無料で引き継ぎ診断（約60秒）→</a>
 				<a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="lp-hero-cta-sub">無料相談（30分）</a>
