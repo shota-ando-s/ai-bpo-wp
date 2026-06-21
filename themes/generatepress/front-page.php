@@ -18,7 +18,7 @@ add_action( 'wp_head', function() {
 			[
 				'@type'       => 'Organization',
 				'@id'         => $site_url . '/#organization',
-				'name'        => 'ヒキツギAI（AI-BPO）',
+				'name'        => 'オフボード（AI-BPO）',
 				'url'         => $site_url,
 				'logo'        => [
 					'@type' => 'ImageObject',
@@ -36,7 +36,7 @@ add_action( 'wp_head', function() {
 				'@type'           => 'WebSite',
 				'@id'             => $site_url . '/#website',
 				'url'             => $site_url,
-				'name'            => 'ヒキツギAI',
+				'name'            => 'オフボード',
 				'description'     => 'AIと専門スタッフによるバックオフィス業務代行（AI-BPO）サービス',
 				'publisher'       => [ '@id' => $site_url . '/#organization' ],
 				'inLanguage'      => 'ja',
@@ -647,6 +647,83 @@ get_header();
 			</div>
 		</div>
 	</section>
+
+	<!-- ===== ピックアップ記事 ===== -->
+	<?php
+	$pickup_query = new WP_Query( [
+		'post_type'      => 'post',
+		'post_status'    => 'publish',
+		'posts_per_page' => 3,
+		'meta_query'     => [ [ 'key' => 'ai_bpo_pickup', 'value' => '1', 'compare' => '=' ] ],
+		'no_found_rows'  => true,
+	] );
+	if ( $pickup_query->have_posts() ) :
+	?>
+	<section class="lp-section lp-bg-light" id="pickup">
+		<div class="lp-inner">
+			<div class="lp-section-label">Pickup Articles</div>
+			<h2 class="lp-h2">ピックアップ記事</h2>
+			<div class="lp-pickup-grid">
+				<?php while ( $pickup_query->have_posts() ) : $pickup_query->the_post(); ?>
+				<a href="<?php the_permalink(); ?>" class="lp-pickup-card">
+					<?php if ( has_post_thumbnail() ) : ?>
+					<div class="lp-pickup-thumb">
+						<?php the_post_thumbnail( 'medium', [ 'loading' => 'lazy' ] ); ?>
+					</div>
+					<?php endif; ?>
+					<div class="lp-pickup-body">
+						<?php
+						$cats = get_the_category();
+						if ( $cats ) {
+							echo '<span class="lp-pickup-cat">' . esc_html( $cats[0]->name ) . '</span>';
+						}
+						?>
+						<h3 class="lp-pickup-title"><?php the_title(); ?></h3>
+						<p class="lp-pickup-excerpt"><?php echo esc_html( wp_trim_words( get_the_excerpt(), 40, '…' ) ); ?></p>
+					</div>
+				</a>
+				<?php endwhile; wp_reset_postdata(); ?>
+			</div>
+		</div>
+	</section>
+	<style>
+	.lp-pickup-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 24px;
+		margin-top: 48px;
+	}
+	.lp-pickup-card {
+		background: #fff;
+		border-radius: 16px;
+		overflow: hidden;
+		box-shadow: 0 4px 24px rgba(26,86,219,.08);
+		border: 1px solid rgba(26,86,219,.08);
+		text-decoration: none !important;
+		color: inherit;
+		display: flex;
+		flex-direction: column;
+		transition: transform .2s, box-shadow .2s;
+	}
+	.lp-pickup-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(26,86,219,.15); }
+	.lp-pickup-thumb { aspect-ratio: 16/9; overflow: hidden; }
+	.lp-pickup-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+	.lp-pickup-body { padding: 20px 24px 24px; display: flex; flex-direction: column; flex: 1; }
+	.lp-pickup-cat {
+		display: inline-block;
+		font-size: 11px;
+		font-weight: 700;
+		letter-spacing: .1em;
+		color: #1a56db;
+		background: #e8ecff;
+		border-radius: 4px;
+		padding: 3px 8px;
+		margin-bottom: 10px;
+	}
+	.lp-pickup-title { font-size: 1rem; font-weight: 800; line-height: 1.5; margin: 0 0 10px; color: #1a1a2e; }
+	.lp-pickup-excerpt { font-size: .88rem; color: #5a5a7a; line-height: 1.7; margin: 0; }
+	</style>
+	<?php endif; ?>
 
 	<!-- ===== 最終CTA ===== -->
 	<section class="lp-cta-section" id="contact">
