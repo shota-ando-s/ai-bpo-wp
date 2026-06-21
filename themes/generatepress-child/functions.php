@@ -15,6 +15,14 @@ add_action( 'wp_enqueue_scripts', function () {
 		[ 'generate-style' ],
 		wp_get_theme()->get( 'Version' )
 	);
+
+	// Font Awesome 6（LPアイコン用）
+	wp_enqueue_style(
+		'font-awesome',
+		'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css',
+		[],
+		'6.5.1'
+	);
 } );
 
 // カードサムネイル用に 1280×670 のカスタムサイズを登録

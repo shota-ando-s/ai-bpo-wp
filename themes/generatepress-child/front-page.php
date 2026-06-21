@@ -1,6 +1,6 @@
 <?php
 /**
- * LP用フロントページテンプレート — Offboard（退職・引き継ぎ業務の引き取りサービス）
+ * LP用フロントページテンプレート — オフボード（退職・引き継ぎ業務の引き取りサービス）
  *
  * @package GeneratePress
  */
@@ -126,6 +126,8 @@ add_action( 'wp_head', function() {
 		max-width: 640px;
 	}
 	.lp-urgent .lp-urgent-icon { font-size: 1.4rem; flex-shrink: 0; }
+	.lp-urgent .lp-urgent-icon i { color: #ffd166; }
+	.lp-pain-item-icon i { color: #fff; }
 	.lp-urgent a { color: #ffd166 !important; font-weight: 700; text-decoration: underline; }
 
 	/* ===== 立ち上げスピード比較グラフ ===== */
@@ -181,7 +183,7 @@ add_action( 'wp_head', function() {
 		transition: transform .2s, box-shadow .2s;
 	}
 	.lp-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(26,86,219,.15); }
-	.lp-card-icon { font-size: 2.4rem; margin-bottom: 16px; display: block; }
+	.lp-card-icon { font-size: 2.4rem; margin-bottom: 16px; display: block; color: #1a56db; }
 	.lp-card h3 { font-size: 1.05rem; font-weight: 800; margin: 0 0 10px; }
 	.lp-card p  { font-size: .93rem; color: #5a5a7a; line-height: 1.7; margin: 0; }
 
@@ -405,17 +407,17 @@ get_header();
 	<!-- ===== Hero ===== -->
 	<section class="lp-hero">
 		<div class="lp-inner">
-			<div class="lp-hero-eyebrow">Offboard ｜ 退職・引き継ぎ業務の引き取りサービス</div>
+			<div class="lp-hero-eyebrow">オフボード ｜ 退職・引き継ぎ業務の引き取りサービス</div>
 			<h1>担当者が辞める。<br>その<em>引き継ぎ書</em>、本当に足りていますか？</h1>
-			<p class="lp-hero-sub">引き継ぎ書をつくっても「その人しか知らない作業」「たまにしか発生しない作業」はこぼれがち。<br>Offboardは、退職・休職する社員の業務を<strong>AIで引き継ぎ、そのまま巻き取り</strong>ます。</p>
+			<p class="lp-hero-sub">引き継ぎ書をつくっても「その人しか知らない作業」「たまにしか発生しない作業」はこぼれがち。<br>オフボードは、退職・休職する社員の業務を<strong>AIで引き継ぎ、そのまま巻き取り</strong>ます。</p>
 			<div class="lp-hero-btns">
 				<a href="<?php echo esc_url( $offboard_tool_url ); ?>" target="_blank" rel="noopener" class="lp-hero-cta">無料で引き継ぎ診断（約60秒）→</a>
 				<a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="lp-hero-cta-sub">無料相談（30分）</a>
 			</div>
 			<p class="lp-hero-note">※ 診断は無料・登録不要。タスク一覧表がダウンロードできます</p>
 			<div class="lp-urgent">
-				<span class="lp-urgent-icon">⚠️</span>
-				<span>退職日が迫っていますか？ 最短<strong>1週間で“ボールを落とさない体制”</strong>を作ります。<a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">今すぐ無料相談 →</a></span>
+				<span class="lp-urgent-icon"><i class="fa-solid fa-triangle-exclamation"></i></span>
+				<span>退職日が迫っていますか？ 最短<strong>10日で“ボールを落とさない体制”</strong>を作ります。<a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">今すぐ無料相談 →</a></span>
 			</div>
 		</div>
 	</section>
@@ -428,28 +430,28 @@ get_header();
 
 			<div class="lp-pain-items">
 				<div class="lp-pain-item">
-					<div class="lp-pain-item-icon">⏳</div>
+					<div class="lp-pain-item-icon"><i class="fa-solid fa-hourglass-half"></i></div>
 					<div class="lp-pain-item-body">
 						<h3>後任が決まらないまま<br>退職日が近づいている</h3>
 						<p>採用は1〜2ヶ月、BPOも要件定義に1〜2ヶ月。退職日には間に合わない…</p>
 					</div>
 				</div>
 				<div class="lp-pain-item">
-					<div class="lp-pain-item-icon">📉</div>
+					<div class="lp-pain-item-icon"><i class="fa-solid fa-arrow-trend-down"></i></div>
 					<div class="lp-pain-item-body">
 						<h3>引き継ぎ精度が<br>9割止まりで抜け漏れる</h3>
 						<p>辞める人のモチベは低く、資料は不十分。引き継いだはずの業務が後で噴出…</p>
 					</div>
 				</div>
 				<div class="lp-pain-item">
-					<div class="lp-pain-item-icon">🔒</div>
+					<div class="lp-pain-item-icon"><i class="fa-solid fa-lock"></i></div>
 					<div class="lp-pain-item-body">
 						<h3>「その人しか知らない」<br>属人業務がブラックボックス</h3>
 						<p>判断基準も例外対応も本人の頭の中。退職と同時に消えてしまう…</p>
 					</div>
 				</div>
 				<div class="lp-pain-item">
-					<div class="lp-pain-item-icon">🗓️</div>
+					<div class="lp-pain-item-icon"><i class="fa-solid fa-calendar-xmark"></i></div>
 					<div class="lp-pain-item-body">
 						<h3>3ヶ月に1回の作業ほど<br>漏れて事故になる</h3>
 						<p>季節セール・棚卸し・更新作業など、低頻度の業務が引き継ぎから抜け落ちる…</p>
@@ -465,8 +467,8 @@ get_header();
 	<section class="lp-section lp-bg-white" id="speed">
 		<div class="lp-inner">
 			<div class="lp-section-label">Speed</div>
-			<h2 class="lp-h2">後任不在でも、<br>最短<span style="color:#1a56db;">1週間</span>で巻き取り開始</h2>
-			<p class="lp-lead">派遣の採用にもBPOの要件定義にも1〜2ヶ月。退職日には間に合いません。OffboardはAI＋専任スタッフで、最短1週間で「ボールを落とさない体制」を立ち上げます。</p>
+			<h2 class="lp-h2">後任不在でも、<br>最短<span style="color:#1a56db;">10日</span>で巻き取り開始</h2>
+			<p class="lp-lead">派遣の採用にもBPOの要件定義にも1〜2ヶ月。退職日には間に合いません。オフボードはAI＋専任スタッフで、最短10日で「ボールを落とさない体制」を立ち上げます。</p>
 
 			<div class="lp-chart" id="lp-cost-chart">
 				<div class="lp-chart-row">
@@ -476,13 +478,13 @@ get_header();
 					</div>
 				</div>
 				<div class="lp-chart-row">
-					<div class="lp-chart-label">Offboard</div>
+					<div class="lp-chart-label">オフボード</div>
 					<div class="lp-chart-bar-wrap">
-						<div class="lp-chart-bar bar-after" style="--bar-w:18%">最短1週間</div>
+						<div class="lp-chart-bar bar-after" style="--bar-w:18%">最短10日</div>
 					</div>
 				</div>
 				<div class="lp-chart-saving">
-					<div class="lp-chart-saving-num">1週間</div>
+					<div class="lp-chart-saving-num">10日</div>
 					<div class="lp-chart-saving-text">
 						<strong>で巻き取りを開始</strong>
 						退職者がいるうちに業務を引き取り、抜け漏れをその場で潰します。
@@ -503,17 +505,17 @@ get_header();
 
 			<div class="lp-cards">
 				<div class="lp-card">
-					<span class="lp-card-icon">🧑‍💼</span>
+					<span class="lp-card-icon"><i class="fa-solid fa-user-tie"></i></span>
 					<h3>後任不在の引き継ぎ</h3>
 					<p>後任が決まっていない・育てる時間がない。そのままうちが業務を引き取り、回し続けます。</p>
 				</div>
 				<div class="lp-card">
-					<span class="lp-card-icon">🗂️</span>
+					<span class="lp-card-icon"><i class="fa-solid fa-box-archive"></i></span>
 					<h3>属人化した業務</h3>
 					<p>その人しか知らない手順・判断基準・例外対応を、AIヒアリングで吸い出して仕組みにします。</p>
 				</div>
 				<div class="lp-card">
-					<span class="lp-card-icon">💻</span>
+					<span class="lp-card-icon"><i class="fa-solid fa-laptop"></i></span>
 					<h3>オンラインで完結する業務</h3>
 					<p>経理・営業事務・カスタマーサポート・EC運営など、PC上で完結する業務に幅広く対応します。</p>
 				</div>
@@ -528,11 +530,11 @@ get_header();
 							<th>派遣</th>
 							<th>オンラインアシスタント</th>
 							<th>BPO会社</th>
-							<th class="col-offboard">Offboard</th>
+							<th class="col-offboard">オフボード</th>
 						</tr>
 					</thead>
 					<tbody>
-						<tr><th>立ち上げ</th><td>✕ 1〜2ヶ月</td><td>○ 1週間</td><td>✕ 1〜2ヶ月</td><td class="col-offboard">◎ 最短1週間</td></tr>
+						<tr><th>立ち上げ</th><td>✕ 1〜2ヶ月</td><td>○ 1週間</td><td>✕ 1〜2ヶ月</td><td class="col-offboard">◎ 最短10日</td></tr>
 						<tr><th>丸投げできる</th><td>○</td><td>✕ 指示待ち</td><td>◎</td><td class="col-offboard">○ AI＋人</td></tr>
 						<tr><th>そのままAI化</th><td>✕</td><td>✕</td><td>△</td><td class="col-offboard">◎ 標準対応</td></tr>
 					</tbody>
@@ -548,7 +550,7 @@ get_header();
 				<div>
 					<div class="lp-section-label">AI Execution</div>
 					<h2 class="lp-h2">AIが退職者の業務を<br>引き取って自動で実行</h2>
-					<p class="lp-lead">Offboardは<strong>AIが業務の主</strong>。人間と同じようにPC画面を認識し、ログイン・入力・確認・送信まで一連の業務を自律的に実行します。退職者がいなくても、業務は止まりません。</p>
+					<p class="lp-lead">オフボードは<strong>AIが業務を実行し、専任スタッフが補助</strong>。人間と同じようにPC画面を認識し、ログイン・入力・確認・送信まで一連の業務を自律的に実行します。退職者がいなくても、業務は止まりません。</p>
 					<ul class="lp-step-list">
 						<li>退職者は「喋る・画面録画・ファイルを渡す」だけ。手順書はAIが作成</li>
 						<li>Webブラウザ・基幹システム・SaaSを問わず操作を巻き取り</li>
@@ -653,7 +655,7 @@ get_header();
 						<rect x="48" y="58" width="384" height="28" fill="#fff0f0"/>
 						<text x="68" y="77" fill="#dc2626" font-size="11" font-weight="bold" font-family="sans-serif">受注データ入力フォーム</text>
 						<rect x="68" y="94" width="344" height="36" rx="6" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5"/>
-						<text x="86" y="111" fill="#dc2626" font-size="11" font-weight="bold" font-family="sans-serif">⚠ 例外: 判断が必要なケースを検知</text>
+						<text x="86" y="111" fill="#dc2626" font-size="11" font-weight="bold" font-family="sans-serif">！ 例外: 判断が必要なケースを検知</text>
 						<text x="86" y="124" fill="#ef4444" font-size="10" font-family="sans-serif">AIが検知 → 専任スタッフが確認・対応します</text>
 						<text x="68" y="150" fill="#888" font-size="10" font-family="sans-serif">取引先名</text>
 						<rect x="68" y="154" width="234" height="24" rx="4" fill="#f0fff4" stroke="#22c55e" stroke-width="1.5"/>
@@ -718,10 +720,10 @@ get_header();
 
 				<?php
 				$intro_steps = [
-					['01', '🔍', '無料で引き継ぎ診断',          '業種と辞める担当業務を選んで質問に答えるだけ。抜けやすいタスクを一覧化し、引き継ぎ漏れのリスクを「金額」で可視化します。',  '約60秒'],
-					['02', '🎤', '退職者ヒアリング（書かせない）', '退職者は「喋る・画面録画・ファイルを渡す」だけ。文書化はAIが肩代わりし、属人知を吸い出します。',                       '数日'],
-					['03', '⚡', '緊急巻き取り＋ドライラン並走',  '退職者が在籍しているうちにAI＋人で実務を引き取り、抜け漏れをその場で潰します。',                                     '最短1週間'],
-					['04', '🚀', 'AI化・運用代行',              '巻き取った業務を仕組み化して月額で継続運用。AI化が進むほど料金は下がります。',                                       '継続的'],
+					['01', 'fa-magnifying-glass', '無料で引き継ぎ診断',          '業種と辞める担当業務を選んで質問に答えるだけ。抜けやすいタスクを一覧化し、引き継ぎ漏れのリスクを「金額」で可視化します。',  '約60秒'],
+					['02', 'fa-microphone',       '退職者ヒアリング（書かせない）', '退職者は「喋る・画面録画・ファイルを渡す」だけ。文書化はAIが肩代わりし、属人知を吸い出します。',                       '数日'],
+					['03', 'fa-bolt',             '緊急巻き取り＋ドライラン並走',  '退職者が在籍しているうちにAI＋人で実務を引き取り、抜け漏れをその場で潰します。',                                     '最短10日'],
+					['04', 'fa-rocket',           'AI化・運用代行',              '巻き取った業務を仕組み化して月額で継続運用。AI化が進むほど料金は下がります。',                                       '継続的'],
 				];
 				$colors = ['#1a56db','#4f46e5','#7c3aed','#6d28d9'];
 				foreach ($intro_steps as $i => $step) {
@@ -731,7 +733,7 @@ get_header();
 					<div style="display:flex;gap:20px;align-items:center;margin-bottom:<?php echo $is_last ? '0' : '20px'; ?>;">
 						<div style="flex-shrink:0;position:relative;z-index:1;width:70px;height:70px;border-radius:50%;background:#fff;border:3px solid <?php echo $color; ?>;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(99,102,241,.18);">
 							<span style="font-size:.6rem;font-weight:900;color:<?php echo $color; ?>;letter-spacing:.08em;line-height:1;"><?php echo $step[0]; ?></span>
-							<span style="font-size:1.5rem;line-height:1.2;"><?php echo $step[1]; ?></span>
+							<span style="font-size:1.4rem;line-height:1.2;color:<?php echo $color; ?>;"><i class="fa-solid <?php echo $step[1]; ?>"></i></span>
 						</div>
 						<div style="flex:1;min-width:0;background:#fff;border-radius:18px;padding:22px 26px;box-shadow:0 2px 20px rgba(99,102,241,.09);border:1.5px solid rgba(99,102,241,.1);">
 							<div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:10px;">
@@ -773,7 +775,7 @@ get_header();
 				<div class="lp-price-card is-feature">
 					<div class="pc-name">緊急巻き取り</div>
 					<div class="pc-amt">着手40<span class="pc-unit">万円</span></div>
-					<div class="pc-desc">＋ 緊急運用 月40万円（2〜3ヶ月）。1週間でボールを落とさない体制を確立</div>
+					<div class="pc-desc">＋ 緊急運用 月40万円（2〜3ヶ月）。10日でボールを落とさない体制を確立</div>
 				</div>
 				<div class="lp-price-card">
 					<div class="pc-name">AI化・運用代行</div>
@@ -794,12 +796,12 @@ get_header();
 
 			<div class="lp-profile">
 				<div>
-					<div class="lp-profile-avatar">👤</div>
+					<div class="lp-profile-avatar"><i class="fa-solid fa-user"></i></div>
 				</div>
 				<div>
 					<h3>安藤 ｜ ふえん株式会社 代表取締役</h3>
 					<div class="pf-role">富士通から独立 ／ 一般社団法人ノーコード推進協会 副代表理事</div>
-					<p>AIとノーコードで「エンジニアに頼らない」アプリ・システム開発を支援。退職・休職する社員の業務をAIで引き継ぐ代行サービス「Offboard」を運営しています。</p>
+					<p>AIとノーコードで「エンジニアに頼らない」アプリ・システム開発を支援。退職・休職する社員の業務をAIで引き継ぐ代行サービス「オフボード」を運営しています。</p>
 					<p class="pf-meta">著書『<b>ノーコードシフト</b>』『<b>現場が動くDX</b>』／ Podcast『<b>聴くDX</b>』『<b>デジタルの仕組みラジオ</b>』</p>
 				</div>
 			</div>
@@ -818,7 +820,7 @@ get_header();
 
 			<div class="lp-principles">
 				<div class="lp-principle">
-					<h4>① AI主・人SV</h4>
+					<h4>① AI実行＋専任スタッフ補助</h4>
 					<p>AIが業務を実行し、専任スタッフが監督・例外対応・品質を担保します。</p>
 				</div>
 				<div class="lp-principle">
