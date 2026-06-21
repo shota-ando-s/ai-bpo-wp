@@ -257,7 +257,8 @@ add_action( 'wp_head', function() {
 	/* ===== 運営プロフィール ===== */
 	.lp-profile { display: grid; grid-template-columns: 200px 1fr; gap: 40px; align-items: center; margin-top: 40px; background: #fff; border-radius: 20px; padding: 40px; box-shadow: 0 4px 24px rgba(26,86,219,.08); }
 	@media (max-width: 680px) { .lp-profile { grid-template-columns: 1fr; gap: 24px; text-align: center; } }
-	.lp-profile-avatar { width: 160px; height: 160px; border-radius: 50%; background: linear-gradient(135deg, #1a56db, #7c3aed); display: flex; align-items: center; justify-content: center; font-size: 4rem; margin: 0 auto; color: #fff; }
+	.lp-profile-avatar { width: 160px; height: 160px; border-radius: 50%; background: linear-gradient(135deg, #1a56db, #7c3aed); display: flex; align-items: center; justify-content: center; font-size: 4rem; margin: 0 auto; color: #fff; overflow: hidden; }
+	.lp-profile-avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
 	.lp-profile h3 { font-size: 1.2rem; font-weight: 800; margin: 0 0 6px; }
 	.lp-profile .pf-role { font-size: .9rem; color: #1a56db; font-weight: 700; margin-bottom: 14px; }
 	.lp-profile p { font-size: .92rem; color: #5a5a7a; line-height: 1.8; margin: 0 0 10px; }
@@ -784,16 +785,26 @@ get_header();
 	<section class="lp-section lp-bg-light" id="company">
 		<div class="lp-inner">
 			<div class="lp-section-label">Company</div>
-			<h2 class="lp-h2">運営：ふえん株式会社</h2>
+			<h2 class="lp-h2">運営：株式会社ふえん</h2>
 			<p class="lp-lead">AIとノーコードで“エンジニアに頼らない”開発を手がけてきたチームが、退職・引き継ぎの現場を支えます。</p>
 
 			<div class="lp-profile">
 				<div>
-					<div class="lp-profile-avatar"><i class="fa-solid fa-user"></i></div>
+					<?php
+				$avatar_path = get_stylesheet_directory() . '/images/ando.jpg';
+				$avatar_uri  = get_stylesheet_directory_uri() . '/images/ando.jpg';
+				?>
+				<div class="lp-profile-avatar">
+					<?php if ( file_exists( $avatar_path ) ) : ?>
+						<img src="<?php echo esc_url( $avatar_uri ); ?>" alt="安藤昭太">
+					<?php else : ?>
+						<i class="fa-solid fa-user"></i>
+					<?php endif; ?>
+				</div>
 				</div>
 				<div>
-					<h3>安藤 ｜ ふえん株式会社 代表取締役</h3>
-					<div class="pf-role">富士通から独立 ／ 一般社団法人ノーコード推進協会 副代表理事</div>
+					<h3>安藤昭太 ｜ 株式会社ふえん 代表取締役</h3>
+					<div class="pf-role">一般社団法人ノーコード推進協会 副代表理事</div>
 					<p>AIとノーコードで「エンジニアに頼らない」アプリ・システム開発を支援。退職・休職する社員の業務をAIで引き継ぐ代行サービス「オフボード」を運営しています。</p>
 					<p class="pf-meta">著書『<b>ノーコードシフト</b>』『<b>現場が動くDX</b>』／ Podcast『<b>聴くDX</b>』『<b>デジタルの仕組みラジオ</b>』</p>
 				</div>
