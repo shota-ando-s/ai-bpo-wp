@@ -450,13 +450,6 @@ get_header();
 						<p>判断基準も例外対応も本人の頭の中。退職と同時に消えてしまう…</p>
 					</div>
 				</div>
-				<div class="lp-pain-item">
-					<div class="lp-pain-item-icon"><i class="fa-solid fa-calendar-xmark"></i></div>
-					<div class="lp-pain-item-body">
-						<h3>3ヶ月に1回の作業ほど<br>漏れて事故になる</h3>
-						<p>季節セール・棚卸し・更新作業など、低頻度の業務が引き継ぎから抜け落ちる…</p>
-					</div>
-				</div>
 			</div>
 
 			<p class="lp-pain-cta">その引き継ぎ、<span>AIと専任スタッフの組み合わせ</span>で巻き取れます。</p>
