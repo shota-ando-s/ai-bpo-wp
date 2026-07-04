@@ -9,24 +9,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-/* ===== SEO: フロントページの title / meta description =====
- * functions.php 側にメタ出力が無いため、フロントページに限定して補完する（指示書 2章）。
+/* SEO（title / meta description / OGP）は Rank Math が単一出力源。
+ * フロントページの値は Rank Math 設定（固定ページのSEOタイトル・説明、
+ * および knowledgegraph_name）で管理しているため、テーマ側では出力しない。
  */
-add_filter( 'pre_get_document_title', function( $title ) {
-	if ( is_front_page() ) {
-		return '退職・引き継ぎの引き取りサービス｜後任不在でも業務を止めない - オフボード';
-	}
-	return $title;
-} );
-
-add_action( 'wp_head', function() {
-	if ( ! is_front_page() ) {
-		return;
-	}
-	?>
-	<meta name="description" content="担当者の退職で引き継ぎが不安な方へ。退職者の頭の中をAIと専任スタッフで抜き出し、チェックリスト化・AIチャットボット化・業務自動化まで。後任不在でも最短10日。運営：株式会社ふえん。">
-	<?php
-}, 1 );
 
 add_action( 'wp_head', function() {
 	?>
