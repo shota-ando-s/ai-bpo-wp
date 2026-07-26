@@ -58,7 +58,7 @@ def auth_header():
     return {"Authorization": f"Basic {token}", "Content-Type": "application/json"}
 
 def api(endpoint, method="GET", data=None):
-    base = os.environ.get("WP_URL", "http://ai-bpo.site").rstrip("/")
+    base = os.environ.get("WP_URL", "http://hikitsugi.jp").rstrip("/")
     url = f"{base}/wp-json/wp/v2/{endpoint}"
     body = json.dumps(data).encode() if data else None
     req = urllib.request.Request(url, data=body, headers=auth_header(), method=method)
@@ -131,7 +131,7 @@ def dalle_generate(heading, article_title):
 
 def upload_image_to_wp(image_bytes, filename, alt_text=""):
     """画像バイトをWordPressメディアライブラリにアップロードしてURLを返す"""
-    base = os.environ.get("WP_URL", "http://ai-bpo.site").rstrip("/")
+    base = os.environ.get("WP_URL", "http://hikitsugi.jp").rstrip("/")
     upload_url = f"{base}/wp-json/wp/v2/media"
 
     headers = auth_header()
@@ -326,7 +326,7 @@ def set_featured_image_for_post(filepath):
         return
 
     # アップロードしてメディアIDを取得
-    base = os.environ.get("WP_URL", "http://ai-bpo.site").rstrip("/")
+    base = os.environ.get("WP_URL", "http://hikitsugi.jp").rstrip("/")
     upload_url = f"{base}/wp-json/wp/v2/media"
     headers = auth_header()
     ascii_part = re.sub(r"[^\x00-\x7F]", "", title)

@@ -343,9 +343,9 @@ add_action( 'wp_head', function() {
 } );
 
 // 診断ツールURL（外部・現在未公開）
-// offboard.ai-bpo.site のDNS設定・デプロイ完了後、Hero と ④セクション末に
+// offboard.hikitsugi.jp のDNS設定・デプロイ完了後、Hero と ④セクション末に
 // 「無料で引き継ぎ診断（約60秒）」CTAを復活させる際にこの変数を使う
-$offboard_tool_url = 'https://offboard.ai-bpo.site';
+$offboard_tool_url = 'https://offboard.hikitsugi.jp';
 
 get_header();
 ?>

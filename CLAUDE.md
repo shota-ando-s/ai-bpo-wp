@@ -63,7 +63,7 @@ excerpt: 記事の要約（120字前後）。記事冒頭の内容をもとに�
 `.env` ファイルが必要。WordPressの「ユーザー → プロフィール → アプリケーションパスワード」で発行：
 
 ```
-WP_URL=http://ai-bpo.site
+WP_URL=http://hikitsugi.jp
 WP_USER=ユーザー名
 WP_APP_PASSWORD=xxxx xxxx xxxx xxxx xxxx xxxx
 ```

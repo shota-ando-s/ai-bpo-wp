@@ -1,6 +1,6 @@
 ---
 name: ai-bpo-content-plan
-description: ai-bpo.site のSEOコンテンツ計画。ピラー3本→クラスター4本→業種特化6本の計13記事構成。記事の進捗状況を管理する。
+description: hikitsugi.jp のSEOコンテンツ計画。ピラー3本→クラスター4本→業種特化6本の計13記事構成。記事の進捗状況を管理する。
 metadata: 
   node_type: memory
   type: project
@@ -9,7 +9,7 @@ metadata:
 
 ## AI-BPO SEOコンテンツ計画
 
-サイト: ai-bpo.site
+サイト: hikitsugi.jp
 ターゲット: 中小企業の経営者・役員
 戦略: ピラー（柱）→クラスター（補強）→業種特化（ロングテール）の3層構造
 
