@@ -16,14 +16,40 @@ add_action( 'wp_enqueue_scripts', function () {
 		wp_get_theme()->get( 'Version' )
 	);
 
-	// Font Awesome 6（LPアイコン用）
-	wp_enqueue_style(
-		'font-awesome',
-		'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css',
-		[],
-		'6.5.1'
-	);
+	// Font Awesome 6（記事側アイコン用。LPでは使わない）
+	if ( ! is_front_page() ) {
+		wp_enqueue_style(
+			'font-awesome',
+			'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css',
+			[],
+			'6.5.1'
+		);
+	}
 } );
+
+/**
+ * フロントページ（LP）は Tailwind ビルド済みCSSのみを読む。
+ * GeneratePress／子テーマのCSSは競合するので外す。
+ * assets/lp.css は `npm run build:lp` の生成物でコミット済み（本番にnodeは無い）。
+ */
+add_action( 'wp_enqueue_scripts', function () {
+	if ( ! is_front_page() ) {
+		return;
+	}
+
+	foreach ( [ 'generate-style', 'generate-style-grid', 'generate-mobile-style', 'generatepress-child', 'font-awesome' ] as $handle ) {
+		wp_dequeue_style( $handle );
+		wp_deregister_style( $handle );
+	}
+
+	$lp_css_path = get_stylesheet_directory() . '/assets/lp.css';
+	wp_enqueue_style(
+		'hikitsugi-lp',
+		get_stylesheet_directory_uri() . '/assets/lp.css',
+		[],
+		file_exists( $lp_css_path ) ? (string) filemtime( $lp_css_path ) : wp_get_theme()->get( 'Version' )
+	);
+}, 100 );
 
 // カードサムネイル用に 1280×670 のカスタムサイズを登録
 add_action( 'after_setup_theme', function () {
@@ -46,7 +72,12 @@ add_action( 'generate_after_logo', function() {
 	}
 } );
 
-// トップページ: 新着記事・ランキングをグリッド外（フッター直前）に出力
+/* トップページ: 新着記事・ランキングをグリッド外（フッター直前）に出力
+ *
+ * ※ 現在このフックは発火しない。front-page.php を LP 専用の独立ドキュメントに
+ *    作り替えた際に get_footer() を呼ばなくなったため。
+ *    LP に記事一覧を戻したくなったらこの出力を lp-markup.php に移植する。
+ */
 add_action( 'generate_before_footer', function() {
 	if ( ! is_front_page() ) return;
 	?>
