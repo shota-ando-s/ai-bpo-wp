@@ -17,6 +17,7 @@
  * @var string $lp_tokusho     特定商取引法に基づく表記URL
  * @var string $lp_company     運営会社サイトURL
  * @var string $lp_archives    記事一覧URL
+ * @var string $lp_checklist   業務チェックリスト配布サイトのURL
  * @var string $lp_form_action フォームの送信先（未接続なので既定は '#'）
  * @var array  $lp_pickup      ピックアップ記事（空なら該当セクションごと出さない）
  * @var array  $lp_latest      新着記事（空なら該当セクションごと出さない）
@@ -35,6 +36,7 @@ if ( ! isset( $lp_privacy ) )     { $lp_privacy     = '/privacy-policy/'; }
 if ( ! isset( $lp_tokusho ) )     { $lp_tokusho     = '/tokushoho/'; }
 if ( ! isset( $lp_company ) )     { $lp_company     = 'https://fuenn.co.jp/'; }
 if ( ! isset( $lp_archives ) )    { $lp_archives    = '/archives/'; }
+if ( ! isset( $lp_checklist ) )   { $lp_checklist   = 'https://checklist.hikitsugi.jp/'; }
 if ( ! isset( $lp_form_action ) ) { $lp_form_action = '#'; }
 if ( ! isset( $lp_pickup ) )      { $lp_pickup      = array(); }
 if ( ! isset( $lp_latest ) )      { $lp_latest      = array(); }
@@ -45,7 +47,8 @@ $u_img      = htmlspecialchars( rtrim( $lp_img, '/' ), ENT_QUOTES );
 $u_privacy  = htmlspecialchars( $lp_privacy, ENT_QUOTES );
 $u_tokusho  = htmlspecialchars( $lp_tokusho, ENT_QUOTES );
 $u_company  = htmlspecialchars( $lp_company, ENT_QUOTES );
-$u_archives = htmlspecialchars( $lp_archives, ENT_QUOTES );
+$u_archives  = htmlspecialchars( $lp_archives, ENT_QUOTES );
+$u_checklist = htmlspecialchars( $lp_checklist, ENT_QUOTES );
 $u_form     = htmlspecialchars( $lp_form_action, ENT_QUOTES );
 
 /* ------------------------------------------------------------------
@@ -257,9 +260,15 @@ $lp_corp = array(
 	</section>
 
 	<!-- ============================================================
+	     01-2 チェックリスト配布バナー（LINEカラーの帯）
+	     別サイト（checklist.hikitsugi.jp）への導線。帯全体がリンク。
+	     ============================================================ -->
+	<a href="<?php echo $u_checklist; ?>" class="lp-hv-line" style="display:flex; align-items:center; justify-content:center; min-height:100px; padding:20px clamp(20px,5vw,40px); background:#06C755; color:#FFFFFF; font-size:clamp(15px,4vw,20px); font-weight:700; line-height:1.6; text-align:center">業種別・職種別の業務チェックリストを無料でダウンロードする</a>
+
+	<!-- ============================================================
 	     02 課題提起
 	     ============================================================ -->
-	<section style="border-top:1px solid #DFE7F3; background:#EDF3FC">
+	<section style="background:#EDF3FC">
 		<div style="max-width:1080px; margin:0 auto; padding:clamp(48px,10vw,96px) clamp(20px,5vw,40px)">
 			<h2 style="margin:0 0 clamp(28px,6vw,48px); font-size:clamp(24px,6.4vw,40px); line-height:1.45; font-weight:900; text-align:center">引き継ぎ、こうなっていませんか？</h2>
 			<div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr)); gap:14px">

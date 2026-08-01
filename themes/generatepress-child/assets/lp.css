@@ -109,6 +109,12 @@ body.lp-body {
 .lp-hv-navy:hover      { background: #1c4295 !important; }
 .lp-hv-navy-pale:hover { background: #e4ecf9 !important; }
 
+/* チェックリスト配布バナー（LINEグリーン #06C755 の押下色） */
+.lp-hv-line:hover {
+	background: #05b04c !important;
+	color: #ffffff !important;
+}
+
 /* 記事カード（ピックアップ・新着）。枠を締めて浮かせるだけに留める */
 .lp-card-post {
 	transition: box-shadow 200ms ease;
