@@ -418,6 +418,8 @@ def post_article(filepath, rebuild_images=False):
     category_ids = [get_or_create_term("categories", c) for c in categories]
     tag_ids = [get_or_create_term("tags", t) for t in tags]
 
+    pickup = meta.get("pickup")
+
     payload = {
         "title": title,
         "content": html,
@@ -429,6 +431,8 @@ def post_article(filepath, rebuild_images=False):
         payload["slug"] = slug
     if excerpt:
         payload["excerpt"] = excerpt
+    if pickup is not None:
+        payload["meta"] = {"ai_bpo_pickup": bool(pickup)}
 
     # slug が既存記事と一致する場合は更新（upsert）
     if existing:
