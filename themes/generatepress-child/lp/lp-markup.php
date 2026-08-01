@@ -218,8 +218,7 @@ $lp_corp = array(
 		<div style="position:relative; max-width:1080px; margin:0 auto; padding:14px clamp(20px,5vw,40px); display:flex; align-items:center; justify-content:space-between; gap:16px">
 			<a href="#top" style="display:flex; align-items:center"><img src="<?php echo $u_img; ?>/logo-trim.png" alt="ヒキツギAI" width="889" height="155" style="height:clamp(21px,5.6vw,30px); width:auto; max-width:min(48vw,180px); object-fit:contain; display:block"></a>
 			<div style="display:flex; align-items:center; gap:clamp(12px,3vw,24px)">
-				<a href="#form" class="lp-hv-ink" style="color:#5A6376; font-size:clamp(12.5px,3.3vw,14.5px); font-weight:500">相談する</a>
-				<a href="#materials" class="lp-hv-navy" style="background:#0F2961; color:#FFFFFF; font-size:clamp(13px,3.4vw,15.5px); font-weight:700; border-radius:6px; padding:13px 24px; line-height:1.4">資料をダウンロードする</a>
+				<a href="#form" class="lp-hv-navy" style="background:#0F2961; color:#FFFFFF; font-size:clamp(13px,3.4vw,15.5px); font-weight:700; border-radius:6px; padding:13px 24px; line-height:1.4">お問い合わせ</a>
 			</div>
 		</div>
 	</header>
@@ -246,8 +245,7 @@ $lp_corp = array(
 				<p style="margin:0; font-size:clamp(16px,4.3vw,22px); line-height:1.75; font-weight:500; color:#333333"><img src="<?php echo $u_img; ?>/logo-hikitsugiai.png" alt="ヒキツギAI" width="1000" height="250" style="height:1.5em; width:auto; vertical-align:-0.35em; margin-right:0.05em">は<span style="display:block; font-size:clamp(24px,8.8cqw,50px); font-weight:900; line-height:1.3; color:#333333; white-space:nowrap; letter-spacing:-0.01em; margin:0.1em 0">人よりも速く、正確に</span>知識と作業を引き継ぎます。</p>
 
 				<div style="margin-top:clamp(32px,7vw,48px); display:flex; flex-direction:column; align-items:flex-start; gap:16px">
-					<a href="#form" class="lp-hv-navy" style="background:#0F2961; color:#FFFFFF; font-weight:700; font-size:clamp(15px,4vw,18px); padding:20px 30px; border-radius:6px; box-shadow:0 10px 24px rgba(15,41,97,0.24); line-height:1.4">無料で業務チェックリストを受け取る</a>
-					<a href="#materials" class="lp-hv-ink" style="color:#5A6376; font-size:clamp(13px,3.5vw,15px); font-weight:500; border-bottom:1px solid #BFCBDE; padding-bottom:2px">または3分でわかる資料をダウンロード</a>
+					<a href="#form" class="lp-hv-navy" style="background:#0F2961; color:#FFFFFF; font-weight:700; font-size:clamp(15px,4vw,18px); padding:20px 30px; border-radius:6px; box-shadow:0 10px 24px rgba(15,41,97,0.24); line-height:1.4">詳細な資料を請求する</a>
 				</div>
 			</div>
 
@@ -879,7 +877,7 @@ $lp_corp = array(
 	     ============================================================ -->
 	<div class="lp-sticky-cta" style="position:fixed; left:0; right:0; bottom:0; z-index:50; background:rgba(255,255,255,0.97); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); border-top:1px solid #D3DDEC; padding:12px clamp(16px,5vw,40px) calc(12px + env(safe-area-inset-bottom))">
 		<div style="max-width:1080px; margin:0 auto">
-			<a href="#form" class="lp-hv-navy" style="display:block; text-align:center; background:#0F2961; color:#FFFFFF; font-weight:700; font-size:clamp(14.5px,3.9vw,17px); padding:17px 20px; border-radius:6px; line-height:1.4">無料で業務チェックリストを受け取る</a>
+			<a href="#form" class="lp-hv-navy" style="display:block; text-align:center; background:#0F2961; color:#FFFFFF; font-weight:700; font-size:clamp(14.5px,3.9vw,17px); padding:17px 20px; border-radius:6px; line-height:1.4">詳細な資料を請求する</a>
 		</div>
 	</div>
 
