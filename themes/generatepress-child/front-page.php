@@ -17,11 +17,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 $lp_home     = home_url( '/' );
-$lp_contact  = '#contact';
+$lp_img      = get_stylesheet_directory_uri() . '/images/lp';
 $lp_privacy  = home_url( '/privacy-policy/' );
 $lp_tokusho  = home_url( '/tokushoho/' );
 $lp_company  = 'https://fuenn.co.jp/';
 $lp_archives = home_url( '/archives/' );
+
+// フォームの送信先。MA／CRM が決まったらここを差し替える。
+$lp_form_action = '#';
 
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>

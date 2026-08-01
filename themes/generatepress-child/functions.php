@@ -28,9 +28,12 @@ add_action( 'wp_enqueue_scripts', function () {
 } );
 
 /**
- * フロントページ（LP）は Tailwind ビルド済みCSSのみを読む。
+ * フロントページ（LP）は LP専用CSS（＋Google Fonts）のみを読む。
  * GeneratePress／子テーマのCSSは競合するので外す。
- * assets/lp.css は `npm run build:lp` の生成物でコミット済み（本番にnodeは無い）。
+ *
+ * assets/lp.css は手書き（ビルド不要）。レイアウトはマークアップ側の
+ * インラインスタイルが持っているので、このCSSは @keyframes・:hover・
+ * スクロール連動の状態・グローバル指定だけを担当する。
  */
 add_action( 'wp_enqueue_scripts', function () {
 	if ( ! is_front_page() ) {
@@ -42,14 +45,31 @@ add_action( 'wp_enqueue_scripts', function () {
 		wp_deregister_style( $handle );
 	}
 
+	wp_enqueue_style(
+		'hikitsugi-lp-fonts',
+		'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap',
+		[],
+		null
+	);
+
 	$lp_css_path = get_stylesheet_directory() . '/assets/lp.css';
 	wp_enqueue_style(
 		'hikitsugi-lp',
 		get_stylesheet_directory_uri() . '/assets/lp.css',
-		[],
+		[ 'hikitsugi-lp-fonts' ],
 		file_exists( $lp_css_path ) ? (string) filemtime( $lp_css_path ) : wp_get_theme()->get( 'Version' )
 	);
 }, 100 );
+
+// Google Fonts はレンダリングブロックになるので preconnect を先に張る
+add_filter( 'wp_resource_hints', function ( $urls, $relation ) {
+	if ( 'preconnect' !== $relation || ! is_front_page() ) {
+		return $urls;
+	}
+	$urls[] = [ 'href' => 'https://fonts.googleapis.com' ];
+	$urls[] = [ 'href' => 'https://fonts.gstatic.com', 'crossorigin' => 'anonymous' ];
+	return $urls;
+}, 10, 2 );
 
 // カードサムネイル用に 1280×670 のカスタムサイズを登録
 add_action( 'after_setup_theme', function () {
@@ -63,6 +83,22 @@ add_filter( 'generate_post_author', '__return_false' );
 add_filter( 'comments_open', '__return_false', 20, 2 );
 add_filter( 'pings_open', '__return_false', 20, 2 );
 add_filter( 'comments_array', '__return_empty_array', 10, 2 );
+
+/**
+ * ヘッダーロゴを子テーマ同梱の画像に固定する。
+ * カスタマイザー（custom_logo）の設定より優先されるので、
+ * ロゴ差し替えはこのファイルと images/ の入れ替えで完結する。
+ */
+add_filter( 'generate_logo', function () {
+	return get_stylesheet_directory_uri() . '/images/hikitsugi_logo.png';
+} );
+
+// メディアライブラリ経由ではないので寸法が付かない。CLS防止に明示する（実寸 1000×250）。
+add_filter( 'generate_logo_attributes', function ( $attr ) {
+	$attr['width']  = 1000;
+	$attr['height'] = 250;
+	return $attr;
+} );
 
 // ロゴの下にキャッチフレーズを表示
 add_action( 'generate_after_logo', function() {
@@ -260,7 +296,7 @@ function generate_add_footer_info() {
 	<div class="footer-copyright">
 		<span>&copy; <?php echo esc_html( date( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?></span>
 		<a href="<?php echo esc_url( home_url( '/privacy-policy/' ) ); ?>">プライバシーポリシー</a>
-		<a href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">お問い合わせ</a>
+		<a href="<?php echo esc_url( home_url( '/#form' ) ); ?>">お問い合わせ</a>
 	</div>
 	<?php
 }

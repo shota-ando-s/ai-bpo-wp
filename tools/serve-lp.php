@@ -7,7 +7,7 @@
  *
  * front-page.php と同じ lp/lp-markup.php をリクエストのたびに描画するので、
  * マークアップを編集したらリロードするだけで反映される。
- * CSSだけは事前ビルドが必要（`cd themes/generatepress-child && npm run build:lp`）。
+ * CSS（assets/lp.css）は手書きなのでビルド不要。
  */
 
 $root  = dirname( __DIR__ );
@@ -37,18 +37,18 @@ if ( '/' !== $path ) {
 $css = $theme . '/assets/lp.css';
 if ( ! is_file( $css ) ) {
 	http_response_code( 500 );
-	echo '<h1>assets/lp.css がありません</h1>'
-		. '<p><code>cd themes/generatepress-child &amp;&amp; npm run build:lp</code> を実行してください。</p>';
+	echo '<h1>assets/lp.css がありません</h1>';
 	return true;
 }
 
 // 本番（front-page.php）と同じ変数を渡す
-$lp_home     = '/';
-$lp_contact  = '#contact';
-$lp_privacy  = '#';
-$lp_tokusho  = '#';
-$lp_company  = 'https://fuenn.co.jp/';
-$lp_archives = '#';
+$lp_home        = '/';
+$lp_img         = '/images/lp';
+$lp_privacy     = '#';
+$lp_tokusho     = '#';
+$lp_company     = 'https://fuenn.co.jp/';
+$lp_archives    = '#';
+$lp_form_action = '#';
 
 header( 'Content-Type: text/html; charset=UTF-8' );
 ?><!DOCTYPE html>
@@ -57,7 +57,10 @@ header( 'Content-Type: text/html; charset=UTF-8' );
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>ヒキツギAI｜引き継ぎを、人ではなく方法で解決する</title>
+<title>ヒキツギAI｜うまくいかない業務の引き継ぎ、私たちにお任せください！</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&amp;display=swap">
 <link rel="stylesheet" href="/assets/lp.css?v=<?php echo filemtime( $css ); ?>">
 </head>
 <body class="lp-body">
