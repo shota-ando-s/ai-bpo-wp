@@ -1,5 +1,12 @@
 <?php
 
+/**
+ * LPのクロージングフォームに使う Contact Form 7 のフォームID。
+ * 管理画面「お問い合わせ」→「LP：業務チェックリスト請求」。
+ * 送信先メール・自動返信・Slack通知の設定はCF7側（DB）が持つ。
+ */
+define( 'HIKITSUGI_LP_CF7_ID', 1092 );
+
 // ページビューカウンター（記事閲覧時にカウントアップ）
 add_action( 'wp_head', function () {
 	if ( ! is_single() ) return;
@@ -110,9 +117,14 @@ add_action( 'generate_after_logo', function() {
 
 /* トップページ: 新着記事・ランキングをグリッド外（フッター直前）に出力
  *
- * ※ 現在このフックは発火しない。front-page.php を LP 専用の独立ドキュメントに
- *    作り替えた際に get_footer() を呼ばなくなったため。
- *    LP に記事一覧を戻したくなったらこの出力を lp-markup.php に移植する。
+ * ※ このフックは発火しない（デッドコード）。front-page.php を LP 専用の
+ *    独立ドキュメントに作り替えた際に get_footer() を呼ばなくなったため。
+ *
+ *    「LPに記事一覧を戻したくなったら移植する」と書いていた件は対応済み。
+ *    現在の新着記事は lp-markup.php の「11 新着記事」セクションが出しており、
+ *    データは front-page.php の WP_Query が作る。
+ *    ここに残っているのはランキング表示だけが未移植だからで、
+ *    同等の機能は投稿ページのサイドバー（sidebar-ranking）に生きている。
  */
 add_action( 'generate_before_footer', function() {
 	if ( ! is_front_page() ) return;

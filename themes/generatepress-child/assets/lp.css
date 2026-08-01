@@ -109,6 +109,215 @@ body.lp-body {
 .lp-hv-navy:hover      { background: #1c4295 !important; }
 .lp-hv-navy-pale:hover { background: #e4ecf9 !important; }
 
+/* 記事カード（ピックアップ・新着）。枠を締めて浮かせるだけに留める */
+.lp-card-post {
+	transition: box-shadow 200ms ease;
+}
+
+.lp-card-post:hover {
+	box-shadow: inset 0 0 0 1px #0f2961, 0 8px 20px rgba(15, 41, 97, 0.12) !important;
+	color: #333333 !important;
+}
+
+/* ------------------------------------------------------------
+   3-2. クロージングフォーム（Contact Form 7）
+   ------------------------------------------------------------
+   フォーム本体は CF7（フォームID は functions.php の
+   HIKITSUGI_LP_CF7_ID）。CF7 は独自のマークアップを吐くうえ、
+   wpautop で <p> / <br> を挟んでくるので、ここで design どおりに戻す。
+   セレクタは .lp-form 配下に閉じてあるので /contact/ の
+   既存フォーム（cf7-field-wrap 系）には影響しない。
+   ------------------------------------------------------------ */
+
+/* フォーム外枠（デザインの白いカード） */
+.lp-body .lp-form {
+	margin: clamp(36px, 8vw, 64px) auto 0;
+	padding: clamp(24px, 6vw, 44px);
+	width: 100%;
+	max-width: 640px;
+	background: #ffffff;
+	color: #333333;
+	border-radius: 10px;
+	text-align: left;
+}
+
+/* CF7 が先頭に出す隠しフィールドの fieldset。
+   ブラウザ既定の枠が空の箱として見えてしまうので消す。 */
+.lp-body .lp-form .hidden-fields-container {
+	display: none;
+}
+
+/* wpautop が挟む <p> / <br> を無効化する。
+   段落ではなく単なる整形の副産物なので、余白も改行も持たせない。 */
+.lp-body .lp-form p {
+	margin: 0;
+}
+
+.lp-body .lp-form br {
+	display: none;
+}
+
+/* 各項目：ラベル＋入力欄の縦積み。CF7 が <p> を挟んでも同じ見た目になるよう
+   .lp-fgroup とその中の <p> の両方を flex にしておく。 */
+.lp-body .lp-fgroup,
+.lp-body .lp-fgroup > p {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.lp-body .lp-fgroup + .lp-fgroup,
+.lp-body .lp-fbox,
+.lp-body .lp-fsubmit {
+	margin-top: 22px;
+}
+
+.lp-body .lp-flabel {
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.lp-body .lp-freq {
+	color: #0f2961;
+}
+
+/* CF7 は入力欄を <span class="wpcf7-form-control-wrap"> で包む。
+   インラインのままだと width:100% が効かない。 */
+.lp-body .lp-form .wpcf7-form-control-wrap {
+	display: block;
+}
+
+/* font-size:16px は必須（iOS Safari の自動ズーム防止） */
+.lp-body .lp-form .lp-field {
+	width: 100%;
+	padding: 14px;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333333;
+	border: 1px solid #bfcbde;
+	border-radius: 6px;
+	background: #fbfcfe;
+	min-height: 48px;
+}
+
+.lp-body .lp-form .lp-field:focus {
+	outline: 2px solid #0f2961;
+	outline-offset: -1px;
+}
+
+/* チェックボックス：枠全体をクリック可能な面にする */
+.lp-body .lp-fbox > p,
+.lp-body .lp-fbox {
+	display: block;
+}
+
+.lp-body .lp-fbox .wpcf7-list-item {
+	margin: 0;
+	display: block;
+}
+
+.lp-body .lp-fbox label {
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+	padding: 14px;
+	font-size: 15px;
+	line-height: 1.7;
+	border: 1px solid #dfe7f3;
+	border-radius: 6px;
+	background: #fbfcfe;
+	cursor: pointer;
+}
+
+.lp-body .lp-fbox input[type="checkbox"] {
+	flex: 0 0 auto;
+	width: 20px;
+	height: 20px;
+	margin: 2px 0 0;
+	accent-color: #0f2961;
+}
+
+.lp-body .lp-fbox .wpcf7-list-item-label {
+	flex: 1 1 auto;
+}
+
+/* 送信ボタン */
+.lp-body .lp-form .lp-btn {
+	width: 100%;
+	padding: 20px;
+	min-height: 56px;
+	background: #0f2961;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: clamp(15px, 4vw, 18px);
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: background 200ms ease;
+}
+
+.lp-body .lp-form .lp-btn:hover {
+	background: #1c4295;
+}
+
+.lp-body .lp-fnote {
+	margin-top: 16px !important;
+	font-size: 12.5px;
+	line-height: 1.8;
+	color: #5a6376;
+}
+
+/* CF7 のバリデーション／送信結果メッセージ */
+.lp-body .lp-form .wpcf7-not-valid-tip {
+	margin-top: 6px;
+	font-size: 13px;
+	line-height: 1.6;
+	color: #b4322a;
+}
+
+.lp-body .lp-form .lp-field.wpcf7-not-valid {
+	border-color: #b4322a;
+}
+
+/* 結果メッセージ欄は送信結果が出るまで空。枠だけ見えないよう畳んでおく。 */
+.lp-body .lp-form .wpcf7-response-output {
+	display: none;
+	margin: 22px 0 0 !important;
+	padding: 14px 16px;
+	border: 1px solid #bfcbde;
+	border-radius: 6px;
+	font-size: 14px;
+	line-height: 1.8;
+}
+
+.lp-body .lp-form.invalid .wpcf7-response-output,
+.lp-body .lp-form.unaccepted .wpcf7-response-output,
+.lp-body .lp-form.payment-required .wpcf7-response-output,
+.lp-body .lp-form.spam .wpcf7-response-output,
+.lp-body .lp-form.failed .wpcf7-response-output,
+.lp-body .lp-form.aborted .wpcf7-response-output,
+.lp-body .lp-form.sent .wpcf7-response-output {
+	display: block;
+}
+
+.lp-body .lp-form.invalid .wpcf7-response-output,
+.lp-body .lp-form.failed .wpcf7-response-output,
+.lp-body .lp-form.aborted .wpcf7-response-output {
+	border-color: #b4322a;
+	color: #b4322a;
+}
+
+.lp-body .lp-form.sent .wpcf7-response-output {
+	border-color: #1f7a4d;
+	color: #1f7a4d;
+}
+
+/* 送信中スピナー */
+.lp-body .lp-form .wpcf7-spinner {
+	margin: 12px auto 0;
+	display: block;
+}
+
 /* ------------------------------------------------------------
    4. スクロール連動の2状態
    ------------------------------------------------------------

@@ -18,6 +18,15 @@
  * @var string $lp_company     運営会社サイトURL
  * @var string $lp_archives    記事一覧URL
  * @var string $lp_form_action フォームの送信先（未接続なので既定は '#'）
+ * @var array  $lp_pickup      ピックアップ記事（空なら該当セクションごと出さない）
+ * @var array  $lp_latest      新着記事（空なら該当セクションごと出さない）
+ * @var string $lp_form_html   Contact Form 7 が出力したフォームHTML。
+ *                             空なら静的フォーム（送信不可）にフォールバックする。
+ *
+ * $lp_pickup / $lp_latest の各要素は次の形。WP依存を持ち込まないよう、
+ * WP_Query の結果は front-page.php 側でこの配列に均してから渡す。
+ *   [ 'title', 'url', 'cat', 'date'（表示用 2026.06.21）,
+ *     'datetime'（属性用 2026-06-21）, 'thumb', 'thumb_w', 'thumb_h' ]
  */
 
 if ( ! isset( $lp_home ) )        { $lp_home        = '/'; }
@@ -27,6 +36,9 @@ if ( ! isset( $lp_tokusho ) )     { $lp_tokusho     = '/tokushoho/'; }
 if ( ! isset( $lp_company ) )     { $lp_company     = 'https://fuenn.co.jp/'; }
 if ( ! isset( $lp_archives ) )    { $lp_archives    = '/archives/'; }
 if ( ! isset( $lp_form_action ) ) { $lp_form_action = '#'; }
+if ( ! isset( $lp_pickup ) )      { $lp_pickup      = array(); }
+if ( ! isset( $lp_latest ) )      { $lp_latest      = array(); }
+if ( ! isset( $lp_form_html ) )   { $lp_form_html   = ""; }
 
 $u_home     = htmlspecialchars( $lp_home, ENT_QUOTES );
 $u_img      = htmlspecialchars( rtrim( $lp_img, '/' ), ENT_QUOTES );
@@ -138,6 +150,49 @@ $lp_faq = array(
 	array( '引き継ぎまで日数がありません。間に合いますか。', 'まず業務の洗い出しから着手し、優先度の高いものから順に引き継ぎます。残り日数に合わせて範囲を決めますので、まずはご相談ください。' ),
 	array( '途中でやめることはできますか。', '最低利用期間の縛りはありません。ご相談・お見積もりも無料です。' ),
 );
+
+/* 10・11 記事カード
+   ピックアップ／新着で同じ見た目を使うので1箇所にまとめる。
+   require が2回走っても落ちないよう function_exists で囲う。 */
+if ( ! function_exists( 'lp_render_post_card' ) ) {
+	function lp_render_post_card( array $item ) {
+		$title = isset( $item['title'] ) ? $item['title'] : '';
+		$url   = isset( $item['url'] ) ? $item['url'] : '#';
+		$cat   = isset( $item['cat'] ) ? $item['cat'] : '';
+		$date  = isset( $item['date'] ) ? $item['date'] : '';
+		$dt    = isset( $item['datetime'] ) ? $item['datetime'] : '';
+		$thumb = isset( $item['thumb'] ) ? $item['thumb'] : '';
+		$tw    = isset( $item['thumb_w'] ) ? (int) $item['thumb_w'] : 1280;
+		$th    = isset( $item['thumb_h'] ) ? (int) $item['thumb_h'] : 670;
+		?>
+		<a href="<?php echo htmlspecialchars( $url, ENT_QUOTES ); ?>" class="lp-card-post" style="display:flex; flex-direction:column; background:#FFFFFF; box-shadow:inset 0 0 0 1px #D3DDEC; border-radius:10px; overflow:hidden; color:#333333">
+			<span style="display:block; aspect-ratio:1280/670; background:#EFF1F4; overflow:hidden">
+				<?php if ( '' !== $thumb ) : ?>
+					<img src="<?php echo htmlspecialchars( $thumb, ENT_QUOTES ); ?>" alt="" width="<?php echo $tw; ?>" height="<?php echo $th; ?>" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover; display:block">
+				<?php endif; ?>
+			</span>
+			<span style="flex:1 1 auto; display:flex; flex-direction:column; gap:9px; padding:clamp(16px,3.4vw,20px)">
+				<?php if ( '' !== $cat ) : ?>
+					<span style="font-size:clamp(10.5px,2.9vw,12px); font-weight:700; letter-spacing:0.12em; color:#0F2961"><?php echo htmlspecialchars( $cat, ENT_QUOTES ); ?></span>
+				<?php endif; ?>
+				<span style="font-size:clamp(14px,3.8vw,16px); font-weight:700; line-height:1.65"><?php echo htmlspecialchars( $title, ENT_QUOTES ); ?></span>
+				<?php if ( '' !== $date ) : ?>
+					<time datetime="<?php echo htmlspecialchars( $dt, ENT_QUOTES ); ?>" style="margin-top:auto; padding-top:4px; font-size:clamp(11.5px,3.1vw,12.5px); color:#79839A"><?php echo htmlspecialchars( $date, ENT_QUOTES ); ?></time>
+				<?php endif; ?>
+			</span>
+		</a>
+		<?php
+	}
+}
+
+$s_post_grid = 'display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr)); gap:clamp(16px,3vw,24px)';
+
+/* ピックアップが無いときは新着セクションが会社概要（白面）の直下に来るので、
+   面の色と上罫線を引き継いで境目が消えないようにする */
+$lp_has_pickup  = ! empty( $lp_pickup );
+$s_latest_shell = $lp_has_pickup
+	? 'background:#FFFFFF'
+	: 'background:#EDF3FC; border-top:1px solid #DFE7F3';
 
 /* 09 会社概要（値は改行タグを含むので出力時にエスケープしない） */
 $lp_corp = array(
@@ -639,7 +694,18 @@ $lp_corp = array(
 			<div style="height:clamp(40px,9vw,72px)" aria-hidden="true"></div>
 			<p style="margin:0; font-size:clamp(15px,4.2vw,20px); line-height:1.9; color:#C6D3EA; font-weight:500">ヒキツギAIは人よりも速く、正確に<br>知識と作業を引き継ぎます。</p>
 
-			<!-- 送信先は後日接続する（front-page.php の $lp_form_action を差し替える） -->
+			<?php if ( '' !== $lp_form_html ) : ?>
+
+				<?php
+				/* 本番：Contact Form 7 が出力する。見た目は assets/lp.css の
+				   「3-2. クロージングフォーム」で design に合わせ直している。 */
+				echo $lp_form_html;
+				?>
+
+			<?php else : ?>
+
+			<!-- フォールバック：CF7が使えない環境（tools/ のプレビュー等）向けの静的フォーム。
+			     送信はできない。項目・見た目はCF7版と揃えてある。 -->
 			<form action="<?php echo $u_form; ?>" method="post" style="margin:clamp(36px,8vw,64px) auto 0; text-align:left; background:#FFFFFF; color:#333333; border-radius:10px; padding:clamp(24px,6vw,44px); width:100%; max-width:640px; display:flex; flex-direction:column; gap:22px">
 
 				<div style="display:flex; flex-direction:column; gap:8px">
@@ -685,9 +751,16 @@ $lp_corp = array(
 					<span>先行導入3社への応募を希望する</span>
 				</label>
 
+				<label for="lp-acceptance" style="display:flex; align-items:flex-start; gap:12px; font-size:15px; line-height:1.7; padding:14px; border:1px solid #DFE7F3; border-radius:6px; background:#FBFCFE; cursor:pointer">
+					<input id="lp-acceptance" name="acceptance" type="checkbox" value="1" required style="width:20px; height:20px; margin:2px 0 0; accent-color:#0F2961">
+					<span><a href="<?php echo $u_privacy; ?>" target="_blank" rel="noopener">個人情報保護方針</a>に同意する</span>
+				</label>
+
 				<button type="submit" class="lp-hv-navy" style="width:100%; background:#0F2961; color:#FFFFFF; font-weight:700; font-size:clamp(15px,4vw,18px); padding:20px; border:none; border-radius:6px; cursor:pointer; min-height:56px">業務チェックリストを受け取る</button>
 				<p style="margin:0; font-size:12.5px; line-height:1.8; color:#5A6376">※ しつこい営業は行いません。まずは可否のご相談だけでも歓迎です。</p>
 			</form>
+
+			<?php endif; ?>
 		</div>
 	</section>
 
@@ -729,6 +802,42 @@ $lp_corp = array(
 			</div>
 		</div>
 	</section>
+
+	<?php if ( $lp_has_pickup ) : ?>
+	<!-- ============================================================
+	     10 ピックアップ記事
+	     プラグイン ai-bpo-pickup で指定した投稿。0件なら丸ごと出さない。
+	     ============================================================ -->
+	<section style="background:#EDF3FC; border-top:1px solid #DFE7F3">
+		<div style="max-width:1080px; margin:0 auto; padding:clamp(56px,11vw,112px) clamp(20px,5vw,40px)">
+			<h2 style="margin:0 0 clamp(32px,7vw,56px); <?php echo $s_h2; ?>">ピックアップ記事</h2>
+			<div style="<?php echo $s_post_grid; ?>">
+				<?php foreach ( $lp_pickup as $item ) : ?>
+					<?php lp_render_post_card( $item ); ?>
+				<?php endforeach; ?>
+			</div>
+		</div>
+	</section>
+	<?php endif; ?>
+
+	<?php if ( ! empty( $lp_latest ) ) : ?>
+	<!-- ============================================================
+	     11 新着記事
+	     ============================================================ -->
+	<section style="<?php echo $s_latest_shell; ?>">
+		<div style="max-width:1080px; margin:0 auto; padding:clamp(56px,11vw,112px) clamp(20px,5vw,40px)">
+			<h2 style="margin:0 0 clamp(32px,7vw,56px); <?php echo $s_h2; ?>">新着記事</h2>
+			<div style="<?php echo $s_post_grid; ?>">
+				<?php foreach ( $lp_latest as $item ) : ?>
+					<?php lp_render_post_card( $item ); ?>
+				<?php endforeach; ?>
+			</div>
+			<p style="margin:clamp(32px,7vw,52px) 0 0; text-align:center">
+				<a href="<?php echo $u_archives; ?>" class="lp-hv-navy-pale" style="display:inline-block; background:#FFFFFF; color:#0F2961; box-shadow:inset 0 0 0 1.5px #0F2961; border-radius:6px; padding:17px 34px; font-weight:700; font-size:clamp(14px,3.8vw,16px); line-height:1.4">記事一覧を見る</a>
+			</p>
+		</div>
+	</section>
+	<?php endif; ?>
 
 	<!-- ============================================================
 	     08-4 フッター
