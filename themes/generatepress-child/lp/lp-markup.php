@@ -746,17 +746,32 @@ $lp_corp = array(
 					</select>
 				</div>
 
-				<label for="lp-pilot" style="display:flex; align-items:flex-start; gap:12px; font-size:15px; line-height:1.7; padding:14px; border:1px solid #DFE7F3; border-radius:6px; background:#FBFCFE; cursor:pointer">
-					<input id="lp-pilot" name="pilot" type="checkbox" value="yes" style="width:20px; height:20px; margin:2px 0 0; accent-color:#0F2961">
-					<span>先行導入3社への応募を希望する</span>
-				</label>
+				<div>
+					<span style="<?php echo $s_field_label; ?>; display:block; margin-bottom:8px">ご希望</span>
+					<?php
+					$lp_requests = array(
+						'lp-request-doc'  => 'サービス紹介資料が欲しい',
+						'lp-request-talk' => '話を聞いてみたい',
+					);
+					$lp_first = true;
+					foreach ( $lp_requests as $rid => $rlabel ) :
+						?>
+						<label for="<?php echo $rid; ?>" style="display:flex; align-items:flex-start; gap:12px; font-size:15px; line-height:1.7; padding:14px; border:1px solid #DFE7F3; border-radius:6px; background:#FBFCFE; cursor:pointer<?php echo $lp_first ? '' : '; margin-top:12px'; ?>">
+							<input id="<?php echo $rid; ?>" name="request-type[]" type="checkbox" value="<?php echo htmlspecialchars( $rlabel, ENT_QUOTES ); ?>" style="width:20px; height:20px; margin:2px 0 0; accent-color:#0F2961">
+							<span><?php echo htmlspecialchars( $rlabel, ENT_QUOTES ); ?></span>
+						</label>
+						<?php
+						$lp_first = false;
+					endforeach;
+					?>
+				</div>
 
 				<label for="lp-acceptance" style="display:flex; align-items:flex-start; gap:12px; font-size:15px; line-height:1.7; padding:14px; border:1px solid #DFE7F3; border-radius:6px; background:#FBFCFE; cursor:pointer">
 					<input id="lp-acceptance" name="acceptance" type="checkbox" value="1" required style="width:20px; height:20px; margin:2px 0 0; accent-color:#0F2961">
 					<span><a href="<?php echo $u_privacy; ?>" target="_blank" rel="noopener">個人情報保護方針</a>に同意する</span>
 				</label>
 
-				<button type="submit" class="lp-hv-navy" style="width:100%; background:#0F2961; color:#FFFFFF; font-weight:700; font-size:clamp(15px,4vw,18px); padding:20px; border:none; border-radius:6px; cursor:pointer; min-height:56px">業務チェックリストを受け取る</button>
+				<button type="submit" class="lp-hv-navy" style="width:100%; background:#0F2961; color:#FFFFFF; font-weight:700; font-size:clamp(15px,4vw,18px); padding:20px; border:none; border-radius:6px; cursor:pointer; min-height:56px">お問い合わせを送信する</button>
 				<p style="margin:0; font-size:12.5px; line-height:1.8; color:#5A6376">※ しつこい営業は行いません。まずは可否のご相談だけでも歓迎です。</p>
 			</form>
 

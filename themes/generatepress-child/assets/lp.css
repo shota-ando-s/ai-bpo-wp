@@ -216,6 +216,17 @@ body.lp-body {
 	display: block;
 }
 
+/* 選択肢が複数あるときは箱同士を離す */
+.lp-body .lp-fbox .wpcf7-list-item + .wpcf7-list-item {
+	margin-top: 12px;
+}
+
+/* 「ご希望」のような選択肢グループの見出し */
+.lp-body .lp-fbox-label {
+	display: block;
+	margin-bottom: 8px;
+}
+
 .lp-body .lp-fbox label {
 	display: flex;
 	align-items: flex-start;
