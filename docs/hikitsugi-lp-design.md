@@ -362,7 +362,7 @@ row-gap: 0;
 |---|---|---|---|---|
 | 会社名 | company | ● | text | organization |
 | 氏名 | name | ● | text | name |
-| ビジネスメール | email | ● | email | email |
+| メールアドレス | email | ● | email | email |
 | 従業員数 | size | ● | select（〜10名 `10`／11〜50名 `50`／51〜100名 `100`／101名以上 `101+`） | — |
 | 引き継ぎ予定時期 | timing | ● | select（1ヶ月以内 `1m`／3ヶ月以内 `3m`／半年以内 `6m`／未定 `undecided`） | — |
 | 先行導入3社への応募を希望する | pilot | － | checkbox（value `yes`） | — |

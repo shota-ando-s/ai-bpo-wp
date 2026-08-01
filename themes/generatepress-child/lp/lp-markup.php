@@ -18,6 +18,7 @@
  * @var string $lp_company     運営会社サイトURL
  * @var string $lp_archives    記事一覧URL
  * @var string $lp_checklist   業務チェックリスト配布サイトのURL
+ * @var string $lp_pdf         サービス紹介資料PDFのURL
  * @var string $lp_form_action フォームの送信先（未接続なので既定は '#'）
  * @var array  $lp_pickup      ピックアップ記事（空なら該当セクションごと出さない）
  * @var array  $lp_latest      新着記事（空なら該当セクションごと出さない）
@@ -37,6 +38,7 @@ if ( ! isset( $lp_tokusho ) )     { $lp_tokusho     = '/tokushoho/'; }
 if ( ! isset( $lp_company ) )     { $lp_company     = 'https://fuenn.co.jp/'; }
 if ( ! isset( $lp_archives ) )    { $lp_archives    = '/archives/'; }
 if ( ! isset( $lp_checklist ) )   { $lp_checklist   = 'https://checklist.hikitsugi.jp/'; }
+if ( ! isset( $lp_pdf ) )         { $lp_pdf         = '/wp-content/themes/generatepress-child/assets/docs/hikitsugi-ai-service-guide.pdf'; }
 if ( ! isset( $lp_form_action ) ) { $lp_form_action = '#'; }
 if ( ! isset( $lp_pickup ) )      { $lp_pickup      = array(); }
 if ( ! isset( $lp_latest ) )      { $lp_latest      = array(); }
@@ -49,6 +51,7 @@ $u_tokusho  = htmlspecialchars( $lp_tokusho, ENT_QUOTES );
 $u_company  = htmlspecialchars( $lp_company, ENT_QUOTES );
 $u_archives  = htmlspecialchars( $lp_archives, ENT_QUOTES );
 $u_checklist = htmlspecialchars( $lp_checklist, ENT_QUOTES );
+$u_pdf      = htmlspecialchars( $lp_pdf, ENT_QUOTES );
 $u_form     = htmlspecialchars( $lp_form_action, ENT_QUOTES );
 
 /* ------------------------------------------------------------------
@@ -732,7 +735,7 @@ $lp_corp = array(
 				</div>
 
 				<div style="display:flex; flex-direction:column; gap:8px">
-					<label for="lp-email" style="<?php echo $s_field_label; ?>">ビジネスメール <span style="color:#0F2961">必須</span></label>
+					<label for="lp-email" style="<?php echo $s_field_label; ?>">メールアドレス <span style="color:#0F2961">必須</span></label>
 					<!-- font-size:16px は必須（iOS Safari の自動ズーム防止） -->
 					<input id="lp-email" name="email" type="email" required autocomplete="email" inputmode="email" style="<?php echo $s_field; ?>">
 				</div>
@@ -789,6 +792,17 @@ $lp_corp = array(
 			</form>
 
 			<?php endif; ?>
+
+			<!-- 送信完了後の資料ダウンロード。既定は非表示で、CF7の wpcf7mailsent を
+			     受けてページ下部のスクリプトが hidden を外す。
+			     CF7の「送信に成功しました」メッセージは innerText で描画されるため
+			     リンクを仕込めない。その代わりにこのブロックを出す。 -->
+			<div id="lp-form-done" hidden style="margin:clamp(28px,6vw,44px) auto 0; max-width:640px; text-align:left; background:#FFFFFF; color:#333333; border-radius:10px; padding:clamp(24px,5vw,36px)">
+				<p style="margin:0 0 10px; font-size:clamp(16px,4.3vw,19px); line-height:1.6; font-weight:900; color:#0F2961">お問い合わせありがとうございます。</p>
+				<p style="margin:0 0 clamp(20px,4.4vw,28px); font-size:clamp(13.5px,3.7vw,15px); line-height:1.95">担当より2営業日以内にご連絡いたします。<br>サービス紹介資料は下のボタンからすぐにご覧いただけます。</p>
+				<a href="<?php echo $u_pdf; ?>" class="lp-hv-navy" target="_blank" rel="noopener" style="display:block; text-align:center; background:#0F2961; color:#FFFFFF; font-weight:700; font-size:clamp(15px,4vw,17px); padding:18px 20px; border-radius:6px; line-height:1.4">ヒキツギAI ご説明資料をダウンロード（PDF）</a>
+				<p style="margin:12px 0 0; font-size:12.5px; line-height:1.8; color:#5A6376">※ 同じリンクを自動返信メールでもお送りしています。</p>
+			</div>
 		</div>
 	</section>
 
@@ -937,5 +951,18 @@ $lp_corp = array(
 	window.addEventListener('scroll', onScroll, { passive: true });
 	window.addEventListener('resize', onScroll, { passive: true });
 	update();
+})();
+
+/* 送信成功時に資料ダウンロードのブロックを出す。
+     wpcf7mailsent は CF7 が document まで bubble させるカスタムイベント。
+     CF7が無い環境（tools/ のプレビュー）では単に何も起きない。 */
+(function () {
+	var done = document.getElementById('lp-form-done');
+	if (!done) return;
+
+	document.addEventListener('wpcf7mailsent', function () {
+		done.hidden = false;
+		done.scrollIntoView({ behavior: 'smooth', block: 'center' });
+	});
 })();
 </script>

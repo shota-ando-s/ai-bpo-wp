@@ -22,6 +22,7 @@ $lp_privacy  = home_url( '/privacy-policy/' );
 $lp_tokusho  = home_url( '/tokushoho/' );
 $lp_company  = 'https://fuenn.co.jp/';
 $lp_archives = home_url( '/archives/' );
+$lp_pdf      = get_stylesheet_directory_uri() . '/assets/docs/hikitsugi-ai-service-guide.pdf';
 
 // クロージングフォームは Contact Form 7（ID は functions.php の定数）。
 // CF7 が落ちている・IDが変わった等で空になったら、
