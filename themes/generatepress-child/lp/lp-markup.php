@@ -263,7 +263,13 @@ $lp_corp = array(
 	     01-2 チェックリスト配布バナー（LINEカラーの帯）
 	     別サイト（checklist.hikitsugi.jp）への導線。帯全体がリンク。
 	     ============================================================ -->
-	<a href="<?php echo $u_checklist; ?>" class="lp-hv-line" style="display:flex; align-items:center; justify-content:center; min-height:100px; padding:20px clamp(20px,5vw,40px); background:#06C755; color:#FFFFFF; font-size:clamp(15px,4vw,20px); font-weight:700; line-height:1.6; text-align:center">業種別・職種別の業務チェックリストを無料でダウンロードする</a>
+	<a href="<?php echo $u_checklist; ?>" class="lp-hv-line" style="display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:8px 12px; min-height:65px; padding:12px clamp(20px,5vw,40px); background:#06C755; color:#FFFFFF; font-size:clamp(14px,3.7vw,18px); font-weight:700; line-height:1.6; text-align:center">
+		<span style="flex:0 0 auto; display:inline-flex; align-items:center; gap:5px; background:#FFFFFF; color:#04803B; border-radius:4px; padding:5px 10px; font-size:clamp(11px,2.9vw,13px); font-weight:700; letter-spacing:0.04em; line-height:1">
+			<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 auto; display:block"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3.5 2"></path></svg>期間限定
+		</span>
+		<!-- 下線が行またぎで途切れないよう、この語だけは折り返さない -->
+		<span>業種別・職種別の業務チェックリストを無料で<span style="text-decoration:underline; text-underline-offset:3px; text-decoration-thickness:2px; white-space:nowrap">ダウンロード</span>する</span>
+	</a>
 
 	<!-- ============================================================
 	     02 課題提起
