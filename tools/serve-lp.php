@@ -50,6 +50,9 @@ $lp_company     = 'https://fuenn.co.jp/';
 $lp_archives    = '#';
 $lp_form_action = '#';
 
+// 記事セクションのダミーデータ（build-lp-preview.php と共通）
+require $root . '/tools/lp-preview-data.php';
+
 header( 'Content-Type: text/html; charset=UTF-8' );
 ?><!DOCTYPE html>
 <html lang="ja">
