@@ -6,3 +6,4 @@
 - [デプロイ前コミット必須](feedback_deploy_commit_first.md) — deploy前に必ずgit commitする。未コミットのままだと変更がサーバーに反映されない。
 - [記事slug照合](project_article_slug_matching.md) — post.pyはslugで既存記事を照合。.mdのslugがWP本番値と不一致だと重複ポストを作る。
 - [メール送信はSMTP経由](project_mail_smtp.md) — さくらのmail()は外部宛リレー不可。hikitsugi-smtpプラグイン＋wp-config.phpの定数で送る。
+- [CF7とcf7-to-zapierの罠](project_cf7_zapier_gotcha.md) — send_mail=0でメール停止、Webhook失敗でmail_failedに塗り替え。設定は_ctz_zapier。
