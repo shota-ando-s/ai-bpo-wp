@@ -35,14 +35,36 @@ define( 'HIKITSUGI_SMTP_FROM_NAME', 'ヒキツギAI' );
 ## Resend側の準備
 
 1. https://resend.com でサインアップ
-2. Domains → Add Domain → `hikitsugi.jp`
-3. 表示されたDNSレコード（SPF用TXT、DKIM用TXT、MXまたはCNAME）を
-   ドメインのDNSに追加する。**さくらのドメイン設定ではなく、
-   `hikitsugi.jp` のネームサーバを管理している側で追加する**
+2. Domains → Add Domain → **`send.hikitsugi.jp`**（サブドメイン推奨。理由は下記）
+3. 表示されたDNSレコードを追加する。`hikitsugi.jp` のネームサーバは
+   `ns1.dns.ne.jp` / `ns2.dns.ne.jp`＝**さくらのDNS**なので、
+   さくらのドメインコントロールパネルの「ゾーン編集」で追加する
 4. Verified になるまで待つ（数分〜数時間）
 5. API Keys → Create API Key（権限は Sending access のみで足りる）
 
-送信元 `noreply@hikitsugi.jp` は実在するメールボックスである必要はない。
+### ルートではなくサブドメインを使う理由
+
+`hikitsugi.jp` には既にSPFレコードがある。
+
+```
+v=spf1 a:www3365.sakura.ne.jp mx ~all
+```
+
+**SPFレコードは1ドメインに1つしか置けない。** ルートドメインをResendに
+登録するとSPFが2つになり、どちらも無効と判定されて逆に届かなくなる。
+`send.hikitsugi.jp` を使えば既存のSPFに触らずに済む。
+
+どうしてもルートで送りたい場合は、追加ではなく既存レコードに
+`include:amazonses.com` を**マージ**すること。
+
+```
+v=spf1 a:www3365.sakura.ne.jp mx include:amazonses.com ~all
+```
+
+サブドメインを使う場合、`HIKITSUGI_SMTP_FROM` は
+`noreply@send.hikitsugi.jp` にする。
+
+送信元アドレスは実在するメールボックスである必要はない。
 返信は CF7 が設定する Reply-To（管理者通知には問い合わせ者のアドレス、
 自動返信には `ando@fuenn.co.jp`）に飛ぶ。
 
