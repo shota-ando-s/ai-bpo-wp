@@ -18,7 +18,7 @@ excerpt: デジタル化・AI導入補助金2026（旧IT導入補助金）を使
 
 本記事では、中小企業の経営者・役員に向けて、この補助金でAI BPOを導入するための申請手順・採択率を上げるポイント・絶対に避けるべき失敗パターンを、公式情報をもとに完全解説する。
 
-[AI BPOの費用相場とROI試算](https://hikitsugi.jp/ai-bpo-cost/)、[AI BPOサービス比較10選](https://hikitsugi.jp/ai-bpo-hikaku/)もあわせて参照してほしい。
+[AI BPOの費用相場とROI試算](https://hikitsugi.jp/ai-bpo-cost/)、[AI BPOサービス比較10選](/ai-bpo-services-comparison/)もあわせて参照してほしい。
 
 国・都県・市区町村の補助金のうち、自社で使える制度と実質の自己負担は[AI導入の補助金診断](/shindan/)で試算できます。地域ごとの補助金とデータは[地域別のAI導入ガイド](/area/)にまとめています。
 
@@ -373,4 +373,4 @@ jGrantsは国が運営する補助金申請の電子申請システムです。�
 1. GビズIDプライムの取得: [gbiz.go.jp](https://gbiz.go.jp/)
 2. AI BPOサービスが補助対象か確認: [it-shien.smrj.go.jp](https://it-shien.smrj.go.jp/)
 
-[AI BPOの費用相場とROI試算](https://hikitsugi.jp/ai-bpo-cost/)・[AI BPOサービス比較10選](https://hikitsugi.jp/ai-bpo-hikaku/)も合わせて参照し、補助金を活用した導入計画を具体化してほしい。
+[AI BPOの費用相場とROI試算](https://hikitsugi.jp/ai-bpo-cost/)・[AI BPOサービス比較10選](/ai-bpo-services-comparison/)も合わせて参照し、補助金を活用した導入計画を具体化してほしい。

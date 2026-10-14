@@ -1,5 +1,5 @@
 ---
-title: 神奈川県の中小企業のAI導入｜使える補助金・後継者不在率55.8%・業務の引き継ぎ【2026年】
+title: 神奈川県の中小企業のAI導入｜補助金・後継者不在率・引き継ぎ
 type: page
 slug: kanagawa
 parent: area
