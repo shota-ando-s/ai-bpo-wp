@@ -11,6 +11,13 @@
     tags: [タグ1, タグ2]
     status: publish  # または draft
     ---
+
+固定ページとして投稿する場合（categories/tags は無視される）:
+    ---
+    type: page
+    slug: yokohama
+    parent: area/kanagawa   # 親ページのパス（省略時は最上位）
+    ---
     本文...
 
 .envにOPENAI_API_KEYを設定するとH2ごとにDALL-E 3で画像を自動生成・挿入します。
@@ -87,6 +94,31 @@ def parse_frontmatter(text):
 def find_post_by_slug(slug):
     results = api(f"posts?slug={urllib.parse.quote(slug)}&status=any&per_page=1")
     return results[0] if results else None
+
+def find_page(slug, parent_id):
+    results = api(f"pages?slug={urllib.parse.quote(slug)}&parent={parent_id}&status=any&per_page=1")
+    return results[0] if results else None
+
+def resolve_parent(path):
+    """'area/kanagawa' のような親ページのパスをページIDに変換する（なければ終了）"""
+    parent_id = 0
+    for seg in (path or "").strip("/").split("/"):
+        if not seg:
+            continue
+        page = find_page(seg, parent_id)
+        if not page:
+            print(f"Error: 親ページが見つかりません: {path}（{seg}）。親から先に投稿してください", file=sys.stderr)
+            sys.exit(1)
+        parent_id = page["id"]
+    return parent_id
+
+def find_existing(meta):
+    """フロントマターから (エンドポイント, 既存データ, 親ID) を返す。page は親ごとに slug を照合する"""
+    slug = meta.get("slug")
+    if meta.get("type") == "page":
+        parent_id = resolve_parent(meta.get("parent"))
+        return "pages", (find_page(slug, parent_id) if slug else None), parent_id
+    return "posts", (find_post_by_slug(slug) if slug else None), None
 
 def dalle_generate(heading, article_title):
     """gpt-image-1でH2テーマに合ったビジネス画像を生成し、画像バイトを返す"""
@@ -307,10 +339,9 @@ def set_featured_image_for_post(filepath):
     with open(filepath, encoding="utf-8") as f:
         raw = f.read()
     meta, _ = parse_frontmatter(raw)
-    slug = meta.get("slug")
     title = meta.get("title") or os.path.splitext(os.path.basename(filepath))[0]
 
-    existing = find_post_by_slug(slug) if slug else None
+    endpoint, existing, _ = find_existing(meta)
     if not existing:
         print("既存記事が見つかりません。", file=sys.stderr)
         return
@@ -346,7 +377,7 @@ def set_featured_image_for_post(filepath):
     media_url = media.get("source_url")
     print(f"アップロード完了: {media_url} (ID: {media_id})")
 
-    result = api(f"posts/{existing['id']}", method="POST", data={"featured_media": media_id})
+    result = api(f"{endpoint}/{existing['id']}", method="POST", data={"featured_media": media_id})
     print(f"アイキャッチ設定完了: {result['link']}")
 
 
@@ -355,16 +386,15 @@ def add_intro_image_to_existing_post(filepath):
     with open(filepath, encoding="utf-8") as f:
         raw = f.read()
     meta, _ = parse_frontmatter(raw)
-    slug = meta.get("slug")
     title = meta.get("title") or os.path.splitext(os.path.basename(filepath))[0]
 
-    existing = find_post_by_slug(slug) if slug else None
+    endpoint, existing, _ = find_existing(meta)
     if not existing:
         print("既存記事が見つかりません。通常投稿を使ってください。", file=sys.stderr)
         return
 
     # WPに保存されている現在のHTMLを取得（H2画像込み）
-    post_data = api(f"posts/{existing['id']}?context=edit")
+    post_data = api(f"{endpoint}/{existing['id']}?context=edit")
     current_html = post_data.get("content", {}).get("raw", "")
 
     if not os.environ.get("OPENAI_API_KEY"):
@@ -374,7 +404,7 @@ def add_intro_image_to_existing_post(filepath):
     print("イントロ画像生成中...")
     current_html = insert_intro_image(current_html, title)
 
-    result = api(f"posts/{existing['id']}", method="POST", data={"content": current_html})
+    result = api(f"{endpoint}/{existing['id']}", method="POST", data={"content": current_html})
     print(f"更新完了: {result['link']}")
 
 
@@ -393,7 +423,7 @@ def post_article(filepath, rebuild_images=False):
 
     html = md_lib.markdown(body, extensions=["nl2br", "tables", "fenced_code"])
 
-    existing = find_post_by_slug(slug) if slug else None
+    endpoint, existing, parent_id = find_existing(meta)
     h2_texts = re.findall(r"^## (.+)$", body, re.MULTILINE)
     # 新規投稿 or --rebuild-images 時にH2画像を生成
     if h2_texts and os.environ.get("OPENAI_API_KEY") and (not existing or rebuild_images):
@@ -411,12 +441,9 @@ def post_article(filepath, rebuild_images=False):
     # （rebuild_imagesは全画像再生成なのでマージ不要）
     if existing and not rebuild_images:
         print("セクション差分チェック中...")
-        post_data = api(f"posts/{existing['id']}?context=edit")
+        post_data = api(f"{endpoint}/{existing['id']}?context=edit")
         wp_html = post_data.get("content", {}).get("raw", "")
         html = merge_sections(wp_html, html)
-
-    category_ids = [get_or_create_term("categories", c) for c in categories]
-    tag_ids = [get_or_create_term("tags", t) for t in tags]
 
     pickup = meta.get("pickup")
 
@@ -424,9 +451,12 @@ def post_article(filepath, rebuild_images=False):
         "title": title,
         "content": html,
         "status": status,
-        "categories": category_ids,
-        "tags": tag_ids,
     }
+    if endpoint == "pages":
+        payload["parent"] = parent_id
+    else:
+        payload["categories"] = [get_or_create_term("categories", c) for c in categories]
+        payload["tags"] = [get_or_create_term("tags", t) for t in tags]
     if slug:
         payload["slug"] = slug
     if excerpt:
@@ -436,10 +466,10 @@ def post_article(filepath, rebuild_images=False):
 
     # slug が既存記事と一致する場合は更新（upsert）
     if existing:
-        result = api(f"posts/{existing['id']}", method="POST", data=payload)
+        result = api(f"{endpoint}/{existing['id']}", method="POST", data=payload)
         print(f"更新完了: {result['link']}")
     else:
-        result = api("posts", method="POST", data=payload)
+        result = api(endpoint, method="POST", data=payload)
         print(f"投稿完了: {result['link']}")
     return result
 
@@ -447,16 +477,15 @@ def update_excerpt_only(filepath):
     with open(filepath, encoding="utf-8") as f:
         raw = f.read()
     meta, _ = parse_frontmatter(raw)
-    slug = meta.get("slug")
     excerpt = meta.get("excerpt")
     if not excerpt:
         print(f"excerpt が見つかりません: {filepath}", file=sys.stderr)
         return
-    existing = find_post_by_slug(slug) if slug else None
+    endpoint, existing, _ = find_existing(meta)
     if not existing:
-        print(f"記事が見つかりません (slug={slug}): {filepath}", file=sys.stderr)
+        print(f"記事が見つかりません (slug={meta.get('slug')}): {filepath}", file=sys.stderr)
         return
-    result = api(f"posts/{existing['id']}", method="POST", data={"excerpt": excerpt})
+    result = api(f"{endpoint}/{existing['id']}", method="POST", data={"excerpt": excerpt})
     print(f"抜粋更新完了: {result['link']}")
 
 if __name__ == "__main__":
