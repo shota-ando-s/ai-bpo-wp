@@ -1,7 +1,7 @@
 /*
 Theme Name: GeneratePress Child
 Template: generatepress
-Version: 1.0
+Version: 1.1
 */
 
 /* =============================
@@ -1013,4 +1013,47 @@ a:active {
 .sidebar-ranking-more:hover {
   background: #1a2f5e;
   color: #fff;
+}
+
+/* サイドバー: 補助金診断・地域別ガイドへの導線 */
+.sidebar-tools {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar-tool {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 16px;
+  border: 1px solid #d7e1f3;
+  border-left: 4px solid #2563eb;
+  border-radius: 8px;
+  background: #f5f8fe;
+  text-decoration: none !important;
+  transition: background 0.2s;
+}
+
+.sidebar-tool:hover {
+  background: #eaf1fd;
+}
+
+.sidebar-tool-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #2563eb;
+  letter-spacing: 0.06em;
+}
+
+.sidebar-tool-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1a3a6e;
+}
+
+.sidebar-tool-text {
+  font-size: 0.75rem;
+  color: #555;
+  line-height: 1.6;
 }

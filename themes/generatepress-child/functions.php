@@ -386,6 +386,19 @@ add_action( 'generate_before_right_sidebar_content', function() {
 	</div>
 	<?php endif; ?>
 
+	<div class="sidebar-widget sidebar-tools">
+		<a class="sidebar-tool" href="<?php echo esc_url( home_url( '/shindan/' ) ); ?>">
+			<span class="sidebar-tool-label">無料ツール</span>
+			<span class="sidebar-tool-title">AI導入の補助金診断</span>
+			<span class="sidebar-tool-text">所在地と費用から、使える補助金と実質の自己負担を試算します</span>
+		</a>
+		<a class="sidebar-tool" href="<?php echo esc_url( home_url( '/area/' ) ); ?>">
+			<span class="sidebar-tool-label">地域別ガイド</span>
+			<span class="sidebar-tool-title">首都圏の地域別AI導入ガイド</span>
+			<span class="sidebar-tool-text">都県・市ごとの補助金、人手不足、事業承継のデータ</span>
+		</a>
+	</div>
+
 	<div class="sidebar-widget sidebar-categories">
 		<h3 class="sidebar-widget-title">カテゴリ</h3>
 		<ul class="sidebar-cat-list">
@@ -411,6 +424,8 @@ function generate_add_footer_info() {
 	?>
 	<div class="footer-copyright">
 		<span>&copy; <?php echo esc_html( date( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?></span>
+		<a href="<?php echo esc_url( home_url( '/shindan/' ) ); ?>">補助金診断</a>
+		<a href="<?php echo esc_url( home_url( '/area/' ) ); ?>">地域別AI導入ガイド</a>
 		<a href="<?php echo esc_url( home_url( '/privacy-policy/' ) ); ?>">プライバシーポリシー</a>
 		<a href="<?php echo esc_url( home_url( '/#form' ) ); ?>">お問い合わせ</a>
 	</div>
