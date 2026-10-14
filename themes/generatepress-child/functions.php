@@ -401,6 +401,13 @@ add_filter( 'rank_math/json_ld', function ( $data ) {
 	return $data;
 }, 99 );
 
+// 診断・地域・監修者ページ: アイキャッチはSNS・検索の共有画像（og:image）にだけ使い、ページ上部には出さない
+add_action( 'wp', function () {
+	if ( is_page() && hikitsugi_has_blog_sidebar() ) {
+		remove_action( 'generate_after_header', 'generate_featured_page_header', 10 );
+	}
+} );
+
 // 投稿・診断・地域ページ: 右サイドバーを強制表示
 add_filter( 'generate_sidebar_layout', function( $layout ) {
 	if ( hikitsugi_has_blog_sidebar() ) return 'right-sidebar';
