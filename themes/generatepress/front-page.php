@@ -18,7 +18,7 @@ add_action( 'wp_head', function() {
 			[
 				'@type'       => 'Organization',
 				'@id'         => $site_url . '/#organization',
-				'name'        => 'オフボード（AI-BPO）',
+				'name'        => 'ヒキツギAI',
 				'url'         => $site_url,
 				'logo'        => [
 					'@type' => 'ImageObject',
@@ -36,7 +36,7 @@ add_action( 'wp_head', function() {
 				'@type'           => 'WebSite',
 				'@id'             => $site_url . '/#website',
 				'url'             => $site_url,
-				'name'            => 'オフボード',
+				'name'            => 'ヒキツギAI',
 				'description'     => 'AIと専門スタッフによるバックオフィス業務代行（AI-BPO）サービス',
 				'publisher'       => [ '@id' => $site_url . '/#organization' ],
 				'inLanguage'      => 'ja',

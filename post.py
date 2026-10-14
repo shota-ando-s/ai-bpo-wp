@@ -316,7 +316,10 @@ def _carry_over_images(wp_chunk, new_chunk):
         return new_chunk
     h2 = _H2_SPLIT_RE.match(new_chunk)
     if h2:
-        # H2画像は見出しの直後
+        # H2画像は見出しの直後。alt は見出しの文言なので、見出しを変えた場合に合わせる
+        heading = re.sub(r'<[^>]+>|<!--.*?-->', '', h2.group(0), flags=re.DOTALL).strip()
+        images = re.sub(r'(class="wp-block-image[^"]*h2-section-image[^"]*"><img [^>]*?alt=")[^"]*"',
+                        lambda m: m.group(1) + html.escape(heading) + '"', images)
         return new_chunk[:h2.end()] + images + new_chunk[h2.end():]
     # イントロ画像は最初の段落の直前
     p = re.search(r'(?:<!-- wp:paragraph -->)?<p', new_chunk)
@@ -325,14 +328,20 @@ def _carry_over_images(wp_chunk, new_chunk):
 
 def merge_sections(wp_html, new_html):
     """H2セクション単位でdiff。変更なし→WP保持（画像・WP直接編集を維持）、変更あり→新HTML採用（生成画像は引き継ぐ）"""
-    wp_dict = {h2: chunk for h2, chunk in _split_sections(wp_html)}
+    wp_sections = _split_sections(wp_html)
+    new_sections = _split_sections(new_html)
+    wp_dict = {h2: chunk for h2, chunk in wp_sections}
+    # セクション数が同じなら、見出しの文言を変えたセクションは同じ位置のWP側から画像を引き継ぐ
+    same_shape = len(wp_sections) == len(new_sections)
     result = []
     changed = []
-    for h2_text, new_chunk in _split_sections(new_html):
+    for i, (h2_text, new_chunk) in enumerate(new_sections):
         wp_chunk = wp_dict.get(h2_text)
         if wp_chunk and _section_text(wp_chunk) == _section_text(new_chunk):
             result.append(wp_chunk)
         else:
+            if wp_chunk is None and same_shape:
+                wp_chunk = wp_sections[i][1]
             result.append(_carry_over_images(wp_chunk, new_chunk))
             label = h2_text or "(冒頭)"
             changed.append(label)
