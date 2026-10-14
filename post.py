@@ -29,6 +29,7 @@ import io
 import json
 import base64
 import re
+import html
 import urllib.request
 import urllib.error
 import urllib.parse
@@ -77,10 +78,12 @@ def api(endpoint, method="GET", data=None):
         raise
 
 def get_or_create_term(taxonomy, name):
-    results = api(f"{taxonomy}?search={urllib.parse.quote(name)}&per_page=100")
-    for term in results:
-        if term["name"] == name:
-            return term["id"]
+    # WordPress は「&」などを実体参照（&amp;）で保存するので、その形でも検索する
+    for query in dict.fromkeys([name, html.escape(name, quote=False)]):
+        results = api(f"{taxonomy}?search={urllib.parse.quote(query)}&per_page=100")
+        for term in results:
+            if html.unescape(term["name"]) == name:
+                return term["id"]
     new_term = api(taxonomy, method="POST", data={"name": name})
     return new_term["id"]
 
