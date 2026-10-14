@@ -220,15 +220,36 @@ add_action( 'generate_before_footer', function() {
 	<?php
 } );
 
-// 投稿ページ: 右サイドバーを強制表示
+/**
+ * ブログと同じ右サイドバーを出すページか。
+ * 投稿に加え、補助金診断（/shindan/）と地域ページ（/area/ 以下の固定ページ）で出す。
+ * お問い合わせなど、ほかの固定ページには出さない。
+ *
+ * @return bool
+ */
+function hikitsugi_has_blog_sidebar() {
+	if ( is_single() ) {
+		return true;
+	}
+	if ( ! is_page() || is_front_page() ) {
+		return false;
+	}
+	if ( is_page( 'shindan' ) ) {
+		return true;
+	}
+	$area = get_page_by_path( 'area' );
+	return $area && ( is_page( $area->ID ) || in_array( $area->ID, get_post_ancestors( get_queried_object_id() ), true ) );
+}
+
+// 投稿・診断・地域ページ: 右サイドバーを強制表示
 add_filter( 'generate_sidebar_layout', function( $layout ) {
-	if ( is_single() ) return 'right-sidebar';
+	if ( hikitsugi_has_blog_sidebar() ) return 'right-sidebar';
 	return $layout;
 } );
 
-// 投稿ページ: サイドバーにCTA・カテゴリ・ランキングを出力
+// 投稿・診断・地域ページ: サイドバーにCTA・カテゴリ・ランキングを出力
 add_action( 'generate_before_right_sidebar_content', function() {
-	if ( ! is_single() ) return;
+	if ( ! hikitsugi_has_blog_sidebar() ) return;
 	?>
 
 	<div class="sidebar-widget sidebar-cta">
