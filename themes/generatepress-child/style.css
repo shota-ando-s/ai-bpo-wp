@@ -1,7 +1,7 @@
 /*
 Theme Name: GeneratePress Child
 Template: generatepress
-Version: 1.1
+Version: 1.2
 */
 
 /* =============================
@@ -1056,4 +1056,44 @@ a:active {
   font-size: 0.75rem;
   color: #555;
   line-height: 1.6;
+}
+
+/* 診断・地域ページの監修者 */
+.supervisor-box {
+  margin: 2.5em 0 0;
+  padding: 18px 20px;
+  border: 1px solid #d7e1f3;
+  border-radius: 10px;
+  background: #f8fafe;
+}
+
+.supervisor-box p {
+  margin: 0 0 6px;
+}
+
+.supervisor-label {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #fff;
+  background: #1a3a6e;
+  padding: 2px 10px;
+  border-radius: 4px;
+}
+
+.supervisor-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.supervisor-title,
+.supervisor-text {
+  font-size: 0.85rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+.supervisor-more {
+  font-size: 0.85rem;
+  margin-bottom: 0 !important;
 }

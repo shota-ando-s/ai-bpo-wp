@@ -58,6 +58,6 @@
   conditions: 市内で1年以上営業。市と協議して専門家支援を受ける
   period: {status: open, start: 2026-04-01, end: 2027-02-27}
   stacking: {exclusive_with: [digital-ai-donyu]}
-  url: https://www.city.matsudo.chiba.jp/jigyosha/syoukougyou/dx-charenji.html
+  url: https://www.city.matsudo.chiba.jp/jigyosya/syoukougyou/dx-charenji.html
   checked: 2026-10-14
   confidence: official

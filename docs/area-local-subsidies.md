@@ -169,7 +169,7 @@
 | ICT活用等生産性向上支援事業（タイプA） | 千葉市産業振興財団 | 50万円・2/3（機器は1/3） | **ソフトウェア・クラウド利用料（必須）**、システム構築、外部専門家への相談費（日額2万円以下）、従業員の研修費 | **随時受付中**。事前相談が必須。2027年4月以降の利用料は対象外 | https://www.chibashi-sangyo.or.jp/enterprise/kyoka-sosyutu/keiei/ict-change/type-a/ | 公式 |
 | 同（タイプB） | 千葉市産業振興財団 | 300万円・1/3〜2/3 | 事業変革を伴う取り組み | 5/29で**終了** | https://www.chibashi-sangyo.or.jp/enterprise/kyoka-sosyutu/keiei/ict-change/ | 公式 |
 | 賃上げ補助制度活用支援補助金 | 船橋市 | 15万円・3/4 | 国の補助金の**申請支援費用**だけ | 12/31まで受付中 | https://www.city.funabashi.lg.jp/jigyou/shoukou/002/p145307.html | 公式 |
-| 中小企業デジタル化チャレンジ補助金 | 松戸市 | 50万円・2/3（機器は1/2） | **ソフトウェアの利用料・購入費・開発費（経費の半分以上が必須）**、講座の受講費 | **2027/2/27まで受付中**。国のデジタル化・AI導入補助金とは併用不可 | https://www.city.matsudo.chiba.jp/jigyosha/syoukougyou/dx-charenji.html | 公式 |
+| 中小企業デジタル化チャレンジ補助金 | 松戸市 | 50万円・2/3（機器は1/2） | **ソフトウェアの利用料・購入費・開発費（経費の半分以上が必須）**、講座の受講費 | **2027/2/27まで受付中**。国のデジタル化・AI導入補助金とは併用不可 | https://www.city.matsudo.chiba.jp/jigyosya/syoukougyou/dx-charenji.html | 公式 |
 | 船橋市、柏市、市川市（DX・IT導入） | ― | ― | ― | **該当制度なし**（2026-10-14確認） | ― | 船橋は公式、柏・市川は二次 |
 
 ### ふえんのサービスに使えるか

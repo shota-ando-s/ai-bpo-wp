@@ -235,7 +235,7 @@ function hikitsugi_has_blog_sidebar() {
 	if ( ! is_page() || is_front_page() ) {
 		return false;
 	}
-	if ( is_page( 'shindan' ) ) {
+	if ( is_page( [ 'shindan', 'supervisor' ] ) ) {
 		return true;
 	}
 	$area = get_page_by_path( 'area' );
@@ -334,6 +334,72 @@ add_action( 'wp_head', function () {
 		echo '<script type="application/ld+json">' . wp_json_encode( $schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES ) . "</script>\n";
 	}
 } );
+
+/**
+ * 診断・地域ページの監修者。プロフィールの詳細は固定ページ /supervisor/ に書く。
+ *
+ * @return array
+ */
+function hikitsugi_supervisor() {
+	return [
+		'@type'    => 'Person',
+		'name'     => '安藤 昭太',
+		'jobTitle' => '株式会社ふえん 代表取締役',
+		'url'      => home_url( '/supervisor/' ),
+		'worksFor' => [ '@type' => 'Organization', 'name' => '株式会社ふえん', 'url' => 'https://fuenn.co.jp/' ],
+		'sameAs'   => [
+			'https://fuenn.co.jp/',
+			'https://fuenn.co.jp/book/genba-dx.html',
+			'https://news.mynavi.jp/techplus/article/20240916-3017816',
+		],
+	];
+}
+
+/**
+ * 監修者の情報を出すページか（診断・地域ページ。監修者ページ自身は除く）。
+ *
+ * @return bool
+ */
+function hikitsugi_is_supervised_page() {
+	return is_page() && hikitsugi_has_blog_sidebar() && ! is_page( 'supervisor' );
+}
+
+// 診断・地域ページ: 本文の最後に監修者を表示
+add_filter( 'the_content', function ( $content ) {
+	if ( ! hikitsugi_is_supervised_page() || ! in_the_loop() || ! is_main_query() ) {
+		return $content;
+	}
+	$sv  = hikitsugi_supervisor();
+	$box = '<aside class="supervisor-box">'
+		. '<p class="supervisor-label">監修</p>'
+		. '<p class="supervisor-name"><a href="' . esc_url( $sv['url'] ) . '">' . esc_html( $sv['name'] ) . '</a></p>'
+		. '<p class="supervisor-title">株式会社ふえん 代表取締役／一般社団法人ノーコード推進協会 副代表理事</p>'
+		. '<p class="supervisor-text">富士通でシステム開発に従事したのち独立。ノーコードによる市民開発とDX内製化を専門とし、中小企業のDX推進と研修を手がける。著書に『現場が動くDX ノーコードから始める市民開発実践ガイド』（共著）など。</p>'
+		. '<p class="supervisor-more"><a href="' . esc_url( $sv['url'] ) . '">プロフィールを見る →</a></p>'
+		. '</aside>';
+	return $content . $box;
+} );
+
+// 診断・地域ページ: Rank Math の WebPage と Article に監修者（reviewedBy）を加える
+add_filter( 'rank_math/json_ld', function ( $data ) {
+	if ( ! is_page() || ! ( hikitsugi_is_supervised_page() || is_page( 'supervisor' ) ) ) {
+		return $data;
+	}
+	foreach ( $data as $key => $entity ) {
+		$types = (array) ( $entity['@type'] ?? [] );
+		if ( is_page( 'supervisor' ) ) {
+			if ( in_array( 'WebPage', $types, true ) ) {
+				$data[ $key ]['@type']      = 'ProfilePage';
+				$data[ $key ]['mainEntity'] = hikitsugi_supervisor();
+			}
+			continue;
+		}
+		if ( array_intersect( $types, [ 'WebPage', 'Article', 'BlogPosting' ] ) ) {
+			$data[ $key ]['reviewedBy'] = hikitsugi_supervisor();
+		}
+	}
+	return $data;
+}, 99 );
 
 // 投稿・診断・地域ページ: 右サイドバーを強制表示
 add_filter( 'generate_sidebar_layout', function( $layout ) {
