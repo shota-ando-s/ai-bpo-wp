@@ -1,0 +1,87 @@
+# 埼玉県と県内市（2026年度）。根拠は docs/area-local-subsidies.md
+- id: saitama-dx-donyu
+  name: 中小企業DX導入支援補助金（追加募集）
+  org: 埼玉県
+  area: saitama
+  max_yen: 3000000
+  rate: 3/4
+  targets: {efficiency: ○, consulting: ×, training: ×}
+  expenses: DXツール購入費、サブスク料（最大1年分）、導入経費（総額の1/2まで）。一般的なコンサルと研修、フルオーダーの開発は対象外
+  conditions: 県内に本店がある。交付決定前に着手しない。審査制
+  period: {status: open, start: 2026-10-01, end: 2026-10-30}
+  next_expected: 2027-07
+  url: https://www.pref.saitama.lg.jp/a0803/dx_jigyousyashien/dx_index.html
+  checked: 2026-10-14
+  confidence: official
+  note: 締切は10/30の16時。AIツールが「DXツール」に当たるかは事務局に確認が必要
+
+- id: saitama-city-dx
+  name: DX推進補助金
+  org: さいたま市産業創造財団
+  area: saitama/saitama-city
+  max_yen: 400000
+  rate: 2/3
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: システム・ソフトウェアの購入費。RPA、OCR、Office、リースは対象外
+  period: {status: closed, start: 2026-04-06, end: 2026-05-20}
+  next_expected: 2027-04
+  url: https://www.sozo-saitama.or.jp/topic/dx-subsidy/
+  checked: 2026-10-14
+  confidence: official
+
+- id: kawaguchi-dx-addon
+  name: DX推進補助金（国の補助金への上乗せ）
+  org: 川口市
+  area: saitama/kawaguchi
+  max_yen: 500000
+  rate: （経費−国の補助額）×1/2
+  targets: {efficiency: ○, consulting: △, training: ×}
+  expenses: 国の補助金で対象になった経費
+  conditions: 市内に本店がある。国の補助金の交付確定後に申請
+  period: {status: open, start: 2026-05-01, end: 2027-02-26}
+  stacking: {addon_to: [digital-ai-donyu, shinjigyo-monodukuri]}
+  url: https://www.city.kawaguchi.lg.jp/soshiki/01110/021/12/38430.html
+  checked: 2026-10-14
+  confidence: official
+
+- id: koshigaya-bizpower
+  name: ビジネスパワーアップ補助金（DX推進枠・人材育成枠）
+  org: 越谷市
+  area: saitama/koshigaya
+  max_yen: 1000000
+  rate: 1/2
+  targets: {efficiency: △, consulting: △, training: △}
+  expenses: システム導入費、外注費、研修費
+  period: {status: closed, start: 2026-05-25, end: 2026-06-05}
+  next_expected: 2027-05
+  url: https://www.city.koshigaya.saitama.jp/kurashi_shisei/jigyosha/shienyushi/hojokin/koshigaya_contents_bp.html
+  checked: 2026-10-14
+  confidence: official
+
+- id: ageo-dx
+  name: SDGs・DX推進補助金（DX部門）
+  org: 上尾市
+  area: saitama/ageo
+  max_yen: 250000
+  rate: 1/2
+  targets: {efficiency: ○, consulting: ○, training: ×}
+  expenses: ソフトウェア、システム構築、クラウド月額（事業期間分）、外部専門家への謝金
+  conditions: 市内で6か月以上営業。上尾中小企業サポートセンターの専門家指導が必須
+  period: {status: open, start: 2026-06-01, end: 2027-01-29}
+  url: https://www.city.ageo.lg.jp/page/395426.html
+  checked: 2026-10-14
+  confidence: official
+  note: 先着順
+
+- id: toda-dx
+  name: DX推進補助金
+  org: 戸田市
+  area: saitama/toda
+  max_yen: 500000
+  rate: 1/2
+  targets: {efficiency: ○, consulting: ○, training: ×}
+  expenses: コンサル費も対象（ほかの区分は未確認）
+  period: {status: open, start: 2026-04-01}
+  url: https://www.saitamadx.com/shien/13875/
+  checked: 2026-10-14
+  confidence: secondary

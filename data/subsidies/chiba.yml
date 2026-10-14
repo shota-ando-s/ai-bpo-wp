@@ -1,0 +1,58 @@
+# 千葉県と県内市（2026年度）。根拠は docs/area-local-subsidies.md
+- id: chiba-fukugyo
+  name: 副業・兼業人材活用促進事業補助金
+  org: 千葉県
+  area: chiba
+  max_yen: 500000
+  rate: 8/10
+  targets: {efficiency: ×, consulting: △, training: ×}
+  expenses: 紹介手数料、副業人材への報酬
+  conditions: 県のプロフェッショナル人材戦略拠点の紹介で、副業人材を初めて採用する
+  period: {status: open, start: 2026-04-01, end: 2027-01-29}
+  url: https://www.pref.chiba.lg.jp/koyou/projinzai/hojo-fukugyo.html
+  checked: 2026-10-14
+  confidence: official
+  note: 法人とのコンサル契約は対象外の可能性が高い（推測）
+
+- id: chiba-city-ict-a
+  name: ICT活用等生産性向上支援事業（タイプA）
+  org: 千葉市産業振興財団
+  area: chiba/chiba-city
+  max_yen: 500000
+  rate: 2/3（機器は1/3）
+  targets: {efficiency: ◎, consulting: ◎, training: ◎}
+  expenses: ソフトウェア・クラウド利用料（必須）、システム構築、外部専門家への相談費（日額2万円以下）、従業員の研修費
+  conditions: 市内に本社か事業所がある。コーディネーターへの事前相談が必須（審査会まで約5週間）。2027年4月以降の利用料は対象外
+  period: {status: rolling, end: 2027-03-31}
+  url: https://www.chibashi-sangyo.or.jp/enterprise/kyoka-sosyutu/keiei/ict-change/type-a/
+  checked: 2026-10-14
+  confidence: official
+
+- id: funabashi-chinage-shien
+  name: 賃上げ補助制度活用支援補助金
+  org: 船橋市
+  area: chiba/funabashi
+  max_yen: 150000
+  rate: 3/4
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 国の賃上げ要件付き補助金の申請支援費用（中小企業診断士・社労士など）
+  period: {status: open, start: 2026-04-01, end: 2026-12-31}
+  url: https://www.city.funabashi.lg.jp/jigyou/shoukou/002/p145307.html
+  checked: 2026-10-14
+  confidence: official
+  note: 顧客がデジタル化・AI導入補助金を申請するときの支援費に使える
+
+- id: matsudo-digital
+  name: 中小企業デジタル化チャレンジ補助金
+  org: 松戸市
+  area: chiba/matsudo
+  max_yen: 500000
+  rate: 2/3（機器は1/2）
+  targets: {efficiency: ◎, consulting: ×, training: ○}
+  expenses: ソフトウェアの利用料・購入費・開発費（経費の半分以上が必須）、講座受講費
+  conditions: 市内で1年以上営業。市と協議して専門家支援を受ける
+  period: {status: open, start: 2026-04-01, end: 2027-02-27}
+  stacking: {exclusive_with: [digital-ai-donyu]}
+  url: https://www.city.matsudo.chiba.jp/jigyosha/syoukougyou/dx-charenji.html
+  checked: 2026-10-14
+  confidence: official

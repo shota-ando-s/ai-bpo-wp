@@ -1,0 +1,105 @@
+# 国の制度（2026年度）。根拠は docs/area-ai-media-brief.md の7章
+- id: digital-ai-donyu
+  name: デジタル化・AI導入補助金2026（旧IT導入補助金）通常枠
+  org: 経済産業省・中小企業庁、中小機構
+  area: national
+  max_yen: 4500000
+  rate: 1/2（最低賃金近傍の従業員が多い場合は2/3）
+  targets: {efficiency: ○, consulting: △, training: △}
+  expenses: ソフトウェア、クラウド利用料（最大2年分）、導入・活用コンサル、導入研修、保守（役務の合計は200万円まで）
+  conditions: 登録されたIT導入支援事業者と共同で申請。登録済みのITツールに限る。7次以降は給与支給総額の要件が追加
+  period: {status: open, end: 2026-12-01}
+  next_expected: 2027-03
+  url: https://it-shien.smrj.go.jp/
+  checked: 2026-10-14
+  confidence: official
+  note: ふえんは事業者登録の準備中で、対応は2027年度の公募から。7次の締切日（12/1）は二次情報
+
+- id: hatarakikata
+  name: 働き方改革推進支援助成金（労働時間短縮・年休促進支援コース）
+  org: 厚生労働省（都道府県労働局）
+  area: national
+  max_yen: 1500000
+  rate: 3/4（30人以下で条件を満たせば4/5）
+  targets: {efficiency: △, consulting: ○, training: ○}
+  expenses: 外部専門家のコンサル、労働者への研修、労務管理用ソフト、労働能率の増進に資する機器
+  conditions: 時間外労働の削減などの成果目標を設定する。事業実施は2027-01-31まで
+  period: {status: open, end: 2026-11-30}
+  next_expected: 2027-04
+  url: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000120692.html
+  checked: 2026-10-14
+  confidence: official
+  note: 予算の都合で期限前に締め切られることがある
+
+- id: jinzai-reskilling
+  name: 人材開発支援助成金（事業展開等リスキリング支援コース）
+  org: 厚生労働省（都道府県労働局）
+  area: national
+  max_yen: null
+  rate: 中小企業は経費の75%＋賃金助成1時間1,000円
+  targets: {efficiency: ×, consulting: ×, training: ◎}
+  expenses: OFF-JTの研修経費（1人あたり上限30万〜50万円、eラーニングは15万円）
+  conditions: 10時間以上の研修。業務に直結する内容であること（汎用的なプロンプト研修は対象外）。計画届は研修開始の1か月前まで
+  period: {status: rolling, end: 2027-03-31}
+  url: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyufukin/d01-1.html
+  checked: 2026-10-14
+  confidence: official
+  note: 令和8年度までの期間限定。後継の制度は未確認
+
+- id: ryoritsu-daitai
+  name: 両立支援等助成金（育休中等業務代替支援コース）
+  org: 厚生労働省（都道府県労働局）
+  area: national
+  max_yen: 2400000
+  rate: 定額
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 経費の補助ではない（業務を代わりに担う人への手当などに対する定額の助成）
+  conditions: 業務の見直し（マニュアル作成などによる標準化を含む）と、手当の規定の整備
+  period: {status: rolling}
+  url: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/shokuba_kosodate/ryouritsu01/index.html
+  checked: 2026-10-14
+  confidence: official
+  note: ツール費は補助されない。「業務の標準化」の手段としてヒキツギAIを紹介する
+
+- id: shokei-ma
+  name: 事業承継・M&A補助金（PMI推進枠）
+  org: 中小企業庁
+  area: national
+  max_yen: 10000000
+  rate: 1/2（小規模事業者は2/3）
+  targets: {efficiency: △, consulting: △, training: ×}
+  expenses: M&A後の業務統合・効率化のシステム導入、ITコンサル（PMI専門家活用類型）
+  conditions: M&Aのクロージングから3年以内。親族内承継（承継促進枠）ではソフトやシステムの費用は対象外
+  period: {status: open, start: 2026-10-02, end: 2026-11-06}
+  url: https://shoukei-mahojokin.go.jp/r7h/
+  checked: 2026-10-14
+  confidence: official
+
+- id: shinjigyo-monodukuri
+  name: 新事業進出・ものづくり商業サービス補助金
+  org: 中小機構
+  area: national
+  max_yen: 25000000
+  rate: 1/2（小規模事業者は2/3）
+  targets: {efficiency: △, consulting: △, training: ×}
+  expenses: 機械装置・システム構築、専門家経費（総額の1/5まで）、補助事業専用のクラウド利用費
+  conditions: 新製品・新サービスの開発か新市場への進出が必要。単なる業務効率化は対象外
+  period: {status: open, start: 2026-09-30, end: 2026-10-30}
+  url: https://shinjigyou-monodukuri.smrj.go.jp/
+  checked: 2026-10-14
+  confidence: official
+
+- id: shoryokuka-ippan
+  name: 中小企業省力化投資補助金（一般型）
+  org: 中小機構
+  area: national
+  max_yen: 80000000
+  rate: 1/2（小規模事業者は2/3）
+  targets: {efficiency: △, consulting: △, training: ×}
+  expenses: オーダーメイドの設備・システム構築、専門家経費
+  conditions: 省力化の計画が必要
+  period: {status: closed, end: 2026-10-16}
+  url: https://shoryokuka.smrj.go.jp/ippan/
+  checked: 2026-10-14
+  confidence: official
+  note: 第9回は未公表
