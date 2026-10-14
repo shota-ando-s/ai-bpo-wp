@@ -124,7 +124,8 @@ add_action( 'generate_after_logo', function() {
  *    現在の新着記事は lp-markup.php の「11 新着記事」セクションが出しており、
  *    データは front-page.php の WP_Query が作る。
  *    ここに残っているのはランキング表示だけが未移植だからで、
- *    同等の機能は投稿ページのサイドバー（sidebar-ranking）に生きている。
+ *    （投稿ページのサイドバーのランキングもピックアップに置き換えたため、
+ *    閲覧数ランキングを表示している箇所は現在どこにもない）
  */
 add_action( 'generate_before_footer', function() {
 	if ( ! is_front_page() ) return;
@@ -340,7 +341,7 @@ add_filter( 'generate_sidebar_layout', function( $layout ) {
 	return $layout;
 } );
 
-// 投稿・診断・地域ページ: サイドバーにCTA・カテゴリ・ランキングを出力
+// 投稿・診断・地域ページ: サイドバーにCTA・ピックアップ・カテゴリを出力
 add_action( 'generate_before_right_sidebar_content', function() {
 	if ( ! hikitsugi_has_blog_sidebar() ) return;
 	?>
@@ -353,6 +354,37 @@ add_action( 'generate_before_right_sidebar_content', function() {
 			<a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="sidebar-cta-btn">無料で相談する →</a>
 		</div>
 	</div>
+
+	<?php
+	// ピックアップ記事：プラグイン ai-bpo-pickup のチェックが入った投稿。表示形式はランキングと共通
+	$pickup = new WP_Query( [
+		'posts_per_page'      => 5,
+		'post_status'         => 'publish',
+		'ignore_sticky_posts' => true,
+		'meta_query'          => [ [ 'key' => 'ai_bpo_pickup', 'value' => '1' ] ],
+	] );
+	if ( $pickup->have_posts() ) : ?>
+	<div class="sidebar-widget sidebar-ranking sidebar-pickup">
+		<h3 class="sidebar-widget-title">ピックアップ</h3>
+		<ul class="sidebar-rank-list">
+			<?php while ( $pickup->have_posts() ) : $pickup->the_post(); ?>
+				<li class="sidebar-rank-item">
+					<a href="<?php the_permalink(); ?>">
+						<div class="sidebar-rank-thumb">
+							<?php if ( has_post_thumbnail() ) :
+								the_post_thumbnail( 'medium' );
+							else : ?>
+								<div class="sidebar-rank-placeholder"></div>
+							<?php endif; ?>
+						</div>
+						<p class="sidebar-rank-title"><?php the_title(); ?></p>
+					</a>
+				</li>
+			<?php endwhile; wp_reset_postdata(); ?>
+		</ul>
+		<a href="<?php echo esc_url( home_url( '/archives/' ) ); ?>" class="sidebar-ranking-more">もっとみる</a>
+	</div>
+	<?php endif; ?>
 
 	<div class="sidebar-widget sidebar-categories">
 		<h3 class="sidebar-widget-title">カテゴリ</h3>
@@ -368,48 +400,6 @@ add_action( 'generate_before_right_sidebar_content', function() {
 				</li>
 			<?php endforeach; ?>
 		</ul>
-	</div>
-
-	<div class="sidebar-widget sidebar-ranking">
-		<h3 class="sidebar-widget-title">ランキング</h3>
-		<ol class="sidebar-rank-list">
-			<?php
-			$has_views = get_posts( [
-				'posts_per_page' => 1,
-				'meta_key'       => 'post_views_count',
-				'fields'         => 'ids',
-			] );
-			$rank_args = ! empty( $has_views ) ? [
-				'posts_per_page' => 5,
-				'post_status'    => 'publish',
-				'meta_key'       => 'post_views_count',
-				'orderby'        => 'meta_value_num',
-				'order'          => 'DESC',
-			] : [
-				'posts_per_page' => 5,
-				'post_status'    => 'publish',
-				'orderby'        => 'date',
-				'order'          => 'DESC',
-			];
-			$ranking = new WP_Query( $rank_args );
-			$rank = 1;
-			while ( $ranking->have_posts() ) : $ranking->the_post(); ?>
-				<li class="sidebar-rank-item">
-					<a href="<?php the_permalink(); ?>">
-						<span class="sidebar-rank-num rank-<?php echo (int) $rank; ?>"><?php echo (int) $rank; ?></span>
-						<div class="sidebar-rank-thumb">
-							<?php if ( has_post_thumbnail() ) :
-								the_post_thumbnail( 'medium' );
-							else : ?>
-								<div class="sidebar-rank-placeholder"></div>
-							<?php endif; ?>
-						</div>
-						<p class="sidebar-rank-title"><?php the_title(); ?></p>
-					</a>
-				</li>
-			<?php $rank++; endwhile; wp_reset_postdata(); ?>
-		</ol>
-		<a href="<?php echo esc_url( home_url( '/archives/' ) ); ?>" class="sidebar-ranking-more">もっとみる</a>
 	</div>
 
 	<?php
