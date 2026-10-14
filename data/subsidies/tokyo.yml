@@ -5,6 +5,9 @@
   area: tokyo
   max_yen: 1500000
   rate: 1/2（小規模企業者は2/3）
+  rate_num: 0.5
+  rate_small_num: 0.667
+  max_months: 24
   targets: {efficiency: ◎, consulting: ×, training: ×}
   expenses: ソフトウェア、クラウド利用料（1〜2年分）、初期設定などの関連経費（50万円まで）。コンサル、従量課金、スクラッチ開発、要件定義は対象外
   conditions: 市販のパッケージで、料金と仕様がWebで公開され、問い合わせなしで購入できること。Jグランツで申請
@@ -21,6 +24,8 @@
   area: tokyo
   max_yen: 15000000
   rate: 1/2（小規模企業者は2/3）。賃上げ計画を達成すれば3/4
+  rate_num: 0.5
+  rate_small_num: 0.667
   targets: {efficiency: ○, consulting: △, training: △}
   expenses: アドバイザーの提案書に基づくデジタル技術の導入・活用費
   conditions: 公社のアドバイザー派遣を受け、提案書を作成すること（3か月以上かかる）
@@ -36,6 +41,7 @@
   area: tokyo
   max_yen: 20000000
   rate: 2/3
+  rate_num: 0.667
   targets: {efficiency: ○, consulting: △, training: △}
   expenses: AI活用のためのデジタル技術の導入費
   conditions: 公社のアドバイザー派遣が前提
@@ -52,6 +58,8 @@
   area: tokyo
   max_yen: 100000000
   rate: 1/2〜4/5
+  rate_num: 0.5
+  min_cost_yen: 1000000
   targets: {efficiency: △, consulting: ×, training: ×}
   expenses: 機械装置、器具備品、ソフトウェアの導入経費。クラウド利用料は記載なし
   conditions: 都内で2年以上事業を継続していること。下限100万円
@@ -66,6 +74,7 @@
   area: tokyo
   max_yen: 1000000
   rate: 3/4（1人1研修7.5万円まで）
+  rate_num: 0.75
   targets: {efficiency: ×, consulting: ×, training: ◎}
   expenses: DXの研修（公開講座、eラーニング、教育機関への委託）
   conditions: 3時間以上10時間未満のOFF-JT。研修開始の1か月前までに申請
@@ -81,6 +90,8 @@
   area: tokyo
   max_yen: 1500000
   rate: 1/2（小規模企業者は2/3、1人1研修2.5万円まで）
+  rate_num: 0.5
+  rate_small_num: 0.667
   targets: {efficiency: ×, consulting: ×, training: ○}
   expenses: 教育機関の公開研修だけ
   conditions: 3時間以上10時間未満
@@ -95,6 +106,7 @@
   area: tokyo/shinagawa
   max_yen: 600000
   rate: 2/3
+  rate_num: 0.667
   targets: {efficiency: ○, consulting: △, training: △}
   expenses: ソフトウェア、クラウド導入費
   conditions: 区内で1年以上営業
@@ -108,6 +120,7 @@
   org: 品川区
   area: tokyo/shinagawa
   max_yen: 200000
+  addon: {kind: cost_ratio, ratio: 0.2}
   rate: DXリスキリング助成金の1/5
   targets: {efficiency: ×, consulting: ×, training: ○}
   expenses: 東京しごと財団の助成対象になった研修費
@@ -124,6 +137,8 @@
   area: tokyo/minato
   max_yen: 400000
   rate: 3/4
+  rate_num: 0.75
+  max_months: 6
   targets: {efficiency: ○, consulting: ×, training: △}
   expenses: ソフトウェア、クラウド・保守（最長6か月分、昨年度の要項による）、初期設定の外注
   period: {status: open, start: 2026-04-13, end: 2027-01-31}
@@ -137,6 +152,7 @@
   org: 港区
   area: tokyo/minato
   max_yen: 1000000
+  addon: {kind: remaining, ratio: 0.5}
   rate: （国の補助対象経費−国の補助額）×1/2
   targets: {efficiency: △, consulting: ×, training: ×}
   expenses: 国の補助金で対象になった経費
@@ -153,6 +169,8 @@
   area: tokyo/sumida
   max_yen: 500000
   rate: 3/4
+  rate_num: 0.75
+  max_months: 12
   targets: {efficiency: ○, consulting: ○, training: ○}
   expenses: ソフトウェア、クラウド（初年度分）、技術指導・助言、研修受講費
   conditions: 区内に主たる事業所を1年以上。事前に「すみサポ」で事業計画書を作成
@@ -167,6 +185,7 @@
   area: tokyo/sumida
   max_yen: 1000000
   rate: 1/2
+  rate_num: 0.5
   targets: {efficiency: ×, consulting: ×, training: ○}
   expenses: 研修受講料、講師謝礼、eラーニング
   conditions: 常時雇用5人以上
@@ -181,6 +200,7 @@
   area: tokyo/itabashi
   max_yen: 5000000
   rate: 1/2（500万円の枠は2/3）
+  rate_num: 0.5
   targets: {efficiency: ◎, consulting: △, training: ○}
   expenses: ソフトウェア、クラウド・ライセンス（助成期間内）、開発委託、研修・講習費
   conditions: 区内でおおむね1年以上事業を営む。専門家への事前相談が必須
@@ -195,6 +215,8 @@
   area: tokyo/koto
   max_yen: 500000
   rate: 1/2
+  rate_num: 0.5
+  max_months: 12
   targets: {efficiency: ○, consulting: ×, training: △}
   expenses: ソフトウェア・ライセンス、クラウド（1年分まで）、初期設定。コンサルは対象外
   conditions: 区内に本店と導入先の事業所がある。直近2か年度に交付を受けていない。無料相談と計画確認が先
@@ -209,6 +231,7 @@
   area: tokyo/tachikawa
   max_yen: 500000
   rate: 3/4
+  rate_num: 0.75
   targets: {efficiency: ○, consulting: ○, training: ○}
   expenses: ソフトウェア、クラウド、設定、技術指導・助言、研修受講費
   conditions: 市内に主たる事業所を1年以上。立川商工会議所の事前承認が必要
@@ -223,6 +246,7 @@
   area: tokyo/hachioji
   max_yen: 500000
   rate: 2/3
+  rate_num: 0.667
   targets: {efficiency: △, consulting: ×, training: ○}
   expenses: 勤怠・労務のデジタル化、研修
   conditions: 事前相談が必須

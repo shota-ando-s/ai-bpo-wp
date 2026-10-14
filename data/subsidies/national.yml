@@ -5,6 +5,10 @@
   area: national
   max_yen: 4500000
   rate: 1/2（最低賃金近傍の従業員が多い場合は2/3）
+  rate_num: 0.5
+  max_months: 24
+  fuenn_available_from: 2027-04
+  fuenn_note: ふえんのAI業務効率化サービスは、この補助金を使って導入できます（2027年度の公募から対応予定）。対象になるかどうか、申請の進め方はお問い合わせください。
   targets: {efficiency: ○, consulting: △, training: △}
   expenses: ソフトウェア、クラウド利用料（最大2年分）、導入・活用コンサル、導入研修、保守（役務の合計は200万円まで）
   conditions: 登録されたIT導入支援事業者と共同で申請。登録済みのITツールに限る。7次以降は給与支給総額の要件が追加
@@ -21,6 +25,7 @@
   area: national
   max_yen: 1500000
   rate: 3/4（30人以下で条件を満たせば4/5）
+  rate_num: 0.75
   targets: {efficiency: △, consulting: ○, training: ○}
   expenses: 外部専門家のコンサル、労働者への研修、労務管理用ソフト、労働能率の増進に資する機器
   conditions: 時間外労働の削減などの成果目標を設定する。事業実施は2027-01-31まで
@@ -37,6 +42,7 @@
   area: national
   max_yen: null
   rate: 中小企業は経費の75%＋賃金助成1時間1,000円
+  rate_num: 0.75
   targets: {efficiency: ×, consulting: ×, training: ◎}
   expenses: OFF-JTの研修経費（1人あたり上限30万〜50万円、eラーニングは15万円）
   conditions: 10時間以上の研修。業務に直結する内容であること（汎用的なプロンプト研修は対象外）。計画届は研修開始の1か月前まで
@@ -67,6 +73,8 @@
   area: national
   max_yen: 10000000
   rate: 1/2（小規模事業者は2/3）
+  rate_num: 0.5
+  rate_small_num: 0.667
   targets: {efficiency: △, consulting: △, training: ×}
   expenses: M&A後の業務統合・効率化のシステム導入、ITコンサル（PMI専門家活用類型）
   conditions: M&Aのクロージングから3年以内。親族内承継（承継促進枠）ではソフトやシステムの費用は対象外
@@ -81,6 +89,8 @@
   area: national
   max_yen: 25000000
   rate: 1/2（小規模事業者は2/3）
+  rate_num: 0.5
+  rate_small_num: 0.667
   targets: {efficiency: △, consulting: △, training: ×}
   expenses: 機械装置・システム構築、専門家経費（総額の1/5まで）、補助事業専用のクラウド利用費
   conditions: 新製品・新サービスの開発か新市場への進出が必要。単なる業務効率化は対象外
@@ -95,6 +105,8 @@
   area: national
   max_yen: 80000000
   rate: 1/2（小規模事業者は2/3）
+  rate_num: 0.5
+  rate_small_num: 0.667
   targets: {efficiency: △, consulting: △, training: ×}
   expenses: オーダーメイドの設備・システム構築、専門家経費
   conditions: 省力化の計画が必要

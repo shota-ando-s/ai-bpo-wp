@@ -5,6 +5,9 @@
   area: saitama
   max_yen: 3000000
   rate: 3/4
+  rate_num: 0.75
+  max_months: 12
+  min_cost_yen: 100000
   targets: {efficiency: ○, consulting: ×, training: ×}
   expenses: DXツール購入費、サブスク料（最大1年分）、導入経費（総額の1/2まで）。一般的なコンサルと研修、フルオーダーの開発は対象外
   conditions: 県内に本店がある。交付決定前に着手しない。審査制
@@ -21,6 +24,7 @@
   area: saitama/saitama-city
   max_yen: 400000
   rate: 2/3
+  rate_num: 0.667
   targets: {efficiency: △, consulting: ×, training: ×}
   expenses: システム・ソフトウェアの購入費。RPA、OCR、Office、リースは対象外
   period: {status: closed, start: 2026-04-06, end: 2026-05-20}
@@ -34,6 +38,7 @@
   org: 川口市
   area: saitama/kawaguchi
   max_yen: 500000
+  addon: {kind: remaining, ratio: 0.5}
   rate: （経費−国の補助額）×1/2
   targets: {efficiency: ○, consulting: △, training: ×}
   expenses: 国の補助金で対象になった経費
@@ -50,6 +55,7 @@
   area: saitama/koshigaya
   max_yen: 1000000
   rate: 1/2
+  rate_num: 0.5
   targets: {efficiency: △, consulting: △, training: △}
   expenses: システム導入費、外注費、研修費
   period: {status: closed, start: 2026-05-25, end: 2026-06-05}
@@ -64,6 +70,7 @@
   area: saitama/ageo
   max_yen: 250000
   rate: 1/2
+  rate_num: 0.5
   targets: {efficiency: ○, consulting: ○, training: ×}
   expenses: ソフトウェア、システム構築、クラウド月額（事業期間分）、外部専門家への謝金
   conditions: 市内で6か月以上営業。上尾中小企業サポートセンターの専門家指導が必須
@@ -79,6 +86,7 @@
   area: saitama/toda
   max_yen: 500000
   rate: 1/2
+  rate_num: 0.5
   targets: {efficiency: ○, consulting: ○, training: ×}
   expenses: コンサル費も対象（ほかの区分は未確認）
   period: {status: open, start: 2026-04-01}

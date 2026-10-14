@@ -5,6 +5,8 @@
   area: kanagawa
   max_yen: 500000
   rate: 2/3
+  rate_num: 0.667
+  small_only: true
   targets: {efficiency: ○, consulting: ×, training: ×}
   expenses: 生成AIツール、顧客管理、会計、勤怠などのシステム導入
   conditions: 県内の小規模事業者。相談機関の「相談シート」が必須
@@ -21,6 +23,8 @@
   area: kanagawa
   max_yen: 5000000
   rate: 1/2（小規模事業者は2/3）
+  rate_num: 0.5
+  rate_small_num: 0.667
   targets: {efficiency: △, consulting: ×, training: ×}
   expenses: 設備が中心。ITサービス導入費は50万円まで
   period: {status: closed, end: 2026-08-31}
@@ -35,6 +39,8 @@
   area: kanagawa/kawasaki
   max_yen: 1000000
   rate: 1/2（賃上げ申請は上限200万円・2/3）
+  rate_num: 0.5
+  min_cost_yen: 200000
   targets: {efficiency: ○, consulting: ○, training: ×}
   expenses: ソフトウェア・システム、システム構築、専門家指導費
   conditions: 市内に事業所があり1年以上営業
@@ -51,6 +57,7 @@
   area: kanagawa/kawasaki
   max_yen: 300000
   rate: デジタル人材の育成は2/3（それ以外は上限20万円・1/2）
+  rate_num: 0.667
   targets: {efficiency: ×, consulting: △, training: ◎}
   expenses: 研修受講料、専門家謝礼、会場借上費
   conditions: 市内に事業所があり1年以上営業。事務局で専門家の確認を受ける。エントリーシートは10/30必着、申請書は11/13必着
@@ -66,6 +73,7 @@
   area: kanagawa/sagamihara
   max_yen: 10000000
   rate: 2/3（市外から調達する場合は1/2）
+  rate_num: 0.667
   targets: {efficiency: △, consulting: ×, training: ×}
   expenses: 機械装置、ソフトウェア。リースは対象外
   conditions: 労働生産性を3年で9%以上上げる計画と、産業支援機関の事前確認
@@ -82,6 +90,8 @@
   area: kanagawa/hiratsuka
   max_yen: 2000000
   rate: 1/2
+  rate_num: 0.5
+  min_cost_yen: 1000000
   targets: {efficiency: △, consulting: ○, training: ×}
   expenses: 構築の委託費、ソフトウェアの購入・利用費、AI選定や技術指導のコンサル費。既存の生成AIサービスの導入は対象外
   conditions: 経費100万円以上。市指定のITコーディネータによる事前確認が必須
@@ -97,6 +107,8 @@
   area: kanagawa/yokosuka
   max_yen: 300000
   rate: 3/4
+  rate_num: 0.75
+  small_only: true
   targets: {efficiency: ○, consulting: ○, training: △}
   expenses: ITサービス導入費、システム構築費、専門家指導費（「生成AI活用」と明記）
   conditions: 市内の小規模事業者で開業6か月以上。パートナーシップ構築宣言とSECURITY ACTIONが必要
@@ -112,6 +124,8 @@
   area: kanagawa/atsugi
   max_yen: 700000
   rate: 1/2
+  rate_num: 0.5
+  min_cost_yen: 500000
   targets: {efficiency: ○, consulting: △, training: ×}
   expenses: AIを含む先端技術の導入
   conditions: 経費50万円以上。市内で1年以上営業。導入後に申請する方式

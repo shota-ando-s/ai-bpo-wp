@@ -5,6 +5,7 @@
   area: chiba
   max_yen: 500000
   rate: 8/10
+  rate_num: 0.8
   targets: {efficiency: ×, consulting: △, training: ×}
   expenses: 紹介手数料、副業人材への報酬
   conditions: 県のプロフェッショナル人材戦略拠点の紹介で、副業人材を初めて採用する
@@ -20,6 +21,7 @@
   area: chiba/chiba-city
   max_yen: 500000
   rate: 2/3（機器は1/3）
+  rate_num: 0.667
   targets: {efficiency: ◎, consulting: ◎, training: ◎}
   expenses: ソフトウェア・クラウド利用料（必須）、システム構築、外部専門家への相談費（日額2万円以下）、従業員の研修費
   conditions: 市内に本社か事業所がある。コーディネーターへの事前相談が必須（審査会まで約5週間）。2027年4月以降の利用料は対象外
@@ -34,6 +36,7 @@
   area: chiba/funabashi
   max_yen: 150000
   rate: 3/4
+  rate_num: 0.75
   targets: {efficiency: ×, consulting: ×, training: ×}
   expenses: 国の賃上げ要件付き補助金の申請支援費用（中小企業診断士・社労士など）
   period: {status: open, start: 2026-04-01, end: 2026-12-31}
@@ -48,6 +51,8 @@
   area: chiba/matsudo
   max_yen: 500000
   rate: 2/3（機器は1/2）
+  rate_num: 0.667
+  min_cost_yen: 50000
   targets: {efficiency: ◎, consulting: ×, training: ○}
   expenses: ソフトウェアの利用料・購入費・開発費（経費の半分以上が必須）、講座受講費
   conditions: 市内で1年以上営業。市と協議して専門家支援を受ける

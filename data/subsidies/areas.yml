@@ -1,0 +1,48 @@
+# 診断ツールの地域リスト。code は各YAMLの area と対応させる
+# none: true は独自の制度がない区市（2026-10-14確認）。note は表示する補足
+- code: tokyo
+  name: 東京都
+  cities:
+    - {code: tokyo/shinagawa, name: 品川区}
+    - {code: tokyo/minato, name: 港区}
+    - {code: tokyo/sumida, name: 墨田区}
+    - {code: tokyo/itabashi, name: 板橋区}
+    - {code: tokyo/koto, name: 江東区}
+    - {code: tokyo/chiyoda, name: 千代田区, none: true, note: まちみらい千代田の無料デジタル化相談（最大5回）があります}
+    - {code: tokyo/chuo, name: 中央区, none: true, note: 無料の出張経営相談（IT活用も可）があります}
+    - {code: tokyo/shinjuku, name: 新宿区, none: true}
+    - {code: tokyo/shibuya, name: 渋谷区, none: true}
+    - {code: tokyo/ota, name: 大田区, none: true}
+    - {code: tokyo/tachikawa, name: 立川市}
+    - {code: tokyo/hachioji, name: 八王子市}
+    - {code: tokyo/machida, name: 町田市, none: true}
+    - {code: tokyo/fuchu, name: 府中市, none: true}
+    - {code: tokyo/chofu, name: 調布市, none: true}
+- code: kanagawa
+  name: 神奈川県
+  cities:
+    - {code: kanagawa/yokohama, name: 横浜市, none: true, note: 今年度は補助金がなく、無料の講座と伴走支援（6月で募集終了）のみです}
+    - {code: kanagawa/kawasaki, name: 川崎市}
+    - {code: kanagawa/sagamihara, name: 相模原市}
+    - {code: kanagawa/hiratsuka, name: 平塚市}
+    - {code: kanagawa/yokosuka, name: 横須賀市}
+    - {code: kanagawa/atsugi, name: 厚木市}
+    - {code: kanagawa/fujisawa, name: 藤沢市, none: true}
+- code: saitama
+  name: 埼玉県
+  cities:
+    - {code: saitama/saitama-city, name: さいたま市}
+    - {code: saitama/kawaguchi, name: 川口市}
+    - {code: saitama/koshigaya, name: 越谷市}
+    - {code: saitama/ageo, name: 上尾市}
+    - {code: saitama/toda, name: 戸田市}
+    - {code: saitama/kawagoe, name: 川越市, none: true}
+    - {code: saitama/tokorozawa, name: 所沢市, none: true}
+- code: chiba
+  name: 千葉県
+  cities:
+    - {code: chiba/chiba-city, name: 千葉市}
+    - {code: chiba/funabashi, name: 船橋市}
+    - {code: chiba/matsudo, name: 松戸市}
+    - {code: chiba/kashiwa, name: 柏市, none: true}
+    - {code: chiba/ichikawa, name: 市川市, none: true}

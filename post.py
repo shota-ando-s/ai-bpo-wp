@@ -244,6 +244,12 @@ def convert_to_blocks(html):
             rf'<!-- wp:heading {{"level":{level}}} --><h{level} class="wp-block-heading">\1</h{level}><!-- /wp:heading -->',
             html, flags=re.DOTALL
         )
+    # ショートコードだけの段落 → wp:shortcode（<p> の中に <div> を出さないため）
+    html = re.sub(
+        r'<p>(\[[a-z0-9_]+[^\]]*\])</p>',
+        r'<!-- wp:shortcode -->\1<!-- /wp:shortcode -->',
+        html
+    )
     # p → wp:paragraph
     html = re.sub(
         r'<p>(.*?)</p>',
