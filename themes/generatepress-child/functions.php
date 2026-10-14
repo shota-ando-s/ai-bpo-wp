@@ -241,6 +241,99 @@ function hikitsugi_has_blog_sidebar() {
 	return $area && ( is_page( $area->ID ) || in_array( $area->ID, get_post_ancestors( get_queried_object_id() ), true ) );
 }
 
+/**
+ * 本文の「よくある質問」見出しの下にある質問と回答を取り出す。
+ * 「よくある質問」を含む見出しのひとつ下のレベルの見出しを質問、
+ * 次の見出しまでの段落を回答とする。
+ *
+ * @param string $html 本文のHTML。
+ * @return array<int, array{q: string, a: string}>
+ */
+function hikitsugi_extract_faq( $html ) {
+	if ( ! class_exists( 'DOMDocument' ) || false === strpos( $html, 'よくある質問' ) ) {
+		return [];
+	}
+	$doc = new DOMDocument();
+	libxml_use_internal_errors( true );
+	$doc->loadHTML( '<?xml encoding="UTF-8"><div>' . $html . '</div>' );
+	libxml_clear_errors();
+
+	$faq       = [];
+	$faq_level = 0;
+	$current   = null;
+	foreach ( $doc->getElementsByTagName( 'div' )->item( 0 )->childNodes as $node ) {
+		if ( XML_ELEMENT_NODE !== $node->nodeType ) {
+			continue;
+		}
+		$text = trim( $node->textContent );
+		if ( preg_match( '/^h([2-6])$/', $node->nodeName, $m ) ) {
+			$level = (int) $m[1];
+			if ( $current ) {
+				$faq[]   = $current;
+				$current = null;
+			}
+			if ( false !== strpos( $text, 'よくある質問' ) ) {
+				$faq_level = $level;
+			} elseif ( $faq_level && $level === $faq_level + 1 ) {
+				$current = [ 'q' => $text, 'a' => '' ];
+			} elseif ( $faq_level && $level <= $faq_level ) {
+				$faq_level = 0;
+			}
+			continue;
+		}
+		if ( $current && in_array( $node->nodeName, [ 'p', 'ul', 'ol' ], true ) ) {
+			$current['a'] = trim( $current['a'] . "\n" . $text );
+		}
+	}
+	if ( $current ) {
+		$faq[] = $current;
+	}
+	return array_values( array_filter( $faq, function ( $item ) {
+		return '' !== $item['a'];
+	} ) );
+}
+
+// 診断・地域ページ: FAQPage と BreadcrumbList の構造化データを出力
+add_action( 'wp_head', function () {
+	if ( ! is_page() || ! hikitsugi_has_blog_sidebar() ) {
+		return;
+	}
+	$post    = get_queried_object();
+	$schemas = [];
+
+	$faq = hikitsugi_extract_faq( apply_filters( 'the_content', $post->post_content ) );
+	if ( $faq ) {
+		$schemas[] = [
+			'@context'   => 'https://schema.org',
+			'@type'      => 'FAQPage',
+			'mainEntity' => array_map( function ( $item ) {
+				return [
+					'@type'          => 'Question',
+					'name'           => $item['q'],
+					'acceptedAnswer' => [ '@type' => 'Answer', 'text' => $item['a'] ],
+				];
+			}, $faq ),
+		];
+	}
+
+	$crumbs = [ [ 'name' => get_bloginfo( 'name' ), 'url' => home_url( '/' ) ] ];
+	foreach ( array_reverse( get_post_ancestors( $post ) ) as $ancestor_id ) {
+		$crumbs[] = [ 'name' => get_the_title( $ancestor_id ), 'url' => get_permalink( $ancestor_id ) ];
+	}
+	$crumbs[]  = [ 'name' => get_the_title( $post ), 'url' => get_permalink( $post ) ];
+	$schemas[] = [
+		'@context'        => 'https://schema.org',
+		'@type'           => 'BreadcrumbList',
+		'itemListElement' => array_map( function ( $crumb, $i ) {
+			return [ '@type' => 'ListItem', 'position' => $i + 1, 'name' => $crumb['name'], 'item' => $crumb['url'] ];
+		}, $crumbs, array_keys( $crumbs ) ),
+	];
+
+	foreach ( $schemas as $schema ) {
+		echo '<script type="application/ld+json">' . wp_json_encode( $schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES ) . "</script>\n";
+	}
+} );
+
 // 投稿・診断・地域ページ: 右サイドバーを強制表示
 add_filter( 'generate_sidebar_layout', function( $layout ) {
 	if ( hikitsugi_has_blog_sidebar() ) return 'right-sidebar';
