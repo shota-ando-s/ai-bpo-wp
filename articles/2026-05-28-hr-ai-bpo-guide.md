@@ -1,7 +1,7 @@
 ---
 title: 人事・採用業務をAI BPOで効率化する方法｜中小企業の導入費用とROI
 description: 人事AI BPOとは何か、中小企業が採用・労務業務をAIとアウトソーシングで効率化する具体的な方法を解説。採用担当者1名分のコスト比較、業務別AI適性マトリクス、失敗パターン5選、導入費用の相場まで網羅。
-slug: hr-ai-bpo-guide
+slug: hr-ai-bpo-roi
 categories: [AI BPO]
 tags: [人事 AI BPO, 採用 AI, HR BPO, 採用自動化, 中小企業]
 status: publish

@@ -3,7 +3,7 @@ title: AI BPO導入Step6｜業務マニュアル・引き継ぎ準備の完全�
 categories: [AI BPO, 導入ガイド]
 tags: [AI BPO, 業務マニュアル, 引き継ぎ, 移行準備, 属人化解消]
 status: publish
-slug: ai-bpo-step6-migration
+slug: ai-bpo-step6
 excerpt: AI BPO導入で最も時間がかかる移行準備フェーズを解説。業務マニュアルの作成方法・引き継ぎスケジュールの設計・並行稼働の進め方と、ChatGPT・Claude等のLLMで作成時間を1/3に短縮する具体的な手順を紹介します。
 ---
 

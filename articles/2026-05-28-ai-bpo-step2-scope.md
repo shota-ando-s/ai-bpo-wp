@@ -3,7 +3,7 @@ title: AI BPO導入Step2｜何をアウトソースすべきか？委託範囲�
 categories: [AI BPO, 導入ガイド]
 tags: [AI BPO, アウトソース, スコープ定義, ROI試算, 業務選定]
 status: publish
-slug: ai-bpo-step2-scope
+slug: ai-bpo-step2
 excerpt: AI BPO導入で最も重要な判断が「何をアウトソースするか」のスコープ定義。コア業務とノンコア業務の分類基準、AI適性判定フレームワーク、ROI試算の方法を具体的な数値例と優先度マトリクスで解説します。
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 経理・会計BPOとは？費用相場・メリット・デメリット・選び方【2026年版】
 description: 経理・会計BPOの仕組み・委託できる業務範囲・費用相場・失敗しない会社選びを中小企業向けに解説。記帳・請求書処理・決算補助をBPO化するメリットとデメリット、ROI試算つきで比較します。
-slug: keiri-bpo-towa
+slug: accounting-bpo-guide
 categories: [BPO基礎知識, 経理・会計BPO]
 tags: [経理BPO, 会計BPO, F&A BPO, 記帳代行, 経理アウトソーシング, 経理外注]
 status: publish

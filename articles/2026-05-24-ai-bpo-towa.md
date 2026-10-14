@@ -1,7 +1,7 @@
 ---
 title: AI BPOとは？中小企業向けに仕組み・費用・事例を完全解説【2026年版】
 description: AI BPOとは、AIと人のハイブリッドで業務を代行する次世代アウトソーシングです。仕組み・従来BPOとの違い・費用相場・ROI試算・失敗パターン4選・AI BPOを使わないリスクまで、中小企業経営者向けに2026年最新データを引用して完全解説します。
-slug: ai-bpo-towa
+slug: ai-bpo-sme-guide
 categories: [AI BPO]
 tags: [AI BPO, 業務効率化, アウトソーシング, 生成AI, 中小企業DX]
 status: publish

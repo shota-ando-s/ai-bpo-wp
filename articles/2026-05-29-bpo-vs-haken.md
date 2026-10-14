@@ -1,7 +1,7 @@
 ---
 title: BPOと派遣の違いを徹底比較｜指揮命令・費用・リスク・選び方【2026年版】
 description: BPOと派遣の違いを法律・費用・リスク・向いているケースで徹底比較。偽装請負の違法リスクや、コスト試算で「どちらがお得か」を中小企業向けにわかりやすく解説します。
-slug: bpo-vs-haken
+slug: bpo-vs-dispatch
 categories: [BPO基礎知識]
 tags: [BPO 派遣 違い, 偽装請負, 業務委託, 指揮命令権, アウトソーシング]
 status: publish

@@ -1,7 +1,7 @@
 ---
 title: AI BPOで失敗する7つのパターンと回避策【2026年版】
 description: AI BPOで失敗する原因は「PoC止まり」「プロセス未設計」「KPI未設定」など7つのパターンに集約されます。Gartner・McKinsey・PwCの最新データをもとに、中小企業経営者が自社のリスクを自己診断できるチェックリストと具体的な回避策を徹底解説します。
-slug: ai-bpo-shippai
+slug: ai-bpo-failure-solutions
 categories: [AI BPO]
 tags: [AI BPO, 失敗事例, 業務自動化, DX, 中小企業]
 status: publish

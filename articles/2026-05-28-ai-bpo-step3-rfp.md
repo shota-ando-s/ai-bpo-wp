@@ -3,7 +3,7 @@ title: AI BPO導入Step3｜要件定義・RFPの作り方｜LLMを使って半�
 categories: [AI BPO, 導入ガイド]
 tags: [AI BPO, RFP, 要件定義, ベンダー選定, ChatGPT活用]
 status: publish
-slug: ai-bpo-step3-rfp
+slug: ai-bpo-step3
 excerpt: AI BPO導入の調達フェーズ第一歩はRFP（提案依頼書）の作成。RFPの構成要素・書き方・よくある失敗を解説し、ChatGPT・Claude等のLLMを使って半日でRFP草稿を作る具体的な手順とプロンプト例を紹介します。
 ---
 

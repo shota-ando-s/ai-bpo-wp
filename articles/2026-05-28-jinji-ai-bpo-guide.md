@@ -1,7 +1,7 @@
 ---
 title: 人事AI BPOで採用・給与・労務を自動化する方法｜費用相場と導入ステップ
 description: 人事AI BPOとは採用・給与計算・労務管理をAIとアウトソーシングで効率化する手法です。中小企業向けに費用相場（月4.5万円〜）、ROI試算、失敗パターン、導入ステップを公的データをもとにわかりやすく解説します。
-slug: jinji-ai-bpo-guide
+slug: hr-ai-bpo-automation
 categories: [AI BPO活用ガイド]
 tags: [人事AI BPO, 採用代行, 給与計算自動化, 人事DX, 中小企業]
 status: publish

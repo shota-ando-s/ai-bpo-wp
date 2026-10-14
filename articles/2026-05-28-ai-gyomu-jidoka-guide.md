@@ -1,7 +1,7 @@
 ---
 title: AI業務自動化とは？中小企業向け導入ステップ・費用・事例を完全解説【2026年版】
 description: AI業務自動化とは何か、RPA・生成AIとの違い、中小企業の導入ステップ・費用相場・成功事例・失敗回避策を2026年最新データで解説。月5万円から始める具体的なロードマップも掲載。
-slug: ai-gyomu-jidoka-guide
+slug: ai-automation-sme-guide
 categories: [AI業務自動化]
 tags: [AI業務自動化, AI業務効率化, 生成AI, RPA, 中小企業DX, AIエージェント]
 status: publish

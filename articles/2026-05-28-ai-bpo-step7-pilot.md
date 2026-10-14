@@ -3,7 +3,7 @@ title: AI BPO導入Step7｜パイロット運用の設計と問題を早期発�
 categories: [AI BPO, 導入ガイド]
 tags: [AI BPO, パイロット運用, テスト運用, 品質管理, KPI設定, AIモニタリング]
 status: publish
-slug: ai-bpo-step7-pilot
+slug: ai-bpo-step7
 excerpt: AI BPO導入前の最重要ステップ「パイロット運用」の設計方法を完全解説。対象範囲・期間・KPIの設定から、AIモニタリングによるリアルタイム異常検知、本格稼働への移行判断基準まで詳しく紹介します。
 ---
 

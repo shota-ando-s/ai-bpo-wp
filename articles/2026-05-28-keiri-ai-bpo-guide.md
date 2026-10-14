@@ -1,7 +1,7 @@
 ---
 title: 経理AI BPO導入で何が変わる？業務自動化と費用・ROIを解説
 description: 経理AI BPOとは、AI-OCRや生成AIを使い経理業務を外部委託する仕組みです。仕訳自動化・請求書処理・インボイス対応・ROI試算・失敗パターン5選・向いていない企業の特徴まで、従業員30〜100名の中小企業経営者向けに2026年最新データで徹底解説します。
-slug: keiri-ai-bpo-guide
+slug: accounting-ai-bpo-guide
 categories: [AI BPO]
 tags: [経理AI BPO, 経理アウトソーシング, 仕訳自動化, 経理DX, 中小企業]
 status: publish

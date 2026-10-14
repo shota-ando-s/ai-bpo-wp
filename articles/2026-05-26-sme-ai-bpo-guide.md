@@ -1,7 +1,7 @@
 ---
 title: 中小企業AI BPO入門｜月5万円から始める業務効率化【2026年版】
 description: 中小企業がAI BPOを月5万円から始める具体的な方法を解説。費用相場・ROI試算・デジタル化AI導入補助金2026の活用法・業務の選び方・3〜6ヶ月の導入ステップまで、従業員50人未満・IT担当者なしの環境でも実践できる内容にまとめました。
-slug: sme-ai-bpo-guide
+slug: ai-bpo-guide-for-beginners
 categories: [AI BPO]
 tags: [中小企業, AI BPO, 業務効率化, 費用, スモールスタート, IT導入補助金]
 status: publish

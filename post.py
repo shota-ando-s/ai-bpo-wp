@@ -293,9 +293,11 @@ def _split_sections(html):
 def _section_text(html):
     """比較用: blockコメント・画像・HTMLタグを除いた正規化テキスト"""
     text = re.sub(r'<!--.*?-->', '', html, flags=re.DOTALL)
-    text = re.sub(r'<figure[^>]*>.*?</figure>', '', text, flags=re.DOTALL)
+    # 画像の figure だけ除く（表の figure.wp-block-table は比較に含める）
+    text = re.sub(r'<figure(?![^>]*wp-block-table)[^>]*>.*?</figure>', '', text, flags=re.DOTALL)
     text = re.sub(r'<[^>]+>', '', text)
-    return re.sub(r'\s+', ' ', text).strip()
+    # 空白・改行の違い（<br> の前後など）は無視する
+    return re.sub(r'\s+', '', text)
 
 def merge_sections(wp_html, new_html):
     """H2セクション単位でdiff。変更なし→WP保持（画像・WP直接編集を維持）、変更あり→新HTML採用"""

@@ -1,7 +1,7 @@
 ---
 title: AI BPO導入事例10選｜業種・規模別の成功数値と失敗パターン【2026年版】
 description: AI BPOの導入事例を業種・規模別に10社で徹底解説。コスト削減・工数削減の成功数値、月額費用帯別ROI試算、失敗パターン5選、デジタル化・AI導入補助金2026の活用シミュレーション、自社向き5分チェックリストを収録。中小企業経営者が意思決定できる情報をすべてまとめました。
-slug: ai-bpo-jirei
+slug: ai-bpo-casestudy
 categories: [AI BPO]
 tags: [AI BPO, 導入事例, 業務効率化, DX, 中小企業DX, ROI]
 status: publish

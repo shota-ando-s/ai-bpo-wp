@@ -1,7 +1,7 @@
 ---
 title: データ入力AI BPOサービス比較｜中小企業の入力代行自動化と費用
 description: データ入力AI BPOとは何か、費用相場・業務別自動化適性・AI-OCRとRPAの違いを中小企業向けに徹底解説。派遣1名との具体的なROI試算や失敗パターン5つも紹介。自動化で本当にコストを削減できるか判断できます。
-slug: data-entry-ai-bpo-guide
+slug: data-entry-ai-bpo-comparison
 categories: [AI BPO]
 tags: [データ入力 AI BPO, データ入力代行, AI-OCR, 入力自動化, 中小企業]
 status: publish
