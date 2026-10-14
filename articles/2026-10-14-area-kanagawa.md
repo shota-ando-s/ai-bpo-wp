@@ -3,7 +3,7 @@ title: 神奈川県の中小企業のAI導入｜使える補助金・後継者�
 type: page
 slug: kanagawa
 parent: area
-status: draft
+status: publish
 excerpt: 神奈川県は後継者不在率55.8%と首都圏で最も高く、生産年齢人口は2050年までに19%減る見込みです。県内の中小企業が使える国・県・市の補助金、自治体のAI施策、製造業での費用と効果の試算をまとめました。
 ---
 
