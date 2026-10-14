@@ -181,19 +181,22 @@ WebSearch で上位3記事の構成を確認し、対象記事と比較する:
 - H2にメイン/サブキーワードを含める
 - H3に疑問形見出しを入れる（強調スニペット・PAA対策）
 
-記事フォーマットは /seo スキルと同一:
+記事フォーマット・執筆ルールは seo-article スキル（`.claude/skills/seo-article/`）に従う:
 ```
 ---
-title: [タイトル（35字以内・KW含む）]
-description: [メタディスクリプション（120〜160字）]
-slug: [url-slug-in-english]
+title: [タイトル（32字前後・KWを前半に）]
+slug: [url-slug-in-english]   # 既存記事は変えない
 categories: [カテゴリ名]
 tags: [タグ1, タグ2, タグ3]
 status: publish
+excerpt: [100〜140字。メタディスクリプションになる]
 ---
 
 [本文]
 ```
+
+既存の H2 見出しの文言は変えない（post.py が H2 の文言で WordPress 上の画像と対応づけている）。
+リライト後は `python3 .claude/skills/seo-article/scripts/check_article.py articles/<file>.md --kw "<KW>"` で ERROR 0 を確認する。
 
 ### 部分リライトの場合
 

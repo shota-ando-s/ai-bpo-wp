@@ -299,8 +299,29 @@ def _section_text(html):
     # 空白・改行の違い（<br> の前後など）は無視する
     return re.sub(r'\s+', '', text)
 
+_GENERATED_IMAGE_RE = re.compile(
+    r'(?:<!-- wp:image -->\s*)?<figure class="wp-block-image[^"]*\b(?:h2-section-image|intro-image)\b[^"]*">.*?</figure>(?:\s*<!-- /wp:image -->)?',
+    re.DOTALL,
+)
+
+def _carry_over_images(wp_chunk, new_chunk):
+    """変更のあったセクションに、WP側にある生成画像（H2画像・イントロ画像）を引き継ぐ"""
+    if not wp_chunk or _GENERATED_IMAGE_RE.search(new_chunk):
+        return new_chunk
+    images = "".join(m.group(0) for m in _GENERATED_IMAGE_RE.finditer(wp_chunk))
+    if not images:
+        return new_chunk
+    h2 = _H2_SPLIT_RE.match(new_chunk)
+    if h2:
+        # H2画像は見出しの直後
+        return new_chunk[:h2.end()] + images + new_chunk[h2.end():]
+    # イントロ画像は最初の段落の直前
+    p = re.search(r'(?:<!-- wp:paragraph -->)?<p', new_chunk)
+    pos = p.start() if p else 0
+    return new_chunk[:pos] + images + new_chunk[pos:]
+
 def merge_sections(wp_html, new_html):
-    """H2セクション単位でdiff。変更なし→WP保持（画像・WP直接編集を維持）、変更あり→新HTML採用"""
+    """H2セクション単位でdiff。変更なし→WP保持（画像・WP直接編集を維持）、変更あり→新HTML採用（生成画像は引き継ぐ）"""
     wp_dict = {h2: chunk for h2, chunk in _split_sections(wp_html)}
     result = []
     changed = []
@@ -309,7 +330,7 @@ def merge_sections(wp_html, new_html):
         if wp_chunk and _section_text(wp_chunk) == _section_text(new_chunk):
             result.append(wp_chunk)
         else:
-            result.append(new_chunk)
+            result.append(_carry_over_images(wp_chunk, new_chunk))
             label = h2_text or "(冒頭)"
             changed.append(label)
     if changed:

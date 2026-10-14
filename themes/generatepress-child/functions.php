@@ -294,9 +294,58 @@ function hikitsugi_extract_faq( $html ) {
 	} ) );
 }
 
-// 診断・地域ページ: FAQPage と BreadcrumbList の構造化データを出力
+/**
+ * パンくずの項目。
+ * 投稿: サイト名 > カテゴリ（親カテゴリから） > 記事。カテゴリは Rank Math の主カテゴリ、なければ最初のカテゴリ。
+ * 固定ページ: サイト名 > 親ページ > ページ。
+ *
+ * @param WP_Post $post 対象の投稿・固定ページ。
+ * @return array<int, array{name: string, url: string}>
+ */
+function hikitsugi_breadcrumbs( $post ) {
+	$crumbs = [ [ 'name' => get_bloginfo( 'name' ), 'url' => home_url( '/' ) ] ];
+	if ( 'post' === $post->post_type ) {
+		$cat_id = (int) get_post_meta( $post->ID, 'rank_math_primary_category', true );
+		$cat    = $cat_id ? get_term( $cat_id, 'category' ) : null;
+		if ( ! $cat || is_wp_error( $cat ) ) {
+			$cats = get_the_category( $post->ID );
+			$cat  = $cats ? $cats[0] : null;
+		}
+		if ( $cat ) {
+			foreach ( array_reverse( get_ancestors( $cat->term_id, 'category' ) ) as $ancestor_id ) {
+				$ancestor = get_term( $ancestor_id, 'category' );
+				$crumbs[] = [ 'name' => $ancestor->name, 'url' => get_term_link( $ancestor ) ];
+			}
+			$crumbs[] = [ 'name' => $cat->name, 'url' => get_term_link( $cat ) ];
+		}
+	} else {
+		foreach ( array_reverse( get_post_ancestors( $post ) ) as $ancestor_id ) {
+			$crumbs[] = [ 'name' => get_the_title( $ancestor_id ), 'url' => get_permalink( $ancestor_id ) ];
+		}
+	}
+	$crumbs[] = [ 'name' => get_the_title( $post ), 'url' => get_permalink( $post ) ];
+	return $crumbs;
+}
+
+// 投稿: 記事の上（アイキャッチの上）にパンくずを表示
+add_action( 'generate_before_content', function () {
+	if ( ! is_single() ) {
+		return;
+	}
+	$crumbs = hikitsugi_breadcrumbs( get_queried_object() );
+	$last   = count( $crumbs ) - 1;
+	echo '<nav class="breadcrumbs" aria-label="パンくずリスト"><ol>';
+	foreach ( $crumbs as $i => $crumb ) {
+		echo $i === $last
+			? '<li aria-current="page">' . esc_html( $crumb['name'] ) . '</li>'
+			: '<li><a href="' . esc_url( $crumb['url'] ) . '">' . esc_html( $crumb['name'] ) . '</a></li>';
+	}
+	echo '</ol></nav>';
+}, 5 );
+
+// 投稿・診断・地域ページ: FAQPage と BreadcrumbList の構造化データを出力
 add_action( 'wp_head', function () {
-	if ( ! is_page() || ! hikitsugi_has_blog_sidebar() ) {
+	if ( ! hikitsugi_has_blog_sidebar() ) {
 		return;
 	}
 	$post    = get_queried_object();
@@ -317,11 +366,7 @@ add_action( 'wp_head', function () {
 		];
 	}
 
-	$crumbs = [ [ 'name' => get_bloginfo( 'name' ), 'url' => home_url( '/' ) ] ];
-	foreach ( array_reverse( get_post_ancestors( $post ) ) as $ancestor_id ) {
-		$crumbs[] = [ 'name' => get_the_title( $ancestor_id ), 'url' => get_permalink( $ancestor_id ) ];
-	}
-	$crumbs[]  = [ 'name' => get_the_title( $post ), 'url' => get_permalink( $post ) ];
+	$crumbs    = hikitsugi_breadcrumbs( $post );
 	$schemas[] = [
 		'@context'        => 'https://schema.org',
 		'@type'           => 'BreadcrumbList',

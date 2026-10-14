@@ -1097,3 +1097,49 @@ a:active {
   font-size: 0.85rem;
   margin-bottom: 0 !important;
 }
+
+/* =============================
+   パンくず（投稿）
+   ============================= */
+.breadcrumbs {
+  margin: 0 0 14px;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumbs li {
+  margin: 0;
+  min-width: 0;
+}
+
+.breadcrumbs li + li::before {
+  content: "›";
+  margin: 0 0.5em;
+  color: #94a3b8;
+}
+
+.breadcrumbs a {
+  color: #64748b;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  color: #1a3a6e;
+  text-decoration: underline;
+}
+
+.breadcrumbs li[aria-current="page"] {
+  overflow: hidden;
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
