@@ -13,9 +13,9 @@
   period: {status: closed, start: 2026-04-15, end: 2026-08-28}
   next_expected: 2027-04
   url: https://www.pref.kanagawa.jp/docs/m2w/shokibo_digital/r8.html
-  checked: 2026-10-14
+  checked: 2026-10-16
   confidence: official
-  note: 予算到達で終了。生成AIツールが明記されていて、来年度の狙い目
+  note: 予算到達で終了。生成AIツールが明記されている。ホームページ作成・PCなどは上限10万円。next_expectedは今年度の時期からの推測で、来年度の実施は未発表
 
 - id: kanagawa-seisansei
   name: 中小企業生産性向上促進事業費補助金
@@ -30,7 +30,7 @@
   period: {status: closed, end: 2026-08-31}
   next_expected: 2027-06
   url: https://r8seisansei.pref.kanagawa.jp/
-  checked: 2026-10-14
+  checked: 2026-10-16
   confidence: official
 
 - id: kawasaki-seisansei
@@ -47,7 +47,7 @@
   period: {status: closed}
   next_expected: 2027-04
   url: https://www.city.kawasaki.jp/280/page/0000186427.html
-  checked: 2026-10-14
+  checked: 2026-10-16
   confidence: official
   note: 予算到達で終了
 
@@ -63,7 +63,7 @@
   conditions: 市内に事業所があり1年以上営業。事務局で専門家の確認を受ける。エントリーシートは10/30必着、申請書は11/13必着
   period: {status: open, end: 2026-11-13}
   url: https://www.city.kawasaki.jp/280/page/0000186427.html
-  checked: 2026-10-14
+  checked: 2026-10-16
   confidence: official
   note: 先着順。予算に達し次第終了
 
@@ -75,14 +75,13 @@
   rate: 2/3（市外から調達する場合は1/2）
   rate_num: 0.667
   targets: {efficiency: △, consulting: ×, training: ×}
-  expenses: 機械装置、ソフトウェア。リースは対象外
+  expenses: 機械装置、ソフトウェア。リース費用は対象外（ソフトウェアのサブスクリプションは除く）。一般事務用ソフトは対象外
   conditions: 労働生産性を3年で9%以上上げる計画と、産業支援機関の事前確認
   period: {status: closed, end: 2026-09-16}
-  next_expected: 2027-05
   url: https://www.city.sagamihara.kanagawa.jp/sangyo/sangyo/1026664/1003291/josei/1035055.html
-  checked: 2026-10-14
+  checked: 2026-10-16
   confidence: official
-  note: 事前申請が終了。本申請は事前申請した事業者のみ11/30まで
+  note: 国の重点支援地方交付金を使った2026年度の事業で、来年度の実施は未発表。第2回の事前申請（9/14〜9/16）は終了し、10/15に抽選結果を公表。本申請は事前申請した事業者のみ11/30まで
 
 - id: hiratsuka-dx
   name: 中小企業等DX支援補助金
@@ -97,9 +96,9 @@
   conditions: 経費100万円以上。市指定のITコーディネータによる事前確認が必須
   period: {status: open, start: 2026-04-01, end: 2027-02-28}
   url: https://www.city.hiratsuka.kanagawa.jp/sangyo/page33_00096.html
-  checked: 2026-10-14
+  checked: 2026-10-16
   confidence: official
-  note: 補助率とコースの記載が二次情報と食い違う
+  note: 事業は2027-03-31までに完了。国・県などの補助金と同一内容での併用は不可
 
 - id: yokosuka-ict
   name: 小規模事業者ICT支援補助金「はじめの一歩」
@@ -114,7 +113,7 @@
   conditions: 市内の小規模事業者で開業6か月以上。パートナーシップ構築宣言とSECURITY ACTIONが必要
   period: {status: open, end: 2027-01-29}
   url: https://www.city.yokosuka.kanagawa.jp/4402/sangyoshinko/shokibojigyosha_ict_shien.html
-  checked: 2026-10-14
+  checked: 2026-10-16
   confidence: official
   note: endは実績報告の期限。受付状況は商工会議所に確認
 
@@ -122,15 +121,15 @@
   name: IT・IoT導入補助金（ロボット関連産業等促進事業補助金）
   org: 厚木市
   area: kanagawa/atsugi
-  max_yen: 700000
-  rate: 1/2
+  max_yen: 500000
+  rate: 1/2（ソフトのみのIT導入は上限10万円、大学発ベンチャーはAI導入の上限70万円）
   rate_num: 0.5
   min_cost_yen: 500000
-  targets: {efficiency: ○, consulting: △, training: ×}
-  expenses: AIを含む先端技術の導入
-  conditions: 経費50万円以上。市内で1年以上営業。導入後に申請する方式
+  targets: {efficiency: △, consulting: △, training: ×}
+  expenses: AIなどの先端技術の導入。保守・サービス費、クラウド利用費、通信料は対象外
+  conditions: 経費50万円以上。市内で1年以上営業。設備の受け渡し前に事業計画概要書を提出し、事業完了から2か月以内に申請する
   period: {status: rolling, end: 2027-03-15}
-  url: https://www.city.atsugi.kanagawa.jp/material/files/group/44/kigyoshienflyer2026.pdf
-  checked: 2026-10-14
-  confidence: secondary
-  note: 上限と補助率は公式のチラシ、手続きは二次情報
+  url: https://www.city.atsugi.kanagawa.jp/soshiki/sangyoshinkoka/9/2/24830.html
+  checked: 2026-10-16
+  confidence: official
+  note: 要綱 https://www.city.atsugi.kanagawa.jp/material/files/group/44/robothojokin20260401.pdf で確認。月額のAIサービス（クラウド利用料）には使えない。予算を超えると締め切ることがある。endは1/16〜3/15に完了した事業の申請期限

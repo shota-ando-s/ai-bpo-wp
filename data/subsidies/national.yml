@@ -8,16 +8,16 @@
   rate_num: 0.5
   max_months: 24
   fuenn_available_from: 2027-04
-  fuenn_note: ふえんのAI業務効率化サービスは、この補助金を使って導入できます（2027年度の公募から対応予定）。対象になるかどうか、申請の進め方はお問い合わせください。
+  fuenn_note: ふえんはIT導入支援事業者に登録したうえで、2027年度の公募からAI業務効率化サービスでこの補助金に対応する予定です。対象になるかどうか、申請の進め方はお問い合わせください。
   targets: {efficiency: ○, consulting: △, training: △}
   expenses: ソフトウェア、クラウド利用料（最大2年分）、導入・活用コンサル、導入研修、保守（役務の合計は200万円まで）
   conditions: 登録されたIT導入支援事業者と共同で申請。登録済みのITツールに限る。7次以降は給与支給総額の要件が追加
-  period: {status: open, end: 2026-12-01}
+  period: {status: open, end: 2026-10-30}
   next_expected: 2027-03
   url: https://it-shien.smrj.go.jp/
-  checked: 2026-10-14
+  checked: 2026-10-16
   confidence: official
-  note: ふえんは事業者登録の準備中で、対応は2027年度の公募から。7次の締切日（12/1）は二次情報
+  note: ふえんは事業者登録の準備中で、対応は2027年度の公募から。endは6次締切（10/30 17時）。7次は制度変更（給与支給総額の要件追加）のうえ公募予定で、日付は未掲載（2026-10-16確認）
 
 - id: hatarakikata
   name: 働き方改革推進支援助成金（労働時間短縮・年休促進支援コース）
@@ -32,9 +32,9 @@
   period: {status: open, end: 2026-11-30}
   next_expected: 2027-04
   url: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000120692.html
-  checked: 2026-10-14
+  checked: 2026-10-16
   confidence: official
-  note: 予算の都合で期限前に締め切られることがある
+  note: 予算の都合で期限前に締め切られることがある。上限150万円は時間外労働が月80時間超の事業所が月60時間以下にした場合で、成果目標により25万〜150万円（賃上げ加算は別）。PC・タブレット・スマホは対象外
 
 - id: jinzai-reskilling
   name: 人材開発支援助成金（事業展開等リスキリング支援コース）
@@ -48,7 +48,7 @@
   conditions: 10時間以上の研修。業務に直結する内容であること（汎用的なプロンプト研修は対象外）。計画届は研修開始の1か月前まで
   period: {status: rolling, end: 2027-03-31}
   url: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyufukin/d01-1.html
-  checked: 2026-10-14
+  checked: 2026-10-16
   confidence: official
   note: 令和8年度までの期間限定。後継の制度は未確認
 
