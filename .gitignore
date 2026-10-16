@@ -41,3 +41,6 @@ themes/twenty*/
 .vscode/
 *.swp
 *.swo
+
+# ファクトチェック修正前のバックアップ
+*.md.bak
