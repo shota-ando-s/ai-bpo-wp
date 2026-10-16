@@ -11,4 +11,6 @@ metadata:
 
 AI-BPO導入支援シリーズ9記事の本番slugは `hikitsugi-ai-bpo-roadmap` / `hikitsugi-ai-bpo-step1`〜`step8`（ファイル名は `2026-05-28-hikitsugi-ai-*` だが、roadmap↔support-hub のように名称がズレている点に注意）。
 
-**How to apply:** 既存記事をリライト・再投稿する前に、`.md` の slug が WP の公開URLと一致するか必ず確認する。一致しなければ slug を本番値に直してから `post.py` を実行する。`merge_sections` はテキスト変更のあったH2セクションを画像なしの新HTMLで差し替えるため、更新時はブランド名変更などで該当セクションの画像が消える点も留意。
+2026-10-14に全記事のslugを本番値に揃え、本文も本番から同期した（`scripts/sync_articles_from_wp.py`）。本番で直接編集された記事は、この同期スクリプトで再度 Markdown に取り込める。
+
+**How to apply:** 既存記事をリライト・再投稿する前に、`.md` の slug が WP の公開URLと一致するか必ず確認する。一致しなければ slug を本番値に直してから `post.py` を実行する。本番と本文がずれていそうなら、先に `python3 scripts/sync_articles_from_wp.py`（一覧）→ `--write`（取り込み）を実行する。`merge_sections` はテキスト変更のあったH2セクションを画像なしの新HTMLで差し替えるため、更新時はブランド名変更などで該当セクションの画像が消える点も留意。

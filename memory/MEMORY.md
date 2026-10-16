@@ -8,3 +8,4 @@
 - [メール送信はSMTP経由](project_mail_smtp.md) — さくらのmail()は外部宛リレー不可。hikitsugi-smtpプラグイン＋wp-config.phpの定数で送る。
 - [CF7とcf7-to-zapierの罠](project_cf7_zapier_gotcha.md) — send_mail=0でメール停止、Webhook失敗でmail_failedに塗り替え。設定は_ctz_zapier。
 - [地域別AIメディア企画](project_area_ai_media.md) — ◯◯市 AI 等の地域ページ＋補助金DB＋地域パートナー。企画書 docs/area-ai-media-brief.md
+- [ブランド名はヒキツギAI](project_brand_name.md) — 旧称オフボードは全面置換済み。架空の事例・実績・提携は書かない。
