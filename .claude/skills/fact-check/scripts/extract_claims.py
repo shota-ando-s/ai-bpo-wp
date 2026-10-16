@@ -47,6 +47,10 @@ PRIMARY_DOMAINS = (".go.jp", ".lg.jp", ".ac.jp", ".or.jp", "e-gov.go.jp", "stat.
                    "meti.go.jp", "mhlw.go.jp", "soumu.go.jp", "chusho.meti.go.jp", "ipa.go.jp")
 SECONDARY_HINTS = ("note.com", "qiita.com", "zenn.dev", "ameblo.jp", "hatena", "matome", "wikipedia.org")
 
+# 官公庁のサイトには、ブラウザ以外の User-Agent を 403 で弾くものがある（中小企業庁など）
+BROWSER_UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+              "(KHTML, like Gecko) Chrome/126.0 Safari/537.36")
+
 results = []  # (level, message)
 
 
@@ -165,7 +169,7 @@ def source_kind(url):
 def check_url(url):
     # 日本語を含むURL（帝国データバンクのPDFなど）はそのままだと送れないので、パーセントエンコードする
     safe = urllib.parse.quote(url, safe=":/?&=%#+,;@!$'()*~")
-    req = urllib.request.Request(safe, method="GET", headers={"User-Agent": "Mozilla/5.0 (fact-check)"})
+    req = urllib.request.Request(safe, method="GET", headers={"User-Agent": BROWSER_UA})
     try:
         with urllib.request.urlopen(req, timeout=15) as r:
             return url, r.status, r.geturl()
@@ -295,7 +299,10 @@ def main():
             item["status"] = s
             if final != item["url"]:
                 item["redirect"] = final
-            if not (isinstance(s, int) and s < 400):
+            if s == 429:
+                # アクセス過多による一時的な拒否（Internet Archive など）。リンク切れではない
+                warn(f"アクセス制限（429）で確認できず。時間をおいてブラウザで確認: {item['url']}")
+            elif not (isinstance(s, int) and s < 400):
                 err(f"リンク切れ・取得失敗 ({s}): {item['url']}")
 
     # --- サイト内の定義の食い違い ---
