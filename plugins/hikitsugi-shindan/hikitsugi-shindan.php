@@ -43,7 +43,7 @@ add_shortcode( 'hikitsugi_shindan', function () {
 			<fieldset>
 				<legend>1. 所在地</legend>
 				<div class="hs-row">
-					<label>都県<select name="pref"></select></label>
+					<label>都道府県<select name="pref"></select></label>
 					<label>市区町村<select name="city"></select></label>
 				</div>
 			</fieldset>

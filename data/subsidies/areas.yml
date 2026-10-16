@@ -46,3 +46,26 @@
     - {code: chiba/matsudo, name: 松戸市}
     - {code: chiba/kashiwa, name: 柏市, none: true}
     - {code: chiba/ichikawa, name: 市川市, none: true}
+- code: ehime
+  name: 愛媛県
+  cities:
+    - {code: ehime/matsuyama, name: 松山市}
+    - {code: ehime/imabari, name: 今治市}
+    - {code: ehime/uwajima, name: 宇和島市}
+    - {code: ehime/yawatahama, name: 八幡浜市}
+    - {code: ehime/niihama, name: 新居浜市}
+    - {code: ehime/saijo, name: 西条市}
+    - {code: ehime/ozu, name: 大洲市}
+    - {code: ehime/iyo, name: 伊予市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: ehime/shikokuchuo, name: 四国中央市}
+    - {code: ehime/seiyo, name: 西予市}
+    - {code: ehime/toon, name: 東温市}
+    - {code: ehime/kamijima, name: 上島町, none: true, note: 今申請できる町独自の制度は確認できませんでした（2026-10-17）}
+    - {code: ehime/kumakogen, name: 久万高原町}
+    - {code: ehime/masaki, name: 松前町, none: true, note: 補助金はありません。DXアクセラレータ（無料の伴走支援）は今年度の募集を終えています}
+    - {code: ehime/tobe, name: 砥部町}
+    - {code: ehime/uchiko, name: 内子町}
+    - {code: ehime/ikata, name: 伊方町}
+    - {code: ehime/matsuno, name: 松野町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: ehime/kihoku, name: 鬼北町}
+    - {code: ehime/ainan, name: 愛南町}
