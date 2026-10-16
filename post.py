@@ -132,6 +132,9 @@ def dalle_generate(heading, article_title):
         f"A clean, professional illustration for a Japanese business blog article titled '{article_title}'. "
         f"Section theme: '{heading}'. "
         "Wide landscape format, modern flat design style, no text, no letters, no words anywhere in the image. "
+        # 生成AIは実在の地形や行政区域の形を正しく描けず、地域ページで形の崩れた地図になる
+        "Do not draw maps, coastlines, islands, terrain, or outlines of any country, prefecture, city or region; "
+        "show people, offices, workplaces or abstract business objects instead. "
         "Use soft business colors (blue, white, light gray). High quality, visually appealing."
     )
     body = json.dumps({
