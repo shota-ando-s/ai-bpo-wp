@@ -1,0 +1,238 @@
+# 香川県と県内市町（2026年度）。2026-10-17に公式ページ・公募要領で確認。二次情報だけの制度（さぬき市の1件）、AIと関係の薄い制度（綾川町のWAON決済端末、高松市の国の訓練施設限定の研修補助）は入れていない
+
+- id: kagawa-mirai-toshi
+  name: 香川県事業者の未来への投資を応援する総合補助金（未来投資応援補助金）
+  org: 香川県（産業政策課）
+  area: kagawa
+  max_yen: 1000000
+  rate: 3/4（直近の売上高10億円以上の事業者は上限500万円）
+  rate_num: 0.75
+  min_cost_yen: 250000
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 機械装置等費（機械設備、生産性向上のための独自の特定業務用ソフトウェアの導入）、運搬費、設備処分費（上限15万円）、外注費（改装工事、自社専用に開発する特定業務用ソフトウェア・アプリの開発）。市販の汎用ソフト、一般事務用ソフト、パソコン単体、クラウドサービス利用料、リース料、保守料は対象外
+  conditions: 県内に本社がある中小企業等・中堅企業、県内に主たる事務所がある医療法人・農業法人・NPO法人等、県内に住所がある個人事業者。機械設備の導入等で付加価値額が増えること、従業員がいる場合は継続的な賃上げに取り組むこと。補助対象経費25万円（税抜）以上。2025-10-01〜2026-09-30に発注・支払いを完了した経費が対象
+  period: {status: closed, start: 2026-02-12, end: 2026-03-23}
+  url: https://www.pref.kagawa.lg.jp/sangyo/miraitoshi/r7bosyu.html
+  checked: 2026-10-17
+  confidence: official
+  note: 公募要領 https://www.pref.kagawa.lg.jp/documents/59041/01koboyoryo.pdf 。郵送のみ・締切当日消印有効で、2026-03-23に受付終了。要領の事例に「AI技術による独自の検品システムの導入」がある。自社専用に開発・導入するAIシステムは対象になりうるが、ChatGPT等の汎用クラウドAIの利用料やAIコンサル・研修は対象外。県のページURLは r7bosyu だが、補助金ポータル等の二次情報は「令和8年度」と表記している。次回の公募は県のページに案内がなく未確認
+
+- id: kagawa-ai-gpu
+  name: AI技術活用加速化支援事業費補助金（追加募集）
+  org: 香川県（産業政策課）
+  area: kagawa
+  max_yen: 5000000
+  rate: 中小企業3/4、大企業2/3（1年度あたり200万円以上500万円以下）
+  rate_num: 0.75
+  targets: {efficiency: △, consulting: △, training: ×}
+  expenses: 県内にGPUデータセンターの拠点を持つ事業者のクラウドサービスを使ったAI技術の開発に要する開発費、委託費、直接人件費、事務雑費
+  conditions: 県内に本社か主たる事業所があり、その事業所で補助事業を行う企業。県内GPUデータセンター事業者のクラウドサービスを活用したAI技術活用の実施計画があること。補助対象期間は交付決定日から当該年度の2月末まで。同一テーマで最長2年度まで（予定・毎年度手続き）
+  period: {status: closed, start: 2026-05-18, end: 2026-06-10}
+  url: https://www.pref.kagawa.lg.jp/sangyo/sonota/ai/r8aihojyokin_tuika.html
+  checked: 2026-10-17
+  confidence: official
+  note: 追加募集の採択は1者程度。県の支援制度一覧（2026-07-07現在 https://www.pref.kagawa.lg.jp/documents/19896/20260707ichiran.pdf ）で「締切済」。当初募集（2026-03-02〜04-17）の期間は補助金ポータルの二次情報で、県の当初募集ページは見つからなかった（旧URLは404）。補助下限200万円の自社AI開発向けで、汎用AIツールの導入や研修には使えない。県内GPUデータセンターのクラウドを使うことが条件。問い合わせは産業政策課 087-832-3351
+
+- id: kagawa-startup-donyu
+  name: 香川発スタートアップの製品等導入利用支援補助金
+  org: 香川県（産業政策課）
+  area: kagawa
+  max_yen: 2000000
+  rate: 製品の取得は1/2・上限200万円、製品のレンタル（試し利用）・サービス利用は2/3・上限100万円
+  rate_num: 0.5
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 製品の取得費、製品のレンタル（試し利用）料、サービス利用料。対象は県のカタログに登録された香川発スタートアップの製品・サービスに限る
+  conditions: 県内に事業所を置く企業（個人事業主を含む）、公益法人、社会福祉法人、医療法人、農業法人、NPO法人、学校法人、協同組合、地方公共団体など。人手不足等の課題解決や生産性向上のために導入利用すること
+  period: {status: open, start: 2026-04-01, end: 2027-02-26}
+  url: https://www.pref.kagawa.lg.jp/sangyo/shinki/startuphanro.html
+  checked: 2026-10-17
+  confidence: official
+  note: 令和8年度新規事業。補助率・上限は県の支援制度一覧（2026-07-07現在）による。予算がなくなり次第終了し、1スタートアップあたり年度内の交付決定累計が1,000万円を超えると、その製品の新規申請は終了。カタログ（https://startup.pref.kagawa.lg.jp/special/special-5821/ ）の登録は建設ロボット・医療・食品・ゲーム機器など16製品で、AIを使うと明記されているのはSoilookのGASGRAだけ。汎用のAIツールやAIコンサルには使えない。問い合わせは産業政策課 087-832-3353
+
+- id: kagawa-shukuhaku-dx
+  name: 令和8年度香川県宿泊施設DX推進事業補助金
+  org: 香川県（観光振興課）
+  area: kagawa
+  max_yen: 2500000
+  rate: 国補助金で認められた経費の1/4（1施設あたり上限250万円）
+  rate_num: 0.25
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 人手不足の解消に資するシステム、設備、備品の購入・導入・設置費用と付随経費（国の「観光地・観光産業における省力化投資補助事業」で認められた経費）
+  conditions: 県内で旅館業法の許可を受けた宿泊事業者で、国の省力化投資補助事業の交付確定を受けた者（住宅宿泊事業者は対象外）。国補助への上乗せ
+  period: {status: closed, start: 2026-04-01, end: 2026-08-31}
+  url: https://www.pref.kagawa.lg.jp/kanko/sonota/dxhojyokin2026.html
+  checked: 2026-10-17
+  confidence: official
+  note: 宿泊業だけが対象。予備申請の期限が「国補助の計画特定日から15日経過日か2026-08-31のいずれか早い日」なので、新規の予備申請は終了とみなした（予備申請済みの事業者の交付申請兼実績報告は2027-02-15まで）。startは公式ページに明記がなく年度当初とした仮の値。クラウド利用料が対象かは交付要領で要確認。問い合わせは観光振興課 087-832-3361
+
+- id: takamatsu-itpass
+  name: 高松市中小企業ITパスポート等取得支援補助金
+  org: 高松市（産業振興課）
+  area: kagawa/takamatsu
+  max_yen: 200000
+  rate: 10/10（1従業員あたり受験手数料6,800円・対策講座受講料13,200円まで、1申請者20万円まで）
+  rate_num: 1.0
+  targets: {efficiency: ×, consulting: ×, training: △}
+  expenses: 合格した従業員の受験手数料と対策講座受講料（申請者が負担したもの）。対策講座のみの申請は不可
+  conditions: 市内に本社か主たる事業所（個人は住所）がある中小企業。対象試験はITパスポート試験と情報セキュリティマネジメント試験。事前申請（インターネット）→学習・受験・合格→交付申請（郵送）の順。先着順で、予算に達すると補欠番号を通知
+  period: {status: open, start: 2026-04-01, end: 2026-12-31}
+  url: https://www.city.takamatsu.kagawa.jp/jigyosha/sangyou/shoukougyou/seityousokushin/ITpass.html
+  checked: 2026-10-17
+  confidence: official
+  note: endは事前申請の締切。交付申請は2027-03-23必着（チラシ https://www.city.takamatsu.kagawa.jp/jigyosha/sangyou/shoukougyou/seityousokushin/ITpass.files/8tirasi.pdf ）。公募要領の受験期間の終期は「令和8年2月28日」と書かれており、令和9年の誤記とみられる（要確認）。対象は2つの国家試験と対策講座だけで、AI研修やG検定は対象外
+  fuenn_note: ITパスポート・情報セキュリティマネジメント試験の受験料と対策講座が対象です。AI研修そのものは対象外です。
+
+- id: takamatsu-koudoka
+  name: 高松市事業高度化等支援補助金（兼業・副業人材活用メニュー）
+  org: 高松市（産業振興課）
+  area: kagawa/takamatsu
+  max_yen: 300000
+  rate: 1/2
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: △, training: ×}
+  expenses: DXの推進やデジタル化など自社の経営課題を解決するため、専門人材を副業・兼業の形で活用する費用（紹介を受けた場合の仲介手数料、副業・兼業人材に支払う基本給）。同補助金の他メニューはサイバーセキュリティ診断（診断・改善提案の委託費、機器・ソフト導入は対象外）、Webマーケティング高度化、Webアクセシビリティ対応
+  conditions: 市内に本社か主たる事業所（個人は住所）がある中小企業。香川県プロフェッショナル人材戦略拠点の人材ビジネス事業者一覧に登録された人材紹介事業者の紹介を通じて、副業・兼業で雇用か委託契約を結ぶこと。事前申請承諾前に内定・契約した人材は対象外。1申請1メニュー。経費は2027-02-26までに支払完了
+  period: {status: open, start: 2026-04-10, end: 2026-12-25}
+  url: https://www.city.takamatsu.kagawa.jp/jigyosha/sangyou/shoukougyou/seityousokushin/koudoka.html
+  checked: 2026-10-17
+  confidence: official
+  note: endは事前申請の締切。メニューごとに予算上限に達し次第終了で、Webマーケティング高度化とWebアクセシビリティ対応は予算到達で受付終了済み（予算が残れば再開の可能性あり）。兼業・副業人材活用とサイバーセキュリティ診断は終了の掲載なし。AIコンサル会社への業務委託は、登録人材紹介事業者経由の副業・兼業人材でなければ対象外。経費の詳細 https://www.city.takamatsu.kagawa.jp/jigyosha/sangyou/shoukougyou/seityousokushin/koudoka.files/hozyotaisyoukeihi.pdf
+
+- id: marugame-digital
+  name: 丸亀市産業振興支援補助金（デジタル化メニュー）
+  org: 丸亀市（産業観光課）
+  area: kagawa/marugame
+  max_yen: 100000
+  rate: 2/3
+  rate_num: 0.667
+  targets: {efficiency: ○, consulting: ×, training: ×}
+  expenses: 業務効率化・生産性向上を目的とするデジタル技術導入のソフトウェア導入費（リース料は初期導入にかかる費用のみ）、システム開発費など
+  conditions: 市内に住所（法人は本店所在地か主たる事業所）がある中小企業者・中小企業団体。1事業者が使えるメニューは年度内1つ。デジタル化メニューは連続する2年度内に1回限り。事業開始前に交付申請。実績報告は2027-03-31まで
+  period: {status: closed, start: 2026-04-01, end: 2026-10-06}
+  next_expected: 2027-04
+  url: https://www.city.marugame.lg.jp/page/3112.html
+  checked: 2026-10-17
+  confidence: official
+  note: 予算に達して受付終了（市のページは2026-10-06更新で、終了日の明記はない。endはその更新日）。メニュー表はパンフレット https://www.city.marugame.lg.jp/uploaded/attachment/26105.pdf 。クラウドの月額利用料は「リース料は初期導入のみ」の扱いに準じる可能性があり、要確認。next_expectedは今年度の時期からの推測
+  fuenn_note: AIツールなどソフトウェアの導入費が対象です（上限10万円）。今年度は予算に達して終了しているため、来年度の募集を丸亀市産業観光課に確認してください。
+
+- id: marugame-jinzai
+  name: 丸亀市産業振興支援補助金（人材育成メニュー）
+  org: 丸亀市（産業観光課）
+  area: kagawa/marugame
+  max_yen: 100000
+  rate: 2/3
+  rate_num: 0.667
+  targets: {efficiency: ×, consulting: ×, training: ○}
+  expenses: 業務に直接関連する専門的な研修の受講料、講師謝金、資格試験の受験料（普通自動車運転免許・資格の更新は除く）
+  conditions: デジタル化メニューと同じ（市内の中小企業者等、年度内1メニュー、連続する2年度内に1回限り、事業開始前に申請）
+  period: {status: closed, start: 2026-04-01, end: 2026-10-06}
+  next_expected: 2027-04
+  url: https://www.city.marugame.lg.jp/page/3112.html
+  checked: 2026-10-17
+  confidence: official
+  note: 産業振興支援補助金全体が予算到達で受付終了（デジタル化メニューと同じ）。講師謝金が対象なので、外部講師を招くAI研修にも使える書きぶりだが、対象になるかは事前に市へ確認が必要。next_expectedは推測
+
+- id: zentsuji-jinzai
+  name: 善通寺市中小企業振興支援事業補助金（人材育成）
+  org: 善通寺市（商工観光課）
+  area: kagawa/zentsuji
+  max_yen: 200000
+  rate: 1/2
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: ○}
+  expenses: 人材育成に係る研修の受講料や講師謝金、資格試験の受験料（同一試験は1人1回まで、運転免許・資格の更新を除く。業務との関連が認められるものに限る）
+  conditions: 市内で事業を行う中小企業者・中小企業団体で、市税の滞納がなく、香川県信用保証協会の保証対象業種を営む者（農林漁業者は保証対象外でも可）。事前相談が必要で、事業着手前に申請。1事業者につき年度内1回・1メニュー。交付は申請順
+  period: {status: open, start: 2026-04-01, end: 2026-12-25}
+  url: https://www.city.zentsuji.kagawa.jp/soshiki/24/r4shinnkoushienn.html
+  checked: 2026-10-17
+  confidence: official
+  note: 予算額に達した時点で受付終了（2026-10-17時点で終了の掲載なし）。交付要綱 https://www.city.zentsuji.kagawa.jp/uploaded/attachment/18271.pdf 別表第2。研修機関の限定はなく、講師謝金も対象なので、業務に関連するAI研修（外部講師の招へいを含む）に使える可能性がある。事前相談は商工観光課 0877-63-6315
+  fuenn_note: 業務に関連する研修の受講料や講師謝金が対象です（上限20万円・1/2）。申請前に善通寺市商工観光課へ事前相談してください。
+
+- id: zentsuji-keieikakushin
+  name: 善通寺市中小企業振興支援事業補助金（経営革新）
+  org: 善通寺市（商工観光課）
+  area: kagawa/zentsuji
+  max_yen: 300000
+  rate: 1/2
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: △, training: ×}
+  expenses: 経営革新のために行う専門家の招へい・相談に要する経費、学校・企業等との連携による研究費、事業承継・M&A・6次産業化に向けた取組の経費
+  conditions: 人材育成メニューと同じ（市内の中小企業者等、事前相談、着手前申請、年度内1回・1メニュー）。人件費、消耗品・備品、通信費、通常の設備投資費用は対象外
+  period: {status: open, start: 2026-04-01, end: 2026-12-25}
+  url: https://www.city.zentsuji.kagawa.jp/soshiki/24/r4shinnkoushienn.html
+  checked: 2026-10-17
+  confidence: official
+  note: 予算到達で終了あり。AI導入の専門家への相談費が「経営革新」に当たるかは市の判断で、事前相談が必要。ソフト・クラウド利用料は「通常の設備投資費用・通信費」として対象外になる可能性が高い。人材育成メニューとの併用は不可（1事業者1メニュー）
+
+- id: higashikagawa-mirai
+  name: 東かがわ市未来投資応援補助金
+  org: 東かがわ市（地域創生課）
+  area: kagawa/higashikagawa
+  max_yen: 500000
+  rate: 3/4
+  rate_num: 0.75
+  min_cost_yen: 250000
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 機械装置等費（機械設備、生産性向上のための独自の特定業務用ソフトウェアの導入費等）、運搬費、設備処分費（上限15万円）、外注費（改装工事、自社専用の特定業務用ソフトウェアの開発費等）
+  conditions: 市内の事業者。補助対象経費25万円（税抜）以上。国・県・市の他の補助金との同一内容での併用は不可。先着順
+  period: {status: closed, start: 2026-07-01, end: 2026-08-31}
+  url: https://www.higashikagawa.jp/soshikikarasagasu/chiikisoseika/hojokin_joseikin/7692.html
+  checked: 2026-10-17
+  confidence: official
+  note: 国の物価高騰対応重点支援地方創生臨時交付金を使った単年度の事業。申請期間終了で受付終了（2026-08-06更新）。対象経費の区分は県の未来投資応援補助金とほぼ同じで、汎用ソフトやクラウド利用料は対象外とみられる（交付要綱 https://www.higashikagawa.jp/material/files/group/5/kouyoukou1.pdf 別表）。来年度の実施は未確認
+
+- id: tonosho-hanro
+  name: 土庄町販路開拓支援補助金（通信販売用ホームページの開設）
+  org: 土庄町
+  area: kagawa/tonosho
+  max_yen: 200000
+  rate: 2/3
+  rate_num: 0.667
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 通信販売を目的として新たにホームページを開設する事業のホームページ制作委託料。展示会等の出展経費（オンライン展示会の出展経費を含む）、広告宣伝費、旅費、出展代行委託料も対象
+  conditions: 2026-04-01以降引き続き町内に本社か事業所がある法人、または町内に住所か事業所がある個人事業者。町税の滞納がないこと。補助額1万円未満は対象外。国・地方公共団体・公的団体の補助を受ける事業は対象外
+  period: {status: open, start: 2026-04-01, end: 2027-03-31}
+  next_expected: 2027-04
+  url: https://www.town.tonosho.kagawa.jp/gyosei/sangyo/shoko/2874.html
+  checked: 2026-10-17
+  confidence: official
+  note: 上限は1事業者1年度20万円。申請書兼請求書を事業後に土庄町商工会へ提出する方式（領収書・ホームページの画面コピーとURLを添付）。土庄町商工会か香川県よろず支援拠点の相談もあわせて申し込める。業務効率化向けのソフト・クラウドは対象外で、EC用サイトの新規開設に限る。根拠はリーフレット（material/files/group/15/hanro-ri-furetto.pdf）。next_expectedは今年度の時期からの推測
+
+# ---- 三木町 ----
+
+- id: miki-hanro
+  name: 三木町販路開拓支援補助金（オンラインショップ）
+  org: 三木町
+  area: kagawa/miki
+  max_yen: 100000
+  rate: 2/3
+  rate_num: 0.667
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 通信販売を目的として新たにホームページ（オンラインショップ）を制作する事業のホームページ制作委託料。展示会・見本市（BtoB）の出展は県内5万円・県外10万円・国外20万円が上限で、オンライン展示会の出展経費も対象
+  conditions: 町内に事業所・事務所がある中小企業者、または町内に住所と事業所・事務所がある個人事業者。町税の滞納がないこと。補助対象事業の着手前に申請。複数回申請の場合は初回の事業者を優先
+  period: {status: rolling}
+  url: https://www.town.miki.lg.jp/life/dtl.php?hdnKey=8019
+  checked: 2026-10-17
+  confidence: official
+  note: 要綱は令和6年4月15日要綱第30号で、町の例規集に現行として掲載（https://www.town.miki.lg.jp/reiki_int/reiki_honbun/o118RG00000936.html）。町のページの掲載日は2023-08-14で、受付期間・予算額の記載はない。2026年度の予算状況は町（地域活性課 商工観光係）に確認。業務効率化向けのソフト・クラウドは対象外
+
+# ---- 綾川町 ----
+
+- id: tadotsu-sangyo-digital
+  name: 多度津町産業振興支援補助事業（デジタル化）
+  org: 多度津町
+  area: kagawa/tadotsu
+  max_yen: 100000
+  rate: 2/3
+  rate_num: 0.667
+  targets: {efficiency: ○, consulting: ×, training: ×}
+  expenses: 業務効率化や生産性向上を目的とするデジタル技術の導入。具体的な対象経費（ソフトウェア購入・クラウド利用料・機器など）の区分は町のページに記載がなく、要綱も公開されていない
+  conditions: 町内に住所（法人は本社か主たる事業所）があり、3年以上町内で継続して事業を営む中小企業者。創業セミナー等の受講で3年未満でも可。事業実施前に申請し、交付決定後に着手。年度末までに完了する事業が対象
+  period: {status: open, start: 2026-04-01, end: 2027-03-31}
+  next_expected: 2027-04
+  url: https://www.town.tadotsu.kagawa.jp/shigoto_sangyo/shokogyo/kigyo_sogyoshien/2478.html
+  checked: 2026-10-17
+  confidence: official
+  note: 5つのメニュー（自社PRツール作成・新商品新規事業の広告宣伝・展示会出展・知的財産権取得・デジタル化）から年度内に1つだけ選んで申請する。endは事業完了の期限（年度末）で、申請の締切日と予算額は示されていない。補助金交付後5年をめどに町の状況調査があり、翌年度に状況報告書の提出が必要。生成AIサービスの利用料が対象かは町（産業課 0877-33-1113）に事前確認。補助金情報サイトでは令和7年度に上限20万円と掲載されていたが、令和8年度の町のページではデジタル化の上限は10万円。next_expectedは今年度の時期からの推測

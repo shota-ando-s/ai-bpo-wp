@@ -69,3 +69,23 @@
     - {code: ehime/matsuno, name: 松野町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-17確認）}
     - {code: ehime/kihoku, name: 鬼北町}
     - {code: ehime/ainan, name: 愛南町}
+- code: kagawa
+  name: 香川県
+  cities:
+    - {code: kagawa/takamatsu, name: 高松市}
+    - {code: kagawa/marugame, name: 丸亀市, note: 産業振興支援補助金（デジタル化・人材育成）は今年度の予算に達して受付を終えています}
+    - {code: kagawa/sakaide, name: 坂出市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: kagawa/zentsuji, name: 善通寺市}
+    - {code: kagawa/kanonji, name: 観音寺市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: kagawa/sanuki, name: さぬき市, none: true, note: 市の制度は公式サイトで確認できませんでした。市の商工観光課にお問い合わせください}
+    - {code: kagawa/higashikagawa, name: 東かがわ市, note: 未来投資応援補助金は2026-08-31で締め切りました}
+    - {code: kagawa/mitoyo, name: 三豊市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: kagawa/tonosho, name: 土庄町}
+    - {code: kagawa/shodoshima, name: 小豆島町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: kagawa/miki, name: 三木町}
+    - {code: kagawa/naoshima, name: 直島町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: kagawa/utazu, name: 宇多津町, none: true, note: 町独自のAI・IT向け補助金はありません。宇多津商工会が無料のAI入門セミナーを開いています}
+    - {code: kagawa/ayagawa, name: 綾川町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: kagawa/kotohira, name: 琴平町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: kagawa/tadotsu, name: 多度津町}
+    - {code: kagawa/manno, name: まんのう町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-17確認）}
