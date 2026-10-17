@@ -7,6 +7,7 @@
     python3 scripts/area_uniq.py kagawa             # 香川の全ページ
     python3 scripts/area_uniq.py tokushima          # 徳島の全ページ
     python3 scripts/area_uniq.py kochi              # 高知の全ページ
+    python3 scripts/area_uniq.py aomori             # 青森の全ページ
 
 目安は固有60%以上。下回るページは、国・県の制度の説明や FAQ の定型の回答を、その市町の事情に合わせて書き直す。
 """
@@ -18,7 +19,7 @@ def paras(p):
     body=open(p).read().split('---',2)[2]
     return [(x, any(f in x for f in FIXED)) for x in (y.strip() for y in re.split(r"\n\s*\n",body)) if len(x)>=40 and not x.startswith(('#','!','['))]
 args=sys.argv[1:]
-PREF=args.pop(0) if args and args[0] in ('ehime','kagawa','tokushima','kochi') else 'ehime'
+PREF=args.pop(0) if args and args[0] in ('ehime','kagawa','tokushima','kochi','aomori') else 'ehime'
 files=sorted(glob.glob(ROOT+f'2026-10-17-area-{PREF}*.md'))
 P={f:paras(f) for f in files}
 def best(f,x):
