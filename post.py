@@ -188,6 +188,10 @@ def upload_image_to_wp(image_bytes, filename, alt_text=""):
         print(f"WPアップロードエラー: {e}", file=sys.stderr)
         return None
 
+# H2画像は最初の3つの見出しにだけ付ける。後半の「よくある質問」「まとめ」などは全記事で似た絵になり、
+# 生成費と表示の重さに見合わないため（2026-10-17。それ以前の記事は全見出しに画像がある）
+MAX_H2_IMAGES = 3
+
 def insert_h2_images(html, h2_texts, article_title):
     """H2タグの直前にDALL-E 3生成画像を挿入する"""
     if not h2_texts:
@@ -469,10 +473,11 @@ def post_article(filepath, rebuild_images=False):
 
     endpoint, existing, parent_id = find_existing(meta)
     h2_texts = re.findall(r"^## (.+)$", body, re.MULTILINE)
-    # 新規投稿 or --rebuild-images 時にH2画像を生成
+    # 新規投稿 or --rebuild-images 時にH2画像を生成（最初の MAX_H2_IMAGES 個の見出しだけ）
     if h2_texts and os.environ.get("OPENAI_API_KEY") and (not existing or rebuild_images):
-        print(f"H2画像生成中... ({len(h2_texts)}件、1枚あたり約15秒)")
-        html = insert_h2_images(html, h2_texts, title)
+        targets = h2_texts[:MAX_H2_IMAGES]
+        print(f"H2画像生成中... ({len(targets)}件、1枚あたり約15秒)")
+        html = insert_h2_images(html, targets, title)
 
     if rebuild_images and os.environ.get("OPENAI_API_KEY"):
         print("イントロ画像生成中...")
