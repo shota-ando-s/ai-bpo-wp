@@ -153,3 +153,46 @@
     - {code: kochi/okawa, name: 大川村, none: true, note: 村独自のAI・IT向け補助金はありません（2026-10-17確認）}
     - {code: kochi/hidaka, name: 日高村, none: true, note: 村独自のAI・IT向け補助金はありません（2026-10-17確認）}
     - {code: kochi/mihara, name: 三原村, none: true, note: 村独自のAI・IT向け補助金はありません（2026-10-17確認）}
+- code: aomori
+  name: 青森県
+  cities:
+    - {code: aomori/aomori-city, name: 青森市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-17確認）。県のDX総合窓口が青森市にあります}
+    - {code: aomori/hirosaki, name: 弘前市, none: true, note: 市独自のAI・IT向け補助金は確認できませんでした（2026-10-17。創業者DX促進事業費補助金の令和8年度の内容は未確認）}
+    - {code: aomori/hachinohe, name: 八戸市, note: 専門家派遣の費用と補助金申請支援の費用への補助（随時）があります。補助金ではない支援として、市のデジタル化・DXサポートセンターがAI活用の伴走支援をしています}
+    - {code: aomori/kuroishi, name: 黒石市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: aomori/goshogawara, name: 五所川原市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: aomori/towada, name: 十和田市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: aomori/misawa, name: 三沢市, note: 中小企業サポート補助金は、業務ソフトの購入・設定、DXツールの操作研修、社員研修も対象です（随時）}
+    - {code: aomori/mutsu, name: むつ市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: aomori/tsugaru, name: つがる市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: aomori/hirakawa, name: 平川市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: aomori/hiranai, name: 平内町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: aomori/imabetsu, name: 今別町, note: 町独自の制度は創業と特産品開発向けで、AI・IT導入向けの補助金はありません}
+    - {code: aomori/sotogahama, name: 外ヶ浜町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: aomori/ajigasawa, name: 鰺ヶ沢町, note: 町独自の制度は創業と空き店舗向けで、AI・IT導入向けの補助金はありません}
+    - {code: aomori/fukaura, name: 深浦町, note: 町の制度は持続化補助金の上乗せと創業向けで、2026年度の受付は町に確認が必要です}
+    - {code: aomori/fujisaki, name: 藤崎町, note: しごとづくりサポート事業補助金（経営改善タイプ）は、専門家への謝金が対象です（随時）}
+    - {code: aomori/owani, name: 大鰐町, note: 事業者持続化支援事業補助金は、クラウドサービス利用費・ソフトウェア費も対象です（2026-12-15締切、先着順）}
+    - {code: aomori/itayanagi, name: 板柳町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: aomori/tsuruta, name: 鶴田町, note: 町独自の制度は創業向けで、AI・IT導入向けの補助金はありません}
+    - {code: aomori/nakadomari, name: 中泊町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: aomori/noheji, name: 野辺地町, note: 町独自の制度は販売促進と創業・雇用向けで、AI・IT導入向けの補助金はありません}
+    - {code: aomori/shichinohe, name: 七戸町, note: 町の制度は創業向けで、2026年度の受付は町に確認が必要です}
+    - {code: aomori/rokunohe, name: 六戸町, note: 町独自の制度は創業向けで、AI・IT導入向けの補助金はありません}
+    - {code: aomori/yokohama-town, name: 横浜町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: aomori/tohoku, name: 東北町, note: 町の制度は商業者の新事業・経営継続と移住起業向けで、2026年度の受付は町に確認が必要です}
+    - {code: aomori/oirase, name: おいらせ町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: aomori/oma, name: 大間町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: aomori/sannohe, name: 三戸町, note: 町独自の制度は販路拡大・店舗改修・決済機器向けで、AI・IT導入向けの補助金はありません}
+    - {code: aomori/gonohe, name: 五戸町, note: 町独自の制度は起業向けで、2026年度の公募は2026-09-25で締め切りました}
+    - {code: aomori/takko, name: 田子町, note: ビジネスチャレンジ支援事業補助金は、研修参加とネット販売システムの構築も対象です（2027-01-31締切）}
+    - {code: aomori/nanbu, name: 南部町, note: 商工業者販売促進事業費補助金のDX等対応事業は、ソフトウェア導入も対象です（令和9年度分の要望書は2026-10-20締切）}
+    - {code: aomori/hashikami, name: 階上町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: aomori/yomogita, name: 蓬田村, none: true, note: 村独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: aomori/nishimeya, name: 西目屋村, none: true, note: 村独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: aomori/inakadate, name: 田舎館村, none: true, note: 村独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: aomori/rokkasho, name: 六ヶ所村, none: true, note: 村独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: aomori/higashidori, name: 東通村, none: true, note: 村独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: aomori/kazamaura, name: 風間浦村, none: true, note: 村独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: aomori/sai, name: 佐井村, none: true, note: 村独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: aomori/shingo, name: 新郷村, note: 村独自の制度は小規模事業の施設整備・賃借料向けで、AI・IT導入向けの補助金はありません}
