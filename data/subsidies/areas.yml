@@ -116,3 +116,40 @@
     - {code: tokushima/kamiita, name: 上板町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-17確認）}
     - {code: tokushima/tsurugi, name: つるぎ町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-17確認）}
     - {code: tokushima/higashimiyoshi, name: 東みよし町}
+- code: kochi
+  name: 高知県
+  cities:
+    - {code: kochi/kochi-city, name: 高知市, note: 国・県の制度に加えて、生産性向上設備とテレワークの補助金があります。補助金ではない支援として、LinkedIn Learningの無料ライセンス貸与があります}
+    - {code: kochi/muroto, name: 室戸市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: kochi/aki, name: 安芸市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: kochi/nankoku, name: 南国市}
+    - {code: kochi/tosa-city, name: 土佐市, note: 市の公式サイトを確認できませんでした（2026-10-17）。市の商工担当にお問い合わせください}
+    - {code: kochi/susaki, name: 須崎市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: kochi/sukumo, name: 宿毛市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: kochi/tosashimizu, name: 土佐清水市, note: 販路開拓・営業拡大支援事業費補助金は2026-06-30で受付を終了しました}
+    - {code: kochi/shimanto-city, name: 四万十市, none: true, note: 市独自のAI・IT向け補助金はありません。AIを含む無料の伴走支援「しまんとDXファーストステップ支援プログラム」があります（2026-10-17確認）}
+    - {code: kochi/konan, name: 香南市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: kochi/kami, name: 香美市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: kochi/toyo, name: 東洋町, note: 町独自の制度は起業向けだけで、2026年度の公募は2026-05-31で締め切りました}
+    - {code: kochi/nahari, name: 奈半利町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: kochi/tano, name: 田野町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: kochi/yasuda, name: 安田町, note: 町独自の制度は起業・事業承継・特産品開発向けで、既存企業のAI・IT導入向けの補助金はありません}
+    - {code: kochi/motoyama, name: 本山町, note: 事業者持続化補助金は、要綱でIT利活用（業務管理ソフトの購入など）も対象です}
+    - {code: kochi/otoyo, name: 大豊町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: kochi/tosa-town, name: 土佐町, note: しごと創生スタート事業費補助金は、既存事業者の新たな取組も対象です}
+    - {code: kochi/ino, name: いの町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: kochi/niyodogawa, name: 仁淀川町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: kochi/nakatosa, name: 中土佐町}
+    - {code: kochi/sakawa, name: 佐川町, note: 町の制度は研修受講料と起業向けで、2026年度の受付は町に確認が必要です}
+    - {code: kochi/ochi, name: 越知町, note: 町の制度は事業承継向けで、2026年度の受付は町に確認が必要です}
+    - {code: kochi/yusuhara, name: 檮原町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: kochi/tsuno, name: 津野町, note: 町の制度は出店・店舗向けで、AI・IT導入向けの補助金はありません}
+    - {code: kochi/shimanto-town, name: 四万十町}
+    - {code: kochi/otsuki, name: 大月町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: kochi/kuroshio, name: 黒潮町, note: 町の制度は経営改善計画の策定費の助成で、2026年度の受付は町に確認が必要です}
+    - {code: kochi/kitagawa, name: 北川村, none: true, note: 村独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: kochi/umaji, name: 馬路村, none: true, note: 村独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: kochi/geisei, name: 芸西村, none: true, note: 村独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: kochi/okawa, name: 大川村, none: true, note: 村独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: kochi/hidaka, name: 日高村, none: true, note: 村独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: kochi/mihara, name: 三原村, none: true, note: 村独自のAI・IT向け補助金はありません（2026-10-17確認）}

@@ -1,0 +1,724 @@
+{
+ "_meta": {
+  "checked": "2026-10-17",
+  "scope": "高知県34市町村。本社（公式サイトの本社/所在地。東京にも本社・本部・オフィスを置く会社はnotesに記載）が当該市町村にあり、公式サイトで受託システム開発・ソフトウェア開発・Web制作・ITサービスを事業として明示する法人。規模は公式サイト記載の従業員数順。従業員数がない会社は資本金で後ろに並べた。高知市は上位10社を本表に、残りを _reference に置いた。",
+  "candidate_sources": [
+   "全国法人検索（houjin.goo.to、国税庁の法人番号データにもとづく）の高知県「IT業界」46社と、「システム開発・受託開発」「システム開発・ソフトウェア開発」「Webサービス・アプリ運用」「IT業界その他」「広告」の一覧（各先頭2ページ）。詳細ページから公式URLを取得 https://houjin.goo.to/corporations/prefs/kochi/category-it",
+   "高知県デジタル化マッチングプラットフォーム（公益財団法人高知県産業振興センター）のITベンダー一覧 36件（2026-10-17時点、全5ページ） https://joho-kochi.or.jp/digital/digital_mpf/vendor/",
+   "こうちIT事業者協同組合の組合員紹介 https://kochi-it.jp/about/member",
+   "マイナビ2028の本社所在地「高知県」検索結果（先頭95社）で業種にソフトウエア・情報処理・インターネット関連を含む企業 https://job.mynavi.jp/28/pc/search/hq39.html",
+   "高知県「企業の魅力発信支援事業」登録企業一覧（R8.10.5）の本社所在地 https://www.pref.kochi.lg.jp/doc/2019030100374/",
+   "WebSearch（担当上限20回のうち16回を使用）"
+  ],
+  "search_limits": "一般社団法人高知県情報産業協会の会員名簿は公開ページを見つけられなかった（キタムラコンピュータ・四国情報管理センター・高知システムズ・ソフテック・システム二十一・四銀コンピューターサービス・シティネットの会社概要に会員と記載があり、協会自体は存在する）。高知県の『IT・コンテンツ関連企業進出サポート』サイトの立地企業一覧は確認していない（誘致企業は本社が県外のことが多く、対象外の可能性が高い）。houjin.goo の市町村別の一覧は使っていない。公式サイトがJavaScript描画で会社概要を読めなかった会社（SHIFT PLUS）、公式サイトを特定できなかった会社（高知県農協電算センター、エクサ・ブレイン、ソフトユニオン等）は本表に入れていない。個人事業主・小規模なWeb制作者は網羅していない。町村部はWebSearchでもほとんど見つからず、網羅性は保証できない。",
+  "ordering": "従業員数（公式）の多い順 → 従業員数がない会社は資本金（公式）→ どちらもない会社は最後。"
+ },
+ "kochi-city": [
+  {
+   "name": "株式会社高知電子計算センター",
+   "hq": "高知県高知市本町4丁目1番16号 高知電気ビル",
+   "municipality": "高知市",
+   "town": "本町",
+   "employees": {
+    "value": 206,
+    "as_of": "時点記載なし（売上高は令和7年度の記載）",
+    "source": "https://www.kcc-kochi.co.jp/about/"
+   },
+   "capital": {
+    "value": "3,000万円",
+    "source": "https://www.kcc-kochi.co.jp/about/"
+   },
+   "founded": 1966,
+   "business_summary": "システム開発・運用保守、ネットワーク構築・情報セキュリティ、データセンター、アウトソーシング。DX戦略で『自治体向けDX推進企業』を掲げる",
+   "ai_initiative": null,
+   "url": "https://www.kcc-kochi.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "社員数 計206名（男132名・女74名）。売上高54億円（令和7年度、公式）。関西支店（神戸市）・関東支店（宇都宮市）あり。houjin.goo の203名は不採用。株式会社高知システムズの共同出資元（日立システムズと共同）。"
+  },
+  {
+   "name": "四国情報管理センター株式会社",
+   "hq": "高知県高知市一ツ橋町1丁目36番地",
+   "municipality": "高知市",
+   "town": "一ツ橋町",
+   "employees": {
+    "value": 151,
+    "as_of": "2026年4月1日時点",
+    "source": "https://www.jokan.co.jp/company_profile.html"
+   },
+   "capital": {
+    "value": "4,800万円",
+    "source": "https://www.jokan.co.jp/company_profile.html"
+   },
+   "founded": 1973,
+   "business_summary": "システムコンサルティング、システム開発・保守、ネットワーク構築・保守、データセンター業務、帳票印刷アウトソーシング（公共・民需・医療）",
+   "ai_initiative": "組織図に『事業推進室 AI/IoTサービス事業、研究開発』の部署を掲載（具体的な製品名は未確認）",
+   "url": "https://www.jokan.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "徳島営業所・愛媛営業所、ベトナムに子会社 J & V SOLUTIONS。代表取締役社長は中城一（パシフィックソフトウエア開発の中城一明社長とは別人。混同注意）。社団法人高知県情報産業協会に加盟と記載。"
+  },
+  {
+   "name": "株式会社高知システムズ",
+   "hq": "高知県高知市本町四丁目1番24号 高知電気ビル新館3F",
+   "municipality": "高知市",
+   "town": "本町",
+   "employees": {
+    "value": 102,
+    "as_of": "2026年6月1日現在",
+    "source": "https://www.ksco.co.jp/company/about/"
+   },
+   "capital": {
+    "value": "3,000万円",
+    "source": "https://www.ksco.co.jp/company/about/"
+   },
+   "founded": 1987,
+   "business_summary": "システム開発、ネットワーク・情報セキュリティ、クラウドサービス、安否確認システム、Web110番システム。株式会社高知電子計算センターと株式会社日立システムズの共同出資で設立",
+   "ai_initiative": "オンプレミス全文検索AI・文字おこしAI・文章要約AI・ノートPCオンプレミスAIを製品として掲載。県デジタル化マッチングプラットフォームでも『外部に出せない情報でも使えるオンプレミス生成AIサービス』を紹介",
+   "url": "https://www.ksco.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "横浜オフィス（横浜市西区）あり。沿革では1995年12月に共同出資で設立とあるが、会社概要の設立は1987年6月1日（記事では会社概要の値を使う）。houjin.goo の107名は不採用。"
+  },
+  {
+   "name": "ワールドビジネスシスコム株式会社",
+   "hq": "高知県高知市本町2丁目2番27号 CMJ高知ビル8階",
+   "municipality": "高知市",
+   "town": "本町",
+   "employees": {
+    "value": 93,
+    "as_of": "令和7年（2025年）4月1日現在",
+    "source": "https://www.wbsc.co.jp/profile/"
+   },
+   "capital": {
+    "value": "5,000万円",
+    "source": "https://www.wbsc.co.jp/profile/"
+   },
+   "founded": 1977,
+   "business_summary": "システム開発・技術者派遣、情報処理・情報提供、ネットワーク構築・運用保守、医療・自治体・法人向けシステム（れんらくちょう支援システム等）",
+   "ai_initiative": null,
+   "url": "https://www.wbsc.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "広島事業所・高松サテライトオフィス、ベトナムに関連会社 WBC Vietnam。従業員数の時点がやや古い（2025年4月）。"
+  },
+  {
+   "name": "パシフィックソフトウエア開発株式会社",
+   "hq": "高知県高知市本宮町105-22",
+   "municipality": "高知市",
+   "town": "本宮町",
+   "employees": {
+    "value": 85,
+    "as_of": "2026年4月現在",
+    "source": "https://pacificsoftware.co.jp/about/"
+   },
+   "capital": {
+    "value": "1,200万円",
+    "source": "https://pacificsoftware.co.jp/about/"
+   },
+   "founded": 1972,
+   "business_summary": "ソフトウェア開発（物流、電子決済、電子装置）、機器制御システム、自社製品（超音波測深装置 SeaVision 等）",
+   "ai_initiative": "事業内容に『AI自動給餌システム「餌ロボ」』『システム開発（IoT・AI・医療）』を明記（養殖向け）",
+   "url": "https://pacificsoftware.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "大阪サテライトオフィスあり。売上高9.4億円（2025年度、公式）。県デジタル化マッチングプラットフォーム登録。代表取締役社長 中城一明。"
+  },
+  {
+   "name": "クイックソフト株式会社",
+   "hq": "高知県高知市帯屋町2-2-1",
+   "municipality": "高知市",
+   "town": "帯屋町",
+   "employees": {
+    "value": 64,
+    "as_of": "2026年4月時点",
+    "source": "https://quiqsoft.co.jp/company/"
+   },
+   "capital": {
+    "value": "3,000万円",
+    "source": "https://quiqsoft.co.jp/company/"
+   },
+   "founded": 1997,
+   "business_summary": "コンピュータシステムの設計、ソフトウェア開発。首都圏の顧客の開発を高知・松山で行うニアショア開発。富士通コアパートナー",
+   "ai_initiative": null,
+   "url": "https://quiqsoft.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "日和崎グループと富士通の共同出資。東京オフィス（港区新橋）、南国オフィス（南国市蛍が丘）、松山オフィスあり。売上高8億円（2025年度、公式）。"
+  },
+  {
+   "name": "株式会社テックス",
+   "hq": "高知県高知市葛島4-1-66",
+   "municipality": "高知市",
+   "town": "葛島",
+   "employees": {
+    "value": 49,
+    "as_of": "時点記載なし",
+    "source": "https://www.tecsnet.co.jp/company/"
+   },
+   "capital": {
+    "value": "1,500万円",
+    "source": "https://www.tecsnet.co.jp/company/"
+   },
+   "founded": 1997,
+   "business_summary": "情報システム全般の企画・調査・分析・設計・開発。富士通コアパートナー",
+   "ai_initiative": null,
+   "url": "https://www.tecsnet.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "社員数49名（男性39名、女性10名）。1987年設立の株式会社テックス（本社東京）の高知営業所が1997年に分社化。関連会社に株式会社テックスグループ（東京・静岡・大阪）、株式会社テックスソリューションズ（本社東京）。高知の会社自体の本社は高知市。従業員数に時点の記載なし。"
+  },
+  {
+   "name": "ヒワサキコンピュータシステム株式会社",
+   "hq": "高知県高知市帯屋町2-2-1",
+   "municipality": "高知市",
+   "town": "帯屋町",
+   "employees": {
+    "value": 47,
+    "as_of": "2026年8月時点",
+    "source": "https://www.hiwasaki-g.co.jp/hics/company/"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.hiwasaki-g.co.jp/hics/company/"
+   },
+   "founded": 1990,
+   "business_summary": "基幹・Web・クラウドシステムの設計・開発・運用保守、kintone等のローコード開発、AWS、OA機器・パッケージソフト販売",
+   "ai_initiative": null,
+   "url": "https://www.hiwasaki-g.co.jp/hics/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "東京オフィス（港区新橋）・田園調布オフィス、南国オフィスあり。日和崎グループ（クイックソフトと同じ代表者）。売上高6億7,503万円（2025年度、公式）。"
+  },
+  {
+   "name": "株式会社ビーウェーブ",
+   "hq": "高知県高知市寿町4-5 YMビル2F",
+   "municipality": "高知市",
+   "town": "寿町",
+   "employees": {
+    "value": 44,
+    "as_of": "令和8年（2026年）9月現在（グループ企業含む）",
+    "source": "https://www.be-wave.jp/about/company/"
+   },
+   "capital": null,
+   "founded": 2009,
+   "business_summary": "システムインテグレーター、ネットワークシステム、パッケージソフトウェア開発、受託システム開発、労働者派遣・有料職業紹介",
+   "ai_initiative": null,
+   "url": "https://www.be-wave.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "社員数はグループ企業（ビーウェーブクリエイト、メタウェーブ）を含む値。資本金は公式に記載なし。こうちIT事業者協同組合の組合員、県デジタル化マッチングプラットフォーム登録。"
+  },
+  {
+   "name": "株式会社PROOF",
+   "hq": "高知県高知市本町2-4-30-905",
+   "municipality": "高知市",
+   "town": "本町",
+   "employees": {
+    "value": 27,
+    "as_of": "時点記載なし（社員または契約社員）",
+    "source": "https://proof-system.jp/about/"
+   },
+   "capital": {
+    "value": "500万円",
+    "source": "https://proof-system.jp/about/"
+   },
+   "founded": 2023,
+   "business_summary": "Salesforceに特化したSES事業（導入コンサルティング、システム開発、保守・運用支援）。ISMS認証（2026年1月）",
+   "ai_initiative": null,
+   "url": "https://proof-system.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "2023年1月設立の新しい会社。受託開発ではなく技術者が顧客先で働くSES型。従業員数に時点の記載なし。"
+  }
+ ],
+ "muroto": [],
+ "aki": [],
+ "nankoku": [
+  {
+   "name": "株式会社ソフテック",
+   "hq": "高知県南国市蛍が丘一丁目4番 高知富士通テクノポート内（高知本社）",
+   "municipality": "南国市",
+   "town": "蛍が丘",
+   "employees": {
+    "value": 218,
+    "as_of": "時点記載なし",
+    "source": "https://www.softec-inc.co.jp/company/"
+   },
+   "capital": {
+    "value": "2,500万円",
+    "source": "https://www.softec-inc.co.jp/company/"
+   },
+   "founded": 1973,
+   "business_summary": "システム機器販売、システム受託開発、ソフト商品開発（財務・人事・勤怠、小売向けMD『RetailFit』等）、システム要員派遣、情報処理サービス、アウトソーシング受託",
+   "ai_initiative": null,
+   "url": "https://www.softec-inc.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "従業員数218名（正社員207名、嘱託・契約社員11名）。売上高22.9億円（公式）。東京支社（渋谷区広尾）、高松支社、松山の事業所あり。公式は『高知本社』と表記。1973年に高知市桟橋で創業し、2004年に南国オフィスを開設。県内のIT企業で本表最大規模。"
+  },
+  {
+   "name": "株式会社アイビス",
+   "hq": "高知県南国市蛍が丘2丁目2番地1",
+   "municipality": "南国市",
+   "town": "蛍が丘",
+   "employees": {
+    "value": 51,
+    "as_of": "2025年11月現在",
+    "source": "https://ibsnet.co.jp/company/companyoutline/"
+   },
+   "capital": {
+    "value": "1,200万円",
+    "source": "https://ibsnet.co.jp/company/companyoutline/"
+   },
+   "founded": 1973,
+   "business_summary": "IBM i の基幹システム開発、OSS（Java等）のWeb開発、AWS・Google Workspace などのクラウドサービス、コンピューター機器販売・保守",
+   "ai_initiative": null,
+   "url": "https://ibsnet.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "外部資本のない独立系（IBMとの資本関係はないと明記）。郵便番号検索API『ZIPCLOUD』を自社で公開。子会社 株式会社アイビス・ラボ（SaaS）。2022年に四国のAWSパートナー8社で『四国クラウド推進パートナーコンソーシアム』を設立。"
+  },
+  {
+   "name": "株式会社シティネット",
+   "hq": "高知県南国市蛍が丘1-1-1 南国オフィスパークセンター102",
+   "municipality": "南国市",
+   "town": "蛍が丘",
+   "employees": {
+    "value": 6,
+    "as_of": "2025年5月末現在",
+    "source": "https://www.city-net.jp/page/dtl.php?hdnKey=2"
+   },
+   "capital": {
+    "value": "1,670万円",
+    "source": "https://www.city-net.jp/page/dtl.php?hdnKey=2"
+   },
+   "founded": 1999,
+   "business_summary": "自治体向けCMSパッケージ『ActiveSite』、観光・防災Webカメラシステム、Webサイト構築、業務ソフト受託開発、高知県法人向けプロバイダー",
+   "ai_initiative": "公式トップのお知らせに『2025年08月01日 総務省「地域社会DX推進パッケージ事業（AI検証タイプ）」に採択』",
+   "url": "https://www.city-net.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "主要取引先に高知県と県内多数の市町村（南国市、香南市、土佐市、須崎市、安芸市、仁淀川町、四万十町、中土佐町、佐川町、大豊町、大月町、安田町、奈半利町、梼原町、田野町、土佐町、三原村、大川村、北川村）を掲載。東京事業所を2003年開設と沿革に記載。高知県情報産業協会 理事。"
+  },
+  {
+   "name": "株式会社Nextremer",
+   "hq": "高知県南国市蛍が丘1-1-2 南国オフィスパークセンター別棟3F",
+   "municipality": "南国市",
+   "town": "蛍が丘",
+   "employees": null,
+   "capital": {
+    "value": "1億円",
+    "source": "https://www.nextremer.com/company"
+   },
+   "founded": 2012,
+   "business_summary": "AIソリューション事業（対話型AI『AIミナライ』、AIオートコール『ネクストリーチ』）、データアノテーション事業",
+   "ai_initiative": "AI専業。対話型AIで電話・チャット応対（観光案内所の外国語対応、役所の問い合わせ対応などの事例を県デジタル化マッチングプラットフォームに掲載）",
+   "url": "https://www.nextremer.com/",
+   "size_basis": "capital",
+   "checked": "2026-10-17",
+   "notes": "会社概要に従業員数の記載なし。R&Dセンター（金沢市）、高松オフィスあり。会社概要ページはJavaScript描画のためWebFetchで確認。"
+  },
+  {
+   "name": "四銀コンピューターサービス株式会社",
+   "hq": "高知県南国市蛍が丘2丁目1番地（四国銀行事務センター内）",
+   "municipality": "南国市",
+   "town": "蛍が丘",
+   "employees": null,
+   "capital": {
+    "value": "2,000万円",
+    "source": "https://www.shikokubank.co.jp/scs/"
+   },
+   "founded": 1990,
+   "business_summary": "四国銀行グループの情報処理・ソフトウエア（マイナビの業種表記。公式の会社概要ページに事業内容の記載がなく、詳細は未確認）",
+   "ai_initiative": null,
+   "url": "https://www.shikokubank.co.jp/scs/",
+   "size_basis": "capital",
+   "checked": "2026-10-17",
+   "notes": "公式ページに従業員数・事業内容の記載なし（houjin.goo の38名は不採用）。銀行の子会社でグループ内業務が中心とみられるが未確認。社団法人高知県情報産業協会に加盟と記載。"
+  },
+  {
+   "name": "株式会社オフィスニシムラ",
+   "hq": "高知県南国市左右山137-10",
+   "municipality": "南国市",
+   "town": "左右山",
+   "employees": null,
+   "capital": null,
+   "founded": null,
+   "business_summary": "ホームページ構築・運営、データベースとWebの連携、ECサイト構築（Shopify Experts 認定）、eコマース運営システム『Winner』の開発・販売、CMS構築、API接続開発",
+   "ai_initiative": null,
+   "url": "https://office-nishimura.jp/",
+   "size_basis": "none",
+   "checked": "2026-10-17",
+   "notes": "従業員数・資本金・設立年は公式に記載なし。こうちIT事業者協同組合の理事（組合員紹介）。"
+  }
+ ],
+ "tosa-city": [],
+ "susaki": [
+  {
+   "name": "株式会社フロムダイムエージェンシー",
+   "hq": "高知県須崎市西崎町6-16 フロムダイムビル1F・2F",
+   "municipality": "須崎市",
+   "town": "西崎町",
+   "employees": null,
+   "capital": null,
+   "founded": 2006,
+   "business_summary": "ホームページ・ネットショップ制作、Webデザイン・システム構築、ネットショップ運営代行、Webマーケティング支援、サーバ運用、セキュリティコンサルティング、グラフィックデザイン・印刷",
+   "ai_initiative": null,
+   "url": "https://fromdime.co.jp/",
+   "size_basis": "none",
+   "checked": "2026-10-17",
+   "notes": "2006年10月にグラフィックデザインオフィスとして須崎市で設立、2007年にデジタルコンテンツ事業を開始。従業員数・資本金は公式に記載なし。県デジタル化マッチングプラットフォーム登録。"
+  }
+ ],
+ "sukumo": [
+  {
+   "name": "株式会社幡多情報エントランスセンター",
+   "hq": "高知県宿毛市長田町3番80-11号",
+   "municipality": "宿毛市",
+   "town": "長田町",
+   "employees": {
+    "value": 14,
+    "as_of": "時点記載なし（正社員。ほか委託社員2名）",
+    "source": "http://www.hata-e.co.jp/info.html"
+   },
+   "capital": {
+    "value": "1,940万円",
+    "source": "http://www.hata-e.co.jp/info.html"
+   },
+   "founded": 2000,
+   "business_summary": "システム構築・運用保守・コンサルティング、ソフトウェア開発、情報機器・業務ソフトの販売、サーバセンター運営、ホームページ作成",
+   "ai_initiative": null,
+   "url": "http://www.hata-e.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "株主は宿毛市・四万十市・黒潮町・大月町・三原村・宿毛商工会議所と、三菱電機・富士通・高知電子計算センター・四国情報管理センター・クイックソフトなど（第三セクター型）。主要取引先は宿毛市、四万十市、土佐清水市、大月町、三原村。徳島支店あり。https はつながらず http で確認。"
+  }
+ ],
+ "tosashimizu": [],
+ "shimanto-city": [
+  {
+   "name": "有限会社ユニコム",
+   "hq": "高知県四万十市右山天神町4番1号 松田ビル2F",
+   "municipality": "四万十市",
+   "town": "右山天神町",
+   "employees": null,
+   "capital": {
+    "value": "500万円",
+    "source": "https://www.unicomhouse.com/about"
+   },
+   "founded": 2004,
+   "business_summary": "ホームページ制作、ソフト開発、パソコン全般サポート、小中学校のICT支援・タブレット管理、社員研修・職業訓練",
+   "ai_initiative": null,
+   "url": "https://www.unicomhouse.com/",
+   "size_basis": "capital",
+   "checked": "2026-10-17",
+   "notes": "2001年設立（2004年に有限会社として法人登記）。従業員数は公式に記載なし。"
+  }
+ ],
+ "konan": [
+  {
+   "name": "ビーアンド合同会社",
+   "hq": "高知県香南市野市町西野646-1 第一すいめい601",
+   "municipality": "香南市",
+   "town": "野市町西野",
+   "employees": null,
+   "capital": null,
+   "founded": 2017,
+   "business_summary": "Web制作・運用、システム開発・保守、IT支援・戦略、業務改善支援、技術顧問、デザイン・印刷物制作",
+   "ai_initiative": "『AIもその選択肢のひとつとして、自社業務で実践しながら、お客様の業務改善に活かせる使い方を検証』と記載。『デジタル化・AI導入補助金2026』のIT導入支援事業者に採択（2026年4月30日のお知らせ）",
+   "url": "https://b-and.co.jp/",
+   "size_basis": "none",
+   "checked": "2026-10-17",
+   "notes": "2017年12月設立。従業員数・資本金は公式に記載なし。"
+  }
+ ],
+ "kami": [
+  {
+   "name": "株式会社Reflenge",
+   "hq": "高知県香美市土佐山田町宮ノ口185 地域連携棟304A号室",
+   "municipality": "香美市",
+   "town": "土佐山田町宮ノ口",
+   "employees": null,
+   "capital": null,
+   "founded": 2025,
+   "business_summary": "AIアプリ開発、業務改善コンサルティング、業務システム開発、ITコンサルティング、Web制作。勤怠管理アプリ",
+   "ai_initiative": "『Generative AIや機械学習を活用し、業務フローを抜本的に革新するカスタムアプリケーションを開発』を事業の筆頭に掲げる",
+   "url": "https://reflenge.com/about",
+   "size_basis": "none",
+   "checked": "2026-10-17",
+   "notes": "2025年4月15日設立。住所は高知工科大学香美キャンパスの地域連携棟（大学発の起業の可能性があるが、公式で未確認）。従業員数・資本金は公式に記載なし。県デジタル化マッチングプラットフォーム登録。"
+  },
+  {
+   "name": "合同会社デジポップ",
+   "hq": "高知県香美市土佐山田町西本町1丁目5番26号（香美本社）",
+   "municipality": "香美市",
+   "town": "土佐山田町西本町",
+   "employees": null,
+   "capital": null,
+   "founded": 2024,
+   "business_summary": "ホームページ制作、Webマーケティング、採用LP、DX支援、生成AI活用サポート（高知・香川の中小企業向け）",
+   "ai_initiative": "伴走型の生成AI活用支援サービス『アイポップブースト』、無料の『デジポップ生成AI活用診断ツール』（2026年1月リリース）。高知市の造船企業への生成AI活用サポートの事例を掲載",
+   "url": "https://digipop.co.jp/",
+   "size_basis": "none",
+   "checked": "2026-10-17",
+   "notes": "2024年1月設立。坂出オフィス（香川県）あり。代表社員1名の小規模事業者とみられる（従業員数・資本金は公式に記載なし）。"
+  }
+ ],
+ "toyo": [],
+ "nahari": [],
+ "tano": [],
+ "yasuda": [],
+ "motoyama": [],
+ "otoyo": [],
+ "tosa-town": [],
+ "ino": [],
+ "niyodogawa": [],
+ "nakatosa": [
+  {
+   "name": "株式会社ユーキソフト",
+   "hq": "高知県高岡郡中土佐町久礼2550-11",
+   "municipality": "中土佐町",
+   "town": "久礼",
+   "employees": null,
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.yukisoft.co.jp/profile/index.html"
+   },
+   "founded": 1984,
+   "business_summary": "ソフトウェアの開発・販売（タクシー業務管理『ハイウェー』、ガソリンスタンド仕入販売在庫管理『SSS』、漁協向け『魚市場』等のパッケージ）、コンサルタント業務",
+   "ai_initiative": null,
+   "url": "https://www.yukisoft.co.jp/",
+   "size_basis": "capital",
+   "checked": "2026-10-17",
+   "notes": "1983年6月創業。従業員数は公式に記載なし。タクシー業務管理システムで高知県地場産業奨励賞（2003年）。"
+  }
+ ],
+ "sakawa": [],
+ "ochi": [],
+ "yusuhara": [],
+ "tsuno": [],
+ "shimanto-town": [],
+ "otsuki": [],
+ "kuroshio": [],
+ "kitagawa": [],
+ "umaji": [],
+ "geisei": [],
+ "okawa": [],
+ "hidaka": [],
+ "mihara": [],
+ "_reference": {
+  "kochi-city": {
+   "next_candidates": [
+    {
+     "name": "株式会社アルベロ",
+     "employees": "22名（役員・パート含む、時点なし）",
+     "capital": "公式に記載なし",
+     "note": "インターネット事業部（ホームページ導入・運用、自社開発CMS、サーバ構築）と業務ソフト導入支援。フラダンス事業部も持つ。高知市本宮町105-25 高知ソフトウェアセンター3F。",
+     "source": "https://www.albero.jp/office/?group=grp01"
+    },
+    {
+     "name": "株式会社アイネッツコム",
+     "employees": "18名（時点なし）",
+     "capital": "2,000万円",
+     "note": "オフィスの通信環境（NTT代理店、通信機器販売）、人材請負。2025年1月にテクノホライゾン株式会社グループへ統合。ソフト開発が主ではないため次点。高知市札場。",
+     "source": "https://www.inetscom.jp/overview.html"
+    },
+    {
+     "name": "株式会社システム二十一",
+     "employees": "15名（時点なし）",
+     "capital": "2,500万円",
+     "note": "流通・製造・農産（アスパラ・ニラ・ピーマン荷受システム）・自治体・医療・図書館の業務システム開発、SE派遣。高知市潮新町2-12-5 東洋BSビル3階。1988年設立。高知県情報産業協会加盟。",
+     "source": "https://www.kochis21.co.jp/"
+    },
+    {
+     "name": "株式会社東洋ビジネスソリューションズ",
+     "employees": "公式に記載なし",
+     "capital": "3千万円",
+     "note": "ソフトウエアの受託開発、自社ソフト、クラウド・ハウジング、VDI構築。本社は高知市潮新町二丁目12番5号（houjin.goo の萩町とは異なる）。大阪オフィスあり。2009年設立。",
+     "source": "https://www.toyobizsol.co.jp/company/overview.html"
+    },
+    {
+     "name": "株式会社キタムラコンピュータ",
+     "employees": "公式に記載なし",
+     "capital": "1,400万円",
+     "note": "受託システム開発、情報機器販売、パッケージソフト販売・サポート、システム保守。高知市葛島。1986年設立。高知県情報産業協会加盟。",
+     "source": "https://www.kitacomp.co.jp/page0002.html"
+    },
+    {
+     "name": "株式会社高知システム開発",
+     "employees": "公式に記載なし",
+     "capital": "公式に記載なし",
+     "note": "視覚障害者向け音声パソコンソフト『PC-Talker』の開発・販売。1984年に日本初の点字音声ワープロ『AOKワープロ』。2021年バリアフリー・ユニバーサルデザイン推進功労者 内閣総理大臣表彰。高知市吉田町2-23。1988年設立（1983年創業）。",
+     "source": "https://www.aok-net.com/kaisya.php"
+    },
+    {
+     "name": "株式会社フォアフロントテクノロジー",
+     "employees": "公式に記載なし",
+     "capital": "公式に記載なし",
+     "note": "Webサイト・Webアプリ・スマートフォンアプリの企画・開発・運用、システムコンサルティング。高知市北本町1-10-31 高知八州ビル2F。名古屋支店あり。2006年設立。",
+     "source": "https://4front.jp/about.html"
+    },
+    {
+     "name": "Digi&Dev合同会社",
+     "employees": "公式に記載なし",
+     "capital": "公式に記載なし",
+     "note": "高知の中小企業・病院・団体向けのシステム開発とデータ分析。2023年春からAIの活用に取り組み、顧客のシステムにAI機能を組み込んでいると記載。放送大学高知学習センターでChatGPT体験講習会の講師（2025年8月）。高知市西秦泉寺。",
+     "source": "https://digianddev.com/"
+    },
+    {
+     "name": "ネクストメディア株式会社",
+     "employees": "公式に記載なし",
+     "capital": "公式に記載なし",
+     "note": "中小・ベンチャー企業の広報・マーケティング支援、Webサイト・広告制作、DX支援。本社 高知市南御座1-35、いの出張所（いの町加田）。2020年12月設立。",
+     "source": "https://nextmedia.team/company/"
+    },
+    {
+     "name": "有限会社オフィスティアラ",
+     "employees": "公式に記載なし",
+     "capital": "300万円",
+     "note": "ホームページ・ECサイト制作、ソフトウェア開発、コンピュータ運用保守。高知市福井扇町。2000年設立。",
+     "source": "https://tiara.ne.jp/company.htm"
+    },
+    {
+     "name": "有限会社こじゃんとネット",
+     "employees": "公式に記載なし",
+     "capital": "公式に記載なし",
+     "note": "ホームページ企画・制作・管理、動画制作。観光情報サイト『こじゃんとネット』を運営。高知市上町。2000年設立。",
+     "source": "https://www.kojyanto.net/information/information.html"
+    },
+    {
+     "name": "株式会社lucKs",
+     "employees": "公式に記載なし",
+     "capital": "500万円",
+     "note": "医療用・産業用3Dデータ作成、Web制作・デザイン・動画、Web広告・SNS運用。高知市北本町。2021年設立。",
+     "source": "https://lucks.jp/about.html"
+    },
+    {
+     "name": "有限会社情報システム",
+     "employees": "公式に記載なし",
+     "capital": "公式に記載なし",
+     "note": "業務ソフト開発（LPガス検針、給与、経理、販売管理）、Web制作。所在地は houjin.goo で高知市薊野南町（公式トップに所在地の具体的記載を確認できず）。",
+     "source": "https://www.ism-kochi.com"
+    },
+    {
+     "name": "タイムコンシェル株式会社",
+     "employees": "公式に記載なし",
+     "capital": "公式に記載なし",
+     "note": "アラートマネジメントシステム『タイムコンシェル』の開発・提供。本社 高知市仲田町2-11。お知らせの更新が2018年で止まっている。",
+     "source": "https://www.timeconcier.jp"
+    },
+    {
+     "name": "ファーイーストシステム有限会社",
+     "employees": "公式に記載なし",
+     "capital": "公式に記載なし",
+     "note": "高知市本宮町105-25 高知ソフトウェアセンター。公式サイトに会社概要・事業内容のページがなく詳細未確認（お知らせはサンプル投稿のみ）。",
+     "source": "https://www.fesnet.co.jp/information"
+    }
+   ],
+   "needs_manual_check": [
+    {
+     "name": "株式会社SHIFT PLUS",
+     "hq": "高知県高知市駅前町1番8号 第7駅前観光ビル（houjin.goo・報道発表）",
+     "note": "カスタマーサポート、ITアウトソーシング（ソフトウェアの品質保証など）、地域活性化事業。東証上場の株式会社SHIFT（東京）の子会社として2015年4月設立。公式サイト（Studio製）がJavaScript描画で会社概要を取得できなかった。高知労働局の資料（公的機関）に従業員284.5名（2025年6月1日現在）とあり、確認できれば高知市の最上位になる。札幌・群馬（高崎）に拠点。県デジタル化マッチングプラットフォーム登録。",
+     "source": "https://shiftplus.inc/company/"
+    },
+    {
+     "name": "株式会社高知県農協電算センター",
+     "hq": "公式で未確認",
+     "note": "JAグループ高知の情報システムの開発・運用・保守。公式サイトを特定できなかった。マイナビ（二次情報）では従業員44名・資本金1億円。JAグループ内の業務が中心。",
+     "source": "https://job.mynavi.jp/27/pc/search/corp236107/outline.html"
+    },
+    {
+     "name": "株式会社エレパ",
+     "hq": "高知県高知市南御座2番12号",
+     "note": "社員数 計70名・資本金3,000万円・売上高18億円（2025年8月実績）・1993年設立（公式）。事業内容に『ソフトウェア開発』『制作』を含むが、主はパソコン・事務用品の販売・修理・保守、ドローン、不動産。業務アプリ（出席管理・医療・勤怠）のオリジナル開発をうたう。IT販売店として載せるかは判断が必要。",
+     "source": "https://www.elp.co.jp/company/about.html"
+    },
+    {
+     "name": "株式会社オフコム",
+     "hq": "高知県高知市高須3-2-45",
+     "note": "従業員43名（2025年4月現在）・資本金1,500万円・1974年創業（公式）。オフィスサプライ・OA機器・レイアウトが主で、ソフト開発は主事業ではない（県マッチングPFでは『IT、ネットワーク、ソフト』と紹介）。キタムラコンピュータの元親会社（旧キタムラジムキ）。",
+     "source": "https://ofcom.co.jp/about"
+    }
+   ],
+   "excluded": [
+    {
+     "name": "株式会社カミノバ／株式会社カミノバ・バサラ",
+     "reason": "カミノバはコールセンター・BPOが主（2012年に東京から高知市に本社移転、新潟オフィスあり）。Web制作はグループのカミノバ・バサラ。会社概要に従業員数なし。『AI活用に関する基本方針』を公開。BPOのため本表から外した。",
+     "source": "https://www.caminova.co.jp/company/"
+    },
+    {
+     "name": "株式会社HarFor",
+     "reason": "デジタルマーケティングのBPO事業（株主: かんでんCSフォーラム、MAIA）。システム開発会社ではない。",
+     "source": "https://harfor.co.jp/company/"
+    },
+    {
+     "name": "株式会社adear（旧メディア・エーシー）",
+     "reason": "mediaac.co.jp は adear.co.jp に転送。セーラー広告グループの広告会社で、Web制作は一部。",
+     "source": "https://adear.co.jp/company/"
+    },
+    {
+     "name": "株式会社トスバックシステムズ",
+     "reason": "本社は香川県高松市。南国市にあるのは高知営業所。",
+     "source": "https://www.tosbac-systems.co.jp/profile.html"
+    },
+    {
+     "name": "株式会社アサイン（システムクリニック）",
+     "reason": "本店は茨城県ひたちなか市、東京本社あり。高知市本町は事業所。",
+     "source": "https://www.assign.co.jp/company/index.html"
+    },
+    {
+     "name": "株式会社MasterGuild",
+     "reason": "本社所在地は大阪（〒542-0061）。",
+     "source": "https://master-guild.com/company/"
+    },
+    {
+     "name": "株式会社Crafdea",
+     "reason": "所在地は埼玉県入間市。",
+     "source": "https://www.crafdea.co.jp/company.html"
+    },
+    {
+     "name": "陽和産業株式会社",
+     "reason": "セメント・建設資材・建機・石油製品販売が主。OA機器販売のITソリューション部はあるが開発会社ではない。",
+     "source": "https://yowa-co.jp/company-profile/"
+    },
+    {
+     "name": "株式会社オサシ・テクノス",
+     "reason": "計測機器メーカー（houjin.goo で受託開発に分類されていたが対象外）。",
+     "source": "https://www.osasi.co.jp"
+    },
+    {
+     "name": "株式会社富士・四国電話工業・高知通信機・竜馬電子 など",
+     "reason": "OA機器・通信設備・通信機器が主で、ソフト開発を主事業として明示していない（houjin.goo のIT業界に分類）。",
+     "source": "https://houjin.goo.to/corporations/prefs/kochi/category-it"
+    },
+    {
+     "name": "情報ソフト開発株式会社 高知事業所",
+     "reason": "こうちIT事業者協同組合の組合員だが『高知事業所』で本社は県外とみられる（未確認）。",
+     "source": "https://kochi-it.jp/about/member"
+    }
+   ],
+   "not_checked": "有限会社エクサ・ブレイン（exabrain.co.jp が名前解決できず）、ソフトユニオン有限会社（su-co.jp が名前解決できず）、株式会社ヒロクリエイト（sis-tec.co.jp が403）、日本モバイル情報管理（kei-rin.jp 未確認）、株式会社ケアルーツ、株式会社オフィスパートナー（フルオーダーシステム開発をうたう。公式未確認）、株式会社アルゴ、株式会社よさこい（公式に会社概要の数値なし）、こうちIT事業者協同組合の個人・小規模の組合員（Wintos、卯月WEB、合同会社ZYG、farglink、クロスティア等）、舞台AI（生成AI活用支援。法人格未確認）、株式会社ミロクリエ（403）、株式会社アクシスプラン（デザイン会社）、株式会社ONDO（公式がInstagramのみ）"
+  },
+  "nankoku": {
+   "note": "南国市蛍が丘（高知テクノパーク／南国オフィスパーク）にIT企業が集まる。クイックソフト・ヒワサキコンピュータシステムの南国オフィス、トスバックシステムズの高知営業所もここにある（いずれも本社は別の市）。"
+  },
+  "tosashimizu": {
+   "note": "houjin.goo で土佐清水市に分類された合同会社波多暮らしは、公式の所在地が四万十市中村本町で、事業も幡多地域の情報発信・オンラインショップのため対象外。"
+  },
+  "tosa-city": {
+   "note": "houjin.goo で土佐市の有限会社恵比寿電機が受託開発に分類されていたが、事業は鉱山機械（砂利選別機等）の製造で対象外。"
+  },
+  "ino": {
+   "note": "ネクストメディア株式会社（本社 高知市）がいの町加田に出張所を置く。本社のある会社は見つからなかった。"
+  }
+ },
+ "_notes": [
+  "houjin.goo・マイナビ・県マッチングプラットフォームの従業員数は採っていない（例: 高知電子計算センター houjin.goo 203名→公式206名、高知システムズ 107名→公式102名、エレパ マッチングPF 65名→公式70名）。記事では公式サイトの値だけを使う。",
+  "東京にも拠点を持つ会社: ソフテック（東京支社）、クイックソフト（東京オフィス）、ヒワサキコンピュータシステム（東京オフィス・田園調布オフィス）、シティネット（沿革に東京事業所開設）、テックス（関連会社が東京本社）。いずれも本社は県内。SHIFT PLUS は東京の上場会社の子会社。",
+  "四国情報管理センターの社長は中城一、パシフィックソフトウエア開発の社長は中城一明（別人）。高知県情報産業協会の会長として県の名簿に中城一明氏の名前がある（令和元年度）。混同しない。",
+  "AIを公式に明記している会社は、高知システムズ（オンプレミス生成AI製品）、Nextremer（AI専業、南国市）、パシフィックソフトウエア開発（AI自動給餌『餌ロボ』）、四国情報管理センター（AI/IoTサービス事業の部署）、シティネット（総務省AI検証タイプ採択）、Reflenge（香美市、AIアプリ開発）、デジポップ（香美市、生成AI活用支援）、ビーアンド（香南市）、Digi&Dev（高知市、次点）。",
+  "本社の会社が見つからなかった市町村: 室戸市、安芸市、土佐市、土佐清水市、東洋町、奈半利町、田野町、安田町、本山町、大豊町、土佐町、いの町、仁淀川町、佐川町、越知町、檮原町、津野町、四万十町、大月町、黒潮町、北川村、馬路村、芸西村、大川村、日高村、三原村。"
+ ]
+}
