@@ -1,0 +1,756 @@
+{
+ "_meta": {
+  "checked": "2026-10-17",
+  "scope": "徳島県24市町村。本社（公式サイトの本社/所在地。東京にも本社・本部を置く会社はnotesに記載）が当該市町村にあり、公式サイトで受託システム開発・ソフトウェア開発・Web制作・ITサービスを事業として明示する法人。規模は公式サイト記載の従業員数順。従業員数がない会社は資本金で後ろに並べた。",
+  "candidate_sources": [
+   "全国法人検索（houjin.goo.to、国税庁の法人番号データにもとづく）の徳島県「IT業界」89社と、「システム開発・受託開発」「システム開発・ソフトウェア開発」「Webサービス・アプリ運用」の一覧（各先頭2ページ）、「広告」「マスコミ・メディア」の一覧 https://houjin.goo.to/corporations/prefs/tokushima/category-it",
+   "マイナビ2028の本社所在地「徳島県」検索結果（先頭100社）で業種にソフトウエア・情報処理を含む企業 https://job.mynavi.jp/28/pc/search/hq36.html",
+   "WebSearch（担当上限22回のうち20回を使用）"
+  ],
+  "search_limits": "徳島県情報産業協会（TIA）の会員名簿は公開ページを見つけられなかった（ハルシステムコンピューターの会社概要に「社団法人徳島県情報産業協会」所属とあり、協会自体は存在する）。とくしま産業振興機構の企業一覧、徳島県のサテライトオフィス一覧は確認できていない。houjin.goo の市町村別の業種一覧は、町村分が全国の上場企業で埋まっていて使えなかった。公式URLを一覧から得られなかった会社は公式サイトを特定できず、未確認のまま除外した。網羅性は保証できない。",
+  "ordering": "従業員数（公式）の多い順 → 従業員数がない会社は資本金（公式）→ どちらもない会社は最後。"
+ },
+ "tokushima-city": [
+  {
+   "name": "株式会社ジャストシステム",
+   "hq": "徳島県徳島市川内町平石若松108-4（徳島本社）",
+   "municipality": "徳島市",
+   "town": "川内町",
+   "employees": {
+    "value": 302,
+    "as_of": "2026年3月時点",
+    "source": "https://www.justsystems.com/jp/corporate/profile.html"
+   },
+   "capital": {
+    "value": "101億4,651万円",
+    "source": "https://www.justsystems.com/jp/corporate/profile.html"
+   },
+   "founded": 1981,
+   "business_summary": "ソフトウェアおよび関連サービスの企画と開発、提供（日本語入力ATOK、一太郎、通信教育スマイルゼミ、法人・医療・公共向けソフトなど）。東証プライム上場",
+   "ai_initiative": "AI英会話コーチング「スマイルゼミ ENGLISH」を提供（公式トップのお知らせ、2026年9月）",
+   "url": "https://www.justsystems.com/jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "公式の会社概要に『東京本社』（東京都港区赤坂）と『徳島本社』を併記。登記上の本店は徳島市（法人番号 7480001000861）。記事では『徳島本社』と書くのが安全。創立1979年7月7日、設立1981年6月2日。"
+  },
+  {
+   "name": "日本システム開発株式会社",
+   "hq": "徳島県徳島市庄町5-81-80",
+   "municipality": "徳島市",
+   "town": "庄町",
+   "employees": {
+    "value": 60,
+    "as_of": "時点記載なし",
+    "source": "https://www.jsdnet.co.jp/company/"
+   },
+   "capital": {
+    "value": "9,800万円",
+    "source": "https://www.jsdnet.co.jp/company/"
+   },
+   "founded": 1974,
+   "business_summary": "システム提案・開発・保守（販売管理・POS本部システム、マイグレーション、IoT、ネットワーク）、電子機器の開発・製造受託（OEM/ODM）",
+   "ai_initiative": null,
+   "url": "https://www.jsdnet.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "東京支社（品川区）あり。製品名『Ai（藍）』は内部統制管理ツールで、人工知能ではない（徳島県と開発した自治体OSSキット）。従業員数に時点の記載なし。"
+  },
+  {
+   "name": "株式会社オプトピア",
+   "hq": "徳島県徳島市中島田町三丁目56番地1",
+   "municipality": "徳島市",
+   "town": "中島田町",
+   "employees": {
+    "value": 39,
+    "as_of": "2026年1月現在",
+    "source": "https://www.optpia.co.jp/info.html"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.optpia.co.jp/info.html"
+   },
+   "founded": 1993,
+   "business_summary": "コンピューターシステムの設計・開発・受託、コンサルティング、情報処理サービス。インターネット・イントラネット、モバイルシステム、LED制御システムなど",
+   "ai_initiative": null,
+   "url": "https://www.optpia.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "横浜営業所あり。売上高4億32万円（2025年9月期、公式）。ISMS・プライバシーマーク取得。"
+  },
+  {
+   "name": "スタンシステム株式会社",
+   "hq": "徳島県徳島市万代町三丁目5-4 近藤ビル3F",
+   "municipality": "徳島市",
+   "town": "万代町",
+   "employees": {
+    "value": 33,
+    "as_of": "令和8年（2026年）7月現在",
+    "source": "https://www.stansystem.co.jp/about/corporate-outline/"
+   },
+   "capital": {
+    "value": "6,600万円",
+    "source": "https://www.stansystem.co.jp/about/corporate-outline/"
+   },
+   "founded": 1982,
+   "business_summary": "公共・民間向けソフトウェア開発、Webシステム開発、Web制作、クラウド・サーバ・ネットワーク構築、セキュリティ対策支援。農業支援SaaS「STAGRI」、植物工場システムなどの自社製品",
+   "ai_initiative": "事業内容に『AI・IoT等先端技術研究開発』『AI、IoT等最新技術を活用したシステム開発、技術支援サービス』と明記。サービスに『IoT／AI開発』（データ解析・自動化・予知保全）",
+   "url": "https://www.stansystem.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "ISO27001・ISO9001取得。"
+  },
+  {
+   "name": "株式会社富士コンピュータサービス",
+   "hq": "徳島県徳島市新蔵町1丁目17番地",
+   "municipality": "徳島市",
+   "town": "新蔵町",
+   "employees": {
+    "value": 28,
+    "as_of": "2024年11月26日現在（正社員28名。ほかに常勤役員3名、契約社員3名、派遣社員2名）",
+    "source": "https://fcs-wins.com/company/c_overview/"
+   },
+   "capital": {
+    "value": "1,500万円",
+    "source": "https://fcs-wins.com/company/c_overview/"
+   },
+   "founded": 1982,
+   "business_summary": "システムインテグレーター。生産情報管理・販売管理・図書館情報・CATV加入者管理システム、kintoneアプリ（工事管理・営業支援）の開発・販売",
+   "ai_initiative": null,
+   "url": "https://fcs-wins.com/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "会社概要の時点が2024年11月26日でやや古い。直近売上高816,591千円（2025年9月決算期、公式）。サイボウズ オフィシャルコンサルティングパートナー（2026年1月）。旧ドメイン fcs-wins.co.jp から移行。"
+  },
+  {
+   "name": "株式会社ティエスエスリンク",
+   "hq": "徳島県徳島市沖浜東3-46 徳島Jビル東館4F",
+   "municipality": "徳島市",
+   "town": "沖浜東",
+   "employees": {
+    "value": 21,
+    "as_of": "2026年9月現在（役職員数）",
+    "source": "https://www.tsslk.jp/company/"
+   },
+   "capital": {
+    "value": "2,500万円",
+    "source": "https://www.tsslk.jp/company/"
+   },
+   "founded": 1999,
+   "business_summary": "情報漏洩対策ソフト「コプリガード」など内部不正対策製品の開発・販売",
+   "ai_initiative": "生成AIへの機密情報の持ち出しを、コピーやドラッグ操作の制御で防ぐ用途を公式サイトで案内（コラム『AIへの情報漏洩は、こうして防ぐ！』）。AIそのものの開発ではない",
+   "url": "https://www.tsslk.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "法人番号は東京都の登記（8010701023497）。公式の本社は徳島市。"
+  },
+  {
+   "name": "ミラ株式会社",
+   "hq": "徳島県徳島市川内町平石住吉209番5",
+   "municipality": "徳島市",
+   "town": "川内町",
+   "employees": {
+    "value": 19,
+    "as_of": "令和8年（2026年）8月1日現在（社員19名、うち時短3名。ほかにパート3名、常勤役員3名）",
+    "source": "https://www.mira-jp.com/about.html"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.mira-jp.com/about.html"
+   },
+   "founded": 1994,
+   "business_summary": "市役所・町役場向けソフトウェア（契約管理システム、入札参加資格の電子申請システムなど）の開発・販売",
+   "ai_initiative": null,
+   "url": "https://www.mira-jp.com/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "所在地は公式の会社概要で確認（徳島県健康科学総合センター4F）。"
+  },
+  {
+   "name": "株式会社サンエックス情報システム",
+   "hq": "徳島県徳島市津田本町5丁目2番37号",
+   "municipality": "徳島市",
+   "town": "津田本町",
+   "employees": {
+    "value": 18,
+    "as_of": "2025年4月1日現在（契約・派遣社員0名）",
+    "source": "https://sanx-info.co.jp/about/"
+   },
+   "capital": {
+    "value": "1,200万円",
+    "source": "https://sanx-info.co.jp/about/"
+   },
+   "founded": 1985,
+   "business_summary": "コンピュータソフトウェア開発、コンピュータソリューションの提案・販売（オフコンから汎用機まで）",
+   "ai_initiative": null,
+   "url": "https://sanx-info.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "所在地は公式の会社概要で確認（徳島市津田本町5丁目2-37）。設立は昭和60年6月4日（公式）。"
+  },
+  {
+   "name": "株式会社ウェブチップス",
+   "hq": "徳島県徳島市南末広町4番53号 エコービル4階",
+   "municipality": "徳島市",
+   "town": "南末広町",
+   "employees": {
+    "value": 16,
+    "as_of": "時点記載なし（社員16名、うち役員2名）",
+    "source": "https://www.web-tips.co.jp/company/"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.web-tips.co.jp/company/"
+   },
+   "founded": 2013,
+   "business_summary": "オープンソースCMS「シラサギ」の開発と、それを使った自治体サイト等の受託開発、LGWAN対応のCMS・グループウェアのクラウドサービス",
+   "ai_initiative": null,
+   "url": "https://www.web-tips.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "設立2013年9月20日（公式）。"
+  },
+  {
+   "name": "サイトブリッジ株式会社",
+   "hq": "徳島県徳島市昭和町3-6-5 板東ビル2階",
+   "municipality": "徳島市",
+   "town": "昭和町",
+   "employees": {
+    "value": 12,
+    "as_of": "時点記載なし（男性7名、女性5名）",
+    "source": "https://www.sitebridge.co.jp/about.html"
+   },
+   "capital": {
+    "value": "2,800万円",
+    "source": "https://www.sitebridge.co.jp/about.html"
+   },
+   "founded": 2000,
+   "business_summary": "自治体サイト向けCMS「Joruri CMS 2020」の開発とサイト制作、サイト内検索「Joruri Search」、JoruriPWMを使ったWebシステム開発",
+   "ai_initiative": "公式トップに『機械学習機能を備えた検索システム構築』を掲載",
+   "url": "https://www.sitebridge.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "旧社名 株式会社アイ・ディ・エス（2015年に社名変更）。東京支社（三鷹市）あり。"
+  },
+  {
+   "name": "株式会社カンマン",
+   "hq": "徳島県徳島市中昭和町2丁目39番地5",
+   "municipality": "徳島市",
+   "town": "中昭和町",
+   "employees": null,
+   "capital": {
+    "value": "4,000万円",
+    "source": "https://comman.co.jp/outline"
+   },
+   "founded": 2000,
+   "business_summary": "ホームページ制作、システム開発、Web・SNS広告運用、集客コンサルティング、ブランディング、動画制作、生成AI研修",
+   "ai_initiative": "法人向け生成AI研修・AI導入支援、AI活用Web/システム開発、『AIブログライター』（2024年11月リリース）。企業向け生成AI研修は2024年開始（公式の沿革）",
+   "url": "https://comman.co.jp/",
+   "size_basis": "capital",
+   "checked": "2026-10-17",
+   "notes": "従業員数は公式に記載なし。設立2000年1月（公式）。ドメインは comman.co.jp（kanman.co.jp ではない）。"
+  }
+ ],
+ "naruto": [
+  {
+   "name": "株式会社エムアイシー",
+   "hq": "徳島県鳴門市撫養町黒崎字松島45番地61",
+   "municipality": "鳴門市",
+   "town": "撫養町黒崎",
+   "employees": null,
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://mic-inc.co.jp/company/info"
+   },
+   "founded": 1991,
+   "business_summary": "保険代理店向けシステム開発・DX支援・経営支援。損害保険・生命保険代理店業も営む",
+   "ai_initiative": null,
+   "url": "https://mic-inc.co.jp/",
+   "size_basis": "capital",
+   "checked": "2026-10-17",
+   "notes": "保険代理店業を兼ねており、IT専業ではない。従業員数は公式に記載なし。"
+  },
+  {
+   "name": "株式会社ハードシステム",
+   "hq": "徳島県鳴門市大津町吉永284番地の4",
+   "municipality": "鳴門市",
+   "town": "大津町",
+   "employees": null,
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.hardsystem.co.jp/corpinfo.htm"
+   },
+   "founded": 1997,
+   "business_summary": "受託ソフト（販売管理・経理・給与）の開発、オフコンからPCへの移行、委託計算処理、パッケージソフト開発、ホームページ作成・運用",
+   "ai_initiative": null,
+   "url": "https://www.hardsystem.co.jp/",
+   "size_basis": "capital",
+   "checked": "2026-10-17",
+   "notes": "設立 平成9年2月10日（公式）。従業員数は公式に記載なし。サイトの作りが古い。"
+  },
+  {
+   "name": "ロジックシステム株式会社",
+   "hq": "徳島県鳴門市撫養町小桑島字前浜261番地",
+   "municipality": "鳴門市",
+   "town": "撫養町小桑島",
+   "employees": null,
+   "capital": null,
+   "founded": 1996,
+   "business_summary": "中小企業向け業務システムの導入支援・カスタマイズ（販売管理『豪商』など）",
+   "ai_initiative": "事業内容に『AI導入支援』を明記。月次ミーティングで毎月1テーマを実装まで行うAI活用支援サービスを案内",
+   "url": "https://logic-system.com/",
+   "size_basis": "none",
+   "checked": "2026-10-17",
+   "notes": "従業員数・資本金とも公式に記載なし。設立1996年6月5日（公式）。"
+  }
+ ],
+ "komatsushima": [],
+ "anan": [
+  {
+   "name": "株式会社シナジーテック",
+   "hq": "徳島県阿南市下大野町五反畑154-3（本社登記）",
+   "municipality": "阿南市",
+   "town": "下大野町",
+   "employees": null,
+   "capital": {
+    "value": "1,500万円",
+    "source": "https://www.synergytec.co.jp/"
+   },
+   "founded": 1988,
+   "business_summary": "照明器具（LEDイルミネーション、ドローン用照明）の設計製造、ソフトウェア開発（イルミネーション演出用アプリケーション）、電気工事",
+   "ai_initiative": null,
+   "url": "https://www.synergytec.co.jp/",
+   "size_basis": "capital",
+   "checked": "2026-10-17",
+   "notes": "主業はLED照明の製造で、IT専業ではない（事業内容に『ソフトウェア開発』あり）。前身 株式会社クラフトソフト（1988年3月）。小松島工場あり。掲載するなら『ソフトウェア開発も手がける照明メーカー』と書く。"
+  }
+ ],
+ "yoshinogawa": [
+  {
+   "name": "株式会社デジタルインテリジェンス",
+   "hq": "徳島県吉野川市鴨島町鴨島796番地3（徳島本社）",
+   "municipality": "吉野川市",
+   "town": "鴨島町",
+   "employees": null,
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.dig-in.jp/company"
+   },
+   "founded": 2002,
+   "business_summary": "システム・データベースコンサルティング、基幹系業務システム（生産在庫管理・物流・医療）とオープン系システム（CRM・ECサイト）の設計・開発",
+   "ai_initiative": null,
+   "url": "https://www.dig-in.jp/",
+   "size_basis": "capital",
+   "checked": "2026-10-17",
+   "notes": "沿革に東京オフィス（2003年開設）・東京研究室の記載あり。2024年12月に本社移転・リモートワーク導入。従業員数は公式に記載なし。"
+  }
+ ],
+ "awa": [],
+ "mima": [],
+ "miyoshi": [],
+ "katsuura": [],
+ "kamikatsu": [],
+ "sanagochi": [],
+ "ishii": [
+  {
+   "name": "有限会社ユー・テック",
+   "hq": "徳島県名西郡石井町浦庄字諏訪179-10",
+   "municipality": "石井町",
+   "town": "浦庄",
+   "employees": null,
+   "capital": {
+    "value": "1,900万円",
+    "source": "https://u-tech.co.jp/aboutus/"
+   },
+   "founded": 1997,
+   "business_summary": "ITシステムの開発、構築、サポート、コンサルティング（ソフトウェア開発・システム構築）",
+   "ai_initiative": null,
+   "url": "https://u-tech.co.jp/",
+   "size_basis": "capital",
+   "checked": "2026-10-17",
+   "notes": "徳島営業所（昭和町）・大阪営業所あり。代表挨拶でAIの発展に触れているが、AIのサービス提供は明記なし。設立1997年7月25日。"
+  }
+ ],
+ "kamiyama": [
+  {
+   "name": "キネトスコープ社",
+   "hq": "徳島県名西郡神山町上分字金泉136番地",
+   "municipality": "神山町",
+   "town": "上分",
+   "employees": null,
+   "capital": null,
+   "founded": 2005,
+   "business_summary": "企業ブランディング（CI・VI、会社案内、パッケージ）、Webサイトの企画・デザイン・制作・運営、動画制作、Webシステムの設計・開発",
+   "ai_initiative": null,
+   "url": "https://kinetoscope.jp/",
+   "size_basis": "none",
+   "checked": "2026-10-17",
+   "notes": "公式の社名表記は『キネトスコープ社』で、株式会社等の法人格の記載がない（法人かどうか未確認）。従業員数・資本金の記載なし。主業はデザイン。設立2005年1月1日。"
+  }
+ ],
+ "naka": [],
+ "mugi": [],
+ "minami": [
+  {
+   "name": "サイファー・テック株式会社",
+   "hq": "徳島県海部郡美波町恵比須浜字田井266番地（本社・美波Lab）",
+   "municipality": "美波町",
+   "town": "恵比須浜",
+   "employees": null,
+   "capital": {
+    "value": "2,000万円",
+    "source": "https://www.cyphertec.co.jp/about/"
+   },
+   "founded": 2003,
+   "business_summary": "情報セキュリティ（DRM＝デジタル著作権保護の暗号化ソリューション）、アプリケーション脆弱性診断、サイバーセキュリティ対策、自治体向けソリューション、システムインテグレーション",
+   "ai_initiative": null,
+   "url": "https://www.cyphertec.co.jp/",
+   "size_basis": "capital",
+   "checked": "2026-10-17",
+   "notes": "公式は『本社・美波Lab』が美波町。ほかに『東京本部』（新宿区）と徳島オフィス（徳島市）。法人番号は東京都の登記（5011101047313）。記事では『美波町に本社を置く』まで（東京本部の存在に注意）。従業員数は公式に記載なし。"
+  }
+ ],
+ "kaiyo": [],
+ "matsushige": [
+  {
+   "name": "株式会社コバヤシ",
+   "hq": "徳島県板野郡松茂町笹木野字八北開拓437番地3",
+   "municipality": "松茂町",
+   "town": "笹木野",
+   "employees": null,
+   "capital": {
+    "value": "1,200万円（2021年2月増資）",
+    "source": "https://kmc-soft.net/company/"
+   },
+   "founded": 1984,
+   "business_summary": "Webサイト制作・運用、ソフトウェア開発・販売、PC・周辺機器販売（事業所名 ICランドコバヤシ）",
+   "ai_initiative": null,
+   "url": "https://kmc-soft.net/",
+   "size_basis": "capital",
+   "checked": "2026-10-17",
+   "notes": "創業1976年3月1日、設立1984年1月26日。グループ会社 有限会社データプロ、株式会社データプロリンクス。従業員数は公式に記載なし。"
+  }
+ ],
+ "kitajima": [],
+ "aizumi": [],
+ "itano": [
+  {
+   "name": "テック情報株式会社",
+   "hq": "徳島県板野郡板野町犬伏字東谷6番地33",
+   "municipality": "板野町",
+   "town": "犬伏",
+   "employees": {
+    "value": 198,
+    "as_of": "2026年4月現在",
+    "source": "https://www.tec-inf.co.jp/company"
+   },
+   "capital": {
+    "value": "2億3千万円（2025年3月末現在）",
+    "source": "https://www.tec-inf.co.jp/company"
+   },
+   "founded": 1968,
+   "business_summary": "ソフトウェア開発、情報処理サービス、パッケージソフト（病院向け就業管理、学校給食アレルギー管理、学校図書システム等）、Webアプリ開発、自治体・医療機関向けシステム",
+   "ai_initiative": "『AI活用支援』をソリューションに掲げ、AI QAサービス『TEMANA』を提供。沿革に『AI-FAQ 販売開始』（2020年4月）",
+   "url": "https://www.tec-inf.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "旧 徳島電子計算センター。徳島事業所（徳島市寺島本町西 アミコ東館）・東京事業所あり。主な株主にメディアドゥ、徳島県、徳島市など。県内のIT企業では最大級。"
+  },
+  {
+   "name": "アイテム株式会社",
+   "hq": "徳島県板野郡板野町矢武字宮ノ西32番地",
+   "municipality": "板野町",
+   "town": "矢武",
+   "employees": null,
+   "capital": null,
+   "founded": 2018,
+   "business_summary": "ソフトウェアの開発・販売・保守（ASP.NET、Java、COBOLなどの業務システム）。アウトドアスポーツ事業、ドローン撮影も",
+   "ai_initiative": null,
+   "url": "https://www.aitem.co.jp/seesmile/",
+   "size_basis": "none",
+   "checked": "2026-10-17",
+   "notes": "従業員数・資本金とも公式に記載なし。公式タイトルは『徳島・高松のシステム開発』。設立2018年6月。"
+  }
+ ],
+ "kamiita": [],
+ "tsurugi": [],
+ "higashimiyoshi": [],
+ "_reference": {
+  "tokushima-city": {
+   "next_candidates": [
+    {
+     "name": "株式会社サンシステムエンジニアリング",
+     "employees": "公式に記載なし",
+     "capital": "1,000万円",
+     "note": "業務システム開発、Web制作、NEC自営保守会社。徳島市北矢三町。設立1987年5月（有限会社として）。",
+     "source": "https://3system.co.jp/overview/"
+    },
+    {
+     "name": "西日本キング株式会社",
+     "employees": "公式に記載なし",
+     "capital": "1,000万円",
+     "note": "システム・ソフトウェア受託開発、牛乳宅配・販売在庫・給与計算などの自社パッケージ、OA機器販売保守。徳島市南島田町。設立1979年。",
+     "source": "https://www.innk.co.jp/"
+    },
+    {
+     "name": "株式会社ハルシステムコンピューター",
+     "employees": "公式に記載なし",
+     "capital": "1,000万円",
+     "note": "ストリーミング・レンタルサーバ、ASP・クラウドシステム。徳島市末広。設立2000年5月。公式サイトからAI研究開発のページ（A.I Private Box、aipbx.com）にリンクがある。社団法人徳島県情報産業協会に所属と記載。",
+     "source": "https://halsc.com/company/profile.php"
+    },
+    {
+     "name": "インプローブネット株式会社",
+     "employees": "公式に記載なし",
+     "capital": "1,000万円",
+     "note": "コンピュータシステムの開発・保守、ネットワーク構築、ホームページ・ECサイト。徳島市佐古二番町。設立2006年11月。",
+     "source": "http://www.improve-net.jp/company.html"
+    },
+    {
+     "name": "プライムソフト有限会社",
+     "employees": "公式に記載なし",
+     "capital": "500万円",
+     "note": "ソフトウェア開発（大学事務システム、土木積算システム等）。徳島市富田浜。有限会社設立1988年8月。",
+     "source": "http://www.psoft.jp/corp.html"
+    },
+    {
+     "name": "株式会社ルートウェブ",
+     "employees": "構成人員3名（時点なし）",
+     "capital": "300万円",
+     "note": "コンサルタント、パッケージソフトウェア開発、受託開発。徳島市川内町（徳島健康科学総合センター2F）。設立2008年1月。",
+     "source": "http://www.rootweb.co.jp/aboutus.html"
+    },
+    {
+     "name": "株式会社ライフシステム開発",
+     "employees": "公式に記載なし",
+     "capital": "公式に記載なし",
+     "note": "GISを使った台帳管理、販売管理等のシステム開発、タブレット向けシステム。徳島市川内町。設立2017年9月。",
+     "source": "https://sys.lifegrp.jp/company.html"
+    },
+    {
+     "name": "有限会社ホームページワークス",
+     "employees": "公式に記載なし",
+     "capital": "公式に記載なし",
+     "note": "ホームページ制作・運用、Webシステム。徳島市南矢三町。2001年設立。",
+     "source": "https://www.hpw.co.jp/about.html"
+    },
+    {
+     "name": "株式会社デジタルドリーム",
+     "employees": "公式に記載なし",
+     "capital": "1,000万円",
+     "note": "ソフトウェア・Webサービス・アプリ開発、機械学習（ディープラーニング）による予測・データ可視化。公式の所在地は徳島市助任橋4-8-1（houjin.goo の藍住町奥野とは異なる）。設立1999年9月。公式サイトにダミー文（Lorem ipsum）が残っており更新状況に不安があるため次点にした。",
+     "source": "https://digitaldream.co.jp/"
+    }
+   ],
+   "needs_manual_check": [
+    {
+     "name": "株式会社電脳交通",
+     "hq": "徳島県徳島市寺島本町西1-5 アミコ東館6階（公式サイトの構造化データ）",
+     "note": "タクシー向けクラウド配車システム『DS』と配車業務委託『TaxiCC』。公式サイトは『徳島本社』と表記。会社概要ページ（/corporation）がJavaScript描画で、従業員数・資本金を取得できなかった。ブラウザで確認できれば徳島市の上位に入る候補（houjin.goo の値は従業員220名・資本金1億円だが不採用）。",
+     "source": "https://cybertransporters.com/corporation"
+    }
+   ],
+   "excluded": [
+    {
+     "name": "株式会社テクノデジタル",
+     "note": "公式の会社情報で本社は『東京本社』（東京都港区南青山）。徳島市川内町は『徳島研究室』。従業員200名（グループ260名）、AI駆動開発を掲げる。登記は徳島市（法人番号 3480001003876）だが、本社機能は東京のため掲載しない。",
+     "source": "https://www.tcdigital.jp/company"
+    },
+    {
+     "name": "株式会社メディアドゥテック徳島",
+     "note": "従業員96名（2026年8月1日）。メディアドゥの子会社で、電子書籍流通のオペレーション拠点（データ登録・配信・キャンペーン運用）。システム開発会社ではないため除外。",
+     "source": "https://mdtt.jp/about/"
+    },
+    {
+     "name": "NDIソリューションズ株式会社",
+     "note": "マイナビで本社『東京都港区、徳島県徳島市』とされるが、求人情報では本社は東京都港区。公式未確認。"
+    },
+    {
+     "name": "株式会社ユニコム",
+     "note": "houjin.goo の公式URL（unicom-net.com）が無関係の中国語サイトになっており、公式サイトを確認できない。"
+    },
+    {
+     "name": "株式会社松本コンサルタント、株式会社エス・シー企画、ニタコンサルタント株式会社",
+     "note": "測量・建設コンサルタントが主業。"
+    },
+    {
+     "name": "株式会社ユマニテクラボ",
+     "note": "教育・研究用ソフトの開発と公開が目的で『営利を追求する企業ではありません』と公式に記載。"
+    },
+    {
+     "name": "シティホールディングス株式会社、HeartReach株式会社、株式会社ニックス、株式会社アスペック、ディー・コム有限会社、株式会社エヌシーエス、株式会社ニシテック、株式会社コール・ミー、株式会社コムニカ",
+     "note": "houjin.goo でIT業界とされるが、公式では不動産、組織人事コンサル、医療機器販売、販促企画、ビジネスホン、LAN・防災設備、機械販売、コールセンター等が主業。"
+    },
+    {
+     "name": "有限会社エミール・ソフト開発、株式会社ブイワン、株式会社赤船、有限会社コニーシステム、リッチハニカム株式会社、株式会社PIALab.、株式会社ZEN、株式会社キュースタイル、株式会社ワイヤーオレンジ、有限会社ネットウイング、株式会社データネットワークシステムズ",
+     "note": "公式サイトがタイトルのみ・初期ページ・接続不可・未特定で、会社概要を確認できなかった。"
+    },
+    {
+     "name": "株式会社ナンバーエイト",
+     "note": "比較ビズでは徳島市八万町、別サイトでは神山町と所在地が食い違う。Webシステム・アプリ開発。公式サイトを特定できず未確認。"
+    }
+   ]
+  },
+  "naruto": {
+   "needs_manual_check": [
+    {
+     "name": "ビザンコマース株式会社",
+     "note": "Webシステム開発・業務ソフト・スマホアプリ開発・ホームページ制作（公式トップ）。『Cube GoGoGo!!!（AI開発無料版）公開』（2026年9月26日）のお知らせあり。公式サイトに会社概要ページが見当たらず、所在地（houjin.goo では鳴門市瀬戸町）を公式で確認できなかった。",
+     "source": "https://www.bizan.com/own/index.asp"
+    }
+   ],
+   "excluded": [
+    {
+     "name": "株式会社ポスト・ウェーブ",
+     "note": "houjin.goo で通信・教育・IoTとされるが公式サイトを特定できず。"
+    }
+   ]
+  },
+  "komatsushima": {
+   "next_candidates": [
+    {
+     "name": "株式会社サイバネ",
+     "employees": "36名（2020年10月現在、古い）",
+     "capital": "1,800万円",
+     "note": "自動制御システム（制御盤、シーケンスプログラム、画像処理・データベースシステム）の設計製作と制御機器販売。小松島市芝生町。FA・制御が主業でIT専業ではないため本表から外した。",
+     "source": "http://www.cyberne.co.jp/"
+    },
+    {
+     "name": "マイクロインテレクス株式会社",
+     "employees": "公式に記載なし",
+     "capital": "公式に記載なし",
+     "note": "顔認証QRコード『faceQR』、カラーコード『iDQR』などの特許技術の開発。小松島市江田町（houjin.goo）。公式に所在地・規模の記載が見当たらない。",
+     "source": "https://www.microintellecs.com/about/index.html"
+    }
+   ],
+   "excluded": [
+    {
+     "name": "SAI株式会社",
+     "note": "houjin.goo にあるが公式URLなし。"
+    }
+   ]
+  },
+  "anan": {
+   "excluded": [
+    {
+     "name": "株式会社優伸",
+     "note": "houjin.goo にあるが公式URLなし。"
+    },
+    {
+     "name": "株式会社ワンダー、株式会社ジェイ・アイ・ティ、阿波通信機器株式会社",
+     "note": "携帯電話販売・通信機器が主業。"
+    }
+   ]
+  },
+  "yoshinogawa": {
+   "excluded": [
+    {
+     "name": "株式会社アイバン",
+     "note": "houjin.goo にあるが公式URLなし。"
+    }
+   ]
+  },
+  "mima": {
+   "excluded": [
+    {
+     "name": "株式会社エス・ビー・シー",
+     "note": "マイナビで本社 美馬市、業種に情報処理・ソフトウエアを含むが、事業内容は建設コンサルタント業が主（従業員93名、2026年4月1日、マイナビ）。公式未確認。",
+     "source_secondary": "https://job.mynavi.jp/28/pc/search/corp90934/outline.html",
+     "verified": false
+    },
+    {
+     "name": "株式会社エルピスホールディングス",
+     "note": "houjin.goo でIT業界とされるが公式URLなし。"
+    }
+   ]
+  },
+  "miyoshi": {
+   "excluded": [
+    {
+     "name": "株式会社シーモス",
+     "note": "NTTドコモの携帯販売・緊急通報システム。システム開発会社ではない。"
+    }
+   ]
+  },
+  "ishii": {
+   "excluded": [
+    {
+     "name": "株式会社NDK",
+     "note": "従業員105名（2024年6月）。FA機械の製造が主業。",
+     "source": "https://ndkgr.com/about/"
+    },
+    {
+     "name": "有限会社データネットワークシステムズ、株式会社G Success",
+     "note": "公式サイトを確認できず（403・URLなし）。"
+    }
+   ]
+  },
+  "minami": {
+   "excluded": [
+    {
+     "name": "株式会社あわえ",
+     "note": "美波本社（美波町日和佐浦114）。サテライトオフィス誘致支援、企業版ふるさと納税支援などの地域活性化事業が主で、システム開発会社ではない。代表はサイファー・テックと同じ吉田基晴氏。地域ページで触れるなら『サテライトオフィス誘致の会社』として。",
+     "source": "https://www.awae.co.jp/company-profile"
+    }
+   ]
+  },
+  "matsushige": {
+   "excluded": [
+    {
+     "name": "NTT-ATクリエイティブ株式会社",
+     "note": "本社は松茂町だが、事業は精密洗浄・組立受託。IT企業ではない。",
+     "source": "https://www.ntt-atcr.co.jp/company/profile/"
+    }
+   ]
+  },
+  "kitajima": {
+   "excluded": [
+    {
+     "name": "徳島電制株式会社",
+     "note": "従業員39名（2025年7月）。専用検査装置・コンピュータ応用コントローラの開発製造（FA）。",
+     "source": "https://denseigr.co.jp/company.html"
+    }
+   ]
+  },
+  "aizumi": {
+   "needs_manual_check": [
+    {
+     "name": "モバイルイノベーション合同会社",
+     "note": "福祉・介護分野のスマホアプリ・システム開発、AI導入・活用支援（音声認識、テキスト分類、ローカルLLMの実績を公式FAQに記載）。公式の所在地は『徳島県』のみで、市町村を確認できない（houjin.goo は藍住町笠木）。設立2014年。",
+     "source": "https://mobile-innovation.jp/"
+    }
+   ],
+   "excluded": [
+    {
+     "name": "株式会社デジタルドリーム",
+     "note": "houjin.goo では藍住町だが、公式の所在地は徳島市助任橋。徳島市の次点へ。"
+    },
+    {
+     "name": "有限会社ブレインズワイ",
+     "note": "公式ドメインが準備中の初期ページ。"
+    }
+   ]
+  },
+  "kamiita": {
+   "excluded": [
+    {
+     "name": "株式会社贏瀛国際商事",
+     "note": "houjin.goo の公式URL（winjapan.net）はステンレス標準部品のサイトで、IT事業を確認できない。"
+    }
+   ]
+  },
+  "kaiyo": {
+   "needs_manual_check": [
+    {
+     "name": "有限会社アイ・ティ・工房",
+     "note": "公式はグーペの簡易ページで、所在地 海陽町大里字松原50-13 のみ。事業内容（houjin.goo ではホームページ作成支援）を公式で確認できない。",
+     "source": "https://r.goope.jp/it-studio/about"
+    }
+   ]
+  }
+ },
+ "_notes": [
+  "houjin.goo の従業員数・事業紹介は採っていない（例: 電脳交通220名、メディアドゥテック徳島91名→公式96名）。記事では公式サイトの値だけを使う。",
+  "ジャストシステム（東京本社と徳島本社を併記）とサイファー・テック（東京本部と本社・美波Lab）は東京にも本社機能がある。掲載時は『徳島本社』『美波町に本社』の書き方にとどめる。テクノデジタルは本社が東京のため掲載しない。",
+  "本社の会社が見つからなかった市町村: 小松島市、阿波市、美馬市、三好市、勝浦町、上勝町、佐那河内村、那賀町、牟岐町、海陽町、北島町、藍住町、上板町、つるぎ町、東みよし町。神山町・美波町はサテライトオフィスが多いが、本社が県外の会社は対象外にした。"
+ ]
+}

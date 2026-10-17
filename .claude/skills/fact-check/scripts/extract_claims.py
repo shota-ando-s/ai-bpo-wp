@@ -171,7 +171,8 @@ def check_url(url):
     # 日本語を含むURL（帝国データバンクのPDFなど）はそのままだと送れないので、パーセントエンコードする
     safe = urllib.parse.quote(url, safe=":/?&=%#+,;@!$'()*~")
     # 逆に、ブラウザの User-Agent を 406 で弾くサイトもある（岩手県立大学のリポジトリ iwate-pu.repo.nii.ac.jp など）。
-    # 403/406 のときは、ブラウザ以外の User-Agent で1回だけ取り直す
+    # ボット対策でブラウザの User-Agent に 405 を返すサイトもある（琉球新報 ryukyushimpo.jp など）。
+    # 403/405/406 のときは、ブラウザ以外の User-Agent で1回だけ取り直す
     last = None
     for ua in (BROWSER_UA, PLAIN_UA):
         req = urllib.request.Request(safe, method="GET", headers={"User-Agent": ua})
@@ -180,7 +181,7 @@ def check_url(url):
                 return url, r.status, r.geturl()
         except urllib.error.HTTPError as e:
             last = (url, e.code, url)
-            if e.code not in (403, 406):
+            if e.code not in (403, 405, 406):
                 return last
         except Exception as e:  # noqa: BLE001 - 接続エラーはまとめて報告する
             return url, f"接続失敗: {type(e).__name__}", url

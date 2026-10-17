@@ -1,0 +1,187 @@
+# 徳島県内15町1村（勝浦・上勝・佐那河内・石井・神山・那賀・牟岐・美波・海陽・松茂・北島・藍住・板野・上板・つるぎ・東みよし）2026年度
+# 確認日 2026-10-17。根拠は subsidy_b_areas.md
+# 既存の中小企業がIT・DX・研修に使える町独自の制度を確認できたのは東みよし町（中小企業者等応援事業補助金）だけ。北島町のデジタル販路の補助は締切済み
+# 勝浦町・上勝町・佐那河内村・神山町・松茂町・藍住町・板野町・上板町・つるぎ町は、IT・DX・研修・創業向けの町村独自の制度を確認できなかった（YAMLに項目なし）
+# 牟岐町の創業促進補助金は、当初は二次情報だけだったが、2026-10-17に公式サイト（www.town.tokushima-mugi.lg.jp）の募集ページで確認して official にした
+
+# ---- 東みよし町 ----
+- id: higashimiyoshi-ouen-it
+  name: 東みよし町中小企業者等応援事業補助金（IT等活用事業）
+  org: 東みよし町
+  area: tokushima/higashimiyoshi
+  max_yen: 100000
+  rate: 1/2
+  rate_num: 0.5
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 自社ホームページ等の新規作成・大幅な改良、他者ウェブサイトへの出展など、ウェブサイト上での商品・サービスの販売に向けた取組の委託料（ウェブサイト製作費・改良費、検索エンジン最適化対策費）、ドメイン取得費、ネットショッピングモール初期登録費など
+  conditions: 町内に住所（法人は所在地か主たる事務所）がある中小企業者・小規模企業者・中小企業団体。町税の滞納がないこと。事業着手前に申請し、交付申請年度内に事業と支払が完了すること。国・県・他の町補助と重複不可。同一年度に同じ区分（販路開拓区分）からは1事業まで
+  period: {status: open, start: 2026-04-01, end: 2027-03-31}
+  next_expected: 2027-04
+  url: https://www.town.higashimiyoshi.lg.jp/docs/1963564.html
+  checked: 2026-10-17
+  confidence: official
+  note: 要綱は令和2年4月1日告示第96号（https://www.town.higashimiyoshi.lg.jp/fs/5/5/7/9/5/0/_/ouen00youkou.pdf）。町のページの日付は2026-04-01。予算の状況により年度途中でも受付終了あり。申請前に東みよし町商工会（0883-82-2177）で事業計画を相談する。業務効率化のソフト・クラウドの利用料は対象経費に書かれていない（販売用ウェブサイト向け）。endは年度内完了の要件からの推定で、締切日は示されていない。補助額の算定は消費税抜き
+- id: higashimiyoshi-ouen-jinzai
+  name: 東みよし町中小企業者等応援事業補助金（人材育成事業）
+  org: 東みよし町
+  area: tokushima/higashimiyoshi
+  max_yen: 200000
+  rate: 1/2
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: ○}
+  expenses: 従業者（雇用保険の被保険者に限る）の資格等の取得や研修等の受験料、受講料、教材費、資料代、講師謝金（旅費等を含む）など
+  conditions: 町内に住所（法人は所在地か主たる事務所）がある中小企業者等。町税の滞納がないこと。事業着手前に申請。事業者が自ら行う事業に直結しないもの、過去に同一人の同一資格・研修で交付を受けたもの、普通自動車第一種運転免許の取得、資格の更新は対象外。同一年度に人材確保区分からは1事業まで
+  period: {status: open, start: 2026-04-01, end: 2027-03-31}
+  next_expected: 2027-04
+  url: https://www.town.higashimiyoshi.lg.jp/docs/1963564.html
+  checked: 2026-10-17
+  confidence: official
+  note: 要綱（令和2年告示第96号）の別表で確認。AI研修の受講料・講師謝金が「研修等」に入るかは町（産業課 0883-79-5339）か東みよし町商工会に事前確認。予算の状況により年度途中でも受付終了あり。endは年度内完了の要件からの推定
+- id: higashimiyoshi-ouen-kakushin
+  name: 東みよし町中小企業者等応援事業補助金（経営革新事業）
+  org: 東みよし町
+  area: tokushima/higashimiyoshi
+  max_yen: 250000
+  rate: 1/2
+  rate_num: 0.5
+  targets: {efficiency: △, consulting: △, training: ×}
+  expenses: 経営革新（新商品の開発や生産、新たな生産方式の導入など新たな事業活動で経営の相当程度の向上を図ること）に必要と認められる専門家の招へい、学校・企業等との連携研究、事業承継、6次産業化の取組の謝金、研究経費など
+  conditions: 町内に住所（法人は所在地か主たる事務所）がある中小企業者等。町税の滞納がないこと。事業着手前に申請。同一年度に経営革新区分からは1事業まで
+  period: {status: open, start: 2026-04-01, end: 2027-03-31}
+  next_expected: 2027-04
+  url: https://www.town.higashimiyoshi.lg.jp/docs/1963564.html
+  checked: 2026-10-17
+  confidence: official
+  note: AI導入の専門家への謝金が「経営革新」に当たるかは町の判断。経営革新区分にはほかに産業財産権等取得（1/2・25万円）、BCP策定（2/3・20万円）、にし阿波ブランド認証品開発（2/3・25万円）がある。予算の状況により年度途中でも受付終了あり
+- id: higashimiyoshi-kigyo
+  name: 東みよし町起業創業支援事業補助金
+  org: 東みよし町
+  area: tokushima/higashimiyoshi
+  max_yen: 500000
+  rate: 1/2
+  rate_num: 0.5
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 起業又は新分野への進出に要する事業所等の増改築費、設備及び備品の購入費、広告宣伝費、試作費、事業用車両の購入費など
+  conditions: 創業の日又は新事業開始の日に町内に住所がある人。助成対象外の業種あり（要綱で確認）。事業計画書は事前に東みよし町商工会の指導を受ける。申請者のプレゼンテーションをもとに町が審査（四半期に一度、7月・10月・1月・4月の予定）。事業着手後の申請は不可。起業・新分野進出後3年間の状況報告が必要
+  period: {status: rolling}
+  url: https://www.town.higashimiyoshi.lg.jp/docs/944.html
+  checked: 2026-10-17
+  confidence: official
+  note: 要綱 https://www.town.higashimiyoshi.lg.jp/fs/5/5/7/9/4/1/_/kigyo00youkou.pdf （本文は未読）。町のページの日付は2026-04-01。既存事業者の「新分野への進出」も対象。ソフトウェア・クラウドが設備・備品に入るかは記載がない
+
+# ---- 北島町 ----
+- id: kitajima-digital-hanro
+  name: 北島町「デジタル販路活用力」向上事業補助金
+  org: 北島町
+  area: tokushima/kitajima
+  max_yen: 5500000
+  rate: 1/1
+  rate_num: 1.0
+  targets: {efficiency: △, consulting: △, training: ×}
+  expenses: デジタルマーケティング戦略作成（商品コンセプト整理、ターゲット選定、ブランド設計）と、それに基づく施策の実行（ECサイト改善・LP改善、SEO対策、SNS戦略の設計・運用、Web広告運用など）のマーケティング戦略策定費、外部専門家委託費、広告費など
+  conditions: 北島町内で製品の価値の過半を占める主要な製造・加工等の工程を行い、自社商品のEC販売を行っている事業者。町税の滞納がないこと。採択予定1件、応募多数の場合は選定委員会でプレゼンテーション（20分程度）
+  period: {status: closed, end: 2026-05-22}
+  url: https://www.town.kitajima.lg.jp/docs/5723925.html
+  checked: 2026-10-17
+  confidence: official
+  note: 上限550万円は税抜き。概算先払い可。地域未来交付金（地域未来推進型）を活用した事業。申請は2026-05-22（必着）で締切済み、採択結果PDFが掲載済み（ページ更新2026-06-16）。来年度の実施は未定のためnext_expectedは書かない。窓口はまちみらい課 088-698-9806
+- id: kitajima-sogyo
+  name: 令和8年度北島町創業支援補助金
+  org: 北島町
+  area: tokushima/kitajima
+  max_yen: 200000
+  rate: 10/10（上限内）
+  rate_num: 1.0
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 販路拡大に係る必要経費、備品購入費及びリース料（新たに導入した機器に限る）、店舗の家賃・外装及び内装工事費・設備工事費、借入利子、その他町長が適当と認めるもの。交付決定日から年度末（3月31日）までに実施する事業の経費
+  conditions: 申請年度内に創業予定か、創業から3年以内。町内に住所及び事業所（法人は本店か主たる事業所）がある。北島町商工会の創業セミナー等の受講か特定創業支援等事業の支援を受けた者。町税の滞納がないこと。フランチャイズ、農林漁業、金融保険業、病院・診療所、住宅宿泊事業、売電事業などは対象外。事業着手前に申請
+  period: {status: open, start: 2026-04-01, end: 2027-03-31}
+  next_expected: 2027-04
+  url: https://www.town.kitajima.lg.jp/docs/5681392.html
+  checked: 2026-10-17
+  confidence: official
+  note: 上限は法人20万円、個人事業主10万円（補助対象経費の合計額以内）。予算上限に達した時点で受付終了。endは対象経費の実施期限（年度末）で、申請の締切日は示されていない。窓口はまちみらい課 088-698-9806（北島町役場2階）
+
+# ---- 海陽町 ----
+- id: kaiyo-kigyo
+  name: 令和8年度 海陽町ふるさと創造戦略補助金（起業支援事業）
+  org: 海陽町
+  area: tokushima/kaiyo
+  max_yen: 1000000
+  rate: 1/2
+  rate_num: 0.5
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 開業準備に関する経費。設備費（事業に必要な機械器具・備品類の購入費）、通信運搬費、宣伝広告費、印刷製本費、委託費（ホームページの制作等）、賃金、事業所等の改修費など。パソコン等著しく汎用性の高い備品で使途が明確でないものは対象外
+  conditions: 起業の日に町内に住所がある（予定を含む）。令和9年3月末までに町内で起業が確実で、5年以上継続する計画がある。町の特定創業支援事業の証明を受けている。町が定める補助対象業種であること。本人・世帯が過去に本事業の補助を受けていない。町税等の滞納なし。応募前に町へ事前相談
+  period: {status: open, start: 2026-05-11, end: 2026-10-30}
+  next_expected: 2027-05
+  url: https://www.town.kaiyo.lg.jp/docs/2023040700035/
+  checked: 2026-10-17
+  confidence: official
+  note: 募集は2事業程度・先着順で審査。補助額の上限は企画提案の書類審査で決める（100万円以内）。補助対象期間は交付決定日から令和9年3月末まで。応募手引き https://www.town.kaiyo.lg.jp/docs/2023040700035/file_contents/furusatosouzoukigyoushien8.pdf 。締切が近く（2026-10-30）、予算・採択枠の残りは非公表。窓口は産業振興課 0884-73-4161。next_expectedは今年度の時期からの推測
+
+# ---- 美波町 ----
+- id: minami-kigyo
+  name: 美波町小規模事業起業支援補助金（起業・第二創業・継業）
+  org: 美波町
+  area: tokushima/minami
+  max_yen: 1000000
+  rate: 2/3・1/2・1/3（事業区分による）
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 人件費（準備作業の賃金と新規雇用の最初の3か月分）、旅費、設備費（機械等設置費）、原材料費、展示会出展費、委託費、広報費、家賃（最初の3か月分）、通信運搬費。土地購入費は対象外。補助対象事業費の下限は30万円
+  conditions: 町内に店舗・事業所を所有・借用・新設して新規事業を始める法人か個人事業主（既存事業者の新分野進出＝第二創業、継業を含む）。代表者が満65歳未満。従業員は商業・サービス業1〜10人、製造業等1〜20人。対象業種は要綱の別表1で限定（情報通信業の情報サービス業・インターネット付随サービス業・映像音声文字情報製作業を含む）。国税・地方税の滞納なし。事業実施の20日前までに申請し、審査機関の審査で採否を決定。同一事業主で1回限り
+  period: {status: rolling}
+  url: https://www.town.minami.lg.jp/docs/360.html
+  checked: 2026-10-17
+  confidence: official
+  note: 要綱は平成26年告示第8号で、令和8年4月1日告示第16号で改正（https://www.town.minami.lg.jp/fs/4/1/9/3/6/3/_/%E3%80%90R8%E6%94%B9%E6%AD%A3%E3%80%91%E7%BE%8E%E6%B3%A2%E7%94%BA%E5%B0%8F%E8%A6%8F%E6%A8%A1%E4%BA%8B%E6%A5%AD%E8%B5%B7%E6%A5%AD%E6%94%AF%E6%8F%B4%E8%A6%81%E7%B6%B1.pdf）。補助率は地域経済の活性化2/3、住民サービス・地域課題の解決1/2、その他1/3。受付は随時だが予算の範囲内。町のサテライトオフィス誘致サイト（https://satelliteoffice.town.minami.lg.jp/support/）でも開設事業者向けの支援制度として案内。窓口は産業振興課 0884-77-3617
+
+# ---- 那賀町 ----
+- id: naka-challenge
+  name: 那賀町地域特産品開発チャレンジ事業等補助金
+  org: 那賀町
+  area: tokushima/naka
+  max_yen: 2000000
+  rate: 1/2
+  rate_num: 0.5
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 地域特産品の開発・改良に要する経費、販売促進の広告宣伝に要する経費、新規事業の創出に要する経費。人件費と光熱水費は除く
+  conditions: 町内に事業所がある法人等。町税等の滞納がないこと。対象事業は地域特産品の新規開発・改良と商品化、地域特産品の宣伝普及、新規事業分野への進出。他の補助金を受ける事業は対象外。申請前にみらいデジタル課へ事前相談
+  period: {status: rolling}
+  url: https://www.town.tokushima-naka.lg.jp/gyosei/shigoto-sangyo/shokogyo/1724.html
+  checked: 2026-10-17
+  confidence: official
+  note: ページの更新は2025-01-30で、受付期間・予算額の記載はない。町の「補助金・交付金」一覧（https://www.town.tokushima-naka.lg.jp/gyosei/life-guide/3166.html）に掲載が続いている。IT・DXを明示した制度ではなく、「新規事業分野への進出」の経費としてIT関連が対象になるかは町（みらいデジタル課 0884-62-1184）に確認。2026年度の予算状況も要確認
+
+# ---- 石井町 ----
+- id: ishii-sogyo
+  name: 石井町創業促進事業補助金
+  org: 石井町
+  area: tokushima/ishii
+  max_yen: 100000
+  rate: null
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 事業用の土地・建物の購入費か賃借料、事業所の増改築・改修費、設備又は備品の購入費、広告宣伝費、その他町長が適当と認める経費。交付決定年度内で、開業日（法人設立日）の前後6か月以内の経費
+  conditions: 町内に事業所等を設けて創業し、町内に住所がある個人か本社が町内の法人。特定創業支援等事業（石井町商工会の創業支援セミナー、県の女性起業塾など）の支援を受けた者。申請年度末日の前日までに開業届か法人設立届を提出。町税の滞納なし。過去にこの補助金を受けていない
+  period: {status: rolling}
+  url: https://www.town.ishii.lg.jp/docs/2017072700019/
+  checked: 2026-10-17
+  confidence: official
+  note: ページは2017-08-17公開・2020-08-18更新で、受付期間・予算額・補助率の記載はない（上限10万円のみ）。町の産業カテゴリに掲載が続いているが、2026年度も受け付けているかは町（産業経済課 088-674-1118）に確認。要綱 https://www.town.ishii.lg.jp/docs/2017072700019/file_contents/youkou.pdf （本文は未読）
+
+# ---- 牟岐町（二次情報のみ） ----
+- id: mugi-sogyo
+  name: 令和8年度 牟岐町創業促進補助金
+  org: 牟岐町（産業課）
+  area: tokushima/mugi
+  max_yen: 300000
+  rate: 1/2以内（1事業者につき1回）
+  rate_num: 0.5
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 町内で創業するために必要な経費の一部（対象経費の内訳は令和8年度申請要領で確認）
+  conditions: 2024-04-01〜2026-12-31に町内で創業した（する）個人事業主・法人。町税の滞納がないこと、牟岐町特定創業支援事業の証明を受けている（受けることを確約できる）こと、交付決定の翌年度から3年間の事業実施状況報告。募集は4事業程度、先着順で審査
+  period: {status: open, start: 2026-07-01, end: 2026-11-02}
+  url: https://www.town.tokushima-mugi.lg.jp/doc/2026063000014/
+  checked: 2026-10-17
+  confidence: official
+  note: 町の公式サイトは www.town.tokushima-mugi.lg.jp（2026-10-17に公式の募集ページで確認。公開日2026-07-01）。郵送は2026-11-02消印有効。創業者向けで、既存企業のAI導入向けではない。問い合わせは牟岐町役場 産業課 0884-72-3419

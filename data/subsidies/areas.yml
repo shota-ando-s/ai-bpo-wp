@@ -89,3 +89,30 @@
     - {code: kagawa/kotohira, name: 琴平町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-17確認）}
     - {code: kagawa/tadotsu, name: 多度津町}
     - {code: kagawa/manno, name: まんのう町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-17確認）}
+- code: tokushima
+  name: 徳島県
+  cities:
+    - {code: tokushima/tokushima-city, name: 徳島市}
+    - {code: tokushima/naruto, name: 鳴門市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: tokushima/komatsushima, name: 小松島市, none: true, note: 市独自のAI・IT向け補助金はありません。中小企業診断士の無料訪問相談があります（2026-10-17確認）}
+    - {code: tokushima/anan, name: 阿南市}
+    - {code: tokushima/yoshinogawa, name: 吉野川市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: tokushima/awa, name: 阿波市}
+    - {code: tokushima/mima, name: 美馬市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: tokushima/miyoshi, name: 三好市}
+    - {code: tokushima/katsuura, name: 勝浦町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: tokushima/kamikatsu, name: 上勝町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: tokushima/sanagochi, name: 佐那河内村, none: true, note: 村独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: tokushima/ishii, name: 石井町, note: 町独自の制度は創業向けだけで、既存企業のAI・IT導入向けの補助金はありません}
+    - {code: tokushima/kamiyama, name: 神山町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: tokushima/naka, name: 那賀町, note: 町独自のAI・IT向け補助金はありません。新分野への進出も対象になる地域特産品開発チャレンジ事業等補助金があります}
+    - {code: tokushima/mugi, name: 牟岐町, note: 町独自の制度は創業向けだけで、既存企業のAI・IT導入向けの補助金はありません}
+    - {code: tokushima/minami, name: 美波町, note: 町独自の制度は起業・第二創業・継業向けで、既存企業のAI・IT導入向けの補助金はありません}
+    - {code: tokushima/kaiyo, name: 海陽町, note: 町独自の制度は起業向けだけで、既存企業のAI・IT導入向けの補助金はありません}
+    - {code: tokushima/matsushige, name: 松茂町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: tokushima/kitajima, name: 北島町, note: 「デジタル販路活用力」向上事業補助金は2026-05-22で締め切りました。創業支援補助金は受付中です}
+    - {code: tokushima/aizumi, name: 藍住町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: tokushima/itano, name: 板野町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: tokushima/kamiita, name: 上板町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: tokushima/tsurugi, name: つるぎ町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-17確認）}
+    - {code: tokushima/higashimiyoshi, name: 東みよし町}

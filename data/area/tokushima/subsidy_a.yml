@@ -1,0 +1,189 @@
+# 徳島県（県・とくしま産業振興機構）と徳島市・鳴門市・小松島市・阿南市・吉野川市・阿波市・美馬市・三好市（2026年度）。2026-10-17に公式ページ・公募要領で確認
+# 鳴門市・小松島市・吉野川市・美馬市は市独自のAI・IT・研修向け補助金なし（subsidy_a_areas.md に確認したページを記載）
+# 11件すべて confidence: official。二次情報のみの制度はなし
+- id: tokushima-genai-katsuyo
+  name: 令和8年度 生成AI活用促進事業補助金
+  org: 公益財団法人とくしま産業振興機構（成長戦略推進部）
+  area: tokushima
+  max_yen: 1500000
+  rate: 1/2以内
+  rate_num: 0.5
+  targets: {efficiency: ◎, consulting: ○, training: △}
+  expenses: 生成AIの本格導入・定着に向けた実装、導入効果測定、リスク対策等の経費。区分はシステム構築費（要件定義、環境構築、画面開発、API連携、RAG活用型・業務特化エージェント等の実装）、クラウドサービス利用料（LLM API利用料、サーバー代等。補助事業のみに使ったと確認できるもの）、専門家経費、消耗品費、委託費
+  conditions: 徳島県内に本社か事業所等がある中小企業者・小規模企業者（会社・企業組合・協業組合・商工業の個人事業主。医療法人、社団・財団法人、NPO法人、組合等は対象外）。直近1年以上の営業実績と決算があること。とくしまDX推進センター（機構運営）の支援を受けながら取り組み、他の中小企業へ横展開できるモデル事業であること。交付決定後に着手。補助事業期間は交付決定日から2027-02-26まで。国・県の他の補助金と同一内容の重複は不可。持参か郵送で申請（メール不可）、審査委員会で採択
+  period: {status: closed, start: 2026-07-15, end: 2026-08-19}
+  next_expected: 2027-07
+  url: https://www.our-think.or.jp/329216/
+  checked: 2026-10-17
+  confidence: official
+  note: 募集要項 https://www.our-think.or.jp/wp/wp-content/uploads/2026/07/00-2-1_genai_boshuu_youkou.pdf 、交付要綱 https://www.our-think.or.jp/wp/wp-content/uploads/2026/07/00-1-1_genai_koufu_youkou.pdf 。締切は2026-08-19 17時。徳島県内でAIを名指しした補助金としては最大（上限150万円）で、RAGや業務特化エージェントの実装まで対象。採択数・採択結果は機構のサイトで未確認。next_expectedは今年度の時期からの推測。問い合わせは 088-654-0102、tokushima-dx@our-think.or.jp
+  fuenn_note: 生成AIの業務実装（RAG・業務特化エージェント等）とクラウド・API利用料、専門家経費が対象の県の補助金です（上限150万円・1/2）。今年度は2026年8月19日で締め切られたため、来年度の募集をとくしまDX推進センターで確認してください。
+
+- id: tokushima-genai-stage2
+  name: 生成AI活用促進事業（ステージ2）支援企業公募
+  org: 公益財団法人とくしま産業振興機構（成長戦略推進部）
+  area: tokushima
+  max_yen: 200000
+  rate: 定額（1社あたり総額20万円の「パッケージ予算」。専門家の謝金・旅費を差し引いた残額をAIツール利用料の助成金として交付）
+  targets: {efficiency: ○, consulting: ○, training: △}
+  expenses: ①登録専門家の派遣（業務の洗い出し、プロンプト作成、社内ルール策定などの伴走支援。謝金・旅費は機構から専門家へ直接支払い）②実証期間中に契約・使用した生成AIツール（ChatGPT Plus、Claude、Copilotなど）のサブスクリプション利用料の実費（原則税抜）
+  conditions: 徳島県内に本店か主たる事務所がある中小企業者等で、直近1年以上の営業実績と適切な決算があり、県税の未納がないこと。機構のDX推進コーディネーターのヒアリングと審査を経て支援決定。初回の専門家訪問で実証計画・予算配分書を作る。自己都合で途中中止すると、AIツール利用料の助成は全額交付されない
+  period: {status: closed, start: 2026-06-29, end: 2026-10-30}
+  next_expected: 2027-06
+  url: https://www.our-think.or.jp/329069/
+  checked: 2026-10-17
+  confidence: official
+  note: 公式ページの題名が「【今年度の募集は終了しました】」で、本文に「予算上限に達したため、今年度の募集は終了しました」とある。終了した日は書かれていない（endは公募上の締切で、実際はそれより前に終了）。実施要領 https://www.our-think.or.jp/wp/wp-content/uploads/2026/06/00_jisshi_yoryo.pdf （本格的な設備導入前の実証を支援する事業と定義）、公募要項 https://www.our-think.or.jp/wp/wp-content/uploads/2026/06/22_kobo_yoko_shienkigyo.pdf 。名前は「ステージ2」だが、ステージ1・3の公募ページは機構のサイトで見つからなかった（上の生成AI活用促進事業補助金が本格導入段階にあたるとみられるが、公式の記載は未確認）。問い合わせは 088-654-0102
+  fuenn_note: 県内企業向けに、AI専門家の派遣と生成AIツールの利用料をまとめて20万円まで支援する事業です。今年度は予算に達して募集を終了しています。
+
+- id: tokushima-fukugyo-pro
+  name: 【令和8年度】副業・兼業プロフェッショナル人材活用促進支援費補助金
+  org: 徳島県（経済産業部 産業成長推進課）
+  area: tokushima
+  max_yen: 500000
+  rate: 8/10以内（1企業あたりプロ人材1人まで）
+  rate_num: 0.8
+  targets: {efficiency: ×, consulting: △, training: ×}
+  expenses: プロ拠点の登録人材紹介事業者に支払う人材紹介手数料、副業・兼業のプロ人材に支払った報酬、プロ人材の移動に要する交通費・宿泊費（県条例に準じて算定）
+  conditions: 県内に本社か営業所等がある中小企業。徳島県プロフェッショナル人材戦略拠点の支援を受け、人材紹介事業者の仲介でプロ人材を副業・兼業（雇用・委任・業務委託）で新たに活用すること。過去にプロ拠点経由で副業・兼業人材を活用していないこと。副業・兼業の開始日が2026-04-01〜2027-03-10で、契約期間は6か月以内（超えると全体が対象外）。開始日から30日以内に申請
+  period: {status: open, start: 2026-04-01, end: 2027-02-26}
+  url: https://www.pref.tokushima.lg.jp/jigyoshanokata/sangyo/shushokushien/7312529/
+  checked: 2026-10-17
+  confidence: official
+  note: endは申請の必着期限。予算の上限に達すると期間内でも終了することがある（県の支援施策一覧〔2026-08-26時点〕https://www.pref.tokushima.lg.jp/file/attachment/1072815.pdf でも「募集中」）。DX・AI人材を副業で迎える場合に使えるが、プロ拠点経由の人材紹介が条件で、AIコンサル会社への通常の業務委託は対象外。電子メール申請可（sangyouseichousuishinka@pref.tokushima.lg.jp）。問い合わせは 088-621-2367
+
+- id: tokushima-chinage-support
+  name: 徳島県賃上げ応援サポート事業補助金（国の業務改善助成金の上乗せ助成）
+  org: 徳島県（労働雇用政策課。事務局は徳島県魅力ある職場づくり事務局〔株式会社テレコメディアに委託〕）
+  area: tokushima
+  max_yen: null
+  rate: 国の業務改善助成金の助成率に応じて上乗せ（国4/5なら県1/5、国3/4なら県1/4で、助成上限額内なら国と県で実質負担なし）。社会保険労務士への報酬は1/2・上限10万円
+  targets: {efficiency: △, consulting: △, training: △}
+  expenses: 国の業務改善助成金で認められた設備投資等（機械設備の導入、人材育成・教育訓練、国家資格者によるコンサルティングなど）に要した費用への上乗せ。国の業務改善助成金・キャリアアップ助成金（2コース）の書類作成を社会保険労務士に依頼した報酬
+  conditions: 国の業務改善助成金の「交付額確定及び支給決定通知」を2027-02-26までに徳島労働局から受けていること。電子申請か郵送
+  period: {status: unknown, end: 2027-03-01}
+  url: https://www.pref.tokushima.lg.jp/jigyoshanokata/sangyo/rodokankei/7242560/
+  checked: 2026-10-17
+  confidence: official
+  note: 令和8年度の申請の手引き（https://chinage.tokushima-syokuba.jp/ ）では県への申請期限は2027-03-01だが、手引きの対象表は国への交付申請が2025年度（R7.4.14〜R7.12.31など）のものを示している。県のページは「令和8年度業務改善助成金に対応する『徳島県賃上げ応援サポート事業補助金』につきましては、詳細が決定次第、本ページにてお知らせいたします」としており、2026年9月以降に国へ申請する事業者が県の上乗せを受けられるかは2026-10-17時点で未定のため status は unknown とした。国の令和8年度業務改善助成金の交付申請期間は2026-09-01〜徳島県最低賃金発効日の前日か2026-11-30のいずれか早い日まで（賃上げ後の申請は不可、対象労働者は雇用保険被保険者）。業務改善助成金で認められればAIツールを含むソフト導入にも上乗せされうるが、対象になるかは国の審査次第。事務局 088-602-1431
+
+- id: tokushima-city-digital
+  name: 徳島市中小企業デジタル化促進事業補助金
+  org: 徳島市（経済政策課）
+  area: tokushima/tokushima-city
+  max_yen: 250000
+  rate: 1/2以内（補助下限5万円）
+  rate_num: 0.5
+  targets: {efficiency: ◎, consulting: ×, training: ×}
+  expenses: ソフトウェア等利用料（既成市販品のソフトウェア・システムの購入費・ライセンス料、クラウドサービス利用料）、委託費（既成市販品の導入・運用に付随する初期費用）、デジタル機器のリース・レンタル料。パソコン・タブレット等の汎用端末やネットワーク機器は原則対象外。既に導入済みのツールの追加・グレードアップも対象外
+  conditions: 市内に1年以上本店（個人は事業所と住民登録）があり、1年以上継続して事業を営む中小企業者。市の委託事業「徳島市中小企業DX診断訪問事業」で事前相談・アドバイザーの提案を受けること（事前相談の予約は2026-12-15まで）。国・自治体の他の助成制度（IT導入補助金、省力化投資補助金、県のDX導入支援事業費補助金など）に申請・受給していない事業。市内の事業所に導入。交付決定から2027-02-28までに事業と支払いを完了
+  period: {status: open, start: 2026-07-01, end: 2027-01-08}
+  url: https://www.city.tokushima.tokushima.jp/shisei/keizai/jigyosha/tyusyokigyo/hanrokakudai/chuushoudejitaru.html
+  checked: 2026-10-17
+  confidence: official
+  note: 予算額に達し次第終了（2026-09-24更新のページで受付中）。交付要領 https://www.city.tokushima.tokushima.jp/shisei/keizai/jigyosha/tyusyokigyo/hanrokakudai/chuushoudejitaru.files/R8dxkouhuyouryou.pdf の活用例に「AIや画像認識の技術を新たに導入して、検品作業や顧客管理、需要予測等の業務を自動化・効率化」「RPAツールの導入」がある。生成AIのクラウドサービス利用料も既成市販品なら対象になりうる。DX診断訪問は徳島県中小企業診断士協会（088-655-3730）が受託。問い合わせは経済政策課 088-621-5225
+  fuenn_note: AIツールを含む市販のソフト・クラウドサービスの導入費が対象です（上限25万円・1/2）。申請の前に、市のDX診断訪問事業（無料、2026年12月15日までに予約）を受ける必要があります。
+
+- id: tokushima-city-jinzai-ikusei
+  name: 徳島市中小企業等人材確保・育成支援事業補助金（人材育成支援事業）
+  org: 徳島市（経済政策課）
+  area: tokushima/tokushima-city
+  max_yen: 100000
+  rate: 2/3以内（受講者1人につき2万円まで、1申請者10万円まで）
+  rate_num: 0.667
+  targets: {efficiency: ×, consulting: ×, training: ○}
+  expenses: 研修等への参加・開催の教材費、講師謝礼、受講料
+  conditions: 1年以上市内に本店がある会社、1年以上市内に事業所と住所がある個人、要綱に該当するグループ・団体（研修開催の場合）。研修は公的機関や先進的な取り組みを行う大学・研究機関等が主催するもので、目的が「デジタル化推進に係る知識・技術の習得、活用」「経営上の課題解決」「技能承継・後継者育成」のいずれか、または公的機関の研修（例：中小企業大学校、とくしま産業振興機構のAWA-BIZ、徳島大学「とくしまビジネスリスキリングスクール」、ジェトロ）。事業着手（講座申込み等）前に交付決定が必要で、審査に3週間程度
+  period: {status: open, start: 2026-04-14, end: 2027-02-05}
+  url: https://www.city.tokushima.tokushima.jp/shisei/keizai/jigyosha/tyusyokigyo/jinzai_shien/chushou_ikusei.html
+  checked: 2026-10-17
+  confidence: official
+  note: 予算額に達し次第終了（2026-09-24更新のページで受付中）。デジタル化の研修が明記されているが、主催者は公的機関・大学・研究機関等に限られ、民間企業が主催するAI研修が対象になるかは交付要領で要確認。同じ補助金の人材確保・定着支援事業（上限10万円・1/2）は採用・定着向けでAIとは関係が薄い。問い合わせは経済政策課 088-621-5225
+  fuenn_note: デジタル化の研修の受講料などが対象です（1人2万円・1社10万円まで、2/3）。主催者が公的機関や大学等に限られるため、対象になるかは申請前に徳島市経済政策課へ確認してください。
+
+- id: anan-dx
+  name: 阿南市中小企業等振興支援補助金（デジタル化・DX化）
+  org: 阿南市（産業部 商工戦略課）
+  area: tokushima/anan
+  max_yen: 200000
+  rate: 1/2以内
+  rate_num: 0.5
+  targets: {efficiency: ○, consulting: △, training: ×}
+  expenses: デジタル技術を導入し業務効率化や生産性向上を目指す取組のソフトウェア開発・導入費、専門家への謝金など。人件費、家賃、消耗品、備品、通信費、通常の設備投資費用は対象外
+  conditions: 阿南市内に住所（個人）か本店（法人）がある中小企業者・中小企業団体で、徳島県信用保証協会の保証対象業種を営み、市税の滞納がないこと。交付決定前の支払いは対象外。同一年度の申請は1回限りで、連続した年度に同じ事業区分は申請できない。事業の終期は3月末日まで
+  period: {status: rolling, start: 2026-07-01}
+  stacking: {exclusive_with: [anan-jinzai-ikusei]}
+  url: https://www.city.anan.tokushima.jp/company/docs/2026042400026/
+  checked: 2026-10-17
+  confidence: official
+  note: 随時受付で予算がなくなり次第終了。市のページに「予算に対する補助金申請額の割合（概算値、R8.10.2現在）30％（申請累計額2,950,000円）」とある。審査に2週間程度かかるため年内の申請を推奨。申請の手引き（R8.9.4改訂）と交付要綱（令和8年阿南市要綱第40号）は同ページに掲載。市の案内ページ https://www.city.anan.tokushima.jp/docs/2026052500037/ 。メニューは10種類（創業30万、働き方改革・DX・女性活躍・人材確保・販路開拓・事業承継20万、BCP・脱炭素・人材育成10万）。問い合わせは商工戦略課 0884-22-3290
+  fuenn_note: AIツールを含むソフトウェアの導入費や専門家への謝金が対象です（上限20万円・1/2）。年度内の申請は1回だけなので、人材育成メニューとの使い分けに注意してください。
+
+- id: anan-jinzai-ikusei
+  name: 阿南市中小企業等振興支援補助金（人材育成）
+  org: 阿南市（産業部 商工戦略課）
+  area: tokushima/anan
+  max_yen: 100000
+  rate: 1/2以内
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: ○}
+  expenses: 研修への参加や資格取得、デジタル化などに必要なスキル習得の受講料、受験料、専門家への謝金など
+  conditions: デジタル化・DX化メニューと同じ（市内の中小企業者等、交付決定前の支払いは対象外、同一年度1回限り、連続年度に同じ区分は不可）
+  period: {status: rolling, start: 2026-07-01}
+  stacking: {exclusive_with: [anan-dx]}
+  url: https://www.city.anan.tokushima.jp/company/docs/2026042400026/
+  checked: 2026-10-17
+  confidence: official
+  note: 予算がなくなり次第終了（2026-10-02時点で予算の30％を申請済み）。「デジタル化などに必要なスキル習得」が明記されており、研修機関の限定は市のページにない。AI研修が対象になるかは申請前に市へ確認
+  fuenn_note: デジタル化のスキル習得のための研修受講料や専門家謝金が対象です（上限10万円・1/2）。
+
+- id: awa-seisansei
+  name: 令和8年度 阿波市がんばる企業応援補助金（生産性向上）
+  org: 阿波市（産業経済部 商工観光課）
+  area: tokushima/awa
+  max_yen: 100000
+  rate: 1/2
+  rate_num: 0.5
+  targets: {efficiency: ○, consulting: ×, training: ×}
+  expenses: ①生産性向上に直接寄与する設備の導入 ②業務効率化を目的としたICTツールの導入の設備導入費、システム構築費、技術導入費、委託費、運搬費など。汎用性の高い設備等の導入と既存設備等の更新は除く
+  conditions: 市内の中小企業者等または組合等。必ず事前に商工観光課へ相談し、事業着手前に申請。1事業者が同一年度に受けられる補助金は全メニュー合計40万円まで（各メニューの限度額までは複数回申請可）。農業分野の事業は対象外
+  period: {status: rolling, start: 2026-04-01}
+  url: https://www.city.awa.lg.jp/docs/2021121700042/
+  checked: 2026-10-17
+  confidence: official
+  note: 申請額が予算の範囲を超えた時点で受付終了（2026-10-17時点で終了の掲載なし）。補助率・限度額は市のページの表（結合セル）から読み取った値で、生産性向上・人材育成など7メニューが1/2・10万円。交付要綱は同ページに掲載。生成AIなどのクラウドサービス利用料が「ICTツール導入」に含まれるかは要確認。問い合わせは商工観光課 0883-36-8722
+  fuenn_note: 業務効率化のためのICTツール導入費が対象です（上限10万円・1/2）。申請前に阿波市商工観光課への事前相談が必要です。
+
+- id: awa-jinzai-ikusei
+  name: 令和8年度 阿波市がんばる企業応援補助金（人材育成）
+  org: 阿波市（産業経済部 商工観光課）
+  area: tokushima/awa
+  max_yen: 100000
+  rate: 1/2
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: ○}
+  expenses: ①資格試験受験・研修受講の奨励 ②社員研修の実施 の受験料、受講料、交通費、宿泊費、報酬、委託料など
+  conditions: 生産性向上メニューと同じ（市内の中小企業者等、事前相談・着手前申請、全メニュー合計で年度40万円まで、農業分野は対象外）
+  period: {status: rolling, start: 2026-04-01}
+  url: https://www.city.awa.lg.jp/docs/2021121700042/
+  checked: 2026-10-17
+  confidence: official
+  note: 予算到達で受付終了。研修機関の限定は市のページにない。社員研修の「報酬・委託料」も対象なので、外部講師によるAI研修にも使える可能性があるが、対象になるかは事前相談で確認。生産性向上メニューと併用できる（合計40万円まで）
+  fuenn_note: 社員研修の実施費用や受講料が対象です（上限10万円・1/2）。生産性向上メニューと合わせて使えます。申請前に阿波市商工観光課へ相談してください。
+
+- id: miyoshi-dx
+  name: 2026年度 三好市中小企業者等総合支援事業補助金（DX等活用推進事業）
+  org: 三好市（産業観光部 商工政策課）
+  area: tokushima/miyoshi
+  max_yen: 200000
+  rate: 1/2
+  rate_num: 0.5
+  targets: {efficiency: ○, consulting: △, training: ×}
+  expenses: 業務の効率化や生産性の向上を目的とするDX等活用の経費。リーフレットではソフトウェア導入費・システム導入費・リース料など。月額の利用料は最大12か月分（交付決定の年度内に支払う分）
+  conditions: 中小企業者・小規模企業者・団体・組合等で、個人は市内に住所、法人等は市内に事業所があり、市内で事業を継続すること。市税の滞納がないこと。新規の事業で、年度内に実施・支払いを完了すること。国・他の自治体・公益法人等や市の他の補助金を受けていないこと。事業着手前に申請。1事業者につき3メニューまで申請可
+  period: {status: rolling}
+  url: https://www.miyoshi.i-tokushima.jp/docs/5697272.html
+  checked: 2026-10-17
+  confidence: official
+  note: 募集期間は「年度内随時」（ページの掲載日は2026-07-01で、受付開始日の明記はない）。10メニューのうち、IT等活用販売推進事業（上限15万円）はウェブサイトでの販売向け、企業間連携事業（上限20万円）は市内事業者が合同で行う研修会等向け。対象経費は市のリーフレット https://www.miyoshi.i-tokushima.jp/fs/6/3/8/9/6/6/_/%E3%83%AA%E3%83%BC%E3%83%95%E3%83%AC%E3%83%83%E3%83%88.pdf で確認（2026-10-17）。問い合わせは商工政策課 0883-72-7645
+  fuenn_note: 業務効率化・生産性向上のためのDX等の取組が対象です（上限20万円・1/2）。対象経費の詳細は申請前に三好市商工政策課へ確認してください。
