@@ -895,3 +895,37 @@
 
 備考: 総務省調査では生成AIは実証実験中（ChatGPT無料版、QommonsAI）、ガイドライン策定済、議事録作成事務（音声認識）導入済。公民館等で住民向けスマホ教室『はじめての生成AI』講座あり（検索抜粋、https://www.town.manno.lg.jp/page/8501.html 本文未確認）。所管：総務課・企画政策課。
 
+
+## 追記（2026-10-17、kagawa-todo-2）
+
+### 高松市
+- [2023-06〜] 生成AIの試験利用: 市長定例記者会見 令和5年9月27日「6月末から9月末を目途に」デジタル推進部と特命チーム「高松DAPPY」（14人）が「LoGoAIアシスタントbot版」を試験利用。定型文作成・要約・アイデア出し。「年内の早い時期」に業務利用を開始したいと説明。本格導入日は未確認 https://www.city.takamatsu.kagawa.jp/kurashi/shichoushitsu/hatsugen/teirei/R5_teirei/20230927.html
+- [2026-02-02〜03-01] AI電話の実証の結果: 会見 令和8年3月3日。1か月595件、職員へ転送約35%、AIオペレーターのみで対応約65%、開庁時間外約15%、応答の速さに約27%が「やや不満」、アンケート15件で「回答内容は適切だった」100%。町名の誤認識、ナレッジ不足による誤回答あり https://www.city.takamatsu.kagawa.jp/kurashi/shichoushitsu/hatsugen/teirei/r7teirei/r8-3-3.html 。市の資料に事業者名（Graffer）は出てこない
+- 会見 令和8年7月22日: 実証の自動転送振り分けは「9割以上が適切」。8月3日開始、AIが24時間365日回答 https://www.city.takamatsu.kagawa.jp/kurashi/shichoushitsu/hatsugen/teirei/r8teirei/r8-7-22.html 。会見 令和8年9月30日で10月13日から本格運用 …/r8teirei/r8-09-30.html
+- 屋島山上観光駐車場: 市の資料「高松市屋島山上観光駐車場の基礎データについて」に「AI カメラシステムによる入庫時のナンバープレート読み取りデータ（令和７年度）」（香川28%、高松21%、徳島5%、愛媛5%、岡山3%、その他26%など） https://www.city.takamatsu.kagawa.jp/jigyosha/nyusatsu/sections/proposal/r8/kekka/yashimakankoujyuutai.files/kisode-ta.pdf （旧 …/r8/kohyo/… は404）。総務省調査の「混雑計測」と同じものか、導入時期・事業者は未確認
+- [2026-11-02〜] たかまつAIごみナビ: 日本語を含む9か国語、AIの画像判別による分別案内、LINE「たかまつホッとLINE」から利用、登録・利用開始 令和8年11月2日正午（市の発表 令和8年10月15日 https://www.city.takamatsu.kagawa.jp/kurashi/shichoushitsu/hatsugen/teirei/index.files/press1015.pdf ）。推進協議会資料の「10か国語」は古い計画値
+- 保育所入所選考AI・AI議事録の導入時期: 見つからず
+
+### 三豊市
+- 暮らしの交通（AIオンデマンド交通 mobi）: 国交省の事例 https://www.mlit.go.jp/sogoseisaku/transport/kyousou/assets/documents/examples/22014-1.pdf （運送は西讃観光・詫間交通・さくらタクシー、令和4年10月に株式会社化）、https://www.mlit.go.jp/sogoseisaku/transport/kyousou/examples/22014-2.pdf （2022年10月1日運行開始、乗降場は12月時点177カ所、定額制）。自然電力のリリース（2023-03-29）に2022年9月30日設立、発起人12社
+- MAiZM: KSB 2018-08-20 https://news.ksb.co.jp/article/13836009 （松尾豊特任准教授・山下市長・安蘇校長が合意書）、香川高専の発表 2021-10-27（PR TIMES転載 https://resemom.jp/release/prtimes/20211027/76039.html ）「平成31年4月」に三者で設立。最近の活動の一次情報なし
+- 自動運転: NTT西日本 2025-01-14 https://www.ntt-west.co.jp/newscms/kagawa/14334/kagawa_n20250114a.pdf （三豊市・NTT西日本・マクニカ、レベル2、2025/1/27〜2/7、詫間町、Navya EVO、2028年度レベル4社会実装をめざす）、2025-10-24 https://www.ntt-west.co.jp/newscms/kagawa/14858/kagawa_n20251021a.pdf （2025/10/31〜11/30、信号協調5か所、片道約6.5km）。結果は未確認。AIとは書かない
+
+### 琴平町
+- 令和8年度施政方針 https://www.town.kotohira.kagawa.jp/site/tyoutyou/11797.html にAIカメラの記載なし（導入の証拠なし）。「琴平町生成AI利用規程」を令和7年8月に作成と記載
+
+### まんのう町
+- 令和8年度施政方針 https://www.town.manno.lg.jp/uploaded/attachment/5557.pdf 「外部のデジタル人材を活用し、スマホ教室の開催、生成ＡＩの活用及び住民との接点であるフロントヤードの改革についても進めてまいります」。窓口の試行の実施は、R7年12月・R8年3月・6月の会議録にも報告なし（未確認）
+
+### 東かがわ市
+- ICT支援相談室: 案内ページは2023-06-01更新のまま、予約フォーム https://www.supportdx.net/higashikagawa は生きているが年度表示なし → 2026年度の継続は未確認
+
+### 善通寺市
+- zevo・文字起こしAIの導入時期: 検索（「善通寺市 zevo 導入 生成AI」ほか）で見つからず
+
+### 多度津町
+- 多度津商工会議所: 公式サイト https://www.tadotsucci.net/ 「〒764-8508 香川県仲多度郡多度津町東浜6番30号 TEL：0877-33-4000 FAX：0877-33-4713」。お知らせ一覧に 2026.05.11「業種別事例で学ぶ『自社に使えるAI』」、2024.09.04「生成AI ビジネス活用セミナー」
+
+### 香川県（企業向け支援）
+- 中小企業デジタル化推進支援事業（令和8年度）: 県のページ https://www.pref.kagawa.lg.jp/sangyo/sonota/dejitarukasuishin/r8haken.html （2026-05-20募集開始、定員25社、無料）。県の支援制度一覧（令和8年7月7日現在）https://www.pref.kagawa.lg.jp/documents/15891/20260707ichiran.pdf p.7「受付中（随時）※募集上限に達し次第終了」、25社程度
+- AI技術活用加速化支援事業費補助金（令和8年度）: 追加募集 2026-05-18〜06-10 https://www.pref.kagawa.lg.jp/sangyo/sonota/ai/r8aihojyokin_tuika.html 。7月7日の県一覧で締切済。所管は産業政策課（産業技術センターではない）

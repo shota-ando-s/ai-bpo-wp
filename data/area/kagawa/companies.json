@@ -207,7 +207,7 @@
    "url": "https://www.dynaxt.co.jp/",
    "size_basis": "employees",
    "checked": "2026-10-17",
-   "notes": "従業員数の時点が2022年5月と古い。東京営業所あり。"
+   "notes": "従業員数の時点が2022年5月と古い。東京営業所あり。 2026-10-17再確認: 公式は56名（2022年05月現在）のまま（gBizINFOは51人・時点なしだが公式値ではない）。"
   },
   {
    "name": "株式会社アポロシステム",
@@ -423,11 +423,34 @@
    "url": "https://www.takumatec.co.jp/",
    "size_basis": "employees",
    "checked": "2026-10-17",
-   "notes": "従業員数の時点が2018年4月と古い（ワクサポかがわでは25名）。大阪営業所あり。"
+   "notes": "従業員数の時点が2018年4月と古い（ワクサポかがわでは25名）。大阪営業所あり。 2026-10-17再確認: 公式は21名（2018/4/1現在）のまま（gBizINFOは26人・時点なしだが公式値ではない）。"
   }
  ],
  "tonosho": [],
- "shodoshima": [],
+ "shodoshima": [
+  {
+   "name": "株式会社スパークル",
+   "hq": "香川県小豆郡小豆島町蒲生甲1888-1",
+   "municipality": "小豆島町",
+   "town": "蒲生甲",
+   "employees": {
+    "value": null,
+    "as_of": null,
+    "source": "https://www.sparkle.co.jp/Company/Company_About.aspx"
+   },
+   "capital": {
+    "value": null,
+    "source": "https://www.sparkle.co.jp/Company/Company_About.aspx"
+   },
+   "founded": 1992,
+   "business_summary": "IoT/M2Mシステム・クラウド・セキュリティシステムの開発、業務・Webアプリケーションソフトや組込みソフトの開発、プログラミングスクール、ドローンサービス",
+   "ai_initiative": null,
+   "url": "https://www.sparkle.co.jp/",
+   "size_basis": "none",
+   "checked": "2026-10-17",
+   "notes": "公式の会社概要に従業員数・資本金の記載なし（gBizINFOの被保険者数は1人とされるが公式値ではない）。公式サイトはShift_JIS。"
+  }
+ ],
  "miki": [],
  "naoshima": [],
  "utazu": [],
@@ -502,14 +525,7 @@
      "source": "https://www.mitla.co.jp/company/"
     }
    ],
-   "needs_manual_check": [
-    {
-     "name": "株式会社富士通四国インフォテック",
-     "note": "ワクサポかがわでは高松市番町、329名（2026年3月更新）。公式サイト（global.fujitsu）が429エラーで取得できず、本社所在地・従業員数を公式で確認できなかったため掲載しない。確認できれば2位相当。 2026-10-17再確認: global.fujitsu（www.fujitsu.com/jp/group/fsit/ からの転送先）は curl・WebFetch とも429。公式の会社案内PDF（2022年4月版、検索結果の抜粋）では本社は高松市番町1-10-2 番町ミッドタウンビルディングだが、現在の従業員数は公式で確認できない（富士通健保の歩数イベント資料に339名〔2025年春〕とあるが会社の公表値ではない）。引き続き未掲載",
-     "source_secondary": "https://www.wskagawa.jp/index.php?prog=pub_kigyo&exec=detail&kigyo_key=08-0017",
-     "verified": false
-    }
-   ],
+   "needs_manual_check": [],
    "excluded": [
     {
      "name": "株式会社四国日立システムズ",
@@ -545,6 +561,11 @@
     {
      "name": "株式会社よんでんメディアワークス（15名）、株式会社ヘルツ（Web制作、14名）、ウェブシステムテクノロジー（15名）、K・システムソリューション（28名）、ゴーフィールド（28名）、セリオラ（20名）など",
      "note": "ワクサポかがわの値で上位10社に届かないため、公式サイトの確認は省略。"
+    },
+    {
+     "name": "株式会社富士通四国インフォテック",
+     "note": "2026年4月1日付で富士通Japan株式会社に吸収合併された（富士通Japanのお知らせ、2025年10月31日）。会社がなくなったため掲載しない。",
+     "source": "https://info.archives.global.fujitsu/jp/group/fjj/about/resources/news/topics/2025/1031.html"
     }
    ],
    "printing_ad_reference": [
@@ -705,16 +726,8 @@
    ]
   },
   "shodoshima": {
-   "status": "見つからず（候補1社は公式サイトを特定できず）",
-   "searched": "ワクサポかがわ（0件）、houjin.goo の小豆島町IT一覧。",
-   "unverified": [
-    {
-     "name": "株式会社スパークル",
-     "hq": "香川県小豆郡小豆島町蒲生",
-     "note": "houjin.goo では IoT/M2M・セキュリティシステムの開発・販売、プログラミングスクール（1992年設立）とされる。公式サイトを特定できなかった（同名の別会社のサイトのみ見つかった）。公式で確認できれば掲載候補。",
-     "verified": false
-    }
-   ]
+   "status": "1社（スパークル）を2026-10-17に公式サイトで確認し掲載",
+   "searched": "ワクサポかがわ（0件）、houjin.goo の小豆島町IT一覧。"
   },
   "miki": {
    "status": "見つからず",
@@ -793,6 +806,6 @@
  "_notes": [
   "ワクサポかがわ（香川県運営）の従業員数は企業の自己申告で、公式サイトの値と食い違う例が多い（アール・シー・エス70→公式99、百十四システムサービス67→公式80など）。記事では公式サイトの値だけを使う。",
   "コーエイコンピューターシステム（坂出）とグッドクリエイト（丸亀）は、公式サイトに『東京本社』も併記されている。掲載時は『本店』として書くか判断が必要。",
-  "富士通四国インフォテックは公式サイトにアクセスできず未確認。手動確認を推奨。（2026-10-17も429で未確認）"
+  "富士通四国インフォテックは2026年4月1日に富士通Japanに吸収合併された（2026-10-17確認）。掲載しない。"
  ]
 }

@@ -84,7 +84,7 @@ excerpt: 綾川町のAI導入は、食品工場の品質記録や受注量の予
 |---|---|---|---|---|
 | [デジタル化・AI導入補助金（旧IT導入補助金）通常枠](https://it-shien.smrj.go.jp/schedule/) | 国 | 450万円・1/2 | 登録されたAIツールの導入（クラウド利用料は最大2年分） | 6次は2026/10/30 17時 |
 | [働き方改革推進支援助成金（労働時間短縮・年休促進支援コース）](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000120692.html) | 国（厚生労働省） | 成果目標により25万〜150万円・3/4 | 労働時間の削減を目的としたコンサルや研修 | 2026/11/30（予算により早期終了あり） |
-| [中小企業デジタル化推進支援事業](https://www.pref.kagawa.lg.jp/sangyo/sonota/dejitarukasuishin/r8haken.html) | 香川県（かがわ産業支援財団） | 無料の専門家派遣（補助金ではない） | ITコーディネータが課題を整理し、生成AIなどの使い方を助言 | 25社に達し次第終了（受付状況は財団に確認） |
+| [中小企業デジタル化推進支援事業](https://www.pref.kagawa.lg.jp/sangyo/sonota/dejitarukasuishin/r8haken.html) | 香川県（かがわ産業支援財団） | 無料の専門家派遣（補助金ではない） | ITコーディネータが課題を整理し、生成AIなどの使い方を助言 | 受付中（2026年7月7日時点の[香川県の支援制度一覧](https://www.pref.kagawa.lg.jp/documents/15891/20260707ichiran.pdf)。定員25社に達し次第終了） |
 | [人材開発支援助成金（事業展開等リスキリング支援コース）](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyufukin/d01-1.html) | 国（厚生労働省） | 中小企業は経費の75% | 業務に直結するAI研修（10時間以上） | 2027/3/31（制度の期限） |
 
 出典：各制度の公式ページ（2026年10月17日確認）。国の[中小企業省力化投資補助金](https://shoryokuka.smrj.go.jp/)のカタログ注文型も随時受付中です。

@@ -77,6 +77,12 @@ AIを入れる前に、担当者しか知らない進め方や判断の基準を
 
 LINE WORKS（AIベンダー）の[導入事例](https://line-works.com/cases-ai/freshseika/)（2024年7月取材）によると、フレッシュ青果の1時間あたりの処理数は平均約20伝票から36伝票になり、1伝票の処理時間は3分から1.33分へ「約56%削減」されました。
 
+### 山口油屋福太郎（福岡・業務用食品卸）：FAXの発注書をAI-OCRで計上する
+
+福岡を拠点に業務用食品の卸を手がける山口油屋福太郎は、月5,500枚にのぼるFAXの発注書を、インフォマートのAI-OCRで読み取って受注を計上しています（インフォマート（サービス提供会社）の[導入事例](https://www.infomart.co.jp/ai-ocr/case/06.asp)、掲載日の記載なし・取材当時の内容）。
+
+インフォマートの導入事例によると、山口油屋福太郎では「毎日1人当たり1時間30分かかっていた計上業務が30分短縮」され、「残業もほぼゼロに減り」、受注のミス計上も大幅に減ったとしています。
+
 ### 大高建設（富山県黒部市・建設）：代表電話の営業電話をAIが受ける
 
 大高建設は、AI電話「IVRy」で代表電話を受け、営業電話にはAIが応答し、発注者からの緊急の電話は担当者に自動で転送して、着信をTeamsに通知しています。IVRy（AIベンダー）の[導入事例](https://ivry.jp/case/o-taka)（掲載日の記載なし）では、導入前の電話は1日「30件ぐらい」で、営業電話は「ほぼ100%AIが応答」するようになったとしています。
@@ -148,6 +154,8 @@ LINE WORKS（AIベンダー）の[導入事例](https://line-works.com/cases-ai/
 
 高松市役所は、生成AIを業務で使っています。総務省の調査（2025年10月31日時点）では、高松市は「LoGoAIアシスタント」を導入済みで、業務知識を参照させる形（RAG）で、住民からの質問への回答案、議事録の要約、庁内情報の検索などに使っています（総務省「[生成AI導入団体詳細調査結果](https://www.soumu.go.jp/main_content/001070425.xlsx)」）。
 
+高松市役所の生成AIの利用は、2023年6月末からの試験利用で始まりました。2023年9月27日の市長定例記者会見では、デジタル推進部と特命チーム「高松DAPPY」の14人が「LoGoAIアシスタントbot版」を定型文の作成や文章の要約、アイデア出しに試験的に使い、年内の早い時期に業務での利用を始めたいと説明しています（高松市「[市長定例記者会見 令和5年9月27日](https://www.city.takamatsu.kagawa.jp/kurashi/shichoushitsu/hatsugen/teirei/R5_teirei/20230927.html)」）。本格導入の日付、保育施設の入所選考AIとAI議事録の導入時期は、市の公表資料では確認できませんでした。
+
 全国では、都道府県・政令指定都市を除く市区町村の45.6%（785団体）が生成AIを導入済みです（総務省「[自治体における生成AI導入状況](https://www.soumu.go.jp/main_content/001070295.pdf)」、2025年10月31日時点）。
 
 高松市役所は、生成AI以外のAIも使っています。総務省のAI導入団体詳細調査（2025年10月31日時点）での高松市の回答をまとめます（総務省「[AI導入団体詳細調査結果](https://www.soumu.go.jp/main_content/001070422.xlsx)」）。
@@ -159,11 +167,17 @@ LINE WORKS（AIベンダー）の[導入事例](https://line-works.com/cases-ai/
 | 観光施設の駐車場の混雑状況の計測 | 画像認識 | 繁忙期の渋滞対策と、空いた時間帯の集客に生かせた |
 | 保育施設の入所選考 | マッチング | 結果通知を従来より10日早く送付。年間約425時間の作業時間の削減を見込む |
 
+高松市の屋島山上観光駐車場では、AIカメラシステムで入庫する車のナンバープレートを読み取っており、令和7年度の読み取りデータでは香川ナンバーが28%、高松ナンバーが21%でした（高松市「[高松市屋島山上観光駐車場の基礎データについて](https://www.city.takamatsu.kagawa.jp/jigyosha/nyusatsu/sections/proposal/r8/kekka/yashimakankoujyuutai.files/kisode-ta.pdf)」）。この駐車場が総務省の調査で答えた混雑計測の施設と同じかどうか、導入時期と事業者は、市の公表資料では確認できませんでした。
+
 ### 市民課のAI電話：実証と本格導入
 
 高松市市民課は、2026年8月3日から生成AIを使った「AI電話」を導入し、10月13日から生成AIによる自動応答の本格運用を始めました（高松市「[生成AIを活用した「AI電話」による案内サービス](https://www.city.takamatsu.kagawa.jp/kurashi/kurashi/shomei/news/ai20260803.html)」）。AIが問い合わせの意図を読み取って担当部署へ転送します。採用されたのは電話放送局の「DHK CANVAS エージェントプラン」で、AIは市の公式情報だけを参照して答えます（[GROWTH VERSEの発表](https://prtimes.jp/main/html/rd/p/000000219.000091540.html)）。
 
-高松市市民課では、AI電話の導入前の2026年2月2日〜3月1日に、別の製品であるグラファー社の「Graffer AI オペレーター」で、市民課の電話の一次応答をAIに任せる実証が行われました（DXマガジン「[高松市が市民課にAI電話応答を導入](https://dxmagazine.jp/?p=196292)」、2026年1月17日）。この実証の結果は、高松市の公表資料では確認できませんでした。
+高松市市民課では、AI電話の導入前の2026年2月2日〜3月1日に、別の製品であるグラファー社の「Graffer AI オペレーター」で、市民課の電話の一次応答をAIに任せる実証が行われました（DXマガジン「[高松市が市民課にAI電話応答を導入](https://dxmagazine.jp/?p=196292)」、2026年1月17日）。
+
+高松市の2026年3月3日の市長定例記者会見によると、実証の1か月間の利用は595件で、約65%は職員に転送せずAIオペレーターだけで対応し、約35%は職員に転送しました（高松市「[市長定例記者会見 令和8年3月3日](https://www.city.takamatsu.kagawa.jp/kurashi/shichoushitsu/hatsugen/teirei/r7teirei/r8-3-3.html)」）。
+
+高松市は同じ会見で、開庁時間外の問い合わせが約15%あったこと、応答の速さに約27%が「やや不満」と答えたこと、一部の町名を正しく認識できない例や、AIに与えた情報が足りず事実と違う回答をした例があったことも説明しています。2026年7月22日の会見では、実証での担当係への自動転送の振り分けは9割以上が適切だったとしています（高松市「[市長定例記者会見 令和8年7月22日](https://www.city.takamatsu.kagawa.jp/kurashi/shichoushitsu/hatsugen/teirei/r8teirei/r8-7-22.html)」）。
 
 ### 高松市でこれまでに行われたAI・スマートシティの実証
 
@@ -174,7 +188,7 @@ LINE WORKS（AIベンダー）の[導入事例](https://line-works.com/cases-ai/
 | 2017年10月〜 | スマートシティたかまつ推進協議会 | 市と企業・団体で設立し、データ基盤「FIWARE」を導入。会員159者（2026年2月） | [高松市のページ](https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/machidukuri/smartcity/smartcitytakamatsu.html) |
 | 2018年5月〜 | 防災IoTとAI水位予測の研究 | 水位センサーとレーダー雨量のデータを機械学習させ、約60分後の水位を予測するシステムを香川大学などと研究。2019年は中間報告の段階で、本格運用したかは公表資料では確認できなかった | [防災IoT活用WG活動報告](https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/machidukuri/smartcity/smartcitytakamatsu.files/bousaiiot.pdf)（2019年8月30日） |
 | 2025年12月〜 | 生成AIを活用した買い物サービスWG | KBNの「こんにち商店」を使い、高齢者の買い物支援などの有用性を検証。2026年2月時点で活動中 | [推進協議会 令和7年度年次総会資料](https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/machidukuri/smartcity/smartcitytakamatsu.files/2026houkoku.pdf) |
-| 2026年度（計画） | ごみ分別アプリの更新 | 10か国語に対応し、AIの画像判別で分別を案内する新しいアプリに移る計画 | 同上 |
+| 2026年11月2日〜 | たかまつAIごみナビ | 日本語を含む9か国語に対応し、AIの画像判別でごみの分別方法を案内する。高松市公式LINE「たかまつホッとLINE」から使う | [高松市の発表](https://www.city.takamatsu.kagawa.jp/kurashi/shichoushitsu/hatsugen/teirei/index.files/press1015.pdf)（2026年10月15日） |
 
 ### 高松市のDX計画
 
@@ -211,7 +225,7 @@ AIの導入やシステム開発は、掲載している会社に直接ご相談
 | 窓口 | 内容 | 連絡先・時期 |
 |---|---|---|
 | [香川県よろず支援拠点](https://www.yorozu-kagawa.go.jp/) | 中小企業・小規模事業者の無料経営相談。生産性向上支援センターを併設 | 087-868-6090 |
-| [中小企業デジタル化推進支援事業](https://www.kagawa-isf.jp/support/soudan/digital-suishin/) | ITコーディネータを無料で派遣（25社まで、1社5回程度）。支援例に生成AIを使った業務効率化。2026年度の受付状況は財団に確認 | かがわ産業支援財団 企画情報課 087-868-9901 |
+| [中小企業デジタル化推進支援事業](https://www.kagawa-isf.jp/support/soudan/digital-suishin/) | ITコーディネータを無料で派遣（25社まで、1社5回程度）。支援例に生成AIを使った業務効率化。2026年7月7日時点の[香川県の支援制度一覧](https://www.pref.kagawa.lg.jp/documents/15891/20260707ichiran.pdf)では受付中（上限に達し次第終了） | かがわ産業支援財団 企画情報課 087-868-9901 |
 | [高松市産業振興課](https://www.city.takamatsu.kagawa.jp/jigyosha/shien_josei/digital_shien/digital_shien.html) | 市の補助金の相談、デジタル化の動画・事例紹介 | 087-839-2411 |
 | [Setouchi-i-Base](https://setouchiibase.jp/) | 県の拠点（高松シンボルタワー）。AI・IoTなどの講座とビジネス相談 | 087-822-0111 |
 | [香川県産業技術センター スマートシステム課](https://www.pref.kagawa.lg.jp/sangi/gaiyo/structure/system.html) | AIシステム担当がAI・IoT技術の相談指導。製造現場の自動化・省力化 | 087-881-3175 |

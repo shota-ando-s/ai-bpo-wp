@@ -21,11 +21,13 @@ excerpt: 香川県のAI導入には、2026年10月17日時点で国の補助金�
 
 | 地域 | 市町 |
 |---|---|
-| 東部 | [さぬき市](/area/kagawa/sanuki/)・[東かがわ市](/area/kagawa/higashikagawa/)・[三木町](/area/kagawa/miki/) |
+| 東讃 | [さぬき市](/area/kagawa/sanuki/)・[東かがわ市](/area/kagawa/higashikagawa/)・[三木町](/area/kagawa/miki/)・[直島町](/area/kagawa/naoshima/) |
 | 高松市 | [高松市](/area/kagawa/takamatsu/) |
-| 中部 | [丸亀市](/area/kagawa/marugame/)・[坂出市](/area/kagawa/sakaide/)・[善通寺市](/area/kagawa/zentsuji/)・[宇多津町](/area/kagawa/utazu/)・[綾川町](/area/kagawa/ayagawa/)・[琴平町](/area/kagawa/kotohira/)・[多度津町](/area/kagawa/tadotsu/)・[まんのう町](/area/kagawa/manno/) |
-| 西部 | [観音寺市](/area/kagawa/kanonji/)・[三豊市](/area/kagawa/mitoyo/) |
-| 島しょ部 | [土庄町](/area/kagawa/tonosho/)・[小豆島町](/area/kagawa/shodoshima/)・[直島町](/area/kagawa/naoshima/) |
+| 中讃 | [丸亀市](/area/kagawa/marugame/)・[坂出市](/area/kagawa/sakaide/)・[善通寺市](/area/kagawa/zentsuji/)・[宇多津町](/area/kagawa/utazu/)・[綾川町](/area/kagawa/ayagawa/)・[琴平町](/area/kagawa/kotohira/)・[多度津町](/area/kagawa/tadotsu/)・[まんのう町](/area/kagawa/manno/) |
+| 西讃 | [観音寺市](/area/kagawa/kanonji/)・[三豊市](/area/kagawa/mitoyo/) |
+| 小豆 | [土庄町](/area/kagawa/tonosho/)・[小豆島町](/area/kagawa/shodoshima/) |
+
+地域の区分は、香川県の保健福祉事務所の所管地域によります（香川県「[保健所・保健福祉事務所](https://www.pref.kagawa.lg.jp/imu/kenmin/hokensyo2.html)」、2026年10月17日確認）。この区分では、直島町（香川郡）と三木町（木田郡）は東讃保健福祉事務所の所管です。
 
 各市町の主要産業と特徴は、このページ後半の「香川県の市町別ページ」の表にまとめています。県内の企業のAI導入事例は、事例の企業がある市町のページで紹介しています。
 
@@ -40,7 +42,7 @@ excerpt: 香川県のAI導入には、2026年10月17日時点で国の補助金�
 | 制度 | 実施主体 | 上限・補助率 | AIへの使い道 | 状況 |
 |---|---|---|---|---|
 | [香川発スタートアップの製品等導入利用支援補助金](https://www.pref.kagawa.lg.jp/sangyo/shinki/startuphanro.html) | 香川県（産業政策課） | 購入は200万円・1/2、レンタル・サービス利用は100万円・2/3 | 県のカタログに載った香川発スタートアップの16製品だけが対象。汎用のAIツールには使えない | 受付中。2027/2/26まで（予算がなくなり次第終了） |
-| [中小企業デジタル化推進支援事業](https://www.pref.kagawa.lg.jp/sangyo/sonota/dejitarukasuishin/r8haken.html) | かがわ産業支援財団 | 補助金ではなく、ITコーディネータの無料派遣（事前調査1回と個別コンサル5回程度） | 生成AIを使った業務効率化、クラウド導入、RPAなどの相談 | 25社まで。締切の明記はなく、受付状況は財団に確認 |
+| [中小企業デジタル化推進支援事業](https://www.pref.kagawa.lg.jp/sangyo/sonota/dejitarukasuishin/r8haken.html) | かがわ産業支援財団 | 補助金ではなく、ITコーディネータの無料派遣（事前調査1回と個別コンサル5回程度） | 生成AIを使った業務効率化、クラウド導入、RPAなどの相談 | 定員25社。2026年7月7日時点の[香川県の支援制度一覧](https://www.pref.kagawa.lg.jp/documents/15891/20260707ichiran.pdf)では受付中（上限に達し次第終了） |
 | [未来投資応援補助金](https://www.pref.kagawa.lg.jp/sangyo/miraitoshi/r7bosyu.html) | 香川県（産業政策課） | 100万円・3/4（売上10億円以上は500万円） | 機械設備と、自社専用の業務用ソフト（例「AI技術による独自の検品システム」）。市販の汎用ソフトとクラウド利用料は対象外 | 2026/3/23で受付終了 |
 | [AI技術活用加速化支援事業費補助金](https://www.pref.kagawa.lg.jp/sangyo/sonota/ai/r8aihojyokin_tuika.html) | 香川県（産業政策課） | 中小企業3/4、1年度200万〜500万円 | 県内のGPUデータセンターのクラウドを使った自社のAI開発 | 追加募集は2026/6/10で締切 |
 | [宿泊施設DX推進事業補助金](https://www.pref.kagawa.lg.jp/kanko/sonota/dxhojyokin2026.html) | 香川県（観光振興課） | 国が認めた経費の1/4、250万円 | 宿泊業だけが対象。国の省力化投資補助事業への上乗せ | 新規の予備申請は2026/8/31で終了 |
@@ -128,6 +130,8 @@ excerpt: 香川県のAI導入には、2026年10月17日時点で国の補助金�
 ### 事業承継と生産年齢人口
 
 香川県の後継者不在率は2025年に47.5%で、四国4県で最も低く、全国の50.1%も下回りました（帝国データバンク高松支店「[四国地区・後継者不在率動向調査](https://www.tdb.co.jp/report/economic/20251212-successor25y-shikoku/)」、2025年12月）。
+
+香川県で2025年に休業・廃業、解散した企業は522件で、前年の630件から17.1%減りました（帝国データバンク「[全国企業「休廃業・解散」動向調査（2025年）](https://www.tdb.co.jp/resource/files/assets/d4b8e8ee91d1489c9a2abd23a4bb5219/a537ae9febfa44218a54df8bc5034f43/20260109_%E5%85%A8%E5%9B%BD%E4%BC%81%E6%A5%AD%E3%80%8C%E4%BC%91%E5%BB%83%E6%A5%AD%E3%83%BB%E8%A7%A3%E6%95%A3%E3%80%8D%E5%8B%95%E5%90%91%E8%AA%BF%E6%9F%BB%EF%BC%882025%E5%B9%B4%EF%BC%89.pdf)」、2026年1月9日公表、個人事業主を含む）。
 
 香川県の後継者不在率を業界別に見ると、建設業は57.2%、小売業は50.0%と高い水準です（[同調査](https://www.tdb.co.jp/report/economic/20251212-successor25y-shikoku/)、2025年）。建設業は、建設・採掘の求人倍率が6.52倍と人手不足も厳しく、後継者と働き手の両方が足りない業界です。
 

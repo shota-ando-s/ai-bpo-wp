@@ -145,7 +145,7 @@ AIの導入やシステム開発は、掲載している会社に直接ご相談
 | 持続化補助金や町の販路開拓補助金の申請、日ごろの経営 | [土庄町商工会](https://tonosho-shokokai.com/) | 0879-62-0427（土庄町総合福祉会館内） |
 | 売上や経営の課題を町内で相談する | [香川県よろず支援拠点 土庄町出張相談会](https://www.town.tonosho.kagawa.jp/gyosei/sangyo/shoko/2526.html) | 日程は町のページのPDF。問い合わせは町の商工観光課 0879-62-7004 |
 | SNS・ホームページなどデジタルの基本を学ぶ | [事業経営セミナー「小豆島・豊島で育むローカルビジネス」](https://www.town.tonosho.kagawa.jp/gyosei/sangyo/shoko/4011.html)（町とよろず支援拠点の共催） | 全6回、2026年10月21日〜2027年3月24日。AI専門の講座ではない |
-| 生成AIを含むデジタル化を、専門家と個別に進める | [中小企業デジタル化推進支援事業](https://www.kagawa-isf.jp/support/soudan/digital-suishin/)（かがわ産業支援財団） | ITコーディネータを無料で派遣（25社まで。受付状況は財団に確認）。087-868-9901 |
+| 生成AIを含むデジタル化を、専門家と個別に進める | [中小企業デジタル化推進支援事業](https://www.kagawa-isf.jp/support/soudan/digital-suishin/)（かがわ産業支援財団） | ITコーディネータを無料で派遣（25社まで。2026年7月7日時点の[香川県の支援制度一覧](https://www.pref.kagawa.lg.jp/documents/15891/20260707ichiran.pdf)では受付中（上限に達し次第終了））。087-868-9901 |
 
 ## 業務の引き継ぎにAIを使う
 
