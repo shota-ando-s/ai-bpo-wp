@@ -50,6 +50,7 @@ SECONDARY_HINTS = ("note.com", "qiita.com", "zenn.dev", "ameblo.jp", "hatena", "
 # 官公庁のサイトには、ブラウザ以外の User-Agent を 403 で弾くものがある（中小企業庁など）
 BROWSER_UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
               "(KHTML, like Gecko) Chrome/126.0 Safari/537.36")
+PLAIN_UA = "hikitsugi-linkcheck/1.0"
 
 results = []  # (level, message)
 
@@ -169,14 +170,21 @@ def source_kind(url):
 def check_url(url):
     # 日本語を含むURL（帝国データバンクのPDFなど）はそのままだと送れないので、パーセントエンコードする
     safe = urllib.parse.quote(url, safe=":/?&=%#+,;@!$'()*~")
-    req = urllib.request.Request(safe, method="GET", headers={"User-Agent": BROWSER_UA})
-    try:
-        with urllib.request.urlopen(req, timeout=15) as r:
-            return url, r.status, r.geturl()
-    except urllib.error.HTTPError as e:
-        return url, e.code, url
-    except Exception as e:  # noqa: BLE001 - 接続エラーはまとめて報告する
-        return url, f"接続失敗: {type(e).__name__}", url
+    # 逆に、ブラウザの User-Agent を 406 で弾くサイトもある（岩手県立大学のリポジトリ iwate-pu.repo.nii.ac.jp など）。
+    # 403/406 のときは、ブラウザ以外の User-Agent で1回だけ取り直す
+    last = None
+    for ua in (BROWSER_UA, PLAIN_UA):
+        req = urllib.request.Request(safe, method="GET", headers={"User-Agent": ua})
+        try:
+            with urllib.request.urlopen(req, timeout=15) as r:
+                return url, r.status, r.geturl()
+        except urllib.error.HTTPError as e:
+            last = (url, e.code, url)
+            if e.code not in (403, 406):
+                return last
+        except Exception as e:  # noqa: BLE001 - 接続エラーはまとめて報告する
+            return url, f"接続失敗: {type(e).__name__}", url
+    return last
 
 
 def definitions(body):
