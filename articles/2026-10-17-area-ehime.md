@@ -15,6 +15,18 @@ excerpt: 愛媛県のAI導入に使える補助金は、2026年10月17日時点�
 
 自分の会社で使える補助金と自己負担は、[補助金診断](/shindan/)で試算できます。
 
+## 愛媛県の20市町のページ一覧
+
+市町ごとの補助金、役所の生成AI、主な産業、地元のIT企業は、各市町のページで確認できます。
+
+| 地域 | 市町 |
+|---|---|
+| 東予 | [今治市](/area/ehime/imabari/)・[新居浜市](/area/ehime/niihama/)・[西条市](/area/ehime/saijo/)・[四国中央市](/area/ehime/shikokuchuo/)・[上島町](/area/ehime/kamijima/) |
+| 中予 | [松山市](/area/ehime/matsuyama/)・[伊予市](/area/ehime/iyo/)・[東温市](/area/ehime/toon/)・[久万高原町](/area/ehime/kumakogen/)・[松前町](/area/ehime/masaki/)・[砥部町](/area/ehime/tobe/) |
+| 南予 | [宇和島市](/area/ehime/uwajima/)・[八幡浜市](/area/ehime/yawatahama/)・[大洲市](/area/ehime/ozu/)・[西予市](/area/ehime/seiyo/)・[内子町](/area/ehime/uchiko/)・[伊方町](/area/ehime/ikata/)・[松野町](/area/ehime/matsuno/)・[鬼北町](/area/ehime/kihoku/)・[愛南町](/area/ehime/ainan/) |
+
+各市町の産業の特徴は、このページ後半の「愛媛県の市町別ページ」の表にまとめています。
+
 ## 愛媛県でAI導入に使える補助金は？（2026年10月時点）
 
 愛媛県でAI導入に使える制度は、2026年10月17日時点で、県のリスキリング補助金、国の補助金・助成金、一部の市の補助金です。
