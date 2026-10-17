@@ -1,6 +1,6 @@
 # 香川県（県・かがわ産業支援財団）と高松市・丸亀市・坂出市・善通寺市・観音寺市・さぬき市・東かがわ市・三豊市（2026年度）。2026-10-17に公式ページ・公募要領で確認
 # 坂出市・観音寺市・三豊市は市独自のAI・IT・研修向け補助金なし（subsidy_a_areas.md に確認したページを記載）
-# さぬき市は公式サイトがアクセス不可（CDNが403/503）で、二次情報だけの1件を confidence: secondary / verified: false で載せている（記事では使わない）
+# さぬき市は旧ドメインがアクセス不可だったが、新ドメイン www.city.sanuki.lg.jp で2026-10-17に公式ページと手引きを確認し、二次情報の1件を公式の2件（人材育成・経営革新）に置き換えた
 - id: kagawa-mirai-toshi
   name: 香川県事業者の未来への投資を応援する総合補助金（未来投資応援補助金）
   org: 香川県（産業政策課）
@@ -200,19 +200,35 @@
   confidence: official
   note: 国の物価高騰対応重点支援地方創生臨時交付金を使った単年度の事業。申請期間終了で受付終了（2026-08-06更新）。対象経費の区分は県の未来投資応援補助金とほぼ同じで、汎用ソフトやクラウド利用料は対象外とみられる（交付要綱 https://www.higashikagawa.jp/material/files/group/5/kouyoukou1.pdf 別表）。来年度の実施は未確認
 
-- id: sanuki-shinko
-  name: さぬき市中小企業等振興支援事業補助金（2次募集）
-  org: さぬき市
+- id: sanuki-jinzai
+  name: さぬき市中小企業等振興支援事業補助金（人材育成）
+  org: さぬき市（商工観光課）
+  area: kagawa/sanuki
+  max_yen: 150000
+  rate: 2/3
+  rate_num: 0.667
+  targets: {efficiency: ×, consulting: ×, training: ○}
+  expenses: 業務に関連する研修の受講料、講師謝金、受験料、出張旅費など（普通自動車運転免許、資格の更新を除く）。自社主催の研修・セミナーの講師謝金も対象
+  conditions: さぬき市内に本店所在地か主たる事業所がある中小企業者・中小企業団体（個人は市内に住所か主たる事業所）。市税の滞納がなく、香川県信用保証協会の保証対象業種（農林漁業は対象）。事業着手前に申請し、交付決定前の着手は対象外。1事業者につき年度内1回・1メニュー。翌年1月末日までに完了（支払いを含む）する事業
+  period: {status: open, start: 2026-08-03, end: 2026-12-28}
+  url: https://www.city.sanuki.lg.jp/soshiki/shokokanko/gyomu/4/2/621.html
+  checked: 2026-10-17
+  confidence: official
+  note: 2次募集。予算の上限に達した時点で受付終了（2026-10-17時点で終了の掲載なし）。1次募集は2026-04-15〜04-30。令和8年度の手引き https://www.city.sanuki.lg.jp/material/files/group/24/08tebiki.pdf の3(9)。AI研修と明記はないが、業務に関連する研修の受講料・講師謝金が対象なので、AI研修が当たるかは事前に市へ確認。申請は商工観光課（本庁2階、087-894-1114）へ持参か郵送（メール不可）。市の公式サイトは2026-10-17時点で www.city.sanuki.lg.jp に移っている
+  fuenn_note: 業務に関連する研修の受講料や講師謝金が対象です（上限15万円・2/3）。AI研修が対象になるかは、申請前にさぬき市商工観光課へ確認してください。
+
+- id: sanuki-keieikakushin
+  name: さぬき市中小企業等振興支援事業補助金（経営革新）
+  org: さぬき市（商工観光課）
   area: kagawa/sanuki
   max_yen: 300000
   rate: 2/3
   rate_num: 0.667
-  targets: {efficiency: 未確認, consulting: 未確認, training: 未確認}
-  expenses: 未確認（補助金ポータルの要約で目的に「デジタル」が含まれるとされる）
-  conditions: 未確認
+  targets: {efficiency: △, consulting: △, training: ×}
+  expenses: 専門家謝金など専門家の招へいに要する経費、研究経費（試作品製作の原材料費、機械装置リース料を含む）、ソフトウエア購入費、出張旅費、委託費など。対象の取組は経営革新計画の作成・実行、事業承継、SDGs、6次産業化、DX推進、BCPの策定など。通常の設備投資費用と思われるデジタル機器等の導入は対象外
+  conditions: 人材育成メニューと同じ（市内の中小企業者等、着手前申請、年度内1回・1メニュー、翌年1月末日までに完了）
   period: {status: open, start: 2026-08-03, end: 2026-12-28}
-  url: 未確認（さぬき市公式サイト https://www.city.sanuki.kagawa.jp/ がCDNで403/503を返し、閲覧できなかった）
+  url: https://www.city.sanuki.lg.jp/soshiki/shokokanko/gyomu/4/2/621.html
   checked: 2026-10-17
-  confidence: secondary
-  verified: false
-  note: 二次情報（補助金ポータルの検索結果の要約）だけ。上限30万円・2/3・2次募集2026-08-03〜12-28と掲載されていたが、ポータル側も「公募予定」「終了している可能性あり」と注記。メニューや対象経費、受付状況は公式で確認できていない。記事では使わない
+  confidence: official
+  note: 2次募集。予算到達で終了あり。手引き https://www.city.sanuki.lg.jp/material/files/group/24/08tebiki.pdf の3(10)に「DX 推進」が明記されている。AI導入の専門家への相談やAIソフトの購入がDX推進に当たるかは市の判断で、事前に商工観光課（087-894-1114）へ確認。人材育成メニューとの併用は不可（1事業者1メニュー）。同じ補助金のIT等活用メニュー（2/3・20万円）は販路開拓目的のホームページ・ネットショップ向けで、AIの業務利用には当たらない

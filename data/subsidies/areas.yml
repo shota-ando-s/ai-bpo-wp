@@ -77,7 +77,7 @@
     - {code: kagawa/sakaide, name: 坂出市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-17確認）}
     - {code: kagawa/zentsuji, name: 善通寺市}
     - {code: kagawa/kanonji, name: 観音寺市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-17確認）}
-    - {code: kagawa/sanuki, name: さぬき市, none: true, note: 市の制度は公式サイトで確認できませんでした。市の商工観光課にお問い合わせください}
+    - {code: kagawa/sanuki, name: さぬき市}
     - {code: kagawa/higashikagawa, name: 東かがわ市, note: 未来投資応援補助金は2026-08-31で締め切りました}
     - {code: kagawa/mitoyo, name: 三豊市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-17確認）}
     - {code: kagawa/tonosho, name: 土庄町}
