@@ -1,0 +1,781 @@
+{
+ "_meta": {
+  "checked": "2026-10-17",
+  "scope": "香川県17市町。本社（公式サイトの本社/所在地。登記上の本店と公式の本社が分かれる会社はnotesに記載）が当該市町にあり、公式サイトで受託システム開発・ソフトウェア開発・Web制作・AI開発を事業として明示する法人。規模は公式サイト記載の従業員数順。従業員数がない会社は資本金で後ろに並べた。",
+  "candidate_sources": [
+   "ワクサポかがわ（香川県が運営する就職・転職支援サイト）の企業情報検索、業種「ソフトウェア・通信」79社と、「サービス・インフラ」「広告・出版・マスコミ」「その他」の全件をキーワードで確認 https://www.wskagawa.jp/index.php?prog=pub_kigyo&exec=list",
+   "全国法人検索（houjin.goo.to、国税庁の法人番号データにもとづく）の香川県「IT業界」109社と、市町別の「システム開発・受託開発」「システム開発・ソフトウェア開発」「Webサービス・アプリ運用」一覧 https://houjin.goo.to/corporations/prefs/kagawa/category-it",
+   "WebSearch（途中で上限に到達）"
+  ],
+  "search_limits": "作業の途中で WebSearch の上限（1ターン200回、全エージェント共通）に達した。その後は上記2つの一覧と、公式サイトの直接取得だけで調べた。公式URLを一覧から得られなかった小さな会社（主に町部）は公式サイトを特定できず、未確認のまま除外している。香川県情報サービス産業協議会（KISA）の会員名簿は公開ページを見つけられなかった。かがわ産業支援財団の企業紹介は確認できていない。網羅性は保証できない。",
+  "ordering": "従業員数（公式）の多い順 → 従業員数がない会社は資本金（公式）→ どちらもない会社は最後。"
+ },
+ "takamatsu": [
+  {
+   "name": "株式会社STNet",
+   "hq": "香川県高松市春日町1735番地3",
+   "municipality": "高松市",
+   "town": "春日町",
+   "employees": {
+    "value": 745,
+    "as_of": "2026年3月末現在",
+    "source": "https://www.stnet.co.jp/about/profile/"
+   },
+   "capital": {
+    "value": "30億円",
+    "source": "https://www.stnet.co.jp/about/profile/"
+   },
+   "founded": 1984,
+   "business_summary": "四国電力グループの情報通信会社。データセンター・クラウド、システム開発、通信ネットワーク（光回線）を提供",
+   "ai_initiative": null,
+   "url": "https://www.stnet.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "主業は通信・データセンターを含むICT全般で、定款上の事業内容に情報処理システム・ソフトウェアの設計・開発がある。公式サイトに生成AI・RAG関連の解説記事はあるが、AIのサービス提供としての明記は確認できず ai_initiative は null。ワクサポかがわの掲載値は725名。"
+  },
+  {
+   "name": "株式会社トスバックシステムズ",
+   "hq": "香川県高松市福岡町4丁目5番1号",
+   "municipality": "高松市",
+   "town": "福岡町",
+   "employees": {
+    "value": 128,
+    "as_of": "令和8年（2026年）4月現在",
+    "source": "https://www.tosbac-systems.co.jp/profile.html"
+   },
+   "capital": {
+    "value": "2,000万円",
+    "source": "https://www.tosbac-systems.co.jp/profile.html"
+   },
+   "founded": 1981,
+   "business_summary": "業務システムの受託開発・パッケージ開発、コンピュータ販売、インターネットサービス、システム運用",
+   "ai_initiative": "AI-OCRシステムを提供",
+   "url": "https://www.tosbac-systems.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "公式の本社は高松市。マイナビ掲載では東京都港区に『第二本社』あり（126名、2026年8月）。東京・大阪・広島・福岡などに拠点。"
+  },
+  {
+   "name": "株式会社アール・シー・エス",
+   "hq": "香川県高松市錦町1丁目4番37号",
+   "municipality": "高松市",
+   "town": "錦町",
+   "employees": {
+    "value": 99,
+    "as_of": "2026年6月時点（契約社員を含む）",
+    "source": "https://www.c-rcs.jp/company"
+   },
+   "capital": {
+    "value": "7,500万円",
+    "source": "https://www.c-rcs.jp/company"
+   },
+   "founded": 1990,
+   "business_summary": "西日本放送・四国新聞社が出資するIT会社。自治体向け福祉システム、通販システム、パッケージソフト販売、人材派遣、ASP",
+   "ai_initiative": "生成AI導入講座、生成AIと通販システムの活用セミナーを開催（公式お知らせ）",
+   "url": "https://www.c-rcs.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": null
+  },
+  {
+   "name": "トモニシステムサービス株式会社",
+   "hq": "香川県高松市中新町13番地1（香川銀行中新町ビル内）",
+   "municipality": "高松市",
+   "town": "中新町",
+   "employees": {
+    "value": 93,
+    "as_of": "令和8年（2026年）6月1日現在（会社概要表の時点表記）",
+    "source": "https://www.tomony-ss.co.jp/about/gaiyou.html"
+   },
+   "capital": {
+    "value": "5,000万円",
+    "source": "https://www.tomony-ss.co.jp/about/gaiyou.html"
+   },
+   "founded": 2013,
+   "business_summary": "トモニホールディングス（香川銀行・徳島大正銀行）100%子会社。金融関連のシステム・業務サポート",
+   "ai_initiative": null,
+   "url": "https://www.tomony-ss.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "銀行グループのシステム子会社だが、本社が高松市にある独立法人。徳島支社あり。"
+  },
+  {
+   "name": "株式会社百十四システムサービス",
+   "hq": "香川県高松市亀井町7番地の15 セントラル第一ビル7階",
+   "municipality": "高松市",
+   "town": "亀井町",
+   "employees": {
+    "value": 80,
+    "as_of": null,
+    "source": "https://114sys.co.jp/company/"
+   },
+   "capital": {
+    "value": "9,000万円",
+    "source": "https://114sys.co.jp/company/"
+   },
+   "founded": 1986,
+   "business_summary": "百十四銀行グループのIT会社。公共機関・民間企業向けのシステム開発・運用、ERP導入支援、銀行グループのインフラ整備",
+   "ai_initiative": "業務自動化や分析高度化のためのAI技術の活用支援に注力と明記（社長挨拶）",
+   "url": "https://114sys.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "従業員数の時点は公式に記載なし。ワクサポかがわの掲載値は67名。"
+  },
+  {
+   "name": "株式会社ロジック",
+   "hq": "香川県高松市新田町甲2190番地3",
+   "municipality": "高松市",
+   "town": "新田町",
+   "employees": {
+    "value": 72,
+    "as_of": null,
+    "source": "https://www.kagawa-logic.co.jp/company/"
+   },
+   "capital": {
+    "value": "3,000万円",
+    "source": "https://www.kagawa-logic.co.jp/company/"
+   },
+   "founded": 1985,
+   "business_summary": "基幹業務システムなどのソフトウェア開発・販売、ネットワーク構築、電気通信工事、人材派遣",
+   "ai_initiative": null,
+   "url": "https://www.kagawa-logic.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "社員数の時点は公式に記載なし。松山支店・東京支店あり。生成AI関連資格の取得実績のお知らせ、ERPでのAI活用の将来展望の記述はあるが、AIサービスの提供は明記されていないため null。"
+  },
+  {
+   "name": "株式会社四国電子計算センター",
+   "hq": "香川県高松市古新町1番地7 四国総合信用ビル",
+   "municipality": "高松市",
+   "town": "古新町",
+   "employees": {
+    "value": 56,
+    "as_of": "令和8年（2026年）4月1日現在",
+    "source": "https://www.scc21.co.jp/company/"
+   },
+   "capital": {
+    "value": "4,000万円（授権資本1億円）",
+    "source": "https://www.scc21.co.jp/company/"
+   },
+   "founded": 1966,
+   "business_summary": "自治体・官公庁向けシステムの開発・保守、ネットワーク・ハードウェア構築、機器販売",
+   "ai_initiative": "AI-OCR・RPA（UiPath）の導入支援",
+   "url": "https://www.scc21.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "香川県情報サービス産業協議会の会員と公式に記載。徳島支店あり。DynaxTと同数（56名）だが、時点が新しいこちらを先に置いた。"
+  },
+  {
+   "name": "株式会社DynaxT",
+   "hq": "香川県高松市林町2217番地6 DynaxTビル",
+   "municipality": "高松市",
+   "town": "林町",
+   "employees": {
+    "value": 56,
+    "as_of": "2022年5月現在",
+    "source": "https://www.dynaxt.co.jp/company.html"
+   },
+   "capital": {
+    "value": "3,001万円",
+    "source": "https://www.dynaxt.co.jp/company.html"
+   },
+   "founded": 1986,
+   "business_summary": "SI受託開発（基幹・Web・組込）、制御・組込ソフト開発、医療システム（電子カルテ等）開発、アウトソーシング",
+   "ai_initiative": "プライベート生成AIサービス「DynaxTAI」（2026年4月にエージェント型AIへ機能拡張）、組織内部情報の会話型問い合わせシステム",
+   "url": "https://www.dynaxt.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "従業員数の時点が2022年5月と古い。東京営業所あり。"
+  },
+  {
+   "name": "株式会社アポロシステム",
+   "hq": "香川県高松市内町2番15号（エクセルビル）",
+   "municipality": "高松市",
+   "town": "内町",
+   "employees": {
+    "value": 52,
+    "as_of": null,
+    "source": "https://apollosystem.co.jp/company"
+   },
+   "capital": {
+    "value": "2,000万円",
+    "source": "https://apollosystem.co.jp/company"
+   },
+   "founded": 1984,
+   "business_summary": "金融・医療・教育・公共・電力・流通などのシステム構築、ソフトウェア開発・販売",
+   "ai_initiative": null,
+   "url": "https://apollosystem.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "従業員数（男性38名・女性14名）の時点は公式に記載なし。東京事業所あり。香川県情報サービス産業協議会（KISA）加盟と公式に記載。"
+  },
+  {
+   "name": "株式会社タダノシステムズ",
+   "hq": "香川県高松市新田町甲34番地（株式会社タダノ構内）",
+   "municipality": "高松市",
+   "town": "新田町",
+   "employees": {
+    "value": 41,
+    "as_of": "2026年10月1日現在",
+    "source": "https://sys.tadano.co.jp/systems/company/outline"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://sys.tadano.co.jp/systems/company/outline"
+   },
+   "founded": 1987,
+   "business_summary": "タダノグループのIT会社。建設機械リース業向け販売管理システム、製造業向け生産管理システム、文書管理システム、インフラ構築",
+   "ai_initiative": null,
+   "url": "https://sys.tadano.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": null
+  }
+ ],
+ "marugame": [
+  {
+   "name": "シコク・システム工房株式会社",
+   "hq": "香川県丸亀市土器町東八丁目537番地1",
+   "municipality": "丸亀市",
+   "town": "土器町東",
+   "employees": {
+    "value": 29,
+    "as_of": null,
+    "source": "https://www.kohboh.co.jp/kaisya/"
+   },
+   "capital": {
+    "value": "5,000万円",
+    "source": "https://www.kohboh.co.jp/kaisya/"
+   },
+   "founded": 1989,
+   "business_summary": "四国化成ホールディングス100%子会社。生産管理・品質管理などの業務システム開発とトータルソリューション",
+   "ai_initiative": null,
+   "url": "https://www.kohboh.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "従業員数の時点は公式に記載なし。ワクサポかがわの掲載値は31名。"
+  },
+  {
+   "name": "株式会社グッドクリエイト",
+   "hq": "香川県丸亀市綾歌町岡田下346-3（丸亀本店）",
+   "municipality": "丸亀市",
+   "town": "綾歌町岡田下",
+   "employees": {
+    "value": 10,
+    "as_of": null,
+    "source": "https://www.gc-c.co.jp/company/"
+   },
+   "capital": {
+    "value": "2億4,580万円",
+    "source": "https://www.gc-c.co.jp/company/"
+   },
+   "founded": 2000,
+   "business_summary": "データベース・ソフトウェアの開発・販売、ホームページ制作、Webマーケティング",
+   "ai_initiative": "人工知能を用いたシステムの開発・販売を事業内容に明記。『次世代型AIマーケティング』を掲げる",
+   "url": "https://www.gc-c.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "要注意: 公式の所在地表記は『丸亀本店』と『東京本社』（東京都品川区）の二本立て。高松市に事業本部あり。掲載する場合は『本店：丸亀市』と書くか判断が必要。"
+  },
+  {
+   "name": "オークラ情報システム株式会社",
+   "hq": "香川県丸亀市中津町1515番地",
+   "municipality": "丸亀市",
+   "town": "中津町",
+   "employees": null,
+   "capital": {
+    "value": "1,250万円（大倉工業100%出資）",
+    "source": "https://www.ois92.co.jp/company/outline"
+   },
+   "founded": 1992,
+   "business_summary": "ソフトウェア開発（調査・分析・設計・製造）、システム運用・保守、調剤薬局向け在庫管理システムなどのパッケージ製造・販売",
+   "ai_initiative": null,
+   "url": "https://www.ois92.co.jp/",
+   "size_basis": "capital",
+   "checked": "2026-10-17",
+   "notes": "従業員数は公式に記載なし（ワクサポかがわの掲載値63名は不採用）。創業1992年1月。"
+  },
+  {
+   "name": "有限会社香月",
+   "hq": "香川県丸亀市富屋町1-1 SAKURAheights.2F",
+   "municipality": "丸亀市",
+   "town": "富屋町",
+   "employees": null,
+   "capital": null,
+   "founded": 2005,
+   "business_summary": "Webサイト・ECサイト（Shopify）制作、Web・SNS広告、デザイン、撮影・動画",
+   "ai_initiative": "中小企業向けのAI導入支援、AI備蓄管理などを搭載した防災DXシステムの開発（公式お知らせ）",
+   "url": "https://kagetu-net.com/",
+   "size_basis": "none",
+   "checked": "2026-10-17",
+   "notes": "公式サイトに従業員数・資本金の記載なし（ワクサポかがわでは5名・300万円）。デザイン・印刷も扱うが、主はWeb制作と判断。"
+  }
+ ],
+ "sakaide": [
+  {
+   "name": "株式会社コーエイコンピューターシステム",
+   "hq": "香川県坂出市旭町一丁目1-27（本店）",
+   "municipality": "坂出市",
+   "town": "旭町",
+   "employees": {
+    "value": 37,
+    "as_of": null,
+    "source": "https://tera-net.co.jp/koei/aboutus/outline.html"
+   },
+   "capital": {
+    "value": "3,000万円",
+    "source": "https://tera-net.co.jp/koei/aboutus/outline.html"
+   },
+   "founded": 1997,
+   "business_summary": "給食管理・栄養計算ソフト（EIBUNシリーズ）など医療・食育分野のオリジナルソフトウェアの企画・販売・保守",
+   "ai_initiative": null,
+   "url": "https://tera-net.co.jp/koei/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "要注意: 公式の所在地表記は『本店』（坂出市）と『東京本社』（東京都千代田区）の二本立て。社員数の時点は記載なし。創業は平成元年（設立は平成9年）。自社パッケージの開発・販売が中心で、受託開発会社とは性格が異なる。"
+  },
+  {
+   "name": "株式会社フリースタイル",
+   "hq": "香川県坂出市旭町一丁目1-27",
+   "municipality": "坂出市",
+   "town": "旭町",
+   "employees": null,
+   "capital": {
+    "value": "1,500万円",
+    "source": "https://freestyle-web.co.jp/aboutus/index.html"
+   },
+   "founded": 2005,
+   "business_summary": "栄養管理ソフト「EIBUNシリーズ」の開発・サポート",
+   "ai_initiative": null,
+   "url": "https://freestyle-web.co.jp/",
+   "size_basis": "capital",
+   "checked": "2026-10-17",
+   "notes": "コーエイコンピューターシステムと同じ住所のグループ会社。従業員数は公式に記載なし（ワクサポかがわでは10名・資本金500万円と、資本金が公式と食い違う）。"
+  }
+ ],
+ "zentsuji": [
+  {
+   "name": "株式会社アドネット",
+   "hq": "香川県善通寺市上吉田町8丁目5-19 フォーレストビル1F",
+   "municipality": "善通寺市",
+   "town": "上吉田町",
+   "employees": {
+    "value": 32,
+    "as_of": null,
+    "source": "https://adnet-web.com/company/"
+   },
+   "capital": {
+    "value": "2,000万円",
+    "source": "https://adnet-web.com/company/"
+   },
+   "founded": 1990,
+   "business_summary": "スマホアプリ開発、Webシステム・業務システム開発、Webサイト制作、デザイン・印刷。ベトナムのオフショア子会社あり",
+   "ai_initiative": "AIを活用した業務改善の提案に対応と明記",
+   "url": "https://adnet-web.com/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "社員数32名はベトナム社員・契約社員を含む（時点の記載なし）。DTP・デザイン会社として創業。ワクサポかがわの掲載値は18名。"
+  }
+ ],
+ "kanonji": [],
+ "sanuki": [],
+ "higashikagawa": [],
+ "mitoyo": [
+  {
+   "name": "株式会社タクマテック",
+   "hq": "香川県三豊市詫間町詫間7053番地3",
+   "municipality": "三豊市",
+   "town": "詫間町詫間",
+   "employees": {
+    "value": 21,
+    "as_of": "2018年4月1日現在",
+    "source": "https://www.takumatec.co.jp/company_overview/index.html"
+   },
+   "capital": {
+    "value": "5,000万円",
+    "source": "https://www.takumatec.co.jp/company_overview/index.html"
+   },
+   "founded": 1988,
+   "business_summary": "システムコンサルティング、自治体・企業向けの業務システム開発、車両管理・来客管理・倉庫在庫管理などのパッケージ",
+   "ai_initiative": null,
+   "url": "https://www.takumatec.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "従業員数の時点が2018年4月と古い（ワクサポかがわでは25名）。大阪営業所あり。"
+  }
+ ],
+ "tonosho": [],
+ "shodoshima": [],
+ "miki": [],
+ "naoshima": [],
+ "utazu": [],
+ "ayagawa": [
+  {
+   "name": "日本ユー・エス・アール株式会社",
+   "hq": "香川県綾歌郡綾川町羽床上591-1",
+   "municipality": "綾川町",
+   "town": "羽床上",
+   "employees": null,
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://usr.co.jp/"
+   },
+   "founded": 1974,
+   "business_summary": "業務用ソフトウェア・Webアプリケーション・データベースシステムの開発・販売、OA機器販売、Webコンテンツ制作",
+   "ai_initiative": null,
+   "url": "https://usr.co.jp/",
+   "size_basis": "capital",
+   "checked": "2026-10-17",
+   "notes": "従業員数は公式に記載なし（ワクサポかがわでは18名）。公式の売上高は2018年12月実績と古い。"
+  }
+ ],
+ "kotohira": [],
+ "tadotsu": [
+  {
+   "name": "株式会社藤井システムエンジニアリング",
+   "hq": "香川県仲多度郡多度津町大通り4-60",
+   "municipality": "多度津町",
+   "town": "大通り",
+   "employees": {
+    "value": 12,
+    "as_of": "2026年3月現在",
+    "source": "https://f-se.jp/overview/"
+   },
+   "capital": {
+    "value": "100万円",
+    "source": "https://f-se.jp/overview/"
+   },
+   "founded": 2015,
+   "business_summary": "受配電システム向け監視・制御ソフトウェアの設計・制作・保守、受変電設備の更新・改造、Webサイト制作などIT事業",
+   "ai_initiative": null,
+   "url": "https://f-se.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "創業2007年（個人事業）、設立2015年。受変電設備の工事も主要事業で、IT専業ではない。"
+  }
+ ],
+ "manno": [],
+ "_reference": {
+  "takamatsu": {
+   "next_candidates": [
+    {
+     "name": "株式会社三光システム",
+     "employees": "35人（時点記載なし）",
+     "capital": "2,000万円",
+     "note": "企業年金基金向けシステム、電力系・請負開発。高松市鬼無町。",
+     "source": "https://sankou-sys.co.jp/information/company/"
+    },
+    {
+     "name": "株式会社エースシステム",
+     "employees": "34名（時点記載なし）",
+     "capital": "2,000万円",
+     "note": "福祉用具レンタル・リネンサプライ業向け基幹システム。高松市香西南町、東京事務所あり。",
+     "source": "https://www.acesys.co.jp/about/"
+    },
+    {
+     "name": "株式会社ミトラ",
+     "employees": "公式に記載なし（ワクサポかがわ41名）",
+     "capital": "1,200万円",
+     "note": "産婦人科電子カルテなど医療IT。高松市林町。",
+     "source": "https://www.mitla.co.jp/company/"
+    }
+   ],
+   "needs_manual_check": [
+    {
+     "name": "株式会社富士通四国インフォテック",
+     "note": "ワクサポかがわでは高松市番町、329名（2026年3月更新）。公式サイト（global.fujitsu）が429エラーで取得できず、本社所在地・従業員数を公式で確認できなかったため掲載しない。確認できれば2位相当。",
+     "source_secondary": "https://www.wskagawa.jp/index.php?prog=pub_kigyo&exec=detail&kigyo_key=08-0017",
+     "verified": false
+    },
+    {
+     "name": "JR四国情報システム株式会社",
+     "note": "ワクサポかがわでは高松市浜ノ町、35名。公式サイト（jrsis.com）が応答せず未確認。",
+     "verified": false
+    }
+   ],
+   "excluded": [
+    {
+     "name": "株式会社四国日立システムズ",
+     "note": "2024年4月1日に日立システムズと合併し、日立システムズ四国支社になった（公式サイトの告知）。",
+     "source": "https://www.shikoku-hitachi-systems.co.jp/"
+    },
+    {
+     "name": "株式会社日本テクニクス",
+     "note": "本社は大阪。高松は事業所。",
+     "source": "https://www.jpn-tec.co.jp/company/info.html"
+    },
+    {
+     "name": "株式会社BOD",
+     "note": "本社は東京都豊島区。BPOが主業。",
+     "source": "https://www.bod-grp.com/company/"
+    },
+    {
+     "name": "株式会社MIST solution",
+     "note": "法人番号が東京都の登記（5010001015487）。高松は拠点と判断。公式サイト未確認。"
+    },
+    {
+     "name": "株式会社USEN-ALMEX、ヤマトシステム開発、ユニバーサルコンピューター、アイピーシステム、富士フイルムBIジャパン、楽天トータルソリューションズほか",
+     "note": "ワクサポかがわに掲載されているが、本社が県外で高松は支店・事業所。"
+    },
+    {
+     "name": "株式会社ドコモCS四国",
+     "note": "通信設備の建設・保守が主業で、システム開発会社ではない。"
+    },
+    {
+     "name": "株式会社穴吹カレッジサービス",
+     "note": "ソフト開発事業部（ワクサポかがわ68名）があるが、会社としては教育事業が主。"
+    },
+    {
+     "name": "株式会社よんでんメディアワークス（15名）、株式会社ヘルツ（Web制作、14名）、ウェブシステムテクノロジー（15名）、K・システムソリューション（28名）、ゴーフィールド（28名）、セリオラ（20名）など",
+     "note": "ワクサポかがわの値で上位10社に届かないため、公式サイトの確認は省略。"
+    }
+   ],
+   "printing_ad_reference": [
+    {
+     "name": "株式会社チャージ",
+     "hq": "香川県高松市今新町",
+     "note": "広告・グラフィックデザインが主でWeb制作も扱う（ワクサポかがわの紹介文）。公式未確認。",
+     "source_secondary": "https://c-world.co.jp",
+     "verified": false
+    }
+   ]
+  },
+  "marugame": {
+   "excluded": [
+    {
+     "name": "株式会社キューブ",
+     "note": "houjin.goo で丸亀市・Web制作/システム開発とされる。公式サイトらしいドメイン（ict-cube.jp）は WordPress の初期状態で、会社情報なし。"
+    },
+    {
+     "name": "株式会社カルテック、株式会社インスリット",
+     "note": "houjin.goo でシステム開発とされるが、公式サイトを特定できず未確認。"
+    },
+    {
+     "name": "共信コミュニケーションズ四国株式会社",
+     "note": "映像・音響・情報通信機器の販売と工事が主業。"
+    },
+    {
+     "name": "虹ネット、レベック、光、アットセレクション、テレホンハウス丸亀、システムスクエア",
+     "note": "携帯ショップ・通信回線販売やPC販売が主業。"
+    }
+   ]
+  },
+  "sakaide": {
+   "excluded": [
+    {
+     "name": "KBN株式会社",
+     "note": "ケーブルテレビ・インターネット事業者。システム開発会社ではない。",
+     "source": "https://www.kbn.ne.jp/company/"
+    },
+    {
+     "name": "株式会社総合コンサルタンツ",
+     "note": "土木・建築コンサルタントが主業。"
+    },
+    {
+     "name": "株式会社リッツ、有限会社イーシップシステム",
+     "note": "houjin.goo でWeb制作・システム開発とされるが、公式サイトを特定できず未確認。リッツはPCサポートが中心。"
+    }
+   ],
+   "printing_ad_reference": [
+    {
+     "name": "株式会社三青社",
+     "hq": "香川県坂出市西大浜北",
+     "note": "houjin.goo の業種に印刷・OA機器販売・システム開発が並ぶ。公式未確認。",
+     "verified": false
+    }
+   ]
+  },
+  "zentsuji": {
+   "excluded": [
+    {
+     "name": "システック株式会社、合同会社MASTERS",
+     "note": "houjin.goo でシステム開発とされるが、公式サイトを特定できず未確認（推測したドメインは別会社だった）。"
+    },
+    {
+     "name": "有限会社モステック",
+     "note": "FA・機械設計が主業。"
+    }
+   ]
+  },
+  "kanonji": {
+   "status": "見つからず",
+   "searched": "ワクサポかがわ「ソフトウェア・通信」に観音寺市の会社なし。houjin.goo の観音寺市IT・システム開発一覧（富士電算センター、リターン・インターナショナル、アール・アイ・ビー、大塚鉄工所、三和）を確認。",
+   "excluded": [
+    {
+     "name": "アール・アイ・ビー株式会社",
+     "note": "公式サイト（rib.co.jp）は最終更新が2010年で、会社概要を確認できず。",
+     "source": "https://rib.co.jp/"
+    },
+    {
+     "name": "株式会社富士電算センター",
+     "note": "公式サイトを特定できず。"
+    },
+    {
+     "name": "株式会社リターン・インターナショナル",
+     "note": "スマホ修理店。"
+    }
+   ],
+   "printing_ad_reference": [
+    {
+     "name": "株式会社三和",
+     "hq": "香川県観音寺市木之郷町",
+     "note": "印刷が主業でWeb制作も扱う（houjin.goo の紹介文）。公式未確認。",
+     "verified": false
+    }
+   ]
+  },
+  "sanuki": {
+   "status": "見つからず",
+   "searched": "ワクサポかがわ（0件）、houjin.goo のさぬき市IT・システム開発・Web一覧（川久保商事、ニューマーク、讃光工業）。",
+   "excluded": [
+    {
+     "name": "ニューマーク株式会社",
+     "note": "映像制作が主業（公式サイト newmark.co.jp）。香川・東京に拠点。"
+    },
+    {
+     "name": "讃光工業株式会社",
+     "note": "計量器メーカー。"
+    }
+   ],
+   "printing_ad_reference": [
+    {
+     "name": "有限会社川久保商事",
+     "hq": "香川県さぬき市寒川町",
+     "note": "houjin.goo で Web制作・印刷とされる。公式サイトを特定できず。",
+     "verified": false
+    }
+   ]
+  },
+  "higashikagawa": {
+   "status": "見つからず",
+   "searched": "ワクサポかがわ（0件）、houjin.goo の東かがわ市IT一覧（ゼンブックスのみ）。",
+   "excluded": [
+    {
+     "name": "株式会社ゼンブックス",
+     "note": "公式の所在地は東京都港区で、事業はメディア運営。",
+     "source": "https://zenbooks.co.jp/about-us/company/"
+    }
+   ]
+  },
+  "mitoyo": {
+   "excluded": [
+    {
+     "name": "有限会社アトムアシスト",
+     "note": "houjin.goo で三豊市・システム構築・Web制作とされるが、公式サイトを特定できず。"
+    },
+    {
+     "name": "共同設計株式会社",
+     "note": "建設コンサルタントが主業（ICTのシステム開発も手がける）。"
+    },
+    {
+     "name": "株式会社本気モード",
+     "note": "ネットショップ運営・店舗代行が主業。"
+    },
+    {
+     "name": "一般社団法人みとよAI社会推進機構（MAiZM）",
+     "note": "社団法人で会社ではないため対象外。"
+    }
+   ]
+  },
+  "tonosho": {
+   "status": "見つからず",
+   "searched": "ワクサポかがわ（0件）、houjin.goo の土庄町一覧（アース・プランニングのみ）。",
+   "excluded": [
+    {
+     "name": "株式会社アース・プランニング",
+     "note": "土木・建築コンサルタントが主業。"
+    }
+   ]
+  },
+  "shodoshima": {
+   "status": "見つからず（候補1社は公式サイトを特定できず）",
+   "searched": "ワクサポかがわ（0件）、houjin.goo の小豆島町IT一覧。",
+   "unverified": [
+    {
+     "name": "株式会社スパークル",
+     "hq": "香川県小豆郡小豆島町蒲生",
+     "note": "houjin.goo では IoT/M2M・セキュリティシステムの開発・販売、プログラミングスクール（1992年設立）とされる。公式サイトを特定できなかった（同名の別会社のサイトのみ見つかった）。公式で確認できれば掲載候補。",
+     "verified": false
+    }
+   ]
+  },
+  "miki": {
+   "status": "見つからず",
+   "searched": "ワクサポかがわ（0件）、houjin.goo の三木町一覧（USE、山地電機商会）。",
+   "excluded": [
+    {
+     "name": "USE株式会社",
+     "note": "FA・産業用ロボットが主業。"
+    },
+    {
+     "name": "有限会社山地電機商会",
+     "note": "PC販売・修理。"
+    }
+   ]
+  },
+  "naoshima": {
+   "status": "見つからず",
+   "searched": "ワクサポかがわ（0件）、houjin.goo の直島町（IT・システム開発の掲載なし）。"
+  },
+  "utazu": {
+   "status": "見つからず",
+   "searched": "ワクサポかがわ（0件）、houjin.goo の宇多津町一覧（グランテスト、DEOSS、太陽設計）。",
+   "excluded": [
+    {
+     "name": "株式会社グランテスト",
+     "note": "houjin.goo でWebサービス運用とされるが、公式サイトを特定できず。"
+    },
+    {
+     "name": "株式会社DEOSS",
+     "note": "機械設計・技術者派遣が主業。"
+    },
+    {
+     "name": "太陽設計有限会社",
+     "note": "船舶・プラントの設計製図。"
+    }
+   ]
+  },
+  "ayagawa": {
+   "excluded": [
+    {
+     "name": "日本システム開発株式会社",
+     "note": "houjin.goo でシステム開発とされるが、公式サイトを特定できず。"
+    },
+    {
+     "name": "株式会社エム・イ・テック",
+     "note": "メカトロ・自動化装置の設計開発。"
+    },
+    {
+     "name": "富士興産株式会社",
+     "note": "携帯ショップ。"
+    }
+   ]
+  },
+  "kotohira": {
+   "status": "見つからず",
+   "searched": "ワクサポかがわ（0件）。houjin.goo の琴平町の業種別一覧は県外企業が混ざって表示され、町内本社のIT企業は確認できず。"
+  },
+  "tadotsu": {
+   "excluded": [
+    {
+     "name": "四国計測工業株式会社",
+     "note": "多度津町本社、809名（2026年3月）。電力量計・計装などの製造・工事が主業で、システム開発会社ではないため対象外。",
+     "source": "https://www.yonkei.co.jp/corporate/overview.html"
+    },
+    {
+     "name": "株式会社ソフトマシーン",
+     "note": "houjin.goo で美術品販売・Web制作とされる。推測したドメインは東京の同名別会社で、公式未確認。"
+    }
+   ]
+  },
+  "manno": {
+   "status": "見つからず",
+   "searched": "ワクサポかがわ（0件）、houjin.goo のまんのう町一覧（IT業界0件、システム開発1件だが会社名を取得できず）。"
+  }
+ },
+ "_notes": [
+  "ワクサポかがわ（香川県運営）の従業員数は企業の自己申告で、公式サイトの値と食い違う例が多い（アール・シー・エス70→公式99、百十四システムサービス67→公式80など）。記事では公式サイトの値だけを使う。",
+  "コーエイコンピューターシステム（坂出）とグッドクリエイト（丸亀）は、公式サイトに『東京本社』も併記されている。掲載時は『本店』として書くか判断が必要。",
+  "富士通四国インフォテックは公式サイトにアクセスできず未確認。手動確認を推奨。"
+ ]
+}

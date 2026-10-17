@@ -1,0 +1,73 @@
+# 香川県内9町（土庄・小豆島・三木・直島・宇多津・綾川・琴平・多度津・まんのう）2026年度
+# 確認日 2026-10-17。根拠は subsidy_b_areas.md
+# 小豆島町・直島町・宇多津町・琴平町・まんのう町は、既存の中小企業がIT・DX・研修に使える町独自の制度を確認できなかった（YAMLに項目なし）
+
+# ---- 土庄町 ----
+- id: tonosho-hanro
+  name: 土庄町販路開拓支援補助金（通信販売用ホームページの開設）
+  org: 土庄町
+  area: kagawa/tonosho
+  max_yen: 200000
+  rate: 2/3
+  rate_num: 0.667
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 通信販売を目的として新たにホームページを開設する事業のホームページ制作委託料。展示会等の出展経費（オンライン展示会の出展経費を含む）、広告宣伝費、旅費、出展代行委託料も対象
+  conditions: 2026-04-01以降引き続き町内に本社か事業所がある法人、または町内に住所か事業所がある個人事業者。町税の滞納がないこと。補助額1万円未満は対象外。国・地方公共団体・公的団体の補助を受ける事業は対象外
+  period: {status: open, start: 2026-04-01, end: 2027-03-31}
+  next_expected: 2027-04
+  url: https://www.town.tonosho.kagawa.jp/gyosei/sangyo/shoko/2874.html
+  checked: 2026-10-17
+  confidence: official
+  note: 上限は1事業者1年度20万円。申請書兼請求書を事業後に土庄町商工会へ提出する方式（領収書・ホームページの画面コピーとURLを添付）。土庄町商工会か香川県よろず支援拠点の相談もあわせて申し込める。業務効率化向けのソフト・クラウドは対象外で、EC用サイトの新規開設に限る。根拠はリーフレット（material/files/group/15/hanro-ri-furetto.pdf）。next_expectedは今年度の時期からの推測
+
+# ---- 三木町 ----
+- id: miki-hanro
+  name: 三木町販路開拓支援補助金（オンラインショップ）
+  org: 三木町
+  area: kagawa/miki
+  max_yen: 100000
+  rate: 2/3
+  rate_num: 0.667
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 通信販売を目的として新たにホームページ（オンラインショップ）を制作する事業のホームページ制作委託料。展示会・見本市（BtoB）の出展は県内5万円・県外10万円・国外20万円が上限で、オンライン展示会の出展経費も対象
+  conditions: 町内に事業所・事務所がある中小企業者、または町内に住所と事業所・事務所がある個人事業者。町税の滞納がないこと。補助対象事業の着手前に申請。複数回申請の場合は初回の事業者を優先
+  period: {status: rolling}
+  url: https://www.town.miki.lg.jp/life/dtl.php?hdnKey=8019
+  checked: 2026-10-17
+  confidence: official
+  note: 要綱は令和6年4月15日要綱第30号で、町の例規集に現行として掲載（https://www.town.miki.lg.jp/reiki_int/reiki_honbun/o118RG00000936.html）。町のページの掲載日は2023-08-14で、受付期間・予算額の記載はない。2026年度の予算状況は町（地域活性課 商工観光係）に確認。業務効率化向けのソフト・クラウドは対象外
+
+# ---- 綾川町 ----
+- id: ayagawa-waon
+  name: 綾川町電子マネーWAON決済端末導入補助金
+  org: 綾川町
+  area: kagawa/ayagawa
+  max_yen: 50000
+  rate: 1/2
+  rate_num: 0.5
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: イオンフィナンシャルサービスと契約する電子マネーWAON決済端末の導入に係る初期費用。月額利用料などは対象外
+  conditions: 町内に事業所がある中小企業者で、WAON決済端末を新たに導入する事業者。町税の滞納がないこと
+  period: {status: rolling}
+  url: https://www.town.ayagawa.lg.jp/docs/2025082700011/
+  checked: 2026-10-17
+  confidence: official
+  note: 要綱は令和7年7月1日告示第134号（同年10月1日改正）で、要綱・ページに終期の記載はない。町の「WAONチャージキャンペーン」（令和7年度）と連携した制度で、2026年度の町のキャンペーンは「AEON Pay」に切り替わっているため、今年度も受け付けているかは町（経済課 087-876-5282）に確認。WAON以外の決済端末やPOSレジは対象外
+
+# ---- 多度津町 ----
+- id: tadotsu-sangyo-digital
+  name: 多度津町産業振興支援補助事業（デジタル化）
+  org: 多度津町
+  area: kagawa/tadotsu
+  max_yen: 100000
+  rate: 2/3
+  rate_num: 0.667
+  targets: {efficiency: ○, consulting: ×, training: ×}
+  expenses: 業務効率化や生産性向上を目的とするデジタル技術の導入。具体的な対象経費（ソフトウェア購入・クラウド利用料・機器など）の区分は町のページに記載がなく、要綱も公開されていない
+  conditions: 町内に住所（法人は本社か主たる事業所）があり、3年以上町内で継続して事業を営む中小企業者。創業セミナー等の受講で3年未満でも可。事業実施前に申請し、交付決定後に着手。年度末までに完了する事業が対象
+  period: {status: open, start: 2026-04-01, end: 2027-03-31}
+  next_expected: 2027-04
+  url: https://www.town.tadotsu.kagawa.jp/shigoto_sangyo/shokogyo/kigyo_sogyoshien/2478.html
+  checked: 2026-10-17
+  confidence: official
+  note: 5つのメニュー（自社PRツール作成・新商品新規事業の広告宣伝・展示会出展・知的財産権取得・デジタル化）から年度内に1つだけ選んで申請する。endは事業完了の期限（年度末）で、申請の締切日と予算額は示されていない。補助金交付後5年をめどに町の状況調査があり、翌年度に状況報告書の提出が必要。生成AIサービスの利用料が対象かは町（産業課 0877-33-1113）に事前確認。補助金情報サイトでは令和7年度に上限20万円と掲載されていたが、令和8年度の町のページではデジタル化の上限は10万円。next_expectedは今年度の時期からの推測
