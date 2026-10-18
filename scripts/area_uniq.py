@@ -8,6 +8,7 @@
     python3 scripts/area_uniq.py tokushima          # 徳島の全ページ
     python3 scripts/area_uniq.py kochi              # 高知の全ページ
     python3 scripts/area_uniq.py aomori             # 青森の全ページ
+    python3 scripts/area_uniq.py iwate              # 岩手の全ページ（ファイル名の日付は 2026-10-18）
 
 目安は固有60%以上。下回るページは、国・県の制度の説明や FAQ の定型の回答を、その市町の事情に合わせて書き直す。
 """
@@ -19,8 +20,10 @@ def paras(p):
     body=open(p).read().split('---',2)[2]
     return [(x, any(f in x for f in FIXED)) for x in (y.strip() for y in re.split(r"\n\s*\n",body)) if len(x)>=40 and not x.startswith(('#','!','['))]
 args=sys.argv[1:]
-PREF=args.pop(0) if args and args[0] in ('ehime','kagawa','tokushima','kochi','aomori') else 'ehime'
-files=sorted(glob.glob(ROOT+f'2026-10-17-area-{PREF}*.md'))
+PREF=args.pop(0) if args and args[0] in ('ehime','kagawa','tokushima','kochi','aomori','iwate') else 'ehime'
+# 県ごとにファイル名の日付が違う（四国・青森は 2026-10-17、岩手は 2026-10-18）ので日付は問わない
+files=sorted(glob.glob(ROOT+f'2026-10-??-area-{PREF}.md')+glob.glob(ROOT+f'2026-10-??-area-{PREF}-*.md'))
+DATE={os.path.basename(f)[:10] for f in files}.pop() if files else '2026-10-17'
 P={f:paras(f) for f in files}
 def best(f,x):
     b=(0,'')
@@ -31,7 +34,7 @@ def best(f,x):
                 r=SequenceMatcher(None,x,y,autojunk=False).ratio()
                 if r>b[0]: b=(r,g)
     return b
-targets=[ROOT+f'2026-10-17-area-{PREF}-{s}.md' for s in args] or files
+targets=[ROOT+f'{DATE}-area-{PREF}-{s}.md' for s in args] or files
 for f in targets:
     total=sum(len(x) for x,_ in P[f]); dup=fixed=0; rows=[]
     for x,fx in P[f]:
