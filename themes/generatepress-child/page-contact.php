@@ -98,11 +98,17 @@ add_action( 'wp_head', function() {
 		color: #fff;
 		font-size: 10px;
 		font-weight: 700;
-		padding: 2px 7px;
+		line-height: 18px;
+		padding: 0 7px;
 		border-radius: 4px;
 		margin-left: 6px;
-		vertical-align: middle;
+		vertical-align: 1px;
 	}
+	.cf7-label .wpcf7-form-control-wrap {
+		display: block;
+		margin-top: 8px;
+	}
+	.cf7-label br { display: none; }
 	.cp-form-box .wpcf7-form input[type="text"],
 	.cp-form-box .wpcf7-form input[type="email"],
 	.cp-form-box .wpcf7-form input[type="tel"],
@@ -146,14 +152,19 @@ add_action( 'wp_head', function() {
 		font-size: .9rem;
 		color: #4a4a6a;
 	}
-	.cf7-acceptance-wrap .wpcf7-acceptance {
+	.cf7-acceptance-wrap .wpcf7-list-item {
+		margin: 0;
+	}
+	.cf7-acceptance-wrap .wpcf7-list-item label {
 		display: flex;
 		align-items: center;
 		gap: 10px;
+		cursor: pointer;
 	}
 	.cf7-acceptance-wrap input[type="checkbox"] {
 		width: 18px;
 		height: 18px;
+		margin: 0;
 		accent-color: #1a56db;
 		flex-shrink: 0;
 		cursor: pointer;
