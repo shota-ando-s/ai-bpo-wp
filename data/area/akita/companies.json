@@ -1,0 +1,777 @@
+{
+ "_meta": {
+  "checked": "2026-10-18",
+  "scope": "秋田県25市町村。本社（公式サイトの本社/所在地）が当該市町村にあり、公式サイトで受託システム開発・ソフトウェア開発・Web制作・ITサービスを事業として明示する法人。県外に本社がある会社の県内支店・事業所・開発センター・サテライトオフィスは載せない（県外にも拠点を持つ県内本社の会社はnotesに記載）。県内に本社がある大手の100%子会社（ジェイテクトIT開発センター秋田）は載せ、親会社をnotesに書いた。OA機器・事務用品販売が主業の会社、広告代理店、映像・3DCG制作専業、通信工事、製造業は本表に入れず _reference に置いた。各市町村の本表は最大5社、秋田市は上位13社を本表に、残りを _reference に置いた。",
+  "candidate_sources": [
+   "一般社団法人秋田県情報産業協会（AIIA）の会員企業紹介（約50社。従業員数・掲載時点の記載なし。県外本社の会社の秋田支店・営業所・開発センターを多く含む） https://aiia.or.jp/",
+   "秋田県『情報関連企業ガイドブック2026』（情報サービス業・インターネット付随サービス業・映像制作業ほか、索引に市町村別の掲載企業一覧）。所在地・設立・資本金・従業員数は各社の提供値で、記事の規模の値には使わず候補の抽出と照合に使った https://www.pref.akita.lg.jp/pages/archive/8922",
+   "同ガイドブックの2021年版（p1-47）と令和7年度版の索引（市町村別） https://www.pref.akita.lg.jp/uploads/public/archive_0000008922_00/2021情報関連企業ガイドブック_p1-47.pdf",
+   "全国法人検索（houjin.goo.to、国税庁の法人番号データにもとづく）の秋田県『IT業界』一覧（57社） https://houjin.goo.to/corporations/prefs/akita/category-it/list",
+   "WebSearch（担当上限12回のうち10回を使用）"
+  ],
+  "search_limits": "規模・所在地・事業内容は各社の公式サイトで確認した。県のガイドブック・AIIA名簿・houjin.goo の値は本表の規模に使っていない（ガイドブックの値は _reference と notes に参考として書いた箇所がある）。houjin.goo は公式URLが伏せ字のため、公式サイトはAIIA名簿のリンク、ガイドブックのメールアドレスのドメイン、ドメインの推測で探した。公式サイトが開けなかった会社（403・TLSエラー）、公式URLが見つからなかった会社、会社概要に所在地がない会社は本表に入れず _reference に置いた。町村部は名簿・ガイドブック・houjin.goo・WebSearchに出た分だけで、個人事業主・小規模なWeb制作者は網羅していない。WebFetchで読めないShift_JISのページ（三協情報センター）やリダイレクトだけのページは curl でHTMLを取得して読んだ。",
+  "ordering": "従業員数（公式）の多い順 → 従業員数がない会社は資本金（公式）→ どちらもない会社は最後。"
+ },
+ "akita-city": [
+  {
+   "name": "北日本コンピューターサービス株式会社",
+   "hq": "秋田県秋田市南通築地15番32号",
+   "municipality": "秋田市",
+   "town": "南通築地",
+   "employees": {
+    "value": 233,
+    "as_of": "令和7年9月30日現在",
+    "source": "https://www.kitacom.co.jp/company/company"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.kitacom.co.jp/company/company"
+   },
+   "founded": 1969,
+   "business_summary": "自治体向けの生活保護システム『ふれあい』（全国の都道府県・市区町に導入、導入実績No.1と記載）、福祉総合システム、滞納管理システム、貸付システム、電子照会プラットフォーム『PiMS』の開発・販売・サポート。売上高63.9億円（令和7年9月期）",
+   "ai_initiative": "生活保護に関する質問にAIが回答案を示す『WAISE』、AI搭載FAQシステム『ふれあいコンシェルジュ』（トップページの製品一覧）",
+   "url": "https://www.kitacom.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-18",
+   "notes": "1969年5月設立。事業所は札幌市・仙台市・さいたま市・大阪市・福岡市（関東支社・関西支社）。秋田県情報産業協会の会長会社（代表取締役社長 江畑佳明）。"
+  },
+  {
+   "name": "株式会社シグマソリューションズ",
+   "hq": "秋田県秋田市卸町三丁目4番1号",
+   "municipality": "秋田市",
+   "town": "卸町",
+   "employees": {
+    "value": 172,
+    "as_of": "2026年4月1日現在（男性120名・女性52名）",
+    "source": "https://www.sigma-sol.co.jp/company/index.html"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.sigma-sol.co.jp/company/index.html"
+   },
+   "founded": 1949,
+   "business_summary": "病医院・歯科医院・調剤薬局向けのコンピュータシステム（調剤システム、電子薬歴『エリシアS』、電子カルテなど）の開発・販売・サポート。売上高39億7,074万円（2026年3月期）",
+   "ai_initiative": "音声認識と生成AIで患者との会話から薬歴のSOAPを作成する『medimo AI薬歴』をリリース（2025年4月22日のお知らせ。エリシアSの電子薬歴と連携）",
+   "url": "https://www.sigma-sol.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-18",
+   "notes": "1949年7月設立、1981年7月にコンピュータ事業開始。沿革に札幌営業所・仙台支店・宇都宮営業所・八戸サポートセンターなど県外の拠点。"
+  },
+  {
+   "name": "株式会社フィデア情報総研",
+   "hq": "秋田県秋田市旭北錦町2番1号",
+   "municipality": "秋田市",
+   "town": "旭北錦町",
+   "employees": {
+    "value": 150,
+    "as_of": "時点なし（採用ページ）",
+    "source": "https://fir.co.jp/recruit/"
+   },
+   "capital": {
+    "value": "5,000万円",
+    "source": "https://fir.co.jp/company/profile/"
+   },
+   "founded": 1974,
+   "business_summary": "ITソリューション事業（金融機関・自治体向けシステム）、データセンタ事業、地域政策コンサルティング、企業経営コンサルティング、景気動向調査などのシンクタンク業務",
+   "ai_initiative": null,
+   "url": "https://fir.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-18",
+   "notes": "1974年2月に羽後銀行と富士通の共同出資で『羽後電子計算センター』として設立。株主はフィデアホールディングス（東証プライム）。山形支社（山形市）・仙台事務所・鶴岡事務所（県外）、由利本荘営業所。会社情報ページに『AI技術の開発・活用にこれまで以上に注力』とあるが、AIの製品・サービスの記載は確認できなかったため ai_initiative は null。従業員数は会社概要になく採用ページの値。"
+  },
+  {
+   "name": "エイデイケイ富士システム株式会社",
+   "hq": "秋田県秋田市手形字山崎110番地3",
+   "municipality": "秋田市",
+   "town": "手形",
+   "employees": {
+    "value": 116,
+    "as_of": "時点なし（グループ従業員数147名は2025年10月時点）",
+    "source": "https://www.adf.co.jp/company/overview/"
+   },
+   "capital": {
+    "value": "8,000万円",
+    "source": "https://www.adf.co.jp/company/overview/"
+   },
+   "founded": 1982,
+   "business_summary": "システム開発（国・自治体・各産業）、クラウドサービス、ソリューション、ITコンサルティング、IT機器販売、情報インフラ構築。中小建設業向けDXプラットフォーム『SiteEye』。売上高20.5億円（2025年9月期）",
+   "ai_initiative": "SiteEyeの『工事写真台帳サービス』で『AIが台帳作成を支援』と記載（製品一覧）。ADF Vision2030に『自社AIサービスの開発』",
+   "url": "https://www.adf.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-18",
+   "notes": "略称ADK富士システム。1982年1月設立。DXセンター（秋田市大町）、豊田事業所。"
+  },
+  {
+   "name": "株式会社アチカ",
+   "hq": "秋田県秋田市川尻町字大川反170番地179",
+   "municipality": "秋田市",
+   "town": "川尻町",
+   "employees": {
+    "value": 95,
+    "as_of": "2025年12月1日現在",
+    "source": "https://www.atika.co.jp/about/"
+   },
+   "capital": {
+    "value": "3,300万円",
+    "source": "https://www.atika.co.jp/about/"
+   },
+   "founded": 1990,
+   "business_summary": "自治体向けパッケージ（Asyz）の導入・運用支援、クラウドサービス、地理情報サービス、システム開発",
+   "ai_initiative": null,
+   "url": "https://www.atika.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-18",
+   "notes": "1990年4月に『アチカ・ソフト』として設立。2009年にイトダコンピュータ（大仙市）と合併し大仙支社。能代事業所。2026年10月に岩手オフィス（滝沢市IPUイノベーションセンター）を開設（県外）。資本金は沿革の最新の増資額（3,300万円）。"
+  },
+  {
+   "name": "株式会社ジェイテクトIT開発センター秋田",
+   "hq": "秋田県秋田市中通四丁目2番7号 日本生命秋田中央通ビル3F",
+   "municipality": "秋田市",
+   "town": "中通",
+   "employees": {
+    "value": 79,
+    "as_of": "2025年4月現在",
+    "source": "https://www.jtekt-ita.com/company/"
+   },
+   "capital": {
+    "value": "5,000万円",
+    "source": "https://www.jtekt-ita.com/company/"
+   },
+   "founded": 2017,
+   "business_summary": "電子制御機器のソフトウェア・ハードウェアの開発・設計・評価。電動パワーステアリング用組込みソフト、AUTOSAR対応OS、自動運転車用操舵ユニット向けソフト、パワーアシストスーツなどの受託",
+   "ai_initiative": null,
+   "url": "https://www.jtekt-ita.com/",
+   "size_basis": "employees",
+   "checked": "2026-10-18",
+   "notes": "**株式会社ジェイテクト（本社 愛知県刈谷市）の100%出資子会社**として2017年9月に登記。本店は秋田市だが親会社の開発拠点としての性格が強い。"
+  },
+  {
+   "name": "株式会社日情秋田システムズ",
+   "hq": "秋田県秋田市山王六丁目1-1 山王マークワン5階",
+   "municipality": "秋田市",
+   "town": "山王",
+   "employees": {
+    "value": 72,
+    "as_of": "時点なし（男性66名・女性6名）",
+    "source": "https://www.nas-akita.co.jp/company/"
+   },
+   "capital": {
+    "value": "3,000万円",
+    "source": "https://www.nas-akita.co.jp/company/"
+   },
+   "founded": 1986,
+   "business_summary": "システム・ソフトウェアの開発・設計・販売、システムコンサルテーション、情報機器販売・導入保守、クラウドサービス、労働者派遣。主要取引先に日立システムズ・県内自治体",
+   "ai_initiative": null,
+   "url": "https://www.nas-akita.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-18",
+   "notes": "1986年4月に『エヌビーシー秋田システムズ』として設立。東京営業所（県外）。2023年5月に本社移転。"
+  },
+  {
+   "name": "株式会社アルファシステム",
+   "hq": "秋田県秋田市外旭川字四百刈2-6",
+   "municipality": "秋田市",
+   "town": "外旭川",
+   "employees": {
+    "value": 50,
+    "as_of": "時点なし",
+    "source": "https://www.alpha-sy.jp/company/"
+   },
+   "capital": null,
+   "founded": 1993,
+   "business_summary": "クリニック・調剤薬局・病院向け医療情報システム（日医標準レセプトソフトなど）の販売・開発・サポート、フレイル健診システム、医療MaaS（仙北市の『せんぼくヘルスケアDX』の委託事業者）",
+   "ai_initiative": null,
+   "url": "https://www.alpha-sy.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-18",
+   "notes": "1993年創業。2026年10月に代表取締役社長が交代。茨城支店など県外の支店あり（2021年のガイドブックでは埼玉支店・新潟オフィス・東京オフィス）。資本金は会社概要に記載なし。"
+  },
+  {
+   "name": "株式会社トラパンツ",
+   "hq": "秋田県秋田市旭北栄町1-48",
+   "municipality": "秋田市",
+   "town": "旭北栄町",
+   "employees": {
+    "value": 49,
+    "as_of": "時点なし",
+    "source": "https://www.torapants.co.jp/company"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.torapants.co.jp/company"
+   },
+   "founded": 2000,
+   "business_summary": "ホームページの企画・制作・運営、CMSなどオリジナルシステムの設計・開発、スマホアプリ開発、Web広告運用、DTP、映像・3DCG制作、イベント運営",
+   "ai_initiative": null,
+   "url": "https://www.torapants.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-18",
+   "notes": "2000年2月創業。**岩手オフィス（盛岡市）・青森オフィス（青森市）**（県外）。Web・映像制作の比重が大きい。"
+  },
+  {
+   "name": "山二システムサービス株式会社",
+   "hq": "秋田県秋田市仁井田新田二丁目16-13",
+   "municipality": "秋田市",
+   "town": "仁井田新田",
+   "employees": {
+    "value": 44,
+    "as_of": "2026年4月1日現在",
+    "source": "https://yamani-system.co.jp/company/"
+   },
+   "capital": {
+    "value": "2,000万円",
+    "source": "https://yamani-system.co.jp/company/"
+   },
+   "founded": 1976,
+   "business_summary": "医療情報サービス（医療事務のノウハウを生かしたシステム）、地方公共団体情報サービス、システムソリューションサービス",
+   "ai_initiative": null,
+   "url": "https://yamani-system.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-18",
+   "notes": "1976年1月設立。青森営業所（県外）。会社概要の社長メッセージでAI技術に触れるが、AIの製品・サービスの記載はない。"
+  },
+  {
+   "name": "株式会社秋田県農協電算センター",
+   "hq": "秋田県秋田市大町三丁目2番41号",
+   "municipality": "秋田市",
+   "town": "大町",
+   "employees": {
+    "value": 44,
+    "as_of": "令和8年4月1日現在（男性32名・女性12名）",
+    "source": "https://ja-akitadc.com/company/"
+   },
+   "capital": {
+    "value": "4億6,000万円",
+    "source": "https://ja-akitadc.com/company/"
+   },
+   "founded": 1981,
+   "business_summary": "秋田県内JAグループの信用・購買・販売事業などのシステムの企画・開発・保守、ネットワーク・サーバーの構築・保守、JA職員向け研修",
+   "ai_initiative": null,
+   "url": "https://ja-akitadc.com/",
+   "size_basis": "employees",
+   "checked": "2026-10-18",
+   "notes": "JA秋田電算センター。株主は県内12JA・JA秋田中央会・全農・厚生連・全共連。JAグループ向けの情報システムが中心で、外部向けの受託開発は確認できない（岩手県の岩手県農協情報電算センターと同じ扱い）。"
+  },
+  {
+   "name": "株式会社アキタネット",
+   "hq": "秋田県秋田市東通仲町2番12号",
+   "municipality": "秋田市",
+   "town": "東通仲町",
+   "employees": {
+    "value": 40,
+    "as_of": "2023年11月現在（パート・アルバイト含む。やや古い）",
+    "source": "https://www.akitanet.co.jp/company/"
+   },
+   "capital": {
+    "value": "1,300万円",
+    "source": "https://www.akitanet.co.jp/company/"
+   },
+   "founded": 1999,
+   "business_summary": "ソフトウェアシステムの設計・開発・運用支援、ウェブサイト構築、iDCサービス（ISP・ホスティング）、SE/PG派遣、パッケージ販売、Webリサーチ・行政の意識調査、データ入力などのアウトソーシング、就労継続支援B型事業所",
+   "ai_initiative": null,
+   "url": "https://www.akitanet.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-18",
+   "notes": "1999年7月創立。社外取締役にノリット・ジャポン代表。"
+  },
+  {
+   "name": "株式会社アキタシステムマネジメント",
+   "hq": "秋田県秋田市八橋鯲沼町1-60",
+   "municipality": "秋田市",
+   "town": "八橋",
+   "employees": {
+    "value": 38,
+    "as_of": "令和8年4月1日現在（男性33名・女性5名）",
+    "source": "https://asm.co.jp/corporate"
+   },
+   "capital": {
+    "value": "3,000万円",
+    "source": "https://asm.co.jp/corporate"
+   },
+   "founded": 1985,
+   "business_summary": "IBM特約店（県内唯一のIBMビジネスパートナーと記載）、コンピュータの販売・保守、製造・運輸・小売業などのソフトウェア開発・販売、ネットワーク構築・運用・監視",
+   "ai_initiative": null,
+   "url": "https://asm.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-18",
+   "notes": "1985年4月に三傳商事から独立。"
+  }
+ ],
+ "noshiro": [
+  {
+   "name": "ジーアイトレース株式会社",
+   "hq": "秋田県能代市常盤字堂回90 TENOHA能代",
+   "municipality": "能代市",
+   "town": "常盤",
+   "employees": null,
+   "capital": null,
+   "founded": 2024,
+   "business_summary": "Web制作、動画制作、グラフィックデザイン、印刷、イベント企画・運営、SNSなどの運用代行",
+   "ai_initiative": null,
+   "url": "https://gi-tres.co.jp/",
+   "size_basis": "none",
+   "checked": "2026-10-18",
+   "notes": "2024年4月設立。公式に従業員数・資本金の記載なし（県の情報関連企業ガイドブック2026では5名・資本金300万円）。Web・動画制作中心でシステム開発の記載はない。"
+  }
+ ],
+ "yokote": [
+  {
+   "name": "渡敬情報システム株式会社",
+   "hq": "秋田県横手市横手町大関越92",
+   "municipality": "横手市",
+   "town": "横手町",
+   "employees": {
+    "value": 41,
+    "as_of": "時点なし（他に取締役6名）",
+    "source": "https://www.wisco-wp.jp/pages/2/"
+   },
+   "capital": {
+    "value": "2,000万円",
+    "source": "https://www.wisco-wp.jp/pages/2/"
+   },
+   "founded": 1991,
+   "business_summary": "受託ソフトウェア開発、自社パッケージ開発、Microsoft 365／Azure、コンピュータ機器販売・保守、ネットワーク設計・工事、業務パッケージの導入・操作指導、IT経営コンサルティング。年商7億6,000万円",
+   "ai_initiative": null,
+   "url": "https://www.wisco-wp.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-18",
+   "notes": "1991年8月に株式会社渡敬（横手市卸町、事務機器）から分離独立。トップページに生成AIをテーマにした『デジタル化経営セミナー』の告知（2026年10月14日、本荘会場）があるがAIの製品・サービスではないため ai_initiative は null。"
+  },
+  {
+   "name": "株式会社デジタル・ウント・メア",
+   "hq": "秋田県横手市朝倉町6-20",
+   "municipality": "横手市",
+   "town": "朝倉町",
+   "employees": null,
+   "capital": {
+    "value": "3,100万円",
+    "source": "https://www.und-meer.com/company/"
+   },
+   "founded": 1999,
+   "business_summary": "Webシステムを中心としたシステム開発（官公庁向けの実績）、自治体関係のネットワーク構築・保守、自社プロダクト（配車管理『配車コネクト』など）",
+   "ai_initiative": "システム開発サービスに『AI』を掲げ、AI・スマートグラスなど新技術を使ったサービスづくりを記載。トップページのコラムでローカルLLM・OCRのAI開発検証（2026年10月）",
+   "url": "https://www.und-meer.com/",
+   "size_basis": "capital",
+   "checked": "2026-10-18",
+   "notes": "1999年6月に個人企業として開業、2003年株式会社化。横手事業所・秋田事業所（秋田市）、**東京事務所（千代田区）・土浦事業所（茨城県）**（県外）。グループ会社 デジタル・アセット（病理診断システム）。従業員数は公式に記載なし。代表取締役社長はAIIA理事。"
+  },
+  {
+   "name": "株式会社アイ・クリエイト",
+   "hq": "秋田県横手市安田向田202",
+   "municipality": "横手市",
+   "town": "安田",
+   "employees": null,
+   "capital": {
+    "value": "2,000万円",
+    "source": "https://ai-create.net/company/"
+   },
+   "founded": 1954,
+   "business_summary": "マーケティング支援（集客・採用・ブランディング）、Web・紙媒体のクリエイティブ制作、アプリ・システム開発、AIソリューション。生産センター（横手市神明町）",
+   "ai_initiative": "サービス一覧に『AIソリューション』。トップページに『最新のAI＆IT活用で生産性向上とコスト最適化』",
+   "url": "https://ai-create.net/",
+   "size_basis": "capital",
+   "checked": "2026-10-18",
+   "notes": "1954年9月設立（印刷業が起点とみられる）。関連会社 アートピア（横手市）。公式に従業員数の記載なし（県の情報関連企業ガイドブック2026では35名）。"
+  },
+  {
+   "name": "有限会社アルゴシステム",
+   "hq": "秋田県横手市婦気大堤字婦気52番地",
+   "municipality": "横手市",
+   "town": "婦気大堤",
+   "employees": null,
+   "capital": null,
+   "founded": 1996,
+   "business_summary": "システム設計開発、マイコン応用開発、Windowsアプリケーション開発、制御・装置連携・データ収集の受託開発、製品開発（音声文字化『JVoice2Text』）",
+   "ai_initiative": "『AI教室』（出張AI教室、ローカルLLMの比較コンテンツ。2026年9月公開）",
+   "url": "https://argo-system.co.jp/",
+   "size_basis": "none",
+   "checked": "2026-10-18",
+   "notes": "1996年4月創業。公式に従業員数・資本金の記載なし。"
+  },
+  {
+   "name": "株式会社パワーネット",
+   "hq": "秋田県横手市駅南2-4-3",
+   "municipality": "横手市",
+   "town": "駅南",
+   "employees": null,
+   "capital": null,
+   "founded": 2001,
+   "business_summary": "システム開発・デザイン、モバイルアプリ・Webアプリ開発、ホームページ制作、サーバー構築、映像制作・ライブ配信、PCサポート、講習・コンサルティング",
+   "ai_initiative": null,
+   "url": "https://www.powernet.jp/",
+   "size_basis": "none",
+   "checked": "2026-10-18",
+   "notes": "2001年10月に有限会社横手ネットワーク研究所として設立、2012年4月に商号変更。一般第二種電気通信事業者。公式に従業員数・資本金の記載なし。"
+  }
+ ],
+ "odate": [
+  {
+   "name": "東光コンピュータ・サービス株式会社",
+   "hq": "秋田県大館市御成町四丁目8番10号",
+   "municipality": "大館市",
+   "town": "御成町",
+   "employees": {
+    "value": 74,
+    "as_of": "時点なし（男58名・女16名）",
+    "source": "https://www.tcs.tokogrp.co.jp/company_prof/"
+   },
+   "capital": {
+    "value": "6,000万円",
+    "source": "https://www.tcs.tokogrp.co.jp/company_prof/"
+   },
+   "founded": 1984,
+   "business_summary": "ソフトウェアのシステム設計開発、自社パッケージの全国販売（森林組合向け総合業務パッケージ『樹海』、小・中学校向けソフト）、ネットワーク構築、富士通ソリューションディーラー",
+   "ai_initiative": null,
+   "url": "https://www.tcs.tokogrp.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-18",
+   "notes": "1984年7月設立。関連会社 チェンジホールディングス（東京都港区）。秋田支店（秋田市）・能代営業所・鹿角営業所。"
+  }
+ ],
+ "oga": [
+  {
+   "name": "ソフトアドバンス株式会社",
+   "hq": "秋田県男鹿市船川港船川字新浜町47 テノハ男鹿203号室",
+   "municipality": "男鹿市",
+   "town": "船川港船川",
+   "employees": null,
+   "capital": {
+    "value": "500万円",
+    "source": "https://www.softadvance.co.jp/about"
+   },
+   "founded": 2001,
+   "business_summary": "業務用システムの企画・コンサルティング・開発、自社開発ソフトウェアの開発・販売。主要取引先 エイデイケイ富士システム",
+   "ai_initiative": "トップページに『生成AIを活用した』業務アプリ開発、『生成AIで、本格的な業務アプリを』。生成AI時代の業務アプリ基盤『Aurum』（会社案内）",
+   "url": "https://www.softadvance.co.jp/",
+   "size_basis": "capital",
+   "checked": "2026-10-18",
+   "notes": "2001年10月に秋田市土崎港で設立。創立25周年を機に男鹿市にスタジオを開設し本社を移転（以前は秋田市手形字山崎）。従業員数の記載なし。"
+  }
+ ],
+ "yuzawa": [],
+ "kazuno": [],
+ "yurihonjo": [
+  {
+   "name": "ボナンザクリエイト合同会社",
+   "hq": "秋田県由利本荘市石脇字山ノ神11-449",
+   "municipality": "由利本荘市",
+   "town": "石脇",
+   "employees": null,
+   "capital": null,
+   "founded": 2019,
+   "business_summary": "Webサイトの企画・制作、Webシステムの企画・構築・運用、印刷物のデザイン・印刷、マルチメディアコンテンツ、サーバーレンタル・保守、広告企画",
+   "ai_initiative": null,
+   "url": "https://bnzc.co.jp/",
+   "size_basis": "none",
+   "checked": "2026-10-18",
+   "notes": "2013年2月に事業開始、2019年3月に法人化。電気通信事業者。デザイン・印刷の比重が大きい。公式に従業員数・資本金の記載なし。"
+  }
+ ],
+ "katagami": [],
+ "daisen": [
+  {
+   "name": "有限会社伊藤ソフトデザイン",
+   "hq": "秋田県大仙市太田町三本扇字篠沢45-2",
+   "municipality": "大仙市",
+   "town": "太田町",
+   "employees": null,
+   "capital": {
+    "value": "500万円",
+    "source": "https://www.itosoft.com/ja/about_us"
+   },
+   "founded": 1990,
+   "business_summary": "iOSアプリ開発（FA装置・IoT機器とiPad/iPhoneをつなぐ『irBoard』『ioTouch 2』『irPanel』）、制御系ソフトウェア開発、Webアプリ開発",
+   "ai_initiative": null,
+   "url": "https://www.itosoft.com/ja/",
+   "size_basis": "capital",
+   "checked": "2026-10-18",
+   "notes": "1990年9月に建設業（おおう重機）として創業、1998年にソフトウェア業を開始、2004年に商号変更。小規模（2021年の県ガイドブックでは1名）。"
+  }
+ ],
+ "kitaakita": [],
+ "nikaho": [],
+ "semboku": [
+  {
+   "name": "有限会社インフォテック",
+   "hq": "秋田県仙北市角館町上菅沢458-1",
+   "municipality": "仙北市",
+   "town": "角館町",
+   "employees": null,
+   "capital": {
+    "value": "300万円",
+    "source": "https://info-tech.jp/company_profile/"
+   },
+   "founded": 1999,
+   "business_summary": "パソコンサポート（個人・法人）、パソコン講習、中古パソコン販売、ホームページ制作、情報セキュリティ",
+   "ai_initiative": null,
+   "url": "https://info-tech.jp/",
+   "size_basis": "capital",
+   "checked": "2026-10-18",
+   "notes": "1996年10月にパソコンサポートクリックとして創業、1999年8月法人化。システム開発の記載はなく、PCサポート・Web制作中心。"
+  }
+ ],
+ "kosaka": [],
+ "mitane": [],
+ "happo": [],
+ "gojome": [],
+ "hachirogata": [
+  {
+   "name": "CLALIS合同会社",
+   "hq": "秋田県南秋田郡八郎潟町字一日市88-2",
+   "municipality": "八郎潟町",
+   "town": "一日市",
+   "employees": null,
+   "capital": {
+    "value": "30万円",
+    "source": "https://clalis.jp/company/"
+   },
+   "founded": 2025,
+   "business_summary": "パソコン教室・修理、データ復旧・復元、Webサイト制作、デザイン・映像制作、ゲーム・アプリ制作",
+   "ai_initiative": null,
+   "url": "https://clalis.jp/",
+   "size_basis": "capital",
+   "checked": "2026-10-18",
+   "notes": "2003年開設の『net．パソコン教室』を2025年1月にCLALIS合同会社に改称。個人規模。"
+  }
+ ],
+ "ikawa": [],
+ "misato": [],
+ "ugo": [],
+ "fujisato": [],
+ "kamikoani": [],
+ "ogata": [],
+ "higashinaruse": [],
+ "_reference": {
+  "akita-city": {
+   "next_candidates": [
+    {
+     "name": "株式会社ビー・エス・サイトー",
+     "employees": "23名（時点なし）",
+     "capital": "1,500万円",
+     "note": "ITシステム構築・保守、ネットワーク構築、ソフトウェア開発・業務ツール作成、セキュリティ。1971年創業（文具事務機器の販売が起点）。秋田市川尻新川町9-35。トップページに生成AIの安全ルールの記事（AIの製品・サービスではない）。",
+     "source": "https://www.bss-web.co.jp/about/"
+    },
+    {
+     "name": "株式会社エイチ・アイ・ティ",
+     "employees": "22名（2026年1月）",
+     "capital": "1,000万円",
+     "note": "ソフトウェアのシステム開発（会計・人事給与など）、労働者派遣、導入コンサル。秋田市山王3丁目1-7 東カンビル7階。2004年設立。",
+     "source": "https://a-hit.co.jp/ove/"
+    },
+    {
+     "name": "株式会社インフォミディアリ",
+     "employees": "4名（時点なし）",
+     "capital": "記載なし",
+     "note": "Webサイト制作、システム開発、PC修理・データ復旧、ICTサポート。秋田市手形字中谷地308 三田ビルディング3号。2007年設立。",
+     "source": "https://infomediary.jp/company"
+    },
+    {
+     "name": "株式会社オクトライズ",
+     "employees": "1名（時点なし）",
+     "capital": "999万円",
+     "note": "**AIによる業務自動化システム、独自AIモデル開発・独自推論API構築、各種AIシステム**、スマホ・Web・Windowsアプリ開発、DX・AX伴走支援。秋田市外旭川野村207-1。2008年創業。1名のため本表外。",
+     "source": "https://www.octrise.co.jp/company"
+    },
+    {
+     "name": "株式会社テクノス秋田",
+     "employees": "公式に記載なし",
+     "capital": "8,000万円",
+     "note": "ICTサポートサービス、アウトソーシング、3Dシステム開発、教育サービス。秋田市中通5丁目1番50号 AFSビルディング4階。2016年設立。株主に日本テクノス・秋田銀行・北都銀行など、東京営業所（八王子市）。",
+     "source": "https://www.tks-akita.co.jp/company/summary/"
+    },
+    {
+     "name": "株式会社エスツー",
+     "employees": "公式に記載なし",
+     "capital": "1,000万円（沿革の最新増資）",
+     "note": "データセンター事業（仙台・秋田）、ホスティング、ふるさと納税受付『ふるさとぷらす』、システム開発・デザイン。2006年仙台で設立、2017年に本社を秋田市中通3丁目3-10へ移転。仙台・東京OFFICE。**『秋田AIデータセンター構想』を推進（2026年8月6日のお知らせ、日経報道）**。AIの製品・サービスではなくAI向けデータセンター計画。",
+     "source": "https://www.esu2.co.jp/corporate/"
+    },
+    {
+     "name": "株式会社サン・システムズコーポレーション",
+     "employees": "公式に記載なし",
+     "capital": "1,000万円",
+     "note": "システム受託開発、パッケージソフト（健康・医療、特定健診）、Web制作。秋田市御所野元町3-8-11。1998年設立。横浜・浜松に事業所。",
+     "source": "https://ssc-main.co.jp/wp/about-us/"
+    },
+    {
+     "name": "有限会社ソフトエーピー",
+     "employees": "公式に記載なし",
+     "capital": "620万円",
+     "note": "医療機関用ソフトの受託開発、一般企業向けシステム開発、ネットワーク構築。秋田市手形十七流122-4。1999年設立。",
+     "source": "https://www.soft-ap.co.jp/company/index.html"
+    },
+    {
+     "name": "有限会社システムブレーン",
+     "employees": "公式に記載なし",
+     "capital": "500万円",
+     "note": "コンピュータシステムの紹介・提案・納入・アフターサービス。秋田市山王6-21-3。1995年設立。販売・導入中心。",
+     "source": "http://www.system-brain.co.jp/"
+    },
+    {
+     "name": "株式会社グリュックス",
+     "employees": "公式に記載なし",
+     "capital": "300万円",
+     "note": "組込み〜Webのソフト開発、ファンクラブ管理システム、無線データ通信『V-NET』、電子配車表『ロジ郎オンライン』、こどもプログラミングスクール。秋田市川尻大川町1-25。",
+     "source": "https://glucks.jp/company/"
+    },
+    {
+     "name": "株式会社三協情報センター",
+     "employees": "公式に記載なし",
+     "capital": "公式に記載なし",
+     "note": "官公庁・県内農協団体・一般企業向けの情報処理。秋田市大町三丁目3番15号。1988年設立。公式サイトはShift_JISのためcurlで取得。",
+     "source": "http://www.sankyojoho.co.jp/sjc/SubPage2.html"
+    },
+    {
+     "name": "株式会社システムソリューション",
+     "employees": "公式に記載なし",
+     "capital": "公式に記載なし",
+     "note": "木材業向け統合システム『木材角銘』（全国約120社導入と記載）、クラウドサービス、受託設計・開発。秋田市外旭川字四百刈22番地-7号室。",
+     "source": "https://www.sys-sol.jp/company/"
+    },
+    {
+     "name": "有限会社クリック",
+     "employees": "公式に記載なし",
+     "capital": "公式に記載なし",
+     "note": "ホームページ制作・保守、システム開発、ホスティング。秋田市山王7-4-13 拓朋ビル、由利本荘市にサテライトオフィス。1998年設立。",
+     "source": "https://www.click-inc.co.jp/about/index.htm"
+    },
+    {
+     "name": "株式会社ケーエンジニアリング",
+     "employees": "公式に記載なし",
+     "capital": "公式に記載なし",
+     "note": "計測機器・情報機器の開発（ハード・ソフト）、熊箱罠の捕獲検知通報など。秋田県産業技術センター開放研究室。",
+     "source": "https://www.k-engi.com/about"
+    }
+   ],
+   "excluded_business": [
+    {
+     "name": "株式会社アイネックス",
+     "note": "108名（令和6年6月1日現在）・資本金6,000万円。秋田市牛島西1-4-5。オフィス家具・空間コーディネートとOA機器が主で、DX推進事業部がある。OA・オフィス販売中心のため本表外。",
+     "source": "https://www.inecx.co.jp/outline/company/"
+    },
+    {
+     "name": "ノリット・ジャポン株式会社",
+     "note": "29名（2026年3月1日時点）・資本金3,800万円。地域プロジェクト・広告・クリエイティブ。食品事業者向け『現場AI導入術セミナー』の告知あり。広告会社のため本表外。",
+     "source": "https://www.norit.jp/about/"
+    },
+    {
+     "name": "株式会社メル・デジタル",
+     "note": "16人・資本金100万円。映画・ゲーム・CMの3DCG・VFX制作、2020年にWEB事業部。映像・3DCG制作中心のため本表外。",
+     "source": "https://www.meldigital.jp/company"
+    },
+    {
+     "name": "ファイオン株式会社",
+     "note": "資本金510万円。現在は吹き替え・AI学習用の日本語音声収録が中心で、開発会社ではないため本表外。",
+     "source": "https://www.phiomn.com/"
+    },
+    {
+     "name": "富士フイルムBI秋田株式会社",
+     "note": "AIIA会員。複合機・ITソリューションの販売・サービス会社で本表外（公式の会社概要は未確認）。",
+     "source": "https://www.fujifilm-fbakita.com/"
+    },
+    {
+     "name": "株式会社秋田ケーブルテレビ",
+     "note": "CATV・通信事業者のため本表外。",
+     "source": "https://www.cna.ne.jp"
+    }
+   ],
+   "unverified": [
+    {
+     "name": "株式会社シンタ",
+     "note": "AIIA会員（2021年ガイドブックでは13名）。公式サイト http://www.sinta-nc.net/ が403で未確認。"
+    },
+    {
+     "name": "株式会社システムクリエイト",
+     "note": "houjin.goo のIT業界（秋田市山王中島町）。https://www.sys-create.co.jp/ が403で未確認。"
+    },
+    {
+     "name": "株式会社ライトカフェU.",
+     "note": "県の情報関連企業ガイドブック2026に本社 秋田市中通2-4-15、2023年3月設立とあるが、公式サイトは親会社 ライトカフェ（本社 東京都渋谷区）のグループ会社一覧にしか見つからず、本社所在地を公式で確認できない。"
+    },
+    {
+     "name": "株式会社デジタル・アセット",
+     "note": "病理組織診断・細胞診断のシステム。公式の住所は秋田市山王6丁目3-3（デジタル・ウント・メア秋田事務所内）、houjin.goo では横手市朝倉町6-20。従業員は『社員3名（2012年4月現在）』と古い。デジタル・ウント・メアのグループ会社。",
+     "source": "https://digitalasset.jp/company.html"
+    },
+    {
+     "name": "株式会社セビアス・株式会社アルテミオシステム・株式会社アペックス・株式会社wise company・株式会社泰商システム・有限会社ティー・アイ・ティー・有限会社アクセス・フューチュア・エレクトロニクス株式会社",
+     "note": "houjin.goo の秋田県IT業界に出たが、公式URLが伏せ字で、ドメインの推測でも公式サイトを見つけられなかった。"
+    }
+   ],
+   "excluded_outside_hq": [
+    {
+     "name": "株式会社アイ・セプト",
+     "note": "本社 愛知県名古屋市（秋田オフィスは秋田市千秋明徳町）。",
+     "source": "https://www.i-cept.jp/company/outline/"
+    },
+    {
+     "name": "株式会社ぴーぷる",
+     "note": "本社 東京都台東区（秋田オフィス・北秋田オフィス、遠野・盛岡など）。",
+     "source": "https://www.people.co.jp/company/profile/"
+    },
+    {
+     "name": "株式会社テラ",
+     "note": "本社は神奈川県（公式の沿革。秋田AI/DXセンターが秋田市）。AIシフト作成システム『FloWork』。",
+     "source": "https://www.terracom.co.jp/company/"
+    },
+    {
+     "name": "シー・スリー・アイ株式会社",
+     "note": "本社 東京都世田谷区（秋田デジタルイノベーションセンター）。大館市の生成AI研修を実施。",
+     "source": "https://c3i.jp/corporate/"
+    },
+    {
+     "name": "その他",
+     "note": "SCSKニアショアシステムズ（東京）、NS・コンピュータサービス（新潟県長岡市）、エス・エフ・ティー（神奈川県大和市）、JNシステムパートナーズ・ブロードバンドセキュリティ・リコーITソリューションズ・ロジスティードソリューションズ・DONUTS・マイティークラフト・スーパーセカンズ・テラスカイ・ビジネスシステムサービス・フリーテクノロジー・Lei Hau'oli・アイ・エム・サービス・日本事務開発・バイトルヒクマ（東京・神奈川など）、リンクステーション（青森）、アイシーエス秋田支店（盛岡）、日立・富士通・NEC・NTT東日本・リコージャパン等の秋田支店。県のガイドブック・AIIA名簿の記載による（各社の本社は県外）。"
+    }
+   ]
+  },
+  "noshiro": {
+   "note": "株式会社ラッセル（houjin.goo の能代市後谷地。公式サイト https://www.russell.co.jp/ はトップの挨拶だけで会社概要・所在地がなく未確認）。合同会社ゴーゴーウェブマーケット（県の情報関連企業ガイドブック令和7年度の索引で能代市。公式URLを見つけられず未確認）。株式会社ハムセンター秋田・株式会社綜合通信（houjin.goo では通信業界、公式未確認）。株式会社イースペース（能代市下野、PC修理・ブロードバンドショップで対象外）。アチカ能代事業所、東光コンピュータ・サービス能代営業所は県内他市本社。"
+  },
+  "odate": {
+   "note": "株式会社本質（県の情報関連企業ガイドブック2026では大館市上代野 MORK 2F、2025年4月設立、資本金100万円、**生成AI活用支援・DX伴走支援**。公式サイト https://honshitsu.co.jp/ が403で未確認。AIの会社として記事で触れる場合は公式の確認が必要）。株式会社電創システム（houjin.goo のIT業界、50〜100人。公式 http://www.denso-system.co.jp/ が403で未確認）。オピシステム通信工業株式会社・株式会社エイネット・システムズ・株式会社TOMUSHI（houjin.goo のIT業界・通信機器業界。公式URLを見つけられず未確認）。",
+   "source": "https://www.pref.akita.lg.jp/pages/archive/8922"
+  },
+  "yokote": {
+   "note": "株式会社アクトラス（横手市旭川2丁目2-32、1996年設立。電子機器の設計・製造受託（EMS）、組込み・DX/IoT、映像制作。公式に従業員数・資本金なし〔県ガイドブック2026では22名・3,300万円〕。製造の比重が大きく本表外）。有限会社テクノプライズ（横手市杉沢字狼ノ沢39、2000年設立。パソコンシステム開発、光回線・プロバイダ、ネットワーク施工、Web制作。規模記載なし。5社を超えるため本表外）。株式会社渡敬（事務機器、渡敬情報システムの親会社）は対象外。",
+   "source": "https://www.actlas.co.jp/company.html"
+  },
+  "yuzawa": {
+   "note": "株式会社ロイヤルパソコンシステム（湯沢市愛宕町2丁目31-2。県ガイドブック2026では2015年5月設立・資本金600万円・6名、システムインテグレーション。公式 https://rp-sys.co.jp/ がTLSエラーで未確認）。株式会社たなか（本社 湯沢市横堀字旭町1、文教ソリューション・OA機器・事務用品。旧フォラックス教育のURLが転送される。販売中心で対象外）。株式会社Surpass（Salesforce導入支援。県の誘致企業で湯沢市は分拠点、本社県外）。T-Solutions株式会社（本社 山形県山形市、2021年ガイドブック）。",
+   "source": "https://tanakaved.co.jp/outline/"
+  },
+  "daisen": {
+   "note": "BlueBuddy（ITコンサル・システム開発、PM支援。公式の住所は東京オフィス（新宿区）と秋田大曲オフィス（大仙市大曲中通町）の併記で本社の表記がなく、県の令和7年度新規立地企業に大仙市として掲載。県外からの進出とみて本表外）。株式会社Lei Hau'oli 大仙サテライトオフィス（本社 東京都渋谷区）。アチカ大仙支社。",
+   "source": "https://bluebuddy.jp/about"
+  },
+  "semboku": {
+   "note": "嘉創株式会社（秋田支店が仙北市角館町、本社 東京都中央区。県ガイドブック2026）。株式会社リベンリ（本社 神奈川県藤沢市、角館に拠点を計画。県の誘致企業資料）。アルファシステム（秋田市）が仙北市の医療MaaSを受託。"
+  },
+  "yurihonjo": {
+   "note": "有限会社スリービーテクノ・有限会社ドゥーベスト（houjin.goo のIT業界・通信業界。公式URLを見つけられず未確認。https://www.dobest.co.jp/ は別会社の株式会社ドゥ・ベスト）。有限会社クリック（秋田市）のサテライトオフィス、フィデア情報総研の由利本荘営業所。"
+  },
+  "oga": {
+   "note": "株式会社男鹿なび（男鹿市公認観光情報サイトの運営で対象外）。株式会社山王電機製作所（コネクター・医療機器ケーブルの製造で対象外）。"
+  },
+  "kitaakita": {
+   "note": "GAOGAO株式会社（本社 東京都港区、北秋田市は分拠点。県の誘致企業資料 R80326）。ぴーぷるの北秋田オフィス（本社 東京）。北秋田市に本社の開発会社は見つからなかった。"
+  },
+  "kosaka": {
+   "note": "十和田オーディオ株式会社（houjin.goo では通信機器業界。音響・電子機器の製造で対象外）。"
+  },
+  "kazuno": {
+   "note": "東光コンピュータ・サービス（大館市）の鹿角営業所のみ。"
+  },
+  "nikaho": {
+   "note": "2021年の県ガイドブックで東光コンピュータ・サービスのにかほ市の拠点の記載のみ。にかほ市に本社の開発会社は見つからなかった。"
+  }
+ },
+ "_notes": [
+  "AIIA（秋田県情報産業協会）の会員約50社のうち、半数近くが県外本社の会社の秋田支店・営業所・開発センター（SCSKニアショアシステムズ、日立系、富士通Japan、NEC、NTT東日本、リコージャパンなど）。県の情報関連企業ガイドブックも県外本社の秋田拠点を多く載せている。記事では公式サイトの値だけを使う。",
+  "県外にも拠点を持つ県内本社の会社: 北日本コンピューターサービス（札幌・仙台・さいたま・大阪・福岡）、シグマソリューションズ（札幌・仙台・宇都宮・八戸など）、フィデア情報総研（山形・仙台・鶴岡）、アチカ（岩手オフィス、2026年10月）、日情秋田システムズ（東京営業所）、アルファシステム（茨城など）、トラパンツ（盛岡・青森）、山二システムサービス（青森営業所）、デジタル・ウント・メア（東京・土浦）、サン・システムズコーポレーション（横浜・浜松）、テクノス秋田（八王子）、エスツー（仙台・東京）。親会社がある会社: ジェイテクトIT開発センター秋田（ジェイテクトの100%子会社）、フィデア情報総研（フィデアHD）、東光コンピュータ・サービス（関連会社 チェンジホールディングス）、秋田県農協電算センター（県内JA等）。",
+  "AIを公式に明記している会社（本表）: 北日本コンピューターサービス（秋田市、生活保護のAI回答案『WAISE』・AI搭載FAQ『ふれあいコンシェルジュ』）、シグマソリューションズ（秋田市、生成AIで薬歴を作る『medimo AI薬歴』2025年4月）、エイデイケイ富士システム（秋田市、工事写真台帳のAI支援、自社AIサービス開発の方針）、デジタル・ウント・メア（横手市、システム開発でAI、ローカルLLMの検証）、アイ・クリエイト（横手市、AIソリューション）、アルゴシステム（横手市、出張AI教室・ローカルLLM比較）、ソフトアドバンス（男鹿市、生成AIを活用した業務アプリ開発・基盤『Aurum』）。_reference: オクトライズ（秋田市、独自AIモデル開発・AI業務自動化。1名）、本質（大館市、生成AI活用支援。公式403で未確認）、エスツー（秋田市、秋田AIデータセンター構想）。AIに触れる程度: フィデア情報総研（会社情報で『AI技術の開発・活用に注力』）、渡敬情報システム（生成AIセミナー）、ビー・エス・サイトー（生成AIの記事）、山二システムサービス（社長メッセージ）、ノリット・ジャポン（現場AI導入術セミナー）。",
+  "本社の会社が公式で確認できた市町村は、秋田市・能代市・横手市・大館市・男鹿市・由利本荘市・大仙市・仙北市・八郎潟町の9市町。湯沢市（ロイヤルパソコンシステムがTLSエラー）は候補があったが公式で確認できなかった。鹿角市・潟上市・北秋田市・にかほ市・小坂町・三種町・八峰町・五城目町・井川町・美郷町・羽後町・藤里町・上小阿仁村・大潟村・東成瀬村は候補自体が見つからなかった（県外本社の拠点や対象外の業種のみ）。",
+  "秋田市以外の本表の会社はほとんどが従業員数を公式に載せていない（横手市の渡敬情報システム41名、大館市の東光コンピュータ・サービス74名だけ）。県の情報関連企業ガイドブック2026には各社が提供した従業員数があるが、記事では『県のガイドブックによる』と出典を書かない限り使わない。",
+  "社名の表記: エイデイケイ富士システムは公式サイトで『ADK富士システム』と表記。秋田県農協電算センターは『JA秋田電算センター』。houjin.goo の所在地が公式と違う例: 日情秋田システムズ（2023年5月に本社移転）、アイネックス、ソフトアドバンス（秋田市→男鹿市）、デジタル・アセット。"
+ ]
+}
