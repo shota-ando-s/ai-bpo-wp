@@ -11,10 +11,10 @@
 - [x] scripts/area_uniq.py に iwate を追加（glob を日付非依存に。aomori で動作確認）
 - [x] 調査（data/area/iwate/）: stats.md, stats_labor.md, gov_ai.md, gov_ai_b.md, subsidy_a.yml, subsidy_a_areas.md, subsidy_b.yml, subsidy_b_areas.md, companies.json, companies.md, cases.md, cases_outside.md, serp.md
 - [x] 執筆仕様 docs/area-writing-spec-iwate.md
-- [ ] 記事 34本（県1＋市町村33）
+- [x] 記事 34本（県1＋市町村33）
 - [x] data/subsidies/iwate.yml（46制度）、areas.yml、build_shindan_data.py
-- [x] 地域ガイド（commit済）、[ ] area-todo.md（下書き scratchpad/todo_iwate.md）
-- [ ] チェック（check_article / extract_claims / area_uniq）
+- [x] 地域ガイド（commit済）、[x] area-todo.md
+- [x] チェック（全34ページ check_article・extract_claims --check-links ERROR 0、area_uniq 固有64.4%以上）
 - [ ] コミット・push（area-iwate）
 
 ## 実績メモ
@@ -35,3 +35,4 @@
 - W10 県ページ完了（17,064字、ERROR 0、WS0）／W1 盛岡10,787字・滝沢8,687字 完了（ERROR 0、WS0）
 - W8（北上・花巻・西和賀）・W2（八幡平・雫石・紫波・矢巾）・W7（大船渡・陸前高田・遠野・住田、WS2）・W5（岩泉・田野畑・普代・野田）完了。残りW3・W4・W6・W9
 - 全34ページ執筆完了（W3・W4〔WS1〕・W6・W9〔WS2〕）。WebSearch 合計128（調査123＋W7 2＋W9 2＋W4 1、親0）
+- 2026-10-18: 仕上げ（市町→市町村の表記修正3か所、area-todo.md・area-new-prefecture.md 更新）。origin/main を取り込んで push
