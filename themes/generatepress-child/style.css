@@ -1,7 +1,7 @@
 /*
 Theme Name: GeneratePress Child
 Template: generatepress
-Version: 1.3
+Version: 1.4
 */
 
 /* =============================
@@ -822,6 +822,25 @@ a:active {
   display: block;
   width: 100%;
   height: auto;
+}
+
+/* スマホ: 目次の直後にバナーを出し、本文の下に回ったサイドバー側は隠す */
+.content-cta-sp {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .content-cta-sp {
+    display: block;
+    max-width: 400px;
+    margin: 28px auto;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .sidebar-cta {
+    display: none;
+  }
 }
 
 /* =============================

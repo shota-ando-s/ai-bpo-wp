@@ -459,16 +459,46 @@ add_filter( 'generate_sidebar_layout', function( $layout ) {
 	return $layout;
 } );
 
+/**
+ * 無料相談の正方形バナー（サイドバーと、スマホ時の本文内で共用）
+ *
+ * @return string
+ */
+function hikitsugi_cta_banner() {
+	return '<a href="' . esc_url( home_url( '/contact/' ) ) . '" class="sidebar-cta-banner">'
+		. '<img src="' . esc_url( get_stylesheet_directory_uri() . '/images/sidebar-cta.webp' ) . '" width="640" height="640" alt="無料相談受付中 AIで毎日の業務をスリム化。まずはお気軽にご相談ください。専門スタッフが課題を整理します。無料で相談する">'
+		. '</a>';
+}
+
+// 投稿・診断・地域ページ: スマホではサイドバーが本文の下に回るので、目次の直後にも同じバナーを出す（PCではCSSで隠す）
+// 目次は Easy Table of Contents が the_content の優先度100で差し込むため、それより後で処理する
+add_filter( 'the_content', function ( $content ) {
+	if ( ! hikitsugi_has_blog_sidebar() || ! in_the_loop() || ! is_main_query() ) {
+		return $content;
+	}
+	$banner = '<div class="content-cta-sp">' . hikitsugi_cta_banner() . '</div>';
+	$toc    = strpos( $content, 'id="ez-toc-container"' );
+	if ( false !== $toc ) {
+		$end = strpos( $content, '</nav></div>', $toc );
+		if ( false !== $end ) {
+			$end += strlen( '</nav></div>' );
+			return substr( $content, 0, $end ) . $banner . substr( $content, $end );
+		}
+	}
+	// 目次がないページは最初の見出しの前に置く
+	$h2 = strpos( $content, '<h2' );
+	if ( false !== $h2 ) {
+		return substr( $content, 0, $h2 ) . $banner . substr( $content, $h2 );
+	}
+	return $content;
+}, 101 );
+
 // 投稿・診断・地域ページ: サイドバーにCTA・ピックアップ・カテゴリを出力
 add_action( 'generate_before_right_sidebar_content', function() {
 	if ( ! hikitsugi_has_blog_sidebar() ) return;
 	?>
 
-	<div class="sidebar-widget sidebar-cta">
-		<a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="sidebar-cta-banner">
-			<img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/images/sidebar-cta.webp' ); ?>" width="640" height="640" alt="無料相談受付中 AIで毎日の業務をスリム化。まずはお気軽にご相談ください。専門スタッフが課題を整理します。無料で相談する">
-		</a>
-	</div>
+	<div class="sidebar-widget sidebar-cta"><?php echo hikitsugi_cta_banner(); ?></div>
 
 	<?php
 	// ピックアップ記事：プラグイン ai-bpo-pickup のチェックが入った投稿。表示形式はランキングと共通
