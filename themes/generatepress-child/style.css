@@ -1,7 +1,7 @@
 /*
 Theme Name: GeneratePress Child
 Template: generatepress
-Version: 1.5
+Version: 1.6
 */
 
 /* =============================
@@ -824,8 +824,9 @@ a:active {
   height: auto;
 }
 
-/* スマホ: 目次の直後にバナーを出し、本文の下に回ったサイドバー側は隠す */
-.content-cta-sp {
+/* スマホ: 目次の直後と「AI活用診断」の見出しの前にバナーを出し、本文の下に回ったサイドバー側は隠す */
+.content-cta-sp,
+.content-tools-sp {
   display: none;
 }
 
@@ -838,7 +839,16 @@ a:active {
     overflow: hidden;
   }
 
-  .sidebar-cta {
+  .content-tools-sp {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 28px auto;
+  }
+
+  .sidebar-cta,
+  body:has(.content-tools-sp) .sidebar-tools {
     display: none;
   }
 }

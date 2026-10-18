@@ -470,12 +470,33 @@ function hikitsugi_cta_banner() {
 		. '</a>';
 }
 
+/**
+ * 補助金診断・地域別ガイドへの横長バナー2枚（サイドバーと、スマホ時の本文内で共用）
+ *
+ * @return string
+ */
+function hikitsugi_tool_banners() {
+	$img = get_stylesheet_directory_uri() . '/images/';
+	return '<a class="sidebar-tool" href="' . esc_url( home_url( '/shindan/' ) ) . '">'
+		. '<img src="' . esc_url( $img . 'sidebar-shindan.webp' ) . '" width="709" height="225" loading="lazy" alt="無料ツール AI導入の補助金診断。所在地と費用から、使える補助金と実質の自己負担を試算します">'
+		. '</a>'
+		. '<a class="sidebar-tool" href="' . esc_url( home_url( '/area/' ) ) . '">'
+		. '<img src="' . esc_url( $img . 'sidebar-area.webp' ) . '" width="709" height="228" loading="lazy" alt="地域別ガイド 全国の地域別AI導入ガイド。都道府県・市区町村ごとの補助金、人手不足、事業承継のデータをまとめています">'
+		. '</a>';
+}
+
 // 投稿・診断・地域ページ: スマホではサイドバーが本文の下に回るので、目次の直後にも同じバナーを出す（PCではCSSで隠す）
 // 目次は Easy Table of Contents が the_content の優先度100で差し込むため、それより後で処理する
 add_filter( 'the_content', function ( $content ) {
 	if ( ! hikitsugi_has_blog_sidebar() || ! in_the_loop() || ! is_main_query() ) {
 		return $content;
 	}
+	// 地域ページ末尾の「まずは無料のAI活用診断から」の見出しの前に、補助金診断・地域別ガイドのバナーを置く
+	if ( preg_match( '#<h2\b(?:(?!</h2>).)*?AI活用診断#su', $content, $m, PREG_OFFSET_CAPTURE ) ) {
+		$pos     = $m[0][1];
+		$content = substr( $content, 0, $pos ) . '<div class="content-tools-sp">' . hikitsugi_tool_banners() . '</div>' . substr( $content, $pos );
+	}
+
 	$banner = '<div class="content-cta-sp">' . hikitsugi_cta_banner() . '</div>';
 	$toc    = strpos( $content, 'id="ez-toc-container"' );
 	if ( false !== $toc ) {
@@ -531,14 +552,7 @@ add_action( 'generate_before_right_sidebar_content', function() {
 	</div>
 	<?php endif; ?>
 
-	<div class="sidebar-widget sidebar-tools">
-		<a class="sidebar-tool" href="<?php echo esc_url( home_url( '/shindan/' ) ); ?>">
-			<img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/images/sidebar-shindan.webp' ); ?>" width="709" height="225" loading="lazy" alt="無料ツール AI導入の補助金診断。所在地と費用から、使える補助金と実質の自己負担を試算します">
-		</a>
-		<a class="sidebar-tool" href="<?php echo esc_url( home_url( '/area/' ) ); ?>">
-			<img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/images/sidebar-area.webp' ); ?>" width="709" height="228" loading="lazy" alt="地域別ガイド 全国の地域別AI導入ガイド。都道府県・市区町村ごとの補助金、人手不足、事業承継のデータをまとめています">
-		</a>
-	</div>
+	<div class="sidebar-widget sidebar-tools"><?php echo hikitsugi_tool_banners(); ?></div>
 
 	<div class="sidebar-widget sidebar-categories">
 		<h3 class="sidebar-widget-title">カテゴリ</h3>
