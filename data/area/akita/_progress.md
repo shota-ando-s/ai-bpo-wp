@@ -15,10 +15,10 @@
 ## 状態
 - [x] data/area/akita/wages.md（岩手版の全国値をコピー）
 - [x] scripts/area_uniq.py に akita を追加
-- [ ] 調査（data/area/akita/）
-- [ ] 執筆仕様 docs/area-writing-spec-akita.md
+- [x] 調査（data/area/akita/）
+- [x] 執筆仕様 docs/area-writing-spec-akita.md
 - [ ] 記事 26本（県1＋市町村25）
-- [ ] data/subsidies/akita.yml、areas.yml、build_shindan_data.py
+- [x] data/subsidies/akita.yml（46制度）、areas.yml、build_shindan_data.py
 - [ ] 地域ガイド、area-todo.md
 - [ ] チェック（check_article・extract_claims --check-links ERROR 0、area_uniq 固有60%以上）
 - [ ] コミット・投稿・デプロイ
@@ -35,3 +35,5 @@
 - subsidy_b 6（完了: 25制度。上乗せなし。DX向け: 東成瀬村 地域経済活性化〔DX導入1/2・50万〕、美郷町 持続化支援〔1/2・300万〕・ネット販売、八峰町 生産性向上〔〜10/30〕、三種町 設備投資〔9/24再開〕。井川・羽後・藤里・八郎潟・上小阿仁・小坂はIT向けなし）
 - subsidy_a 5（完了: 21制度 official。受付中7〔県デジタル化導入支援 4次〜10/23・製造業等は対象外、秋田市 賃上げ基盤強化〔デジタル推進50万〕〜11/30、能代 ICT 〜1/31、大館 DX 〜10/30、由利本荘 イノベーション、潟上×2〕、随時8。上乗せなし。男鹿・仙北は独自制度なし〔仙北はリンク切れ〕。県域機関は あきた企業活性化センター）
 - gov_b 16（完了: gov_ai_b.md。湖東3町商工会＝五城目・八郎潟・井川。大潟村は商工会なし〔任意団体 大潟村商工振興会〕。北秋田市 阿仁AIデマンドタクシー実証2026/10/1〜、仙北市 AIカメラ乗降調査2023・DX推進ラボ、三種町チャットボット、羽後町 クマAIカメラ実証2024、上小阿仁村 自動運転〔AIではない〕、大潟村 たまねぎスマート農業実証に村が参加）。調査WebSearch合計113、残り87
+- 執筆開始: W1 秋田市・潟上市／W2 能代・三種・八峰・藤里／W3 大館・北秋田・上小阿仁／W4 鹿角・小坂／W5 男鹿・五城目・八郎潟・井川・大潟／W6 由利本荘・にかほ／W7 大仙・仙北・美郷／W8 横手・湯沢・羽後・東成瀬／W9 県ページ（各WebSearch 3回まで）
+- 利用上限で執筆担当が全員停止（ファイルは0本）。19:16 に全員へ SendMessage で再開を依頼
