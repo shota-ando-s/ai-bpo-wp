@@ -85,6 +85,76 @@ $lp_latest_posts = get_posts( array(
 $lp_pickup = array_map( $lp_map_post, $lp_pickup_posts );
 $lp_latest = array_map( $lp_map_post, $lp_latest_posts );
 
+/**
+ * 地域ページへのリンク：/area/ の子（都道府県）と孫（市区町村）のうち公開中のもの。
+ * ページを公開すれば自動でここに加わる。
+ * 表示名と市区町村の並びは補助金診断のデータ（areas.yml から作る subsidies.json）に合わせ、
+ * そこに無いページはタイトルの「◯◯のAI導入」から名前を取って末尾に並べる。
+ */
+$lp_areas    = array();
+$lp_area_url = home_url( '/area/' );
+$lp_area_top = get_page_by_path( 'area' );
+if ( $lp_area_top && 'publish' === $lp_area_top->post_status ) {
+	$names = array(); // 'ehime' / 'ehime/matsuyama' => 表示名
+	$order = array(); // 同上 => 並び順
+	$json  = WP_PLUGIN_DIR . '/hikitsugi-shindan/data/subsidies.json';
+	$data  = is_readable( $json ) ? json_decode( (string) file_get_contents( $json ), true ) : null;
+	foreach ( (array) ( $data['areas'] ?? array() ) as $pref ) {
+		$names[ $pref['code'] ] = $pref['name'];
+		foreach ( (array) ( $pref['cities'] ?? array() ) as $i => $city ) {
+			$names[ $city['code'] ] = $city['name'];
+			$order[ $city['code'] ] = $i;
+		}
+	}
+
+	// 都道府県は全国地方公共団体コード順（北から）
+	$pref_order = array_flip( array(
+		'hokkaido', 'aomori', 'iwate', 'miyagi', 'akita', 'yamagata', 'fukushima',
+		'ibaraki', 'tochigi', 'gunma', 'saitama', 'chiba', 'tokyo', 'kanagawa',
+		'niigata', 'toyama', 'ishikawa', 'fukui', 'yamanashi', 'nagano', 'gifu', 'shizuoka', 'aichi',
+		'mie', 'shiga', 'kyoto', 'osaka', 'hyogo', 'nara', 'wakayama',
+		'tottori', 'shimane', 'okayama', 'hiroshima', 'yamaguchi',
+		'tokushima', 'kagawa', 'ehime', 'kochi',
+		'fukuoka', 'saga', 'nagasaki', 'kumamoto', 'oita', 'miyazaki', 'kagoshima', 'okinawa',
+	) );
+
+	$name_of = function ( $page, $code ) use ( $names ) {
+		if ( isset( $names[ $code ] ) ) {
+			return $names[ $code ];
+		}
+		$title = get_the_title( $page );
+		return preg_match( '/^(.+?)(?:（[^）]*）)?の(?:AI導入|中小企業)/u', $title, $m ) ? $m[1] : $title;
+	};
+
+	$pages = get_pages( array(
+		'parent'      => $lp_area_top->ID,
+		'post_status' => 'publish',
+	) );
+	foreach ( $pages as $pref_page ) {
+		$cities = array();
+		foreach ( get_pages( array( 'parent' => $pref_page->ID, 'post_status' => 'publish' ) ) as $city_page ) {
+			$code     = $pref_page->post_name . '/' . $city_page->post_name;
+			$cities[] = array(
+				'name' => $name_of( $city_page, $code ),
+				'url'  => get_permalink( $city_page ),
+				'sort' => $order[ $code ] ?? PHP_INT_MAX,
+			);
+		}
+		usort( $cities, function ( $a, $b ) {
+			return array( $a['sort'], $a['name'] ) <=> array( $b['sort'], $b['name'] );
+		} );
+		$lp_areas[] = array(
+			'name'   => $name_of( $pref_page, $pref_page->post_name ),
+			'url'    => get_permalink( $pref_page ),
+			'sort'   => $pref_order[ $pref_page->post_name ] ?? PHP_INT_MAX,
+			'cities' => $cities,
+		);
+	}
+	usort( $lp_areas, function ( $a, $b ) {
+		return $a['sort'] <=> $b['sort'];
+	} );
+}
+
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>

@@ -36,3 +36,16 @@ $lp_latest = array(
 	$lp_dummy_post( 'オフボーディングを代行するという選択肢', '引き継ぎ', '2026-06-21' ),
 	$lp_dummy_post( '引き継ぎの進め方をゼロから組み立てる', '引き継ぎ', '2026-06-21' ),
 );
+
+$lp_areas = array(
+	array(
+		'name'   => '香川県',
+		'url'    => '#',
+		'cities' => array(
+			array( 'name' => '高松市', 'url' => '#' ),
+			array( 'name' => '丸亀市', 'url' => '#' ),
+			array( 'name' => '坂出市', 'url' => '#' ),
+		),
+	),
+	array( 'name' => '神奈川県', 'url' => '#', 'cities' => array( array( 'name' => '横浜市', 'url' => '#' ) ) ),
+);

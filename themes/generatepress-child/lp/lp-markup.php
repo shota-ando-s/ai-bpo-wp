@@ -22,6 +22,9 @@
  * @var string $lp_form_action フォームの送信先（未接続なので既定は '#'）
  * @var array  $lp_pickup      ピックアップ記事（空なら該当セクションごと出さない）
  * @var array  $lp_latest      新着記事（空なら該当セクションごと出さない）
+ * @var array  $lp_areas       地域ページ。[ 'name', 'url', 'cities' => [ [ 'name', 'url' ], ... ] ] の配列
+ *                             （空なら該当セクションごと出さない）
+ * @var string $lp_area_url    地域ガイド（/area/）のURL
  * @var string $lp_form_html   Contact Form 7 が出力したフォームHTML。
  *                             空なら静的フォーム（送信不可）にフォールバックする。
  *
@@ -43,6 +46,8 @@ if ( ! isset( $lp_form_action ) ) { $lp_form_action = '#'; }
 if ( ! isset( $lp_pickup ) )      { $lp_pickup      = array(); }
 if ( ! isset( $lp_latest ) )      { $lp_latest      = array(); }
 if ( ! isset( $lp_form_html ) )   { $lp_form_html   = ""; }
+if ( ! isset( $lp_areas ) )       { $lp_areas       = array(); }
+if ( ! isset( $lp_area_url ) )    { $lp_area_url    = '/area/'; }
 
 $u_home     = htmlspecialchars( $lp_home, ENT_QUOTES );
 $u_img      = htmlspecialchars( rtrim( $lp_img, '/' ), ENT_QUOTES );
@@ -877,6 +882,31 @@ $lp_corp = array(
 			<p style="margin:clamp(32px,7vw,52px) 0 0; text-align:center">
 				<a href="<?php echo $u_archives; ?>" class="lp-hv-navy-pale" style="display:inline-block; background:#FFFFFF; color:#0F2961; box-shadow:inset 0 0 0 1.5px #0F2961; border-radius:6px; padding:17px 34px; font-weight:700; font-size:clamp(14px,3.8vw,16px); line-height:1.4">記事一覧を見る</a>
 			</p>
+		</div>
+	</section>
+	<?php endif; ?>
+
+	<?php if ( ! empty( $lp_areas ) ) : ?>
+	<!-- ============================================================
+	     12 地域別のAI導入（都道府県・市区町村ページへのリンクだけ）
+	     ============================================================ -->
+	<section style="background:#F7F9FC; border-top:1px solid #DFE7F3">
+		<div style="max-width:1080px; margin:0 auto; padding:clamp(48px,9vw,88px) clamp(20px,5vw,40px)">
+			<h2 style="margin:0 0 clamp(24px,5vw,40px); <?php echo $s_h2; ?>"><a href="<?php echo htmlspecialchars( $lp_area_url, ENT_QUOTES ); ?>" style="color:inherit">地域別のAI導入</a></h2>
+			<div style="display:flex; flex-direction:column; gap:clamp(20px,4vw,28px)">
+				<?php foreach ( $lp_areas as $pref ) : ?>
+					<div>
+						<h3 style="margin:0 0 10px; font-size:clamp(15px,4vw,17px); font-weight:700; line-height:1.5">
+							<a href="<?php echo htmlspecialchars( $pref['url'], ENT_QUOTES ); ?>" style="color:#0F2961"><?php echo htmlspecialchars( $pref['name'], ENT_QUOTES ); ?></a>
+						</h3>
+						<?php if ( ! empty( $pref['cities'] ) ) : ?>
+							<p style="margin:0; font-size:clamp(13px,3.5vw,14px); line-height:2; color:#5A6376">
+								<?php foreach ( $pref['cities'] as $i => $city ) : ?><?php echo $i ? '<span aria-hidden="true" style="margin:0 6px; color:#B8C1D1">|</span>' : ''; ?><a href="<?php echo htmlspecialchars( $city['url'], ENT_QUOTES ); ?>" style="color:#2A4A8A; white-space:nowrap"><?php echo htmlspecialchars( $city['name'], ENT_QUOTES ); ?></a><?php endforeach; ?>
+							</p>
+						<?php endif; ?>
+					</div>
+				<?php endforeach; ?>
+			</div>
 		</div>
 	</section>
 	<?php endif; ?>
