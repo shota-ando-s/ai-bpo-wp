@@ -21,7 +21,7 @@
 - [x] data/subsidies/akita.yml（46制度）、areas.yml、build_shindan_data.py
 - [x] 地域ガイド、area-todo.md
 - [x] チェック（check_article・extract_claims --check-links ERROR 0、area_uniq 固有60%以上）
-- [ ] コミット・投稿・デプロイ
+- [x] コミット・投稿・デプロイ（2026-10-18、main 3452176）
 
 ## 実績メモ
 - 調査担当10人（stats_a/stats_b/gov_a/gov_b/subsidy_a/subsidy_b/companies/cases/cases_outside/serp）をバックグラウンドで起動。全員の結果を受け取りファイル確認してから執筆仕様へ
@@ -46,3 +46,4 @@
 - W8 横手市（10,218字・73.1%）・湯沢市（8,685・78.3%）・羽後町（6,551・65.3%）・東成瀬村（5,618・72.8%）完了、WS2。羽後町のクマAIカメラ出典（catv-jcta.jp PDF）が403でlink ERROR 1。調査時は本文を読めていた（gov_ai_b.mdに引用あり）
 - W1 秋田市（10,930字・77.0%）・潟上市（8,840・78.3%）完了、ERROR 0、WS3。県外事例に尾家産業（インフォマートAI-OCR事例）追加、ローカル5G実証はNTT東日本PDFで確認
 - 全26本の執筆完了。check_article は全ページ ERROR 0、area_uniq 固有65.3%以上。extract_claims は羽後町の catv-jcta.jp PDF（403）だけ ERROR。能代市のタクシー事業者の社名（ファイル名由来）は削除。地域ガイド・area-todo・area-new-prefecture を更新
+- 2026-10-18: 県ページ・25市町村・地域ガイドを投稿（全ページ200）。main に取り込んで deploy 済み
