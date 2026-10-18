@@ -32,3 +32,6 @@
 - WebSearch 調査合計 123（serp5 cases20 stats_a5 gov_a20 subsidy_b10 stats_b13 cases_outside18 subsidy_a9 companies7 gov_b16）。残り77
 - 執筆開始: W1 盛岡・滝沢／W2 八幡平・雫石・紫波・矢巾／W3 二戸・一戸・葛巻・岩手町／W4 久慈・洋野・軽米・九戸／W5 岩泉・田野畑・普代・野田／W6 宮古・釜石・山田・大槌／W7 大船渡・陸前高田・遠野・住田／W8 北上・花巻・西和賀／W9 一関・奥州・金ケ崎・平泉／W10 県ページ（各WebSearch 2回まで）
 - 13:48 利用上限で執筆担当が全員停止。21本できた（未着手: yahaba kuzumaki iwate-town karumai kunohe fudai noda yamada otsuchi sumita tono kanegasaki hiraizumi）。WIPコミットして担当を再開
+- W10 県ページ完了（17,064字、ERROR 0、WS0）／W1 盛岡10,787字・滝沢8,687字 完了（ERROR 0、WS0）
+- W8（北上・花巻・西和賀）・W2（八幡平・雫石・紫波・矢巾）・W7（大船渡・陸前高田・遠野・住田、WS2）・W5（岩泉・田野畑・普代・野田）完了。残りW3・W4・W6・W9
+- 全34ページ執筆完了（W3・W4〔WS1〕・W6・W9〔WS2〕）。WebSearch 合計128（調査123＋W7 2＋W9 2＋W4 1、親0）
