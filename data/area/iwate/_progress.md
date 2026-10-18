@@ -13,7 +13,7 @@
 - [x] 執筆仕様 docs/area-writing-spec-iwate.md
 - [ ] 記事 34本（県1＋市町村33）
 - [x] data/subsidies/iwate.yml（46制度）、areas.yml、build_shindan_data.py
-- [ ] 地域ガイド、area-todo.md
+- [x] 地域ガイド（commit済）、[ ] area-todo.md（下書き scratchpad/todo_iwate.md）
 - [ ] チェック（check_article / extract_claims / area_uniq）
 - [ ] コミット・push（area-iwate）
 
@@ -31,3 +31,4 @@
 - gov_b 16（完了: gov_ai_b.md）
 - WebSearch 調査合計 123（serp5 cases20 stats_a5 gov_a20 subsidy_b10 stats_b13 cases_outside18 subsidy_a9 companies7 gov_b16）。残り77
 - 執筆開始: W1 盛岡・滝沢／W2 八幡平・雫石・紫波・矢巾／W3 二戸・一戸・葛巻・岩手町／W4 久慈・洋野・軽米・九戸／W5 岩泉・田野畑・普代・野田／W6 宮古・釜石・山田・大槌／W7 大船渡・陸前高田・遠野・住田／W8 北上・花巻・西和賀／W9 一関・奥州・金ケ崎・平泉／W10 県ページ（各WebSearch 2回まで）
+- 13:48 利用上限で執筆担当が全員停止。21本できた（未着手: yahaba kuzumaki iwate-town karumai kunohe fudai noda yamada otsuchi sumita tono kanegasaki hiraizumi）。WIPコミットして担当を再開
