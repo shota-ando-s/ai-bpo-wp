@@ -465,12 +465,9 @@ add_action( 'generate_before_right_sidebar_content', function() {
 	?>
 
 	<div class="sidebar-widget sidebar-cta">
-		<div class="sidebar-cta-inner">
-			<span class="sidebar-cta-label">無料相談受付中</span>
-			<p class="sidebar-cta-title">AIで毎日の業務を<br>スリム化</p>
-			<p class="sidebar-cta-text">まずはお気軽にご相談ください。専門スタッフが課題を整理します。</p>
-			<a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="sidebar-cta-btn">無料で相談する →</a>
-		</div>
+		<a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="sidebar-cta-banner">
+			<img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/images/sidebar-cta.webp' ); ?>" width="640" height="640" alt="無料相談受付中 AIで毎日の業務をスリム化。まずはお気軽にご相談ください。専門スタッフが課題を整理します。無料で相談する">
+		</a>
 	</div>
 
 	<?php
@@ -544,7 +541,7 @@ function generate_add_footer_info() {
 		<span>&copy; <?php echo esc_html( date( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?></span>
 		<a href="<?php echo esc_url( home_url( '/shindan/' ) ); ?>">補助金診断</a>
 		<a href="<?php echo esc_url( home_url( '/area/' ) ); ?>">地域別AI導入ガイド</a>
-		<a href="<?php echo esc_url( home_url( '/privacy-policy/' ) ); ?>">プライバシーポリシー</a>
+		<a href="https://fuenn.co.jp/privacypolicy.html" target="_blank" rel="noopener">プライバシーポリシー</a>
 		<a href="<?php echo esc_url( home_url( '/#form' ) ); ?>">お問い合わせ</a>
 	</div>
 	<?php

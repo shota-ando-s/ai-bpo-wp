@@ -35,17 +35,6 @@ add_action( 'wp_head', function() {
 		padding: 72px 40px 64px;
 		text-align: center;
 	}
-	.cp-hero-eyebrow {
-		display: inline-block;
-		background: rgba(255,255,255,.15);
-		border: 1px solid rgba(255,255,255,.3);
-		border-radius: 50px;
-		padding: 5px 16px;
-		font-size: 12px;
-		font-weight: 600;
-		letter-spacing: .1em;
-		margin-bottom: 18px;
-	}
 	.cp-hero h1 {
 		font-size: clamp(1.6rem, 4vw, 2.4rem);
 		font-weight: 900;
@@ -56,36 +45,9 @@ add_action( 'wp_head', function() {
 		font-size: 1rem;
 		opacity: .85;
 		margin: 0 auto;
-		max-width: 500px;
+		max-width: 760px;
 		line-height: 1.7;
 	}
-
-	/* ===== 安心ポイント ===== */
-	.cp-trust {
-		background: #fff;
-		padding: 40px 40px 0;
-	}
-	.cp-trust-list {
-		display: flex;
-		gap: 16px;
-		justify-content: center;
-		flex-wrap: wrap;
-		list-style: none;
-		padding: 0;
-		margin: 0;
-	}
-	.cp-trust-list li {
-		display: flex;
-		align-items: center;
-		gap: 8px;
-		font-size: .9rem;
-		font-weight: 700;
-		color: #1a56db;
-		background: #f0f4ff;
-		border-radius: 50px;
-		padding: 10px 20px;
-	}
-	.cp-trust-list li span { font-size: 1.1rem; }
 
 	/* ===== フォームエリア ===== */
 	.cp-form-section {
@@ -136,11 +98,17 @@ add_action( 'wp_head', function() {
 		color: #fff;
 		font-size: 10px;
 		font-weight: 700;
-		padding: 2px 7px;
+		line-height: 18px;
+		padding: 0 7px;
 		border-radius: 4px;
 		margin-left: 6px;
-		vertical-align: middle;
+		vertical-align: 1px;
 	}
+	.cf7-label .wpcf7-form-control-wrap {
+		display: block;
+		margin-top: 8px;
+	}
+	.cf7-label br { display: none; }
 	.cp-form-box .wpcf7-form input[type="text"],
 	.cp-form-box .wpcf7-form input[type="email"],
 	.cp-form-box .wpcf7-form input[type="tel"],
@@ -184,14 +152,19 @@ add_action( 'wp_head', function() {
 		font-size: .9rem;
 		color: #4a4a6a;
 	}
-	.cf7-acceptance-wrap .wpcf7-acceptance {
+	.cf7-acceptance-wrap .wpcf7-list-item {
+		margin: 0;
+	}
+	.cf7-acceptance-wrap .wpcf7-list-item label {
 		display: flex;
 		align-items: center;
 		gap: 10px;
+		cursor: pointer;
 	}
 	.cf7-acceptance-wrap input[type="checkbox"] {
 		width: 18px;
 		height: 18px;
+		margin: 0;
 		accent-color: #1a56db;
 		flex-shrink: 0;
 		cursor: pointer;
@@ -322,12 +295,12 @@ add_action( 'wp_head', function() {
 	/* ===== モバイル調整 ===== */
 	@media (max-width: 768px) {
 		.cp-hero { padding: 56px 24px 48px; }
-		.cp-trust, .cp-form-section, .cp-faq-section { padding-left: 24px; padding-right: 24px; }
+		.cp-form-section, .cp-faq-section { padding-left: 24px; padding-right: 24px; }
 		.cp-inner { padding: 0 24px; }
 	}
 	@media (max-width: 480px) {
 		.cp-hero { padding: 48px 16px 40px; }
-		.cp-trust, .cp-form-section, .cp-faq-section { padding-left: 16px; padding-right: 16px; }
+		.cp-form-section, .cp-faq-section { padding-left: 16px; padding-right: 16px; }
 		.cp-inner { padding: 0 16px; }
 	}
 	</style>
@@ -342,23 +315,10 @@ get_header();
 	<!-- ===== Hero ===== -->
 	<section class="cp-hero">
 		<div class="cp-inner">
-			<div class="cp-hero-eyebrow">無料相談受付中</div>
-			<h1>お問い合わせ・<br>BPO無料相談</h1>
-			<p class="cp-hero-sub">業務内容をお聞かせください。AI化できる範囲と<br>削減コストの概算を無料でご提案します。</p>
+			<h1>お問い合わせ・無料相談</h1>
+			<p class="cp-hero-sub">当社のサービスにご関心をお寄せいただきありがとうございます。<br>ご相談からご提案まで全て無料で対応させていただきますので、何なりとお申し付けくださいませ。</p>
 		</div>
 	</section>
-
-	<!-- ===== 安心ポイント ===== -->
-	<div class="cp-trust">
-		<div class="cp-inner">
-			<ul class="cp-trust-list">
-				<li><span>🕐</span> 2営業日以内に返信</li>
-				<li><span>🔒</span> 秘密厳守・NDA対応可</li>
-				<li><span>💬</span> 初回相談は完全無料</li>
-				<li><span>📋</span> 見積もりだけでもOK</li>
-			</ul>
-		</div>
-	</div>
 
 	<!-- ===== フォームエリア ===== -->
 	<section class="cp-form-section">

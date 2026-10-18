@@ -36,7 +36,7 @@
 
 if ( ! isset( $lp_home ) )        { $lp_home        = '/'; }
 if ( ! isset( $lp_img ) )         { $lp_img         = '/wp-content/themes/generatepress-child/images/lp'; }
-if ( ! isset( $lp_privacy ) )     { $lp_privacy     = '/privacy-policy/'; }
+if ( ! isset( $lp_privacy ) )     { $lp_privacy     = 'https://fuenn.co.jp/privacypolicy.html'; }
 if ( ! isset( $lp_tokusho ) )     { $lp_tokusho     = '/tokushoho/'; }
 if ( ! isset( $lp_company ) )     { $lp_company     = 'https://fuenn.co.jp/'; }
 if ( ! isset( $lp_archives ) )    { $lp_archives    = '/archives/'; }
@@ -922,7 +922,7 @@ $lp_corp = array(
 				<p style="margin:0 0 6px; font-size:13px; line-height:1.9">株式会社ふえん</p>
 			</div>
 			<div style="display:flex; flex-direction:column; gap:12px">
-				<a href="<?php echo $u_privacy; ?>" class="lp-hv-white" style="color:#A3AFC4; font-size:13px">プライバシーポリシー</a>
+				<a href="<?php echo $u_privacy; ?>" target="_blank" rel="noopener" class="lp-hv-white" style="color:#A3AFC4; font-size:13px">プライバシーポリシー</a>
 				<a href="<?php echo $u_tokusho; ?>" class="lp-hv-white" style="color:#A3AFC4; font-size:13px">特定商取引法に基づく表記</a>
 				<a href="#company" class="lp-hv-white" style="color:#A3AFC4; font-size:13px">会社概要</a>
 				<a href="<?php echo $u_archives; ?>" class="lp-hv-white" style="color:#A3AFC4; font-size:13px">記事一覧</a>
