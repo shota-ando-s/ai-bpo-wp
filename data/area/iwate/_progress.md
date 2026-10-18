@@ -10,7 +10,7 @@
 - [x] data/area/iwate/wages.md（青森版の全国値をコピー）
 - [x] scripts/area_uniq.py に iwate を追加（glob を日付非依存に。aomori で動作確認）
 - [x] 調査（data/area/iwate/）: stats.md, stats_labor.md, gov_ai.md, gov_ai_b.md, subsidy_a.yml, subsidy_a_areas.md, subsidy_b.yml, subsidy_b_areas.md, companies.json, companies.md, cases.md, cases_outside.md, serp.md
-- [ ] 執筆仕様 docs/area-writing-spec-iwate.md
+- [x] 執筆仕様 docs/area-writing-spec-iwate.md
 - [ ] 記事 34本（県1＋市町村33）
 - [ ] data/subsidies/iwate.yml、areas.yml、build_shindan_data.py
 - [ ] 地域ガイド、area-todo.md
