@@ -14,11 +14,9 @@
 
 .env の OPENAI_API_KEY と WP_USER / WP_APP_PASSWORD を使う。
 """
-import json
 import os
 import re
 import sys
-import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import post  # noqa: E402
@@ -26,31 +24,6 @@ import post  # noqa: E402
 FIGURE = re.compile(
     r'<figure class="wp-block-image[^"]*\b(?:h2-section-image|intro-image)\b[^"]*">\s*'
     r'<img src="([^"]+)" alt="([^"]*)"')
-QUESTION = (
-    "Does this image contain a map of any kind: a map, a coastline, an island or landmass shape, "
-    "terrain seen from above, or the outline of a country, prefecture, city or region? "
-    "Answer with exactly one word: YES or NO."
-)
-
-
-def has_map(image_url):
-    body = json.dumps({
-        "model": "gpt-4o-mini",
-        "max_tokens": 3,
-        "messages": [{"role": "user", "content": [
-            {"type": "text", "text": QUESTION},
-            {"type": "image_url", "image_url": {"url": image_url, "detail": "high"}},
-        ]}],
-    }).encode()
-    req = urllib.request.Request(
-        "https://api.openai.com/v1/chat/completions", data=body, method="POST",
-        headers={"Authorization": f"Bearer {os.environ['OPENAI_API_KEY']}",
-                 "Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=60) as r:
-        answer = json.loads(r.read())["choices"][0]["message"]["content"]
-    return answer.strip().upper().startswith("YES")
-
-
 def fix_page(filepath, apply, forced=()):
     meta, _ = post.parse_frontmatter(open(filepath, encoding="utf-8").read())
     endpoint, existing, _ = post.find_existing(meta)
@@ -62,7 +35,7 @@ def fix_page(filepath, apply, forced=()):
     title = meta.get("title", "")
     found = 0
     for src, alt in FIGURE.findall(raw):
-        if src not in forced and not has_map(src):
+        if src not in forced and not post.has_map(src):
             continue
         found += 1
         print(f"  地図あり: {alt or '(見出しなし)'}  {src}")
@@ -76,7 +49,7 @@ def fix_page(filepath, apply, forced=()):
         if not new_src:
             continue
         # 作り直した画像も地図になっていないか確かめてから差し替える
-        if has_map(new_src):
+        if post.has_map(new_src):
             print("  作り直した画像にも地図が入ったため、元の画像を残します", file=sys.stderr)
             continue
         raw = raw.replace(f'src="{src}"', f'src="{new_src}"')

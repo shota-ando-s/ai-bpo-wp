@@ -123,18 +123,83 @@ def find_existing(meta):
         return "pages", (find_page(slug, parent_id) if slug else None), parent_id
     return "posts", (find_post_by_slug(slug) if slug else None), None
 
+# 画像に地図を描かせるのは絶対禁止。生成AIは実在の地形や行政区域の形を正しく描けず、
+# 形の崩れた地図になる。地名をプロンプトに渡すと禁止しても地図が描かれるため、地名は消してから渡し、
+# 生成後もビジョンモデルで判定して、地図が入った画像は使わない。
+PREFECTURES = (
+    "北海道 青森 岩手 宮城 秋田 山形 福島 茨城 栃木 群馬 埼玉 千葉 東京 神奈川 新潟 富山 石川 福井 "
+    "山梨 長野 岐阜 静岡 愛知 三重 滋賀 京都 大阪 兵庫 奈良 和歌山 鳥取 島根 岡山 広島 山口 "
+    "徳島 香川 愛媛 高知 福岡 佐賀 長崎 熊本 大分 宮崎 鹿児島 沖縄"
+).split()
+GEO_WORDS = re.compile(
+    r"[一-龥々ヶケぁ-んァ-ヴー]{1,5}[市町村郡区](?![場民役長議内外])"
+    r"|(?:" + "|".join(PREFECTURES) + r")[都道府県]?"
+    r"|東北|関東|北陸|甲信越|東海|近畿|関西|中国|四国|九州|首都圏"
+    r"|[都道府県]内|県|市町村|市町|自治体|地域|地方|全国|日本|国内|地元|エリア|全域"
+)
+NEUTRAL_THEME = "office workers using generative AI tools at their desks"
+MAP_QUESTION = (
+    "Does this image contain a map of any kind: a map, a coastline, an island or landmass shape, "
+    "terrain seen from above, or the outline of a country, prefecture, city or region? "
+    "Answer with exactly one word: YES or NO."
+)
+MAP_RETRIES = 3
+
+def strip_place_names(text):
+    """地名・地域を指す語を取り除く。残りが短すぎれば中立的なテーマに置き換える"""
+    rest = GEO_WORDS.sub("", text or "")
+    rest = re.sub(r"^[のでとにはがを、・\s]+|[のでとにはがを、・\s]+$", "", rest)
+    return rest if len(rest) >= 4 else NEUTRAL_THEME
+
+def has_map(image):
+    """画像（URLまたはPNGバイト）に地図が描かれているかをビジョンモデルで判定する"""
+    if isinstance(image, bytes):
+        image = "data:image/png;base64," + base64.b64encode(image).decode()
+    body = json.dumps({
+        "model": "gpt-4o-mini",
+        "max_tokens": 3,
+        "messages": [{"role": "user", "content": [
+            {"type": "text", "text": MAP_QUESTION},
+            {"type": "image_url", "image_url": {"url": image, "detail": "high"}},
+        ]}],
+    }).encode()
+    req = urllib.request.Request(
+        "https://api.openai.com/v1/chat/completions", data=body, method="POST",
+        headers={"Authorization": f"Bearer {os.environ['OPENAI_API_KEY']}",
+                 "Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=60) as r:
+        answer = json.loads(r.read())["choices"][0]["message"]["content"]
+    return answer.strip().upper().startswith("YES")
+
 def dalle_generate(heading, article_title):
+    """地図の入っていない画像を返す。何度作っても地図になる場合や判定できない場合はNone"""
+    for attempt in range(MAP_RETRIES):
+        image = _dalle_generate_once(heading, article_title)
+        if not image:
+            return None
+        try:
+            if not has_map(image):
+                return image
+        except Exception as e:
+            print(f"地図判定エラー ({heading}): {e}。画像を使いません", file=sys.stderr)
+            return None
+        print(f"  地図が描かれたため作り直し ({attempt + 1}/{MAP_RETRIES}): {heading}", file=sys.stderr)
+    print(f"  地図の入らない画像を作れなかったため、画像なし: {heading}", file=sys.stderr)
+    return None
+
+def _dalle_generate_once(heading, article_title):
     """gpt-image-1でH2テーマに合ったビジネス画像を生成し、画像バイトを返す"""
     api_key = os.environ.get("OPENAI_API_KEY", "")
     if not api_key:
         return None
     prompt = (
-        f"A clean, professional illustration for a Japanese business blog article titled '{article_title}'. "
-        f"Section theme: '{heading}'. "
+        f"A clean, professional illustration for a Japanese business blog article about "
+        f"'{strip_place_names(article_title)}'. "
+        f"Section theme: '{strip_place_names(heading)}'. "
         "Wide landscape format, modern flat design style, no text, no letters, no words anywhere in the image. "
-        # 生成AIは実在の地形や行政区域の形を正しく描けず、地域ページで形の崩れた地図になる
-        "Do not draw maps, coastlines, islands, terrain, or outlines of any country, prefecture, city or region; "
-        "show people, offices, workplaces or abstract business objects instead. "
+        "Strictly no maps of any kind: no maps, no globes, no coastlines, no islands, no terrain, "
+        "no aerial views, no outlines of any country, prefecture, city or region, no location pins. "
+        "Show people, offices, workplaces or abstract business objects instead. "
         "Use soft business colors (blue, white, light gray). High quality, visually appealing."
     )
     body = json.dumps({
