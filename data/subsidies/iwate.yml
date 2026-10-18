@@ -1,0 +1,777 @@
+# 岩手県（県・いわて産業振興センター・岩手県中小企業団体中央会）と県内市町村（2026年度）。2026-10-18に公式ページ・公募要領・要綱で確認。元データは data/area/iwate/subsidy_a.yml / subsidy_b.yml
+# confidence: secondary の制度は入れていない（普代村の起業支援事業補助金は金額が二次情報のため未掲載）
+# 国のデジタル化・AI導入補助金に県が上乗せする制度はない。県の賃上げ補助金2.0は国の地方創生臨時交付金を使った県の独自補助（2026-09-30で今年度の受付終了）。市町村の上乗せは花巻市（受付中）・山田町（随時）・北上市（2026-10-13に予算到達で受付終了）
+
+- id: iwate-chinage-digital
+  name: 令和8年度中小企業者等賃上げ環境整備緊急支援事業費補助金（デジタル活用枠（省力化投資枠））
+  org: 岩手県（商工労働観光部 経営支援課 中小企業振興担当）
+  area: iwate
+  max_yen: 1000000
+  rate: 1/2以内（千円未満切り捨て、1件当たり上限100万円）
+  rate_num: 0.5
+  targets: {efficiency: ◎, consulting: ○, training: ○}
+  expenses: 人手不足に対応するデジタル技術導入や生産性向上の設備投資の経費。機械装置・システム構築費（専用ソフトウェア・情報システムの購入・構築・借用を含む）、技術導入費、専門家経費、クラウドサービス利用費、外注費（作業動線改善のための改装工事を含む）、研修費（教育訓練・講座受講）など。事務用パソコン・プリンタ・文書作成ソフト・タブレット・スマートフォンなど汎用性のあるもの、書類作成の代行費用は対象外
+  conditions: 県内に主たる事業所か工場がある中小企業者・小規模事業者で、パートナーシップ構築宣言を実施済みであること。商工会・商工会議所の支援を受けて策定する経営計画（国の小規模事業者持続化補助金の申請スキームを参考）に盛り込まれた、デジタル化による業務効率化の取組。他の補助金を使う経費は対象外。補助事業期間は交付決定日から2027-01-29まで
+  period: {status: closed, start: 2026-07-30, end: 2026-09-30}
+  url: https://www.pref.iwate.jp/kensei/nyuusatsu/1010807/1066780.html
+  checked: 2026-10-18
+  confidence: official
+  note: 第2回公募。申請受付は2026-07-30〜09-30 17時（ページ〔2026-09-02更新〕と第2回公募要領 https://www.pref.iwate.jp/_res/projects/default_project/_page_/001/066/780/digitalkouboyouryou.pdf の両方で確認）。ページの見出しは「第2回公募実施中」のままだが締切は過ぎていて、審査会は10月中旬、採択決定10月下旬、交付決定11月上旬の予定。概要資料 https://www.pref.iwate.jp/_res/projects/default_project/_page_/001/066/780/gaiyounituite.pdf の日程表にある「※7.31」は別日程の複数事業者連携枠の締切で、この枠の締切ではない。補助率はページ・公募要領とも1/2・上限100万円（2/3・上限200万円は通常枠の値）。国の物価高騰対応重点支援地方創生臨時交付金を使った事業で、予算額は3枠合計1億5,000万円（令和7年度12月補正の繰越）。第1回公募の時期はページに書かれていない。問い合わせは経営支援課 019-629-5544
+  fuenn_note: 商工会・商工会議所と経営計画をつくり、デジタル化で業務を効率化する県内中小企業の、ソフトウェア・クラウド利用料・専門家経費・研修費を1/2（最大100万円）補助する県の制度です。今年度の第2回公募は2026年9月30日で締め切られました。
+
+- id: iwate-chinage-tsujo
+  name: 令和8年度中小企業者等賃上げ環境整備緊急支援事業費補助金（通常枠（従来枠））
+  org: 岩手県（商工労働観光部 経営支援課 中小企業振興担当）
+  area: iwate
+  max_yen: 2000000
+  rate: 2/3以内（千円未満切り捨て、1件当たり上限200万円）
+  rate_num: 0.667
+  targets: {efficiency: ○, consulting: ○, training: ○}
+  expenses: 生産性向上と価格転嫁・賃上げの環境整備に向けた設備投資・人材育成・販路開拓の経費。機械装置・システム構築費（専用ソフトウェア・情報システムを含む）、技術導入費、専門家経費、クラウドサービス利用費、外注費、知的財産権等関連経費、広告宣伝・販売促進費、研修費など
+  conditions: 給与支給総額を年率平均2.0％以上増やす見込みの経営革新計画の承認を受け、パートナーシップ構築宣言を実施済みの中小企業者等。経営革新計画の「新事業活動」（新商品の開発・生産、新サービスの提供、新生産・販売方式の導入等）に当たる事業。補助事業期間は交付決定日から2027-01-29まで
+  period: {status: closed, start: 2026-07-30, end: 2026-09-30}
+  url: https://www.pref.iwate.jp/kensei/nyuusatsu/1010807/1066780.html
+  checked: 2026-10-18
+  confidence: official
+  note: 第2回公募（公募要領 https://www.pref.iwate.jp/_res/projects/default_project/_page_/001/066/780/tuuzyouwakukouboyouryou.pdf ）。令和5年度からの「中小企業者等賃上げ環境整備支援事業費補助」を引き継いだ枠で、令和7年度は66者・9,912万円を交付決定（概要資料）。経営革新計画の承認が前提のため、計画づくりから始める企業には時間がかかる。問い合わせは経営支援課 019-629-5544
+  fuenn_note: 経営革新計画の承認を受けた県内中小企業の、新事業のためのシステム構築・クラウド利用料・専門家経費・研修費などを2/3（最大200万円）補助する県の制度です。今年度の第2回公募は2026年9月30日で締め切られました。
+
+- id: iwate-chinage-renkei
+  name: 令和8年度中小企業者等賃上げ環境整備緊急支援事業費補助金（複数事業者連携枠）
+  org: 岩手県（商工労働観光部 経営支援課）。公募・申請窓口は岩手県中小企業団体中央会
+  area: iwate
+  max_yen: 2000000
+  rate: 2/3以内（千円未満切り捨て、1件当たり上限200万円）
+  rate_num: 0.667
+  targets: {efficiency: ○, consulting: ○, training: ○}
+  expenses: 複数の中小企業者等が連携して行うデジタル化・DX化、業務効率化・コスト削減等の事業で、賃上げの環境整備に向けた設備投資・人材育成・販路開拓の経費
+  conditions: 1者以上が経営革新計画の承認を受けている、2者以上の中小企業者等で構成されるグループ・組合で、パートナーシップ構築宣言を実施済みであること。補助事業期間は交付決定日から2027-02-05まで
+  period: {status: closed, start: 2026-08-31, end: 2026-09-30}
+  url: https://www.pref.iwate.jp/kensei/nyuusatsu/1010807/1066780.html
+  checked: 2026-10-18
+  confidence: official
+  note: 第4回公募（2026-08-31〜09-30 17時）。県のページの日程表で確認。公募の詳細は中央会のページ https://www.ginga.or.jp/2026/08/31/16856/ （開いていない）。令和4年度から中央会が実施してきた「企業連携による地域課題対応新事業展開支援事業費補助金」がベース。1社単独では申請できない。中央会 019-624-1363
+  fuenn_note: 2社以上のグループや組合が共同で行うデジタル化・DXの取組を2/3（最大200万円）補助する県の制度です。今年度の第4回公募は2026年9月30日で締め切られました。
+
+- id: iwate-kibou-fund
+  name: 令和8年度いわて希望応援ファンド地域活性化支援事業（2次公募・事業通算第12回）
+  org: 公益財団法人いわて産業振興センター（産業支援部 地域産業担当）
+  area: iwate
+  max_yen: 3000000
+  rate: 新事業活動支援の一般枠1/2以内（代表者が若者か女性なら2/3以内）・上限200万円、地域資源活用枠2/3以内・上限200万円、経営革新計画枠・連携事業枠3/4以内・上限300万円（2年目以降は上限が下がる）。ほかに創業支援（上限150万円）、商店街活性化（上限100万円）
+  rate_num: 0.5
+  targets: {efficiency: △, consulting: △, training: ×}
+  expenses: 新商品・新サービスの開発やその販路開拓の経費（市場調査・動向調査、新商品・新役務・新技術の開発研究や事業化、販路開拓）。開発研究か販路開拓を必ず含めること
+  conditions: 2次公募は、農商工連携型は県内全域の中小企業者等、それ以外の区分は三陸沿岸地域（洋野町・久慈市・野田村・普代村・田野畑村・岩泉町・宮古市・山田町・大槌町・釜石市・大船渡市・陸前高田市）の中小企業者等が対象。同じ計画・経費で国等の補助を受けていないこと。事業実施期間は交付決定日から2027-01-29まで
+  period: {status: closed, start: 2026-05-15, end: 2026-06-05}
+  url: https://www.joho-iwate.or.jp/fund
+  checked: 2026-10-18
+  confidence: official
+  note: ページに「募集は終了しました」。第12回公募要領 https://www.joho-iwate.or.jp/wp/assets/uploads/2026/05/01-1-第12回公募要領-案5.pdf 。新商品・新サービスの開発が目的で、社内の業務効率化だけのAI導入は対象外とみられる。1次公募（2026-01-05〜01-23）は二次情報の補助金ポータルだけで確認。問い合わせは 019-631-3823
+  fuenn_note: 新商品・新サービスの開発や販路開拓を1/2〜3/4（最大300万円）助成するセンターの制度です。今年度の2次公募（沿岸12市町村と農商工連携が対象）は2026年6月5日で締め切られました。
+
+- id: iwate-hanamaki-shoryoku
+  name: 花巻市省力化・生産性向上支援緊急対策補助金
+  org: 花巻市（商工労政課）
+  area: iwate/hanamaki
+  max_yen: 500000
+  rate: （補助対象経費 − 国補助金の交付決定額）× 1/2、上限50万円
+  addon: {kind: remaining, ratio: 0.5}
+  stacking: {addon_to: [digital-ai-donyu, shoryokuka-ippan]}
+  targets: {efficiency: ◎, consulting: ×, training: ×}
+  expenses: 国の補助金で事業者が自己負担する経費のうち、市内の事業所に係るもの
+  conditions: 2026-07-01以降に、国の中小企業省力化投資補助金（一般型・カタログ注文型）、中小企業デジタル化・AI導入支援事業費補助金、業務改善助成金のいずれかの交付決定を受け、市内に事業所があること。2027-02-26までに事業完了と実績報告ができる事業に限る。申請はオンラインフォーム
+  period: {status: open, start: 2026-07-27, end: 2027-02-01}
+  url: https://www.city.hanamaki.iwate.jp/business/sangyoshien/keieihojo/1025749.html
+  checked: 2026-10-18
+  confidence: official
+  note: 予算がなくなり次第、期間中でも受付終了（ページ更新2026-07-21）。国のデジタル化・AI導入補助金の自己負担分の1/2を上乗せする市の制度。業務改善助成金は national.yml に未登録のため addon_to に入れていない。問い合わせは商工労政課 工業労政係 0198-41-3536、商業係 0198-41-3534
+  fuenn_note: 国のデジタル化・AI導入補助金などの交付決定を受けた花巻市内の事業者に、自己負担分の1/2（最大50万円）を上乗せする市の制度です。受付は2027年2月1日までで、予算に達し次第終了します。
+
+- id: iwate-hanamaki-kyoso
+  name: 花巻市企業競争力強化支援事業補助金（令和8年度予算分）
+  org: 花巻市（商工労政課）
+  area: iwate/hanamaki
+  max_yen: 500000
+  rate: 1/2以内。メニューごとの上限はカイゼン事業50万円、省力化投資事業25万円、リスキリング（人材育成）事業15万円、人材確保・定着事業25万円、共同研究開発25万円、産業財産権20万円、展示会出展15万円、ブランド化・販路拡大15万円。1社の交付は1年度2回・合計50万円まで
+  rate_num: 0.5
+  targets: {efficiency: ○, consulting: ○, training: ○}
+  expenses: 省力化投資事業は既存業務の省力化に資する製品・設備・ソフトウェアの購入費・使用料・導入工事費。カイゼン事業は生産性向上の改善の調査に伴う専門家謝金・旅費・委託費（コンサルティング支援も例示）。リスキリング事業は外部研修機関の研修受講費・資格取得費
+  conditions: 市内の中小企業者・個人事業主（中小企業と同規模の医療法人・社会福祉法人を含む）か、3分の2以上が市内中小企業の連携体。事業開始の10日前までに申請し、交付決定後に着手。同一年度内に申請から実績報告まで終えること。国等の補助金で採択された同じ事業の経費は対象外。省力化投資事業は専用の事業計画書と追加要件あり。人材確保・定着事業は「おしごとNAVI花巻」への登録が条件
+  period: {status: rolling, start: 2026-04-01, end: 2027-03-10}
+  url: https://www.city.hanamaki.iwate.jp/business/sangyoshien/keieihojo/1017682.html
+  checked: 2026-10-18
+  confidence: official
+  note: 2026-09-30時点の交付決定済額は897万1千円（56社、上限額の約69％）とページ（2026-10-01更新）に掲載。予算の上限に達すると受付終了。実績報告は2027-03-31必着。max_yen は1社の年度合計の上限。問い合わせは商工労政課 0198-41-3536
+  fuenn_note: 花巻市内の中小企業の、業務を省力化するソフトウェアの導入（上限25万円）、専門家によるカイゼン・コンサルティング（上限50万円）、外部研修の受講（上限15万円）などを1/2補助する市の制度です。2027年3月10日まで随時受付で、予算に達し次第終了します。
+
+- id: iwate-kitakami-seisansei
+  name: 令和8年度北上市生産性向上サポート補助金
+  org: 北上市（商工部 産業雇用支援課 工業係）
+  area: iwate/kitakami
+  max_yen: 2000000
+  rate: 1/2以内。1会計年度50万円まで（新需要獲得事業・DX・現場改善事業で機械装置費かシステム構築費を含む場合と、省力化推進事業は200万円まで）
+  rate_num: 0.5
+  targets: {efficiency: ◎, consulting: ○, training: ○}
+  expenses: ④DX・現場改善事業（ICT・IoT・AI・ロボット・ITツールの活用で生産工程や業務プロセスの生産性を上げる取組）は機械装置費、システム構築費、クラウドサービス利用費、専門家経費、外注費。③人材育成事業は専門家経費、研修受講費（民間の講座も可。パソコンの基礎講座・一般教養講座は対象外）。⑤省力化推進事業は国の中小企業省力化投資補助金・中小企業デジタル化・AI導入支援事業費補助金・業務改善助成金（機械装置等購入費に限る）の補助対象経費への上乗せ。汎用機器、既存システムの更新料・ランニングコストは対象外
+  conditions: ①〜④は市内に事業所があるものづくり中小企業者（製造業、ソフトウェア業、情報処理サービス業）、⑤は市内に事業所がある全ての中小企業者。市税の滞納がないこと。申請は1会計年度1回。事業は2027-01-31までに完了。⑤は2026-04-01以後に国の補助金の交付決定を受けた事業。他の補助金と併用するときは、経費から他の補助金額を引いた額に補助率をかける
+  period: {status: closed, start: 2026-04-01, end: 2026-10-13}
+  stacking: {addon_to: [digital-ai-donyu, shoryokuka-ippan]}
+  url: https://www.city.kitakami.iwate.jp/life/soshikikarasagasu/sangyokoyoshienka/kogyokakari/3/21762.html
+  checked: 2026-10-18
+  confidence: official
+  note: 交付申請の受付期間は2026-04-01〜2027-01-15だが、ページの2026-10-13の更新で「予算額の上限に達したため、受付を終了しました」。7月2日にも一度終了し、7月21日に予算を増額して再開していた。再開の予定は書かれていない。end は受付終了の掲載日。実施要領 https://www.city.kitakami.iwate.jp/material/files/group/22/zissiyouryou-8.pdf 。⑤の上乗せは（経費−国の補助額）×1/2だが、終了したため addon は書いていない。問い合わせは 0197-72-8242、sangyo@city.kitakami.iwate.jp
+  fuenn_note: 北上市のものづくり企業のAI・ITツール導入や研修受講、国のデジタル化・AI導入補助金の自己負担分を1/2（最大200万円）補助する市の制度です。今年度は2026年10月13日に予算の上限に達し、受付を終了しました。
+
+- id: iwate-tono-gyomu
+  name: 遠野市業務改善支援補助金
+  org: 遠野市（産業部 商工労政課）
+  area: iwate/tono
+  max_yen: 1000000
+  rate: 業務効率の向上事業はハード事業2/10（上限100万円）・ソフト事業1/2（上限50万円）。新分野進出事業・業態転換事業はハード3/10（上限100万円）・ソフト1/2（上限50万円）。いずれも補助金合計の上限100万円
+  rate_num: 0.2
+  targets: {efficiency: ○, consulting: △, training: △}
+  expenses: ハード事業は機械装置・運搬具・特殊車両等の償却資産の取得費、ソフトウエア、機器等備品。ソフト事業は広告宣伝費、試作費、産学官連携研究費、謝金、公的認証等取得費、事業に向けた研修と旅費
+  conditions: 市内に本社・本店等か主たる活動場所がある中小企業者等（個人事業者を含む）。新分野進出・業態転換・業務効率の向上（設備導入や環境整備でコストを削減する取組。例は生産ラインの自動化による人件費削減）のいずれか。認定支援機関（遠野商工会や市内金融機関など）で作成する確認書が必要。申請は専用フォーム
+  period: {status: rolling, start: 2026-04-20}
+  url: https://www.city.tono.iwate.jp/index.cfm/46,82787,295,643,html
+  checked: 2026-10-18
+  confidence: official
+  note: 予算上限に達した時点で受付終了（ページ更新2026-04-23、終了の掲載なし）。rate_num は業務効率の向上事業のハード（ソフトウエアを含む）の値。問い合わせは商工労政課 0198-62-2111（代表）
+  fuenn_note: 遠野市内の中小企業が業務効率を上げるソフトウエアや設備を入れる費用の2/10（最大100万円）、研修や謝金などのソフト経費の1/2（最大50万円）を補助する市の制度です。予算に達するまで受付中です。
+
+- id: iwate-tono-dx
+  name: 遠野市物価高騰対策設備投資事業費補助金（DX事業）
+  org: 遠野市（産業部 商工労政課）
+  area: iwate/tono
+  max_yen: 2000000
+  rate: ハード事業は中小企業者支援枠2/10（上限200万円）、小規模事業者支援枠5/10（上限10万円）。ソフト事業は1/2（上限5万円・50万円の枠あり）
+  rate_num: 0.2
+  targets: {efficiency: ○, consulting: ×, training: ×}
+  expenses: DX事業はデジタル機器やソフトの整備。ハード事業は事業用の土地・建物・償却資産の取得、ソフト事業は使用料・賃借料・通信費・外注費など（2026-12-31までに取得・購入するもの）
+  conditions: 市内に事業所か主たる活動場所がある中小企業者等（個人事業者）。DX（またはGX）による取組目標表明書と、認定支援機関（遠野商工会や市内金融機関など）で作成する確認書が必要
+  period: {status: closed, start: 2026-04-20, end: 2026-09-30}
+  url: https://www.city.tono.iwate.jp/index.cfm/46,82773,295,643,html
+  checked: 2026-10-18
+  confidence: official
+  note: 申請受付は2026-04-20〜09-30（予算上限で早期終了あり）。同じ補助金にGX事業と貨物自動車運送事業者の燃料費補助もある。ソフト事業の「上限5万円」「上限50万円」の2つの枠はページでどちらも「中小企業者支援枠」と書かれていて区別が不明。問い合わせは商工労政課 0198-62-2111（代表）
+  fuenn_note: 遠野市内の中小企業がデジタル機器やソフトを整備する費用を2/10（最大200万円、小規模事業者は5/10・最大10万円）補助する市の制度でした。今年度は2026年9月30日で締め切られました。
+
+- id: iwate-ichinoseki-jinzai
+  name: 令和8年度一関市新規高卒者・若者等人財育成支援事業補助金
+  org: 一関市（商工観光部 商工振興課 人材育成支援係）
+  area: iwate/ichinoseki
+  max_yen: 200000
+  rate: 人材育成費用は採用1人につき20万円、2人目以降1人増ごとに5万円加算（加算の上限なし、くるみん認定企業は1.5倍・補助率10/10）。資格取得費用は10万円（くるみん認定企業は15万円・補助率1/2）
+  targets: {efficiency: ×, consulting: ×, training: ○}
+  expenses: 雇用開始後12か月以内に実施した社外研修・社内研修等の人材育成の経費（令和8年度中に実施した研修に限る）。業務上必要な国家資格・公的資格・民間資格の受講料・受験料・初回登録料
+  conditions: 市内在住（12か月以内の転入を含む）の新規高卒者、新規学卒者（卒業後6か月以内に雇用）、UIJターン者を雇い入れた事業主
+  period: {status: open, start: 2026-10-01, end: 2027-03-23}
+  url: https://www.city.ichinoseki.iwate.jp/archive/contents-135143
+  checked: 2026-10-18
+  confidence: official
+  note: 予算に達し次第終了（ページ更新2026-04-01）。新卒・若者・UIJターン者を採用した企業の研修費が対象で、在職者全般の研修やAIツールの導入は対象外。max_yen は採用1人の場合の人材育成費用の上限で、定額制のため rate_num は書かない。申請は新規高卒者と若者等で様式が分かれる。問い合わせは商工振興課（人材育成支援係）0191-21-8461
+  fuenn_note: 一関市内の新卒・若者・UIJターン者を採用した企業が、採用後12か月以内に行った研修の費用を1人20万円（2人目から5万円ずつ加算）まで受けられる市の制度です。申請は2026年10月1日〜2027年3月23日です。
+
+- id: iwate-oshu-mirai
+  name: 奥州市未来の活力産業育成事業（令和8年度）
+  org: 奥州市（商工観光部 商工労政課 商工係）
+  area: iwate/oshu
+  max_yen: 300000
+  rate: 1/2以内。競争力強化研修事業は上限10万円、共同開発研究事業25万円、展示会等出展事業10万円（小間料20万円超は25万円）、国際規格等認証取得事業30万円（エコアクション21は20万円）
+  rate_num: 0.5
+  targets: {efficiency: △, consulting: ×, training: ○}
+  expenses: 競争力強化研修事業は外部機関による工程改善・マーケティング強化等の研修の講師謝金・旅費、自社従業員を研修に派遣する受講料・旅費・教材費・検定料（Web形式の講習も対象になる場合あり）。共同開発研究事業は大学・公設試・他企業との共同研究のシステム構築費・機械装置費・技術指導費など
+  conditions: 市内に事業所があり製造業を主たる事業とする中小企業者で市税を完納していること、または構成員の3分の2以上が市内中小企業者の団体。事業着手の1週間前までに認定申請書を提出
+  period: {status: rolling, start: 2026-04-01}
+  url: https://www.city.oshu.iwate.jp/kigyoshien/shien/278.html
+  checked: 2026-10-18
+  confidence: official
+  note: 先着順で当該年度の予算額に達し次第締切（ページ更新2026-04-01、終了の掲載なし）。start はページ更新日。製造業限定。1企業・団体あたり年度中に事業ごとの上限まで複数申請可。max_yen は事業ごとの上限の最大（国際規格等認証取得）。問い合わせは 0197-34-2331
+  fuenn_note: 奥州市の製造業の中小企業が、工程改善などの外部研修に従業員を派遣する費用を1/2（最大10万円）補助する市の制度です。先着順で、予算に達し次第締め切られます。
+
+- id: iwate-oshu-setsubi
+  name: 奥州市中小企業・小規模事業者設備導入支援事業
+  org: 奥州市（商工観光部 商工労政課）。申請書類の配布・相談は奥州商工会議所・前沢商工会
+  area: iwate/oshu
+  max_yen: 2000000
+  rate: 中小企業者設備導入支援は1/2以内（上限200万円・下限50万円、単品税抜100万円以上）。小規模事業者設備導入支援は3/4以内（上限50万円・下限7万5千円、単品税抜10万円以上）
+  rate_num: 0.5
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 市内の施設で使う省エネ設備か生産性向上に資する機械・装置・備品の新規取得（導入関連費用を含む）、店舗等の改装、LED照明の導入。1事業者1回・設備1品か工事1箇所のみ。中古品、国・県等の補助対象経費は対象外
+  conditions: 市内に事業所がある中小企業者・小規模事業者（別表の業種）。中小企業者設備導入支援は従業員への賃上げ方針の表明が必要。2026-04-01〜11-30に支払いが完了した経費
+  period: {status: closed, start: 2026-05-18, end: 2026-06-10}
+  url: https://www.city.oshu.iwate.jp/shigoto_sangyo/sangyoshinko/1/17743.html
+  checked: 2026-10-18
+  confidence: official
+  note: 申請受付期間は2026-05-18〜11-30だが、ページに「予算の上限に達したため、受付を終了しました（6/10現在）」。end は終了の掲載日。ソフトウェア・クラウドは経費区分に書かれていない。奥州商工会議所 0197-24-3141、前沢商工会 0197-56-2105
+  fuenn_note: 奥州市内の中小企業の生産性向上の機械・備品の導入を1/2（最大200万円、小規模事業者は3/4・最大50万円）補助する市の制度でした。今年度は2026年6月に予算の上限に達して終了しました。ソフトウェアは対象に書かれていません。
+
+- id: iwate-ofunato-biz
+  name: 令和8年度大船渡市ビジネス拡大支援事業補助金
+  org: 大船渡市（商工港湾部 商工企業課）
+  area: iwate/ofunato
+  max_yen: 750000
+  rate: 1/2（上限75万円）
+  rate_num: 0.5
+  targets: {efficiency: ◎, consulting: ○, training: ○}
+  expenses: 開発・機械装置・システム構築費（ITを活用したシステム化〔管理・販売・受発注システム等〕、IT機器・ソフトウェアの購入・構築・改修・借用を含む）、ソフトウェア・クラウドサービス利用費、外注費（アプリ・システム開発の一部外注を含む）、専門家経費、研修費、広告宣伝・販路開拓費、知的財産権等関連経費、事業所等の改修費など
+  conditions: 市内に事業所がある中小企業者等で、経営革新計画の承認か経営力向上計画の認定を受け、その計画に従って行う取組であること。市税の滞納がないこと。同一年度に1回。補助対象期間は交付決定日から2027-03-15まで
+  period: {status: closed, start: 2026-04-01}
+  url: https://www.city.ofunato.iwate.jp/archive/p20250327153246
+  checked: 2026-10-18
+  confidence: official
+  note: ページの見出しは「【募集終了】令和８年度大船渡市ビジネス拡大支援事業補助金」。本文は2026-04-01から随時受付・予算上限で受付中止の記載のままで、終了日は書かれていない。経営革新計画か経営力向上計画が前提。問い合わせは商工企業課 0192-27-3111（代表）
+  fuenn_note: 経営革新計画などを持つ大船渡市内の中小企業の、ITシステム・ソフトウェア・クラウド利用料・専門家経費・研修費を1/2（最大75万円）補助する市の制度です。今年度の募集は終了しています。
+
+- id: iwate-kamaishi-ganbaru
+  name: 令和8年度釜石市がんばる中小企業応援事業補助金
+  org: 釜石市（産業振興部 商工観光課 商工業支援係）
+  area: iwate/kamaishi
+  max_yen: 1000000
+  rate: 1/2（上限100万円、千円未満切り捨て）
+  rate_num: 0.5
+  targets: {efficiency: △, consulting: △, training: ×}
+  expenses: 新商品・サービスの開発、既存商品・サービスの改善、そのための販路開拓の経費。報償費（専門家謝礼）、旅費、需用費、役務費（広告宣伝費など）、委託料（デザイン費、WEBページ制作費など）、使用料及び賃借料（展示会出展料、機器借上料）、原材料費、10万円以上の備品購入費（パソコン・タブレット等の転用できる備品は対象外の場合あり）
+  conditions: 釜石市内に事業所がある中小企業者・個人事業主、中小企業者を主な構成員とする組合・任意団体。市税の滞納がないこと。交付申請の提出期限2027-01-29、事業完了と請求は2027-02-26まで
+  period: {status: closed, start: 2026-05-21}
+  url: https://www.city.kamaishi.iwate.jp/docs/2025041500027/
+  checked: 2026-10-18
+  confidence: official
+  note: 2026-07-07に「応募多数のため、一時的に募集を取りやめます。予算に残額が生じた場合、追加募集を行います」（ページ更新2026-09-24、見出しは「応募多数のため申請受付停止中」）。売上・利益率の向上を目指す新商品・サービス開発向けで、業務効率化のためのAI導入向けではない。問い合わせは商工業支援係 0193-52-0083
+  fuenn_note: 釜石市内の中小企業の新商品・サービスの開発や改善、販路開拓を1/2（最大100万円）補助する市の制度です。応募多数のため2026年7月から受付を停止しています（予算に残額が出れば追加募集）。
+
+- id: iwate-yamada-shoryokuka
+  name: 山田町省力化対策支援事業費補助金
+  org: 山田町
+  area: iwate/yamada
+  max_yen: 600000
+  rate: 国の補助金の補助対象事業費の1/5以内（上乗せ）
+  rate_num: 0.2
+  targets: {efficiency: ◎, consulting: ×, training: ×}
+  expenses: 国の「中小企業省力化投資補助金」または「デジタル化・AI導入補助金」の交付決定通知書に記載された補助対象経費（要綱別表）
+  conditions: 2026-04-01以降に中小企業省力化投資補助金またはデジタル化・AI導入補助金の交付決定を受けていること。法人は本店・主たる事務所を町内に登記、個人事業主は町の住民基本台帳に記録されていること。町税の滞納がないこと。同一事業で他の地方公共団体の補助金を受けていないこと
+  period: {status: rolling}
+  url: https://www.town.yamada.iwate.jp/docs/10124.html
+  checked: 2026-10-18
+  confidence: official
+  note: 令和8年度の新規事業（ページ掲載2026-04-01）。要綱 https://www.town.yamada.iwate.jp/fs/1/3/9/3/8/5/_/syouryokukataisaku_youryou.pdf 。申請期限の記載はなく、予算の範囲内。交付申請から30日以内に交付決定。国の補助金の交付決定通知書の写しを添えて申請する。国のデジタル化・AI導入補助金（旧IT導入補助金）でソフトウェア・クラウドを導入した場合に、その対象事業費の1/5（上限60万円）が町から上乗せされる。問い合わせは 商工観光課 0193-82-3111
+  fuenn_note: 国の「デジタル化・AI導入補助金」か「中小企業省力化投資補助金」に採択された山田町の事業者は、国の補助対象事業費の1/5（上限60万円）を町が上乗せします。国の交付決定を受けてから町に申請します。
+
+- id: iwate-yamada-sogyo
+  name: 令和8年度やまだ創業サポート事業費補助金
+  org: 山田町
+  area: iwate/yamada
+  max_yen: 500000
+  rate: 2/3以内（代表者が2026-04-01時点で39歳以下の若者または女性の場合は5/6以内）
+  rate_num: 0.667
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 備品等購入費（取得価格3万円以上50万円未満。汎用事務備品は対象外）、広告宣伝費、印刷製本費、委託・外注費（システム開発及び運用保守、各種調査等の外部委託、建物の内装工事）、出展小間費、旅費（募集要領6）
+  conditions: 山田町で新たに起業しようとする人、または第二創業・新事業に取り組もうとする人。山田町商工会で事業計画策定等の支援を受けたうえで町に申し込む。補助事業期間は原則2027-02-28まで。パソコン・プリンター等の汎用品は経営計画書に基づく事業用途で目的外使用がないと整理できる場合だけ対象になり得る。消耗品・通信運搬費・人件費・謝金は対象外
+  period: {status: open, start: 2026-04-16, end: 2026-12-18}
+  url: https://www.town.yamada.iwate.jp/docs/2549.html
+  checked: 2026-10-18
+  confidence: official
+  note: 募集要領 https://www.town.yamada.iwate.jp/fs/1/3/8/8/9/0/_/__8__________________.pdf 、交付要綱 https://www.town.yamada.iwate.jp/fs/1/3/8/8/9/1/_/__8______________________.pdf 。商工会への相談受付期限は2026-10-30（金）、町への申込期限は2026-12-18（金）17時必着。startはページの掲載日。委託・外注費に「システム開発及び運用保守」があり、第二創業・新事業で業務システムを外注する場合に使える可能性がある。問い合わせは 商工観光課 0193-82-3111、山田町商工会 0193-82-2515
+  fuenn_note: 山田町で起業する方や、第二創業・新事業に取り組む方向けの町の補助金です（2/3、若者・女性は5/6、上限50万円）。委託費に「システム開発及び運用保守」が入っています。商工会への相談は2026年10月30日まで、町への申込は12月18日までです。
+
+- id: iwate-yamada-shinshohin
+  name: 山田町新商品開発支援事業費補助金
+  org: 山田町
+  area: iwate/yamada
+  max_yen: 5000000
+  rate: 新商品開発・既存商品改良は1/2（ふるさと納税返礼品に登録する場合3/4）・上限各50万円。新商品開発に係る設備導入は1/3（返礼品登録の場合1/2）・上限500万円
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 新たな商品開発、既存商品のパッケージ・ラベル・包装資材の改良、新商品開発等に必要な設備の購入（設備導入は新商品開発事業等と同時に実施する場合だけ）
+  conditions: 町内に事業所を有する事業者。町税等の滞納がないこと
+  period: {status: closed, start: 2026-04-24, end: 2026-08-31}
+  next_expected: 2027-04
+  url: https://www.town.yamada.iwate.jp/docs/7344.html
+  checked: 2026-10-18
+  confidence: official
+  note: 募集要領 https://www.town.yamada.iwate.jp/fs/1/3/8/9/4/4/_/_________________.pdf 。募集期間2026-04-24〜08-31（予算額に達したら打ち切り）。商品開発向けで、IT導入の経費は挙がっていない。next_expected は今年度の時期からの推測。問い合わせは 商工観光課ふるさと納税係 0193-82-3111（内線226）
+
+- id: iwate-yamada-saiji
+  name: やまだの特産品販路拡大事業（催事等出展支援補助金）
+  org: 山田町
+  area: iwate/yamada
+  max_yen: 200000
+  rate: 1/2以内（1事業者あたり通算20万円）
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 町外で開催される商談会・見本市・物産展等への出展料・小間借上料、小間装飾費、旅費（交通費・宿泊費）、輸送費
+  conditions: 町内に事業所を有する法人または個人事業主で自社商品を取り扱っている人。町税等の滞納がないこと。出展前（2週間前が目安）に申請し交付決定を受けること。他の公的補助金を受けている経費は対象外
+  period: {status: rolling}
+  url: https://www.town.yamada.iwate.jp/docs/9961.html
+  checked: 2026-10-18
+  confidence: official
+  note: 令和8年度からの新規事業（ページ掲載2026-04-17）。交付要綱 https://www.town.yamada.iwate.jp/fs/1/3/8/9/4/2/_/_____________________________.pdf 。販路開拓向けで、IT導入には使えない。問い合わせは 商工観光課 0193-82-3111
+
+# ---- 葛巻町 ----
+- id: iwate-kuzumaki-sangyozukuri
+  name: くずまき型持続可能な産業づくり支援事業費補助金
+  org: 葛巻町
+  area: iwate/kuzumaki
+  max_yen: 2000000
+  rate: 事業メニューで異なる。ものづくり人材育成1/2・50万円、経営品質向上1/2・50万円、後継者育成2/3・50万円、起業家支援2/3・200万円、電子化推進1/2・50万円、新分野開拓・連携支援1/2・100万円、オフィス開設支援1/3・100万円
+  rate_num: 0.5
+  targets: {efficiency: ○, consulting: ○, training: ○}
+  expenses: 電子化推進事業＝消費者の利便向上・販路開拓を目的としたウェブコンテンツの強化、タブレット端末等の導入、電子マネー対応等の役務費・需用費・機器購入費・工事費（通信料金は除く）。ものづくり人材育成・経営品質向上事業＝技術習得・サービス向上の研修会への派遣・開催の講師謝礼・旅費・受講料・消耗品、マーケティング事業や中小企業診断士・経営コンサルタントの招聘・指導の委託料。起業家支援事業＝起業の謝礼・旅費・手数料・家賃・消耗品・委託料・改修費・機器購入費（要綱別表1）
+  conditions: 町内に主たる事務所・営業所を有し商工業（建設業、製造業、電気・ガス・熱供給・水道業、卸売業、小売業、宿泊業、飲食サービス業、生活関連サービス業）を営む法人・個人、町内の商工団体、町内で商工業を起業する個人、町内に新たに事業所を開設する商工業者。国・県・町の類似の補助金を受けていないこと。事業開始の30日前までに申請。電子化推進事業は1事業主体1か年度限り。同一年度に同一主体が実施できるのは2事業まで
+  period: {status: rolling}
+  url: https://www.town.kuzumaki.lg.jp/docs/2015110600215/
+  checked: 2026-10-18
+  confidence: official
+  note: 交付要綱（令和7年4月1日施行）https://www.town.kuzumaki.lg.jp/docs/2015110600215/file_contents/kuzumaki_zizoku_sangyou_shien-kouhuyoukou.pdf 。令和8年度の補助金一覧（2026-04-03公開）https://www.town.kuzumaki.lg.jp/docs/2025033100013/file_contents/R8_kuzumaki_syoukou_kannkou_hojokin.pdf に「継続」として掲載。受付期限の記載はなく予算の範囲内。max_yen は起業家支援事業の値、rate_num は電子化推進事業の値。要綱の「商工業」の定義に情報通信業・サービス業（他に分類されないもの）は入っていない。問い合わせは いらっしゃい葛巻推進課 商工観光担当 0195-65-8983
+  fuenn_note: 葛巻町の商工業者が、ウェブコンテンツの強化やタブレット端末の導入（電子化推進事業、1/2・上限50万円）、研修やコンサルタントの招聘（1/2・上限50万円）に使える町の補助金です。事業開始の30日前までに申請します。
+
+- id: iwate-kuzumaki-shoten-setsubi
+  name: 葛巻町商店等設備導入支援事業費補助金
+  org: 葛巻町
+  area: iwate/kuzumaki
+  max_yen: 500000
+  rate: 2/3
+  rate_num: 0.667
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 取得価格の合計が10万円以上の、販売・営業に直接使用する機器・設備の導入（更新）。町内事業者が施工する30万円以上の店舗改修工事
+  conditions: 町内で小売業、飲食サービス業、生活関連サービス業を10年以上営む個人事業主または資本金1,000万円以下の法人。事業開始の15日前までに申請
+  period: {status: rolling}
+  url: https://www.town.kuzumaki.lg.jp/docs/2015110600208/
+  checked: 2026-10-18
+  confidence: official
+  note: 交付要綱 https://www.town.kuzumaki.lg.jp/docs/2015110600208/file_contents/youkou.pdf 。令和8年度の補助金一覧に「継続」として掲載。販売・営業に直接使う機器が対象で、POSレジ等が対象になるかは町に確認が必要（未確認）。問い合わせは いらっしゃい葛巻推進課 商工観光担当 0195-65-8983
+
+- id: iwate-kuzumaki-keigyo
+  name: 葛巻町継業支援事業費補助金
+  org: 葛巻町
+  area: iwate/kuzumaki
+  max_yen: 200000
+  rate: 2/3
+  rate_num: 0.667
+  targets: {efficiency: ×, consulting: ○, training: ×}
+  expenses: 継業に係る経営診断や事業計画の作成などの専門家への依頼に要する経費、後継者の募集・紹介・交渉に要する経費、事業所登記に要する経費
+  conditions: 町内に店舗・事業所を有する中小企業者・小規模企業者で代表者が町内に居住していること（建設業、製造業、情報通信業、卸売業、小売業、宿泊業、飲食サービス業、生活関連サービス業など）。事業開始の30日前までに申請
+  period: {status: rolling}
+  url: https://www.town.kuzumaki.lg.jp/docs/2018040600027
+  checked: 2026-10-18
+  confidence: official
+  note: 交付要綱 https://www.town.kuzumaki.lg.jp/docs/file_contents/h30ksh-yo.pdf 。令和8年度の補助金一覧に「継続」として掲載。事業承継向けで、IT導入の経費は対象外。問い合わせは いらっしゃい葛巻推進課 商工観光担当 0195-65-8983
+
+# ---- 大槌町 ----
+- id: iwate-otsuchi-kikan-jinzai
+  name: 大槌町地域基幹産業人材確保支援事業費補助金
+  org: 大槌町
+  area: iwate/otsuchi
+  max_yen: 10000000
+  rate: 1/2以内（DX推進事業は上限1,000万円、女性が働きやすい職場環境整備事業は上限200万円。併用可）
+  rate_num: 0.5
+  targets: {efficiency: ◎, consulting: ○, training: ×}
+  expenses: DX推進事業＝DX推進のための設備投資に係る専門家謝金、委託料、備品購入費（取組例：加工ラインの自動化・省力化、データ管理システムの導入、デジタル技術を活用した業務効率化）。職場環境整備事業＝女性用更衣室・トイレ・休憩室等の工事費、備品購入費（3万円未満の備品は対象外）
+  conditions: 町内に事業所を有し、水産物を原料とする食料品製造業等を営む個人・法人・水産加工業協同組合など。DX推進事業は岩手県の「沿岸地域基幹産業人材確保支援事業費補助金（DX推進事業）」で事業計画が選定されていること、または町長が特に認めるもの。職場環境整備事業は女性従業員2名以上の雇用といわて女性活躍認定企業等の認定・認証が必要。事前相談→事業計画協議→内示→交付申請の順
+  period: {status: rolling, start: 2026-08-03}
+  url: https://www.town.otsuchi.iwate.jp/gyosei/docs/463636.html
+  checked: 2026-10-18
+  confidence: official
+  note: 2026年8月から案内開始の新制度（ページ掲載2026-08-03）。交付要綱 https://www.town.otsuchi.iwate.jp/fs/2/7/4/6/4/4/_/_________________________.pdf 。締切の記載はない。水産加工業に限った制度で、他業種は対象外。データ管理システムの導入が取組例に挙がっている。問い合わせは 産業振興課 0193-42-8725（商工観光係）
+  fuenn_note: 大槌町の水産加工事業者が、データ管理システムの導入や加工ラインの自動化などDXに取り組む費用の1/2（上限1,000万円）を町が補助します。岩手県の沿岸地域DX推進事業で計画が選定されていることが条件で、事業前に町の産業振興課へ相談が必要です。
+
+- id: iwate-otsuchi-kigyo-jinzai
+  name: 大槌町起業人材育成支援補助金
+  org: 大槌町
+  area: iwate/otsuchi
+  max_yen: 1000000
+  rate: 1/2以内（備品費は上限25万円）
+  rate_num: 0.5
+  targets: {efficiency: △, consulting: △, training: △}
+  expenses: 事業に係る許可取得・検査費用、事業に関連する講習受講料、専門家報酬（司法書士等）、広告宣伝費、備品費（汎用性の高いものは除く）
+  conditions: 町内で新たに事業所等を設置し、起業・出店・事業承継する人。住所地の市区町村税等の滞納がないこと。営業に必要な許可等を取得している（見込みを含む）こと
+  period: {status: rolling}
+  url: https://www.town.otsuchi.iwate.jp/gyosei/docs/437830.html
+  checked: 2026-10-18
+  confidence: official
+  note: 交付要綱 https://www.town.otsuchi.iwate.jp/fs/2/2/2/2/4/9/_/__________________.pdf 。ページ掲載2025-10-09で受付期間の記載はなく、「補助金を交付しています。ぜひご相談ください」とある。講習受講料が対象経費に入っている。汎用性の高い備品（パソコン等）は対象外。問い合わせは 産業振興課 商工観光係 0193-42-8725
+
+- id: iwate-otsuchi-6ji
+  name: 大槌町6次産業化推進事業等補助金
+  org: 大槌町
+  area: iwate/otsuchi
+  max_yen: 400000
+  rate: 6次産業化推進事業80%以内・上限40万円、農商工連携支援事業80%以内・上限30万円、新商品開発支援事業・既存商品改良支援事業50%以内・上限30万円
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: △, training: ×}
+  expenses: 試作品開発、検査分析、包装（資材・デザイン）、市場調査、販路開拓（宣伝広告・展示会出店）、専門家等への謝金。6次産業化推進事業は資格等取得費・営業許可取得費・アンテナショップ借店料・先進事例視察も対象
+  conditions: 町内に住民登録がある個人、町内に住所がある法人、それらが主たる構成員の団体。町税の滞納がないこと。他の同種の補助金を受ける事業、既に着手している事業、採択年度の3月31日までに完了しない事業は対象外
+  period: {status: rolling}
+  url: https://www.town.otsuchi.iwate.jp/gyosei/docs/433404.html
+  checked: 2026-10-18
+  confidence: official
+  note: 交付要綱 https://www.town.otsuchi.iwate.jp/fs/2/1/5/2/5/1/_/________6________________.pdf 。ページは2020-08-18の更新で「随時、相談受付、申請・審査を行っております（予算がなくなり次第終了）」とある。2026年度の予算計上はページから確認できない。商品開発向けで、IT導入の経費は挙がっていない。rate_num は新商品開発支援事業の値。問い合わせは 産業振興課 0193-42-8725
+
+- id: iwate-otsuchi-jiba-shisetsu
+  name: 大槌町地場産業拡大支援施設整備補助金
+  org: 大槌町
+  area: iwate/otsuchi
+  max_yen: 200000000
+  rate: 農業・水産業（水産養殖業）2/5以内・上限2億円、町の特産品を生産する食品製造・加工1/4以内・上限2億円、製造業・ソフトウェア1/4以内・上限1億5千万円（いずれも全事業費から町以外の補助金を引いた額の1/2との低い方）
+  rate_num: 0.25
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 施設整備費（実施設計を含む）、内装・設備施工工事費、備品費（汎用性が高いものは除く）
+  conditions: 生産物の生産・加工・販売などの施設を新設・増設する人。施設整備費（投下固定資産投資額）が5,000万円以上（農業・水産養殖業は2,000万円以上）。国・県・他団体の補助金が対象経費の3/4以上でないこと
+  period: {status: open, start: 2026-09-03, end: 2026-12-25}
+  url: https://www.town.otsuchi.iwate.jp/gyosei/docs/442671.html
+  checked: 2026-10-18
+  confidence: official
+  note: 公募期間2026-09-03〜12-25 17時必着（随時受付）。交付要綱 https://www.town.otsuchi.iwate.jp/fs/2/6/6/4/5/6/_/______________________.pdf 、公募要領 https://www.town.otsuchi.iwate.jp/fs/2/7/4/7/1/1/_/____.pdf 。ソフトウェア業も対象業種だが、大型の施設整備が要件で、既存企業のソフトウェア導入には使えない。問い合わせは 産業振興課 0193-42-8725
+
+# ---- 岩手町（県と同名。岩手県の制度ではない）----
+- id: iwate-iwatetown-kigyo-challenge
+  name: 岩手町起業チャレンジ補助金
+  org: 岩手町
+  area: iwate/iwate-town
+  max_yen: 1000000
+  rate: 2/3（税抜）
+  rate_num: 0.667
+  targets: {efficiency: △, consulting: ○, training: △}
+  expenses: 交付決定日からその年度の3月末日までの起業に必要な経費。旅費（商談・研修等参加旅費）、需用費（消耗品、印刷製本）、役務費（開業・法人設立の司法書士・行政書士への手数料）、委託料（コンサル料、デザイン料、成分分析等検査費、ホームページ作成料等）、使用料及び賃借料、原材料費、負担金（展示会出展費、商談会・研修会参加費等）、備品購入費（起業等に必要不可欠な機械器具・備品）、工事請負費（店舗・事務所の内外装、設備、看板等）
+  conditions: 新たに起業する人、第二創業（中小企業・小規模事業者が新事業を町内で創業）、町外の法人・個人事業主で本店所在地を岩手町に移転する事業者。事業着手前に担当者への事前相談が必要。補助は事業完了確認後で前金払いなし
+  period: {status: rolling}
+  url: https://town.iwate.iwate.jp/town/business/challenge_busin/?v=cat-business&w=entrepreneurship&x=kigyo_subsidy
+  checked: 2026-10-18
+  confidence: official
+  note: 交付要綱 https://town.iwate.iwate.jp/town/wp-content/uploads/2020/03/kigyou_charenge_youkou20260511.pdf （ページ更新2026-05-11）、チラシ https://town.iwate.iwate.jp/town/wp-content/uploads/2020/03/20260402_kigyo_challenge.pdf 。受付期限の記載はない。コンサル料・ホームページ作成料・研修会参加費が対象経費に入っており、第二創業も対象。問い合わせは みらい創造課 政策推進係 0195-62-2111（代表、内線218・219）
+  fuenn_note: 岩手町で起業する方や、既存の事業者が新事業を始める第二創業に使える町の補助金です（2/3、上限100万円）。コンサル料、ホームページ作成料、研修会の参加費も対象です。事業に着手する前に町のみらい創造課へ相談してください。
+
+- id: iwate-iwatetown-kenshu
+  name: 岩手町新規雇用等研修費補助金
+  org: 岩手町
+  area: iwate/iwate-town
+  max_yen: 150000
+  rate: 1/3以内（対象者1人あたり5万円、1事業所あたり15万円が上限）
+  rate_num: 0.333
+  targets: {efficiency: ×, consulting: ×, training: ○}
+  expenses: 新規雇用者の資格取得・研修の受講料及びテキスト代、交通費、宿泊費、その他町長が認めるもの
+  conditions: 町内に事務所・店舗・工場を有する従業員20名以下（商業・サービス業は5名以下）の小規模事業者で、町税の滞納がないこと。対象者は期間の定めのない（または1年以上の雇用見込みの）週30時間以上の労働者で、申請年度の4月1日時点で雇用から3年を経過していない人（役員の3親等以内の親族を除く）
+  period: {status: unknown}
+  url: https://town.iwate.iwate.jp/town/business/shinkikenshu/?v=cat-business&w=koyou&x=subsidy
+  checked: 2026-10-18
+  confidence: official
+  note: ページの最終更新は2024-11-15で受付期間の記載はない。「補助金・奨励金等」の一覧に掲載されている。新規雇用者向けの研修受講料が対象で、デジタル・AI関連の研修が対象になるかは町に確認が必要（未確認）。問い合わせは 企画商工課 商工観光係 0195-62-2111（代表、内線213・214）
+
+# ---- 一戸町 ----
+- id: iwate-ichinohe-kigyo-shien
+  name: 一戸町企業支援事業費補助金
+  org: 一戸町
+  area: iwate/ichinohe
+  max_yen: 300000
+  rate: 2/3
+  rate_num: 0.667
+  targets: {efficiency: ×, consulting: ×, training: ○}
+  expenses: 人材育成支援＝外部講師による社内研修の講師謝金・旅費、外部機関が実施する研修の受講料・旅費。人材確保支援＝就職関連イベント出展費、企業PRパンフレット・チラシ、ホームページの作成・更新費、企業紹介動画の作成費、求人サイト・求人誌の掲載費、就職活動の旅費の補助
+  conditions: 町内に事務所・店舗・工場を有していること。町税の滞納がないこと。人材確保支援と人材育成支援は併用可（合わせて上限30万円）
+  period: {status: unknown}
+  url: https://www.town.ichinohe.iwate.jp/shigoto_sangyo/koyo_shugyo/3692.html
+  checked: 2026-10-18
+  confidence: official
+  note: ページ更新2025-09-25で受付期間の記載はない。外部講師の社内研修や外部研修の受講料が対象で、AI・デジタル研修に使える可能性がある（研修内容の制限はページに書かれていない）。問い合わせは 産業建設部 商工観光課 0195-33-4855
+  fuenn_note: 一戸町内の事業者が、外部講師を招く社内研修や外部の研修を受講する費用の2/3（上限30万円）を町が補助します。採用向けのホームページ作成費も対象です。2026年度の受付状況は町の商工観光課に確認してください。
+
+# ---- 田野畑村 ----
+- id: iwate-tanohata-kigyo
+  name: 田野畑村新規起業等支援補助金
+  org: 田野畑村
+  area: iwate/tanohata
+  max_yen: 500000
+  rate: 新規起業等経費は2/3以内・上限50万円。研修会等経費は受講料・テキスト代が上限2万円、交通費・宿泊費が1/2以内・上限3万円
+  rate_num: 0.667
+  targets: {efficiency: △, consulting: ×, training: ○}
+  expenses: 新規起業等経費（施設改修費、設備備品費〔汎用性が高く目的外使用になり得るものを除く〕、広告費等）、研修会等経費（資格取得やスキルアップのための研修会等の受講料・参加料・テキスト代、参加の交通費・宿泊費）
+  conditions: 田野畑村に住所を有する人で、新規起業に意欲のある人または新規起業・事業承継から3年以内の人、新たな事業展開や業務拡大に意欲のある人、田野畑村産材を活用したコミュニティビジネスに取り組む人。事業着手前に申請し交付決定を受けること
+  period: {status: unknown}
+  url: https://www.vill.tanohata.iwate.jp/docs/2023040200047/
+  checked: 2026-10-18
+  confidence: official
+  note: ページの日付は2024-12-01で受付期間の記載はない。補助金ポータルは令和8年度分を2026-04-01から受付中と掲載しているが二次情報。要綱は公開されていない。研修会等経費は「新たな事業展開や業務拡大に向けて意欲のある方」も対象で、スキルアップ研修の受講料に使える。問い合わせは 企画観光課（村のページの所管）、田野畑村役場 0194-34-2111（代表）
+
+# ---- 平泉町 ----
+- id: iwate-hiraizumi-kigyo-shokei
+  name: 平泉町起業・事業承継支援事業補助金
+  org: 平泉町
+  area: iwate/hiraizumi
+  max_yen: 1000000
+  rate: 1/2（上限50万円。対象者がU・I・Jターン者の場合は上限100万円）
+  rate_num: 0.5
+  targets: {efficiency: △, consulting: △, training: ×}
+  expenses: 事業に必要な設備費（更新を含む）・備品費（単価10万円以上）、法人登記に要する経費、知的財産登録に要する経費、広告宣伝に要する経費、技術指導受入に要する経費、その他町長が特に必要と認める経費
+  conditions: 町内で起業する人、町内事業者の事業承継を受ける人。補助完了後3年間は事業状況の経過報告が必要
+  period: {status: rolling}
+  url: https://www.town.hiraizumi.iwate.jp/%e4%b8%ad%e5%b0%8f%e4%bc%81%e6%a5%ad%e6%94%af%e6%8f%b4%e3%83%bb%e5%89%b5%e6%a5%ad%e6%94%af%e6%8f%b4-20620/
+  checked: 2026-10-18
+  confidence: official
+  note: 町の「R8年度 商工業者融資・補助金制度チラシ（R8.4.1〜）」https://hi-hp-production.s3.ap-northeast-1.amazonaws.com/wp-content/uploads/2025/05/18145530/%E3%80%90%E9%85%8D%E6%9E%B6%E4%BE%9D%E9%A0%BC%E3%80%91R8%E7%94%BA%E8%9E%8D%E8%B3%87%E3%83%BB%E8%A3%9C%E5%8A%A9%E9%87%91%E3%83%81%E3%83%A9%E3%82%B7%EF%BC%88%E4%BF%AE%E6%AD%A3%EF%BC%89.pdf による（ページ更新2026-04-20）。要綱はサイトで公開されていない。チラシに「記載のほかにも交付条件等がございます」とある。問い合わせは 観光商工課 0191-46-5572
+  fuenn_note: 平泉町で起業する方や、町内の事業を承継する方向けの町の補助金です（1/2、上限50万円。U・I・Jターン者は上限100万円）。単価10万円以上の設備・備品や広告宣伝費が対象です。
+
+- id: iwate-hiraizumi-akitenpo
+  name: 平泉町空き店舗等対策事業補助金
+  org: 平泉町
+  area: iwate/hiraizumi
+  max_yen: 3000000
+  rate: 賃借事業は賃借料月額の1/2・上限月3万円（営業開始から最大12か月）。改修事業は1/2・上限300万円（中尊寺通り・毛越寺通りで中心街路の活性化に特に寄与すると認められた場合は3/4）
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 空き店舗等の賃借料、改修事業（店舗等の耐久性を高める工事、安全性・防災上必要な工事、機能向上を図る工事、残置物の撤去費用）
+  conditions: 空き店舗等に出店する人。改修事業は補助完了後3年間の事業状況の経過報告が必要
+  period: {status: rolling}
+  url: https://www.town.hiraizumi.iwate.jp/%e4%b8%ad%e5%b0%8f%e4%bc%81%e6%a5%ad%e6%94%af%e6%8f%b4%e3%83%bb%e5%89%b5%e6%a5%ad%e6%94%af%e6%8f%b4-20620/
+  checked: 2026-10-18
+  confidence: official
+  note: R8年度チラシ（iwate-hiraizumi-kigyo-shokei の note のURL）による。令和8年度に拡充。改修工事・家賃の補助で、IT機器は対象経費にない。問い合わせは 観光商工課 0191-46-5572
+
+- id: iwate-hiraizumi-tokusanhin
+  name: 平泉町特産品開発支援事業補助金
+  org: 平泉町
+  area: iwate/hiraizumi
+  max_yen: 500000
+  rate: 1/2
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 特産品の開発、商品のパッケージ製作、登録商標等、品質検査・栄養成分の分析等、販売促進に係る広告宣伝に要する経費
+  conditions: 商品名に「平泉」（漢字以外の表記も可）を冠し、町内で生産・製造・加工が施されていること
+  period: {status: rolling}
+  url: https://www.town.hiraizumi.iwate.jp/%e4%b8%ad%e5%b0%8f%e4%bc%81%e6%a5%ad%e6%94%af%e6%8f%b4%e3%83%bb%e5%89%b5%e6%a5%ad%e6%94%af%e6%8f%b4-20620/
+  checked: 2026-10-18
+  confidence: official
+  note: R8年度チラシによる。商品開発向けで、IT導入の経費は挙がっていない。問い合わせは 観光商工課 0191-46-5572
+
+- id: iwate-hiraizumi-torihiki
+  name: 平泉町取引支援促進事業費補助金
+  org: 平泉町
+  area: iwate/hiraizumi
+  max_yen: 200000
+  rate: 不明（上限20万円）
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 県外で開催される展示会・見本市への出展小間料、小間内装飾経費、出展物搬送料、展示会用出版物印刷代など
+  conditions: 県外で開催される展示会・見本市に出展する町内事業者
+  period: {status: rolling}
+  url: https://www.town.hiraizumi.iwate.jp/%e4%b8%ad%e5%b0%8f%e4%bc%81%e6%a5%ad%e6%94%af%e6%8f%b4%e3%83%bb%e5%89%b5%e6%a5%ad%e6%94%af%e6%8f%b4-20620/
+  checked: 2026-10-18
+  confidence: official
+  note: R8年度チラシによる。チラシに補助率の記載がない。販路開拓向け。問い合わせは 観光商工課 0191-46-5572
+
+- id: iwate-hiraizumi-jinzai-ikusei
+  name: 平泉町若者等人材育成支援事業補助金
+  org: 平泉町
+  area: iwate/hiraizumi
+  max_yen: 50000
+  rate: 1/2以内（1事業者あたり5万円）
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: ○}
+  expenses: 若者等従業員の業務に必要な資格取得の受講料（教材費含む。講座の修了で資格取得となるものに限る）、受験料・受検料、資格の初回登録料
+  conditions: 町内に事業所を有する雇用保険適用事業の事業主で、過去3年度に町税の滞納がないこと。対象は満40歳未満の従業員、またはUターン等で新たに町内に住所を有した満50歳未満の従業員で、就労場所が町内の事業所
+  period: {status: rolling}
+  url: https://www.town.hiraizumi.iwate.jp/%E5%B9%B3%E6%B3%89%E7%94%BA%E8%8B%A5%E8%80%85%E7%AD%89%E4%BA%BA%E6%9D%90%E8%82%B2%E6%88%90%E6%94%AF%E6%8F%B4%E4%BA%8B%E6%A5%AD%E8%A3%9C%E5%8A%A9%E9%87%91-24114/
+  checked: 2026-10-18
+  confidence: official
+  note: ページ更新2025-03-04。R8年度チラシに「人材育成支援事業補助金」として掲載。対象資格の例は運転免許、クレーン、施工管理技士、危険物取扱者、介護福祉士、食品衛生責任者などで、IT資格の例は挙がっていない。問い合わせは 観光商工課 0191-46-5572
+
+# ---- 洋野町 ----
+- id: iwate-hirono-sogyo
+  name: 洋野町創業支援補助金
+  org: 洋野町
+  area: iwate/hirono
+  max_yen: 800000
+  rate: 4/5以内（創業は上限80万円、新事業の創出は上限50万円）
+  rate_num: 0.8
+  targets: {efficiency: △, consulting: ○, training: ×}
+  expenses: 設備等購入費・設備等借用費（取得価格2万円以上の建物・設備・機械・器具・備品）、謝金（専門家謝金、講師謝金）、旅費、印刷製本費、研究開発費（原材料費、消耗品費、技術コンサルタント料）、委託費（デザイン、各種調査等の外部委託）、広告宣伝費（要綱別表第1）。パソコン、プリンタ、タブレット、モニター等の汎用品は対象外
+  conditions: 補助金申請日の前後1年以内に開業届・法人登記を行う創業者（第二創業を含む）、または新事業の創出（新商品・新役務の開発・提供、異業種参入、久慈広域道の駅のテナント出店）を行う既存事業者で、町内に住所または事業所を有するもの。町税の滞納がないこと。交付決定前の購入・契約・発注は対象外。翌年度から3年間の事業経過報告が必要
+  period: {status: rolling}
+  url: https://www.town.hirono.iwate.jp/doc/2021020500033/
+  checked: 2026-10-18
+  confidence: official
+  note: 2026-04-01に交付要綱の改正と様式の変更（ページ更新2026-04-01）。要綱 https://www.town.hirono.iwate.jp/doc/2021020500033/file_contents/file_2026413173657_1.docx 。受付期間の記載はなく予算の範囲内。専門家謝金・技術コンサルタント料が対象だが、パソコン・タブレット等の汎用品は対象外。問い合わせは 特定政策推進室（種市庁舎）0194-65-2102
+  fuenn_note: 洋野町で創業する方（上限80万円）と、既存の事業者が新事業を始める場合（上限50万円）に使える町の補助金で、補助率は4/5です。専門家謝金やコンサルタント料も対象ですが、パソコンやタブレットなどの汎用品は対象外です。
+
+# ---- 野田村 ----
+- id: iwate-noda-shinjigyo-challenge
+  name: 野田村地域新事業チャレンジ応援補助金
+  org: 野田村
+  area: iwate/noda
+  max_yen: 3000000
+  rate: 2/3以内（個人・団体は上限50万円、法人は上限300万円）
+  rate_num: 0.667
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 起業・新分野進出等に直接関わる販売促進活動、施設の整備・改修、機械・器具等の導入、営業許可の取得、新たな特産品開発に係る経費
+  conditions: 村内に住所を有する個人・団体・法人で、村税等を滞納していないこと。村内の農業・林業・漁業・商工業の分野での起業等（事業の再生・創出・新分野進出）
+  period: {status: rolling}
+  url: https://www.vill.noda.iwate.jp/soshiki/sangyoshinkoka/suisanshokohan/chushokigyoshien/680.html
+  checked: 2026-10-18
+  confidence: official
+  note: 村の「企業向け支援について」ページ（更新2026-08-14）に掲載。要綱・受付期間の記載はない。機械・器具等の導入が対象で、新分野進出に伴う機器導入に使える可能性がある（ソフトウェアが対象かは記載なし）。問い合わせは 産業振興課 水産商工班 0194-78-2926
+  fuenn_note: 野田村で起業する方や、既存の事業者が新分野に進出する場合に使える村の補助金です（2/3、法人は上限300万円・個人は上限50万円）。機械・器具の導入や販売促進が対象です。
+
+# ---- 雫石町 ----
+- id: iwate-shizukuishi-monozukuri
+  name: 雫石町ふるさとものづくり事業支援補助金（令和9年度募集）
+  org: 雫石町
+  area: iwate/shizukuishi
+  max_yen: 10500000
+  rate: 7/10以内（経費上限は新商品開発等支援が1,500万円、販路開拓支援が300万円）
+  rate_num: 0.7
+  targets: {efficiency: △, consulting: △, training: ×}
+  expenses: 謝金、旅費、原材料費、機械装置費、工具器具費、委託費、技術指導費、人件費、広報費など
+  conditions: ふるさと財団（一般社団法人地域総合整備財団）の「ふるさとものづくり支援事業」の交付決定を受けた事業。町内に事業所を有する法人格を有する団体で、町税の滞納がないこと。新商品開発等支援（将来的に事業化・量産化が可能な新商品開発）または販路開拓支援（商品化に至っていない新商品の販路開拓）
+  period: {status: open, start: 2026-10-05, end: 2026-10-30}
+  url: https://www.town.shizukuishi.iwate.jp/docs/2026100500026/
+  checked: 2026-10-18
+  confidence: official
+  note: 令和9年度分の募集。事前に町担当課に相談し、2026-10-30（金）までに必要書類を提出。補助対象期間は2027-04-01〜2028-02-18、交付決定は2027年3月上旬頃。概要 https://www.town.shizukuishi.iwate.jp/docs/2026100500026/file_contents/gaiyou.pdf 。max_yen は経費上限1,500万円×7/10からの計算値。地域資源を活用した新商品開発向けで、社内のIT導入には使えない。問い合わせは 観光商工課 商工労政係 019-692-6497
+
+- id: iwate-shizukuishi-akitenpo
+  name: 雫石町空き店舗活用事業費補助金
+  org: 雫石町
+  area: iwate/shizukuishi
+  max_yen: 1000000
+  rate: 改装費は1/2以内（商業地域・近隣商業地域は上限100万円、それ以外は75万円）。家賃は1/2以内・上限月3万円・最長1年
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 空き店舗の外装・内装・設備の工事等の改装費（初年度に限る）、貸室の月額家賃（共益費・敷金・礼金等を除く）
+  conditions: 過去に商業用として営業し、おおむね1か月以上使用されていない町内の物件で、小売業・飲食サービス業・生活関連サービス業を新たに営む中小企業者（個人・法人）、中小企業等協同組合、NPO法人、社会福祉法人。2年以上事業を継続すること。町税の滞納がないこと。所有者と生計同一等は不可
+  period: {status: rolling}
+  url: https://www.town.shizukuishi.iwate.jp/docs/2016060900028/
+  checked: 2026-10-18
+  confidence: official
+  note: ページ公開・更新2025-04-16。「応募のあったものから審査・決定し、予算が無くなり次第終了」。町の「就業・起業支援について」（更新2026-03-06）https://www.town.shizukuishi.iwate.jp/docs/2016080200078/ でも案内されている。改修・家賃の補助で、IT機器は対象経費にない。問い合わせは 観光商工課 商工労政係 019-692-6497
+
+- id: iwate-shizukuishi-bussanten
+  name: 雫石町物産展等出展事業費補助金
+  org: 雫石町
+  area: iwate/shizukuishi
+  max_yen: 50000
+  rate: 1/2以内（上限5万円、同一事業者は年度内2回まで）
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 岩手県外の物産展等の出展料、運搬費、交通費・宿泊料（2名分まで）
+  conditions: 町内に住所または主たる事務所を有する事業者（その団体を含む）で、町税の滞納がないこと。ふるさと納税返礼品に採用されている特産品を含む商品の宣伝・販売を行う出展。町のPRに協力すること。事業実施日の14日前までに申請
+  period: {status: rolling}
+  url: https://www.town.shizukuishi.iwate.jp/docs/2024022700029/
+  checked: 2026-10-18
+  confidence: official
+  note: ページ更新2026-01-07、令和8年度のチラシ https://www.town.shizukuishi.iwate.jp/docs/2024022700029/file_contents/R8.pdf 。販路開拓向け。問い合わせは 観光商工課 019-692-6407
+
+# ---- 矢巾町 ----
+- id: iwate-yahaba-sogyo
+  name: 矢巾町創業支援事業補助金
+  org: 矢巾町
+  area: iwate/yahaba
+  max_yen: 1440000
+  rate: 家賃の1/2以内（上限月4万円）、地代の1/2以内（上限月6万円）、支給期間は最長2年
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 事務所・店舗の家賃、土地を借りて事務所・店舗を建設した場合の地代
+  conditions: 開業日から2年以内で、町内に事業所を有する個人または町内に本店所在地を有する法人。事業計画書の作成にあたり、いわて産業振興センターまたは矢巾町商工会の起業指導を受ける必要がある
+  period: {status: unknown}
+  url: https://www.town.yahaba.iwate.jp/soshiki/sangyou/kankousangyou/2018042000054/
+  checked: 2026-10-18
+  confidence: official
+  note: 交付要綱 https://www.town.yahaba.iwate.jp/yahabatown/008_sangyou/syoukou/sougyou_hozyo/r7_sougyouyoukou.pdf （ファイル名は令和7年度）。ページ更新2025-09-18で受付期間の記載はない。max_yen は地代上限月6万円×24か月の計算値。家賃・地代の補助で、IT導入には使えない。問い合わせは 産業観光課 商工振興係 019-611-2602
+
+# ---- 西和賀町 ----
+- id: iwate-nishiwaga-sogyo
+  name: 西和賀町創業支援事業費補助金
+  org: 西和賀町
+  area: iwate/nishiwaga
+  max_yen: 1500000
+  rate: 2/3以内（創業支援塾修了者は3/4以内）、上限150万円（消費税等を除く）
+  rate_num: 0.667
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 事業に必要な施設設備等の取得に要する経費（建物については改修に要する経費等を含む）
+  conditions: 中小企業者で、申請年度内に創業するか申請時に創業から1年を経過していない人。納税地が町内で町税等の滞納がないこと。みなし大企業でないこと。西和賀商工会の会員で商工会の指導を受けた事業計画を作成し継続して経営指導を受けるか、金融機関の指導を受けた事業計画を作成し継続して経営指導を受けること
+  period: {status: unknown}
+  url: https://www.town.nishiwaga.lg.jp/gyosei_shigoto_sangyo/sangyoshinko/2/3344.html
+  checked: 2026-10-18
+  confidence: official
+  note: 交付要綱 https://www.town.nishiwaga.lg.jp/material/files/group/11/_1.pdf 。ページ更新2025-04-28で、対象期間が「認定決定日より令和8年3月31日まで」（2025年度分）のまま。2026年度の実施はページから確認できない。問い合わせは 観光商工課（湯田庁舎）0197-82-3290
+
+# ---- 金ケ崎町 ----
+- id: iwate-kanegasaki-sogyo
+  name: 金ケ崎町創業等支援事業補助金
+  org: 金ケ崎町
+  area: iwate/kanegasaki
+  max_yen: 500000
+  rate: 2/3（39歳以下の若者・女性は9/10）
+  rate_num: 0.667
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 土地・建物の賃借料・購入費、事業所等の増改築・改修費、設備・備品の購入費・賃借料、広告宣伝費、その他町長が適当と認める経費（消費税を除く）
+  conditions: 町内に事業所等を設置し、申請年度内に創業等を行うか創業等から1年以内であること。「創業等」には既存の個人・法人が新たに町内に事業所等を設置して事業を開始する場合を含む。商工会の経営指導を受けた事業計画を有し事業計画確認書の交付を受けたこと。商工会に加入している（創業後の加入を含む）こと。町税の滞納がないこと
+  period: {status: unknown}
+  url: https://www.town.kanegasaki.iwate.jp/articles/2021040100039/
+  checked: 2026-10-18
+  confidence: official
+  note: 要綱 https://www.town.kanegasaki.iwate.jp/articles/2021040100039/file_contents/youkou.pdf 。ページは2021-04-01公開・更新のままで受付期間の記載はない（予算額に達した時点で終了）。2026年度の実施は町の「創業支援」カテゴリに掲載が続いていることだけ確認。問い合わせは 商工観光課 0197-42-2111、金ケ崎町商工会 0197-42-2710
+
+- id: iwate-kanegasaki-akitenpo
+  name: 金ケ崎町空き店舗活用補助金
+  org: 金ケ崎町
+  area: iwate/kanegasaki
+  max_yen: 1000000
+  rate: 1/2
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 空き店舗で事業を開始する前の店舗改装工事費、設備を導入するための設備工事費（消費税を除く）。店舗改装工事は町内業者の施工に限る
+  conditions: 町内の空き店舗を賃借して情報通信業、小売業、飲食サービス業、生活関連サービス業、教育・学習支援事業、その他商業の振興・活性化に資すると認められる事業を開始する個人・法人・団体。2年以上継続して営業する見込み。生計同一世帯に市町村民税の滞納がないこと。過去に利用していないこと
+  period: {status: unknown}
+  url: https://www.town.kanegasaki.iwate.jp/docs/2019031500036/
+  checked: 2026-10-18
+  confidence: official
+  note: ページは2019-04-16更新のままで受付期間の記載はない（予算の範囲内）。対象業種に情報通信業が入っている。改修工事の補助で、IT機器・ソフトウェアは対象経費にない。問い合わせは 商工観光課 0197-42-2111
+
+- id: iwate-kanegasaki-tenjikai
+  name: 金ケ崎町展示会出展事業費補助金
+  org: 金ケ崎町
+  area: iwate/kanegasaki
+  max_yen: 100000
+  rate: 1/2（1件10万円まで、同一事業者は年度内2回まで）
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 出展小間料、出展小間装飾料、備品借上げ料（出展期間中のみ）、出展物輸送料、旅費（交通費・宿泊費）
+  conditions: 町内に事業所を有する中小の製造業者（資本金3億円以下または従業員300人以下）で、町税を完納していること。国・地方公共団体等が主催・共催・後援する展示会
+  period: {status: unknown}
+  url: https://www.town.kanegasaki.iwate.jp/docs/2018011200065/
+  checked: 2026-10-18
+  confidence: official
+  note: 要綱 https://www.town.kanegasaki.iwate.jp/docs/2018011200065/file_contents/tennzikai03.pdf 。ページ更新2024-04-01で受付期間の記載はない（予算が無くなり次第終了）。製造業の販路開拓向け。問い合わせは 商工観光課 0197-42-2111
+
+# ---- 住田町 ----
+- id: iwate-sumita-jigyokyoten
+  name: 住田町事業拠点整備支援事業費補助金
+  org: 住田町
+  area: iwate/sumita
+  max_yen: 1000000
+  rate: 不明（要綱に補助率の記載なし。限度額100万円）
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 空き物件の改装改修、電気・水道・通信機器の敷設、空調・照明・セキュリティ関連機器、外構・駐車場、家財撤去、清掃作業費、使用するパソコン・電話機・デスク・椅子・複合機等の取得費（または12か月分の借用費）、建物の12か月分の家賃・共益費（要綱別表1）
+  conditions: 町内に本社・事業所を有しない法人または個人事業主（資本金10億円未満等）が、町内の空き物件を購入・賃借してテレワーク等のためのサテライトオフィス等の事業拠点を開設すること。開設後3年以上事業を継続すること。税の滞納がないこと。開設1か所につき1回限り
+  period: {status: unknown}
+  url: https://www.town.sumita.iwate.jp/ijyu/support.html
+  checked: 2026-10-18
+  confidence: official
+  note: 交付要綱（令和5年4月1日施行）https://www.town.sumita.iwate.jp/_files/00002219/jigyoukyoten.pdf 。町外の企業向けで、町内の既存事業者は対象外。受付期間・予算の記載はない。パソコン等の取得費が対象経費に入っている。問い合わせは 農林商工課（農政商工）、住田町役場 0192-46-2111（代表）
+
+# ---- 軽米町 ----
+- id: iwate-karumai-shohin-kaihatsu
+  name: 軽米町商品開発等促進事業補助金
+  org: 軽米町
+  area: iwate/karumai
+  max_yen: 200000
+  rate: 2/3以内（商品開発・ブラッシュアップは上限20万円、それらを伴わない販路開拓は上限10万円）
+  rate_num: 0.667
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 町内の特産品・農林畜産物を活用した新商品の開発、既存商品のブラッシュアップ（改良）、当該商品の販路開拓に係る取組み
+  conditions: 町内の個人事業者、法人、団体等。審査会で採択。事業実施は交付決定から2027-03-01まで
+  period: {status: closed, start: 2026-07-08, end: 2026-08-07}
+  next_expected: 2027-04
+  url: https://www.town.karumai.iwate.jp/article/jigyosha/entry-basename-11.html
+  checked: 2026-10-18
+  confidence: official
+  note: 2次募集（応募期間2026-07-08〜08-07、審査会8-25）。1次募集は2026-04-13〜06-12 https://www.town.karumai.iwate.jp/article/jigyosha/entry-basename-6.html 。商品開発・販路開拓向けで、IT導入の経費は挙がっていない。next_expected は今年度の1次募集の時期からの推測。問い合わせは 産業振興課 商工観光担当 0195-46-4746

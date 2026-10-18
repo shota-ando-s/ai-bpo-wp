@@ -196,3 +196,39 @@
     - {code: aomori/kazamaura, name: 風間浦村, none: true, note: 村独自のAI・IT向け補助金はありません（2026-10-17確認）}
     - {code: aomori/sai, name: 佐井村, none: true, note: 村独自のAI・IT向け補助金はありません（2026-10-17確認）}
     - {code: aomori/shingo, name: 新郷村, note: 村独自の制度は小規模事業の施設整備・賃借料向けで、AI・IT導入向けの補助金はありません}
+- code: iwate
+  name: 岩手県
+  cities:
+    - {code: iwate/morioka, name: 盛岡市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-18確認。人材育成の補助金は2026-03-31で終了）。県のよろず支援拠点といわて産業振興センターが盛岡市にあります}
+    - {code: iwate/miyako, name: 宮古市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-18確認）}
+    - {code: iwate/ofunato, name: 大船渡市, note: 事業拡大の補助金はIT・クラウドも対象ですが、市のページでは受付終了となっています（2026-10-18確認）}
+    - {code: iwate/hanamaki, name: 花巻市, note: 国のデジタル化・AI導入補助金などの自己負担への上乗せ（2027-02-01まで）と、省力化ソフト・コンサル・リスキリングに使える競争力強化の補助金（2027-03-10まで）があります}
+    - {code: iwate/kitakami, name: 北上市, note: 生産性向上支援補助金（AI・ITツール・研修・国の補助金への上乗せ）は、2026-10-13に予算の上限に達して受付を終了しました}
+    - {code: iwate/kuji, name: 久慈市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-18確認。市の制度は縫製業者向け）}
+    - {code: iwate/tono, name: 遠野市, note: 業務改善の補助金は、ソフトウェア（設備として）と研修・専門家の費用も対象です（随時）}
+    - {code: iwate/ichinoseki, name: 一関市, note: 新卒・若手の採用者の研修費を1人20万円補助する制度があります（2027-03-23まで）。AIツールの費用は国の制度を使います}
+    - {code: iwate/rikuzentakata, name: 陸前高田市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-18確認。市の制度は設備・新拠点向け）}
+    - {code: iwate/kamaishi, name: 釜石市, note: がんばる中小企業の補助金は新商品向けで、2026-07-07から受付を停止しています}
+    - {code: iwate/ninohe, name: 二戸市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-18確認。市の制度は賃上げ向け）}
+    - {code: iwate/hachimantai, name: 八幡平市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-18確認）}
+    - {code: iwate/oshu, name: 奥州市, note: 未来産業の補助は製造業の研修費が対象です（随時・先着）。設備の補助は2026-06-10で終了しました}
+    - {code: iwate/takizawa, name: 滝沢市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-18確認）}
+    - {code: iwate/shizukuishi, name: 雫石町, note: 町独自の制度はものづくり・空き店舗・物産展向けで、AI・IT導入向けの補助金はありません（ものづくり事業支援の令和9年度分は2026-10-30締切）}
+    - {code: iwate/kuzumaki, name: 葛巻町, note: 産業づくり支援の電子化推進事業は、Webコンテンツ・タブレット・電子マネーの導入も対象です（随時。事業開始の30日前までに申請）}
+    - {code: iwate/iwate-town, name: 岩手町, note: 起業チャレンジの補助金はコンサル料とWeb制作も対象です（随時）。AIツールの費用は国の制度を使います}
+    - {code: iwate/shiwa, name: 紫波町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-18確認）}
+    - {code: iwate/yahaba, name: 矢巾町, note: 町独自の制度は創業向けで、2026年度の受付は町に確認が必要です}
+    - {code: iwate/nishiwaga, name: 西和賀町, note: 町独自の制度は創業向けで、2026年度の受付は町に確認が必要です}
+    - {code: iwate/kanegasaki, name: 金ケ崎町, note: 町独自の制度は創業・空き店舗・展示会出展向けで、2026年度の受付は町に確認が必要です}
+    - {code: iwate/hiraizumi, name: 平泉町, note: 町独自の制度は起業・事業承継・空き店舗・特産品・取引・人材育成向けで、AIツールを直接の対象にした補助金はありません}
+    - {code: iwate/sumita, name: 住田町, note: 町独自の制度は町外の企業の事業拠点整備向けで、AI・IT導入向けの補助金はありません}
+    - {code: iwate/otsuchi, name: 大槌町, note: 地域基幹産業人材確保支援のDX推進事業は、水産加工業者のデータ管理システムなども対象です（随時。県のDX選定が要件）}
+    - {code: iwate/yamada, name: 山田町, note: 省力化対策支援事業費補助金は、国のデジタル化・AI導入補助金や省力化投資補助金の採択事業に1/5（上限60万円）を上乗せします（随時）}
+    - {code: iwate/iwaizumi, name: 岩泉町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-18確認）}
+    - {code: iwate/karumai, name: 軽米町, note: 町独自の制度は商品開発向けで、2026年度の第2回は2026-08-07で締め切りました}
+    - {code: iwate/hirono, name: 洋野町, note: 創業支援の補助金は専門家・コンサル料も対象です（随時）。AIツールの費用は国の制度を使います}
+    - {code: iwate/ichinohe, name: 一戸町, note: 町の企業支援事業費補助金は研修費も対象ですが、2026年度の受付は町に確認が必要です}
+    - {code: iwate/tanohata, name: 田野畑村, note: 村の新規起業等支援の補助金は研修費も対象ですが、2026年度の受付は村に確認が必要です}
+    - {code: iwate/fudai, name: 普代村, none: true, note: 村独自のAI・IT向け補助金は確認できませんでした（2026-10-18）}
+    - {code: iwate/noda, name: 野田村, note: 村独自の制度は新事業チャレンジ向けで、AIツールを直接の対象にした補助金はありません}
+    - {code: iwate/kunohe, name: 九戸村, none: true, note: 村独自のAI・IT向け補助金はありません（2026-10-18確認）}
