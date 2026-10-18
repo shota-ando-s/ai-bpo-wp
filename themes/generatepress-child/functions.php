@@ -544,7 +544,7 @@ function generate_add_footer_info() {
 		<span>&copy; <?php echo esc_html( date( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?></span>
 		<a href="<?php echo esc_url( home_url( '/shindan/' ) ); ?>">補助金診断</a>
 		<a href="<?php echo esc_url( home_url( '/area/' ) ); ?>">地域別AI導入ガイド</a>
-		<a href="<?php echo esc_url( home_url( '/privacy-policy/' ) ); ?>">プライバシーポリシー</a>
+		<a href="https://fuenn.co.jp/privacypolicy.html" target="_blank" rel="noopener">プライバシーポリシー</a>
 		<a href="<?php echo esc_url( home_url( '/#form' ) ); ?>">お問い合わせ</a>
 	</div>
 	<?php

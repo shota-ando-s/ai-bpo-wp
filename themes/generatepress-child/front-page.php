@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 $lp_home     = home_url( '/' );
 $lp_img      = get_stylesheet_directory_uri() . '/images/lp';
-$lp_privacy  = home_url( '/privacy-policy/' );
+$lp_privacy  = 'https://fuenn.co.jp/privacypolicy.html';
 $lp_tokusho  = home_url( '/tokushoho/' );
 $lp_company  = 'https://fuenn.co.jp/';
 $lp_archives = home_url( '/archives/' );
