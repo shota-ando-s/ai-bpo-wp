@@ -35,17 +35,6 @@ add_action( 'wp_head', function() {
 		padding: 72px 40px 64px;
 		text-align: center;
 	}
-	.cp-hero-eyebrow {
-		display: inline-block;
-		background: rgba(255,255,255,.15);
-		border: 1px solid rgba(255,255,255,.3);
-		border-radius: 50px;
-		padding: 5px 16px;
-		font-size: 12px;
-		font-weight: 600;
-		letter-spacing: .1em;
-		margin-bottom: 18px;
-	}
 	.cp-hero h1 {
 		font-size: clamp(1.6rem, 4vw, 2.4rem);
 		font-weight: 900;
@@ -315,7 +304,6 @@ get_header();
 	<!-- ===== Hero ===== -->
 	<section class="cp-hero">
 		<div class="cp-inner">
-			<div class="cp-hero-eyebrow">無料相談受付中</div>
 			<h1>お問い合わせ・無料相談</h1>
 			<p class="cp-hero-sub">当社のサービスにご関心をお寄せいただきありがとうございます。<br>ご相談からご提案まで全て無料で対応させていただきますので、何なりとお申し付けくださいませ。</p>
 		</div>
