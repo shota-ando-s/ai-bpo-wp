@@ -21,7 +21,7 @@ excerpt: 鰺ヶ沢町のAI導入は、宿泊・飲食が民営従業者の11.6%�
 
 鰺ヶ沢町の宿泊業の従業者は、同じ経済センサスの中分類で189人でした。青森県の観光入込客統計では、鰺ヶ沢町の観光入込客数（延べ）は令和6年に341,949人で、前年の96.5%でした（[青森県 観光統計](https://www.pref.aomori.lg.jp/soshiki/kkokusai/kanko/kankoutoukei.html)、2026年1月公表）。
 
-鰺ヶ沢町の農業産出額は、農林水産省の市町村別推計で2023年に39.8億円です。品目別では、りんご17.7億円、米8.9億円、すいか3.4億円の順でした（東北農政局「[スマポケ東北](https://www.maff.go.jp/tohoku/stinfo/toukei/attach/pdf/sumapoke-19.pdf)」）。2023年漁業センサスでは、町の漁業経営体51のうち23が小型定置網を販売金額1位としています（[青森県 漁業センサス](https://opendata.pref.aomori.lg.jp/dataset/2361.html)、2023年11月1日時点）。
+鰺ヶ沢町の農業産出額は、農林水産省の市町村別推計で2023年に39.8億円です。品目別では、りんご17.7億円、米8.9億円、すいか3.4億円の順でした（東北農政局「[スマポケ東北](https://www.maff.go.jp/tohoku/stinfo/toukei/attach/pdf/sumapoke-19.pdf)」）。2023年漁業センサスでは、町の漁業経営体51のうち23が小型定置網を販売金額1位としています（[青森県 漁業センサス](https://www.pref.aomori.lg.jp/release/2024/77880.html)、2023年11月1日時点）。
 
 鰺ヶ沢町では2050年に向けて、宿や店を支える世代が大きく減ります。社人研の令和5年推計をもとに当社が15〜64歳を足し上げると、2020年の4,308人が2050年には1,180人と、4分の1あまりになります（[社人研](https://www.ipss.go.jp/pp-shicyoson/j/shicyoson23/t-page.asp)）。町を管轄するハローワーク五所川原の2026年8月の有効求人倍率（原数値）は0.72倍でした（青森労働局「[雇用情勢](https://jsite.mhlw.go.jp/aomori-roudoukyoku/content/contents/0808ao.pdf)」）。
 

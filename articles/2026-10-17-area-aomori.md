@@ -28,9 +28,9 @@ excerpt: 青森県のAI導入に使える補助金は、2026年10月17日時点�
 | 上北地域 | [十和田市](/area/aomori/towada/)・[三沢市](/area/aomori/misawa/)・[野辺地町](/area/aomori/noheji/)・[七戸町](/area/aomori/shichinohe/)・[六戸町](/area/aomori/rokunohe/)・[横浜町（上北郡）](/area/aomori/yokohama-town/)・[東北町](/area/aomori/tohoku/)・[六ヶ所村](/area/aomori/rokkasho/)・[おいらせ町](/area/aomori/oirase/) | 17万8,428人 |
 | 下北地域 | [むつ市](/area/aomori/mutsu/)・[大間町](/area/aomori/oma/)・[東通村](/area/aomori/higashidori/)・[風間浦村](/area/aomori/kazamaura/)・[佐井村](/area/aomori/sai/) | 6万392人 |
 
-出典：青森県統計分析課「[青森県の推計人口（令和8年9月1日現在）](https://opendata.pref.aomori.lg.jp/dataset/2437.html)」（令和7年国勢調査に基づく遡及改定版）の地域別人口。地域ごとの所属市町村は、市郡・町村別の推計人口の合計が地域別の値と一致することで当社が確認しました。
+出典：青森県統計分析課「[青森県の推計人口（令和8年9月1日現在）](https://www.pref.aomori.lg.jp/soshiki/seisaku/tokei/toukei-ichiran.html)」（令和7年国勢調査に基づく遡及改定版）の地域別人口。地域ごとの所属市町村は、市郡・町村別の推計人口の合計が地域別の値と一致することで当社が確認しました。
 
-青森県の推計人口は、2026年9月1日時点で112万1,734人です（[青森県統計分析課](https://opendata.pref.aomori.lg.jp/dataset/2437.html)）。東青・中南・三八の3地域に県民の約7割が住んでいます。
+青森県の推計人口は、2026年9月1日時点で112万1,734人です（[青森県統計分析課](https://www.pref.aomori.lg.jp/soshiki/seisaku/tokei/toukei-ichiran.html)）。東青・中南・三八の3地域に県民の約7割が住んでいます。
 
 6地域の名称は、かつての地域県民局と同じです。ただし、地域県民局は2025年4月1日の組織改正で廃止されました（青森県中南福祉事務所「[令和8年度 業務概要](https://www.pref.aomori.lg.jp/soshiki/kenko/ch-fukushi/files/R8gaiyo04-08_01-05honbun.pdf)」の沿革）。このページの地域は、県の統計の区分として使っています。
 
@@ -131,7 +131,7 @@ excerpt: 青森県のAI導入に使える補助金は、2026年10月17日時点�
 
 青森県の製造品出荷額等の32.2%は八戸市が占め、弘前市と六ヶ所村がそれぞれ12.0%で続きます（[同調査](https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040480531&fileKind=0)、2024年実績）。
 
-青森県の農業産出額3,466億円のうち、りんごが1,033億円で全国の都道府県で1位です（東北農政局「[スマポケ東北](https://www.maff.go.jp/tohoku/stinfo/toukei/attach/pdf/sumapoke-19.pdf)」、2023年の推計）。漁業では、販売金額1位をほたてがい養殖とする経営体が798と、県の漁業経営体の25.6%を占めます（青森県「[2023年漁業センサス](https://opendata.pref.aomori.lg.jp/dataset/2361.html)」）。
+青森県の農業産出額3,466億円のうち、りんごが1,033億円で全国の都道府県で1位です（東北農政局「[スマポケ東北](https://www.maff.go.jp/tohoku/stinfo/toukei/attach/pdf/sumapoke-19.pdf)」、2023年の推計）。漁業では、販売金額1位をほたてがい養殖とする経営体が798と、県の漁業経営体の25.6%を占めます（青森県「[2023年漁業センサス](https://www.pref.aomori.lg.jp/release/2024/77880.html)」）。
 
 ### 人手不足：事務は0.40倍、建設は5.36倍
 
@@ -295,7 +295,7 @@ excerpt: 青森県のAI導入に使える補助金は、2026年10月17日時点�
 | [風間浦村](/area/aomori/kazamaura/) | 下北 | 漁業・宿泊 | 漁業経営体148、宿泊業53人 |
 | [佐井村](/area/aomori/sai/) | 下北 | 建設・定置網 | 建設業が民営従業者の26.1% |
 
-出典：[令和3年経済センサス‐活動調査](https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040067880&fileKind=0)（2021年6月1日時点）、経済産業省「[2025年経済構造実態調査](https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040480531&fileKind=0)」（出荷額は2024年実績）、東北農政局「[スマポケ東北](https://www.maff.go.jp/tohoku/stinfo/toukei/attach/pdf/sumapoke-19.pdf)」（農業産出額は2023年の推計）、青森県「[2025年農林業センサス](https://opendata.pref.aomori.lg.jp/dataset/2468.html)」、青森県「[2023年漁業センサス](https://opendata.pref.aomori.lg.jp/dataset/2361.html)」、社人研の令和5年推計（人口減少率は2020→2050年、当社算出）。
+出典：[令和3年経済センサス‐活動調査](https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040067880&fileKind=0)（2021年6月1日時点）、経済産業省「[2025年経済構造実態調査](https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040480531&fileKind=0)」（出荷額は2024年実績）、東北農政局「[スマポケ東北](https://www.maff.go.jp/tohoku/stinfo/toukei/attach/pdf/sumapoke-19.pdf)」（農業産出額は2023年の推計）、青森県「[2025年農林業センサス](https://www.pref.aomori.lg.jp/release/2025/80302.html)」、青森県「[2023年漁業センサス](https://www.pref.aomori.lg.jp/release/2024/77880.html)」、社人研の令和5年推計（人口減少率は2020→2050年、当社算出）。
 
 ### 青森県のシステム開発・Web開発会社
 

@@ -21,7 +21,7 @@ excerpt: 蓬田村のAI導入は、民営従業者の27.8%が働く繊維工業�
 
 蓬田村の製造業は2025年6月1日時点で1事業所・159人で、事業所が1つのため出荷額は公表されていません（経済産業省「[2025年経済構造実態調査](https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040480531&fileKind=0)」）。民営事業所77のうち74.0%は常用雇用者が4人以下の小さな事業所です（[同調査 第14表](https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040067896&fileKind=0)、常用雇用者規模）。
 
-農業では養鶏の比重が大きい村です。東北農政局の「[スマポケ東北](https://www.maff.go.jp/tohoku/stinfo/toukei/attach/pdf/sumapoke-19.pdf)」によると、蓬田村の農業産出額26.9億円（2023年の推計）のうち、鶏卵が17.1億円と6割余りを占め、米の7.4億円を大きく上回ります。海では、41ある漁業経営体のうち37がほたてがい養殖を主な漁業としています（青森県「[2023年漁業センサス](https://opendata.pref.aomori.lg.jp/dataset/2361.html)」、2023年11月1日時点）。
+農業では養鶏の比重が大きい村です。東北農政局の「[スマポケ東北](https://www.maff.go.jp/tohoku/stinfo/toukei/attach/pdf/sumapoke-19.pdf)」によると、蓬田村の農業産出額26.9億円（2023年の推計）のうち、鶏卵が17.1億円と6割余りを占め、米の7.4億円を大きく上回ります。海では、41ある漁業経営体のうち37がほたてがい養殖を主な漁業としています（青森県「[2023年漁業センサス](https://www.pref.aomori.lg.jp/release/2024/77880.html)」、2023年11月1日時点）。
 
 蓬田村の15〜64歳の人口は、2020年の1,216人から2050年に383人へ、68.5%減る見込みです（[社人研の令和5年推計](https://www.ipss.go.jp/pp-shicyoson/j/shicyoson23/t-page.asp)から当社算出）。蓬田村の主な業種で、AIに任せやすい業務を表にまとめます（当社の整理）。
 

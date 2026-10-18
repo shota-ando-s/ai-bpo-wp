@@ -21,7 +21,7 @@ excerpt: 大鰐町のAI導入は、温泉宿の予約・問い合わせ対応と
 
 大鰐町の観光ページには、温泉・宿泊施設、大鰐温泉スキー場、大鰐温泉もやしなどの案内が並び、入浴マナーの英語版も作られています（[大鰐町 観光](http://www.town.owani.lg.jp/kanko/index.html)、2026年10月17日確認）。令和6年の大鰐町の観光入込客数（延べ）は543,368人でした（青森県「[令和6年 青森県観光入込客統計](https://www.pref.aomori.lg.jp/soshiki/kkokusai/kanko/kankoutoukei.html)」）。
 
-宿の外では、りんごが町の農業の8割以上を稼ぎます。2023年の推計で大鰐町の農業産出額は32.4億円、うちりんごが26.8億円で、トマトと米は各1.7億円でした（東北農政局「[スマポケ東北](https://www.maff.go.jp/tohoku/stinfo/toukei/attach/pdf/sumapoke-19.pdf)」）。農家の4軒に3軒（75.2%）が果樹類を主力としています（青森県「[2025年農林業センサス 市町村別主要統計表](https://opendata.pref.aomori.lg.jp/dataset/2468.html)」、2025年2月1日時点）。
+宿の外では、りんごが町の農業の8割以上を稼ぎます。2023年の推計で大鰐町の農業産出額は32.4億円、うちりんごが26.8億円で、トマトと米は各1.7億円でした（東北農政局「[スマポケ東北](https://www.maff.go.jp/tohoku/stinfo/toukei/attach/pdf/sumapoke-19.pdf)」）。農家の4軒に3軒（75.2%）が果樹類を主力としています（青森県「[2025年農林業センサス 市町村別主要統計表](https://www.pref.aomori.lg.jp/release/2025/80302.html)」、2025年2月1日時点）。
 
 大鰐町の製造業は2025年6月1日時点で9事業所・228人、2024年の製造品出荷額等は33.6億円です（経済産業省「[2025年経済構造実態調査](https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040480531&fileKind=0)」、個人経営を除く）。
 

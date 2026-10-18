@@ -21,7 +21,7 @@ excerpt: 西目屋村のAI導入は、白神山地を訪れる人向けの宿や
 
 西目屋村の観光案内所は、道の駅津軽白神インフォメーションセンターと、白神山地の散策道や暗門の滝の案内をするアクアグリーンビレッジANMONの2か所です（[西目屋村「観光案内所について」](https://www.nishimeya.jp/shirakami_kanko/kanko/1/35.html)、2026年10月17日確認）。令和6年の西目屋村の観光入込客数（延べ）は251,947人でした（青森県「[令和6年 青森県観光入込客統計](https://www.pref.aomori.lg.jp/soshiki/kkokusai/kanko/kankoutoukei.html)」）。
 
-西目屋村の民営従業者389人のうち28.3%が農業・林業で働き、宿泊業は42人（10.8%）です（[令和3年経済センサス‐活動調査](https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040067880&fileKind=0)、2021年6月1日時点）。村の農業は、販売のあった65経営体のうち47.7%が稲作、44.6%が果樹類を主力とし、2023年の農業産出額5.0億円のうちりんごが3.5億円です（青森県「[2025年農林業センサス](https://opendata.pref.aomori.lg.jp/dataset/2468.html)」、東北農政局「[スマポケ東北](https://www.maff.go.jp/tohoku/stinfo/toukei/attach/pdf/sumapoke-19.pdf)」）。
+西目屋村の民営従業者389人のうち28.3%が農業・林業で働き、宿泊業は42人（10.8%）です（[令和3年経済センサス‐活動調査](https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040067880&fileKind=0)、2021年6月1日時点）。村の農業は、販売のあった65経営体のうち47.7%が稲作、44.6%が果樹類を主力とし、2023年の農業産出額5.0億円のうちりんごが3.5億円です（青森県「[2025年農林業センサス](https://www.pref.aomori.lg.jp/release/2025/80302.html)」、東北農政局「[スマポケ東北](https://www.maff.go.jp/tohoku/stinfo/toukei/attach/pdf/sumapoke-19.pdf)」）。
 
 2050年の西目屋村では、働き手の中心になる15〜64歳が255人と、2020年の613人の半分以下になる見込みです（[社人研の令和5年推計](https://www.ipss.go.jp/pp-shicyoson/j/shicyoson23/t-page.asp)、減少率58.4%は当社算出）。求人は弘前市などと同じハローワーク弘前の管内で見ます。管内の2026年8月の有効求人倍率（原数値）は1.07倍でした（[青森労働局](https://jsite.mhlw.go.jp/aomori-roudoukyoku/content/contents/0808ao.pdf)）。
 

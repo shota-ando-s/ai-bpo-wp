@@ -23,7 +23,7 @@ excerpt: 階上町のAI導入は、民営従業者の25.7%が製造業で働く�
 
 経済産業省の[2025年経済構造実態調査](https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040480531&fileKind=0)では、階上町の工場は19事業所・681人、2024年の製造品出荷額等は165.3億円でした。個人経営は含まず、町村の業種別の金額は公表されていません。
 
-階上町には畜産と漁業もあります。2023年の推計で町の農業産出額は75.1億円、うち豚が20.9億円で、鶏卵は秘匿されています（東北農政局「[スマポケ東北](https://www.maff.go.jp/tohoku/stinfo/toukei/attach/pdf/sumapoke-19.pdf)」）。2023年11月の漁業センサスでは漁業経営体が23あり、5経営体が沿岸いか釣を主にしています（[青森県](https://opendata.pref.aomori.lg.jp/dataset/2361.html)）。
+階上町には畜産と漁業もあります。2023年の推計で町の農業産出額は75.1億円、うち豚が20.9億円で、鶏卵は秘匿されています（東北農政局「[スマポケ東北](https://www.maff.go.jp/tohoku/stinfo/toukei/attach/pdf/sumapoke-19.pdf)」）。2023年11月の漁業センサスでは漁業経営体が23あり、5経営体が沿岸いか釣を主にしています（[青森県](https://www.pref.aomori.lg.jp/release/2024/77880.html)）。
 
 働き手の先行きは厳しく、2050年の階上町の15〜64歳は3,299人と、2020年の7,914人から58.3%減る計算です（[社人研の令和5年推計](https://www.ipss.go.jp/pp-shicyoson/j/shicyoson23/t-page.asp)をもとに当社算出）。ハローワーク八戸管内では、建設・採掘の職業の有効求人倍率が2026年8月に6.69倍に達しています（青森労働局「[求人・求職バランスシート](https://jsite.mhlw.go.jp/aomori-roudoukyoku/content/contents/ba0808.pdf)」）。
 

@@ -23,7 +23,7 @@ excerpt: 三沢市のAI導入は、出荷額の57.1%を食料品が占める食�
 
 三沢市の製造業の中では食料品製造業が1,130人で最も多く、電気機械器具製造業が261人で続きます（同センサス）。三沢市の観光入込客数は2024年に100万4,100人で、前年の104.3%でした（青森県「[観光入込客統計](https://www.pref.aomori.lg.jp/soshiki/kkokusai/kanko/files/R6aomorikenkankouirikomikyakutoukei.pdf)」）。
 
-三沢市の農業は露地野菜が中心で、農産物の販売がある315経営体のうち、販売金額1位の部門が露地野菜の経営体は74.0%です（青森県「[2025年農林業センサス](https://opendata.pref.aomori.lg.jp/dataset/2468.html)」、2025年2月1日時点）。農業産出額は161.2億円で、豚が51.9億円、やまのいもが14.8億円でした（東北農政局「[スマポケ東北](https://www.maff.go.jp/tohoku/stinfo/toukei/attach/pdf/sumapoke-19.pdf)」、2023年の推計）。
+三沢市の農業は露地野菜が中心で、農産物の販売がある315経営体のうち、販売金額1位の部門が露地野菜の経営体は74.0%です（青森県「[2025年農林業センサス](https://www.pref.aomori.lg.jp/release/2025/80302.html)」、2025年2月1日時点）。農業産出額は161.2億円で、豚が51.9億円、やまのいもが14.8億円でした（東北農政局「[スマポケ東北](https://www.maff.go.jp/tohoku/stinfo/toukei/attach/pdf/sumapoke-19.pdf)」、2023年の推計）。
 
 三沢市・おいらせ町・六戸町を受け持つハローワーク三沢の有効求人倍率は、2026年8月の原数値で1.03倍です。事務的職業に限ると0.29倍で、事務の仕事を探す人の方がずっと多い状態です（青森労働局「[雇用情勢](https://jsite.mhlw.go.jp/aomori-roudoukyoku/content/contents/0808ao.pdf)」「[求人・求職バランスシート](https://jsite.mhlw.go.jp/aomori-roudoukyoku/content/contents/ba0808.pdf)」）。
 
