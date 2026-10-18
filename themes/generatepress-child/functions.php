@@ -533,14 +533,10 @@ add_action( 'generate_before_right_sidebar_content', function() {
 
 	<div class="sidebar-widget sidebar-tools">
 		<a class="sidebar-tool" href="<?php echo esc_url( home_url( '/shindan/' ) ); ?>">
-			<span class="sidebar-tool-label">無料ツール</span>
-			<span class="sidebar-tool-title">AI導入の補助金診断</span>
-			<span class="sidebar-tool-text">所在地と費用から、使える補助金と実質の自己負担を試算します</span>
+			<img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/images/sidebar-shindan.webp' ); ?>" width="709" height="225" loading="lazy" alt="無料ツール AI導入の補助金診断。所在地と費用から、使える補助金と実質の自己負担を試算します">
 		</a>
 		<a class="sidebar-tool" href="<?php echo esc_url( home_url( '/area/' ) ); ?>">
-			<span class="sidebar-tool-label">地域別ガイド</span>
-			<span class="sidebar-tool-title">首都圏の地域別AI導入ガイド</span>
-			<span class="sidebar-tool-text">都県・市ごとの補助金、人手不足、事業承継のデータ</span>
+			<img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/images/sidebar-area.webp' ); ?>" width="709" height="228" loading="lazy" alt="地域別ガイド 全国の地域別AI導入ガイド。都道府県・市区町村ごとの補助金、人手不足、事業承継のデータをまとめています">
 		</a>
 	</div>
 

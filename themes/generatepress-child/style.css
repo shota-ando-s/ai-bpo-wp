@@ -1,7 +1,7 @@
 /*
 Theme Name: GeneratePress Child
 Template: generatepress
-Version: 1.4
+Version: 1.5
 */
 
 /* =============================
@@ -998,39 +998,21 @@ a:active {
 }
 
 .sidebar-tool {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  padding: 14px 16px;
-  border: 1px solid #d7e1f3;
-  border-left: 4px solid #2563eb;
-  border-radius: 8px;
-  background: #f5f8fe;
-  text-decoration: none !important;
-  transition: background 0.2s;
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: opacity 0.2s, transform 0.15s;
 }
 
 .sidebar-tool:hover {
-  background: #eaf1fd;
+  opacity: 0.92;
+  transform: translateY(-1px);
 }
 
-.sidebar-tool-label {
-  font-size: 0.7rem;
-  font-weight: 700;
-  color: #2563eb;
-  letter-spacing: 0.06em;
-}
-
-.sidebar-tool-title {
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: #1a3a6e;
-}
-
-.sidebar-tool-text {
-  font-size: 0.75rem;
-  color: #555;
-  line-height: 1.6;
+.sidebar-tool img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /* 診断・地域ページの監修者 */
