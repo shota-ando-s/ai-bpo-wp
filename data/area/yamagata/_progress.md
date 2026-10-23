@@ -37,7 +37,7 @@
 ## 状態
 - [x] ブランチ area-yamagata、data/area/yamagata/_brief.md・wages.md、scripts/area_uniq.py に yamagata を追加（2026-10-24）
 - [x] 調査（data/area/yamagata/。担当11人、2026-10-24 完了）
-- [ ] 執筆仕様 docs/area-writing-spec-yamagata.md
+- [x] 執筆仕様 docs/area-writing-spec-yamagata.md
 - [ ] 記事 36本（県1＋市町村35）
 - [ ] data/subsidies/yamagata.yml、areas.yml、build_shindan_data.py
 - [ ] 地域ガイド、area-todo.md、area-new-prefecture.md
@@ -60,3 +60,4 @@
 - gov_c 追加（WS2）: 川西町の元記事を確認〔イマクリエ PR TIMES 2024-10-15、効果の数字なし〕し「見つからない」を削除。**三川町: R7年12月定例会の町長答弁で「三川町生成ＡＩ活用ガイドライン」を作り3社のサービスを許可**〔会議録PDF p.126、サービス名は不明〕。3村は村の資料でもAIの利用記録なし → 記事では「未導入」と書かず「確認できない」。大蔵村は R7/3 の村長答弁で「AI活用を検討」、NTT東日本とのDX協定〔2023-09〜2024-03〕。鮭川村は広報・会議録の本文を見られず
 - 自治体コード: 尾花沢市06212・中山町06302・大石田町06341（stats.md で確認。gov_b の照合依頼に回答）
 - **調査11人すべて完了（2026-10-24）。調査 WebSearch 合計115、残り85**
+- 執筆仕様 docs/area-writing-spec-yamagata.md（422行、WS0）完了。後藤組・IBUKI は地元ページで1〜2文〔原典にリンク、他県ページにはリンクしない〕、弘栄ドリームワークスは山形市で1〜2文〔東北経産局の資料を主語に〕、荘内銀行は事例にしない、表にない市町村は「総務省の調査の表では確認できない」。担当 W1〜W10＋W11（県ページ）。1波 W1〜W4 を起動
