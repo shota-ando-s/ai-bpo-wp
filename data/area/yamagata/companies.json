@@ -1,0 +1,822 @@
+{
+ "_meta": {
+  "checked": "2026-10-24",
+  "scope": "山形県35市町村。本社（公式サイトの本社/所在地）が当該市町村にあり、公式サイトで受託システム開発・ソフトウェア開発・Web制作・ITサービスを事業として明示する法人。県外に本社がある会社の県内支店・事業所・営業所は載せない。県内に本社がある大手の子会社（NDソフトウェア〈SOMPOホールディングス100%〉・日本アバカス〈ディー・ティー・ホールディングスグループ〉・JimoTec〈きらやか銀行100%〉など）は載せ、親会社・株主をnotesに書いた。本社を2か所に置く会社は、公式サイトで『山形本社』と明記されていてシステム開発が主業のもの（クエスト・システム・デザイン）だけ本表に入れた。印刷が主業の会社（坂部印刷・藤庄メディアプラス）、複写機・事務機の販売が主業の会社（富士フイルムBI山形）、放送が主業の会社（ニューメディア）、電子制御機器の製造が主業の会社（ロジック・ラボ）、ロボット導入コンサルが主業の会社（ビジネスソリューションパートナーズ）、ふるさと納税支援が主業の会社（ローカルブライト）は本表に入れない。各市町村の本表は最大5社。",
+  "candidate_sources": [
+   "一般社団法人山形県情報産業協会（YIIA）の会員一覧（正会員43社・賛助会員14社、2026年9月16日現在。社名・代表者・住所・電話。従業員数の記載なし。正会員にも県外本社の支社・事務所〈リコージャパン山形支社・ジィ・シィ企画米沢事務所〉を含む） https://www.yiia.or.jp/member",
+   "全国法人検索（houjin.goo.to、国税庁の法人番号データにもとづく）の山形県『IT業界』一覧（取得できたのは1ページ目の約93社。2ページ目以降はURLを変えても同じ内容が返った） https://houjin.goo.to/corporations/prefs/yamagata/category-it/list",
+   "マイナビ2027（東北バンキングシステムズの会社概要。secondary） https://job.mynavi.jp/27/pc/search/corp206428/outline.html",
+   "WebSearch（担当上限14回のうち14回を使用。最後の1回は事例企業〈弘栄ドリームワークス〉の公式URL探し）"
+  ],
+  "search_limits": "規模・所在地・事業内容は各社の公式サイトで確認した。YIIA名簿・houjin.goo・就職サイト・比較サイトの値は本表の規模に使っていない（_reference と notes に参考として書いた箇所がある）。県の企業データベース（やまがたの企業ガイド等）は県のサイトのPDFがHTMLを返して開けず、使えなかった。公式サイトがメンテナンス中・内容が取れない会社、公式URLが見つからなかった会社は本表に入れず _reference に置いた。YIIAの会員以外は houjin.goo の1ページ目とWebSearchに出た分だけで、個人事業主・小規模なWeb制作者は網羅していない。並べ順: 公式の従業員数の多い順 → 従業員数がない会社は資本金 → どちらもない会社は最後。"
+ },
+ "yamagata-city": [
+  {
+   "name": "株式会社YCC情報システム",
+   "hq": "山形県山形市松波四丁目5-12",
+   "municipality": "山形市",
+   "town": "松波",
+   "employees": {
+    "value": 220,
+    "as_of": "2026年6月19日現在（会社概要の表示）",
+    "source": "https://www.yamagata-ycc.co.jp/company/"
+   },
+   "capital": {
+    "value": "6千万円",
+    "source": "https://www.yamagata-ycc.co.jp/company/"
+   },
+   "founded": 1966,
+   "business_summary": "公共団体（自治体・団体）、民間企業（製造・流通小売・社会基盤・メディア）、医療の分野で、コンサルティング・システムインテグレーション・パッケージソリューション・アウトソーシング・クラウドサービス。売上高 約35億円",
+   "ai_initiative": "AI体温検知ソリューション（公式サイトのソリューション紹介）。生成AIの記載は確認できず",
+   "url": "https://www.yamagata-ycc.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-24",
+   "notes": "1966年11月設立。株主 山形新聞社・山形放送・富士通Japan（会長は山形新聞社の社長）。庄内支社（酒田支店・鶴岡支店）、仙台支社、東京支社。YIIAの事務局を本社内に置く。"
+  },
+  {
+   "name": "株式会社メコム",
+   "hq": "山形県山形市南原町一丁目6番1号",
+   "municipality": "山形市",
+   "town": "南原町",
+   "employees": {
+    "value": 120,
+    "as_of": "2026年3月1日時点",
+    "source": "https://www.mecom.jp/%e4%bc%9a%e7%a4%be%e6%a1%88%e5%86%85"
+   },
+   "capital": null,
+   "founded": 1946,
+   "business_summary": "IT機器・ドキュメント機器・システム機器の販売・指導・保守、システムインテグレーション・ネットワーク構築、ソフトウェア受託開発・業務ソフトのインストラクター、IT機器のレンタル・リース、ネットワーク工事・通信機器工事、オフィスデザイン",
+   "ai_initiative": "沿革に『AI Lab開設（令和8年9月）』、AIによる自動電話応答・取次の開始のお知らせ、生成AIパスポート取得者16名（2025年）",
+   "url": "https://www.mecom.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-24",
+   "notes": "昭和21年2月創業（東北感光社）。事務機の販売から始まった会社で、システム開発専業ではない。YIIA名簿の住所は山形市香澄町2-9-21だが、公式の本社所在地は南原町（沿革に本社移転・DX/AX Center統合の記載）。グループ会社 セント（仙台市、従業員113名・2024年4月1日）、協和マイクロ（いわき市、12名）の人数は別掲で、120名はメコム単体と読める。資本金は公式に記載なし。"
+  },
+  {
+   "name": "日本アバカス株式会社",
+   "hq": "山形県山形市十日町4丁目3番31号",
+   "municipality": "山形市",
+   "town": "十日町",
+   "employees": {
+    "value": 60,
+    "as_of": "2024年12月現在",
+    "source": "https://www.abacus.co.jp/about-us/c01"
+   },
+   "capital": {
+    "value": "5,000万円",
+    "source": "https://www.abacus.co.jp/about-us/c01"
+   },
+   "founded": 1984,
+   "business_summary": "コンピュータ・周辺機器・消耗品の販売、ソフトウェア製品販売、業務システム開発、インフラ構築、ASPサービス、電気工事業・電気通信工事業",
+   "ai_initiative": "自社製品『SAI-ZERO』のAI Smart Search–ZERO・AI Smart Vision–ZERO、ノーコードAIツールの紹介（公式サイト）",
+   "url": "https://www.abacus.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-24",
+   "notes": "1984年6月設立。資本系列 ディー・ティー・ホールディングス株式会社グループ。従業員数の時点が2024年12月で古い。日本IBMのビジネスパートナー。"
+  },
+  {
+   "name": "株式会社クエスト・システム・デザイン",
+   "hq": "山形県山形市香澄町2-2-39 須藤ビル4階（山形本社）",
+   "municipality": "山形市",
+   "town": "香澄町",
+   "employees": {
+    "value": 24,
+    "as_of": "2026年3月31日現在",
+    "source": "https://www.qsd.co.jp/about/"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.qsd.co.jp/about/"
+   },
+   "founded": 2004,
+   "business_summary": "情報処理システムの企画・構築・コンサルティング、設計・製造、労働者派遣事業",
+   "ai_initiative": null,
+   "url": "https://www.qsd.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-24",
+   "notes": "2004年5月18日設立。**会社概要に『本社』（東京都渋谷区神泉町）と『山形本社』を併記**。代表取締役 田口雅教は山形本社の住所でYIIA正会員。仙台オフィスあり。"
+  },
+  {
+   "name": "A-Systems株式会社",
+   "hq": "山形県山形市北町三丁目1番15号",
+   "municipality": "山形市",
+   "town": "北町",
+   "employees": {
+    "value": 17,
+    "as_of": "2026年6月30日現在（男性12人・女性5人）",
+    "source": "https://www.a-systems.jp/company/"
+   },
+   "capital": {
+    "value": "3,000万円",
+    "source": "https://www.a-systems.jp/company/"
+   },
+   "founded": 2014,
+   "business_summary": "放送関連ソフト開発（主要取引先 NECおよびNECグループ）、WEB事業部（2015年開設）",
+   "ai_initiative": "『デジタル化・AI導入補助金2026 IT導入支援事業者』に登録されたとのお知らせ（AI製品の記載ではない）",
+   "url": "https://www.a-systems.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-24",
+   "notes": "2014年1月設立。放送局向けソフト開発の経験者が独立して設立。"
+  }
+ ],
+ "yonezawa": [
+  {
+   "name": "株式会社データシステム米沢",
+   "hq": "山形県米沢市中田町1248-6",
+   "municipality": "米沢市",
+   "town": "中田町",
+   "employees": {
+    "value": 90,
+    "as_of": "2025年10月現在",
+    "source": "https://dsy.jp/about"
+   },
+   "capital": {
+    "value": "3,000万円",
+    "source": "https://dsy.jp/about"
+   },
+   "founded": 1966,
+   "business_summary": "ソフトウェア開発、システム受託運用、コンピューター及び関連機器の販売",
+   "ai_initiative": null,
+   "url": "https://dsy.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-24",
+   "notes": "1966年11月26日設立。仙台オフィス（仙台市青葉区本町）。FCA（富士通系情報処理サービス業グループ）加盟。山形労働局の企業紹介ページ（2025年6月、検索結果の要約）は所在地を米沢市丸の内二丁目2-27としており、公式の本社（中田町）と食い違う（公式を採用）。"
+  },
+  {
+   "name": "テン・ソフトウェア株式会社",
+   "hq": "山形県米沢市中田町1944番地の1",
+   "municipality": "米沢市",
+   "town": "中田町",
+   "employees": null,
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://tensoft.co.jp/company"
+   },
+   "founded": 1989,
+   "business_summary": "ソフト開発事業、電子デバイス事業、パソコンショップ事業（V-CLUB米沢）、クリーン・ケア事業、OA機器・文房具販売事業（旧 一文字屋）",
+   "ai_initiative": null,
+   "url": "https://www.tensoft.co.jp/",
+   "size_basis": "capital",
+   "checked": "2026-10-24",
+   "notes": "1989年4月に株式会社十字電子のソフトウェア開発課から独立。2026年4月に一文字屋を吸収合併、2026年7月に東京サテライトオフィス（台東区）。公式に従業員数の記載なし。"
+  },
+  {
+   "name": "AiboLink株式会社",
+   "hq": "山形県米沢市本町1－1－15",
+   "municipality": "米沢市",
+   "town": "本町",
+   "employees": null,
+   "capital": {
+    "value": "100万円",
+    "source": "https://aibolink.co.jp/company"
+   },
+   "founded": 2025,
+   "business_summary": "コンサルティング事業、生成AIチャットボット導入支援、システム開発",
+   "ai_initiative": "生成AIチャットボット導入支援、AIOCR領収書管理アプリの開発（公式サイト）",
+   "url": "https://aibolink.co.jp/",
+   "size_basis": "capital",
+   "checked": "2026-10-24",
+   "notes": "令和7年7月7日設立の新しい会社。YIIA正会員。公式に従業員数の記載なし。"
+  }
+ ],
+ "tsuruoka": [
+  {
+   "name": "株式会社フェイバーエンジニアリング",
+   "hq": "山形県鶴岡市伊勢横内伊勢郷23-1",
+   "municipality": "鶴岡市",
+   "town": "伊勢横内",
+   "employees": {
+    "value": 18,
+    "as_of": "2026年7月現在",
+    "source": "https://favoreng.com/company/"
+   },
+   "capital": {
+    "value": "300万円",
+    "source": "https://favoreng.com/company/"
+   },
+   "founded": 2008,
+   "business_summary": "電子機器システム開発、画像処理、AI活用支援サービス（公式サイトの紹介文）",
+   "ai_initiative": "『AI事業案内』『AI活用支援サービス』（公式サイト）",
+   "url": "https://favoreng.com/",
+   "size_basis": "employees",
+   "checked": "2026-10-24",
+   "notes": "2008年12月1日設立。開発室（鶴岡市覚岸寺 先端研究産業支援センター）、東京営業所（中央区日本橋兜町）。"
+  },
+  {
+   "name": "株式会社セーブ",
+   "hq": "山形県鶴岡市斎藤川原字間々下116-1",
+   "municipality": "鶴岡市",
+   "town": "斎藤川原",
+   "employees": {
+    "value": 13,
+    "as_of": "時点なし（男性7名・女性6名）",
+    "source": "https://savecom.co.jp/info/"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://savecom.co.jp/info/"
+   },
+   "founded": 1988,
+   "business_summary": "農業者向けパッケージソフト（らくらく青色申告農業版・らくらく農作業日誌）の開発・販売・サポート、企業向け業務システム（生産管理・販売管理・産直管理など）の開発・保守、IT機器・ネットワークの導入支援",
+   "ai_initiative": null,
+   "url": "https://savecom.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-24",
+   "notes": "創業1980年7月1日、設立1988年4月8日。YIIA会員ではない（houjin.goo・WebSearchで判明）。"
+  },
+  {
+   "name": "株式会社iTOS（アイトス）",
+   "hq": "山形県鶴岡市末広町17番21号",
+   "municipality": "鶴岡市",
+   "town": "末広町",
+   "employees": {
+    "value": 6,
+    "as_of": "2020年3月現在",
+    "source": "https://www.i-tos.co.jp/company.html"
+   },
+   "capital": {
+    "value": "50万円（2010年4月現在）",
+    "source": "https://www.i-tos.co.jp/company.html"
+   },
+   "founded": 2007,
+   "business_summary": "アプリケーションソフトの企画・設計・開発、システム運用維持管理",
+   "ai_initiative": null,
+   "url": "https://www.i-tos.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-24",
+   "notes": "2007年4月設立。従業員数・資本金の時点が古い。"
+  },
+  {
+   "name": "株式会社鶴岡電子計算センター",
+   "hq": "山形県鶴岡市家中新町6番26号",
+   "municipality": "鶴岡市",
+   "town": "家中新町",
+   "employees": null,
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://turuden.jp/about-us/"
+   },
+   "founded": 1974,
+   "business_summary": "情報処理、保育園・学校給食システムパッケージ、日医標準レセプトソフト（ORCA）の販売、インターネット・ホームページ関連業務、人材派遣（沿革より）",
+   "ai_initiative": null,
+   "url": "https://turuden.jp/",
+   "size_basis": "capital",
+   "checked": "2026-10-24",
+   "notes": "昭和43年4月 黒谷公認会計士事務所電子計算事業部として創業、昭和49年12月に株式会社設立。公式に従業員数の記載なし。"
+  },
+  {
+   "name": "アインテック株式会社（AiNTEC）",
+   "hq": "山形県鶴岡市末広町23番50号 1階B",
+   "municipality": "鶴岡市",
+   "town": "末広町",
+   "employees": null,
+   "capital": {
+    "value": "415万円",
+    "source": "https://www.aintecweb.com/"
+   },
+   "founded": 2017,
+   "business_summary": "GIS（地理情報システム）のシステム開発・データ入力、ESRI ArcGIS製品の販売・保守サポート、デジタルツイン、UAV",
+   "ai_initiative": null,
+   "url": "https://www.aintecweb.com/",
+   "size_basis": "capital",
+   "checked": "2026-10-24",
+   "notes": "2017年設立、2022年に現社名。測量業者登録あり。公式に従業員数の記載なし。"
+  }
+ ],
+ "sakata": [
+  {
+   "name": "株式会社管理システム",
+   "hq": "山形県酒田市京田2-69-8",
+   "municipality": "酒田市",
+   "town": "京田",
+   "employees": {
+    "value": 87,
+    "as_of": "時点なし",
+    "source": "https://www.kksnet.co.jp/company"
+   },
+   "capital": {
+    "value": "55,300千円",
+    "source": "https://www.kksnet.co.jp/company"
+   },
+   "founded": null,
+   "business_summary": "グループウェア・セキュリティ等のソリューション、サーバ・ネットワーク・仮想基盤、業務アプリケーションの導入コンサル・設計・システム開発・保守、CMS構築、クラウドサービス、システム監視、SE派遣。売上高21.5億（2020年度）",
+   "ai_initiative": "サービスに『AI（人工知能）』（ディープラーニング・機械学習・統計解析）、AI技術による類似図面検索システム、社員にAIエンジニア・JDLA E資格/G検定の保有者（公式サイト）",
+   "url": "https://www.kksnet.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-24",
+   "notes": "鶴岡支店。設立年は今回取得したページで確認できず。売上高の時点（2020年度）が古い。"
+  },
+  {
+   "name": "キューブワン情報株式会社",
+   "hq": "山形県酒田市京田四丁目1番地10",
+   "municipality": "酒田市",
+   "town": "京田",
+   "employees": {
+    "value": 45,
+    "as_of": "令和8年4月現在",
+    "source": "https://cube-one.com/corporate/"
+   },
+   "capital": {
+    "value": "2,000万円",
+    "source": "https://cube-one.com/corporate/"
+   },
+   "founded": 1961,
+   "business_summary": "業務アプリケーション・ソフトウエアの開発・販売・指導・保守、コンピューター・ネットワーク機器の販売・保守、ネットワークシステムの企画・構築",
+   "ai_initiative": "DX戦略のページで、生成AIによるSFAデータ分析環境の構築（2027年度末まで）、問い合わせ対応での生成AI活用で対応工数50%削減の目標、社内AI講師2名の任命、AI活用アドバイザーとして地域への生成AI普及を掲げる https://cube-one.com/corporate/dx-strategy/",
+   "url": "https://cube-one.com/",
+   "size_basis": "employees",
+   "checked": "2026-10-24",
+   "notes": "昭和36年6月創業。鶴岡支社（鶴岡市宝田）。"
+  },
+  {
+   "name": "有限会社山形データセンター",
+   "hq": "山形県酒田市若宮町2丁目2番15号",
+   "municipality": "酒田市",
+   "town": "若宮町",
+   "employees": {
+    "value": 28,
+    "as_of": "2023年4月現在",
+    "source": "https://ydch.co.jp/company.html"
+   },
+   "capital": null,
+   "founded": 1992,
+   "business_summary": "情報処理・システム開発（主な取引先に山形県・酒田市・鶴岡市・遊佐町・置賜広域・最上広域市町村圏）、労働者派遣",
+   "ai_initiative": null,
+   "url": "https://ydch.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-24",
+   "notes": "平成4年5月28日の記載あり（設立日と読める）。従業員数の時点が2023年4月で古い。プライバシーマーク登録。事業内容の詳細ページは未確認。"
+  }
+ ],
+ "shinjo": [
+  {
+   "name": "グラッシーデザイン株式会社",
+   "hq": "山形県新庄市大町2-20",
+   "municipality": "新庄市",
+   "town": "大町",
+   "employees": {
+    "value": 11,
+    "as_of": "時点なし（正社員3名・アルバイト8名）",
+    "source": "https://webglassy.jp/about/index.html"
+   },
+   "capital": null,
+   "founded": 2023,
+   "business_summary": "ブランディング事業（ブランド戦略、ロゴ・VI、広告、グラフィック・映像の企画制作、ウェブサイトの企画・制作、SNS運用サポート、店舗・サインの企画）",
+   "ai_initiative": null,
+   "url": "https://webglassy.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-24",
+   "notes": "2010年2月創業、2023年4月法人設立。デザイン・ブランディングの会社で、システム開発会社ではない（Web制作を事業に明記）。"
+  },
+  {
+   "name": "株式会社東北情報センター",
+   "hq": "山形県新庄市十日町6162-10",
+   "municipality": "新庄市",
+   "town": "十日町",
+   "employees": null,
+   "capital": {
+    "value": "76,000千円",
+    "source": "https://www.ticsca.co.jp/corporate/profile/"
+   },
+   "founded": 1987,
+   "business_summary": "システム開発事業、データベース事業、コンサルティング事業、指定管理事業、ITソリューション",
+   "ai_initiative": "『やまがたAI部運営コンソーシアム』への言及（公式サイト）",
+   "url": "https://www.ticsca.co.jp/",
+   "size_basis": "capital",
+   "checked": "2026-10-24",
+   "notes": "1987年12月25日設立。取締役に新庄市長・大蔵村長など最上地方の首長が名を連ねる（第三セクター的な会社）。東京事業所（世田谷区）。公式に従業員数の記載なし。資本金は県内の本表の会社で大きく、規模は新庄市で最大の可能性が高いが、公式の従業員数がないため2位にした。"
+  },
+  {
+   "name": "株式会社メビウス・ネットコム",
+   "hq": "山形県新庄市五日町1277-8",
+   "municipality": "新庄市",
+   "town": "五日町",
+   "employees": null,
+   "capital": null,
+   "founded": 2019,
+   "business_summary": "コンピュータ・周辺機器・ソフトウェアの販売・開発・制作・保守、ホームページの企画・制作・運営、印刷・デザイン、動画制作、事務機器販売、パソコン教室",
+   "ai_initiative": null,
+   "url": "https://www.mebius-net.com/",
+   "size_basis": "none",
+   "checked": "2026-10-24",
+   "notes": "2019年10月31日設立。公式に従業員数・資本金の記載なし。"
+  }
+ ],
+ "sagae": [],
+ "kaminoyama": [],
+ "murayama": [],
+ "nagai": [
+  {
+   "name": "日本・アルカディア・ネットワーク株式会社（Jan）",
+   "hq": "山形県長井市館町北6-27",
+   "municipality": "長井市",
+   "town": "館町北",
+   "employees": null,
+   "capital": {
+    "value": "88,000千円",
+    "source": "https://jan.jp/company"
+   },
+   "founded": 1993,
+   "business_summary": "インターネット接続事業・MVNO事業（第二種電気通信事業）、コミュニティFM放送、Webデザインなど（会社概要の資格・加盟団体と、トップページの職種紹介による）",
+   "ai_initiative": null,
+   "url": "https://jan.jp/",
+   "size_basis": "capital",
+   "checked": "2026-10-24",
+   "notes": "平成5年11月1日設立。出資は行政60.6%（長井市50.4%・山形県4.5%）・民間39.4%の第三セクター。取締役会長は長井市副市長。ISP・放送が中心で、システム開発会社ではない。公式に従業員数の記載なし。"
+  }
+ ],
+ "tendo": [
+  {
+   "name": "株式会社FIBS.lab（フィブス・ラボ）",
+   "hq": "山形県天童市東本町2-7-8 1F",
+   "municipality": "天童市",
+   "town": "東本町",
+   "employees": {
+    "value": 16,
+    "as_of": "時点なし",
+    "source": "https://fibs-lab.com/company/"
+   },
+   "capital": {
+    "value": "300万円",
+    "source": "https://fibs-lab.com/company/"
+   },
+   "founded": 2015,
+   "business_summary": "ウェブサイト制作・ECサイト構築・SEO対策・各種デザイン制作・広告代理事業・企業ブランディング、プログラミング・パソコンスクール運営",
+   "ai_initiative": null,
+   "url": "https://fibs-lab.com/",
+   "size_basis": "employees",
+   "checked": "2026-10-24",
+   "notes": "2015年3月2日設立。YIIA会員ではない（WebSearchで判明）。Web制作の会社で、業務システム開発の記載はない。"
+  }
+ ],
+ "higashine": [],
+ "obanazawa": [],
+ "nanyo": [
+  {
+   "name": "エヌ・デーソフトウェア株式会社（NDソフトウェア）",
+   "hq": "山形県南陽市和田3369",
+   "municipality": "南陽市",
+   "town": "和田",
+   "employees": {
+    "value": 528,
+    "as_of": "2026年3月31日時点（正社員・単体。連結は1,070名）",
+    "source": "https://www.ndsoft.jp/company/outline-branch/"
+   },
+   "capital": {
+    "value": "1億円",
+    "source": "https://www.ndsoft.jp/company/outline-branch/"
+   },
+   "founded": 2018,
+   "business_summary": "福祉・医療関連ソフトウェアの企画・開発・販売、運用支援・保守サービス。介護福祉業務支援ソフト『ほのぼの』シリーズ",
+   "ai_initiative": "音声入力の記録サービスで『AIで記録をサポート』（公式サイトの製品紹介）",
+   "url": "https://www.ndsoft.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-24",
+   "notes": "創立1979年9月、現法人の設立は2018年12月20日。SOMPOホールディングス株式会社の100%子会社。営業所等19拠点・開発拠点4拠点（本社含む）。県内のシステム開発会社で従業員数が最も多い。"
+  }
+ ],
+ "yamanobe": [],
+ "nakayama": [],
+ "kahoku": [],
+ "nishikawa": [],
+ "asahi-town": [],
+ "oe": [],
+ "oishida": [],
+ "kaneyama-town": [],
+ "mogami": [],
+ "funagata": [],
+ "mamurogawa": [],
+ "takahata": [],
+ "kawanishi-town": [],
+ "oguni-town": [],
+ "shirataka": [],
+ "iide": [],
+ "mikawa": [],
+ "shonai": [
+  {
+   "name": "山形ソリューションビジネス株式会社",
+   "hq": "山形県東田川郡庄内町余目字沢田108-1 庄内町新産業創造館内",
+   "municipality": "庄内町",
+   "town": "余目",
+   "employees": null,
+   "capital": null,
+   "founded": 2006,
+   "business_summary": "システム導入計画・準備からシステム開発、教育研修、システム保守までのソリューション（業務分析・システム設計・システムインテグレーション）",
+   "ai_initiative": null,
+   "url": "https://www.ysbkk.com/",
+   "size_basis": "none",
+   "checked": "2026-10-24",
+   "notes": "平成18年8月1日創業。鶴岡営業所（鶴岡市道形町）、遊佐営業所（遊佐町、ゆざっとプラザ1階）。公式に従業員数・資本金の記載なし。"
+  }
+ ],
+ "yuza": [],
+ "okura": [],
+ "sakegawa": [],
+ "tozawa": [],
+ "_reference": {
+  "yamagata-city": {
+   "next_candidates": [
+    {
+     "name": "株式会社JimoTec",
+     "employees": "14人（時点なし）",
+     "capital": "未確認",
+     "note": "1974年10月31日設立。旧 富士通山形インフォテクノ。2024年4月1日にきらやか銀行が100%出資し現社名。山形市清住町2-7-1。情報系システムのトータルアウトソーシング、アプリケーション開発。",
+     "source": "https://www.jimotec.co.jp/about"
+    },
+    {
+     "name": "株式会社ウェルコム",
+     "employees": "9名（2026年1月現在）",
+     "capital": "未確認",
+     "note": "山形市あかねヶ丘1-3-30。旅館ホテル向け『Fronick』、LPガス販売業向け『LPAL』、運送業向け『ProsperLogi』などの業務システム。",
+     "source": "https://www.well-com.co.jp/company/"
+    },
+    {
+     "name": "株式会社ブルーパシフィックソフトウェア",
+     "employees": "役員2名・従業員5名",
+     "capital": "未確認",
+     "note": "山形市上町五丁目5-27。",
+     "source": "https://www.bpsoft.co.jp/company"
+    },
+    {
+     "name": "株式会社瑠々堂",
+     "employees": "4名（ほか契約テレワーカー7名）",
+     "capital": "未確認",
+     "note": "山形市久保田1-2-27。ウェブサイト制作、サーバーホスティング、音声起こし。",
+     "source": "https://rurudo.cloud/about"
+    },
+    {
+     "name": "株式会社システムフォーサイト",
+     "employees": "公式に記載なし",
+     "capital": "5,000万円",
+     "note": "昭和46年10月18日設立。山形市流通センター二丁目9番地の7。パソコン・汎用機ソフトウェア開発、情報処理サービス、OA機器販売、要員派遣。",
+     "source": "https://www.s-foresight.co.jp/information/outline/"
+    },
+    {
+     "name": "株式会社山形コミュニティデーターセンター",
+     "employees": "公式に記載なし",
+     "capital": "4,300万円",
+     "note": "山形市七日町3-1-16。データセンター事業（ハウジング・コロケーション）。代表はYCC情報システムの社長と同じ伊藤秀美。システム開発会社ではない。",
+     "source": "https://www.yamagata-cdc.jp/company.html"
+    },
+    {
+     "name": "株式会社トップシステムプロダクツ",
+     "employees": "公式に記載なし",
+     "capital": "3,000万円",
+     "note": "山形市あさひ町19-13（山形本社）、尾花沢事業所。製造業向け生産管理システム・生産スケジューラー、導入実績250社以上。**生産管理システムの『AIエージェント』機能**を公式に掲載。",
+     "source": "https://www.topse.co.jp/about"
+    },
+    {
+     "name": "株式会社エム・エス・アイ",
+     "employees": "公式に記載なし",
+     "capital": "2,000万円",
+     "note": "1992年2月26日設立。山形市松栄1丁目5番7号。流通業・製造業・自治体向けの業務システム開発、ホームページ・Webショップの構築。独立系。",
+     "source": "https://msi-net.co.jp/profile"
+    },
+    {
+     "name": "株式会社アクティブクリエイト",
+     "employees": "公式に記載なし",
+     "capital": "1,000万円",
+     "note": "山形市十日町4丁目3番31号（日本アバカスと同じ住所）。生産管理システム、**AIによる類似図面検索**。",
+     "source": "https://actcrt.jp/about-company"
+    },
+    {
+     "name": "株式会社情報技術サービス",
+     "employees": "公式に記載なし",
+     "capital": "1,000万円（沿革の増資の記載）",
+     "note": "山形市双葉町2-1-1 結城ビル2階。コンピュータソフトウエアの開発・販売、機器販売。",
+     "source": "http://www.its-net.co.jp/company.html"
+    },
+    {
+     "name": "株式会社ASAHI Accounting Robot研究所",
+     "employees": "公式に記載なし",
+     "capital": "未確認",
+     "note": "山形オフィス（山形市東原町二丁目1番27号）のほか仙台・名古屋・東京・大阪にオフィス。公式は『本社』と明記せず。**DX推進支援・AI活用支援、AI-OCR活用支援、Microsoft Power Platform**。",
+     "source": "https://asahi-robo.jp/about-us/"
+    }
+   ],
+   "unverified": [
+    {
+     "name": "株式会社東北バンキングシステムズ",
+     "note": "マイナビ2027で本社 山形市松波4-1-15 山形県自治会館4F、従業員39名（2026年4月現在）、資本金2,590万円、金融システムの受託開発、2015年6月に福島銀行の連結子会社（secondary）。公式サイトを見つけられず。公式で確かめれば山形市の4位になる。 https://job.mynavi.jp/27/pc/search/corp206428/outline.html"
+    },
+    {
+     "name": "株式会社日本マイコンセンター山形",
+     "note": "YIIA正会員（山形市双葉町2-4-38）。公式サイト（jmcy.co.jp）は本文が取れなかった。"
+    },
+    {
+     "name": "トータルサポート株式会社",
+     "note": "YIIA正会員（山形市泉町）。公式サイトはホームページ制作相談窓口の短いページで、会社概要がない。"
+    },
+    {
+     "name": "山銀システムサービス株式会社・キョードーシステムズ株式会社・トスメックコンピュータシステム株式会社・株式会社オート情報システム・タムス・ファームウェアー株式会社・アルファシステム株式会社・株式会社エクセルソフト・株式会社シーエス・イディ株式会社 ほか",
+     "note": "houjin.goo の山形県『IT業界』で山形市の所在。公式URLを探せなかった（WebSearch の上限）。"
+    }
+   ],
+   "excluded_business": [
+    {
+     "name": "坂部印刷株式会社",
+     "note": "YIIA正会員、従業員33名だが印刷が主業。 https://sakabe-p.com/company.html"
+    },
+    {
+     "name": "株式会社藤庄メディアプラス",
+     "note": "YIIA名簿の住所は上山市蔵王の森7（工場）だが公式の本社は山形市あこや町3丁目18-30。従業員158名（2026年4月1日）、商業印刷が主業でWeb制作・情報処理は一部。 https://fujisho.co.jp/aboutus/company-profile/index.html"
+    },
+    {
+     "name": "富士フイルム BI山形株式会社",
+     "note": "山形市鉄砲町2-17-48、1984年4月設立、資本金5,480万円。複合機・ドキュメントソリューションの販売が主業。 https://fujifilm-fbyamagata.com/about/"
+    }
+   ],
+   "excluded_hq_elsewhere": [
+    "リコージャパン山形支社（東京）",
+    "NTT東日本山形支店（東京）",
+    "ダイワボウ情報システム山形支店（大阪）",
+    "テクノ・マインド山形支社（仙台）",
+    "トークネット山形支社（仙台）",
+    "日立製作所東北支社山形支店（東京）",
+    "フィデア情報総研山形支社",
+    "山形パナソニック（家電・設備の販売。YIIA賛助会員）"
+   ]
+  },
+  "yonezawa": {
+   "unverified": [
+    {
+     "name": "株式会社ZAICO",
+     "note": "AI在庫管理システム『zaico』の開発・販売、2016年10月設立、資本金1億円。公式の会社概要は『山形オフィス 米沢市大字花沢331番地』と書き本社と明記せず、従業員数の記載もない。houjin.goo の所在地は米沢市花沢331。**AIカウント（2026年9月1日のプレスリリース）**。本社を公式で確かめれば米沢市の本表に入る。 https://corporate.zaico.co.jp/about/"
+    },
+    {
+     "name": "株式会社マイ・コンピュータ・ソフト",
+     "note": "米沢市金池5丁目13-3。ソフトウェア受託開発、エンジニア派遣、Webサイト制作、スマホアプリ開発（山形労働局の企業紹介ページ、WebSearch の要約。ページは503で開けず）。公式URLを見つけられず。"
+    },
+    {
+     "name": "株式会社十字電子・株式会社システムクリエイト・株式会社ワイ・エム・ピー・株式会社国際創研",
+     "note": "houjin.goo の山形県『IT業界』等で米沢市の所在。公式URL未確認。"
+    }
+   ],
+   "excluded_business": [
+    {
+     "name": "株式会社ニューメディア",
+     "note": "米沢市春日四丁目2-75、従業員250名、資本金10億8,690万円、第三セクター。放送法・有線電気通信法にもとづく放送事業（ケーブルテレビ）が主業。 https://www.ncv.co.jp/company/company/"
+    }
+   ],
+   "excluded_hq_elsewhere": [
+    "株式会社ジィ・シィ企画 米沢事務所（本社 千葉県佐倉市。YIIA正会員）"
+   ]
+  },
+  "tsuruoka": {
+   "unverified": [
+    {
+     "name": "有限会社ティーズファクトリー・有限会社ランクス・有限会社マルチソフト・株式会社トポス",
+     "note": "houjin.goo または県の就職資料（WebSearch の要約）で鶴岡市の所在。公式URL未確認。"
+    }
+   ],
+   "branches": [
+    "YCC情報システム 鶴岡支店",
+    "キューブワン情報 鶴岡支社",
+    "管理システム 鶴岡支店",
+    "山形ソリューションビジネス 鶴岡営業所"
+   ]
+  },
+  "sakata": {
+   "unverified": [
+    {
+     "name": "株式会社日情システムソリューションズ",
+     "note": "YIIA正会員（酒田市京田2-69-3）。公式サイト（nichijosys.com）が『ただいまメンテナンス中』（2026-10-24）で確認できず。"
+    },
+    {
+     "name": "株式会社hyoi・有限会社エボルバー",
+     "note": "houjin.goo の山形県『IT業界』で酒田市の所在。公式URL未確認。"
+    }
+   ],
+   "branches": [
+    "YCC情報システム 酒田支店"
+   ]
+  },
+  "nagai": {
+   "excluded_business": [
+    {
+     "name": "株式会社ロジック・ラボ",
+     "note": "長井市あら町3-8、従業員25名（2019年9月現在）、資本金3,000万円。電子制御機器の専門メーカーで、回路・基板設計と組込みソフト・PCアプリの開発、製造まで一貫。白鷹分室（白鷹町鮎貝）。Web・業務システムの会社ではないため本表外（組込み開発の会社として紹介するなら使える）。 http://logiclab.co.jp/company/"
+    }
+   ],
+   "unverified": [
+    {
+     "name": "株式会社CCT・株式会社ユニテックス",
+     "note": "houjin.goo の山形県『IT業界』で長井市の所在。公式URL未確認。"
+    }
+   ]
+  },
+  "higashine": {
+   "excluded_business": [
+    {
+     "name": "ビジネスソリューションパートナーズ合同会社（BSP）",
+     "note": "東根市中央二丁目1-5、2017年4月設立、YIIA正会員。サービスロボット導入のコンサル（ICT・AI・IoTも扱う）が中心で、システム開発・Web制作の会社ではない。公式に従業員数・資本金の記載なし。 https://www.bsp-jp.biz/profile"
+    }
+   ],
+   "unverified": [
+    {
+     "name": "株式会社東北テレネット・株式会社アーキネット",
+     "note": "houjin.goo の山形県『IT業界』で東根市の所在。公式URL未確認（同名のアーキネットは愛知県一宮市の建設設計の会社が出た）。"
+    }
+   ]
+  },
+  "murayama": {
+   "excluded_business": [
+    {
+     "name": "株式会社ローカルブライト",
+     "note": "村山市楯岡荒町2-1-1 C201（Link MURAYAMA内）、2020年8月3日設立、資本金3百万円、スタッフ30名（役員・正社員・アルバイト・副業）。ふるさと納税支援事業が中心で、デザイン・Webデザイン、eコマース運用・ソフトウェア導入支援も行う。YIIA正会員。システム開発会社ではないため本表外。 https://localbright.co.jp/company/"
+    }
+   ]
+  },
+  "kaminoyama": {
+   "note": "YIIA名簿で上山市の住所の藤庄メディアプラスは、公式の本社が山形市（上山市は蔵王の森工場）で、印刷が主業。"
+  },
+  "obanazawa": {
+   "branches": [
+    "トップシステムプロダクツ 尾花沢事業所（本社 山形市）"
+   ],
+   "unverified": [
+    {
+     "name": "株式会社トップシステムエンジニアリング",
+     "note": "houjin.goo で尾花沢市荻袋（機械関連サービス業界）。公式未確認。"
+    }
+   ]
+  },
+  "shirataka": {
+   "branches": [
+    "ロジック・ラボ 白鷹分室（本社 長井市）"
+   ],
+   "unverified": [
+    {
+     "name": "株式会社イーストクリエーション",
+     "note": "houjin.goo で白鷹町鮎貝7491（白鷹ソフト小村と同じ番地）。公式URL未確認。"
+    }
+   ]
+  },
+  "takahata": {
+   "unverified": [
+    {
+     "name": "株式会社トライアール",
+     "note": "houjin.goo の山形県『IT業界』で高畠町福沢。公式URL未確認。"
+    },
+    {
+     "name": "nanaru株式会社（ナナル）",
+     "note": "比較サイトで高畠町福沢196 高畠町産業振興センター、2021年設立（secondary）。公式未確認。"
+    }
+   ]
+  },
+  "sagae": {
+   "unverified": [
+    {
+     "name": "ウィドック（WeDOK）・カポコスタイル",
+     "note": "比較サイトで寒河江市のホームページ制作事業者（secondary、WeDOKは従業員約1名）。法人か個人事業か未確認。"
+    },
+    {
+     "name": "株式会社山形エムエー",
+     "note": "houjin.goo で寒河江市石持町。業種・公式URL未確認。"
+    }
+   ]
+  },
+  "tendo": {
+   "unverified": [
+    {
+     "name": "レクポート株式会社",
+     "note": "WebSearch の要約で天童市老野森2-2-7、CMS型ホームページのパッケージ（secondary）。公式未確認。"
+    },
+    {
+     "name": "株式会社ブロードアイ・有限会社シスク",
+     "note": "houjin.goo で天童市（通信業界・通信機器業界）。"
+    }
+   ],
+   "excluded_business": [
+    "ノンピリオド（天童市。公式に『個人事業者が運営』と明記されている法人でないWeb制作者） https://www.non-period.com/about/index.html"
+   ]
+  },
+  "nanyo": {
+   "unverified": [
+    {
+     "name": "株式会社日本ケアコミュニケーションズ",
+     "note": "houjin.goo でNDソフトウェアと同じ南陽市和田3369番地。公式未確認。"
+    },
+    {
+     "name": "株式会社エコピタ",
+     "note": "houjin.goo の山形県『IT業界』で南陽市羽付。公式URL未確認。"
+    }
+   ]
+  },
+  "yuza": {
+   "branches": [
+    "山形ソリューションビジネス 遊佐営業所（本社 庄内町）"
+   ]
+  }
+ },
+ "_notes": [
+  "山形県情報産業協会（YIIA）の正会員43社（2026年9月16日現在）が主な候補。名簿に従業員数はない。正会員にもリコージャパン山形支社・ジィ・シィ企画米沢事務所など県外本社の拠点があり、名簿の住所が公式の本社と違う会社がある（メコムは香澄町→公式は南原町、藤庄メディアプラスは上山市の工場→公式の本社は山形市）。記事では公式サイトの値だけを使う。",
+  "県内で従業員数が最も多いのは南陽市のNDソフトウェア（単体528名・連結1,070名、2026年3月31日）。SOMPOホールディングスの100%子会社で、介護福祉ソフト『ほのぼの』のメーカー。山形市ではない点に注意。",
+  "山形市の上位: YCC情報システム（220名、株主 山形新聞社・山形放送・富士通Japan）、メコム（120名、事務機販売から出たITソリューション会社）、日本アバカス（60名、2024年12月時点、DTホールディングスグループ）。東北バンキングシステムズ（39名、福島銀行の連結子会社）は就職サイトの値だけで公式未確認。",
+  "大手・金融機関・自治体の関係: NDソフトウェア（SOMPO）、JimoTec（きらやか銀行100%）、東北バンキングシステムズ（福島銀行、未確認）、YCC情報システム（山形新聞社・山形放送・富士通Japan）、東北情報センター（取締役に新庄市長・最上地方の町村長）、日本・アルカディア・ネットワーク（行政出資60.6%）。記事で『地元企業』と書くときは親会社・出資者を書く。",
+  "AIを公式に明記している会社（本表）: キューブワン情報（酒田市、生成AIによるSFAデータ分析・問い合わせ対応工数50%削減の目標・社内AI講師）、管理システム（酒田市、AI〈ディープラーニング・機械学習〉サービス、類似図面検索）、メコム（山形市、AI Lab開設〈令和8年9月〉、AI自動電話応答）、日本アバカス（山形市、SAI-ZEROのAI検索・AI画像）、フェイバーエンジニアリング（鶴岡市、AI活用支援サービス）、AiboLink（米沢市、生成AIチャットボット導入支援）、NDソフトウェア（南陽市、音声記録のAIサポート）。_reference: トップシステムプロダクツ（生産管理のAIエージェント）、アクティブクリエイト（AI類似図面検索）、ASAHI Accounting Robot研究所（AI活用支援・AI-OCR）、ZAICO（AI在庫管理、AIカウント）。",
+  "本社の会社が公式で確認できた市町村は、山形市・米沢市・鶴岡市・酒田市・新庄市・長井市・天童市・南陽市・庄内町の9市町。東根市（BSP、ロボット導入コンサル）・村山市（ローカルブライト、ふるさと納税支援）は本社の会社はあるがシステム開発・Web制作の会社ではないので本表外。寒河江市・高畠町・白鷹町・尾花沢市は houjin.goo・比較サイトに候補があったが公式で確認できなかった。ほかの22町村（山辺町〜戸沢村）は候補自体が見つからなかった。",
+  "従業員数の時点が古い会社: 日本アバカス（2024年12月）、山形データセンター（2023年4月）、iTOS（2020年3月）。時点なし: 管理システム（87名）、セーブ（13名）、グラッシーデザイン（11名）、FIBS.lab（16名）。",
+  "社名の表記: エヌ・デーソフトウェア株式会社（公式サイトは『NDソフトウェア株式会社』も使う）。山形コミュニティデーターセンター（YIIA名簿・公式の表記。houjin.goo は『データセンター』）。JimoTec は旧 富士通山形インフォテクノ。キューブワン情報の旧社名は確認していない。"
+ ]
+}
