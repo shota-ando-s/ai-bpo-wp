@@ -1,0 +1,216 @@
+# 宮城県内20町1村（蔵王・七ヶ宿・大河原・村田・柴田・川崎・丸森・亘理・山元・松島・七ヶ浜・利府・大和・大郷・大衡・色麻・加美・涌谷・美里・女川・南三陸）2026年度
+# 確認日 2026-10-23。根拠は subsidy_b_areas.md
+# 生成AI・AI研修・DX・IT導入を名指しで補助する町村独自の制度は、21町村とも確認できなかった
+# 国の「デジタル化・AI導入補助金」（旧IT導入補助金）・「中小企業省力化投資補助金」に町村が上乗せする制度も、確認できた19町村にはない（addon の制度なし）。亘理町・涌谷町は公式サイトが開けず未確認
+# 国の制度への町の上乗せは、加美町の創業者支援事業助成金（厚生労働省の地域雇用開発奨励金の対象外経費に、国の助成額の1/2を上限に助成）だけ。デジタル化向けではないので YAML に入れず subsidy_b_areas.md に記載
+# IT・設備・販路・研修に使える可能性がある町村独自の制度
+#   - 利府町 地域産業活性化事業補助金（ふるさと納税の返礼品の開発・改良。開発4/5・改良3/5・上限100万円、2026-12-18まで受付中。設備等導入事業 4/5・上限1,000万円は2026-07-21で受付終了）
+#   - 七ヶ宿町 産業活性化助成事業（機器リース料・備品購入費・研修費・広告費。2/3・1事業200万円。要綱は2028-03-31まで有効。町のサイトに募集ページがない）
+#   - 丸森町 産業創造事業補助金（ホームページの作成・ネット販売システム構築2/3・上限20万円、新事業開発2/3・上限150万円。コロナ禍で売上20%以上減少が要件。町のサイトに募集ページがない）
+#   - 丸森町 無人航空機操縦資格取得補助金（ドローンの講習の受講料1/2・1人5万円。町のパートナー企業の技能認定に限る）
+#   - 川崎町 商品化促進・販路拡大事業補助金（町特産品の開発・改良・販売促進。90%・上限30万円。ページ2024-06）
+#   - 加美町 起業者育成支援事業助成金（備品購入費・委託料・報償費など。4/5・上限30万円、3か年度まで。ページ2021-04）
+# 創業向けの制度: 川崎町・丸森町・松島町（2026年度は受付終了）・加美町・女川町。空き店舗の出店向け: 加美町（2026-09-01〜2027-02-26受付中）・蔵王町（2025年度で受付終了、2026年度は未確認）
+# 町村のサイトに日付・年度の記載がない、またはページが前年度以前のままで2026年度の受付をページから判断できない制度は period.status を unknown にした（要綱・募集ページは公式なので confidence は official）
+# 宮城県の制度（中小企業等デジタル化支援事業、ものづくり企業AI・IoT先進技術導入補助金など）と国の制度は別担当のため入れていない
+
+# ---- 利府町 ----
+- id: miyagi-rifu-chiiki-sangyo-kasseika
+  name: 令和8年度利府町地域産業活性化事業補助金（返礼品開発事業・返礼品改良事業）
+  org: 利府町
+  area: miyagi/rifu
+  max_yen: 1000000
+  rate: 返礼品開発事業は4/5、返礼品改良事業は3/5（いずれも上限100万円）
+  rate_num: 0.6
+  targets: {efficiency: ×, consulting: △, training: ×}
+  expenses: 専門家から開発等の指導を受けた場合の謝礼金・旅費、商品の容器・包装材・少額の物品の購入費、包装紙・シール・商品ラベル等の印刷費、商品のデザイン委託費・試作品等の外注加工費、許認可の取得費・成分分析・検査費用、試作の原材料費、設備・機器のリース料、返礼品の製造に必要な備品の購入費（要綱別表第1）。人件費・通常事業の運転資金など返礼品の開発等と関連が低い経費は対象外
+  conditions: 利府町ふるさと応援寄附金返礼品協力事業者募集要領に定める協力事業者で、町税等の滞納がないこと。補助事業を活用した返礼品を交付決定日から3年以上提供できること。国・地方公共団体の補助等を受けている事業は対象外。1年度につき3区分のいずれか1事業・1回まで
+  period: {status: open, start: 2026-06-19, end: 2026-12-18}
+  url: https://www.town.rifu.miyagi.jp/gyosei/soshikikarasagasu/syoukoukankou/citysales/furunou/7149.html
+  checked: 2026-10-23
+  confidence: official
+  note: ページ更新2026-06-19。交付要綱（名称は「利府町地域資源活用産業活性化事業補助金交付要綱」）https://www.town.rifu.miyagi.jp/material/files/group/50/R8chiikisangyoukasseika_hojokin_youkou.pdf （5ページ。別表第1は4ページ、別表第2は5ページ）。予算上限に達した場合は受付期間内でも締め切る。ふるさと納税の返礼品協力事業者向けで、業務効率化のシステムやAIには使えない。rate_num は改良事業の値。問い合わせは 商工観光課 シティセールス係 022-767-2120
+  fuenn_note: 利府町のふるさと納税の返礼品協力事業者が、返礼品を開発・改良する費用（専門家の指導料、デザイン委託費など）の4/5（改良は3/5、上限100万円）を町が補助します。受付は2026年12月18日までです（予算到達で終了）。
+
+- id: miyagi-rifu-chiiki-sangyo-setsubi
+  name: 令和8年度利府町地域産業活性化事業補助金（返礼品の開発等に係る設備及び機器導入事業）
+  org: 利府町
+  area: miyagi/rifu
+  max_yen: 10000000
+  rate: 4/5（上限1,000万円）
+  rate_num: 0.8
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 返礼品の開発等に係る設備及び機器（中古品を除く）の購入費（要綱別表第1）
+  conditions: 返礼品開発・改良事業と同じ（返礼品協力事業者、3年以上の提供、他の補助との重複不可）。採択申請書を提出し、2026-07-30のプレゼンテーション審査会で採択者を決定。2027-02-26までに事業完了、03-12までに実績報告
+  period: {status: closed, start: 2026-06-19, end: 2026-07-21}
+  url: https://www.town.rifu.miyagi.jp/gyosei/soshikikarasagasu/syoukoukankou/citysales/furunou/7149.html
+  checked: 2026-10-23
+  confidence: official
+  note: 2026年度の受付は2026-07-21で終了。返礼品の製造設備が対象で、事務のIT化には使えない。要綱は上の制度と同じ。問い合わせは 商工観光課 シティセールス係 022-767-2120
+
+# ---- 七ヶ宿町 ----
+- id: miyagi-shichikashuku-sangyo-kasseika
+  name: 七ケ宿町産業活性化助成事業
+  org: 七ヶ宿町
+  area: miyagi/shichikashuku
+  max_yen: 2000000
+  rate: 総事業費の2/3以内（国県補助事業に該当する場合は補助金を差し引いた額の2/3以内）、1事業200万円
+  rate_num: 0.667
+  targets: {efficiency: △, consulting: ×, training: △}
+  expenses: 事業に直接要する経費（建築費、修繕費、備品購入費、機器リース料、研修費、印刷製本費、広告費など）と事業に直接要する事務費（一般消耗品、通信運搬費、会議費、旅費等）（要綱別表第1）
+  conditions: 町税等の滞納がない、町内に住所を有する個人、町内に本店・支店・営業所のある法人、町民が組織する団体。対象事業は新たな産業の創出・特産品等の開発、既存産業の規模拡大、特産品等の担い手育成・販売促進などで、5年以上継続されるもの。七ケ宿町産業活性化助成事業審査会の審査あり。助成期間は1年間
+  period: {status: unknown}
+  url: https://town.shichikashuku.miyagi.jp/town/gyosei/reiki_int/reiki_honbun/c213RG00000613.html
+  checked: 2026-10-23
+  confidence: official
+  note: 町の例規集の実施要綱（平成24年訓令甲第12号の2、令和5年4月1日施行の改正。附則で2028-03-31限りで失効）で確認。町の公式サイトの「事業者の方へ」（https://town.shichikashuku.miyagi.jp/business/ ）・「住まい・仕事」には募集ページがなく、2026年度の受付状況・予算は確認できない。研修費・機器リース料が対象経費に入っているが、ITやAIの導入を対象にするかは要綱に明記がない
+  fuenn_note: 七ヶ宿町の個人・法人・団体が、産業の創出・規模拡大・担い手育成などに取り組む費用（機器リース料・研修費・広告費など）の2/3（1事業200万円まで）を町が助成する制度があります。今年度の募集は町に確認してください。
+
+# ---- 丸森町 ----
+- id: miyagi-marumori-sangyo-sozo
+  name: 丸森町産業創造事業補助金
+  org: 丸森町
+  area: miyagi/marumori
+  max_yen: 1500000
+  rate: 新事業開発は2/3以内（法人150万円・個人100万円）、ホームページの作成・充実強化は2/3以内（上限20万円）
+  rate_num: 0.667
+  targets: {efficiency: △, consulting: △, training: ×}
+  expenses: 新事業開発＝開発費（試作品の原材料・設計・デザイン・製造・改良・加工）、委託費、機器・設備等のリース料・レンタル料、専門家謝金、資料購入費。ホームページ＝ホームページの作成・再構築等に要する経費、ネット販売システム構築・導入に要する経費（要綱別表）
+  conditions: 町内に所在地を有する法人・町内に住所を有する個人事業者で商工業を営む者。新型コロナウイルス感染症の影響等により、直近の確定申告の事業収入が前年または前々年より20%以上減少していること。町税等の完納。各事業1回まで
+  period: {status: unknown}
+  url: https://www.town.marumori.miyagi.jp/reiki/reiki_honbun/c218RG00001154.html
+  checked: 2026-10-23
+  confidence: official
+  note: 交付要綱（令和4年3月30日告示第48号、令和4年4月1日施行）を町の例規集で確認。失効の規定はない。町のサイトの「商工労働」（https://www.town.marumori.miyagi.jp/work/category/?category=41 ）に募集ページがなく、2026年度の実施・受付は確認できない。コロナ禍の売上減少が要件。rate_num は2/3、max_yen は新事業開発（法人）の値。問い合わせは 商工観光課 商工班 0224-87-7620
+
+- id: miyagi-marumori-drone-shikaku
+  name: 丸森町無人航空機操縦資格取得補助金
+  org: 丸森町
+  area: miyagi/marumori
+  max_yen: 50000
+  rate: 1/2以内（受講者1人5万円）
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: △}
+  expenses: 研修機関への入学金、講習の受講料（要綱第4条）
+  conditions: 町内に事業所を有する法人・団体（1人まで）または町の住民基本台帳に記録されている者等。資格は丸森町ドローン応援プロジェクトパートナー協定を交わした企業による技能認定の証明に限る。講習の受講前に申請
+  period: {status: unknown}
+  url: https://www.town.marumori.miyagi.jp/reiki/reiki_honbun/c218RG00001158.html
+  checked: 2026-10-23
+  confidence: official
+  note: 交付要綱（令和4年3月30日告示第51号、令和4年4月1日施行）を町の例規集で確認。町のサイトに募集ページがなく、2026年度の受付は確認できない。町の「ドローンイノベーションを応援しています！」https://www.town.marumori.miyagi.jp/work/detail.php?content=387 にパートナー企業（JUAVACドローンエキスパートアカデミー仙台校など）の記載がある。ドローンの操縦資格に限り、AI研修には使えない。問い合わせは 商工観光課 商工班 0224-87-7620
+
+- id: miyagi-marumori-kigyo-challenge
+  name: 丸森町起業チャレンジ補助金
+  org: 丸森町
+  area: miyagi/marumori
+  max_yen: 500000
+  rate: 1/2以内（上限50万円）
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 起業に要する経費（要綱別表。経費区分の細目はページ・要綱から読み取れなかった）
+  conditions: 町内で申請年度内に起業している、または起業を予定している者。町内に住所を有する（申請年度内に転入する者を含む）。町主催のビジネススクールを受講した者。町税等の滞納がない。地域おこし協力隊活動費等補助金の交付対象者でない。3年以上町内で事業を継続する意思。申請前に商工観光課へ相談
+  period: {status: unknown}
+  url: https://www.town.marumori.miyagi.jp/work/detail.php?content=813
+  checked: 2026-10-23
+  confidence: official
+  note: ページに「令和５年度４月１日から申請が始まります」とあり、2026年度の記載はない。要綱 https://www.town.marumori.miyagi.jp/reiki/reiki_honbun/c218RG00001157.html （令和4年告示第50号）。問い合わせは 商工観光課 商工班 0224-87-7620
+
+# ---- 川崎町 ----
+- id: miyagi-kawasaki-town-shohinka-hanro
+  name: 川崎町商品化促進・販路拡大事業補助金
+  org: 川崎町
+  area: miyagi/kawasaki-town
+  max_yen: 300000
+  rate: 事業費の90%以内（1事業者30万円）
+  rate_num: 0.9
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 新たな町特産品の開発、町特産品の改良、町特産品の販売促進に要する経費、その他町長が適当と認める経費
+  conditions: 町内に事業所を有する者、または町特産品を販売する者。町特産品は、川崎町を産地とする生産物を一定量使用する商品、川崎町を連想させる商品、町のキャラクター「チョコえもん」を使用する商品
+  period: {status: unknown}
+  url: https://www.town.kawasaki.miyagi.jp/soshiki/chishin/12785.html
+  checked: 2026-10-23
+  confidence: official
+  note: ページ更新2024-06-01で、受付期間の記載はない（提出期限は町長が別に定める日）。要綱 https://www.town.kawasaki.miyagi.jp/uploaded/attachment/9689.pdf 。「販売促進に要する経費」にネット販売・ホームページが入るかは要綱に明記がない（未確認）。問い合わせは 地域振興課 商工・観光係 0224-84-2117
+
+- id: miyagi-kawasaki-town-sogyo
+  name: 川崎町創業支援補助金
+  org: 川崎町
+  area: miyagi/kawasaki-town
+  max_yen: 300000
+  rate: 対象経費（税抜）の1/2以内（上限30万円）
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 創業等および経営の安定化に要する経費で、交付決定年度内に発生したもの（要綱第4条・別表。別表の細目は未確認）
+  conditions: 住所地・居住地とも川崎町で税を完納している者。町内に事業所等を置いて申請年度内に創業する者・申請時より1年以内に創業した者、または新事業に進出する者（第二創業者）。川崎町特定創業支援事業者からの認定書（またはその見込み）が必要
+  period: {status: unknown}
+  url: https://www.town.kawasaki.miyagi.jp/soshiki/chishin/77.html
+  checked: 2026-10-23
+  confidence: official
+  note: ページ更新2025-12-25（創業支援等事業計画の変更認定）。受付期間の記載はない。要綱 https://www.town.kawasaki.miyagi.jp/uploaded/attachment/5322.pdf 。特定創業支援等事業（川崎町商工会のビジネススクール。会場は国道286号沿いの「SPRING」）の受講が前提。問い合わせは 地域振興課 商工・観光係 0224-84-2117
+
+# ---- 加美町 ----
+- id: miyagi-kami-kigyosha-ikusei
+  name: 加美町起業者育成支援事業助成金
+  org: 加美町
+  area: miyagi/kami
+  max_yen: 300000
+  rate: 対象経費の4/5以内（1事業30万円。同一事業は連続する3か年度まで）
+  rate_num: 0.8
+  targets: {efficiency: △, consulting: △, training: ×}
+  expenses: 報償費、旅費、消耗品費、印刷製本費、燃料費、原材料費、通信運搬費、手数料、保険料、使用料・賃借料、委託料、備品購入費、その他町長が認める経費
+  conditions: 町内在住の個人、または町内に在住・在勤・在学する代表者がいる団体。活動拠点が町内にあり町内で活動していること、町税の滞納がないこと、事業に必要な許認可等を取得（予定を含む）していること
+  period: {status: unknown}
+  url: https://www.town.kami.miyagi.jp/sangyoshinko/kigyoritchi_kigyoshien/1520.html
+  checked: 2026-10-23
+  confidence: official
+  note: ページ更新2021-04-01で、受付期間・年度の記載はない。要綱へのリンクもない。問い合わせは ひと・しごと推進課 0229-63-5611
+
+- id: miyagi-kami-akitenpo
+  name: 加美町中新田地区商店街空き店舗対策事業
+  org: 加美町
+  area: miyagi/kami
+  max_yen: 1000000
+  rate: 1/2以内（1補助事業100万円）
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 店舗の改装費・設備費、店舗の設計費
+  conditions: 中新田地区商店街の空き店舗を活用して新たに出店する個人・法人（小売業・飲食業など）。1階で2年以上・週5日以上昼間に営業。加美町商工会の会員（または会員となる者）。町税の滞納がないこと。令和8年度中に事業を完了
+  period: {status: open, start: 2026-09-01, end: 2027-02-26}
+  url: https://www.town.kami.miyagi.jp/sangyoshinko/shokogyo/1236.html
+  checked: 2026-10-23
+  confidence: official
+  note: ページ更新2026-09-04。予算額に達した時点で受付終了。店舗の改装・設備向けで、IT導入には使えない。問い合わせ先の課名は今回確認していない
+
+# ---- 女川町 ----
+- id: miyagi-onagawa-sogyo
+  name: 女川町創業等支援事業補助金
+  org: 女川町
+  area: miyagi/onagawa
+  max_yen: 2000000
+  rate: 2/3以内（建物の取得200万円、賃貸物件の内装・給排水・電気工事等100万円、登記代行費用50万円。第三者承継は承継物件の取得・改修100万円、登記代行50万円）
+  rate_num: 0.667
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 事業所となる建物の取得費用、賃貸物件の内装・給排水・電気工事等、弁護士・司法書士への登記代行費用、承継物件の取得・改修費用
+  conditions: 中小企業基本法の中小企業者・小規模企業者で、町内に事業所を設け新規創業・第二創業・第三者承継を行う者。創業の日から90日以内に申請。風俗営業・フランチャイズ等は対象外
+  period: {status: unknown}
+  url: https://www.town.onagawa.miyagi.jp/05_17_04_26.html
+  checked: 2026-10-23
+  confidence: official
+  note: ページに更新日・年度の記載がなく、要綱へのリンクもない（申請様式のWordだけ）。建物・内装・登記向けで、IT・設備・ホームページは対象経費にない。問い合わせは 産業振興課 商工労働係 0225-54-3131
+
+# ---- 松島町 ----
+- id: miyagi-matsushima-sogyo
+  name: 令和8年度松島町創業者支援事業補助金
+  org: 松島町
+  area: miyagi/matsushima
+  max_yen: 1000000
+  rate: 1/2以内（上限50万円。交付要綱別表第2の加算要件に該当すると最大100万円）
+  rate_num: 0.5
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 創業の日までに要した店舗等改修費、設備・備品購入費、原材料費、書類等作成費、広告宣伝費、その他町長が必要と認める経費
+  conditions: 町内で新たに事業を開始し3年以上継続する見込みの個人・法人。交付申請時に町内に居住。町内に事業所等を設置。主たる生計を維持するための事業。商工会の経営指導等を受け会員になること。町税等の滞納がないこと
+  period: {status: closed, start: 2026-04-01}
+  url: https://www.town.miyagi-matsushima.lg.jp/page/1724.html
+  checked: 2026-10-23
+  confidence: official
+  note: ページ（更新2026-04-01）とカテゴリ一覧の見出しが「（受付終了）令和8年度「松島町創業者支援事業補助金制度」について」。予算額到達で終了。交付要綱 https://www.town.miyagi-matsushima.lg.jp/uploaded/attachment/5156.pdf （加算要件の別表第2・3は未確認）。松島町の公式サイトのドメインは www.town.miyagi-matsushima.lg.jp （www.town.matsushima.miyagi.jp は名前解決できない）。問い合わせは 産業観光課 産業振興班 022-354-5707、利府松島商工会 松島事務所 022-354-3422

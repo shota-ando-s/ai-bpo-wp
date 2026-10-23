@@ -1,0 +1,507 @@
+{
+ "_meta": {
+  "checked": "2026-10-23",
+  "scope": "宮城県35市町村。本社（公式サイトの本社/所在地）が当該市町村にあり、公式サイトで受託システム開発・ソフトウェア開発・Web制作・ITサービスを事業として明示する法人。県外に本社がある会社の県内支店・事業所・営業所・サテライトオフィスは載せない。県内に本社がある大手の子会社（日立ソリューションズ東日本・トインクス・NTTデータ東北など）は載せ、親会社・株主をnotesに書いた。本社を2か所に置く会社は、公式サイトで『仙台本社』と明記されていてシステム開発が主業のもの（コンピュータシステム研究所）だけ本表に入れ、BPO・人材が中心の会社（プロトソリューション）は _reference に置いた。文書破砕・OA機器販売が主業の会社、通信機器の設計製造が主業の会社は本表に入れない。各市町村の本表は最大5社。",
+  "candidate_sources": [
+   "一般社団法人宮城県情報サービス産業協会（MISA）の正会員名簿（12ページ、約220社。所在地・従業員数の記載なし。県外本社の会社の仙台支店・営業所・事業所を多く含む） https://www.misa.or.jp/member/regular/",
+   "宮城県『OPEN INNOVATIONみやぎ』（県産業デジタル推進課の県内IT企業データベース）の掲載企業73社（所在地・従業員数は各社の登録値。本表の規模には使わず候補の抽出に使った） https://ictdb.pref.miyagi.jp/",
+   "公益財団法人みやぎ産業振興機構『みやぎ匠の手帳 ICT（IoT、AI等）関連』（令和3年12月発行、88社。所在地・従業員数は発行時の各社提供値で古い） https://www.joho-miyagi.or.jp/takuminotetyou/",
+   "宮城県『サクッとわかる！石巻地域企業ガイド』（石巻地域の158社、業種別PDF。情報通信業6社） https://www.pref.miyagi.jp/soshiki/et-sgsin-e/i-kigyoguide.html",
+   "全国法人検索（houjin.goo.to、国税庁の法人番号データにもとづく）の宮城県『IT業界』一覧（235社と表示、取得できたのは99社分） https://houjin.goo.to/corporations/prefs/miyagi/category-it/list",
+   "WebSearch（担当上限14回のうち14回を使用）"
+  ],
+  "search_limits": "規模・所在地・事業内容は各社の公式サイトで確認した。MISA名簿・OPEN INNOVATIONみやぎ・みやぎ匠の手帳・houjin.goo の値は本表の規模に使っていない（_reference と notes に参考として書いた箇所がある）。公式サイトが開けなかった会社（接続拒否・タイムアウト・メンテナンス中）、公式URLが見つからなかった会社は本表に入れず _reference に置いた。JavaScriptで描画するサイト（SRA東北・蔵王酒造）はローカルのヘッドレスChromeで描画して読んだ。仙台市以外の市町村は上の資料とWebSearchに出た分だけで、個人事業主・小規模なWeb制作者は網羅していない。",
+  "ordering": "従業員数（公式）の多い順 → 従業員数がない会社は資本金（公式）→ どちらもない会社は最後。"
+ },
+ "sendai": [
+  {
+   "name": "株式会社日立ソリューションズ東日本",
+   "hq": "宮城県仙台市青葉区中央3丁目2番1号 青葉通プラザ",
+   "municipality": "仙台市",
+   "town": "青葉区中央",
+   "employees": {
+    "value": 1252,
+    "as_of": "2026年4月1日現在",
+    "source": "https://www.hitachi-solutions-east.co.jp/company/corporate/profile/"
+   },
+   "capital": {
+    "value": "3億円",
+    "source": "https://www.hitachi-solutions-east.co.jp/company/corporate/profile/"
+   },
+   "founded": 1984,
+   "business_summary": "システムエンジニアリングサービス（コンサルティング、システムインテグレーション）、ソフトウェアエンジニアリングサービス。売上高274.7億円（2026年3月期）",
+   "ai_initiative": "『Data＆AIソリューション』（データの収集・統合・分析）、IBM watsonx による『ビジネスAIプラットフォーム』、機械学習によるデータ分析ツール『uniSQUARE ML』（公式サイトの製品紹介）",
+   "url": "https://www.hitachi-solutions-east.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-23",
+   "notes": "1984年5月21日設立。日立ソリューションズのグループ会社。東京事業所（品川区）、札幌・盛岡・青森・秋田などに事業所・システムセンタ。"
+  },
+  {
+   "name": "株式会社トインクス（TOiNX）",
+   "hq": "宮城県仙台市青葉区中央二丁目9番10号",
+   "municipality": "仙台市",
+   "town": "青葉区中央",
+   "employees": {
+    "value": 838,
+    "as_of": "2026年4月現在",
+    "source": "https://www.toinx.co.jp/company/about/"
+   },
+   "capital": {
+    "value": "9,680万円",
+    "source": "https://www.toinx.co.jp/company/about/"
+   },
+   "founded": 2001,
+   "business_summary": "情報システム・情報ネットワークのコンサルティング、開発、運用。データセンター、電子認証、自治体向けCALS/EC支援",
+   "ai_initiative": "AIを活用した『労災防止AIサービス』の提供開始（2025年11月4日のプレスリリース、トップページのお知らせ）",
+   "url": "https://www.toinx.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-23",
+   "notes": "2001年7月1日に東北電力の情報系3社が合併して設立（旧 東北インフォメーション・システムズ）。株主は東北電力。公式サイトはブラウザ以外のアクセスに403を返すため、ブラウザのヘッダーを付けて取得した。"
+  },
+  {
+   "name": "株式会社コンピュータシステム研究所（CST）",
+   "hq": "宮城県仙台市青葉区本町2丁目19番21号（仙台本社）",
+   "municipality": "仙台市",
+   "town": "青葉区本町",
+   "employees": {
+    "value": 603,
+    "as_of": "時点なし",
+    "source": "https://www.cstnet.co.jp/company/outline.html"
+   },
+   "capital": {
+    "value": "2億2,625万円",
+    "source": "https://www.cstnet.co.jp/company/outline.html"
+   },
+   "founded": 1986,
+   "business_summary": "土木・建築事業関連のコンピュータソフトウェア開発・販売・メンテナンス（建築CAD『ALTA』、木造住宅『KIZUKURI』など）、ISO等のマネジメントコンサルティング",
+   "ai_initiative": "建築CAD『ALTA Revolution』最新版で生成AI連携（トップページのお知らせ）",
+   "url": "https://www.cstnet.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-23",
+   "notes": "1986年6月3日設立。会社概要に『仙台本社』と『東京本社』（新宿区四谷三栄町）の2つの本社を記載。仙台本社は2022年11月に新社屋竣工。従業員数に時点の記載なし。"
+  },
+  {
+   "name": "株式会社NTTデータ東北",
+   "hq": "宮城県仙台市青葉区一番町1-9-1 仙台トラストタワー21階",
+   "municipality": "仙台市",
+   "town": "青葉区一番町",
+   "employees": {
+    "value": 337,
+    "as_of": "2026年4月1日現在",
+    "source": "https://www.nttdata-tohoku.co.jp/company/outline.html"
+   },
+   "capital": {
+    "value": "1億円",
+    "source": "https://www.nttdata-tohoku.co.jp/company/outline.html"
+   },
+   "founded": 1990,
+   "business_summary": "情報システムの開発・保守の受託と販売、情報システムに係るソフトウェア・ハードウェアの開発・保守の受託",
+   "ai_initiative": "要介護認定事務支援AIサービス『Aitice』（全国の自治体のほか、2025年4月から かながわ福祉サービス振興会に提供）、岩手銀行の生成AI向けクラウド基盤の構築事例、青森みちのく銀行の生成AI利活用の全営業店展開（公式サイトの事例・お知らせ）",
+   "url": "https://www.nttdata-tohoku.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-23",
+   "notes": "設立年月日1990年3月7日。株主は株式会社NTTデータ（100％）。盛岡支店ほか。"
+  },
+  {
+   "name": "メシウス株式会社（旧 グレープシティ）",
+   "hq": "宮城県仙台市泉区紫山3-1-4（仙台本社）",
+   "municipality": "仙台市",
+   "town": "泉区紫山",
+   "employees": {
+    "value": 332,
+    "as_of": "時点なし（グループ全体の値）",
+    "source": "https://www.mescius.com/about/overview.html"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.mescius.com/about/overview.html"
+   },
+   "founded": null,
+   "business_summary": "Developer Solutions事業（ソフトウェア開発支援ツールの開発・販売。DioDocs など）、Enterprise Solutions事業（業務改善ソリューションの開発・販売）",
+   "ai_initiative": null,
+   "url": "https://www.mescius.com/",
+   "size_basis": "employees",
+   "checked": "2026-10-23",
+   "notes": "社員数は『グループ全体 332名』で、メシウス単体の値ではない。時点の記載なし。関東支社あり。houjin.goo では旧社名グレープシティで掲載。AIに関する記載は会社概要・事業ページで確認できなかった。"
+  }
+ ],
+ "ishinomaki": [
+  {
+   "name": "株式会社イトナブ",
+   "hq": "宮城県石巻市門脇元浦屋敷30-25（石巻オフィス）",
+   "municipality": "石巻市",
+   "town": "門脇",
+   "employees": {
+    "value": 24,
+    "as_of": "時点なし（パート・アルバイト含む）",
+    "source": "https://itnav.co.jp/about"
+   },
+   "capital": {
+    "value": "1,810万円",
+    "source": "https://itnav.co.jp/about"
+   },
+   "founded": 2015,
+   "business_summary": "教育事業（小中高生向けプログラミング教育）、開発事業（Webサイト・Webアプリの受託開発、自社サービス）、ソーシャル事業（障害者向けのWeb制作など）、PHPのセキュリティ診断",
+   "ai_initiative": null,
+   "url": "https://itnav.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-23",
+   "notes": "2015年6月24日設立。公式サイトは拠点を『石巻オフィス』と書き『本社』と明記していない。県の石巻地域企業ガイド（2023年10月24日現在）は本社住所を石巻市大街道北1-1-16としており、公式の石巻オフィスと住所が違う。横須賀LAB（神奈川県）、PITAAAN!（北海道美唄市）。"
+  },
+  {
+   "name": "メディアテック株式会社",
+   "hq": "宮城県石巻市開成1番地20",
+   "municipality": "石巻市",
+   "town": "開成",
+   "employees": {
+    "value": 10,
+    "as_of": "時点なし",
+    "source": "https://www.media-tek.co.jp/info/about"
+   },
+   "capital": {
+    "value": "8,000万円",
+    "source": "https://www.media-tek.co.jp/info/about"
+   },
+   "founded": 1987,
+   "business_summary": "インターネット開発関連事業（IT-Web事業）、医療開発事業、システム開発、Webサイト制作・管理",
+   "ai_initiative": null,
+   "url": "https://www.media-tek.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-23",
+   "notes": "会社設立 昭和62年4月（県の企業ガイドは1986年）。前身は大場システム技研（東京・青森）で、平成14年7月に本社を石巻市へ移転。青森・仙台・東京・埼玉・福岡に拠点。"
+  },
+  {
+   "name": "株式会社エレコム",
+   "hq": "宮城県石巻市中里3丁目1番5号",
+   "municipality": "石巻市",
+   "town": "中里",
+   "employees": {
+    "value": 7,
+    "as_of": "2026年6月現在（正社員7人、ほかにパート1人）",
+    "source": "https://e-elecom.co.jp/about.html"
+   },
+   "capital": {
+    "value": "1,500万円",
+    "source": "https://e-elecom.co.jp/about.html"
+   },
+   "founded": 1984,
+   "business_summary": "パソコン・ネットワーク・通信回線の導入とトータルサポート、水産加工業向け販売管理・営業倉庫向け保管料計算・在庫管理などの業務システム構築、ソフトウェア開発、ホームページ制作",
+   "ai_initiative": null,
+   "url": "https://e-elecom.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-23",
+   "notes": "昭和59年3月12日創業。日立製作所のOA事業販売特約店として創業。同名の大手PC周辺機器メーカー（大阪）とは別会社。"
+  },
+  {
+   "name": "株式会社アイ・ディー・シー",
+   "hq": "宮城県石巻市大街道東1丁目4番地18号",
+   "municipality": "石巻市",
+   "town": "大街道東",
+   "employees": null,
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.idc-net.co.jp/corporate/"
+   },
+   "founded": 1989,
+   "business_summary": "ソフトウェア受託開発全般、情報処理サービス、Webサイト制作。石巻市を拠点とする独立系SIerと自己紹介",
+   "ai_initiative": null,
+   "url": "https://www.idc-net.co.jp/",
+   "size_basis": "capital",
+   "checked": "2026-10-23",
+   "notes": "1989年10月2日設立（前身は1983年の協同組合石巻電算センター）。仙台支店あり。公式に従業員数の記載なし（houjin.goo は10〜30人）。"
+  }
+ ],
+ "shiogama": [
+  {
+   "name": "株式会社高山（TAKAYAMA）",
+   "hq": "宮城県塩竈市尾島町10番18号",
+   "municipality": "塩竈市",
+   "town": "尾島町",
+   "employees": {
+    "value": 20,
+    "as_of": "時点なし（パート含む）",
+    "source": "https://www.tkym.co.jp/company/"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.tkym.co.jp/company/"
+   },
+   "founded": 1972,
+   "business_summary": "デジタルマーケティング・Webサイト制作、AI・クラウド・ペーパーレス支援、kintone伴走支援、サイバーセキュリティ支援、PC・ネットワーク機器の販売構築。事務用品・オフィス家具・複合機も扱う",
+   "ai_initiative": "生成AI活用経営のオンライン講座、AI活用プラン診断、『ITトラブルアシストAI』、生成AIエージェント×サイバーセキュリティのセミナー（2026年）。PHPビジネス『THE21』10月号に生成AIの取り組みが掲載と記載",
+   "url": "https://www.tkym.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-23",
+   "notes": "昭和21年3月創業、昭和47年4月設立。2022年1月の事業承継で『DX・IT企業』へ業態変革を進めると記載。オフィス用品・家具・内装工事の比重もあり、システム開発会社ではない点に注意。MISA正会員。"
+  }
+ ],
+ "kesennuma": [],
+ "shiroishi": [],
+ "natori": [],
+ "kakuda": [],
+ "tagajo": [],
+ "iwanuma": [],
+ "tome": [
+  {
+   "name": "株式会社ウィングシステムズ",
+   "hq": "宮城県登米市迫町佐沼字八幡2丁目1番地13",
+   "municipality": "登米市",
+   "town": "迫町佐沼",
+   "employees": null,
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.wing-sanuma.co.jp/company/"
+   },
+   "founded": 1997,
+   "business_summary": "自社パッケージソフト（『労務ナビ』など）の企画・開発・販売、ソフトウェア受託開発、ホームページ制作、会計ソフトのカスタマイズ、ネットワーク構築（みやぎ匠の手帳の事業内容による）",
+   "ai_initiative": null,
+   "url": "https://www.wing-sanuma.co.jp/",
+   "size_basis": "capital",
+   "checked": "2026-10-23",
+   "notes": "平成9年1月14日に有限会社ウィングとして設立、平成19年11月に株式会社ウィングシステムズへ。事業所は迫町佐沼字萩洗2丁目8番地5。公式に従業員数の記載なし（みやぎ匠の手帳 令和3年版は6名）。"
+  }
+ ],
+ "kurihara": [],
+ "higashimatsushima": [],
+ "osaki": [
+  {
+   "name": "株式会社レッツ",
+   "hq": "宮城県大崎市古川幸町1丁目6-12",
+   "municipality": "大崎市",
+   "town": "古川幸町",
+   "employees": null,
+   "capital": {
+    "value": "2,700万円",
+    "source": "https://www.lets-co.com/company/companyinfo/"
+   },
+   "founded": 1990,
+   "business_summary": "建設業向け見積・発注・原価管理ソフト『レッツ原価管理Go2』『レッツ工事台帳』、日報管理『レッツ現場日報 for Web』、各種管理システムの開発・販売、パソコン・周辺機器の販売",
+   "ai_initiative": "AI-OCR（Go2クラウドの新規契約キャンペーン）、製品の『AIヘルプ』の提供開始（トップページのお知らせ）",
+   "url": "https://www.lets-co.com/",
+   "size_basis": "capital",
+   "checked": "2026-10-23",
+   "notes": "1990年3月1日設立。親会社は株式会社Arent。東京営業所（新宿区）。ISO27001は本社の全業務が適用範囲。公式に従業員数の記載なし。"
+  }
+ ],
+ "tomiya": [],
+ "zao": [],
+ "shichikashuku": [],
+ "ogawara": [
+  {
+   "name": "ジェットインターネット株式会社",
+   "hq": "宮城県柴田郡大河原町字中島町5-27",
+   "municipality": "大河原町",
+   "town": "中島町",
+   "employees": null,
+   "capital": {
+    "value": "1,800万円",
+    "source": "https://www.jet.ne.jp/index.php?id=29"
+   },
+   "founded": null,
+   "business_summary": "インターネットサービスプロバイダ（ISP）、ファイル送信『SendFile』などのASP、ホスティング、Linux中心のサーバー・ネットワーク構築、Web・システム開発、ホームページ制作",
+   "ai_initiative": null,
+   "url": "https://www.jet.ne.jp/",
+   "size_basis": "capital",
+   "checked": "2026-10-23",
+   "notes": "ISP事業が中心。一般第二種電気通信事業者。公式に従業員数・設立年の記載を確認できなかった。"
+  }
+ ],
+ "murata": [],
+ "shibata": [],
+ "kawasaki-town": [],
+ "marumori": [],
+ "watari": [],
+ "yamamoto": [],
+ "matsushima": [],
+ "shichigahama": [],
+ "rifu": [],
+ "taiwa": [],
+ "osato": [],
+ "shikama": [],
+ "kami": [],
+ "wakuya": [],
+ "misato-town": [],
+ "onagawa": [],
+ "minamisanriku": [],
+ "ohira": [],
+ "_reference": {
+  "sendai": {
+   "next_candidates": [
+    {
+     "name": "株式会社東北システムズ・サポート（TSS）",
+     "employees": "228名（2026年4月現在）",
+     "capital": "98.8百万円",
+     "note": "1976年設立。RFID・ハンディターミナル・業務用スマホのアプリ開発、資産管理『MONISTOR』、システム開発。仙台市青葉区中央1丁目6番35号 東京建物仙台ビル17F。株主に株式会社DTS。盛岡事業所。AIは社長メッセージで触れる程度。",
+     "source": "https://www.tsstohoku.jp/company/"
+    },
+    {
+     "name": "東杜シーテック株式会社",
+     "employees": "134名（2026年4月現在）",
+     "capital": "2,100万円",
+     "note": "2002年設立。画像処理・AI（Deep Learning）の研究開発とシステム開発。仙台市宮城野区銀杏町31-24。**気仙沼.Office（気仙沼市長磯船原・高井）**、川崎市に拠点。トップページに『Deep Learningをはじめとする最新のAI技術、導入検討からシステム開発まで』。",
+     "source": "https://www.tctec.co.jp/about/company/"
+    },
+    {
+     "name": "TIS東北株式会社",
+     "employees": "114名（2026年4月1日現在）",
+     "capital": "1億円",
+     "note": "1990年設立。TISインテックグループ。仙台市青葉区中央4-4-19 アーバンネット仙台中央ビル6階。採用ページでグループのAI・IoT・FinTechの新サービス開発に参加と記載。",
+     "source": "https://www.tis-t.co.jp/company-profile/"
+    },
+    {
+     "name": "株式会社クロスリード",
+     "employees": "111名（2026年6月24日現在）",
+     "capital": "1億円",
+     "note": "仙台市青葉区本町2-15-1 ルナール仙台13階。MISA正会員。",
+     "source": "https://www.xlead.co.jp/company/"
+    },
+    {
+     "name": "株式会社SRA東北",
+     "employees": "111名（2026年4月1日現在）",
+     "capital": "5,500万円",
+     "note": "1986年設立、株式会社SRAの100%出資。ソフトウェアの設計・開発。仙台市青葉区（〒980-0803）。**2015年からAI・ロボットに取り組み、AIサービス『JUDGE!』（令和2年度みやぎ認定IT商品）、『社長A.I』（仙台X-TECHイノベーションアワード2022優秀賞）、電力業界の『腐食劣化度診断システム』**。公式サイトはJavaScript描画のためヘッドレスChromeで取得。",
+     "source": "https://www.sra-tohoku.co.jp/corporate"
+    },
+    {
+     "name": "株式会社宮城県農協情報センター（JA宮城情報センター）",
+     "employees": "公式の表示に記載なし（HTMLのコメント内に『46名』）",
+     "capital": "3億円",
+     "note": "昭和63年設立。仙台市青葉区上杉一丁目2番16号。県内JAグループの情報処理。外部向け受託は未確認。",
+     "source": "http://www.ja-mgjc.co.jp/html/about.html"
+    },
+    {
+     "name": "株式会社エヌエスシー",
+     "employees": "公式で確認できず",
+     "capital": "9,350万円",
+     "note": "仙台市青葉区国分町1-6-9 MIテラス仙台広瀬通り8F。houjin.goo は100〜1000人。",
+     "source": "https://www.nsc-inc.co.jp/company/"
+    },
+    {
+     "name": "株式会社サンレイラ",
+     "employees": "記載なし",
+     "capital": "未確認",
+     "note": "**中小企業向けのAI業務診断・AI社員構築・AIエージェント/チャットボット構築・生成AI研修**（OPEN INNOVATIONみやぎの掲載。公式サイト未確認）。",
+     "source": "https://ictdb.pref.miyagi.jp/corporate/3882/"
+    }
+   ],
+   "unverified": [
+    {
+     "name": "株式会社東北電子計算センター（TEC）",
+     "note": "公式サイト（tecgrp.co.jp）に接続できず（2026-10-23、ポート80/443とも接続拒否）。本社所在地が資料で食い違う: みやぎ匠の手帳（令和3年）は名取市美田園二丁目1番5号（仙台支店は青葉区本町）、houjin.goo は仙台市青葉区国分町1丁目7番16号。従業員数はみやぎ匠の手帳で230名（令和3年）、就職情報サイトで246名（2026年7月、secondary）。公式で確認できれば仙台市の5位前後か名取市の1位になる。"
+    },
+    {
+     "name": "七十七コンピューターサービス株式会社",
+     "note": "MISA名簿のURL（全角の77ｃｓ）は解決できず、公式サイトを見つけられなかった。"
+    },
+    {
+     "name": "パイオニアシステムテクノロジー株式会社",
+     "note": "houjin.goo で仙台市青葉区堤町、100〜1000人。公式サイトを見つけられず。従業員131名は転職サイト（doda）の値で secondary。"
+    },
+    {
+     "name": "Astemo仙台株式会社",
+     "note": "MISA正会員、houjin.goo は100〜1000人。公式サイトの会社概要ページが404で確認できず。"
+    },
+    {
+     "name": "株式会社パナソニックシステムネットワークス開発研究所",
+     "note": "houjin.goo で仙台市泉区、100〜1000人。公式ページを確認できず。"
+    },
+    {
+     "name": "株式会社ラネックス",
+     "note": "みやぎ匠の手帳（令和3年）で100名、受託開発・AI開発。公式での確認は未了。"
+    }
+   ],
+   "excluded_hq_elsewhere": [
+    "株式会社プロトソリューション（会社概要で『沖縄本社』（宜野湾市）と『仙台本社』（若林区新寺）を併記。437名、2026年1月1日。事業の中心がBPO・人材支援・メディアのため本表に入れない。AI・RPAによるDX支援） https://www.protosolution.co.jp/company/corporate_profile.html",
+    "日鉄ソリューションズ東日本（本社 東京都中央区）",
+    "株式会社テクノ情報システム（東京本社 豊島区、仙台支店。AI SOLUTION(Claude)）",
+    "株式会社アイエンター（東京本社 渋谷区、290名。仙台サテライトオフィス）",
+    "株式会社リンクアット・ジャパン（所在地 東京都港区、126名）",
+    "株式会社ユニバーサルコムピューターシステム（本社 東京都中央区、仙台は拠点）",
+    "株式会社ビー・エス・アール（本社 千代田区、仙台事業所10名）",
+    "株式会社インターコムR&Dセンター（本社 千葉県南房総市、仙台はソフトラボ）",
+    "クラスメソッド・NECソリューションイノベータ・富士通Japan・BIPROGYほか東京本社の仙台拠点多数"
+   ]
+  },
+  "ishinomaki": {
+   "unverified": [
+    {
+     "name": "株式会社ムーブ",
+     "note": "石巻市門脇字一番谷地64番地28。県の石巻地域企業ガイド（2026年6月26日現在）で従業員17人、コンピュータソフトウェア開発・インターネット関連サービス・情報システム機器販売。公式サイト（moveworld.co.jp）に接続できず（接続拒否）。"
+    },
+    {
+     "name": "株式会社JET",
+     "note": "houjin.goo で石巻市桃生町給人町。公式URLを見つけられず。"
+    }
+   ]
+  },
+  "natori": {
+   "unverified": [
+    {
+     "name": "株式会社アットシステム",
+     "note": "名取市増田4丁目7-20。公式サイトはPHPの脆弱性対応で一時停止中（2026-10-23）で、停止のお知らせに本社住所だけ表示。みやぎ匠の手帳（令和3年）で従業員21名、ITコンサル・Webサイト構築・システム開発・ASP、中部支社・関東支社。再開後に従業員数を確認すれば名取市の本表に入る。"
+    }
+   ],
+   "excluded_business": [
+    {
+     "name": "株式会社セキュリティソリューション",
+     "note": "名取市愛島台。houjin.goo の『IT業界』にあるが、公式の沿革は大型特殊破砕機など機密文書の処理が中心で、システム開発の会社ではない。https://www.security-solution.co.jp/company.html"
+    }
+   ],
+   "excluded_hq_elsewhere": [
+    "プライムバリュー株式会社（みやぎ匠の手帳では名取市箱塚だが、公式の現住所は仙台市若林区卸町。2025年11月に本社移転のお知らせ）"
+   ]
+  },
+  "kesennuma": {
+   "unverified": [
+    {
+     "name": "有限会社東日本ソフトウェア",
+     "note": "気仙沼市唐桑町神の倉115-16。みやぎ匠の手帳（令和3年）で従業員2名、プログラム開発（販売管理・ホテルシステム）。公式サイト（e-jas.net）に接続できず。"
+    }
+   ],
+   "branches": [
+    "東杜シーテック（本社 仙台市）の気仙沼.Office（長磯船原・高井）"
+   ]
+  },
+  "rifu": {
+   "unverified": [
+    {
+     "name": "株式会社スクリブル・デザイン",
+     "note": "宮城郡利府町菅谷字赤坂5-3。みやぎ匠の手帳（令和3年）で44名、電気・通信機器のハード・ソフト・基板の設計開発（車載・民生）。公式サイト（scribble-inc.com）がタイムアウトで確認できず。組込み開発で、Web・業務システムの会社ではない。"
+    }
+   ]
+  },
+  "shiogama": {
+   "unverified": [
+    {
+     "name": "株式会社東北電技ソリューションズ",
+     "note": "houjin.goo で塩竈市新浜町2丁目10番3号、10〜30人。公式URLを見つけられず。"
+    }
+   ]
+  },
+  "onagawa": {
+   "unverified": [
+    {
+     "name": "株式会社オーテック",
+     "note": "houjin.goo で牡鹿郡女川町女川2丁目11番地7（IT業界）。公式URLを見つけられず、事業内容を確認できない。"
+    }
+   ]
+  },
+  "iwanuma": {
+   "unverified": [
+    {
+     "name": "有限会社さくらエージェンシー",
+     "note": "houjin.goo で岩沼市桜1丁目1番25号（IT業界）。sakura-agency.co.jp は内容が取れず、同社のものか確認できない。"
+    }
+   ]
+  }
+ },
+ "_notes": [
+  "MISA（宮城県情報サービス産業協会）の正会員約220社のうち、県外本社の会社の仙台支店・事業所・営業所が多い（NSD・アクセンチュア・ミロク情報サービス・SCSK Minori・三菱総研DCS東北支社など）。OPEN INNOVATIONみやぎ・houjin.goo も県外本社の仙台拠点を載せている。記事では公式サイトの値だけを使う。",
+  "仙台市の上位は大手の子会社が多い: 日立ソリューションズ東日本（日立ソリューションズのグループ）、トインクス（東北電力）、NTTデータ東北（NTTデータ100%）、TIS東北（TISインテックグループ）、SRA東北（SRA 100%）、東北システムズ・サポート（株主DTS）。独立系はコンピュータシステム研究所・メシウス・東杜シーテック・クロスリード。",
+  "仙台市の順位の注意: メシウスの332名はグループ全体の値。東北電子計算センターは公式サイトに接続できず、資料上の従業員数（230〜246名）が東北システムズ・サポート（228名）を上回るので、公式で確認できれば順位が変わる。本社所在地も名取市と仙台市で資料が食い違う。プロトソリューション（437名、沖縄本社と仙台本社）はBPO中心のため本表外。",
+  "AIを公式に明記している会社（本表）: 日立ソリューションズ東日本（Data＆AIソリューション、watsonxのビジネスAIプラットフォーム）、トインクス（労災防止AIサービス、2025年11月）、コンピュータシステム研究所（ALTA Revolution の生成AI連携）、NTTデータ東北（要介護認定事務支援AI『Aitice』、銀行の生成AI基盤・活用）、高山（塩竈市、生成AI活用経営講座・AI活用プラン診断・ITトラブルアシストAI）、レッツ（大崎市、AI-OCR・AIヘルプ）。_reference: SRA東北（AIサービス『JUDGE!』『社長A.I』、腐食劣化度診断）、東杜シーテック（Deep Learning の研究開発）、サンレイラ（AI社員構築。県DBのみ）、プロトソリューション（AI・RPAによるDX支援）、テクノ情報システム（東京本社、AI SOLUTION(Claude)）。",
+  "本社の会社が公式で確認できた市町村は、仙台市・石巻市・塩竈市・登米市・大崎市・大河原町の6市町。名取市（アットシステム、公式サイト停止中）、気仙沼市（東日本ソフトウェア、公式に接続できず）、利府町（スクリブル・デザイン、組込み、公式タイムアウト）、女川町（オーテック）、岩沼市（さくらエージェンシー）は候補があったが公式で確認できなかった。ほかの市町村は候補自体が見つからなかった。",
+  "仙台市以外の本表の会社は、従業員数を公式に載せている会社が少ない（イトナブ24名、メディアテック10名、エレコム正社員7人、高山20名）。県の企業ガイド・みやぎ匠の手帳の値は、記事では『県の資料による』と出典を書かない限り使わない。",
+  "社名の表記: トインクスは旧 東北インフォメーション・システムズ（略称TOiNX）。メシウスは旧 グレープシティ（houjin.goo は旧社名）。エレコム（石巻市）は大阪の同名企業と別会社。宮城県農協情報センターは『JA宮城情報センター』。"
+ ]
+}
