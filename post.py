@@ -188,7 +188,7 @@ def dalle_generate(heading, article_title):
     return None
 
 def _dalle_generate_once(heading, article_title):
-    """gpt-image-1でH2テーマに合ったビジネス画像を生成し、画像バイトを返す"""
+    """gpt-image-1.5でH2テーマに合ったビジネス画像を生成し、画像バイトを返す"""
     api_key = os.environ.get("OPENAI_API_KEY", "")
     if not api_key:
         return None
@@ -203,7 +203,7 @@ def _dalle_generate_once(heading, article_title):
         "Use soft business colors (blue, white, light gray). High quality, visually appealing."
     )
     body = json.dumps({
-        "model": "gpt-image-1",
+        "model": "gpt-image-1.5",
         "prompt": prompt,
         "n": 1,
         "size": "1536x1024",
