@@ -6,7 +6,7 @@
 - 執筆仕様: `docs/area-writing-spec-kagawa.md`・`docs/area-writing-spec-tokushima.md`・`docs/area-writing-spec-kochi.md`・`docs/area-writing-spec-aomori.md`・`docs/area-writing-spec-iwate.md`・`docs/area-writing-spec-akita.md`・`docs/area-writing-spec-miyagi.md`
 - ページを直したら `python3 post.py articles/<file>.md` で更新する（画像は作り直されない）。補助金のYAMLを直したら `python3 scripts/build_shindan_data.py` → コミット → `./deploy.sh`
 
-## 宮城県（2026-10-23作成。`area-miyagi` ブランチ）
+## 宮城県（2026-10-23作成・2026-10-24投稿済み）
 
 東北で4番目の県。調査データは `data/area/miyagi/`、執筆仕様は `docs/area-writing-spec-miyagi.md`。ファイル名の日付は 2026-10-23。仙台市は1ページだけ（5区のページは作らない）。
 
