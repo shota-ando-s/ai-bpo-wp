@@ -90,9 +90,17 @@
 		/** 上乗せ制度の補助額 */
 		calcAddon: function (addon, base, baseAmount, input) {
 			var eligible = Logic.eligibleCost(base, input);
-			var amount = addon.addon.kind === 'remaining'
-				? Math.floor((eligible - baseAmount) * addon.addon.ratio)
-				: Math.floor(eligible * addon.addon.ratio);
+			var amount;
+			if (addon.addon.kind === 'remaining_tiered') {
+				// 自己負担のうち full_upto までは全額、超えた分に ratio を掛ける（仙台生産性ブースト補助金）
+				var self = eligible - baseAmount;
+				var full = Math.min(self, addon.addon.full_upto);
+				amount = Math.floor((full + (self - full) * addon.addon.ratio) / 1000) * 1000;
+			} else {
+				amount = addon.addon.kind === 'remaining'
+					? Math.floor((eligible - baseAmount) * addon.addon.ratio)
+					: Math.floor(eligible * addon.addon.ratio);
+			}
 			if (addon.max_yen) amount = Math.min(amount, addon.max_yen);
 			return Math.max(amount, 0);
 		},

@@ -260,3 +260,41 @@
     - {code: akita/kamikoani, name: 上小阿仁村, note: 村の事業者等支援事業費補助金はECサイトも対象ですが、2026年度の実施は村に確認が必要です}
     - {code: akita/ogata, name: 大潟村, note: 村独自の制度は創業・ものづくり（新商品開発）向けで、AIツールを直接の対象にした補助金はありません}
     - {code: akita/higashinaruse, name: 東成瀬村, note: 地域経済活性化事業補助金（2026-07-01新設）は、生産性向上のためのDX導入に1/2・上限50万円を補助します（随時。村商工会の事前審査が必要）}
+- code: miyagi
+  name: 宮城県
+  cities:
+    - {code: miyagi/sendai, name: 仙台市, note: 仙台生産性ブースト補助金は、国のデジタル化・AI導入補助金や省力化投資補助金の自己負担に最大50万円を上乗せします（自己負担25万円までは全額、2027-03-31まで・予算到達で終了）。業務効率化支援事業補助金は今年度の募集を終えています}
+    - {code: miyagi/ishinomaki, name: 石巻市, note: 産業創造助成金（人材育成・研究開発など）は予算に達して今年度の受付を終えています。AIツールの費用は国の制度を使います}
+    - {code: miyagi/shiogama, name: 塩竈市, note: 物価高騰対応のチャレンジ支援補助金は2026-10-09で受付を終えています。AIツールの費用は国の制度を使います}
+    - {code: miyagi/kesennuma, name: 気仙沼市, note: 県の再起支援補助金への上乗せ（2026-11-30まで）と、製品・サービス開発等支援事業補助金（随時）があります}
+    - {code: miyagi/shiroishi, name: 白石市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-23確認）}
+    - {code: miyagi/natori, name: 名取市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-23確認）}
+    - {code: miyagi/kakuda, name: 角田市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-23確認）}
+    - {code: miyagi/tagajo, name: 多賀城市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-23確認）}
+    - {code: miyagi/iwanuma, name: 岩沼市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-23確認）}
+    - {code: miyagi/tome, name: 登米市, note: マーケット開拓・人材育成支援事業は研修費に1/3（最大30万円）を補助します。今年度の受付状況は市に確認が必要です}
+    - {code: miyagi/kurihara, name: 栗原市, note: 観光事業者向けの経営力強化事業は、予約システムなどのデジタルツールに2/3（10万〜100万円）を補助します（2026-10-31まで）}
+    - {code: miyagi/higashimatsushima, name: 東松島市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-23確認）}
+    - {code: miyagi/osaki, name: 大崎市, note: 頑張る事業者応援事業補助金のIT導入サポート枠（2/3・最大15万円）は、今年度の申請を2026-06-30で終えています}
+    - {code: miyagi/tomiya, name: 富谷市, none: true, note: 市独自のAI・IT向け補助金はありません（2026-10-23確認）}
+    - {code: miyagi/zao, name: 蔵王町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-23確認）}
+    - {code: miyagi/shichikashuku, name: 七ヶ宿町, note: 産業活性化助成事業は機器リース料・研修費も対象（2/3・200万円）ですが、今年度の受付は町に確認が必要です}
+    - {code: miyagi/ogawara, name: 大河原町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-23確認）}
+    - {code: miyagi/murata, name: 村田町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-23確認）}
+    - {code: miyagi/shibata, name: 柴田町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-23確認）}
+    - {code: miyagi/kawasaki-town, name: 川崎町, note: 町独自の制度は商品化・販路拡大と創業向けで、今年度の受付は町に確認が必要です}
+    - {code: miyagi/marumori, name: 丸森町, note: 産業創造事業補助金はホームページ・ネット販売システムも対象ですが、今年度の受付は町に確認が必要です}
+    - {code: miyagi/watari, name: 亘理町, note: 町の公式サイトが開けず、町独自の制度を確認しきれていません（2026-10-23）。町の商工観光課に確認してください}
+    - {code: miyagi/yamamoto, name: 山元町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-23確認）}
+    - {code: miyagi/matsushima, name: 松島町, note: 町独自の制度は創業者向けで、2026年度の受付を終えています}
+    - {code: miyagi/shichigahama, name: 七ヶ浜町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-23確認）}
+    - {code: miyagi/rifu, name: 利府町, note: 地域産業活性化事業補助金は、ふるさと納税の返礼品の開発・改良に最大100万円を補助します（2026-12-18まで）。AIツールの費用は国の制度を使います}
+    - {code: miyagi/taiwa, name: 大和町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-23確認）}
+    - {code: miyagi/osato, name: 大郷町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-23確認）}
+    - {code: miyagi/ohira, name: 大衡村, none: true, note: 村独自のAI・IT向け補助金はありません（2026-10-23確認）}
+    - {code: miyagi/shikama, name: 色麻町, none: true, note: 町独自のAI・IT向け補助金は確認できませんでした（2026-10-23）}
+    - {code: miyagi/kami, name: 加美町, note: 町独自の制度は起業者育成と中新田地区の空き店舗対策（2027-02-26まで）で、AIツールを直接の対象にした補助金はありません}
+    - {code: miyagi/wakuya, name: 涌谷町, note: 町の公式サイトが開けず、町独自の制度を確認しきれていません（2026-10-23）。町の産業振興課に確認してください}
+    - {code: miyagi/misato-town, name: 美里町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-23確認）}
+    - {code: miyagi/onagawa, name: 女川町, note: 町独自の制度は創業等支援で、今年度の受付は町に確認が必要です}
+    - {code: miyagi/minamisanriku, name: 南三陸町, none: true, note: 町独自のAI・IT向け補助金はありません（2026-10-23確認）}
