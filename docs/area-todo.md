@@ -2,9 +2,35 @@
 
 地域ページで、調べきれずに残っている作業。終わったら行ごと消すか、`[x]` にして日付を書く。
 
-- 調査データ: `data/area/kagawa/`・`data/area/tokushima/`・`data/area/kochi/`・`data/area/aomori/`・`data/area/iwate/`・`data/area/akita/`・`data/area/miyagi/`・`data/area/yamagata/`（2026-10-17〜24の調査結果。`stats.md` `gov_ai.md` `cases.md` `companies.json` `subsidy_*.yml` など）
-- 執筆仕様: `docs/area-writing-spec-kagawa.md`・`docs/area-writing-spec-tokushima.md`・`docs/area-writing-spec-kochi.md`・`docs/area-writing-spec-aomori.md`・`docs/area-writing-spec-iwate.md`・`docs/area-writing-spec-akita.md`・`docs/area-writing-spec-miyagi.md`・`docs/area-writing-spec-yamagata.md`
+- 調査データ: `data/area/kagawa/`・`data/area/tokushima/`・`data/area/kochi/`・`data/area/aomori/`・`data/area/iwate/`・`data/area/akita/`・`data/area/miyagi/`・`data/area/yamagata/`・`data/area/fukushima/`（2026-10-17〜24の調査結果。`stats.md` `gov_ai.md` `cases.md` `companies.json` `subsidy_*.yml` など）
+- 執筆仕様: `docs/area-writing-spec-kagawa.md`・`docs/area-writing-spec-tokushima.md`・`docs/area-writing-spec-kochi.md`・`docs/area-writing-spec-aomori.md`・`docs/area-writing-spec-iwate.md`・`docs/area-writing-spec-akita.md`・`docs/area-writing-spec-miyagi.md`・`docs/area-writing-spec-yamagata.md`・`docs/area-writing-spec-fukushima.md`
 - ページを直したら `python3 post.py articles/<file>.md` で更新する（画像は作り直されない）。補助金のYAMLを直したら `python3 scripts/build_shindan_data.py` → コミット → `./deploy.sh`
+
+## 福島県（2026-10-24作成）
+
+東北で最後の県。59市町村で、これまでで最も多い。調査データは `data/area/fukushima/`、執筆仕様は `docs/area-writing-spec-fukushima.md`、作業の記録は `data/area/fukushima/_progress.md`。ファイル名の日付は 2026-10-24。試算は山形県と同じ「月の削減時間・時間換算額」だけの形。
+
+### 公開前・公開後に確かめたいこと
+
+- [ ] 県「12市町村起業支援金」（3/4・最大400万円。HP委託費・研修費・PCリース費も対象。令和8年度の追加募集は10月23日で終了）が data/subsidies/fukushima.yml にない。来年度の募集を確かめて足すか判断する
+- [ ] 県「メードインふくしまロボット導入支援補助金」は検索の要約だけで未確認。公式で確かめるまで記事に書かない
+- [ ] とうほう地域総合研究所の「県内企業のAI活用47.3%」の原資料（設問・母数・時期）。福島民友の記事は404、研究所のサイトに接続できなかった
+- [ ] 郡山市の国の省力化投資補助金への上乗せ（1/4・上限100万円）は令和7年度の制度。令和8年度に実施しているか市の産業雇用政策課に確かめる
+- [ ] 田村市の経営革新の補助（ページ404）、天栄村の持続化補助金への上乗せ・西郷村の計画策定費の補助（ページが古い）の2026年度の受付
+- [ ] 浅川町の公式サイトが調査・執筆の間ずっと503。町独自の制度と計画を確かめ、ページの「確認しきれなかった」を直す。川内村の事業者向けの制度も同じ
+- [ ] 富岡町の事業再開支援事業補助金の締切が、町のページ（令和8年1月30日）と公募要領（2027年1月29日）で食い違う
+- [ ] 県のDX伴走支援の令和8年度の後継、福島県産業振興センターのDX・AI支援（サイトがメンテナンス中）、福島県商工会連合会のAI関連事業（サイトが503）
+- [ ] シンク（会津若松市、労働局の資料で68名）・東邦情報システム（福島市）の公式の従業員数。公式で確かめれば本表の上位に入る（今回は公式で確かめた15社だけを載せた。山形県は資本金だけの会社も載せていて基準が違う）
+- [ ] 福島県情報産業協会のサイトが401。名簿は2026年6月の Internet Archive 版で見た
+- [ ] エンゼルフォレスト白河高原（天栄村）の運営会社。村の温泉のページの表記は「エンゼルフォレスト那須白河」
+- [ ] 役場が町村内に戻った日（広野町・楢葉町・川内村・葛尾村・飯舘村・富岡町・浪江町。大熊町だけ町の資料で確認）、広野町・川内村の町村内の居住者数、双葉町の町内に住む人の総数、浪江町の町内居住者の2つの値（1,516人と定義なしの2,471人）、川俣町山木屋地区の今の人口、南相馬市・田村市の避難指示の対象地区名
+- [ ] 広野町は、総務省の表（AIの文字起こしが導入済み）と町のDX推進計画（2026年9月、AIは未実施）が食い違う。ページには両方を書いた
+- [ ] 西会津町のAIオンデマンドバスの開始時期（令和3年11月と令和4年4月）、南会津町の過疎計画の表紙とリンク名の食い違い
+- [ ] よろず支援拠点 二本松サテライトの開設日が「毎月最終火曜」と「最終水曜」で食い違う（ページには日を書いていない）
+- [ ] 東北経済産業局（tohoku.meti.go.jp）は同じURLで200と403が日によって入れ替わる。郡山市・喜多方市のページの TOHOKU DX大賞の一覧ページへのリンク、只見町の隂山建設の Internet Archive 版のリンクをブラウザで確かめる
+- [ ] 郡山市の生成AI利活用研修（2024年3月）、会津若松商工会議所の経営発達支援計画のDX支援（serp.md の未照合）
+- [ ] PubMed（Noy & Zhang）のリンクが自動の確認で 203/429 を返す。ブラウザでは開ける
+- [ ] 地域ガイド（articles/2026-10-14-area.md）の check_article の ERROR 2件（FAQの節がない、首都圏の表の数値に出典がない）は福島県を足す前からある
 
 ## 山形県（2026-10-24作成）
 

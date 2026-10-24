@@ -39,7 +39,7 @@
 - [x] 執筆仕様 docs/area-writing-spec-fukushima.md
 - [x] 記事 60本（県1＋市町村59）
 - [x] data/subsidies/fukushima.yml、areas.yml、build_shindan_data.py
-- [ ] 地域ガイド、area-todo.md、area-new-prefecture.md
+- [x] 地域ガイド、area-todo.md、area-new-prefecture.md
 - [x] チェック（check_article・area_uniq・試算の重なり）
 - [ ] main へのマージ・投稿・デプロイ・画像の確認
 
