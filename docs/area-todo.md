@@ -6,7 +6,7 @@
 - 執筆仕様: `docs/area-writing-spec-kagawa.md`・`docs/area-writing-spec-tokushima.md`・`docs/area-writing-spec-kochi.md`・`docs/area-writing-spec-aomori.md`・`docs/area-writing-spec-iwate.md`・`docs/area-writing-spec-akita.md`・`docs/area-writing-spec-miyagi.md`・`docs/area-writing-spec-yamagata.md`・`docs/area-writing-spec-fukushima.md`
 - ページを直したら `python3 post.py articles/<file>.md` で更新する（画像は作り直されない）。補助金のYAMLを直したら `python3 scripts/build_shindan_data.py` → コミット → `./deploy.sh`
 
-## 福島県（2026-10-24作成）
+## 福島県（2026-10-24作成・投稿済み）
 
 東北で最後の県。59市町村で、これまでで最も多い。調査データは `data/area/fukushima/`、執筆仕様は `docs/area-writing-spec-fukushima.md`、作業の記録は `data/area/fukushima/_progress.md`。ファイル名の日付は 2026-10-24。試算は山形県と同じ「月の削減時間・時間換算額」だけの形。
 
