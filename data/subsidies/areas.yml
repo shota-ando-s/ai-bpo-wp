@@ -336,3 +336,65 @@
     - {code: yamagata/okura, name: 大蔵村, note: 村の小規模事業者持続化補助金は、国の持続化補助金に採択されると経費のうち75万円を超える分を上限25万円まで上乗せします（不採択でも1/3・上限30万円）。国の持続化補助金は診断の対象に入っていないため、上乗せ額は自動では計算しません}
     - {code: yamagata/sakegawa, name: 鮭川村, note: ホームページ作成費も対象だった小規模企業者支援事業補助金（2/3・上限50万円）は、2026-05-29で受付を終えています}
     - {code: yamagata/tozawa, name: 戸沢村, note: 中小企業者等支援事業補助金は、ホームページ作成費や業務に使う備品に2/3（上限40万円）を補助します（予算の範囲内、事業は2027-02-28まで）}
+- code: fukushima
+  name: 福島県
+  cities:
+    - {code: fukushima/fukushima-city, name: 福島市, none: true, note: 市独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）。デジタル化に課題を持つ企業とデジタル人材をつなぐ、無料の「デジタル人材バンク」があります}
+    - {code: fukushima/aizuwakamatsu, name: 会津若松市, note: 研修には人材育成事業補助金（外部講師の社内研修や中小企業大学校などの研修に1/2・上限10万円、随時、研修の30日前までに申請）があります。AIを名指しした地域課題解決型先端サービス実装化支援事業補助金（10/10・上限200万円）は2026-06-30で今年度の公募を終えています}
+    - {code: fukushima/koriyama, name: 郡山市, note: DX加速化事業支援補助金は、市のアドバイザー派遣を受けた中小製造業のシステム導入・研修などに1/2（上限100万円）を補助します（2027-03-31まで）。AIを名指しした制度ではありません。国の補助金の計画づくりには専門家活用支援事業補助金（1/2・最大20万円）があります}
+    - {code: fukushima/iwaki, name: いわき市, note: 生成AI導入支援サービスなどをカタログに載せた産業DX推進事業補助金（1/2・上限150万円）は、2026-06-30で今年度の受付を終えています。国の省力化投資補助金の自己負担の1/2（上限50万円）を上乗せする省力化投資補助金は2027-03-31まで受付中です}
+    - {code: fukushima/shirakawa, name: 白河市, note: スキルアップ支援補助金は、従業員の講座・研修（民間の講座も可）に2/3（小規模事業者3/4）、1回10万円まで補助します（2027-02-26まで）。IT導入に使える市の補助金はありません}
+    - {code: fukushima/sukagawa, name: 須賀川市, note: 人材育成事業補助金は、中小企業大学校などの公的・指定機関の研修に2/3（年20万円まで）を補助します（随時）。IT導入に使える市の補助金はありません}
+    - {code: fukushima/kitakata, name: 喜多方市, note: ものづくり企業DX推進事業は「ITツール、データ、AI等のデジタル技術を活用」する製造業のDXに1/2（上限30万円）を補助します（随時、年内に締め切る予定）。製造業向けの研修の補助（1/2・年10万円）もあります}
+    - {code: fukushima/soma, name: 相馬市, none: true, note: 市独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）}
+    - {code: fukushima/nihonmatsu, name: 二本松市, note: 新事業チャレンジ補助金は、業務効率化のソフトウェアやシステムを市内の業者から入れる費用に2/3（上限50万円）を補助します（2026-12-28まで・予算到達で終了）。AIを名指しした制度ではありません。研修には事業所等人材育成補助金（1/2）があります}
+    - {code: fukushima/tamura, name: 田村市, none: true, note: 市独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）。経営革新計画の承認を受けた新商品開発などへの補助（2/3・上限50万円）は、今年度の受付状況が分からないため市に確認が必要です}
+    - {code: fukushima/minamisoma, name: 南相馬市, note: 中小事業者チャレンジ応援事業補助金は、新商品・新サービス開発のシステム構築費やクラウド利用費に1/2（上限100万円）を補助します（随時・事前相談が必要）。市内企業などのロボット機器の導入にも1/2（上限100万円）の補助があります。社内業務のAI導入を名指しした制度ではありません}
+    - {code: fukushima/date, name: 伊達市, note: 業務効率化ソフトウェアやPOSなどに2/3（20万〜100万円）を補助した中小企業生産性向上設備投資応援補助金は、予算に達して今年度の受付を終えています（2026-08-04）}
+    - {code: fukushima/motomiya, name: 本宮市, none: true, note: 市独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）}
+    - {code: fukushima/koori, name: 桑折町, none: true, note: 町独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）}
+    - {code: fukushima/kunimi, name: 国見町, note: 中小企業・小規模企業振興事業補助金は、専用ソフトウェア・情報システムに2/3（全額を町内企業に発注すると3/4、上限50万円）、ホームページ・WEB広告に上限30万円、公的機関などの研修に上限10万円を補助します（2027-01-28まで・商工会の事前審査が先）。AIを名指しした制度ではありません}
+    - {code: fukushima/kawamata, name: 川俣町, note: 商工業事業者未来投資補助金は、デジタル技術を使った業務効率化や従業員のスキルアップに4/5（上限100万円、商工会員向け）を補助する制度で、2026-09-30で今年度の受付を終えています}
+    - {code: fukushima/kagamiishi, name: 鏡石町, none: true, note: 町独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）}
+    - {code: fukushima/shimogo, name: 下郷町, none: true, note: 町独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）}
+    - {code: fukushima/tadami, name: 只見町, none: true, note: 町独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）。産業振興対策事業補助金（事業継続のための機器購入に1/2・上限30万円など）は、町のサイトに募集案内がなく今年度の実施を確認できていません}
+    - {code: fukushima/minamiaizu, name: 南会津町, note: 経営拡大支援事業補助金は、システム構築費を含む新商品開発に1/2（上限20万円）、専門家の活用に2/3（上限30万円）を補助します（商工会の推薦、事業の30日前までに申請）。設備向けの産業力強化支援事業補助金は2026-07-31で受付を終えています}
+    - {code: fukushima/nishiaizu, name: 西会津町, none: true, note: 町独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）}
+    - {code: fukushima/bandai, name: 磐梯町, none: true, note: 町独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）}
+    - {code: fukushima/inawashiro, name: 猪苗代町, none: true, note: 町独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）}
+    - {code: fukushima/aizubange, name: 会津坂下町, note: 新事業創出支援補助金は、インターネットでの販路開拓（商品PR用のWebページ作成など）に10/10（上限10万円）を補助しますが、今年度の受付状況は町に確認が必要です。AIを名指しした制度ではありません}
+    - {code: fukushima/yanaizu, name: 柳津町, note: 小規模事業者後継者支援事業補助金は、商工会員の小規模事業所の後継者（50歳まで）のパソコンソフト・機器や研修の受講に全額（上限30万円）を補助します（購入・受講の前に申請）。AIを名指しした制度ではありません}
+    - {code: fukushima/mishima-town, name: 三島町, none: true, note: 町独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）}
+    - {code: fukushima/kaneyama-town, name: 金山町, none: true, note: 町独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）}
+    - {code: fukushima/aizumisato, name: 会津美里町, note: 持続的経営発達支援事業補助金は、国の持続化補助金で不採択になった小規模事業者のウェブサイト関連費などに1/2（上限40万円）を補助します。研修受講の補助（1/2・年5万円）は今年度の受付状況を町に確認が必要です}
+    - {code: fukushima/yabuki, name: 矢吹町, none: true, note: 町独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）。町の創業支援金（設備・備品・広告に1/2・上限20万円、随時）は創業者向けです}
+    - {code: fukushima/tanagura, name: 棚倉町, none: true, note: 町独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）。起業・創業支援事業補助金とPR動画作成支援助成金（1/2・上限15万円）は、今年度の受付状況が分からないため町に確認が必要です}
+    - {code: fukushima/yamatsuri, name: 矢祭町, none: true, note: 町独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）}
+    - {code: fukushima/hanawa, name: 塙町, none: true, note: 町独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）}
+    - {code: fukushima/ishikawa-town, name: 石川町, none: true, note: 町独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）}
+    - {code: fukushima/asakawa, name: 浅川町, note: 町の公式サイトが開けず、町独自の制度を確認しきれていません（2026-10-24）。町か浅川町商工会に確認してください}
+    - {code: fukushima/furudono, name: 古殿町, none: true, note: 町独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）}
+    - {code: fukushima/miharu, name: 三春町, none: true, note: 町独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）}
+    - {code: fukushima/ono-town, name: 小野町, none: true, note: 町独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）}
+    - {code: fukushima/hirono, name: 広野町, none: true, note: 町独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）}
+    - {code: fukushima/naraha, name: 楢葉町, none: true, note: 町独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）}
+    - {code: fukushima/tomioka-town, name: 富岡町, none: true, note: 町独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）。事業再開支援事業補助金（3/4・上限500万円、2027-01-29まで）は施設整備・設備向けで、ソフトウェアや研修には使えません}
+    - {code: fukushima/okuma, name: 大熊町, note: 創業・本社機能移転促進補助金（10/10・創業は上限200万円、2027-01-29まで）は業務用パソコンも対象ですが、福島イノベーション・コースト構想やF-REIの分野の事業に限られます。研修に使える就労サポート補助金は、国の自立・帰還支援雇用創出企業立地補助金を受けた企業向けです}
+    - {code: fukushima/futaba, name: 双葉町, none: true, note: 町独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）}
+    - {code: fukushima/namie, name: 浪江町, none: true, note: 町独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）。町の事業者向けの補助は光熱水費や食材調達などで、IT・研修に使えるものはありません}
+    - {code: fukushima/shinchi, name: 新地町, none: true, note: 町独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）}
+    - {code: fukushima/otama, name: 大玉村, none: true, note: 村独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）}
+    - {code: fukushima/tenei, name: 天栄村, none: true, note: 村独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）。国の持続化補助金の自己負担の1/2（上限10万円）を上乗せする村の制度は、今年度の受付状況が分からないため村に確認が必要です}
+    - {code: fukushima/hinoemata, name: 檜枝岐村, note: 民間事業者広告支援事業補助金は、ホームページの作成・リニューアルや広告の費用のうち5万円を超える部分に3/4（上限30万円）を補助します。申請期間は村の回覧で知らされます。AIを名指しした制度ではありません}
+    - {code: fukushima/kitashiobara, name: 北塩原村, none: true, note: 村独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）}
+    - {code: fukushima/yugawa, name: 湯川村, none: true, note: 村独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）。村の補助は創業と販路拡大（店舗改修・機器設備）の向けです}
+    - {code: fukushima/showa-village, name: 昭和村, none: true, note: 村独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）}
+    - {code: fukushima/nishigo, name: 西郷村, note: 中小企業課題解決アドバイザー活用支援事業は、国のものづくり補助金などの計画を専門家と作る費用に1/2を補助し、DX・GXを踏まえた計画は上限が上がります（最大30万円）。今年度の受付状況は村に確認が必要です}
+    - {code: fukushima/izumizaki, name: 泉崎村, none: true, note: 村独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）}
+    - {code: fukushima/nakajima, name: 中島村, none: true, note: 村独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）}
+    - {code: fukushima/samegawa, name: 鮫川村, none: true, note: 村独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）。起業・創業支援事業補助金（2/3・上限30万円、既存事業者の新事業進出も対象）は、今年度の受付状況が分からないため村に確認が必要です}
+    - {code: fukushima/tamakawa, name: 玉川村, none: true, note: 村独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）。村の創業支援事業補助金（1/3・上限100万円）は店舗を持つ事業者向けで、インターネット販売等は対象外です}
+    - {code: fukushima/hirata, name: 平田村, none: true, note: 村独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）}
+    - {code: fukushima/kawauchi, name: 川内村, note: 村の公式サイトに事業者向けの案内がなく、村独自の制度を確認しきれていません（2026-10-24）。村の担当課か川内村商工会に確認してください}
+    - {code: fukushima/katsurao, name: 葛尾村, none: true, note: 村独自のAI・IT向け補助金は見つかりませんでした（2026-10-24確認）}
+    - {code: fukushima/iitate, name: 飯舘村, note: がんばる商工業者支援補助金は、事業の付加価値を高める取組に75％（ひろげるサポートは上限60万円、プラスは上限100万円）を補助します（随時）。ITツールが対象になるかは事業の前に村か商工会に相談が必要です}
