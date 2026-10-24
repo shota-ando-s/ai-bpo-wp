@@ -13,6 +13,7 @@
     python3 scripts/area_uniq.py miyagi             # 宮城の全ページ（ファイル名の日付は 2026-10-23）
     python3 scripts/area_uniq.py yamagata           # 山形の全ページ
     python3 scripts/area_uniq.py fukushima          # 福島の全ページ
+    python3 scripts/area_uniq.py toyama             # 富山の全ページ
     python3 scripts/area_uniq.py niigata            # 新潟の全ページ
 
 目安は固有60%以上。下回るページは、国・県の制度の説明や FAQ の定型の回答を、その市町の事情に合わせて書き直す。
