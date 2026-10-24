@@ -6,12 +6,14 @@
 - 執筆仕様: `docs/area-writing-spec-kagawa.md`・`docs/area-writing-spec-tokushima.md`・`docs/area-writing-spec-kochi.md`・`docs/area-writing-spec-aomori.md`・`docs/area-writing-spec-iwate.md`・`docs/area-writing-spec-akita.md`・`docs/area-writing-spec-miyagi.md`・`docs/area-writing-spec-yamagata.md`
 - ページを直したら `python3 post.py articles/<file>.md` で更新する（画像は作り直されない）。補助金のYAMLを直したら `python3 scripts/build_shindan_data.py` → コミット → `./deploy.sh`
 
-## 山形県（2026-10-24作成）
+## 山形県（2026-10-24作成・投稿済み）
 
 東北で5番目の県。調査データは `data/area/yamagata/`、執筆仕様は `docs/area-writing-spec-yamagata.md`。ファイル名の日付は 2026-10-24。試算は「月の削減時間・時間換算額」だけの形（ヒキツギAIの月額・回収期間は書かない。2026-10-24 ユーザー決定）。
 
 ### 公開前・公開後に確かめたいこと
 
+- [ ] **H2画像がないページがある**（2026-10-24 の投稿中に OpenAI のクレジットが切れた）。3枚ともなし: 戸沢村・鶴岡市・山形市・山辺町・米沢市・遊佐町。1枚欠け: 西川町・天童市。クレジットを足してから `python3 post.py --rebuild-images articles/2026-10-24-area-yamagata-<slug>.md`、そのあと `scripts/fix_map_images.py` の判定と目視
+- [ ] 公開済みの画像（県ページ3枚・市町村85枚）は目視で地図なしを確かめたが、fix_map_images.py の自動判定は未実行（クレジット切れ）
 - [ ] 舟形町の商工業活力アップ推進事業補助金のページが404。Internet Archive は2025年3月版まで。2026年度の内容を確かめ、ページと data/subsidies/areas.yml の「確認しきれていません」を直す
 - [ ] 村山市の企業DX推進補助金（他の補助を差し引いた残りの1/2・上限50万円）の今年度の受付期間がページにない。分かれば yamagata.yml の status と addon（remaining 0.5）を直す
 - [ ] 大蔵村の持続化補助金への上乗せ（国の採択で経費75万円超の分を上限25万円）は、国の持続化補助金が national.yml にないため addon にしていない
