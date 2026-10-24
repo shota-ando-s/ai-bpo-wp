@@ -47,10 +47,10 @@
 - [x] scripts/area_uniq.py に niigata を追加（2026-10-24。福島のブランチも同じ行を変えているので、取り込むときに1行の衝突を直す）
 - [x] 調査（11人、2026-10-24。WebSearch 113）
 - [x] 執筆仕様 docs/area-writing-spec-niigata.md（2026-10-24）
-- [ ] 記事 31本（県1＋市町村30）
+- [x] 記事 31本（県1＋市町村30）（2026-10-24）
 - [x] data/subsidies/niigata.yml（65制度）、areas.yml、build_shindan_data.py（423制度）
-- [ ] 地域ガイド、area-todo.md、area-new-prefecture.md
-- [ ] チェック（check_article・extract_claims --check-links ERROR 0、area_uniq 固有60%以上、試算の重なり）
+- [x] 地域ガイド、area-todo.md、area-new-prefecture.md（2026-10-24）
+- [x] チェック（check_article・extract_claims --check-links ERROR 0、area_uniq 固有60%以上〔最低 燕市63.7%〕、試算の重なりなし）
 - [ ] コミット・投稿・デプロイ・画像の確認
 
 ## 実績メモ
@@ -87,3 +87,4 @@
 - W10 胎内市（約8,737字・91.5%・電気機械100名 月75h/26.3万）・阿賀町（8,119・86.5%・建設10名 月12h/4.2万）・弥彦村（7,658・94.3%・土産物店10名 月14h/5.0万）完了、ERROR 0、WS0。**市町村ページ30本すべて完了（2026-10-24）**。執筆の WebSearch は全担当0回
 - 30ページの area_uniq（W10 のあと）: 全ページ固有60%以上、最低は燕市63.7%・関川村66.7%・刈羽村67.8%、最高は弥彦村94.3%。試算の月の削減時間は30ページで重なりなし。W11 県ページを起動
 - W11 県ページ（約18,038字・97.9%・卸売35名 月81h/28.7万）完了、ERROR 0、WS0。12の地域振興局で30ページにリンク。津南醸造・原発には触れない。IT企業は数だけ（18市町・45社）
+- 地域ガイド articles/2026-10-14-area.md に「新潟県の地域ページ」の節〔後継者不在率46.1%・休廃業1,165件・社長61.7歳・出荷額の内訳〕とTDB新潟支店の出典3本を追加。docs/area-todo.md に新潟県の節、docs/area-new-prefecture.md に「新潟県で分かったこと」を追加

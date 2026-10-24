@@ -2,9 +2,35 @@
 
 地域ページで、調べきれずに残っている作業。終わったら行ごと消すか、`[x]` にして日付を書く。
 
-- 調査データ: `data/area/kagawa/`・`data/area/tokushima/`・`data/area/kochi/`・`data/area/aomori/`・`data/area/iwate/`・`data/area/akita/`・`data/area/miyagi/`・`data/area/yamagata/`（2026-10-17〜24の調査結果。`stats.md` `gov_ai.md` `cases.md` `companies.json` `subsidy_*.yml` など）
-- 執筆仕様: `docs/area-writing-spec-kagawa.md`・`docs/area-writing-spec-tokushima.md`・`docs/area-writing-spec-kochi.md`・`docs/area-writing-spec-aomori.md`・`docs/area-writing-spec-iwate.md`・`docs/area-writing-spec-akita.md`・`docs/area-writing-spec-miyagi.md`・`docs/area-writing-spec-yamagata.md`
+- 調査データ: `data/area/kagawa/`・`data/area/tokushima/`・`data/area/kochi/`・`data/area/aomori/`・`data/area/iwate/`・`data/area/akita/`・`data/area/miyagi/`・`data/area/yamagata/`・`data/area/niigata/`（2026-10-17〜24の調査結果。`stats.md` `gov_ai.md` `cases.md` `companies.json` `subsidy_*.yml` など）
+- 執筆仕様: `docs/area-writing-spec-kagawa.md`・`docs/area-writing-spec-tokushima.md`・`docs/area-writing-spec-kochi.md`・`docs/area-writing-spec-aomori.md`・`docs/area-writing-spec-iwate.md`・`docs/area-writing-spec-akita.md`・`docs/area-writing-spec-miyagi.md`・`docs/area-writing-spec-yamagata.md`・`docs/area-writing-spec-niigata.md`
 - ページを直したら `python3 post.py articles/<file>.md` で更新する（画像は作り直されない）。補助金のYAMLを直したら `python3 scripts/build_shindan_data.py` → コミット → `./deploy.sh`
+
+## 新潟県（2026-10-24作成・未投稿）
+
+東北6県のあとの最初の県（北陸・甲信越。経済産業局は関東経済産業局の管内）。調査データは `data/area/niigata/`、執筆仕様は `docs/area-writing-spec-niigata.md`。ファイル名の日付は 2026-10-24。新潟市は政令指定都市だが1ページだけ（区のページは作らない）。
+
+### 投稿の前後にすること
+
+- [ ] 福島県（ブランチ area-fukushima）を main に取り込むとき、`scripts/area_uniq.py` の県の選択肢の行がぶつかる（両方とも1行に県を足している）。fukushima と niigata の両方を残す
+- [ ] 投稿・デプロイ・画像の確認（地図の自動判定 `scripts/fix_map_images.py` と全画像の目視）
+- [ ] 新発田市の slug `shibata` は宮城県柴田町（parent area/miyagi）と同じ。post.py は親ごとに照合するので重ならないはずだが、投稿後に両方のページが別々にあるか確かめる
+- [ ] 県のビジネス変革応援事業 第2回は 2026-10-29 必着。締切後に niigata.yml の status を closed にし、県ページと市町村ページの「受付中」の書き方を直す（デジタル化・AI導入補助金 通常枠の 10/30 も同じ）
+- [ ] PubMed（Noy & Zhang）のリンクが自動の確認で 203・429 を返す。ブラウザでは開ける
+
+### 調べきれていないこと
+
+- [ ] 五泉市の生成AI（新潟日報生成AI研究所を優先交渉権者に選び 2026-10-01 利用開始の予定）が予定どおり始まったか。ページは「公募時点の予定」と書いた
+- [ ] 受付状況が分からない制度（十日町市 地場産品開発販売支援、田上町の2制度、出雲崎町 キャッシュレス、津南町 人材育成〔2020年のページ〕、関川村 従業員研修〔2021年のページ〕、長岡市 EC出店）。ページは「市町村に確認」と書いた
+- [ ] 新潟市 人材育成助成金の締切が、制度のページ（2027年2月末）と市の一覧（令和8年2月末）で食い違う。制度のページの値で書いた
+- [ ] 魚沼市 デジタル活用支援の交付要綱がページになく、AIツールが対象になるか確かめていない
+- [ ] 村上商工会議所のサイト（mu-cci.or.jp）に接続できず、リンクしていない。小千谷商工会議所のURLも確かめきれていない
+- [ ] ジェー・シー・エスコンピュータ・サービス（上越市）の公式サイトが403で人数が取れない。カシックス（柏崎市）は公式に人数がない（マイナビでは113名）
+- [ ] 県内のIT業界団体の会員名簿が見つからず、IT企業の表は NICO のDXパートナー一覧と法人一覧サイトから作った。漏れがありうる
+- [ ] 日本フードリンクの Meally を報じた新潟日報（2026-05-15）は読めていない
+- [ ] 県の対話型AIの移住相談の実証のページが404。新潟県DX推進プラットフォーム（NDXP）の事例ページは JavaScript で本文を取れない
+- [ ] 総務省の生成AIの表に載らない13市町村、両方の表に載らない7団体（胎内・田上・出雲崎・津南・弥彦・関川・粟島浦）。ページは「表では確認できない」と書いた
+- [ ] 観光入込客の令和7年の値は使っていない（市町村別がそろう令和6年を使った）
 
 ## 山形県（2026-10-24作成・投稿済み）
 
