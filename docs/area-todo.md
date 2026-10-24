@@ -2,9 +2,35 @@
 
 地域ページで、調べきれずに残っている作業。終わったら行ごと消すか、`[x]` にして日付を書く。
 
-- 調査データ: `data/area/kagawa/`・`data/area/tokushima/`・`data/area/kochi/`・`data/area/aomori/`・`data/area/iwate/`・`data/area/akita/`・`data/area/miyagi/`（2026-10-17〜23の調査結果。`stats.md` `gov_ai.md` `cases.md` `companies.json` `subsidy_*.yml` など）
-- 執筆仕様: `docs/area-writing-spec-kagawa.md`・`docs/area-writing-spec-tokushima.md`・`docs/area-writing-spec-kochi.md`・`docs/area-writing-spec-aomori.md`・`docs/area-writing-spec-iwate.md`・`docs/area-writing-spec-akita.md`・`docs/area-writing-spec-miyagi.md`
+- 調査データ: `data/area/kagawa/`・`data/area/tokushima/`・`data/area/kochi/`・`data/area/aomori/`・`data/area/iwate/`・`data/area/akita/`・`data/area/miyagi/`・`data/area/yamagata/`（2026-10-17〜24の調査結果。`stats.md` `gov_ai.md` `cases.md` `companies.json` `subsidy_*.yml` など）
+- 執筆仕様: `docs/area-writing-spec-kagawa.md`・`docs/area-writing-spec-tokushima.md`・`docs/area-writing-spec-kochi.md`・`docs/area-writing-spec-aomori.md`・`docs/area-writing-spec-iwate.md`・`docs/area-writing-spec-akita.md`・`docs/area-writing-spec-miyagi.md`・`docs/area-writing-spec-yamagata.md`
 - ページを直したら `python3 post.py articles/<file>.md` で更新する（画像は作り直されない）。補助金のYAMLを直したら `python3 scripts/build_shindan_data.py` → コミット → `./deploy.sh`
+
+## 山形県（2026-10-24作成）
+
+東北で5番目の県。調査データは `data/area/yamagata/`、執筆仕様は `docs/area-writing-spec-yamagata.md`。ファイル名の日付は 2026-10-24。試算は「月の削減時間・時間換算額」だけの形（ヒキツギAIの月額・回収期間は書かない。2026-10-24 ユーザー決定）。
+
+### 公開前・公開後に確かめたいこと
+
+- [ ] 舟形町の商工業活力アップ推進事業補助金のページが404。Internet Archive は2025年3月版まで。2026年度の内容を確かめ、ページと data/subsidies/areas.yml の「確認しきれていません」を直す
+- [ ] 村山市の企業DX推進補助金（他の補助を差し引いた残りの1/2・上限50万円）の今年度の受付期間がページにない。分かれば yamagata.yml の status と addon（remaining 0.5）を直す
+- [ ] 大蔵村の持続化補助金への上乗せ（国の採択で経費75万円超の分を上限25万円）は、国の持続化補助金が national.yml にないため addon にしていない
+- [ ] 鶴岡市の企業研修助成金（庄内地域産業振興センター、7/24に予算到達で終了）の対象地域に三川町・庄内町が入るか、要綱で確かめていない
+- [ ] 東北経済産業局のサイトが403・空の応答を返す。TOHOKU DX大賞・弘栄ドリームワークスの資料は Internet Archive 版にリンク（自動の確認では429）。ブラウザで開けるか確かめる
+- [ ] 天童商工会議所の公式URLを確かめられず、リンクしていない
+- [ ] 荘内銀行の北都銀行との合併（フィデア銀行）の日付を確かめていない。ページでは2026年10月24日時点の名称で書いた
+- [ ] PubMed（Noy & Zhang）のリンクが自動の確認で 203 を返す。ブラウザでは開ける
+
+### 統計・行政（`stats.md`・`stats_labor.md`・`gov_ai*.md`）
+
+- [ ] 職業別の有効求人倍率は大分類だけ（一般事務・介護の値はない）
+- [ ] 県DXビジョンの「約6割の企業」「製造業の62%」の出典調査が見つからず、記事で使っていない
+- [ ] stats.md の南陽市「おうとう14.1億円」は、市の節で米と並べて書かれていて分かりにくい（品目の順位表では南陽市のおうとう14.1億円・8位）。記事では使っていない
+- [ ] 総務省の生成AIの表に、大蔵村・鮭川村・戸沢村・高畠町・飯豊町・尾花沢市・大石田町が載っていない（東根市は生成AIの表のみなし）。記事では「総務省の調査の表では確認できない」と書いた
+- [ ] 三川町は町長答弁で生成AIのガイドラインと「3社のサービスを許可」までは分かったが、サービス名が分からない。西川町の生成AIのツール名と、条例・ガイドラインの制定も未確認
+- [ ] 総合支庁の管轄を市町村名で書いた県のページが見つからず、県ページの地域区分は県統計企画課の4地域（村山14・最上8・置賜8・庄内5）を使った
+- [ ] 尾花沢市のAIデマンド交通「のらっしゃい」の実証は2026-09-30で終了。10月以降の運行形態を確かめる
+- [ ] 品種・銘柄（ラ・フランス、つや姫、米沢牛）・鋳物・家具・米沢織の統計、漁獲量は取れていない
 
 ## 宮城県（2026-10-23作成・2026-10-24投稿済み）
 
