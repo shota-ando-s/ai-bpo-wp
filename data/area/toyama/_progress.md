@@ -43,7 +43,7 @@
 - [x] 調査（data/area/toyama/。担当10人、2026-10-25 完了）
 - [x] 執筆仕様 docs/area-writing-spec-toyama.md（2026-10-25）
 - [ ] 記事 16本（県1＋市町村15）
-- [ ] data/subsidies/toyama.yml、areas.yml、build_shindan_data.py
+- [x] data/subsidies/toyama.yml、areas.yml、build_shindan_data.py（2026-10-25）
 - [ ] 地域ガイド、area-todo.md、area-new-prefecture.md
 - [ ] チェック（check_article・area_uniq・試算の重なり・見出し行だけの表）
 - [ ] main への反映・投稿・デプロイ・画像の確認
@@ -69,3 +69,5 @@
 - 執筆仕様 docs/area-writing-spec-toyama.md（約770行、WS3〔D2〕）完了。共通部分は新潟版から親が直し、県の補足は下書き5人〔D1統計・D2事例・D3行政・D4補助金・D5 IT企業〕を組み立てた。下書きの「案」は「下書きの『案』の扱い」の節に書いた例外以外すべて採用。主な決定: 小矢部市は県の統計どおり高岡・射水地域〔厚生センター・HWは砺波と注〕、呉西は「とやま呉西圏域」として1か所・呉東は使わない、北陸コンピュータ・サービスは富山市の表に併記の注つきで入れる、県外事例は1事例1ページ12件〔県ページ・魚津・舟橋・上市・朝日は割り当てなし〕、TX補助金AI導入枠は市町村ページの表に「今年度は終了」で1行、小矢部市の生成AI補助金は県ページと小矢部市だけ、診断は立山町・小矢部市DXの addon を外す。担当 W1〜W5（3ページずつ）＋W6 県ページ
 - scripts/area_uniq.py の県の選択肢に toyama が抜けていたので足した（説明文にだけあった）
 - **WebSearch 累計 87（調査84＋仕様3）、残り113**
+- 補助金診断: data/subsidies/toyama.yml（32制度＝subsidy_a 28＋subsidy_b 4。結合時に立山町・小矢部市DXの addon を外し、小矢部市 生成AIは max_yen 50000・max_months 4）、areas.yml に県と15市町村〔none 4＝滑川・砺波・上市・舟橋〕、build で509制度
+- 執筆 W1〜W4 起動（2026-10-25）
