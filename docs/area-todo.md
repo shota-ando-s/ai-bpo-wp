@@ -2,9 +2,34 @@
 
 地域ページで、調べきれずに残っている作業。終わったら行ごと消すか、`[x]` にして日付を書く。
 
-- 調査データ: `data/area/kagawa/`・`data/area/tokushima/`・`data/area/kochi/`・`data/area/aomori/`・`data/area/iwate/`・`data/area/akita/`・`data/area/miyagi/`・`data/area/yamagata/`・`data/area/fukushima/`・`data/area/niigata/`（2026-10-17〜24の調査結果。`stats.md` `gov_ai.md` `cases.md` `companies.json` `subsidy_*.yml` など）
-- 執筆仕様: `docs/area-writing-spec-kagawa.md`・`docs/area-writing-spec-tokushima.md`・`docs/area-writing-spec-kochi.md`・`docs/area-writing-spec-aomori.md`・`docs/area-writing-spec-iwate.md`・`docs/area-writing-spec-akita.md`・`docs/area-writing-spec-miyagi.md`・`docs/area-writing-spec-yamagata.md`・`docs/area-writing-spec-fukushima.md`・`docs/area-writing-spec-niigata.md`
+- 調査データ: `data/area/kagawa/`・`data/area/tokushima/`・`data/area/kochi/`・`data/area/aomori/`・`data/area/iwate/`・`data/area/akita/`・`data/area/miyagi/`・`data/area/yamagata/`・`data/area/fukushima/`・`data/area/niigata/`・`data/area/toyama/`（2026-10-17〜25の調査結果。`stats.md` `gov_ai.md` `cases.md` `companies.json` `subsidy_*.yml` など）
+- 執筆仕様: `docs/area-writing-spec-kagawa.md`・`docs/area-writing-spec-tokushima.md`・`docs/area-writing-spec-kochi.md`・`docs/area-writing-spec-aomori.md`・`docs/area-writing-spec-iwate.md`・`docs/area-writing-spec-akita.md`・`docs/area-writing-spec-miyagi.md`・`docs/area-writing-spec-yamagata.md`・`docs/area-writing-spec-fukushima.md`・`docs/area-writing-spec-niigata.md`・`docs/area-writing-spec-toyama.md`
 - ページを直したら `python3 post.py articles/<file>.md` で更新する（画像は作り直されない）。補助金のYAMLを直したら `python3 scripts/build_shindan_data.py` → コミット → `./deploy.sh`
+
+## 富山県（2026-10-25作成）
+
+北陸で最初の県（経済産業局は中部経済産業局の管内。富山・石川の窓口は北陸支局）。調査データは `data/area/toyama/`、執筆仕様は `docs/area-writing-spec-toyama.md`。ファイル名の日付は 2026-10-25。政令指定都市はない。
+
+### 投稿の前後にすること
+
+- [ ] 舟橋村の公式サイトが 2026-10-22 からメンテナンスで 503（2026-10-25 も 503）。ページは村の例規集と Internet Archive の保存版で書いた。再開したら村の補助金・担当課・生成AIの資料を見直す
+- [ ] 県のトランスフォーメーション補助金（第4次）の公募が出たら、県ページと15市町村ページの「今年度の募集は終了」と toyama.yml を直す
+- [ ] 小矢部市の生成AI活用支援事業補助金は「予算に達し次第終了」。受付終了の告知が出たら toyama.yml の status と小矢部市・県ページを直す
+- [ ] 立山町の小規模事業者省エネ・省力化推進事業補助金は 2026-12-28 まで。締切後に status を closed にする（デジタル化・AI導入補助金 6次の 10/30 も同じ）
+- [ ] 朝日町の slug `asahi-town` は山形県朝日町と同じ。投稿後に両方のページが別々にあることを確かめる
+
+### 調べきれていないこと
+
+- [ ] 人手不足・生成AIの帝国データバンクの富山県版・北陸3県版がない（URLを約19,000通り試した）。県内企業のAI利用率は北陸財務局のヒアリング（北陸3県101社）だけで、富山県だけの調査は見つかっていない。北陸経済研究所のサイトはメンテナンス中で開けなかった
+- [ ] 県内の中小企業のAI事例で数値がそろうのは丸喜産業（高岡市、2024年9月の実証）だけ。医薬品・アルミ・化学・電子部品・工芸・食品・水産・米・運送・旅館は県内・県外とも見つからなかった
+- [ ] 県外事例の湖北精工・岡本・髙橋金属・サンテクノス・伸和・長浜シャーリング工場は、所在の市町村と従業員数を公式で確かめられず「◯◯県の◯◯会社」までにした
+- [ ] 総務省の表: 富山市は生成AIの表に行がないが市のDX推進計画に「生成AIの一部機能の利用」。朝日町は4表すべてに行がない。舟橋村は「導入済」と「実証中」が食い違う。ページは両方の値・「表では確認できない」と書いた
+- [ ] 県の AIチャットボット「AIさくらさん」は県の公式資料で確かめられず、記事で使っていない
+- [ ] 県内のIT業界団体（富山県情報産業協会）の会員名簿が見つからず、IT企業の表は法人一覧と gBizINFO から作った。本表は3市7社だけで、漏れがありうる。高志インテックの「AI類似図面検索システム」は展示会の告知だけなので書いていない
+- [ ] 高岡商工会議所のサイトが 503（セキュリティ対策の閲覧停止）、射水市商工会は 403、庄川町商工会はメンテナンス中で、リンクしていない
+- [ ] 氷見市 技術研修等派遣助成金（ページが2020年のまま）、入善町 経営アドバイザー派遣、朝日町 起業応援・研修の今年度の受付状況は未確認。ページは「市町に確認」と書いた
+- [ ] 「呉東」の構成市町村を挙げた県の資料が見つからず、使っていない。「呉西」は6市の協議会の資料による
+- [ ] 能登半島地震の支援制度は名前と窓口だけで、要綱の上限額は書いていない
 
 ## 新潟県（2026-10-24作成）
 

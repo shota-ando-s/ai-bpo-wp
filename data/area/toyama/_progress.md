@@ -44,8 +44,8 @@
 - [x] 執筆仕様 docs/area-writing-spec-toyama.md（2026-10-25）
 - [x] 記事 16本（県1＋市町村15）（2026-10-25）
 - [x] data/subsidies/toyama.yml、areas.yml、build_shindan_data.py（2026-10-25）
-- [ ] 地域ガイド、area-todo.md、area-new-prefecture.md
-- [ ] チェック（check_article・area_uniq・試算の重なり・見出し行だけの表）
+- [x] 地域ガイド、area-todo.md、area-new-prefecture.md（2026-10-25）
+- [x] チェック（check_article・area_uniq・試算の重なり・見出し行だけの表）（2026-10-25）
 - [ ] main への反映・投稿・デプロイ・画像の確認
 
 ## 実績メモ
