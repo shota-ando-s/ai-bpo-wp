@@ -2,9 +2,38 @@
 
 地域ページで、調べきれずに残っている作業。終わったら行ごと消すか、`[x]` にして日付を書く。
 
-- 調査データ: `data/area/kagawa/`・`data/area/tokushima/`・`data/area/kochi/`・`data/area/aomori/`・`data/area/iwate/`・`data/area/akita/`・`data/area/miyagi/`・`data/area/yamagata/`・`data/area/fukushima/`・`data/area/niigata/`・`data/area/toyama/`（2026-10-17〜25の調査結果。`stats.md` `gov_ai.md` `cases.md` `companies.json` `subsidy_*.yml` など）
-- 執筆仕様: `docs/area-writing-spec-kagawa.md`・`docs/area-writing-spec-tokushima.md`・`docs/area-writing-spec-kochi.md`・`docs/area-writing-spec-aomori.md`・`docs/area-writing-spec-iwate.md`・`docs/area-writing-spec-akita.md`・`docs/area-writing-spec-miyagi.md`・`docs/area-writing-spec-yamagata.md`・`docs/area-writing-spec-fukushima.md`・`docs/area-writing-spec-niigata.md`・`docs/area-writing-spec-toyama.md`
+- 調査データ: `data/area/kagawa/`・`data/area/tokushima/`・`data/area/kochi/`・`data/area/aomori/`・`data/area/iwate/`・`data/area/akita/`・`data/area/miyagi/`・`data/area/yamagata/`・`data/area/fukushima/`・`data/area/niigata/`・`data/area/toyama/`・`data/area/ishikawa/`（2026-10-17〜27の調査結果。`stats.md` `gov_ai.md` `cases.md` `companies.json` `subsidy_*.yml` など）
+- 執筆仕様: `docs/area-writing-spec-kagawa.md`・`docs/area-writing-spec-tokushima.md`・`docs/area-writing-spec-kochi.md`・`docs/area-writing-spec-aomori.md`・`docs/area-writing-spec-iwate.md`・`docs/area-writing-spec-akita.md`・`docs/area-writing-spec-miyagi.md`・`docs/area-writing-spec-yamagata.md`・`docs/area-writing-spec-fukushima.md`・`docs/area-writing-spec-niigata.md`・`docs/area-writing-spec-toyama.md`・`docs/area-writing-spec-ishikawa.md`
 - ページを直したら `python3 post.py articles/<file>.md` で更新する（画像は作り直されない）。補助金のYAMLを直したら `python3 scripts/build_shindan_data.py` → コミット → `./deploy.sh`
+
+## 石川県（2026-10-27作成）
+
+北陸で2つ目の県（経済産業局は中部経済産業局の管内）。調査データは `data/area/ishikawa/`、執筆仕様は `docs/area-writing-spec-ishikawa.md`。ファイル名の日付は 2026-10-27。政令指定都市・村はない。能登半島地震・奥能登豪雨は6市町（輪島・珠洲・能登町・穴水・志賀・七尾）の H2 2 冒頭と補助金の節の末尾だけに書いた。
+
+### 投稿の前後にすること
+
+- [ ] 投稿・デプロイ・画像の確認
+- [ ] かほく市の slug `kahoku` は山形県河北町と同じ。投稿後に両方のページが別々にあることを確かめる
+- [ ] ISICO 自動化設備投資準備補助金（3次）と野々市市の経営強化等支援事業は 2026-10-30 締切。締切後に県ページと製造業の市町のページの「受付中」を直す（診断からは自動で消える。デジタル化・AI導入補助金 6次の 10/30 も同じ）
+- [ ] 県のチャレンジ支援補助金（能登の3市3町）の最終10次は 2026-11-30 締切。締切後に県ページと6市町の補助金の節の末尾を直す
+- [ ] 金沢市のデジタル化推進セミナー第3回「画像生成AI」（11/20、申込 11/13 まで）を書いたページは、終わったら直す
+- [ ] 小松市のデジタル化支援は、ページの更新日（2025-08-04）と申請期日（令和9年2月26日）が合わない。今年度の受付状況を市に確かめる
+
+### 調べきれていないこと
+
+- [ ] 帝国データバンクの石川県版（金沢支店）は2025年調査の5テーマとも見つからなかった（北陸の一覧と992通りのURL）。県の値は富山支店の資料の都道府県別の表と全国版から取った。人手不足のURLは試していない
+- [ ] 県内企業のAI利用率は北陸財務局のヒアリング（北陸3県101社）だけ。県・ISICO・地銀系・商工会議所の調査は見つかっていない
+- [ ] 県内の中小企業のAI事例で数値がそろうのはクラスコ（金沢市）だけで、同社の「AI導入1年」の削減時間は2026年2月の発表（6,860時間）と4月の発表（22,862時間）で食い違う。工芸・旅館・水産・食品・繊維・建設・運送・介護の中小企業、能登6市町の地震後の事例は見つからなかった。県外も未使用の数値つき事例は2件（岐阜）だけで、11県で公的事例集をほぼ使い切った
+- [ ] 県のデジタル化実践道場（2024年2月2日の報告会。曽田製作所・大同工業・ケー・エヌ・テー・朝日電機製作所）の成果資料は公開されていない。県の産業政策課に問い合わせれば県内製造業のAI外観検査の事例になるかもしれない
+- [ ] stats.md の宝達志水町の製造品出荷額が、2019年の県版と2024年の国の表で同じ1,204.9億円。どちらかの写し間違いの可能性があり、記事では2019年の額を書いていない
+- [ ] 市町別の令和7年国勢調査の確定値は、調査担当が県の推計人口から逆算した値で、記事では使っていない。総務省の確定値の表が出たら照合する
+- [ ] 志賀原子力発電所は北陸電力のページが404で確かめられず、志賀町のページでは施設名を書いていない
+- [ ] 能美市の生成AI（「自治体業務に特化した生成AI」）の製品名、七尾市・小松市のDX推進計画、羽咋市の第2次DX計画（画像PDF）・中能登町の実施計画（画像PDF）の中身は確かめていない
+- [ ] 「いしかわデジタル技術支援工房」が2018年開所の「いしかわAI・IoT技術支援工房」の改称かは、資料で確かめていない
+- [ ] 能登町の「のるーとのと」がAIを使うかは町のページに記載がなく、「予約制の乗合タクシー」と書いた。県の「奥能登2市2町共通AIオンデマンド交通」の県の資料は探していない
+- [ ] 奥能登のIT企業2社（ケイユーオ・オーテクス）の従業員数に時点がない
+- [ ] ISICO のデジタル分野の専門家派遣の「無料」は2023年4月更新のページの記載。最新の条件は確かめていない
+- [ ] 穴水町の小規模事業者応援事業は、要綱の実施期間（2025-04-01〜2030-03-31）とチラシの年度（令和2〜6年度）が食い違う。穴水町の震災の3制度の内容と期限は開いていない
 
 ## 富山県（2026-10-25作成）
 
