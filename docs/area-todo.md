@@ -2,9 +2,33 @@
 
 地域ページで、調べきれずに残っている作業。終わったら行ごと消すか、`[x]` にして日付を書く。
 
-- 調査データ: `data/area/kagawa/`・`data/area/tokushima/`・`data/area/kochi/`・`data/area/aomori/`・`data/area/iwate/`・`data/area/akita/`・`data/area/miyagi/`・`data/area/yamagata/`・`data/area/fukushima/`・`data/area/niigata/`・`data/area/toyama/`・`data/area/ishikawa/`（2026-10-17〜27の調査結果。`stats.md` `gov_ai.md` `cases.md` `companies.json` `subsidy_*.yml` など）
-- 執筆仕様: `docs/area-writing-spec-kagawa.md`・`docs/area-writing-spec-tokushima.md`・`docs/area-writing-spec-kochi.md`・`docs/area-writing-spec-aomori.md`・`docs/area-writing-spec-iwate.md`・`docs/area-writing-spec-akita.md`・`docs/area-writing-spec-miyagi.md`・`docs/area-writing-spec-yamagata.md`・`docs/area-writing-spec-fukushima.md`・`docs/area-writing-spec-niigata.md`・`docs/area-writing-spec-toyama.md`・`docs/area-writing-spec-ishikawa.md`
+- 調査データ: `data/area/kagawa/`・`data/area/tokushima/`・`data/area/kochi/`・`data/area/aomori/`・`data/area/iwate/`・`data/area/akita/`・`data/area/miyagi/`・`data/area/yamagata/`・`data/area/fukushima/`・`data/area/niigata/`・`data/area/toyama/`・`data/area/ishikawa/`・`data/area/fukui/`（2026-10-17〜27の調査結果。`stats.md` `gov_ai.md` `cases.md` `companies.json` `subsidy_*.yml` など）
+- 執筆仕様: `docs/area-writing-spec-kagawa.md`・`docs/area-writing-spec-tokushima.md`・`docs/area-writing-spec-kochi.md`・`docs/area-writing-spec-aomori.md`・`docs/area-writing-spec-iwate.md`・`docs/area-writing-spec-akita.md`・`docs/area-writing-spec-miyagi.md`・`docs/area-writing-spec-yamagata.md`・`docs/area-writing-spec-fukushima.md`・`docs/area-writing-spec-niigata.md`・`docs/area-writing-spec-toyama.md`・`docs/area-writing-spec-ishikawa.md`・`docs/area-writing-spec-fukui.md`
 - ページを直したら `python3 post.py articles/<file>.md` で更新する（画像は作り直されない）。補助金のYAMLを直したら `python3 scripts/build_shindan_data.py` → コミット → `./deploy.sh`
+
+## 福井県（2026-10-27作成）
+
+北陸で3つ目の県（**経済産業局は近畿経済産業局の管内**。富山・石川の中部経済産業局とは違う）。調査データは `data/area/fukui/`、執筆仕様は `docs/area-writing-spec-fukui.md`。ファイル名の日付は 2026-10-27。政令指定都市・村はない。原子力発電所は4市町（敦賀・美浜・高浜・おおい）の H2 2 で1〜2文の事実だけ（県の月例資料 2026年10月2日現在）。
+
+### 投稿の前後にすること
+
+- [ ] 投稿・デプロイ・画像の確認
+- [ ] 県のふくいデジタル導入チャレンジ補助金（第5次「10月末締切」）・越前市の未来開拓サポート補助金（10/30）・国のデジタル化・AI導入補助金 6次（10/30）の締切後に、県ページと市町のページの「受付中」を直す。越前市の areas.yml の note も直す（診断からは自動で消える）
+- [ ] 永平寺町の小規模事業者経営支援事業補助金（DXツール導入）は 2026-11-30 まで。締切後に永平寺町のページと subsidy_b.yml を直す
+- [ ] 県の DX専門家派遣（12/25まで・50社）を書いたページは、締切後に直す
+
+### 調べきれていないこと
+
+- [ ] 県内の中小企業のAI事例で効果の数値があるのは新珠ゴールデンエッグ（越前市、受注から出荷指示までの一連の工程の自動化で1日約15時間）だけ。建昇・日本エー・エム・シー（福井市）は数値なし。眼鏡・繊維・化学・電子部品・工芸・食品・水産・旅館・運送・介護・地銀は見つからなかった。県外の未使用の数値つき事例は一宮商工会議所の報告書の3社と浜の湯（静岡県）の4件で、どれも試行の段階か提供会社の発表
+- [ ] 帝国データバンクの福井県版は社長年齢・休廃業だけ。後継者不在率・人手不足・生成AIの県版は見つからなかった（1,561通りのURL）。後継者不在率は富山支店の資料の都道府県別の表から取った
+- [ ] 県内企業のAI利用は福井商工会議所の会員調査（2025年4月、151件）と北陸財務局のヒアリングだけ。県・FISC・地銀系の調査は見つかっていない
+- [ ] 近畿経済産業局のサイトは調査中ずっと 403 で、管轄は経済産業省の局の連絡先の資料（Internet Archive）と農林水産省のページで確かめた
+- [ ] 福井県情報システム工業会の会員名簿が見つからず、IT企業の表は法人番号データと各社の公式サイトから作った。アートテクノロジー（鯖江市）は公式サイトがメンテナンス中で表に入れていない。復旧したら鯖江市の表を見直す
+- [ ] わかさ東商工会（美浜町・若狭町）のサイトは開けず、Internet Archive も見られなかった。連絡先は県商工会連合会の一覧の値
+- [ ] 市町の品目別の値（眼鏡・漆器・和紙・刃物）は県版の2021年経済センサス（2020年実績）だけ。越前焼の市町別の値はない。産地名（越前漆器・若狭塗など）と市町の対応は書いていない
+- [ ] 南越前町の「AIオンデマンドバス運行事業」（総合戦略の事業名）は、運行ページにAIの語がなく、AIを使うかは確かめていない。永平寺町の自動運転 ZEN drive はAIではない（電磁誘導線）
+- [ ] 鯖江市の衛星×AIの水道管診断は県の「かわら版」第20号で確かめただけで、市の資料では確かめていない
+- [ ] 美浜町産業政策課の電話番号は検索の抜粋でしか見ておらず、書いていない
 
 ## 石川県（2026-10-27作成）
 
