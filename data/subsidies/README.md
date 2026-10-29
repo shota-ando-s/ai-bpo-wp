@@ -27,7 +27,7 @@
 | max_months | | 月額利用料を補助する最大の月数 |
 | min_cost_yen | | 対象経費の下限（円） |
 | small_only | | true なら小規模事業者だけが対象 |
-| addon | | 上乗せ制度の計算方法。`{kind: remaining, ratio: 0.5}` は（経費−上乗せ先の補助額）×0.5、`{kind: cost_ratio, ratio: 0.2}` は経費×0.2、`{kind: remaining_tiered, full_upto: 250000, ratio: 0.5}` は（経費−上乗せ先の補助額）のうち full_upto までは全額・超えた分×0.5（千円未満切り捨て）。どれも max_yen が上限 |
+| addon | | 上乗せ制度の計算方法。`{kind: remaining, ratio: 0.5}` は（経費−上乗せ先の補助額）×0.5、`{kind: cost_ratio, ratio: 0.2}` は経費×0.2、`{kind: remaining_tiered, full_upto: 250000, ratio: 0.5}` は（経費−上乗せ先の補助額）のうち full_upto までは全額・超えた分×0.5（千円未満切り捨て）、`{kind: over_threshold, threshold: 750000, ratio: 0.5}` は（経費−threshold）×0.5（岐阜市 DX推進補助金のスマート経営実践事業。threshold 以下なら0円）。どれも max_yen が上限 |
 | fuenn_available_from | | ふえんのサービスで使えるようになる時期（YYYY-MM）。それまでは診断で「来年度」に表示する |
 | fuenn_note | | 診断結果に出す、ふえんからの案内文 |
 

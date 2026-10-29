@@ -96,6 +96,9 @@
 				var self = eligible - baseAmount;
 				var full = Math.min(self, addon.addon.full_upto);
 				amount = Math.floor((full + (self - full) * addon.addon.ratio) / 1000) * 1000;
+			} else if (addon.addon.kind === 'over_threshold') {
+				// 対象経費のうち threshold を超えた部分に ratio を掛ける（岐阜市 DX推進補助金のスマート経営実践事業）
+				amount = Math.floor((eligible - addon.addon.threshold) * addon.addon.ratio);
 			} else {
 				amount = addon.addon.kind === 'remaining'
 					? Math.floor((eligible - baseAmount) * addon.addon.ratio)
