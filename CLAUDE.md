@@ -30,6 +30,17 @@ plugins/*/              → ~/www/aibpo/wp-content/plugins/* (symlink)
 articles/               → WordPressへの投稿記事（Markdown形式）
 ```
 
+## 変わった記事をまとめて投稿
+
+ファイル名の指定なしに「投稿して」「全部投稿して」と言われたら、`post` スキル（`.claude/skills/post/SKILL.md`）に従う。前回投稿したあとに変わった記事をすべて投稿し、補助金データ・テーマ・プラグインが変わっていればデプロイもする：
+
+```bash
+python3 scripts/post_changed.py --dry-run   # 対象の確認
+python3 scripts/post_changed.py             # デプロイ（必要なとき）→ 投稿
+```
+
+`.env` と `ssh sakura` が要るので、ローカル（Mac）で動かす。クラウドのセッションでは、直してコミット・push するところまで。
+
 ## 記事の自動投稿
 
 「〇〇について記事を書いて投稿して」と言われたら：

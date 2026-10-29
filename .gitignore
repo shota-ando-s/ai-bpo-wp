@@ -44,3 +44,6 @@ themes/twenty*/
 
 # ファクトチェック修正前のバックアップ
 *.md.bak
+
+# 一括投稿の記録（scripts/post_changed.py）
+.post_state.json
