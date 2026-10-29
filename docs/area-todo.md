@@ -2,9 +2,41 @@
 
 地域ページで、調べきれずに残っている作業。終わったら行ごと消すか、`[x]` にして日付を書く。
 
-- 調査データ: `data/area/kagawa/`・`data/area/tokushima/`・`data/area/kochi/`・`data/area/aomori/`・`data/area/iwate/`・`data/area/akita/`・`data/area/miyagi/`・`data/area/yamagata/`・`data/area/fukushima/`・`data/area/niigata/`・`data/area/toyama/`・`data/area/ishikawa/`・`data/area/fukui/`（2026-10-17〜27の調査結果。`stats.md` `gov_ai.md` `cases.md` `companies.json` `subsidy_*.yml` など）
-- 執筆仕様: `docs/area-writing-spec-kagawa.md`・`docs/area-writing-spec-tokushima.md`・`docs/area-writing-spec-kochi.md`・`docs/area-writing-spec-aomori.md`・`docs/area-writing-spec-iwate.md`・`docs/area-writing-spec-akita.md`・`docs/area-writing-spec-miyagi.md`・`docs/area-writing-spec-yamagata.md`・`docs/area-writing-spec-fukushima.md`・`docs/area-writing-spec-niigata.md`・`docs/area-writing-spec-toyama.md`・`docs/area-writing-spec-ishikawa.md`・`docs/area-writing-spec-fukui.md`
+- 調査データ: `data/area/kagawa/`・`data/area/tokushima/`・`data/area/kochi/`・`data/area/aomori/`・`data/area/iwate/`・`data/area/akita/`・`data/area/miyagi/`・`data/area/yamagata/`・`data/area/fukushima/`・`data/area/niigata/`・`data/area/toyama/`・`data/area/ishikawa/`・`data/area/fukui/`・`data/area/gifu/`（2026-10-17〜27の調査結果。`stats.md` `gov_ai.md` `cases.md` `companies.json` `subsidy_*.yml` など）
+- 執筆仕様: `docs/area-writing-spec-kagawa.md`・`docs/area-writing-spec-tokushima.md`・`docs/area-writing-spec-kochi.md`・`docs/area-writing-spec-aomori.md`・`docs/area-writing-spec-iwate.md`・`docs/area-writing-spec-akita.md`・`docs/area-writing-spec-miyagi.md`・`docs/area-writing-spec-yamagata.md`・`docs/area-writing-spec-fukushima.md`・`docs/area-writing-spec-niigata.md`・`docs/area-writing-spec-toyama.md`・`docs/area-writing-spec-ishikawa.md`・`docs/area-writing-spec-fukui.md`・`docs/area-writing-spec-gifu.md`
 - ページを直したら `python3 post.py articles/<file>.md` で更新する（画像は作り直されない）。補助金のYAMLを直したら `python3 scripts/build_shindan_data.py` → コミット → `./deploy.sh`
+
+## 岐阜県（2026-10-29作成）
+
+東海で最初の県（**経済産業局は中部経済産業局、農政局は東海農政局、財務局は東海財務局〔岐阜財務事務所〕**）。県ページと42市町村（21市19町2村）。調査データは `data/area/gifu/`、執筆仕様は `docs/area-writing-spec-gifu.md`、作業の記録は `data/area/gifu/_progress.md`。補助金診断の addon に `over_threshold`（岐阜市DX推進補助金のスマート経営実践事業）を足した。
+
+### 投稿の前後にすること
+
+- [ ] 投稿・デプロイ・画像の確認
+- [ ] 国のデジタル化・AI導入補助金 6次・坂祝町の制度（10/30 17時）は「締切でした」と書いた。7次の日程が出たら、県ページと市町村ページの国の制度の行を直す
+- [ ] ソフトピアジャパンのスマート経営実践補助金は申請期限の日付がどの資料にもない（R9/2/28 は事業期間の終わり）。財団が受付終了を出したら、県ページ・市町村ページ・gifu.yml を直す
+- [ ] 笠松町商工会のセミナー（11/26、申込11/20）・垂井町商工会のIT個別相談会（11/12・11/26）・テクノプラザの第2回AI活用ワークショップ（11/27）を書いたページは、終わったら直す
+- [ ] 神戸町の元気な中小企業・小規模事業者サポート補助金（12月の最終開庁日まで）、大垣市の物価高騰対策支援事業補助金（12/28）、垂井町の事業者支援補助金（1/29）、養老町のチャレンジ支援（2027-01-31 完了）は、締切後に status を直す
+- [ ] 文献社（岐南町）は公式サイトが https で証明書のエラー、http で開ける。投稿前に開けなければ岐南町の表から外す
+- [ ] 岐南町のAIオンデマンドタクシーは「2027年1月上旬に運行開始の予定」と書いた。運行が始まったら岐南町のページを直す
+
+### 調べきれていないこと
+
+- [ ] 帝国データバンクの岐阜県版は見つからなかった（`-gifu` 295通り・`-tokai` 415通りのURL）。後継者不在率は富山支店、社長年齢は新潟支店の資料の都道府県表、休廃業は全国版、生成AI・人手不足は名古屋支店の東海4県版（岐阜県の回答社数の記載なし）の値を使った
+- [ ] 県内企業のAI事例で効果の数値の実績があるのはミズタニバルブ工業（山県市、半日→1時間以内）と坂井製作所（各務原市、教師データの生成 50→20時間）だけ。東濃5市・飛騨・郡上、美濃焼・木工家具・温泉旅館・介護・運送・建設の企業のAI事例は見つからなかった。小売は調べていない
+- [ ] 県外の未使用で数値つきの事例は川本鋼材（愛知県あま市）の1件だけ。三重県の「DX・AI支援ガイド・導入事例集」は委託中（2027-01-29まで）で、次の県の出典の候補
+- [ ] 刃物・陶磁器・航空機部分品などの品目は県の値だけで、市町村別の値はない（経済センサスの小分類×市町村の表は確かめきれていない）。「関の刃物」「美濃焼」と市町村の対応は書いていない
+- [ ] 農業産出額は市町村の合計（1,345.5億円）が県（1,373億円）より27.5億円少ない。理由は確かめていない
+- [ ] 飛騨市の総務省の表の約28万時間は何の時間か分からず使っていない
+- [ ] **安八町のDX推進計画**（令和8年3月、R8〜R12）は調査（gov_ai_b.md）で見落としていた。執筆の W9 が見つけて安八町のページに書いた。gov_ai_b.md は直していない
+- [ ] 県のDX推進計画（R4〜R8）は素案しか読んでいない。次期計画（骨子案の意見募集 2026-09-18）が決まったら県ページを直す
+- [ ] ぎふDX支援センターのAIアドバイザーは中間報告の方針だけで、設置の発表は見つかっていない
+- [ ] 商工会議所15・商工会42の受け持ちの地区は名称・所在地から割り当てた（経営発達支援計画では照合していない）。白川村商工会・関市東商工会・恵南商工会のサイトは開けず、名前と電話だけ書いた。多治見商工会議所の公式（tajimi.or.jp）は503で Assist Biz のページにリンクした
+- [ ] 東白川村は村の公式サイトがセキュリティ調査で停止中。村の制度・計画を確かめられていない
+- [ ] 飛騨市のDX導入促進補助制度は受付状況を確かめられず unknown。海津市のステップアップ中小企業支援事業補助金も今年度の受付状況が分からない
+- [ ] 垂井町の令和8年度予算の生成AI・チャットボット・議事録の金額は PDF の列の対応が分からず書いていない
+- [ ] 三井金属ユアソフト（飛騨市）・エフワン（岐阜市）は公式サイトで人数を確かめられず、IT企業の表に入れていない。県の「IT企業紹介」ガイドブックは見ていない
+- [ ] ソフィア総合研究所（sri-net.jp）は、このMacのシステムの python3（LibreSSL 2.8.3）だけで接続できない（curl・python3.13 では200）。リンク確認で ERROR が出たら同じ原因
 
 ## 福井県（2026-10-27作成）
 
