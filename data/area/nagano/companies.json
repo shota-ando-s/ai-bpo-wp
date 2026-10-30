@@ -1,0 +1,697 @@
+{
+ "_meta": {
+  "checked": "2026-10-30",
+  "scope": "長野県77市町村。本社（公式サイトの本社・本店・所在地）が当該市町村にあり、公式サイトで受託システム開発・ソフトウェア開発・Web制作・ITサービスを事業として明示する法人。岐阜県・福井県・富山県・石川県と同じく、本表には『公式サイトで本社所在地と従業員数の両方を確認できた会社』だけを入れた。従業員数が公式にない会社、公式サイトの本文を取れない会社は _reference に置いた。県外に本社がある会社の県内拠点は載せない。公式が『松本本社』と『東京本社』を並べて書く会社（ネクストリンクス）は、松本本社が先に書かれ県内に本社機能を持つため本表に入れ、notes に明記した。大手の100%子会社（エプソンアヴァシス、TIS長野、NTTデータ信越）も本社が県内なので本表に入れ、notes に株主を書いた。各市町村の本表は最大5社、公式の従業員数の多い順。",
+  "candidate_sources": [
+   "一般社団法人長野県情報サービス振興協会（NISA）の会員企業紹介 https://www.nisa.or.jp/kaiin_list.html （北信・東信・中信・南信の4支部と賛助会員。掲載日の記載なし。ページ下部の表記は © 2008-2024。確認日 2026-10-30）と入会案内 https://www.nisa.or.jp/outline_anai.html （『正会員66社、賛助会員5社（2020年4月1日）』『長野県内IT企業66社以上が加盟（正会員数）』）。会長は神澤鋭二（キッセイコムテック代表取締役会長）https://www.nisa.or.jp/outline_aisatsu.html （2026年5月20日の通常総会あいさつ）",
+   "比較ビズの長野県のシステム開発会社一覧（14社）https://www.biz.ne.jp/list/system/20_nagano/ （secondary。候補探しだけに使った。有料掲載が優先表示）",
+   "WebSearch（担当上限18回のうち16回を使用）。県の『信州ITバレー構想』の資料（pref.nagano.lg.jp）と信州ITバレー推進協議会（NIT）は会員が団体・機関で、会社の一覧は見つからなかった",
+   "全国法人検索（houjin.goo.to）の長野県『IT業界』一覧は確認日に『一時的にご利用いただけません』で開けなかった"
+  ],
+  "columns": "name / hq（公式の本社住所）/ municipality / town / employees{value,as_of,source} / capital / founded / business_summary / ai_initiative / url / size_basis / checked / notes"
+ },
+ "nagano-city": [
+  {
+   "name": "株式会社電算",
+   "hq": "長野県長野市鶴賀七瀬中町276-6",
+   "municipality": "長野市",
+   "town": "鶴賀七瀬中町",
+   "employees": {
+    "value": 585,
+    "as_of": "2026年3月31日現在（連結）",
+    "source": "http://www.ndensan.co.jp/company/about.html"
+   },
+   "capital": {
+    "value": "13億9,500万円",
+    "source": "http://www.ndensan.co.jp/company/about.html"
+   },
+   "founded": 1966,
+   "business_summary": "情報処理・情報提供・情報通信サービス、データセンター、ソフトウェアの開発・販売・保守、情報システムの企画・設計・開発（自治体向け総合行政情報システム Reams、医療・民間向け）",
+   "ai_initiative": "トップの製品に『AI外観検査システム Observe AI』『AIナレッジマネジメントシステム SmartKMS』『AIチャットボットサービス SmartRobot』。お知らせに『AI／ロボット／DXソリューションフェア2026』（2026-10-01に終了の報告）、『電算、ITSOとAI事業に関する資本業務提携契約を締結』（2026-06-18）http://www.ndensan.co.jp/ ・ http://www.ndensan.co.jp/information/index.html",
+   "url": "http://www.ndensan.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-30",
+   "notes": "**東京証券取引所スタンダード市場（証券コード3640）**。1966年3月29日創立。売上高（連結）279億8,700万円（2025年度）。従業員数は連結。子会社 ティー・エム・アール・システムズ、日本エクサシステム（2026年9月7日に全株式を取得、本社 東京都墨田区）。主要取引銀行 八十二長野銀行。岐阜の『電算システム』とは別の会社なので取り違えない"
+  },
+  {
+   "name": "株式会社ケイケンシステム",
+   "hq": "長野県長野市南千歳1-17-4 ケイケンビル",
+   "municipality": "長野市",
+   "town": "南千歳",
+   "employees": {
+    "value": 172,
+    "as_of": "2022年12月1日現在（SE・プログラマー151名、運用オペレータ15名、営業企画・管理10名）",
+    "source": "https://keiken.co.jp/corporate"
+   },
+   "capital": {
+    "value": "1億円（10,000万円）",
+    "source": "https://keiken.co.jp/corporate"
+   },
+   "founded": 1974,
+   "business_summary": "独立系の総合ソフトウェア開発（SI、システムコンサルティング、アプリケーション開発、LSI・ASIC設計、電算室運用管理）、労働者派遣、不動産",
+   "ai_initiative": "サービスのページに取扱製品の新機能として『生成AI連携｜自然言語でデータを問い合わせ（Dr.Sum Ver.6.0）』『MotionBoard re:Act｜生成AIでインサイトを自動生成』（他社製品の紹介）https://keiken.co.jp/services",
+   "url": "https://keiken.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-30",
+   "notes": "1974年9月30日設立（1973年に大阪の株式会社経研の長野営業所として設置、1974年に分離独立）。関連会社 ケイケンホールディングス。東京支店（新宿区）。**人数の時点が古い（2022年12月）**。NISA の会員名簿のURLは keiken.com だが、公式は keiken.co.jp に移っている"
+  },
+  {
+   "name": "株式会社システックス",
+   "hq": "長野県長野市岡田町78-11",
+   "municipality": "長野市",
+   "town": "岡田町",
+   "employees": {
+    "value": 145,
+    "as_of": "2026年4月1日現在（男106名・女39名）",
+    "source": "https://systex.co.jp/corporate/outline/"
+   },
+   "capital": {
+    "value": "7,500万円",
+    "source": "https://systex.co.jp/corporate/outline/"
+   },
+   "founded": 1970,
+   "business_summary": "Web・C/S・オフコン・汎用機等のシステムの設計・開発・販売・運用・コンサルティング、コンピュータ・ネットワーク関連機器の販売（システム受託開発・SI・サプライ）",
+   "ai_initiative": "トップ・会社概要に AI の語は見当たらない（トップページの本文は一部しか取れていない）",
+   "url": "https://systex.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-30",
+   "notes": "1970年9月1日設立。総売上額 32億7,248万円（2026年3月期）。松本支社、名古屋支社、東京（港区芝）。主要取引先 日本電気・NECソリューションイノベータ・大塚商会ほか"
+  },
+  {
+   "name": "株式会社ＮＴＴデータ信越",
+   "hq": "長野県長野市七瀬中町161番地1 ハーモニー七瀬ビル本館2F",
+   "municipality": "長野市",
+   "town": "七瀬中町",
+   "employees": {
+    "value": 130,
+    "as_of": "2026年4月1日現在",
+    "source": "https://www.nttdata-shinetsu.co.jp/company/profile.html"
+   },
+   "capital": {
+    "value": "1億円",
+    "source": "https://www.nttdata-shinetsu.co.jp/company/profile.html"
+   },
+   "founded": 1991,
+   "business_summary": "データ通信システムの開発・保守の受託・販売、公共向け・金融や製造の法人向けシステム、ネットワークを利用した情報処理・決済処理業務",
+   "ai_initiative": "社長あいさつに『データ活用や生成 AI などの進化する技術をいかにビジネスや社会に適用していくか』https://www.nttdata-shinetsu.co.jp/company/greeting.html 。お知らせに『TrendAI™ PARTNER ENGINEER AWARD 2026』でサービスイニシアチブ賞 最優秀賞（トレンドマイクロ主催。製品名で、AI の自社製品ではない）",
+   "url": "https://www.nttdata-shinetsu.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-30",
+   "notes": "**資本金 1億円（(株)NTTデータ100%出資）**。1991年1月24日設立（長野テクシス）、2003年7月1日商号変更。新潟支店・東京支店。NTTデータの100%子会社なので、記事では『NTTデータグループの会社』と添える"
+  },
+  {
+   "name": "株式会社アプリック",
+   "hq": "長野県長野市南千歳1丁目12-7 新正和ビル2F",
+   "municipality": "長野市",
+   "town": "南千歳",
+   "employees": {
+    "value": 40,
+    "as_of": "令和6年6月1日現在",
+    "source": "https://aplic.co.jp/about/"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://aplic.co.jp/about/"
+   },
+   "founded": 2002,
+   "business_summary": "ソフトウェア開発（パッケージ・受託）、システム運用保守、IT関連のアウトソーシング（運用代行・技術者派遣・請負）、社会人教育・コンサルティング",
+   "ai_initiative": "確認できず（会社概要・トップに AI の語なし）",
+   "url": "https://aplic.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-30",
+   "notes": "2002年4月1日設立。東京営業所（豊島区）。主要取引先に NTTデータ信越・電算・オリオンシステムなど県内大手。人数の時点が2024年6月"
+  }
+ ],
+ "matsumoto": [
+  {
+   "name": "株式会社アドヴァンスト・インフォーメイション・デザイン（AID）",
+   "hq": "長野県松本市梓川倭3820-1",
+   "municipality": "松本市",
+   "town": "梓川倭",
+   "employees": {
+    "value": 645,
+    "as_of": "2026年5月1日現在（男性477名・女性168名）",
+    "source": "http://www.a-i-d.co.jp/company/profile"
+   },
+   "capital": {
+    "value": "1億円",
+    "source": "http://www.a-i-d.co.jp/company/profile"
+   },
+   "founded": 1980,
+   "business_summary": "IT全般の企画提案、ソフトウェア開発、パッケージソフト・クラウド導入、ネットワーク・サーバー構築（地方銀行・全国の地方自治体向けを含む）",
+   "ai_initiative": "トップ・会社概要では AI 製品の記載を確認できず（社名略称の『ＡＩＤ』が多く出るだけ）",
+   "url": "http://www.a-i-d.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-30",
+   "notes": "1980年9月18日設立。年商91億円（2026年3月期）。経済産業省DX認定事業者、プラチナくるみん。主要取引先 日立製作所・野村総合研究所・富士通・日本IBM・BIPROGY・地方銀行各行・全国の地方自治体。**県内のIT企業で公式の従業員数が最も多い**"
+  },
+  {
+   "name": "キッセイコムテック株式会社",
+   "hq": "長野県松本市和田4010-10",
+   "municipality": "松本市",
+   "town": "和田",
+   "employees": {
+    "value": 432,
+    "as_of": "2026年6月11日現在",
+    "source": "http://www.kicnet.co.jp/abouts/profile/"
+   },
+   "capital": {
+    "value": "334百万円",
+    "source": "http://www.kicnet.co.jp/abouts/profile/"
+   },
+   "founded": 1985,
+   "business_summary": "ビジネスSI事業、リソースサービス事業、公共・医療ソリューション事業（生体情報解析・睡眠解析研究用プログラムなど）",
+   "ai_initiative": "プレスリリースに『SmartDiscussion、生成AI を活用した資料検索・要約機能を提供開始 ～ ANA ホールディングス株式会社の経営会議で導入～』http://www.kicnet.co.jp/",
+   "url": "http://www.kicnet.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-30",
+   "notes": "1985年、キッセイ薬品工業の電算部門から分離・独立して設立（会社沿革）。関係会社 キッセイ薬品工業・キッセイ商事ほか。売上高 172億2,500万円（2026年3月期）。**代表取締役会長 神澤鋭二は長野県情報サービス振興協会の会長**。東京事業所ほか全国に営業所"
+  },
+  {
+   "name": "TIS長野株式会社",
+   "hq": "長野県松本市深志1-2-11 昭和ビル",
+   "municipality": "松本市",
+   "town": "深志",
+   "employees": {
+    "value": 186,
+    "as_of": "2026年4月時点",
+    "source": "https://tis-n.co.jp/corporate/"
+   },
+   "capital": {
+    "value": "1億円",
+    "source": "https://tis-n.co.jp/corporate/"
+   },
+   "founded": 2015,
+   "business_summary": "ITコンサルティング、システムインテグレーション、アウトソーシング",
+   "ai_initiative": "確認できず（会社情報・トップに AI の語なし）",
+   "url": "https://tis-n.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-30",
+   "notes": "**株主 『TISI株式会社（100%）』と公式に表記**（TISインテックグループ。表記はそのまま写した）。2015年7月1日設立。前身は1970年設立の株式会社松本計算センター。長野オフィス（長野市栗田）"
+  },
+  {
+   "name": "ネクストリンクス株式会社",
+   "hq": "長野県松本市南松本1-13-14 松本ノーサン本社ビル 3F（松本本社）",
+   "municipality": "松本市",
+   "town": "南松本",
+   "employees": {
+    "value": 116,
+    "as_of": "2026年6月",
+    "source": "http://www.nextlinks.co.jp/company/overview/"
+   },
+   "capital": {
+    "value": "6,658万4,000円（資本金等の額）",
+    "source": "http://www.nextlinks.co.jp/company/overview/"
+   },
+   "founded": 2013,
+   "business_summary": "コンサルテーション、総合ソフトウェア開発、アウトソーシング、情報システム販売、パッケージソフトウェアの開発・保守、ニアショア、RPA導入支援",
+   "ai_initiative": "確認できず（会社概要・トップに AI の語なし。サービスに RPA導入支援）",
+   "url": "http://www.nextlinks.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-30",
+   "notes": "2013年3月設立。**会社概要は『松本本社』と『東京本社』（千代田区神田三崎町）を並べて書く**。松本本社が先に書かれ、平田オフィス（松本市）・長野オフィスもあるため本表に入れた。記事では『松本と東京に本社』と書く"
+  },
+  {
+   "name": "株式会社マイネットシステム",
+   "hq": "長野県松本市野溝西2丁目11-14 スプレンダービル2F",
+   "municipality": "松本市",
+   "town": "野溝西",
+   "employees": {
+    "value": 100,
+    "as_of": "2026年4月現在",
+    "source": "http://www.mynet-system.co.jp/company.html"
+   },
+   "capital": {
+    "value": "1,050万円",
+    "source": "http://www.mynet-system.co.jp/company.html"
+   },
+   "founded": 2000,
+   "business_summary": "業務システム開発、ERP（Odoo）導入、労働者派遣、AI実装支援",
+   "ai_initiative": "お知らせに『伴走型AI実装パートナーサービス「MynetAI＋」のサービスページを公開』（2026-04-30）、『AIとERP（Odoo）を軸とした「次世代DX･AX推進体制」へ進化』（2026-04-01）、『「AI導入の壁」突破術セミナーを松本市にて開催』（2026-06-03の報告）。執行役員にAI事業推進室室長 http://www.mynet-system.co.jp/",
+   "url": "http://www.mynet-system.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-30",
+   "notes": "2000年6月に有限会社として設立、2007年5月に株式会社へ。2018年1月に本社を松本市野溝西へ移転。売上高 11億8,800万円（2026年4月）。東京事業所（千代田区）・長野事業所。**AI の伴走支援を前に出す会社で、地元ページで紹介しやすい**"
+  }
+ ],
+ "ueda": [
+  {
+   "name": "エプソンアヴァシス株式会社",
+   "hq": "長野県上田市下之郷乙1077-5 上田リサーチパーク内",
+   "municipality": "上田市",
+   "town": "下之郷",
+   "employees": {
+    "value": 440,
+    "as_of": "2026年4月1日現在（男性318名・女性122名）",
+    "source": "http://www.avasys.jp/company/profile/"
+   },
+   "capital": {
+    "value": "5,000万円",
+    "source": "http://www.avasys.jp/company/profile/"
+   },
+   "founded": 1980,
+   "business_summary": "アプリケーション開発、組込みシステム開発、サービス開発・運用、業務システム開発・運用、ソフトウェアテスト、マニュアル制作",
+   "ai_initiative": "確認できず（トップ・会社概要に AI の語なし）",
+   "url": "http://www.avasys.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-30",
+   "notes": "**株主 セイコーエプソン株式会社**、主要取引先もセイコーエプソン（エプソングループのソフト会社で、地域の中小企業向けの受託は前に出していない）。1980年4月設立。上田事業所・松本南事業所（セイコーエプソン松本南事業所内）"
+  },
+  {
+   "name": "株式会社ＡＮＸ",
+   "hq": "長野県上田市下之郷813-11",
+   "municipality": "上田市",
+   "town": "下之郷",
+   "employees": {
+    "value": 141,
+    "as_of": "令和8年4月",
+    "source": "https://anx.inc/about"
+   },
+   "capital": {
+    "value": "8,800万円",
+    "source": "https://anx.inc/about"
+   },
+   "founded": 1973,
+   "business_summary": "ネットワークソリューション、データセンターソリューション、クラウドサービス（届出電気通信事業者）",
+   "ai_initiative": "トップに『DXと言われるIoTやAIを活用した情報のユーティリティー化の加速』という一般的な記述。2026年度スローガン『AIも上司も プロンプトが重要』。AI の製品・サービスの記載は確認できず https://anx.inc/about",
+   "url": "https://anx.inc/",
+   "size_basis": "employees",
+   "checked": "2026-10-30",
+   "notes": "1973年6月21日設立。売上高 33億5千万円（令和7年度実績）。**ホールディングス デンセンホールディングス株式会社**。東京支社（港区）・長野支社。**ネットワーク・データセンターが中心で、受託のソフト開発の会社とは言い切れない**"
+  },
+  {
+   "name": "株式会社システムプラン",
+   "hq": "長野県上田市秋和522-13",
+   "municipality": "上田市",
+   "town": "秋和",
+   "employees": {
+    "value": 84,
+    "as_of": "時点なし（男72名・女12名）",
+    "source": "https://www.systemplan.co.jp/company/summary/"
+   },
+   "capital": {
+    "value": "2,200万円",
+    "source": "https://www.systemplan.co.jp/company/summary/"
+   },
+   "founded": 1982,
+   "business_summary": "情報サービス業（システム設計・開発、システム運用サポート、コンピュータ機器等販売）、労働者派遣。3DCAD（iCAD・NX）の取扱い",
+   "ai_initiative": "確認できず",
+   "url": "https://www.systemplan.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-30",
+   "notes": "1982年5月15日創立。長野支店ほか。主要取引先 富士通・富士通Japan・デジタルプロセス・iCAD ほか。時点の記載がない"
+  },
+  {
+   "name": "株式会社ズー",
+   "hq": "長野県上田市下之郷字浅間原813-12（上田リサーチパーク）",
+   "municipality": "上田市",
+   "town": "下之郷",
+   "employees": {
+    "value": 80,
+    "as_of": "時点なし（正社員80名）",
+    "source": "http://www.zoo.co.jp/company/overview/"
+   },
+   "capital": {
+    "value": "4,000万円",
+    "source": "http://www.zoo.co.jp/company/overview/"
+   },
+   "founded": 1986,
+   "business_summary": "調剤薬局向け業務支援システム（レセコン GENNAI just、POSレジ GPOS just ほか）の開発・販売・サポート、PCゲーム・ソーシャルゲームの開発・運営",
+   "ai_initiative": "確認できず",
+   "url": "http://www.zoo.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-30",
+   "notes": "1986年4月8日創立。東京営業所（港区西新橋）。**受託開発ではなく調剤薬局向けパッケージとゲームの会社**。時点の記載がない"
+  },
+  {
+   "name": "株式会社ガリレオ",
+   "hq": "長野県上田市常磐城5-3-29（上田オフィス・本社）",
+   "municipality": "上田市",
+   "town": "常磐城",
+   "employees": {
+    "value": 34,
+    "as_of": "2026年4月1日現在（ほかに登録パートナー320名）",
+    "source": "https://www.galileo.co.jp/about/"
+   },
+   "capital": {
+    "value": "3,186万円",
+    "source": "https://www.galileo.co.jp/about/"
+   },
+   "founded": 1990,
+   "business_summary": "英文和訳の翻訳業務、情報配信サービス、システム開発、学会業務情報化サービス、各種業務支援、自然エネルギー導入支援（電気工事業の許可）",
+   "ai_initiative": "確認できず",
+   "url": "https://www.galileo.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-30",
+   "notes": "1990年1月設立。東京オフィス（豊島区東池袋。学会業務情報化センター）。**翻訳・学会業務支援の比重が大きく、システム開発専業ではない**"
+  }
+ ],
+ "okaya": [],
+ "iida": [],
+ "suwa": [
+  {
+   "name": "アルティメイトプロジェクト株式会社",
+   "hq": "長野県諏訪市上川2-2173-5",
+   "municipality": "諏訪市",
+   "town": "上川",
+   "employees": {
+    "value": 40,
+    "as_of": "時点なし",
+    "source": "http://www.upc.co.jp/company/outline-history/"
+   },
+   "capital": {
+    "value": "2,800万円（社員持株制）",
+    "source": "http://www.upc.co.jp/company/outline-history/"
+   },
+   "founded": 1996,
+   "business_summary": "総合生産管理『U-Mate』（BT・Cloud・WMSクラウド・IoT collector）の開発・導入、サイボウズ製品の導入",
+   "ai_initiative": "製品に『U-Mate® エッジAIソリューション』（『自社開発の革新的なエッジAI技術』、クラウドで教師データ生成〜学習モデル生成〜エッジデバイスへの配信）と『AIによる自動認識』（カメラ・センサーの画像や文字から品目・数量を認識）、『AI OCR』http://www.upc.co.jp/",
+   "url": "http://www.upc.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-30",
+   "notes": "1996年8月設立。東京センター（千代田区有楽町、ワークスタイリング内）。時点の記載がない。**製造業向けの生産管理と自社開発のエッジAIを持つ諏訪の会社**"
+  }
+ ],
+ "suzaka": [
+  {
+   "name": "オリオンシステム株式会社",
+   "hq": "長野県須坂市大字幸高279番地10",
+   "municipality": "須坂市",
+   "town": "幸高",
+   "employees": {
+    "value": 99,
+    "as_of": "2026年4月現在（男性83名・女性16名）",
+    "source": "http://www.orionsystem.co.jp/company_profile.html"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "http://www.orionsystem.co.jp/company_profile.html"
+   },
+   "founded": 1982,
+   "business_summary": "総合ソフトウエア開発（SI・コンサル・設計・プログラム開発・運用支援）、IT機器・パッケージ販売保守、OBC（勘定奉行）のカスタマイズ・インストラクター、セキュリティカメラ、労働者派遣",
+   "ai_initiative": "確認できず（トップの本文はほぼ取れていない）",
+   "url": "http://www.orionsystem.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-30",
+   "notes": "1982年11月1日設立。長野事業所（長野市鶴賀上千歳町）。**関連企業 オリオングループホールディングス・オリオン機械（須坂市の機械メーカーのグループ）**。主要取引先 長野県・長野市・須坂市・富士通・富士通Japan・OBC ほか"
+  }
+ ],
+ "komoro": [],
+ "ina": [],
+ "komagane": [],
+ "nakano": [],
+ "omachi": [],
+ "iiyama": [],
+ "chino": [],
+ "shiojiri": [],
+ "saku": [
+  {
+   "name": "株式会社パスカル",
+   "hq": "長野県佐久市猿久保881-8",
+   "municipality": "佐久市",
+   "town": "猿久保",
+   "employees": {
+    "value": 90,
+    "as_of": "時点なし（男性62名・女性28名）",
+    "source": "https://www.pascal.ne.jp/about"
+   },
+   "capital": {
+    "value": "2,000万円",
+    "source": "https://www.pascal.ne.jp/about"
+   },
+   "founded": 1984,
+   "business_summary": "システムインテグレーション、自社製品開発・販売（連絡網『オクレンジャー』、アルコールチェック、どこキャッチ ほか）、Webサイト制作、ITインフラ、情報機器の販売・保守",
+   "ai_initiative": "確認できず（トップ・会社概要に AI の語なし）",
+   "url": "https://www.pascal.ne.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-30",
+   "notes": "1984年4月27日設立。東京支店（港区芝浦）。時点の記載がない"
+  }
+ ],
+ "chikuma": [],
+ "tomi": [],
+ "azumino": [],
+ "koumi": [],
+ "sakuho": [],
+ "karuizawa": [],
+ "miyota": [],
+ "tateshina": [],
+ "nagawa": [],
+ "shimosuwa": [],
+ "fujimi": [],
+ "tatsuno": [],
+ "minowa": [],
+ "iijima": [],
+ "matsukawa-town": [],
+ "takamori": [],
+ "anan-town": [],
+ "agematsu": [],
+ "nagiso": [],
+ "kiso": [],
+ "ikeda-town-nagano": [],
+ "sakaki": [],
+ "obuse": [],
+ "yamanouchi": [],
+ "shinano": [],
+ "iizuna": [],
+ "kawakami": [],
+ "minamimaki": [],
+ "minamiaiki": [],
+ "kitaaiki": [],
+ "aoki": [],
+ "hara-village": [],
+ "minamiminowa": [],
+ "nakagawa": [],
+ "miyada": [
+  {
+   "name": "長野システム開発株式会社",
+   "hq": "長野県上伊那郡宮田村5672-2",
+   "municipality": "宮田村",
+   "town": "",
+   "employees": {
+    "value": 21,
+    "as_of": "2026年9月現在",
+    "source": "https://naganosd.com/company"
+   },
+   "capital": {
+    "value": "3,000万円",
+    "source": "https://naganosd.com/company"
+   },
+   "founded": 2010,
+   "business_summary": "Webサイト制作・Webマーケティング、システム開発・保守、ITコンサルティング・IT保守、OA機器・ソフト販売、Indeedコンサルティング、ルームコンシェルジュサービス『はまかんざし』、軽貨物運送",
+   "ai_initiative": "確認できず（トップに AI の語なし。WebFetch の要約で確認）",
+   "url": "https://naganosd.com/",
+   "size_basis": "employees",
+   "checked": "2026-10-30",
+   "notes": "2010年4月28日設立。飯田支店（飯田市本町）。会社概要は WebFetch の要約で読んだ（curl では本文を取れなかった）。比較サイト（imitsu）は所在地を飯田市としているが、公式の本社は宮田村。**IT以外（軽貨物運送など）も営む**"
+  }
+ ],
+ "achi": [],
+ "hiraya": [],
+ "neba": [],
+ "shimojo": [],
+ "urugi": [],
+ "tenryu": [],
+ "yasuoka": [],
+ "takagi": [],
+ "toyooka": [],
+ "oshika": [],
+ "kiso-village": [],
+ "otaki": [],
+ "okuwa": [],
+ "omi": [],
+ "ikusaka": [],
+ "yamagata-village": [],
+ "asahi-village": [],
+ "chikuhoku": [],
+ "matsukawa-village": [],
+ "hakuba": [],
+ "otari": [],
+ "takayama-village": [],
+ "kijimadaira": [],
+ "nozawaonsen": [],
+ "ogawa": [],
+ "sakae": [],
+ "_reference": {
+  "nagano-city": {
+   "next_candidates": [
+    {
+     "name": "石田通信機株式会社",
+     "employees": "30名（総従業員、時点なし）",
+     "capital": "5,000万円",
+     "note": "長野市三輪1丁目7番17号。昭和23年7月設立（創業昭和27年3月）。富士通のディーラー。業務用電話・通信機器が中心でソフト開発会社ではない。NISA の会員",
+     "source": "http://www.ishida-j.com/content/outline.htm"
+    }
+   ],
+   "unverified": [
+    "株式会社TOSYS（長野市若穂綿内字東山1108-5、1960年1月23日設立、資本金4.5億円、従業員778名・2026年3月末。WebFetch の要約で確認）https://www.tosys.co.jp/philosophy/kaisyagaiyou/ 。事業は通信事業者向けの線路・交換・無線設備の施工保守、情報システムの構築・保守、クラウド導入支援、電気・消防・土木・建築工事。**通信建設が中心なので本表に入れなかった**。2026-07-01 に Microsoft の『Copilot』Specialization 取得のお知らせ。株主の記載なし。curl ではリダイレクトがループし本文を取れなかった",
+    "株式会社ロゴス（長野市七瀬中町161-1 ハーモニー七瀬ビル3F、1996年6月設立、資本金2,000万円。システム開発・Web制作・Pepper などロボットアプリ、『企業のAI化の為のコンサルテーション、システム設計・開発』、沿革に2021年『AIサイネージ×Pepperシステム』開発、信州ITバレー構想の『コンソーシアム活用型ITビジネス創出支援事業』採択、2024年に長野県『DX人材育成講座』の受託者に選定。人数なし）https://www.logos.co.jp/company",
+    "使えるねっと株式会社（長野市南県町1082 ND南県町ビル3階。クラウド・ホスティング、長野市のデータセンター。資本金は本文の途中までしか取れなかった。代表取締役 ジェイソン フリッシュ。人数なし）https://www.tsukaeru.net/about/",
+    "株式会社いとう（長野市南長池498-1、1968年5月設立、資本金6,000万円。『長野県で100年 建設業に強いIT専門商社』、建設ソリューション・自社開発。人数なし）https://www.itoh.co.jp/company-info",
+    "株式会社ライフシード（NISA 会員。公式 life-seed.co.jp の会社概要に人数なし。事業はネットワーク・ドローン・3CX・ライブ配信など）https://life-seed.co.jp/company/",
+    "株式会社ビー・クス（長野市稲葉891-3。広告・Web・グラフィックデザイン。人数なし）https://viex.co.jp/company",
+    "株式会社テクネット（NISA 会員。公式サイトが『セキュリティ対応のため公開を停止』で開けなかった）https://www.tecnet.co.jp/",
+    "カシヨ株式会社（NISA 会員。公式サイトがメンテナンス中）http://www.kashiyo.com/",
+    "炭平コンピューターシステム株式会社（NISA 会員。公式サイトが2026年10月22日からメンテナンス中）https://www.scsc.co.jp/",
+    "株式会社長野県協同電算（JA長野県グループの情報センター。長野市中御所1-25-1、資本金23億3,274万円、従業員103名・2026年6月はマイナビの掲載で secondary。公式サイトを見つけられず、NISA 名簿のリンク http://www.janis.or.jp/kenren/nkd/ は404）",
+    "株式会社フューチャープロセス（長野市鶴賀問御所町1241-1、比較ビズの掲載のみ）、株式会社ティースリー（長野市安茂里）、株式会社フォースネット（長野市稲田）、株式会社ダイイチ・システムズ（長野市中御所岡田）、株式会社エイシステムデザイン（長野市若穂保科）—比較ビズの掲載のみで公式は未確認",
+    "八十二システム開発（八十二長野銀行のグループ会社とみられる）は WebSearch で公式の会社概要を見つけられなかった"
+   ],
+   "excluded": [
+    "株式会社インテージテクノスフィア 長野事業所、株式会社シー・エス・イー 長野支社、株式会社日本オープンシステムズ 長野事業所、NTT東日本長野支店、リコージャパン長野支社、富士フイルムビジネスイノベーション、富士通Japan長野支社（NISA 会員だが県外本社の拠点）",
+    "株式会社八十二長野銀行（NISA 会員だが銀行）"
+   ]
+  },
+  "matsumoto": {
+   "next_candidates": [
+    {
+     "name": "ヒューマンエンジニアリング株式会社",
+     "employees": "50名（時点なし）",
+     "capital": "800万円",
+     "note": "本社 松本市双葉13-7 ワシザワ双葉ビル1F、長野オフィス（長野市）。2010年10月1日設立。ソフトウェア開発・販売、労働者派遣、ホームページ作成。2024年12月に東京オフィスを本社に統合（お知らせ）",
+     "source": "http://www.h-eng.co.jp/about/"
+    },
+    {
+     "name": "カタバミ・マネジメント・サービス株式会社（KMS）",
+     "employees": "35名（2024年5月現在）",
+     "capital": "3,000万円",
+     "note": "松本市双葉8番10号。平成13年10月31日設立。財務・一般事務の受託、情報処理・ソフト販売、研修、労働者派遣（ITソリューション・自社製品も）。社名とネクストリンクスの取引先にあるが、親会社・株主は公式で確かめていない。人数の時点が古い",
+     "source": "https://www.katabami-management.com/company/profile/"
+    }
+   ],
+   "unverified": [
+    "アルゴジャパン・イーエス株式会社（松本市北深志3-9-11、資本金1,000万円。SOLIDWORKS・iCAD など CAD 製品の販売・サポート、CADカスタマイズ、CAE。トップに『デジタル化・AI導入補助金』対象ツールの取扱い。人数なし。**CAD 販売が中心の境界の業種**）https://www.algojapan.co.jp/about/",
+    "ベイオウルフ合同会社（松本市岡田松岡、ゲーム・アプリ開発。比較ビズの掲載のみ）"
+   ],
+   "excluded": [
+    "富士コムテック株式会社（松本市島立1132番地26。情報通信機器・消防用設備機器・電気通信工事が中心）http://www.fjcomtec.co.jp/",
+    "鍋林株式会社（NISA 会員。化学品・医薬品などの商社で IT 開発の会社ではない。公式は未確認）",
+    "株式会社マイクロテック 松本事業所（県外本社の拠点）",
+    "SCSK Minoriソリューションズ株式会社（NISA の中信支部の名簿では松本市だが、公式の本店所在地は東京都江東区豊洲、社員数1,463名・2026年4月、SCSK 100%）https://www.scskminori.co.jp/company/profile/"
+   ]
+  },
+  "ueda": {
+   "next_candidates": [],
+   "unverified": [
+    "株式会社テクニカルイン長野（上田市天神4-17-8、1981年9月創立、資本金3,000万円。ソフトウェア受託開発、医療安全のインシデント管理システム、スポーツクラブ会員管理『MEDLEY』、TPM保全管理。**トップに『インシデント管理システム「AIアシスタント機能+」を正式リリース』（2026-07-13）**。人数なし）http://www.tin-nagano.co.jp/profile/",
+    "ダイイチ株式会社（上田市常磐城2247-6、平成18年7月創立、資本金500万円。製造業・運送業支援システム開発、天体観測システム。人数なし）http://www.dai1.jp/company.html",
+    "上田エレクトロニクス株式会社・マリモ電子工業株式会社（NISA 会員。公式サイトの本文を取れなかった。社名から電子機器の会社の可能性があり、業種は未確認）"
+   ],
+   "excluded": [
+    "有限会社デザインルームエム（上田市、従業員5名・2026年1月。デザイン・Web制作・印刷物。AI/DX SUPPORT のメニューあり）http://www.d-emu.co.jp/company/",
+    "株式会社みすず綜合コンサルタント（上田市、51名。建設コンサルタント・測量）https://e-misuzu.com/company/",
+    "有限会社イージーコンプ（上田市中央東、パソコンショップ）",
+    "株式会社上田ケーブルビジョン（ケーブルテレビ）",
+    "株式会社三越総研（NISA 会員。公式URLの記載なし）",
+    "コードアカデミー高等学校・長野大学 企業情報学部・ISI学園 長野ビジネス外語カレッジ（学校）"
+   ]
+  },
+  "suwa": {
+   "next_candidates": [
+    {
+     "name": "株式会社デジタル・スパイス",
+     "employees": "116名（2026年7月現在）",
+     "capital": "2,750万円（2025年12月）",
+     "note": "本社 諏訪市大字四賀1821番地、ほかに『本社（蓼科工場）』茅野市豊平529番地2、蓼科テクノパーク（茅野市）・首都圏事業所（町田市）・いわき事業所。2001年7月10日設立。売上高 24億4,900万円（2025年12月決算）。**アルプス技研グループ**。製品にマシンビジョン・SECS・スティックインサーター（FA機器）、技術者派遣・受託。**FA装置・制御ソフトと製造・派遣の会社で、事業が境界のため本表に入れなかった**",
+     "source": "https://www.digital-spice.co.jp/corporate/corporate.html"
+    }
+   ],
+   "unverified": [
+    "長野日本ソフトウエア株式会社（諏訪市湖岸通り5-17-26、1987年10月設立。コンサルティング・ソリューション・SI・DX・アウトソーシング。会社概要・採用ページで人数を取れなかった）https://www.nnsk.co.jp/about"
+   ],
+   "excluded": [
+    "エルシーブイ株式会社（ケーブルテレビ）",
+    "エプソン情報科学専門学校（学校）"
+   ]
+  },
+  "shimosuwa": {
+   "next_candidates": [],
+   "unverified": [
+    "株式会社サンセイコンピュータシステム（下諏訪町字上赤砂4350-2、昭和63年1月設立、資本金1,000万円。業務アプリ『BusinessLink』・Webアプリ『AppSite』の設計・開発・販売。富士見町にサテライトオフィス。人数なし）http://www.sacs.co.jp/company/index.html",
+    "株式会社ビットコネクト（下諏訪町社6686-9、諏訪事務所 諏訪市諏訪1-13-8。2015年11月2日設立。ITインフラ・ネットワーク。人数なし）https://www.bit-connect.co.jp/"
+   ],
+   "excluded": [
+    "日本ナレッジ株式会社（NISA の名簿では下諏訪町だが、公式の本社は東京都台東区。下諏訪町は諏訪センター・諏訪第二センター。社員数533名・2026年4月1日、関係会社を含む）https://www.know-net.co.jp/kaisyagaiyo"
+   ]
+  },
+  "okaya": {
+   "next_candidates": [],
+   "unverified": [
+    "合同会社ジェーシーエム（NISA 会員。公式 http://www.jcm-nagano.com/ が403で開けなかった）"
+   ],
+   "excluded": [
+    "丸登電業株式会社（岡谷市、社員数82名・令和8年4月1日。電気通信設備の設計・施工・保守）https://www.maruto.co.jp/about/company"
+   ]
+  },
+  "takagi": {
+   "next_candidates": [],
+   "unverified": [],
+   "excluded": [
+    "株式会社アイテク（喬木村400番地113、従業員130名・パート含む・時点なし。NISA の南信支部の会員だが、事業の中心は電子機器・センサーの組立。システム推進部で ISO27001 を取得）https://itek.co.jp/company-profile/"
+   ]
+  },
+  "tomi": {
+   "next_candidates": [],
+   "unverified": [],
+   "excluded": [
+    "ワンズ株式会社（NISA 賛助会員。東御市田中1-8、総従業員数128名・2026年2月。障がい者の就労移行支援などの福祉サービス）https://wands-co.jp/company/"
+   ]
+  },
+  "azumino": {
+   "next_candidates": [],
+   "unverified": [],
+   "excluded": [
+    "VAIO株式会社（NISA 賛助会員。PCメーカー）"
+   ]
+  },
+  "chino": {
+   "next_candidates": [],
+   "unverified": [],
+   "excluded": [
+    "株式会社デジタル・スパイスの『本社（蓼科工場）』と蓼科テクノパーク（主の本社は諏訪市として _reference.suwa に記録）"
+   ]
+  },
+  "iida": {
+   "next_candidates": [],
+   "unverified": [
+    "株式会社イン・ファ・ス（飯田市鼎一色452-1、受託開発）、株式会社メディアシステム（飯田市松尾上溝、ソフトウェア）、株式会社システムアスカ（飯田市とされる）— いずれも比較サイト・検索の要約で名前を見ただけで、公式サイトは確認していない",
+    "長野システム開発の飯田支店（本社は宮田村）"
+   ],
+   "excluded": []
+  },
+  "komagane": {
+   "next_candidates": [],
+   "unverified": [
+    "合同会社Saqigake（駒ヶ根市中沢2253番地、比較ビズの掲載のみ）"
+   ],
+   "excluded": []
+  },
+  "shiojiri": {
+   "next_candidates": [],
+   "unverified": [
+    "有限会社エス・アイ・システム（塩尻市広丘吉田50-7 オフィスフォッサマグナ1F、比較ビズの掲載のみ）",
+    "株式会社ソルティスター（組込みデータベースの自社開発。求人サイトの記載のみで本社所在地は公式で未確認）"
+   ],
+   "excluded": []
+  },
+  "saku": {
+   "next_candidates": [],
+   "unverified": [
+    "有限会社ハルタ（NISA 会員。公式 http://www.webharuta.com/ がメンテナンス中）"
+   ],
+   "excluded": []
+  }
+ },
+ "_notes": [
+  "本表は公式サイトで本社所在地と従業員数の両方を確認できた会社だけ。該当があったのは長野市（5社）・松本市（5社）・上田市（5社）・須坂市・佐久市・諏訪市・宮田村（各1社）の7市村。残り70市町村は本表『なし』。",
+  "県内で公式の従業員数が最も多いのは AID（松本市、645名・2026年5月1日）。次いで電算（長野市、連結585名・2026年3月31日。東証スタンダード）、エプソンアヴァシス（上田市、440名・2026年4月1日。株主セイコーエプソン）、キッセイコムテック（松本市、432名・2026年6月11日）、TIS長野（松本市、186名）、ケイケンシステム（長野市、172名・2022年12月で古い）、システックス（長野市、145名）、ANX（上田市、141名）、NTTデータ信越（長野市、130名）。",
+  "大手の子会社・グループ: エプソンアヴァシス（セイコーエプソン）、TIS長野（公式表記『TISI株式会社 100%』、TISインテックグループ）、NTTデータ信越（NTTデータ 100%）、キッセイコムテック（キッセイ薬品工業の電算部門から独立、関係会社）、ANX（デンセンホールディングス）、オリオンシステム（オリオングループ）。",
+  "東京本社を併記する会社: ネクストリンクス（松本本社と東京本社）。記事では『松本と東京に本社』と書く。",
+  "AI関連の公式の記載: 電算（Observe AI・SmartKMS・SmartRobot、ITSO との AI 事業の資本業務提携）、キッセイコムテック（SmartDiscussion の生成AI 資料検索・要約）、マイネットシステム（伴走型AI実装『MynetAI＋』、AI導入セミナー）、アルティメイトプロジェクト（U-Mate エッジAI、AI OCR）。人数を確かめられなかった会社ではテクニカルイン長野（インシデント管理の AIアシスタント機能）、ロゴス（企業の AI 化のコンサル・AIサイネージ×Pepper）、TOSYS（Microsoft Copilot Specialization）。",
+  "業界団体: 一般社団法人長野県情報サービス振興協会（NISA、長野市岡田町124-1 長水建設会館内）。会員は北信・東信・中信・南信の4支部。入会案内の『正会員66社、賛助会員5社』は2020年4月1日の数字。会長は神澤鋭二（キッセイコムテック代表取締役会長）。会長あいさつ（2026年5月20日）に長野県産業労働部 産業立地・ＩＴ振興課長の出席、講演『生成ＡＩからＡＩエージェントヘ』（信州大学工学部 和崎教授）。",
+  "NISA の名簿の市町村と公式の本社が違う会社: SCSK Minoriソリューションズ（名簿 松本市、公式の本店 東京都江東区）、日本ナレッジ（名簿 下諏訪町、公式の本社 東京都台東区）。名簿の市町村だけで判断しない。",
+  "南信州（飯田市など）・上伊那（伊那市・駒ヶ根市）・松本の周辺（塩尻市・安曇野市）・北信（中野市・飯山市）・佐久の町村は、業界団体の名簿に会社が少なく、WebSearch でも公式の会社概要まで届かなかった。本表がないのは『会社がない』ではなく『確かめられなかった』。",
+  "他県のページとの重複: 本表の会社を詳述した他県のページはない（grep で確認。『電算』の一致は岐阜の電算システム、『ロゴス』は宮城のパトスロゴス、『システムプラン』は岐阜のシステムプランニングで別会社）。",
+  "WebSearch は18回のうち16回を使用。"
+ ]
+}
