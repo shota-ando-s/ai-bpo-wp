@@ -2,9 +2,40 @@
 
 地域ページで、調べきれずに残っている作業。終わったら行ごと消すか、`[x]` にして日付を書く。
 
-- 調査データ: `data/area/kagawa/`・`data/area/tokushima/`・`data/area/kochi/`・`data/area/aomori/`・`data/area/iwate/`・`data/area/akita/`・`data/area/miyagi/`・`data/area/yamagata/`・`data/area/fukushima/`・`data/area/niigata/`・`data/area/toyama/`・`data/area/ishikawa/`・`data/area/fukui/`・`data/area/gifu/`（2026-10-17〜27の調査結果。`stats.md` `gov_ai.md` `cases.md` `companies.json` `subsidy_*.yml` など）
-- 執筆仕様: `docs/area-writing-spec-kagawa.md`・`docs/area-writing-spec-tokushima.md`・`docs/area-writing-spec-kochi.md`・`docs/area-writing-spec-aomori.md`・`docs/area-writing-spec-iwate.md`・`docs/area-writing-spec-akita.md`・`docs/area-writing-spec-miyagi.md`・`docs/area-writing-spec-yamagata.md`・`docs/area-writing-spec-fukushima.md`・`docs/area-writing-spec-niigata.md`・`docs/area-writing-spec-toyama.md`・`docs/area-writing-spec-ishikawa.md`・`docs/area-writing-spec-fukui.md`・`docs/area-writing-spec-gifu.md`
+- 調査データ: `data/area/kagawa/`・`data/area/tokushima/`・`data/area/kochi/`・`data/area/aomori/`・`data/area/iwate/`・`data/area/akita/`・`data/area/miyagi/`・`data/area/yamagata/`・`data/area/fukushima/`・`data/area/niigata/`・`data/area/toyama/`・`data/area/ishikawa/`・`data/area/fukui/`・`data/area/gifu/`・`data/area/nagano/`（2026-10-17〜27の調査結果。`stats.md` `gov_ai.md` `cases.md` `companies.json` `subsidy_*.yml` など）
+- 執筆仕様: `docs/area-writing-spec-kagawa.md`・`docs/area-writing-spec-tokushima.md`・`docs/area-writing-spec-kochi.md`・`docs/area-writing-spec-aomori.md`・`docs/area-writing-spec-iwate.md`・`docs/area-writing-spec-akita.md`・`docs/area-writing-spec-miyagi.md`・`docs/area-writing-spec-yamagata.md`・`docs/area-writing-spec-fukushima.md`・`docs/area-writing-spec-niigata.md`・`docs/area-writing-spec-toyama.md`・`docs/area-writing-spec-ishikawa.md`・`docs/area-writing-spec-fukui.md`・`docs/area-writing-spec-gifu.md`・`docs/area-writing-spec-nagano.md`
 - ページを直したら `python3 post.py articles/<file>.md` で更新する（画像は作り直されない）。補助金のYAMLを直したら `python3 scripts/build_shindan_data.py` → コミット → `./deploy.sh`
+
+## 長野県（2026-10-30作成）
+
+甲信で最初の県（**経済産業局は関東経済産業局、農政局は関東農政局、財務局は関東財務局〔長野財務事務所〕**）。県ページと77市町村（19市23町35村）。調査データは `data/area/nagano/`、執筆仕様は `docs/area-writing-spec-nagano.md`、作業の記録は `data/area/nagano/_progress.md`。試算の割り当ては `data/area/nagano/_calc.py`（既存の全県の試算の結果と重ならない）。
+
+### 投稿の前後にすること
+
+- [ ] 投稿・デプロイ・画像の確認
+- [ ] 国のデジタル化・AI導入補助金 6次（10/30 17時）は「締切でした」と書いた。7次の日程が出たら、県ページと市町村ページの国の制度の行を直す
+- [ ] 締切のある制度・講座を書いたページは、締切後に直す: 県の賃上げ環境整備支援事業（申請 2027-01-20）・副業・兼業人材活用促進（12/28）、原村の緊急支援補助金・商工業活性化補助金（12/31）、豊丘村のトヨペイ端末補助（12/31）、飯島町の生産性向上支援事業交付金（2027-01-29）、諏訪市のAI・IoT導入支援（3/10）、工技センター Beyond DX（11/20・12/11）、デジタルリテラシー向上研修（11/27 飯田・2027-02-05 松本）、飯島町商工会の生成AIセミナー（11/26、申込11/16）
+- [ ] 山形村の AIデマンド交通「のるーと山形」は2026年12月1日から実証運行の予定と書いた。始まったら山形村のページを直す。軽井沢町の AIデマンド交通も運行が始まったら直す
+- [ ] Shinshu AI GEARS の実証（2027-01-31まで）の結果が出たら、塩尻市・長野市・須坂市・辰野町のページを直す
+
+### 調べきれていないこと
+
+- [ ] 県内企業のAI事例は工業技術総合センターとの共同研究の精度の数値（竹村製作所・赤羽工機・マリモ電子工業など）が中心で、時間の削減の実績はない。**生成AIで事務を減らした県内の中小企業の一次事例は見つからなかった**。旅館・介護・小売・食品・農業の県内のAI導入事例も0件
+- [ ] 県外の未使用で数値つきの事例はコラボハウス（愛媛県松山市）・薩摩酒造（鹿児島県枕崎市）の2件だけ。三重県の「DX・AI支援ガイド・導入事例集」は未公表（履行期間 2027-01-29まで）。次の県では愛媛県の生成AI支援事例PDF・鹿児島県DX導入事例・三重県みえDXトライアルサポート事例集の残りを先に見る
+- [ ] 長野テクトロンの「業務効率が30％向上」（関東経済産業局 2026-05）は時点・測り方が書かれていない。経産省の 001_03_02.pdf（長野県の資料）は403で本文未確認
+- [ ] 栽培きのこ（林業産出額584億円、全国1位）は市町村別の値を取っていない。中野市のページで「きのこ」を数値で書いていない
+- [ ] 市町村別農業産出額の合計は県の3,206億円より15.1億円少ない。理由は確かめていない
+- [ ] 観光の市町村別の値は、県の観光地別の表から当社で足し上げた（地域振興局の計と一致）。観光地名と市町村の対応は「〃」の読み取りで、全行は目で照合していない。小谷村の訪日外国人（豪州41.6%）は PDF の列ずれを目で確かめていない
+- [ ] 県の「デジタル化・県内IT事業に関するアンケート」（2025年12月）は PDF が404で本文未確認。県内企業のAI利用率は TDB長野支店の生成AI調査（35.5%）だけ
+- [ ] TDB長野支店の休廃業・解散は同じ PDF で1,064件（本文・市郡別）と1,063件（都道府県表）が食い違う。1,064件を使った
+- [ ] 信州ITバレー構想の県のページと PDF は今の URL で開けず、構想の策定年月を確かめていない
+- [ ] 小諸市・大町市・佐久市の独自の補助金は、市のサイトの一覧で見つからなかった（サイト内検索・担当課への確認はしていない）。飯田市・中野市・飯山市・千曲市（2件）・東御市の制度は今年度の実施を確かめられず unknown
+- [ ] 宮田村は村のサイトが JavaScript で描画され、村独自の補助金を確かめられなかった。補助金ポータルにだけ出る「宮田村事業承継補助金」は書いていない
+- [ ] 佐久穂町の持続化補助金への町の上乗せは率・上限が分からず、商工会に確認するよう書いた
+- [ ] 王滝村は商工会が名簿になく、木曽町商工会のホームページの題名（木曽町・王滝村）から案内した。上田市商工会のサイトは curl で403（電話と県連の一覧へのリンクにした）。喬木村商工会・上松町商工会のサイトは開けなかった
+- [ ] 調査で「見つからない」「未確認」だったが、執筆で見つかったもの: 天龍村のDX推進計画の期間（R6〜R8）、富士見町の「のらざあ」の運行開始（2026-10-01）、生坂村の過疎地域持続的発展計画（案）の「AI技術の活用」。gov_ai*.md は直していない
+- [ ] 小諸市・中野市のDX計画は見つからなかった。東御市は計画期間が令和7年度で終わり、後継の計画は見つかっていない。青木村の第6次長期振興計画は画像PDFでAIの記述を確かめられなかった
+- [ ] ケイケンシステム（長野市）の従業員数は2022年12月の値。TOSYS（長野市、通信建設中心）はIT企業の表に入れていない
 
 ## 岐阜県（2026-10-29作成）
 
