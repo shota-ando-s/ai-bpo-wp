@@ -37,7 +37,7 @@
 - 時点: 実証 令和5年10月〜令和6年10月。レポート掲載 2024-12-26
 - 出典: ITOC「データ活用実証事業レポート（株式会社みしまや）」https://www.s-itoc.jp/report/reaserch_results/1364 。本店住所は県の大規模小売店舗立地法の届出（令和2年10月16日告示）https://www.pref.shimane.lg.jp/industry/syoko/sangyo/kouri_tenpo/todokede/R2/misimaya_gakuenten-61.html と法人番号 9280001002926
 - 使えるページ: **松江市（スーパーの発注にAI。数値あり）**。県ページ。雲南市・大田市は「店舗がある」と1文まで（実証した1店舗がどこかは書かれていない）
-- 注意: 従業員数は民間DB（SalesNow DB「253名」、時点なし）だけで、`verified: false`。従業員数が300人を超えなければ小売業の中小企業の基準は資本金5,000万円以下または従業員50人以下なので、**「中小企業」とは書かない**（「地元のスーパー」と書く）
+- 注意: 従業員数は民間DB（SalesNow DB「253名」、時点なし）だけで、`verified: false`。小売業の中小企業の基準は「資本金5,000万円以下または従業員50人以下」で、資本金も従業員数も公式で確かめていないので、**「中小企業」とは書かない**（「地元のスーパー」と書く）
 
 ### 2. 中浦食品株式会社（松江市東出雲町錦浜583-41〔法人番号・事例シート〕。贈答品・観光土産品の製造・卸・販売。創業 貞享3年〔1686年〕、資本金5,000万円、従業員185名〔事例シート、時点の記載なし〕）— 個包装した饅頭の良品・不良品をAIの画像処理で選別（**時間の数値は「およそ1秒」だけ。工数の削減量は書かれていない**）
 - 背景（文言どおり）: 「選別作業は、これまで複数人の検査員の目視検査により選別が行われてきたが、検査にかかるコストと作業員間の基準のバラツキがおもな課題であった」
@@ -292,7 +292,7 @@
 | 大田市 | 株式会社山﨑組（鳥井町、従業員40名） | 解体・土木 | ドローンで建物をスキャンし3Dで重機配置をシミュレーション | 「従来は1日かけて紙に図面を起こしていたがシステム導入により半日程度で３D画像が作成できるようになった」（**AIの記述なし**） | https://www.pref.shimane.lg.jp/industry/syoko/sangyo/digitalinnovation/case_study.data/r5dx_kaitai-jirei.pdf |
 | 奥出雲町 | 株式会社ニッポー 島根工場（従業員109名） | 農業ハウス用機器 | 環境制御機器のデータ収集（「他社のAI基盤との連携を想定」） | AIは連携の想定 | https://www.s-itoc.jp/files/original/20260617104324330690f3e26.pdf |
 | 雲南市 | 株式会社ゼンキンメタル | 精密板金 | 工程ログの統計分析（データ活用実証事業） | 数値なし | reaserch_results/1365（上） |
-| 安来市 | Ton-ton | 食品（受注） | Web受注管理システム | 数値は県の資料（r7_dxjirei_tonton.pdf）、AIではない | https://www.pref.shimane.lg.jp/industry/syoko/sangyo/digitalinnovation/case_study.data/r7_dxjirei_tonton.pdf |
+| 安来市 | Ton-ton | 食品（受注） | Web受注管理システム | AIではない（効果の数値は読んでいない） | https://www.pref.shimane.lg.jp/industry/syoko/sangyo/digitalinnovation/case_study.data/r7_dxjirei_tonton.pdf |
 
 - 使い方: 市町村ページで「AIではないが、県の支援でIT・IoTを入れた例」として1文まで。**モルツウェルは「AIを試してやめた」例として松江市で1文使える**（AIが向かない場面の話として）
 
