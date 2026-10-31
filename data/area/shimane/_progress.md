@@ -54,3 +54,4 @@
 - D1 完了（sspec/D1.md・_calc.py OK、WS0、判断13点）: 試算 月2.75〜124h・約0.8万〜42.9万円、規模4〜118名。既存540本と照合。県ページの地域区分は3地域（中の並びは7圏域）
 - D34 完了（sspec/D34.md・data/subsidies/shimane.yml 20制度、WS0、判断 D3 12点・D4 11点）: **ITOC はテクノアークしまね2F（2022-02-01 移転）**、財団は公益財団法人。県域で今申請できてAIに使えるのは ITOC のデジタル導入モデル支援助成金だけ。大田市は www.city.oda.lg.jp で開け、AI・IT・研修の補助なし。areas.yml の案は sspec/d34work/areas_shimane.yml（none 10市町村）。診断 240通りエラー0
 - 判断: D1・D2・D34・D5 とも全点案どおり。仕様 docs/area-writing-spec-shimane.md（1,451行）を組み立て
+- 執筆 W1 a7f5d898c5bbd2c60（松江市・美郷町・知夫村）・W2 a83b920f9cd59e313（出雲市・津和野町・西ノ島町）・W3 a2c6a2c372508b806（浜田市・奥出雲町・海士町）・W4 a6282dc381d001e0d（益田市・飯南町・隠岐の島町）を起動。依頼文は scratchpad/sspec/writer_prompt.md
