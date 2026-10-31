@@ -23,13 +23,13 @@
 
 ## 状態
 - [x] _brief.md・wages.md（2026-10-31）
-- [ ] 調査
-- [ ] 執筆仕様 docs/area-writing-spec-shimane.md
-- [ ] 記事 20本（県1＋市町村19）
-- [ ] data/subsidies/shimane.yml、areas.yml、build_shindan_data.py
-- [ ] 地域ガイド（中国地方の段を新しく作る）、area_uniq.py、area-todo.md、area-new-prefecture.md、memory
-- [ ] チェック（check_article・area_uniq・試算の重なり・見出し行だけの表）
-- [ ] main に push（投稿・デプロイはユーザーが Mac で）
+- [x] 調査（6担当、WebSearch 103回）
+- [x] 執筆仕様 docs/area-writing-spec-shimane.md（1,451行）
+- [x] 記事 20本（県1＋市町村19）
+- [x] data/subsidies/shimane.yml（20制度）、areas.yml、build_shindan_data.py（684制度）
+- [x] 地域ガイド（中国地方の段を新しく作った）、area_uniq.py、area-todo.md、area-new-prefecture.md、memory
+- [x] チェック（check_article 20ページ ERROR 0・area_uniq 全ページ 69.6%以上・試算の重なりなし〔山梨含む〕・見出し行だけの表なし）
+- [x] main に push（投稿・デプロイはユーザーが Mac で「投稿して」）
 
 ## 実績メモ
 - 2026-10-31 調査開始。stats・gov・subsidy・cases の4人を起動（同時4人まで）

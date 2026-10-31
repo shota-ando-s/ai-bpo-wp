@@ -2,8 +2,8 @@
 
 地域ページで、調べきれずに残っている作業。終わったら行ごと消すか、`[x]` にして日付を書く。
 
-- 調査データ: `data/area/kagawa/`・`data/area/tokushima/`・`data/area/kochi/`・`data/area/aomori/`・`data/area/iwate/`・`data/area/akita/`・`data/area/miyagi/`・`data/area/yamagata/`・`data/area/fukushima/`・`data/area/niigata/`・`data/area/toyama/`・`data/area/ishikawa/`・`data/area/fukui/`・`data/area/gifu/`・`data/area/nagano/`・`data/area/yamanashi/`（2026-10-17〜27の調査結果。`stats.md` `gov_ai.md` `cases.md` `companies.json` `subsidy_*.yml` など）
-- 執筆仕様: `docs/area-writing-spec-kagawa.md`・`docs/area-writing-spec-tokushima.md`・`docs/area-writing-spec-kochi.md`・`docs/area-writing-spec-aomori.md`・`docs/area-writing-spec-iwate.md`・`docs/area-writing-spec-akita.md`・`docs/area-writing-spec-miyagi.md`・`docs/area-writing-spec-yamagata.md`・`docs/area-writing-spec-fukushima.md`・`docs/area-writing-spec-niigata.md`・`docs/area-writing-spec-toyama.md`・`docs/area-writing-spec-ishikawa.md`・`docs/area-writing-spec-fukui.md`・`docs/area-writing-spec-gifu.md`・`docs/area-writing-spec-nagano.md`・`docs/area-writing-spec-yamanashi.md`
+- 調査データ: `data/area/kagawa/`・`data/area/tokushima/`・`data/area/kochi/`・`data/area/aomori/`・`data/area/iwate/`・`data/area/akita/`・`data/area/miyagi/`・`data/area/yamagata/`・`data/area/fukushima/`・`data/area/niigata/`・`data/area/toyama/`・`data/area/ishikawa/`・`data/area/fukui/`・`data/area/gifu/`・`data/area/nagano/`・`data/area/yamanashi/`・`data/area/shimane/`（2026-10-17〜27の調査結果。`stats.md` `gov_ai.md` `cases.md` `companies.json` `subsidy_*.yml` など）
+- 執筆仕様: `docs/area-writing-spec-kagawa.md`・`docs/area-writing-spec-tokushima.md`・`docs/area-writing-spec-kochi.md`・`docs/area-writing-spec-aomori.md`・`docs/area-writing-spec-iwate.md`・`docs/area-writing-spec-akita.md`・`docs/area-writing-spec-miyagi.md`・`docs/area-writing-spec-yamagata.md`・`docs/area-writing-spec-fukushima.md`・`docs/area-writing-spec-niigata.md`・`docs/area-writing-spec-toyama.md`・`docs/area-writing-spec-ishikawa.md`・`docs/area-writing-spec-fukui.md`・`docs/area-writing-spec-gifu.md`・`docs/area-writing-spec-nagano.md`・`docs/area-writing-spec-yamanashi.md`・`docs/area-writing-spec-shimane.md`
 - ページを直したら `python3 post.py articles/<file>.md` で更新する（画像は作り直されない）。補助金のYAMLを直したら `python3 scripts/build_shindan_data.py` → コミット → `./deploy.sh`
 
 ## 全県共通（2026-10-31の締切の一括修正のあと）
@@ -17,6 +17,30 @@
 - [ ] 潟上市「稼げる力創出補助金」の「次の受付は10月末」（潟上市ページ・秋田県ページ98行）が締切か開始か分からず直していない
 - [ ] 開催日を過ぎたセミナーが未来形のまま（加茂市 143・183行の加茂商工会議所のセミナー〔10/26〕、秋田の井川・由利本荘・横手・潟上の研修〔10/22・10/27〕など）
 - [ ] 解説記事 `articles/2026-05-24-ai-bpo-it-hojo.md` は1次（5/12）の頃の内容のまま。2026年度の制度と照合して直す（企画書12章の宿題と同じ）
+
+## 島根県（2026-10-31作成。未投稿）
+
+中国地方で最初の県（**経済産業局は中国経済産業局、農政局は中国四国農政局、財務局は中国財務局〔松江財務事務所〕、労働局は島根労働局**）。県ページと19市町村（8市10町1村）。調査データは `data/area/shimane/`、執筆仕様は `docs/area-writing-spec-shimane.md`、作業の記録は `data/area/shimane/_progress.md`。試算の割り当ては `data/area/shimane/_calc.py`（既存の全県の試算の結果と、同じ日に別のセッションで作った山梨県の割り当てとも重ならない）。クラウドのセッションで作り、投稿・デプロイはしていない。
+
+### 投稿の前後にすること
+
+- [ ] 投稿・デプロイ・画像の確認（Mac で「投稿して」。県ページを先に投稿してから市町村ページ）
+- [ ] 美郷町の slug は `misato-town-shimane`（秋田県美郷町 `misato`・宮城県美里町 `misato-town` と重ならない形にした）。投稿後に3つのページが別々にあることを確かめる
+- [ ] 締切のある制度・講座を書いたページは、締切後に直す: 国のデジタル化・AI導入補助金 7次（12/1）、浜田市の補助金 第2次募集（11/13）、ITOC のデジタル導入モデル支援助成金（11/27・2027-01-29）、ITOC の AI・データ活用相談会（11/9・11/18・11/27。12月以降は月ごとの告知を見て直す）、AIエージェント入門（11/5、松江）、AI利用の社内ルールづくりセミナー（12/4、出雲市）、Python・AI構築入門講座（12/15）、松江市のデジタル化補助（2027-03-31）
+- [ ] 浜田市のDX推進計画（案）の意見募集（11/9〜12/9）が始まったら、案のAIの記述を確かめて浜田市のページを直す
+- [ ] 島根原子力発電所2号機は「2025年1月10日に営業運転を再開し、2026年2月9日から定期事業者検査」までを書いた。その後の状態は確かめていない
+
+### 調べきれていないこと
+
+- [ ] 知夫村役場のサイト（www.vill.chibu.lg.jp）にクラウドのコンテナから接続できなかった（https はプロキシで拒否、http は 503）。村独自の補助金・行政のAIは「確かめられなかった」と書いた。Mac から開けたら確かめる
+- [ ] 津和野町の個別商業包括的支援事業補助金の要綱が開けず（404・503）、研修の補助の中身を確かめていない
+- [ ] 中国経済産業局のサイトは 403 で、局の事例集（DX・マナビDXクエストの成果報告会など）を見ていない。Internet Archive にもコンテナから接続できなかった
+- [ ] 県内企業のAI事例は ITOC の事例シート・共同研究と県の「しまねDX推進事業事例紹介」が中心。**生成AIで事務を減らした県内の中小企業の数値つきの事例は見つからなかった**。特殊鋼・酒蔵・しじみ・水産・旅館・医療・運送・農業の県内のAI事例も0件。ITOC の事例シートは「無断の二次使用はお控えください」とあるので、要約・短い数値・出典リンクだけにした（引用の可否は問い合わせていない）
+- [ ] 県外の未使用で数値つきの事例は内能美漁協ほか（広島県江田島市）・アイグラン（広島市）の2件だけ。カワトT.P.C.（山口県岩国市）は山梨県のページで詳述するので使っていない
+- [ ] TDB松江支店の島根県版は後継者不在率・社長年齢・休廃業の3テーマだけ。人手不足・生成AIは広島支店の中国地方版の島根県の行（86社・93社）。有効求人倍率（2026年9月 1.44倍）は全国順位が島根労働局の資料になく、書いていない。就業地別・職業別の値も見つからなかった
+- [ ] 品目別の農業産出額（ぶどう・隠岐牛など）、市町村別の漁獲量、隠岐航路の乗降客数は取れていない
+- [ ] 地元IT企業の本表は4市13社（公式サイトで本社と従業員数の両方を確かめた会社だけ）。島根情報処理センター（403）・シーエスエー・アキュートシスコム（503）は人数を確かめられず入れていない。町村のIT拠点はほぼ県外本社で、書いていない
+- [ ] 社人研の suikei_kekka.xlsx は 403 のため、調査の担当が UA を付けた curl で取った（中身は国の公表ファイル）
 
 ## 山梨県（2026-10-31作成）
 
