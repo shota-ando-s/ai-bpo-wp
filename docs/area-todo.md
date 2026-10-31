@@ -2,8 +2,8 @@
 
 地域ページで、調べきれずに残っている作業。終わったら行ごと消すか、`[x]` にして日付を書く。
 
-- 調査データ: `data/area/kagawa/`・`data/area/tokushima/`・`data/area/kochi/`・`data/area/aomori/`・`data/area/iwate/`・`data/area/akita/`・`data/area/miyagi/`・`data/area/yamagata/`・`data/area/fukushima/`・`data/area/niigata/`・`data/area/toyama/`・`data/area/ishikawa/`・`data/area/fukui/`・`data/area/gifu/`・`data/area/nagano/`（2026-10-17〜27の調査結果。`stats.md` `gov_ai.md` `cases.md` `companies.json` `subsidy_*.yml` など）
-- 執筆仕様: `docs/area-writing-spec-kagawa.md`・`docs/area-writing-spec-tokushima.md`・`docs/area-writing-spec-kochi.md`・`docs/area-writing-spec-aomori.md`・`docs/area-writing-spec-iwate.md`・`docs/area-writing-spec-akita.md`・`docs/area-writing-spec-miyagi.md`・`docs/area-writing-spec-yamagata.md`・`docs/area-writing-spec-fukushima.md`・`docs/area-writing-spec-niigata.md`・`docs/area-writing-spec-toyama.md`・`docs/area-writing-spec-ishikawa.md`・`docs/area-writing-spec-fukui.md`・`docs/area-writing-spec-gifu.md`・`docs/area-writing-spec-nagano.md`
+- 調査データ: `data/area/kagawa/`・`data/area/tokushima/`・`data/area/kochi/`・`data/area/aomori/`・`data/area/iwate/`・`data/area/akita/`・`data/area/miyagi/`・`data/area/yamagata/`・`data/area/fukushima/`・`data/area/niigata/`・`data/area/toyama/`・`data/area/ishikawa/`・`data/area/fukui/`・`data/area/gifu/`・`data/area/nagano/`・`data/area/yamanashi/`（2026-10-17〜27の調査結果。`stats.md` `gov_ai.md` `cases.md` `companies.json` `subsidy_*.yml` など）
+- 執筆仕様: `docs/area-writing-spec-kagawa.md`・`docs/area-writing-spec-tokushima.md`・`docs/area-writing-spec-kochi.md`・`docs/area-writing-spec-aomori.md`・`docs/area-writing-spec-iwate.md`・`docs/area-writing-spec-akita.md`・`docs/area-writing-spec-miyagi.md`・`docs/area-writing-spec-yamagata.md`・`docs/area-writing-spec-fukushima.md`・`docs/area-writing-spec-niigata.md`・`docs/area-writing-spec-toyama.md`・`docs/area-writing-spec-ishikawa.md`・`docs/area-writing-spec-fukui.md`・`docs/area-writing-spec-gifu.md`・`docs/area-writing-spec-nagano.md`・`docs/area-writing-spec-yamanashi.md`
 - ページを直したら `python3 post.py articles/<file>.md` で更新する（画像は作り直されない）。補助金のYAMLを直したら `python3 scripts/build_shindan_data.py` → コミット → `./deploy.sh`
 
 ## 全県共通（2026-10-31の締切の一括修正のあと）
@@ -17,6 +17,34 @@
 - [ ] 潟上市「稼げる力創出補助金」の「次の受付は10月末」（潟上市ページ・秋田県ページ98行）が締切か開始か分からず直していない
 - [ ] 開催日を過ぎたセミナーが未来形のまま（加茂市 143・183行の加茂商工会議所のセミナー〔10/26〕、秋田の井川・由利本荘・横手・潟上の研修〔10/22・10/27〕など）
 - [ ] 解説記事 `articles/2026-05-24-ai-bpo-it-hojo.md` は1次（5/12）の頃の内容のまま。2026年度の制度と照合して直す（企画書12章の宿題と同じ）
+
+## 山梨県（2026-10-31作成）
+
+甲信で2県目（**経済産業局は関東経済産業局〔経済産業省組織令 第102条〕、農政局は関東農政局〔山梨県拠点〕、財務局は関東財務局〔甲府財務事務所〕**）。県ページと27市町村（13市8町6村）。調査データは `data/area/yamanashi/`、執筆仕様は `docs/area-writing-spec-yamanashi.md`、作業の記録は `data/area/yamanashi/_progress.md`。試算の割り当ては `data/area/yamanashi/_calc.py`（既存の全県〔長野県・島根県の先に入った分を含む〕の試算の結果と重ならない）。調査・執筆はクラウドのセッションで行い、投稿・デプロイはしていない。
+
+### 投稿の前後にすること
+
+- [ ] Mac で「投稿して」（post スキル。県ページを先に単独で投稿して成功を確かめてから27市町村、地域ガイド、`./deploy.sh` で補助金診断の JSON を反映）
+- [ ] 大月市 `otsuki` は高知県大月町、南部町 `nanbu` は青森県南部町と同じ slug。投稿後に両方のページが別々にあることを確かめる（朝日町・かほく市と同じ）
+- [ ] 画像の確認（地図の判定・目視）
+- [ ] 締切のある制度・講座を書いたページは、締切後に直す: 甲州市 持続化補助金・後期（11/27）、上野原市 先端設備＋賃上げ（2027-01-31）、県の補助金申請サポート事業（2027-02-10）、甲府商工会議所（11/5・11/25・12/10）、北杜市商工会（11/5）、山梨テクノICTメッセ（11/6・7、申込 11/4）、笛吹市商工会（11/10）、よろず支援拠点のAIセミナー（12/2）、甲斐市商工会（12/9、申込 12/4）。国のデジタル化・AI導入補助金の7次（12/1 17時）は全県共通の項目と同じ
+- [ ] 南アルプス市の AIオンデマンド交通の実証（11月〜）は「予定」と書いた。始まったら直す。市川三郷町の AIデマンド交通は開始日を書いていない
+- [ ] やまなし産業支援機構の次世代技術活用支援事業（2026-10-30 募集終了）の採択者は11月中旬決定の予定。公表されたら県ページの1文を見直す
+
+### 調べきれていないこと
+
+- [ ] **社人研の令和5年推計（suikei_kekka.xlsx）は ipss.go.jp が 403（curl・WebFetch とも。クラウドの環境から）で取れなかった**。生産年齢人口は令和7年国勢調査（県の表、不詳補完値）の2020→2025年の増減で書いた。Mac で xlsx を取れば、27市町村の2050年の値を足せる
+- [ ] 県内企業のAI事例で数値がそろうのは欣寿会「おりひめ」（富士吉田市、介護、主にインカムの効果を含む）と JAフルーツ山梨（山梨市、国の実証、基準は仮定）の2件だけ。生成AIは甲府通運（中央市、数値なし）だけ。電子部品・機械・宝飾・織物・ワイナリー自身・旅館・建設・小売・桃の選果は県内で見つからなかった。やまなし産業支援機構の支援事例集は公開されておらず、よろず支援拠点の事例29件にAIはない
+- [ ] 県外の未使用で数値つきの事例は、山口県「中小企業ＤＸの手引き」（2021年）の3件（ひびき精機・カワトT.P.C.・ウチダ製作所）だけ。広島県の生成AI活用事例共有会の成果発表会（2026-12-11・2027-01-15）、徳島県の生成AI活用促進事業は社名つきの効果が未公表。次の県で見る
+- [ ] やまなしデジタル×コネクトの伴走支援は2026年9月開始で事例が未公表。公表されたら県内の事例に足す
+- [ ] 県・山梨中央銀行系・商工団体の県内企業のAI利用率の調査は見つからなかった。県内の値は TDB甲府支店の生成AI調査（34.9%、106社）だけ
+- [ ] 有効求人倍率のハローワーク別の値は公表されていない。市町村ページは県の値にハローワーク名を添えた
+- [ ] 県と多くの市町村のサイトは、クラウドの環境では curl で 404 や接続の切断になり、WebFetch（要約）で読んだ。原文の全文まで確かめていないページがある
+- [ ] 富士河口湖町のサイトは公開停止中で、町のDX計画・補助金は確かめられなかった（総務省の表だけ書いた）。道志村・小菅村のサイトは 503 で、補助金は商工会と県の一覧で確かめた範囲で書いた
+- [ ] 知事（長崎幸太郎）の任期開始日・期数は二次情報しかなく、県ページは「2019年2月から知事」までにした
+- [ ] 地元IT企業の本表は5市町9社だけ。ワイ・シー・シー（甲府市、県のナビで188名）・エスビーシー（笛吹市）・富士情報・ユニ・テクノロジーは公式サイトが開けず本表に入れていない。開ければ甲府市の表と笛吹市・峡東の案内先が変わる。マネージ・ソフト（昭和町）の人数は2024年4月の値
+- [ ] 調査で「計画」「未確認」だったが、執筆で分かったもの: 中央市のAIデマンド交通「のるーと中央」は2025-10-01から市内全域で実証運行（市のページ）、ホテル湖龍は富士河口湖町浅川（公式サイト）。gov_ai.md・cases.md は直していない
+- [ ] 製造業の細分類・品目（ジュエリー・果実酒・ロボット）は、2024年の産業細分類と県の2020年の品目編で順位が食い違う（ジュエリーは2位と1位）。どちらの統計か書き分けた
 
 ## 長野県（2026-10-30作成）
 

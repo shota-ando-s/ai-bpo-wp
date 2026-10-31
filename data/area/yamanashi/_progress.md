@@ -20,12 +20,12 @@
 
 ## 状態
 - [x] _brief.md・wages.md、scripts/area_uniq.py に yamanashi を追加（2026-10-31）
-- [ ] 調査
-- [ ] 執筆仕様 docs/area-writing-spec-yamanashi.md
-- [ ] 記事 28本（県1＋市町村27）
-- [ ] data/subsidies/yamanashi.yml、areas.yml、build_shindan_data.py
-- [ ] 地域ガイド、area-todo.md、area-new-prefecture.md、memory
-- [ ] チェック（check_article・area_uniq・試算の重なり・見出し行だけの表）
+- [x] 調査（2026-10-31）
+- [x] 執筆仕様 docs/area-writing-spec-yamanashi.md（2026-10-31）
+- [x] 記事 28本（県1＋市町村27）（2026-10-31）
+- [x] data/subsidies/yamanashi.yml、areas.yml、build_shindan_data.py（2026-10-31）
+- [x] 地域ガイド、area-todo.md、area-new-prefecture.md、memory（2026-10-31）
+- [x] チェック（check_article・area_uniq・試算の重なり・見出し行だけの表）（2026-10-31）
 - [ ] main に push（投稿・デプロイはユーザーが Mac で）
 
 ## 実績メモ
@@ -58,3 +58,4 @@
 - W7 甲斐市（約7,410字・68.4%・月85.25h/30.2万）・中央市（7,473・78.4%・月99.75h/34.9万、甲府通運）・富士河口湖町（7,055・69.1%・月93h/23.3万）・丹波山村（6,434・69.2%・月4.75h/1.2万）完了、ERROR 0、WS0。**ホテル湖龍は公式サイトで富士河口湖町浅川と確認→「町内の」**。**中央市のAIデマンド交通「のるーと中央」は2025-10-01から市内全域で実証運行**〔市のページ。仕様の「計画」を直した〕。丹波山村のCIO補佐官は募集（2024-04）まで
 - W5 南アルプス市（約7,960字・77.7%・月106.75h/37.4万）・上野原市（7,020・85.3%・月74.25h/26.0万）・市川三郷町（6,680・90.9%・月13.25h/4.6万）・山中湖村（6,620・88.2%・月81.25h/20.4万）完了、ERROR 0〔山中湖村の村サイトは curl が回によって切断、WebFetch で開けた〕、WS0。**市町村27ページそろう**。W8（県ページ）起動
 - W8 県ページ（約18,600字・H2 11・FAQ 8）完了、ERROR 0、WS0。27ページの試算の重なり・見出し行だけの表なし。関東経済産業局の出典は Internet Archive が開けず e-Gov の経済産業省組織令に。県HPのAI検索は「導入すると発表」。全体の確認（親）: check_article 27ページ ERROR 0、area_uniq 全ページ 67.7〜93.4%、_calc.py OK〔島根県の記事12本を含めて〕、禁止語0（「応援」は DX推進応援隊だけ）
+- 共通ファイル（2026-10-31、pull のあと）: areas.yml に山梨県（27市町村）を足し、build 664制度〔653＋山梨11、他県は同じ〕。**島根県の shimane.yml は main にあるが areas.yml に島根の行がまだなく build が止まるので、build のときだけ shimane.yml を退けて戻した**（島根側が areas.yml に足したときに build し直す）。地域ガイド・area-todo.md・area-new-prefecture.md・memory を更新
