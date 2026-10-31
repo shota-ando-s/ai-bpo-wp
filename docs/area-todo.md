@@ -2,8 +2,8 @@
 
 地域ページで、調べきれずに残っている作業。終わったら行ごと消すか、`[x]` にして日付を書く。
 
-- 調査データ: `data/area/kagawa/`・`data/area/tokushima/`・`data/area/kochi/`・`data/area/aomori/`・`data/area/iwate/`・`data/area/akita/`・`data/area/miyagi/`・`data/area/yamagata/`・`data/area/fukushima/`・`data/area/niigata/`・`data/area/toyama/`・`data/area/ishikawa/`・`data/area/fukui/`・`data/area/gifu/`・`data/area/nagano/`・`data/area/yamanashi/`・`data/area/shimane/`（2026-10-17〜27の調査結果。`stats.md` `gov_ai.md` `cases.md` `companies.json` `subsidy_*.yml` など）
-- 執筆仕様: `docs/area-writing-spec-kagawa.md`・`docs/area-writing-spec-tokushima.md`・`docs/area-writing-spec-kochi.md`・`docs/area-writing-spec-aomori.md`・`docs/area-writing-spec-iwate.md`・`docs/area-writing-spec-akita.md`・`docs/area-writing-spec-miyagi.md`・`docs/area-writing-spec-yamagata.md`・`docs/area-writing-spec-fukushima.md`・`docs/area-writing-spec-niigata.md`・`docs/area-writing-spec-toyama.md`・`docs/area-writing-spec-ishikawa.md`・`docs/area-writing-spec-fukui.md`・`docs/area-writing-spec-gifu.md`・`docs/area-writing-spec-nagano.md`・`docs/area-writing-spec-yamanashi.md`・`docs/area-writing-spec-shimane.md`
+- 調査データ: `data/area/kagawa/`・`data/area/tokushima/`・`data/area/kochi/`・`data/area/aomori/`・`data/area/iwate/`・`data/area/akita/`・`data/area/miyagi/`・`data/area/yamagata/`・`data/area/fukushima/`・`data/area/niigata/`・`data/area/toyama/`・`data/area/ishikawa/`・`data/area/fukui/`・`data/area/gifu/`・`data/area/nagano/`・`data/area/yamanashi/`・`data/area/shimane/`・`data/area/tottori/`（2026-10-17〜27の調査結果。`stats.md` `gov_ai.md` `cases.md` `companies.json` `subsidy_*.yml` など）
+- 執筆仕様: `docs/area-writing-spec-kagawa.md`・`docs/area-writing-spec-tokushima.md`・`docs/area-writing-spec-kochi.md`・`docs/area-writing-spec-aomori.md`・`docs/area-writing-spec-iwate.md`・`docs/area-writing-spec-akita.md`・`docs/area-writing-spec-miyagi.md`・`docs/area-writing-spec-yamagata.md`・`docs/area-writing-spec-fukushima.md`・`docs/area-writing-spec-niigata.md`・`docs/area-writing-spec-toyama.md`・`docs/area-writing-spec-ishikawa.md`・`docs/area-writing-spec-fukui.md`・`docs/area-writing-spec-gifu.md`・`docs/area-writing-spec-nagano.md`・`docs/area-writing-spec-yamanashi.md`・`docs/area-writing-spec-shimane.md`・`docs/area-writing-spec-tottori.md`
 - ページを直したら `python3 post.py articles/<file>.md` で更新する（画像は作り直されない）。補助金のYAMLを直したら `python3 scripts/build_shindan_data.py` → コミット → `./deploy.sh`
 
 ## 全県共通（2026-10-31の締切の一括修正のあと）
@@ -17,6 +17,33 @@
 - [ ] 潟上市「稼げる力創出補助金」の「次の受付は10月末」（潟上市ページ・秋田県ページ98行）が締切か開始か分からず直していない
 - [ ] 開催日を過ぎたセミナーが未来形のまま（加茂市 143・183行の加茂商工会議所のセミナー〔10/26〕、秋田の井川・由利本荘・横手・潟上の研修〔10/22・10/27〕など）
 - [ ] 解説記事 `articles/2026-05-24-ai-bpo-it-hojo.md` は1次（5/12）の頃の内容のまま。2026年度の制度と照合して直す（企画書12章の宿題と同じ）
+
+## 鳥取県（2026-10-31作成。未投稿）
+
+中国地方で2県目（**経済産業局は中国経済産業局、農政局は中国四国農政局、財務局は中国財務局〔鳥取財務事務所〕、労働局は鳥取労働局**）。県ページと19市町村（4市14町1村）。調査データは `data/area/tottori/`、執筆仕様は `docs/area-writing-spec-tottori.md`、作業の記録は `data/area/tottori/_progress.md`。試算の割り当ては `data/area/tottori/_calc.py`（既存の全県の試算の結果と、同じ日に作った島根県・山梨県の割り当てとも重ならない）。クラウドのセッションで作り、投稿・デプロイはしていない。
+
+### 投稿の前後にすること
+
+- [ ] Mac で「投稿して」（post スキル。県ページを先に投稿してから19市町村、地域ガイド、`./deploy.sh` で補助金診断の JSON を反映）
+- [ ] 若桜町 `wakasa`（福井県若狭町）・大山町 `daisen`（秋田県大仙市）・南部町 `nanbu`（青森県・山梨県の南部町）・江府町 `kofu`（山梨県甲府市）は他県のページと同じ slug。投稿後に、それぞれ別のページになっている（他県のページを上書きしていない）ことを確かめる（朝日町・かほく市と同じ）。鳥取市は `tottori-city`
+- [ ] 画像の確認（地図の判定・目視）
+- [ ] 締切のある制度・講座を書いたページは、締切後に直す: 国のデジタル化・AI導入補助金 7次（12/1、全県共通の項目と同じ）、県の持続的な賃上げ・生産性向上支援補助金（12/18）、県の産業未来共創補助金〈生産性向上・新技術導入推進型〉（事業認定 11/2〜11/30・2027-01-04〜01-29）、岩美町の持続的な賃上げ・生産性向上支援金（2027年2月末）、倉吉商工会議所の生成AI活用セミナー（11/10・11/25・12/9）、県中小企業団体中央会のワークショップ（11/12・11/18）、鳥取市のAIセミナー（11/24・12/22）、鳥取県産業振興機構のセミナー（11/26）・生成AI実践活用研修（12/10・12/17、申込 11/30）、米子商工会議所（12/2）、鳥取市西商工会（12/2）、産業技術センターの「生成AI×IoT データ見える化入門」（11/17）
+- [ ] 2026-11-26 以降、鳥取県産業振興機構のセミナーの資料で明治製作所（倉吉市）の生成AIの成果を確かめ、倉吉市のページを直す。2026-12-03〜2027-01-29 の産業技術センターの成果発表（合板の検査など）で社名・数値が出たら、県ページ・該当の市町村ページを直す
+- [ ] とっとりAI・AX実践プログラムの成果（2026年12月〜2027年2月の発表）が出たら、県ページを見直す
+
+### 調べきれていないこと
+
+- [ ] **社人研の令和5年推計（suikei_kekka.xlsx）はクラウドから 403 で取れなかった**（山梨県と同じ。UA は偽っていない）。生産年齢人口は令和7年国勢調査の15〜64歳の2020→2025年の増減で書いた。Mac で xlsx を取れば、19市町村の2050年の値を足せる
+- [ ] 県の観光入込客数は9つの広域エリア単位で、市町村別の値がない。温泉地の入湯客数・主要13施設の値だけを使った
+- [ ] 職業別の常用有効求人倍率（事務従事者0.48倍など）は、鳥取労働局の資料の表に県名の見出しがなく、県の値と確かめられなかったので使っていない。有効求人倍率の全国順位も書いていない
+- [ ] TDB鳥取支店の鳥取県版は後継者不在率・社長年齢・休廃業の3テーマだけ。人手不足・生成AIは広島支店の中国地方版の鳥取の行（54社・58社）
+- [ ] **県内の中小企業が、AIで時間・人数が減ったと自ら公表した事例は見つからなかった**。数値はグッドスマイルカンパニー（倉吉市の工場、大企業）の精度、イングス（鳥取市）の支援した IT 会社の記載、片木アルミ（大山町）の研究の精度、JA鳥取中央の梨の選果ロボットの目標だけ。県の生成AIモデル企業6社は成果を公表していない。水産・紙・乳業・林業・旅館・建設・運送・小売・病院・福祉の県内のAI事例は0件
+- [ ] 県外の未使用で数値つきの事例は2件だけ（エーアンドエス〔岡山県笠岡市〕→北栄町、グリーンハートティーアンドケイ〔栃木県大田原市〕→琴浦町。どちらも農研機構の実証）。ほかのページの H2 4 は「見つからなかった」と短く書いた
+- [ ] 地元IT企業の本表は2市7社（鳥取市3・米子市4。公式サイトで本社と従業員数の両方を確かめた会社だけ）。鳥取県情報産業協会の会員名簿は見つからなかった。人数を確かめられなかった会社（バードワークス・ヴォール・ABANY など）は入れていない
+- [ ] このセッションのコンテナから開けなかったサイト: 米子市の補助金一覧（404）、若桜町（503）、JA鳥取中央（湯梨浜町が管内か確かめられず、梨の選果ロボットの目標は湯梨浜町に書いていない）、県中小企業団体中央会（J-Net21 にリンク）、中国経済産業局（403）、社人研（403）。日南町役場の JAPAN AI AGENT の導入は発表元が 429 で確かめられず、書いていない
+- [ ] 若桜町・湯梨浜町・三朝町・江府町は、町独自の補助金を県の支援施策データベース（とっとり産業支援ナビ）か町のトップページの範囲で確かめた。岩美町・北栄町・智頭町は、執筆の担当が町のサイトを開いて DB にない制度を見つけた（上乗せ・外部人材）。ほかの町村も町のサイトで確かめ直すとよい
+- [ ] 伯耆町の国・県等制度利用支援事業補助金が国のデジタル化・AI導入補助金の上乗せに使えるかは、要綱に書かれていない（ページは「町に確認」と書いた）
+- [ ] 米子日吉津商工会の電話番号が、日吉津村のページ（0859-37-0085、マル経資金の相談窓口として）と調査の記録（0859-56-2700）で違う
 
 ## 島根県（2026-10-31作成。未投稿）
 
