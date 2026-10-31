@@ -88,7 +88,7 @@ excerpt: 阿南町のAI導入は、町の働き手の3人に1人がいる医療�
 |---|---|---|---|
 | [賃上げ環境整備促進補助金](https://www.pref.nagano.lg.jp/rodokoyo/tinnage/tinnagekannkyouseibi.html)（長野県） | 記録のシステムや端末の導入、職員の生成AI研修 | 事業場内最低賃金を50円以上引き上げることが条件。設備・委託費は3/4〜10/10、研修は[人材育成追加型](https://www.pref.nagano.lg.jp/rodokoyo/tinnage/jinzaiikusei.html)で10/10（上限22万〜30万円） | 2027年1月20日まで |
 | [副業・兼業人材活用促進事業補助金](https://www.pref.nagano.lg.jp/keieishien/sangyo/shokogyo/chusho/fukugyohojokin.html)（長野県） | 記録の仕組みを外部のIT人材と整える | プロ人材の報酬など初回8/10（上限50万円）。県のプロ人材拠点経由の契約が条件で、AIの補助ではない | 2026年12月28日まで（予算で終了あり） |
-| [デジタル化・AI導入補助金（通常枠）](https://it-shien.smrj.go.jp/)（国） | 登録された介護記録や勤怠管理のソフト | 1/2・上限450万円。クラウド利用料は最大2年分 | 6次は2026年10月30日（金）17時締切でした。7次の日付は未掲載 |
+| [デジタル化・AI導入補助金（通常枠）](https://it-shien.smrj.go.jp/)（国） | 登録された介護記録や勤怠管理のソフト | 1/2・上限450万円。クラウド利用料は最大2年分 | 6次は2026年10月30日（金）17時締切でした。7次は2026年12月1日（火）17時締切 |
 | [働き方改革推進支援助成金](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000120692.html)（国） | 夜勤・残業の時間を減らす取り組み | 成果の目標に応じた助成。PC・タブレット・スマートフォンは対象外 | 2026年11月30日まで（予算で早まることがある） |
 | [両立支援等助成金（育休中等業務代替支援コース）](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/shokuba_kosodate/ryouritsu01/index.html)（国） | 育休の職員の仕事を周りが代わるときの手当 | 定額の助成。AIなどのツールの費用は補助されない | 随時 |
 

@@ -82,7 +82,7 @@ excerpt: 豊丘村のAI導入は、民営従業者の44.8%が製造業の村の�
 
 - **長野県 [賃上げ環境整備促進補助金](https://www.pref.nagano.lg.jp/rodokoyo/tinnage/tinnagekannkyouseibi.html)**：事業場内最低賃金を50円以上引き上げることが条件。システム・機器・委託の基本型は3/4〜10/10（経費上限53.3万〜960万円）、研修の[人材育成追加型](https://www.pref.nagano.lg.jp/rodokoyo/tinnage/jinzaiikusei.html)は10/10（22万〜30万円）で、申請は2027年1月20日まで
 - **長野県 [副業・兼業人材活用促進事業補助金](https://www.pref.nagano.lg.jp/keieishien/sangyo/shokogyo/chusho/fukugyohojokin.html)**：県のプロフェッショナル人材戦略拠点を通じたIT人材などの報酬に初回8/10・上限50万円。AI向けの補助ではなく、2026年12月28日まで
-- **国 [デジタル化・AI導入補助金（通常枠）](https://it-shien.smrj.go.jp/)**：登録済みのソフトに1/2（条件で2/3）・上限450万円。6次は2026年10月30日（金）17時で締め切られ、7次の日付はまだ出ていない
+- **国 [デジタル化・AI導入補助金（通常枠）](https://it-shien.smrj.go.jp/)**：登録済みのソフトに1/2（条件で2/3）・上限450万円。6次は2026年10月30日（金）17時で締め切られ、7次の締切は2026年12月1日（火）17時（[北海道経済産業局のページ](https://www.hkd.meti.go.jp/hokcm/digital_ai2026/index.htm)）
 - **国 [人材開発支援助成金（事業展開等リスキリング支援コース）](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyufukin/d01-1.html)**：10時間以上の業務に直結する研修の経費の75%など（中小企業）。汎用的なプロンプト研修は対象外で、2027年3月31日まで
 
 商工会の研修助成は受講料の一部、県の人材育成追加型は最低賃金の引上げを前提にした全額補助です。国の制度の違いは[デジタル化・AI導入補助金の解説](/ai-bpo-subsidy-guide/)で確かめられます。

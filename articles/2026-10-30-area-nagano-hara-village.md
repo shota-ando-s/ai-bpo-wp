@@ -80,7 +80,7 @@ excerpt: 原村のAI導入は、介護事業所の記録の清書や家族・ケ
 |---|---|---|---|---|
 | [賃上げ環境整備促進補助金](https://www.pref.nagano.lg.jp/rodokoyo/tinnage/tinnagekannkyouseibi.html)・[人材育成追加型](https://www.pref.nagano.lg.jp/rodokoyo/tinnage/jinzaiikusei.html) | 長野県 | 基本型3/4〜10/10（経費上限53.3万〜960万円）、人材育成追加型10/10（22万〜30万円） | 記録用のタブレットとソフト、職員の生成AI活用の研修 | 事業場内最低賃金を50円以上上げることが条件。2027年1月20日まで |
 | [副業・兼業人材活用促進事業補助金](https://www.pref.nagano.lg.jp/keieishien/sangyo/shokogyo/chusho/fukugyohojokin.html) | 長野県 | 初回8/10、上限50万円 | 記録の電子化を手伝う社外の人材の報酬（ツールの費用は対象外） | プロ人材戦略拠点経由の契約。2026年12月28日まで |
-| [デジタル化・AI導入補助金（通常枠）](https://it-shien.smrj.go.jp/) | 国 | 1/2（条件により2/3）、上限450万円 | 登録された介護記録・会計のクラウド | 6次の受付は2026年10月30日（金）17時で終了。7次の日程は未掲載 |
+| [デジタル化・AI導入補助金（通常枠）](https://it-shien.smrj.go.jp/) | 国 | 1/2（条件により2/3）、上限450万円 | 登録された介護記録・会計のクラウド | 6次の受付は2026年10月30日（金）17時で終了。7次の受付は2026年12月1日（火）17時まで |
 | [両立支援等助成金（育休中等業務代替支援コース）](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/shokuba_kosodate/ryouritsu01/index.html) | 国（長野労働局） | 定額の助成（経費の補助ではない） | 育休中の職員の担当を周りが受け持つときの手当。業務の見直しも要件 | 随時。ソフトやAIの費用は対象外 |
 
 県の表と国の表に、村の補助への上乗せの仕組みは見つかっていません。介護職員の研修が10時間以上で業務に直結するなら、国の[人材開発支援助成金](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyufukin/d01-1.html)（事業展開等リスキリング支援コース、2027年3月31日まで）も候補ですが、一般的なプロンプトの研修は対象外です。比べ方は[AI導入に使える補助金の解説](/ai-bpo-subsidy-guide/)にまとめています。

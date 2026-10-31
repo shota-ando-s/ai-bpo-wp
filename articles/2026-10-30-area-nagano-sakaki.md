@@ -80,7 +80,7 @@ excerpt: 坂城町のAI導入は、民営従業者の72.8%が製造業という�
 |---|---|---|---|
 | [賃上げ環境整備促進補助金](https://www.pref.nagano.lg.jp/rodokoyo/tinnage/tinnagekannkyouseibi.html)（長野県） | 基本型はシステム・機器・委託費の3/4〜10/10、[人材育成追加型](https://www.pref.nagano.lg.jp/rodokoyo/tinnage/jinzaiikusei.html)は研修費の10/10（上限22万〜30万円） | 事業場内最低賃金を50円以上引き上げることが条件。追加型は基本型などの申請が前提 | 2027年1月20日 |
 | [副業・兼業人材活用促進事業補助金](https://www.pref.nagano.lg.jp/keieishien/sangyo/shokogyo/chusho/fukugyohojokin.html)（長野県） | 副業・兼業のプロ人材の報酬など、初回8/10・上限50万円 | 長野県プロフェッショナル人材戦略拠点を通じた契約が条件で、AIの補助ではない | 2026年12月28日（予算到達で終了） |
-| [デジタル化・AI導入補助金（通常枠）](https://it-shien.smrj.go.jp/)（国） | 登録済みのITツールとクラウド利用料（最大2年分）、1/2・上限450万円 | 登録されたIT導入支援事業者と共同で申請する | 6次は2026年10月30日（金）17時で締切。7次は日付未掲載 |
+| [デジタル化・AI導入補助金（通常枠）](https://it-shien.smrj.go.jp/)（国） | 登録済みのITツールとクラウド利用料（最大2年分）、1/2・上限450万円 | 登録されたIT導入支援事業者と共同で申請する | 6次は2026年10月30日（金）17時で締切。7次は2026年12月1日（火）17時で締切 |
 | [人材開発支援助成金（事業展開等リスキリング支援コース）](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyufukin/d01-1.html)（国） | 10時間以上の業務に直結する研修の経費の75%（中小企業） | 汎用的なプロンプトの研修は対象外。計画届は研修開始の1か月前まで | 2027年3月31日 |
 | [働き方改革推進支援助成金](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000120692.html)（国） | 労務管理ソフト・研修・外部の専門家など、成果目標に応じて25万〜150万円 | PC・タブレットは対象外 | 2026年11月30日 |
 

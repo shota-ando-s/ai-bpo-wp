@@ -83,7 +83,7 @@ excerpt: 松川村（北安曇郡）のAI導入は、村の民営従業者の15.
 | [賃上げ環境整備促進補助金](https://www.pref.nagano.lg.jp/rodokoyo/tinnage/tinnagekannkyouseibi.html)・[人材育成追加型](https://www.pref.nagano.lg.jp/rodokoyo/tinnage/jinzaiikusei.html) | 長野県 | 基本型3/4〜10/10（経費上限53.3万〜960万円）、追加型10/10（22万〜30万円） | 記録システムやタブレット、委託（基本型）、生成AIの研修（追加型）。事業場内最低賃金を50円以上引き上げることが条件 | 2027年1月20日 |
 | [人材開発支援助成金（事業展開等リスキリング支援コース）](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyufukin/d01-1.html) | 国（長野労働局） | 中小企業は経費の75%と賃金の一部 | 業務に直結する10時間以上のAI研修。汎用的なプロンプト研修は対象外 | 2027年3月31日 |
 | [両立支援等助成金（育休中等業務代替支援コース）](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/shokuba_kosodate/ryouritsu01/index.html) | 国 | 定額 | 育休中の職員の仕事を手順書にして周りが代わる体制づくり。ツールの費用は出ない | 随時 |
-| [デジタル化・AI導入補助金（通常枠）](https://it-shien.smrj.go.jp/) | 国 | 1/2（条件により2/3）、450万円まで | 登録された介護記録・生産管理のソフト | 6次の締切は2026年10月30日（金）17時でした。7次の日程は未掲載 |
+| [デジタル化・AI導入補助金（通常枠）](https://it-shien.smrj.go.jp/) | 国 | 1/2（条件により2/3）、450万円まで | 登録された介護記録・生産管理のソフト | 6次の締切は2026年10月30日（金）17時でした。7次は2026年12月1日（火）17時が締切です |
 
 県の追加型は、基本型か業務改善助成金の上乗せ補助を申請していることが前提です。10時間以上の研修なら国の助成金も候補になります。国の制度の違いは[デジタル化・AI導入補助金の解説](/ai-bpo-subsidy-guide/)をご覧ください。
 
