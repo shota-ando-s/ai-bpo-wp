@@ -26,7 +26,7 @@
 - [x] data/subsidies/yamanashi.yml、areas.yml、build_shindan_data.py（2026-10-31）
 - [x] 地域ガイド、area-todo.md、area-new-prefecture.md、memory（2026-10-31）
 - [x] チェック（check_article・area_uniq・試算の重なり・見出し行だけの表）（2026-10-31）
-- [ ] main に push（投稿・デプロイはユーザーが Mac で）
+- [x] main に push（2026-10-31、af2baa3。投稿・デプロイはユーザーが Mac で「投稿して」）
 
 ## 実績メモ
 - 2026-10-31 調査開始。stats・gov・subsidy・cases の4人を起動（同時4人まで）
@@ -59,3 +59,4 @@
 - W5 南アルプス市（約7,960字・77.7%・月106.75h/37.4万）・上野原市（7,020・85.3%・月74.25h/26.0万）・市川三郷町（6,680・90.9%・月13.25h/4.6万）・山中湖村（6,620・88.2%・月81.25h/20.4万）完了、ERROR 0〔山中湖村の村サイトは curl が回によって切断、WebFetch で開けた〕、WS0。**市町村27ページそろう**。W8（県ページ）起動
 - W8 県ページ（約18,600字・H2 11・FAQ 8）完了、ERROR 0、WS0。27ページの試算の重なり・見出し行だけの表なし。関東経済産業局の出典は Internet Archive が開けず e-Gov の経済産業省組織令に。県HPのAI検索は「導入すると発表」。全体の確認（親）: check_article 27ページ ERROR 0、area_uniq 全ページ 67.7〜93.4%、_calc.py OK〔島根県の記事12本を含めて〕、禁止語0（「応援」は DX推進応援隊だけ）
 - 共通ファイル（2026-10-31、pull のあと）: areas.yml に山梨県（27市町村）を足し、build 664制度〔653＋山梨11、他県は同じ〕。**島根県の shimane.yml は main にあるが areas.yml に島根の行がまだなく build が止まるので、build のときだけ shimane.yml を退けて戻した**（島根側が areas.yml に足したときに build し直す）。地域ガイド・area-todo.md・area-new-prefecture.md・memory を更新
+- 島根県の担当（中継）に、subsidies.json は shimane.yml を退けて build したので、島根の areas.yml の行を足したら build し直すよう連絡
