@@ -95,7 +95,7 @@ excerpt: 大熊町のAI導入は、数人で営む飲食店や小売店の予約
 
 大熊町の事業所が今申請できる福島県のデジタル化の補助は、「[福島県中小企業等生産性向上推進事業補助金](https://www.pref.fukushima.lg.jp/sec/32011b/seisanseikoujoh.html)」です。ソフトウェアの購入やクラウドサービスの使用料に2/3・30万〜200万円で、県の専門家派遣などの支援を受けた事業者は11月27日まで申請できます。補助額の下限が30万円なので、数人の店で小さなサービスを試すだけなら対象にならない場合があります。
 
-国の制度では、[デジタル化・AI導入補助金（通常枠）](https://it-shien.smrj.go.jp/)が登録済みのITツールの費用の1/2・上限450万円で、6次締切は10月30日です。店の残業を減らす取り組みには[働き方改革推進支援助成金](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000120692.html)（11月30日まで）、社員の研修には[人材開発支援助成金](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyufukin/d01-1.html)（2027年3月31日まで）があります。違いは[デジタル化・AI導入補助金の解説](/ai-bpo-subsidy-guide/)にまとめています。
+国の制度では、[デジタル化・AI導入補助金（通常枠）](https://it-shien.smrj.go.jp/)が登録済みのITツールの費用の1/2・上限450万円で、6次は10月30日で締め切り、次の7次の締切は12月1日です。店の残業を減らす取り組みには[働き方改革推進支援助成金](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000120692.html)（11月30日まで）、社員の研修には[人材開発支援助成金](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyufukin/d01-1.html)（2027年3月31日まで）があります。違いは[デジタル化・AI導入補助金の解説](/ai-bpo-subsidy-guide/)にまとめています。
 
 ## 大熊町の町役場はAIを使っている？これまでの実証
 
