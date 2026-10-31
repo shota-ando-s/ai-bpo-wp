@@ -30,3 +30,4 @@
 
 ## 実績メモ
 - 2026-10-31 調査開始。stats・gov・subsidy・cases の4人を起動（同時4人まで）
+- 2026-10-31 別のセッションが島根県（19市町村）を同時に作っていると連絡あり。共通ファイル（areas.yml・地域ガイド・area_uniq.py・area-todo.md・area-new-prefecture.md・memory・subsidies.json）は最後にまとめて、直す直前に `git pull --rebase origin main`。衝突は両方残す、subsidies.json は build で作り直す、force push しない。slug は島根側が足したものとも比べる（area_uniq.py の yamanashi はこの連絡の前に push 済み）
