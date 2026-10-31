@@ -124,7 +124,7 @@ excerpt: 徳島市のAI導入は、県内の民営従業者の42.4%が集まる�
 
 | やりたいこと | 使える制度 | 補助の大きさ | 期限 |
 |---|---|---|---|
-| AIツール・業務システムを入れる | 国の[デジタル化・AI導入補助金（通常枠）](https://it-shien.smrj.go.jp/) | 450万円まで・1/2 | 6次は2026/10/30 17時 |
+| AIツール・業務システムを入れる | 国の[デジタル化・AI導入補助金（通常枠）](https://it-shien.smrj.go.jp/) | 450万円まで・1/2 | 7次は2026/12/1 17時 |
 | 社員にAI研修を受けさせる | 国の[人材開発支援助成金（事業展開等リスキリング支援コース）](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyufukin/d01-1.html) | 中小企業は経費の75%＋賃金助成 | 2027/3/31 |
 | 残業を減らすソフトを入れる | 国の[働き方改革推進支援助成金](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000120692.html) | 最大150万円・3/4 | 2026/11/30 |
 | AIの専門家を副業で迎える | 徳島県の[副業・兼業プロフェッショナル人材活用促進支援費補助金](https://www.pref.tokushima.lg.jp/jigyoshanokata/sangyo/shushokushien/7312529/) | 50万円まで・8/10 | 2027/2/26必着 |
