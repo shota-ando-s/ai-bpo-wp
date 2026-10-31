@@ -37,7 +37,7 @@
 - [x] data/subsidies/nagano.yml、areas.yml、build_shindan_data.py（2026-10-30、D4）
 - [x] 地域ガイド、area-todo.md、area-new-prefecture.md（2026-10-30）
 - [x] チェック（check_article・area_uniq・試算の重なり・見出し行だけの表）（2026-10-30）
-- [ ] main への反映・投稿・デプロイ・画像の確認（ユーザーの了承を得てから）
+- [x] main への反映・投稿・デプロイ・画像の確認（2026-10-31。ユーザーの了承のあと main に早送りで反映。origin/main の10/31の締切の一括修正をマージし、国の補助金の7次締切〔12/1〕を78ページに入れて更新した）
 
 ## 実績メモ
 - 2026-10-30 調査開始
