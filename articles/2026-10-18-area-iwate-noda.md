@@ -81,7 +81,7 @@ excerpt: 野田村のAI導入は、民営従業者の22.3%が働く卸売・小�
 
 | 費用の種類 | 国の制度 | 補助の目安 | 締切 |
 |---|---|---|---|
-| FAX注文の読み取りや在庫・売上の管理ソフト（登録ツール） | [デジタル化・AI導入補助金（通常枠）](https://it-shien.smrj.go.jp/) | 1/2、上限450万円 | **6次締切 2026年10月30日17時** |
+| FAX注文の読み取りや在庫・売上の管理ソフト（登録ツール） | [デジタル化・AI導入補助金（通常枠）](https://it-shien.smrj.go.jp/) | 1/2、上限450万円 | **7次締切 2026年12月1日17時** |
 | 村を訪れる人に向けた通販ページや店のチラシ | [小規模事業者持続化補助金（商工会地区）](https://official.jizokukanb.com/) | 公募要領で確認 | 第20回 2026年11月5日〜12月15日 |
 | 店主と仕入れ担当が受ける生成AIの研修（10時間以上） | [人材開発支援助成金（事業展開等リスキリング支援コース）](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyufukin/d01-1.html) | 中小企業は研修経費の75% | 2027年3月31日まで |
 
@@ -140,7 +140,7 @@ AIの導入やシステム開発は、掲載している会社に直接ご相談
 
 ### 野田村にAI導入の補助金はありますか？
 
-AI専用の村の補助金はありませんが、新分野進出の機械・器具には[地域新事業チャレンジ応援補助金](https://www.vill.noda.iwate.jp/soshiki/sangyoshinkoka/suisanshokohan/chushokigyoshien/680.html)が使えます。既存業務のAIには国のデジタル化・AI導入補助金（6次は2026年10月30日締切）が候補です。
+AI専用の村の補助金はありませんが、新分野進出の機械・器具には[地域新事業チャレンジ応援補助金](https://www.vill.noda.iwate.jp/soshiki/sangyoshinkoka/suisanshokohan/chushokigyoshien/680.html)が使えます。既存業務のAIには国のデジタル化・AI導入補助金（7次は2026年12月1日締切）が候補です。
 
 ### 野田村の村役場はAIを使っていますか？
 

@@ -295,12 +295,12 @@
   targets: {efficiency: △, consulting: ×, training: ×}
   expenses: 開業準備に関する経費。設備費（事業に必要な機械器具・備品類の購入費）、通信運搬費、宣伝広告費、印刷製本費、委託費（ホームページの制作等）、賃金、事業所等の改修費など。パソコン等著しく汎用性の高い備品で使途が明確でないものは対象外
   conditions: 起業の日に町内に住所がある（予定を含む）。令和9年3月末までに町内で起業が確実で、5年以上継続する計画がある。町の特定創業支援事業の証明を受けている。町が定める補助対象業種であること。本人・世帯が過去に本事業の補助を受けていない。町税等の滞納なし。応募前に町へ事前相談
-  period: {status: open, start: 2026-05-11, end: 2026-10-30}
+  period: {status: closed, start: 2026-05-11, end: 2026-10-30}
   next_expected: 2027-05
   url: https://www.town.kaiyo.lg.jp/docs/2023040700035/
-  checked: 2026-10-17
+  checked: 2026-10-31
   confidence: official
-  note: 募集は2事業程度・先着順で審査。補助額の上限は企画提案の書類審査で決める（100万円以内）。補助対象期間は交付決定日から令和9年3月末まで。応募手引き https://www.town.kaiyo.lg.jp/docs/2023040700035/file_contents/furusatosouzoukigyoushien8.pdf 。締切が近く（2026-10-30）、予算・採択枠の残りは非公表。窓口は産業振興課 0884-73-4161。next_expectedは今年度の時期からの推測
+  note: 募集は2事業程度・先着順で審査。補助額の上限は企画提案の書類審査で決める（100万円以内）。補助対象期間は交付決定日から令和9年3月末まで。応募手引き https://www.town.kaiyo.lg.jp/docs/2023040700035/file_contents/furusatosouzoukigyoushien8.pdf 。締切が近く（2026-10-30）、予算・採択枠の残りは非公表。窓口は産業振興課 0884-73-4161。next_expectedは今年度の時期からの推測 2026-10-31：締切を過ぎたので closed にした。次の募集の有無は未確認（この日は公式ページを開けなかった）。
 
 # ---- 美波町 ----
 - id: minami-kigyo

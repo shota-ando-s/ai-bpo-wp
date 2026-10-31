@@ -84,7 +84,7 @@ excerpt: 多度津町のAI導入は、民営従業者の44.9%が製造業で働�
 
 多度津町の産業振興支援補助事業は、5つのメニューから年度内に1つだけ選んで申請します。町内で3年以上事業を営む中小企業者が対象で、事業を始める前に申請します。対象経費の細目は町のページになく、生成AIサービスの利用料が対象になるかは、産業課（0877-33-1113）に事前に確認してください。
 
-国の制度では、[デジタル化・AI導入補助金（通常枠）](https://it-shien.smrj.go.jp/)（450万円まで・1/2、6次締切2026年10月30日17時）が使えます。ほかに[人材開発支援助成金](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyufukin/d01-1.html)（AI研修の経費の75%、2027年3月31日まで）、[中小企業省力化投資補助金](https://shoryokuka.smrj.go.jp/)のカタログ注文型（随時）も候補です。小規模事業者は、多度津商工会議所を通じて[小規模事業者持続化補助金](https://r6.jizokukahojokin.info/)（第20回、11月5日〜12月15日）も検討できます。
+国の制度では、[デジタル化・AI導入補助金（通常枠）](https://it-shien.smrj.go.jp/)（450万円まで・1/2、7次締切2026年12月1日17時）が使えます。ほかに[人材開発支援助成金](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyufukin/d01-1.html)（AI研修の経費の75%、2027年3月31日まで）、[中小企業省力化投資補助金](https://shoryokuka.smrj.go.jp/)のカタログ注文型（随時）も候補です。小規模事業者は、多度津商工会議所を通じて[小規模事業者持続化補助金](https://r6.jizokukahojokin.info/)（第20回、11月5日〜12月15日）も検討できます。
 
 香川県の受付中の「[香川発スタートアップの製品等導入利用支援補助金](https://www.pref.kagawa.lg.jp/sangyo/shinki/startuphanro.html)」は、県のカタログの16製品だけが対象で、汎用のAIツールには使えません。国の制度の流れは[デジタル化・AI導入補助金の解説](/ai-bpo-subsidy-guide/)で説明しています。
 

@@ -11,12 +11,12 @@
   targets: {efficiency: ○, consulting: ×, training: ×}
   expenses: DXツール購入費、サブスク料（最大1年分）、導入経費（総額の1/2まで）。一般的なコンサルと研修、フルオーダーの開発は対象外
   conditions: 県内に本店がある。交付決定前に着手しない。審査制
-  period: {status: open, start: 2026-10-01, end: 2026-10-30}
+  period: {status: closed, start: 2026-10-01, end: 2026-10-30}
   next_expected: 2027-07
   url: https://www.pref.saitama.lg.jp/a0803/dx_jigyousyashien/dx_index.html
-  checked: 2026-10-14
+  checked: 2026-10-31
   confidence: official
-  note: 締切は10/30の16時。AIツールが「DXツール」に当たるかは事務局に確認が必要
+  note: 締切は10/30の16時。AIツールが「DXツール」に当たるかは事務局に確認が必要 2026-10-31：締切を過ぎたので closed にした。次の募集の有無は未確認（この日は公式ページを開けなかった）。
 
 - id: saitama-city-dx
   name: DX推進補助金

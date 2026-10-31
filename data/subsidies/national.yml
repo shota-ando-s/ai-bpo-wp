@@ -12,12 +12,12 @@
   targets: {efficiency: ○, consulting: △, training: △}
   expenses: ソフトウェア、クラウド利用料（最大2年分）、導入・活用コンサル、導入研修、保守（役務の合計は200万円まで）
   conditions: 登録されたIT導入支援事業者と共同で申請。登録済みのITツールに限る。7次以降は給与支給総額の要件が追加
-  period: {status: open, end: 2026-10-30}
+  period: {status: open, end: 2026-12-01}
   next_expected: 2027-03
   url: https://it-shien.smrj.go.jp/
-  checked: 2026-10-16
+  checked: 2026-10-31
   confidence: official
-  note: ふえんは事業者登録の準備中で、対応は2027年度の公募から。endは6次締切（10/30 17時）。7次は制度変更（給与支給総額の要件追加）のうえ公募予定で、日付は未掲載（2026-10-16確認）
+  note: ふえんは事業者登録の準備中で、対応は2027年度の公募から。6次は2026-10-30 17時で締切。endは7次締切（2026-12-01）。北海道経済産業局のページ https://www.hkd.meti.go.jp/hokcm/digital_ai2026/index.htm に「7次締切:2026年12月1日(火)」（2026-10-31に検索の抜粋で確認。事務局サイトはこの日は開けなかった）。7次は制度変更（給与支給総額の要件追加）のうえ公募（2026-10-16確認）
 
 - id: hatarakikata
   name: 働き方改革推進支援助成金（労働時間短縮・年休促進支援コース）
@@ -94,10 +94,11 @@
   targets: {efficiency: △, consulting: △, training: ×}
   expenses: 機械装置・システム構築、専門家経費（総額の1/5まで）、補助事業専用のクラウド利用費
   conditions: 新製品・新サービスの開発か新市場への進出が必要。単なる業務効率化は対象外
-  period: {status: open, start: 2026-09-30, end: 2026-10-30}
+  period: {status: closed, start: 2026-09-30, end: 2026-10-30}
   url: https://shinjigyou-monodukuri.smrj.go.jp/
-  checked: 2026-10-14
+  checked: 2026-10-31
   confidence: official
+  note: 2026-10-31：締切を過ぎたので closed にした。次の募集の有無は未確認（この日は公式ページを開けなかった）。
 
 - id: shoryokuka-ippan
   name: 中小企業省力化投資補助金（一般型）

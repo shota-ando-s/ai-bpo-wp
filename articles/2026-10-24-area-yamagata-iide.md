@@ -90,7 +90,7 @@ excerpt: 飯豊町のAI導入は、民営従業者の44.7%が製造業で働く�
 
 | 国の制度 | 締切 | 飯豊町の工場での使い方 | 補助の中身 |
 |---|---|---|---|
-| [デジタル化・AI導入補助金（通常枠）](https://it-shien.smrj.go.jp/) | 6次は **10月30日17時** | 品質記録や生産管理のクラウドの導入 | 事務局に登録されたITツールの費用の1/2（上限450万円） |
+| [デジタル化・AI導入補助金（通常枠）](https://it-shien.smrj.go.jp/) | 7次は **12月1日17時** | 品質記録や生産管理のクラウドの導入 | 事務局に登録されたITツールの費用の1/2（上限450万円） |
 | [働き方改革推進支援助成金](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000120692.html) | 11月30日 | 交代勤務や検査工程の残業を減らす取り組み | 成果目標の達成に応じ25万〜150万円（3/4） |
 | [人材開発支援助成金（事業展開等リスキリング支援コース）](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyufukin/d01-1.html) | 訓練前に計画、終了後に支給申請（下記） | 生産技術の社員がAIの使い方を学ぶ研修 | 10時間以上のOFF-JT等の訓練経費の75%（中小企業。上限・要件あり） |
 
@@ -156,7 +156,7 @@ AIの導入やシステム開発は、掲載している会社に直接ご相談
 
 ### 飯豊町にAI導入の補助金はありますか？
 
-2026年10月24日時点で申請できる町の制度はありません。デジタル化推進費は10月15日の第3次で終了しました（[飯豊町](https://www.town.iide.yamagata.jp/012/r8chuushoukigyoushinkoujigyouhihojokin3.html)）。国の[デジタル化・AI導入補助金](https://it-shien.smrj.go.jp/)は10月30日が6次締切です。
+2026年10月24日時点で申請できる町の制度はありません。デジタル化推進費は10月15日の第3次で終了しました（[飯豊町](https://www.town.iide.yamagata.jp/012/r8chuushoukigyoushinkoujigyouhihojokin3.html)）。国の[デジタル化・AI導入補助金](https://it-shien.smrj.go.jp/)は12月1日が7次締切です。
 
 ### 飯豊町の町役場はAIを使っていますか？
 

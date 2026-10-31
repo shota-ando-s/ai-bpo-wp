@@ -20,7 +20,7 @@ argument-hint: "[--no-deploy]"
    ```
    fast-forward できなければ止まって、ユーザーに状況を伝える。
 2. `git status --short -- articles themes plugins data` でコミットしていない変更を見る。あれば、変更の中身を見てコミットする。`data/subsidies/*.yml` が変わっていれば、先に `python3 scripts/build_shindan_data.py` を実行し、JSON も一緒にコミットする。
-3. 初回だけ（`.post_state.json` がないとき）: 2026-10-27 の `07d806f`（福井県の公開を記録）までは投稿済み。`python3 scripts/post_changed.py --init 07d806f` で記録する。`07d806f` が履歴にないときは、ユーザーにどのコミットまで投稿済みかを聞く。
+3. 初回だけ（`.post_state.json` がないとき）: 2026-10-30 の `e4e56bd`（岐阜県の投稿・デプロイと画像の確認を記録）までは投稿済み。`python3 scripts/post_changed.py --init e4e56bd` で記録する。`e4e56bd` が履歴にないときは、ユーザーにどのコミットまで投稿済みかを聞く。
 4. 対象を確かめる。
    ```bash
    python3 scripts/post_changed.py --dry-run
