@@ -9,7 +9,7 @@
 - 府中市 `fuchu-city`・府中町 `fuchu-town`、広島市 `hiroshima-city`（区のページは作らない）
 - 他県と同じ slug: 三原市 mihara（高知県三原村）・三次市 miyoshi（徳島県三好市）。投稿後に確かめる項目を area-todo に残す
 - 試算は「月の削減時間・時間換算額」だけの形。山梨・島根・鳥取（と push されていれば山口）の _calc.py の PLAN と照合する
-- scripts/area_uniq.py の県の選択肢に hiroshima を足した（未コミット。共通ファイルと一緒にコミット）
+- scripts/area_uniq.py の県の選択肢に hiroshima を足す差分は scratchpad/area_uniq.patch に退避（共通ファイルは最後に直す取り決め）。**執筆担当を起動する前に git apply する**
 
 ## 調査の分担と WebSearch の配分
 | 担当 | 書くファイル | WebSearch |
