@@ -2,8 +2,8 @@
 
 地域ページで、調べきれずに残っている作業。終わったら行ごと消すか、`[x]` にして日付を書く。
 
-- 調査データ: `data/area/kagawa/`・`data/area/tokushima/`・`data/area/kochi/`・`data/area/aomori/`・`data/area/iwate/`・`data/area/akita/`・`data/area/miyagi/`・`data/area/yamagata/`・`data/area/fukushima/`・`data/area/niigata/`・`data/area/toyama/`・`data/area/ishikawa/`・`data/area/fukui/`・`data/area/gifu/`・`data/area/nagano/`・`data/area/yamanashi/`・`data/area/shimane/`・`data/area/tottori/`（2026-10-17〜27の調査結果。`stats.md` `gov_ai.md` `cases.md` `companies.json` `subsidy_*.yml` など）
-- 執筆仕様: `docs/area-writing-spec-kagawa.md`・`docs/area-writing-spec-tokushima.md`・`docs/area-writing-spec-kochi.md`・`docs/area-writing-spec-aomori.md`・`docs/area-writing-spec-iwate.md`・`docs/area-writing-spec-akita.md`・`docs/area-writing-spec-miyagi.md`・`docs/area-writing-spec-yamagata.md`・`docs/area-writing-spec-fukushima.md`・`docs/area-writing-spec-niigata.md`・`docs/area-writing-spec-toyama.md`・`docs/area-writing-spec-ishikawa.md`・`docs/area-writing-spec-fukui.md`・`docs/area-writing-spec-gifu.md`・`docs/area-writing-spec-nagano.md`・`docs/area-writing-spec-yamanashi.md`・`docs/area-writing-spec-shimane.md`・`docs/area-writing-spec-tottori.md`
+- 調査データ: `data/area/kagawa/`・`data/area/tokushima/`・`data/area/kochi/`・`data/area/aomori/`・`data/area/iwate/`・`data/area/akita/`・`data/area/miyagi/`・`data/area/yamagata/`・`data/area/fukushima/`・`data/area/niigata/`・`data/area/toyama/`・`data/area/ishikawa/`・`data/area/fukui/`・`data/area/gifu/`・`data/area/nagano/`・`data/area/yamanashi/`・`data/area/shimane/`・`data/area/tottori/`・`data/area/hiroshima/`（2026-10-17〜27の調査結果。`stats.md` `gov_ai.md` `cases.md` `companies.json` `subsidy_*.yml` など）
+- 執筆仕様: `docs/area-writing-spec-kagawa.md`・`docs/area-writing-spec-tokushima.md`・`docs/area-writing-spec-kochi.md`・`docs/area-writing-spec-aomori.md`・`docs/area-writing-spec-iwate.md`・`docs/area-writing-spec-akita.md`・`docs/area-writing-spec-miyagi.md`・`docs/area-writing-spec-yamagata.md`・`docs/area-writing-spec-fukushima.md`・`docs/area-writing-spec-niigata.md`・`docs/area-writing-spec-toyama.md`・`docs/area-writing-spec-ishikawa.md`・`docs/area-writing-spec-fukui.md`・`docs/area-writing-spec-gifu.md`・`docs/area-writing-spec-nagano.md`・`docs/area-writing-spec-yamanashi.md`・`docs/area-writing-spec-shimane.md`・`docs/area-writing-spec-tottori.md`・`docs/area-writing-spec-hiroshima.md`
 - ページを直したら `python3 post.py articles/<file>.md` で更新する（画像は作り直されない）。補助金のYAMLを直したら `python3 scripts/build_shindan_data.py` → コミット → `./deploy.sh`
 
 ## 全県共通（2026-10-31の締切の一括修正のあと）
@@ -17,6 +17,33 @@
 - [ ] 潟上市「稼げる力創出補助金」の「次の受付は10月末」（潟上市ページ・秋田県ページ98行）が締切か開始か分からず直していない
 - [ ] 開催日を過ぎたセミナーが未来形のまま（加茂市 143・183行の加茂商工会議所のセミナー〔10/26〕、秋田の井川・由利本荘・横手・潟上の研修〔10/22・10/27〕など）
 - [ ] 解説記事 `articles/2026-05-24-ai-bpo-it-hojo.md` は1次（5/12）の頃の内容のまま。2026年度の制度と照合して直す（企画書12章の宿題と同じ）
+
+## 広島県（2026-11-01作成。未投稿）
+
+中国地方で3県目（**経済産業局は中国経済産業局、農政局は中国四国農政局〔広島県拠点〕、財務局は中国財務局〔本局が広島市。広島県に財務事務所はない〕、労働局は広島労働局、運輸局は中国運輸局**）。県ページと23市町（14市9町、村はない）。広島市は政令指定都市だが1ページだけ（区のページは作らない）。調査データは `data/area/hiroshima/`、執筆仕様は `docs/area-writing-spec-hiroshima.md`、作業の記録は `data/area/hiroshima/_progress.md`。試算の割り当ては `data/area/hiroshima/_calc.py`（既存608本と山梨・島根・鳥取・山口の割り当てと重ならない）。同じ日に山口県を別のセッションが作った。クラウドのセッションで作り、投稿・デプロイはしていない。
+
+### 投稿の前後にすること
+
+- [ ] Mac で「投稿して」（post スキル。県ページを先に投稿してから23市町、地域ガイド、`./deploy.sh` で補助金診断の JSON を反映）
+- [ ] **府中市 `fuchu-city` と府中町 `fuchu-town`** が別々のページになっていることを確かめる。広島市は `hiroshima-city`（県ページ `/area/hiroshima/` と別）
+- [ ] 三原市 `mihara`（高知県三原村）・三次市 `miyoshi`（徳島県三好市）は他県のページと同じ slug。投稿後に、それぞれ別のページになっている（他県のページを上書きしていない）ことを確かめる（朝日町・かほく市と同じ）
+- [ ] 画像の確認（地図の判定・目視）
+- [ ] 締切のある制度・講座を書いたページは、締切後に直す: 国のデジタル化・AI導入補助金 7次（12/1、全県共通の項目と同じ）、呉市の中小企業等賃上げ応援奨励金（12/28）と呉市AI等セミナー（11/10・12/4）、県の生成AI活用事例共有会（11/20 オンライン・12/11 福山・2027-01-15 広島）、広島商工会議所のセミナー（12/8、会員限定）、県の賃上げ環境整備支援事業補助金（2027-02-26）、東広島市の人材育成等支援事業補助金（2027-02-26）、福山市の経営環境対応支援事業補助金（2027-03-12）、県のプロ人材確保支援補助金（2027-03-24）、大竹市の中小企業人材育成事業（受講後 2027-03-31 までに申請）
+- [ ] ひろしまAIサンドボックス第1期・第2期の成果が公表されたら、実証先の市町（広島市・尾道市・福山市・三原市・三次市など）の H2 3 に足す。福山市 AIビジネスキャンプ2026年度（成果発表 2027年3月）の資料が出たら福山市の H2 3 に足す。県の生成AI活用事例共有会（12/11・1/15）で県内の事例が出たら県ページ・該当の市町に足す
+
+### 調べきれていないこと
+
+- [ ] **社人研の令和5年推計はクラウドから 403 で取れなかった**（山梨・鳥取と同じ）。生産年齢人口は令和7年国勢調査の15〜64歳（不詳補完値）の2020→2025年の増減で書いた。Mac で xlsx を取れば、23市町の2050年の値を足せる
+- [ ] **県の推計人口は令和2年国勢調査が基準のまま**（2026年9月1日現在）。10月1日現在（令和7年国調基準に遡及改定の予定）が11月下旬に出たら、県ページ・市町の人口の文を見直す
+- [ ] **ひろしま産業振興機構（www.hiwave.or.jp）のサイトがクラウドから 403**。DX導入実証事業助成金の受付状況（第2次の有無）、11/18 の AI 活用セミナー、機構の事例集は確かめていない（記事では書いていないか、secondary の扱い）。Mac で確かめる
+- [ ] **中国経済産業局のサイトが 403**（島根・鳥取と同じ）。局の事例集・DXセレクションの広島県の事例は確かめていない
+- [ ] 江田島市の公式サイトが調査から執筆までずっと緊急メンテナンスで閲覧停止。市独自の補助金・DX計画は「確かめられなかった」と書いた。再開したら確かめて江田島市のページを直す
+- [ ] 広島県情報産業協会（HIA）のサイトが 2026-10-22 から緊急メンテナンスで、会員名簿を見られなかった。地元IT企業の本表は5市16社（広島市8・福山市5・呉市・尾道市・大竹市各1）で、県の就活サイト「Go！ひろしま」から探した（広島市は38件中約15社だけ確認）。再開したら名簿で足す。人数未確認の会社（アクトシステムズ・コトブキソリューション〔503〕・山陽情報システム・PrimaMateria など）は入れていない
+- [ ] 商工会議所13所の電話番号は県の2020年4月の資料の値で、広島・三次以外は確かめていない（記事では名前だけ書いたページが多い）。呉・東広島・府中・廿日市の会議所のサイトは開けなかった
+- [ ] **県内の事例**: 数値つきは県の DX 取組事例サイト（dx-hiroshima.jp）の4件と、尾道さつき会（県の介護DXモデル事業）・晃祐堂（ベンダーの精度）・大崎上島町のレモン（農研機構の実証）。オオケンは中小企業の基準を超える。造船・デニム・家具・かき・建設・運送の県内の AI 事例は0件
+- [ ] 県外の未使用で数値つきの事例は3件（協和製作所→呉市、フォーバンド→府中市、朝日共販→江田島市）。コクネ製作は「136%増」の解釈が出典で決まらず使っていない。ほかのページの H2 4 は「見つからなかった」と短く書いた
+- [ ] 熊野筆・府中家具・デニムなどの品目名は市町別の統計にない。熊野町は町のサイトで筆の伝統的工芸品の指定を確かめてタイトルに入れた。ほかは公式資料で確かめたものだけ書いた
+- [ ] 日本製鉄の呉地区は2023年9月末に全設備を休止（2026-08-28 跡地を防衛省へ売却の契約）。経済センサス2021の呉市の鉄鋼2,003人は休止前の値と書いた。2026年の経済センサスの結果が出たら呉市のページを見直す
 
 ## 鳥取県（2026-10-31作成。未投稿）
 
