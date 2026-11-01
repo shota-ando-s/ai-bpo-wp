@@ -29,8 +29,8 @@
 - [x] 記事 24本（県1＋市町23）
 - [x] data/subsidies/hiroshima.yml・areas.yml・build
 - [x] 地域ガイド（中国地方の段）・area-todo.md・area-new-prefecture.md・memory
-- [ ] チェック
-- [ ] main に push
+- [x] チェック（check_article 24ページ ERROR 0・area_uniq 全ページ83.8〜95.3%・試算の重なりなし・見出し行だけの表なし）
+- [x] main に push（投稿・デプロイはユーザーが Mac で「投稿して」）
 
 ## 実績メモ
 - 2026-11-01 ネットワーク確認（pref.hiroshima.lg.jp・soumu.go.jp とも開けた）。調査4人を起動（stats・gov・subsidy・cases）
