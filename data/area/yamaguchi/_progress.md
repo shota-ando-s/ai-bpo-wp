@@ -33,3 +33,5 @@
 
 ## 実績メモ
 - 2026-11-01 ネットワーク確認（pref.yamaguchi.lg.jp・soumu.go.jp とも開けた）。HEAD が detached だったので main を origin/main に合わせた。調査4人を起動（stats・gov・subsidy・cases）
+- 中継の連絡（鳥取県のセッション）: 鳥取は 6bf32a4 で作業終了。tottori/_calc.py の PLAN 確定版あり（月58.75〜185h）。エーアンドエス（→北栄町）・グリーンハートティーアンドケイ（→琴浦町）は鳥取で詳述済み→山口では使わない
+- 中継の連絡: **広島県（23市町）のセッションが同じ main で開始**。広島側が yamaguchi/_calc.py の PLAN と照合するので、PLAN が固まったら早めに push する。県外事例の割り当ても広島と重ならないよう、山口で使う事例を早めに記録・push する
