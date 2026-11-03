@@ -23,13 +23,13 @@
 
 ## 状態
 - [x] _brief.md・wages.md（2026-11-03）
-- [ ] 調査（6担当）
-- [ ] 執筆仕様 docs/area-writing-spec-okayama.md
-- [ ] 記事 28本（県1＋市町村27）
-- [ ] data/subsidies/okayama.yml・areas.yml・build
-- [ ] 地域ガイド（中国地方の段）・area-todo.md・area-new-prefecture.md・memory
-- [ ] チェック
-- [ ] main に push
+- [x] 調査（6担当＋事例の補充1、WebSearch 100回）
+- [x] 執筆仕様 docs/area-writing-spec-okayama.md
+- [x] 記事 28本（県1＋市町村27）
+- [x] data/subsidies/okayama.yml・areas.yml・build
+- [x] 地域ガイド（中国地方の段）・area-todo.md・area-new-prefecture.md・memory
+- [x] チェック（check_article 28ページ ERROR 0・area_uniq 全ページ77.4〜95.1%・試算の重なりなし・見出し行だけの表なし）
+- [x] main に push（投稿・デプロイはユーザーが Mac で「投稿して」）
 
 ## 実績メモ
 - 2026-11-03 ネットワーク確認（pref.okayama.jp・soumu.go.jp とも開けた）。調査4人を起動（stats・gov・subsidy・cases）
