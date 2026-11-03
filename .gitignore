@@ -47,3 +47,6 @@ themes/twenty*/
 
 # 一括投稿の記録（scripts/post_changed.py）
 .post_state.json
+
+# Python のキャッシュ
+__pycache__/
