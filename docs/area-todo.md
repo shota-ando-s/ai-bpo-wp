@@ -2,8 +2,8 @@
 
 地域ページで、調べきれずに残っている作業。終わったら行ごと消すか、`[x]` にして日付を書く。
 
-- 調査データ: `data/area/kagawa/`・`data/area/tokushima/`・`data/area/kochi/`・`data/area/aomori/`・`data/area/iwate/`・`data/area/akita/`・`data/area/miyagi/`・`data/area/yamagata/`・`data/area/fukushima/`・`data/area/niigata/`・`data/area/toyama/`・`data/area/ishikawa/`・`data/area/fukui/`・`data/area/gifu/`・`data/area/nagano/`・`data/area/yamanashi/`・`data/area/shimane/`・`data/area/tottori/`・`data/area/hiroshima/`（2026-10-17〜27の調査結果。`stats.md` `gov_ai.md` `cases.md` `companies.json` `subsidy_*.yml` など）
-- 執筆仕様: `docs/area-writing-spec-kagawa.md`・`docs/area-writing-spec-tokushima.md`・`docs/area-writing-spec-kochi.md`・`docs/area-writing-spec-aomori.md`・`docs/area-writing-spec-iwate.md`・`docs/area-writing-spec-akita.md`・`docs/area-writing-spec-miyagi.md`・`docs/area-writing-spec-yamagata.md`・`docs/area-writing-spec-fukushima.md`・`docs/area-writing-spec-niigata.md`・`docs/area-writing-spec-toyama.md`・`docs/area-writing-spec-ishikawa.md`・`docs/area-writing-spec-fukui.md`・`docs/area-writing-spec-gifu.md`・`docs/area-writing-spec-nagano.md`・`docs/area-writing-spec-yamanashi.md`・`docs/area-writing-spec-shimane.md`・`docs/area-writing-spec-tottori.md`・`docs/area-writing-spec-hiroshima.md`
+- 調査データ: `data/area/kagawa/`・`data/area/tokushima/`・`data/area/kochi/`・`data/area/aomori/`・`data/area/iwate/`・`data/area/akita/`・`data/area/miyagi/`・`data/area/yamagata/`・`data/area/fukushima/`・`data/area/niigata/`・`data/area/toyama/`・`data/area/ishikawa/`・`data/area/fukui/`・`data/area/gifu/`・`data/area/nagano/`・`data/area/yamanashi/`・`data/area/shimane/`・`data/area/tottori/`・`data/area/hiroshima/`・`data/area/yamaguchi/`・`data/area/okayama/`（2026-10-17〜27の調査結果。`stats.md` `gov_ai.md` `cases.md` `companies.json` `subsidy_*.yml` など）
+- 執筆仕様: `docs/area-writing-spec-kagawa.md`・`docs/area-writing-spec-tokushima.md`・`docs/area-writing-spec-kochi.md`・`docs/area-writing-spec-aomori.md`・`docs/area-writing-spec-iwate.md`・`docs/area-writing-spec-akita.md`・`docs/area-writing-spec-miyagi.md`・`docs/area-writing-spec-yamagata.md`・`docs/area-writing-spec-fukushima.md`・`docs/area-writing-spec-niigata.md`・`docs/area-writing-spec-toyama.md`・`docs/area-writing-spec-ishikawa.md`・`docs/area-writing-spec-fukui.md`・`docs/area-writing-spec-gifu.md`・`docs/area-writing-spec-nagano.md`・`docs/area-writing-spec-yamanashi.md`・`docs/area-writing-spec-shimane.md`・`docs/area-writing-spec-tottori.md`・`docs/area-writing-spec-hiroshima.md`・`docs/area-writing-spec-yamaguchi.md`・`docs/area-writing-spec-okayama.md`
 - ページを直したら `python3 post.py articles/<file>.md` で更新する（画像は作り直されない）。補助金のYAMLを直したら `python3 scripts/build_shindan_data.py` → コミット → `./deploy.sh`
 
 ## 全県共通（2026-10-31の締切の一括修正のあと）
@@ -17,6 +17,33 @@
 - [ ] 潟上市「稼げる力創出補助金」の「次の受付は10月末」（潟上市ページ・秋田県ページ98行）が締切か開始か分からず直していない
 - [ ] 開催日を過ぎたセミナーが未来形のまま（加茂市 143・183行の加茂商工会議所のセミナー〔10/26〕、秋田の井川・由利本荘・横手・潟上の研修〔10/22・10/27〕など）
 - [ ] 解説記事 `articles/2026-05-24-ai-bpo-it-hojo.md` は1次（5/12）の頃の内容のまま。2026年度の制度と照合して直す（企画書12章の宿題と同じ）
+
+## 岡山県（2026-11-03作成。未投稿）
+
+中国地方で5県目（これで中国5県がそろった。**経済産業局は中国経済産業局、農政局は中国四国農政局〔本局が岡山市〕、財務局は中国財務局〔岡山財務事務所〕、労働局は岡山労働局、運輸局は中国運輸局〔岡山運輸支局〕**）。県ページと27市町村（15市10町2村）。岡山市は政令指定都市だが1ページだけ（区のページは作らない）。調査データは `data/area/okayama/`、執筆仕様は `docs/area-writing-spec-okayama.md`、作業の記録は `data/area/okayama/_progress.md`。試算の割り当ては `data/area/okayama/_calc.py`（既存652本と山梨・島根・鳥取・山口・広島の割り当てと重ならない）。クラウドのセッションで作り、投稿・デプロイはしていない。
+
+### 投稿の前後にすること
+
+- [ ] Mac で「投稿して」（post スキル。県ページを先に投稿してから27市町村、地域ガイド、`./deploy.sh` で補助金診断の JSON を反映）
+- [ ] **岡山市 `okayama-city` が県ページ `/area/okayama/` と別のページ**になっていることを確かめる（青森市・秋田市・山口市と同じ形）
+- [ ] **新庄村 `shinjo-village`（岡山県真庭郡）と山形県新庄市 `shinjo`（`/area/yamagata/shinjo/`）が別々のページ**になっている（山形のページを上書きしていない）ことを確かめる
+- [ ] 画像の確認（地図の判定・目視）
+- [ ] 締切のある制度・講座を書いたページは、締切後に直す: 岡山商工会議所の生成AIセミナー（11/12、申込 11/5。岡山市のページ）、県と県商工会議所連合会のオンラインセミナー（12/8、無料・50名。28ページとも1文）、事業承継・M&A補助金 PMI推進枠（11/6。津山市・奈義町・新庄村の国の制度の表）、岡山市 IoT・AI等先端技術導入支援補助金（検証済み先端技術導入事業、11/30）、国のデジタル化・AI導入補助金 7次（12/1、全県共通の項目と同じ）、おかやま働き方改革推進応援金（2027-01-29、先着）、倉敷市 人「財」育成支援補助金（2027-02-26）、津山市 デジタル人材育成支援サポート補助金（2月末）、井原市の資格取得事業補助金（2027-03-23）
+- [ ] 県の「生成AI等を活用した中堅企業への成長支援事業」（令和8年度の6社）・岡山市のデジタル化・DX事例報告会の成果が公表されたら、所在の市町村（倉敷市・笠岡市・岡山市など）の H2 3 に足す
+
+### 調べきれていないこと
+
+- [ ] **社人研の令和5年推計はクラウドから 403 で取れなかった**（中国地方の4県と同じ）。生産年齢人口は令和7年国勢調査の15〜64歳の2020→2025年の増減で書いた。Mac で xlsx を取れば、27市町村の2050年の値を足せる
+- [ ] **岡山県産業振興財団（optic.or.jp）のサイトがクラウドから 423・captcha**。財団の助成・事例集・セミナーは記事に書いていない（secondary）。Mac で確かめる
+- [ ] **中国経済産業局のサイトが 403**（中国地方の4県と同じ）。局の事例集・コンビナート地区のデジタル技術の調査（水島の会社が載っている可能性）は確かめていない
+- [ ] 一般社団法人システムエンジニアリング岡山（seo-okayama.or.jp）のサイトが 503・接続リセットで、会員名簿を見られなかった。地元IT企業の本表は2市10社（岡山市8・倉敷市2）。再開したら名簿で足す。中国精油の受賞理由（「製造時間45%短縮」の原文）もこのサイトで確かめる
+- [ ] よろず支援拠点のサイトがクラウドから開けなかった（電話は国の一覧で確認）
+- [ ] **県内の事例**: 事業者自身がAIの効果を実績の数値で公表した県内の中小企業の事例は0件。数値は水内ゴム（見込み、装置全体）・ピコシステム（受講者の自己申告）・中国精油（県のチラシの記載だけ）。水島・繊維・造船・果物・林業・観光・建設・運送の県内のAI事例は0件。県の DX 事例発表会（2026-02-17）の事例集は配布物だけで、財団に問い合わせれば手に入る可能性がある
+- [ ] 県外の未使用で数値つきの事例は2件（のぞみ会〔千葉県の介護事例集〕→和気町、Cotona〔ベンダー〕→倉敷市）。ほかのページの H2 4 は「見つからなかった」と短く書いた。ほかの都道府県の介護の事例集に未使用の事例が残っている可能性がある
+- [ ] 観光の値は県の観光地域別だけで、市町村別の総数はない（市町村の観光客数は書いていない）
+- [ ] DX推進計画を公式で確かめられたのは7団体だけ（岡山市・井原市・総社市・備前市・奈義町・勝央町、真庭市はガイドラインのみ）。ほかは「見つからなかった」と書いた
+- [ ] 県の働き方改革推進応援金の案内 PDF が 404 で、内訳（50万円＋20万円）は確かめられず、上限70万円だけ書いた
+- [ ] 平成30年7月豪雨の死者数・真備町の浸水面積は一次資料で確かめられず、書いていない
 
 ## 山口県（2026-11-01作成。未投稿）
 
