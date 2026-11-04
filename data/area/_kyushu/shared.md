@@ -70,6 +70,13 @@
 | 経産省 2025年経済構造実態調査 製造業「地域別」第1表 | statInfId=000040480531 | 2026-11-04 | 九州7県の出荷額（福岡1位・大分2位） | 福岡 |
 | 内閣府 平成29年7月九州北部豪雨の被害状況・気象庁 令和5年7月10日の大雨（R050710）の PDF | （stats.md の出典） | 2026-11-04 | 福岡県・大分県 | 福岡 |
 | BODIK オープンデータ（data.bodik.jp） | https://data.bodik.jp/ | 2026-11-04 | 福岡県の推計人口・農林業センサス・漁業センサス。熊本県・鹿児島県のデータもある | 福岡 |
+| TDB福岡支店「九州・沖縄『後継者不在率』動向調査（2025年）」2025-12-03（**URLは `-kyusyu`。`-kyushu` ではない**） | https://www.tdb.co.jp/report/economic/20251203-successor25y-kyusyu/ | 2026-11-04 | 九州・沖縄8県の県別（PDF p.4・p.9）。鹿児島37.6% | 鹿児島 |
+| TDB福岡支店「九州・沖縄 人手不足に対する企業の動向調査（2026年7月）」2026-08-27 | https://www.tdb.co.jp/report/economic/20260827-laborshortage202607-kyusyu/ | 2026-11-04 | **県別の値はない**（九州・沖縄計と業種別だけ） | 鹿児島 |
+| TDB福岡支店「九州・沖縄 生成AIに関する企業の動向調査（2026年3月）」2026-05-28 | https://www.tdb.co.jp/report/economic/20260528-genai-kyusyu/ | 2026-11-04 | 県別の値は見つからない（九州・沖縄計35.9%、983社）。鹿児島は県版あり | 鹿児島 |
+| 令和3年経済センサス 第14表（常用雇用者規模別）九州・沖縄のファイル b1_014_6 | https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040067901&fileKind=0 | 2026-11-04 | 福岡〜沖縄の全市区町村 | 鹿児島 |
+| 令和7年国勢調査 不詳補完値 第3-3表（県別ファイル。鹿児島 000040517888・宮崎 000040517887） | https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040517888&fileKind=0 | 2026-11-04 | 県ごと | 鹿児島 |
+| 令和2年国勢調査 不詳補完結果 第1-4表（全市区町村） | https://www.e-stat.go.jp/stat-search/file-download?statInfId=000032144437&fileKind=0 | 2026-11-04 | 九州7県の全市町村 | 鹿児島 |
+| 農水省「令和８年版 都道府県の農林水産業の概要」（末尾が県コード） | https://www.maff.go.jp/j/kanbo/tiho/15sonota/2026PDF/todouhuken_gaiyou2026-46.pdf | 2026-11-04 | 県ごと（46=鹿児島） | 鹿児島 |
 
 ## 管轄
 
