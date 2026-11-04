@@ -1,0 +1,119 @@
+# 福岡県の31町村（29町2村）の AI・IT・DX・設備・研修・販路開拓向けの町村独自の補助金（2026年度）。2026-11-04に各町村の公式サイトの事業者向け・産業振興・商工の分類ページと、補助金の本文・交付要綱で確認（詳細は subsidy_b_areas.md）
+# （まとめは調査の最後に書く）
+# 県・県域の機関・29市の制度は subsidy_a 担当のため入れていない。融資・利子補給・保証料補給・企業立地奨励・雇用奨励・特産品開発・店舗改修・創業・プレミアム商品券・個人向けの制度は YAML に入れていない（subsidy_b_areas.md に記した）
+# 期間の status は data/subsidies/README.md の値（open / closed / rolling / unknown）。受付期間の定めがなく、国の補助金の交付決定・確定から一定期間内に申請する上乗せ型は rolling にした
+
+# ---- 糟屋郡 ----
+
+- id: fukuoka-shingu-kasan-it
+  name: 新宮町商工関係事業加算補助金（IT導入補助金を活用した事業）
+  org: 新宮町（産業振興課 092-962-0238）
+  area: fukuoka/shingu
+  max_yen: 100000
+  rate: 国補助金（IT導入補助金）の補助対象経費から国補助金額を差し引いた額（自己負担分）の全額、上限10万円（千円未満切捨て）
+  rate_num: 1.0
+  addon: {kind: remaining, ratio: 1.0}
+  stacking: {addon_to: [digital-ai-donyu]}
+  targets: {efficiency: ○, consulting: △, training: △}
+  expenses: 中小企業庁の IT導入補助金を活用した事業の補助対象経費のうち国補助金を差し引いた額
+  conditions: 中小企業庁の IT導入補助金の交付決定を受けた法人又は個人の事業者で、法人は登記簿の本店、個人は事業活動の本拠地が新宮町内であること。国補助金の交付決定の日から補助対象事業が完了する日までに申請（交付決定通知・申請書類一式の写しを添付）。実績報告は事業完了から30日以内又は交付決定年度の3月31日のいずれか早い日まで
+  period: {status: rolling}
+  url: https://www.town.shingu.fukuoka.jp/shigoto_sangyo/sangyo_shinko/8524.html
+  checked: 2026-11-04
+  confidence: official
+  note: 町のページ（ページID 8524、公開2026-04-01・更新2026-04-30）「町内事業者が国補助金を活用して実施する事業に対し、最大で20万円を上乗せして補助します」。加算上限は 中小企業省力化投資補助金20万円・IT導入補助10万円・新事業進出・ものづくり補助金20万円・小規模事業者持続化補助金10万円。交付要綱（令和8年4月1日 新宮町告示第67号）https://www.town.shingu.fukuoka.jp/material/files/group/7/kasanyoukou.pdf （第1条「予算の範囲内」、第3条2項 補助額は別表の額か「国補助金の補助対象となる経費から国補助金額を差し引いた額のいずれか低い額」、第4条 申請時期、別表）。要綱・ページの名前は「IT導入補助金（中小企業庁）」で、2026年度の国の名称「デジタル化・AI導入補助金」の書き方ではない（国の制度は旧IT導入補助金と同じもの）。受付の締切日の記載はなく予算の範囲内のため rolling。予算額・消化状況はページにない
+  fuenn_note: 新宮町に本店（個人は事業の本拠地）がある事業者が国のIT導入補助金（デジタル化・AI導入補助金）を使うとき、国の補助を除いた自己負担分を町が最大10万円上乗せする制度です。国の交付決定のあと、事業が終わるまでに町へ申請します。
+
+- id: fukuoka-shingu-kasan-shoryokuka
+  name: 新宮町商工関係事業加算補助金（中小企業省力化投資補助金を活用した事業）
+  org: 新宮町（産業振興課 092-962-0238）
+  area: fukuoka/shingu
+  max_yen: 200000
+  rate: 国補助金（中小企業省力化投資補助金）の補助対象経費から国補助金額を差し引いた額の全額、上限20万円（千円未満切捨て）
+  rate_num: 1.0
+  addon: {kind: remaining, ratio: 1.0}
+  stacking: {addon_to: [shoryokuka-ippan]}
+  targets: {efficiency: ○, consulting: ×, training: ×}
+  expenses: 中小企業庁の中小企業省力化投資補助金を活用した事業の補助対象経費のうち国補助金を差し引いた額
+  conditions: fukuoka-shingu-kasan-it と同じ（国補助金の交付決定を受けた町内に本店・本拠地のある事業者。国の交付決定から事業完了までに申請）
+  period: {status: rolling}
+  url: https://www.town.shingu.fukuoka.jp/shigoto_sangyo/sangyo_shinko/8524.html
+  checked: 2026-11-04
+  confidence: official
+  note: 要綱の別表は「中小企業省力化投資補助金（中小企業庁）を活用した事業 20万円」で、一般型・カタログ注文型の区別は書かれていない。addon_to は national.yml の shoryokuka-ippan（一般型）にした（カタログ注文型も対象になると読める）。出典・期間は fukuoka-shingu-kasan-it と同じ
+  fuenn_note: 新宮町に本店がある事業者が国の中小企業省力化投資補助金を使うとき、国の補助を除いた自己負担分を町が最大20万円上乗せする制度です。
+
+- id: fukuoka-shingu-kasan-monodukuri
+  name: 新宮町商工関係事業加算補助金（新事業進出・ものづくり補助金を活用した事業）
+  org: 新宮町（産業振興課 092-962-0238）
+  area: fukuoka/shingu
+  max_yen: 200000
+  rate: 国補助金（新事業進出・ものづくり補助金）の補助対象経費から国補助金額を差し引いた額の全額、上限20万円（千円未満切捨て）
+  rate_num: 1.0
+  addon: {kind: remaining, ratio: 1.0}
+  stacking: {addon_to: [shinjigyo-monodukuri]}
+  targets: {efficiency: ○, consulting: ×, training: ×}
+  expenses: 中小企業庁の新事業進出・ものづくり補助金を活用した事業の補助対象経費のうち国補助金を差し引いた額
+  conditions: fukuoka-shingu-kasan-it と同じ
+  period: {status: rolling}
+  url: https://www.town.shingu.fukuoka.jp/shigoto_sangyo/sangyo_shinko/8524.html
+  checked: 2026-11-04
+  confidence: official
+  note: 要綱の別表「新事業進出・ものづくり補助金（中小企業庁）を活用した事業 20万円」。出典・期間は fukuoka-shingu-kasan-it と同じ。小規模事業者持続化補助金（上限10万円）への加算もあるが、持続化補助金は national.yml にないので YAML に入れていない（subsidy_b_areas.md に記した）
+  fuenn_note: 新宮町に本店がある事業者が国の新事業進出・ものづくり補助金を使うとき、国の補助を除いた自己負担分を町が最大20万円上乗せする制度です。
+
+- id: fukuoka-umi-jizokuka-uwanose
+  name: 宇美町小規模事業者等持続化支援補助金
+  org: 宇美町（シティプロモーション課 まちの魅力推進係）
+  area: fukuoka/umi
+  max_yen: 125000
+  rate: 国が認める補助対象経費から国持続化補助金の交付確定額と県持続化補助金（県の上乗せ）の交付確定額を差し引いた額の1/2（最大12万5千円、100円未満切捨て）
+  rate_num: 0.5
+  small_only: true
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 国の小規模事業者持続化補助金〈一般型〉で認められた補助対象経費（経営計画にもとづく販路開拓等。ウェブサイト・EC などの販路開拓を含むかは国の補助金の対象経費による）
+  conditions: 町内に事業所を有する小規模事業者・特定非営利活動法人で、町税の滞納がなく、国の小規模事業者持続化補助金〈一般型〉の交付決定を受けた事業を実施し、地域資源の活用・地域課題の解決・地域活性化に取り組む者。国持続化補助金の確定通知の受領の日から30日以内に申請
+  period: {status: rolling}
+  url: https://www.town.umi.lg.jp/soshiki/60/48680.html
+  checked: 2026-11-04
+  confidence: official
+  note: 町のページ（ページID 0053748、2025-02-05更新）。交付要綱（令和6年3月29日告示第47号、宇美町中小企業振興条例にもとづく）https://www.town.umi.lg.jp/uploaded/attachment/17739.pdf （第2条 国持続化補助金・県持続化補助金の定義、第3条 対象者、第4条 補助額、第5条 確定通知から30日以内）。年度ごとの受付期間・予算の記載はなく、2026年度に受け付けていることを示す告知もないが、要綱は現行で受付終了の告知もないため rolling にした。国の補助金への上乗せだが、持続化補助金は national.yml にないため addon・addon_to は書いていない（計算は（経費−国の確定額−県の確定額）×1/2）。県の上乗せ（subsidy_a の fukuoka-jizokuka-uwanose、経費の1/12）と併用する前提の書き方
+  fuenn_note: 宇美町に事業所がある小規模事業者が国の小規模事業者持続化補助金を使って販路開拓などに取り組んだとき、国と県の補助を除いた自己負担分の1/2（最大12万5千円）を町が上乗せする制度です。国の確定通知を受け取ってから30日以内に町へ申請します。
+
+# ---- 鞍手郡・嘉穂郡・朝倉郡 ----
+
+- id: fukuoka-kotake-jinzai-ikusei
+  name: 小竹町中小企業等人材育成事業補助金
+  org: 小竹町（企画調整課 商工観光係 0949-62-1214）
+  area: fukuoka/kotake
+  rate: 中小企業大学校九州校の研修の受講料の額（全額。同じ研修で他団体等から受講料の補助等を受ける場合はその分を減額）
+  rate_num: 1.0
+  targets: {efficiency: ×, consulting: ×, training: ○}
+  expenses: 独立行政法人中小企業基盤整備機構 中小企業大学校九州校（直方市）が実施する経営や技術に関する研修、又は町長がこれに準ずると認める研修の受講料
+  conditions: 小竹町に事業所を有する中小企業者（中小企業基本法第2条第1項）・中小企業団体で、その事業者又は従業員が研修を受講すること。あらかじめ交付申請書を提出（まず電話で申込み）。研修終了後に実績報告（研修終了証書・受講料領収書の写し）
+  period: {status: rolling}
+  url: https://town.kotake.lg.jp/hpkiji/pub/detail.aspx?c_id=3&id=98
+  checked: 2026-11-04
+  confidence: official
+  note: 町のページ（ID:98、最終更新日2025-08-18）。交付要綱 https://town.kotake.lg.jp/common/UploadFileOutput.ashx?c_id=3&id=98&sub_id=9&flid=10486 （3ページ。第3条 補助対象事業〔中小企業大学校九州校の経営や技術に関する研修、町長が準ずると認める研修〕、第5条 補助金の額＝受講料の額、第6条 事前申請、第9条 実績報告）。上限額・年度の受付期間の記載はなく「予算の範囲内」（第3条）のため rolling。中小企業大学校九州校の講座に DX・AI の講座があるかは確かめていない（大学校の講座次第）。町のサイトは www.town.kotake.lg.jp では接続できず、www なしの town.kotake.lg.jp で開けた（2026-11-04）。「商工業」のページ https://town.kotake.lg.jp/hpkiji/pub/detail.aspx?c_id=3&id=635 の「商工業者への支援等」にこの補助金・店舗等新築増改築補助金・創業支援等事業が並ぶ
+  fuenn_note: 小竹町に事業所がある中小企業が、社長や従業員を中小企業大学校九州校（直方市）の経営・技術の研修に通わせるとき、受講料を町が補助する制度です。受講の前に町の商工観光係へ申し込みます。
+
+# ---- 三井郡・三潴郡・八女郡 ----
+
+- id: fukuoka-hirokawa-hanro
+  name: 広川町小規模事業者支援対策事業補助金（販路開拓補助金）
+  org: 広川町（産業課 商工観光係 0943-32-1841）
+  area: fukuoka/hirokawa
+  max_yen: 150000
+  rate: 補助対象経費の1/2（千円未満切捨て、一申請当たり上限15万円）
+  rate_num: 0.5
+  small_only: true
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 商談会・展示会等（販売を伴わない、1日15社以上出展）の出展料（小間代・光熱費・備品借上料を含む）、販路を新たに拡大するための広告・宣伝費等（ウェブ広告・ホームページが含まれるかは要綱に書かれていない）
+  conditions: 町内で事業を営む小規模事業者で、町内に住所を有する個人事業者又は町内に登記住所を定めている法人（販路開拓補助金は町内に事業所を有し登記していること）。広川町商工会等の認定支援機関から経営指導を受けた証明書が必要。町税の滞納がないこと。同じ経費に国・県・町などの補助金を受ける場合は対象外。この要綱の補助金は2回まで
+  period: {status: unknown}
+  url: https://www.town.hirokawa.fukuoka.jp/shigoto_sangyo/sangyo/1/1891.html
+  checked: 2026-11-04
+  confidence: official
+  note: 町のページ「新規創業、新事業展開などに町補助金を活用ください!」（2023-06-07更新、「予算に限りがありますので、年度途中に終了することがあります」）。交付要綱（平成30年5月1日告示第50号、令和4年4月28日告示第68号まで改正）https://www.town.hirokawa.fukuoka.jp/material/files/group/30/syoukibohojo.pdf （第4条 他の補助金と重複不可、第5条(3) 販路開拓 1/2・15万円、別表第2）。要綱の附則は「令和３年度から令和５年度までの補助金について適用する」で、2026年度に続いているかはページ・要綱から判断できない（status unknown）。同じ要綱に新規創業・新事業展開補助金（1/2・50万円、新事業展開は県の経営革新計画の承認が要件）、新製品開発補助金・新機械導入補助金（1/2・30万円。新機械導入は「新製品の製造に係る機械・器具装置、工具等」に限る）もある（subsidy_b_areas.md）
+  fuenn_note: 広川町の小規模事業者が、商談会・展示会への出展や新しい販路のための広告・宣伝を行うとき、費用の1/2（最大15万円）を町が補助する制度です。商工会などの経営指導が要件です。要綱が2023年度までの適用と書かれているため、今年度の受付は町の産業課に確認してください。
