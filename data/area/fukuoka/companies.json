@@ -1,0 +1,661 @@
+{
+ "_meta": {
+  "checked": "2026-11-04",
+  "scope": "福岡県60市町村（29市29町2村）。本社（公式サイトの本社・本店・所在地）が当該市町村にあり、公式サイトでシステム開発・ソフトウェア開発・Web開発・情報処理サービス・SI を事業として明示する法人。岡山・福島・広島と同じく、本表には『公式サイトで本社所在地と従業員数の両方を確認できた会社』だけを入れた。従業員数が公式にない会社・公式サイトが開けない会社は _reference の unverified、県外本社の県内拠点は _reference._outside_hq。福岡市は公式の従業員数の多い順に10社（区を記録）、北九州市は8社、ほかの市町村は見つかった全社。上場・大手グループの子会社は notes に書いた。ai_mark=true は、公式サイトで生成AI・AIを自社の事業（製品・サービス・受託）として書いている会社。",
+  "candidate_sources": [
+   "一般社団法人福岡県情報サービス産業協会（FISA）『会員企業一覧』 https://www.fisa.jp/member/ （179件、18ページ。各社の詳細ページ https://www.fisa.jp/member/member-NNNN/ に住所と URL。2026-11-04 に全ページを取得）。**候補の母集団はほぼこの名簿**。所在地の欄は支店・営業所の住所のこともある（システムイオ〔東京本社〕・テクバン・キューブシステムなど）ので、本社は各社の公式で確かめた",
+   "一般社団法人嘉飯桂産業振興協議会『会員企業』 https://kasankyo.or.jp/member.html （飯塚市・嘉麻市・桂川町の地域団体。IT の会社は麻生情報システム〔本社は福岡市早良区〕とアイテックシステム〔飯塚市。機械・環境システム・電機で、IT ではない〕だけ）",
+   "株式会社福岡ソフトウェアセンター（飯塚市幸袋、第三セクター。FISA 賛助会員）https://www.fsc-go.co.jp/ : 研修・施設の会社。入居企業の一覧はサイトになかった",
+   "ipros（secondary）: 株式会社アイキューブデジタル（北九州市小倉北区、78名）を見つけた手がかり",
+   "WebSearch（担当上限15回のうち9回）: FISA の名簿の確認、北九州市・久留米市・飯塚市・筑紫地区・北九州の業界団体の候補探し。比較サイト（compalyze・比較ビズ・hnavi・j-lic）と求人サイトばかりで、本表に使える会社は増えなかった",
+   "県・市の IT 企業の名簿: 依頼にあった『北九州市の IT 企業の名簿』『福岡市のエンジニアフレンドリーシティ』『県の IT 企業データベース』は、WebSearch 3回の範囲で一覧として見つからなかった（北九州市の資料は企業立地の実績のPDFだけ）"
+  ],
+  "columns": "name / hq（公式の本社住所）/ municipality / ward（福岡市・北九州市）/ town / employees{value,as_of,source} / capital / founded / business_summary / ai_initiative / ai_mark / url / size_basis / checked / notes"
+ },
+ "kitakyushu": [
+  {
+   "name": "株式会社YE DIGITAL",
+   "hq": "福岡県北九州市小倉北区米町二丁目1番21号 APエルテージ米町ビル",
+   "municipality": "北九州市",
+   "ward": "小倉北区",
+   "town": "米町",
+   "employees": {
+    "value": 505,
+    "as_of": "単独505名・連結650名（2026年3月1日現在）",
+    "source": "https://www.ye-digital.com/jp/company/outline.php"
+   },
+   "capital": {
+    "value": "808百万円（2026年6月30日現在）",
+    "source": "https://www.ye-digital.com/jp/company/outline.php"
+   },
+   "founded": 1978,
+   "business_summary": "1978年2月1日創立。東証スタンダード上場。売上高 連結202.63億円・単独177.54億円（2025年度）。物流（倉庫）・交通（スマートバス停）・農業・保守保全（IoT）・教育（GIGAスクール）・ビジネスDX・システム開発。東京支社（渋谷）",
+   "ai_initiative": "製品メニューに『物流倉庫向けAIソリューション』『AI故障予知サービス』『検査・監視・最適化（AI）』『生成AIソフトウェア開発支援』『AI画像判定サービス』",
+   "ai_mark": true,
+   "url": "https://www.ye-digital.com/jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-04",
+   "notes": "**上場会社**。安川電機との関係は、関係会社アイキューブデジタルの株主欄に安川電機と YE DIGITAL が並ぶことだけ確かめた（YE DIGITAL 自身の株主構成は見ていない）。本社の住所は事業所一覧 https://www.ye-digital.com/jp/company/address.php"
+  },
+  {
+   "name": "株式会社YE DIGITAL Kyushu",
+   "hq": "福岡県北九州市小倉北区浅野三丁目8番1号 AIMビル6階",
+   "municipality": "北九州市",
+   "ward": "小倉北区",
+   "town": "浅野",
+   "employees": {
+    "value": 168,
+    "as_of": "168名（2026年4月1日時点）",
+    "source": "https://www.openkit.com/"
+   },
+   "capital": {
+    "value": "2,000万円",
+    "source": "https://www.openkit.com/"
+   },
+   "founded": 1983,
+   "business_summary": "昭和58年3月設立。売上高3,918百万円（2025年度）。MONQX ブランドのサイトあり",
+   "ai_initiative": "トップページの『AI』は AIMビルの部分一致だけ",
+   "ai_mark": false,
+   "url": "https://www.openkit.com/",
+   "size_basis": "employees",
+   "checked": "2026-11-04",
+   "notes": "**株主は株式会社YE DIGITAL と田中工業株式会社**（YE DIGITAL の子会社。出資比率は見ていない）"
+  },
+  {
+   "name": "株式会社ソルネット",
+   "hq": "福岡県北九州市八幡東区中央町（FISA の名簿では八幡東区中央2丁目8番13号）",
+   "municipality": "北九州市",
+   "ward": "八幡東区",
+   "town": "中央",
+   "employees": {
+    "value": 120,
+    "as_of": "120名（2026年4月1日現在）",
+    "source": "https://www.solnet-dot.com/corporate/about/index.html"
+   },
+   "capital": {
+    "value": "（会社概要の資本金は見ていない）",
+    "source": "https://www.solnet-dot.com/corporate/about/index.html"
+   },
+   "founded": null,
+   "business_summary": "沿革: 1984年に IBM 製品の販売を開始、1990年に本社を八幡東区中央町へ移転、2001年に社名変更。商工会議所向けの『チェンバーズパック』。クラウド・セキュリティ・超高速開発（JBアジャイル）",
+   "ai_initiative": "トップページに JBCC グループの『AIへの取り組み』（AI Orchestration Platform）のリンク。グループの構想で、ソルネット自身の AI 製品は見ていない",
+   "ai_mark": false,
+   "url": "https://www.solnet-dot.com/",
+   "size_basis": "employees",
+   "checked": "2026-11-04",
+   "notes": "**2007年から JBCCホールディングス（東証プライム）を持株会社とするグループの一員**（沿革）。本社の住所は沿革の『本社を現在地（北九州市八幡東区中央町）へ移転』と FISA の名簿"
+  },
+  {
+   "name": "アイコムソフト株式会社",
+   "hq": "福岡県北九州市戸畑区牧山1-1-36",
+   "municipality": "北九州市",
+   "ward": "戸畑区",
+   "town": "牧山",
+   "employees": {
+    "value": 101,
+    "as_of": "101名（男性72名・女性29名）2026年10月1日現在",
+    "source": "https://www.icomsoft.co.jp/company/info/10_kihonjyouhou"
+   },
+   "capital": {
+    "value": "（見ていない）",
+    "source": "https://www.icomsoft.co.jp/company/info/10_kihonjyouhou"
+   },
+   "founded": 1987,
+   "business_summary": "システムコンサルテーション・システム開発、地元企業向けの SI と保守。福岡支社（博多区祇園町）・東京支社",
+   "ai_initiative": "会社概要に AI の記載はない",
+   "ai_mark": false,
+   "url": "https://www.icomsoft.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-04",
+   "notes": "創業は1987年（企業情報ページの紹介文。設立日は見ていない）"
+  },
+  {
+   "name": "日本ソフト技研株式会社",
+   "hq": "福岡県北九州市戸畑区飛幡町2番2号 飛幡ビル6F（FISA の名簿。公式は沿革の『北九州市戸畑区飛幡町に移転』）",
+   "municipality": "北九州市",
+   "ward": "戸畑区",
+   "town": "飛幡町",
+   "employees": {
+    "value": 77,
+    "as_of": "77名（2025年4月）",
+    "source": "https://www.nsl.co.jp/"
+   },
+   "capital": {
+    "value": "7,500万円",
+    "source": "https://www.nsl.co.jp/"
+   },
+   "founded": 1986,
+   "business_summary": "1986年11月11日創立。独立系のシステムインテグレーション。主要取引先に国土交通省・北九州市・福岡県・筑波大学・電子航法研究所・医療法人など",
+   "ai_initiative": "トップページで『AI』0件",
+   "ai_mark": false,
+   "url": "https://www.nsl.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-04",
+   "notes": "番地は公式の会社概要で確かめていない（FISA の名簿の値）"
+  },
+  {
+   "name": "株式会社吉川システック",
+   "hq": "福岡県北九州市八幡東区尾倉2丁目1-2 吉川工業ビル内4F・5F",
+   "municipality": "北九州市",
+   "ward": "八幡東区",
+   "town": "尾倉",
+   "employees": {
+    "value": 62,
+    "as_of": "62名（2026年4月現在）",
+    "source": "https://www.yst-net.co.jp/company/outline.html"
+   },
+   "capital": {
+    "value": "（見ていない）",
+    "source": "https://www.yst-net.co.jp/company/outline.html"
+   },
+   "founded": null,
+   "business_summary": "RFID・画像解析・機械学習とビッグデータを使った自社パッケージソフトの開発・販売・運用サポート。加盟団体に FISA と『北九州情報サービス振興産業』（原文のまま）",
+   "ai_initiative": "トップページに『RFID技術、画像解析、機械学習等のAI技術やビッグデータを活用し、自社開発の各種パッケージソフトウェアの販売/運用サポート』",
+   "ai_mark": true,
+   "url": "https://www.yst-net.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-04",
+   "notes": "本社は吉川工業ビルの中（吉川工業との資本関係は見ていない）"
+  },
+  {
+   "name": "株式会社アプロティクス",
+   "hq": "福岡県北九州市小倉北区京町4-1-24 NZビル2F",
+   "municipality": "北九州市",
+   "ward": "小倉北区",
+   "town": "京町",
+   "employees": {
+    "value": 46,
+    "as_of": "46名（時点の明記なし）",
+    "source": "http://aprotyx.com/"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "http://aprotyx.com/"
+   },
+   "founded": 2013,
+   "business_summary": "2013年9月10日設立。IT ソリューション事業・IT インフラサービス事業・コンタクトサービス事業",
+   "ai_initiative": "トップページで『AI』0件",
+   "ai_mark": false,
+   "url": "http://aprotyx.com/",
+   "size_basis": "employees",
+   "checked": "2026-11-04",
+   "notes": "人数の時点がない"
+  },
+  {
+   "name": "寶結株式会社",
+   "hq": "福岡県北九州市小倉北区浅野3丁目8-1 AIMビル",
+   "municipality": "北九州市",
+   "ward": "小倉北区",
+   "town": "浅野",
+   "employees": {
+    "value": 39,
+    "as_of": "39名（2026年2月28日現在）",
+    "source": "https://houyou.co.jp/"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://houyou.co.jp/"
+   },
+   "founded": null,
+   "business_summary": "DX 事業部門（エンジニアリングサービス／BOP サービス）・インフラ事業部門（ネットワークサービス）。小倉北区浅野のあるあるCity・東京（中央区築地）・佐賀県鳥栖市にも拠点。労働者派遣・有料職業紹介の許可あり",
+   "ai_initiative": "トップページで『AI』0件",
+   "ai_mark": false,
+   "url": "https://houyou.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-04",
+   "notes": "読みは公式で確かめていない（『ほうゆう』とみられる。ドメインは houyou）"
+  }
+ ],
+ "fukuoka-city": [
+  {
+   "name": "Qsol株式会社",
+   "hq": "福岡県福岡市中央区渡辺通2丁目1番82号 電気ビル北館",
+   "municipality": "福岡市",
+   "ward": "中央区",
+   "town": "渡辺通",
+   "employees": {
+    "value": 752,
+    "as_of": "752名（役員除く 2026年4月1日現在）",
+    "source": "https://www.qsolcorp.co.jp/company/"
+   },
+   "capital": {
+    "value": "1億円",
+    "source": "https://www.qsolcorp.co.jp/company/"
+   },
+   "founded": 1987,
+   "business_summary": "1987年7月1日設立。コンピュータソフトウェアの開発・販売、システムの導入・保守・運用、ネットワークを使った情報サービス、コンサルティング・教育、電気通信事業。九州電力の基幹系システムの開発・保守・運用を担い、航空運輸業・製造業にも展開。大分支店あり",
+   "ai_initiative": "会社概要・トップページに AI の記載は見当たらなかった（トップページで『AI』0件）",
+   "ai_mark": false,
+   "url": "https://www.qsolcorp.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-04",
+   "notes": "**九州電力株式会社100%**（会社概要の株主欄）。九電グループの会社で『地元の独立系』ではない。FISA 正会員"
+  },
+  {
+   "name": "Gcomホールディングス株式会社",
+   "hq": "福岡県福岡市博多区東平尾一丁目3番3号",
+   "municipality": "福岡市",
+   "ward": "博多区",
+   "town": "東平尾",
+   "employees": {
+    "value": 644,
+    "as_of": "644名（グループ総従業員数）※2025年7月現在。単体の人数は書いていない",
+    "source": "https://www.gyoseiq.co.jp/company/profile"
+   },
+   "capital": {
+    "value": "100百万円",
+    "source": "https://www.gyoseiq.co.jp/company/profile"
+   },
+   "founded": 2010,
+   "business_summary": "創立1971年5月15日・設立2010年4月1日の持株会社。地方自治体向けソフトウェアの販売、ソフトウェア開発、システム導入支援・保守、アウトソーシング。グループに行政システム九州・沖縄行政システム・四国行政システム・Acrocityソリューションズ・アクティブクオリア・ソルシア・ICTコンストラクション（いずれも FISA 正会員のものあり）",
+   "ai_initiative": "会社概要に AI の記載はない（トップページで『AI』0件）",
+   "ai_mark": false,
+   "url": "https://www.gyoseiq.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-04",
+   "notes": "**持株会社で、人数はグループの合計**（ほかの会社と比べるときに注意）。主な株主は行政システム株式会社・富士通Japan株式会社・みずほ銀行。グループ会社の行政システム九州株式会社（博多区東比恵）は社長メッセージに『グループ会社8社、従業員600名超』とあり、会社別の人数は見ていない"
+  },
+  {
+   "name": "株式会社九州日立システムズ",
+   "hq": "福岡県福岡市博多区博多駅南2-12-22 日立システムズ 九州ビル",
+   "municipality": "福岡市",
+   "ward": "博多区",
+   "town": "博多駅南",
+   "employees": {
+    "value": 577,
+    "as_of": "577名（2026年4月1日時点）",
+    "source": "https://www.kyushu-hitachi-systems.co.jp/company/profile.html"
+   },
+   "capital": {
+    "value": "8千万円",
+    "source": "https://www.kyushu-hitachi-systems.co.jp/company/profile.html"
+   },
+   "founded": 1970,
+   "business_summary": "1970年6月1日設立。システム構築、システム運用・監視・保守、ネットワークサービス、情報関連機器・ソフトウェアの販売と開発。売上高15,342百万円（2025年度）",
+   "ai_initiative": "トップページは日立システムズグループフェア（AI・GX）と自治体向けの生成AI活用セミナーの案内だけで、自社の AI 製品の記載は見ていない",
+   "ai_mark": false,
+   "url": "https://www.kyushu-hitachi-systems.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-04",
+   "notes": "**日立システムズのグループ会社**（本社ビル名・サイトのグループ会社リンク。出資比率は見ていない）。FISA の名簿には載っていない。cases 担当が『div〔九州日立システムズ〕』のプレスリリースを記録している（大企業の事例）"
+  },
+  {
+   "name": "株式会社シティアスコム",
+   "hq": "福岡県福岡市早良区百道浜2-2-22 AITビル",
+   "municipality": "福岡市",
+   "ward": "早良区",
+   "town": "百道浜",
+   "employees": {
+    "value": 534,
+    "as_of": "534名（2026年4月1日時点）",
+    "source": "https://www.city.co.jp/company/profile/"
+   },
+   "capital": {
+    "value": "4億4200万円",
+    "source": "https://www.city.co.jp/company/profile/"
+   },
+   "founded": 1971,
+   "business_summary": "1971年1月創立。システム開発・アウトソーシング（金融・自治体ほか）。資格保有者 延べ1,556名（2026年10月1日時点）",
+   "ai_initiative": "**『AIへの取組み』のページがある** https://www.city.co.jp/company/ai/ : 2023年6月に自社専用の LLM 環境を構築、2023年11月に Teams から使う『Assistant AI for Teams』を全社で利用開始、2024年5月に『CAPTAIN Assistant AI』を社内で試行（規程集の RAG 参照・議事録生成・翻訳）、2024年10月の社内コンテストに54チームが応募。社内の知見をもとに**顧客向けサービス『CAPTAIN Assistant AI』を提供**し、生成AI 利活用の支援サービスも展開（効果の数値はない。WebFetch の要約で確認）",
+   "ai_mark": true,
+   "url": "https://www.city.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-04",
+   "notes": "サイトのフッターに『西日本フィナンシャルホールディングス グループ各社との共同利用』とあり、**西日本FHグループの会社**（株主構成は見ていない）。KBKインフォニイ（博多区、96名）は代表取締役会長・取締役がシティアスコムの社長・副社長・常務と同じ名前で、グループ会社とみられる"
+  },
+  {
+   "name": "株式会社インフォセンス",
+   "hq": "福岡県福岡市博多区冷泉町2-1 博多祇園M-SQUARE 8F",
+   "municipality": "福岡市",
+   "ward": "博多区",
+   "town": "冷泉町",
+   "employees": {
+    "value": 453,
+    "as_of": "453名（2026年4月1日現在）。トップページは『453名・売上97.2億円・2026年4月時点』",
+    "source": "https://www.info-sense.co.jp/"
+   },
+   "capital": {
+    "value": "1億円",
+    "source": "https://www.info-sense.co.jp/"
+   },
+   "founded": 1989,
+   "business_summary": "1989年4月1日設立。大手物流企業・山九の情報システム部門が母体。倉庫管理システム ZIZAIA WMS、物流・運輸向けシステム、AWS、アルコールチェック・点呼のクラウド管理など",
+   "ai_initiative": "トップページの『AI』は製品名 ZIZAIA の部分一致だけ。AI の事業の記載は見ていない",
+   "ai_mark": false,
+   "url": "https://www.info-sense.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-04",
+   "notes": "**山九株式会社100%**（会社概要の株主欄）"
+  },
+  {
+   "name": "株式会社BCC",
+   "hq": "福岡県福岡市中央区六本松2丁目12番19号 BCCビル",
+   "municipality": "福岡市",
+   "ward": "中央区",
+   "town": "六本松",
+   "employees": {
+    "value": 393,
+    "as_of": "393名（男性265名・女性128名）2026年4月1日現在",
+    "source": "https://www.bcc-net.co.jp/company/company.html"
+   },
+   "capital": {
+    "value": "1億円",
+    "source": "https://www.bcc-net.co.jp/company/company.html"
+   },
+   "founded": 1966,
+   "business_summary": "1966年10月25日創業。システムインテグレーション、クラウドサービス、データセンター。東京支店・北九州支店・佐賀営業所。JISA・NOMA・FISA・NEC情報サービス事業グループに所属",
+   "ai_initiative": "トップページで『AI』0件",
+   "ai_mark": false,
+   "url": "https://www.bcc-net.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-04",
+   "notes": "株主は株式会社RKB毎日ホールディングスと日本電気株式会社（比率は見ていない）。**広島県福山市の株式会社ビーシーシー（三菱電機グループ、hiroshima/companies.json）とは別の会社**"
+  },
+  {
+   "name": "SCSK九州株式会社",
+   "hq": "福岡県福岡市博多区博多駅東1-17-1 コネクトスクエア博多",
+   "municipality": "福岡市",
+   "ward": "博多区",
+   "town": "博多駅東",
+   "employees": {
+    "value": 230,
+    "as_of": "230名（2026年4月1日現在）",
+    "source": "https://www.scsk-kyushu.co.jp/"
+   },
+   "capital": {
+    "value": "2億円",
+    "source": "https://www.scsk-kyushu.co.jp/"
+   },
+   "founded": 2002,
+   "business_summary": "2002年4月 福岡CSK として設立、2015年10月に現社名。ビジネスシステム開発、ファクトリーソリューション開発、SCSK オフサイト開発、電力事業者向けシステム開発、IT インフラ構築・マネジメント",
+   "ai_initiative": "サービスのメニューに『熟練工AIソリューション』（中身は見ていない）",
+   "ai_mark": true,
+   "url": "https://www.scsk-kyushu.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-04",
+   "notes": "**SCSK のグループ会社**（社名・沿革。出資比率は見ていない）"
+  },
+  {
+   "name": "TIS西日本株式会社",
+   "hq": "福岡県福岡市博多区博多駅東2-5-1 アーバンネット博多ビル3F",
+   "municipality": "福岡市",
+   "ward": "博多区",
+   "town": "博多駅東",
+   "employees": {
+    "value": 208,
+    "as_of": "208名（2026年4月現在）",
+    "source": "https://www.tis-w.co.jp/"
+   },
+   "capital": {
+    "value": "6,000万円",
+    "source": "https://www.tis-w.co.jp/"
+   },
+   "founded": 1988,
+   "business_summary": "1988年4月2日設立。コンピュータ導入のコンサルティング、ソフトウェアの開発販売、操作要員の派遣。主要取引先に NECソリューションイノベータ・OSK・ゼンリン・TISI・PayPayカード",
+   "ai_initiative": "トップページで『AI』0件",
+   "ai_mark": false,
+   "url": "https://www.tis-w.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-04",
+   "notes": "社名と取引先から **TIS（2026年7月にインテックと合併して TISI）グループ**とみられる。会社概要に株主の欄がなく、出資関係は確かめていない。山口県の companies に『TIS西日本 山口事業所（下松市）』が県外本社の拠点として出る"
+  },
+  {
+   "name": "株式会社システムニシツウ",
+   "hq": "福岡県福岡市南区大楠1-5-2 SYSKEN大楠ビル2F",
+   "municipality": "福岡市",
+   "ward": "南区",
+   "town": "大楠",
+   "employees": {
+    "value": 169,
+    "as_of": "169名（時点の明記なし。同じ表の年商は2026年3月）",
+    "source": "https://www.s-nishitsu.co.jp/company/profile/"
+   },
+   "capital": {
+    "value": "40百万円",
+    "source": "https://www.s-nishitsu.co.jp/company/profile/"
+   },
+   "founded": 1984,
+   "business_summary": "1984年8月1日設立。年商1,717百万円（2026年3月）。業務システム（販売管理『豪商』ほか）の開発。熊本支店・東京支店。熊本で創業し、2009年に本社を福岡市へ移した",
+   "ai_initiative": "会社概要に AI の記載はない",
+   "ai_mark": false,
+   "url": "https://www.s-nishitsu.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-04",
+   "notes": "本社の住所は沿革の『2014.10 本社移転（現：福岡市南区大楠1-5-2 SYSKEN大楠ビル2F）』と FISA の名簿で確かめた。ビル名・熊本支店（SYSKENビル）から、熊本の SYSKEN と関係があるとみられる（資本関係は見ていない）。**熊本県の調査と照合してほしい**"
+  },
+  {
+   "name": "株式会社FCCテクノ",
+   "hq": "福岡県福岡市南区大橋4丁目25-30 ベルエール大橋 2F",
+   "municipality": "福岡市",
+   "ward": "南区",
+   "town": "大橋",
+   "employees": {
+    "value": 150,
+    "as_of": "150名（2024年現在。古い）",
+    "source": "https://www.fcctech.jp/"
+   },
+   "capital": {
+    "value": "1億円",
+    "source": "https://www.fcctech.jp/"
+   },
+   "founded": 1962,
+   "business_summary": "1962年7月18日創立（旧社名 福岡電子計算センター）。独立系の SI・IT 企業。大型コンピュータの受託計算から始まり、BPO センター（竹下）・薬院・関西・東京にオフィス。2021年に経営陣を30代に刷新",
+   "ai_initiative": "トップページで『AI』0件",
+   "ai_mark": false,
+   "url": "https://www.fcctech.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-04",
+   "notes": "人数の時点が2024年で古い。次点のイノス（138名・時点なし）と差が小さい"
+  }
+ ],
+ "omuta": [],
+ "kurume": [],
+ "nogata": [],
+ "iizuka": [],
+ "tagawa": [],
+ "yanagawa": [],
+ "yame": [],
+ "chikugo": [],
+ "okawa": [],
+ "yukuhashi": [],
+ "buzen": [],
+ "nakama": [],
+ "ogori": [],
+ "chikushino": [],
+ "kasuga": [],
+ "onojo": [],
+ "munakata": [],
+ "dazaifu": [],
+ "koga": [],
+ "fukutsu": [],
+ "ukiha": [],
+ "miyawaka": [],
+ "kama": [],
+ "asakura": [],
+ "miyama": [],
+ "itoshima": [],
+ "nakagawa": [],
+ "umi": [],
+ "sasaguri": [],
+ "shime": [],
+ "sue": [],
+ "shingu": [],
+ "hisayama": [],
+ "kasuya": [],
+ "ashiya": [],
+ "mizumaki": [],
+ "okagaki": [],
+ "onga": [],
+ "kotake": [],
+ "kurate": [],
+ "keisen": [],
+ "chikuzen": [],
+ "tachiarai": [],
+ "oki": [],
+ "hirokawa": [],
+ "kawara": [],
+ "soeda": [],
+ "itoda": [],
+ "kawasaki-town": [],
+ "oto": [],
+ "fukuchi": [],
+ "kanda": [
+  {
+   "name": "株式会社アンクル",
+   "hq": "福岡県京都郡苅田町京町1丁目11番地5",
+   "municipality": "苅田町",
+   "town": "京町",
+   "employees": {
+    "value": 20,
+    "as_of": "20名（2016年4月現在。10年前の値）",
+    "source": "http://e-uncle.co.jp/"
+   },
+   "capital": {
+    "value": "2,900万円",
+    "source": "http://e-uncle.co.jp/"
+   },
+   "founded": 1976,
+   "business_summary": "昭和51年8月24日設立。昭和51年から地方自治体の業務の受託処理・開発。会計事務所向けオフィスコンピュータの販売。熊本営業所（昭和60年開設）",
+   "ai_initiative": "トップページで『AI』0件",
+   "ai_mark": false,
+   "url": "http://e-uncle.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-04",
+   "notes": "**人数が2016年4月の値で古い**（記事で人数を書くなら時点を必ず添える）。FISA の名簿の住所は苅田町港町4番5号で、公式の本社所在地（京町1丁目11番地5）と違う（公式を採用）"
+  }
+ ],
+ "miyako": [],
+ "yoshitomi": [],
+ "koge": [],
+ "chikujo": [],
+ "toho": [],
+ "aka": [],
+ "_reference": {
+  "fukuoka-city": {
+   "next_candidates": [
+    "株式会社イノス（博多区博多駅東2丁目6番1号 九勧筑紫通ビル。社員数138名〔男性88・女性50〕時点なし。コンサルティング・受託開発、パッケージ、情報セキュリティ製品）https://www.inos.co.jp/company/outline/",
+    "株式会社コムスタッフ（中央区天神1-14-18 天神ブリッククロス北棟12階。125名〔2026年2月1日現在〕。サイトの中心は『お仕事情報』で、IT 技術者の派遣が主とみられる）http://www.comstaff.co.jp/",
+    "グローバルブレインズ株式会社（中央区天神2-8-35。社員数103名〔男性81・女性22〕、売上20億4,092万円〔2026年6月期〕。熊本支店・佐賀・東京。**主要取引先の欄に『新技術・生成AI・RPAを活用したシステム提案』**）https://www.gbc.co.jp/",
+    "株式会社SRA西日本（博多区綱場町1-1 D-LIFEPLACE呉服町6F。99名〔2026年4月1日〕。**株式会社SRA 100%出資**）https://www.sraw.co.jp/company/",
+    "株式会社KBKインフォニイ（博多区博多駅東2丁目6番23号。96名〔2026年7月現在〕。役員がシティアスコムと重なる）https://www.kbk-net.co.jp/",
+    "株式会社エクシーズ（博多区博多駅前1丁目31番17号〔FISA〕。社員数90名〔2026年5月31日現在〕、売上12.5億円〔2026年3月期〕。**太陽ホールディングスグループ**。『AI・AWS・XRを活用したシステム開発にも対応』、AIエージェントDXPO 福岡'26 に出展）http://www.xseeds.co.jp/",
+    "株式会社ソフネット（東区馬出1丁目13番8号〔FISA〕。81名〔2026年4月現在〕。主要取引先に日立製作所）http://www.sofnet-pro.co.jp/",
+    "正興ITソリューション株式会社（博多区東光2丁目7番25号〔FISA〕。76名〔2025年4月末現在〕。港湾業界向けクラウド・自治体向け介護認定システムなど。社名から正興電機製作所のグループとみられる〔未確認〕）http://www.seiko-itsolution.co.jp/",
+    "株式会社システムトランジスタ（中央区渡辺通2丁目7番14号〔FISA〕。60名〔2026年9月現在〕）https://systra.co.jp/",
+    "キーウェア九州株式会社（博多区博多駅東3丁目13番21号〔FISA〕。59名〔2026年4月1日現在〕。キーウェアソリューションズ100%）https://www.keyware.co.jp/kyusyu",
+    "日本システムスタデイ株式会社（博多区御供所町〔FISA〕。57名〔2026年4月現在〕）、NDSシステムソリューションズ株式会社（中央区高砂〔FISA〕。57名）、株式会社ニップスシステムセンター（博多区住吉。48名〔2026年6月現在〕）、株式会社システック福岡（博多区御供所町。42名〔2023年10月31日現在〕）、株式会社サンレイズ（38名）、株式会社ネスコウイング（38名）、株式会社ケイエム（35名）、株式会社シップ（29名〔2026年9月現在〕。公式の所在地は博多区博多駅南1丁目3番1号で FISA の住所と違う）、株式会社システムオーディット（24名）、ソフトフィールド株式会社（14名）、エムアイエフ株式会社（12名〔2021年1月〕）、株式会社トリガ（10名）",
+    "株式会社福岡情報ビジネスセンター（博多区博多駅前3丁目26番29号〔FISA〕。グループ150名・単体80名。Fbeiホールディングスのグループ）https://www.fbicenter.co.jp/",
+    "株式会社ヒューマンテクノシステムホールディングス（博多区住吉。社員数14名・グループ連結273名。持株会社）https://www.kkhts.com/"
+   ],
+   "unverified": [
+    "株式会社NTTデータ九州（**本社 博多区博多駅前一丁目17番21号**、1990年3月6日創立、資本金1億円。会社概要に人数がない。採用ページは採用予定40名だけ）https://www.nttdata-kyushu.co.jp/company/outline.html 。規模は大きいとみられるが、公式で人数を確かめられなかった",
+    "西鉄情報システム株式会社（**博多区千代四丁目1-33**、1983年3月設立、資本金1億円＝**西日本鉄道100%**。会社概要に人数がない）https://www.nishitetsu.ne.jp/nis/profile/",
+    "JR九州システムソリューションズ株式会社（博多区吉塚本町13番79号〔FISA〕。公式 https://www.ss.jrkyushu-g.co.jp/company/profile は本文が取れなかった〔curl・WebFetch とも題名だけ〕）",
+    "株式会社九州DTS（博多区博多駅前2丁目19番24号〔FISA〕。公式 https://www.qdts.co.jp/ は curl でトップだけ、会社概要は WebFetch 503）",
+    "株式会社麻生情報システム（早良区百道浜2丁目4番27号 AIビル7F〔FISA〕。麻生グループ。https://www.aso-group.co.jp/ais/ は WebFetch 503）。嘉飯桂産業振興協議会の会員にも載る",
+    "日鉄ソリューションズ九州株式会社（博多区博多駅前2丁目3番7号〔FISA〕。公式 https://www.nssol.nipponsteel.com/kyushu/ は 403）",
+    "西部ガス情報システム株式会社（博多区千代一丁目15番27号〔FISA〕。公式 https://www.sgis.co.jp/ は接続できず）",
+    "キヤノンアルゴスロジック株式会社（**博多区綱場町7-3**、1982年8月12日設立、資本金1億円、主要株主キヤノンエスキースシステム。会社概要に人数がない〔WebFetch の要約〕）https://www.canon-al.co.jp/company/",
+    "株式会社ヌーラボ（**福岡本社 中央区天神一丁目11番1号 ONE FUKUOKA BLDG. 7階**、2004年3月29日設立、資本金100百万円〔2025年7月1日時点〕、東証グロース 5033。Backlog・Cacoo・Nulab Pass。会社概要・IR に人数がなく、採用サイトは 403）https://nulab.com/ja/about/",
+    "株式会社Fusic（**本社 中央区天神4-1-7 第3明星ビル6F**、2003年10月10日設立、東証グロース・福証Q-Board 5256。**事業内容の1番目が『AI・機械学習』**、IoT、AWS。会社概要・IR・採用に人数がない）https://fusic.co.jp/company/outline 。AI の会社として記事で使いたい候補（人数は有価証券報告書で確かめる）",
+    "株式会社ペンシル（中央区。ウェブコンサル。cases.md の12番で『約140人』は報道の値。公式は見ていない）",
+    "株式会社NTTデータNCB（博多区博多駅前1丁目17番21号〔FISA〕）、FFGコンピューターサービス株式会社（博多区博多駅前2丁目6番6号〔FISA〕。ふくおかFGのグループとみられる）、中央情報開発株式会社（博多区博多駅中央街）、ビズ・リファイン株式会社（中央区天神）: FISA の名簿に URL がなく、公式を見ていない",
+    "株式会社リンネット（**本社 博多区博多駅東2丁目13番34号**、1985年4月11日創立、資本金5,000万円、**株主 ヤマエグループホールディングス**。人数の記載なし）https://www.rinnet.co.jp/company/about/",
+    "株式会社メディアシステム（**本社 博多区博多駅前2丁目12番3号**、1997年7月設立、資本金1,800万円。受託開発・コンタクトセンターシステム。人数の記載なし）https://www.media-system.co.jp/company/",
+    "行政システム九州株式会社（博多区東比恵。Gcom のグループ。会社別の人数なし）、アクティブクオリア株式会社・ICTコンストラクション株式会社（Gcom のグループ）",
+    "株式会社富士通九州システムズ: 旧サイト（fujitsu.com/jp/group/fjqs/）は富士通の子会社一覧へ移っていて、会社のページを確かめられなかった（存続・社名を確かめていない）",
+    "そのほか FISA 正会員で公式の人数を取れなかった会社: 株式会社游玄堂、株式会社クロスウェブ、株式会社ｓｔｐｈｅｇｉａ、株式会社Fun it、株式会社システムクリエイト、株式会社システムプラネット、ユニティ・ソフト株式会社、マイクロコート株式会社（公式の本社は博多区博多駅前4-11-19で FISA の早良区と違う）、九州アイエスビー株式会社、九州総合サービス株式会社、株式会社アイ・キュービック、株式会社シティキャリアサービス、株式会社パーソン、株式会社ディジテック、株式会社ゲット、株式会社サンリツ、株式会社ソフト九州、株式会社オリズン、エムシーエー株式会社、コスミックビジネス株式会社、フォーサイトシステム株式会社、QCCS株式会社、日本電算システム株式会社、日米電子株式会社、エコー電子工業株式会社、西日本オフィスメーション株式会社、株式会社日本システムサプライ、株式会社コンピュータ教育社"
+   ],
+   "excluded": [
+    "株式会社QTnet（天神本店 中央区天神一丁目12番20号・赤坂本店、資本金220億2000万円、九州電力100%）: 事業の1番目が電気通信事業で、通信事業者として本表に入れなかった（境界。親が判断してよい）https://www.qtnet.co.jp/company/about/",
+    "株式会社システムイオ: FISA の住所は博多区祇園町だが、**公式の本社は東京本社（港区芝）・大阪本社・千葉本店で、福岡は営業所**（315名、MITホールディングス100%）→ _outside_hq",
+    "TISI株式会社 エネルギービジネス第4部（本社 東京都新宿区）→ _outside_hq",
+    "団体・学校・金融・保険の FISA 賛助会員（福岡商工会議所、九州先端科学技術研究所、ふくおかIST、福岡ソフトリサーチパーク、専門学校、保険会社など）"
+   ]
+  },
+  "kitakyushu": {
+   "next_candidates": [
+    "AESコンサルティング株式会社（**公式の本社 小倉北区鍛治町2-2-11 NRCCビル2F**。FISA の住所は戸畑区中原新町3番3号で違う。社員数30名〔時点なし〕。東京・大阪オフィス。取引先にアビームコンサルティング・NTTデータ）https://www.aesc.co.jp/company.html",
+    "九州システムコンサルティング株式会社（小倉北区米町2丁目2番1号 新小倉ビル3F。21人〔2025年7月〕）http://www.k-s-c.co.jp/"
+   ],
+   "unverified": [
+    "TOTOインフォム株式会社（小倉北区中島2丁目1番1号〔FISA。TOTO本社と同じ住所〕。TOTO のグループ。公式 http://infom.toto-group.jp/ は curl で接続できず、WebFetch 503）",
+    "株式会社アイキューブデジタル（**本社 小倉北区米町2-1-21 APエルテージ米町ビル2階**、2020年7月1日設立、資本金3億5,000万円、**株主 安川電機・YE DIGITAL**。製造業・物流業向けの工場自動化・IoT。公式に人数がなく、ipros〔secondary〕は78名）https://company.i3-digital.com/",
+    "株式会社ニシコン（小倉北区京町3丁目13番17号〔FISA〕。公式 https://www.nckk.co.jp/ の会社概要の本文を取れなかった）",
+    "株式会社エーエスエー・システムズ（**本社 小倉北区鍛冶町2丁目2-11 NRCCビル2F**〔公式。FISA は戸畑区〕、昭和59年11月20日設立、資本金9,000万円。主要取引先に日本製鉄・日鉄ソリューションズ・TOTOインフォム・ゼンリン。人数の記載なし）http://www.asasystems.co.jp/company/corporate.html",
+    "株式会社アネスティソフトウェア（八幡西区春日台。山口県の companies.json の _outside_hq に『社員数22名』。福岡の担当としては公式を開いていない）",
+    "株式会社システムサイエンス（小倉南区）・株式会社パーソナル技研（小倉北区東港）・BRラボ株式会社（小倉北区室町。2024年5月に京都から本社移転）・株式会社テクノネットワーク（戸畑区）・リンクソフトウエア株式会社（小倉北区吉野町）: WebSearch の要約（compalyze・ipros、secondary）に出ただけ。公式の URL を推測で開いたが、どれも接続できなかった"
+   ],
+   "excluded": [
+    "株式会社ゼンリン（戸畑区。地図データの会社）: IT の受託開発の会社ではないので候補にしていない（公式は見ていない）"
+   ]
+  },
+  "kurume": {
+   "next_candidates": [],
+   "unverified": [
+    "久留米情報システム株式会社（**FISA 正会員、久留米市東櫛原町389番地1**）: 公式 https://kisc.co.jp/ は『PHP のセキュリティ上の注意喚起を受けてホームページを一時停止』の告知だけ（WebFetch）。compalyze の要約（secondary）は100人以上300人未満",
+    "株式会社テクノ・カルチャー・システム（**本社 久留米市合川町1774-14**、1985年3月25日設立、資本金6,000万円。ソリューション・アウトソーシング・マネージドサービス・ERP パッケージ〔自治体・医療・金融・農協〕。会社概要に人数がない〔WebFetch〕）https://www.techno-net.co.jp/company/profile/",
+    "株式会社システムエイト（**久留米市東合川5丁目8番5号 地場産くるめ3階**、1976年2月16日設立、資本金1,000万円。FISA・久留米商工会議所。会社概要に人数がない）https://www.system-eight.co.jp/company.html",
+    "株式会社ニシヨリシステムズ（FISA の住所は久留米市南1丁目11番2号。公式はニシヨリ株式会社〔久留米市御井朝妻一丁目6番14号〕のシステム事業として載る。繊維ほかの会社の一部門で、人数なし）http://www.nishiyori.co.jp/company/office/",
+    "コーワコンピュータ株式会社（久留米市津福本町495番地〔FISA〕。公式 http://kowacmp.co.jp/ は 503）"
+   ],
+   "excluded": []
+  },
+  "iizuka": {
+   "next_candidates": [],
+   "unverified": [],
+   "excluded": [
+    "アイテックシステム株式会社（本社 飯塚市横田後牟田工業団地、従業員数150名、2000年11月17日設立）https://www.itec-system.co.jp/company/index.html : 公式で本社と人数を確かめたが、機械・環境システム部門と電機部門の会社で、IT の受託開発ではないので入れなかった",
+    "株式会社福岡ソフトウェアセンター（飯塚市幸袋526番1号、FISA 賛助会員）: IT 研修・施設の第三セクターで、受託開発の会社ではない https://www.fsc-go.co.jp/"
+   ]
+  },
+  "onojo": {
+   "next_candidates": [],
+   "unverified": [
+    "ニックシステムズ株式会社（FISA 正会員、大野城市川久保3丁目1番3号）: FISA の名簿に URL がなく、推測したドメインは接続できなかった。人数・事業は確かめていない"
+   ],
+   "excluded": []
+  },
+  "koga": {
+   "next_candidates": [],
+   "unverified": [
+    "合同会社MONCs（**福岡本部 古賀市舞の里2丁目2番4号**、北九州営業所 戸畑区。FISA 正会員。CO2 排出量算定クラウド『CZERO』、IT 常駐・受託開発・ICT サービス、IT リテラシー教育。会社概要に人数・設立年がない）https://moncs.jp/company/"
+   ],
+   "excluded": []
+  },
+  "_outside_hq": [
+   {
+    "name": "株式会社システムイオ",
+    "hq": "東京都港区芝五丁目26番24号（東京本社）。大阪本社・千葉本店あり。MITホールディングス100%",
+    "fukuoka_site": "福岡営業所 福岡市博多区祇園町1-28 いちご博多ビル2F（FISA の名簿の住所）。従業員数315名・グループ401名（2026年4月1日、会社全体）",
+    "source": "https://www.systemio.co.jp/"
+   },
+   {
+    "name": "TISI株式会社（2026年7月1日に TIS とインテックが合併）",
+    "hq": "東京都新宿区",
+    "fukuoka_site": "エネルギービジネス第4部（福岡市博多区博多駅東2丁目5番1号、FISA）",
+    "source": "http://www.tisi.jp/news/2026/tisi_info/20260701_1.html"
+   },
+   {
+    "name": "FISA の名簿に『支店・営業所・事業所・オフィス』として載る県外本社の会社（約50社）",
+    "hq": "各社",
+    "fukuoka_site": "キューブシステム・Jitera・ネットワールド・テクバン・LINE WORKS・クラウドスミス・アルファテクノロジー・システムアイ・テックビズ・ネオテックス・KEL CRESTIA・コムチュア・エイチ・エル・シー・日本自動化開発・ニッセイコム・インフォメーション・ディベロプメント・SEアシスト・ムサシ・ネクストジェン・JTP・テクノクリエイティブ・カコムス・InfiniCore・アイエスエフネット・ジェイ・クリエイション・富士インフォックス・ネット・NCD・中央システム・東通メディア・信興テクノミスト・ワールドインテック・ラック・ユー・エス・イー・ヒューマンキャピタル・CIC・ジャステック・コア・オーイーシー〔大分〕・エム・アンド・アイ・アクシス・YSK e-com・WISHシステムコンサルティング・PE-BANK・ISTソフトウェア・N.ジェン・BlueMeme・ナビオコンピュータ・ジャパニアス・アンリミ・アドソル日進・FPTジャパン・サン情報サービス・サイバーコム・クレイトソリューションズ・ピー・シー・エー など（いずれも福岡市。各社の本社は確かめていない）",
+    "source": "https://www.fisa.jp/member/"
+   },
+   {
+    "name": "株式会社アネスティソフトウェア（逆向き: 本社が北九州市、山口県美祢市に支店）",
+    "hq": "北九州市八幡西区春日台（yamaguchi/companies.json）",
+    "fukuoka_site": "本社",
+    "source": "data/area/yamaguchi/companies.json"
+   }
+  ]
+ },
+ "_notes": [
+  "本表は公式サイトで本社所在地と従業員数の両方を確認できた会社だけ。該当は福岡市（10社）・北九州市（8社）・苅田町（1社）の3市町19社。残りの27市・28町・2村は本表『なし』（確かめられなかった）。久留米市（久留米情報システム・テクノ・カルチャー・システム・システムエイトほか）、大野城市（ニックシステムズ）、古賀市（MONCs）は候補があるが人数を公式で確かめられなかった。飯塚市は IT の会社を見つけられなかった（アイテックシステムは機械・電機で対象外）。",
+  "公式の人数（多い順）: Qsol（福岡市中央区、752名＝役員除く、2026年4月1日、九州電力100%）、Gcomホールディングス（博多区、644名＝グループ合計、2025年7月）、九州日立システムズ（博多区、577名、2026年4月1日）、シティアスコム（早良区、534名、2026年4月1日）、YE DIGITAL（北九州市小倉北区、単独505名・連結650名、2026年3月1日、上場）、インフォセンス（博多区、453名、2026年4月1日、山九100%）、BCC（中央区、393名、2026年4月1日）、SCSK九州（博多区、230名、2026年4月1日）、TIS西日本（博多区、208名、2026年4月）、システムニシツウ（南区、169名、時点なし）、YE DIGITAL Kyushu（小倉北区、168名、2026年4月1日）、FCCテクノ（南区、150名、2024年）、ソルネット（八幡東区、120名、2026年4月1日、JBCCグループ）、アイコムソフト（戸畑区、101名、2026年10月1日）、日本ソフト技研（戸畑区、77名、2025年4月）、吉川システック（八幡東区、62名、2026年4月）、アプロティクス（小倉北区、46名、時点なし）、寶結（小倉北区、39名、2026年2月28日）、アンクル（苅田町、20名、2016年4月）。",
+  "福岡市の区: 博多区5社（Gcom・九州日立システムズ・インフォセンス・SCSK九州・TIS西日本）、中央区2社（Qsol・BCC）、南区2社（システムニシツウ・FCCテクノ）、早良区1社（シティアスコム）、東区・城南区・西区0社（東区のソフネットは次点）。北九州市の区: 小倉北区4社、戸畑区2社、八幡東区2社。",
+  "**大手グループ・上場の会社が多い**: Qsol（九州電力100%）、九州日立システムズ（日立システムズ）、シティアスコム（西日本FHグループ）、インフォセンス（山九100%）、BCC（株主 RKB毎日HD・NEC）、SCSK九州（SCSK）、TIS西日本（TIS グループとみられる）、YE DIGITAL（上場。安川電機と共同で出資する関係会社あり）、YE DIGITAL Kyushu（YE DIGITAL 子会社）、ソルネット（JBCC グループ）、Gcom（主な株主に富士通Japan）。グループに属さないと公式から読めるのは FCCテクノ（独立系と自称）・システムニシツウ・アイコムソフト・日本ソフト技研・アプロティクス・寶結・アンクルなど。記事で『地元の独立系』とまとめない。",
+  "AI関連の公式の記載（ai_mark=true）: **シティアスコム（2023年から自社専用 LLM 環境、顧客向け『CAPTAIN Assistant AI』と生成AI利活用の支援サービス）**、**YE DIGITAL（物流倉庫向けAI・AI故障予知・AI画像判定・生成AIソフトウェア開発支援）**、SCSK九州（『熟練工AIソリューション』のメニュー）、吉川システック（画像解析・機械学習のパッケージ）。次点・未確認では Fusic（事業内容の1番目が AI・機械学習。人数は未確認）、グローバルブレインズ（生成AI・RPA を活用したシステム提案）、エクシーズ（AI・AWS・XR を活用したシステム開発）。ほかの本表の会社は公式に AI の事業の記載が見当たらない（九州日立システムズはグループのイベント案内だけ、ソルネットは JBCC グループの構想のリンクだけ）。",
+  "業界団体: 一般社団法人福岡県情報サービス産業協会（FISA）https://www.fisa.jp/ の会員企業一覧（179件）。旧ドメイン fisa.or.jp はこの環境から接続できない（502）。名簿の住所は支店・営業所や旧住所のことがあり（AES コンサルティング・エーエスエー・システムズ・マイクロコート・アンクル・シップで公式と違った）、本社は必ず公式で確かめた。吉川システックの加盟団体の欄に『北九州情報サービス振興産業』（原文のまま）とあり、北九州の団体があるとみられるが、名前・名簿は確かめていない。"
+ ]
+}
