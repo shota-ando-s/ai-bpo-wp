@@ -24,13 +24,13 @@
 
 ## 状態
 - [x] _brief.md・wages.md（2026-11-04）、shared.md に slug
-- [ ] 調査
-- [ ] 執筆仕様 docs/area-writing-spec-kumamoto.md
-- [ ] 記事 46本（県1＋市町村45）
-- [ ] data/subsidies/kumamoto.yml・areas.yml・build
-- [ ] 地域ガイド（九州地方の段）・area-todo.md・area-new-prefecture.md・memory
-- [ ] チェック
-- [ ] main に push
+- [x] 調査（7担当＋行政の補充1、WebSearch 約102回）
+- [x] 執筆仕様 docs/area-writing-spec-kumamoto.md
+- [x] 記事 46本（県1＋市町村45）
+- [x] data/subsidies/kumamoto.yml・areas.yml・build
+- [x] 地域ガイド（九州地方の段）・area-todo.md・area-new-prefecture.md・memory
+- [x] チェック（check_article 46ページ ERROR 0・area_uniq 全ページ60.5〜95.1%・試算の時間はすべて余り3・_calc.py OK・見出し行だけの表なし・書いてはいけない局名なし）
+- [x] main に push（投稿・デプロイはユーザーが Mac で「投稿して」）
 
 ## 実績メモ
 - 2026-11-04 ネットワーク確認（pref.kumamoto.jp・soumu.go.jp とも開けた）。WebSearch 1回（市町村数の確認）。stats・cases を起動
@@ -73,3 +73,4 @@
 - W11 西原村（約7,109字・71.9%・月221.25h/77.4万）・錦町（7,106・74.7%・217.75h/77.1万）・球磨村（7,227・74.6%・167h/53.1万）完了、ERROR 0、WS0。球磨村は県の死者67人（2022-04-01 確定値）を「球磨川流域」で1文、市村別の被害の数は県の資料にない。錦町の後押し補助金の案内は list00191
 - W12 あさぎり町（約8,016字・95.1%・月188h/59.8万）・玉東町（7,483・90.3%・139h/44.2万）・和水町（7,755・95.0%・153h/45.6万）完了、ERROR 0、WS0。**仕様と違った**: あさぎり町の「423時間相当」は17名の1か月分ではなく、17名の生成量から職員約180名に引き伸ばし1ページ10分と仮定した推計（報告書 p.27）。人吉校研修費助成の窓口は商工観光課
 - W13 県ページ（約15,936字、ERROR 0、外部リンク60本すべて200、WS0）完了。一覧は広域本部4区分で45市町村にリンク。42ページと照合済み、W12 の3ページは親が人口・15〜64歳の増減を照合して一致。芦北町の AI交通は実証運行中として1文。生成AIの利用率は TDB 九州・沖縄版（983社のうち35.9%、8県全体）だけ
+- 親: 全ページの area_uniq（46ページ）で美里町だけ58.8%（苓北町・小国町と段落が似た）→ 7段落を書き直して71.3%。ほかは60.5%（荒尾市）〜95.1%。check_article 46ページ ERROR 0、slug・parent・書いてはいけない局名・見出し行だけの表を全ページで確かめた。地域ガイド・area-todo・area-new-prefecture・memory を更新
