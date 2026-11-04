@@ -70,3 +70,7 @@
 | kawasaki-town | 福岡県川崎町（田川郡） | 宮城県川崎町と同じ slug。投稿後に確かめる |
 | 福岡県の60市町村の slug 一覧 | data/area/fukuoka/_brief.md | 九州の他県で同じ slug を使うときは見比べる（例: misato・oguni-town など既存の slug も） |
 | oita-city | 大分県大分市（県ページ `/area/oita/` と別） | 青森市 `aomori-city` と同じ形。大分県の18市町村のほかの slug（beppu, nakatsu, hita, saiki, usuki, tsukumi, taketa, bungotakada, kitsuki, usa, bungoono, yufu, kunisaki, hiji, kokonoe, kusu, himeshima）は既存のページと重ならない |
+| `kumamoto-city` | 熊本県 熊本市 | 政令指定都市、1ページ（青森市 `aomori-city` の形） |
+| `misato-town-kumamoto` | 熊本県 美里町（下益城郡） | 秋田 `misato`・宮城 `misato-town`・島根 `misato-town-shimane`・宮崎 `misato-town-miyazaki` と別 |
+| `kashima-town` | 熊本県 嘉島町（上益城郡） | 佐賀県鹿島市 `kashima` と重ならない形（佐賀の依頼どおり） |
+| `ozu` / `takamori` | 熊本県 大津町・高森町 | 愛媛県大洲市・長野県高森町と同じ slug（親ページが違う） |
