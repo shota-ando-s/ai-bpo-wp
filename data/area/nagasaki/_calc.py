@@ -82,6 +82,9 @@ CASES = [
     ("JA島原雲仙ブロッコリー部会（AI か不明）", "雲仙市", {"農業", "野菜"}, None, False),
     ("ことのうみ柑橘部会（使用済み）", "長与町", {"農業", "果実"}, None, True),
     ("窯業技術センター（研究段階・使用済み）", "波佐見町", {"窯業・土石", "陶磁器"}, None, True),
+    # D12 が足した県外の事例（規模不明）
+    ("ハイパーネットワーク社会研究所「保育とAI」（大分市、大分が優先）", "県外", {"保育所", "児童福祉"}, None, True),
+    ("ヤマサちくわ（県外、数値なし）", "県外", {"食料品", "水産練り製品"}, None, True),
 ]
 
 # (市町, slug, 業種, 業態, 業態のキー, 従業員数, 対象業務, 対象人数, 1人の月の業務量[時間])
@@ -150,7 +153,7 @@ def other_plans():
             out.append(None)
             continue
         src = open(path, encoding="utf-8").read()
-        i = src.index("PLAN = [")
+        i = src.index("\nPLAN = [") + 1
         j = src.index("\n]\n", i)
         rows = ast.literal_eval(src[i + 7:j + 2])
         n_skip = 0
