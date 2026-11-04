@@ -131,6 +131,20 @@ def man(yen):
     return (yen / Decimal(10000)).quantize(Decimal("0.1"), rounding=ROUND_HALF_UP)
 
 
+def load_plan(path):
+    """他県の _calc.py を import して PLAN を返す（main は __name__ のガードで動かない）。読めなければ None。
+    九州の他県の _calc.py は docstring にも「PLAN = [」が出ることがあるので、文字列の切り出しではなく import で読む。"""
+    import importlib.util
+    try:
+        spec = importlib.util.spec_from_file_location("plan_" + os.path.basename(os.path.dirname(path)), path)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        return list(mod.PLAN)
+    except Exception as e:  # noqa: BLE001
+        print(f"（注意）{path} を読めない: {e}")
+        return None
+
+
 def other_plans():
     """5県の _calc.py の PLAN を読み、(県, 市町村, 削減時間, 万円) を返す。ファイルがなければ None を入れる（NG）。"""
     out = []
@@ -143,10 +157,11 @@ def other_plans():
             print(f"NG {label}の _calc.py がない: {path}")
             out.append(None)
             continue
-        src = open(path, encoding="utf-8").read()
-        i = src.index("PLAN = [")
-        j = src.index("\n]\n", i)
-        rows = ast.literal_eval(src[i + 7:j + 2])
+        rows = load_plan(path)
+        if rows is None:
+            print(f"NG {label}の _calc.py の PLAN を読めない")
+            out.append(None)
+            continue
         n_skip = 0
         for r in rows:
             city, ind, n, hrs = r[0], r[2], r[-2], r[-1]
