@@ -19,6 +19,8 @@ data/area/okayama/_calc.py を元に作った。県ページ（/area/oita/）に
 使い方: python3 data/area/oita/_calc.py   （末尾に OK / NG を出す）
 """
 import ast
+import sys
+sys.dont_write_bytecode = True  # 他県の _calc.py を import しても __pycache__ を作らない
 import glob
 import os
 import re
