@@ -27,6 +27,7 @@
 | 九州農政局「九州農政局管内のスマート農業取組事例」（令和8年9月、47事例） | https://www.maff.go.jp/kyusyu/seisan/gizyutu/attach/pdf/smart-24.pdf （一覧 https://www.maff.go.jp/kyusyu/seisan/gizyutu/smart.html 。旧版 smart-17.pdf は404） | 2026-11-04 | 九州7県。AIの語があるのは 長崎県壱岐市 松嶋農場（No.20 ゼロアグリ）、大分県竹田市 古澤畜産（No.36）、鹿児島県肝付町 中野ファーム（No.45）、鹿児島県薩摩郡 永江陽平（No.46）。熊本県の2件はAIの語なし | 熊本 |
 | 九州農政局「九州農政局管内の農業支援サービス取組事例」（令和8年9月） | https://www.maff.go.jp/kyusyu/seisan/gizyutu/attach/pdf/smart-25.pdf | 2026-11-04 | AIの語があるのは 宮崎県新富町 AGRIST（No.27）、鹿児島県 ファーマーズサポート（No.29）、長崎県 ルートレック・ネットワークス（No.31）。熊本県のAIの事例なし | 熊本 |
 | くまもと産業支援財団のサイト | www.kmt-ia.or.jp | 2026-11-04 | クラウドのセッションから名前解決できない | 熊本 |
+| 九州財務局「第6回みやざき活性化フォーラム」結果概要・講演資料2（2023-12-19） | https://lfb.mof.go.jp/kyusyu/content/list/028/miyafo-ramu_kekkagaiyou20231219.pdf ・ https://lfb.mof.go.jp/kyusyu/content/list/028/miyafo-ramu_kouennsiryou_2_20231219.pdf | 2026-11-04 | 宮崎県だけ（県内事業者アンケート 回答474者） | 宮崎 |
 
 ## 管轄
 
