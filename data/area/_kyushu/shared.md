@@ -77,6 +77,10 @@
 | 令和7年国勢調査 不詳補完値 第3-3表（県別ファイル。鹿児島 000040517888・宮崎 000040517887） | https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040517888&fileKind=0 | 2026-11-04 | 県ごと | 鹿児島 |
 | 令和2年国勢調査 不詳補完結果 第1-4表（全市区町村） | https://www.e-stat.go.jp/stat-search/file-download?statInfId=000032144437&fileKind=0 | 2026-11-04 | 九州7県の全市町村 | 鹿児島 |
 | 農水省「令和８年版 都道府県の農林水産業の概要」（末尾が県コード） | https://www.maff.go.jp/j/kanbo/tiho/15sonota/2026PDF/todouhuken_gaiyou2026-46.pdf | 2026-11-04 | 県ごと（46=鹿児島） | 鹿児島 |
+| TDB福岡支店「九州・沖縄『後継者不在率』動向調査（2025年）」2025-12-03 PDF（URLは data/area/kumamoto/stats_labor.md） | https://www.tdb.co.jp/ （PDFのURLは stats_labor.md） | 2026-11-04 | 沖縄を含む8県の値 | 熊本 |
+| TDB福岡支店「九州・沖縄『社長年齢』分析調査（2025年）」2026-03-10 PDF | 同上 | 2026-11-04 | 沖縄を含む8県の値 | 熊本 |
+| 経済センサス‐活動調査（令和3年）第14表 福岡〜沖縄のファイル | e-Stat statInfId=000040067901 | 2026-11-04 | 九州7県が同じファイル | 熊本 |
+| 熊本労働局「最近の雇用失業情勢」p.4 の「九州」の有効求人倍率 1.08倍（2026年9月） | 熊本労働局のサイト（stats_labor.md） | 2026-11-04 | 九州（沖縄を含むかは表に書かれていない） | 熊本 |
 
 ## 管轄
 
