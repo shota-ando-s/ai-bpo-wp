@@ -30,6 +30,7 @@
     python3 scripts/area_uniq.py kagoshima          # 鹿児島の全ページ（鹿児島市の slug は kagoshima-city）
     python3 scripts/area_uniq.py oita               # 大分の全ページ（大分市の slug は oita-city）
     python3 scripts/area_uniq.py kumamoto           # 熊本の全ページ（熊本市の slug は kumamoto-city）
+    python3 scripts/area_uniq.py miyazaki           # 宮崎の全ページ（宮崎市の slug は miyazaki-city）
 
 目安は固有60%以上。下回るページは、国・県の制度の説明や FAQ の定型の回答を、その市町の事情に合わせて書き直す。
 """
@@ -41,7 +42,7 @@ def paras(p):
     body=open(p).read().split('---',2)[2]
     return [(x, any(f in x for f in FIXED)) for x in (y.strip() for y in re.split(r"\n\s*\n",body)) if len(x)>=40 and not x.startswith(('#','!','['))]
 args=sys.argv[1:]
-PREF=args.pop(0) if args and args[0] in ('ehime','kagawa','tokushima','kochi','aomori','iwate','akita','miyagi','yamagata','fukushima','niigata','toyama','ishikawa','fukui','gifu','nagano','yamanashi','shimane','tottori','hiroshima','yamaguchi','okayama','saga','kagoshima','oita','nagasaki','fukuoka','kumamoto') else 'ehime'
+PREF=args.pop(0) if args and args[0] in ('ehime','kagawa','tokushima','kochi','aomori','iwate','akita','miyagi','yamagata','fukushima','niigata','toyama','ishikawa','fukui','gifu','nagano','yamanashi','shimane','tottori','hiroshima','yamaguchi','okayama','saga','kagoshima','oita','nagasaki','fukuoka','kumamoto','miyazaki') else 'ehime'
 # 県ごとにファイル名の日付が違う（四国・青森は 2026-10-17、岩手は 2026-10-18）ので日付は問わない
 files=sorted(glob.glob(ROOT+f'2026-??-??-area-{PREF}.md')+glob.glob(ROOT+f'2026-??-??-area-{PREF}-*.md'))
 DATE={os.path.basename(f)[:10] for f in files}.pop() if files else '2026-10-17'
