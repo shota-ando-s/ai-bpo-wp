@@ -22,8 +22,8 @@
 
 ## 状態
 - [x] _brief.md・wages.md（2026-11-04）
-- [ ] 調査
-- [ ] 執筆仕様 docs/area-writing-spec-nagasaki.md
+- [x] 調査（6担当、WebSearch 84回）
+- [x] 執筆仕様 docs/area-writing-spec-nagasaki.md
 - [ ] 記事 22本（県1＋市町21）
 - [ ] data/subsidies/nagasaki.yml・areas.yml・build
 - [ ] 地域ガイド（九州地方の段）・area-todo.md・area-new-prefecture.md・memory
@@ -46,3 +46,5 @@
 - 仕様: 共通部分は親が作った（docs/area-writing-spec-nagasaki.md）。D345 を起動
 - D345（完了: _spec_D345.md・_subsidies_nagasaki.yml〔23制度、離島の雇用機会拡充は外した〕・_areas_snippet.yml。作業用コピーで build 784制度・エラー0、長崎の22地域×3目的の診断エラー0。シーエイプロダクションは本表に入れない（受託の記載なし）。東彼杵町・波佐見町は東彼商工会の支所で確認。長与町・佐々町は 502／名前解決不可）。判断31点は案どおり。例外: D3-9 県のBPO連携協定は書かない（競合の事業者の取り組み）、D3-11 11/12の佐世保のセミナーは書かない（申込11/5で投稿時に過ぎる見込み）
 - subsidy_a.yml の note の `**` で YAML が壊れていた（親の編集のせい）→ 引用符で直した
+- D12（完了: _spec_D12.md。15〜64歳の増減率は総務省の参考表から当社で計算、大村市だけ+1.1%・最大の減少は小値賀町▲17.7%。橋梁診断は大村市で詳述。ヤマサちくわ→川棚町（数値なし）。_calc.py が佐賀の docstring を拾う不具合→親が直した、九州を含む200行と照合して OK）
+- [x] 執筆仕様 docs/area-writing-spec-nagasaki.md を組み立てた（共通＋案の扱い＋D1〜D5＋担当割り W1〜W7）
