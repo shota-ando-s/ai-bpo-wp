@@ -65,7 +65,10 @@ REQUIRED = ("gifu", "hiroshima", "nagano", "nagasaki", "oita", "okayama", "shima
 
 def read_plan_standard(src):
     """岡山県の形の PLAN（`PLAN = [` から行頭の `]` まで。各行の [0]=市町村, [2]=業種, [-2]=対象人数, [-1]=1人の月の業務量）"""
-    i = src.index("PLAN = [")
+    m = re.search(r"^PLAN = \[", src, re.M)  # 行頭の代入だけ（docstring の「PLAN = [」を拾わない。福岡県の _calc.py の docstring にある）
+    if not m:
+        raise ValueError("行頭の PLAN = [ がない")
+    i = m.start()
     j = src.index("\n]\n", i)
     rows = ast.literal_eval(src[i + 7:j + 2])
     return [(r[0], r[2], r[-2], r[-1]) for r in rows]
