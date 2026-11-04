@@ -56,3 +56,10 @@
 | kashima | 佐賀県鹿島市 | 熊本県上益城郡嘉島町と同じ読み（熊本は `kashima-town` などにしてください）。茨城県鹿嶋市は未作成 |
 | kohoku | 佐賀県杵島郡江北町 | 既存なし |
 | arita / imari / karatsu / tosu / takeo / ureshino / ogi / taku / kanzaki / yoshinogari / kiyama / kamimine / miyaki / genkai / tara | 佐賀県の市町 | 既存なし（佐賀が使う） |
+| fukuoka-city | 福岡県福岡市 | 県と同名の市（青森市 aomori-city と同じ形）。福岡県のページは fukuoka |
+| kitakyushu | 福岡県北九州市 | 政令市。区のページは作らない |
+| okawa | 福岡県大川市 | 高知県大川村と同じ slug（親ページが違う）。投稿後に別ページか確かめる |
+| nakagawa | 福岡県那珂川市 | 長野県中川村と同じ slug。投稿後に確かめる |
+| miyako | 福岡県みやこ町 | 岩手県宮古市と同じ slug。投稿後に確かめる |
+| kawasaki-town | 福岡県川崎町（田川郡） | 宮城県川崎町と同じ slug。投稿後に確かめる |
+| 福岡県の60市町村の slug 一覧 | data/area/fukuoka/_brief.md | 九州の他県で同じ slug を使うときは見比べる（例: misato・oguni-town など既存の slug も） |
