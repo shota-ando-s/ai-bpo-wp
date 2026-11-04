@@ -1,0 +1,184 @@
+{
+ "_meta": {
+  "checked": "2026-11-04",
+  "scope": "大分県18市町村（14市3町1村）。本社（公式サイトの本社・本店・所在地）が当該市町村にあり、公式サイトでシステム開発・ソフトウェア開発・Web開発・情報処理サービス・SI を事業として明示する法人。岡山・広島などと同じく、本表には『公式サイトで本社所在地と従業員数の両方を確認できた会社』だけを入れた。従業員数が公式にない会社・公式サイトを開けない会社は _reference の unverified に置いた。県外に本社がある会社の県内拠点は _reference._outside_hq。並べ順は公式の従業員数の多い順。大分市は見つかった全社（4社）で、母集団は薄い。",
+  "candidate_sources": [
+   "一般社団法人 大分県情報サービス産業協会: 依頼にあった団体名。WebSearch 2回で公式サイト・会員名簿が見つからなかった（結果は口コミサイト・SalesNow・県や市の委員名簿の PDF だけ）。推測したドメイン（oisia.or.jp など）は curl で接続できず、実在するドメインかも確かめていない。団体の正式名・有無は未確認",
+   "県の IT 企業の紹介・県の DX 支援の登録事業者の一覧: WebSearch 1回で見つからなかった（求人サイト・発注ナビだけ）。県の『大分県中小企業等デジタルツール導入補助金』の問い合わせ先が oita-dx＠oec.co.jp（gov_ai.md）で、オーイーシーが専用サイトを運営している",
+   "比較サイト（imitsu の大分県のWebシステム開発の一覧、比較ビズ biz.ne.jp の大分市・大分県の一覧、発注ナビ hnavi）。secondary。社名と所在地の手がかりにだけ使った",
+   "cases.md: Exist Japan（大分市金池町）・イジゲングループ（大分市）・ザイナス（大分市金池南、法人番号 2320001016630）",
+   "WebSearch（companies の目安9回のうち9回を使用。うち3回は工場の確認・候補の確認）"
+  ],
+  "columns": "name / hq（公式の本社住所）/ municipality / town / employees{value,as_of,source} / capital / founded / business_summary / ai_initiative / url / size_basis / checked / notes"
+ },
+ "oita-city": [
+  {
+   "name": "株式会社オーイーシー",
+   "hq": "大分県大分市東春日町17番57号 ソフトパーク内（会社概要『大分本社（本店）』）",
+   "municipality": "大分市",
+   "town": "東春日町",
+   "employees": {
+    "value": 595,
+    "as_of": "595名（2026年4月1日現在）",
+    "source": "https://www.oec.co.jp/company/about"
+   },
+   "capital": {
+    "value": "1億円",
+    "source": "https://www.oec.co.jp/company/about"
+   },
+   "founded": null,
+   "business_summary": "情報処理・システム開発（サイトのサービス分類に自治体・医療・民間などの分野別ソリューション）。設立年は会社概要のページで読み取れなかった（トップのニュースに『創立60周年』の表現があるが年は未確認）。株主は株式会社アステム・株式会社トキハ・株式会社大分放送・西日本電線株式会社・大分合同新聞社・三和酒類株式会社・株式会社大分銀行・府内産業株式会社・オーイーシー社員持株会（会社概要の記載、WebFetch の要約）",
+   "ai_initiative": "サイトの分野別ソリューションに『AI・IoT』の項目があるだけで、AI の具体的な取り組みの説明はトップ・会社概要に見当たらない（WebFetch）。トップの関連サイト欄に Qiita の技術記事（2026-08-25、機械学習モデルの記事）。県の『大分県中小企業等デジタルツール導入補助金』の問い合わせ先が oita-dx＠oec.co.jp（専用サイトの運営。gov_ai.md）",
+   "url": "https://www.oec.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-04",
+   "notes": "**岡山市の『OEC株式会社』（旧 岡山情報処理センター、天満屋100%、299名）とは別の会社**。名前が似ているので記事で取り違えない（oec-o.co.jp は岡山の会社）。株主に県内の地元企業が並ぶ（グループ会社とは書かない）。県の DX 補助金の事務を受けているので、記事で『県の補助金の運営事業者』と結び付けるときは gov_ai.md の出典で書く。比較サイト（SalesNow の要約）は605名で、公式の595名と違う。記事では公式の値"
+  },
+  {
+   "name": "大分シーイーシー株式会社",
+   "hq": "大分県大分市中央町1丁目1-3（朝日生命大分ビル3F）（会社概要『本社』）。杵築事業所（本店）は杵築市大字熊野21番地の1",
+   "municipality": "大分市",
+   "town": "中央町",
+   "employees": {
+    "value": 80,
+    "as_of": "80名 令和8年4月1日現在",
+    "source": "https://www.oita-cec.co.jp/company"
+   },
+   "capital": {
+    "value": "3,000万円",
+    "source": "https://www.oita-cec.co.jp/company"
+   },
+   "founded": 1995,
+   "business_summary": "平成7年12月設立。事業案内は Microsoft サービス・ソフトウェア受託開発・IT 支援サービス・データセンターサービス。会社概要にグループ会社の一覧はあるが、親会社・株主の記載はない（WebFetch の要約）",
+   "ai_initiative": "AI の事業の記載はない。会社概要の保有資格に G検定 4名、ディープラーニング実装師（AI実装検定）11名、AB-100（Agentic AI Business Solutions Architect）1名、AB-900（Microsoft 365 Copilot and Agent Administration Fundamentals）1名（2026年10月現在）",
+   "url": "https://www.oita-cec.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-04",
+   "notes": "**本社は大分市、本店（登記上の本店とみられる）は杵築市**。会社概要は『本社』を大分市中央町、『杵築事業所（本店）』を杵築市と書く。WebSearch の要約（求人サイト）に『杵築本社は杵築事業所に変更（大分事業所に本社を移転）』とある（secondary）。杵築市のページで使うなら『杵築市に事業所（本店）がある』まで。親会社は確かめていない（社名から東京の株式会社シーイーシーとの関係が推測できるが、公式で見ていないので書かない）"
+  },
+  {
+   "name": "株式会社アーネット",
+   "hq": "大分県大分市中島西2丁目1番2号 イーグル1中島2F",
+   "municipality": "大分市",
+   "town": "中島西",
+   "employees": {
+    "value": 41,
+    "as_of": "41名 [男性36名/女性5名]（2023年4月現在）",
+    "source": "https://www.art-net.jp/about"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.art-net.jp/about"
+   },
+   "founded": 2002,
+   "business_summary": "2002年6月6日設立。Web制作、各種ソフトウエア設計・開発・保守、組込みシステム設計・開発・保守、企業向けネットワーク、教育訓練・コンサルタント、IT技術者派遣。城崎オフィス（大分市城崎町）",
+   "ai_initiative": "会社概要に AI の記載なし。トップのニュースのタグに『実証実験、AI、アバター』があるが中身は確かめていない",
+   "url": "https://www.art-net.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-04",
+   "notes": "人数は2023年4月で古い"
+  },
+  {
+   "name": "有限会社技研",
+   "hq": "大分県大分市大字宮崎1385-1-2F",
+   "municipality": "大分市",
+   "town": "大字宮崎",
+   "employees": {
+    "value": 17,
+    "as_of": "17名（時点の記載なし）",
+    "source": "https://www.soft-giken.jp/company/"
+   },
+   "capital": {
+    "value": "3,000万円",
+    "source": "https://www.soft-giken.jp/company/"
+   },
+   "founded": 2002,
+   "business_summary": "2002年6月3日（ページでは『創業』）。ソフトウェアの設計・製造・販売・保守、システムの企画・コンサルティング、IT 関連の教育・研修、インターネット関連事業。トップでは Web システム開発・アプリ開発・オフショア開発",
+   "ai_initiative": "記載なし",
+   "url": "https://www.soft-giken.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-04",
+   "notes": "人数に時点がない。会社概要は WebFetch の要約（逐語ではない）"
+  }
+ ],
+ "beppu": [],
+ "nakatsu": [],
+ "hita": [],
+ "saiki": [],
+ "usuki": [],
+ "tsukumi": [],
+ "taketa": [],
+ "bungotakada": [],
+ "kitsuki": [],
+ "usa": [],
+ "bungoono": [],
+ "yufu": [],
+ "kunisaki": [],
+ "hiji": [],
+ "kokonoe": [],
+ "kusu": [],
+ "himeshima": [],
+ "_reference": {
+  "oita-city": {
+   "next_candidates": [],
+   "unverified": [
+    "イジゲングループ株式会社（会社概要の本社 大分市中央町1丁目4番10号 第一メディアシティビル5F、2020年10月6日設立、資本金241,285,000円〔資本準備金を含む〕。福岡・宮崎・北九州にオフィス）https://ijgn.group/about 。会社概要・採用ページに人数なし。事業は経営戦略・採用・ブランディング・UI/UX・Webシステム開発・自社プロダクト・行政DX、DXアドバイザリーに『AI活用』。県の ONE OITA 経営バディ育成プログラムの運営受託（gov_ai.md）。**gov_ai.md は所在を『大分市大道町』と書いていて、会社概要の『中央町』と食い違う**（時点の違いか、確かめていない）。WebFetch の要約では会社概要に西日本フィナンシャルホールディングス・西日本シティ銀行などのグループ会社の欄がある（資本関係は確かめていない。記事で『地元の独立系』と書かない）。cases.md の事例の出典（フォーラム資料）の会社",
+    "Exist Japan株式会社（大分市金池町2丁目9番10号301、2016年6月1日設立、代表 今長 学）http://existjp.com/ ・PR TIMES 2026-09-01。AI 研修・『おおいたAIスクール』・AIエージェントの導入支援・SNS 運用の自動化、マーケティング・広告運用・Web/EC 制作・補助金申請代行。人数・資本金の記載なし。システム開発会社というより AI 研修・コンサルの会社。cases.md で社名なしの顧問先の数値（ベンダーの主張）。fukui/cases_outside.md に『使わない』の記録",
+    "株式会社トランスコミュニカ（大分市王子南町５番２７号 ユナイテッドクリエーションビル2F、代表 山本 譲治）https://transcommunica.co.jp/about-us/ 。システム開発・ホームページ制作・自社サービス（ペンギンタイムカード）。人数・設立の記載なし",
+    "株式会社ザイナス（cases.md の法人番号 2320001016630 で大分市金池南１丁目５番１号）。imitsu（secondary）は公式 URL を www.zynas.co.jp・従業員100-499人・2018年設立とするが、**このセッションでは zynas.co.jp・zainas.co.jp とも名前解決できず開けなかった**（ネットワーク設定の許可が要る）。WebSearch の要約には『1986年設立・14名・大分市舞鶴町』の別の会社の可能性がある掲載もある。cases.md の2022年の AI 実証（ひじきの異物識別）の会社",
+    "比較サイトの一覧に名前だけ（secondary、公式未確認）: モアモスト（中央町）、ATTS（荻原）、ゴードービジネスマシン（下郡北。事務機の会社とみられる）、SHIP（府内町）、クレエ（有限会社、2006年設立）、アビクリエイト、クオックス"
+   ],
+   "excluded": [
+    "OEC株式会社（岡山市北区本町。オーイーシーとは別会社。岡山県の会社）"
+   ]
+  },
+  "tsukumi": {
+   "next_candidates": [],
+   "unverified": [
+    "CloudBCP株式会社（比較ビズ・WebSearch の要約で津久見市港町1番21号 津久見商工会館2階、2021年2月設立、代表 衛藤嵩史。介護事業者向けの BCP 策定・運用アプリ『CloudBCP』と受託システム開発）。公式サイト https://www.cloud-bcp.com/ は題名だけで会社情報が読めなかった。所在地・人数とも公式で確かめていない"
+   ],
+   "excluded": []
+  },
+  "taketa": {
+   "next_candidates": [],
+   "unverified": [
+    "株式会社ルックス（比較ビズ https://www.biz.ne.jp/company/looks1202/ で竹田市大字飛田川、代表 渡久地政宗、社員数10人。ホームページ更新・WordPress のプラグイン制作・業務システム〔Django〕・デザイン・6次産業）。公式サイトは特定できなかった。福岡市博多区の同名の会社がある"
+   ],
+   "excluded": []
+  },
+  "kitsuki": {
+   "next_candidates": [],
+   "unverified": [
+    "大分シーイーシー株式会社の杵築事業所（本店）（杵築市大字熊野21番地の1）。会社概要の『本社』は大分市なので本表は大分市に置いた"
+   ],
+   "excluded": []
+  },
+  "hiji": {
+   "next_candidates": [],
+   "unverified": [],
+   "excluded": [
+    "大分電子工業株式会社（imitsu の Webシステム開発の一覧に日出町で載るが、半導体の受託の会社とみられる〔semi-connect の一覧、secondary〕。公式は見ていない）"
+   ]
+  },
+  "_outside_hq": [
+   {
+    "name": "SCSKニアショアシステムズ株式会社",
+    "hq": "未確認（SCSK グループ）",
+    "oita_site": "大分開発センター 大分市中央町（求人サイトの要約。secondary）",
+    "source": "https://directscout.recruit.co.jp/job_descriptions/5321248（secondary）"
+   },
+   {
+    "name": "株式会社システム開発",
+    "hq": "宮崎県宮崎市（imitsu、secondary）",
+    "oita_site": "大分市に支社（imitsu の記載。住所なし）",
+    "source": "https://imitsu.jp/list/web-system/oita/（secondary）"
+   }
+  ]
+ },
+ "_notes": [
+  "本表は公式サイトで本社所在地と従業員数の両方を確認できた会社だけ。該当は大分市の4社だけ（オーイーシー 595名〔2026年4月1日〕、大分シーイーシー 80名〔令和8年4月1日〕、アーネット 41名〔2023年4月〕、技研 17名〔時点なし〕）。別府市・中津市・日田市・佐伯市・臼杵市・津久見市・竹田市・豊後高田市・杵築市・宇佐市・豊後大野市・由布市・国東市の13市、日出町・九重町・玖珠町の3町、姫島村は本表『なし』（確かめられなかった）。津久見市（CloudBCP）・竹田市（ルックス）は候補があるが公式で人数・所在地を確かめられなかった。",
+  "**名前の取り違えに注意**: 大分市の『株式会社オーイーシー』と岡山市の『OEC株式会社』は別会社。大分シーイーシーは本社が大分市、本店が杵築市。",
+  "AI関連の公式の記載は薄い: オーイーシー（『AI・IoT』の分野名だけ。県の DX ツール補助金の専用サイトを運営）、大分シーイーシー（AI の資格保有者数だけ）、アーネット（ニュースのタグだけ）。AI を前面に出すのは本表外の Exist Japan（AI 研修・顧問）とイジゲングループ（AI 活用の DX アドバイザリー・県の委託）で、どちらも人数が公式にない。",
+  "県の窓口の案（本表なしの市町村）: 県の『中小企業等DX総合支援事業（DX総合支援窓口・DXコンサルタント）』（https://www.pref.oita.jp/soshiki/14270/dx-sogo.html）、大分県よろず支援拠点（大分市東春日町17-20 ソフトパークセンタービル2F）、地元の商工会議所・商工会（gov_ai.md の表）。県の DAIB（Digital ＆ AI Innovation Bridge）はベンダーと事業者のマッチング。"
+ ]
+}
