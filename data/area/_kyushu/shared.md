@@ -27,6 +27,12 @@
 
 確かめたら書き足す（機関・管轄の県・根拠の資料）。
 
+| 機関 | 管轄の県 | 根拠の資料 |
+|---|---|---|
+| 財務局: 九州財務局（熊本市）＝大分・宮崎・鹿児島財務事務所（熊本県は局が直轄）／福岡財務支局（福岡市）＝福岡県・佐賀財務事務所・長崎財務事務所（小倉・佐世保出張所） | 九州財務局 熊本・大分・宮崎・鹿児島／福岡財務支局 福岡・佐賀・長崎 | 九州財務局 https://lfb.mof.go.jp/kyusyu/ と福岡財務支局 https://lfb.mof.go.jp/fukuoka/ のトップの「財務事務所のご案内」（2026-11-04 大分が確認）。**「南九州財務局」という局はない** |
+| 九州農政局（熊本市）。県ごとに「◯◯県拠点」 | 九州7県 | https://www.maff.go.jp/kyusyu/ （大分県拠点 /kyusyu/oita/。2026-11-04 大分が確認） |
+| 九州経済産業局（福岡市） | 九州7県（沖縄は内閣府沖縄総合事務局） | kyushu.meti.go.jp はこの環境から 403（2026-11-04 大分が確認）。記事でリンクしない |
+
 ## 事例の割り当て
 
 九州の他県と同じ事例を使いそうなら、先にここに書いて push する。先に書いた県が使う。
@@ -63,3 +69,4 @@
 | miyako | 福岡県みやこ町 | 岩手県宮古市と同じ slug。投稿後に確かめる |
 | kawasaki-town | 福岡県川崎町（田川郡） | 宮城県川崎町と同じ slug。投稿後に確かめる |
 | 福岡県の60市町村の slug 一覧 | data/area/fukuoka/_brief.md | 九州の他県で同じ slug を使うときは見比べる（例: misato・oguni-town など既存の slug も） |
+| oita-city | 大分県大分市（県ページ `/area/oita/` と別） | 青森市 `aomori-city` と同じ形。大分県の18市町村のほかの slug（beppu, nakatsu, hita, saiki, usuki, tsukumi, taketa, bungotakada, kitsuki, usa, bungoono, yufu, kunisaki, hiji, kokonoe, kusu, himeshima）は既存のページと重ならない |
