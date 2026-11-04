@@ -22,6 +22,9 @@
 
 | 資料 | URL | 確かめた日 | 県の値 | 書いた県 |
 |---|---|---|---|---|
+| よろず支援拠点全国本部の拠点一覧（九州7県の設置機関と電話） | https://yorozu.smrj.go.jp/base/ | 2026-11-04 | 九州7県 | 大分 |
+| 日商の商工会議所一覧 | https://ab.jcci.or.jp/cci-list/ | 2026-11-04 | 九州7県 | 大分 |
+| 全国商工会連合会の名簿（shoko_search.php に kencd[]=県コードで POST、Cookie を付けて search.php の startNo でページ送り） | https://www.shokokai.or.jp/ | 2026-11-04 | 九州7県 | 大分 |
 | 令和7年国勢調査 不詳補完値 第3-3表（e-Stat） | statInfId 福岡 000040517882・佐賀 …883・長崎 …884・熊本 …885・大分 …886（宮崎 …887・鹿児島 …888 は未確認） | 2026-11-04 | 各県 | 長崎 |
 | 令和3年経済センサス‐活動調査 第14表（福岡県〜沖縄県） | e-Stat statInfId=000040067901 | 2026-11-04 | 九州7県 | 長崎 |
 | 長崎労働局 雇用失業情勢 令和8年9月分 p.9（九州7県の有効求人倍率・季調） | https://jsite.mhlw.go.jp/nagasaki-roudoukyoku/content/contents/koyo-tokei-1-26103001.pdf | 2026-11-04 | 九州7県 | 長崎 |
