@@ -32,6 +32,8 @@
 | 九州経済産業局「DX・サイバーセキュリティ対策に取り組む事例」 | https://www.kyushu.meti.go.jp/seisaku/jyoho/jirei/dx/top.html | 2026-11-04（403） | 九州各県 | 鹿児島 |
 | 九州経済産業局「社会のデータ・AI等活用事例動画」（2024-05-09） | https://www.kyushu.meti.go.jp/seisaku/jyoho/oshirase/240509_1.html | 2026-11-04（403） | 鹿児島堀口製茶×テラスマイル（検索の要約）ほか | 鹿児島 |
 | 農研機構 スマート農業実証プロジェクトの成果 PDF（r2_*） | https://www.naro.go.jp/smart-nogyo/r2/files/r2_5g_H03.pdf （鹿児島県志布志市 鹿児島堀口製茶。AIの葉期判定 巡回21分→11分は試算） | 2026-11-04 | 九州各県の実証が番号で並ぶ | 鹿児島 |
+| 九州経済産業局「2025年度マナビDX Quest 地域企業協働プログラム参加企業」 | https://www.kyushu.meti.go.jp/seisaku/jyoho/jirei/dx_quest/2025/260302_1.html | 2026-11-04 | curl・WebFetch とも 403。検索の要約だけで、佐賀はバイオテックス・サンエスライン（未確認）。他県の会社は見られず | 佐賀 |
+| 九州経済産業局 事例集・ガイドライン | https://www.kyushu.meti.go.jp/seisaku/jyoho/pamph.html | 2026-11-04 | 403。九州の AI 事例集で佐賀の会社名つきのものは見つからなかった | 佐賀 |
 
 ## 管轄
 
