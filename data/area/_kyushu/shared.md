@@ -22,6 +22,7 @@
 
 | 資料 | URL | 確かめた日 | 県の値 | 書いた県 |
 |---|---|---|---|---|
+| 大分県「おおいた中小企業支援ポータル」公募中一覧（大分県の補助金を一覧できる） | https://oita-chusho.jp/support/ | 2026-11-04 | 大分県だけ | 大分 |
 | 九州経済産業局の管轄区域（福岡・佐賀・長崎・熊本・大分・宮崎・鹿児島）: 農林水産省「経済産業局の問い合わせ窓口」 | https://www.maff.go.jp/j/shokusan/export/yusyutsugaido/contact_meti.html （curl で開ける） | 2026-11-04 | 九州7県 | 長崎 |
 | 九州運輸局「支局・事務所のご案内」（7県の運輸支局・自動車検査登録事務所・海事事務所。Shift_JIS） | https://wwwtb.mlit.go.jp/kyushu/gyoumu/sikyoku/body.htm | 2026-11-04 | 九州7県 | 長崎 |
 | 厚生労働省「保健所所管区域案内」（URL の 42 を県コードに変えると他県も同じ形） | https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/hokenjo/42nagasaki.html | 2026-11-04 | 長崎（他県も同形） | 長崎 |
