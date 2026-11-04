@@ -99,6 +99,10 @@
 | 全国商工会連合会の名簿（search.php に POST。`zyoken`・`kencdTbl` に県コード、`kensu=10`・`startNo=-9,1,11,21`・`pageMode=Plus`） | https://meibo.shokokai.or.jp/hpsearch/top/php/search.php | 2026-11-04 | 全国（県コードを変える） | 鹿児島 |
 | よろず支援拠点全国本部「拠点一覧」 | https://yorozu.smrj.go.jp/base/ | 2026-11-04 | 九州7県 | 鹿児島 |
 | 気象庁「活動状況」（火山ごと。506＝桜島、509＝口永良部島） | https://www.data.jma.go.jp/vois/data/tokyo/STOCK/activity_info/506.html | 2026-11-04 | 九州の活火山（番号を変える） | 鹿児島 |
+| 福岡労働局「雇用情勢」別紙（九州・沖縄8県の主要指標の表） | https://jsite.mhlw.go.jp/fukuoka-roudoukyoku/content/contents/002872407.pdf p.10〜12 | 2026-11-04 | 九州7県と沖縄の有効求人倍率など | 福岡 |
+| 厚労省 一般職業紹介状況（令和8年9月分）第6表-1（就業地別の有効求人倍率、47都道府県） | https://www.mhlw.go.jp/content/11602000/001763943.pdf | 2026-11-04 | 九州7県と沖縄 | 福岡 |
+| TDB福岡支店 福岡県版 人手不足（2026年1月調査） | https://www.tdb.co.jp/report/economic/20260313-laborshortage202601-fukuoka/ | 2026-11-04 | 福岡県だけ（福岡県版は後継者不在率 2025-12-09 もある） | 福岡 |
+| 総務省「令和8年度 地域社会DX推進パッケージ事業（計画策定支援事業）採択状況」 | https://www.soumu.go.jp/main_content/001096622.pdf | 2026-11-04 | 全国。長崎県川棚町・大分県杵築市・鹿児島県喜界町の行もある | 福岡 |
 
 ## 管轄
 
