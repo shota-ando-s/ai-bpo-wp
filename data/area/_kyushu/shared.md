@@ -34,6 +34,11 @@
 | 農水省「令和８年版 都道府県の農林水産業の概要」 | https://www.maff.go.jp/j/kanbo/tiho/15sonota/2026PDF/todouhuken_gaiyou2026-41.pdf （末尾40〜47で九州各県） | 2026-11-04 | 県ごと | 佐賀 |
 | e-Stat 経済センサス‐活動調査 令和3年 第14表（福岡県～沖縄県） | statInfId=000040067901 | 2026-11-04 | 九州7県・沖縄 | 佐賀 |
 | TDB の佐賀県版 | `-saga` の URL を約1,100通り | 2026-11-04 | 佐賀支店の県版は見つからなかった | 佐賀 |
+| 宮崎労働局「一般職業紹介状況（令和8年9月分）」別表5（九州7県と沖縄の有効求人倍率、季節調整値） | https://jsite.mhlw.go.jp/miyazaki-roudoukyoku/content/contents/002871435.pdf | 2026-11-04 | 九州7県・沖縄 | 宮崎 |
+| e-Stat 令和3年経済センサス‐活動調査 第14表（福岡〜沖縄の8県が1ファイル） | https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040067901&fileKind=0 | 2026-11-04 | 九州7県・沖縄 | 宮崎 |
+| 経産省 2025年経済構造実態調査 地域別 第1表（都道府県の製造品出荷額） | https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040480531&fileKind=0 | 2026-11-04 | 九州7県 | 宮崎 |
+| TDB 全国版 休廃業・解散（2026-01-09）p.8 の都道府県表 | （TDB のレポート一覧） | 2026-11-04 | 九州7県 | 宮崎 |
+| TDB 鹿児島県版 人手不足（2026年4月調査） | https://www.tdb.co.jp/report/economic/20260717-laborshortage202604-kagoshima/ | 2026-11-04 | 鹿児島（宮崎県版・九州版の人手不足は見つからない） | 宮崎 |
 | 九州財務局 大分財務事務所「おおいた活性化フォーラム」（第9回 2026-05-29。県の ONE OITA 事業、信金・商議所・商工会の担当者のAI活用） | https://lfb.mof.go.jp/kyusyu/oita/oita_forum.html | 2026-11-04 | 大分 | 大分 |
 | 農林水産技術会議 スマート農業実証プロジェクト R4 パンフレット（4-17 長崎県東彼杵町の茶〔AIではなくドローン空撮の生育予測〕p.199、4-18 大分県国東市の白ねぎ p.200） | https://www.affrc.maff.go.jp/docs/smart_agri_pro/pdf/pamphlet/r4/R4_4-18.pdf | 2026-11-04 | 長崎・大分 | 大分 |
 | 九州農政局「九州農政局管内のスマート農業取組事例」（令和8年9月、47事例） | https://www.maff.go.jp/kyusyu/seisan/gizyutu/attach/pdf/smart-24.pdf （一覧 https://www.maff.go.jp/kyusyu/seisan/gizyutu/smart.html 。旧版 smart-17.pdf は404） | 2026-11-04 | 九州7県。AIの語があるのは 長崎県壱岐市 松嶋農場（No.20 ゼロアグリ）、大分県竹田市 古澤畜産（No.36）、鹿児島県肝付町 中野ファーム（No.45）、鹿児島県薩摩郡 永江陽平（No.46）。熊本県の2件はAIの語なし | 熊本 |
