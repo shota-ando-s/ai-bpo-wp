@@ -2,7 +2,7 @@
 
 地域ページで、調べきれずに残っている作業。終わったら行ごと消すか、`[x]` にして日付を書く。
 
-- 調査データ: `data/area/kagawa/`・`data/area/tokushima/`・`data/area/kochi/`・`data/area/aomori/`・`data/area/iwate/`・`data/area/akita/`・`data/area/miyagi/`・`data/area/yamagata/`・`data/area/fukushima/`・`data/area/niigata/`・`data/area/toyama/`・`data/area/ishikawa/`・`data/area/fukui/`・`data/area/gifu/`・`data/area/nagano/`・`data/area/yamanashi/`・`data/area/shimane/`・`data/area/tottori/`・`data/area/hiroshima/`・`data/area/yamaguchi/`・`data/area/okayama/`（2026-10-17〜27の調査結果。`stats.md` `gov_ai.md` `cases.md` `companies.json` `subsidy_*.yml` など）
+- 調査データ: `data/area/kagawa/`・`data/area/kumamoto/`・`data/area/tokushima/`・`data/area/kochi/`・`data/area/aomori/`・`data/area/iwate/`・`data/area/akita/`・`data/area/miyagi/`・`data/area/yamagata/`・`data/area/fukushima/`・`data/area/niigata/`・`data/area/toyama/`・`data/area/ishikawa/`・`data/area/fukui/`・`data/area/gifu/`・`data/area/nagano/`・`data/area/yamanashi/`・`data/area/shimane/`・`data/area/tottori/`・`data/area/hiroshima/`・`data/area/yamaguchi/`・`data/area/okayama/`（2026-10-17〜27の調査結果。`stats.md` `gov_ai.md` `cases.md` `companies.json` `subsidy_*.yml` など）
 - 執筆仕様: `docs/area-writing-spec-kagawa.md`・`docs/area-writing-spec-tokushima.md`・`docs/area-writing-spec-kochi.md`・`docs/area-writing-spec-aomori.md`・`docs/area-writing-spec-iwate.md`・`docs/area-writing-spec-akita.md`・`docs/area-writing-spec-miyagi.md`・`docs/area-writing-spec-yamagata.md`・`docs/area-writing-spec-fukushima.md`・`docs/area-writing-spec-niigata.md`・`docs/area-writing-spec-toyama.md`・`docs/area-writing-spec-ishikawa.md`・`docs/area-writing-spec-fukui.md`・`docs/area-writing-spec-gifu.md`・`docs/area-writing-spec-nagano.md`・`docs/area-writing-spec-yamanashi.md`・`docs/area-writing-spec-shimane.md`・`docs/area-writing-spec-tottori.md`・`docs/area-writing-spec-hiroshima.md`・`docs/area-writing-spec-yamaguchi.md`・`docs/area-writing-spec-okayama.md`
 - ページを直したら `python3 post.py articles/<file>.md` で更新する（画像は作り直されない）。補助金のYAMLを直したら `python3 scripts/build_shindan_data.py` → コミット → `./deploy.sh`
 
@@ -17,6 +17,37 @@
 - [ ] 潟上市「稼げる力創出補助金」の「次の受付は10月末」（潟上市ページ・秋田県ページ98行）が締切か開始か分からず直していない
 - [ ] 開催日を過ぎたセミナーが未来形のまま（加茂市 143・183行の加茂商工会議所のセミナー〔10/26〕、秋田の井川・由利本荘・横手・潟上の研修〔10/22・10/27〕など）
 - [ ] 解説記事 `articles/2026-05-24-ai-bpo-it-hojo.md` は1次（5/12）の頃の内容のまま。2026年度の制度と照合して直す（企画書12章の宿題と同じ）
+
+## 熊本県（2026-11-04作成。未投稿）
+
+九州で作った県の1つ（**九州7県を別々のクラウドのセッションで同時に作った**。共有メモは `data/area/_kyushu/shared.md`）。**経済産業局は九州経済産業局、農政局は九州農政局〔本局が熊本市〕、財務局は九州財務局〔本局が熊本市。熊本県は局の直轄。依頼メモの「南九州財務局」はない〕、労働局は熊本労働局、運輸は九州運輸局の熊本運輸支局**。県ページ＋45市町村（14市23町8村）。記録は `data/area/kumamoto/_progress.md`、仕様は `docs/area-writing-spec-kumamoto.md`。
+
+### 投稿の前後にすること
+
+- [ ] Mac で「投稿して」（post スキル。県ページを先に投稿してから45市町村、地域ガイド、高知市のページ〔熊本ロッキーの所在を直した〕、`./deploy.sh` で補助金診断の JSON を反映）
+- [ ] **熊本市 `kumamoto-city` が県ページ `/area/kumamoto/` と別のページ**になっていることを確かめる（青森市・岡山市と同じ形）
+- [ ] 大津町 `ozu`（愛媛県大洲市 `/area/ehime/ozu/`）・高森町 `takamori`（長野県高森町 `/area/nagano/takamori/`）は他県のページと同じ slug。投稿後に、それぞれ別のページになっている（他県のページを上書きしていない）ことを確かめる（朝日町・かほく市と同じ）。美里町は `misato-town-kumamoto`、嘉島町は `kashima-town`（佐賀県鹿島市 `kashima`）、小国町は `oguni`（山形県小国町 `oguni-town`）
+- [ ] 画像の確認（地図の判定・目視）。阿蘇・天草・球磨川など地名の多いページは特に
+- [ ] **令和8年熊本地震（2026-07-28〜）の値は県の第67報（2026-10-26時点）**。8市町（八代市・熊本市・宇城市・宇土市・益城町・氷川町・御船町・嘉島町）の H2 2 冒頭。第67報に「次回は11月4日」とあり、新しい報が出ていれば値を直す（直さない場合も時点が書いてあるので誤りにはならない）。第67報には美里町（住家被害1,156棟）など8市町以外の行もあるが、仕様の判断どおり書いていない
+- [ ] 締切のある制度・講座を書いたページは、締切後に直す: くまもと事業者再出発支援補助金 第2次（11/17。8市町）・第3次（12/1〜12/16）、持続化補助金〈災害支援枠〉2次（12/15。8市町）、令和7年8月豪雨の被災中小企業者再建支援補助金（11/30 17時。県ページ・八代市・氷川町）、令和2年7月豪雨のなりわい再建（11/27。県ページ）、働き方改革推進支援助成金など11/30締切の国の制度（13市町村）、県の建設産業働き方改革推進事業費補助金（12/28。6町村）、熊本商工会議所のセミナー（11/13。熊本市）、くま大インキュの生成AIセミナー（11/26、申込11/25。熊本市）、総務省の「現場DX」セミナー（12/2、申込11/27。菊池市・熊本市・多良木町）、芦北町の生成AI講座（〜2027-02-17）
+- [ ] 国のデジタル化・AI導入補助金7次の締切（12/1）を過ぎたら、45ページと県ページの国の制度の行を直す（全県共通の項目と同じ）
+- [ ] **最低賃金が2026-12-01に1,034円→1,092円**。両方の時点を書いたページ（県ページなど）は、12/1 以降の更新で1,092円を主にする
+- [ ] **熊本県のサイトのリンクの条件**: 「リンクを行った場合は、熊本県広報グループまで連絡」とある（D2 の判断9）。県ページ・市町村ページは pref.kumamoto.jp に多くリンクしている。連絡するかユーザーが決める
+- [ ] **高知市のページの熊本ロッキー**: 所在を「熊本県益城町」から「熊本県」に直した（法人番号の本店は熊本市北区植木町、リリースは「上益城郡」）。高知市の記事の実証の期間・数値の書き方（83.3% は1店舗4週間、9,900万円は28店舗の見込み）もリリースと照らして直すか確かめる
+- [ ] 福田屋（熊本市北区）の AI 検品の本格導入が公表されたら熊本市の H2 3 を直す。芦北町の中小企業経営DXモデル事業の選定先・成果、DX推進相談窓口の開設が公表されたら芦北町に足す。大津町の生成AIが「令和8年度に導入」から導入済みになったら大津町を直す
+
+### 調べきれていないこと
+
+- [ ] **くまもと産業支援財団（www.kmt-ia.or.jp）がクラウドから名前解決できない**。財団の補助金（中小企業DX推進臨時補助金・生産性向上投資支援事業費補助金〔DX・CN化支援分〕、どちらも終了）の補助率・期間は二次情報で、診断データとページに入れていない。財団の事例集・成果報告も見ていない。Mac のブラウザで確かめる
+- [ ] **熊本県産業技術センター（kmt-iri.go.jp）が 503・証明書エラー、九州経済産業局（kyushu.meti.go.jp）が 403**。共同研究の成果・九経局の事例集・DX セレクションは確かめていない
+- [ ] **市町村の公式サイトが開けず、独自の補助金を確かめられなかった**: 玉名市・上天草市・嘉島町・甲佐町・小国町・相良村（Incapsula の 403・文字化け）、芦北町（商工業の一覧の2・3ページ目が 403）。ページと診断の note は「確かめられませんでした」。Mac のブラウザで確かめる
+- [ ] **TDB の熊本県版は休廃業・人手不足だけ**。後継者不在率・社長年齢は九州・沖縄版（沖縄を含む8県）の熊本県の行、生成AIは九州・沖縄版（983社）に県別がない。熊日・地方経済総合研究所の県内企業の生成AI調査（18.8%、2024年11〜12月）は原典を開いておらず、記事で使っていない
+- [ ] 社人研の令和5年推計は試していない（他県で毎回 403）。15〜64歳の増減は国勢調査の不詳補完値から当社で計算した値
+- [ ] **県内の事例**: 事業者が自ら実績を公表した中小企業の数値つき事例は0件。熊本市の3社（サイバーレコード・TORUTE・SENSTYLE）は事業者の説明・県の事例サイト・九州財務局の資料の値。大津町（なかせ農園×アグリライト研究所）は見込み・目標。県外の未使用の数値つきは2件（沼澤農園→山鹿市、ベルファーム→八代市）で、43ページの H2 4 は「見つからなかった」
+- [ ] 農研機構の資料（沼澤農園・ベルファーム・JA阿蘇いちご部会委託部）は「無断での引用・転載を禁止」。記事は「」の引用をせず要約と数値で書いた。問題がないか確かめる
+- [ ] 地元IT企業の本表は4市町11社（熊本市8・合志市・人吉市・嘉島町）。システムフォレスト（人吉市）の人数は2022年8月、アワーズ・インフォメーション・システム（嘉島町）は令和6年4月の時点。東京エレクトロン九州の 2,515人（2026-04-01）はクラウドに日本語フォントがなく目視できず、記事に書いていない
+- [ ] 湯前町は総務省の表に行がないのに町の計画に「AIチャットボット…利用中」。小国町は2024年の生成AI導入準備の報道と表の不在。両方を時点つきで書いた
+- [ ] PubMed（Noy & Zhang）のリンクはクラウドから 429。Mac で開けるか確かめる
 
 ## 佐賀県（2026-11-04作成。未投稿）
 
