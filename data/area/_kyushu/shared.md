@@ -22,6 +22,10 @@
 
 | 資料 | URL | 確かめた日 | 県の値 | 書いた県 |
 |---|---|---|---|---|
+| 九州財務局「地域におけるAI活用を巡る現状」（令和8年1月。管内100社ヒアリング、AI活用72.0%） | https://lfb.mof.go.jp/kyusyu/content/kyusyu_kaigi_2601.pdf | 2026-11-04 | 熊本・大分・宮崎・鹿児島の計。県別の値はない | 大分 |
+| 大分労働局「大分県の雇用情勢（令和8年9月分）」p.7（九州8県の有効求人倍率、季節調整値） | https://jsite.mhlw.go.jp/oita-roudoukyoku/content/contents/002874828.pdf | 2026-11-04 | 九州8県 | 大分 |
+| TDB 大分県版「休廃業・解散」p.7（47都道府県の2021〜2025年の件数） | https://www.tdb.co.jp/report/industry/20260217-closedown25y-oita/ | 2026-11-04 | 47都道府県（九州各県を含む） | 大分 |
+| TDB の人手不足・生成AIの九州版・大分県版（2026年） | URL の日付を変えて試し、すべて404 | 2026-11-04 | 見つからない | 大分 |
 | TDB福岡支店「九州・沖縄『後継者不在率』動向調査（2025年）」 | https://www.tdb.co.jp/report/economic/20251203-successor25y-kyusyu/ | 2026-11-04 | 九州・沖縄8県の不在率（PDF p.4・p.9）。県別の社数なし | 佐賀 |
 | TDB福岡支店「九州・沖縄『社長年齢』分析調査（2025年）」 | https://www.tdb.co.jp/report/economic/20260310-presidentage2025-kyusyu/ | 2026-11-04 | 8県の平均年齢と全国順位（p.5・p.6） | 佐賀 |
 | TDB福岡支店「九州・沖縄 人手不足に対する企業の動向調査」2026年1月・4月・7月 | …/20260306-laborshortage202601-kyusyu/ ・ …/20260603-laborshortage202604-kyusyu/ ・ …/20260827-laborshortage202607-kyusyu/ | 2026-11-04 | 九州・沖縄全体の値だけ（県別なし） | 佐賀 |
