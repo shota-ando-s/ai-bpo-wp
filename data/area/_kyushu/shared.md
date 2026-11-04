@@ -40,3 +40,7 @@
 
 | slug | 県・市町村 | 扱い |
 |---|---|---|
+| miyazaki-city | 宮崎県宮崎市（県ページ `/area/miyazaki/` と別） | 青森市 `aomori-city` と同じ形 |
+| misato-town-miyazaki | 宮崎県美郷町（東臼杵郡） | 秋田県美郷町 `misato`・宮城県美里町 `misato-town`・島根県美郷町 `misato-town-shimane` と重ならない形。熊本県美里町は別の slug にしてください |
+| nichinan | 宮崎県日南市（鳥取県日南町 `nichinan` と同じ） | 親ページが違うので同じ slug のまま（若桜町・大山町と同じ扱い）。投稿後に別ページか確かめる |
+| tsuno | 宮崎県都農町（高知県津野町 `tsuno` と同じ） | 同上 |
