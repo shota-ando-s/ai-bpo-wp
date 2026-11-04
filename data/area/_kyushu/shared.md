@@ -50,3 +50,9 @@
 | yamato-village | 鹿児島県大島郡大和村 | 熊本県上益城郡山都町と同じ読み（熊本は `yamato` を使ってよい） |
 | toshima-village | 鹿児島県鹿児島郡十島村 | 東京都の利島村・豊島区と同じ読み |
 | mishima-village | 鹿児島県鹿児島郡三島村 | 静岡県三島市と同じ読み |
+| saga-city | 佐賀県佐賀市 | 県と同じ名前（青森市・岡山市と同じ形） |
+| omachi-town | 佐賀県杵島郡大町町 | 長野県大町市 `omachi` |
+| shiroishi-town | 佐賀県杵島郡白石町 | 宮城県白石市 `shiroishi` |
+| kashima | 佐賀県鹿島市 | 熊本県上益城郡嘉島町と同じ読み（熊本は `kashima-town` などにしてください）。茨城県鹿嶋市は未作成 |
+| kohoku | 佐賀県杵島郡江北町 | 既存なし |
+| arita / imari / karatsu / tosu / takeo / ureshino / ogi / taku / kanzaki / yoshinogari / kiyama / kamimine / miyaki / genkai / tara | 佐賀県の市町 | 既存なし（佐賀が使う） |
