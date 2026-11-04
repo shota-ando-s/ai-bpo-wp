@@ -38,6 +38,8 @@
 | TDB 福岡県版「後継者不在率」 | https://www.tdb.co.jp/report/economic/20251209-successor25y-fukuoka/ | 2026-11-04 | 福岡 | 長崎 |
 | TDB の九州版（-kyushu など）は生成AI・人手不足・後継者不在率で見つからなかった | — | 2026-11-04 | — | 長崎 |
 | 有人国境離島法 別表（特定有人国境離島地域。長崎3地域・鹿児島5地域） | https://laws.e-gov.go.jp/api/1/lawdata/428AC1000000033 | 2026-11-04 | 長崎・鹿児島 | 長崎 |
+| 九州運輸局「支局・事務所のご案内」 | https://wwwtb.mlit.go.jp/kyushu/gyoumu/sikyoku/body.htm | 2026-11-04 | 九州各県の運輸支局（宮崎の行だけ確認） | 宮崎 |
+| 農水省「経済産業局の問い合わせ窓口」（九州経済産業局の管轄＝九州7県） | https://www.maff.go.jp/j/shokusan/export/yusyutsugaido/contact_meti.html | 2026-11-04 | 九州7県 | 宮崎 |
 | 九州財務局「地域におけるAI活用を巡る現状」（令和8年1月。管内100社ヒアリング、AI活用72.0%） | https://lfb.mof.go.jp/kyusyu/content/kyusyu_kaigi_2601.pdf | 2026-11-04 | 熊本・大分・宮崎・鹿児島の計。県別の値はない | 大分 |
 | 大分労働局「大分県の雇用情勢（令和8年9月分）」p.7（九州8県の有効求人倍率、季節調整値） | https://jsite.mhlw.go.jp/oita-roudoukyoku/content/contents/002874828.pdf | 2026-11-04 | 九州8県 | 大分 |
 | TDB 大分県版「休廃業・解散」p.7（47都道府県の2021〜2025年の件数） | https://www.tdb.co.jp/report/industry/20260217-closedown25y-oita/ | 2026-11-04 | 47都道府県（九州各県を含む） | 大分 |
