@@ -44,3 +44,9 @@
 | misato-town-miyazaki | 宮崎県美郷町（東臼杵郡） | 秋田県美郷町 `misato`・宮城県美里町 `misato-town`・島根県美郷町 `misato-town-shimane` と重ならない形。熊本県美里町は別の slug にしてください |
 | nichinan | 宮崎県日南市（鳥取県日南町 `nichinan` と同じ） | 親ページが違うので同じ slug のまま（若桜町・大山町と同じ扱い）。投稿後に別ページか確かめる |
 | tsuno | 宮崎県都農町（高知県津野町 `tsuno` と同じ） | 同上 |
+| kagoshima-city | 鹿児島県鹿児島市 | 県と同じ名前（青森市・岡山市と同じ形） |
+| osaki-town | 鹿児島県曽於郡大崎町 | 宮城県大崎市 `osaki` |
+| setouchi-town | 鹿児島県大島郡瀬戸内町 | 岡山県瀬戸内市 `setouchi` |
+| yamato-village | 鹿児島県大島郡大和村 | 熊本県上益城郡山都町と同じ読み（熊本は `yamato` を使ってよい） |
+| toshima-village | 鹿児島県鹿児島郡十島村 | 東京都の利島村・豊島区と同じ読み |
+| mishima-village | 鹿児島県鹿児島郡三島村 | 静岡県三島市と同じ読み |
