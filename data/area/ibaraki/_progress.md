@@ -34,3 +34,4 @@
 
 ## 実績メモ
 - 2026-11-05 ネットワーク確認（pref.ibaraki.jp・soumu.go.jp とも開けた）。ローカルの main が detached だったので origin/main に合わせ直した
+- stats（WS14）・cases（WS25）起動
