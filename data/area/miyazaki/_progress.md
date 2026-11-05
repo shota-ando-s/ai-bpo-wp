@@ -26,8 +26,8 @@
 - [x] 記事 27本（県1＋市町村26）
 - [x] data/subsidies/miyazaki.yml・areas.yml・build
 - [x] 地域ガイド（九州地方の段）・area-todo.md・area-new-prefecture.md・memory
-- [ ] チェック
-- [ ] main に push
+- [x] チェック（check_article 27ページ ERROR 0・area_uniq 全26ページ65.2〜88.4%・試算の重なりなし・見出し行だけの表なし）
+- [x] main に push（投稿・デプロイはユーザーが Mac で「投稿して」）
 
 ## 実績メモ
 - 2026-11-04 ネットワーク確認（pref.miyazaki.lg.jp・soumu.go.jp とも開けた）。shared.md に slug 4件を push。stats・cases を起動
