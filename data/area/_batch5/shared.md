@@ -34,3 +34,7 @@
 
 | slug | 県・市町村 | 扱い |
 |---|---|---|
+| takayama-village-gunma | 群馬県吾妻郡高山村 | 長野県高山村 `takayama-village`・岐阜県高山市 `takayama` があるので県名を付けた（群馬） |
+| showa-village-gunma | 群馬県利根郡昭和村 | 福島県昭和村 `showa-village`・山梨県昭和町 `showa` があるので県名を付けた（群馬） |
+| nanmoku | 群馬県甘楽郡南牧村（なんもく） | 長野県南牧村は `minamimaki` で重ならない（群馬） |
+| ueno-village / meiwa / chiyoda / oizumi / ota / midori / itakura / tomioka | 群馬県の村・町・市 | 既存の slug と重ならない（福島県富岡町は `tomioka-town`）。茨城・栃木で同じ slug を使う予定があれば知らせてください（群馬） |
