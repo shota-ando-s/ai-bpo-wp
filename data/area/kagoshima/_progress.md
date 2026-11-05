@@ -24,12 +24,12 @@
 ## 状態
 - [x] _brief.md・wages.md（2026-11-04）
 - [x] 調査（8担当、WebSearch 100回）
-- [ ] 執筆仕様 docs/area-writing-spec-kagoshima.md（共通部分・D1・D2 まで。**D34・D5 は未着手に戻した**）
-- [ ] 記事 44本（県1＋市町村43）
-- [ ] data/subsidies/kagoshima.yml・areas.yml・build
-- [ ] 地域ガイド（九州地方の段）・area_uniq.py・area-todo.md・area-new-prefecture.md・memory
-- [ ] チェック
-- [ ] main に push
+- [x] 執筆仕様 docs/area-writing-spec-kagoshima.md
+- [x] 記事 44本（県1＋市町村43）
+- [x] data/subsidies/kagoshima.yml・areas.yml・build
+- [x] 地域ガイド（九州地方の段）・area_uniq.py・area-todo.md・area-new-prefecture.md・memory
+- [x] チェック（check_article 44ページ ERROR 0・area_uniq 全ページ64.2〜95.3%〔霧島市は59.4%→書き直して89.0%〕・_calc.py OK・試算の結果表に中身あり・書いてはいけない局名なし）
+- [x] main に push（投稿・デプロイはユーザーが Mac で「投稿して」）
 
 ## 実績メモ
 - 2026-11-04 ネットワーク確認（pref.kagoshima.jp・soumu.go.jp とも開けた）。ローカルの main が古い履歴のまま detached だったので、origin/main に合わせ直した。共有メモに slug を push
@@ -84,3 +84,4 @@
 - data/subsidies/kagoshima.yml（23制度、「# 案」を外した）と areas.yml の鹿児島県の行（43市町村、none 31）を入れて build → 912制度。他県の制度・地域は build の前後で同じ
 - W11 南さつま市（約7,979字・78.3%・月246.5h/78.4万）・いちき串木野市（7,871・81.2%・274.5h/96.1万）・肝付町（8,903・84.3%・173h/60.9万）・知名町（7,519・83.0%・185.25h/58.9万）完了、ERROR 0、WS0。足した: いちき串木野市・商議所・よろずの合同の定期相談会（毎月第4金曜、無料、R8 の日程は市に確かめる）。知名町の人手不足のページ（3151.html）は 404 で使わない。**市町村43ページそろう**
 - W13 県ページ（約15,995字、ERROR 0、外部リンク57本すべて200、WS0）完了。市町村一覧は7区分で43にリンク、主要産業・15〜64歳の増減を43ページの本文と照合。AI交通に南種子町を足した。独自の制度が見つからなかった市町村は30（yml から数え直し）
+- 親: 全ページの area_uniq で霧島市が59.4%（後から書いた湧水町・奄美市などと似た）→ 直し担当が16段落を書き直して89.0%。地域ガイド（九州地方の段。九州7県がそろう）・area-todo・area-new-prefecture・memory を更新
