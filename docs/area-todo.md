@@ -2,7 +2,7 @@
 
 地域ページで、調べきれずに残っている作業。終わったら行ごと消すか、`[x]` にして日付を書く。
 
-- 調査データ: `data/area/kagawa/`・`data/area/kumamoto/`・`data/area/tokushima/`・`data/area/kochi/`・`data/area/aomori/`・`data/area/iwate/`・`data/area/akita/`・`data/area/miyagi/`・`data/area/yamagata/`・`data/area/fukushima/`・`data/area/niigata/`・`data/area/toyama/`・`data/area/ishikawa/`・`data/area/fukui/`・`data/area/gifu/`・`data/area/nagano/`・`data/area/yamanashi/`・`data/area/shimane/`・`data/area/tottori/`・`data/area/hiroshima/`・`data/area/yamaguchi/`・`data/area/okayama/`（2026-10-17〜27の調査結果。`stats.md` `gov_ai.md` `cases.md` `companies.json` `subsidy_*.yml` など）
+- 調査データ: `data/area/kagawa/`・`data/area/kumamoto/`・`data/area/tokushima/`・`data/area/kochi/`・`data/area/aomori/`・`data/area/iwate/`・`data/area/akita/`・`data/area/miyagi/`・`data/area/yamagata/`・`data/area/fukushima/`・`data/area/niigata/`・`data/area/toyama/`・`data/area/ishikawa/`・`data/area/fukui/`・`data/area/gifu/`・`data/area/nagano/`・`data/area/yamanashi/`・`data/area/shimane/`・`data/area/tottori/`・`data/area/hiroshima/`・`data/area/yamaguchi/`・`data/area/okayama/`・`data/area/kagoshima/`（2026-10-17〜27の調査結果。`stats.md` `gov_ai.md` `cases.md` `companies.json` `subsidy_*.yml` など）
 - 執筆仕様: `docs/area-writing-spec-kagawa.md`・`docs/area-writing-spec-tokushima.md`・`docs/area-writing-spec-kochi.md`・`docs/area-writing-spec-aomori.md`・`docs/area-writing-spec-iwate.md`・`docs/area-writing-spec-akita.md`・`docs/area-writing-spec-miyagi.md`・`docs/area-writing-spec-yamagata.md`・`docs/area-writing-spec-fukushima.md`・`docs/area-writing-spec-niigata.md`・`docs/area-writing-spec-toyama.md`・`docs/area-writing-spec-ishikawa.md`・`docs/area-writing-spec-fukui.md`・`docs/area-writing-spec-gifu.md`・`docs/area-writing-spec-nagano.md`・`docs/area-writing-spec-yamanashi.md`・`docs/area-writing-spec-shimane.md`・`docs/area-writing-spec-tottori.md`・`docs/area-writing-spec-hiroshima.md`・`docs/area-writing-spec-yamaguchi.md`・`docs/area-writing-spec-okayama.md`
 - ページを直したら `python3 post.py articles/<file>.md` で更新する（画像は作り直されない）。補助金のYAMLを直したら `python3 scripts/build_shindan_data.py` → コミット → `./deploy.sh`
 
@@ -17,6 +17,38 @@
 - [ ] 潟上市「稼げる力創出補助金」の「次の受付は10月末」（潟上市ページ・秋田県ページ98行）が締切か開始か分からず直していない
 - [ ] 開催日を過ぎたセミナーが未来形のまま（加茂市 143・183行の加茂商工会議所のセミナー〔10/26〕、秋田の井川・由利本荘・横手・潟上の研修〔10/22・10/27〕など）
 - [ ] 解説記事 `articles/2026-05-24-ai-bpo-it-hojo.md` は1次（5/12）の頃の内容のまま。2026年度の制度と照合して直す（企画書12章の宿題と同じ）
+
+## 鹿児島県（2026-11-04〜05作成。未投稿）
+
+九州で作った県の1つ（**九州7県を別々のクラウドのセッションで同時に作った**。共有メモは `data/area/_kyushu/shared.md`）。**経済産業局は九州経済産業局、農政局は九州農政局〔鹿児島県拠点〕、財務局は九州財務局〔鹿児島財務事務所・名瀬出張所。「南九州財務局」はない〕、労働局は鹿児島労働局、運輸局は九州運輸局〔鹿児島運輸支局・奄美自動車検査登録事務所〕**。県ページと43市町村（19市20町4村）。離島の市町村が多い（奄美群島12・熊毛4・三島村・十島村、甑島は薩摩川内市）。調査データは `data/area/kagoshima/`、執筆仕様は `docs/area-writing-spec-kagoshima.md`、作業の記録は `data/area/kagoshima/_progress.md`。試算の割り当ては `data/area/kagoshima/_calc.py`（九州の取り決めの余り6。既存723本と14県の PLAN と重ならない）。クラウドのセッションで作り、投稿・デプロイはしていない。途中でユーザーの指示で一旦止め、翌日再開した。
+
+### 投稿の前後にすること
+
+- [ ] Mac で「投稿して」（post スキル。県ページを先に投稿してから43市町村、地域ガイド、`./deploy.sh` で補助金診断の JSON を反映）
+- [ ] **鹿児島市 `kagoshima-city` が県ページ `/area/kagoshima/` と別のページ**になっていることを確かめる（青森市・岡山市・熊本市と同じ形）
+- [ ] 大崎町 `osaki-town`（宮城県大崎市 `osaki`）・瀬戸内町 `setouchi-town`（岡山県瀬戸内市 `setouchi`）が他県のページを上書きしていないことを確かめる。大和村 `yamato-village`・十島村 `toshima-village`・三島村 `mishima-village` も
+- [ ] 画像の確認（地図の判定・目視）。離島（奄美・種子島・屋久島・甑島）・桜島など地名の多いページは特に
+- [ ] 締切のある制度・講座・相談会を書いたページは、締切後に直す: 奄美市の AIある店づくりスクール（申込 11/11）と ICT事業拡大支援事業の申請フォームの障害（11/4 時点。奄美市）、志布志市チャレンジ補助金 第4回（11/10。志布志市）、鹿児島市 第2期DX/AX推進計画の意見募集（11/17。鹿児島市）、鹿児島商工会議所の AI セミナー（11/30。鹿児島市）、奄美市 繁盛店づくり 第4回（11/30）、指宿市 魅力ある店舗づくり（11/30）、国のデジタル化・AI導入補助金 7次（12/1、全県共通）、鹿屋市 物価高騰対策支援事業（12/21）、鹿児島市 ICTツール導入助成 2次（12/25、先着）、セーフティネット保証4号の指定期間（〜12/17。19市町村の H2 6 末尾と県ページ）、中種子町のよろず定期相談会（11/9・12/7・1/18・2/15・3/8）、奄美市 ICT事業拡大支援（2027-01-29）、県 地域外副業・兼業人材（2027-02-06）、KISC IT資格取得支援（2027-03-05）
+- [ ] 鹿児島市の第2期DX/AX推進計画（素案）が決まったら、鹿児島市の H2 7 を「素案」から直す。奄美市の DX 計画（素案）も同じ
+- [ ] 県のDX推進補助金（1次の交付決定でテーマにAIが19件）・ものづくり中核企業の採択（AI 5件）・かごしま地域DX推進ラボ・かごしまAX実証体制整備事業・JA鹿児島県中央会の生成AI実証の成果が公表されたら、所在の市町村の H2 3 に足す
+
+### 調べきれていないこと
+
+- [ ] **阿久根市の公式サイト（www.city.akune.kagoshima.jp）がクラウドから接続できない**（curl 502・WebFetch ENOTFOUND、11/4・11/5）。市の補助金・DX計画・AI実証は「確かめられなかった」と書き、リンクしていない。Mac で確かめて足す
+- [ ] **九州経済産業局（kyushu.meti.go.jp）が 403、鹿児島県工業技術センターに接続できない**。九経局の DXクエスト・DX事例集・データ/AI活用事例動画、工業技術センターの共同研究の成果は確かめていない
+- [ ] **富士通鹿児島インフォネットの公式サイトが 429**。従業員数（214名は検索の要約だけ）を確かめられず、地元IT企業の本表に入れていない。Mac で開ければ鹿児島市の本表の候補
+- [ ] **轟木税理士事務所（県のDX事例集のAI自動仕訳）の所在が確かめられない**。税理士の登録では県内の「轟木」は南九州市川辺町の1件だけで、南九州市のページに根拠と一緒に書いた。県の新産業創出室（099-286-2964）に問い合わせれば確かめられる
+- [ ] **県内の事例**: 事業者が自ら実績の数値でAIの効果を公表した県内の中小企業の事例は0件。数値は轟木（自己申告）・鹿児島堀口製茶（47%はAIではなく画像のリモート取得の試算）だけ。かつお節・焼酎（薩摩酒造以外）・養殖・介護・運輸・観光・建設の県内のAI事例は0件。奄美群島12・熊毛4の市町村は事例なし
+- [ ] 県外の未使用で数値つきの事例は1件（かわに〔石川県金沢市、2018年度〕→南九州市）。ほかのページの H2 4 は「見つからなかった」と短く書いた
+- [ ] 社人研の令和5年推計は 403。15〜64歳の増減は国勢調査の不詳補完値から当社で計算した値
+- [ ] TDB の鹿児島県版は社長年齢・休廃業・生成AIの3テーマ。後継者不在率は九州・沖縄版の鹿児島の行、人手不足は県別の値がない
+- [ ] 県の生成AIガイドライン（2024-03-27策定）の PDF が 404 で、本文を確かめていない
+- [ ] DX推進計画が見つからなかった市: 枕崎市・阿久根市・出水市・日置市・南九州市・伊佐市（垂水市は広報の記載だけ）
+- [ ] 甑島・三島・十島の交通は県の離島振興計画（2023年6月）の値と村のサイト、種子島・屋久島は熊毛支庁の資料（2024年12月末）。運航会社のサイト（種子屋久高速船など）は SSL エラー・接続できず
+- [ ] 観光の値は県の地区別だけで、市町村別の総数はない
+- [ ] **鹿児島県のサイトのリンクの条件・事例集の転載**: 県・鹿児島市・石川県は法の範囲の引用だけ、農研機構は「無断での引用・転載を禁止」。記事は要約・短い数値・出典リンクで書いた。問題がないか確かめる
+- [ ] PubMed（Noy & Zhang）のリンクはクラウドから 203・429。Mac で開けるか確かめる
+- [ ] 中種子町の Village AI は 2026-09-01 に受託開発の事業を北九州市の寶結に譲渡（福岡県のデータにも出る）。地元IT企業の本表に入れていない
 
 ## 福岡県（2026-11-04作成。未投稿）
 
