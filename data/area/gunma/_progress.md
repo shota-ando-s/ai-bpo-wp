@@ -34,3 +34,5 @@
 
 ## 実績メモ
 - 2026-11-05 ネットワークの確認: pref.gunma.jp・soumu.go.jp とも WebFetch で開けた
+- stats（WS15まで）・cases（WS25まで）を起動（同時2人）
+- _calc.py を鹿児島の形から作った（余り3、PLAN は空。`python3 -B data/area/gunma/_calc.py free <業種> <最小> <最大>` で空きを並べる）。2026-11-05 の空きは製造業で月95.75h〜、医療・福祉 70.75h〜、情報通信業 65.75h〜（それより小さい値はほぼ埋まっている）
