@@ -51,3 +51,9 @@
 | tochigi-city | 栃木県栃木市 | 県と同じ名前（青森市・秋田市と同じ形） |
 | nakagawa-town | 栃木県那珂川町 | `nakagawa` は長野県中川村・福岡県那珂川市が使用済み。茨城県の那珂市（naka）・那珂川とも別 |
 | sakura | 栃木県さくら市 | 既存のページにない。千葉県佐倉市と同じ読み |
+| kitahiroshima-city | 北海道北広島市 | 広島県北広島町 `kitahiroshima` と分けた（北海道） |
+| date-city | 北海道伊達市（段階2） | 福島県伊達市 `date` と分けた（北海道） |
+| hokuto-city | 北海道北斗市（段階2） | 山梨県北杜市 `hokuto` と分けた（北海道） |
+| fukushima-town / nakagawa-town-hokkaido / hidaka-town / ikeda-town-hokkaido | 北海道福島町・中川町・日高町・池田町（段階2） | 福島県 `fukushima`・長野県中川村/福岡県那珂川市 `nakagawa`・高知県日高村 `hidaka`・福井/岐阜/長野の池田町・栃木県那珂川町 `nakagawa-town` と分けた（北海道） |
+| kushiro-city / kushiro-town、shibetsu-city / shibetsu-town、esashi-hiyama / esashi-soya | 北海道の同じ読みの市町（段階2） | 道内で分けた。**ほかの4県で同じ読みの市町村があれば `-city`・`-town` を付けて分けてください**（北海道） |
+| sapporo / ebetsu / chitose / eniwa / ishikari / tobetsu / shinshinotsu | 北海道石狩振興局（段階1） | 既存と重ならない（北海道） |
