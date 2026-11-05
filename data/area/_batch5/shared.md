@@ -38,3 +38,9 @@
 | showa-village-gunma | 群馬県利根郡昭和村 | 福島県昭和村 `showa-village`・山梨県昭和町 `showa` があるので県名を付けた（群馬） |
 | nanmoku | 群馬県甘楽郡南牧村（なんもく） | 長野県南牧村は `minamimaki` で重ならない（群馬） |
 | ueno-village / meiwa / chiyoda / oizumi / ota / midori / itakura / tomioka | 群馬県の村・町・市 | 既存の slug と重ならない（福島県富岡町は `tomioka-town`）。茨城・栃木で同じ slug を使う予定があれば知らせてください（群馬） |
+| koga | 茨城県古河市（福岡県古賀市と同じ） | 茨城: 同じ slug のまま（親ページが違う）。投稿後に別ページか確かめる |
+| kashima | 茨城県鹿嶋市（佐賀県鹿島市と同じ。熊本県嘉島町は kashima-town） | 茨城: 同じ slug のまま |
+| naka | 茨城県那珂市（徳島県那賀町と同じ） | 茨城: 同じ slug のまま。栃木県那珂川町は nakagawa 以外で（福岡県那珂川市が nakagawa） |
+| sakai-town | 茨城県境町（福井県坂井市 sakai） | 茨城: -town を付ける |
+| ibaraki-town | 茨城県茨城町（県と同じ名前） | 茨城: 岩手町 iwate-town と同じ形 |
+| tokai / miho / kawachi / yachiyo / goka / tone | 茨城県の東海村・美浦村・河内町・八千代町・五霞町・利根町 | 茨城が使う（既存と重ならない） |
