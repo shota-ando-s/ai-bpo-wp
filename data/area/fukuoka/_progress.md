@@ -26,13 +26,13 @@
 
 ## 状態
 - [x] _brief.md・wages.md・area_uniq.py（2026-11-04）
-- [ ] 調査
-- [ ] 執筆仕様 docs/area-writing-spec-fukuoka.md
-- [ ] 記事 61本（県1＋市町村60）
-- [ ] data/subsidies/fukuoka.yml・areas.yml・build
-- [ ] 地域ガイド（九州地方の段）・area-todo.md・area-new-prefecture.md・memory
-- [ ] チェック
-- [ ] main に push
+- [x] 調査
+- [x] 執筆仕様 docs/area-writing-spec-fukuoka.md
+- [x] 記事 61本（県1＋市町村60）
+- [x] data/subsidies/fukuoka.yml・areas.yml・build
+- [x] 地域ガイド（九州地方の段）・area-todo.md・area-new-prefecture.md・memory
+- [x] チェック（check_article 61ページ ERROR 0・全ページの area_uniq で60%未満の3ページ〔須恵町53.8・篠栗町56.0・鞍手町59.4〕を書き直して84.6・80.6・86.5%・_calc.py OK・見出し行だけの表なし）
+- [x] main に push（投稿・デプロイはユーザーが Mac で「投稿して」）
 
 ## 実績メモ
 - 2026-11-04 ネットワーク確認（pref.fukuoka.lg.jp・soumu.go.jp とも開けた）。調査3人を起動（stats・cases・gov_a）
@@ -84,3 +84,4 @@
 - W16 みやま市（8,391字・91.9%・月250.25h/88.1万）・福智町（7,861・84.2%・189h/60.1万）・東峰村（7,832・85.7%・119h/41.9万）完了、ERROR 0、WS0。東峰村の災害は H2 2 に1文（事実と時点だけ）。小石原焼は村の公式で確かめられず書かない。**市町村60ページそろう**
 - 親: 全60ページ check_article ERROR 0。_calc.py が鹿児島県東串良町の記事（約189時間〔188.75〕）と福智町（189時間）の重なりで NG → 鹿児島の PLAN は福岡より後に main に入ったが、福岡側の1ページを直す方が早いので福智町を 14名×50.5時間＝月176.75時間・約56.2万円に変えた（PLAN と記事）。_calc.py OK
 - W17 県ページ（約17,207字、ERROR 0、WS0）完了。一覧は県の4地域で60市町村にリンク、東峰村の行は親がタイトルに合わせた（土木建設・窯業と介護）。よろず支援拠点は今日は開けた。FISA の会員一覧は extract_claims が SSL エラーなのでリンクなし。親: 地域ガイド（九州地方の段）に福岡県の行
+- 全ページの area_uniq: 60%未満は須恵町・篠栗町・鞍手町（早く書いたページが後のページと似た）→ 書いた担当が直して 84.6・80.6・86.5%。**完了**
