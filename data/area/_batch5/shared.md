@@ -48,3 +48,6 @@
 | nishihara-town | 沖縄県中頭郡西原町 | 熊本県西原村が `nishihara`。親ページが違うが、町は `-town` を付けて分ける |
 | higashi-village | 沖縄県国頭郡東村 | `higashi` だけだと方角の語と紛らわしいので `-village` |
 | 沖縄県の41市町村（2026-11-05） | naha ginowan ishigaki urasoe nago itoman okinawa-city tomigusuku uruma miyakojima nanjo / motobu kin kadena chatan nishihara-town yonabaru haebaru kumejima yaese taketomi yonaguni / kunigami ogimi higashi-village nakijin onna ginoza ie yomitan kitanakagusuku nakagusuku tokashiki zamami aguni tonaki minamidaito kitadaito iheya izena tarama | 北海道・北関東3県で同じ slug を使う市町村があれば、この行を見て `-<県>` を付けるか決める |
+| tochigi-city | 栃木県栃木市 | 県と同じ名前（青森市・秋田市と同じ形） |
+| nakagawa-town | 栃木県那珂川町 | `nakagawa` は長野県中川村・福岡県那珂川市が使用済み。茨城県の那珂市（naka）・那珂川とも別 |
+| sakura | 栃木県さくら市 | 既存のページにない。千葉県佐倉市と同じ読み |

@@ -1,0 +1,35 @@
+# 栃木県 地域ページ 作業状態（再開用）
+
+ブランチ: main（クラウドのセッション）。作業場所は `/home/user/ai-bpo-wp/`。ファイル名の日付と本文の確認日は 2026-11-05。WebSearch はセッションで200回まで（調査は110回までにする）。このセッションでは post.py・deploy.sh・post_changed.py は実行しない（投稿はユーザーが Mac で「投稿して」と言って行う）。**サブエージェントの同時起動は2人まで**（北海道・北関東3県・沖縄を同時に作っている。アカウントの7日間の利用上限が警告の状態）。
+
+栃木県だけのファイル（data/area/tochigi/、docs/area-writing-spec-tochigi.md、articles/*-area-tochigi*.md）は自由に作る。`data/subsidies/tochigi.yml` は areas.yml の栃木県の行と同じコミットで push する。共通ファイル（areas.yml、地域ガイド、area_uniq.py、area-todo.md、area-new-prefecture.md、memory、subsidies.json、_batch5/shared.md）は直す直前に `git pull --rebase origin main`。force push はしない。書きかけの記事は main に入れない。
+
+## 市町と slug（25市町。県コード09）
+- 一覧は data/area/tochigi/_brief.md
+- 栃木市 `tochigi-city`、那珂川町 `nakagawa-town`
+- 試算は「月の削減時間・時間換算額」だけの形。**月の削減時間×4 を5で割った余りが2の時間だけ**（_batch5/shared.md）。全県の記事・全県の _calc.py の PLAN と照合する
+
+## 調査の分担と WebSearch の配分
+| 担当 | 書くファイル | WebSearch |
+|---|---|---|
+| stats | stats.md / stats_labor.md | 14 |
+| cases | cases.md | 25 |
+| gov | gov_ai.md（県・14市・国の出先機関・総務省表の全25行） | 14 |
+| subsidy | subsidy_a.yml / subsidy_a_areas.md（県・14市） | 12 |
+| choson | gov_ai_b.md / subsidy_b.yml / subsidy_b_areas.md（11町） | 12 |
+| companies | companies.json / companies.md | 10 |
+| outside | cases_outside.md / serp.md | 15 |
+| 合計 | | 102 |
+
+## 状態
+- [x] _brief.md・wages.md（2026-11-05）・area_uniq.py に tochigi
+- [ ] 調査
+- [ ] 執筆仕様 docs/area-writing-spec-tochigi.md
+- [ ] 記事 26本（県1＋市町25）
+- [ ] data/subsidies/tochigi.yml・areas.yml・build
+- [ ] 地域ガイド（北関東の段）・area-todo.md・area-new-prefecture.md・memory
+- [ ] チェック
+- [ ] main に push
+
+## 実績メモ
+- 2026-11-05 ネットワーク確認（pref.tochigi.lg.jp・soumu.go.jp とも開けた）。ローカルが detached だったので `git checkout -B main origin/main`
