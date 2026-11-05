@@ -1,4 +1,4 @@
-# 案（D34、2026-11-04）。data/subsidies/areas.yml の末尾に足す宮崎県の部分。親が最後に areas.yml に入れる（data/subsidies/miyazaki.yml〔案は data/area/miyazaki/_subsidies_miyazaki.yml〕と同じコミット。areas.yml は直接編集していない）
+# （D34 の案を 2026-11-05 に data/subsidies/areas.yml に入れた）。data/subsidies/areas.yml の末尾に足す宮崎県の部分。親が最後に areas.yml に入れる（data/subsidies/miyazaki.yml〔案は data/area/miyazaki/_subsidies_miyazaki.yml〕と同じコミット。areas.yml は直接編集していない）
 # none: true は _subsidies_miyazaki.yml にその市町村の制度が1件もない15市町村（西都市・日向市と、三股町・国富町・綾町・高鍋町・新富町・木城町・門川町・高千穂町・日之影町・五ヶ瀬町・西米良村・諸塚村・椎葉村）。宮崎市・日南市・美郷町は今年度の受付を終えた制度しかないが、yml に制度があるので none にせず、note の一文目で状況を書いた
 # 日向市は市の公式サイト（www.hyugacity.jp）が2026-11-04に503で、市の制度を確かめられなかった。補助金ポータル（二次情報）だけで見た DX・生産性向上等設備導入事業補助金は診断データから外したので none: true にし、note の一文目を「確かめられなかった」にした（断定しない）。新富町・椎葉村は商工業の分類ページがなく確かめた範囲が狭いので、note にそう書いた
 # 並びは県の統計調査課の「県内８地域」（D1 の地域区分。「令和７年国勢調査 人口速報結果の概要」PDF p.3）の順: 宮崎・東諸県（3）→ 南那珂（2）→ 北諸県（2）→ 西諸県（3）→ 西都・児湯（7）→ 日向・東臼杵（5）→ 延岡（1）→ 西臼杵（3）。地域の中は市（自治体コード順）→ 町村（自治体コード順）
