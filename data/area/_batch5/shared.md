@@ -44,3 +44,7 @@
 | sakai-town | 茨城県境町（福井県坂井市 sakai） | 茨城: -town を付ける |
 | ibaraki-town | 茨城県茨城町（県と同じ名前） | 茨城: 岩手町 iwate-town と同じ形 |
 | tokai / miho / kawachi / yachiyo / goka / tone | 茨城県の東海村・美浦村・河内町・八千代町・五霞町・利根町 | 茨城が使う（既存と重ならない） |
+| okinawa-city | 沖縄県沖縄市 | 県ページ `okinawa` と分ける（青森市 `aomori-city` と同じ形） |
+| nishihara-town | 沖縄県中頭郡西原町 | 熊本県西原村が `nishihara`。親ページが違うが、町は `-town` を付けて分ける |
+| higashi-village | 沖縄県国頭郡東村 | `higashi` だけだと方角の語と紛らわしいので `-village` |
+| 沖縄県の41市町村（2026-11-05） | naha ginowan ishigaki urasoe nago itoman okinawa-city tomigusuku uruma miyakojima nanjo / motobu kin kadena chatan nishihara-town yonabaru haebaru kumejima yaese taketomi yonaguni / kunigami ogimi higashi-village nakijin onna ginoza ie yomitan kitanakagusuku nakagusuku tokashiki zamami aguni tonaki minamidaito kitadaito iheya izena tarama | 北海道・北関東3県で同じ slug を使う市町村があれば、この行を見て `-<県>` を付けるか決める |
