@@ -292,7 +292,7 @@
 
 - id: fukuoka-munakata-ganbaru-seisansei
   name: 令和8年度 宗像市がんばる中小企業者応援補助金（生産性向上枠）
-  org: 宗像市（産業振興部 商工観光課）
+  org: 宗像市（産業政策課 商工観光係）
   area: fukuoka/munakata
   max_yen: 500000
   rate: 補助対象経費の1/2（市内事業者へ発注した経費は2/3）、上限50万円（事業継続力強化計画を策定済みの事業者は10万円上乗せ）
