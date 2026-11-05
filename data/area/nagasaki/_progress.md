@@ -24,11 +24,11 @@
 - [x] _brief.md・wages.md（2026-11-04）
 - [x] 調査（6担当、WebSearch 84回）
 - [x] 執筆仕様 docs/area-writing-spec-nagasaki.md
-- [ ] 記事 22本（県1＋市町21）
-- [ ] data/subsidies/nagasaki.yml・areas.yml・build
-- [ ] 地域ガイド（九州地方の段）・area-todo.md・area-new-prefecture.md・memory
-- [ ] チェック
-- [ ] main に push
+- [x] 記事 22本（県1＋市町21）
+- [x] data/subsidies/nagasaki.yml・areas.yml・build
+- [x] 地域ガイド（九州地方の段）・area-todo.md・area-new-prefecture.md・memory
+- [x] チェック（check_article 22ページ ERROR 0・area_uniq 21ページ64.0〜95.4%・試算は PLAN と一致、結果表は全ページ2行・_calc.py OK〔九州の PLAN 348行と照合〕）
+- [x] main に push（投稿・デプロイはユーザーが Mac で「投稿して」）
 
 ## 実績メモ
 - 2026-11-04 ネットワーク確認（pref.nagasaki.jp・soumu.go.jp とも curl 200）。slug 21個は既存と重ならない
@@ -52,3 +52,4 @@
 - W1（長崎市・雲仙市・壱岐市・佐々町）・W2（佐世保市・南島原市・東彼杵町・小値賀町）完了・push 済み（8本、固有率81〜95%）
 - **2026-11-04 ユーザーの指示で一旦停止**。W3（諫早市・五島市・時津町・波佐見町）と W4（大村市・対馬市・島原市・長与町）は書き始めたところで止めた（記事ファイルは未コミット。再開するときは W3・W4 を起動し直すか、残った下書きを確かめて続きを頼む）。残り: W3・W4・W5（平戸市・川棚町・新上五島町）・W6（松浦市・西海市）・W7（県ページ）、nagasaki.yml・areas.yml・build、地域ガイド・area-todo・手順書・memory
 - 書きかけ6ページ（諫早・五島・時津・波佐見・大村・島原）は **wip/nagasaki-drafts ブランチ**に退避（main には入れていない。再開時は `git checkout wip/nagasaki-drafts -- articles/2026-11-04-area-nagasaki-{goto,hasami,isahaya,omura,shimabara,togitsu}.md` で取り出して点検・続き）
+- 2026-11-05 再開: W3・W4 を下書きから仕上げ、W5・W6・W7（県ページ）を書いた。補助金診断（862制度、他県の分は変化なし）・地域ガイド・area-todo・手順書・memory を更新。wip/nagasaki-drafts ブランチは不要になった（main の記事が新しい）
