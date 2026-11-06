@@ -23,13 +23,13 @@
 
 ## 状態
 - [x] _brief.md・wages.md（2026-11-05）・area_uniq.py に tochigi
-- [ ] 調査
-- [ ] 執筆仕様 docs/area-writing-spec-tochigi.md
-- [ ] 記事 26本（県1＋市町25）
-- [ ] data/subsidies/tochigi.yml・areas.yml・build
-- [ ] 地域ガイド（北関東の段）・area-todo.md・area-new-prefecture.md・memory
-- [ ] チェック
-- [ ] main に push
+- [x] 調査
+- [x] 執筆仕様 docs/area-writing-spec-tochigi.md
+- [x] 記事 26本（県1＋市町25）
+- [x] data/subsidies/tochigi.yml・areas.yml・build
+- [x] 地域ガイド（北関東の段）・area-todo.md・area-new-prefecture.md・memory
+- [x] チェック（check_article 26ページ ERROR 0・area_uniq 全ページ62.3〜92.2%〔那須町・鹿沼市は直した〕・_calc.py OK・試算の結果表に中身あり・書いてはいけない局名なし・県の PDF への直接リンクなし）
+- [x] main に push（投稿・デプロイはユーザーが Mac で「投稿して」）
 
 ## 実績メモ
 - 2026-11-05 ネットワーク確認（pref.tochigi.lg.jp・soumu.go.jp とも開けた）。ローカルが detached だったので `git checkout -B main origin/main`
@@ -60,3 +60,4 @@
 - W8 大田原市（約8,190字・70.8%・264.25h/92.5万）・さくら市（7,500・70.1%・256.75h/89.9万）・下野市（7,880・79.2%〔最初56.5%→書き直し〕・183h/58.2万）・矢板市（7,440・88.7%・323h/102.7万）完了、ERROR 0、WS0。さくら市のサイトは curl で URLError、WebFetch で確認。**市町25ページそろう**
 - 親: 25ページの area_uniq で那須町56.5%・鹿沼市58.6%（後から書いたページと似た）→ 直し担当が書き直して那須町85.6%・鹿沼市92.2%。ほかの23ページは62.3〜91.4%
 - W9 県ページ（約14,689字、ERROR 0、外部リンク48本すべて200、WS0）完了。市町一覧は農業振興事務所の7区域で25にリンク。25ページと照合して食い違いなし。県内に企業の事例がない市町は16
+- 地域ガイドに「## 北関東の地域ページ」の段を作った（栃木県の行。茨城・群馬が入れたら同じ段にまとめる）。area-todo・手順書・memory を更新
