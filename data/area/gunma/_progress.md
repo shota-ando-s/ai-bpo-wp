@@ -23,14 +23,14 @@
 
 ## 状態
 - [x] _brief.md・wages.md、scripts/area_uniq.py に gunma を追加、共有メモに slug（2026-11-05）
-- [ ] 調査
-- [ ] 試算の PLAN（_calc.py）を push
-- [ ] 執筆仕様 docs/area-writing-spec-gunma.md
-- [ ] 記事 36本（県1＋市町村35）
-- [ ] data/subsidies/gunma.yml、areas.yml、build_shindan_data.py（同じコミット）
-- [ ] 地域ガイド（北関東の段）、area-todo.md、area-new-prefecture.md、memory
-- [ ] チェック（check_article・area_uniq・試算の重なり・見出し行だけの表）
-- [ ] main に push
+- [x] 調査
+- [x] 試算の PLAN（_calc.py）を push
+- [x] 執筆仕様 docs/area-writing-spec-gunma.md
+- [x] 記事 36本（県1＋市町村35）
+- [x] data/subsidies/gunma.yml、areas.yml、build_shindan_data.py（同じコミット）
+- [x] 地域ガイド（北関東の段）、area-todo.md、area-new-prefecture.md、memory
+- [x] チェック（check_article・area_uniq・試算の重なり・見出し行だけの表）
+- [x] main に push（2026-11-06、52868fc。投稿・デプロイはユーザーが Mac で「投稿して」）
 
 ## 実績メモ
 - 2026-11-05 ネットワークの確認: pref.gunma.jp・soumu.go.jp とも WebFetch で開けた
@@ -71,3 +71,4 @@
 - W10 県ページ（約16,259字・H2 11・FAQ 8）完了、ERROR 0、WS0。**地域区分は9振興局**（吾妻・利根沼田振興局のページの「担当地域」、中部・北群馬渋川は地域振興調整費の補助対象で確認。残り5振興局は保健所の所管区域からの当てはめと本文に書いた）
 - 全体の確認（親）: 36ページ check_article ERROR 0、35ページの試算の時間・金額・年間・規模が PLAN と一致（結果表の中身あり）、他県へのリンクは仕様の4件（岐阜3・山形1）だけ、禁止語なし（安中市の「応援」を「補助」に直した）、_calc.py OK
 - 共通ファイル（2026-11-06、pull のあと）: data/subsidies/gunma.yml（18制度）と areas.yml の群馬県35市町村を同じコミットで入れ、build 969制度（951＋群馬18、他県は同じ）。地域ガイドの「北関東の地域ページ」に群馬県の行と段の一文目、area-todo・area-new-prefecture・memory を更新
+- 全ページの area_uniq: 板倉町が58.6%（後から書いたページと似た）→ W1 が書き直して89.4%。ほかの35ページは65.8〜97.4%。**完了**
