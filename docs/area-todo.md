@@ -2,7 +2,7 @@
 
 地域ページで、調べきれずに残っている作業。終わったら行ごと消すか、`[x]` にして日付を書く。
 
-- 調査データ: `data/area/kagawa/`・`data/area/kumamoto/`・`data/area/tokushima/`・`data/area/kochi/`・`data/area/aomori/`・`data/area/iwate/`・`data/area/akita/`・`data/area/miyagi/`・`data/area/yamagata/`・`data/area/fukushima/`・`data/area/niigata/`・`data/area/toyama/`・`data/area/ishikawa/`・`data/area/fukui/`・`data/area/gifu/`・`data/area/nagano/`・`data/area/yamanashi/`・`data/area/shimane/`・`data/area/tottori/`・`data/area/hiroshima/`・`data/area/yamaguchi/`・`data/area/okayama/`・`data/area/kagoshima/`（2026-10-17〜27の調査結果。`stats.md` `gov_ai.md` `cases.md` `companies.json` `subsidy_*.yml` など）
+- 調査データ: `data/area/kagawa/`・`data/area/kumamoto/`・`data/area/tokushima/`・`data/area/kochi/`・`data/area/aomori/`・`data/area/iwate/`・`data/area/akita/`・`data/area/miyagi/`・`data/area/yamagata/`・`data/area/fukushima/`・`data/area/niigata/`・`data/area/toyama/`・`data/area/ishikawa/`・`data/area/fukui/`・`data/area/gifu/`・`data/area/nagano/`・`data/area/yamanashi/`・`data/area/shimane/`・`data/area/tottori/`・`data/area/hiroshima/`・`data/area/yamaguchi/`・`data/area/okayama/`・`data/area/kagoshima/`・`data/area/ibaraki/`（2026-10-17〜27の調査結果。`stats.md` `gov_ai.md` `cases.md` `companies.json` `subsidy_*.yml` など）
 - 執筆仕様: `docs/area-writing-spec-kagawa.md`・`docs/area-writing-spec-tokushima.md`・`docs/area-writing-spec-kochi.md`・`docs/area-writing-spec-aomori.md`・`docs/area-writing-spec-iwate.md`・`docs/area-writing-spec-akita.md`・`docs/area-writing-spec-miyagi.md`・`docs/area-writing-spec-yamagata.md`・`docs/area-writing-spec-fukushima.md`・`docs/area-writing-spec-niigata.md`・`docs/area-writing-spec-toyama.md`・`docs/area-writing-spec-ishikawa.md`・`docs/area-writing-spec-fukui.md`・`docs/area-writing-spec-gifu.md`・`docs/area-writing-spec-nagano.md`・`docs/area-writing-spec-yamanashi.md`・`docs/area-writing-spec-shimane.md`・`docs/area-writing-spec-tottori.md`・`docs/area-writing-spec-hiroshima.md`・`docs/area-writing-spec-yamaguchi.md`・`docs/area-writing-spec-okayama.md`
 - ページを直したら `python3 post.py articles/<file>.md` で更新する（画像は作り直されない）。補助金のYAMLを直したら `python3 scripts/build_shindan_data.py` → コミット → `./deploy.sh`
 
@@ -17,6 +17,39 @@
 - [ ] 潟上市「稼げる力創出補助金」の「次の受付は10月末」（潟上市ページ・秋田県ページ98行）が締切か開始か分からず直していない
 - [ ] 開催日を過ぎたセミナーが未来形のまま（加茂市 143・183行の加茂商工会議所のセミナー〔10/26〕、秋田の井川・由利本荘・横手・潟上の研修〔10/22・10/27〕など）
 - [ ] 解説記事 `articles/2026-05-24-ai-bpo-it-hojo.md` は1次（5/12）の頃の内容のまま。2026年度の制度と照合して直す（企画書12章の宿題と同じ）
+
+## 茨城県（2026-11-05〜06作成。未投稿）
+
+北関東の県の1つ（**北海道・茨城・栃木・群馬・沖縄を別々のクラウドのセッションで同時に作った**。共有メモは `data/area/_batch5/shared.md`）。**経済産業局は関東経済産業局、農政局は関東農政局〔茨城県拠点〕、財務局は関東財務局〔水戸財務事務所〕、労働局は茨城労働局、運輸局は関東運輸局〔茨城運輸支局〕**。44市町村（32市10町2村）と県ページ。作業状態は `data/area/ibaraki/_progress.md`、仕様は `docs/area-writing-spec-ibaraki.md`。
+
+### 投稿の前後にすること
+
+- [ ] Mac で「投稿して」（post スキル。県ページを先に投稿してから44市町村、地域ガイド、`./deploy.sh` で補助金診断の JSON を反映）
+- [ ] **古河市 `koga`**（福岡県古賀市 `/area/fukuoka/koga/`）・**鹿嶋市 `kashima`**（佐賀県鹿島市 `/area/saga/kashima/`）・**那珂市 `naka`**（徳島県那賀町 `/area/tokushima/naka/`）は他県のページと同じ slug。投稿後に、それぞれ別のページになっている（他県のページを上書きしていない）ことを確かめる（朝日町・かほく市と同じ）。境町は `sakai-town`（福井県坂井市 `sakai`）、茨城町は `ibaraki-town`
+- [ ] 画像の確認（地図の判定・目視）。霞ヶ浦・筑波山・袋田の滝・鹿島臨海工業地帯・大洗など地名の多いページは特に
+- [ ] 締切・開催日のある制度・セミナーを書いたページは、過ぎたら直す: ITIC 製造DXセミナー（11/20、申込 11/16）、よろず支援拠点のつくばの相談会（11/19・12/17、阿見町のページ）、日立市 中小企業競争力強化支援・人的資本経営支援（11/30 先着）、国のデジタル化・AI導入補助金 7次（12/1 17時）、県のリスキリング講座（12/8・12/11・2027-01-19）、石岡商工会議所の AI ショート動画セミナー（12/9）、つくば市 ビジネス拡大支援（2027-01-31）、県 デジタルスキル習得支援・いばらき業務改善奨励金（2027-01-29）、鉾田市 人材育成・河内町 創業支援促進（2027-02-26）
+- [ ] 常陸太田市 DX促進支援・八千代町 事業所DX推進（随時、予算がなくなり次第終了）は、受付終了の告知が出たら直す（補助金診断の今年度の組み合わせが出るのはこの2市町だけ）
+- [ ] ITIC 生産性向上研究会（モデル企業5社、生成AI・画像AI）の中間報告（2026-11-20）・成果（2027-01）が出たら、事例を足せるか確かめる。日立市 AIサービス実証支援の成果報告会（2027-01〜02予定）も
+- [ ] 美浦村の AI オンデマンド交通は「2025年7月に実証の公募をした」までしか確かめていない。実施・結果が分かったら美浦村のページを直す
+- [ ] 境町の自動運転バスは休止中（2026-11-06）。再開しても AI の記述がなければ AI の事例にしない
+
+### ユーザーの判断に回すこと（リンクの条件）
+
+- [ ] **ひたちなか市はトップページへのリンクを求めている**。ひたちなか市のページは市のサイトのトップページにだけリンクし、ページ名・更新日・たどり方を本文に書いた
+- [ ] **つくば市は「つくば市公式サイト」と明記**を求めている。リンクの文に入れた
+- [ ] **龍ケ崎市は「出典元：龍ケ崎市公式ホームページ」の表示**を求めている。龍ケ崎市のページの市のサイトを紹介した段落に原文どおり添えた。「リンクしたら連絡」を求める県・市町村はなかった（gov_ai.md）。リンクの条件を確かめていない市町村は gov_ai.md・gov_ai_b.md の表
+
+### 調べきれていないこと
+
+- [ ] **社人研の令和5年推計（suikei_kekka.xlsx）は ipss.go.jp が 403**。Mac で茨城県の44市町村（08xxx）の2050年の値を取れば、H2 2・H2 10 に足せる。15〜64歳の増減は令和7年国勢調査の不詳補完値から当社で計算した値
+- [ ] **県内の事例**: 事業者が自ら AI の効果を実績で公表した県内の中小企業の事例は0件。数値は表彰・県の取材・ベンダーの発表・成果集の記載（飯島畜産・サシノベルテ・おはなリハ・アーストラベル水戸・川崎製作所）。業種では介護・医療の一部を除き、メロン・れんこん・干しいもなどの選別AI、水産加工、鉄鋼・化学の協力会社、物流、建設、観光の事例は県内・県外とも見つからなかった
+- [ ] **ヒバラコーポレーション（東海村）の原典（経済産業省「中堅・中小企業等向けDX推進の手引き2025」）が 403**。東海村のページは宮城県大和町のページへのリンクだけにした。Mac で原典を開いて確かめる
+- [ ] **関東経済産業局（kanto.meti.go.jp）・中小企業庁・DXセレクション・Internet Archive がこのクラウドから開けなかった**。関東経産局の事例集・DXセレクションに茨城の会社があるかは確かめていない
+- [ ] **茨城新聞のサイトが 2026-10-23 から停止**していて、県内の報道を確かめられなかった
+- [ ] 茨城県よろず支援拠点・生産性向上支援センター（403）、水戸商工会議所（403）、茨城交通（403）、日本原子力研究開発機構の東海・大洗のページ（403）はクラウドから開けなかった。取手市・筑西市・桜川市・牛久市・常総市のサイトは curl で切断することがあり、WebFetch で確かめた。小美玉市は TLS の証明書の不一致（www つきは開けた）。境町は WebFetch だけ
+- [ ] 県の「年間133,500時間」（総務省の調査への県の回答）は県の公表資料に根拠が見つからない。県議会の産業戦略部の説明資料6本は読めていない（ダウンロードが途中で切れた）
+- [ ] DX推進計画が見つからなかった市町村: 日立・古河・結城・牛久など約14市（gov_ai.md）と、茨城町・大洗町・城里町・大子町・河内町・境町・美浦村（gov_ai_b.md）。執筆で見つかったもの（守谷市の計画書・つくばみらい市の情報化計画）は直した
+- [ ] 原子力事業所の一覧（県の資料の地図の画像）のうち那珂市の1施設が判読できなかった
 
 ## 群馬県（2026-11-05〜06作成。未投稿）
 

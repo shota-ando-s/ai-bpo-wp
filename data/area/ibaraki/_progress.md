@@ -24,13 +24,13 @@
 
 ## 状態
 - [x] _brief.md・wages.md（2026-11-05）
-- [ ] 調査
-- [ ] 執筆仕様 docs/area-writing-spec-ibaraki.md
-- [ ] 記事 45本（県1＋市町村44）
-- [ ] data/subsidies/ibaraki.yml・areas.yml・build
-- [ ] 地域ガイド（北関東の段）・area_uniq.py・area-todo.md・area-new-prefecture.md・memory
-- [ ] チェック
-- [ ] main に push
+- [x] 調査（8担当、WebSearch 70回）
+- [x] 執筆仕様 docs/area-writing-spec-ibaraki.md
+- [x] 記事 45本（県1＋市町村44）
+- [x] data/subsidies/ibaraki.yml・areas.yml・build
+- [x] 地域ガイド（北関東の段）・area_uniq.py・area-todo.md・area-new-prefecture.md・memory
+- [x] チェック（check_article 45ページ ERROR 0・area_uniq 全44ページ60%以上〔牛久市は49.8%→94.0%〕・_calc.py OK・試算の結果表に中身あり・書いてはいけない局名なし）
+- [x] main に push（投稿・デプロイはユーザーが Mac で「投稿して」）
 
 ## 実績メモ
 - 2026-11-05 ネットワーク確認（pref.ibaraki.jp・soumu.go.jp とも開けた）。ローカルの main が detached だったので origin/main に合わせ直した
@@ -81,3 +81,5 @@
 - W13 かすみがうら市（約7,757字・80.0%・月280.25h/83.5万）・桜川市（7,316・85.9%・72.75h/25.5万）・河内町（7,163・85.0%・152.75h/53.8万）完了、ERROR 0、WS0。桜川市の商工労働の一覧（2025-06-11）は WebFetch で開けた（AI・IT の補助なし）。**市町村44ページそろう**。W14（県ページ）起動
 - 親: 全44ページの area_uniq（data/area/ibaraki/_uniq_all.txt）で牛久市が49.8%（後から書いた龍ケ崎市・下妻市・常陸太田市・行方市などと似た）→ 直し担当を起動。ほかの43ページは62.6〜93.3%。_calc.py OK・書いてはいけない局名なし・試算の結果表に中身あり（44ページ）
 - 直し担当: 牛久市 49.8%→94.0%（18段落を書き分け、事実・数値・試算は不変）、ERROR 0
+- W14 県ページ（約15,961字、ERROR 0、外部リンク52件すべて200、WS0）完了。市町村一覧は5区分で44にリンク（slug 一致を確認）、15〜64歳の増減を44ページと照合、AI と書いてよい交通は龍ケ崎市・大子町・高萩市・日立市・土浦市。独自の制度が見つからなかった市町村は30（yml から数え直し）
+- 親: 地域ガイド（北関東の段に茨城県の行と出典、段の一文目）・area-todo（茨城県の節）・area-new-prefecture（茨城県で分かったこと）・memory を更新
