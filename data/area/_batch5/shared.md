@@ -20,6 +20,7 @@
 
 | 資料 | URL | 確かめた日 | 県の値 | 書いた県 |
 |---|---|---|---|---|
+| 管轄の確認: 経済産業省組織令（関東経済産業局の管轄に群馬県）・関東農政局の所在地一覧・関東財務局 前橋財務事務所・群馬労働局 | https://laws.e-gov.go.jp/api/1/lawdata/412CO0000000254 ・ https://www.maff.go.jp/kanto/annai/address/index.html ・ https://lfb.mof.go.jp/kantou/maebashi/information/maebashimap.htm ・ https://jsite.mhlw.go.jp/gunma-roudoukyoku/ | 2026-11-06 | 群馬（茨城・栃木も組織令の同じ表で確かめられる） | 群馬 |
 | 茨城新聞のサイト | 2026-10-23 から停止していて記事を確かめられない（茨城） | 2026-11-06 | - | 茨城 |
 | 関東経済産業局（kanto.meti.go.jp）・Internet Archive | このクラウドの環境から開けない（茨城の cases 担当、2026-11-06） | 2026-11-06 | - | 茨城 |
 | 農研機構 スマート農業実証の課題一覧 | 課題名に【県名】が入るので、県で絞れる | 2026-11-06 | 県別 | 茨城 |
