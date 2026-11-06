@@ -25,13 +25,13 @@
 
 ## 状態
 - [x] _brief.md・wages.md（2026-11-05）
-- [ ] 調査
-- [ ] 執筆仕様 docs/area-writing-spec-okinawa.md
-- [ ] 記事 42本（県1＋市町村41）
-- [ ] data/subsidies/okinawa.yml・areas.yml・build
-- [ ] 地域ガイド・area-todo.md・area-new-prefecture.md・memory
-- [ ] チェック
-- [ ] main に push
+- [x] 調査（補充を含む9担当、WebSearch 92回）
+- [x] 執筆仕様 docs/area-writing-spec-okinawa.md
+- [x] 記事 42本（県1＋市町村41）
+- [x] data/subsidies/okinawa.yml・areas.yml・build
+- [x] 地域ガイド・area-todo.md・area-new-prefecture.md・memory
+- [x] チェック（check_article 42ページ ERROR 0・area_uniq 61.6〜95.3%・_calc.py OK）
+- [x] main に push（投稿・デプロイはユーザーが Mac で「投稿して」）
 
 ## 実績メモ
 - 2026-11-05 ネットワーク確認（pref.okinawa.lg.jp・soumu.go.jp とも開けた）。ローカルの HEAD が detached だったので `git checkout -B main origin/main`。市町村41を総務省のコード表で確認。area_uniq.py に okinawa を足した。共有メモに slug を push
@@ -69,3 +69,4 @@
 - data/subsidies/okinawa.yml（12制度）と areas.yml の沖縄県の行（41市町村、none 36）を入れて build → 1008制度。他県の制度・地域は build の前後で同じ
 - W12 恩納村（約8,280字・75.8%・月256h/90.1万）・南風原町（8,890・85.2%・274.75h/96.2万）完了、ERROR 0、WS0。初稿は2ページとも52%台→書き直した。足した: よろず支援拠点の相談会（恩納村コミュニティーセンター、毎週金曜10〜16時、予約制・無料）。**市町村41ページそろう**
 - 親: 全41ページの area_uniq（結果は _uniq_all.txt）で与那原町だけ59.9%→3段落を書き直して61.7%。ほかは61.6%（八重瀬町）〜95.3%。check_article 41ページ ERROR 0、_calc.py OK、試算の結果表に中身あり、書いてはいけない局名・前知事の名前なし
+- W13 県ページ（約18,860字、ERROR 0、外部リンク66本すべて200、WS0）完了。市町村一覧は県の5区分で41にリンク。事例が見つからなかった市町村は24（南城市を含む）。ResorTech・沖縄タイムス・琉球新報にはリンクしていない。地域ガイドに沖縄県の段（九州地方の段のあと）
