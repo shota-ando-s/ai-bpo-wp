@@ -1,0 +1,70 @@
+# 栃木県（県・公益財団法人栃木県産業振興センター）と14市の AI・IT・DX・研修向け補助金（2026年度）。2026-11-06に公式ページ・募集案内・要綱で確認（書きかけ。節ごとに書き足す）
+# 期間の status は data/subsidies/README.md の値（open / closed / rolling / unknown）。来年度の見込み（next_expected）は書かない
+
+- id: tochigi-mirai-gijutsu-jisso
+  name: 令和8(2026)年度 未来技術実装支援事業費補助金
+  org: 栃木県（産業労働観光部 産業政策課 次世代産業創造室）
+  area: tochigi
+  max_yen: 7500000
+  rate: 補助対象経費の3/4以内、上限750万円
+  rate_num: 0.75
+  targets: {efficiency: ○, consulting: △, training: ×}
+  expenses: 人件費（補助対象経費の50%以内）、事業実施費（原材料・機械装置・工具器具の借用・購入・試作・改良等、外注加工費）、改装費、事業運営費、委託・外注費、専門家経費（技術指導・コンサル）、システム関連経費（データの購入、システムの開発、専用ソフトのサービス利用・保守）。消費税は対象外
+  conditions: 栃木県内で未来技術（AI、IoT、5G、クラウド、ビッグデータ、自動運転、ロボット〔ドローン含む〕、VR/AR、キャッシュレス、ブロックチェーン等）を活用した製品・サービスの実証事業を行う企業か、データ利活用で生産性向上・新製品等の創出と社会課題の解決を図る企業。募集案内に中小企業に限る記載はない。審査会（プレゼン）で採択。採択企業は取組を事例として公表することに協力。事業終了 2027-02-12、補助金は事業終了後の支払い
+  period: {status: closed, start: 2026-04-17, end: 2026-05-29}
+  url: https://www.pref.tochigi.lg.jp/f01/2026miraigizyutu.html
+  checked: 2026-11-06
+  confidence: official
+  note: AIを名指ししている（未来技術の例示の最初）。県のページ（更新日2026-04-17、見出し「【令和８年度募集終了しました】」）と募集案内 https://www.pref.tochigi.lg.jp/f01/documents/20260424091613.pdf （6ページ、PDF作成2026-04-24）p1〜p3 で、受付 2026-04-17〜05-29 17時、補助率3/4以内・上限750万円。2026-06-19 の審査会で4件を採択（(株)RoboSapiens「ロボット巡回によるナス病害虫検知システム」、(株)小野測器「既存設備と『ヒューマノイドロボット』の共創エコシステム構築」、大和鋼管工業(株)「AIを活用したSOP活用高度化と継続的改善の社会実装実証事業」、(株)轟「宿泊・飲食業のデータ分析×収益改善実証-売る力をAIで自動化」）。過去の事例集（R5・R6 産業データ共有・利活用PF、未来技術企業実証、R7 社会実装）が同じページにある。問い合わせは 028-623-3203、sangyoshinko@pref.tochigi.lg.jp
+  fuenn_note: 栃木県が、AI・IoT・ロボットなどの未来技術の実証やデータ活用の事業を3/4（最大750万円）補助する制度です。2026年度の募集は5月29日で締め切られ、4件が採択されました。
+
+- id: tochigi-monodukuri-kakushin
+  name: 令和8(2026)年度 ものづくり革新技術導入実証モデル事業補助金
+  org: 栃木県（産業労働観光部 工業振興課 ものづくり企業支援室）
+  area: tochigi
+  max_yen: 5000000
+  rate: 補助対象経費の1/2以内、上限500万円（予算の都合で減額の場合あり）
+  rate_num: 0.5
+  targets: {efficiency: ○, consulting: ×, training: ×}
+  expenses: 機械装置・器具備品・専用ソフトウェア・情報システムの購入・試作・改良・借用、外注、技術指導の受入（30%以内）、開発に直接従事する者の人件費（30%以内）、消耗品（1個10万円未満）、クラウドサービス利用費、連携先企業に支払う経費。消費税は対象外。他の補助金の対象経費は対象外
+  conditions: 県内に事業所がある中小企業者（資本金3億円以下かつ従業員300人以下、みなし大企業を除く）か、それを核にした企業群。スマートファクトリー化に向けたものづくり革新技術（ロボット・AI・IoT）の導入実証（製造業向け）。「革新的AIモデル枠」と「一般モデル枠」がある。1企業1申請、電子申請。採択時に企業名・所在地・事業計画名を公表、終了後3年間の成果報告と成果発表会・見学会への協力
+  period: {status: closed, start: 2026-05-19, end: 2026-06-30}
+  url: https://www.pref.tochigi.lg.jp/f02/r8_monodukurikakushinn_boshu.html
+  checked: 2026-11-06
+  confidence: official
+  note: AIを名指ししている（ロボット・AI・IoT、革新的AIモデル枠）。募集ページ（更新日2026-05-19）で募集 2026-05-19〜06-30 17時必着。交付決定のページ https://www.pref.tochigi.lg.jp/f02/r8_monodukurikakushinn_kouhukettei.html （更新日2026-08-24）で3件（錦正工業〔那須塩原市〕、晃和〔佐野市・栃木市〕、竹中〔佐野市〕）。令和7年度までの名前は「スマートファクトリー実証モデル事業補助金」（R7 交付決定 https://www.pref.tochigi.lg.jp/f02/r7_smartfactory_kouhukettei.html ）。募集案内 PDF https://www.pref.tochigi.lg.jp/f02/documents/r8_boshuannai_kakushingijutu.pdf （6ページ）。問い合わせは 028-623-3192、kougyou@pref.tochigi.lg.jp
+  fuenn_note: 栃木県が、県内の中小製造業がロボット・AI・IoTを工場に導入して試す費用を1/2（最大500万円）補助する制度です。2026年度の募集は6月30日で締め切られました。
+
+- id: tochigi-dx-jinzai-ikusei
+  name: とちぎ企業内ＤＸ人材育成補助金
+  org: 栃木県（産業労働観光部 産業政策課）
+  area: tochigi
+  max_yen: 10000
+  rate: 対象経費（受講料）の1/2以内、上限1万円
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: △}
+  expenses: 大学が実施するDX推進に資する専門講座として知事が認める講座の受講料。2026年度の対象講座は宇都宮大学「宇大未来塾 データサイエンス・ＤＸプログラム」だけ
+  conditions: 経営者・役員・従業員が対象講座を受講する県内企業等（業種・規模の制限は要綱にない。風俗関連の業種、県税の滞納、重大な労働関係法令違反があると対象外）。受講料を払った後に交付申請（実績報告）を兼ねて電子申請。予算の範囲内
+  period: {status: open, end: 2026-12-25}
+  url: https://www.pref.tochigi.lg.jp/f01/2026tochigikigyounaidxjinzaiikuseihojyokin.html
+  checked: 2026-11-06
+  confidence: official
+  note: AIは名指ししていない（DX・データサイエンス）。県のページ（更新日2026-10-02）で提出期限 2026-12-25（金）。交付要綱 https://www.pref.tochigi.lg.jp/f01/documents/2026tochigikigyounaidxjinzaiikuseihojyokinkouhuyoukou.pdf （2ページ、第5条 1/2・1万円、附則 2026-04-15施行・2027-03-31失効）。対象講座 http://www.udai-mirai.net/dsdx/ 。ふえんの研修は対象講座に入っていない。問い合わせは 028-623-3203
+  fuenn_note: 栃木県が、宇都宮大学のデータサイエンス・DX講座の受講料を1/2（最大1万円）補助する制度です。申請は2026年12月25日まで。対象は県が認めた大学の講座だけです。
+
+- id: tochigi-iin-ai-iot-shiken
+  name: 令和8(2026)年度 中小企業高度化・事業創出助成事業助成金（AI・IoTソリューション試験導入助成事業）2次公募
+  org: 公益財団法人栃木県産業振興センター（産業振興部 次世代産業支援チーム）
+  area: tochigi
+  max_yen: 1000000
+  rate: 助成対象経費の2/3以内、上限100万円
+  rate_num: 0.667
+  targets: {efficiency: ○, consulting: ×, training: ×}
+  expenses: 機械装置・工具器具等の借用、消耗品（原則1年未満・10万円未満）、システム関連経費（ソフトウェア・利用ライセンス・専用システム・クラウドサービスの借用料・使用料）。消費税は対象外
+  conditions: 高度技術産学連携地域（宇都宮市・鹿沼市・日光市・真岡市・下野市・上三川町・芳賀町・壬生町・高根沢町）に主たる事務所か事業所がある中小企業者だけ。製品の開発・製造、研究開発などの技術的な課題解決のため、AI・IoTソリューションを事業現場に試験導入して有効性・課題を検証する取組。助成期間は交付決定日から最長1年。応募前に事前相談。採択基準に「業務のDX化を通じた業務プロセスの高度化・最適化」
+  period: {status: open, start: 2026-10-05, end: 2026-12-15}
+  url: https://www.tochigi-iin.or.jp/home/3/51.html
+  checked: 2026-11-06
+  confidence: official
+  note: AIを名指ししている。2次公募のお知らせ https://www.tochigi-iin.or.jp/home/11/3920.html （2026-10-05）で、AI・IoTソリューション試験導入助成事業は 2026-10-05〜12-15 17時必着（研究開発助成事業は11-30まで）。対象地域が9市町に限られる（県全体ではない。足利・栃木・佐野・小山・大田原・矢板・那須塩原・さくら・那須烏山の各市は対象外）。財源は高度技術振興基金（出捐 宇都宮市・真岡市・芳賀町・高根沢町）の運用益と地域の負担金。チラシ https://www.tochigi-iin.or.jp/content/files/jisedaisangyo/R8/koudoka/2ji/R8_2ji-chirasi.pdf は開いていない。採択の一覧は見つからない。診断で県全域に出す場合は対象の市町を必ず表示する。問い合わせは 028-670-2608、jisedai[@]tochigi-iin.or.jp
+  fuenn_note: 栃木県産業振興センターが、AI・IoTのソフトウェアやクラウドサービスを試験導入する費用を2/3（最大100万円）助成する制度です。対象は宇都宮市・鹿沼市・日光市・真岡市・下野市と上三川町・芳賀町・壬生町・高根沢町の中小企業だけで、2次公募は2026年12月15日17時までです。
