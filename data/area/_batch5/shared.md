@@ -20,6 +20,7 @@
 
 | 資料 | URL | 確かめた日 | 県の値 | 書いた県 |
 |---|---|---|---|---|
+| 茨城県情報サービス産業協会（IBIS）の会員名簿 | https://www.ibis.or.jp/member （住所・URL・得意分野） | 2026-11-06 | 茨城 | 茨城 |
 | 管轄の確認: 経済産業省組織令（関東経済産業局の管轄に群馬県）・関東農政局の所在地一覧・関東財務局 前橋財務事務所・群馬労働局 | https://laws.e-gov.go.jp/api/1/lawdata/412CO0000000254 ・ https://www.maff.go.jp/kanto/annai/address/index.html ・ https://lfb.mof.go.jp/kantou/maebashi/information/maebashimap.htm ・ https://jsite.mhlw.go.jp/gunma-roudoukyoku/ | 2026-11-06 | 群馬（茨城・栃木も組織令の同じ表で確かめられる） | 群馬 |
 | 経済産業省組織令 第102条（e-Gov 法令API）・農水省の「経済産業局の問い合わせ窓口」 | 北関東3県とも関東経済産業局の管内と確認（局のサイトは開けない） | 2026-11-06 | 管轄 | 茨城 |
 | 全国商工会連合会の名簿 | shoko_search.php に POST で `kencd[]=<県コード>&kensu=100` を送ると県の全商工会が1回で出る（茨城は44件。商工会議所は8） | 2026-11-06 | 県別 | 茨城 |
