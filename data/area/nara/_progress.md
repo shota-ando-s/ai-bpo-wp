@@ -25,13 +25,13 @@
 
 ## 状態
 - [x] _brief.md・wages.md・area_uniq.py に nara（2026-11-07）
-- [ ] 調査（9担当）
-- [ ] 執筆仕様 docs/area-writing-spec-nara.md
-- [ ] 記事 40本（県1＋市町村39）
-- [ ] data/subsidies/nara.yml・areas.yml・build
-- [ ] 地域ガイド（近畿の段）・area-todo.md・area-new-prefecture.md・memory
-- [ ] チェック（check_article・area_uniq・_calc.py・試算の結果表・書いてはいけない局名）
-- [ ] main に push（投稿・デプロイはユーザーが Mac で「投稿して」）
+- [x] 調査（9担当）
+- [x] 執筆仕様 docs/area-writing-spec-nara.md
+- [x] 記事 40本（県1＋市町村39）
+- [x] data/subsidies/nara.yml・areas.yml・build
+- [x] 地域ガイド（近畿の段）・area-todo.md・area-new-prefecture.md・memory
+- [x] チェック（check_article・area_uniq・_calc.py・試算の結果表・書いてはいけない局名）
+- [x] main に push（投稿・デプロイはユーザーが Mac で「投稿して」）
 
 ## 実績メモ
 - 2026-11-07 ネットワーク確認（pref.nara.lg.jp・soumu.go.jp とも開けた）。ローカルが detached だったので main を origin/main に合わせた
