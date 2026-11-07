@@ -1,0 +1,1106 @@
+{
+ "_meta": {
+  "checked": "2026-11-07",
+  "scope": "奈良県39市町村（12市15町12村）。本社（公式サイトの本社・本店・所在地）が当該市町村にあり、かつ国税庁 法人番号公表サイトの登記の本店が同じ市町村で、公式サイトでシステム開発・ソフトウェア開発・Web開発・情報処理サービス・SI を事業として明示する法人。茨城・鹿児島と同じく、本表には『公式サイトで本社所在地と時点つきの従業員数の両方を確認できた会社』だけ（市町村ごとに最大8社、従業員数の多い順）。時点のない人数・公式に人数がない会社は次点（next_candidates）、公式を確かめられない会社は unverified、県外本社は _reference._outside_hq。",
+  "candidate_sources": [
+   "奈良県情報サービス産業協会は確認できなかった。JISA 会員一覧の団体会員（https://www.jisa.or.jp/about_jisa/list/tabid/739/Default.aspx 、2026-11-07）に奈良・滋賀の団体はなく、和歌山（(一社)和歌山情報サービス産業協会）はある。ANIA（www.ania.or.jp）は名前解決できず未確認",
+   "国税庁 法人番号公表サイト 基本3情報ダウンロード 奈良県 全件（29_nara_all_20261030.csv、41,702行）https://www.houjin-bangou.nta.go.jp/download/zenken/ から商号の語（ソフト・コンピ・情報処理・情報システム・データ・デジタル・ＡＩ・アプリ・ＩＴ・システム）で359件を抽出",
+   "gBizINFO https://info.gbiz.go.jp/hojin/ichiran?hojinBango=<法人番号> で364件の業種・従業員数・ホームページ・厚生年金の被保険者数（参考値。本表の人数には使わない）を確認",
+   "奈良労働局委託 若年者地域連携事業の合同企業説明会の参加企業詳細 https://jakunen-nara.mhlw.go.jp/gousetsu/kigyou_list/ （2026年3月5日・6月18日・8月21日、2023年の企業PDF 126件）。情報通信業はキステム・南都コンピュータサービス以外は携帯ショップ運営",
+   "奈良先端科学技術大学院大学「奈良先端大発スタートアップ」認定一覧 https://www.naist.jp/sankan/content/ja/service/index.html#sv12",
+   "奈良新聞デジタルの県内プレスリリース一覧（cases 担当の取得分）",
+   "比較サイト（atsoho・biz.ne.jp・salesnow・green-japan）: secondary。社名の手がかりだけ",
+   "WebSearch（担当上限10回のうち9回を使用）"
+  ],
+  "columns": "name / hq（公式の本社住所）/ municipality / town / corporate_number / houjin_honten / employees{value,as_of,source} / capital / founded / business_summary / ai_initiative / url / size_basis / checked / notes",
+  "industry_stats": {
+   "source": "令和3年経済センサス‐活動調査 第6-1表（民営事業所、2021年6月1日）statInfId=000040067880 https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040067880&fileKind=0 （stats 担当の取得ファイルから自治体コードの行を抽出。stats.md の ec_6_1 と同じ表）",
+   "nara_pref": {
+    "code": "29000",
+    "G_情報通信業": {
+     "establishments": 334,
+     "workers": 2278
+    },
+    "39_情報サービス業": {
+     "establishments": 169,
+     "workers": 739
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": 50,
+     "workers": 307
+    },
+    "全産業": {
+     "establishments": 45583,
+     "workers": 444916
+    }
+   },
+   "share_note": "情報通信業の従業者は全産業の0.51%（2,278÷444,916）、情報サービス業は0.17%（739÷444,916）。奈良市の情報サービス業417人は県の56.4%。自分で計算",
+   "by_municipality": {
+    "奈良市": {
+     "code": "29201",
+     "G_情報通信業": {
+      "establishments": 129,
+      "workers": 1314
+     },
+     "39_情報サービス業": {
+      "establishments": 63,
+      "workers": 417
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 15,
+      "workers": 182
+     },
+     "全産業": {
+      "establishments": 12046,
+      "workers": 127481
+     }
+    },
+    "大和高田市": {
+     "code": "29202",
+     "G_情報通信業": {
+      "establishments": 16,
+      "workers": 138
+     },
+     "39_情報サービス業": {
+      "establishments": 8,
+      "workers": 39
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 1,
+      "workers": 2
+     },
+     "全産業": {
+      "establishments": 2312,
+      "workers": 18901
+     }
+    },
+    "大和郡山市": {
+     "code": "29203",
+     "G_情報通信業": {
+      "establishments": 16,
+      "workers": 71
+     },
+     "39_情報サービス業": {
+      "establishments": 11,
+      "workers": 55
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 2,
+      "workers": 4
+     },
+     "全産業": {
+      "establishments": 2955,
+      "workers": 40758
+     }
+    },
+    "天理市": {
+     "code": "29204",
+     "G_情報通信業": {
+      "establishments": 8,
+      "workers": 30
+     },
+     "39_情報サービス業": {
+      "establishments": 3,
+      "workers": 5
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 1,
+      "workers": 2
+     },
+     "全産業": {
+      "establishments": 2342,
+      "workers": 28533
+     }
+    },
+    "橿原市": {
+     "code": "29205",
+     "G_情報通信業": {
+      "establishments": 22,
+      "workers": 120
+     },
+     "39_情報サービス業": {
+      "establishments": 6,
+      "workers": 13
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 5,
+      "workers": 17
+     },
+     "全産業": {
+      "establishments": 4286,
+      "workers": 44133
+     }
+    },
+    "桜井市": {
+     "code": "29206",
+     "G_情報通信業": {
+      "establishments": 17,
+      "workers": 41
+     },
+     "39_情報サービス業": {
+      "establishments": 8,
+      "workers": 14
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 4,
+      "workers": 14
+     },
+     "全産業": {
+      "establishments": 2291,
+      "workers": 17607
+     }
+    },
+    "五條市": {
+     "code": "29207",
+     "G_情報通信業": {
+      "establishments": 1,
+      "workers": 14
+     },
+     "39_情報サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 1314,
+      "workers": 11240
+     }
+    },
+    "御所市": {
+     "code": "29208",
+     "G_情報通信業": {
+      "establishments": 3,
+      "workers": 15
+     },
+     "39_情報サービス業": {
+      "establishments": 1,
+      "workers": 1
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 1,
+      "workers": 1
+     },
+     "全産業": {
+      "establishments": 997,
+      "workers": 9288
+     }
+    },
+    "生駒市": {
+     "code": "29209",
+     "G_情報通信業": {
+      "establishments": 43,
+      "workers": 275
+     },
+     "39_情報サービス業": {
+      "establishments": 22,
+      "workers": 61
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 7,
+      "workers": 17
+     },
+     "全産業": {
+      "establishments": 3022,
+      "workers": 29201
+     }
+    },
+    "香芝市": {
+     "code": "29210",
+     "G_情報通信業": {
+      "establishments": 17,
+      "workers": 33
+     },
+     "39_情報サービス業": {
+      "establishments": 14,
+      "workers": 28
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 1,
+      "workers": 3
+     },
+     "全産業": {
+      "establishments": 2035,
+      "workers": 18439
+     }
+    },
+    "葛城市": {
+     "code": "29211",
+     "G_情報通信業": {
+      "establishments": 8,
+      "workers": 28
+     },
+     "39_情報サービス業": {
+      "establishments": 2,
+      "workers": 17
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 3,
+      "workers": 4
+     },
+     "全産業": {
+      "establishments": 1177,
+      "workers": 12137
+     }
+    },
+    "宇陀市": {
+     "code": "29212",
+     "G_情報通信業": {
+      "establishments": 8,
+      "workers": 14
+     },
+     "39_情報サービス業": {
+      "establishments": 6,
+      "workers": 8
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 1,
+      "workers": 2
+     },
+     "全産業": {
+      "establishments": 1111,
+      "workers": 7026
+     }
+    },
+    "山添村": {
+     "code": "29322",
+     "G_情報通信業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "39_情報サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 172,
+      "workers": 1055
+     }
+    },
+    "平群町": {
+     "code": "29342",
+     "G_情報通信業": {
+      "establishments": 3,
+      "workers": 6
+     },
+     "39_情報サービス業": {
+      "establishments": 3,
+      "workers": 6
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 443,
+      "workers": 3281
+     }
+    },
+    "三郷町": {
+     "code": "29343",
+     "G_情報通信業": {
+      "establishments": 5,
+      "workers": 40
+     },
+     "39_情報サービス業": {
+      "establishments": 4,
+      "workers": 36
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 1,
+      "workers": 4
+     },
+     "全産業": {
+      "establishments": 454,
+      "workers": 4364
+     }
+    },
+    "斑鳩町": {
+     "code": "29344",
+     "G_情報通信業": {
+      "establishments": 7,
+      "workers": 35
+     },
+     "39_情報サービス業": {
+      "establishments": 2,
+      "workers": 2
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 2,
+      "workers": 26
+     },
+     "全産業": {
+      "establishments": 781,
+      "workers": 5759
+     }
+    },
+    "安堵町": {
+     "code": "29345",
+     "G_情報通信業": {
+      "establishments": 1,
+      "workers": 15
+     },
+     "39_情報サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 1,
+      "workers": 15
+     },
+     "全産業": {
+      "establishments": 179,
+      "workers": 2212
+     }
+    },
+    "川西町": {
+     "code": "29361",
+     "G_情報通信業": {
+      "establishments": 1,
+      "workers": 6
+     },
+     "39_情報サービス業": {
+      "establishments": 1,
+      "workers": 6
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 274,
+      "workers": 4029
+     }
+    },
+    "三宅町": {
+     "code": "29362",
+     "G_情報通信業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "39_情報サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 188,
+      "workers": 1374
+     }
+    },
+    "田原本町": {
+     "code": "29363",
+     "G_情報通信業": {
+      "establishments": 4,
+      "workers": 21
+     },
+     "39_情報サービス業": {
+      "establishments": 1,
+      "workers": 9
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 1154,
+      "workers": 12297
+     }
+    },
+    "曽爾村": {
+     "code": "29385",
+     "G_情報通信業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "39_情報サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 126,
+      "workers": 559
+     }
+    },
+    "御杖村": {
+     "code": "29386",
+     "G_情報通信業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "39_情報サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 103,
+      "workers": 405
+     }
+    },
+    "高取町": {
+     "code": "29401",
+     "G_情報通信業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "39_情報サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 288,
+      "workers": 2276
+     }
+    },
+    "明日香村": {
+     "code": "29402",
+     "G_情報通信業": {
+      "establishments": 2,
+      "workers": 2
+     },
+     "39_情報サービス業": {
+      "establishments": 1,
+      "workers": 1
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 1,
+      "workers": 1
+     },
+     "全産業": {
+      "establishments": 248,
+      "workers": 1380
+     }
+    },
+    "上牧町": {
+     "code": "29424",
+     "G_情報通信業": {
+      "establishments": 3,
+      "workers": 6
+     },
+     "39_情報サービス業": {
+      "establishments": 2,
+      "workers": 4
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 489,
+      "workers": 5300
+     }
+    },
+    "王寺町": {
+     "code": "29425",
+     "G_情報通信業": {
+      "establishments": 5,
+      "workers": 10
+     },
+     "39_情報サービス業": {
+      "establishments": 3,
+      "workers": 5
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 1,
+      "workers": 4
+     },
+     "全産業": {
+      "establishments": 793,
+      "workers": 7751
+     }
+    },
+    "広陵町": {
+     "code": "29426",
+     "G_情報通信業": {
+      "establishments": 3,
+      "workers": 7
+     },
+     "39_情報サービス業": {
+      "establishments": 2,
+      "workers": 3
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 1025,
+      "workers": 9057
+     }
+    },
+    "河合町": {
+     "code": "29427",
+     "G_情報通信業": {
+      "establishments": 4,
+      "workers": 8
+     },
+     "39_情報サービス業": {
+      "establishments": 3,
+      "workers": 3
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 1,
+      "workers": 5
+     },
+     "全産業": {
+      "establishments": 424,
+      "workers": 3987
+     }
+    },
+    "吉野町": {
+     "code": "29441",
+     "G_情報通信業": {
+      "establishments": 1,
+      "workers": 1
+     },
+     "39_情報サービス業": {
+      "establishments": 1,
+      "workers": 1
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 597,
+      "workers": 2952
+     }
+    },
+    "大淀町": {
+     "code": "29442",
+     "G_情報通信業": {
+      "establishments": 4,
+      "workers": 21
+     },
+     "39_情報サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 1,
+      "workers": 2
+     },
+     "全産業": {
+      "establishments": 704,
+      "workers": 6002
+     }
+    },
+    "下市町": {
+     "code": "29443",
+     "G_情報通信業": {
+      "establishments": 1,
+      "workers": 4
+     },
+     "39_情報サービス業": {
+      "establishments": 1,
+      "workers": 4
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 279,
+      "workers": 1596
+     }
+    },
+    "黒滝村": {
+     "code": "29444",
+     "G_情報通信業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "39_情報サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 51,
+      "workers": 200
+     }
+    },
+    "天川村": {
+     "code": "29446",
+     "G_情報通信業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "39_情報サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 209,
+      "workers": 721
+     }
+    },
+    "野迫川村": {
+     "code": "29447",
+     "G_情報通信業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "39_情報サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 36,
+      "workers": 149
+     }
+    },
+    "十津川村": {
+     "code": "29449",
+     "G_情報通信業": {
+      "establishments": 2,
+      "workers": 3
+     },
+     "39_情報サービス業": {
+      "establishments": 1,
+      "workers": 1
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 1,
+      "workers": 2
+     },
+     "全産業": {
+      "establishments": 245,
+      "workers": 1327
+     }
+    },
+    "下北山村": {
+     "code": "29450",
+     "G_情報通信業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "39_情報サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 83,
+      "workers": 409
+     }
+    },
+    "上北山村": {
+     "code": "29451",
+     "G_情報通信業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "39_情報サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 69,
+      "workers": 550
+     }
+    },
+    "川上村": {
+     "code": "29452",
+     "G_情報通信業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "39_情報サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 139,
+      "workers": 535
+     }
+    },
+    "東吉野村": {
+     "code": "29453",
+     "G_情報通信業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "39_情報サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 142,
+      "workers": 645
+     }
+    }
+   }
+  }
+ },
+ "nara-city": [
+  {
+   "name": "株式会社ニュートラルソフトウェア",
+   "hq": "〒630-8244 奈良県奈良市三条町475 松田ビル4F（会社概要の住所）",
+   "municipality": "奈良市",
+   "town": "三条町",
+   "corporate_number": "3150001021762",
+   "houjin_honten": "奈良県奈良市三条町４７５（令和2年3月10日に三条町４８７番地から移転）",
+   "employees": {
+    "value": 22,
+    "as_of": "22名（2026年5月時点）",
+    "source": "https://www.neutral-software.co.jp/company"
+   },
+   "capital": {
+    "value": "2,000万円",
+    "source": "https://www.neutral-software.co.jp/company"
+   },
+   "founded": 2017,
+   "business_summary": "2017年8月21日設立（2014年に個人事業で開業）。ITコンサルティング、システムインテグレーション、スマホアプリ・IoT開発。Pマーク（2023年）",
+   "ai_initiative": "事業内容に「スマホアプリ・IoT開発・ChatGPT活用」、サービスに「ChatAI活用・自動案内システム開発」「ChatGPTを活用した会話システムや、会話型の施設案内サイネージ等」 https://www.neutral-software.co.jp/",
+   "url": "https://www.neutral-software.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-07",
+   "notes": "gBizINFO の厚生年金の被保険者 21人。比較サイトに奈良市のシステム開発会社として出る。他県の記事に出ない"
+  }
+ ],
+ "yamatotakada": [
+  {
+   "name": "奈良OAシステム株式会社",
+   "hq": "〒635-0001 奈良県大和高田市大字松塚755-1（本社）。奈良支店（奈良市南京終町）・三重西部支店（名張市）・大阪営業所",
+   "municipality": "大和高田市",
+   "town": "松塚",
+   "corporate_number": "4150001013180",
+   "houjin_honten": "奈良県大和高田市大字松塚７５５番地１",
+   "employees": {
+    "value": 88,
+    "as_of": "88名（令和7年8月末現在）",
+    "source": "https://www.naraoa.co.jp/company.html"
+   },
+   "capital": {
+    "value": "3,100万円",
+    "source": "https://www.naraoa.co.jp/company.html"
+   },
+   "founded": 1989,
+   "business_summary": "1989年9月1日設立。年商24億1,100万円（令和7年8月期）。オフィスオートメーション機器及び事務機器の販売及び保守、ソフトウェアの開発・販売・保守（経理、原価計算、介護、水処理システム等）、水処理装置、監視カメラ等",
+   "ai_initiative": "公式に AI の記載は見つからなかった（DX のページは kintone などの活用支援）",
+   "url": "https://www.naraoa.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-07",
+   "notes": "**境界の業種**: 主業は OA 機器の販売・保守とみられる（県の合同企業説明会 2026-08-21 の業種は「卸売業、小売業」）。記事で「ソフト会社」と書かない。gBizINFO の被保険者 88人"
+  }
+ ],
+ "yamatokoriyama": [],
+ "tenri": [],
+ "kashihara": [],
+ "sakurai": [],
+ "gojo": [],
+ "gose": [],
+ "ikoma": [],
+ "kashiba": [],
+ "katsuragi": [],
+ "uda": [],
+ "heguri": [],
+ "sango": [],
+ "ikaruga": [],
+ "ando": [],
+ "kawanishi-town": [],
+ "miyake": [],
+ "tawaramoto": [],
+ "takatori": [],
+ "kanmaki": [],
+ "oji": [],
+ "koryo": [],
+ "kawai": [],
+ "yoshino": [],
+ "oyodo": [],
+ "shimoichi": [],
+ "yamazoe": [],
+ "soni": [],
+ "mitsue": [],
+ "asuka": [],
+ "kurotaki": [],
+ "tenkawa": [],
+ "nosegawa": [],
+ "totsukawa": [],
+ "shimokitayama": [],
+ "kamikitayama": [],
+ "kawakami": [],
+ "higashiyoshino": [],
+ "_reference": {
+  "nara-city": {
+   "next_candidates": [
+    {
+     "name": "キステム株式会社",
+     "hq": "〒630-8241 奈良市高天町10-1 T.T.ビル4階（会社概要「住所（本社）」、「キステム株式会社（奈良本社）」）",
+     "municipality": "奈良市",
+     "town": "高天町",
+     "corporate_number": "1150001001717",
+     "houjin_honten": "奈良県奈良市高天町１０－１Ｔ．Ｔ．ビル４階。旧商号 株式会社奈良情報システム（平成28年12月1日に変更）",
+     "employees": {
+      "value": 60,
+      "as_of": "時点の記載なし（「640名（同一資本グループ企業の国内IT関連従業員数）（うち当社：60名）」）",
+      "source": "https://www.kistem.com/contents_detail.php?co=cat&frmId=70&frmCd=5-0-0-0-0"
+     },
+     "capital": {
+      "value": "5,000万円",
+      "source": "https://www.kistem.com/contents_detail.php?co=cat&frmId=70&frmCd=5-0-0-0-0"
+     },
+     "founded": 1984,
+     "business_summary": "創業1982年6月1日、創立1984年7月4日。自治体向け（住民情報・電子申請・図書館など）・流通・製造業向けソフト開発、PC機器販売・保守、ネットワーク、データセンター。取引先に奈良県庁・奈良市・県内市町村・奈良先端大など",
+     "ai_initiative": "公式に AI の記載は見つからなかった",
+     "url": "https://www.kistem.com/",
+     "size_basis": "employees",
+     "checked": "2026-11-07",
+     "notes": "人数に時点がないので次点。関連会社に「キステム株式会社【滋賀本社】」・Gateシステムズ株式会社など（同じ資本のグループ。独立系と書かない）。合同企業説明会（2026-03-05）の企業PDFは58名、gBizINFO は60人（男性37・女性18）・被保険者60人。東京都の「株式会社キステム」（警備）とは無関係と公式に注記"
+    },
+    {
+     "name": "南都コンピュータサービス株式会社",
+     "hq": "〒630-8141 奈良県奈良市南京終町1丁目93番地2（南都銀行事務センター内）",
+     "municipality": "奈良市",
+     "town": "南京終町",
+     "corporate_number": "4150001001607",
+     "houjin_honten": "奈良県奈良市南京終町１丁目９３番地の２（登記の商号は「南都コンピユータサービス株式会社」）",
+     "employees": {
+      "value": null,
+      "as_of": "公式に記載なし（合同企業説明会の企業PDF〔2023年6月・8月〕に「従業員数（直近）：72 名」、gBizINFO の被保険者51人）",
+      "source": "https://www.nantocs.co.jp/company/profile/"
+     },
+     "capital": {
+      "value": "1,000万円",
+      "source": "https://www.nantocs.co.jp/company/profile/"
+     },
+     "founded": null,
+     "business_summary": "システムインテグレーション、給与計算サービス。Pマーク（2003年7月、県内企業で初めてと自社が記載）",
+     "ai_initiative": "「AI・RPA 最新技術であるAIや業務効率化となるRPAといったツールの活用しお客様の業務効率化を支援します。」 https://www.nantocs.co.jp/systema/",
+     "url": "https://www.nantocs.co.jp/",
+     "size_basis": "unknown",
+     "checked": "2026-11-07",
+     "notes": "**南都銀行グループ**（所在地が南都銀行事務センター内、サイトに南都銀行のリンク。出資比率は確かめていない）。記事で「独立系」と書かない"
+    }
+   ],
+   "unverified": [
+    "まほろば創研株式会社（法人番号 2150003003512、本店 奈良市橋本町３番１号〔令和8年5月13日に学園北から移転、令和8年4月7日に合同会社Bit Blendから商号変更〕。PR TIMES で「設備保全やフィジカルAIの開発、生成AIの導入支援」。公式 URL 未確認・人数なし。cases.md の5番）",
+    "株式会社ラインシステム（奈良市西九条町２丁目５－１０、1150001002888。gBizINFO の被保険者10人。公式 URL 未確認）",
+    "株式会社ディアネットソフトウェア（奈良市南紀寺町、5150001008816。被保険者5人）・株式会社アジア・ユナイテッド・コンピューティング（奈良市二条町、2130001037134。被保険者5人）: 公式 URL 未確認"
+   ],
+   "excluded": [
+    "ライフ21株式会社・株式会社タフ・株式会社テレ・アンド・テクノミヤコ（奈良市。携帯電話ショップの運営。合同企業説明会では情報通信業）",
+    "FITソリューション株式会社（登記の本店は奈良市学園中〔6120001126017〕だが、公式は「大阪本社 大阪市北区西天満」、厚生年金の事業所も大阪市北区28人） https://www.fitsolution.co.jp/corp/",
+    "株式会社トライキャッチ（比較サイトでは奈良市高天町、公式の所在地は東京都豊島区） https://trycatch.jp/"
+   ]
+  },
+  "kashiba": {
+   "excluded": [
+    "株式会社ヒロホールディングス（香芝市瓦口。携帯電話ショップの運営、87名〔合同企業説明会の企業PDF〕）"
+   ],
+   "next_candidates": [],
+   "unverified": []
+  },
+  "yamatokoriyama": {
+   "unverified": [
+    "日本ソフトウェア開発株式会社（大和郡山市外川町２３番地１、1150001008332。gBizINFO の被保険者6人。公式 URL 未確認）"
+   ],
+   "next_candidates": [],
+   "excluded": []
+  },
+  "ikoma": {
+   "unverified": [
+    "奈良先端大発のスタートアップ（_naist_startups）は人数が公式にない"
+   ],
+   "next_candidates": [],
+   "excluded": []
+  },
+  "_outside_hq": [
+   {
+    "name": "FITソリューション株式会社",
+    "hq": "大阪府大阪市北区西天満二丁目6番8号 堂島ビルヂング5F（公式「大阪本社」）",
+    "nara_site": "登記の本店だけ奈良市学園中３丁目１２１５番地の４３（法人番号 6120001126017）",
+    "source": "https://www.fitsolution.co.jp/corp/"
+   },
+   {
+    "name": "株式会社トライキャッチ",
+    "hq": "東京都豊島区南大塚 3-50-1（公式）",
+    "nara_site": "比較サイトでは奈良市高天町（secondary）",
+    "source": "https://trycatch.jp/"
+   },
+   {
+    "name": "mocomoco株式会社",
+    "hq": "東京都港区六本木7丁目20-19（公式・法人番号 2011001161423）",
+    "nara_site": "奈良先端大の認定スタートアップ一覧に掲載（音声認識AI）",
+    "source": "https://www.mocomoco.ai/about/"
+   },
+   {
+    "name": "MICBON株式会社・NODAS株式会社",
+    "hq": "大阪市北区（MICBON 3120001268522）・京都市上京区（NODAS 7130001076020）",
+    "nara_site": "奈良先端大の認定スタートアップ一覧に掲載",
+    "source": "法人番号公表サイト"
+   }
+  ],
+  "_naist_startups": {
+   "source": "https://www.naist.jp/sankan/content/ja/service/index.html#sv12",
+   "list": "株式会社mica・奈良・先端画像技術株式会社・MICBON株式会社・LENZO株式会社・mocomoco株式会社・NODAS株式会社・株式会社EASE創研・株式会社LEP・株式会社ROBOZOO（2026-11-07、9社。認定制度は2024年度から）",
+   "ikoma": [
+    {
+     "name": "株式会社EASE創研",
+     "corporate_number": "7120003006430",
+     "houjin_honten": "生駒市高山町８９１６番地５奈良先端科学技術大学院大学内（令和8年6月4日移転）",
+     "official": "創業2003年4月、創設2008年2月、資本金1,000万円。産学連携・ソリューション（ソフトウェア工学）",
+     "ai": "「AIについての深い専門知識がなくても「要件定義からプロジェクト立案までをAIが自動で行うシステム」」の研究開発（令和8年度 奈良先端大発 新産業創出支援事業の助成決定）",
+     "employees": "公式になし",
+     "url": "https://easesoken.com/company/"
+    },
+    {
+     "name": "奈良・先端画像技術株式会社",
+     "corporate_number": "6150001026627",
+     "houjin_honten": "生駒市高山町８９１６番地５",
+     "official": "2023年8月4日設立、資本金360万円。光学製品・電子部品・ソフトウェアの研究開発（画像処理・カメラシステム）",
+     "ai": "見つからなかった",
+     "employees": "公式になし",
+     "url": "https://nara-ait.co.jp/company-profile"
+    },
+    {
+     "name": "株式会社mica",
+     "corporate_number": "5150001026792",
+     "houjin_honten": "生駒市高山町８９１６－５",
+     "official": "2023年10月10日設立、資本金360万円。PoisTongs（トング＋小型カメラ＋AI）",
+     "ai": "「拾ったごみの種類をAIが自動で判別し、拾った場所とともにクラウドに記録。」",
+     "employees": "公式になし",
+     "url": "https://www.mica.green/about-us/"
+    },
+    {
+     "name": "株式会社ROBOZOO",
+     "corporate_number": "3150001028790",
+     "houjin_honten": "生駒市高山町８９１６－５（令和8年3月6日指定）",
+     "official": "2026年3月設立（PR TIMES、アドベンチャーワールドの配信 2026-10-14）。生命感ロボットの研究開発。公式は JS のみで読めず",
+     "ai": "配信に AI の語なし",
+     "employees": "不明",
+     "url": "https://robozoo.jp/"
+    },
+    {
+     "name": "LENZO株式会社",
+     "corporate_number": "1150001027778",
+     "houjin_honten": "生駒市高山町８９１６－５",
+     "official": "公式 lenzo.co.jp は 502 で開けず。gBizINFO の厚生年金の事業所は京都市左京区（2人）",
+     "ai": "未確認",
+     "employees": "被保険者2人（参考）",
+     "url": "https://lenzo.co.jp/"
+    }
+   ]
+  },
+  "_factories": {
+   "note": "stats 担当からの照合。記事では会社名を出さず1〜2文にする前提。公式の拠点ページで所在を確かめた分だけ。統計の値を1社の値として書かない",
+   "confirmed": [
+    {
+     "company": "ハウス食品株式会社",
+     "site": "奈良工場",
+     "address": "〒639-1032 奈良県大和郡山市池沢町337番地",
+     "municipality": "大和郡山市",
+     "facts": "工場所在地の一覧に掲載",
+     "stats": "食料品製造業 41所・3,295人（ec_6_1）",
+     "source": "https://housefoods.jp/company/information/place.html"
+    },
+    {
+     "company": "サンヨー食品株式会社",
+     "site": "関西工場",
+     "address": "〒639-1037 奈良県大和郡山市額田部北町944",
+     "municipality": "大和郡山市",
+     "facts": "工場所在地（本社工場 前橋市・九州工場 飯塚市と並ぶ）",
+     "stats": "同上",
+     "source": "https://www.sanyofoods.co.jp/company/network/"
+    },
+    {
+     "company": "株式会社ジェイテクト",
+     "site": "奈良工場（自動車事業本部も同じ住所）",
+     "address": "〒634-8555 奈良県橿原市十市町333番地",
+     "municipality": "橿原市",
+     "facts": "生産品目: 電動パワーステアリング、電動ポンプ式油圧パワーステアリング用電動ポンプ、油圧パワーステアリング、マニュアルステアリング。本社は愛知県刈谷市",
+     "stats": "輸送用機械器具製造業 6所・1,725人",
+     "source": "https://www.jtekt.co.jp/company/japan.html"
+    },
+    {
+     "company": "株式会社ジェイテクトサーモシステム",
+     "site": "本社",
+     "address": "〒632-0084 奈良県天理市嘉幡町229番地",
+     "municipality": "天理市",
+     "facts": "工業用熱処理炉、半導体製造装置の製造・販売。ジェイテクトのグループ会社。gBizINFO の従業員数619人・被保険者608人（法人番号 4150001006481）",
+     "stats": "生産用機械器具製造業 7所・568人",
+     "source": "https://www.jtekt.co.jp/company/japan.html"
+    },
+    {
+     "company": "株式会社ジェイテクトサープレット",
+     "site": "—",
+     "address": "〒639-1066 奈良県生駒郡安堵町西安堵134-6",
+     "municipality": "安堵町",
+     "facts": "ベアリング等金属製品の旋削、熱処理、研磨加工。ジェイテクトのグループ会社",
+     "stats": "—",
+     "source": "https://www.jtekt.co.jp/company/japan.html"
+    },
+    {
+     "company": "東洋シヤッター株式会社",
+     "site": "奈良工場",
+     "address": "〒636-0202 奈良県磯城郡川西町結崎1596-6",
+     "municipality": "川西町（磯城郡）",
+     "facts": "事業所一覧に掲載。従業員数534名（2025年3月末、全社）",
+     "stats": "川西町の上位中分類（印刷 3所・1,129人、輸送用機械 2所・761人）とは業種が違う",
+     "source": "https://www.toyo-shutter.co.jp/profile/office.html"
+    }
+   ],
+   "not_confirmed": [
+    "川西町の印刷（3所・1,129人）・輸送用機械（2所・761人）の会社。杉本カレンダー 奈良工場（求人サイト）は公式が502で未確認",
+    "大和郡山市のゴム製品・プラスチック製品、御所市・高取町の医薬品、葛城市のパルプ・紙の会社は未調査",
+    "シャープ奈良事業所（大和郡山市）・天理事業所・葛城事業所は stats.md で確認済み"
+   ]
+  }
+ },
+ "_notes": [
+  "本表は公式サイトで本社所在地と時点つきの従業員数の両方を確かめ、法人番号で登記の本店も同じ市町村と確かめた会社だけ。該当は奈良市1社（ニュートラルソフトウェア 22名、2026年5月）・大和高田市1社（奈良OAシステム 88名、令和7年8月末。境界の業種）の2社。ほかの10市・15町・12村は本表『なし』（確かめられなかった）",
+  "**奈良県情報サービス産業協会は実在を確かめられなかった**（JISA の団体会員に奈良の団体なし）。記事で協会名を書かない",
+  "**グループ会社・親会社がある会社**: 南都コンピュータサービス（南都銀行グループ、南都銀行事務センター内）、キステム（同じ資本のグループ 国内IT 640名、滋賀本社の関連会社あり）、ジェイテクトサーモシステム（ジェイテクトのグループ）。記事で『地元の独立系』とまとめない",
+  "県の情報サービス業は169所・739人（経済センサス2021）と小さく、奈良市が56.4%。県内のソフト会社は数十人規模が上限",
+  "生駒市の奈良先端大発スタートアップ（EASE創研・奈良・先端画像技術・mica・ROBOZOO・LENZO）は人数が公式になく、生駒市の『AI企業の集積』とは書けない",
+  "FITソリューションは登記が奈良市・公式の本社が大阪市（茨城の「茨城本社」と逆の形）。登記だけで市町村の会社と書かない"
+ ]
+}
