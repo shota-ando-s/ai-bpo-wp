@@ -38,3 +38,6 @@
 | `shingu-city` | 和歌山県新宮市 | 福岡県新宮町 `shingu` と分ける |
 | `hirogawa` | 和歌山県広川町（ひろがわ） | 福岡県広川町は `hirokawa`（読みが違う） |
 | `wakayama-city` / `kitayama-village` | 和歌山市 / 和歌山県北山村 | 県ページは `wakayama` |
+| kusatsu-city | 滋賀県草津市 | 群馬県草津町が `kusatsu`。滋賀は `kusatsu-city`（2026-11-07 滋賀） |
+| hino-town-shiga | 滋賀県日野町 | 鳥取県日野町が `hino`。滋賀は `hino-town-shiga`（2026-11-07 滋賀） |
+| konan-shiga | 滋賀県湖南市 | 高知県香南市が `konan`。滋賀は `konan-shiga`（2026-11-07 滋賀） |
