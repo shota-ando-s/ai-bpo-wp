@@ -24,14 +24,14 @@
 
 ## 状態
 - [x] _brief.md・wages.md・_calc.py の枠（2026-11-07）
-- [ ] 調査
-- [ ] PLAN を決めて push
-- [ ] 執筆仕様 docs/area-writing-spec-wakayama.md
-- [ ] 記事 31本（県1＋市町村30）
-- [ ] data/subsidies/wakayama.yml・areas.yml・build（同じコミット）
-- [ ] 地域ガイド（近畿地方の段）・area-todo.md・area-new-prefecture.md・memory
-- [ ] チェック（check_article・extract_claims・area_uniq・_calc.py）
-- [ ] main に push
+- [x] 調査
+- [x] PLAN を決めて push
+- [x] 執筆仕様 docs/area-writing-spec-wakayama.md
+- [x] 記事 31本（県1＋市町村30）
+- [x] data/subsidies/wakayama.yml・areas.yml・build（同じコミット）
+- [x] 地域ガイド（近畿地方の段）・area-todo.md・area-new-prefecture.md・memory
+- [x] チェック（check_article・extract_claims・area_uniq・_calc.py）
+- [x] main に push
 
 ## 実績メモ
 - 2026-11-07 ネットワーク確認（pref.wakayama.lg.jp・soumu.go.jp とも開けた）。HEAD が detached だったので `git checkout -B main origin/main`。市町村30を総務省のコード表で確認。area_uniq.py に wakayama を足し、共有メモに slug を push
@@ -73,3 +73,4 @@
 - W10 湯浅町（約8,160字・80.3%・月261.25h/91.4万）・日高川町（8,200・82.6%・246.25h/86.7万）・上富田町（7,560・88.6%・163.75h/48.8万）完了、ERROR 0、WS0。湯浅町のタイトルは「醤油・調味料の醸造」（町の計画に日本遺産「醤油醸造の発祥の地 紀州湯浅」2017-04）。日高川町へのリンク0本。**市町村30ページそろう**
 - 親: 全30ページの area_uniq（_uniq_all.txt）60.9%（由良町）〜90.0%（紀美野町）で全ページ60%以上。check_article 30ページ ERROR 0、_calc.py OK、禁止の10市町と広川町へのリンク0本、県のサイトの個別ページへのリンク0本
 - W11 県ページ（約18,400字、ERROR 0、外部リンク34本すべて200、WS0）完了。市町村一覧は振興局の7区分で30にリンク。県のサイトはトップページだけ、わかやま×ICT（ritti.pref.wakayama.jp）も名前だけ。近畿経済産業局は2か所まで
+- 共通ファイル: 地域ガイドの近畿地方の段に和歌山県の行（前置きの一文を2県に直した）、area-todo に和歌山県の節、手順に「和歌山県で分かったこと」、memory。push 前に pull して _calc.py OK（奈良 39行を含む22県 699行と照合）。WebSearch 累計 94（調査92・仕様2・執筆0）
