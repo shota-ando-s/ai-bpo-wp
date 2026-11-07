@@ -798,8 +798,8 @@
     "source": "https://www.neutral-software.co.jp/company"
    },
    "founded": 2017,
-   "business_summary": "2017年8月21日設立（2014年に個人事業で開業）。ITコンサルティング、システムインテグレーション、スマホアプリ・IoT開発。Pマーク（2023年）",
-   "ai_initiative": "事業内容に「スマホアプリ・IoT開発・ChatGPT活用」、サービスに「ChatAI活用・自動案内システム開発」「ChatGPTを活用した会話システムや、会話型の施設案内サイネージ等」 https://www.neutral-software.co.jp/",
+   "business_summary": "2017年8月21日設立（2014年に個人事業で開業）。企業向けの業務・基盤システムの開発、スマートフォン向けアプリ・ゲームの開発、AWS によるサーバ・インフラ構築、ITコンサルティング、PC・サーバー等の機器販売（会社概要）。Pマーク（2023年）",
+   "ai_initiative": "事業内容に「スマホアプリ・IoT開発・ChatGPT活用」、サービスに「ChatGPT組み込みアプリ開発」（トップ https://www.neutral-software.co.jp/ ）。「ChatAI活用・自動案内システム開発」「ChatGPTを活用した会話システムや、会話型の施設案内サイネージ等」はサービスのページ https://www.neutral-software.co.jp/service-mobile/ （2026-11-07 D5 が開き直して確認。トップにはこの2文はない）",
    "url": "https://www.neutral-software.co.jp/",
    "size_basis": "employees",
    "checked": "2026-11-07",
@@ -809,14 +809,14 @@
  "yamatotakada": [
   {
    "name": "奈良OAシステム株式会社",
-   "hq": "〒635-0001 奈良県大和高田市大字松塚755-1（本社）。奈良支店（奈良市南京終町）・三重西部支店（名張市）・大阪営業所",
+   "hq": "〒635-0001 奈良県大和高田市大字松塚755番地1（会社概要「本社」）。ほかに奈良支店（奈良市南京終町3丁目1528番地の6）・三重西部支店（三重県名張市）・OfficeStyleLab（大和高田市大字松塚386番地3）・大阪営業所（大阪市北区梅田）・桜井営業所（桜井市慈恩寺）・橿原支店（橿原市新堂町）・香芝営業所（香芝市下田西）（会社概要。2026-11-07 D5 確認）",
    "municipality": "大和高田市",
    "town": "松塚",
    "corporate_number": "4150001013180",
    "houjin_honten": "奈良県大和高田市大字松塚７５５番地１",
    "employees": {
     "value": 88,
-    "as_of": "88名（令和7年8月末現在）",
+    "as_of": "88名（令和7年8月末現在）（会社概要の項目名は「社員数」）",
     "source": "https://www.naraoa.co.jp/company.html"
    },
    "capital": {
@@ -824,12 +824,12 @@
     "source": "https://www.naraoa.co.jp/company.html"
    },
    "founded": 1989,
-   "business_summary": "1989年9月1日設立。年商24億1,100万円（令和7年8月期）。オフィスオートメーション機器及び事務機器の販売及び保守、ソフトウェアの開発・販売・保守（経理、原価計算、介護、水処理システム等）、水処理装置、監視カメラ等",
-   "ai_initiative": "公式に AI の記載は見つからなかった（DX のページは kintone などの活用支援）",
+   "business_summary": "1989年9月1日設立。年商24億1,100万円（令和7年8月期）。事業内容「オフィスオートメーション機器及び事務機器の販売及び保守、ソフトウェアの開発・販売・保守(経理、原価計算、介護、水処理システム等)、水処理及び循環装置等公害防止機器の販売並びに設置工事、監視カメラ等セキュリティ機器の販売、次世代オフィス環境サポート」。システム販売／開発のページに販売管理ソフト「SCRUM」・Web制作（https://naraoa.co.jp/system.html ）",
+   "ai_initiative": "公式に AI の記載は見つからなかった（トップ・会社情報・システム販売／開発・DX のページ。2026-11-07 D5 確認。DX のページはセキュリティ・クラウドアプリの導入支援）",
    "url": "https://www.naraoa.co.jp/",
    "size_basis": "employees",
    "checked": "2026-11-07",
-   "notes": "**境界の業種**: 主業は OA 機器の販売・保守とみられる（県の合同企業説明会 2026-08-21 の業種は「卸売業、小売業」）。記事で「ソフト会社」と書かない。gBizINFO の被保険者 88人"
+   "notes": "**境界の業種**: 主業は OA 機器の販売・保守とみられる（県の合同企業説明会 2026-08-21 の業種は「卸売業、小売業」）。記事で「ソフト会社」と書かない。gBizINFO の被保険者 88人。**橿原市・桜井市・香芝市・奈良市にも支店・営業所がある＝それらの市のページで「市内に拠点がある」と書かない**（D5）"
   }
  ],
  "yamatokoriyama": [],
@@ -906,19 +906,19 @@
      "employees": {
       "value": null,
       "as_of": "公式に記載なし（合同企業説明会の企業PDF〔2023年6月・8月〕に「従業員数（直近）：72 名」、gBizINFO の被保険者51人）",
-      "source": "https://www.nantocs.co.jp/company/profile/"
+      "source": "https://www.nantocs.co.jp/profile/"
      },
      "capital": {
       "value": "1,000万円",
-      "source": "https://www.nantocs.co.jp/company/profile/"
+      "source": "https://www.nantocs.co.jp/profile/"
      },
-     "founded": null,
-     "business_summary": "システムインテグレーション、給与計算サービス。Pマーク（2003年7月、県内企業で初めてと自社が記載）",
+     "founded": 1986,
+     "business_summary": "会社概要「南都銀行のシステム部門の一部を引き継ぎ、1986年に設立された「情報処理サービス会社」です。」。システムインテグレーション、給与計算サービス。Pマーク（2003年7月、県内企業で初めてと自社が記載。2025年7月更新）",
      "ai_initiative": "「AI・RPA 最新技術であるAIや業務効率化となるRPAといったツールの活用しお客様の業務効率化を支援します。」 https://www.nantocs.co.jp/systema/",
      "url": "https://www.nantocs.co.jp/",
      "size_basis": "unknown",
      "checked": "2026-11-07",
-     "notes": "**南都銀行グループ**（所在地が南都銀行事務センター内、サイトに南都銀行のリンク。出資比率は確かめていない）。記事で「独立系」と書かない"
+     "notes": "**南都銀行グループ**（所在地が南都銀行事務センター内、サイトに南都銀行のリンク。出資比率は確かめていない）。記事で「独立系」と書かない。会社概要の URL は /company/profile/ から https://www.nantocs.co.jp/profile/ へ 301 で移る（2026-11-07 D5）。採用のページにも人数なし"
     }
    ],
    "unverified": [
