@@ -36,3 +36,5 @@
 ## 実績メモ
 - 2026-11-07 ネットワーク確認（pref.wakayama.lg.jp・soumu.go.jp とも開けた）。HEAD が detached だったので `git checkout -B main origin/main`。市町村30を総務省のコード表で確認。area_uniq.py に wakayama を足し、共有メモに slug を push
 - stats・cases を起動
+- cases 24（完了: cases.md 368行。**数値つきの県内事例0件**。数値なしの一次事例6社〔カナプレスト 紀の川市・ダートコーヒー 和歌山市・菱岡工業 和歌山市・組込ＡＩ研究所 和歌山市・河合石灰工業 和歌山工場・中田食品 田辺市〕。AI でない数値: たにぐち〔画像処理〕・ニッティド〔Airtable〕・わかやまAi助〔ベンダーの期待値〕・TechnologyDock〔検証段階〕。県の DX 導入事例集 PDF は pypdfium2 で読めた。近畿財務局の107社調査〔県別なし〕→共有メモ。近畿経産局は403）
+- gov を起動
