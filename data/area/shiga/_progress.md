@@ -23,13 +23,13 @@
 
 ## 状態
 - [x] _brief.md・wages.md・area_uniq.py に shiga（2026-11-07）
-- [ ] 調査
-- [ ] 執筆仕様 docs/area-writing-spec-shiga.md
-- [ ] 記事 20本（県1＋市町19）
-- [ ] data/subsidies/shiga.yml・areas.yml・build
-- [ ] 地域ガイド（近畿の段）・area-todo.md・area-new-prefecture.md・memory
-- [ ] チェック
-- [ ] main に push
+- [x] 調査
+- [x] 執筆仕様 docs/area-writing-spec-shiga.md
+- [x] 記事 20本（県1＋市町19）
+- [x] data/subsidies/shiga.yml・areas.yml・build
+- [x] 地域ガイド（近畿の段）・area-todo.md・area-new-prefecture.md・memory
+- [x] チェック（check_article 20ページ ERROR 0・area_uniq 全ページ74.4〜95.7%〔最低 彦根市〕・_calc.py OK・試算の値が19ページとも PLAN と一致・書いてはいけない局名と他県の値なし・湖南市へのリンクなし）
+- [x] main に push（投稿・デプロイはユーザーが Mac で「投稿して」）
 
 ## 実績メモ
 - 2026-11-07 ネットワーク確認（pref.shiga.lg.jp・soumu.go.jp とも開けた）。ローカルが detached だったので `git checkout -B main origin/main`
