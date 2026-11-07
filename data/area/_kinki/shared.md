@@ -32,3 +32,9 @@
 
 | slug | 県・市町村 | 扱い |
 |---|---|---|
+| `katsuragi-town` | 和歌山県かつらぎ町（伊都郡） | 和歌山が使う。**奈良県葛城市と読みが同じ**ので、和歌山は `katsuragi` を使わない（奈良の葛城市が `katsuragi` を使ってよい） |
+| `hidaka-town-wakayama` | 和歌山県日高町 | 高知県日高村 `hidaka`、北海道日高町（段階2の案 `hidaka-town`）と分ける |
+| `mihama-town` | 和歌山県美浜町 | 福井県美浜町 `mihama` と分ける |
+| `shingu-city` | 和歌山県新宮市 | 福岡県新宮町 `shingu` と分ける |
+| `hirogawa` | 和歌山県広川町（ひろがわ） | 福岡県広川町は `hirokawa`（読みが違う） |
+| `wakayama-city` / `kitayama-village` | 和歌山市 / 和歌山県北山村 | 県ページは `wakayama` |
