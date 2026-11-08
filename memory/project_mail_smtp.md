@@ -15,3 +15,5 @@ metadata:
 **Why:** メールが届かない症状を見ると真っ先にCF7やフォームの実装を疑いたくなるが、原因はサーバ側にある。切り分けは `ssh sakura` して `sendmail` を直接叩くのが最短。
 
 **How to apply:** 「フォームからメールが届かない」と言われたら、まず `wp-config.php` にSMTP定数が入っているか、`hikitsugi-smtp` が有効かを確認する。DNSは さくらのDNS（ns1.dns.ne.jp）管理で、`kantan-ai.jp` には既にSPFがあるためSPFの二重登録に注意。詳細は `plugins/hikitsugi-smtp/README.md`。関連 [[project_domain_migration]]
+
+2026-11-08 サイトを kantan-ai.jp に移した時点では、差出人は `noreply@send.hikitsugi.jp` のまま（Resend で send.kantan-ai.jp を登録して Verified になったら wp-config.php を変える）。上の本文の send.kantan-ai.jp は、一括置換で書き換わった予定の値。[[project-domain-migration]]

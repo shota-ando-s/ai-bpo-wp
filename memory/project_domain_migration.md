@@ -1,19 +1,37 @@
 ---
 name: project-domain-migration
-description: 本番ドメインは hikitsugi.jp（2026-07-26にai-bpo.siteから移行）。旧ドメインは301用に最低2027年5月まで解約不可。
-metadata: 
-  node_type: memory
+description: 本番は kantan-ai.jp（2026-11-08に hikitsugi.jp から移行、その前は ai-bpo.site）。旧2ドメインは301用に解約不可、.well-known除外必須。メールの差出人は未移行。
+metadata:
   type: project
-  originSessionId: 0cce5f9a-7db3-482b-acdd-3f54fac417a1
-  modified: 2026-07-26T01:59:21.058Z
 ---
 
-本番ドメインは **hikitsugi.jp**。2026-07-26 に `ai-bpo.site` から移行した（さくら同一サーバー・同一ドキュメントルート `~/www/aibpo` のままドメインを付け替え。パーマリンクは `/%postname%/` で不変なのでパスは1:1）。
+本番ドメインは **kantan-ai.jp**（ブランド名「かんたんAI」、[[brand-name-kantan-ai]]）。経緯:
+- 2026-07-26 `ai-bpo.site` → `hikitsugi.jp`
+- 2026-11-08 `hikitsugi.jp` → `kantan-ai.jp`（ユーザーの指示。kantan-ai.jp は 2026-11-07 にさくらで取得）
 
-**旧ドメイン ai-bpo.site は解約しないこと。** `~/www/aibpo/.htaccess` の先頭（`# BEGIN DOMAIN MIGRATION` ブロック、WordPressマーカー外）でパス保持の301を返している。SEOの301評価が固まるまで最低1年、**2027-05-23の更新を最低1回は通す**。
+どちらも、さくらの同じサーバー・同じフォルダ `~/www/aibpo` のままドメインを付け替えた。パーマリンク `/%postname%/` は変えていないので、パスは1対1で対応する。
 
-この301には `.well-known/` の除外条件が必須。除外しないと Let's Encrypt の HTTP-01 チャレンジが新ドメインへリダイレクトされ、ai-bpo.site の証明書更新が失敗 → HTTPSでの301ごと死ぬ。`.htaccess` を触るときはこの条件を消さないこと。
+**切り替えのやり方**（2026-11-08）: `scripts/cutover_kantan.sh` を `MAIL=0` で実行した。
+- データベースは `wp search-replace` で置き換えた（ヒキツギAI 1,932箇所、https://hikitsugi.jp 29,825箇所など）。
+- リポジトリは `scripts/rebrand_kantan.py` で置き換えた。
+- 置き換える前のバックアップは `~/backups/pre-kantan-202611081007.sql.gz`、`.htaccess.pre-kantan-*`、`wp-config.php.pre-kantan-*`。
+- 変えなかったもの: ページの URL のパス（/hikitsugi-ai-bpo-step/ など）、プラグインやコードの内部名（hikitsugi-smtp・HIKITSUGI_SMTP_* など）、checklist.hikitsugi.jp（別サーバーの別サービス）、Site Kit の Search Console 設定。
 
-**Why:** ドメインが2026-05取得と若く、記事群も「引き継ぎ」系にシフト済みだったため、exact-matchの `hikitsugi.jp` へ移すコストが最小のタイミングだった。
+**旧ドメインは解約しないこと。**
+- 301 の転送: `~/www/aibpo/.htaccess` の先頭（`# BEGIN DOMAIN MIGRATION` ブロック、WordPress のマーカーの外）で、ai-bpo.site・hikitsugi.jp（www つきも）を **直接** https://kantan-ai.jp/ にパスを保ったまま301で転送している。転送を2段にしない。
+- 解約できない期間: ai-bpo.site は最低 2027-05-23 の更新を通す。hikitsugi.jp も最低1年（2027-11まで）は残す。
+- 転送の除外条件は消さない。
+  - `.well-known/` を除外しないと、Let's Encrypt の HTTP-01 チャレンジまで転送されて旧ドメインの証明書の更新が失敗し、HTTPS での301ごと止まる。
+  - `google*.html` は、旧ドメインの Search Console の所有権の確認に使う（アドレス変更に必要）。
+- www.kantan-ai.jp は、さくら側（nginx）が 302 で kantan-ai.jp へ転送している（.htaccess より手前）。
 
-**How to apply:** 新規記事の内部リンクは `https://hikitsugi.jp/...` を使う。`.env` の `WP_URL`、[[project-article-slug-matching]] のslug照合もこのドメイン前提。診断ツールを作る場合は `offboard.hikitsugi.jp`（front-page.php の `$offboard_tool_url` に定義済み・未稼働）。
+**切り替え時点で残っていたこと**（2026-11-08）:
+- メールの差出人はまだ `noreply@send.hikitsugi.jp`。Resend で send.kantan-ai.jp を登録して Verified になってから、wp-config.php の `HIKITSUGI_SMTP_FROM` と FROM_NAME を変える（[[project_mail_smtp]]）。
+- Search Console のアドレス変更（hikitsugi.jp → kantan-ai.jp）、Site Kit の接続し直し、GA4 のデータストリームの URL はユーザーが行う。
+- LP のスクリーンショット画像（images/hikitsugi-lp*.jpg）には「ヒキツギAI」の文字が残っている。
+
+**Why:** ユーザーがブランドを「かんたんAI」に変えると決めた。
+
+**How to apply:**
+- 内部リンク・`.env` の `WP_URL` は `https://kantan-ai.jp`。[[project-article-slug-matching]] のスラッグの照合もこのドメインが前提。
+- `.htaccess` の転送ブロックを触るときは、上の除外条件を残す。

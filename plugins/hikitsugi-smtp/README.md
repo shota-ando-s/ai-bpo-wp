@@ -1,5 +1,10 @@
 # かんたんAI SMTP送信
 
+> **2026-11-08 時点の注意**: サイトは kantan-ai.jp に移したが、本番の差出人（wp-config.php）は
+> まだ `noreply@send.hikitsugi.jp`。下の表の DKIM などの値は旧ドメイン send.hikitsugi.jp で Resend が発行したもの。
+> send.kantan-ai.jp は Resend に新しく登録して、そこで表示される値を kantan-ai.jp のゾーンに入れ、
+> Verified になってから wp-config.php の `HIKITSUGI_SMTP_FROM` を変える。
+
 `wp_mail()` を Resend の SMTP 経由に切り替えるプラグイン。
 
 ## なぜ必要か

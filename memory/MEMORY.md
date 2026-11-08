@@ -1,6 +1,6 @@
 # Memory Index — ai-bpo-wp
 
-- [ドメイン移行](project_domain_migration.md) — 本番は hikitsugi.jp。旧 ai-bpo.site は301用に2027年5月まで解約不可、.well-known除外必須。
+- [ドメイン移行](project_domain_migration.md) — 本番は kantan-ai.jp（2026-11-08移行）。旧 hikitsugi.jp・ai-bpo.site は直接301用に解約不可、.well-known除外必須。メール差出人は未移行。
 - [SEOコンテンツ計画](project_content_plan.md) — Phase1〜3の13記事構成、進捗状況・内部リンク設計・執筆ルールを管理
 - [画像生成ルール](feedback_post_image_generation.md) — 記事更新時は画像再生成しない。初回投稿のみ、最初の3見出しだけ生成。
 - [地図を画像にしない](feedback_no_map_images.md) — 生成AIの地図は形が崩れる。地域ページで地図・輪郭を描かせない。
@@ -9,5 +9,5 @@
 - [メール送信はSMTP経由](project_mail_smtp.md) — さくらのmail()は外部宛リレー不可。hikitsugi-smtpプラグイン＋wp-config.phpの定数で送る。
 - [CF7とcf7-to-zapierの罠](project_cf7_zapier_gotcha.md) — send_mail=0でメール停止、Webhook失敗でmail_failedに塗り替え。設定は_ctz_zapier。
 - [地域別AIメディア企画](project_area_ai_media.md) — 地域ページは四国・東北・新潟・北陸3県・岐阜・長野・山梨・島根・鳥取・広島・山口まで公開、岡山・大分・佐賀・熊本・宮崎・長崎・福岡・鹿児島は作成済み（投稿待ち。九州は7県を別セッションで同時作成）、北海道は段階1（道と石狩振興局の8市町村）を作成済み（投稿待ち。残り13振興局は次のセッション）、栃木県（25市町）・茨城県（44市町村）は作成済み（投稿待ち。北海道・茨城・栃木・群馬・沖縄を別セッションで同時作成）。沖縄県（41市町村）は作成済み（投稿待ち）。滋賀県（19市町）・和歌山県（30市町村）・奈良県（39市町村）は作成済み（投稿待ち。奈良・滋賀・和歌山を別セッションで同時作成）。手順と次の候補、企画書 docs/area-ai-media-brief.md
-- [ブランド名はヒキツギAI](project_brand_name.md) — 旧称オフボードは全面置換済み。架空の事例・実績・提携は書かない。
+- [ブランド名はかんたんAI](project_brand_name.md) — 2026-11-08にヒキツギAIから変更。旧称ヒキツギAI・オフボードは使わない。架空の事例・実績・提携は書かない。
 - [返事は日本語で](feedback_reply_in_japanese.md) — ユーザーへの返事は必ず日本語。英語で返さない。
