@@ -5,7 +5,7 @@
 ## 市町村と slug（42市町村。県コード21）
 - 一覧は data/area/gifu/_brief.md
 - 岐阜市は gifu-city、山県市は yamagata-city、大野町は ono-town、池田町は ikeda-town、白川町は shirakawa-town、白川村は shirakawa-village
-- 試算は「月の削減時間・時間換算額」だけの形（ヒキツギAIの月額・回収期間は書かない）
+- 試算は「月の削減時間・時間換算額」だけの形（かんたんAIの月額・回収期間は書かない）
 
 ## 新しいセッションでの始め方
 1. このファイルと docs/area-new-prefecture.md（「福井県で分かったこと」まで）を読む

@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: ヒキツギAI 補助金診断
+ * Plugin Name: かんたんAI 補助金診断
  * Description: 所在地・目的・費用から、使える補助金と実質の自己負担を試算する診断ツール。固定ページにショートコード [hikitsugi_shindan] を置いて使う。データは data/subsidies.json（scripts/build_shindan_data.py で data/subsidies/*.yml から生成）。
  * Version:     1.0.0
  * Author:      株式会社ふえん
@@ -77,7 +77,7 @@ add_shortcode( 'hikitsugi_shindan', function () {
 				<div class="hs-row hs-cost-total" hidden>
 					<label><span class="hs-cost-total-label">研修費用の合計（円）</span><input type="number" name="total" min="0" step="10000" value="500000" inputmode="numeric"></label>
 				</div>
-				<p class="hs-hint">ヒキツギAIの料金は、AIチャットが月5万円〜、AI自動化が月20万円〜です（初期導入費は別途お見積もり）。</p>
+				<p class="hs-hint">かんたんAIの料金は、AIチャットが月5万円〜、AI自動化が月20万円〜です（初期導入費は別途お見積もり）。</p>
 			</fieldset>
 			<button type="submit" class="hs-button">使える補助金を調べる</button>
 		</form>

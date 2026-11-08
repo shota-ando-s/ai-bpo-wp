@@ -1,6 +1,6 @@
 ---
 name: seo-article
-description: hikitsugi.jp 向けに、検索上位と AI 検索（Google AI Overview・AI モード・ChatGPT・Perplexity）での引用の両方を狙う記事を、調査→戦略→執筆→自動点検→ファクトチェック→投稿→公開後確認まで一気通貫で作る。「SEO記事を書いて」「AIO対策した記事」「〇〇について記事を書いて投稿して」「AI Overviewに引用される記事」など、新しい記事の執筆や既存記事のSEO/AIO強化を頼まれたときに使う。
+description: kantan-ai.jp 向けに、検索上位と AI 検索（Google AI Overview・AI モード・ChatGPT・Perplexity）での引用の両方を狙う記事を、調査→戦略→執筆→自動点検→ファクトチェック→投稿→公開後確認まで一気通貫で作る。「SEO記事を書いて」「AIO対策した記事」「〇〇について記事を書いて投稿して」「AI Overviewに引用される記事」など、新しい記事の執筆や既存記事のSEO/AIO強化を頼まれたときに使う。
 argument-hint: <テーマ or メインキーワード>
 ---
 
@@ -180,10 +180,10 @@ python3 post.py articles/<file>.md
 
 ## ステップ8: 公開後の確認
 
-公開URL（`https://hikitsugi.jp/<slug>/`）を取得して確認する。
+公開URL（`https://kantan-ai.jp/<slug>/`）を取得して確認する。
 
 ```bash
-curl -s https://hikitsugi.jp/<slug>/ | grep -oE '<title>[^<]*|name="description" content="[^"]*|name="robots" content="[^"]*|rel="canonical" href="[^"]*|"@type":"[A-Za-z]+"' | sort -u
+curl -s https://kantan-ai.jp/<slug>/ | grep -oE '<title>[^<]*|name="description" content="[^"]*|name="robots" content="[^"]*|rel="canonical" href="[^"]*|"@type":"[A-Za-z]+"' | sort -u
 ```
 
 - `<title>` と description が想定どおりか（description が excerpt になっているか）

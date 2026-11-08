@@ -7,7 +7,7 @@
 ## 市町村と slug（35市町村。県コード10）
 - 一覧は data/area/gunma/_brief.md
 - 高山村 `takayama-village-gunma`・昭和村 `showa-village-gunma`（長野・福島に同名の村）。南牧村は `nanmoku`（長野は `minamimaki`）
-- 試算は「月の削減時間・時間換算額」だけの形（ヒキツギAIの月額・回収期間は書かない）
+- 試算は「月の削減時間・時間換算額」だけの形（かんたんAIの月額・回収期間は書かない）
 
 ## 調査の分担と WebSearch の配分
 | 担当 | 書くファイル | 対象 | WebSearch |

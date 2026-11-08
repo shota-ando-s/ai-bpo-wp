@@ -5,7 +5,7 @@
 ## 市町村と slug（59市町村。県コード07）
 - 一覧は data/area/fukushima/_brief.md
 - 政令市はない。福島市は fukushima-city。金山町 kaneyama-town・三島町 mishima-town・昭和村 showa-village・富岡町 tomioka-town・石川町 ishikawa-town・小野町 ono-town（他県に同名・紛らわしい自治体がある）
-- 試算は山形県と同じ「月の削減時間・時間換算額」だけの形（ヒキツギAIの月額・回収期間は書かない）
+- 試算は山形県と同じ「月の削減時間・時間換算額」だけの形（かんたんAIの月額・回収期間は書かない）
 
 ## 調査の分担と WebSearch の配分（上限200）
 | 担当 | 書くファイル | 対象 | WebSearch |

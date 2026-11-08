@@ -97,7 +97,7 @@ add_filter( 'comments_array', '__return_empty_array', 10, 2 );
  * ロゴ差し替えはこのファイルと images/ の入れ替えで完結する。
  */
 add_filter( 'generate_logo', function () {
-	return get_stylesheet_directory_uri() . '/images/hikitsugi_logo.png';
+	return get_stylesheet_directory_uri() . '/images/kantan_logo.png';
 } );
 
 // メディアライブラリ経由ではないので寸法が付かない。CLS防止に明示する（実寸 1000×250）。

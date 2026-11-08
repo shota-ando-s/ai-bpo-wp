@@ -1,6 +1,6 @@
 <?php
 /**
- * ヒキツギAI ランディングページ 本体マークアップ
+ * かんたんAI ランディングページ 本体マークアップ
  *
  * front-page.php から include される。
  * tools/build-lp-preview.php / tools/serve-lp.php からも同じファイルを読み込むため、
@@ -136,7 +136,7 @@ $lp_plans = array(
 		'price'     => '無料',
 		'note'      => '',
 		'highlight' => false,
-		'items'     => array( 'AIによる業務ヒアリング', 'AIオペレーターによる操作デモ', 'ヒキツギAI活用診断' ),
+		'items'     => array( 'AIによる業務ヒアリング', 'AIオペレーターによる操作デモ', 'かんたんAI活用診断' ),
 	),
 	array(
 		'name'      => 'AIチャット',
@@ -227,7 +227,7 @@ $lp_corp = array(
 			<div class="lp-header-veil" style="position:absolute; inset:0; background:rgba(255,255,255,0.8); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); border-bottom:1px solid #DFE7F3"></div>
 		</div>
 		<div style="position:relative; max-width:1080px; margin:0 auto; padding:14px clamp(20px,5vw,40px); display:flex; align-items:center; justify-content:space-between; gap:16px">
-			<a href="#top" style="display:flex; align-items:center"><img src="<?php echo $u_img; ?>/logo-trim.png" alt="ヒキツギAI" width="889" height="155" style="height:clamp(21px,5.6vw,30px); width:auto; max-width:min(48vw,180px); object-fit:contain; display:block"></a>
+			<a href="#top" style="display:flex; align-items:center"><img src="<?php echo $u_img; ?>/logo-trim.png" alt="かんたんAI" width="889" height="155" style="height:clamp(21px,5.6vw,30px); width:auto; max-width:min(48vw,180px); object-fit:contain; display:block"></a>
 			<div style="display:flex; align-items:center; gap:clamp(12px,3vw,24px)">
 				<a href="#form" class="lp-hv-navy" style="background:#0F2961; color:#FFFFFF; font-size:clamp(13px,3.4vw,15.5px); font-weight:700; border-radius:6px; padding:13px 24px; line-height:1.4">お問い合わせ</a>
 			</div>
@@ -253,7 +253,7 @@ $lp_corp = array(
 				<!-- 断定と解説を切り離すための余白。詰めないこと -->
 				<div style="height:clamp(48px,11vw,88px)" aria-hidden="true"></div>
 
-				<p style="margin:0; font-size:clamp(16px,4.3vw,22px); line-height:1.75; font-weight:500; color:#333333"><img src="<?php echo $u_img; ?>/logo-hikitsugiai.png" alt="ヒキツギAI" width="1000" height="250" style="height:1.5em; width:auto; vertical-align:-0.35em; margin-right:0.05em">は<span style="display:block; font-size:clamp(24px,8.8cqw,50px); font-weight:900; line-height:1.3; color:#333333; white-space:nowrap; letter-spacing:-0.01em; margin:0.1em 0">人よりも速く、正確に</span>知識と作業を引き継ぎます。</p>
+				<p style="margin:0; font-size:clamp(16px,4.3vw,22px); line-height:1.75; font-weight:500; color:#333333"><img src="<?php echo $u_img; ?>/logo-hikitsugiai.png" alt="かんたんAI" width="1000" height="250" style="height:1.5em; width:auto; vertical-align:-0.35em; margin-right:0.05em">は<span style="display:block; font-size:clamp(24px,8.8cqw,50px); font-weight:900; line-height:1.3; color:#333333; white-space:nowrap; letter-spacing:-0.01em; margin:0.1em 0">人よりも速く、正確に</span>知識と作業を引き継ぎます。</p>
 
 				<div style="margin-top:clamp(32px,7vw,48px); display:flex; flex-direction:column; align-items:flex-start; gap:16px">
 					<a href="#form" class="lp-hv-navy" style="background:#0F2961; color:#FFFFFF; font-weight:700; font-size:clamp(15px,4vw,18px); padding:20px 30px; border-radius:6px; box-shadow:0 10px 24px rgba(15,41,97,0.24); line-height:1.4">詳細な資料を請求する</a>
@@ -261,7 +261,7 @@ $lp_corp = array(
 			</div>
 
 			<div style="flex:1.25 1 420px; min-width:0">
-				<img src="<?php echo $u_img; ?>/schreen.png" alt="ヒキツギAIが過去のやり取りをもとに質問に答えている画面" width="1920" height="1080" fetchpriority="high" decoding="async" style="width:100%; height:auto; display:block">
+				<img src="<?php echo $u_img; ?>/schreen.png" alt="かんたんAIが過去のやり取りをもとに質問に答えている画面" width="1920" height="1080" fetchpriority="high" decoding="async" style="width:100%; height:auto; display:block">
 			</div>
 
 		</div>
@@ -321,7 +321,7 @@ $lp_corp = array(
 						<?php endif; ?>
 
 						<div style="<?php echo $s_card_solution; ?>">
-							<span style="font-size:11px; font-weight:700; letter-spacing:0.12em; color:#0F2961">ヒキツギAI</span>
+							<span style="font-size:11px; font-weight:700; letter-spacing:0.12em; color:#0F2961">かんたんAI</span>
 							<img src="<?php echo $u_img . '/' . $pair['s_img']; ?>" alt="<?php echo htmlspecialchars( $pair['s_title'], ENT_QUOTES ); ?>" width="194" height="194" loading="lazy" decoding="async" style="<?php echo $s_card_icon; ?>">
 							<p style="<?php echo $s_card_title; ?>"><?php echo htmlspecialchars( $pair['s_title'], ENT_QUOTES ); ?></p>
 							<p style="<?php echo $s_card_body; ?>"><?php echo htmlspecialchars( $pair['s_body'], ENT_QUOTES ); ?></p>
@@ -333,11 +333,11 @@ $lp_corp = array(
 	</section>
 
 	<!-- ============================================================
-	     03-2 ヒキツギAIとは（動くモック2点。すべてHTML/CSSで描画）
+	     03-2 かんたんAIとは（動くモック2点。すべてHTML/CSSで描画）
 	     ============================================================ -->
 	<section style="background:#E4ECF9; border-top:1px solid #C9D6EE; border-bottom:1px solid #C9D6EE">
 		<div style="max-width:1080px; margin:0 auto; padding:clamp(56px,11vw,112px) clamp(20px,5vw,40px)">
-			<h2 style="margin:0 0 14px; <?php echo $s_h2; ?>; color:#333333"><img src="<?php echo $u_img; ?>/logo-hikitsugiai.png" alt="ヒキツギAI" width="1000" height="250" loading="lazy" decoding="async" style="height:1.5em; width:auto; vertical-align:-0.34em; margin-right:0.06em">とは</h2>
+			<h2 style="margin:0 0 14px; <?php echo $s_h2; ?>; color:#333333"><img src="<?php echo $u_img; ?>/logo-hikitsugiai.png" alt="かんたんAI" width="1000" height="250" loading="lazy" decoding="async" style="height:1.5em; width:auto; vertical-align:-0.34em; margin-right:0.06em">とは</h2>
 			<p style="margin:0 0 clamp(28px,6vw,44px); font-size:clamp(14px,3.9vw,17px); line-height:1.85; color:#333333; text-align:center">AIチャットとAI自動化アプリで知識と作業を引き受けます。</p>
 
 			<div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr)); gap:clamp(16px,3vw,24px)">
@@ -611,7 +611,7 @@ $lp_corp = array(
 						<div style="background:#DCE8FA; box-shadow:inset 0 0 0 1.5px #0F2961; border-radius:8px; padding:clamp(20px,4.4vw,28px)">
 							<p style="margin:0 0 14px; font-size:clamp(12px,3.2vw,13.5px); font-weight:700; letter-spacing:0.1em; color:#0F2961">導入後</p>
 							<p style="margin:0 0 16px; font-size:clamp(13.5px,3.7vw,15.5px); line-height:1.95; color:#333333">当社ヒアリングで、前任者は<strong style="font-weight:700">退職日ぎりぎりまで通常業務を行なっており</strong>、引き継ぎ時間がほとんどないことが原因と特定した。</p>
-							<p style="margin:0; font-size:clamp(13.5px,3.7vw,15.5px); line-height:1.95; color:#333333">前任者が使う業務データをAI化しながら、業務内容をヒアリング。<strong style="font-weight:700">通常業務と並行してヒキツギAIの試運転</strong>を実施し、3ヶ月後に決まった後任社員が運用開始。</p>
+							<p style="margin:0; font-size:clamp(13.5px,3.7vw,15.5px); line-height:1.95; color:#333333">前任者が使う業務データをAI化しながら、業務内容をヒアリング。<strong style="font-weight:700">通常業務と並行してかんたんAIの試運転</strong>を実施し、3ヶ月後に決まった後任社員が運用開始。</p>
 						</div>
 					</div>
 				</div>
@@ -713,7 +713,7 @@ $lp_corp = array(
 		<div style="max-width:1080px; margin:0 auto; padding:clamp(56px,11vw,112px) clamp(20px,5vw,40px); text-align:center">
 			<h2 style="margin:0; font-size:clamp(22px,5.6vw,40px); line-height:1.45; font-weight:900; color:#FFFFFF">うまくいかない業務の引き継ぎ、<br>私たちにお任せください！</h2>
 			<div style="height:clamp(40px,9vw,72px)" aria-hidden="true"></div>
-			<p style="margin:0; font-size:clamp(15px,4.2vw,20px); line-height:1.9; color:#C6D3EA; font-weight:500">ヒキツギAIは人よりも速く、正確に<br>知識と作業を引き継ぎます。</p>
+			<p style="margin:0; font-size:clamp(15px,4.2vw,20px); line-height:1.9; color:#C6D3EA; font-weight:500">かんたんAIは人よりも速く、正確に<br>知識と作業を引き継ぎます。</p>
 
 			<?php if ( '' !== $lp_form_html ) : ?>
 
@@ -805,7 +805,7 @@ $lp_corp = array(
 			<div id="lp-form-done" hidden style="margin:clamp(28px,6vw,44px) auto 0; max-width:640px; text-align:left; background:#FFFFFF; color:#333333; border-radius:10px; padding:clamp(24px,5vw,36px)">
 				<p style="margin:0 0 10px; font-size:clamp(16px,4.3vw,19px); line-height:1.6; font-weight:900; color:#0F2961">お問い合わせありがとうございます。</p>
 				<p style="margin:0 0 clamp(20px,4.4vw,28px); font-size:clamp(13.5px,3.7vw,15px); line-height:1.95">担当より2営業日以内にご連絡いたします。<br>サービス紹介資料は下のボタンからすぐにご覧いただけます。</p>
-				<a href="<?php echo $u_pdf; ?>" class="lp-hv-navy" target="_blank" rel="noopener" style="display:block; text-align:center; background:#0F2961; color:#FFFFFF; font-weight:700; font-size:clamp(15px,4vw,17px); padding:18px 20px; border-radius:6px; line-height:1.4">ヒキツギAI ご説明資料をダウンロード（PDF）</a>
+				<a href="<?php echo $u_pdf; ?>" class="lp-hv-navy" target="_blank" rel="noopener" style="display:block; text-align:center; background:#0F2961; color:#FFFFFF; font-weight:700; font-size:clamp(15px,4vw,17px); padding:18px 20px; border-radius:6px; line-height:1.4">かんたんAI ご説明資料をダウンロード（PDF）</a>
 				<p style="margin:12px 0 0; font-size:12.5px; line-height:1.8; color:#5A6376">※ 同じリンクを自動返信メールでもお送りしています。</p>
 			</div>
 		</div>
@@ -817,7 +817,7 @@ $lp_corp = array(
 	<section id="company" style="background:#FFFFFF">
 		<div style="max-width:1080px; margin:0 auto; padding:clamp(56px,11vw,112px) clamp(20px,5vw,40px)">
 			<h2 style="margin:0 0 clamp(28px,6vw,44px); <?php echo $s_h2; ?>">会社概要</h2>
-			<p style="margin:0 auto; max-width:44em; font-size:clamp(14px,3.9vw,16.5px); line-height:2.05; color:#333333">株式会社ふえんは、これまでDX内製化支援、とくにノーコードで従業員が自分で業務アプリを開発する「市民開発」の導入研修を行なってきました。ノーコードからAIにツールが変化する中で、AIを活用したいものの、技術進歩が早くなかなか自社で活用できないというお悩みやご相談を多くいただき、業務の一部を私たちのヒキツギAIで行うことで、AIを業務で活用でき、より本業に注力することができると考えています。</p>
+			<p style="margin:0 auto; max-width:44em; font-size:clamp(14px,3.9vw,16.5px); line-height:2.05; color:#333333">株式会社ふえんは、これまでDX内製化支援、とくにノーコードで従業員が自分で業務アプリを開発する「市民開発」の導入研修を行なってきました。ノーコードからAIにツールが変化する中で、AIを活用したいものの、技術進歩が早くなかなか自社で活用できないというお悩みやご相談を多くいただき、業務の一部を私たちのかんたんAIで行うことで、AIを業務で活用でき、より本業に注力することができると考えています。</p>
 
 			<div style="margin:clamp(40px,8vw,72px) 0 0; background:#F4F8FD; box-shadow:inset 0 0 0 1px #D3DDEC; border-radius:10px; padding:clamp(20px,4.4vw,32px) clamp(20px,4.4vw,40px)">
 				<?php foreach ( $lp_corp as $i => $row ) : ?>
@@ -918,7 +918,7 @@ $lp_corp = array(
 	<footer style="background:#081428; color:#A3AFC4">
 		<div style="max-width:1080px; margin:0 auto; padding:clamp(40px,8vw,64px) clamp(20px,5vw,40px) clamp(96px,18vw,120px); display:flex; flex-wrap:wrap; gap:32px; justify-content:space-between">
 			<div>
-				<p style="margin:0 0 16px"><img src="<?php echo $u_img; ?>/logo-trim.png" alt="ヒキツギAI" width="889" height="155" loading="lazy" decoding="async" style="height:28px; width:auto; display:block; filter:brightness(0) invert(1)"></p>
+				<p style="margin:0 0 16px"><img src="<?php echo $u_img; ?>/logo-trim.png" alt="かんたんAI" width="889" height="155" loading="lazy" decoding="async" style="height:28px; width:auto; display:block; filter:brightness(0) invert(1)"></p>
 				<p style="margin:0 0 6px; font-size:13px; line-height:1.9">株式会社ふえん</p>
 			</div>
 			<div style="display:flex; flex-direction:column; gap:12px">

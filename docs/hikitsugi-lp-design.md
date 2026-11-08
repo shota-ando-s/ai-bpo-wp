@@ -1,4 +1,4 @@
-# Handoff: ヒキツギAI ランディングページ
+# Handoff: かんたんAI ランディングページ
 
 > **このドキュメントについて（2026-08-01 追記）**
 >
@@ -12,14 +12,14 @@
 > - 画像 … `themes/generatepress-child/images/lp/`（旧 `uploads/`）
 >
 > 以下の本文にある `uploads/…` は `images/lp/…` に、末尾「Files」節の
-> `ヒキツギAI LP.dc.html` / `support.js` / `screenshots/` は現存しない。
+> `かんたんAI LP.dc.html` / `support.js` / `screenshots/` は現存しない。
 > **値（色・余白・フォントサイズ・レイアウトの意図）を参照するための資料**として残している。
 > LPを改修するときは、ここに書かれた制約（使わない語・煽り演出の禁止・
 > 「詰めないこと」と指定された余白など）を先に読むこと。
 
 ## Overview
 
-BtoB SaaS「ヒキツギAI」（産休・育休・退職時の業務引き継ぎをAIが代行するサービス／運営：株式会社ふえん）のランディングページ。
+BtoB SaaS「かんたんAI」（産休・育休・退職時の業務引き継ぎをAIが代行するサービス／運営：株式会社ふえん）のランディングページ。
 
 - **ページのゴール**：業務チェックリストの請求＝商談機会の獲得（SLG型・営業主導）
 - **ターゲット**：産休・育休の引き継ぎを控えた中小企業の総務担当者・経営者。ITに詳しくない層
@@ -72,7 +72,7 @@ BtoB SaaS「ヒキツギAI」（産休・育休・退職時の業務引き継ぎ
 - スクロール `> 24px`：その上に `rgba(255,255,255,0.8)` ＋ `backdrop-filter: blur(8px)` ＋ 下罫線 `1px solid #DFE7F3` のレイヤーを `opacity` で重ねる。`transition: opacity 220ms ease`
 
 **Components**
-- 左：ロゴ画像 `uploads/logo-trim.png`（`alt="ヒキツギAI"`、`height: clamp(21px,5.6vw,30px)`、`max-width: min(48vw,180px)`、`object-fit: contain`）。透明余白をトリム済みのため、コンテンツ左端と光学的に揃う
+- 左：ロゴ画像 `uploads/logo-trim.png`（`alt="かんたんAI"`、`height: clamp(21px,5.6vw,30px)`、`max-width: min(48vw,180px)`、`object-fit: contain`）。透明余白をトリム済みのため、コンテンツ左端と光学的に揃う
 - 右：テキストリンク「相談する」（`#5A6376` → hover `#333333`、`clamp(12.5px,3.3vw,14.5px)`、`font-weight:500`、リンク先 `#form`）
 - 右：ボタン「資料をダウンロードする」（背景 `#0F2961` → hover `#1C4295`、文字 `#FFFFFF`、`clamp(13px,3.4vw,15.5px)`、`font-weight:700`、`border-radius:6px`、`padding:13px 24px`、リンク先 `#materials`）
 
@@ -97,13 +97,13 @@ BtoB SaaS「ヒキツギAI」（産休・育休・退職時の業務引き継ぎ
    - 2行目：`私たちにお任せください！`
 2. **余白** — `height: clamp(48px, 11vw, 88px)` の空div（**断定と解説を視覚的に分離するための最重要の余白**。詰めないこと）
 3. **本文** — `font-size: clamp(16px,4.3vw,22px)`、`line-height:1.75`、`font-weight:500`、`color:#333333`
-   - 冒頭にロゴ画像 `uploads/logo-hikitsugiai.png`（`alt="ヒキツギAI"`、`height:1.5em`、`vertical-align:-0.35em`）＋ `は`
+   - 冒頭にロゴ画像 `uploads/logo-hikitsugiai.png`（`alt="かんたんAI"`、`height:1.5em`、`vertical-align:-0.35em`）＋ `は`
    - その直後に `display:block` の強調行：`人よりも速く、正確に`（`font-size: clamp(24px, 8.8cqw, 50px)`、`font-weight:900`、`line-height:1.3`、`color:#333333`、`white-space:nowrap`）
    - 続けて `知識と作業を引き継ぎます。`
 4. **CTA（縦積み・左寄せ、`gap:16px`）**
    - 主：`無料で業務チェックリストを受け取る`（背景 `#0F2961` → hover `#1C4295`、`clamp(15px,4vw,18px)`、`font-weight:700`、`padding:20px 30px`、`border-radius:6px`、`box-shadow:0 10px 24px rgba(15,41,97,0.24)`、リンク先 `#form`）
    - 副：`または3分でわかる資料をダウンロード`（`#5A6376` → hover `#333333`、`clamp(13px,3.5vw,15px)`、下線 `1px solid #BFCBDE`、`padding-bottom:2px`、リンク先 `#materials`）
-5. **メインビジュアル** — `uploads/schreen.png`（`width:100%; height:auto`、枠なし）。alt：`ヒキツギAIが過去のやり取りをもとに質問に答えている画面`
+5. **メインビジュアル** — `uploads/schreen.png`（`width:100%; height:auto`、枠なし）。alt：`かんたんAIが過去のやり取りをもとに質問に答えている画面`
 
 **注意**：見出しと強調行が折り返すと崩れるため `white-space:nowrap` ＋ `cqw` 単位で必ず1行に収める設計になっています。実装時もこの関係を維持してください。
 
@@ -162,7 +162,7 @@ row-gap: 0;
 
 **行3：解決カード**（青面）
 `border-radius:8px; box-shadow: inset 0 0 0 1.5px #0F2961; background:#DCE8FA; padding:clamp(21px,4.6vw,27px)`
-- 上部に小ラベル `ヒキツギAI`（`11px/700`、`letter-spacing:0.12em`、`#0F2961`）
+- 上部に小ラベル `かんたんAI`（`11px/700`、`letter-spacing:0.12em`、`#0F2961`）
 - アイコン画像 → 見出し → 本文（本文色 `#5A6376`）
 
 | 画像 | 見出し | 本文 |
@@ -173,7 +173,7 @@ row-gap: 0;
 
 ---
 
-### 5. ヒキツギAIとは（背景 `#E4ECF9`、上下罫線 `1px solid #C9D6EE`）
+### 5. かんたんAIとは（背景 `#E4ECF9`、上下罫線 `1px solid #C9D6EE`）
 
 **見出し（h2、中央寄せ）**：ロゴ画像（`height:1.5em; vertical-align:-0.34em`）＋ `とは`。`clamp(24px,6.4vw,42px)`、`#333333`
 **リード（中央寄せ）**：`AIチャットとAI自動化アプリで知識と作業を引き受けます。`（`clamp(14px,3.9vw,17px)`、`line-height:1.85`、`#333333`）
@@ -273,7 +273,7 @@ row-gap: 0;
   - `引継書だけではカバーできず、後任が入ったときは前任者に聞くことはできず、**同僚社員の業務負荷も高くなる。**`
 - 導入後（2段落）：
   - `当社ヒアリングで、前任者は**退職日ぎりぎりまで通常業務を行なっており**、引き継ぎ時間がほとんどないことが原因と特定した。`
-  - `前任者が使う業務データをAI化しながら、業務内容をヒアリング。**通常業務と並行してヒキツギAIの試運転**を実施し、3ヶ月後に決まった後任社員が運用開始。`
+  - `前任者が使う業務データをAI化しながら、業務内容をヒアリング。**通常業務と並行してかんたんAIの試運転**を実施し、3ヶ月後に決まった後任社員が運用開始。`
 
 **事例02**
 - タイトル：`現場の業務過多で連鎖退職になり管理職が現場に`
@@ -312,7 +312,7 @@ row-gap: 0;
 
 | プラン | 価格 | 注記 | 項目 |
 |---|---|---|---|
-| 活用診断 | 無料 | なし | AIによる業務ヒアリング／AIオペレーターによる操作デモ／ヒキツギAI活用診断／など |
+| 活用診断 | 無料 | なし | AIによる業務ヒアリング／AIオペレーターによる操作デモ／かんたんAI活用診断／など |
 | **AIチャット**（強調・プラン名は `#0F2961`） | ¥50,000〜 | あり | AIチャットボット／業務データのAI化／回答精度改善サービス／メールサポート／など |
 | AI自動化 | ¥200,000〜 | あり | AI自動化アプリ／AIオペレーター（5時間〜）／自動化改善サービス／専任担当者メールサポート／など |
 
@@ -353,7 +353,7 @@ row-gap: 0;
 
 - h2（`clamp(22px,5.6vw,40px)/900`、`#FFFFFF`）：`うまくいかない業務の引き継ぎ、<br>私たちにお任せください！`
 - 余白 `clamp(40px,9vw,72px)`
-- 本文（`clamp(15px,4.2vw,20px)`、`line-height:1.9`、`#C6D3EA`、`font-weight:500`）：`ヒキツギAIは人よりも速く、正確に<br>知識と作業を引き継ぎます。`
+- 本文（`clamp(15px,4.2vw,20px)`、`line-height:1.9`、`#C6D3EA`、`font-weight:500`）：`かんたんAIは人よりも速く、正確に<br>知識と作業を引き継ぎます。`
 
 **フォーム**：`action="/thanks" method="post"`（送信先は未接続。実装時に差し替え）
 `background:#FFFFFF; color:#333333; border-radius:10px; padding:clamp(24px,6vw,44px); max-width:640px; display:flex; flex-direction:column; gap:22px`
@@ -383,7 +383,7 @@ row-gap: 0;
 
 **本文**（`max-width:44em`、中央寄せ配置、`clamp(14px,3.9vw,16.5px)`、`line-height:2.05`、`#333333`）：
 
-> 株式会社ふえんは、これまでDX内製化支援、とくにノーコードで従業員が自分で業務アプリを開発する「市民開発」の導入研修を行なってきました。ノーコードからAIにツールが変化する中で、AIを活用したいものの、技術進歩が早くなかなか自社で活用できないというお悩みやご相談を多くいただき、業務の一部を私たちのヒキツギAIで行うことで、AIを業務で活用でき、より本業に注力することができると考えています。
+> 株式会社ふえんは、これまでDX内製化支援、とくにノーコードで従業員が自分で業務アプリを開発する「市民開発」の導入研修を行なってきました。ノーコードからAIにツールが変化する中で、AIを活用したいものの、技術進歩が早くなかなか自社で活用できないというお悩みやご相談を多くいただき、業務の一部を私たちのかんたんAIで行うことで、AIを業務で活用でき、より本業に注力することができると考えています。
 
 **会社情報テーブル**：`background:#F4F8FD; box-shadow: inset 0 0 0 1px #D3DDEC; border-radius:10px; padding:clamp(20px,4.4vw,32px) clamp(20px,4.4vw,40px)`。各行 `display:flex; flex-wrap:wrap; gap:6px 24px; padding:clamp(16px,3.4vw,22px) 0`、2行目以降 `border-top:1px solid #DFE7F3`
 - ラベル：`width: clamp(6em,26%,9em)`、`clamp(13px,3.5vw,14.5px)/700`、`#5A6376`
@@ -493,7 +493,7 @@ React/Vue で実装する場合は、値が変化したときだけ state を更
   [style*="animation:mock"] { animation: none !important; opacity: 1 !important; transform: none !important; }
 }
 ```
-装飾レイヤーは `aria-hidden="true"`。ロゴ画像はすべて `alt="ヒキツギAI"`。
+装飾レイヤーは `aria-hidden="true"`。ロゴ画像はすべて `alt="かんたんAI"`。
 
 ### アンカーリンク
 
@@ -524,7 +524,7 @@ React/Vue で実装する場合は、値が変化したときだけ state を更
 | 反転面の補助テキスト | `#C6D3EA` / `#A3AFC4` |
 | ページ背景 | `#FFFFFF` |
 | 面1（課題・FAQ回答など） | `#EDF3FC` |
-| 面2（ヒキツギAIとは） | `#E4ECF9` |
+| 面2（かんたんAIとは） | `#E4ECF9` |
 | 面3（図解の枠） | `#F4F8FD` |
 | 強調面（解決カード・価格チェック） | `#DCE8FA` |
 | 中立面（課題カード） | `#EFF1F4` |
@@ -611,9 +611,9 @@ React/Vue で実装する場合は、値が変化したときだけ state を更
 
 | パス | 内容 |
 |---|---|
-| `ヒキツギAI LP.dc.html` | デザイン本体。`<x-dc>` 内のCDATAがマークアップ、`<script data-dc-script>` がロジック |
+| `かんたんAI LP.dc.html` | デザイン本体。`<x-dc>` 内のCDATAがマークアップ、`<script data-dc-script>` がロジック |
 | `support.js` | プロトタイプ用ランタイム。**移植不要**（参照用） |
 | `uploads/` | 画像アセット |
 | `screenshots/` | デザインのスクリーンショット（`01`〜`14` が上から順にページ全体をスクロールしたもの。デスクトップ幅） |
 
-ブラウザで `ヒキツギAI LP.dc.html` を直接開けば動作します（同階層に `support.js` と `uploads/` が必要）。
+ブラウザで `かんたんAI LP.dc.html` を直接開けば動作します（同階層に `support.js` と `uploads/` が必要）。

@@ -279,7 +279,7 @@ def main():
     for i, line in enumerate(body.split("\n")):
         no = offset + i + 1
         if re.search(r"オフボード(?!ィング)", line):
-            err(f"L{no}: 旧ブランド名「オフボード」が残っている（ヒキツギAIに置換）")
+            err(f"L{no}: 旧ブランド名「オフボード」が残っている（かんたんAIに置換）")
         if re.search(r"要出典", line):
             err(f"L{no}: 「要出典」が残っている。AI は注記ごと引用するので、確認できない主張は削除する")
 

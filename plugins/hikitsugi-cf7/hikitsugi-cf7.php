@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: ヒキツギAI CF7調整
+ * Plugin Name: かんたんAI CF7調整
  * Description: cf7-to-zapier がSlackへ送るデータを整える。checkbox等の配列値を文字列に均し、custom_body のJSONテンプレートに差し込めるようにする。
  * Version:     1.0.0
  * Author:      株式会社ふえん

@@ -44,7 +44,7 @@
 import glob,os,re,sys
 from difflib import SequenceMatcher
 ROOT=os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),'articles')+'/'
-FIXED=["掲載している会社に直接ご相談","掲載している会社は、公式サイトなどの公開情報","どの業務からAIを入れるべきか","無料でAI活用診断を申し込む","ヒキツギAIの料金は","料金は、AIチャットが月5万円","ふえんは横浜市港北区を拠点に","ヒキツギAIとは、担当者しか知らない"]
+FIXED=["掲載している会社に直接ご相談","掲載している会社は、公式サイトなどの公開情報","どの業務からAIを入れるべきか","無料でAI活用診断を申し込む","かんたんAIの料金は","料金は、AIチャットが月5万円","ふえんは横浜市港北区を拠点に","かんたんAIとは、担当者しか知らない"]
 def paras(p):
     body=open(p).read().split('---',2)[2]
     return [(x, any(f in x for f in FIXED)) for x in (y.strip() for y in re.split(r"\n\s*\n",body)) if len(x)>=40 and not x.startswith(('#','!','['))]

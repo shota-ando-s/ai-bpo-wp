@@ -1,4 +1,4 @@
-# ヒキツギAI SMTP送信
+# かんたんAI SMTP送信
 
 `wp_mail()` を Resend の SMTP 経由に切り替えるプラグイン。
 
@@ -26,8 +26,8 @@ define( 'HIKITSUGI_SMTP_HOST',      'smtp.resend.com' );
 define( 'HIKITSUGI_SMTP_PORT',      587 );
 define( 'HIKITSUGI_SMTP_USER',      'resend' );
 define( 'HIKITSUGI_SMTP_PASS',      're_xxxxxxxxxxxx' );   // ResendのAPIキー
-define( 'HIKITSUGI_SMTP_FROM',      'noreply@send.hikitsugi.jp' );
-define( 'HIKITSUGI_SMTP_FROM_NAME', 'ヒキツギAI（株式会社ふえん）' );
+define( 'HIKITSUGI_SMTP_FROM',      'noreply@send.kantan-ai.jp' );
+define( 'HIKITSUGI_SMTP_FROM_NAME', 'かんたんAI（株式会社ふえん）' );
 ```
 
 定数が揃っていなければプラグインは何もせず、管理画面に警告を出す。
@@ -39,12 +39,12 @@ define( 'HIKITSUGI_SMTP_FROM_NAME', 'ヒキツギAI（株式会社ふえん）' 
 
 **無料プランは検証済みドメインを1つしか持てない。** 2026-08-02 に
 旧ドメイン `ai-bpo.site`（送信に使っているコードは無かった）を削除し、
-`send.hikitsugi.jp` に入れ替えた。ドメインを増やしたい場合は
+`send.kantan-ai.jp` に入れ替えた。ドメインを増やしたい場合は
 Resend Pro（月$20）が必要。
 
 ### ルートではなくサブドメインを使う理由
 
-`hikitsugi.jp` には既にSPFレコードがある。
+`kantan-ai.jp` には既にSPFレコードがある。
 
 ```
 v=spf1 a:www3365.sakura.ne.jp mx ~all
@@ -52,13 +52,13 @@ v=spf1 a:www3365.sakura.ne.jp mx ~all
 
 **SPFレコードは1ドメインに1つしか置けない。** ルートドメインをResendに
 登録するとSPFが2つになり、どちらも無効と判定されて逆に届かなくなる。
-`send.hikitsugi.jp` を使えば既存のSPFに触らずに済む。
+`send.kantan-ai.jp` を使えば既存のSPFに触らずに済む。
 
 ### DNSレコード
 
-`hikitsugi.jp` のネームサーバは `ns1.dns.ne.jp` / `ns2.dns.ne.jp` ＝ **さくらのDNS**。
+`kantan-ai.jp` のネームサーバは `ns1.dns.ne.jp` / `ns2.dns.ne.jp` ＝ **さくらのDNS**。
 さくらのドメインコントロールパネル「ゾーン編集」で、以下を
-`hikitsugi.jp` ゾーンに追加する（名前はゾーンからの相対表記）。
+`kantan-ai.jp` ゾーンに追加する（名前はゾーンからの相対表記）。
 
 | 種別 | 名前 | 優先度 | 値 |
 |---|---|---|---|
@@ -66,16 +66,16 @@ v=spf1 a:www3365.sakura.ne.jp mx ~all
 | MX | `send.send` | 10 | `feedback-smtp.ap-northeast-1.amazonses.com` |
 | TXT | `send.send` | — | `v=spf1 include:amazonses.com ~all` |
 
-`send.send` は誤記ではない。Resendは登録ドメイン（`send.hikitsugi.jp`）の
+`send.send` は誤記ではない。Resendは登録ドメイン（`send.kantan-ai.jp`）の
 さらに `send.` サブドメインを Return-Path に使うため、
-`hikitsugi.jp` から見ると `send.send.hikitsugi.jp` になる。
+`kantan-ai.jp` から見ると `send.send.hikitsugi.jp` になる。
 
 ## 注意：offboard-checklist も送信できていない
 
 チェックリスト側の `MAIL_FROM` は `hikitsugi@fuenn.co.jp` だが、
 `fuenn.co.jp` はResendに登録されていない（SPFはZoho Mail）。
 同じキーを使っているので、あちらも 550 で弾かれているはず。
-直すならチェックリスト側の `MAIL_FROM` も `send.hikitsugi.jp` の
+直すならチェックリスト側の `MAIL_FROM` も `send.kantan-ai.jp` の
 アドレスに変える必要がある。
 
 ## 動作確認

@@ -60,7 +60,7 @@ header( 'Content-Type: text/html; charset=UTF-8' );
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>ヒキツギAI｜うまくいかない業務の引き継ぎ、私たちにお任せください！</title>
+<title>かんたんAI｜うまくいかない業務の引き継ぎ、私たちにお任せください！</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&amp;display=swap">

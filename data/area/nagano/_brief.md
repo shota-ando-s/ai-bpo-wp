@@ -1,6 +1,6 @@
 # 長野県 地域ページの調査 共通の依頼（2026-10-30）
 
-hikitsugi.jp（ヒキツギAI、運営は株式会社ふえん）の地域ページ `/area/nagano/` と、県内77市町村（19市23町35村）の子ページを作るための調査。読者は市町村の中小企業の経営者・総務担当で、狙う検索は「◯◯市 AI導入」。調査担当は、自分の担当のファイルだけを `data/area/nagano/` に書く。
+kantan-ai.jp（かんたんAI、運営は株式会社ふえん）の地域ページ `/area/nagano/` と、県内77市町村（19市23町35村）の子ページを作るための調査。読者は市町村の中小企業の経営者・総務担当で、狙う検索は「◯◯市 AI導入」。調査担当は、自分の担当のファイルだけを `data/area/nagano/` に書く。
 
 **作業場所**: リポジトリの作業ツリー `/Users/ando/Dropbox/allsrc/ai-bpo-wp/.claude/worktrees/area-nagano/`（ブランチ area-nagano）。ファイルはこの下に書く。`/Users/ando/Dropbox/allsrc/ai-bpo-wp/` 直下（main の作業フォルダ）には書かない。git のコミットもしない。一時ファイルは `/private/tmp/claude-501/-Users-ando-Dropbox-allsrc-ai-bpo-wp/3c6e3ac2-e046-47b7-9ba7-0324ac83f91f/scratchpad/<担当名>/` に置く。
 

@@ -227,8 +227,8 @@ def check(path, kw):
 
     # --- リンク ---
     links = re.findall(r"(?<!!)\[([^\]]*)\]\(([^)\s]+)\)", body)
-    internal = [u for _, u in links if u.startswith("/") or "hikitsugi.jp" in u]
-    external = [u for _, u in links if u.startswith("http") and "hikitsugi.jp" not in u]
+    internal = [u for _, u in links if u.startswith("/") or "kantan-ai.jp" in u]
+    external = [u for _, u in links if u.startswith("http") and "kantan-ai.jp" not in u]
     if len(internal) < 3:
         err(f"内部リンクが{len(internal)}本（3本以上。ピラー・関連記事・サービス導線）")
     else:

@@ -5,7 +5,7 @@
 ## 市町村と slug（77市町村。県コード20）
 - 一覧は data/area/nagano/_brief.md
 - 長野市は nagano-city、阿南町は anan-town（徳島県阿南市 anan と重なる）、池田町は ikeda-town-nagano（岐阜県池田町 ikeda-town と重なる）、松川町 matsukawa-town と松川村 matsukawa-village、木曽町 kiso と木祖村 kiso-village、高山村 takayama-village、山形村 yamagata-village、朝日村 asahi-village、原村 hara-village
-- 試算は「月の削減時間・時間換算額」だけの形（ヒキツギAIの月額・回収期間は書かない）
+- 試算は「月の削減時間・時間換算額」だけの形（かんたんAIの月額・回収期間は書かない）
 
 ## 新しいセッションでの始め方
 1. このファイルと docs/area-new-prefecture.md（「岐阜県で分かったこと」まで）を読む

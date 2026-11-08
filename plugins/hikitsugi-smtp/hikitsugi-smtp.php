@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: ヒキツギAI SMTP送信
+ * Plugin Name: かんたんAI SMTP送信
  * Description: wp_mail() をSMTP経由に切り替える。さくらのサーバはPHPの mail() から外部宛のリレーを拒否する（553 not local address）ため、これが無いと問い合わせフォームの通知・自動返信が一切届かない。
  * Version:     1.0.0
  * Author:      株式会社ふえん
@@ -12,8 +12,8 @@
  *   define( 'HIKITSUGI_SMTP_PORT',      587 );
  *   define( 'HIKITSUGI_SMTP_USER',      'resend' );
  *   define( 'HIKITSUGI_SMTP_PASS',      're_xxxxxxxxxxxx' );   // ResendのAPIキー
- *   define( 'HIKITSUGI_SMTP_FROM',      'noreply@hikitsugi.jp' );
- *   define( 'HIKITSUGI_SMTP_FROM_NAME', 'ヒキツギAI' );
+ *   define( 'HIKITSUGI_SMTP_FROM',      'noreply@kantan-ai.jp' );
+ *   define( 'HIKITSUGI_SMTP_FROM_NAME', 'かんたんAI' );
  *
  * @package Hikitsugi
  */
@@ -81,7 +81,7 @@ add_action( 'admin_notices', function () {
 	if ( hikitsugi_smtp_is_configured() || ! current_user_can( 'manage_options' ) ) {
 		return;
 	}
-	echo '<div class="notice notice-error"><p><strong>ヒキツギAI SMTP送信</strong>：'
+	echo '<div class="notice notice-error"><p><strong>かんたんAI SMTP送信</strong>：'
 		. 'SMTPの設定定数が wp-config.php にありません。このままではフォームの通知メールが届きません。'
 		. '</p></div>';
 } );

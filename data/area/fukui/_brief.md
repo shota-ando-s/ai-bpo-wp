@@ -1,6 +1,6 @@
 # 福井県 地域ページの調査 共通の依頼（2026-10-27）
 
-hikitsugi.jp（ヒキツギAI、運営は株式会社ふえん）の地域ページ `/area/fukui/` と、県内17市町の子ページを作るための調査。読者は市町の中小企業の経営者・総務担当で、狙う検索は「◯◯市 AI導入」。調査担当は、自分の担当のファイルだけを `data/area/fukui/` に書く。
+kantan-ai.jp（かんたんAI、運営は株式会社ふえん）の地域ページ `/area/fukui/` と、県内17市町の子ページを作るための調査。読者は市町の中小企業の経営者・総務担当で、狙う検索は「◯◯市 AI導入」。調査担当は、自分の担当のファイルだけを `data/area/fukui/` に書く。
 
 **作業場所**: リポジトリの作業ツリー `/Users/ando/Dropbox/allsrc/ai-bpo-wp/.claude/worktrees/area-fukui/`（ブランチ area-fukui）。ファイルはこの下に書く。`/Users/ando/Dropbox/allsrc/ai-bpo-wp/` 直下には書かない。git のコミットもしない。
 
