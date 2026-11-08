@@ -227,7 +227,7 @@ $lp_corp = array(
 			<div class="lp-header-veil" style="position:absolute; inset:0; background:rgba(255,255,255,0.8); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); border-bottom:1px solid #DFE7F3"></div>
 		</div>
 		<div style="position:relative; max-width:1080px; margin:0 auto; padding:14px clamp(20px,5vw,40px); display:flex; align-items:center; justify-content:space-between; gap:16px">
-			<a href="#top" style="display:flex; align-items:center"><img src="<?php echo $u_img; ?>/logo-trim.png" alt="かんたんAI" width="889" height="155" style="height:clamp(21px,5.6vw,30px); width:auto; max-width:min(48vw,180px); object-fit:contain; display:block"></a>
+			<a href="#top" style="display:flex; align-items:center"><img src="<?php echo $u_img; ?>/logo-trim.png" alt="かんたんAI" width="885" height="155" style="height:clamp(21px,5.6vw,30px); width:auto; max-width:min(48vw,180px); object-fit:contain; display:block"></a>
 			<div style="display:flex; align-items:center; gap:clamp(12px,3vw,24px)">
 				<a href="#form" class="lp-hv-navy" style="background:#0F2961; color:#FFFFFF; font-size:clamp(13px,3.4vw,15.5px); font-weight:700; border-radius:6px; padding:13px 24px; line-height:1.4">お問い合わせ</a>
 			</div>
@@ -918,7 +918,7 @@ $lp_corp = array(
 	<footer style="background:#081428; color:#A3AFC4">
 		<div style="max-width:1080px; margin:0 auto; padding:clamp(40px,8vw,64px) clamp(20px,5vw,40px) clamp(96px,18vw,120px); display:flex; flex-wrap:wrap; gap:32px; justify-content:space-between">
 			<div>
-				<p style="margin:0 0 16px"><img src="<?php echo $u_img; ?>/logo-trim.png" alt="かんたんAI" width="889" height="155" loading="lazy" decoding="async" style="height:28px; width:auto; display:block; filter:brightness(0) invert(1)"></p>
+				<p style="margin:0 0 16px"><img src="<?php echo $u_img; ?>/logo-trim.png" alt="かんたんAI" width="885" height="155" loading="lazy" decoding="async" style="height:28px; width:auto; display:block; filter:brightness(0) invert(1)"></p>
 				<p style="margin:0 0 6px; font-size:13px; line-height:1.9">株式会社ふえん</p>
 			</div>
 			<div style="display:flex; flex-direction:column; gap:12px">
