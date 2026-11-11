@@ -12,7 +12,7 @@ Google の AI Overview・AI モード・ChatGPT 検索に、段落単位で引�
 
 1. 書き方のルールと理由: .claude/skills/seo-article/references/seo-aio-rules.md
 2. ファクトチェックの基準: .claude/skills/fact-check/references/aio-factcheck-rules.md
-3. お手本（構成・文体・出典の付け方）: articles/2026-10-17-area-yokohama.md。試算の節のお手本は articles/2026-10-24-area-yamagata-higashine.md。**お手本は形だけを見る。文は写さない**（山形で、お手本の東根市に似た村山市・南陽市の固有率が55%台に落ちた）。大企業の工場がある市の書き方は articles/2026-11-06-area-ibaraki-hitachi.md などを形だけ見る。政令指定都市の書き方は articles/2026-11-01-area-hiroshima-hiroshima-city.md など（あれば）を形だけ見る
+3. お手本（構成・文体・出典の付け方）: articles/2026-10-17-area-yokohama.md。試算の節のお手本は articles/2026-10-24-area-yamagata-higashine.md。**お手本は形だけを見る。文は写さない**（山形で、お手本の東根市に似た村山市・南陽市の固有率が55%台に落ちた）。大企業の工場がある市の書き方は articles/2026-11-06-area-ibaraki-hitachi.md などを形だけ見る。政令指定都市の書き方は articles/2026-11-01-area-hiroshima-hiroshima-city.md・articles/2026-10-23-area-miyagi-sendai.md を形だけ見る
 4. データ（data/area/hyogo/。すべて一次情報で確認済み。各ファイルの「取れなかった項目・注意点」も読む）:
    - _progress.md（作業状態と「実績メモ」。各調査担当の要点と親の判断）
    - stats.md（人口〔令和7年国勢調査の確定値（県計5,317,792人、2020年から▲2.69%。増えたのは明石市だけ）。**県の推計人口は令和7年国調の確定値が基準**。**社人研の市町村別の推計は使わない**（生産年齢人口は令和7年国勢調査の15〜64歳の2020→2025年の増減で書く。【D1】）〕、神戸市の区別の人口、県外就業率（令和2年国勢調査）、観光（県の観光客動態調査、令和6年度の市町別）、経済センサス〔2021年〕、製造業〔経済構造実態調査。秘匿の値を推し量らない〕、主要産業の裏づけ、大企業の工場の (A)/(B)、農業、2026年の災害、阪神・淡路大震災、県の地域区分、淡路島の交通）
