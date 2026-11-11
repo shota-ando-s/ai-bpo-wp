@@ -52,3 +52,9 @@
 | mori-town-shizuoka | 静岡県周智郡森町 | `mori` は北海道森町（段階2の案）（静岡） |
 | shimizu-town-shizuoka | 静岡県駿東郡清水町 | `shimizu` は北海道清水町（段階2の案）（静岡） |
 | mishima / yoshida / ito / izu / fuji | 静岡県三島市・吉田町・伊東市・伊豆市・富士市 | 既存と重ならない（福島県三島町は `mishima-town`）（静岡） |
+| asahi-town | 三重県朝日町 | 富山・山形と同じ slug（親ページが違う。area-todo の朝日町の記録どおり）。三重が使う |
+| meiwa | 三重県明和町 | 群馬県明和町と同じ slug（親が違う）。三重が使う |
+| kihoku | 三重県紀北町 | 愛媛県鬼北町と同じ slug（親が違う）。三重が使う |
+| kumano-city | 三重県熊野市 | 広島県熊野町が `kumano` |
+| mihama-town-mie | 三重県御浜町 | 福井 `mihama`・和歌山 `mihama-town` |
+| kawagoe-town | 三重県川越町 | 埼玉県川越市を見越して |
