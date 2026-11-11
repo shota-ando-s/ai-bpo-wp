@@ -14,3 +14,5 @@
 - cases 完了（WebSearch 23回）・stats 完了（5回）。gov（15回まで）・subsidy（15回まで）を起動
 - PLAN を決めて push（a771c47）。_assign.py で規模の小さい順に当てた。月166〜372時間・約62.9〜127.4万円・42〜180名。町でも月318時間以上（1人の月の業務量が40時間を超えるページ: 川根本町44・小山町40.75・西伊豆町40.25・東伊豆町41.5 など）。熱海市の STAT（不動産業の中分類の従業者）は未確認
 - 残りの調査: choson（12町）・companies・outside/serp・cases2
+- 調査8担当とも完了（WebSearch 計約94回）。仕様の下書き D12・D345（0回）を組み立てて docs/area-writing-spec-shizuoka.md に（判断はすべて案どおり、例外は仕様の「下書きの『案』の扱い」）
+- 執筆: W1（静岡市・裾野市・河津町・森町）・W2（浜松市・長泉町・松崎町）を起動。**書き上がった記事は全ページそろうまで main に入れない**（`.git/info/exclude` に `articles/2026-11-11-area-shizuoka*.md`。退避は scratchpad の backup_wip.sh で `area-shizuoka-wip` ブランチへ）
