@@ -12,9 +12,9 @@ data/area/gunma/_calc.py（kagoshima の形）を元に作った。道のペー�
   0. **北海道・北関東3県・沖縄の取り決め**: 月の削減時間（0.25時間刻み）×4 を5で割った余りが 0（北海道）の時間だけを使う
      （1.25, 2.5, 3.75, 5.0, … の1.25時間刻み。data/area/_batch5/shared.md）
   1. 北海道のページの中で、月の削減時間・月の時間換算額（万円、小数1桁）・従業員数が重ならない
-  2. 既存の全県の地域ページ（articles/2026-1?-*-area-*.md、北海道を除く）の「## 試算」の節の「◯時間」「◯万円」と重ならない
-  3. 全県の data/area/*/_calc.py の PLAN（北海道を除く。glob で全部読む）の月の削減時間・月の時間換算額と重ならない。
-     読めないファイルは警告。REQUIRED の県はファイルがなければ NG。金額が茨城・栃木・群馬・沖縄と重なったら、先に push した県を優先する
+  2・3. **2026-11-11 ユーザー決定（C）: 既存の他県の地域ページの試算、他県の _calc.py の PLAN と時間・金額が重なってもよい**
+     （段階1の石狩8市町村は重ならないように作ったが、残り171市町村は空きが足りないため）。重なりは「（参考）」として表示するだけで NG にしない。
+     北海道のページの中では、時間・金額・規模を重ねない（1 のとおり）
   4. 時間は0.25時間刻み。金額が四捨五入の境目（◯.◯5万円）から100円より離れている
   5. 試算の業種（業態）・規模が cases.md・cases_outside.md の事例の会社と同じにならない（CASES と照合）
   6. slug が SLUGS と一致する
@@ -286,12 +286,11 @@ def main():
                 print(f"  NG 北海道の中で{label}が重なる: {city} と {seen[key]} ({key})")
                 ok = False
             seen[key] = city
+            # 2026-11-11 ユーザー決定（C）: 他県の記事・PLAN と時間・金額が重なってもよい。北海道の中だけ重ならないようにする
             if key in exd:
-                print(f"  NG 既存の記事と{label}が重なる: {city} と {exd[key]} ({key})")
-                ok = False
+                notes.append(f"{city}: 既存の他県の記事と{label}が同じ {exd[key]} ({key})（重なりは許容）")
             if key in pld:
-                print(f"  NG 他県の PLAN と{label}が重なる: {city} と {pld[key]} ({key})")
-                ok = False
+                notes.append(f"{city}: 他県の PLAN と{label}が同じ {pld[key]} ({key})（重なりは許容）")
         if size in seen_s:
             print(f"  NG 北海道の中で規模が重なる: {city} と {seen_s[size]} ({size}名)")
             ok = False
