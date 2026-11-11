@@ -170,3 +170,4 @@ if len(sys.argv) > 2 and sys.argv[2] == "write":
     s = s[:i + 1] + plan + s[j + 3:]
     open(HERE + "/_calc.py", "w").write(s)
     print("_calc.py に書いた")
+# 2026-11-11 結果: 岡崎市は事例のオーテック（80名）と規模が近かったので、時間・金額を変えず従業員数だけ 68→66 名にした（_calc.py で直接直した）
