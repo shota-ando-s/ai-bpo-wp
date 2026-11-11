@@ -123,18 +123,18 @@ cands = {}
 for r in ROWS:
     city, slug, ind, sub, keys, smin, smax, task = r[:8]
     lim = (r[11] or r[8])
-    smax = min(max(smax * 2, smin + 50), int(lim * 0.6))
+    smax = min(max(smax * 2, smin + 60), int(lim * 0.6))
     c = {}
     for sz in range(smin, smax + 1):
-        for n in range(max(3, int(sz * 0.2)), int(sz * 0.9) + 1):
-            hrs = D("16")
+        for n in range(max(3, int(sz * 0.3 + 0.999)), int(sz * 0.6) + 1):
+            hrs = D("24")
             while hrs <= HMAX:
                 h = D(n) * hrs * D("0.25")
                 if (h * 4) % 1 == 0 and int(h * 4) % 4 == 1 and h not in hu:
                     yen = h * g.RATE[ind]; m = g.man(yen)
                     if m not in mu and g.border_ok(yen):
                         k = (h, m)
-                        sc = abs(n / sz - 0.5) * 2 + abs(float(hrs) - 32) / 15 + (sz - smin) / smin * 1.5
+                        sc = abs(n / sz - 0.45) * 2 + abs(float(hrs) - 32) / 12 + (sz - smin) / smin * 1.0
                         if k not in c or sc < c[k][3]:
                             c[k] = (sz, n, hrs, sc)
                 hrs += D("0.25")
