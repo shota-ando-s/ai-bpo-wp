@@ -1,0 +1,2267 @@
+{
+ "_meta": {
+  "checked": "2026-11-11",
+  "scope": "愛知県54市町村（38市14町2村）。公式サイトで本社所在地と時点つきの従業員数の両方を確かめ、法人番号公表サイト（愛知県全件 CSV 2026-10-30）の登記の本店が同じ市町村の、システム開発・ソフトウェア開発・SI の会社だけを本表に入れた（奈良・福島と同じ基準）。市町村ごとに5社まで、名古屋市は独立系5社（category=independent）と大手グループ5社（category=major_group、parent_group に親会社）。境界の業種は boundary。",
+  "candidate_sources": [
+   "一般社団法人愛知県情報サービス産業協会（AiA）会員情報検索 正会員249社 https://www.aia.or.jp/membersearch/ と詳細ページ（2026-11-11。従業員数はない）。JISA の団体会員一覧に (一社)愛知県情報サービス産業協会 https://www.jisa.or.jp/about_jisa/list/tabid/739/Default.aspx",
+   "国税庁 法人番号公表サイト 基本3情報ダウンロード 愛知県全件 23_aichi_all_20261030.csv（289,488行）https://www.houjin-bangou.nta.go.jp/download/zenken/ 。名古屋市以外は商号の語で949件を抽出",
+   "gBizINFO https://info.gbiz.go.jp/hojin/ichiran?hojinBango=<法人番号> の厚生年金保険の被保険者数（約1,180件。参考値、本表の人数には使わない）",
+   "WebSearch 4回（担当上限10回）"
+  ],
+  "columns": "name / hq / municipality / town / corporate_number / houjin_honten / employees{value,as_of,source} / capital / founded / business_summary / ai_initiative / url / size_basis / checked / notes / category / parent_group / boundary",
+  "industry_stats": {
+   "source": "令和3年経済センサス‐活動調査 第6-1表（民営事業所、2021年6月1日）statInfId=000040067880 https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040067880&fileKind=0 （stats 担当が取得した ec_6_1 から抽出）",
+   "note": "「-」は該当なし。秘匿なし",
+   "values": {
+    "全国": {
+     "code": "00000",
+     "G_情報通信業": {
+      "establishments": 76559,
+      "workers": 1986839
+     },
+     "39_情報サービス業": {
+      "establishments": 43471,
+      "workers": 1319758
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 8791,
+      "workers": 202284
+     },
+     "全産業": {
+      "establishments": 5156063,
+      "workers": 57949915
+     }
+    },
+    "愛知県": {
+     "code": "23000",
+     "G_情報通信業": {
+      "establishments": 3873,
+      "workers": 89548
+     },
+     "39_情報サービス業": {
+      "establishments": 2475,
+      "workers": 64059
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 408,
+      "workers": 5128
+     },
+     "全産業": {
+      "establishments": 299232,
+      "workers": 3818542
+     }
+    },
+    "名古屋市": {
+     "code": "23100",
+     "G_情報通信業": {
+      "establishments": 2755,
+      "workers": 75912
+     },
+     "39_情報サービス業": {
+      "establishments": 1773,
+      "workers": 53368
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 302,
+      "workers": 4745
+     },
+     "全産業": {
+      "establishments": 117344,
+      "workers": 1450337
+     }
+    },
+    "名古屋市千種区": {
+     "code": "23101",
+     "G_情報通信業": {
+      "establishments": 139,
+      "workers": 1661
+     },
+     "39_情報サービス業": {
+      "establishments": 83,
+      "workers": 1347
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 12,
+      "workers": 47
+     },
+     "全産業": {
+      "establishments": 7387,
+      "workers": 71386
+     }
+    },
+    "名古屋市東区": {
+     "code": "23102",
+     "G_情報通信業": {
+      "establishments": 304,
+      "workers": 10241
+     },
+     "39_情報サービス業": {
+      "establishments": 155,
+      "workers": 5887
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 30,
+      "workers": 385
+     },
+     "全産業": {
+      "establishments": 6473,
+      "workers": 96568
+     }
+    },
+    "名古屋市北区": {
+     "code": "23103",
+     "G_情報通信業": {
+      "establishments": 63,
+      "workers": 1029
+     },
+     "39_情報サービス業": {
+      "establishments": 38,
+      "workers": 809
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 6,
+      "workers": 13
+     },
+     "全産業": {
+      "establishments": 6874,
+      "workers": 66081
+     }
+    },
+    "名古屋市西区": {
+     "code": "23104",
+     "G_情報通信業": {
+      "establishments": 163,
+      "workers": 5953
+     },
+     "39_情報サービス業": {
+      "establishments": 105,
+      "workers": 4729
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 15,
+      "workers": 87
+     },
+     "全産業": {
+      "establishments": 8242,
+      "workers": 92528
+     }
+    },
+    "名古屋市中村区": {
+     "code": "23105",
+     "G_情報通信業": {
+      "establishments": 465,
+      "workers": 17395
+     },
+     "39_情報サービス業": {
+      "establishments": 336,
+      "workers": 13973
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 60,
+      "workers": 1651
+     },
+     "全産業": {
+      "establishments": 11728,
+      "workers": 210558
+     }
+    },
+    "名古屋市中区": {
+     "code": "23106",
+     "G_情報通信業": {
+      "establishments": 1118,
+      "workers": 34383
+     },
+     "39_情報サービス業": {
+      "establishments": 745,
+      "workers": 23164
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 122,
+      "workers": 2114
+     },
+     "全産業": {
+      "establishments": 19929,
+      "workers": 293547
+     }
+    },
+    "名古屋市昭和区": {
+     "code": "23107",
+     "G_情報通信業": {
+      "establishments": 68,
+      "workers": 580
+     },
+     "39_情報サービス業": {
+      "establishments": 37,
+      "workers": 220
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 5,
+      "workers": 23
+     },
+     "全産業": {
+      "establishments": 5178,
+      "workers": 54464
+     }
+    },
+    "名古屋市瑞穂区": {
+     "code": "23108",
+     "G_情報通信業": {
+      "establishments": 37,
+      "workers": 631
+     },
+     "39_情報サービス業": {
+      "establishments": 23,
+      "workers": 576
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 4,
+      "workers": 9
+     },
+     "全産業": {
+      "establishments": 4117,
+      "workers": 48700
+     }
+    },
+    "名古屋市熱田区": {
+     "code": "23109",
+     "G_情報通信業": {
+      "establishments": 63,
+      "workers": 1002
+     },
+     "39_情報サービス業": {
+      "establishments": 44,
+      "workers": 813
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 5,
+      "workers": 54
+     },
+     "全産業": {
+      "establishments": 3990,
+      "workers": 55257
+     }
+    },
+    "名古屋市中川区": {
+     "code": "23110",
+     "G_情報通信業": {
+      "establishments": 57,
+      "workers": 538
+     },
+     "39_情報サービス業": {
+      "establishments": 42,
+      "workers": 251
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 5,
+      "workers": 11
+     },
+     "全産業": {
+      "establishments": 8018,
+      "workers": 81652
+     }
+    },
+    "名古屋市港区": {
+     "code": "23111",
+     "G_情報通信業": {
+      "establishments": 26,
+      "workers": 611
+     },
+     "39_情報サービス業": {
+      "establishments": 15,
+      "workers": 572
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 4,
+      "workers": 14
+     },
+     "全産業": {
+      "establishments": 6238,
+      "workers": 91337
+     }
+    },
+    "名古屋市南区": {
+     "code": "23112",
+     "G_情報通信業": {
+      "establishments": 37,
+      "workers": 331
+     },
+     "39_情報サービス業": {
+      "establishments": 21,
+      "workers": 127
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 8,
+      "workers": 174
+     },
+     "全産業": {
+      "establishments": 5536,
+      "workers": 63293
+     }
+    },
+    "名古屋市守山区": {
+     "code": "23113",
+     "G_情報通信業": {
+      "establishments": 34,
+      "workers": 207
+     },
+     "39_情報サービス業": {
+      "establishments": 18,
+      "workers": 54
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 3,
+      "workers": 14
+     },
+     "全産業": {
+      "establishments": 5369,
+      "workers": 54491
+     }
+    },
+    "名古屋市緑区": {
+     "code": "23114",
+     "G_情報通信業": {
+      "establishments": 47,
+      "workers": 342
+     },
+     "39_情報サービス業": {
+      "establishments": 32,
+      "workers": 253
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 6,
+      "workers": 22
+     },
+     "全産業": {
+      "establishments": 6943,
+      "workers": 69444
+     }
+    },
+    "名古屋市名東区": {
+     "code": "23115",
+     "G_情報通信業": {
+      "establishments": 76,
+      "workers": 478
+     },
+     "39_情報サービス業": {
+      "establishments": 41,
+      "workers": 269
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 8,
+      "workers": 83
+     },
+     "全産業": {
+      "establishments": 5890,
+      "workers": 51902
+     }
+    },
+    "名古屋市天白区": {
+     "code": "23116",
+     "G_情報通信業": {
+      "establishments": 58,
+      "workers": 530
+     },
+     "39_情報サービス業": {
+      "establishments": 38,
+      "workers": 324
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 9,
+      "workers": 44
+     },
+     "全産業": {
+      "establishments": 5432,
+      "workers": 49129
+     }
+    },
+    "豊橋市": {
+     "code": "23201",
+     "G_情報通信業": {
+      "establishments": 114,
+      "workers": 1255
+     },
+     "39_情報サービス業": {
+      "establishments": 71,
+      "workers": 929
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 6,
+      "workers": 95
+     },
+     "全産業": {
+      "establishments": 14350,
+      "workers": 164058
+     }
+    },
+    "岡崎市": {
+     "code": "23202",
+     "G_情報通信業": {
+      "establishments": 106,
+      "workers": 1040
+     },
+     "39_情報サービス業": {
+      "establishments": 56,
+      "workers": 734
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 14,
+      "workers": 52
+     },
+     "全産業": {
+      "establishments": 13121,
+      "workers": 165945
+     }
+    },
+    "一宮市": {
+     "code": "23203",
+     "G_情報通信業": {
+      "establishments": 101,
+      "workers": 622
+     },
+     "39_情報サービス業": {
+      "establishments": 59,
+      "workers": 395
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 8,
+      "workers": 15
+     },
+     "全産業": {
+      "establishments": 15723,
+      "workers": 140911
+     }
+    },
+    "瀬戸市": {
+     "code": "23204",
+     "G_情報通信業": {
+      "establishments": 24,
+      "workers": 114
+     },
+     "39_情報サービス業": {
+      "establishments": 17,
+      "workers": 69
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 1,
+      "workers": 3
+     },
+     "全産業": {
+      "establishments": 4401,
+      "workers": 46247
+     }
+    },
+    "半田市": {
+     "code": "23205",
+     "G_情報通信業": {
+      "establishments": 22,
+      "workers": 169
+     },
+     "39_情報サービス業": {
+      "establishments": 13,
+      "workers": 99
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 2,
+      "workers": 2
+     },
+     "全産業": {
+      "establishments": 4667,
+      "workers": 57224
+     }
+    },
+    "春日井市": {
+     "code": "23206",
+     "G_情報通信業": {
+      "establishments": 67,
+      "workers": 454
+     },
+     "39_情報サービス業": {
+      "establishments": 41,
+      "workers": 259
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 10,
+      "workers": 62
+     },
+     "全産業": {
+      "establishments": 9788,
+      "workers": 111307
+     }
+    },
+    "豊川市": {
+     "code": "23207",
+     "G_情報通信業": {
+      "establishments": 32,
+      "workers": 135
+     },
+     "39_情報サービス業": {
+      "establishments": 21,
+      "workers": 81
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 5,
+      "workers": 10
+     },
+     "全産業": {
+      "establishments": 6545,
+      "workers": 78350
+     }
+    },
+    "津島市": {
+     "code": "23208",
+     "G_情報通信業": {
+      "establishments": 14,
+      "workers": 146
+     },
+     "39_情報サービス業": {
+      "establishments": 9,
+      "workers": 36
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 2675,
+      "workers": 27539
+     }
+    },
+    "碧南市": {
+     "code": "23209",
+     "G_情報通信業": {
+      "establishments": 11,
+      "workers": 32
+     },
+     "39_情報サービス業": {
+      "establishments": 5,
+      "workers": 21
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 1,
+      "workers": 3
+     },
+     "全産業": {
+      "establishments": 2888,
+      "workers": 35859
+     }
+    },
+    "刈谷市": {
+     "code": "23210",
+     "G_情報通信業": {
+      "establishments": 60,
+      "workers": 3050
+     },
+     "39_情報サービス業": {
+      "establishments": 52,
+      "workers": 2799
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 2,
+      "workers": 2
+     },
+     "全産業": {
+      "establishments": 5169,
+      "workers": 117314
+     }
+    },
+    "豊田市": {
+     "code": "23211",
+     "G_情報通信業": {
+      "establishments": 108,
+      "workers": 2372
+     },
+     "39_情報サービス業": {
+      "establishments": 82,
+      "workers": 2000
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 4,
+      "workers": 13
+     },
+     "全産業": {
+      "establishments": 12721,
+      "workers": 247911
+     }
+    },
+    "安城市": {
+     "code": "23212",
+     "G_情報通信業": {
+      "establishments": 31,
+      "workers": 366
+     },
+     "39_情報サービス業": {
+      "establishments": 26,
+      "workers": 349
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 2,
+      "workers": 3
+     },
+     "全産業": {
+      "establishments": 6341,
+      "workers": 107931
+     }
+    },
+    "西尾市": {
+     "code": "23213",
+     "G_情報通信業": {
+      "establishments": 16,
+      "workers": 50
+     },
+     "39_情報サービス業": {
+      "establishments": 10,
+      "workers": 25
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 6526,
+      "workers": 84341
+     }
+    },
+    "蒲郡市": {
+     "code": "23214",
+     "G_情報通信業": {
+      "establishments": 21,
+      "workers": 128
+     },
+     "39_情報サービス業": {
+      "establishments": 10,
+      "workers": 54
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 5,
+      "workers": 23
+     },
+     "全産業": {
+      "establishments": 3371,
+      "workers": 32958
+     }
+    },
+    "犬山市": {
+     "code": "23215",
+     "G_情報通信業": {
+      "establishments": 18,
+      "workers": 203
+     },
+     "39_情報サービス業": {
+      "establishments": 12,
+      "workers": 193
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 2,
+      "workers": 2
+     },
+     "全産業": {
+      "establishments": 2433,
+      "workers": 31904
+     }
+    },
+    "常滑市": {
+     "code": "23216",
+     "G_情報通信業": {
+      "establishments": 24,
+      "workers": 110
+     },
+     "39_情報サービス業": {
+      "establishments": 9,
+      "workers": 33
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 3,
+      "workers": 4
+     },
+     "全産業": {
+      "establishments": 2488,
+      "workers": 29031
+     }
+    },
+    "江南市": {
+     "code": "23217",
+     "G_情報通信業": {
+      "establishments": 18,
+      "workers": 234
+     },
+     "39_情報サービス業": {
+      "establishments": 12,
+      "workers": 221
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 1,
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 3052,
+      "workers": 29009
+     }
+    },
+    "小牧市": {
+     "code": "23219",
+     "G_情報通信業": {
+      "establishments": 39,
+      "workers": 342
+     },
+     "39_情報サービス業": {
+      "establishments": 27,
+      "workers": 305
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 5,
+      "workers": 13
+     },
+     "全産業": {
+      "establishments": 6267,
+      "workers": 106426
+     }
+    },
+    "稲沢市": {
+     "code": "23220",
+     "G_情報通信業": {
+      "establishments": 27,
+      "workers": 274
+     },
+     "39_情報サービス業": {
+      "establishments": 19,
+      "workers": 224
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 2,
+      "workers": 2
+     },
+     "全産業": {
+      "establishments": 4348,
+      "workers": 63402
+     }
+    },
+    "新城市": {
+     "code": "23221",
+     "G_情報通信業": {
+      "establishments": 5,
+      "workers": 15
+     },
+     "39_情報サービス業": {
+      "establishments": 1,
+      "workers": 1
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 1,
+      "workers": 6
+     },
+     "全産業": {
+      "establishments": 1937,
+      "workers": 18731
+     }
+    },
+    "東海市": {
+     "code": "23222",
+     "G_情報通信業": {
+      "establishments": 24,
+      "workers": 527
+     },
+     "39_情報サービス業": {
+      "establishments": 15,
+      "workers": 336
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 1,
+      "workers": 4
+     },
+     "全産業": {
+      "establishments": 3912,
+      "workers": 60069
+     }
+    },
+    "大府市": {
+     "code": "23223",
+     "G_情報通信業": {
+      "establishments": 17,
+      "workers": 164
+     },
+     "39_情報サービス業": {
+      "establishments": 6,
+      "workers": 123
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 3,
+      "workers": 14
+     },
+     "全産業": {
+      "establishments": 3239,
+      "workers": 49471
+     }
+    },
+    "知多市": {
+     "code": "23224",
+     "G_情報通信業": {
+      "establishments": 13,
+      "workers": 60
+     },
+     "39_情報サービス業": {
+      "establishments": 8,
+      "workers": 25
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 1,
+      "workers": 1
+     },
+     "全産業": {
+      "establishments": 2114,
+      "workers": 20235
+     }
+    },
+    "知立市": {
+     "code": "23225",
+     "G_情報通信業": {
+      "establishments": 15,
+      "workers": 83
+     },
+     "39_情報サービス業": {
+      "establishments": 11,
+      "workers": 77
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 3,
+      "workers": 3
+     },
+     "全産業": {
+      "establishments": 1856,
+      "workers": 24713
+     }
+    },
+    "尾張旭市": {
+     "code": "23226",
+     "G_情報通信業": {
+      "establishments": 15,
+      "workers": 120
+     },
+     "39_情報サービス業": {
+      "establishments": 8,
+      "workers": 27
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 3,
+      "workers": 6
+     },
+     "全産業": {
+      "establishments": 2485,
+      "workers": 23688
+     }
+    },
+    "高浜市": {
+     "code": "23227",
+     "G_情報通信業": {
+      "establishments": 3,
+      "workers": 11
+     },
+     "39_情報サービス業": {
+      "establishments": 1,
+      "workers": 1
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 1480,
+      "workers": 21945
+     }
+    },
+    "岩倉市": {
+     "code": "23228",
+     "G_情報通信業": {
+      "establishments": 9,
+      "workers": 33
+     },
+     "39_情報サービス業": {
+      "establishments": 8,
+      "workers": 27
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 1464,
+      "workers": 14538
+     }
+    },
+    "豊明市": {
+     "code": "23229",
+     "G_情報通信業": {
+      "establishments": 8,
+      "workers": 71
+     },
+     "39_情報サービス業": {
+      "establishments": 3,
+      "workers": 65
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 3,
+      "workers": 3
+     },
+     "全産業": {
+      "establishments": 2145,
+      "workers": 28656
+     }
+    },
+    "日進市": {
+     "code": "23230",
+     "G_情報通信業": {
+      "establishments": 23,
+      "workers": 378
+     },
+     "39_情報サービス業": {
+      "establishments": 11,
+      "workers": 354
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 4,
+      "workers": 4
+     },
+     "全産業": {
+      "establishments": 2593,
+      "workers": 30868
+     }
+    },
+    "田原市": {
+     "code": "23231",
+     "G_情報通信業": {
+      "establishments": 2,
+      "workers": 5
+     },
+     "39_情報サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 2230,
+      "workers": 30094
+     }
+    },
+    "愛西市": {
+     "code": "23232",
+     "G_情報通信業": {
+      "establishments": 7,
+      "workers": 58
+     },
+     "39_情報サービス業": {
+      "establishments": 6,
+      "workers": 56
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 1,
+      "workers": 2
+     },
+     "全産業": {
+      "establishments": 2012,
+      "workers": 17830
+     }
+    },
+    "清須市": {
+     "code": "23233",
+     "G_情報通信業": {
+      "establishments": 15,
+      "workers": 117
+     },
+     "39_情報サービス業": {
+      "establishments": 11,
+      "workers": 87
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 2517,
+      "workers": 28969
+     }
+    },
+    "北名古屋市": {
+     "code": "23234",
+     "G_情報通信業": {
+      "establishments": 17,
+      "workers": 277
+     },
+     "39_情報サービス業": {
+      "establishments": 10,
+      "workers": 176
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 1,
+      "workers": 1
+     },
+     "全産業": {
+      "establishments": 2947,
+      "workers": 32493
+     }
+    },
+    "弥富市": {
+     "code": "23235",
+     "G_情報通信業": {
+      "establishments": 7,
+      "workers": 35
+     },
+     "39_情報サービス業": {
+      "establishments": 7,
+      "workers": 35
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 1826,
+      "workers": 22293
+     }
+    },
+    "みよし市": {
+     "code": "23236",
+     "G_情報通信業": {
+      "establishments": 3,
+      "workers": 12
+     },
+     "39_情報サービス業": {
+      "establishments": 1,
+      "workers": 2
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 1798,
+      "workers": 33410
+     }
+    },
+    "あま市": {
+     "code": "23237",
+     "G_情報通信業": {
+      "establishments": 14,
+      "workers": 47
+     },
+     "39_情報サービス業": {
+      "establishments": 8,
+      "workers": 25
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 2,
+      "workers": 12
+     },
+     "全産業": {
+      "establishments": 2529,
+      "workers": 25499
+     }
+    },
+    "長久手市": {
+     "code": "23238",
+     "G_情報通信業": {
+      "establishments": 14,
+      "workers": 86
+     },
+     "39_情報サービス業": {
+      "establishments": 8,
+      "workers": 67
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 2,
+      "workers": 8
+     },
+     "全産業": {
+      "establishments": 1887,
+      "workers": 27217
+     }
+    },
+    "東郷町": {
+     "code": "23302",
+     "G_情報通信業": {
+      "establishments": 9,
+      "workers": 25
+     },
+     "39_情報サービス業": {
+      "establishments": 4,
+      "workers": 11
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 3,
+      "workers": 5
+     },
+     "全産業": {
+      "establishments": 1364,
+      "workers": 15421
+     }
+    },
+    "豊山町": {
+     "code": "23342",
+     "G_情報通信業": {
+      "establishments": 5,
+      "workers": 276
+     },
+     "39_情報サービス業": {
+      "establishments": 2,
+      "workers": 261
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 848,
+      "workers": 14417
+     }
+    },
+    "大口町": {
+     "code": "23361",
+     "G_情報通信業": {
+      "establishments": 1,
+      "workers": 1
+     },
+     "39_情報サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 873,
+      "workers": 27086
+     }
+    },
+    "扶桑町": {
+     "code": "23362",
+     "G_情報通信業": {
+      "establishments": 2,
+      "workers": 5
+     },
+     "39_情報サービス業": {
+      "establishments": 2,
+      "workers": 5
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 1011,
+      "workers": 9238
+     }
+    },
+    "大治町": {
+     "code": "23424",
+     "G_情報通信業": {
+      "establishments": 3,
+      "workers": 43
+     },
+     "39_情報サービス業": {
+      "establishments": 3,
+      "workers": 43
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 911,
+      "workers": 8613
+     }
+    },
+    "蟹江町": {
+     "code": "23425",
+     "G_情報通信業": {
+      "establishments": 10,
+      "workers": 14
+     },
+     "39_情報サービス業": {
+      "establishments": 6,
+      "workers": 9
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 1418,
+      "workers": 13688
+     }
+    },
+    "飛島村": {
+     "code": "23427",
+     "G_情報通信業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "39_情報サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 723,
+      "workers": 11606
+     }
+    },
+    "阿久比町": {
+     "code": "23441",
+     "G_情報通信業": {
+      "establishments": 5,
+      "workers": 8
+     },
+     "39_情報サービス業": {
+      "establishments": 1,
+      "workers": 2
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 3,
+      "workers": 4
+     },
+     "全産業": {
+      "establishments": 824,
+      "workers": 9697
+     }
+    },
+    "東浦町": {
+     "code": "23442",
+     "G_情報通信業": {
+      "establishments": 8,
+      "workers": 43
+     },
+     "39_情報サービス業": {
+      "establishments": 7,
+      "workers": 37
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 1366,
+      "workers": 17191
+     }
+    },
+    "南知多町": {
+     "code": "23445",
+     "G_情報通信業": {
+      "establishments": 2,
+      "workers": 3
+     },
+     "39_情報サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 1057,
+      "workers": 7045
+     }
+    },
+    "美浜町": {
+     "code": "23446",
+     "G_情報通信業": {
+      "establishments": 3,
+      "workers": 3
+     },
+     "39_情報サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 1,
+      "workers": 1
+     },
+     "全産業": {
+      "establishments": 847,
+      "workers": 8501
+     }
+    },
+    "武豊町": {
+     "code": "23447",
+     "G_情報通信業": {
+      "establishments": 2,
+      "workers": 2
+     },
+     "39_情報サービス業": {
+      "establishments": 1,
+      "workers": 1
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 1131,
+      "workers": 13918
+     }
+    },
+    "幸田町": {
+     "code": "23501",
+     "G_情報通信業": {
+      "establishments": 3,
+      "workers": 17
+     },
+     "39_情報サービス業": {
+      "establishments": 2,
+      "workers": 12
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 1,
+      "workers": 5
+     },
+     "全産業": {
+      "establishments": 1149,
+      "workers": 20163
+     }
+    },
+    "設楽町": {
+     "code": "23561",
+     "G_情報通信業": {
+      "establishments": 1,
+      "workers": 1
+     },
+     "39_情報サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 259,
+      "workers": 1675
+     }
+    },
+    "東栄町": {
+     "code": "23562",
+     "G_情報通信業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "39_情報サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 190,
+      "workers": 1064
+     }
+    },
+    "豊根村": {
+     "code": "23563",
+     "G_情報通信業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "39_情報サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": "-",
+      "workers": "-"
+     },
+     "全産業": {
+      "establishments": 72,
+      "workers": 496
+     }
+    }
+   }
+  }
+ },
+ "nagoya": [
+  {
+   "name": "東海ソフト株式会社",
+   "hq": "〒453-0014 名古屋市中村区則武二丁目16番1号（本社、アクセスのページ）",
+   "municipality": "名古屋市",
+   "town": "中村区則武",
+   "corporate_number": "1180001031538",
+   "houjin_honten": "愛知県名古屋市中村区則武２丁目１６番１号",
+   "employees": {
+    "value": 607,
+    "as_of": "単体607名（2026年5月期）、連結799名（2026年5月期）",
+    "source": "https://www.tokai-soft.co.jp/profile/outline"
+   },
+   "capital": {
+    "value": "8億2,658万円",
+    "source": "https://www.tokai-soft.co.jp/profile/outline"
+   },
+   "founded": 1970,
+   "business_summary": "1970年5月30日設立。東証スタンダード・名証プレミア上場（沿革）。東京支店・大阪支店",
+   "ai_initiative": "公式トップに AI の記載は見つからなかった（トップだけ確認）",
+   "url": "https://www.tokai-soft.co.jp/profile/outline",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "独立系。AiA の会員ではない。gBizINFO の厚生年金の被保険者 634人",
+   "category": "independent"
+  },
+  {
+   "name": "日本システム開発株式会社",
+   "hq": "〒450-0001 愛知県名古屋市中村区那古野1丁目47番1号 名古屋国際センタービル9F（【名古屋本社】。ほかに【東京本社】東京都新宿区西新宿2丁目1番1号）",
+   "municipality": "名古屋市",
+   "town": "中村区那古野",
+   "corporate_number": "5180001032012",
+   "houjin_honten": "愛知県名古屋市中村区",
+   "employees": {
+    "value": 514,
+    "as_of": "514名 ※正社員492名（2026年4月1日）",
+    "source": "https://www.nskint.co.jp/company/data/"
+   },
+   "capital": {
+    "value": "4,900万円（AiA の詳細ページ）",
+    "source": "https://www.nskint.co.jp/company/data/"
+   },
+   "founded": 1985,
+   "business_summary": "1985年8月10日設立。コンピュータソフトウェアの設計および開発（ISO の範囲）。西日本支社（松江市）・岐阜営業所",
+   "ai_initiative": "事業に「AIソリューション」（ナンバープレート検知AI、映像解析AI「人数カウントHEAD」「人数カウントBODY」などのエッジAI）、「生成AIセミナー」のページ https://www.nskint.co.jp/business/ai_solution/",
+   "url": "https://www.nskint.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "独立系。名古屋本社と東京本社の2本社。gBizINFO 514人。徳島市の日本システム開発株式会社（jsdnet.co.jp、徳島の記事で使用）・奈良県大和郡山市の同名の会社とは別",
+   "category": "independent"
+  },
+  {
+   "name": "株式会社ソフトテックス",
+   "hq": "〒464-0850 名古屋市千種区今池五丁目1番5号 名古屋センタープラザビル4F",
+   "municipality": "名古屋市",
+   "town": "千種区今池",
+   "corporate_number": "4180001004425",
+   "houjin_honten": "愛知県名古屋市千種区",
+   "employees": {
+    "value": 355,
+    "as_of": "355名(2026年4月現在)",
+    "source": "https://www.softtex.co.jp/company/summary"
+   },
+   "capital": {
+    "value": "1億9,230万円(2026年4月現在)",
+    "source": "https://www.softtex.co.jp/company/summary"
+   },
+   "founded": 1984,
+   "business_summary": "1984年2月1日設立。売上36.4億円(2026年3月実績)。ITシステム及びソフトウェアの開発・構築・運用・保守・販売、医療ITソフトウェアの販売・導入及び運用サポート",
+   "ai_initiative": "公式トップに AI の記載は見つからなかった（トップだけ確認）",
+   "url": "https://www.softtex.co.jp/company/summary",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "独立系。労働者派遣の許可あり。gBizINFO 360人",
+   "category": "independent"
+  },
+  {
+   "name": "株式会社ネオ",
+   "hq": "〒450-0003 名古屋市中村区名駅南2-14-19 住友生命名古屋ビル25階",
+   "municipality": "名古屋市",
+   "town": "中村区名駅南",
+   "corporate_number": "9180001032198",
+   "houjin_honten": "愛知県名古屋市中村区",
+   "employees": {
+    "value": 340,
+    "as_of": "340名（2026年4月期）",
+    "source": "https://www.neo-s.jp/company/profile/"
+   },
+   "capital": {
+    "value": "4,700万円（AiA）",
+    "source": "https://www.neo-s.jp/company/profile/"
+   },
+   "founded": 1991,
+   "business_summary": "各種業務システム（Web から制御・組込系まで）、住宅CAD/CAM関連事業（関西）。関西支店・東京支店",
+   "ai_initiative": "公式トップに AI の記載は見つからなかった（トップだけ確認）",
+   "url": "https://www.neo-s.jp/company/profile/",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "独立系。gBizINFO 336人。山梨の株式会社ネオシステム（甲府市）とは別",
+   "category": "independent"
+  },
+  {
+   "name": "株式会社ピコ・ナレッジ",
+   "hq": "〒450-0003 名古屋市中村区名駅南一丁目19番29号",
+   "municipality": "名古屋市",
+   "town": "中村区名駅南",
+   "corporate_number": "4180001017039",
+   "houjin_honten": "愛知県名古屋市中村区",
+   "employees": {
+    "value": 292,
+    "as_of": "計292名(男性:225名 女性:67名 平均年齢:38.5歳) 2026年10月1日現在",
+    "source": "http://www.pico.co.jp/about/"
+   },
+   "capital": {
+    "value": "払込資本金 4,600万円",
+    "source": "http://www.pico.co.jp/about/"
+   },
+   "founded": 1990,
+   "business_summary": "平成2年10月12日設立。東京支社・三重支店",
+   "ai_initiative": "公式トップに AI の記載は見つからなかった（トップだけ確認）",
+   "url": "http://www.pico.co.jp/about/",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "独立系。gBizINFO 297人",
+   "category": "independent"
+  },
+  {
+   "name": "株式会社トヨタシステムズ",
+   "hq": "名古屋本社 〒450-6332 名古屋市中村区名駅1-1-1 JPタワー名古屋32F（ほかに東京本社 〒108-0075 東京都港区港南1-8-23）",
+   "municipality": "名古屋市",
+   "town": "中村区名駅",
+   "corporate_number": "4180001017641",
+   "houjin_honten": "愛知県名古屋市東区泉１丁目２３番２２号（平成31年1月1日にトヨタデジタルクルーズ・トヨタケーラムを合併）",
+   "employees": {
+    "value": 3549,
+    "as_of": "3,549人（2026年4月1日時点 派遣社員含む）",
+    "source": "https://www.toyotasystems.com/company/outline/"
+   },
+   "capital": {
+    "value": "54.5億円",
+    "source": "https://www.toyotasystems.com/company/outline/"
+   },
+   "founded": 2019,
+   "business_summary": "2019年1月1日設立",
+   "ai_initiative": "製品・サービスの分類に「AI・画像処理」（WebFetch の要約）",
+   "url": "https://www.toyotasystems.com/company/outline/",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "大手グループ。会社概要は WebFetch の要約で確認（curl では中身が取れない）。公式の本社（中村区）と登記の本店（東区）は区が違うが同じ名古屋市。gBizINFO 2,820人（中村区の事業所）",
+   "parent_group": "トヨタ自動車株式会社 100%（WebFetch の要約）",
+   "category": "major_group"
+  },
+  {
+   "name": "株式会社中電シーティーアイ",
+   "hq": "[本社] 〒461-0005 名古屋市東区東桜一丁目1番1号 アーバンネット名古屋ネクスタビル（事業所一覧）",
+   "municipality": "名古屋市",
+   "town": "東区東桜",
+   "corporate_number": "5180001035980",
+   "houjin_honten": "愛知県名古屋市中区正木１丁目４番６号",
+   "employees": {
+    "value": 1370,
+    "as_of": "1,370名（2026年6月1日現在）",
+    "source": "https://www.cti.co.jp/company/outline/"
+   },
+   "capital": {
+    "value": "1億円",
+    "source": "https://www.cti.co.jp/company/outline/"
+   },
+   "founded": 2003,
+   "business_summary": "2003年10月1日設立（合併）。年商763億円（2025年度）。アプリケーション開発保守、インフラセキュリティ、解析、IT運用",
+   "ai_initiative": "公式トップに AI の記載は見つからなかった（トップだけ確認）",
+   "url": "https://www.cti.co.jp/company/location/",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "大手グループ。登記の本店は中区正木（正木ビルの事業所）。gBizINFO 1,372人。広島県の companies.md に名前が出る（広島の拠点の話）",
+   "parent_group": "出資会社 中部電力株式会社",
+   "category": "major_group"
+  },
+  {
+   "name": "株式会社NTTデータ東海",
+   "hq": "愛知県名古屋市中区錦二丁目17番21号",
+   "municipality": "名古屋市",
+   "town": "中区錦",
+   "corporate_number": "4180001038539",
+   "houjin_honten": "愛知県名古屋市中区錦",
+   "employees": {
+    "value": 577,
+    "as_of": "社員数577名（2026年3月31日現在）",
+    "source": "https://www.nttdata-tokai.co.jp/company/outline.html"
+   },
+   "capital": {
+    "value": "1億円",
+    "source": "https://www.nttdata-tokai.co.jp/company/outline.html"
+   },
+   "founded": 2003,
+   "business_summary": "創立2003年7月1日。各種情報システム、それに係わるソフトウェアの開発、保守の受託、販売並びに賃貸",
+   "ai_initiative": "トップに「生成AI・データ活用・システム連携の最新動向を紹介」の展示会（11月18日）の告知 https://www.nttdata-tokai.co.jp/",
+   "url": "https://www.nttdata-tokai.co.jp/company/outline.html",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "大手グループ。gBizINFO 575人。岐阜の companies.md では「県外本社の支店」として名前が出る",
+   "parent_group": "株式会社ＮＴＴデータ(100%)",
+   "category": "major_group"
+  },
+  {
+   "name": "ジェイアール東海情報システム株式会社",
+   "hq": "「本社/名古屋」（会社概要。番地の記載なし）",
+   "municipality": "名古屋市",
+   "town": "中村区名駅（登記）",
+   "corporate_number": "9180001047717",
+   "houjin_honten": "愛知県名古屋市中村区名駅４丁目４番１０号",
+   "employees": {
+    "value": 514,
+    "as_of": "514名（2026年4月現在）",
+    "source": "https://www.jtis.co.jp/company/"
+   },
+   "capital": {
+    "value": "1億円",
+    "source": "https://www.jtis.co.jp/company/"
+   },
+   "founded": 1999,
+   "business_summary": "1999年2月1日設立。売上高410億円（2025年度）。JR東海及びグループ各社の情報システムの計画・構築・運用等",
+   "ai_initiative": "公式トップに AI の記載は見つからなかった（トップだけ確認）",
+   "url": "https://www.jtis.co.jp/company/",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "大手グループ。グループ内向けの事業。公式に本社の番地がない。gBizINFO 445人",
+   "parent_group": "東海旅客鉄道株式会社 100%出資",
+   "category": "major_group"
+  },
+  {
+   "name": "株式会社デンソークリエイト",
+   "hq": "〒460-0003 名古屋市中区錦2丁目14番19号 名古屋伏見Kスクエア",
+   "municipality": "名古屋市",
+   "town": "中区錦",
+   "corporate_number": "6180001039378",
+   "houjin_honten": "愛知県名古屋市中区錦２丁目１４番１９号",
+   "employees": {
+    "value": 314,
+    "as_of": "314名（2026年4月1日現在）",
+    "source": "https://www.denso-create.jp/company/overview.html"
+   },
+   "capital": {
+    "value": "9500万円",
+    "source": "https://www.denso-create.jp/company/overview.html"
+   },
+   "founded": 1991,
+   "business_summary": "1991年2月14日設立",
+   "ai_initiative": "公式トップに AI の記載は見つからなかった（トップだけ確認）",
+   "url": "https://www.denso-create.jp/company/overview.html",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "大手グループ。gBizINFO 315人",
+   "parent_group": "株主 株式会社デンソー",
+   "category": "major_group"
+  }
+ ],
+ "toyohashi": [
+  {
+   "name": "モアシステム株式会社",
+   "hq": "〒440-0814 愛知県豊橋市前田町二丁目13-1",
+   "municipality": "豊橋市",
+   "town": "前田町",
+   "corporate_number": "5180301007408",
+   "houjin_honten": "愛知県豊橋市",
+   "employees": {
+    "value": 69,
+    "as_of": "69名（2026年4月：豊橋/名古屋）",
+    "source": "http://www.moasystem.co.jp/about/"
+   },
+   "capital": null,
+   "founded": null,
+   "business_summary": "豊橋本社ビル（2019年完成）・名古屋オフィス。新卒の勤務地に「メーカー、全国主要都市の病院など」への出張",
+   "ai_initiative": "公式トップに AI の記載は見つからなかった（トップだけ確認）",
+   "url": "http://www.moasystem.co.jp/about/",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "AiA の会員。gBizINFO 70人"
+  }
+ ],
+ "okazaki": [
+  {
+   "name": "株式会社MCOR",
+   "hq": "〒444-0951 愛知県岡崎市北野町字二番訳124番地1",
+   "municipality": "岡崎市",
+   "town": "北野町",
+   "corporate_number": "2180301000456",
+   "houjin_honten": "愛知県岡崎市",
+   "employees": {
+    "value": 321,
+    "as_of": "321名(2026年4月1日現在）",
+    "source": "https://www.mcor.co.jp/mcor_corp/company/overview?id=cont04"
+   },
+   "capital": {
+    "value": "1.65億円",
+    "source": "https://www.mcor.co.jp/mcor_corp/company/overview?id=cont04"
+   },
+   "founded": 1989,
+   "business_summary": "1989年6月19日設立。CAD/PLM（シーメンスとパートナー契約）・システム開発。東京オフィス・名古屋オフィス",
+   "ai_initiative": "公式トップに AI の記載は見つからなかった（トップだけ確認）",
+   "url": "https://www.mcor.co.jp/mcor_corp/company/overview?id=cont04",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "三菱自動車工業の乗用車技術センター内で設立。主要取引先に三菱自動車工業・三菱ふそう・SUBARU・スズキ。AiA の会員。gBizINFO 325人",
+   "parent_group": "CDS株式会社（100％出資。2005年12月に三菱自動車工業から変更、沿革）"
+  }
+ ],
+ "ichinomiya": [],
+ "seto": [],
+ "handa": [],
+ "kasugai": [],
+ "toyokawa": [],
+ "tsushima-city": [],
+ "hekinan": [],
+ "kariya": [
+  {
+   "name": "株式会社豊田自動織機ITソリューションズ",
+   "hq": "〒448-0841 愛知県刈谷市南桜町1-72-1 アルバックスタワー刈谷駅前アカリヤ",
+   "municipality": "刈谷市",
+   "town": "南桜町",
+   "corporate_number": "5180301014305",
+   "houjin_honten": "愛知県刈谷市",
+   "employees": {
+    "value": 496,
+    "as_of": "496名（2026年4月現在）",
+    "source": "https://www.tiis.global/company/information"
+   },
+   "capital": {
+    "value": "1億円",
+    "source": "https://www.tiis.global/company/information"
+   },
+   "founded": 1991,
+   "business_summary": "1991年2月8日設立。売上292億円（2026年3月期）。豊田自動織機のSIer事業、ITインフラ構築事業、製品組込み開発事業、ソリューション開発事業",
+   "ai_initiative": "確かめていない",
+   "url": "https://www.tiis.global/company/information",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "大手グループ。公式 URL は WebSearch の結果（比較サイト）で知り、公式で確認。gBizINFO 489人",
+   "parent_group": "株式会社豊田自動織機100％出資"
+  },
+  {
+   "name": "株式会社ロジエンス",
+   "hq": "〒448-0802 愛知県刈谷市末広町2丁目3番13（WebFetch）",
+   "municipality": "刈谷市",
+   "town": "末広町",
+   "corporate_number": "1180301026460",
+   "houjin_honten": "愛知県刈谷市",
+   "employees": {
+    "value": 189,
+    "as_of": "189名（2026年4月現在）",
+    "source": "https://www.logiens.co.jp/company/greeting/"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.logiens.co.jp/company/greeting/"
+   },
+   "founded": 2014,
+   "business_summary": "2014年2月4日設立。物流に関わる自動倉庫のシステム開発からアフターサービスまで（システム開発・保守、物流設備施工、アフターサービス）",
+   "ai_initiative": "確かめていない",
+   "url": "https://www.logiens.co.jp/company/greeting/",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "AiA の会員。gBizINFO 190人",
+   "boundary": "物流設備の施工・保守を含む"
+  }
+ ],
+ "toyota": [],
+ "anjo": [],
+ "nishio": [],
+ "gamagori": [],
+ "inuyama": [],
+ "tokoname": [],
+ "konan-city": [],
+ "komaki": [],
+ "inazawa": [],
+ "shinshiro": [],
+ "tokai-city": [],
+ "obu": [
+  {
+   "name": "アイサンコンピュータサービス株式会社",
+   "hq": "〒474-8580 愛知県大府市共栄町７丁目３−３",
+   "municipality": "大府市",
+   "town": "共栄町",
+   "corporate_number": "9180001092374",
+   "houjin_honten": "愛知県大府市",
+   "employees": {
+    "value": 74,
+    "as_of": "74名（パートナー含む）（2026年8月現在）",
+    "source": "https://www.aisan-cs.co.jp/company/"
+   },
+   "capital": null,
+   "founded": null,
+   "business_summary": "2007年に現在地に本社を移転",
+   "ai_initiative": "公式トップに AI の記載は見つからなかった（トップだけ確認）",
+   "url": "https://www.aisan-cs.co.jp/company/",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "人数にパートナー（社外）を含む。AiA の会員。gBizINFO 56人"
+  }
+ ],
+ "chita": [],
+ "chiryu": [],
+ "owariasahi": [],
+ "takahama-city": [],
+ "iwakura": [],
+ "toyoake": [],
+ "nisshin": [],
+ "tahara": [],
+ "aisai": [],
+ "kiyosu": [],
+ "kitanagoya": [],
+ "yatomi": [],
+ "miyoshi-city": [],
+ "ama-city": [],
+ "nagakute": [],
+ "togo": [],
+ "toyoyama": [],
+ "oguchi": [],
+ "fuso": [],
+ "oharu": [],
+ "kanie": [],
+ "agui": [],
+ "higashiura": [
+  {
+   "name": "エスツーアイ株式会社",
+   "hq": "《本社》愛知県知多郡東浦町大字緒川字屋敷壱区34番地（AiA の住所は32番地）",
+   "municipality": "東浦町",
+   "town": "緒川",
+   "corporate_number": "4180001093385",
+   "houjin_honten": "愛知県知多郡東浦町",
+   "employees": {
+    "value": 142,
+    "as_of": "142名(2026年4月現在)",
+    "source": "https://www.s2-i.co.jp/"
+   },
+   "capital": {
+    "value": "グループ合計資本金 1億6千万円",
+    "source": "https://www.s2-i.co.jp/"
+   },
+   "founded": 2002,
+   "business_summary": "2002年1月設立。自動車部品製造業向け情報化サービス事業全般（生産管理、原価管理、生産準備、会計業務のシステム）",
+   "ai_initiative": "確かめていない",
+   "url": "https://www.s2-i.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "グループに村瀬電気株式会社・東洋人材センター株式会社など。人数が単体かグループかは書かれていない。gBizINFO 142人"
+  }
+ ],
+ "minamichita": [],
+ "mihama-town-aichi": [],
+ "taketoyo": [],
+ "kota": [],
+ "shitara": [],
+ "toei": [],
+ "tobishima": [],
+ "toyone": [],
+ "_reference": {
+  "nagoya": {
+   "next_candidates": [
+    {
+     "name": "トーテックアメニティ株式会社",
+     "hq": "〒451-0045 名古屋市西区名駅二丁目27番8号（本社（名古屋）。ほかに東京本社）",
+     "corporate_number": "7180001038759",
+     "employees": {
+      "value": 3186,
+      "as_of": "3,186名（2026年4月1日現在）",
+      "source": "http://www.totec.jp/company/outline.html"
+     },
+     "boundary": "技術者派遣・設計・電気通信工事・医療機器など多角（許認可に労働者派遣・建設業〔電気工事〕・医療機器製造業）",
+     "notes": "売上387億円（2026年3月期）。令和8年4月1日にブール・ジャパン（新宿区）を合併。gBizINFO 3,217人"
+    },
+    {
+     "name": "株式会社第一システムエンジニアリング",
+     "hq": "〒460-0008 名古屋市中区栄二丁目1番1号 日土地名古屋ビル6階",
+     "corporate_number": "4180001037615",
+     "employees": {
+      "value": 665,
+      "as_of": "665名（2026年4月現在）",
+      "source": "https://www.dse-corp.co.jp/company/companyinfo/"
+     },
+     "boundary": "航空宇宙・自動車・産業機器の設計の技術者が中心",
+     "notes": "第一コンピュータリソースが設立（同社の沿革）。独立系と書かない"
+    },
+    {
+     "name": "株式会社エクシード",
+     "hq": "名古屋市中区金山一丁目12番14号 金山総合ビル3階",
+     "corporate_number": "5180001006131",
+     "employees": {
+      "value": 355,
+      "as_of": "355名（2026年4月）",
+      "source": "http://www.i-exceed.jp/company/outline/"
+     },
+     "boundary": "開発設計専門会社（ソフトウェア開発、電子・電気設計、機械設計）",
+     "notes": "刈谷・安城・福岡に事業所"
+    },
+    {
+     "name": "株式会社第一コンピュータリソース",
+     "hq": "〒460-0003 名古屋市中区錦",
+     "corporate_number": "3180001037608",
+     "employees": {
+      "value": 650,
+      "as_of": "650名（グループ全体：約1,700名）時点の記載なし",
+      "source": "https://www.dcr.co.jp/company/overview/"
+     },
+     "notes": "時点がないので次点"
+    },
+    {
+     "name": "株式会社メイテツコム",
+     "hq": "〒450-0003 名古屋市中村区名駅南一丁目21番12号 名鉄協商コンピュータビル",
+     "corporate_number": "3180001018442",
+     "employees": {
+      "value": 433,
+      "as_of": "433名（時点の記載なし）",
+      "source": "https://www.meitetsucom.co.jp/?page_id=74"
+     },
+     "notes": "株主は公式で確かめていない"
+    },
+    {
+     "name": "岡谷システム株式会社",
+     "hq": "〒460-0008 名古屋市中区栄二丁目4番18号 岡谷鋼機ビルディング3階",
+     "corporate_number": "5180001034966",
+     "employees": {
+      "value": 302,
+      "as_of": "302名（令和8年2月末）",
+      "source": "https://www.okaya-system.co.jp/company/about/"
+     },
+     "notes": "岡谷鋼機のグループ（沿革）。大手グループの6位。gBizINFO 193人"
+    },
+    {
+     "name": "東邦ガス情報システム株式会社",
+     "hq": "〒456-0004 名古屋市熱田区桜田町19番18号（東邦ガス本社構内）",
+     "corporate_number": "7180001022382",
+     "employees": {
+      "value": 277,
+      "as_of": "計277人（2026年4月1日現在）",
+      "source": "http://www.togis.co.jp/company/index.html"
+     },
+     "notes": "東邦ガスのグループ。大手グループの7位"
+    },
+    {
+     "name": "株式会社ヴィッツ",
+     "hq": "〒460-0004 名古屋市中区新栄町1-1 明治安田生命名古屋ビル 12F",
+     "corporate_number": "9180001045035",
+     "employees": {
+      "value": null,
+      "as_of": "公式に人数なし（採用「社員数200人規模の上場企業」）",
+      "source": "https://www.witz-inc.co.jp/company/overview"
+     },
+     "boundary": "組込み"
+    }
+   ],
+   "unverified": [
+    "株式会社豊通シスコム（中村区、8180001134862。gBizINFO 391人。www.toyotsu-syscom.co.jp は名前解決できず）",
+    "ナカシャクリエイテブ（天白区、501人）・株式会社メイケイ（西区、375人）・ＮＴＰシステム（熱田区、302人）・オープンセサミ・テクノロジー（中村区、216人）・アクティス・ジャパン（中区、191人）・アイサンテクノロジー（中区、189人）・シーアンドエス（中村区、184人）など AiA 会員（数字は gBizINFO の被保険者）",
+    "日鉄ソリューションズ中部株式会社（9180001094206。登記は西区、厚生年金の事業所は東海市東海町 305人）"
+   ],
+   "excluded": [
+    "キムラユニティー株式会社（AiA の会員名は IS事業部。gBizINFO 3,722人は会社全体）",
+    "萩原電気ホールディングス株式会社（持株会社。771人）",
+    "県外本社の名古屋の支社・事業所（_outside_hq）"
+   ]
+  },
+  "kariya": {
+   "next_candidates": [
+    {
+     "name": "アイチ情報システム株式会社",
+     "hq": "〒448-0852 愛知県刈谷市住吉町 3丁目5番地（愛知製鋼(株) 本社ビル3F）",
+     "corporate_number": "8180301013659",
+     "employees": {
+      "value": 218,
+      "as_of": "218名（時点の記載なし）",
+      "source": "https://www.asc21.net/company/"
+     },
+     "notes": "主要株主 愛知製鋼株式会社 他。1973年7月設立、資本金8,000万円"
+    },
+    {
+     "name": "デンソーテクノ株式会社",
+     "hq": "〒474-0025 愛知県大府市中央町2-188（公式の本社）",
+     "corporate_number": "6180301017380",
+     "houjin_honten": "愛知県刈谷市大正町１丁目７１４",
+     "employees": {
+      "value": 3486,
+      "as_of": "3,486名（2026年4月現在）",
+      "source": "https://www.densotechno.co.jp/corporate/outline/"
+     },
+     "boundary": "組込み・電子設計",
+     "notes": "公式の本社（大府市）と登記の本店（刈谷市）が違うので本表に入れない。デンソーのグループ"
+    }
+   ],
+   "unverified": [
+    "アイシン・ソフトウェア株式会社（相生町、7180301013635。gBizINFO 1,001人。公式サイトを見つけられず）"
+   ],
+   "excluded": [
+    "株式会社キャッチネットワーク（ケーブルテレビ）"
+   ]
+  },
+  "okazaki": {
+   "next_candidates": [
+    {
+     "name": "ベルエアーシステムズ株式会社",
+     "corporate_number": "9180301002173",
+     "employees": {
+      "value": 88,
+      "as_of": "社員数 88名（時点なし）",
+      "source": "https://belairsystems.jp/"
+     }
+    },
+    {
+     "name": "株式会社セントラルソフトサービス",
+     "hq": "〒444-0864 愛知県岡崎市明大寺町字河原25番地1",
+     "corporate_number": "7180301001251",
+     "employees": {
+      "value": 27,
+      "as_of": "社員数 27名（時点なし）",
+      "source": "https://www.css-snet.co.jp/company/"
+     }
+    }
+   ],
+   "unverified": [
+    "株式会社岡崎情報開発センター（4180301000355、AiA 会員）"
+   ]
+  },
+  "toyohashi": {
+   "unverified": [
+    "株式会社ヒミカ（9180301006884。公式に人数なし。gBizINFO 128人）",
+    "株式会社システムクリエイト（9180301005787。病院向けとみられる。人数未確認）",
+    "株式会社システムハウス・株式会社ブレインシティ・バグースシステム株式会社（公式の13名は平成28年時点）"
+   ],
+   "excluded": [
+    "豊橋ケーブルネットワーク株式会社（ケーブルテレビ）"
+   ]
+  },
+  "nisshin": {
+   "next_candidates": [
+    {
+     "name": "トヨタ情報システム愛知株式会社",
+     "hq": "愛知県日進市浅田平子三丁目330番地（公式の本社）",
+     "corporate_number": "7180001008951",
+     "houjin_honten": "名古屋市昭和区（愛知県 CSV）",
+     "employees": {
+      "value": 421,
+      "as_of": "社員数421名（2026年4月現在）",
+      "source": "https://www.tisa.co.jp/company/overview"
+     },
+     "notes": "登記の本店が名古屋市昭和区なので次点"
+    }
+   ],
+   "unverified": [
+    "AIX CORE株式会社（4180001067397、AiA 会員）"
+   ]
+  },
+  "ichinomiya": {
+   "next_candidates": [
+    {
+     "name": "株式会社メイギテクニカ",
+     "hq": "〒491-0912 愛知県一宮市新生1-5-15",
+     "corporate_number": "1180001084718",
+     "employees": {
+      "value": 95,
+      "as_of": "社員数 95名（時点なし）",
+      "source": "http://www.meigi.co.jp/"
+     }
+    }
+   ]
+  },
+  "ama-city": {
+   "next_candidates": [
+    {
+     "name": "株式会社シーエスイー",
+     "hq": "〒490-1111 愛知県あま市甚目寺山之浦119-3",
+     "corporate_number": "2180001097909",
+     "employees": {
+      "value": 240,
+      "as_of": "正社員数 240名（役員含む）時点なし",
+      "source": "http://www.cseinfo.co.jp/company/overview/"
+     }
+    }
+   ]
+  },
+  "obu": {
+   "next_candidates": [
+    "デンソーテクノ株式会社（公式の本社は大府市、登記は刈谷市。kariya の next_candidates）"
+   ]
+  },
+  "toyota": {
+   "unverified": [
+    "トヨタテクニカルディベロップメント株式会社（7180301018923。gBizINFO 1,056人。境界: 技術サービス）",
+    "スマートインプリメント株式会社（2180001072770。AiA 会員。gBizINFO 308人。公式は JavaScript で読めず）",
+    "株式会社クラスキャド"
+   ],
+   "excluded": [
+    "ひまわりネットワーク株式会社（ケーブルテレビ）"
+   ]
+  },
+  "anjo": {
+   "unverified": [
+    "株式会社アイシン・デジタルエンジニアリング（8180301012702。gBizINFO 158人）"
+   ],
+   "excluded": [
+    "株式会社デンソーエアシステムズ（空調機器の製造）"
+   ]
+  },
+  "kasugai": {
+   "unverified": [
+    "アリッツ株式会社（公式【本社】春日井市高蔵寺町3-2-11 PRIMA高蔵寺407、6180001124246。人数未確認）"
+   ]
+  },
+  "tokai-city": {
+   "unverified": [
+    "日鉄ソリューションズ中部（事業所は東海市、登記は名古屋市西区）",
+    "株式会社エデン（AiA 会員）"
+   ],
+   "excluded": [
+    "知多メディアスネットワーク株式会社（ケーブルテレビ）"
+   ]
+  },
+  "agui": {
+   "excluded": [
+    "株式会社デンソーウェーブ（gBizINFO 1,183人。自動認識機器・産業用ロボットの会社とみられる。公式未確認）"
+   ]
+  },
+  "_outside_hq": [
+   {
+    "name": "旭情報サービス株式会社 名古屋オフィス",
+    "aichi_site": "名古屋市中区錦",
+    "source": "https://www.aia.or.jp/membersearch/"
+   },
+   {
+    "name": "株式会社オービックビジネスコンサルタント 名古屋支店",
+    "aichi_site": "名古屋市中村区名駅（JPタワー名古屋）",
+    "source": "https://www.aia.or.jp/membersearch/"
+   },
+   {
+    "name": "TISソリューションリンク株式会社 名古屋事業所",
+    "aichi_site": "名古屋市西区牛島町",
+    "source": "https://www.aia.or.jp/membersearch/"
+   },
+   {
+    "name": "ＴＩＳＩ株式会社 名古屋本社（会員名。愛知県の CSV に商号なし）",
+    "aichi_site": "名古屋市西区牛島町",
+    "source": "https://www.aia.or.jp/membersearch/"
+   },
+   {
+    "name": "株式会社富士通ラーニングメディア 中部事業所",
+    "aichi_site": "名古屋市中区錦",
+    "source": "https://www.aia.or.jp/membersearch/"
+   },
+   {
+    "name": "株式会社インフォメーション・ディベロプメント 中部事業部",
+    "aichi_site": "名古屋市中村区名駅",
+    "source": "https://www.aia.or.jp/membersearch/"
+   },
+   {
+    "name": "株式会社エヌアイデイ 中部事業所",
+    "aichi_site": "名古屋市中区丸の内",
+    "source": "https://www.aia.or.jp/membersearch/"
+   },
+   {
+    "name": "株式会社DTS WEST 名古屋オフィス",
+    "aichi_site": "名古屋市西区名駅",
+    "source": "https://www.aia.or.jp/membersearch/"
+   },
+   {
+    "name": "勤次郎株式会社 名古屋本部",
+    "aichi_site": "名古屋市中村区名駅南",
+    "source": "https://www.aia.or.jp/membersearch/"
+   },
+   {
+    "name": "バルテス株式会社 名古屋オフィス",
+    "aichi_site": "名古屋市中区丸の内",
+    "source": "https://www.aia.or.jp/membersearch/"
+   },
+   {
+    "name": "アイテック阪急阪神株式会社 中部支社",
+    "aichi_site": "名古屋市中村区名駅南",
+    "source": "https://www.aia.or.jp/membersearch/"
+   },
+   {
+    "name": "シンポー情報システム株式会社 中部事業部",
+    "aichi_site": "名古屋市中村区名駅",
+    "source": "https://www.aia.or.jp/membersearch/"
+   },
+   {
+    "name": "鈴与シンワート株式会社 名古屋システムセンター",
+    "aichi_site": "名古屋市中区錦",
+    "source": "https://www.aia.or.jp/membersearch/"
+   },
+   {
+    "name": "株式会社ミックウェア 名古屋オフィス",
+    "aichi_site": "名古屋市中村区名駅",
+    "source": "https://www.aia.or.jp/membersearch/"
+   },
+   {
+    "name": "株式会社BREXA Technology 名古屋支店",
+    "aichi_site": "名古屋市中村区名駅",
+    "source": "https://www.aia.or.jp/membersearch/"
+   }
+  ],
+  "_factories": [
+   {
+    "municipality": "田原市",
+    "company": "トヨタ自動車株式会社",
+    "site": "田原工場",
+    "address": "公式の国内工場の表に住所なし",
+    "official": "完成年月「1979.1」、生産品目「ランドクルーザー250、4Runner、GX、LS、IS、LM、センチュリー、エンジン」",
+    "stats": "輸送用機械器具 9所・13,335人（mfg2025）",
+    "source": "https://global.toyota/jp/company/profile/facilities/manufacturing-worldwide/japan.html"
+   },
+   {
+    "municipality": "名古屋市港区",
+    "company": "三菱重工業株式会社",
+    "site": "名古屋航空宇宙システム製作所 大江工場",
+    "address": "〒455-8515 愛知県名古屋市港区大江町10番地",
+    "official": "総合管理部門、設計・研究部門、航空・宇宙の部品製作",
+    "stats": "港区の輸送用機械器具 84所・4,986人（ec_6_1）",
+    "source": "https://www.mhi.com/jp/company/location/nagoyaaerow"
+   },
+   {
+    "municipality": "飛島村",
+    "company": "三菱重工業株式会社",
+    "site": "名古屋航空宇宙システム製作所 飛島工場",
+    "address": "〒490-1445 愛知県海部郡飛島村金岡5番地",
+    "official": "宇宙機器の製作、航空機の部分構造組立",
+    "stats": "輸送用機械 17所・555人（ec_6_1）",
+    "source": "https://www.mhi.com/jp/company/location/nagoyaaerow"
+   },
+   {
+    "municipality": "豊山町",
+    "company": "三菱重工業株式会社",
+    "site": "名古屋航空宇宙システム製作所 小牧南工場",
+    "address": "〒480-0293 愛知県西春日井郡豊山町大字豊場1番地",
+    "official": "航空機の最終組立・艤装、航空機の修理、航空機の飛行試験、顧客支援（工場名は小牧南、所在は豊山町）",
+    "stats": "輸送用機械 10所・3,307人（ec_6_1）",
+    "source": "https://www.mhi.com/jp/company/location/nagoyaaerow"
+   },
+   {
+    "municipality": "東海市",
+    "company": "日本製鉄株式会社",
+    "site": "名古屋製鉄所",
+    "address": "〒476-8686 愛知県東海市東海町5丁目3番地（WebFetch）",
+    "official": "製鉄所の名前は名古屋だが所在は東海市",
+    "stats": "鉄鋼業 49所・10,380人（mfg2025）",
+    "source": "https://www.nipponsteel.com/works/nagoya/access/"
+   },
+   {
+    "municipality": "知多市",
+    "company": "出光興産株式会社",
+    "site": "愛知事業所",
+    "address": "〒478-8555 愛知県知多市南浜町11番地（WebFetch）",
+    "official": "「製油所・事業所・生産技術センター」の見出しの下。ページでは「製油所」と書かれていない",
+    "stats": "石油製品 1所・490人・X（mfg2025）",
+    "source": "https://www.idemitsu.com/jp/company/network/"
+   },
+   {
+    "municipality": "刈谷市",
+    "company": "株式会社ジェイテクト",
+    "site": "本社・刈谷工場・東刈谷事業場",
+    "address": "〒448-8652 愛知県刈谷市朝日町一丁目1番地（本社・刈谷工場）",
+    "official": "刈谷工場「生産品目: 工作機械、制御機器、機械加工部品」、東刈谷事業場「研究、ソフトウェア開発」",
+    "stats": "工作機械は生産用機械で、stats.md の「はん用機械」とは中分類が違う",
+    "source": "https://www.jtekt.co.jp/company/japan.html"
+   },
+   {
+    "municipality": "安城市・幸田町",
+    "company": "未確認（デンソーの国内拠点のページは 403）",
+    "site": "—",
+    "address": "—",
+    "official": "—",
+    "stats": "電気機械・電子部品",
+    "source": "https://www.denso.com/jp/ja/about-us/company-information/global-network/japan/"
+   }
+  ]
+ },
+ "_notes": [
+  "会社の所在地は横浜なので記事で「名古屋の会社」と書かない（当社の話）",
+  "統計の値（情報サービス業・工場の業種）を特定の会社の値と読める書き方をしない",
+  "大手グループの情報子会社は親会社向けの事業が中心のことが多い。中小企業の相談先として書かない",
+  "公式の本社と登記の本店が違う会社: トヨタ情報システム愛知（日進市/名古屋市昭和区）・デンソーテクノ（大府市/刈谷市）は次点。トヨタシステムズ（中村区/東区）・中電シーティーアイ（東区/中区）は区だけ違う",
+  "他県の記事・data/area で使っている会社はなかった（同名の別会社: 徳島の日本システム開発、山梨のネオシステム）"
+ ]
+}
