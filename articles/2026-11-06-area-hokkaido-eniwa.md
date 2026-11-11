@@ -104,6 +104,8 @@ excerpt: 恵庭市のAI導入は、市内の民営事業所で働く人の11.6%�
 
 恵庭市独自のAI・IT導入の補助金は、恵庭市の公式ページでは確かめられませんでした（2026年11月5日確認）。恵庭市の商業・中小企業の「[制度](https://www.city.eniwa.hokkaido.jp/kurashi/sangyo_business/shogyo_chushokigyo/seido/index.html)」に並ぶのは、起業支援、ふるさと財団の融資・助成の紹介、融資・利子補給、連携商品開発事業補助です。
 
+市の制度とは別に、恵庭市に事業所がある中小企業は、苫小牧市にある[公益財団法人道央産業振興財団](https://dohgi.tomakomai.or.jp/posts/news57.html)の助成を使えます。対象は苫小牧市・千歳市・恵庭市・安平町の中小企業で、社外の研修への派遣・社内研修の講師の招へい（いずれも10/10・上限10万円）と専門家派遣（10/10・上限15万円）を随時受け付けています（2026年度の案内、2026年11月11日確認）。AIを名指しした助成ではないので、AIの研修や専門家に使えるかは財団に確かめてください。
+
 恵庭市の[中小企業者等従業員資格取得支援モデル事業補助金](https://www.city.eniwa.hokkaido.jp/kurashi/sangyo_business/rodo/kakushuseidojoseikin/22658.html)は、従業員の資格の取得費の1/2（1事業者10万円まで）を補助する制度でした。対象の資格は大型・中型などの自動車の免許で、2026年7月27日に予算の上限に達して受付を終えています。
 
 恵庭市の「第3期恵庭市中小企業振興基本計画（案）」（2026〜2030年）は、検討のポイントに「技術革新・DX導入支援」を挙げています（[計画の案](https://www.city.eniwa.hokkaido.jp/material/files/group/77/daisankityusyoukigyousinkokihokeikaku.pdf)、令和8年3月）。計画の案に書かれた方針で、申し込める補助金の制度ではありません。
