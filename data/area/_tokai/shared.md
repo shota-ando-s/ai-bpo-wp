@@ -47,3 +47,8 @@
 | ama-city | 愛知県あま市 | 島根県海士町が `ama` |
 | mihama-town-aichi | 愛知県知多郡美浜町 | 福井県美浜町 `mihama`・和歌山県美浜町 `mihama-town`。**三重県の御浜町（みはま）は `mihama` 系を避けて別の形に**（例 `mihama-town-mie`） |
 | nagoya | 愛知県名古屋市 | 政令指定都市は1ページ（区のページは作らない） |
+| shizuoka-city | 静岡県静岡市 | 県ページ `shizuoka` と分けた（秋田市 `akita-city` と同じ）（静岡） |
+| oyama-town | 静岡県駿東郡小山町 | `oyama` は栃木県小山市が使用済み（静岡） |
+| mori-town-shizuoka | 静岡県周智郡森町 | `mori` は北海道森町（段階2の案）（静岡） |
+| shimizu-town-shizuoka | 静岡県駿東郡清水町 | `shimizu` は北海道清水町（段階2の案）（静岡） |
+| mishima / yoshida / ito / izu / fuji | 静岡県三島市・吉田町・伊東市・伊豆市・富士市 | 既存と重ならない（福島県三島町は `mishima-town`）（静岡） |
