@@ -63,3 +63,5 @@
 | inami-town-hyogo / kami-town-hyogo | 兵庫県稲美町・香美町 | 和歌山県印南町 `inami`、高知県香美市・宮城県加美町 `kami` と分けた（兵庫） |
 | taishi / taka / harima / ichikawa / kamikawa / fukusaki / kamigori / sayo / shinonsen / inagawa | 兵庫県の町 | 既存と重ならない（2026-11-11）。**大阪府太子町・千葉県市川市・北海道上川町（段階2）・埼玉県神川町を作るときは別の形に**（兵庫） |
 | tamba / tambasasayama | 兵庫県丹波市・丹波篠山市 | **京都府の京丹波町は `tamba` 系を避けて** `kyotamba` などに（兵庫） |
+| kyoto / kyoto-city | 京都府 / 京都市 | 府ページは `kyoto`、京都市は `kyoto-city`（政令指定都市は1ページ。区のページは作らない）。府内26市町村の slug は data/area/kyoto/_brief.md。既存1,170本と衝突なし（京都） |
+| yawata / kyotanabe / kyotamba | 京都府八幡市・京田辺市・京丹波町 | 愛媛県八幡浜市 `yawatahama`・和歌山県田辺市・兵庫県丹波市と別。**兵庫県の丹波市・丹波篠山市は `kyotamba` を避ける**（京都） |
