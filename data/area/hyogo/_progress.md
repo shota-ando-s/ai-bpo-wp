@@ -37,3 +37,4 @@
 
 ## 実績メモ
 - 2026-11-11 ネットワーク確認（web.pref.hyogo.lg.jp・soumu.go.jp とも開けた）。ローカルが detached だったので main を origin/main に合わせた
+- stats（WS12）・cases（WS20）起動
