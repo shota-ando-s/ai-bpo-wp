@@ -37,6 +37,7 @@
     python3 scripts/area_uniq.py okinawa            # 沖縄の全ページ（沖縄市の slug は okinawa-city）
     python3 scripts/area_uniq.py wakayama           # 和歌山の全ページ（和歌山市の slug は wakayama-city）
     python3 scripts/area_uniq.py shiga              # 滋賀の全ページ（草津市 kusatsu-city・日野町 hino-town-shiga・湖南市 konan-shiga）
+    python3 scripts/area_uniq.py aichi              # 愛知の全ページ（名古屋市は nagoya、津島市 tsushima-city・江南市 konan-city・東海市 tokai-city・高浜市 takahama-city・みよし市 miyoshi-city・あま市 ama-city・美浜町 mihama-town-aichi）
     python3 scripts/area_uniq.py hokkaido           # 北海道の全ページ（札幌市は sapporo、北広島市は kitahiroshima-city。振興局ごとに段階で作る）
 
 目安は固有60%以上。下回るページは、国・県の制度の説明や FAQ の定型の回答を、その市町の事情に合わせて書き直す。
@@ -49,7 +50,7 @@ def paras(p):
     body=open(p).read().split('---',2)[2]
     return [(x, any(f in x for f in FIXED)) for x in (y.strip() for y in re.split(r"\n\s*\n",body)) if len(x)>=40 and not x.startswith(('#','!','['))]
 args=sys.argv[1:]
-PREF=args.pop(0) if args and args[0] in ('ehime','kagawa','tokushima','kochi','aomori','iwate','akita','miyagi','yamagata','fukushima','niigata','toyama','ishikawa','fukui','gifu','nagano','yamanashi','shimane','tottori','hiroshima','yamaguchi','okayama','saga','kagoshima','oita','nagasaki','fukuoka','kumamoto','miyazaki','gunma','ibaraki','okinawa','tochigi','hokkaido','wakayama','shiga','nara') else 'ehime'
+PREF=args.pop(0) if args and args[0] in ('ehime','kagawa','tokushima','kochi','aomori','iwate','akita','miyagi','yamagata','fukushima','niigata','toyama','ishikawa','fukui','gifu','nagano','yamanashi','shimane','tottori','hiroshima','yamaguchi','okayama','saga','kagoshima','oita','nagasaki','fukuoka','kumamoto','miyazaki','gunma','ibaraki','okinawa','tochigi','hokkaido','wakayama','shiga','nara','aichi') else 'ehime'
 # 県ごとにファイル名の日付が違う（四国・青森は 2026-10-17、岩手は 2026-10-18）ので日付は問わない
 files=sorted(glob.glob(ROOT+f'2026-??-??-area-{PREF}.md')+glob.glob(ROOT+f'2026-??-??-area-{PREF}-*.md'))
 DATE={os.path.basename(f)[:10] for f in files}.pop() if files else '2026-10-17'

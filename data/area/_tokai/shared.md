@@ -39,3 +39,11 @@
 
 | slug | 府県・市町村 | 扱い |
 |---|---|---|
+| tsushima-city | 愛知県津島市 | 長崎県対馬市が `tsushima`。投稿後に別ページか確かめる（area-todo） |
+| konan-city | 愛知県江南市 | 高知県香南市 `konan`・滋賀県湖南市 `konan-shiga` |
+| tokai-city | 愛知県東海市 | 茨城県東海村が `tokai` |
+| takahama-city | 愛知県高浜市 | 福井県高浜町が `takahama` |
+| miyoshi-city | 愛知県みよし市 | 徳島県三好市・広島県三次市が `miyoshi` |
+| ama-city | 愛知県あま市 | 島根県海士町が `ama` |
+| mihama-town-aichi | 愛知県知多郡美浜町 | 福井県美浜町 `mihama`・和歌山県美浜町 `mihama-town`。**三重県の御浜町（みはま）は `mihama` 系を避けて別の形に**（例 `mihama-town-mie`） |
+| nagoya | 愛知県名古屋市 | 政令指定都市は1ページ（区のページは作らない） |
