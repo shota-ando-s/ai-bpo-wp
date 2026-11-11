@@ -65,7 +65,8 @@ def best(f,x):
                 r=SequenceMatcher(None,x,y,autojunk=False).ratio()
                 if r>b[0]: b=(r,g)
     return b
-targets=[ROOT+f'{DATE}-area-{PREF}-{s}.md' for s in args] or files
+# 同じ県で日付が違うファイルがある（北海道は振興局ごとに段階で作る）ので、slug でファイルを探す
+targets=[next((f for f in files if f.endswith(f'-area-{PREF}-{s}.md')), ROOT+f'{DATE}-area-{PREF}-{s}.md') for s in args] or files
 for f in targets:
     total=sum(len(x) for x,_ in P[f]); dup=fixed=0; rows=[]
     for x,fx in P[f]:
