@@ -58,3 +58,8 @@
 | kumano-city | 三重県熊野市 | 広島県熊野町が `kumano` |
 | mihama-town-mie | 三重県御浜町 | 福井 `mihama`・和歌山 `mihama-town` |
 | kawagoe-town | 三重県川越町 | 埼玉県川越市を見越して |
+| kobe | 兵庫県神戸市 | 政令指定都市は1ページ（区のページは作らない）（兵庫） |
+| ashiya-city / toyooka-city / miki-city / kawanishi-city / ono-city / tatsuno-city | 兵庫県芦屋市・豊岡市・三木市・川西市・小野市・たつの市 | 福岡県芦屋町 `ashiya`・長野県豊丘村 `toyooka`・香川県三木町 `miki`・山形/奈良の川西町 `kawanishi-town`・福井県大野市 `ono`・長野県辰野町 `tatsuno` と分けた（兵庫） |
+| inami-town-hyogo / kami-town-hyogo | 兵庫県稲美町・香美町 | 和歌山県印南町 `inami`、高知県香美市・宮城県加美町 `kami` と分けた（兵庫） |
+| taishi / taka / harima / ichikawa / kamikawa / fukusaki / kamigori / sayo / shinonsen / inagawa | 兵庫県の町 | 既存と重ならない（2026-11-11）。**大阪府太子町・千葉県市川市・北海道上川町（段階2）・埼玉県神川町を作るときは別の形に**（兵庫） |
+| tamba / tambasasayama | 兵庫県丹波市・丹波篠山市 | **京都府の京丹波町は `tamba` 系を避けて** `kyotamba` などに（兵庫） |
