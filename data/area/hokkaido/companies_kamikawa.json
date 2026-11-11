@@ -1,0 +1,396 @@
+{
+ "_meta": {
+  "checked": "2026-11-11",
+  "scope": "上川総合振興局の23市町村。本社（公式サイトの本社・所在地）が当該市町村にあり、公式サイトでシステム開発・ソフトウェア開発・Web開発・情報処理サービスを事業として明示する法人。段階1（companies.json）・胆振・渡島と同じく、本表には『公式サイトで本社所在地と従業員数（時点つき）の両方を確認できた会社』だけを入れた。",
+  "candidate_sources": [
+   "一般社団法人北海道IT推進協会（HICTA）の会員名簿 https://www.hicta.or.jp/profile/memberlist/ （2026-11-11 取得）。23市町村の住所の会員は3件だけ: 一般財団法人旭川産業創造プラザ（支援機関）・株式会社アスタリスク・株式会社コンピューター・ビジネス（いずれも旭川市）",
+   "旭川情報産業事業協同組合の組合加入企業の一覧 https://www.a-iic.net/members_list/（2026-11-11 取得、本社が旭川市・東川町の会員と、支店の会員）",
+   "旭川ICT協議会の2025年度会員一覧 https://www.a-ict2005.com/member-list/（2026-11-11 取得、法人会員18。事務局は旭川産業創造プラザ）",
+   "PR TIMES（NextValue〔旭川市〕のリリース）",
+   "WebSearch（companies 1回: 「旭川 情報産業事業協同組合 組合員 一覧 システム開発 旭川市 IT企業」。団体の名簿は出ず、団体のサイトはコンピューター・ビジネスの公式サイトのリンクから見つけた）"
+  ],
+  "columns": "name / hq（公式の本社住所）/ municipality / town / employees{value,as_of,source} / capital / founded / business_summary / ai_initiative / url / size_basis / checked / notes"
+ },
+ "asahikawa": [
+  {
+   "name": "株式会社コンピューター・ビジネス",
+   "hq": "〒078-8801 北海道旭川市緑が丘東一条４丁目２番１４号（本社所在地）",
+   "municipality": "旭川市",
+   "town": "緑が丘東",
+   "employees": {
+    "value": 235,
+    "as_of": "従業員数 235名（2026年4月現在）",
+    "source": "https://www.cbnet.co.jp/company/about-info/"
+   },
+   "capital": {
+    "value": "1億円",
+    "source": "https://www.cbnet.co.jp/company/about-info/"
+   },
+   "founded": 1963,
+   "business_summary": "設立 1963年6月20日（昭和38年）。システム開発・運用。自治体（総合行政情報・財務会計）、バス・電車（勤務管理・運賃管理・バス運賃決済〔非接触型〕）、クレジット会社（CRETOS）、医療機関、流通（小売・卸売の EDI 集配信、販売管理）、インターネットソリューション、旭川CBデータセンター（https://www.cbnet.co.jp/solution/ ）",
+   "ai_initiative": "ソリューションのページに AI の記載はない（2026-11-11 確認）",
+   "url": "https://www.cbnet.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "HICTA の会員名簿（078-8801 旭川市緑が丘東1条4丁目2-14、地区会区分 Ａ）、旭川情報産業事業協同組合の組合加入企業の一覧 https://www.a-iic.net/members_list/（事務局を同社内に置く）、旭川ICT協議会の2025年度会員一覧 https://www.a-ict2005.com/member-list/ に名前がある。資本金1億円で中小企業基本法の情報通信業の中小企業者に当たる（従業員は300人以下）。段階1の companies.md に名前だけ（articles に0件）"
+  },
+  {
+   "name": "株式会社旭川保健医療情報センター",
+   "hq": "〒070-0029 北海道旭川市金星町1丁目1番50号 旭川市医師会館内（所在地）",
+   "municipality": "旭川市",
+   "town": "金星町",
+   "employees": {
+    "value": 30,
+    "as_of": "従業員数 30名（令和6年7月現在）",
+    "source": "http://www.ahmic.co.jp/publics/index/18/"
+   },
+   "capital": {
+    "value": "304,825千円",
+    "source": "http://www.ahmic.co.jp/publics/index/18/"
+   },
+   "founded": 1987,
+   "business_summary": "設立 昭和62年2月26日。売上高 295,275千円（令和5年度実績）。「保健医療福祉分野の自治体向けシステム開発」「医療機関向けシステムの開発及び導入支援」「パッケージソフトウェアの開発及び販売」（健診システム『MeXam（めざめ）』、保育所向け給食管理『パクパクキッズ』、特別支援学校向け給食管理『K-プラン』）、自治体システム・病院情報システムの運用保守の受託、データ入力。ISO/IEC 27001（JQA-IM1145）",
+   "ai_initiative": "会社概要に AI の記載はない",
+   "url": "http://www.ahmic.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "**第3セクター**（会社概要に『自治体、医療関係団体、民間企業等の出資による第3セクター方式で設立された株式会社』）。資本金は3億円を超える（304,825千円）が、従業員30名で中小企業基本法の情報通信業（従業員300人以下）の中小企業者に当たる。旭川情報産業事業協同組合の賛助会員、旭川ICT協議会の会員。記事で書くなら『医療・保健の情報システムの第三セクターの会社』と書き分ける"
+  },
+  {
+   "name": "株式会社冨貴堂ユーザック",
+   "hq": "〒078-8373 北海道旭川市旭神3条4丁目2番9号（本社）",
+   "municipality": "旭川市",
+   "town": "旭神",
+   "employees": {
+    "value": 26,
+    "as_of": "従業員 26名（男23名 女3名） ※令和6年3月現在",
+    "source": "https://www.f-usac.co.jp/company/"
+   },
+   "capital": {
+    "value": "3,500万円",
+    "source": "https://www.f-usac.co.jp/company/"
+   },
+   "founded": 1976,
+   "business_summary": "設立 1976（昭和51）年10月1日。事業内容『IT機器の販売及び保守メンテナンス』『業務ソフトウェア製造販売及びアフターメンテナンス』『ユースウェア（パソコン、ネットワーク、AP等）サポートメンテナンス』『ホームページ作成、サーバーレンタル、ハウジングサービス』『IT機器用サプライ消耗品の販売』。沿革に『昭和60年 業種に特化したソフトウェアの製作を行い地域シェア導入NO.1となる。建設業原価管理、木材業総合管理、歯科診療報酬、卸売業販売管理、等多数。』。滝川営業所",
+   "ai_initiative": "**令和8年度 旭川市AI活用伴走支援事業（旭川市委託事業）の運営事務局**（募集ページ https://www.f-usac.co.jp/lp2610/ai-bansou-boshu.html 。旭川市内に本社を有する中小企業・個人事業主、無料、10社程度、専門家の支援3回程度、募集 令和8年10月1日〜令和9年2月26日）。旭川高専産業技術振興会の報告書（令和6年度）で『生成 AI セミナー』の講師（㈱冨貴堂ユーザック 妹尾 飛翔 氏）",
+   "url": "https://www.f-usac.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "人数の時点が令和6年3月で古い（2年半前）。旭川情報産業事業協同組合・旭川ICT協議会の会員。2026年に設立50周年。**市の事業の受託者**なので、記事で紹介するときは『市の事業の運営事務局』と事実だけ書き、特定の会社の宣伝にしない"
+  },
+  {
+   "name": "エイエステック株式会社（AS-TECS Co.,Ltd.）",
+   "hq": "〒070-8046 北海道旭川市忠和6条7丁目6-3 測新ビル2階（所在地）",
+   "municipality": "旭川市",
+   "town": "忠和",
+   "employees": {
+    "value": 11,
+    "as_of": "社員数 11名（2026年9月現在・役員を含む）",
+    "source": "http://www.as-tecs.co.jp/"
+   },
+   "capital": {
+    "value": "1000万円",
+    "source": "http://www.as-tecs.co.jp/"
+   },
+   "founded": 2007,
+   "business_summary": "創立 2007年7月2日。『ITコンサルティング・業務改善』『システム開発・SI（業務システム・Webシステムの設計・開発・運用）』『自社サービス・パッケージ』。『旭川から全国へ。リモート対応や出張サポート』",
+   "ai_initiative": "トップページに AI の記載はない",
+   "url": "http://www.as-tecs.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "旭川情報産業事業協同組合の会員（組合の一覧の住所は『旭川市台場2条3丁目2番1号』で、公式の所在地〔忠和6条7丁目〕と食い違う。公式を採った）。会社概要はトップページの中にある"
+  }
+ ],
+ "shibetsu-city": [],
+ "nayoro": [],
+ "furano": [],
+ "takasu": [],
+ "higashikagura": [],
+ "toma": [],
+ "pippu": [],
+ "aibetsu": [],
+ "kamikawa": [],
+ "higashikawa": [],
+ "biei": [],
+ "kamifurano": [],
+ "nakafurano": [],
+ "minamifurano": [],
+ "shimukappu": [],
+ "wassamu": [],
+ "kenbuchi": [],
+ "shimokawa": [],
+ "bifuka": [],
+ "otoineppu": [],
+ "nakagawa-town-hokkaido": [],
+ "horokanai": [],
+ "_reference": {
+  "asahikawa": {
+   "next_candidates": [
+    {
+     "name": "株式会社ソリューションセンター",
+     "hq": "〒070-0033 北海道旭川市3条通8丁目842-1 冨貴堂2号館 2F（本社）",
+     "municipality": "旭川市",
+     "town": "3条通",
+     "employees": {
+      "value": 24,
+      "as_of": "『従業員数 24名（パート社員含む）』。時点の記載なし",
+      "source": "http://www.solutioncenter.co.jp/company"
+     },
+     "capital": {
+      "value": "3,375万円",
+      "source": "http://www.solutioncenter.co.jp/company"
+     },
+     "founded": 1993,
+     "business_summary": "設立 1993年12月21日。売上高『3億6千万円（2024年9月 31期）』。『システム開発、販売、サポート』『流通パッケージ販売』『ネットワーク設計、構築コンサルテーション』『ホームページ制作』『テストセンター』、公共職業訓練（ソリューションカレッジ）。札幌オフィス",
+     "ai_initiative": "会社概要に AI の記載はない",
+     "url": "http://www.solutioncenter.co.jp/",
+     "size_basis": "employees",
+     "checked": "2026-11-11",
+     "notes": "人数に時点がないので本表に入れていない（売上高の時点は2024年9月）。旭川情報産業事業協同組合・旭川ICT協議会の会員。佐賀・愛知・福井の companies にある『ソリューションセンター』は別の会社の拠点名"
+    },
+    {
+     "name": "クウェスト合同会社（QWEST LLC）",
+     "hq": "〒070-0030 北海道旭川市宮下通7丁目3897 旭川駅前ビル3階（所在地）",
+     "municipality": "旭川市",
+     "town": "宮下通",
+     "employees": {
+      "value": 4,
+      "as_of": "『従業員 4名』。時点の記載なし",
+      "source": "http://qwest.co.jp/about.html"
+     },
+     "capital": {
+      "value": "1,490,000円",
+      "source": "http://qwest.co.jp/about.html"
+     },
+     "founded": 2012,
+     "business_summary": "設立（登記）2012年7月。『ウェブサイトの企画制作・プランニング / Webシステム開発』『SEOコンサルティング』『ショップサイト制作及び運営』『ドローン運用・開発』",
+     "ai_initiative": "記載なし",
+     "url": "https://www.qwest.co.jp/",
+     "size_basis": "employees",
+     "checked": "2026-11-11",
+     "notes": "人数に時点がない。旭川情報産業事業協同組合の一覧の住所（5条通9丁目）と公式の所在地（宮下通7丁目）が食い違う。公式を採った"
+    },
+    {
+     "name": "株式会社プラスラス",
+     "hq": "〒078-8334 北海道旭川市南4条通21丁目3-112 フロンティア大雪 105号（住所）",
+     "municipality": "旭川市",
+     "town": "南4条通",
+     "employees": {
+      "value": null,
+      "as_of": "公式に従業員数の記載なし",
+      "source": "https://www.pluslus.com/office"
+     },
+     "capital": {
+      "value": null,
+      "source": "https://www.pluslus.com/office"
+     },
+     "founded": 2023,
+     "business_summary": "設立日 2023年（令和5年）10月27日（2013年1月23日に個人事業として開始）。『IT・システム開発』『AIのモデルの開発、導入、運用のサポート』『業務用システムソフトウェアの開発、導入』『ホームページ制作』、経営コンサルティング・補助金の申請支援。代表 中井隆介氏（中小企業診断士、ITストラテジスト）",
+     "ai_initiative": "『AI開発・導入支援』のページ（https://www.pluslus.com/service/ai-integration-support ）に生成AI（RAG/社内QA）・画像認識・予測などと費用の目安（『AI戦略相談（初回）… 無料（60分）』『PoC開発（試作）… 60〜200万円』『生成AI導入（RAG/ChatGPT）… 100〜450万円』、『補助金活用なしの想定価格』）。導入事例のページ（旭川市の移住希望者管理システムなど）に AI の事例はない",
+     "url": "https://www.pluslus.com/",
+     "size_basis": "employees",
+     "checked": "2026-11-11",
+     "notes": "人数が公式にない（代表の個人事業から法人化した小さな会社と読めるが、人数は書かない）。**AI の開発・導入支援を公式に掲げる旭川の会社**。旭川情報産業事業協同組合の会員"
+    },
+    {
+     "name": "NextValue株式会社",
+     "hq": "北海道旭川市6条通17丁目81-3（所在地）",
+     "municipality": "旭川市",
+     "town": "6条通",
+     "employees": {
+      "value": null,
+      "as_of": "公式に従業員数の記載なし",
+      "source": "https://nextvalue-asahikawa.com/"
+     },
+     "capital": {
+      "value": "1,000,000円",
+      "source": "https://nextvalue-asahikawa.com/"
+     },
+     "founded": 2026,
+     "business_summary": "設立 2026年4月6日。事業内容『経営コンサルティング、AIシフト研修、SNS活用研修、地域共創事業（あさひかわVASE）』",
+     "ai_initiative": "カワムラホーム（旭川市）の全社 AI シフトの伴走支援（PR TIMES 2026-05-08、cases_kamikawa.md）",
+     "url": "https://nextvalue-asahikawa.com/",
+     "size_basis": "employees",
+     "checked": "2026-11-11",
+     "notes": "**システム開発会社ではなく、AI 研修・コンサルティングの会社**。人数なし。参考として残す"
+    },
+    {
+     "name": "株式会社アスタリスク",
+     "hq": "070-0038 北海道旭川市8条通8丁目43番5号8条ビル2F（所在地）",
+     "municipality": "旭川市",
+     "town": "8条通",
+     "employees": {
+      "value": null,
+      "as_of": "公式に従業員数の記載なし",
+      "source": "https://www.ast-risk.net/company"
+     },
+     "capital": {
+      "value": "600万円（2013年に増資、沿革）",
+      "source": "https://www.ast-risk.net/company"
+     },
+     "founded": 2007,
+     "business_summary": "設立 平成19年(2007年)7月。『ホームページの作成・WEBサイト構築』『WEBシステムの開発』『ソフトウェアの開発・販売』『企業向けサーバー・メールの管理』『IT講習会運営』",
+     "ai_initiative": "記載なし",
+     "url": "https://www.ast-risk.net/",
+     "size_basis": "employees",
+     "checked": "2026-11-11",
+     "notes": "人数なし。HICTA の会員（地区会区分 A）、旭川情報産業事業協同組合の副理事長。段階1の companies.md に名前だけ"
+    },
+    {
+     "name": "有限会社セクナットインタラクティブ",
+     "hq": "〒070-0034 北海道旭川市4条通10丁目2233-2 アルファ旭川ビル 4階（旭川本社）",
+     "municipality": "旭川市",
+     "town": "4条通",
+     "employees": {
+      "value": null,
+      "as_of": "公式に従業員数の記載なし",
+      "source": "https://secnat.co.jp/company/"
+     },
+     "capital": {
+      "value": "3,000,000円",
+      "source": "https://secnat.co.jp/company/"
+     },
+     "founded": 2000,
+     "business_summary": "設立 2000年(平成12年)12月。『WEB-SITE制作・ソフトウェア開発・クラウドシステム開発・ WEBシステム開発』、医療事務・電子カルテなどの販売導入。メディカルソリューション・インターネット・システム・営業・環境工事の5事業部。札幌営業所",
+     "ai_initiative": "会社紹介に『クラウド、AI、IoT、ビッグデータといった次世代技術の導入から』（事例の記載はない）",
+     "url": "https://secnat.co.jp/",
+     "size_basis": "employees",
+     "checked": "2026-11-11",
+     "notes": "人数なし。旭川情報産業事業協同組合の会員"
+    },
+    {
+     "name": "株式会社きしだ",
+     "hq": "〒078-8219 北海道旭川市9条通18丁目95番地8（本店所在地）",
+     "municipality": "旭川市",
+     "town": "9条通",
+     "employees": {
+      "value": null,
+      "as_of": "公式に従業員数の記載なし",
+      "source": "https://kishida.asahikawa.ws/gaiyou"
+     },
+     "capital": {
+      "value": "300万円",
+      "source": "https://kishida.asahikawa.ws/gaiyou"
+     },
+     "founded": 1997,
+     "business_summary": "設立 1997年6月26日。不動産部門、デジタルコンテンツ・システム開発部門（アルファ・コンプレックス）、アニメーション制作部門（スタジオBACU）。東京事業所",
+     "ai_initiative": "記載なし",
+     "url": "https://kishida.asahikawa.ws/",
+     "size_basis": "employees",
+     "checked": "2026-11-11",
+     "notes": "人数なし。システム開発は部門の一つ"
+    },
+    {
+     "name": "株式会社ブルーデータ",
+     "hq": "〒079-8413 北海道旭川市永山3条1丁目4番28号（本社）",
+     "municipality": "旭川市",
+     "town": "永山",
+     "employees": {
+      "value": null,
+      "as_of": "公式に従業員数の記載なし",
+      "source": "https://bluedata.co.jp/aboutus"
+     },
+     "capital": {
+      "value": "1,000万円",
+      "source": "https://bluedata.co.jp/aboutus"
+     },
+     "founded": 1996,
+     "business_summary": "設立 1996年5月21日。GIS 事業、データ加工・変換、データ入力・更新、画像処理、上下水道事業。主取引先 クボタ・パスコ・住友重機械工業・旭川市ほか",
+     "ai_initiative": "『データマイニング：収集された情報の中から、AIや統計学を使って傾向や関連性を見出す分析手法』（用語の説明だけ）",
+     "url": "https://bluedata.co.jp/",
+     "size_basis": "employees",
+     "checked": "2026-11-11",
+     "notes": "人数なし。**GIS・データ加工の会社で、受託のシステム開発会社とは少し違う**"
+    }
+   ],
+   "unverified": [
+    {
+     "name": "株式会社旭川ビジネス・ジャパンソフトウェア株式会社・株式会社ダイイチプラニング・株式会社ネクシス光洋・有限会社ミューロン・株式会社スゴー事務機（旭川ICT協議会の法人会員）",
+     "hint": "旭川ICT協議会の2025年度会員一覧 https://www.a-ict2005.com/member-list/ に名前だけ（住所・URL の記載なし）。公式サイトを探していない（WebSearch の上限）",
+     "checked": "2026-11-11"
+    },
+    {
+     "name": "有限会社イートン・大丸交通株式会社",
+     "hint": "IT 企業ではない（旭川高専の共同研究の相手。cases_kamikawa.md）",
+     "checked": "2026-11-11"
+    }
+   ],
+   "excluded": [
+    {
+     "name": "株式会社デジタライズ 旭川事業所",
+     "reason": "旭川情報産業事業協同組合の会員ページで『〔本社〕 〒465-0025 愛知県名古屋市名東区上社2丁目186番地』『〔旭川事業所〕旭川市永山8条20丁目109番16』『あさひかわデータセンター』。本社は名古屋市（公式サイトは本文が取れず未確認）",
+     "checked": "2026-11-11"
+    },
+    {
+     "name": "株式会社アクロクレイン 旭川ラボ",
+     "reason": "本社は函館市（companies_oshima.md の次点）。旭川市1条通8丁目の SHADO 内の拠点",
+     "checked": "2026-11-11"
+    },
+    {
+     "name": "株式会社SHADO 旭川BASE・株式会社SPPS 旭川支店",
+     "reason": "旭川情報産業事業協同組合の一覧で『※旭川BASE』『※旭川支店』。本社は旭川市ではない",
+     "checked": "2026-11-11"
+    },
+    {
+     "name": "株式会社UZUZ 旭川オフィス",
+     "reason": "本社は東京（旭川高専産業技術振興会の会員企業。PR TIMES の見出しで『旭川オフィス』）",
+     "checked": "2026-11-11"
+    },
+    {
+     "name": "株式会社恵和ビジネス",
+     "reason": "旭川情報産業事業協同組合の会員だが住所は『札幌市中央区南2条西12丁目324番地1』",
+     "checked": "2026-11-11"
+    },
+    {
+     "name": "千代田電装工業株式会社",
+     "reason": "本社は旭川市4条通2丁目左8-10号。業務に『コンピュータシステムの受託開発』（タクシー会社向け・土地改良向けのシステム）があるが、主な事業は自動車電装・ドコモショップ。人数は公式の採用ページで『2018年2月1日現在 … 社員数：116名』（古い）。開発会社として本表に入れない",
+     "checked": "2026-11-11"
+    },
+    {
+     "name": "旭川ケーブルテレビ株式会社・北日本ネットワーク株式会社",
+     "reason": "ケーブルテレビ・通信設備工事の会社（旭川情報産業事業協同組合の会員）。開発会社ではない",
+     "checked": "2026-11-11"
+    },
+    {
+     "name": "一般財団法人旭川産業創造プラザ",
+     "reason": "支援機関（HICTA の会員）",
+     "checked": "2026-11-11"
+    }
+   ]
+  },
+  "higashikawa": {
+   "next_candidates": [
+    {
+     "name": "ＨＪＫ株式会社（登記名称 エイチ・ジェイ・ケイ株式会社）",
+     "hq": "北海道上川郡東川町東町２丁目１番１６号（本社所在地。2022年6月1日移転）",
+     "municipality": "東川町",
+     "town": "東町",
+     "employees": {
+      "value": null,
+      "as_of": "公式の会社概要に従業員数の記載なし（旭川情報産業事業協同組合の会員ページに『従業員数 28名』とあるが時点なし・公式ではない）",
+      "source": "http://www.hjk.ne.jp/01_gaiyou.html"
+     },
+     "capital": {
+      "value": "1,000万円",
+      "source": "http://www.hjk.ne.jp/01_gaiyou.html"
+     },
+     "founded": 1988,
+     "business_summary": "設立 1988年1月20日。『コンピュータシステムの設計及びソフトウェア開発』『コンピュータに関するコンサルタントサービス』『オリジナルパッケージソフトウェアの販売』。主要ユーザー『全国社会福祉施設 自動車教習所 道内自治体 学校及び一般企業』。主な出資構成『東川町 新谷建設株式会社 ダットジャパン株式会社 東川町農業協同組合 株式会社東川振興公社』。旭川事業所・札幌・東京",
+     "ai_initiative": "記載なし",
+     "url": "https://www.hjk.ne.jp/",
+     "size_basis": "employees",
+     "checked": "2026-11-11",
+     "notes": "**東川町に本社がある開発会社**。公式に人数がないので本表に入れていない。**東川町が出資している**（記事で書くなら『町などが出資する会社』）。組合のページの代表者（松倉利充氏）と公式の会社概要の代表取締役社長（次田一義氏）が食い違う（組合のページが古い可能性）"
+    }
+   ]
+  }
+ },
+ "_notes": [
+  "本表は旭川市4社（コンピューター・ビジネス 235名〔2026年4月現在〕、旭川保健医療情報センター 30名〔令和6年7月現在、第3セクター〕、冨貴堂ユーザック 26名〔令和6年3月現在〕、エイエステック 11名〔2026年9月現在〕）、ほかの22市町村は0。東川町は HJK（人数が公式にない）が次点。",
+  "本表が空の市町村は『会社がない』ではなく『確かめられなかった』。母集団は HICTA と旭川の2つの IT 団体の名簿で、旭川市の外の会員は東川町の HJK だけ。士別市・名寄市・富良野市などの開発会社は探していない（WebSearch の上限）。記事で『町内に開発会社はない』と書かない。",
+  "旭川の IT 団体: 旭川情報産業事業協同組合（https://www.a-iic.net/ 、事務局はコンピューター・ビジネス内）、旭川ICT協議会（https://www.a-ict2005.com/ 、事務局は旭川産業創造プラザ）。",
+  "旭川には道外・函館の IT 企業の拠点（デジタライズ〔名古屋本社〕・アクロクレイン〔函館本社〕・SHADO・SPPS・UZUZ）がある。本社の会社と分けて書く。",
+  "冨貴堂ユーザックは旭川市AI活用伴走支援事業（令和8年度）の運営事務局。プラスラスは AI の開発・導入支援を公式に掲げる。",
+  "WebSearch は companies 1回。ヘッダーの偽装はしていない。"
+ ]
+}
