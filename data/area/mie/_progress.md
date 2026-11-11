@@ -26,7 +26,7 @@
 - [x] _brief.md・wages.md・area_uniq.py に mie（2026-11-11）
 - [ ] 調査
 - [x] 試算の PLAN（_calc.py）を push（2026-11-11）
-- [ ] 執筆仕様 docs/area-writing-spec-mie.md
+- [x] 執筆仕様 docs/area-writing-spec-mie.md（2026-11-11）
 - [ ] 記事 30本（県1＋市町29）
 - [ ] data/subsidies/mie.yml・areas.yml・build
 - [ ] 地域ガイド・area-todo.md・area-new-prefecture.md・memory
@@ -52,3 +52,7 @@
 - 仕様の下書き D125（統計・事例・地元IT企業）起動。出力 data/area/mie/_spec/D125.md
 - choson 1（完了: gov_ai_b.md 659行・subsidy_b.yml 3件・subsidy_b_areas.md。**15町とも町独自の AI・IT・DX の補助なし**。国の補助への上乗せは南伊勢町だけ（国の IT導入補助金・省力化投資補助金などの採択を受けた**町内の食料品店**に自己負担の2/3・300万円、2027-02-10）。AI 交通: 木曽岬町「トマライド」〔AIオンデマンド交通、2026-10-01〜2027-09-30 の実証〕・菰野町「のりあいタクシー」〔AI 配車、2020年に実証〕・多気町/明和町〔2024-10〜2025-01 に2町をまたぐ実証、国交省の事例PDF、利用者273名〕。玉城・南伊勢・大台のデマンド交通は AI の語なし。**朝日町は朝明商工会の受け持ちと確定**（gov_ai.md の推定は正しかった）。リンクの条件: 大紀町〔リンク後に内容・氏名など連絡〕・川越町〔リンク後に URL 連絡、原則トップ〕・南伊勢町〔リンク後に連絡、トップ〕、条件のページなし8町。総務省表の食い違い: 南伊勢は町の計画では「これから」、紀北は AI異常検知〔icetana、2025-04〕を使うが AI全般の表にない。朝明商工会の生成AIセミナー 12/7・12/14〔無料、申込 11/30〕）
 - 仕様の下書き D34（行政・補助金・診断データ）起動。出力 data/area/mie/_spec/D34.md・_subsidies_mie.yml・_areas_snippet.yml
+- D125（完了: _spec/D125.md 751行、判断27点）・D34（完了: _spec/D34.md 615行、判断23点、_subsidies_mie.yml 14制度16行・_areas_snippet.yml 29市町〔県の9地域の順、none 19〕。一時コピーで build_shindan_data.py が通り、node で2,160通りエラー0）。WS 0
+- 親: 下書きの案をすべて採り、例外（D125 判断7・10・12・23、D34 D3-9・D3-12・D4-2・D4-6）を仕様の「下書きの『案』の扱い」に書いた。D125 判断23 で CASES に cases2・cases_outside の会社を足し、**桑名市（鋳物→業務用の総菜・弁当の製造）・鳥羽市（旅館→観光客向けの海鮮料理店）・紀宝町（49→64名）**を直した（時間・金額は同じ）。_calc.py OK
+- 執筆仕様 docs/area-writing-spec-mie.md（約1,530行）。担当 W1 四日市・菰野・南伊勢／W2 津・朝日・紀北／W3 鈴鹿・川越・度会／W4 桑名・多気・大紀／W5 松阪・木曽岬・御浜／W6 伊勢・東員・熊野／W7 亀山・明和・紀宝／W8 名張・鳥羽・大台／W9 伊賀・玉城・尾鷲／W10 いなべ・志摩／W11 県ページ。執筆の WebSearch は1人2回まで。同時2人
+- **書き上がった記事は全ページそろうまで main に入れない**: `.git/info/exclude` に `articles/2026-11-11-area-mie*.md`、退避はブランチ `area-mie-wip`（一時インデックス。scratchpad/bin/wip.sh）
