@@ -29,3 +29,12 @@
 | kamikawa | 北海道上川郡上川町（公開済み `/area/hokkaido/kamikawa/`） | 埼玉県児玉郡神川町は `kamikawa` 以外で（北海道） |
 | hidaka-town | 北海道沙流郡日高町（予定） | 高知県日高村が `hidaka` を使用済み。埼玉県日高市は `hidaka` 以外で（北海道） |
 | taiki-town-hokkaido・numata-town-hokkaido・shimizu・ikeda-town-hokkaido | 北海道の大樹町・沼田町・清水町（十勝）・池田町（予定） | 三重県大紀町 `taiki`・群馬県沼田市 `numata` があるので県名を付けた。清水町は `shimizu`（静岡県清水町は `shimizu-town-shizuoka`）（北海道） |
+| saitama / saitama-city | 埼玉県 / さいたま市 | 県は `saitama`、さいたま市は `saitama-city`（区のページは作らない） |
+| misato-city | 埼玉県三郷市 | 秋田県美郷町 `misato`・宮城県美里町 `misato-town` と重ならない形 |
+| misato-town-saitama | 埼玉県美里町（児玉郡） | 島根・熊本・宮崎の `misato-town-<県>` に合わせた |
+| fujimi-city / fujimino | 埼玉県富士見市 / ふじみ野市 | 長野県富士見町 `fujimi` |
+| hidaka-city | 埼玉県日高市 | 高知県日高村 `hidaka`・和歌山県日高町 `hidaka-town-wakayama` |
+| ina-town | 埼玉県伊奈町（北足立郡） | 長野県伊那市 `ina` |
+| miyoshi-town | 埼玉県三芳町（入間郡） | 徳島県三好市・広島県三次市 `miyoshi`、愛知県みよし市 `miyoshi-city` |
+| ogawa-town | 埼玉県小川町（比企郡） | 長野県小川村 `ogawa` |
+| kamikawa-town | 埼玉県神川町（児玉郡） | 北海道上川町・兵庫県神河町 `kamikawa` |
