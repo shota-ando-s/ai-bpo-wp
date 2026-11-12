@@ -26,14 +26,14 @@
 
 ## 状態
 - [x] _brief.md・wages.md・area_uniq.py に aichi・共有メモに slug（2026-11-11）
-- [ ] 調査（9担当）
-- [ ] 試算の PLAN（_calc.py）を push
-- [ ] 執筆仕様 docs/area-writing-spec-aichi.md
-- [ ] 記事 55本（県1＋市町村54）
-- [ ] data/subsidies/aichi.yml・areas.yml・build
-- [ ] 地域ガイド・area-todo.md・area-new-prefecture.md・memory
-- [ ] チェック（check_article・area_uniq・_calc.py・試算の結果表・書いてはいけない局名）
-- [ ] main に push（投稿・デプロイはユーザーが Mac で「投稿して」）
+- [x] 調査（9担当）
+- [x] 試算の PLAN（_calc.py）を push
+- [x] 執筆仕様 docs/area-writing-spec-aichi.md
+- [x] 記事 55本（県1＋市町村54）
+- [x] data/subsidies/aichi.yml・areas.yml・build
+- [x] 地域ガイド・area-todo.md・area-new-prefecture.md・memory
+- [x] チェック（check_article・area_uniq・_calc.py・試算の結果表・書いてはいけない局名）
+- [x] main に push（投稿・デプロイはユーザーが Mac で「投稿して」）
 
 ## 実績メモ
 - 2026-11-11 ネットワーク確認（pref.aichi.jp・soumu.go.jp とも WebFetch で開けた）。WebSearch 0回
@@ -92,3 +92,7 @@
 - W14 完了（大府市 約8,501字・92.1%・701.25h/245.4万、みよし市 7,894・89.1%・442.25h/154.8万〔中小企業者等経営相談事業を足した〕、田原市 8,015・89.0%・432.25h/153.0万、ERROR 0、WS0）。**市町村54ページそろう**
 - W15 県ページ完了（約15,162字、ERROR 0、市町村リンク54/54、WS0。蒲郡市のがんばる補助金は 11/12 も 503 でリンクを外した）。**記事55本そろう**
 - 全ページの area_uniq（_uniq_all.txt）: 江南市49.2%・南知多町58.8%が60%未満（先に書いたページが後のページと似た）。直し担当で江南・南知多・岡崎・尾張旭・蟹江を直す
+- 直し担当: 江南市49.2→90.3%・南知多町58.8→88.7%・岡崎市→88.8%・尾張旭市→87.0%・蟹江町→91.3%、ERROR 0。親が一宮市・豊明市の「災害対応資金」を大雨の相談窓口のページに結び付けた文を直した（ページに制度名がない）
+- 最終確認（2026-11-12）: 55ページ check_article ERROR 0、_calc.py OK、書いてはいけない局名・7市町村のドメイン・他府県のページ・旧ブランド・震源名・県民事務所の受け持ち 0件、試算の結果表は54ページとも中身あり
+- data/subsidies/aichi.yml（32制度）と areas.yml の愛知県の行（54市町村、none 34）を同じコミットで入れて build → 1272制度。他府県の制度・地域は build の前後で同じ（1240→1272、変わった制度0、消えた行0）。national.yml の 7次の note を事務局のスケジュールに直した。地域ガイドの東海地方の段に愛知県の行
+- **main に push（投稿・デプロイはユーザーが Mac で「投稿して」）**
