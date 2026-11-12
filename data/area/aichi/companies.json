@@ -1402,12 +1402,12 @@
     "source": "https://www.tokai-soft.co.jp/profile/outline"
    },
    "founded": 1970,
-   "business_summary": "1970年5月30日設立。東証スタンダード・名証プレミア上場（沿革）。東京支店・大阪支店",
+   "business_summary": "1970年5月30日設立。東証スタンダード・名証プレミア上場（証券コード4430、会社概要）。業務案内: 産業システム開発・業務システム開発・車載ソフトウェア開発・組込みソフトウェア開発・官公庁システム開発（トップ）。製造・流通の生産管理システム・製造実行システム（MES）・倉庫管理システム（トップ）。拠点: 本社・金山オフィス（熱田区）・東京支店・大阪支店・三重支店・静岡事業所（拠点のご案内）",
    "ai_initiative": "公式トップに AI の記載は見つからなかった（トップだけ確認）",
    "url": "https://www.tokai-soft.co.jp/profile/outline",
    "size_basis": "employees",
    "checked": "2026-11-11",
-   "notes": "独立系。AiA の会員ではない。gBizINFO の厚生年金の被保険者 634人",
+   "notes": "独立系。AiA の会員（会員一覧の表記は「東海ソフト 株式会社」、公式の会社概要の加盟団体に「（社）愛知県情報サービス産業協会」。D5 が 2026-11-11 に直した）。gBizINFO の厚生年金の被保険者 634人",
    "category": "independent"
   },
   {
@@ -1502,12 +1502,12 @@
     "source": "http://www.pico.co.jp/about/"
    },
    "founded": 1990,
-   "business_summary": "平成2年10月12日設立。東京支社・三重支店",
+   "business_summary": "平成2年10月12日設立。東京支社・三重支店。事業紹介: システム開発ソリューション・Webソリューション・技術者派遣ソリューション・データサービス（連想入力によるデータ入力）（トップ。D5 2026-11-11）",
    "ai_initiative": "公式トップに AI の記載は見つからなかった（トップだけ確認）",
    "url": "http://www.pico.co.jp/about/",
    "size_basis": "employees",
    "checked": "2026-11-11",
-   "notes": "独立系。gBizINFO 297人",
+   "notes": "独立系。gBizINFO 297人。AiA の会員（会社概要の加盟団体にも「愛知県情報サービス産業協会 (AIA)」）",
    "category": "independent"
   },
   {
@@ -1528,12 +1528,12 @@
    },
    "founded": 2019,
    "business_summary": "2019年1月1日設立",
-   "ai_initiative": "製品・サービスの分類に「AI・画像処理」（WebFetch の要約）",
+   "ai_initiative": "製品・サービスの一覧の分類に「AI・画像処理」（会社概要のページのメニュー、curl で確認。D5 2026-11-11）",
    "url": "https://www.toyotasystems.com/company/outline/",
    "size_basis": "employees",
    "checked": "2026-11-11",
-   "notes": "大手グループ。会社概要は WebFetch の要約で確認（curl では中身が取れない）。公式の本社（中村区）と登記の本店（東区）は区が違うが同じ名古屋市。gBizINFO 2,820人（中村区の事業所）",
-   "parent_group": "トヨタ自動車株式会社 100%（WebFetch の要約）",
+   "notes": "大手グループ。会社概要は 2026-11-11 に D5 が curl で開けた（出資比率「トヨタ自動車株式会社　100％出資」、設立 2019年1月1日〔トヨタコミュニケーションシステム・トヨタデジタルクルーズ・トヨタケーラムの3社を統合〕、売上 2,616億円〔2025年度実績〕）。公式の本社（中村区）と登記の本店（東区）は区が違うが同じ名古屋市。gBizINFO 2,820人（中村区の事業所）",
+   "parent_group": "トヨタ自動車株式会社 100％出資（会社概要）",
    "category": "major_group"
   },
   {
@@ -1578,9 +1578,9 @@
     "value": "1億円",
     "source": "https://www.nttdata-tokai.co.jp/company/outline.html"
    },
-   "founded": 2003,
-   "business_summary": "創立2003年7月1日。各種情報システム、それに係わるソフトウェアの開発、保守の受託、販売並びに賃貸",
-   "ai_initiative": "トップに「生成AI・データ活用・システム連携の最新動向を紹介」の展示会（11月18日）の告知 https://www.nttdata-tokai.co.jp/",
+   "founded": 1990,
+   "business_summary": "創立年月日 1990年3月6日、商号の変更 2003年7月1日（会社概要。D5 が 2026-11-11 に直した。前は「創立2003年7月1日」）。各種情報システム、それに係わるソフトウェアの開発、保守の受託、販売並びに賃貸",
+   "ai_initiative": "トップに「生成AI・データ活用・システム連携の最新動向を紹介」の展示会（11月18日）の告知 https://www.nttdata-tokai.co.jp/ 。ニュース（2026年10月21日）「自然言語による銀行サービス利用に向け、あいち銀行と実証を開始」（NTTデータ東海・NTTデータ・あいち銀行の共同、AIエージェントが利用者の意図を解釈する対話型インターフェースの実証） https://www.nttdata-tokai.co.jp/news/20261021_aichibank.html （D5 が足した）",
    "url": "https://www.nttdata-tokai.co.jp/company/outline.html",
    "size_basis": "employees",
    "checked": "2026-11-11",
@@ -1631,8 +1631,8 @@
     "source": "https://www.denso-create.jp/company/overview.html"
    },
    "founded": 1991,
-   "business_summary": "1991年2月14日設立",
-   "ai_initiative": "公式トップに AI の記載は見つからなかった（トップだけ確認）",
+   "business_summary": "1991年2月14日設立。事業: もの分野（基盤系ソフトウェア開発）・しくみ分野（プロセス・ツール開発）・市販事業分野（市販ソフトウェアの開発販売）、機能に研究開発（「生成AIなど先進技術を用いた「未来の解決策」を研究開発」） https://www.denso-create.jp/business/",
+   "ai_initiative": "トップのニュースに「AIエージェントプラットフォーム DC Agentiqs V1.2 をリリースしました」（2026.09.04）・「システム・ソフトウェア設計ツール「Next Design V5.1」と「Next Design AIツールキット」をリリース」（2026.09.30）。事業領域のページに「生成AIなど先進技術を用いた「未来の解決策」を研究開発」。ニュースの個別ページ https://www.denso-create.jp/news/detail.html?id=1613 ・id=1619 は1回目 503、2回目に開けた（DC Agentiqs は「組織に蓄積した開発知や既存の設計資産をAIエージェントにつなぎ」、Next Design AIツールキットは「Next Designの設計情報をAIエージェントから活用するため」＝ソフトウェア開発の現場向け）（D5、2026-11-11。前は「トップに AI の記載は見つからなかった」）",
    "url": "https://www.denso-create.jp/company/overview.html",
    "size_basis": "employees",
    "checked": "2026-11-11",
@@ -1654,14 +1654,17 @@
     "as_of": "69名（2026年4月：豊橋/名古屋）",
     "source": "http://www.moasystem.co.jp/about/"
    },
-   "capital": null,
-   "founded": null,
-   "business_summary": "豊橋本社ビル（2019年完成）・名古屋オフィス。新卒の勤務地に「メーカー、全国主要都市の病院など」への出張",
+   "capital": {
+    "value": "1,000万円",
+    "source": "http://www.moasystem.co.jp/about/"
+   },
+   "founded": 1990,
+   "business_summary": "設立 平成2年7月。沿革「1980年 豊橋で初めてのシステム開発専門の会社を設立（株式会社システムハウス）」「1990年7月 …システムサポート会社を設立（モアシステム株式会社）（システムの構築・導入・保守を主業務とする）」。日医IT認定サポート事業所。トップの製品・サービスに医療・介護の製品、医療情報システムの導入・運用支援、ソフトウェア開発・ウェブサイト構築、勤怠・給与・人事システム（D5 2026-11-11）",
    "ai_initiative": "公式トップに AI の記載は見つからなかった（トップだけ確認）",
    "url": "http://www.moasystem.co.jp/about/",
    "size_basis": "employees",
    "checked": "2026-11-11",
-   "notes": "AiA の会員。gBizINFO 70人"
+   "notes": "AiA の会員。gBizINFO 70人。次点・未確認の株式会社システムハウス（豊橋市）は沿革で同じグループ（「豊橋市前田町へ本社機能移転、グループを集結する」）"
   }
  ],
  "okazaki": [
@@ -1683,7 +1686,7 @@
    },
    "founded": 1989,
    "business_summary": "1989年6月19日設立。CAD/PLM（シーメンスとパートナー契約）・システム開発。東京オフィス・名古屋オフィス",
-   "ai_initiative": "公式トップに AI の記載は見つからなかった（トップだけ確認）",
+   "ai_initiative": "会社概要に AI の語はなかった（D5 2026-11-11、curl。製品・サービスの分類は MBD・PLM・インフラ・システムインテグレーション・製品販売）",
    "url": "https://www.mcor.co.jp/mcor_corp/company/overview?id=cont04",
    "size_basis": "employees",
    "checked": "2026-11-11",
@@ -1717,7 +1720,7 @@
    },
    "founded": 1991,
    "business_summary": "1991年2月8日設立。売上292億円（2026年3月期）。豊田自動織機のSIer事業、ITインフラ構築事業、製品組込み開発事業、ソリューション開発事業",
-   "ai_initiative": "確かめていない",
+   "ai_initiative": "会社情報・トップに AI の語はなかった（D5 2026-11-11、curl）",
    "url": "https://www.tiis.global/company/information",
    "size_basis": "employees",
    "checked": "2026-11-11",
@@ -1742,7 +1745,7 @@
    },
    "founded": 2014,
    "business_summary": "2014年2月4日設立。物流に関わる自動倉庫のシステム開発からアフターサービスまで（システム開発・保守、物流設備施工、アフターサービス）",
-   "ai_initiative": "確かめていない",
+   "ai_initiative": "会社概要・トップに AI の語はなかった（D5 2026-11-11、curl）",
    "url": "https://www.logiens.co.jp/company/greeting/",
    "size_basis": "employees",
    "checked": "2026-11-11",
@@ -1775,13 +1778,14 @@
     "source": "https://www.aisan-cs.co.jp/company/"
    },
    "capital": null,
-   "founded": null,
-   "business_summary": "2007年に現在地に本社を移転",
-   "ai_initiative": "公式トップに AI の記載は見つからなかった（トップだけ確認）",
+   "founded": 1984,
+   "business_summary": "設立 1984年10月1日。沿革「愛三工業(株)情報システム部門から分離し設立」、2007年10月に現在地に本社を移転。事業: 生産系ソリューション（TPSかんばん、IoT・現場デジタル化・設備DX、ACSEED）・情報系ソリューション（基幹システム、ICT・働き方）・インフラソリューション（ITインフラ、セキュリティ）（D5 2026-11-11）",
+   "ai_initiative": "トピックス（2026年10月1日）「高精度AI議事録サービス「Rimo」の取り扱いを開始 ～自動車部品製造業における会議DXを支援～」（Rimo合同会社のサービスの取り扱い） https://www.aisan-cs.co.jp/topics/p870/ （D5 が足した。前は「トップに AI の記載は見つからなかった」）",
    "url": "https://www.aisan-cs.co.jp/company/",
    "size_basis": "employees",
    "checked": "2026-11-11",
-   "notes": "人数にパートナー（社外）を含む。AiA の会員。gBizINFO 56人"
+   "notes": "人数にパートナー（社外）を含む。会社案内に「愛三グループをリードする」。AiA の会員。gBizINFO 56人",
+   "parent_group": "株主 愛三工業株式会社（東証プライム上場）（会社案内。D5 2026-11-11 に足した）"
   }
  ],
  "chita": [],
@@ -1809,7 +1813,7 @@
  "higashiura": [
   {
    "name": "エスツーアイ株式会社",
-   "hq": "《本社》愛知県知多郡東浦町大字緒川字屋敷壱区34番地（AiA の住所は32番地）",
+   "hq": "《本社》愛知県知多郡東浦町大字緒川字屋敷壱区34番地、《ソリューションセンター》東浦町大字緒川字旭2番地11（会社概要 https://s2-i.co.jp/company/companyprofile/ 。AiA の住所は32番地。トップのフッターはソリューションセンターの住所）",
    "municipality": "東浦町",
    "town": "緒川",
    "corporate_number": "4180001093385",
@@ -1817,15 +1821,15 @@
    "employees": {
     "value": 142,
     "as_of": "142名(2026年4月現在)",
-    "source": "https://www.s2-i.co.jp/"
+    "source": "https://s2-i.co.jp/company/companyprofile/"
    },
    "capital": {
     "value": "グループ合計資本金 1億6千万円",
     "source": "https://www.s2-i.co.jp/"
    },
    "founded": 2002,
-   "business_summary": "2002年1月設立。自動車部品製造業向け情報化サービス事業全般（生産管理、原価管理、生産準備、会計業務のシステム）",
-   "ai_initiative": "確かめていない",
+   "business_summary": "2002年1月設立。事業内容《1.自動車部品製造業向け情報化サービス事業全般》生産管理、原価管理、生産準備、会計業務のシステムコンサルテーション＆システム構築等、《2.IT製品販売》日本アイ・ビー・エム・ダッソー・システムズのパートナー（会社概要）",
+   "ai_initiative": "トップのお知らせに「AI✕SaaS生産計画スケジューラ｢最適ワークス｣の販売パートナー契約を締結」（株式会社スカイディスクと2023年3月23日）（D5 2026-11-11）",
    "url": "https://www.s2-i.co.jp/",
    "size_basis": "employees",
    "checked": "2026-11-11",
