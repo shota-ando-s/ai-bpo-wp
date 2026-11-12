@@ -449,8 +449,13 @@ def main():
                 print(f"  NG 既存の記事と{label}が重なる: {city} と {exd[key]} ({key})")
                 ok = False
             if key in pld:
-                print(f"  NG 他県の PLAN と{label}が重なる: {city} と {pld[key]} ({key})")
-                ok = False
+                if pld[key].startswith("hokkaido "):
+                    # 北海道は 2026-11-11 のユーザー決定で他県との重なりを許容する（data/area/_batch5/shared.md）。
+                    # 静岡の PLAN（2026-11-11 push）が先なので参考の表示だけにする
+                    notes.append(f"{city}: {label}が北海道の PLAN と重なる（{pld[key]}、{key}）。北海道は他県との重なりを許容する取り決め")
+                else:
+                    print(f"  NG 他県の PLAN と{label}が重なる: {city} と {pld[key]} ({key})")
+                    ok = False
         if size in seen_s:
             print(f"  NG 静岡県の中で規模が重なる: {city} と {seen_s[size]} ({size}名)")
             ok = False

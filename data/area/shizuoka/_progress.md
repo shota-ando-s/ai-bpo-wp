@@ -16,3 +16,6 @@
 - 残りの調査: choson（12町）・companies・outside/serp・cases2
 - 調査8担当とも完了（WebSearch 計約94回）。仕様の下書き D12・D345（0回）を組み立てて docs/area-writing-spec-shizuoka.md に（判断はすべて案どおり、例外は仕様の「下書きの『案』の扱い」）
 - 執筆: W1（静岡市・裾野市・河津町・森町）・W2（浜松市・長泉町・松崎町）を起動。**書き上がった記事は全ページそろうまで main に入れない**（`.git/info/exclude` に `articles/2026-11-11-area-shizuoka*.md`。退避は scratchpad の backup_wip.sh で `area-shizuoka-wip` ブランチへ）
+- 2026-11-11 13:20 UTC ごろ週の利用上限で W3・W4 が止まった（ファイル0本）。2026-11-12 に再開し、W3・W4 に SendMessage で続きを頼んだ。W1・W2 の7ページは area-shizuoka-wip に退避済み
+- 北海道の PLAN（後から push）と熱海市の金額が重なった（62.9万円）。北海道は他県との重なりを許容する取り決めなので、_calc.py で北海道との重なりを参考表示にした（OK）
+- **次にやること**: W3・W4 が終わったら W5〜W9 を順に（同時2人まで）、最後に W10（県ページ）。そのあと全ページの確認・共通ファイル（areas.yml・shizuoka.yml・地域ガイド・area-todo・手順書・memory）
