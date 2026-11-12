@@ -13,7 +13,8 @@
 - 2026-11-12: ネットワーク確認（県・総務省とも開けた）、_brief.md・area_uniq.py・共有メモに slug
 - 調査: stats（4回）完了・cases（25回まで）・gov（15回まで）を起動
 - 試算の PLAN を決めた（_calc.py、表は _plan_table.md）。33ページで月30〜107.25時間・約9.4〜44.7万円・12〜70名。神奈川の中だけ重ねない（他県とは参考表示）
-- **次にやること**: stats・cases が終わったら gov（県・19市・総務省表・国の出先・リンク条件）・subsidy（県・19市）→ choson（13町1村の行政＋補助金）・companies → outside/serp・cases2。そのあと _calc.py の PLAN、仕様、執筆
+- cases 完了（18回）。数値つきで未使用は5件（ガレージカメイ・コイワイ・インフォマティクス・RAMXEED・横浜綜合法律事務所）。subsidy（15回まで）を起動
+- **次にやること**: gov（県・19市・総務省表・国の出先・リンク条件）・subsidy（県・19市）→ choson（13町1村の行政＋補助金）・companies → outside/serp・cases2。そのあと _calc.py の PLAN、仕様、執筆
 
 ## 再開するとき
 1. `git pull origin main`、この _progress.md の「次にやること」から
