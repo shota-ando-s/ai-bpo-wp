@@ -44,3 +44,4 @@
 - 2026-11-12 ネットワーク確認（pref.saitama.lg.jp・soumu.go.jp とも WebFetch で開けた）。WebSearch 0回
 - stats（WS14）・cases（WS20）起動
 - 国のデジタル化・AI導入補助金 7次締切は 2026-12-01（火）17:00、交付決定 2027-01-19 予定（事務局 https://it-shien.smrj.go.jp/schedule/ を 2026-11-12 に WebFetch で確認。8次は日程未掲載）
+- コンテナが再起動し stats・cases が止まった（cases.md 116行は残った）。SendMessage で再開
