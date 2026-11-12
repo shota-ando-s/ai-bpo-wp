@@ -75,3 +75,4 @@
 - 仕様 docs/area-writing-spec-hyogo.md を組み立て（約520KB）。執筆 W1〜W14（市町41）・W15（県ページ）。依頼文は spec/writer_prompt.md
 - 記事は全ページそろうまで main に入れない（`.git/info/exclude` に articles/2026-11-11-area-hyogo*.md。書き終えた分は一時インデックスで area-hyogo-wip ブランチに退避。scratchpad/wip_push.sh。**コンテナが作り直されたら `git fetch origin area-hyogo-wip && git checkout origin/area-hyogo-wip -- articles/` で取り出す**）
 - W1（神戸市・多可町）・W2（姫路市・稲美町・香美町）起動
+- W1 神戸市（約11,400字・92.2%・月393.75h/117.3万、倉庫・港湾運送140名、9区の表を H2 2 に）・多可町（約7,700字・86.9%・362.25h/115.2万、特養50名・県内の例）完了、ERROR 0、WS0。多可町のサイトは開けず「確かめられなかった」。D3-12 の事業名を「ひょうごTECHイノベーションプロジェクト」と確かめた。W3 起動
