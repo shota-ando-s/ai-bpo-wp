@@ -73,3 +73,5 @@
 - D25 完了（spec/D2.md 約94KB・spec/D5.md 約52KB、WS0、判断 D2 10点・D5 6点）: H2 3 の詳述は神戸市＝HKテクノロジー・明石市＝神戸規志税理士事務所・豊岡市＝西村屋（観光庁 001889558.pdf p.109〜 で実証の数値を確かめた。記事で未使用）。他県で使用済みの12件は9件を所在の市町で数値なし1〜2文＋他県のページへリンク。県外3件は FIKA→新温泉町・川島製作所→稲美町・中央運送→伊丹市で詳述、同じ業種の8ページに1文。D5 は本表5市9社を公式で開き直して食い違いなし。companies.json を直した
 - 判断: D2 は10点とも案どおり（3は省力化ナビにリンクせず資料名を文字で＝和歌山の J-Net21 と同じ。9は CASES に県外3件を親が足した、_calc.py OK）。D5 は6点とも案どおり
 - 仕様 docs/area-writing-spec-hyogo.md を組み立て（約520KB）。執筆 W1〜W14（市町41）・W15（県ページ）。依頼文は spec/writer_prompt.md
+- 記事は全ページそろうまで main に入れない（`.git/info/exclude` に articles/2026-11-11-area-hyogo*.md。書き終えた分は一時インデックスで area-hyogo-wip ブランチに退避。scratchpad/wip_push.sh。**コンテナが作り直されたら `git fetch origin area-hyogo-wip && git checkout origin/area-hyogo-wip -- articles/` で取り出す**）
+- W1（神戸市・多可町）・W2（姫路市・稲美町・香美町）起動
