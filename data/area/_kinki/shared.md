@@ -54,6 +54,15 @@
 | 内閣府 災害救助法の適用状況（2026年） | data/area/shiga/stats.md に URL | 2026-11-07 | 滋賀は甲賀市（7/7 土砂崩れ） | 滋賀 |
 | デジタル化・AI導入補助金 事務局のお知らせ（news/40319・40312、schedule） | data/area/shiga/subsidy_a_areas.md に URL | 2026-11-07 | 全国共通。7次 12-01 17時、交付申請の最終締切 2027-01-07 17時（8次とみられる）、ITツール登録の最終締切 2026-12-09 | 滋賀 |
 | 信金中金総研 生成AIのレポート（2026-11-02） | https://www.scbri.jp/reports/.assets/industry_20261102.pdf | 2026-11-07 | 全国 n=12,766・利活用率36.1%（地域別は調査本体の資料編。未確認） | 滋賀 |
+| 京都府中小企業団体中央会「ものづくり補助金 成果事例集 —京都府—」7冊（令和2年12月〜令和7年12月、PDF から文字が取れる。資料編の4段組みは社名と実施場所を読み違えやすい） | https://www.chuokai-kyoto.or.jp/report/mono.html | 2026-11-11 | 京都府だけ（滋賀・和歌山の中央会にも同じ形があるかもしれない） | 京都 |
+| 関経連「ICT・IoT・AI等活用事例集」の一覧（今回86本。奈良の記録は78本） | https://www.kankeiren.or.jp/iot/list.html | 2026-11-11 | 京都府の所在は8件（京都銀行・KTC・月桂冠・ものレボ・RedDotDrone・イザン・大西常商店・FUKUDA） | 京都 |
+| KANSAI DX AWARD 受賞企業（2024・2025）と 2026 | https://www.kankeiren.or.jp/kansai-dx/award/2024/05/ ほか | 2026-11-11 | 京都: 2024 パーシテック・ゲートジャパン、2025 日本新薬、2026 舞鶴市（自治体部門） | 京都 |
+| 府の建設DX推進プラットフォーム 好事例（PDF 31本） | https://www.pref.kyoto.jp/shido/kensetsushokunin/kensetudxjirei.html | 2026-11-11 | 京都中心。滋賀県長浜市の(株)大翔（AI ではない）・和歌山県田辺市のデジタルツインの発表もある | 京都 |
+| Jグランツの公開API（府県名で補助金を絞れる。業務改善助成金の府県ごとの締切も取れる） | https://api.jgrants-portal.go.jp/exp/v1/public/subsidies | 2026-11-11 | 全国 | 京都 |
+| 法人番号の府県別 CSV は POST で取れる（京都府は fileNo 28434）＋gBizINFO の被保険者数（大量に curl で開けた） | https://www.houjin-bangou.nta.go.jp/download/ | 2026-11-11 | 府県ごと | 京都 |
+| TDB 京都支店の府版（後継者不在率 20260212・社長年齢 20260331・休廃業 /report/industry/20260130）。人手不足・生成AI は府版なし（近畿版） | data/area/kyoto/stats_labor.md | 2026-11-11 | 京都府。近畿版の生成AI 京都37.1%（近畿で最も高い） | 京都 |
+| 近畿農政局の組織図: 京都府拠点だけ住所がない（電話 075-414-9015） | data/area/kyoto/gov_ai.md | 2026-11-11 | 京都府 | 京都 |
+| 経済構造実態調査: 政令市の中分類は第1表にあり、参考表には区の内訳しかない。国勢調査第3-3表の statInfId は府県コード順（京都 …868） | data/area/kyoto/stats.md | 2026-11-11 | 全国 | 京都 |
 | KANSAI DX AWARD 2026 の受賞者一覧（関経連、2026-09-16） | https://www.kankeiren.or.jp/file/KANSAI%20DX%20AWARD%202026.pdf | 2026-11-11 | 兵庫: エヌエスケーケー金賞（他県で使用済み）・香山組（尼崎、AI ではない）。能勢鋼材（滋賀県彦根市）・KURA おさかなファーム（和歌山県日高郡）も載る | 兵庫 |
 | （京都へ）京都府中小企業団体中央会の成果事例集 | https://chuokai-kyoto.or.jp/whatsnew/R720seikajirei2025.pdf | 2026-11-11 | 京都（兵庫は開いていない） | 兵庫 |
 | 神戸市「DX推進事例集」（神戸市モデル、11社） | （兵庫の cases.md） | 2026-11-11 | 兵庫だけ。AI の効果の数値0件 | 兵庫 |
