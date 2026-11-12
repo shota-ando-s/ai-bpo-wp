@@ -25,15 +25,15 @@
 ## 状態
 - [x] ネットワーク確認（pref.kyoto.jp・soumu.go.jp とも WebFetch で開けた。2026-11-11）
 - [x] _brief.md・wages.md
-- [ ] area_uniq.py に kyoto
-- [ ] 調査
-- [ ] _calc.py の PLAN（push）
-- [ ] 執筆仕様 docs/area-writing-spec-kyoto.md
-- [ ] 記事 27本（府1＋市町村26）
-- [ ] data/subsidies/kyoto.yml・areas.yml・build
-- [ ] 地域ガイド（近畿の段）・area-todo.md・area-new-prefecture.md・memory
-- [ ] チェック
-- [ ] main に push
+- [x] area_uniq.py に kyoto
+- [x] 調査
+- [x] _calc.py の PLAN（push）
+- [x] 執筆仕様 docs/area-writing-spec-kyoto.md
+- [x] 記事 27本（府1＋市町村26）
+- [x] data/subsidies/kyoto.yml・areas.yml・build
+- [x] 地域ガイド（近畿の段）・area-todo.md・area-new-prefecture.md・memory
+- [x] チェック
+- [x] main に push
 
 ## 実績メモ
 - 2026-11-11 ネットワーク確認・_brief.md・_calc.py の枠・area_uniq.py に kyoto（push）。共有メモに kyoto の slug
@@ -67,3 +67,5 @@
 - W7 八幡市（約8,286字・86.9%・運送128名 月372.75h/111.1万、市へのリンク0本）・京田辺市（8,596・92.2%・コンクリート製品47名 月312.75h/109.5万、補助の条件を 11-12 に開き直して足した）・井手町（7,375・90.0%・運送48名 月308.75h/92.0万）完了、ERROR 0、WS0。W9 起動
 - W8 木津川市（約8,161字・83.5%・特養64名 月365.75h/116.3万、市へのリンク0本）・精華町（7,867・85.7%・ソフトウェア52名 月348.75h/148.6万、町へのリンク0本）・笠置町（6,980・90.2%・総合工事業37名 月311.75h/109.7万、府内の例）完了、ERROR 0、WS0。W10（府ページ）起動
 - W9 和束町（約7,810字・87.5%・茶の製造42名 月354.75h/124.2万、府内の例、町へのリンク0本）・南山城村（7,765・94.2%・訪問介護・通所43名 月352.75h/112.2万、府内の例）完了、ERROR 0、WS0。市町村26ページそろった
+- W10 府ページ（約15,200字・97.0%、ERROR 0）完了。全27ページ: check_article ERROR 0、area_uniq 75.5〜97.0%（最低 亀岡市）、試算の値が26ページとも PLAN と一致、禁止ドメイン・他府県のページへのリンク・旧ブランド名 0、_calc.py OK
+- 親: data/subsidies/kyoto.yml（31行）・areas.yml に京都府の行（26市町村）を同じコミットで入れ build（1135制度）。地域ガイドの近畿の段に京都府の行、area-todo・area-new-prefecture・memory・_kinki/shared.md を更新し、記事を main に入れて push（投稿・デプロイはユーザーが Mac で「投稿して」）
