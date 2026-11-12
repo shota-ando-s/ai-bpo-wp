@@ -15,11 +15,11 @@
 |---|---|---|
 | stats | stats.md / stats_labor.md | 14 |
 | cases | cases.md | 20 |
-| gov | gov_ai.md（県・国の出先機関・総務省表の全63行・県の補助金・商工会議所/商工会の名簿・県のリンク条件） | 10 |
-| govsub_1 | govsub_1.md / subsidy_1.yml（さいたま市・南部・南西部・県央 16市町） | 7 |
-| govsub_2 | govsub_2.md / subsidy_2.yml（東部・利根 16市町） | 7 |
-| govsub_3 | govsub_3.md / subsidy_3.yml（川越比企・西部 19市町村） | 7 |
-| govsub_4 | govsub_4.md / subsidy_4.yml（北部・秩父 12市町） | 7 |
+| gov | gov_ai.md / subsidy_pref.yml / subsidy_pref_areas.md（県・国の出先機関・総務省表の全63行・県域の補助金・商工会議所/商工会の名簿・県のリンク条件） | 10 |
+| govsub_1 | gov_ai_1.md / subsidy_1.yml / subsidy_1_areas.md（さいたま市・南部・南西部・県央 16市町。兵庫と同じ形） | 7 |
+| govsub_2 | gov_ai_2.md / subsidy_2.yml / subsidy_2_areas.md（東部・利根 16市町。兵庫と同じ形） | 7 |
+| govsub_3 | gov_ai_3.md / subsidy_3.yml / subsidy_3_areas.md（川越比企・西部 19市町村。兵庫と同じ形） | 7 |
+| govsub_4 | gov_ai_4.md / subsidy_4.yml / subsidy_4_areas.md（北部・秩父 12市町。兵庫と同じ形） | 7 |
 | companies | companies.json / companies.md | 10 |
 | outside | cases_outside.md / serp.md | 12 |
 | cases2 | cases2.md（補充） | 10 |
@@ -42,3 +42,5 @@
 
 ## 実績メモ
 - 2026-11-12 ネットワーク確認（pref.saitama.lg.jp・soumu.go.jp とも WebFetch で開けた）。WebSearch 0回
+- stats（WS14）・cases（WS20）起動
+- 国のデジタル化・AI導入補助金 7次締切は 2026-12-01（火）17:00、交付決定 2027-01-19 予定（事務局 https://it-shien.smrj.go.jp/schedule/ を 2026-11-12 に WebFetch で確認。8次は日程未掲載）
