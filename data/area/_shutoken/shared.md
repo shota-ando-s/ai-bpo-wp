@@ -38,3 +38,6 @@
 | miyoshi-town | 埼玉県三芳町（入間郡） | 徳島県三好市・広島県三次市 `miyoshi`、愛知県みよし市 `miyoshi-city` |
 | ogawa-town | 埼玉県小川町（比企郡） | 長野県小川村 `ogawa` |
 | kamikawa-town | 埼玉県神川町（児玉郡） | 北海道上川町・兵庫県神河町 `kamikawa` |
+| yokohama | 神奈川県横浜市（既存ページ、parent area/kanagawa） | 変えない。青森県横浜町は `yokohama-town` |
+| kawasaki | 神奈川県川崎市 | 宮城県・福岡県の川崎町は `kawasaki-town` なので `kawasaki` を使う |
+| yamato-city | 神奈川県大和市 | 熊本県山都町 `yamato`・鹿児島県大和村 `yamato-village` と分ける |
