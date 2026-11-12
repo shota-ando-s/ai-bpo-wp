@@ -26,3 +26,6 @@
 
 | slug | 県・市町村 | 扱い |
 |---|---|---|
+| kamikawa | 北海道上川郡上川町（公開済み `/area/hokkaido/kamikawa/`） | 埼玉県児玉郡神川町は `kamikawa` 以外で（北海道） |
+| hidaka-town | 北海道沙流郡日高町（予定） | 高知県日高村が `hidaka` を使用済み。埼玉県日高市は `hidaka` 以外で（北海道） |
+| taiki-town-hokkaido・numata-town-hokkaido・shimizu・ikeda-town-hokkaido | 北海道の大樹町・沼田町・清水町（十勝）・池田町（予定） | 三重県大紀町 `taiki`・群馬県沼田市 `numata` があるので県名を付けた。清水町は `shimizu`（静岡県清水町は `shimizu-town-shizuoka`）（北海道） |
