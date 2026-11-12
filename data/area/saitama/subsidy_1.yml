@@ -1,0 +1,60 @@
+# 埼玉県 さいたま市・南部・南西部・県央の16市町（さいたま市・川口市・蕨市・戸田市・朝霞市・志木市・和光市・新座市・富士見市・ふじみ野市・三芳町・鴻巣市・上尾市・桶川市・北本市・伊奈町）の AI・IT・DX・研修・省力化・生産性向上に使える市町独自の補助金（2026年度）。2026-11-12に16市町の公式サイトの事業者向けの分類ページ・補助金のページを開いて確認（curl で原文）
+# 受付状況は 2026-11-12 時点。期間の status は data/subsidies/README.md の値（open / closed / rolling / unknown）を使う
+# 市町ごとの確認したページ・制度がない市町は subsidy_1_areas.md
+# 要約は subsidy_1_areas.md の冒頭
+# パイロット（2026-10-14、data/subsidies/saitama.yml）の id は saitama-city-dx・kawaguchi-dx-addon・ageo-dx・toda-dx。ここでは依頼の形（saitama-<slug>-<短い名前>）で付け直した
+
+- id: saitama-saitama-city-dx
+  name: 令和８年度さいたま市DX推進補助金
+  org: 公益財団法人さいたま市産業創造財団
+  area: saitama/saitama-city
+  max_yen: 400000
+  rate: 補助対象経費の2/3以内、上限40万円
+  rate_num: 0.667
+  targets: {efficiency: ○, consulting: △, training: △}
+  expenses: 生産性向上に資するシステム・ソフトウェア購入費（ライセンス利用料含む）、システム構築費、導入関連経費（付随する機器、導入検討の専門家費用、研修に関する経費。対象経費合計の1/3以内、PC・タブレットは10万円まで）、クラウドサービス利用料（実施期間の月額のみ）、技術導入費（外部からの技術指導）。対象領域に「分析･自動化(AI) AI、チャットボットツール、電子決済システム等」。RPA・OCR・オンラインストレージ・Microsoft Office・リース料・ホームページ制作・ECサイトは対象外
+  conditions: さいたま市内に本店または事業所がある中小企業者・個人事業主など。採択決定日後に導入するものが対象。公募締切後に審査（先着順ではない）、採択20件程度。事業は令和9年2月28日までに終了
+  period: {status: closed, start: 2026-04-06, end: 2026-05-20}
+  next_expected: 2027-04
+  stacking: {exclusive_with: [digital-ai-donyu]}
+  url: https://www.sozo-saitama.or.jp/topic/dx-subsidy/
+  checked: 2026-11-12
+  confidence: official
+  note: 財団のページ（2026年04月10日掲載、タイトル「【公募終了】令和８年度さいたま市DX推進補助金について」。curl で原文）。公募要領 https://www.sozo-saitama.or.jp/sozowp/wp-content/uploads/2026/03/dx-suishinhojyokinkouboyouryo.pdf（PDF p.4〜5 に対象領域・対象経費、対象外経費「⑮補助対象経費が他の補助事業と重複しているもの（他の補助事業を活用し安価で提供されるプラットフォーム利用料含む）」）。同じ経費で国のデジタル化・AI導入補助金と重ねることはできない（exclusive_with は要領の「重複」の記述から当社が付けた）。パイロット（2026-10-14）は efficiency △ だったが、要領に AI・チャットボットが対象領域として書かれているので ○ にした。研修・専門家費用は導入関連経費（1/3以内）に含まれるので △
+  fuenn_note: さいたま市内の中小企業が、AI・チャットボットを含む業務システムやクラウドサービスを入れる費用を2/3（上限40万円）補助する制度です（さいたま市産業創造財団）。2026年度の公募は5月20日で終わりました。来年度の公募（例年4月）は財団のページで確かめてください。
+
+- id: saitama-saitama-city-dx-new-business
+  name: デジタル技術活用新ビジネス・新サービス開発補助金
+  org: 公益財団法人さいたま市産業創造財団
+  area: saitama/saitama-city
+  max_yen: 5000000
+  rate: 補助率2/3（さいたま市内に本店がある中小企業等・中堅企業等）、上限500万円、採択2件程度
+  rate_num: 0.667
+  targets: {efficiency: △, consulting: △, training: ×}
+  expenses: システム構築、クラウド利用料、知的財産権等関連経費、専門家謝金・旅費、通信運搬費、旅費など
+  conditions: 最新のデジタル技術を活用し、データ分析等を行いながら新しいビジネス・サービスを開発する事業（業務の効率化だけの導入は対象にならない）
+  period: {status: closed, start: 2026-04-06, end: 2026-05-29}
+  next_expected: 2027-04
+  url: https://www.sozo-saitama.or.jp/topic/dx-new-business/
+  checked: 2026-11-12
+  confidence: official
+  note: 財団のページ（2026年04月10日掲載、タイトル「【公募終了】」。curl で原文）。公募要領は開いていない（国の補助金との併用の可否は未確認）
+  fuenn_note: さいたま市内の中小企業が、AIなどのデジタル技術で新しいビジネスやサービスを開発する費用を2/3（上限500万円）補助する制度です。2026年度の公募は5月29日で終わりました。
+
+- id: saitama-saitama-city-fukugyo
+  name: さいたま市副業人材活用推進補助金
+  org: 公益財団法人さいたま市産業創造財団
+  area: saitama/saitama-city
+  max_yen: 288000
+  rate: 1か月あたり最大9万6,000円または使用料の40%の低い方（最長3か月）、補助上限28万8,000円
+  rate_num: 0.4
+  max_months: 3
+  targets: {efficiency: ×, consulting: △, training: ×}
+  expenses: 副業人材マッチングサービスへの支払いだけ（Lotsful は人材への支払いを含む契約額、SkillShift・複業クラウドは掲載料）。直接雇用の経費は対象外
+  conditions: さいたま市内の個人事業を含む中小企業者・中堅企業者（大企業・みなし大企業は対象外）。新規案件のみ。「単純労働」「軽作業」「(専門性のない)事務員」などには使えない。交付決定後、契約を完了した先着順で確定。採択10件程度
+  period: {status: open, start: 2026-06-01, end: 2026-11-30}
+  url: https://www.sozo-saitama.or.jp/topic/fukugyo_hojo/
+  checked: 2026-11-12
+  confidence: official
+  note: 財団のページ（2026年11月02日更新、タイトル「11/30締切(早期終了あり･残1枠)」）「※2026年１１月２日現在 残り枠１件です」「枠オーバーとなった場合も残予算により調整出来る場合があります」。補助率・上限は公募要領 https://www.sozo-saitama.or.jp/sozowp/wp-content/uploads/2026/06/R8_fukugyo_kouboyouryou.pdf PDF p.1〜2「（３）採択件数、金額、補助率」。支払いは2027年2月末締め・3月10日までに確認できる費用まで。埼玉県の副業・兼業人材活用促進事業補助金とは「関連はありません」。AI・DX の名指しはないが、DX の専門人材を副業で使う費用に使える。パイロットでは「ページに記載なし」だった補助率を要領で確かめた
+  fuenn_note: さいたま市内の中小企業が、副業人材のマッチングサービスで専門人材を使う費用の40%（月9.6万円・3か月まで）を補助する制度です。締切は11月30日で、11月2日時点で残り1枠です。ふえんのサービス利用料そのものは対象になりません。
