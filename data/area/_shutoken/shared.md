@@ -41,3 +41,7 @@
 | yokohama | 神奈川県横浜市（既存ページ、parent area/kanagawa） | 変えない。青森県横浜町は `yokohama-town` |
 | kawasaki | 神奈川県川崎市 | 宮城県・福岡県の川崎町は `kawasaki-town` なので `kawasaki` を使う |
 | yamato-city | 神奈川県大和市 | 熊本県山都町 `yamato`・鹿児島県大和村 `yamato-village` と分ける |
+| chiba-city | 千葉県千葉市（県と同じ名前。県ページは chiba） | 千葉 |
+| ichikawa-city / tateyama-city / noda-city / sakura-city / katsuura-city / yachiyo-city / asahi-city | 千葉県の市川市・館山市・野田市・佐倉市・勝浦市・八千代市・旭市（既存の兵庫県市川町・富山県立山町・岩手県野田村・栃木県さくら市・徳島県勝浦町・茨城県八千代町と同じ slug、富山・山形の朝日町と紛らわしい） | 千葉 |
+| sakae-town / tonosho-town / ichinomiya-town / otaki-town | 千葉県の栄町・東庄町・一宮町・大多喜町（既存の長野県栄村・香川県土庄町・愛知県一宮市・長野県王滝村と同じ slug） | 千葉 |
+| tako / shibayama / nagara / shirako / yokoshibahikari / kozaki / sammu / chosei ほか | 千葉県の町村（2026-11-12 時点で既存の slug と重ならない。神奈川・埼玉で同じ slug を使うときはここに書く） | 千葉 |

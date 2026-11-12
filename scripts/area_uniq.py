@@ -40,6 +40,7 @@
     python3 scripts/area_uniq.py aichi              # 愛知の全ページ（名古屋市は nagoya、津島市 tsushima-city・江南市 konan-city・東海市 tokai-city・高浜市 takahama-city・みよし市 miyoshi-city・あま市 ama-city・美浜町 mihama-town-aichi）
     python3 scripts/area_uniq.py hyogo              # 兵庫の全ページ（神戸市 kobe・川西市 kawanishi-city・香美町 kami-town-hyogo）
     python3 scripts/area_uniq.py kanagawa           # 神奈川の全ページ（横浜市はパイロットのファイル名 2026-10-17-area-yokohama.md のまま、県ページは 2026-10-14-area-kanagawa.md）
+    python3 scripts/area_uniq.py chiba              # 千葉の全ページ（千葉市 chiba-city。市川市 ichikawa-city・館山市 tateyama-city・野田市 noda-city・佐倉市 sakura-city・旭市 asahi-city・勝浦市 katsuura-city・八千代市 yachiyo-city・栄町 sakae-town・東庄町 tonosho-town・一宮町 ichinomiya-town・大多喜町 otaki-town）
     python3 scripts/area_uniq.py hokkaido           # 北海道の全ページ（札幌市は sapporo、北広島市は kitahiroshima-city。振興局ごとに段階で作る）
 
 目安は固有60%以上。下回るページは、国・県の制度の説明や FAQ の定型の回答を、その市町の事情に合わせて書き直す。
@@ -52,7 +53,7 @@ def paras(p):
     body=open(p).read().split('---',2)[2]
     return [(x, any(f in x for f in FIXED)) for x in (y.strip() for y in re.split(r"\n\s*\n",body)) if len(x)>=40 and not x.startswith(('#','!','['))]
 args=sys.argv[1:]
-PREF=args.pop(0) if args and args[0] in ('ehime','kagawa','tokushima','kochi','aomori','iwate','akita','miyagi','yamagata','fukushima','niigata','toyama','ishikawa','fukui','gifu','nagano','yamanashi','shimane','tottori','hiroshima','yamaguchi','okayama','saga','kagoshima','oita','nagasaki','fukuoka','kumamoto','miyazaki','gunma','ibaraki','okinawa','tochigi','hokkaido','wakayama','shiga','nara','aichi','shizuoka','mie','hyogo','kyoto','saitama','kanagawa') else 'ehime'
+PREF=args.pop(0) if args and args[0] in ('ehime','kagawa','tokushima','kochi','aomori','iwate','akita','miyagi','yamagata','fukushima','niigata','toyama','ishikawa','fukui','gifu','nagano','yamanashi','shimane','tottori','hiroshima','yamaguchi','okayama','saga','kagoshima','oita','nagasaki','fukuoka','kumamoto','miyazaki','gunma','ibaraki','okinawa','tochigi','hokkaido','wakayama','shiga','nara','aichi','shizuoka','mie','hyogo','kyoto','saitama','kanagawa','chiba') else 'ehime'
 # 県ごとにファイル名の日付が違う（四国・青森は 2026-10-17、岩手は 2026-10-18）ので日付は問わない
 files=sorted(glob.glob(ROOT+f'2026-??-??-area-{PREF}.md')+glob.glob(ROOT+f'2026-??-??-area-{PREF}-*.md'))
 # 神奈川県の横浜市はパイロット（2026-10-17）のファイル名 area-yokohama.md のまま（変えると WordPress に重複ページができる）

@@ -1,0 +1,41 @@
+# 千葉県 地域ページ 作業状態（再開用）
+
+ブランチ: main（クラウドのセッション）。作業場所は `/home/user/ai-bpo-wp/`。ファイル名の日付と本文の確認日は 2026-11-12。WebSearch はセッションで200回まで（調査は110回までにする）。このセッションでは post.py・deploy.sh・post_changed.py は実行しない（投稿はユーザーが Mac で「投稿して」）。サブエージェントの同時起動は2人まで。
+
+**同時に神奈川・埼玉の地域ページと北海道の続きを別々のセッションで作っている**。共有メモは `data/area/_shutoken/shared.md`。千葉県だけのファイル（data/area/chiba/、docs/area-writing-spec-chiba.md、articles/*-area-chiba*.md）は自由に作る。`data/subsidies/chiba.yml` は areas.yml の千葉県の行と同じコミットで push する。共通ファイル（areas.yml、地域ガイド、area_uniq.py、area-todo.md、area-new-prefecture.md、memory、subsidies.json、_shutoken/shared.md）は直す直前に `git pull --rebase origin main`。書きかけの記事は main に入れない（post_changed.py が公開する）。.git/info/exclude で未追跡のまま置き、書き終えた分は area-chiba-wip ブランチに退避する。
+
+## 市町村と slug（54市町村＝37市16町1村。県コード12）
+- 一覧は data/area/chiba/_brief.md
+- 千葉市は1ページ（区のページは作らない）。slug は chiba-city
+- 既存の slug とぶつかるので変えた: 市川市 ichikawa-city（兵庫県市川町 ichikawa）・館山市 tateyama-city（富山県立山町）・野田市 noda-city（岩手県野田村）・佐倉市 sakura-city（栃木県さくら市）・勝浦市 katsuura-city（徳島県勝浦町）・八千代市 yachiyo-city（茨城県八千代町）・栄町 sakae-town（長野県栄村）・東庄町 tonosho-town（香川県土庄町）・一宮町 ichinomiya-town（愛知県一宮市）・大多喜町 otaki-town（長野県王滝村）。旭市 asahi-city（富山県・山形県の朝日町と紛らわしい）
+- パイロットの areas.yml の code `chiba/ichikawa` は `chiba/ichikawa-city` に直す（ほかのファイルからの参照は chiba.yml・areas.yml だけ。2026-11-12 grep）
+- 試算は「月の削減時間・時間換算額」だけの形。**他県との重なりは許容し、千葉県の中だけ時間・金額・規模を重ねない**（2026-11-11 ユーザー決定）
+
+## 調査の分担と WebSearch の配分（予定）
+| 担当 | 書くファイル | WebSearch |
+|---|---|---|
+| stats | stats.md / stats_labor.md | 14 |
+| cases | cases.md | 22 |
+| gov | gov_ai.md（県・国の出先機関・総務省表の全54行・千葉/葛南/東葛/印旛の市） | 12 |
+| gov_b | gov_ai_b.md（そのほかの市） | 8 |
+| subsidy | subsidy_a.yml / subsidy_a_areas.md（県・37市） | 10 |
+| choson | gov_ai_c.md / subsidy_c.yml / subsidy_c_areas.md（16町1村） | 8 |
+| companies | companies.json / companies.md | 8 |
+| outside | cases_outside.md / serp.md | 14 |
+| cases2 | cases2.md（補充） | 10 |
+| 合計 | | 106 |
+
+## 状態
+- [x] ネットワーク確認（pref.chiba.lg.jp・soumu.go.jp とも WebFetch で開けた。2026-11-12）
+- [x] _brief.md・wages.md・area_uniq.py に chiba
+- [ ] 調査（9担当）
+- [ ] 試算の PLAN（_calc.py）
+- [ ] 執筆仕様 docs/area-writing-spec-chiba.md
+- [ ] 記事 55本（県1＋市町村54）
+- [ ] data/subsidies/chiba.yml・areas.yml・build
+- [ ] 地域ガイド・area-todo.md・area-new-prefecture.md・memory
+- [ ] チェック
+- [ ] main に push
+
+## 実績メモ
+- 2026-11-12 開始。WebSearch 0回
