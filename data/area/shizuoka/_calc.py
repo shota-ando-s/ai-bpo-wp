@@ -446,8 +446,12 @@ def main():
                 ok = False
             seen[key] = city
             if key in exd:
-                print(f"  NG 既存の記事と{label}が重なる: {city} と {exd[key]} ({key})")
-                ok = False
+                if "-area-hokkaido" in exd[key]:
+                    # 北海道は他県との重なりを許容する取り決め（北海道の PLAN の重なりと同じ扱い）。静岡の PLAN が先に push された
+                    notes.append(f"{city}: {label}が北海道の記事と重なる（{exd[key]}、{key}）。北海道は他県との重なりを許容する取り決め")
+                else:
+                    print(f"  NG 既存の記事と{label}が重なる: {city} と {exd[key]} ({key})")
+                    ok = False
             if key in pld:
                 if pld[key].startswith("hokkaido "):
                     # 北海道は 2026-11-11 のユーザー決定で他県との重なりを許容する（data/area/_batch5/shared.md）。
