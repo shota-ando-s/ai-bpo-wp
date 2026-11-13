@@ -1,0 +1,231 @@
+{
+ "_meta": {
+  "checked": "2026-11-13",
+  "scope": "釧路総合振興局の8市町村と根室振興局の5市町。本社（公式サイトの本社・所在地）が当該市町村にあり、公式サイトでシステム開発・ソフトウェア開発・Web開発・情報処理サービスを事業として明示する法人。段階1〜オホーツクと同じく、本表には『公式サイトで本社所在地と従業員数（時点つき）の両方を確認できた会社』だけを入れた。",
+  "candidate_sources": [
+   "一般社団法人北海道IT推進協会（HICTA）の会員名簿 https://www.hicta.or.jp/profile/memberlist/ （2026-11-12 に十勝の担当が取得したものを再利用）。13市町村の住所の会員はサンエス・マネジメント・システムス（釧路市）の1件",
+   "中標津町商工会 サービス業部会の会員企業紹介 http://www.nakamap.or.jp/bukai/sabisugyo",
+   "PR TIMES の市町村別の一覧（13市町村）・キーワード検索、北海道新聞の釧路・根室の地域面の見出し、Hokkaido Design Code の導入事例",
+   "WebSearch（companies 4回）"
+  ],
+  "columns": "name / hq（公式の本社住所）/ municipality / town / employees{value,as_of,source} / capital / founded / business_summary / ai_initiative / url / size_basis / checked / notes"
+ },
+ "kushiro-city": [],
+ "kushiro-town": [],
+ "akkeshi": [],
+ "hamanaka": [],
+ "shibecha": [],
+ "teshikaga": [],
+ "tsurui": [],
+ "shiranuka": [],
+ "nemuro": [],
+ "betsukai": [],
+ "nakashibetsu": [
+  {
+   "name": "中央コンピューターサービス株式会社",
+   "hq": "〒086-1152 北海道標津郡中標津町北町2丁目22番地（本社）",
+   "municipality": "中標津町",
+   "town": "北町2丁目",
+   "employees": {
+    "value": 121,
+    "as_of": "従業員数 121名（2026年4月1日現在）、うち正社員84名、契約社員33名、嘱託社員4名",
+    "source": "https://www.ccs1981.jp/company/outline/"
+   },
+   "capital": {
+    "value": "42,000千円",
+    "source": "https://www.ccs1981.jp/company/outline/"
+   },
+   "founded": 1981,
+   "business_summary": "設立 1981年7月（中標津コンピューターサービス株式会社として設立、1983年6月に社名変更）。代表取締役社長 所 達也。コンピューターのプログラム開発及び開発に関する調査・分析・設計・コンサルティング業務、システムの販売・サポート業務、情報通信に関する教育・指導・助言。自治体向けの総合行政システム（G-TAWN）・教育機関向けのクラウド等。売上高 41億7千万円（2025年度）。札幌支社・とかちオフィス（帯広市）・後志営業所（倶知安町）",
+   "ai_initiative": "トップに「私たちは自治体や教育機関を中心にさまざまな事業者様等と連携し、人工知能（AI）等の先端技術を含めた多様なICTサービスを全道・全国に展開しています」、ソリューション一覧に「AI」のタグ。個別の AI 製品の説明は読んだ範囲になかった（2026-11-13）",
+   "url": "https://www.ccs1981.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-13",
+   "notes": "本社は事業所案内 https://www.ccs1981.jp/company/office/ で確認。121名は全社（札幌支社などを含む）。WebSearch の要約の「釧路市愛国西に本社・65人」は公式と食い違う（使わない）。恵庭市の記事に市との DX 連携協定（2023-04-17）として名前あり。資本金4,200万円・121名で中小企業者に当たる"
+  }
+ ],
+ "shibetsu-town": [],
+ "rausu": [],
+ "_reference": {
+  "kushiro-city": {
+   "next_candidates": [
+    {
+     "name": "株式会社k-Hack",
+     "hq": "〒085-0015 北海道釧路市北大通3-7-3（公式の会社概要）",
+     "municipality": "釧路市",
+     "town": "北大通3丁目",
+     "employees": {
+      "value": null,
+      "as_of": "従業員数の記載なし（メンバー一覧に役員・エンジニアなど16名、時点なし）",
+      "source": "https://k-hack.co.jp/members/"
+     },
+     "capital": {
+      "value": "54万円",
+      "source": "https://k-hack.co.jp/about/"
+     },
+     "founded": 2023,
+     "business_summary": "設立 2023年6月、代表取締役 澄川 誠治。大手企業向けシステムコンサルティング、基幹システムの開発・保守・運用、Webアプリケーション開発、モバイルアプリケーション開発、地域企業向けDXコンサルティング、IT人材育成。出資者 釧路市・釧路商工会議所・阿寒町商工会・音別町商工会・一般社団法人釧路地域DX推進協会・釧路信用金庫・釧路信用組合・大地みらい信用金庫・株式会社北洋銀行",
+     "ai_initiative": "公式に AI の記載はない（2026-11-13）",
+     "url": "https://k-hack.co.jp/",
+     "size_basis": "人数の記載なし",
+     "checked": "2026-11-13",
+     "notes": "官民連携で設立（設立のお知らせ 2023-06-05）。articles・data/area に0件"
+    },
+    {
+     "name": "株式会社サンエス・マネジメント・システムス（SEMS）",
+     "hq": "〒085-0014 北海道釧路市末広町10丁目1-6 サンエス釧路駅前ビル 3階（公式の会社案内）",
+     "municipality": "釧路市",
+     "town": "末広町10丁目",
+     "employees": {
+      "value": 9,
+      "as_of": "従業員 9名（時点の記載なし）",
+      "source": "https://www.sems.co.jp/company/"
+     },
+     "capital": {
+      "value": "2000万円",
+      "source": "https://www.sems.co.jp/company/"
+     },
+     "founded": 1988,
+     "business_summary": "設立 昭和63年4月1日、代表者 宮田 昌利。各種IT関連システム、IT経営コンサルティング、情報セキュリティ、ネットワーク・サーバ、Webデザイン・製作・企画、インターネット接続プロバイダ（マリモインターネット）。サンエス電気通信株式会社の情報システム部から分離",
+     "ai_initiative": "「AIチャットボット　観光案内の試験運用」の見出しだけ（中身なし）",
+     "url": "https://www.sems.co.jp/",
+     "size_basis": "人数に時点なし",
+     "checked": "2026-11-13",
+     "notes": "HICTA の会員。常務取締役 中島秀幸氏は釧路地域DX推進協会の会長（北海道新聞 2026-10-22）・釧路市DXアドバイザー（公式）。株式会社セムス（不動産、sems-net.com）とは別の会社。articles・data/area に0件"
+    },
+    {
+     "name": "株式会社Hokkaido Design Code（HDC）",
+     "hq": "〒084-0907 北海道釧路市鳥取北7-1（公式の会社概要）",
+     "municipality": "釧路市",
+     "town": "鳥取北7丁目",
+     "employees": {
+      "value": null,
+      "as_of": "記載なし",
+      "source": "https://www.hkd-dc.com/"
+     },
+     "capital": {
+      "value": null,
+      "source": "記載なし"
+     },
+     "founded": 2017,
+     "business_summary": "設立 2017年8月21日、代表取締役 木村琴絵。kintoneシステム開発／AI伴走開発（Haidy）／DX推進支援・研修／講演／コミュニティスペース（港まちベース 946BANYA）運営／一棟貸宿の運営。サイボウズオフィシャルコンサルティングパートナー、CYBOZU AWARD 2026 エリア賞 北海道",
+     "ai_initiative": "「kintoneとAIで、業務が回るしくみを」「AI伴走開発 Haidy…手順書とkintoneとAIで解消」",
+     "url": "https://www.hkd-dc.com/",
+     "size_basis": "人数の記載なし",
+     "checked": "2026-11-13",
+     "notes": "2025-03 の PR TIMES では合同会社。導入事例（キャリア・Nomoto Consulting・ポータス）は cases_kushiro_nemuro.md。articles・data/area に0件"
+    }
+   ],
+   "unverified": [
+    {
+     "name": "株式会社ポータス",
+     "reason": "HDC の事例に「北海道釧路市を拠点に長年スクラッチ開発を手掛けるシステム開発会社」、苫小牧市の資料に苫小牧栗林運輸と AI番割（数理最適化）を共同開発。公式サイトが見つからなかった"
+    }
+   ],
+   "excluded": [
+    {
+     "name": "株式会社セムス（エイブルネットワーク釧路駅前店）",
+     "reason": "不動産会社。SEMS（サンエス・マネジメント・システムス）と取り違えない"
+    },
+    {
+     "name": "株式会社ニッコー",
+     "reason": "食品機械の製造業（社員数97名）"
+    },
+    {
+     "name": "株式会社Innovation BASE 北海道",
+     "reason": "本社 札幌市"
+    },
+    {
+     "name": "株式会社三城",
+     "reason": "本社 札幌市。道の DX EXPO の運営事務局"
+    },
+    {
+     "name": "株式会社リバーサー",
+     "reason": "魚の低活性の技術。システム開発の会社か確かめていない"
+    }
+   ]
+  },
+  "nakashibetsu": {
+   "unverified": [
+    {
+     "name": "タスタスデザインカンパニー",
+     "reason": "中標津町商工会のサービス業部会の名簿だけ。公式・人数未確認"
+    },
+    {
+     "name": "ナカシベツドットネット",
+     "reason": "同上"
+    },
+    {
+     "name": "中標津のホームページ屋さん　さわやかｎｅｔ",
+     "reason": "同上（https://sawayakanet.com/ は開いていない）"
+    }
+   ],
+   "excluded": [
+    {
+     "name": "学校法人岩谷学園 ひがし北海道IT専門学校",
+     "reason": "学校で会社ではない"
+    },
+    {
+     "name": "株式会社ファームノートデーリィプラットフォーム",
+     "reason": "酪農の運営受託。開発会社ではない"
+    }
+   ]
+  },
+  "shibetsu-town": {
+   "next_candidates": [
+    {
+     "name": "エゾウィン株式会社",
+     "hq": "北海道標津郡標津町川北63-7（会社の PR TIMES の発表の会社概要）",
+     "municipality": "標津町",
+     "town": "川北",
+     "employees": {
+      "value": null,
+      "as_of": "公式で確かめられず",
+      "source": "https://ezowin.com/"
+     },
+     "capital": {
+      "value": null,
+      "source": "確かめられず"
+     },
+     "founded": 2019,
+     "business_summary": "設立 2019年1月、代表取締役 大野宏。動態管理「レポサク」「ミルトッカ」（みちびき CLAS 対応の GPS ロガーとクラウド）、ヒグマ対策「クマハブ」",
+     "ai_initiative": "全エンジニアに ChatGPT Plus・Gemini for Google Workspace・Claude Pro の費用を全額補助、Claude Code で開発のリードタイム短縮（2025-07-13 の発表）",
+     "url": "https://ezowin.com/",
+     "size_basis": "人数不明",
+     "checked": "2026-11-13",
+     "notes": "公式サイトは Studio 製で会社概要のページがない。青森市の記事に名前（スマートシティ青森の受託候補）。十勝の companies_tokachi.json に対象外として記録"
+    }
+   ]
+  },
+  "shiranuka": {
+   "excluded": [
+    {
+     "name": "株式会社藤山水産加工",
+     "reason": "水産加工。エコモット（札幌市）の連結子会社"
+    }
+   ]
+  },
+  "nemuro": {
+   "excluded": [
+    {
+     "name": "株式会社MENOU・アプライド株式会社・株式会社アイエムパック",
+     "reason": "カネコメ高岡商店の検査 AI の提供側。本社が根室市ではない"
+    }
+   ]
+  },
+  "betsukai": {
+   "excluded": [
+    {
+     "name": "エンPeopleX株式会社・株式会社SHIFT",
+     "reason": "町の AI 面接・起業人の提供側。本社 東京"
+    }
+   ]
+  }
+ },
+ "_notes": [
+  "本表は中標津町の1社だけ（中央コンピューターサービス、121名・2026年4月1日現在）。ほかの12市町村は0。本表が空の市町村は『会社がない』ではなく『確かめられなかった』",
+  "釧路市は次点が3社（k-Hack・SEMS・HDC）で、どれも公式に時点つきの人数がない",
+  "法人番号での照合はしていない",
+  "WebSearch は companies に4回。確認日 2026-11-13"
+ ]
+}
