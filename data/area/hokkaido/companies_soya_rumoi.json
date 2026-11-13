@@ -1,0 +1,127 @@
+{
+ "_meta": {
+  "checked": "2026-11-13",
+  "scope": "宗谷総合振興局の10市町村と留萌振興局の8市町村。本社（公式サイトの本社・所在地）が当該市町村にあり、公式サイトでシステム開発・ソフトウェア開発・Web開発・情報処理サービスを事業として明示する法人。段階1〜日高・檜山と同じく、本表には『公式サイトで本社所在地と従業員数（時点つき）の両方を確認できた会社』だけを入れた。",
+  "candidate_sources": [
+   "一般社団法人北海道IT推進協会（HICTA）の会員名簿 https://www.hicta.or.jp/profile/memberlist/ （2026-11-12 に十勝の担当が取得したものを再利用）。18市町村の住所の会員は0件",
+   "PR TIMES の市町村別の一覧（18市町村）・キーワード検索、北海道新聞の町別のタグの見出し（約4,200本）",
+   "WebSearch（companies 2回。上位は発注ナビの一覧ページだけ）",
+   "参考: SalesNow の従業員数ランキング（宗谷地方・留萌市、2024年、二次情報）に開発会社なし"
+  ],
+  "columns": "name / hq（公式の本社住所）/ municipality / town / employees{value,as_of,source} / capital / founded / business_summary / ai_initiative / url / size_basis / checked / notes"
+ },
+ "wakkanai": [],
+ "sarufutsu": [],
+ "hamatonbetsu": [],
+ "nakatonbetsu": [],
+ "esashi-soya": [],
+ "toyotomi": [],
+ "rebun": [],
+ "rishiri": [],
+ "rishirifuji": [],
+ "horonobe": [],
+ "rumoi": [],
+ "mashike": [],
+ "obira": [],
+ "tomamae": [],
+ "haboro": [],
+ "shosanbetsu": [],
+ "enbetsu": [],
+ "teshio": [],
+ "_reference": {
+  "wakkanai": {
+   "excluded": [
+    {
+     "name": "北方空撮",
+     "reason": "ドローン撮影の会社（北海道新聞「あの会社　この仕事」2025-06-02）。開発会社ではない"
+    },
+    {
+     "name": "育英館大学",
+     "reason": "大学（市史の生成AI・AI対話ロボの実証に協力）。会社ではない"
+    },
+    {
+     "name": "豊田通商株式会社・株式会社ユーラスエナジーホールディングス",
+     "reason": "宗谷グリーンデータセンターI（仮称）の事業者。大企業・本社 市外"
+    },
+    {
+     "name": "株式会社電算システム",
+     "reason": "市の庁内ネットワークのクラウドの実証の相手。本社 岐阜市"
+    }
+   ]
+  },
+  "toyotomi": {
+   "excluded": [
+    {
+     "name": "株式会社十勝情報システム",
+     "reason": "町営『豊富温泉ふれあいセンター』の顔ペイの提供側。本社 上士幌町（companies_tokachi に記録）"
+    }
+   ]
+  },
+  "nakatonbetsu": {
+   "excluded": [
+    {
+     "name": "株式会社コードタクト",
+     "reason": "中頓別学園のスクールタクト。本社 東京"
+    }
+   ]
+  },
+  "horonobe": {
+   "excluded": [
+    {
+     "name": "株式会社キッズプレート・ジオグラムス株式会社",
+     "reason": "科学イベントの AI 体験の出展・AI アニメの制作。本社 東京"
+    }
+   ]
+  },
+  "rumoi": {
+   "excluded": [
+    {
+     "name": "株式会社興北建設",
+     "reason": "建設業（遠隔操作・ドローンを使う側＝cases）"
+    },
+    {
+     "name": "株式会社ヤマニ野口水産",
+     "reason": "水産加工（SNS 販売＝cases）"
+    },
+    {
+     "name": "株式会社KASHIKA・株式会社PFU・株式会社COMPASS",
+     "reason": "SNS 運用支援・市の AI-OCR・学校の Qubena の提供側。本社 市外"
+    }
+   ]
+  },
+  "teshio": {
+   "excluded": [
+    {
+     "name": "株式会社INDETAIL",
+     "reason": "宇野牧場のドローン・AI の放牧の実証の相手（2020年）。本社 札幌市中央区。天塩町の会社として書かない"
+    },
+    {
+     "name": "株式会社宇野牧場",
+     "reason": "酪農（AI を使う側）"
+    }
+   ]
+  },
+  "tomamae": {
+   "excluded": [
+    {
+     "name": "株式会社ギフティ・株式会社あるやうむ",
+     "reason": "町のデジタル地域通貨・関係人口のコミュニティの提供側。本社 町外"
+    }
+   ]
+  },
+  "haboro": {
+   "excluded": [
+    {
+     "name": "Pestalozzi Technology株式会社",
+     "reason": "町教委の体力テストのデジタル集計の提供側。本社 町外"
+    }
+   ]
+  }
+ },
+ "_notes": [
+  "本表は18市町村とも0社。次点・未確認も0。本表が空の市町村は『会社がない』ではなく『確かめられなかった』",
+  "商工会・商工会議所の会員名簿、市町村の入札参加資格者名簿、法人番号公表サイトは見ていない（稚内商工会議所のサイトはメンテナンス中）",
+  "法人番号での照合はしていない",
+  "WebSearch は companies に2回。確認日 2026-11-13"
+ ]
+}
