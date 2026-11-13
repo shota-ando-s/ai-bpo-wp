@@ -28,14 +28,14 @@
 ## 状態
 - [x] ネットワーク確認（pref.chiba.lg.jp・soumu.go.jp とも WebFetch で開けた。2026-11-12）
 - [x] _brief.md・wages.md・area_uniq.py に chiba
-- [ ] 調査（9担当）
-- [ ] 試算の PLAN（_calc.py）
-- [ ] 執筆仕様 docs/area-writing-spec-chiba.md
-- [ ] 記事 55本（県1＋市町村54）
-- [ ] data/subsidies/chiba.yml・areas.yml・build
-- [ ] 地域ガイド・area-todo.md・area-new-prefecture.md・memory
-- [ ] チェック
-- [ ] main に push
+- [x] 調査（9担当）
+- [x] 試算の PLAN（_calc.py）
+- [x] 執筆仕様 docs/area-writing-spec-chiba.md
+- [x] 記事 55本（県1＋市町村54）
+- [x] data/subsidies/chiba.yml・areas.yml・build
+- [x] 地域ガイド・area-todo.md・area-new-prefecture.md・memory
+- [x] チェック
+- [x] main に push
 
 ## 実績メモ
 - 2026-11-12 開始。WebSearch 0回
@@ -89,3 +89,5 @@
 - data/subsidies/chiba.yml（16制度）と areas.yml の千葉県の行（54市町村、none 48、code chiba/ichikawa→chiba/ichikawa-city）を同じコミットで入れて build → 1322制度。他県の制度1306・地域は build の前後で同じ
 - 地域ガイドの千葉の行の差分は scratchpad/area_guide_chiba.patch（記事と同じコミットで入れる）
 - W15 県ページ完了（約17,600字、ERROR 0、市町村リンク54/54、WS0。茂原市を足して「研修費を含めて5市」、企業事例が見つからなかったのは44）。**記事55本そろう**
+- 最終確認（2026-11-13）: 55ページ check_article ERROR 0、_calc.py OK、全54ページの area_uniq 66.1〜（最低 長生村、_uniq_all.txt）、リンク0本の6市町のドメイン・旧ブランド・「東京の会社」・醤油・神奈川/埼玉のページへのリンク 0件、parent は全ページ area/chiba
+- 記事55本・地域ガイドの千葉の行・area-todo・area-new-prefecture・memory を main に push（投稿・デプロイはユーザーが Mac で「投稿して」）
