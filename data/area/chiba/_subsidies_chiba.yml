@@ -294,3 +294,20 @@
   confidence: official
   note: 町のページ（公開日 2026-09-02、curl）「国の重点支援地方交付金を活用」「令和8年9月1日より補助率を引き上げ、交付申請の要件を緩和しました」。要綱 https://www.town.shisui.chiba.jp/docs/2026051100016/file_contents/cashless_youkou.pdf （令和8年6月22日告示、7月1日施行、9月1日改正、2027-03-31 失効。pdftotext で読んだ）第1条「予算の範囲内」。引き上げ前の率はページ・要綱に書かれていない。AI・IT導入の補助ではない（決済端末の購入費）ので efficiency は △。rate_num は「購入費のうち10万円まで」を10/10と読んだ当社の置き方。町「経済環境課の目標（令和８年度）」https://www.town.shisui.chiba.jp/docs/2026062400020/file_contents/08keizai.pdf にも記載。問い合わせ 043-382-2339
   fuenn_note: 酒々井町内の店舗などで対面の決済をする中小企業が、タッチ決済に対応したキャッシュレス決済端末と付属機器を買う費用のうち10万円まで（税抜）を補助する町の制度です。交付決定の後に購入する必要があり、交付申請は2026年11月30日まで、予算の範囲内です。AI・業務システムの導入には使えません。
+
+- id: chiba-mobara-support-kenshu
+  name: 茂原市中小事業者サポート補助金（研修受講）
+  org: 茂原市（経済環境部 商工観光課 0475-20-1528）
+  area: chiba/mobara
+  max_yen: 100000
+  rate: 受講料・テキスト代などの1/2、上限10万円
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: △}
+  expenses: 研修の受講料・テキスト代など（外部の研修は受講時間が6時間を超えるもの）
+  conditions: 事業を始める前に茂原商工会議所に相談し、支援が必要と会議所に認められた市内の中小事業者。1年度に1事業者1回。同じ事業で国や自治体の補助を受ける場合は対象外。研修の分野の指定はなく、AIの使い方の研修が対象になるかは事前の相談で確認
+  period: {status: rolling}
+  url: https://www.city.mobara.chiba.jp/0000007102.html
+  checked: 2026-11-13
+  confidence: official
+  note: 執筆担当（W10）が市のページと「令和8年度 商工振興支援施策ガイドブック」（https://www.city.mobara.chiba.jp/0000005318.html 、2026-05-07 時点）で確かめた。調査（subsidy_a_areas.md）では見落としていた。期限はページにない（予算の範囲内）。AIの語はないので training は △（カードだけ）
+  fuenn_note: 茂原市内の中小事業者が外部の研修（6時間を超えるもの）を受けるとき、受講料などの1/2（最大10万円）を補助する市の制度です。茂原商工会議所への事前の相談が必要で、AIの研修が対象になるかは相談で確かめます。
