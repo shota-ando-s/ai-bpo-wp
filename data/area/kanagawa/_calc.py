@@ -85,7 +85,7 @@ for s, nm, ind, biz, emp, n, h, hours, yen, m, task in sorted(rows, key=lambda r
 # 記事との照合
 arts = {re.search(r"area-kanagawa-(.+)\.md$", f).group(1): f for f in glob.glob(os.path.join(ROOT, "articles", "2026-1?-??-area-kanagawa-*.md"))}
 y = os.path.join(ROOT, "articles", "2026-10-17-area-yokohama.md")
-arts["yokohama"] = y
+arts.setdefault("yokohama", y)  # 書き直しの途中は articles/2026-11-12-area-kanagawa-yokohama.md（一時のファイル）
 for s, nm, ind, biz, emp, n, h, hours, yen, m, task in rows:
     f = arts.get(s)
     if not f or not os.path.exists(f): continue

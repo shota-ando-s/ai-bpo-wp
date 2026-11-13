@@ -57,7 +57,7 @@ PREF=args.pop(0) if args and args[0] in ('ehime','kagawa','tokushima','kochi','a
 # 県ごとにファイル名の日付が違う（四国・青森は 2026-10-17、岩手は 2026-10-18）ので日付は問わない
 files=sorted(glob.glob(ROOT+f'2026-??-??-area-{PREF}.md')+glob.glob(ROOT+f'2026-??-??-area-{PREF}-*.md'))
 # 神奈川県の横浜市はパイロット（2026-10-17）のファイル名 area-yokohama.md のまま（変えると WordPress に重複ページができる）
-if PREF=='kanagawa': files=sorted(files+glob.glob(ROOT+'2026-10-17-area-yokohama.md'))
+if PREF=='kanagawa' and not os.path.exists(ROOT+'2026-11-12-area-kanagawa-yokohama.md'): files=sorted(files+glob.glob(ROOT+'2026-10-17-area-yokohama.md'))  # 書き直しの途中は 2026-11-12-area-kanagawa-yokohama.md（一時のファイル）を使う
 DATE={os.path.basename(f)[:10] for f in files}.pop() if files else '2026-10-17'
 P={f:paras(f) for f in files}
 def best(f,x):
