@@ -1,0 +1,167 @@
+{
+ "_meta": {
+  "checked": "2026-11-13",
+  "scope": "オホーツク総合振興局の18市町村。本社（公式サイトの本社・所在地）が当該市町村にあり、公式サイトでシステム開発・ソフトウェア開発・Web開発・情報処理サービスを事業として明示する法人。段階1〜後志と同じく、本表には『公式サイトで本社所在地と従業員数（時点つき）の両方を確認できた会社』だけを入れた。",
+  "candidate_sources": [
+   "一般社団法人北海道IT推進協会（HICTA）の会員名簿 https://www.hicta.or.jp/profile/memberlist/ （2026-11-12 に十勝の担当が取得したものを再利用）。オホーツクの18市町村の住所の会員は0件",
+   "北見工業大学「オホーツク企業合同セミナー」参加企業一覧（令和4年） https://www.kitami-it.ac.jp/wp-content/uploads/2022/01/R4ohotukukigyouitiran-1.pdf （情報通信・システム開発は北見の3社）",
+   "PR TIMES の市町村別の一覧（18市町村）・キーワード検索、北海道新聞の北見・オホーツクの地域面の見出し",
+   "WebSearch（companies 4回）"
+  ],
+  "columns": "name / hq（公式の本社住所）/ municipality / town / employees{value,as_of,source} / capital / founded / business_summary / ai_initiative / url / size_basis / checked / notes"
+ },
+ "kitami": [
+  {
+   "name": "株式会社北見コンピューター・ビジネス",
+   "hq": "〒090-0042 北見市北2条西3丁目6番地 NUPSビル（本社）",
+   "municipality": "北見市",
+   "town": "北2条西3丁目",
+   "employees": {
+    "value": 50,
+    "as_of": "役職員 50名(令和7年9月1日現在)",
+    "source": "https://k-cb.co.jp/kcb_new/corporate"
+   },
+   "capital": {
+    "value": "2,000万円",
+    "source": "https://k-cb.co.jp/kcb_new/corporate"
+   },
+   "founded": 1997,
+   "business_summary": "設立日 平成9年5月。ソフトウェア開発、パッケージソフト及びハードウェアの販売、システムコンサルティング、ネットワーク事業、テクニカルサポート、システムの保守・運用。サービスに窓口業務支援システム「らくまど」・公共図書館業務システム・GLOVIA smart ホテル SaaS・介護事業者支援システム（https://k-cb.co.jp/kcb_new/business ）。札幌支店・福岡支店あり",
+   "ai_initiative": "公式サイト（トップ・企業情報・アクセス・事業内容・採用）に AI の記載はない（2026-11-13 確認）",
+   "url": "https://k-cb.co.jp/kcb_new/",
+   "size_basis": "employees",
+   "checked": "2026-11-13",
+   "notes": "北見工業大学の合同セミナーの名簿（2022年）に「北見 情報通信業」。求人サイトの掲載（WebSearch の要約、2026年8月更新）は「従業員 43名（北見本社25名・札幌支店17名・福岡支店1名）」で公式と数え方・時点が違う＝公式の値を使う。資本金2,000万円・50名で中小企業者に当たる。「らくまど」と北見市の「書かない窓口」の関係は確かめていない。articles・data/area に0件"
+  }
+ ],
+ "abashiri": [],
+ "monbetsu": [],
+ "bihoro": [],
+ "tsubetsu": [],
+ "shari": [],
+ "kiyosato": [],
+ "koshimizu": [],
+ "kunneppu": [],
+ "oketo": [],
+ "saroma": [],
+ "engaru": [],
+ "yubetsu": [],
+ "takinoe": [],
+ "okoppe": [],
+ "nishiokoppe": [],
+ "omu": [],
+ "ozora": [],
+ "_reference": {
+  "kitami": {
+   "next_candidates": [
+    {
+     "name": "株式会社アラソフトウェア",
+     "hq": "〒090-0836 北海道北見市東三輪4丁目16-10 宮内マンション1号室（公式の会社概要）",
+     "municipality": "北見市",
+     "town": "東三輪",
+     "employees": {
+      "value": 3,
+      "as_of": "従業員数 3名（時点の記載なし）",
+      "source": "http://www.arasoftware.com/web2026/kigyoujyouhu/kigyou.html"
+     },
+     "capital": {
+      "value": "1,000万円",
+      "source": "http://www.arasoftware.com/web2026/kigyoujyouhu/kigyou.html"
+     },
+     "founded": 1996,
+     "business_summary": "創立 平成8年（1996年）11月26日、代表取締役 村井 保之。映像解析と AI（河川・防災ソリューション、交通量調査ソリューション、介護支援ソリューション〔人物検知AIカメラ・シルエット表示、TAISコード取得〕）。イプロスの会社ページ（二次情報）では Web サイト制作・ソフトウェア制作・IT コンサルティングも",
+     "ai_initiative": "トップ「映像解析とAI技術を活用し、社会インフラ、河川、防災、交通、介護の現場に新しい価値を提供します」。業務実績「2026年 北見市にてクマ検知システムを試験導入」「2020年 北見工業大学とNTTドコモの5G活用実験に映像解析分野で参加」「2012年 北見工業大学と河川分野で共同研究開始」",
+     "url": "http://www.arasoftware.com/",
+     "size_basis": "人数に時点なし",
+     "checked": "2026-11-13",
+     "notes": "公式の従業員数に時点がないので次点。articles・data/area に0件"
+    }
+   ],
+   "unverified": [
+    {
+     "name": "株式会社システムサプライ",
+     "reason": "北見工業大学の合同セミナーの名簿（2022年）に「北見 システム開発」。公式サイトが見つからなかった"
+    },
+    {
+     "name": "株式会社三和システムサービス",
+     "reason": "同じ名簿に「北見 情報通信業」。公式サイトが見つからなかった（東京の三和コンピュータは別会社）"
+    }
+   ],
+   "excluded": [
+    {
+     "name": "株式会社アルゴグラフィックス",
+     "reason": "本社 東京。北見の複合施設（データセンター中心）"
+    },
+    {
+     "name": "株式会社要",
+     "reason": "本社 東京都千代田区。セーフロードV（北見市で運用）"
+    },
+    {
+     "name": "株式会社アイエンター",
+     "reason": "北見市の RPA の提供事業者。本社が北見かは確かめていない"
+    },
+    {
+     "name": "合同会社AIM",
+     "reason": "本社 江別市。北見の幼稚園と採用支援 AI を共同開発"
+    },
+    {
+     "name": "ウイングアークＮＥＸ株式会社",
+     "reason": "本社 道外。北見市と関係人口の協定"
+    }
+   ]
+  },
+  "oketo": {
+   "unverified": [
+    {
+     "name": "ITよろず堂（瀧口 功大 氏）",
+     "reason": "北見商工会議所の AI セミナー（2026-11-27）のチラシに「元 AWS インフラエンジニア。置戸町を拠点に、地域のデジタルの困りごとを解決しています」。法人か個人か・人数・公式サイトは確かめていない"
+    }
+   ]
+  },
+  "abashiri": {
+   "excluded": [
+    {
+     "name": "株式会社シエルイノベーション",
+     "reason": "ドローンの生育調査のデータ化（北海道新聞の冒頭）。開発会社ではない。公式サイト・人数は見つからなかった"
+    },
+    {
+     "name": "株式会社フォーバル",
+     "reason": "本社 東京"
+    }
+   ]
+  },
+  "monbetsu": {
+   "excluded": [
+    {
+     "name": "株式会社SunnyTomorrow・TECHPlanning合同会社",
+     "reason": "市の VR・AI の SST 事業の共同体。本社所在地は確かめていない"
+    },
+    {
+     "name": "ソフトバンク株式会社",
+     "reason": "本社 東京。市と DX 包括連携協定"
+    }
+   ]
+  },
+  "shari": {
+   "excluded": [
+    {
+     "name": "株式会社アクティバリューズ・ビボテックジャパン株式会社・AUTHENTIC JAPAN株式会社・INCLUSIVE Holdings",
+     "reason": "本社が斜里町ではない（提供側）"
+    }
+   ]
+  },
+  "bihoro": {
+   "excluded": [
+    {
+     "name": "株式会社イマクリエ",
+     "reason": "町の exaBase 生成AI の提供側。本社が美幌町ではない"
+    }
+   ]
+  }
+ },
+ "_notes": [
+  "本表は北見市の1社だけ（北見コンピューター・ビジネス、役職員50名・令和7年9月1日現在）。ほかの17市町村は0。本表が空の市町村は『会社がない』ではなく『確かめられなかった』",
+  "アラソフトウェアは人数に時点がない。法人番号での照合はしていない",
+  "WebSearch は companies に4回。確認日 2026-11-13"
+ ]
+}
