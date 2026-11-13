@@ -1,0 +1,105 @@
+{
+ "_meta": {
+  "checked": "2026-11-13",
+  "scope": "後志総合振興局の20市町村。本社（公式サイトの本社・所在地）が当該市町村にあり、公式サイトでシステム開発・ソフトウェア開発・Web開発・情報処理サービスを事業として明示する法人。段階1〜空知と同じく、本表には『公式サイトで本社所在地と従業員数（時点つき）の両方を確認できた会社』だけを入れた。",
+  "candidate_sources": [
+   "一般社団法人北海道IT推進協会（HICTA）の会員名簿 https://www.hicta.or.jp/profile/memberlist/ （2026-11-12 に十勝の担当が取得したものを再利用）。後志の20市町村の住所の会員は0件",
+   "比較ビズの一覧（https://www.biz.ne.jp/list/web-system/01_hokkaido/otaru/ ・/list/hp-design/01_hokkaido/otaru/）はどちらも 404（掲載なし、2026-11-13）",
+   "小樽市「市内協力企業一覧（令和８年５月現在）」PDF（IT 企業なし）",
+   "PR TIMES の市町村別の一覧（20市町村）・キーワード検索60語、北海道新聞の小樽・後志の地域面の見出し",
+   "WebSearch（companies 4回）"
+  ],
+  "columns": "name / hq（公式の本社住所）/ municipality / town / employees{value,as_of,source} / capital / founded / business_summary / ai_initiative / url / size_basis / checked / notes"
+ },
+ "otaru": [],
+ "shimamaki": [],
+ "suttsu": [],
+ "kuromatsunai": [],
+ "rankoshi": [],
+ "niseko": [],
+ "makkari": [],
+ "rusutsu": [],
+ "kimobetsu": [],
+ "kyogoku": [],
+ "kutchan": [],
+ "kyowa": [],
+ "iwanai": [],
+ "tomari": [],
+ "kamoenai": [],
+ "shakotan": [],
+ "furubira": [],
+ "niki": [],
+ "yoichi": [],
+ "akaigawa": [],
+ "_reference": {
+  "otaru": {
+   "next_candidates": [
+    {
+     "name": "株式会社KOO",
+     "hq": "〒047-0017 北海道小樽市若松二丁目5番14号（公式サイトの会社概要）",
+     "municipality": "小樽市",
+     "town": "若松",
+     "employees": {
+      "value": null,
+      "as_of": "記載なし",
+      "source": "https://koo-inc.jp/about/"
+     },
+     "capital": {
+      "value": null,
+      "source": "https://koo-inc.jp/about/"
+     },
+     "founded": 2019,
+     "business_summary": "設立 2019年1月。主な事業内容「音楽制作・グラフィックデザイン・Webデザイン・映像制作・360°VRコンテンツ制作・ドローン空撮・ドローン各種運用・動画配信」。トップの見出し「札幌/小樽の3Dスキャン・3DGS・ドローン空撮・VR・動画・音楽・WEBサイト等コンテンツ総合制作」",
+     "ai_initiative": "公式に AI の語はない。株式会社きもと（三重県いなべ市、東証スタンダード 7908）の発表（2026-07-09 https://prtimes.jp/main/html/rd/p/000000055.000141348.html ）で、きもととの共同研究による 3D 空間データ作成サービス「SPLAT TWIN」（Gaussian Splatting）、日本青年会議所「第10回価値デザインコンテスト」デジタル大臣賞・NIKKEI THE PITCH賞",
+     "url": "https://koo-inc.jp/",
+     "size_basis": "人数の記載なし",
+     "checked": "2026-11-13",
+     "notes": "システム開発ではなく Web・映像・3D の制作会社。北海道新聞 2026-08-01 /article/1346277/（見出しだけ）。articles・data/area に0件"
+    }
+   ],
+   "excluded": [
+    {
+     "name": "北海道中央バス株式会社",
+     "reason": "バス会社・大企業（従業員数1,375名〔令和8年3月31日現在〕・資本金21億円、https://www.chuo-bus.co.jp/corporation/about/ ）。本社 小樽市色内1丁目8番6号。開発会社ではない"
+    },
+    {
+     "name": "株式会社HBA",
+     "reason": "本社 札幌市。小樽市と生成AIの連携協定"
+    },
+    {
+     "name": "パナソニックITS株式会社",
+     "reason": "本社が後志ではない。小樽市に地域活性化起業人を派遣"
+    },
+    {
+     "name": "株式会社ケイシイシイ",
+     "reason": "菓子の会社。本社 千歳市"
+    },
+    {
+     "name": "一般社団法人保健医療ネットワーク",
+     "reason": "本社 東京都杉並区"
+    }
+   ]
+  },
+  "rusutsu": {
+   "excluded": [
+    {
+     "name": "ルスツリゾートテック株式会社",
+     "reason": "PR TIMES の会社概要の本社所在地は東京都渋谷区"
+    }
+   ]
+  },
+  "niseko": {
+   "excluded": [
+    {
+     "name": "株式会社ビースポーク・タイムルーパー合同会社・株式会社アクティバリューズ・株式会社ファインダーズAIジャパン",
+     "reason": "本社 東京。ニセコの AI の提供側"
+    }
+   ]
+  }
+ },
+ "_notes": [
+  "20市町村すべて本表0。本表が空の市町村は『会社がない』ではなく『確かめられなかった』",
+  "KOO は人数が公式にない。法人番号での照合はしていない",
+  "WebSearch は companies に4回。確認日 2026-11-13"
+ ]
+}
