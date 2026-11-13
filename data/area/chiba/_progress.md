@@ -87,3 +87,4 @@
 - 茂原市の研修の補助金を _subsidies_chiba.yml（16制度）に足し、_areas_snippet.yml の茂原市の none を外した（none 48）
 - W14 完了（四街道市 約8,100字・93.8%・150h/47.7万、白井市 8,100・94.1%・152.5h/53.4万、富里市 8,250・93.8%・112.5h/33.5万、勝浦市 7,900・93.8%・107.25h/26.9万〔リンク0本〕、ERROR 0、WS0）。**市町村54ページそろう**。全ページの area_uniq を回す
 - data/subsidies/chiba.yml（16制度）と areas.yml の千葉県の行（54市町村、none 48、code chiba/ichikawa→chiba/ichikawa-city）を同じコミットで入れて build → 1322制度。他県の制度1306・地域は build の前後で同じ
+- 地域ガイドの千葉の行の差分は scratchpad/area_guide_chiba.patch（記事と同じコミットで入れる）
