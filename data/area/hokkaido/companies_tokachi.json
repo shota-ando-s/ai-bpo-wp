@@ -1,0 +1,261 @@
+{
+ "_meta": {
+  "checked": "2026-11-12",
+  "scope": "十勝総合振興局の19市町村。本社（公式サイトの本社・所在地）が当該市町村にあり、公式サイトでシステム開発・ソフトウェア開発・Web開発・情報処理サービスを事業として明示する法人。段階1（companies.json）・胆振・渡島・上川と同じく、本表には『公式サイトで本社所在地と従業員数（時点つき）の両方を確認できた会社』だけを入れた。",
+  "candidate_sources": [
+   "一般社団法人北海道IT推進協会（HICTA）の会員名簿 https://www.hicta.or.jp/profile/memberlist/ （2026-11-12 取得）。19市町村の住所の会員は株式会社ファームノート（帯広市）の1件だけ",
+   "比較ビズの帯広市のシステム開発・Web制作の一覧（https://www.biz.ne.jp/list/web-system/01_hokkaido/obihiroshi/ ほか、2026-11-12 取得。secondary。候補名と公式URLを拾うためだけに使った）",
+   "PR TIMES の市町村別の一覧・キーワード検索（十勝情報システム〔上士幌町〕・ワクタス〔音更町〕・ファームノート）",
+   "WebSearch（companies 4回。十勝の IT 企業の団体の会員名簿は見つからなかった）"
+  ],
+  "columns": "name / hq（公式の本社住所）/ municipality / town / employees{value,as_of,source} / capital / founded / business_summary / ai_initiative / url / size_basis / checked / notes"
+ },
+ "obihiro": [
+  {
+   "name": "株式会社帯広電子計算センター",
+   "hq": "〒080-0011 北海道帯広市西1条南1丁目2-3（本社所在地）",
+   "municipality": "帯広市",
+   "town": "西1条南",
+   "employees": {
+    "value": 3,
+    "as_of": "従業員数 3名（R07年6月現在）",
+    "source": "https://www.oec-denshi.com/company.html"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.oec-denshi.com/company.html"
+   },
+   "founded": 1974,
+   "business_summary": "設立 1974年5月（1971年1月に栗田会計事務所の電子計算機事業部として受託計算サービスを開始）。業務システム開発（完全オーダーメイド・自社パッケージのカスタマイズ）、コンピュータ機器の販売・構築・サポート、受託計算",
+   "ai_initiative": "記載なし",
+   "url": "https://www.oec-denshi.com/",
+   "size_basis": "employees",
+   "checked": "2026-11-12",
+   "notes": "3名の小さな会社。サイトは Shift_JIS。articles・data/area に0件"
+  }
+ ],
+ "otofuke": [],
+ "shihoro": [],
+ "kamishihoro": [],
+ "shikaoi": [],
+ "shintoku": [],
+ "shimizu": [],
+ "memuro": [],
+ "nakasatsunai": [],
+ "sarabetsu": [],
+ "taiki-town-hokkaido": [],
+ "hiroo": [],
+ "makubetsu": [],
+ "ikeda-town-hokkaido": [],
+ "toyokoro": [],
+ "honbetsu": [],
+ "ashoro": [],
+ "rikubetsu": [],
+ "urahoro": [],
+ "_reference": {
+  "obihiro": {
+   "next_candidates": [
+    {
+     "name": "株式会社ワイドバンドコンピュータ",
+     "hq": "〒080-0026 北海道帯広市西16条南6丁目30番23号 わかばビル2F（所在地）",
+     "municipality": "帯広市",
+     "town": "西16条南",
+     "employees": {
+      "value": 15,
+      "as_of": "『従業員数 15名』。時点の記載なし",
+      "source": "https://www.wideband.jp/company/"
+     },
+     "capital": {
+      "value": "1,500万円",
+      "source": "https://www.wideband.jp/company/"
+     },
+     "founded": 2001,
+     "business_summary": "設立 2001年1月。ソフトウェア受託開発・ネットワークの構築・パッケージソフト導入・ウェブコンテンツ企画・制作・サポート。主要取引先に十勝毎日新聞社・日本電気",
+     "ai_initiative": "記載なし",
+     "url": "https://www.wideband.jp/",
+     "size_basis": "employees",
+     "checked": "2026-11-12",
+     "notes": "人数に時点がないので本表に入れていない"
+    },
+    {
+     "name": "有限会社ワン・エックス",
+     "hq": "〒080-0035 北海道帯広市西5条北4丁目1番地3（本社）",
+     "municipality": "帯広市",
+     "town": "西5条北",
+     "employees": {
+      "value": 14,
+      "as_of": "『14名（役員2名）』。時点の記載なし",
+      "source": "https://www.one-x.co.jp/company/"
+     },
+     "capital": {
+      "value": "400万円",
+      "source": "https://www.one-x.co.jp/company/"
+     },
+     "founded": 2005,
+     "business_summary": "創業 2005年10月19日。システム・ソフトウェア開発、ネットワーク構築・運用、パッケージソフト開発、ホームページ企画・制作、デザイン・広告代理など。本別営業所（中川郡本別町南4丁目175-12）",
+     "ai_initiative": "記載なし",
+     "url": "https://www.one-x.co.jp/",
+     "size_basis": "employees",
+     "checked": "2026-11-12",
+     "notes": "人数に時点がない。本別町の営業所は支店で、本別町の本表には入れない"
+    },
+    {
+     "name": "株式会社システムサポート",
+     "hq": "帯広市東11条南8丁目1番地6（所在地）",
+     "municipality": "帯広市",
+     "town": "東11条南",
+     "employees": {
+      "value": null,
+      "as_of": "記載なし",
+      "source": "https://www.syssup.co.jp/overview.php"
+     },
+     "capital": {
+      "value": "45,000,000円",
+      "source": "https://www.syssup.co.jp/overview.php"
+     },
+     "founded": 1994,
+     "business_summary": "1994年11月2日 有限会社設立、1999年 株式会社。業務システムの開発・販売、リスティング広告の代理店業務、パソコン・関連機器の販売、ネットワーク設計施工。東京営業所。所属団体に帯広商工会議所・おびひろ情報メディア協議会",
+     "ai_initiative": "記載なし",
+     "url": "https://www.syssup.co.jp/",
+     "checked": "2026-11-12",
+     "notes": "人数が公式にない"
+    },
+    {
+     "name": "ソラリンク株式会社",
+     "hq": "〒080-0027 北海道帯広市西17条南5丁目11番地8（所在地）",
+     "municipality": "帯広市",
+     "town": "西17条南",
+     "employees": {
+      "value": null,
+      "as_of": "記載なし",
+      "source": "https://www.soralink.com/about/index.html"
+     },
+     "founded": 2015,
+     "business_summary": "2012年設立、2015年法人化。ホームページの企画・デザイン・制作・保守管理、ネットショップ構築、顧客管理・売上管理等のデータベース構築",
+     "ai_initiative": "記載なし",
+     "url": "https://www.soralink.com/",
+     "checked": "2026-11-12",
+     "notes": "人数が公式にない。Web 制作が中心"
+    },
+    {
+     "name": "株式会社ファームノート",
+     "hq": "〒080-0018 北海道帯広市西8条南18丁目3-4（本社。郵便物は東京オフィス）",
+     "municipality": "帯広市",
+     "town": "西8条南",
+     "employees": {
+      "value": null,
+      "as_of": "記載なし",
+      "source": "https://corp.farmnote.com/company/"
+     },
+     "founded": 2016,
+     "business_summary": "設立 2016年12月22日。酪農・畜産向けのクラウド牛群管理システム（Farmnote Cloud・Farmnote Color・Farmnote Gene など）。主要株主に全国農業協同組合連合会・丸紅・住友商事・明治ホールディングスなど",
+     "ai_initiative": "AI の牛群管理『Farmnote Cloud Platform V3』、AI エージェントから牧場データを扱う『Farmnote MCP』（PR TIMES 2026-07-16）",
+     "url": "https://farmnote.jp/",
+     "checked": "2026-11-12",
+     "notes": "人数が公式にない。HICTA 会員。製品は宮城・山形の記事で使用済み（他県の牧場の事例）"
+    }
+   ],
+   "unverified": [
+    {
+     "name": "有限会社システムハウスクリエイト",
+     "hint": "イプロスの企業情報に『北海道帯広市西十六条南１丁目１８番５号 オフィスフリーダム１』、WebSearch の要約に従業員数7名。イプロスの URL（netbeet.ne.jp）は別会社（株式会社ケンベアー）のサイトで、公式サイトは見つからない",
+     "checked": "2026-11-12"
+    },
+    {
+     "name": "株式会社STUDIOザンビ",
+     "hint": "比較ビズの帯広市の Web 制作の一覧（http://nzambi.com/）。公式の会社概要は開いていない",
+     "checked": "2026-11-12"
+    },
+    {
+     "name": "株式会社NKインターナショナル",
+     "hint": "WebSearch の要約に帯広市・従業員129名（2024年5月期）、主業はモバイルショップ運営。公式は開いていない。開発会社ではない見込み",
+     "checked": "2026-11-12"
+    }
+   ],
+   "excluded": [
+    {
+     "name": "東洋印刷株式会社・ソーゴー印刷株式会社",
+     "reason": "印刷会社（比較ビズの Web 制作の一覧に出る）。開発会社ではない",
+     "checked": "2026-11-12"
+    },
+    {
+     "name": "十勝事務機販売株式会社",
+     "reason": "事務機の販売。開発会社ではない",
+     "checked": "2026-11-12"
+    },
+    {
+     "name": "SCSK北海道株式会社 帯広オフィス",
+     "reason": "本社は札幌市（段階1の companies.md）",
+     "checked": "2026-11-12"
+    },
+    {
+     "name": "株式会社ファルムコンサルティング",
+     "reason": "帯広信用金庫と AI 推進パートナーシップ（cases_tokachi.md）。本社は札幌市北区",
+     "checked": "2026-11-12"
+    },
+    {
+     "name": "エゾウィン株式会社",
+     "reason": "動態管理『レポサク』。十勝の町の発表に多く出るが、本社は根室の標津町",
+     "checked": "2026-11-12"
+    },
+    {
+     "name": "株式会社HOSAC 帯広出張所",
+     "reason": "出張所（PR TIMES の発表）。本社は十勝ではない",
+     "checked": "2026-11-12"
+    }
+   ]
+  },
+  "kamishihoro": {
+   "next_candidates": [
+    {
+     "name": "株式会社十勝情報システム",
+     "hq": "北海道河東郡上士幌町上士幌東3線247－4（公式サイトの会社欄）",
+     "municipality": "上士幌町",
+     "town": "上士幌東3線",
+     "employees": {
+      "value": null,
+      "as_of": "記載なし",
+      "source": "https://t-j-s.co.jp/"
+     },
+     "capital": {
+      "value": "500万円（PR TIMES の会社概要）",
+      "source": "https://t-j-s.co.jp/"
+     },
+     "founded": 2023,
+     "business_summary": "2023年3月31日設立。コンピュータシステムの企画・開発・販売・保守、Web サイト・EC サイトの企画制作、自治体向け DX プラットフォーム『みんなのやくば』（大樹町が 2026-10-01 から導入）",
+     "ai_initiative": "記載なし",
+     "url": "https://t-j-s.co.jp/",
+     "checked": "2026-11-12",
+     "notes": "人数が公式にない。資本金は PR TIMES の会社概要"
+    }
+   ]
+  },
+  "otofuke": {
+   "next_candidates": [
+    {
+     "name": "株式会社ワクタス",
+     "hq": "北海道河東郡音更町東和東1線19（PR TIMES の発表の会社概要）",
+     "municipality": "音更町",
+     "town": "東和東1線",
+     "employees": {
+      "value": null,
+      "as_of": "記載なし",
+      "source": "https://wakutas.co.jp/about"
+     },
+     "business_summary": "Web マーケティング支援（ホームページ・LP 制作、採用サイト構築、SEO、広告運用、SNS・YouTube・LINE 公式アカウント運用）。十勝管内の支援事業者30社（2025年12月時点の延べ）",
+     "ai_initiative": "公式に記載なし（PR TIMES のキーワード欄に『AI』）",
+     "url": "https://wakutas.co.jp/",
+     "checked": "2026-11-12",
+     "notes": "Web マーケティングの会社でシステム開発ではない。公式に人数・会社概要がない（/company/ は 404）"
+    }
+   ]
+  }
+ },
+ "_notes": [
+  "本表は帯広市1社（帯広電子計算センター 3名〔R07年6月現在〕）、ほかの18市町村は0。帯広市の次点5（ワイドバンドコンピュータ 15名・ワン・エックス 14名〔いずれも時点なし〕・システムサポート・ソラリンク・ファームノート）、上士幌町の次点1（十勝情報システム）、音更町の次点1（ワクタス、Web マーケティング）。",
+  "本表が空の市町村は『会社がない』ではなく『確かめられなかった』。母集団は HICTA の名簿・比較ビズ・PR TIMES で、帯広市・音更町・上士幌町の外は探していない（WebSearch の上限）。記事で『町内に開発会社はない』と書かない。",
+  "十勝の IT 企業の団体の名簿は見つからなかった（システムサポートの所属団体に『おびひろ情報メディア協議会』とある）。帯広商工会議所のサイトは curl で 502。",
+  "ファームノートは AI の製品を作る帯広市本社の会社。記事で紹介するなら製品の宣伝にならない書き方で。製品の導入事例は他県の記事で使用済み。",
+  "WebSearch は companies 4回。ヘッダーの偽装はしていない。"
+ ]
+}

@@ -1,0 +1,1014 @@
+{
+ "_meta": {
+  "checked": "2026-10-29",
+  "scope": "岐阜県42市町村。本社（公式サイトの本社・本店・所在地）が当該市町村にあり、公式サイトで受託システム開発・ソフトウェア開発・Web制作・ITサービスを事業として明示する法人。福井県・富山県・石川県と同じく、本表には『公式サイトで本社所在地と従業員数の両方を確認できた会社』だけを入れた。従業員数が公式にない会社、公式サイトが見つからない・本文を取れない会社は _reference に置いた。県外に本社がある会社の県内拠点、公式が本社を県外に移したと書く会社は載せない。公式が『岐阜本社』と『東京本社』を並べる会社（電算システム、セイノー情報サービス）は、岐阜の本社が登記上の本店でもあり県内の本社機能を持つため本表に入れ、notes に明記した。各市町村の本表は最大5社、公式の従業員数の多い順。親会社・株主・グループは notes に書いた。",
+  "candidate_sources": [
+   "一般社団法人岐阜県情報産業協会の会員情報（令和8年4月現在、正会員・賛助会員）http://www.chuokai-gifu.or.jp/gia/member.html と協会概要（会員36社、令和8年6月現在）http://www.chuokai-gifu.or.jp/gia/gaiyo.html （事務局 岐阜県中小企業団体中央会内。確認日 2026-10-29）",
+   "岐阜県DX推進コンソーシアム（運営 公益財団法人ソフトピアジャパン）の会員一覧 https://gifudx.softopia.or.jp/kaiin-ichiran/ （kintone の公開ビューで359件。業種『39 情報サービス業』69件・『40 インターネット付随サービス業』3件・『37 通信業』2件を抽出。会員の自己申告の業種・市町村）",
+   "ソフトピアジャパンセンターの入居企業一覧（センタービル・アネックス・ワークショップ24・ドリーム・コア）https://www.softopia.info/business/search （指定管理者 伊藤忠アーバンコミュニティ・グループのサイト）",
+   "岐阜IT協同組合の組合員一覧 https://gifuit.net/member （19社。各社の個別ページで所在地を確認）",
+   "全国法人検索（houjin.goo.to、国税庁の法人番号データにもとづく）の岐阜県『IT業界』一覧（146社のうち145社を取得）https://houjin.goo.to/corporations/prefs/gifu/category-it/list と /page1 。詳細ページから登記上の本店と公式サイトのURLを取り、各社の公式サイト（会社概要）を開いた（secondary。候補探しとURLの取得だけに使った）",
+   "高山市の資料（https://www.city.takayama.lg.jp/_res/projects/default_project/_page_/001/018/162/2023.92.pdf 、システムエンジニアリングの従業員数13名の照合。WebSearch の要約で見ただけで PDF 本体は開いていない）",
+   "WebSearch（担当上限16回のうち13回を使用）"
+  ],
+  "search_limits": "岐阜県情報産業協会の会員は36社（令和8年4月現在の会員情報ページ）だが、県外本社の支店・支社（NTTデータ東海、富士通Japan、リコージャパン、キヤノンMJ など）や IT以外（ALSOK岐阜、サンメッセ、岐阜放送など）を含む。ソフトピアジャパンの入居企業一覧には人数がない。法人番号データは登記上の本店で並ぶため、IT業界に分類されていない会社・個人事業主は漏れている可能性がある。県の『IT企業紹介』（県産業デジタル推進課の学生向け情報産業就業推進事業ガイドブック）は今回見ていない。JavaScript で描画するサイト（システムブリッジ、N3 ほか）・証明書エラーや 403 のサイト（アリッド、ウェルテクノス、量子情報）は本文を取れなかった。"
+ },
+ "gifu-city": [
+  {
+   "name": "株式会社電算システム",
+   "hq": "岐阜県岐阜市日置江1丁目58番地（岐阜本社）",
+   "municipality": "岐阜市",
+   "town": "日置江",
+   "employees": {
+    "value": 813,
+    "as_of": "2026年6月30日現在",
+    "source": "https://www.densan-s.co.jp/company/about.html"
+   },
+   "capital": {
+    "value": "24億6,914万円",
+    "source": "https://www.densan-s.co.jp/company/about.html"
+   },
+   "founded": 1967,
+   "business_summary": "情報サービス事業（アプリ・システム・ソフト開発、ERP、IDC・インフラ、公共団体向け支援、医療・介護、セキュリティ、Google関連ソリューション、BPO・OCR）、収納代行・決済サービス事業",
+   "ai_initiative": "確認できず（トップページ https://www.densan-s.co.jp/ に AI・生成AIの語はなく、近いのは『BPO・OCR』）",
+   "url": "https://www.densan-s.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-29",
+   "notes": "**株主 株式会社電算システムホールディングス 100%**（会社概要）。会社概要は『岐阜本社』（岐阜市日置江）と『東京本社』（東京都中央区八丁堀2-20-8 八丁堀綜通ビル）を並べて書く。登記上の本店は岐阜市日置江1丁目58番地（法人番号データ、secondary）。グループ会社にシステムエンジニアリング（高山市）、十六電算デジタルサービス（40%出資）など。徳島県神山町の記事で『神山まるごと高専と電算システムの連携』に1行触れている（articles/2026-10-17-area-tokushima-kamiyama.md）"
+  },
+  {
+   "name": "株式会社テクノア",
+   "hq": "岐阜県岐阜市本荘中ノ町八丁目8番地1",
+   "municipality": "岐阜市",
+   "town": "本荘中ノ町",
+   "employees": {
+    "value": 355,
+    "as_of": "2026年4月1日現在",
+    "source": "https://www.technoa.co.jp/aboutus/profile"
+   },
+   "capital": {
+    "value": "7,280万円",
+    "source": "https://www.technoa.co.jp/aboutus/profile"
+   },
+   "founded": 1985,
+   "business_summary": "業務用パッケージソフトの開発・販売（中小製造業向け生産管理『TECHS』系、医療機関向け健診支援システム、カスタムオーダーECのWebデザインシミュレーター）、システムインテグレーション、受託開発、情報機器の販売・保守",
+   "ai_initiative": "会社概要・トップに『AI＆IoTソリューション』として、AI画像認識による工場の見える化『A-Eyeカメラ』、染色の色味検査『AI色味検査』、『AI類似図面検索』。トップのお知らせに『月刊生産財マーケティング 10月号に「AI類似図面検索」の記事が掲載』（2026年10月5日）https://www.technoa.co.jp/",
+   "url": "https://www.technoa.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-29",
+   "notes": "1981年7月創業、1985年10月設立。株主は会社概要に記載なし。第54回グッドカンパニー大賞グランプリ（2020年度）。青森県黒石市の記事で、大阪府の枚岡合金工具がテクノアの『画像解析AIシステム』を付けた例として触れている（articles/2026-10-17-area-aomori-kuroishi.md）"
+  },
+  {
+   "name": "株式会社インフォファーム",
+   "hq": "岐阜県岐阜市柳津町流通センター1丁目8番地4",
+   "municipality": "岐阜市",
+   "town": "柳津町流通センター",
+   "employees": {
+    "value": 260,
+    "as_of": "時点なし（会社概要の『社員数 260名』）",
+    "source": "https://www.infofarm.co.jp/company/"
+   },
+   "capital": {
+    "value": "8,000万円",
+    "source": "https://www.infofarm.co.jp/company/"
+   },
+   "founded": 1969,
+   "business_summary": "システム開発（自社製品 カメレオンコード、戦略箱ADVANCED、戦略営農Navi、Medicare ほか）、システム受託開発、LEDピッキング・AGVマネジメント、オフィスソリューション（オフィスづくり・リノベーション）、DX・GX事業",
+   "ai_initiative": "トップに事例として『自治体とのAIによる生花出荷予測システムの共同研究』（AI分析で出荷予測の精度を上げる）https://www.infofarm.co.jp/",
+   "url": "https://www.infofarm.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-29",
+   "notes": "1969年11月17日設立。代表取締役会長 辻博文は一般社団法人岐阜県情報産業協会の会長（会社概要・協会概要）。ブイ・アール・テクノセンター、ソフィア総合研究所の出資会社・株主の一つ。人数に時点がない"
+  },
+  {
+   "name": "十六電算デジタルサービス株式会社",
+   "hq": "岐阜県岐阜市神田町7丁目12番地 十六ビル4階",
+   "municipality": "岐阜市",
+   "town": "神田町",
+   "employees": {
+    "value": 62,
+    "as_of": "2026年6月現在",
+    "source": "https://www.16densan.co.jp/company/"
+   },
+   "capital": {
+    "value": "3億6,080万円",
+    "source": "https://www.16densan.co.jp/company/"
+   },
+   "founded": 1985,
+   "business_summary": "システム開発・システム販売、自動集金サービス（JCSネット）・コンビニ収納の販売・運用、情報セキュリティ製品",
+   "ai_initiative": "トップの『デジタルソリューション』に『AI・RPA（Robotic Process Automation）お客さまの働き方改革をご支援』https://www.16densan.co.jp/",
+   "url": "https://www.16densan.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-29",
+   "notes": "**株主・出資比率 株式会社十六フィナンシャルグループ 60%・株式会社電算システムホールディングス 40%**（会社概要）。1985年8月1日設立。名古屋営業所あり"
+  },
+  {
+   "name": "株式会社アシストプラス",
+   "hq": "岐阜県岐阜市橋本町2丁目8 濃飛ニッセイビル6F",
+   "municipality": "岐阜市",
+   "town": "橋本町",
+   "employees": {
+    "value": 48,
+    "as_of": "2025年11月01日現在",
+    "source": "https://www.assist-plus.co.jp/company/"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.assist-plus.co.jp/company/"
+   },
+   "founded": 2004,
+   "business_summary": "業務アプリケーションのソフトウェア開発（業務系・WEB系・モバイル系ほか）",
+   "ai_initiative": "確認せず（トップに AI の語なし）",
+   "url": "https://www.assist-plus.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-29",
+   "notes": "2004年4月6日設立。売上高4億4,300万円（2024年度）。主要取引先にタック、ピーアイシステム、システムリサーチなど。法人番号データには同名の『アシストプラス株式会社』（岐阜市下西郷、別法人）もある"
+  }
+ ],
+ "ogaki": [
+  {
+   "name": "株式会社セイノー情報サービス",
+   "hq": "岐阜県大垣市田口町1番地（大垣本社）",
+   "municipality": "大垣市",
+   "town": "田口町",
+   "employees": {
+    "value": 510,
+    "as_of": "2026年4月現在",
+    "source": "https://www.seino.co.jp/sis/about/compinfo/"
+   },
+   "capital": {
+    "value": "1億円",
+    "source": "https://www.seino.co.jp/sis/about/compinfo/"
+   },
+   "founded": 1984,
+   "business_summary": "物流ITソリューション（倉庫管理 SLIMS、輸配送管理、LMS、ロボットマネジメント RMS）、VAN、ソフトウェアの開発・販売、物流業務のクラウドサービス・コンサルティング（DX BRAIS）",
+   "ai_initiative": "サイトのソリューション一覧に『AI ロジスティクス・エージェント』『AI画像検品 iSCAN』（タブレット等のカメラ画像で製品の検査・検品を支援）、倉庫管理システム SLIMS を『物流ロボット、AIとの連携で、常に進化する』と説明 https://www.siscloud.jp/",
+   "url": "https://www.siscloud.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-29",
+   "notes": "**株式構成 セイノーホールディングス株式会社 100%**（会社概要）。セイノーグループのIT企業。サイトの末尾は『大垣本社』と『東京本社』（東京都中央区日本橋本町4-4-2）を並べて書く。富山県の cases_outside.md で、岐阜県DX推進コンソーシアムのWGの幹事として名前が出ている"
+  },
+  {
+   "name": "タック株式会社",
+   "hq": "岐阜県大垣市小野4丁目35番地12",
+   "municipality": "大垣市",
+   "town": "小野",
+   "employees": {
+    "value": 446,
+    "as_of": "2026年4月1日現在",
+    "source": "https://www.taknet.co.jp/company/about/"
+   },
+   "capital": {
+    "value": "6,000万円",
+    "source": "https://www.taknet.co.jp/company/about/"
+   },
+   "founded": 1976,
+   "business_summary": "システムインテグレーション、パッケージソフトウェアの開発・販売（健診・医療・リハビリ・介護など）、シェアードサービスの構築・提供、クラウド・Webサービス",
+   "ai_initiative": "トップに『タックSafetyGate』—『AIカメラを用いて、職場の労働災害リスクから大切な人（従業員）と企業を守るサービス』『進化するAIモデルで検知率の精度向上』。お知らせに『イプロスAI-産業World』（12/9〜12/10）への出展 https://www.taknet.co.jp/",
+   "url": "https://www.taknet.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-29",
+   "notes": "1976年3月1日設立。東京支社あり（採用ページの社員紹介）。ソフトピアジャパンのセンタービル6階にも入居（入居企業一覧）。ソフィア総合研究所の株主の一つ。tac-net.co.jp は別の会社（知多半島ケーブルネットワーク）なので取り違えない"
+  },
+  {
+   "name": "共立コンピューターサービス株式会社",
+   "hq": "岐阜県大垣市加賀野4丁目1番地の9",
+   "municipality": "大垣市",
+   "town": "加賀野",
+   "employees": {
+    "value": 283,
+    "as_of": "2026年3月現在（男性183名、女性100名）",
+    "source": "https://www.okb-kcs.co.jp/company/"
+   },
+   "capital": {
+    "value": "4,500万円",
+    "source": "https://www.okb-kcs.co.jp/company/"
+   },
+   "founded": 1980,
+   "business_summary": "ITコンサルティング、情報処理サービス、ソフトウェア開発。OKB大垣共立銀行の総合バンキングシステムの構築・運用、一般企業・地方自治体・学術機関向けITソリューション",
+   "ai_initiative": "DX方針（2026年1月1日付で経済産業省の DX認定事業者）に『ITソリューションに、AI・IoT・クラウド等の先端技術を融合』https://www.okb-kcs.co.jp/company/dx.html 。トップに『デジタル化・AI導入補助金2026』の案内、SOFTOPIAMESSE企業展（2026年10月23日）で『AI-OCRなど』を展示 https://www.okb-kcs.co.jp/",
+   "url": "https://www.okb-kcs.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-29",
+   "notes": "**株主 株式会社大垣共立銀行・大垣共立銀行関連企業等**（会社概要）。DX方針に『OKBグループ唯一のIT企業』。昭和55年12月設立"
+  },
+  {
+   "name": "株式会社ソフィア総合研究所",
+   "hq": "岐阜県大垣市加賀野4-1-7 ソフトピアジャパンセンター7F",
+   "municipality": "大垣市",
+   "town": "加賀野",
+   "employees": {
+    "value": 44,
+    "as_of": "時点なし（『社員数 44名（男性21名、女性23名）』。同じページの役員欄は令和8年6月現在）",
+    "source": "https://www.sri-net.jp/company/"
+   },
+   "capital": {
+    "value": "1億円",
+    "source": "https://www.sri-net.jp/company/"
+   },
+   "founded": 1990,
+   "business_summary": "情報システムの設計・構築・運用・保守、Webサイトの制作、コンテンツ制作（岐阜県DX推進コンソーシアムの会員一覧の事業内容）",
+   "ai_initiative": "確認せず",
+   "url": "https://www.sri-net.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-29",
+   "notes": "**株主（会社概要）**: セイノー情報サービス、十六電算デジタルサービス、電算システム、共立コンピューターサービス、タック、インフォファーム、第一システム、三井金属ユアソフト、ぎふしん総合サービス ほか（県内IT企業の共同出資）。取締役（非常勤）に第一システム・タック・十六電算デジタルサービス・三井金属ユアソフトの役員。平成2年7月19日設立、平成5年3月に岐阜市から大垣市へ移転"
+  },
+  {
+   "name": "株式会社エイブル",
+   "hq": "岐阜県大垣市加賀野4丁目1番地7 ソフトピアジャパンセンター",
+   "municipality": "大垣市",
+   "town": "加賀野",
+   "employees": {
+    "value": 23,
+    "as_of": "時点なし（『従業員数 23 人』）",
+    "source": "https://www.able-soft.info/about"
+   },
+   "capital": {
+    "value": "3,000万円",
+    "source": "https://www.able-soft.info/about"
+   },
+   "founded": 1993,
+   "business_summary": "請負開発（IBM AS/400 の基幹業務システム、クライアント/サーバー型、Java 等のWEBシステム）",
+   "ai_initiative": "確認せず",
+   "url": "https://www.able-soft.info/",
+   "size_basis": "employees",
+   "checked": "2026-10-29",
+   "notes": "1993年12月1日に有限会社として設立、2001年12月に株式会社化。岐阜県情報産業協会の正会員"
+  }
+ ],
+ "tajimi": [
+  {
+   "name": "株式会社プラネット",
+   "hq": "岐阜県多治見市太平町6丁目63-1",
+   "municipality": "多治見市",
+   "town": "太平町",
+   "employees": {
+    "value": 93,
+    "as_of": "2024年3月現在（正社員93名・パート4名）",
+    "source": "http://www.dentalx.jp/planet.html"
+   },
+   "capital": {
+    "value": "9,800万円",
+    "source": "http://www.dentalx.jp/planet.html"
+   },
+   "founded": 1995,
+   "business_summary": "歯科用システム『Dental X』・『iQalte』『Dental Hub』の企画・開発・販売、歯科医院向けWeb『QaLuTa』、月刊歯科経営Webマガジン『Ghoix』、CFアプリ企画開発、東濃地区活性化事業『東濃見聞録』",
+   "ai_initiative": "確認せず（会社情報ページに AI の語なし）",
+   "url": "http://www.dentalx.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-29",
+   "notes": "1995年6月19日設立。売上16億907万円（2023年3月期）。営業拠点 札幌・八戸・仙台・東京・名古屋・大阪・広島・福岡・鹿児島・沖縄。人数の時点が古い（2024年3月）。**受託開発の会社ではなく歯科向けパッケージの会社**。福島県の companies.json に出る『プラネット』は別の文脈（『リトルプラネット』）"
+  },
+  {
+   "name": "株式会社TYK情報サービス",
+   "hq": "岐阜県多治見市大畑町3丁目1番地（TYK本部内）",
+   "municipality": "多治見市",
+   "town": "大畑町",
+   "employees": {
+    "value": 13,
+    "as_of": "時点なし（『13名(契約を含む)』）",
+    "source": "https://tykis.jp/content3.html"
+   },
+   "capital": {
+    "value": "確認せず",
+    "source": "https://tykis.jp/content3.html"
+   },
+   "founded": null,
+   "business_summary": "情報処理の受託サービス、情報処理用機器の販売・保守、労働者派遣（IBM i〈AS/400〉、RPG・COBOL・PHP・.NET・Python）",
+   "ai_initiative": "確認せず",
+   "url": "https://tykis.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-29",
+   "notes": "**株主 株式会社TYK 100%**（耐火物メーカーの情報子会社）。法人番号データの商号は『テエ・ワイ・ケイ情報サービス』"
+  }
+ ],
+ "hashima": [
+  {
+   "name": "株式会社EMD",
+   "hq": "岐阜県羽島市竹鼻町丸の内八丁目23番地2",
+   "municipality": "羽島市",
+   "town": "竹鼻町丸の内",
+   "employees": {
+    "value": 415,
+    "as_of": "時点なし（『従業員数 415名 (子会社を含む)』）",
+    "source": "https://www.emdes.co.jp/company/"
+   },
+   "capital": {
+    "value": "8,400万円",
+    "source": "https://www.emdes.co.jp/company/"
+   },
+   "founded": 1995,
+   "business_summary": "IT事業（ソフトウェア・インフラ・組み込み）、メカトロ事業、自社製品（非常用発電機自動切替システム）。労働者派遣事業（派21-300282）",
+   "ai_initiative": "確認せず（トップ・会社概要に AI の語なし）",
+   "url": "https://www.emdes.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-29",
+   "notes": "**人数は子会社を含む**。1995年2月10日設立。拠点は岐阜本社・中部支社・東京・埼玉・千葉・東北・大阪・北海道・九州の各支社。子会社名は確認していない"
+  }
+ ],
+ "nakatsugawa": [
+  {
+   "name": "株式会社メガ・トレンド",
+   "hq": "岐阜県中津川市千旦林189番地",
+   "municipality": "中津川市",
+   "town": "千旦林",
+   "employees": {
+    "value": 13,
+    "as_of": "時点なし（『社員数 13名（内パート1名）』）",
+    "source": "https://www.megatrend.co.jp/?page_id=195"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.megatrend.co.jp/?page_id=195"
+   },
+   "founded": 1997,
+   "business_summary": "業務用ソフトウェア開発、WEBシステム開発、ネットワーク・サーバ構築、IT導入コンサルティング、ハードウェア販売、SE・PG派遣",
+   "ai_initiative": "確認せず",
+   "url": "https://www.megatrend.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-29",
+   "notes": "平成9年5月14日設立。売上高2億2千万（令和5年度）。岐阜県DX推進コンソーシアムの会員"
+  }
+ ],
+ "takayama": [
+  {
+   "name": "株式会社AftSoft",
+   "hq": "岐阜県高山市松之木町324-8",
+   "municipality": "高山市",
+   "town": "松之木町",
+   "employees": {
+    "value": 9,
+    "as_of": "時点なし",
+    "source": "https://www.aftsoft.co.jp/access/"
+   },
+   "capital": {
+    "value": "100万円",
+    "source": "https://www.aftsoft.co.jp/access/"
+   },
+   "founded": 2011,
+   "business_summary": "ソフトウェア開発（販売管理システム『Sky販売管理システム』、新聞販売店向け『シンブンA Raiz3』）、観光事業、オリジナル商品の製造、ネットショップ",
+   "ai_initiative": "確認せず",
+   "url": "https://www.aftsoft.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-29",
+   "notes": "創業 平成13年4月、設立 平成23年7月。店舗（飛騨高山まちの体験交流館・飛騨の里・宮川朝市）も運営しており、9名はソフト開発だけの人数ではない"
+  },
+  {
+   "name": "株式会社ディックナレッジテクノ",
+   "hq": "岐阜県高山市岡本町4-450-1",
+   "municipality": "高山市",
+   "town": "岡本町",
+   "employees": {
+    "value": 7,
+    "as_of": "時点なし（『7名（パート含む）』）",
+    "source": "https://www.dic-web.jp/about/"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.dic-web.jp/about/"
+   },
+   "founded": 1987,
+   "business_summary": "情報設備工事、オフィスIT（smartoffice）、人材派遣・有料職業紹介（沿革）",
+   "ai_initiative": "確認せず",
+   "url": "https://www.dic-web.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-29",
+   "notes": "昭和62年9月に高山電材株式会社の通信特機部から分離独立（有限会社ディック）。パソコン講習事業は令和元年9月に株式会社エニウェイへ分割譲渡。**システム開発会社というより情報設備・オフィスIT の会社**"
+  }
+ ],
+ "gujo": [
+  {
+   "name": "株式会社八重垣",
+   "hq": "岐阜県郡上市白鳥町白鳥159-14",
+   "municipality": "郡上市",
+   "town": "白鳥町",
+   "employees": {
+    "value": 8,
+    "as_of": "時点なし",
+    "source": "https://yaegaki.info/pg409.html"
+   },
+   "capital": {
+    "value": "300万円",
+    "source": "https://yaegaki.info/pg409.html"
+   },
+   "founded": null,
+   "business_summary": "パソコン・周辺機器・事務機販売、パッケージソフト販売・ソフトウェア開発、パソコンサポート・教室、ホームページ作成・運用、プロバイダー受付、LAN配線・ネットワーク構築、映像制作",
+   "ai_initiative": "確認せず",
+   "url": "https://yaegaki.info/",
+   "size_basis": "employees",
+   "checked": "2026-10-29",
+   "notes": "沿革は平成16年8月の個人事業から（法人化の年は取り出せず）。**PC販売・サポートが主の地域のIT店**"
+  }
+ ],
+ "gero": [
+  {
+   "name": "株式会社飛騨コンピュータサービス",
+   "hq": "岐阜県下呂市萩原町萩原1500番地3",
+   "municipality": "下呂市",
+   "town": "萩原町",
+   "employees": {
+    "value": 40,
+    "as_of": "時点なし（『40名（正社員:21名 契約スタッフ:19名）』）",
+    "source": "https://www.hidacs.co.jp/%e4%bc%9a%e7%a4%be%e6%a6%82%e8%a6%81/"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.hidacs.co.jp/%e4%bc%9a%e7%a4%be%e6%a6%82%e8%a6%81/"
+   },
+   "founded": 1978,
+   "business_summary": "受託計算業務（昭和54年4月開始）、コンピュータ機器の販売・ソフトウェア開発（昭和57年9月開始）、芳名録作成サービス",
+   "ai_initiative": "確認せず",
+   "url": "https://www.hidacs.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-29",
+   "notes": "1978年1月26日設立、平成27年1月に本社社屋を萩原町萩原1500番地3へ移転（沿革）。高山支店（高山市松本町）。**関連会社 中部電子システム株式会社**（昭和57年7月設立、沿革。中部電子システムの会社情報の役員欄に、飛騨コンピュータサービスの代表取締役と同じ日下部鉄彦の名前〈監査役〉）。プライバシーマーク取得"
+  },
+  {
+   "name": "中部電子システム株式会社",
+   "hq": "岐阜県下呂市萩原町萩原1531番地（法人番号データ）",
+   "municipality": "下呂市",
+   "town": "萩原町",
+   "employees": {
+    "value": 7,
+    "as_of": "時点なし（『社員数 ７名』）",
+    "source": "https://keiriman.com/comp-info.html"
+   },
+   "capital": {
+    "value": "1,000万〜5,000万円（法人番号データの区分、secondary）",
+    "source": "https://keiriman.com/comp-info.html"
+   },
+   "founded": 1982,
+   "business_summary": "簡易経理ソフト『ケイリマン』シリーズの開発・販売（昭和57年8月に簡易式経理機『ケイリマンS』）",
+   "ai_initiative": "確認せず",
+   "url": "https://keiriman.com/",
+   "size_basis": "employees",
+   "checked": "2026-10-29",
+   "notes": "昭和57年7月設立。飛騨コンピュータサービスの関連会社（同社の沿革）。会社情報ページは Shift_JIS で一部が文字化けし、所在地の番地は読み取れなかった"
+  },
+  {
+   "name": "株式会社ワークスペース",
+   "hq": "岐阜県下呂市小坂町無数原310番地2",
+   "municipality": "下呂市",
+   "town": "小坂町",
+   "employees": {
+    "value": 1,
+    "as_of": "時点なし",
+    "source": "https://workspace.co.jp/company_info.html"
+   },
+   "capital": {
+    "value": "確認せず",
+    "source": "https://workspace.co.jp/company_info.html"
+   },
+   "founded": null,
+   "business_summary": "Claris FileMaker の販売・開発・内製化支援トレーニング、Tableau",
+   "ai_initiative": "トップに FileMaker を使った『業務アプリの内製化や DX、AI のビジネス活用に取り組む方のための』イベントの案内（自社の AI サービスではない）https://workspace.co.jp/",
+   "url": "https://workspace.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-29",
+   "notes": "沿革（profile.html）に『2008年には従業員が6名まで増えています』とあり、現在の会社概要は1名"
+  }
+ ],
+ "kakamigahara": [
+  {
+   "name": "株式会社システムインフォメーション",
+   "hq": "岐阜県各務原市那加雄飛ヶ丘町47-1",
+   "municipality": "各務原市",
+   "town": "那加雄飛ヶ丘町",
+   "employees": {
+    "value": 10,
+    "as_of": "時点なし",
+    "source": "https://www.sysinfo.co.jp/company"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.sysinfo.co.jp/company"
+   },
+   "founded": 1986,
+   "business_summary": "ソフトウェア開発、労働者派遣（派21-300317）",
+   "ai_initiative": "確認せず",
+   "url": "https://www.sysinfo.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-29",
+   "notes": "昭和61年10月1日創業、平成2年7月法人化。関連会社ナビワークスに出資、株式会社SVS（旧日本VRセンター）の代表取締役（沿革）"
+  }
+ ],
+ "kani": [
+  {
+   "name": "プロダクトシステム株式会社",
+   "hq": "岐阜県可児市下切3235-1",
+   "municipality": "可児市",
+   "town": "下切",
+   "employees": {
+    "value": 9,
+    "as_of": "2026年9月時点（男性社員7名・女性社員2名）",
+    "source": "https://www.psk-web.co.jp/company/"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.psk-web.co.jp/company/"
+   },
+   "founded": 1995,
+   "business_summary": "業務システム開発（受注・在庫・工程・検査・出荷・保全）、既存システム改善、LAN/WAN導入・運用支援",
+   "ai_initiative": "確認せず",
+   "url": "https://www.psk-web.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-29",
+   "notes": "1995年4月3日創立。**グループ会社 プロダクトサポート株式会社**"
+  }
+ ],
+ "mizuho": [
+  {
+   "name": "株式会社GRASPERS（グラスパーズ）",
+   "hq": "岐阜県瑞穂市穂積1627番地1（本社・岐阜支店）",
+   "municipality": "瑞穂市",
+   "town": "穂積",
+   "employees": {
+    "value": 15,
+    "as_of": "2026年6月時点",
+    "source": "https://graspers.jp/company/"
+   },
+   "capital": {
+    "value": "確認せず",
+    "source": "https://graspers.jp/company/"
+   },
+   "founded": 2016,
+   "business_summary": "ブランディングデザイン、ホームページ・LP・採用サイト制作、SEO・AIO、ロゴ・印刷物・動画制作",
+   "ai_initiative": "サービスに『AI・DX研修』『AI研修&DX研修（企業研修プログラム）』、『SEO AIO』 https://graspers.jp/",
+   "url": "https://graspers.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-29",
+   "notes": "2016年2月創業。**システム開発ではなくWeb制作・デザインの会社**。岐阜IT協同組合の組合員"
+  }
+ ],
+ "higashishirakawa": [
+  {
+   "name": "株式会社サイバードッグ",
+   "hq": "岐阜県加茂郡東白川村五加3487番地",
+   "municipality": "東白川村",
+   "town": "五加",
+   "employees": {
+    "value": 68,
+    "as_of": "時点なし",
+    "source": "https://www.cyberdog.co.jp/company"
+   },
+   "capital": {
+    "value": "350万円",
+    "source": "https://www.cyberdog.co.jp/company"
+   },
+   "founded": 2002,
+   "business_summary": "コンピューターシステムの構築・開発委託（業務システムの要件定義・設計・実装・保守）、技術者の派遣、PC・周辺機器の導入サポート",
+   "ai_initiative": "確認せず",
+   "url": "https://www.cyberdog.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-29",
+   "notes": "2002年6月18日設立。主要取引先にオージス総研・シーイーシーなど（技術者派遣・受託の比重が大きいとみられるが、内訳は公式にない）。村内に68名が勤務しているかは公式から分からない"
+  }
+ ],
+ "ginan": [
+  {
+   "name": "東陽システムサービス株式会社",
+   "hq": "岐阜県羽島郡岐南町八剣1丁目190番地",
+   "municipality": "岐南町",
+   "town": "八剣",
+   "employees": {
+    "value": 49,
+    "as_of": "時点なし",
+    "source": "https://toyosystemsvc.co.jp/company/"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://toyosystemsvc.co.jp/company/"
+   },
+   "founded": 1981,
+   "business_summary": "OA機器・ネットワーク機器・建築CADソフト・パッケージソフトの販売、各種ソフトウェア開発・販売、パソコンサービス・ハードウェア保守",
+   "ai_initiative": "確認せず",
+   "url": "https://toyosystemsvc.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-29",
+   "notes": "昭和56年5月設立。営業所 名古屋西（北名古屋市）・三重（津市）・名古屋東。**OA機器販売・保守の比重が大きい**"
+  },
+  {
+   "name": "株式会社文献社",
+   "hq": "岐阜県羽島郡岐南町野中1-130",
+   "municipality": "岐南町",
+   "town": "野中",
+   "employees": {
+    "value": 17,
+    "as_of": "平成24年1月現在（古い）",
+    "source": "http://www.bunkensha.co.jp/profile/index.html"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "http://www.bunkensha.co.jp/profile/index.html"
+   },
+   "founded": 1984,
+   "business_summary": "書店マネジメント支援システム（書店システム）の開発・全国販売、デジタル複合機・事務機器の販売・保守、事務用品",
+   "ai_initiative": "確認せず",
+   "url": "http://www.bunkensha.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-29",
+   "notes": "昭和48年創業、昭和59年10月創立。**人数は平成24年1月のもので古い**"
+  }
+ ],
+ "yoro": [
+  {
+   "name": "有限会社トリガーデバイス",
+   "hq": "岐阜県養老郡養老町大野2番地12",
+   "municipality": "養老町",
+   "town": "大野",
+   "employees": {
+    "value": 4,
+    "as_of": "時点なし（『4名（うち、正規雇用者 3名）』）",
+    "source": "https://www.triggerdevice.com/about"
+   },
+   "capital": {
+    "value": "300万円",
+    "source": "https://www.triggerdevice.com/about"
+   },
+   "founded": 2005,
+   "business_summary": "コンピュータのインタフェース・ハードウエア/ソフトウエアの開発、ワークショップ・展示・展覧会の企画運営（DX推進コンソーシアムの事業内容は『スマートフォンのアプリ開発、システム開発、サービス開発』）",
+   "ai_initiative": "確認せず",
+   "url": "https://www.triggerdevice.com/",
+   "size_basis": "employees",
+   "checked": "2026-10-29",
+   "notes": "設立2000年、法人化2005年6月1日。ソフトピアジャパン ドリーム・コア1階にも事務所（Fab-core）"
+  }
+ ],
+ "seki": [],
+ "mino": [],
+ "mizunami": [],
+ "ena": [],
+ "minokamo": [],
+ "toki": [],
+ "yamagata-city": [],
+ "hida": [],
+ "motosu": [],
+ "kaizu": [],
+ "kasamatsu": [],
+ "tarui": [],
+ "sekigahara": [],
+ "godo": [],
+ "wanouchi": [],
+ "anpachi": [],
+ "ibigawa": [],
+ "ono-town": [],
+ "ikeda-town": [],
+ "kitagata": [],
+ "sakahogi": [],
+ "tomika": [],
+ "kawabe": [],
+ "hichiso": [],
+ "yaotsu": [],
+ "shirakawa-town": [],
+ "mitake": [],
+ "shirakawa-village": [],
+ "_reference": {
+  "gifu-city": {
+   "next_candidates": [
+    {
+     "name": "株式会社マルトウコンパック",
+     "employees": "42名（時点なし）",
+     "capital": "2,600万円",
+     "note": "本社 岐阜市金町2丁目11番地 マルトウビル。1981年11月設立。LPガスに特化したコンピューターシステム（『コンパック80』以来）の開発・販売、インターネット関連事業。関東支店（さいたま市）",
+     "source": "https://www.mc-net.co.jp/company.php"
+    },
+    {
+     "name": "株式会社エフズアクセス",
+     "employees": "33名（2026年3月現在）",
+     "capital": "1,300万円",
+     "note": "岐阜市吉野町6-14 大樹生命岐阜駅前ビル4階。1998年11月20日設立の独立系ソフトハウス。計測・制御系開発、業務アプリケーション開発、システムインテグレーション。ISMS",
+     "source": "https://fs-access.com/company/"
+    },
+    {
+     "name": "株式会社AIアクティブ",
+     "employees": "26名（男性19名・女性7名、2026年4月現在）",
+     "capital": "1,000万円",
+     "note": "岐阜市徹明通6-1-1 善福寺ビル1F（東京都港区浜松町にも事務所）。2017年12月設立。業務アプリケーションソフト開発（オーダーメイド）、労働者派遣。社名の『AI』は読み『エイアイ』だが、AI製品の記載は確認していない。岐阜県情報産業協会の正会員",
+     "source": "https://www.ai-active.co.jp/company/"
+    },
+    {
+     "name": "株式会社ホクコウ",
+     "employees": "22名（役員・パート含む、2025年3月31日現在）",
+     "capital": "確認せず",
+     "note": "岐阜市萱場南2丁目8番17号（法人番号データ）。コンピュータ機器の販売、ソフトウェアの販売・メンテナンス、パッケージソフトウェア開発販売（DXコンソーシアムの事業内容）",
+     "source": "https://hokukou.co.jp/company/profile1/"
+    },
+    {
+     "name": "株式会社第一システム",
+     "employees": "20人（時点なし）",
+     "capital": "3,100万円",
+     "note": "本社 岐阜市西中島3丁目11番1、開発センター 岐阜市薮田南1丁目3番13。昭和34年3月2日設立（昭和21年の第一電力社が前身）。ITソリューション、システムインテグレーション・ソフトウェア開発。売上高6億円。トップのお知らせに『資本提携による子会社化のお知らせ』（相手先は未確認）。代表取締役 横山俊明はソフィア総合研究所の非常勤取締役",
+     "source": "https://www.daiichisystem.co.jp/about-us/"
+    },
+    {
+     "name": "コスモエンタープライズ株式会社",
+     "employees": "17名（2023年3月現在）",
+     "capital": "2,000万円",
+     "note": "岐阜市宇佐南2丁目8番12号。1998年10月設立。ソフトウエアコンサルティング・設計・開発、情報処理サービス、ITソリューション。ISMS。人数が古い",
+     "source": "http://www.cosmo-enterprise.co.jp/profile/"
+    },
+    {
+     "name": "株式会社タップス",
+     "employees": "16名（時点なし）",
+     "capital": "1,000万円",
+     "note": "岐阜市福住町1丁目20番地 スカイビル2F。平成2年7月設立。2016年11月に名古屋営業所を本社に統合。プライバシーマーク・ISMS。岐阜県情報産業協会の正会員",
+     "source": "https://www.tapsnet.co.jp/company/index.html"
+    },
+    {
+     "name": "株式会社システムアドバンス",
+     "employees": "16名（2022年1月現在）",
+     "capital": "確認せず",
+     "note": "岐阜本社 岐阜市河渡四丁目168番地2、飛騨高山営業所。Web/アプリシステム構築・運用保守、SI、WEBサイト構築、ネットワーク構築。商標に『CAOCAM-AI』。人数が古い",
+     "source": "https://www.s-advance.com/overview.html"
+    },
+    {
+     "name": "株式会社飛水コンピューター",
+     "employees": "8名（時点なし）",
+     "capital": "1,000万円",
+     "note": "岐阜市薮田南1-3-10。1987年設立。木材・建材販売管理システム『木材建太郎』（累計1,200本）、木材市場販売管理システム。関連企業 ブレイン・インターネット可児（可児市）",
+     "source": "http://www.jhisui.com/company.html"
+    }
+   ],
+   "unverified": [
+    "株式会社アシストエンジニア（岐阜市都通4丁目11-1 アシストHDビル。社員数270名・2026年10月1日現在 https://www.assist-now.com/company/ 。**事業は製造業向けCAD・PLMシステムの販売・導入支援・教育と、CAD設計の受託・技術者派遣**で、受託のシステム開発・Web開発の会社とは言いにくいため本表に入れなかった。東京支社・名古屋支店。執筆仕様で扱いを決めること）",
+    "中部事務機株式会社（岐阜市都通1丁目15番地。従業員数144名・2022年10月 https://www.cbm.co.jp/company 。SI・通信・OA機器・オフィス用品の総合。人数が古く、事務機の比重が大きいため本表に入れなかった。トップに『AI＆生成ＡＩフェア セミナー』〈2024年5月29日〉）",
+    "株式会社ロジックソリューションズ（岐阜市薮田南1-11-9。従業員数43名・平成30年11月現在 https://www.logicsolutions.co.jp/corporate/ 。技術者育成教育・CAD設計受託・職業訓練・人材派遣が中心で、e-ラーニングソフト FLS の開発も。人数が古い）",
+    "株式会社エフワン（岐阜市吉野町3丁目8番地。岐阜県情報産業協会の正会員。SI・ソフトウェア設計開発・介護福祉〈DXコンソーシアムの事業内容〉。**公式サイトは確認日に『PHP の脆弱性によるメンテナンス中』で会社概要を開けず**。法人番号データの人数区分は30〜50人〈secondary〉）",
+    "パシフィックコンピュータ株式会社（岐阜市神室町1丁目39番地 レンブラントビル2F。1987年10月設立、後藤鉄工所の電算部門から独立。業務アプリ・オープン系・組み込み系開発。公式に人数なし）https://www.pcc-net.co.jp/company",
+    "株式会社インプローブ（本社 岐阜市木造町55番地 武藤ビル。生産管理システム。資本金3,000万円。公式に人数なし）https://www.improbe.jp/about.html",
+    "株式会社HillsJapan（本店所在地 岐阜市茜部菱野4丁目101-3、広島ラボ〈広島市佐伯区〉。2009年2月設立、資本金300万円。**AI Agentの研究開発・企業向け実装**、業務システム、寺院DX、Web制作。公式に人数なし）https://www.hillsjapan.com/company/ — 検索結果担当の照合依頼（AI PICKS 掲載）",
+    "岐阜生成AI活用株式会社（岐阜市薮田南3-7-20。認識AI・生成AIの開発、導入支援。人数なし）https://ggai.info/ 、株式会社ザイシア（同じ住所、『Own Your AI. — Cosmo Cloud』、人数なし）https://www.zaixia.co.jp 、株式会社かけはし（同じ住所、QRコード事業『かけはしメモリー』・地域DXプラットフォーム、資本金1,000万円、人数なし）https://kakehashi-services.com/company/profile/ 。3社の資本関係は確認していない",
+    "株式会社ZENSHIN（本社 岐阜市金町6-21 岐阜ステーションビル8F。DX・GX・3D/VR・Web制作、サイトのメニューに『GENERATIVE-AI』。人数なし）https://zenshin-groups.co.jp/about",
+    "株式会社ITreat（本社 岐阜市長良福光2588 辻文ビル3F。医療機関向けのホームページ制作・集患、『医療機関向けAIチャットボット』、LLMO対策のブログ。人数なし）http://itreat.co.jp/outline",
+    "株式会社エスイーアイ（本社 岐阜市柳津町流通センター1丁目17番地2、2000年10月創業、スマホアプリ企画・開発、人数なし）、株式会社トゥ・ステップ（岐阜本部 岐阜市神田町6丁目7番地2、人数なし）、株式会社デジステイト（岐阜市長良福光2467-2、2008年12月設立、アプリ・Web、人数なし）、株式会社リテックシステムサービス（岐阜市萱場南1-15-22、1992年1月設立、データベース・システム開発、人数なし）",
+    "Mirume AI 株式会社: **公式サイトを見つけられなかった**。WebSearch の要約では、企業情報サイト（initial.inc、secondary）で所在地 岐阜市柳戸・代表 大野一茂、法人番号 8010001201241（**8010… は東京法務局の管轄の番号**で、登記上の本店は東京の可能性）。岐阜県DX推進コンソーシアムのイベントチラシ（https://gifudx.softopia.or.jp/wp-content/uploads/2026/05/20260716_event_chirashi.pdf 、開いていない）に2024年設立の記載があるとの要約。mirume.jp は東京都港区のグッズ制作会社（株式会社MIRUME）で別の会社 — 検索結果担当の照合依頼（AI PICKS 掲載）",
+    "人数・公式サイトを確認できず: ユニドコーポレーション（金町6丁目 岐阜ステーションビル）、JEインターナショナル（加納城南通）、アイデックス（粟野西、トップに『ホームページ一部公開停止のお知らせ』）、ティーウェア（加納黒木町）、システムマインド（吉野町、従業員数21人・令和2年4月1日現在で古い https://www.sysmind.co.jp/about/ ）、N3（JavaScript 必須）"
+   ],
+   "excluded": [
+    "スマートツール株式会社（芋島、290名・2026年4月1日。ソフトバンクショップ・ワイモバイルショップの運営）https://smarttool.jp/company",
+    "株式会社シルバースタージャパン（ゲームソフト）",
+    "株式会社ジンク（40名、電気通信工事）",
+    "中央電子光学株式会社（通信インフラ・工事）",
+    "株式会社日写（映像・音響のSI）",
+    "ALSOK岐阜、岐阜放送、ぎふしん総合サービス（岐阜県情報産業協会の会員だがIT開発の会社ではない、またはグループ内の会社）",
+    "株式会社ハイパーブレイン（DXコンソーシアムの会員一覧は岐阜市だが、公式の所在地は名古屋市中区新栄、社員数95名・2026年10月1日）",
+    "グリーンシステム株式会社（8名、太陽光発電システムなど）",
+    "県外本社の岐阜支店・支社（NTT西日本岐阜支店、富士フイルムBI岐阜支社、ダイワボウ情報システム岐阜支店、リコージャパン岐阜支社、NTTドコモビジネスソリューションズ岐阜支店など）"
+   ]
+  },
+  "ogaki": {
+   "next_candidates": [
+    {
+     "name": "株式会社ミライコミュニケーションネットワーク",
+     "employees": "37名（2026年9月現在）",
+     "capital": "1億3,800万円",
+     "note": "本社 大垣市加賀野4丁目1-12。2001年7月10日創立。インターネットサービスプロバイダ（Mirai NET）、レンタルサーバ、データセンター、岐阜情報スーパーハイウェイ。株主 未来工業・名古屋中小企業投資育成・十六銀行・OKBキャピタル・大垣西濃信用金庫ほか。**通信業（ISP・データセンター）で受託開発の会社ではないため次点**",
+     "source": "https://www.mirai.ad.jp/company/profile/"
+    },
+    {
+     "name": "楽RAG販売合同会社",
+     "employees": "10人（時点なし）",
+     "capital": "10万円",
+     "note": "本社 大垣市今宿6-52-16 ソフトピアジャパン ドリーム・コア212号室。オンプレミスの社内生成AIシステム『スマ箋RAG〜ちえみAI』（生成AI・ナレッジDB・全文検索を融合）",
+     "source": "https://www.sumasen.net/company.html"
+    },
+    {
+     "name": "株式会社ライトスピードソリューションズ",
+     "employees": "9名（時点なし）",
+     "capital": "確認せず",
+     "note": "大垣市加賀野4丁目1-7 ソフトピアジャパン センタービル803。2004年9月9日設立。Web戦略コンサルティング、Webサイト企画・制作、サーバ",
+     "source": "https://www.lightspeed.co.jp/"
+    },
+    {
+     "name": "株式会社WEB-WING",
+     "employees": "5名（外部スタッフ含む、時点なし）",
+     "capital": "500万円",
+     "note": "大垣市（ソフトピアジャパン ドリーム・コア313）。ソフトウェアの開発・販売",
+     "source": "https://www.web-wing.co.jp"
+    }
+   ],
+   "unverified": [
+    "グレートインフォメーションネットワーク株式会社（GINET。大垣市小野4丁目35番地10 ソフトピアジャパン・アネックス303〈大垣市情報工房〉。教育・指定管理・情報発信・情報システム事業。**サービスに『AI：FAQサービス』（人工知能〈AI〉でお問い合わせに自動回答）、事業に『AI(人工知能)を活用した各種サービス』『AIプログラミング研修』、沿革に平成30年4月『AI・ロボット事業開始』**。会社概要ページ（/company/02.html）から人数を取り出せず）http://www.ginet.jp/jigyo/",
+    "株式会社サイエンスネット（本社 大垣市小野四丁目35番地8、2001年4月2日設立、資本金1,000万円。DB・NW・HP事業部、DX・IoTの導入支援。採用ページの『数字で見る』にも人数なし）https://www.sciencenet.co.jp/about/overview.html",
+    "ジール株式会社（本社 大垣市今宿6-52-18 ソフトピアジャパン ワークショップ24 3F。製造業向けの工程管理・生産管理・部品表・IoT。資本金1,000万円。人数なし）https://www.zieal.co.jp/company/",
+    "センシア株式会社（大垣市今宿6丁目52番地16 ドリーム・コア307。画像処理・行動検知・AIシステム。人数なし）https://sensia.co.jp/company/ 、株式会社リーサ（ワークショップ24 316。ITコンサル、LLM〈ChatGPT・Gemini〉APIを使った開発・教育。人数なし）http://www.sonrisa.co.jp/ 、CreamCode合同会社（大垣市、2025年7月設立、中小企業のAI活用・業務改善支援。人数なし）https://creamcode.net/about/",
+    "株式会社エヌ・エス・エム（本社 大垣市今宿6-52-18 ワークショップ24 3階）、株式会社クレドメディカ（ワークショップ24 407、医療IT）、ウィリー株式会社（本社 大垣市三本木3-16-2、東京支社 立川市。トップに『全社員がAIと共存して生産性を上げ続ける』）、株式会社プニグラム（代官町、ゲーム系ソフト開発、資本金200万円）、株式会社アプリコアMSIS（加賀野、建設業・製造業のICT）、株式会社量子情報（新長沢町、サイトを開けず）、株式会社システムライン（丸の内、IT技術者派遣・案件紹介、人数なし）、ピーアイシステム株式会社（久徳町、公式サイト未確認）— いずれも公式に人数なし",
+    "株式会社ソエル（ワークショップ24 410・411。**名古屋の株式会社システムリサーチの特例子会社**〈障がい者雇用〉。システム開発・アプリ開発・Web。人数を取り出せず）https://sowel.co.jp/company"
+   ],
+   "excluded": [
+    "山中電機工業株式会社（赤坂大門、11名・2026年10月。制御盤の設計・製作で、法人番号データでIT業界に分類されていた）",
+    "クロスコミュニケーションズ株式会社（法人番号データの本店は大垣市加賀野だが、公式の所在地は名古屋市西区、従業員1名）",
+    "ソフトピアジャパンに入る県外本社の拠点: 富士テクノロジー大垣オフィス、扶桑電通、日本システム開発（名古屋市）、アルテリア・ネットワークス、ユニティ・ソフト（福岡市）など"
+   ]
+  },
+  "takayama": {
+   "next_candidates": [],
+   "unverified": [
+    "株式会社システムエンジニアリング（高山市天満町4丁目70番地 A-LUXビル。平成2年8月設立、資本金4,800万円。ソフトウェア開発・情報処理。**グループ会社に電算システムホールディングス・電算システム・十六電算デジタルサービスほかを列挙**〈会社概要〉。岐阜県情報産業協会の正会員。**公式に人数なし**。WebSearch の要約では高山市の資料〈2023年〉に従業員数13名とあるが、PDF 本体は開いていない）https://www.thesec.co.jp/about-us",
+    "株式会社ヒダ事務機（岡本町、公式サイトの本文を取れず）",
+    "有限会社エム・イートーク（桐生町、9名。電話設備工事・パソコンサポートが中心）https://www.metalk.com/company/"
+   ],
+   "excluded": [
+    "株式会社マツクラ産業（西之一色町、36名。清掃業が中核。法人番号データでIT業界に分類されていた。クラウドの『報連相Net.』は自社事業の一部）",
+    "株式会社結and（丹生川町、木工品の EC）"
+   ]
+  },
+  "tajimi": {
+   "next_candidates": [],
+   "unverified": [
+    "株式会社G-TEC（多治見オフィス 白山町5丁目10番地の2、名古屋オフィス。2010年12月創業。POS・事務コン・複合機・オーダーソフト開発。公式に人数なし）http://gtec-sys.com/company/",
+    "株式会社アツプル企画（虎渓山町、抽選システム chusen.net。会社情報を取り出せず）",
+    "有限会社セレット（滝呂町、サイト本文を取れず）"
+   ],
+   "excluded": [
+    "株式会社ウイズ（滝呂町。プラスチック製品製造・人材派遣。法人番号データでIT業界に分類されていた）"
+   ]
+  },
+  "seki": {
+   "next_candidates": [],
+   "unverified": [
+    "株式会社アレグビット（AlegBit。関市池田町127番地。資本金1千万円。WEBシステム開発、WEBサイト制作、ITコンサルティング、SES。**トップに『ITとAIの力で地方ビジネスの成長をサポート』、お知らせに『AIを活用した営業…』のご相談**。会社概要に人数なし）https://alegbit.co.jp/about — 検索結果担当の照合依頼（AI PICKS 掲載）。石川県の serp.md にも AlegBit の名前がある",
+    "株式会社バックスラッシュ（関市大平台2番10号。2001年11月設立。SI・ネットワーク。人数なし）https://www.back-slash.co.jp/company/",
+    "合同会社LOOM.0x（関市小瀬。営農支援・水耕栽培プラント・ロボット・システム開発。人数なし）"
+   ],
+   "excluded": []
+  },
+  "nakatsugawa": {
+   "next_candidates": [
+    {
+     "name": "東海電話設備株式会社",
+     "employees": "12名（時点なし）",
+     "capital": "1,000万円",
+     "note": "中津川市中津川3393番地の5（法人番号データ）。1973年創業。電話設備が中心で、事業にホームページ制作も。システム開発の会社ではないため次点",
+     "source": "https://tokaidenwa.com/company/"
+    }
+   ],
+   "unverified": [
+    "株式会社カーリル（本社 中津川市坂下1645-15。2012年6月4日設立、資本金1,300万円。図書館蔵書検索サイト『カーリル』、図書館システム・電子書籍の技術開発。**会社概要に人数の項目はなく、メンバー欄に4名の名前**）https://calil.co.jp/",
+    "株式会社タクミエンジニア（中津川市茄子川2077-274。送迎バスの位置情報LINE通知『モークル』。人数なし）https://moqul.net/info/",
+    "株式会社システムブリッジ（駒場。サイトが JavaScript 描画で会社概要を取れず）"
+   ],
+   "excluded": []
+  },
+  "hashima": {
+   "next_candidates": [],
+   "unverified": [
+    "株式会社イーエスピー企画（本社 羽島市福寿町平方4-41 岐阜羽島テクノビル。マイコン開発ボード・電子教材・ロボット教材の開発・製造・販売。人数なし）https://www.esp.jp/company/index.html",
+    "テクノジャパン有限会社（竹鼻町、サイトに会社概要なし）"
+   ],
+   "excluded": [
+    "アウトグロウシステムズ株式会社（法人番号データの本店は羽島市小熊町だが、**公式の沿革に『2012年6月 本社（岐阜県羽島市）と名古屋事業所を統合し、名古屋市中区金山を本社とする』**、従業員17名）http://www.outgrow.co.jp/company.html"
+   ]
+  },
+  "kakamigahara": {
+   "next_candidates": [],
+   "unverified": [
+    "株式会社ブイ・アール・テクノセンター（各務原市テクノプラザ1丁目1番地。平成5年4月1日設立、資本金23億円、**出資会社38社（岐阜県・中小機構・各務原市・中部電力・十六銀行・大垣共立銀行・川崎重工業・インフォファーム・アシストエンジニアほか）の第三セクター**。VR・ロボット・システム開発、航空宇宙人材育成・CAD研修、ネットワーク構築、テクノプラザものづくり支援センターの指定管理。人数なし）https://www.vrtc.co.jp/gaiyou/",
+    "カオス株式会社（各務原市小佐野町7-230-1。2006年8月設立、資本金500万円。4D によるソフト開発、OA機器、HP制作。人数なし）https://e-caos.com/company",
+    "株式会社ネクステージ（各務原市那加石山町1-102。2003年7月設立。『レッツぎふ』の運営、Web制作。人数なし）https://www.nextage-inc.jp/company/",
+    "株式会社サンテクア（鵜沼東町。機械・電気設計とソフトウェア開発の技術者派遣。人数なし）、株式会社アクシス・画房杜（岐阜IT協同組合の組合員、人数なし）"
+   ],
+   "excluded": [
+    "株式会社日本一ソフトウェア（本社 各務原市蘇原月丘町3丁目17番。従業員数 連結182名・単体110名〈2026年3月31日現在〉。**家庭用ゲームソフトの開発・販売**で、中小企業のシステム開発・Web制作の相談先ではないため本表に入れない）https://nippon1.co.jp/company/company.html"
+   ]
+  },
+  "kani": {
+   "next_candidates": [],
+   "unverified": [
+    "アリッド株式会社（若葉台、サイトが 403）",
+    "株式会社アトレ（土田、公式サイト未確認）",
+    "有限会社ネットワークシステムズ（皐ケ丘、人数なし）"
+   ],
+   "excluded": [
+    "株式会社アイキ（土田。労働者派遣・業務請負。法人番号データでIT業界に分類されていた）"
+   ]
+  },
+  "mino": {
+   "next_candidates": [],
+   "unverified": [
+    "株式会社MKT-SYSTEM（本社 美濃市段町123-1。2018年4月18日設立〈創業2009年9月30日〉。業務用WEBアプリケーションの開発・導入支援、教育の情報化・ICT支援員。公式に人数・資本金なし）https://mktsystem.co.jp/company"
+   ],
+   "excluded": []
+  },
+  "ena": {
+   "next_candidates": [],
+   "unverified": [
+    "株式会社プロス（本社 恵那市大井町1116-65。1995年8月25日設立、資本金1,000万円。インターネットソリューション・ウェブシステム開発のほか加工食品・除菌剤など。人数なし）https://www.pros-inc.sky-net.asia/profile",
+    "有限会社イソップ（恵那市明智町〈日本大正村内〉。システム設計・委託開発・NEC代理店。人数なし）https://www.akechi.co.jp/company/index.html",
+    "有限会社パセリネット（大井町、サイト本文を取れず）"
+   ],
+   "excluded": []
+  },
+  "minokamo": {
+   "next_candidates": [],
+   "unverified": [
+    "IP-Net株式会社（田島町。航空用IP無線サービス。人数なし）",
+    "有限会社アールミック（太田町、人数なし）"
+   ],
+   "excluded": [
+    "株式会社名濃エンジニアリング（御門町。機械設計・加工組立で、法人番号データでIT業界に分類されていた）"
+   ]
+  },
+  "toki": {
+   "next_candidates": [],
+   "unverified": [
+    "株式会社アクトス（泉中窯町、サイト本文を取れず）"
+   ],
+   "excluded": [
+    "株式会社タカコム（通信機器メーカー）",
+    "岐東ビジネスサービス株式会社（通信機器業界に分類、事業内容未確認）"
+   ]
+  },
+  "yamagata-city": {
+   "next_candidates": [],
+   "unverified": [],
+   "excluded": [
+    "CMA株式会社（DXコンソーシアムの会員一覧は山県市だが、**公式の沿革に『2022年1月5日 CMA株式会社の本店を「岐阜県山県市」から「愛知県名古屋市中区」に移転』**、名古屋本社。クラウド型生産管理『Othello Connect』）https://c-ma.net/company/"
+   ]
+  },
+  "hida": {
+   "next_candidates": [],
+   "unverified": [
+    "三井金属ユアソフト株式会社（法人番号データの本店 飛騨市神岡町東雲785。三井金属グループの情報システム会社、SAP テンプレート『リアルモデル』。**公式サイトを見つけられなかった**〈推測したドメインはいずれも名前解決できず、WebSearch 2回でも出ず〉。求人サイト〈en-japan・doda ほか、secondary〉で従業員195名〈2026年4月〉、178名〈2025年4月1日〉、資本金1億円、1989年設立、東京・小牧・大牟田の事業所。ソフィア総合研究所〈大垣市〉の株主・非常勤取締役の欄に社名がある。公式で確かめれば飛騨市の1位）"
+   ],
+   "excluded": []
+  },
+  "motosu": {
+   "next_candidates": [],
+   "unverified": [
+    "ナガイネット有限会社（本巣市下真桑391-1。ICTコンサルティング・Web作成・ISMS構築コンサル。人数なし）https://www.nagai-net.co.jp/company/index.html"
+   ],
+   "excluded": []
+  },
+  "gero": {
+   "next_candidates": [],
+   "unverified": [
+    "株式会社コミュニケーションサポート（本社 下呂市小川1226-3。平成23年1月設立、資本金600万円。ソフトウェア開発・ホームページ制作・ケーブルテレビ管理・通信設備。公式に人数なし）https://communic.co.jp/company/",
+    "有限会社デザインオフィス・シィ（金山町、人数なし）"
+   ],
+   "excluded": []
+  },
+  "kasamatsu": {
+   "next_candidates": [],
+   "unverified": [
+    "アヴァンティコンサルティング（岐阜IT協同組合の組合員ページでは笠松町長池277-7。公式の所在地は名古屋オフィス〈名古屋市中村区〉。組織診断・コンサルで、システム開発会社ではない）"
+   ],
+   "excluded": []
+  },
+  "yoro": {
+   "next_candidates": [],
+   "unverified": [
+    "OKコンピューター（養老町。ホームページ制作・運用保守、印刷物、パソコンメンテナンス〈DXコンソーシアムの事業内容〉。ソフトピアジャパン ドリーム・コア515にも入居。人数なし）"
+   ],
+   "excluded": []
+  },
+  "tarui": {
+   "next_candidates": [],
+   "unverified": [
+    "有限会社大河システム（栗原、サイトに会社概要なし）",
+    "矢橋林業株式会社 ソハード事業部（表佐、岐阜県情報産業協会の正会員。林業会社の事業部で独立した会社ではない）"
+   ],
+   "excluded": []
+  },
+  "godo": {
+   "next_candidates": [],
+   "unverified": [],
+   "excluded": [
+    "有限会社メディアラブ（本社 神戸町柳瀬449、店舗 PC-DOCK〈大垣市〉。パソコン修理・サポート）"
+   ]
+  },
+  "ono-town": {
+   "next_candidates": [],
+   "unverified": [
+    "有限会社ビュー・ウェブ（法人番号データの本店 大野町下座倉。ソフトピアジャパン センタービル905にも入居。会社概要の本文を取れず）"
+   ],
+   "excluded": []
+  },
+  "tomika": {
+   "next_candidates": [],
+   "unverified": [
+    "株式会社アーティック（羽生、公式サイト未確認。法人番号データの人数区分5〜10人〈secondary〉）"
+   ],
+   "excluded": []
+  },
+  "kaizu": {
+   "next_candidates": [],
+   "unverified": [],
+   "excluded": [
+    "トランサム株式会社（DXコンソーシアムの会員一覧で情報サービス業・海津市だが、事業は有人・無人航空機・ロボット開発）"
+   ]
+  }
+ },
+ "_notes": [
+  "本表は公式サイトで本社所在地と従業員数の両方を確認できた会社だけ。該当があったのは岐阜市（5社）・大垣市（5社）・多治見市（2社）・高山市（2社）・下呂市（3社）・岐南町（2社）・羽島市・中津川市・各務原市・可児市・瑞穂市・郡上市・養老町・東白川村（各1社）の14市町村。残り28市町村は本表『なし』。",
+  "県内で公式の従業員数が最も多いのは電算システム（岐阜市、813名・2026年6月30日。電算システムHDの100%子会社）。次いでセイノー情報サービス（大垣市、510名・2026年4月。セイノーHDの100%子会社）、タック（大垣市、446名・2026年4月1日）、EMD（羽島市、415名・子会社を含む）、テクノア（岐阜市、355名・2026年4月1日）、共立コンピューターサービス（大垣市、283名・2026年3月。大垣共立銀行系）、インフォファーム（岐阜市、260名・時点なし）。",
+  "電算システムとセイノー情報サービスは公式が『岐阜（大垣）本社』と『東京本社』を並べて書く。どちらも県内の本社が先に書かれ、登記上の本店も県内（法人番号データ）なので本表に入れた。記事で『岐阜市（大垣市）に本社を置く』と書くときは東京本社もあることを添える。",
+  "銀行系・グループのIT会社: 十六電算デジタルサービス（十六FG 60%・電算システムHD 40%）、共立コンピューターサービス（大垣共立銀行）、ソフィア総合研究所（県内IT企業9社以上の共同出資）、システムエンジニアリング（高山市、電算システムHDのグループ企業。人数は公式になし）、TYK情報サービス（TYK 100%）、ブイ・アール・テクノセンター（県・各務原市・民間38社出資の第三セクター）。",
+  "AI関連の公式の記載: テクノア（A-Eyeカメラ・AI色味検査・AI類似図面検索）、セイノー情報サービス（AI ロジスティクス・エージェント、AI画像検品 iSCAN）、タック（AIカメラの労災リスク検知 タックSafetyGate）、共立コンピューターサービス（AI-OCR の展示、デジタル化・AI導入補助金の案内）、インフォファーム（自治体とのAI生花出荷予測の共同研究）、十六電算デジタルサービス（AI・RPA）、GRASPERS（AI・DX研修）。人数を確かめられなかった会社では GINET（AI：FAQサービス）、HillsJapan（AI Agent）、AlegBit、楽RAG販売（社内生成AI スマ箋RAG）、岐阜生成AI活用、センシア、リーサ、ザイシア、CreamCode、ZENSHIN。",
+  "検索結果担当の照合依頼（AI PICKS 掲載の6件）: AlegBit（公式の住所 関市池田町127番地、人数なし → _reference.seki）、HillsJapan（公式の本店 岐阜市茜部菱野4丁目101-3、広島ラボ、人数なし → _reference.gifu-city）、Mirume AI（公式サイト見つからず、法人番号の番号は東京法務局管轄 → _reference.gifu-city）。ソフトピアジャパン・岐阜県商工会連合会・岐阜県DX推進コンソーシアムは公的機関・団体で会社ではないため companies には入れない。",
+  "本社を県外に移した・県外が本社の会社: アウトグロウシステムズ（羽島市→名古屋市、2012年）、CMA（山県市→名古屋市、2022年）、ハイパーブレイン（名古屋市）、クロスコミュニケーションズ（名古屋市）。法人番号データ・DXコンソーシアムの一覧の市町村だけで判断しない。",
+  "他県のページとの重複: 本表の会社を詳述した他県のページはない。電算システムは徳島県神山町の記事、テクノアは青森県黒石市の記事に1行ずつ出る。インフォファーム・セイノー情報サービスは福井県・富山県の cases_outside.md に岐阜県DX推進コンソーシアムのWGの関係で名前が出る。AlegBit は石川県の serp.md に名前がある。",
+  "WebSearch は16回のうち13回を使用。"
+ ]
+}

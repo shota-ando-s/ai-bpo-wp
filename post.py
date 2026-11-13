@@ -1,0 +1,635 @@
+#!/usr/bin/env python3
+"""WordPress記事自動投稿スクリプト
+
+使い方:
+    python3 post.py articles/記事ファイル.md
+
+記事ファイルはYAMLフロントマター付きMarkdown形式:
+    ---
+    title: 記事タイトル
+    categories: [カテゴリ名]
+    tags: [タグ1, タグ2]
+    status: publish  # または draft
+    ---
+
+固定ページとして投稿する場合（categories/tags は無視される）:
+    ---
+    type: page
+    slug: yokohama
+    parent: area/kanagawa   # 親ページのパス（省略時は最上位）
+    ---
+    本文...
+
+.envにOPENAI_API_KEYを設定するとH2ごとにDALL-E 3で画像を自動生成・挿入します。
+"""
+
+import sys
+import os
+import io
+import json
+import base64
+import re
+import html
+import urllib.request
+import urllib.error
+import urllib.parse
+
+try:
+    import yaml
+except ImportError:
+    print("Error: pip3 install PyYAML", file=sys.stderr)
+    sys.exit(1)
+
+try:
+    import markdown as md_lib
+except ImportError:
+    print("Error: pip3 install markdown", file=sys.stderr)
+    sys.exit(1)
+
+def load_env():
+    env_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env")
+    if os.path.exists(env_path):
+        with open(env_path) as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    key, value = line.split("=", 1)
+                    os.environ.setdefault(key.strip(), value.strip().strip('"').strip("'"))
+
+def auth_header():
+    user = os.environ.get("WP_USER", "")
+    password = os.environ.get("WP_APP_PASSWORD", "")
+    if not user or not password:
+        print("Error: .env に WP_USER と WP_APP_PASSWORD を設定してください", file=sys.stderr)
+        sys.exit(1)
+    token = base64.b64encode(f"{user}:{password}".encode()).decode()
+    return {"Authorization": f"Basic {token}", "Content-Type": "application/json"}
+
+def api(endpoint, method="GET", data=None):
+    base = os.environ.get("WP_URL", "https://kantan-ai.jp").rstrip("/")
+    url = f"{base}/wp-json/wp/v2/{endpoint}"
+    body = json.dumps(data).encode() if data else None
+    req = urllib.request.Request(url, data=body, headers=auth_header(), method=method)
+    try:
+        with urllib.request.urlopen(req) as r:
+            return json.loads(r.read())
+    except urllib.error.HTTPError as e:
+        print(f"API Error {e.code}: {e.read().decode()}", file=sys.stderr)
+        raise
+
+def get_or_create_term(taxonomy, name):
+    # WordPress は「&」などを実体参照（&amp;）で保存するので、その形でも検索する
+    for query in dict.fromkeys([name, html.escape(name, quote=False)]):
+        results = api(f"{taxonomy}?search={urllib.parse.quote(query)}&per_page=100")
+        for term in results:
+            if html.unescape(term["name"]) == name:
+                return term["id"]
+    new_term = api(taxonomy, method="POST", data={"name": name})
+    return new_term["id"]
+
+def parse_frontmatter(text):
+    if text.startswith("---"):
+        parts = text.split("---", 2)
+        if len(parts) >= 3:
+            return yaml.safe_load(parts[1]) or {}, parts[2].strip()
+    return {}, text.strip()
+
+def find_post_by_slug(slug):
+    results = api(f"posts?slug={urllib.parse.quote(slug)}&status=any&per_page=1")
+    return results[0] if results else None
+
+def find_page(slug, parent_id):
+    results = api(f"pages?slug={urllib.parse.quote(slug)}&parent={parent_id}&status=any&per_page=1")
+    return results[0] if results else None
+
+def resolve_parent(path):
+    """'area/kanagawa' のような親ページのパスをページIDに変換する（なければ終了）"""
+    parent_id = 0
+    for seg in (path or "").strip("/").split("/"):
+        if not seg:
+            continue
+        page = find_page(seg, parent_id)
+        if not page:
+            print(f"Error: 親ページが見つかりません: {path}（{seg}）。親から先に投稿してください", file=sys.stderr)
+            sys.exit(1)
+        parent_id = page["id"]
+    return parent_id
+
+def find_existing(meta):
+    """フロントマターから (エンドポイント, 既存データ, 親ID) を返す。page は親ごとに slug を照合する"""
+    slug = meta.get("slug")
+    if meta.get("type") == "page":
+        parent_id = resolve_parent(meta.get("parent"))
+        return "pages", (find_page(slug, parent_id) if slug else None), parent_id
+    return "posts", (find_post_by_slug(slug) if slug else None), None
+
+# 画像に地図を描かせるのは絶対禁止。生成AIは実在の地形や行政区域の形を正しく描けず、
+# 形の崩れた地図になる。地名をプロンプトに渡すと禁止しても地図が描かれるため、地名は消してから渡し、
+# 生成後もビジョンモデルで判定して、地図が入った画像は使わない。
+PREFECTURES = (
+    "北海道 青森 岩手 宮城 秋田 山形 福島 茨城 栃木 群馬 埼玉 千葉 東京 神奈川 新潟 富山 石川 福井 "
+    "山梨 長野 岐阜 静岡 愛知 三重 滋賀 京都 大阪 兵庫 奈良 和歌山 鳥取 島根 岡山 広島 山口 "
+    "徳島 香川 愛媛 高知 福岡 佐賀 長崎 熊本 大分 宮崎 鹿児島 沖縄"
+).split()
+GEO_WORDS = re.compile(
+    r"[一-龥々ヶケぁ-んァ-ヴー]{1,5}[市町村郡区](?![場民役長議内外])"
+    r"|(?:" + "|".join(PREFECTURES) + r")[都道府県]?"
+    r"|東北|関東|北陸|甲信越|東海|近畿|関西|中国|四国|九州|首都圏"
+    r"|[都道府県]内|県|市町村|市町|自治体|地域|地方|全国|日本|国内|地元|エリア|全域"
+)
+NEUTRAL_THEME = "office workers using generative AI tools at their desks"
+MAP_QUESTION = (
+    "Does this image contain a map of any kind: a map, a coastline, an island or landmass shape, "
+    "terrain seen from above, or the outline of a country, prefecture, city or region? "
+    "Answer with exactly one word: YES or NO."
+)
+MAP_RETRIES = 3
+
+def strip_place_names(text):
+    """地名・地域を指す語を取り除く。残りが短すぎれば中立的なテーマに置き換える"""
+    rest = GEO_WORDS.sub("", text or "")
+    rest = re.sub(r"^[のでとにはがを、・\s]+|[のでとにはがを、・\s]+$", "", rest)
+    return rest if len(rest) >= 4 else NEUTRAL_THEME
+
+def has_map(image):
+    """画像（URLまたはPNGバイト）に地図が描かれているかをビジョンモデルで判定する"""
+    if isinstance(image, bytes):
+        image = "data:image/png;base64," + base64.b64encode(image).decode()
+    body = json.dumps({
+        "model": "gpt-4o-mini",
+        "max_tokens": 3,
+        "messages": [{"role": "user", "content": [
+            {"type": "text", "text": MAP_QUESTION},
+            {"type": "image_url", "image_url": {"url": image, "detail": "high"}},
+        ]}],
+    }).encode()
+    req = urllib.request.Request(
+        "https://api.openai.com/v1/chat/completions", data=body, method="POST",
+        headers={"Authorization": f"Bearer {os.environ['OPENAI_API_KEY']}",
+                 "Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=60) as r:
+        answer = json.loads(r.read())["choices"][0]["message"]["content"]
+    return answer.strip().upper().startswith("YES")
+
+def dalle_generate(heading, article_title):
+    """地図の入っていない画像を返す。何度作っても地図になる場合や判定できない場合はNone"""
+    for attempt in range(MAP_RETRIES):
+        image = _dalle_generate_once(heading, article_title)
+        if not image:
+            return None
+        try:
+            if not has_map(image):
+                return image
+        except Exception as e:
+            print(f"地図判定エラー ({heading}): {e}。画像を使いません", file=sys.stderr)
+            return None
+        print(f"  地図が描かれたため作り直し ({attempt + 1}/{MAP_RETRIES}): {heading}", file=sys.stderr)
+    print(f"  地図の入らない画像を作れなかったため、画像なし: {heading}", file=sys.stderr)
+    return None
+
+def _dalle_generate_once(heading, article_title):
+    """gpt-image-1.5でH2テーマに合ったビジネス画像を生成し、画像バイトを返す"""
+    api_key = os.environ.get("OPENAI_API_KEY", "")
+    if not api_key:
+        return None
+    prompt = (
+        f"A clean, professional illustration for a Japanese business blog article about "
+        f"'{strip_place_names(article_title)}'. "
+        f"Section theme: '{strip_place_names(heading)}'. "
+        "Wide landscape format, modern flat design style, no text, no letters, no words anywhere in the image. "
+        "Strictly no maps of any kind: no maps, no globes, no coastlines, no islands, no terrain, "
+        "no aerial views, no outlines of any country, prefecture, city or region, no location pins. "
+        "Show people, offices, workplaces or abstract business objects instead. "
+        "Use soft business colors (blue, white, light gray). High quality, visually appealing."
+    )
+    body = json.dumps({
+        "model": "gpt-image-1.5",
+        "prompt": prompt,
+        "n": 1,
+        "size": "1536x1024",
+        "quality": "medium",
+    }).encode()
+    req = urllib.request.Request(
+        "https://api.openai.com/v1/images/generations",
+        data=body,
+        headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            data = json.loads(r.read())
+        b64 = data["data"][0].get("b64_json") or data["data"][0].get("url")
+        if data["data"][0].get("b64_json"):
+            return base64.b64decode(b64)
+        # url形式の場合はダウンロード
+        with urllib.request.urlopen(b64) as r:
+            return r.read()
+    except urllib.error.HTTPError as e:
+        err_body = e.read().decode()
+        print(f"画像生成エラー ({heading}): {e.code} {err_body}", file=sys.stderr)
+        return None
+    except Exception as e:
+        print(f"画像生成エラー ({heading}): {e}", file=sys.stderr)
+        return None
+
+def upload_image_to_wp(image_bytes, filename, alt_text=""):
+    """画像バイトをWordPressメディアライブラリにアップロードしてURLを返す"""
+    base = os.environ.get("WP_URL", "https://kantan-ai.jp").rstrip("/")
+    upload_url = f"{base}/wp-json/wp/v2/media"
+
+    headers = auth_header()
+    headers["Content-Disposition"] = f'attachment; filename="{filename}"'
+    headers["Content-Type"] = "image/png"
+
+    req = urllib.request.Request(upload_url, data=image_bytes, headers=headers, method="POST")
+    try:
+        with urllib.request.urlopen(req) as r:
+            result = json.loads(r.read())
+        return result.get("source_url")
+    except urllib.error.HTTPError as e:
+        print(f"WPアップロードエラー {e.code}: {e.read().decode()}", file=sys.stderr)
+        return None
+    except Exception as e:
+        print(f"WPアップロードエラー: {e}", file=sys.stderr)
+        return None
+
+# H2画像は最初の3つの見出しにだけ付ける。後半の「よくある質問」「まとめ」などは全記事で似た絵になり、
+# 生成費と表示の重さに見合わないため（2026-10-17。それ以前の記事は全見出しに画像がある）
+MAX_H2_IMAGES = 3
+
+def insert_h2_images(html, h2_texts, article_title):
+    """H2タグの直前にDALL-E 3生成画像を挿入する"""
+    if not h2_texts:
+        return html
+
+    for i, heading_text in enumerate(h2_texts):
+        print(f"  [{i+1}/{len(h2_texts)}] 生成中: {heading_text}")
+        image_bytes = dalle_generate(heading_text, article_title)
+        if not image_bytes:
+            print(f"  スキップ: {heading_text}", file=sys.stderr)
+            continue
+
+        ascii_part = re.sub(r"[^\x00-\x7F]", "", heading_text)
+        safe_name = re.sub(r"[^\w]", "-", ascii_part).strip("-")[:40] or f"h2-{i}"
+        wp_url = upload_image_to_wp(image_bytes, f"{safe_name}.png", heading_text)
+        if not wp_url:
+            continue
+
+        img_block = (
+            f'<figure class="wp-block-image size-large h2-section-image">'
+            f'<img src="{wp_url}" alt="{heading_text}" loading="lazy"/>'
+            f'</figure>'
+        )
+
+        escaped = re.escape(heading_text)
+        html = re.sub(
+            rf"(<h2[^>]*>)({escaped})(</h2>)",
+            lambda m: m.group(0) + img_block,
+            html,
+            count=1,
+        )
+        print(f"  完了: {wp_url}")
+
+    return html
+
+def convert_to_blocks(html):
+    """HTML を WordPress Gutenberg ブロック形式に変換する"""
+    # li → wp:list-item（ul/ol wrapping の前に処理）
+    html = re.sub(
+        r'<li>(.*?)</li>',
+        r'<!-- wp:list-item --><li>\1</li><!-- /wp:list-item -->',
+        html, flags=re.DOTALL
+    )
+    # ul → wp:list
+    html = re.sub(
+        r'<ul>(.*?)</ul>',
+        r'<!-- wp:list --><ul class="wp-block-list">\1</ul><!-- /wp:list -->',
+        html, flags=re.DOTALL
+    )
+    # ol → wp:list ordered
+    html = re.sub(
+        r'<ol>(.*?)</ol>',
+        r'<!-- wp:list {"ordered":true} --><ol class="wp-block-list">\1</ol><!-- /wp:list -->',
+        html, flags=re.DOTALL
+    )
+    # h2 〜 h4 → wp:heading
+    for level in [2, 3, 4]:
+        html = re.sub(
+            rf'<h{level}>(.*?)</h{level}>',
+            rf'<!-- wp:heading {{"level":{level}}} --><h{level} class="wp-block-heading">\1</h{level}><!-- /wp:heading -->',
+            html, flags=re.DOTALL
+        )
+    # ショートコードだけの段落 → wp:shortcode（<p> の中に <div> を出さないため）
+    html = re.sub(
+        r'<p>(\[[a-z0-9_]+[^\]]*\])</p>',
+        r'<!-- wp:shortcode -->\1<!-- /wp:shortcode -->',
+        html
+    )
+    # p → wp:paragraph
+    html = re.sub(
+        r'<p>(.*?)</p>',
+        r'<!-- wp:paragraph --><p>\1</p><!-- /wp:paragraph -->',
+        html, flags=re.DOTALL
+    )
+    # table → wp:table
+    html = re.sub(
+        r'<table>(.*?)</table>',
+        r'<!-- wp:table --><figure class="wp-block-table"><table>\1</table></figure><!-- /wp:table -->',
+        html, flags=re.DOTALL
+    )
+    # wp-block-image figure（画像挿入後に呼ぶこと）→ wp:image
+    html = re.sub(
+        r'(<figure class="wp-block-image[^"]*">.*?</figure>)',
+        r'<!-- wp:image -->\1<!-- /wp:image -->',
+        html, flags=re.DOTALL
+    )
+    return html
+
+
+_H2_SPLIT_RE = re.compile(
+    r'((?:<!-- wp:heading \{"level":2\} -->[ \t]*)?<h2[^>]*>.*?</h2>(?:[ \t]*<!-- /wp:heading -->)?)',
+    re.DOTALL,
+)
+
+def _split_sections(html):
+    """H2を境界にセクション分割。[(h2_text or None, html_chunk), ...]"""
+    parts = _H2_SPLIT_RE.split(html)
+    sections = []
+    if parts[0].strip():
+        sections.append((None, parts[0]))
+    for i in range(1, len(parts), 2):
+        h2_html = parts[i]
+        content = parts[i + 1] if i + 1 < len(parts) else ""
+        h2_text = re.sub(r'<!--.*?-->', '', h2_html, flags=re.DOTALL)
+        h2_text = re.sub(r'<[^>]+>', '', h2_text).strip()
+        sections.append((h2_text, h2_html + content))
+    return sections
+
+def _section_text(html):
+    """比較用: blockコメント・画像・HTMLタグを除いた正規化テキスト"""
+    text = re.sub(r'<!--.*?-->', '', html, flags=re.DOTALL)
+    # 画像の figure だけ除く（表の figure.wp-block-table は比較に含める）
+    text = re.sub(r'<figure(?![^>]*wp-block-table)[^>]*>.*?</figure>', '', text, flags=re.DOTALL)
+    text = re.sub(r'<[^>]+>', '', text)
+    # 空白・改行の違い（<br> の前後など）は無視する
+    return re.sub(r'\s+', '', text)
+
+_GENERATED_IMAGE_RE = re.compile(
+    r'(?:<!-- wp:image -->\s*)?<figure class="wp-block-image[^"]*\b(?:h2-section-image|intro-image)\b[^"]*">.*?</figure>(?:\s*<!-- /wp:image -->)?',
+    re.DOTALL,
+)
+
+def _carry_over_images(wp_chunk, new_chunk):
+    """変更のあったセクションに、WP側にある生成画像（H2画像・イントロ画像）を引き継ぐ"""
+    if not wp_chunk or _GENERATED_IMAGE_RE.search(new_chunk):
+        return new_chunk
+    images = "".join(m.group(0) for m in _GENERATED_IMAGE_RE.finditer(wp_chunk))
+    if not images:
+        return new_chunk
+    h2 = _H2_SPLIT_RE.match(new_chunk)
+    if h2:
+        # H2画像は見出しの直後。alt は見出しの文言なので、見出しを変えた場合に合わせる
+        heading = re.sub(r'<[^>]+>|<!--.*?-->', '', h2.group(0), flags=re.DOTALL).strip()
+        images = re.sub(r'(class="wp-block-image[^"]*h2-section-image[^"]*"><img [^>]*?alt=")[^"]*"',
+                        lambda m: m.group(1) + html.escape(heading) + '"', images)
+        return new_chunk[:h2.end()] + images + new_chunk[h2.end():]
+    # イントロ画像は最初の段落の直前
+    p = re.search(r'(?:<!-- wp:paragraph -->)?<p', new_chunk)
+    pos = p.start() if p else 0
+    return new_chunk[:pos] + images + new_chunk[pos:]
+
+def merge_sections(wp_html, new_html):
+    """H2セクション単位でdiff。変更なし→WP保持（画像・WP直接編集を維持）、変更あり→新HTML採用（生成画像は引き継ぐ）"""
+    wp_sections = _split_sections(wp_html)
+    new_sections = _split_sections(new_html)
+    wp_dict = {h2: chunk for h2, chunk in wp_sections}
+    # セクション数が同じなら、見出しの文言を変えたセクションは同じ位置のWP側から画像を引き継ぐ
+    same_shape = len(wp_sections) == len(new_sections)
+    result = []
+    changed = []
+    for i, (h2_text, new_chunk) in enumerate(new_sections):
+        wp_chunk = wp_dict.get(h2_text)
+        if wp_chunk and _section_text(wp_chunk) == _section_text(new_chunk):
+            result.append(wp_chunk)
+        else:
+            if wp_chunk is None and same_shape:
+                wp_chunk = wp_sections[i][1]
+            result.append(_carry_over_images(wp_chunk, new_chunk))
+            label = h2_text or "(冒頭)"
+            changed.append(label)
+    if changed:
+        print(f"  差分あり ({len(changed)}件): {', '.join(changed)}")
+    else:
+        print("  差分なし")
+    return "\n".join(result)
+
+
+def insert_intro_image(html, article_title):
+    """記事冒頭（最初の<p>の直前）にDALL-E生成画像を1枚挿入する"""
+    image_bytes = dalle_generate(article_title, article_title)
+    if not image_bytes:
+        print("イントロ画像生成失敗", file=sys.stderr)
+        return html
+
+    ascii_part = re.sub(r"[^\x00-\x7F]", "", article_title)
+    safe_name = re.sub(r"[^\w]", "-", ascii_part).strip("-")[:40] or "intro"
+    wp_url = upload_image_to_wp(image_bytes, f"{safe_name}-intro.png", article_title)
+    if not wp_url:
+        return html
+
+    img_block = (
+        f'<figure class="wp-block-image size-large intro-image">'
+        f'<img src="{wp_url}" alt="{article_title}" loading="lazy"/>'
+        f'</figure>'
+    )
+    html = re.sub(r"(<p)", img_block + r"\1", html, count=1)
+    print(f"イントロ画像挿入完了: {wp_url}")
+    return html
+
+
+def set_featured_image_for_post(filepath):
+    """記事タイトルで画像を生成し、WordPressのアイキャッチ画像として設定する"""
+    with open(filepath, encoding="utf-8") as f:
+        raw = f.read()
+    meta, _ = parse_frontmatter(raw)
+    title = meta.get("title") or os.path.splitext(os.path.basename(filepath))[0]
+
+    endpoint, existing, _ = find_existing(meta)
+    if not existing:
+        print("既存記事が見つかりません。", file=sys.stderr)
+        return
+
+    if not os.environ.get("OPENAI_API_KEY"):
+        print("OPENAI_API_KEY が設定されていません", file=sys.stderr)
+        return
+
+    print(f"アイキャッチ画像生成中: {title}")
+    image_bytes = dalle_generate(title, title)
+    if not image_bytes:
+        print("画像生成失敗", file=sys.stderr)
+        return
+
+    # アップロードしてメディアIDを取得
+    base = os.environ.get("WP_URL", "https://kantan-ai.jp").rstrip("/")
+    upload_url = f"{base}/wp-json/wp/v2/media"
+    headers = auth_header()
+    ascii_part = re.sub(r"[^\x00-\x7F]", "", title)
+    safe_name = re.sub(r"[^\w]", "-", ascii_part).strip("-")[:40] or "featured"
+    headers["Content-Disposition"] = f'attachment; filename="{safe_name}-featured.png"'
+    headers["Content-Type"] = "image/png"
+
+    req = urllib.request.Request(upload_url, data=image_bytes, headers=headers, method="POST")
+    try:
+        with urllib.request.urlopen(req) as r:
+            media = json.loads(r.read())
+    except urllib.error.HTTPError as e:
+        print(f"アップロードエラー {e.code}: {e.read().decode()}", file=sys.stderr)
+        return
+
+    media_id = media.get("id")
+    media_url = media.get("source_url")
+    print(f"アップロード完了: {media_url} (ID: {media_id})")
+
+    result = api(f"{endpoint}/{existing['id']}", method="POST", data={"featured_media": media_id})
+    print(f"アイキャッチ設定完了: {result['link']}")
+
+
+def add_intro_image_to_existing_post(filepath):
+    """既存WPコンテンツを取得して冒頭に画像を1枚挿入する（H2画像を保持）"""
+    with open(filepath, encoding="utf-8") as f:
+        raw = f.read()
+    meta, _ = parse_frontmatter(raw)
+    title = meta.get("title") or os.path.splitext(os.path.basename(filepath))[0]
+
+    endpoint, existing, _ = find_existing(meta)
+    if not existing:
+        print("既存記事が見つかりません。通常投稿を使ってください。", file=sys.stderr)
+        return
+
+    # WPに保存されている現在のHTMLを取得（H2画像込み）
+    post_data = api(f"{endpoint}/{existing['id']}?context=edit")
+    current_html = post_data.get("content", {}).get("raw", "")
+
+    if not os.environ.get("OPENAI_API_KEY"):
+        print("OPENAI_API_KEY が設定されていません", file=sys.stderr)
+        return
+
+    print("イントロ画像生成中...")
+    current_html = insert_intro_image(current_html, title)
+
+    result = api(f"{endpoint}/{existing['id']}", method="POST", data={"content": current_html})
+    print(f"更新完了: {result['link']}")
+
+
+def post_article(filepath, rebuild_images=False):
+    with open(filepath, encoding="utf-8") as f:
+        raw = f.read()
+
+    meta, body = parse_frontmatter(raw)
+
+    title = meta.get("title") or os.path.splitext(os.path.basename(filepath))[0]
+    status = meta.get("status", "publish")
+    categories = meta.get("categories") or []
+    tags = meta.get("tags") or []
+    slug = meta.get("slug")
+    excerpt = meta.get("excerpt")
+
+    html = md_lib.markdown(body, extensions=["nl2br", "tables", "fenced_code"])
+
+    endpoint, existing, parent_id = find_existing(meta)
+    h2_texts = re.findall(r"^## (.+)$", body, re.MULTILINE)
+    # 新規投稿 or --rebuild-images 時にH2画像を生成（最初の MAX_H2_IMAGES 個の見出しだけ）
+    if h2_texts and os.environ.get("OPENAI_API_KEY") and (not existing or rebuild_images):
+        targets = h2_texts[:MAX_H2_IMAGES]
+        print(f"H2画像生成中... ({len(targets)}件、1枚あたり約15秒)")
+        html = insert_h2_images(html, targets, title)
+
+    if rebuild_images and os.environ.get("OPENAI_API_KEY"):
+        print("イントロ画像生成中...")
+        html = insert_intro_image(html, title)
+
+    # ブロック形式に変換
+    html = convert_to_blocks(html)
+
+    # 更新時: WP既存コンテンツとH2セクション単位でマージ
+    # （rebuild_imagesは全画像再生成なのでマージ不要）
+    if existing and not rebuild_images:
+        print("セクション差分チェック中...")
+        post_data = api(f"{endpoint}/{existing['id']}?context=edit")
+        wp_html = post_data.get("content", {}).get("raw", "")
+        html = merge_sections(wp_html, html)
+
+    pickup = meta.get("pickup")
+
+    payload = {
+        "title": title,
+        "content": html,
+        "status": status,
+    }
+    if endpoint == "pages":
+        payload["parent"] = parent_id
+    else:
+        payload["categories"] = [get_or_create_term("categories", c) for c in categories]
+        payload["tags"] = [get_or_create_term("tags", t) for t in tags]
+    if slug:
+        payload["slug"] = slug
+    if excerpt:
+        payload["excerpt"] = excerpt
+    if pickup is not None:
+        payload["meta"] = {"ai_bpo_pickup": bool(pickup)}
+
+    # slug が既存記事と一致する場合は更新（upsert）
+    if existing:
+        result = api(f"{endpoint}/{existing['id']}", method="POST", data=payload)
+        print(f"更新完了: {result['link']}")
+    else:
+        result = api(endpoint, method="POST", data=payload)
+        print(f"投稿完了: {result['link']}")
+    return result
+
+def update_excerpt_only(filepath):
+    with open(filepath, encoding="utf-8") as f:
+        raw = f.read()
+    meta, _ = parse_frontmatter(raw)
+    excerpt = meta.get("excerpt")
+    if not excerpt:
+        print(f"excerpt が見つかりません: {filepath}", file=sys.stderr)
+        return
+    endpoint, existing, _ = find_existing(meta)
+    if not existing:
+        print(f"記事が見つかりません (slug={meta.get('slug')}): {filepath}", file=sys.stderr)
+        return
+    result = api(f"{endpoint}/{existing['id']}", method="POST", data={"excerpt": excerpt})
+    print(f"抜粋更新完了: {result['link']}")
+
+if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        print(f"使い方: python3 {sys.argv[0]} [--excerpt-only|--add-intro-image] <記事.md>", file=sys.stderr)
+        sys.exit(1)
+    load_env()
+    if sys.argv[1] == "--excerpt-only":
+        if len(sys.argv) < 3:
+            print(f"使い方: python3 {sys.argv[0]} --excerpt-only <記事.md>", file=sys.stderr)
+            sys.exit(1)
+        for filepath in sys.argv[2:]:
+            update_excerpt_only(filepath)
+    elif sys.argv[1] == "--add-intro-image":
+        if len(sys.argv) < 3:
+            print(f"使い方: python3 {sys.argv[0]} --add-intro-image <記事.md>", file=sys.stderr)
+            sys.exit(1)
+        for filepath in sys.argv[2:]:
+            add_intro_image_to_existing_post(filepath)
+    elif sys.argv[1] == "--featured-image":
+        if len(sys.argv) < 3:
+            print(f"使い方: python3 {sys.argv[0]} --featured-image <記事.md>", file=sys.stderr)
+            sys.exit(1)
+        for filepath in sys.argv[2:]:
+            set_featured_image_for_post(filepath)
+    elif sys.argv[1] == "--rebuild-images":
+        if len(sys.argv) < 3:
+            print(f"使い方: python3 {sys.argv[0]} --rebuild-images <記事.md>", file=sys.stderr)
+            sys.exit(1)
+        for filepath in sys.argv[2:]:
+            post_article(filepath, rebuild_images=True)
+    else:
+        post_article(sys.argv[1])

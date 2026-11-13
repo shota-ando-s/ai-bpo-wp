@@ -1,0 +1,1468 @@
+{
+  "_meta": {
+    "checked": "2026-10-24",
+    "scope": "新潟県30市町村。本社（公式サイトの本社/所在地）が当該市町村にあり、公式サイトで受託システム開発・ソフトウェア開発・Web制作・ITサービスを事業として明示する法人。県外に本社がある会社の県内支店・事業所・営業所は載せない。県内に本社がある大手・金融機関・放送局の子会社（キヤノンイメージングシステムズ〈キヤノン〉・BSNアイネット〈BSNメディアホールディングス〉・第四北越ITソリューションズ〈第四北越フィナンシャルグループ〉・ビット・エイ〈コメリグループ〉・NS・コンピュータサービス〈日本精機グループ〉など）は載せ、親会社・株主をnotesに書いた。第三セクター（オスポック・カシックス）も載せて注記した。本社を県内と東京の2か所に置く会社（ソリマチ・JCCソフト・ユニテック・ウイング）は、県内側を公式サイトが『本社』『新潟本社』『本店』と書いているものだけ載せた。無線機・電子機器・照明機器・金型の製造が主業の会社（新潟通信機・日佑電子・リュウド・カワイ精工）、携帯電話販売店が主業の会社（テレパーク）、ケーブルテレビ・通信が主業の会社（エヌ・シィ・ティ）は本表に入れない。新潟市の会社は ward（区）を書いた。各市町村の本表は最大5社。",
+    "candidate_sources": [
+      "業界団体の名簿: 依頼にあった『新潟県情報サービス産業協会』は、WebSearch とドメインの推測（nisa.or.jp は長野県情報サービス振興協会だった）で公式サイトも名簿も見つけられなかった。正式名称・存否は未確認。『新潟県情報産業協会』『新潟市のIT協会』でも見つからず。長岡市の資料（2025年6月）に協力団体として『長岡地区ソフトウェア産業協議会』『長岡アイティ事業協同組合』が出るが、会員名簿は見つからなかった（アイテックは沿革に長岡地区ソフトウェア産業協議会への加盟、BELLSOFT は長岡アイティ事業組合の設立・加盟を書いている）。",
+      "公益財団法人にいがた産業創造機構（NICO）の『新潟県DXパートナー一覧』（2026年10月20日更新。IT企業・SIer・コンサル等148件、うち県内所在の事業者約70件。所在地は市まで。従業員数の記載なし） https://www.nico.or.jp/mokuteki/it/73917/",
+      "全国法人検索（houjin.goo.to、国税庁の法人番号データにもとづく）の新潟県『IT業界』一覧（242件。1〜3ページの全件〈1〜100件目・101〜200件目・201〜242件目〉と一部の市町村別ページを取得。従業員数は幅の表示で secondary） https://houjin.goo.to/corporations/prefs/niigata/category-it/list",
+      "新潟大学工学部 2024年度学内キャリアガイダンス企業ガイドブック（第1日目。CEC新潟情報サービス〈現キザシオ〉・ジェイマックソフト・NS・コンピュータサービス・メビウスなど。候補探しにだけ使用） https://www.eng.niigata-u.ac.jp/~ecet/center/2024careerguidebook_A.pdf",
+      "国税庁 法人番号公表サイト（本店所在地の確認） https://www.houjin-bangou.nta.go.jp/",
+      "WebSearch（担当上限14回のうち12回を使用。協会・業界団体の名簿探しに9回〈新潟県情報サービス産業協会・新潟県情報産業協会・長岡地区ソフトウェア産業協議会・長岡アイティ事業協同組合・新潟市のIT協会など〉、C.A.R.E. と にいがたAIビジネスの PR TIMES 記事の確認に2回、その他1回）"
+    ],
+    "search_limits": "規模・所在地・事業内容は各社の公式サイトで確認した（curl/WebFetch、確認日 2026-10-24）。houjin.goo・NICO名簿・大学の企業ガイドの値は本表の規模に使っていない。業界団体の会員名簿が見つからなかったため、母集団は NICO の DXパートナー一覧と houjin.goo の『IT業界』一覧が中心で、個人事業主・小規模なWeb制作者や、どちらにも載っていない会社は網羅していない。houjin.goo の201〜242件目（42社）も追加で取得し、公式URLが分かる会社を確認した（平野屋コンピューティング・情報画廊・ラビットヒルを本表に追加）。公式サイトが開けない・会社概要に人数がない会社は資本金で並べ、どちらもない会社は最後か _reference に置いた。並べ順: 公式の従業員数の多い順 → 従業員数がない会社は資本金 → どちらもない会社は最後。"
+  },
+  "niigata-city": [
+    {
+      "name": "キヤノンイメージングシステムズ株式会社",
+      "hq": "新潟県新潟市中央区笹口1-2 プラーカ2",
+      "municipality": "新潟市",
+      "ward": "中央区",
+      "town": "笹口",
+      "employees": {
+        "value": 575,
+        "as_of": "2026年6月現在",
+        "source": "https://imgsys.canon/ja/company/profile.html"
+      },
+      "capital": {
+        "value": "1億円",
+        "source": "https://imgsys.canon/ja/company/profile.html"
+      },
+      "founded": 1990,
+      "business_summary": "開発サービス、品質検証サービス、AI活用サービス、製品（XR〈VR/MR〉システムなど）（公式サイトのメニュー）",
+      "ai_initiative": "公式サイトのメニューに『AI活用サービス』",
+      "url": "https://imgsys.canon/ja/",
+      "size_basis": "employees",
+      "checked": "2026-10-24",
+      "notes": "1990年1月26日設立。主要株主 キヤノン株式会社（キヤノンの子会社）。東京事業所はキヤノン本社内（東京都大田区）。開発センターは新潟市中央区米山。新潟市内の本社企業で公式の従業員数が最も多い。"
+    },
+    {
+      "name": "株式会社BSNアイネット",
+      "hq": "新潟県新潟市中央区米山二丁目5番地1",
+      "municipality": "新潟市",
+      "ward": "中央区",
+      "town": "米山",
+      "employees": {
+        "value": 382,
+        "as_of": "2026年6月現在",
+        "source": "https://www.bsnnet.co.jp/company/"
+      },
+      "capital": {
+        "value": "2億円",
+        "source": "https://www.bsnnet.co.jp/company/"
+      },
+      "founded": 1966,
+      "business_summary": "システム開発・ITソリューション、データセンター（沿革に新潟第2データセンター開設）",
+      "ai_initiative": "『産業DX・AI体験フェア2026』開催、窓口AIアバター『アイネちゃん』を愛知県岡崎市で先行運用、新潟大学サイトの『AIが解説！新潟大学の研究』、NIIGATA AI EXPO 2026 出展。2026年10月1日にDX認定",
+      "url": "https://www.bsnnet.co.jp/",
+      "size_basis": "employees",
+      "checked": "2026-10-24",
+      "notes": "1966年創業。会社概要の末尾に株式会社BSNメディアホールディングス（新潟市中央区川岸町）を掲載（BSN新潟放送のグループ）。NICO の新潟県DXパートナー。"
+    },
+    {
+      "name": "株式会社メビウス",
+      "hq": "新潟県新潟市中央区天神1丁目12番地3（新潟本社）",
+      "municipality": "新潟市",
+      "ward": "中央区",
+      "town": "天神",
+      "employees": {
+        "value": 315,
+        "as_of": "2026年4月1日現在",
+        "source": "https://www.mob.co.jp/company/mobius/"
+      },
+      "capital": {
+        "value": "2億4,000万円",
+        "source": "https://www.mob.co.jp/company/mobius/"
+      },
+      "founded": 1983,
+      "business_summary": "ソフトウェア開発・保守（NICO 名簿の紹介文）。業種は商社・製造業・金融業向けシステム構築、AI・機械学習、DX推進、バイオ領域（新潟大学の企業ガイド。公式サイトの事業ページは今回読んでいない）",
+      "ai_initiative": "NICO の新潟県DXパートナー一覧の紹介文で『AI・DX・バイオサイエンス等の新たな分野への挑戦』。大学の企業ガイドの業種欄に『AI・機械学習』",
+      "url": "https://www.mob.co.jp/",
+      "size_basis": "employees",
+      "checked": "2026-10-24",
+      "notes": "設立1983/10/01（公式の会社概要）。長岡で業務を開始し、2008年に本社を新潟市へ移転（沿革）。会社概要に『新潟本社』（新潟市中央区天神）と『東京本社』（東京都新宿区西新宿、2020年に東京本社へ昇格）を併記、長岡システム開発センター（長岡市表町）。三井情報株式会社と資本提携（2020年9月に資本金2億4,000万円へ増資）。インプレッシヴと業務資本提携（2021年11月）。前回の報告では公式URLを特定できず未確認にしていた（mob.co.jp は新潟大学の企業ガイドで判明）。"
+    },
+    {
+      "name": "株式会社第四北越ITソリューションズ",
+      "hq": "新潟県新潟市中央区沼垂東2丁目11番21号",
+      "municipality": "新潟市",
+      "ward": "中央区",
+      "town": "沼垂東",
+      "employees": {
+        "value": 210,
+        "as_of": "2026年4月現在",
+        "source": "https://www.dh-its.co.jp/about/about_us/"
+      },
+      "capital": {
+        "value": "1億円",
+        "source": "https://www.dh-its.co.jp/about/about_us/"
+      },
+      "founded": 1970,
+      "business_summary": "情報システム開発、パッケージ販売",
+      "ai_initiative": null,
+      "url": "https://www.dh-its.co.jp/",
+      "size_basis": "employees",
+      "checked": "2026-10-24",
+      "notes": "1970年3月20日設立。株主 株式会社第四北越フィナンシャルグループ（地銀グループの子会社）。NICO の新潟県DXパートナー。AIは『近年、AI技術の急速な進展…』という一般的な記述のみで、AIの製品・サービスは確認できず。"
+    },
+    {
+      "name": "株式会社ビット・エイ",
+      "hq": "新潟県新潟市南区清水4501-1",
+      "municipality": "新潟市",
+      "ward": "南区",
+      "town": "清水",
+      "employees": {
+        "value": 197,
+        "as_of": "2026年4月時点",
+        "source": "https://www.bit.or.jp/profile/"
+      },
+      "capital": {
+        "value": "5,000万円",
+        "source": "https://www.bit.or.jp/profile/"
+      },
+      "founded": 1990,
+      "business_summary": "情報システムの企画・立案、ソフトウェア開発、POS・物流・EC・Web-EDI・勤怠管理システム、システム運用・保守、WEB・DTP制作、映像制作",
+      "ai_initiative": "2026年7月6日のお知らせ: 店舗従業員向けのAIチャットシステムを開発し、2026年6月からコメリの一部店舗で実証運用（ソルクシーズの生成AIサービス『SOLAI』を活用、共同開発）。AIポリシーを掲載",
+      "url": "https://www.bit.or.jp/",
+      "size_basis": "employees",
+      "checked": "2026-10-24",
+      "notes": "1990年5月設立。サイトのタイトルに『コメリグループ』（ホームセンター大手コメリのグループ会社）。"
+    }
+  ],
+  "nagaoka": [
+    {
+      "name": "株式会社NS・コンピュータサービス",
+      "hq": "新潟県長岡市金房3丁目3番2号",
+      "municipality": "長岡市",
+      "town": "金房",
+      "employees": {
+        "value": 624,
+        "as_of": "2026年4月1日現在",
+        "source": "https://nscs.jp/company/outline/"
+      },
+      "capital": {
+        "value": "323百万円",
+        "source": "https://nscs.jp/company/outline/"
+      },
+      "founded": 1985,
+      "business_summary": "組込みソフトウェア開発・電子機器の回路設計・試験検査装置、システム開発（SI）、IDC（仮想ホスティング）サービス",
+      "ai_initiative": "RPA・AI-OCRの導入・運用。新潟県立長岡明徳高校で『生成AI入門講座』を開催",
+      "url": "https://nscs.jp/",
+      "size_basis": "employees",
+      "checked": "2026-10-24",
+      "notes": "1985年4月1日設立。日本精機グループ（公式サイトに『日本精機グループについて』）。県内のシステム開発会社で公式の従業員数が最も多い。"
+    },
+    {
+      "name": "株式会社ジェイマックソフト",
+      "hq": "新潟県長岡市城内町2丁目2番地4",
+      "municipality": "長岡市",
+      "town": "城内町",
+      "employees": {
+        "value": 235,
+        "as_of": "2026年4月1日現在",
+        "source": "https://www.jmacsoft.co.jp/company/"
+      },
+      "capital": {
+        "value": "1億円",
+        "source": "https://www.jmacsoft.co.jp/company/"
+      },
+      "founded": 1983,
+      "business_summary": "システムインテグレーション、ソフトウェア開発（売上の97.6%）、OA機器販売（2.1%）",
+      "ai_initiative": null,
+      "url": "https://www.jmacsoft.co.jp/",
+      "size_basis": "employees",
+      "checked": "2026-10-24",
+      "notes": "1963年7月創業、1983年10月設立。財団法人の情報処理サービス事業を分離して設立された経緯がある（沿革）。"
+    },
+    {
+      "name": "ソリマチ株式会社",
+      "hq": "新潟県長岡市表町1-4-24 ソリマチ第3ビル（新潟本社）",
+      "municipality": "長岡市",
+      "town": "表町",
+      "employees": {
+        "value": 205,
+        "as_of": "時点なし（『国内205名、海外100名』）",
+        "source": "https://sorimachi.co.jp/about/information.php"
+      },
+      "capital": {
+        "value": "4,950万円",
+        "source": "https://sorimachi.co.jp/about/information.php"
+      },
+      "founded": 1972,
+      "business_summary": "自社ブランドのパッケージソフト・クラウドサービス（経理・会計ソフトなど）の企画・開発・販売、コンピュータシステムの受託開発",
+      "ai_initiative": "デジタル化・AI導入補助金の案内のみ。AIの製品は確認できず",
+      "url": "https://sorimachi.co.jp/",
+      "size_basis": "employees",
+      "checked": "2026-10-24",
+      "notes": "1972年10月設立。会社概要に『東京本社』（東京都千代田区大手町）と『新潟本社』（長岡市表町）を併記。プライバシーポリシー等の事業者所在地は東京本社。国税庁データ（houjin.goo）の本店は長岡市表町。ソリマチテックグループ（ソリマチ技研・AXコンサルティングなどは別会社）。従業員数は海外100名を除く国内の値。"
+    },
+    {
+      "name": "株式会社NTC",
+      "hq": "新潟県長岡市喜多町字鐙潟463番地3 NTCビル",
+      "municipality": "長岡市",
+      "town": "喜多町",
+      "employees": {
+        "value": 109,
+        "as_of": "2026年6月1日現在",
+        "source": "https://www.kk-ntc.co.jp/company/"
+      },
+      "capital": {
+        "value": "97,250,000円",
+        "source": "https://www.kk-ntc.co.jp/company/"
+      },
+      "founded": 1984,
+      "business_summary": "オフィスコンピュータのシステム開発から始まり、会計『SystemBox会計』、基幹システム（ERP）、システム開発",
+      "ai_initiative": "専用AIチャットボット『KiiteMi（キイテミ）』を発売。『MJS 生成AI活用セミナー＆フェア2026』に出展",
+      "url": "https://www.kk-ntc.co.jp/",
+      "size_basis": "employees",
+      "checked": "2026-10-24",
+      "notes": "1984年8月1日設立。houjin.goo では『株式会社エヌティーシー』（宮関）と『株式会社エヌ・テー・シー』（喜多町）の2件が同じ公式URLに結びついている。公式の所在地は喜多町。"
+    },
+    {
+      "name": "和同情報システム株式会社",
+      "hq": "新潟県長岡市新産2丁目1番地4",
+      "municipality": "長岡市",
+      "town": "新産",
+      "employees": {
+        "value": 50,
+        "as_of": "時点なし",
+        "source": "https://wadou.co.jp/company/"
+      },
+      "capital": {
+        "value": "3,500万円",
+        "source": "https://wadou.co.jp/company/"
+      },
+      "founded": 1971,
+      "business_summary": "複合機などオフィス機器の販売・保守、システムインテグレーション、ネットワーク環境構築・運用サポート、ソフトウェア開発・導入",
+      "ai_initiative": "AIウェビナー『AI、結局みんな何に使ってる？』の案内（2026年10月26日開催）",
+      "url": "https://wadou.co.jp/",
+      "size_basis": "employees",
+      "checked": "2026-10-24",
+      "notes": "1971年7月30日設立。キヤノン販売の代理店（和同事務機）として始まった会社で、システム開発専業ではない。NICO の新潟県DXパートナー。"
+    }
+  ],
+  "sanjo": [
+    {
+      "name": "株式会社コンピュータシステム",
+      "hq": "新潟県三条市石上2丁目13-46",
+      "municipality": "三条市",
+      "town": "石上",
+      "employees": {
+        "value": 25,
+        "as_of": "時点なし",
+        "source": "https://www.compsys.co.jp/company/profile/"
+      },
+      "capital": {
+        "value": "2,000万円",
+        "source": "https://www.compsys.co.jp/company/profile/"
+      },
+      "founded": 1982,
+      "business_summary": "業務用ソフトウェアの企画・開発・販売・保守、コンピュータ機器の販売",
+      "ai_initiative": null,
+      "url": "https://www.compsys.co.jp/",
+      "size_basis": "employees",
+      "checked": "2026-10-24",
+      "notes": "1982年2月18日設立。"
+    },
+    {
+      "name": "株式会社システムエース",
+      "hq": "新潟県三条市須頃2丁目106番地",
+      "municipality": "三条市",
+      "town": "須頃",
+      "employees": {
+        "value": 22,
+        "as_of": "時点なし",
+        "source": "https://www.system-ace.co.jp/company/"
+      },
+      "capital": {
+        "value": "2,000万円",
+        "source": "https://www.system-ace.co.jp/company/"
+      },
+      "founded": null,
+      "business_summary": "ソフトウェア開発販売（営業種目: 販売管理システム『ACE21 Pro』、米穀業向け『Rice Ace』、食肉業向け『Meat Ace』）",
+      "ai_initiative": null,
+      "url": "https://www.system-ace.co.jp/",
+      "size_basis": "employees",
+      "checked": "2026-10-24",
+      "notes": "長岡オフィス（長岡市喜多町）あり。設立年は今回確認していない。"
+    },
+    {
+      "name": "株式会社ジム・コンピュータ・サービス",
+      "hq": "新潟県三条市須頃三丁目74番地",
+      "municipality": "三条市",
+      "town": "須頃",
+      "employees": null,
+      "capital": {
+        "value": "6,500万円",
+        "source": "https://www.jimnet.co.jp/"
+      },
+      "founded": 1983,
+      "business_summary": "業務ソフトウェアの構築、ハードウェアの提案・販売",
+      "ai_initiative": null,
+      "url": "https://www.jimnet.co.jp/",
+      "size_basis": "capital",
+      "checked": "2026-10-24",
+      "notes": "1983年7月15日設立。公式に従業員数の記載を見つけられなかった。"
+    },
+    {
+      "name": "株式会社コンプケア",
+      "hq": "新潟県三条市荒町2丁目15番16号",
+      "municipality": "三条市",
+      "town": "荒町",
+      "employees": null,
+      "capital": {
+        "value": "3,000万円",
+        "source": "https://compcare.co.jp/"
+      },
+      "founded": 1990,
+      "business_summary": "設備業向け積算見積ソフト『みつもりくん』などの開発・販売",
+      "ai_initiative": null,
+      "url": "https://compcare.co.jp/",
+      "size_basis": "capital",
+      "checked": "2026-10-24",
+      "notes": "1990年11月2日設立。新潟市にサテライトオフィス。関連会社 コンプケアデータソリューション（同住所）。公式に従業員数の記載なし。"
+    },
+    {
+      "name": "スペック株式会社",
+      "hq": "新潟県三条市猪子場新田117",
+      "municipality": "三条市",
+      "town": "猪子場新田",
+      "employees": null,
+      "capital": {
+        "value": "2,000万円",
+        "source": "https://www.spec-j.co.jp/"
+      },
+      "founded": 1989,
+      "business_summary": "業務システム開発、モバイルアプリ開発、Webシステム開発、Webサイト・ECサイト制作",
+      "ai_initiative": null,
+      "url": "https://www.spec-j.co.jp/",
+      "size_basis": "capital",
+      "checked": "2026-10-24",
+      "notes": "1989年1月25日設立。新潟支店あり。ISO/IEC 27001（本社）。NICO の新潟県DXパートナー。公式に従業員数の記載なし。"
+    }
+  ],
+  "kashiwazaki": [
+    {
+      "name": "株式会社ユニテック",
+      "hq": "新潟県柏崎市新橋3-11（本店）",
+      "municipality": "柏崎市",
+      "town": "新橋",
+      "employees": {
+        "value": 87,
+        "as_of": "時点なし",
+        "source": "https://www.unitec-net.co.jp/aboutus"
+      },
+      "capital": {
+        "value": "5,000万円",
+        "source": "https://www.unitec-net.co.jp/aboutus"
+      },
+      "founded": 1985,
+      "business_summary": "システムインテグレーション、システムインテグレーション、自社製品（Build-U シリーズ、TenderOne など。サイトのサービス欄）",
+      "ai_initiative": null,
+      "url": "https://www.unitec-net.co.jp/",
+      "size_basis": "employees",
+      "checked": "2026-10-24",
+      "notes": "1985年7月1日設立。会社概要に『本店』柏崎市新橋と『本社』東京都千代田区神田東松下町を併記（両方を書く）。NICO の新潟県DXパートナー。カシックスの株主。"
+    },
+    {
+      "name": "株式会社創風システム",
+      "hq": "新潟県柏崎市田中20番22号",
+      "municipality": "柏崎市",
+      "town": "田中",
+      "employees": {
+        "value": 41,
+        "as_of": "時点なし",
+        "source": "https://www.sofu.co.jp/company/overview/"
+      },
+      "capital": {
+        "value": "1,000万円",
+        "source": "https://www.sofu.co.jp/company/overview/"
+      },
+      "founded": 1988,
+      "business_summary": "ISP事業、ネットワーク構築、ソフトウェア受託開発、自社パッケージ（シール印刷業向け業務支援システム）、保守",
+      "ai_initiative": "『SoFu AI』の提案、AI活用による受託開発プラットフォームの高度化（公式サイト）",
+      "url": "https://www.sofu.co.jp/",
+      "size_basis": "employees",
+      "checked": "2026-10-24",
+      "notes": "昭和63年4月設立。グループ会社 創風アドバンス・創風安全情報システム。NICO の新潟県DXパートナー。"
+    },
+    {
+      "name": "株式会社カシックス（KASIX）",
+      "hq": "新潟県柏崎市駅前1丁目5番48号 JFビル",
+      "municipality": "柏崎市",
+      "town": "駅前",
+      "employees": null,
+      "capital": {
+        "value": "8,500万円",
+        "source": "https://www.kasix.co.jp/about-us/kasix"
+      },
+      "founded": 1987,
+      "business_summary": "自治体向けICT（基幹システムの調達支援・導入、自治体システムの開発、情報ヘルプデスク、常駐サポート）、コワーキングスペース運営",
+      "ai_initiative": "RPA・AI-OCRによる自動化、チャットボットによる問い合わせ窓口など自治体向けのAI活用",
+      "url": "https://www.kasix.co.jp/",
+      "size_basis": "capital",
+      "checked": "2026-10-24",
+      "notes": "第三セクター: 1987年4月2日に柏崎市の第3セクター『株式会社柏崎情報開発センター』として設立（沿革）。株主に柏崎市・日本政策投資銀行・東京電力ホールディングス・ブルボン・第四北越銀行・ユニテック・柏崎信用金庫など。公式に従業員数の記載がないので3位にしたが、公式サイトがリンクしているマイナビ2027（secondary）は従業員113名（2026年6月1日現在）、事業の柱は受託開発と技術派遣。公式の値ではないので順位の根拠にしていないが、公式で同じ人数なら市内1位になる。"
+    }
+  ],
+  "shibata": [
+    {
+      "name": "株式会社平野屋コンピューティング",
+      "hq": "新潟県新発田市中央町5丁目3番12号（houjin.goo の住所。公式は『新発田市に本社』まで）",
+      "municipality": "新発田市",
+      "town": "中央町",
+      "employees": {
+        "value": 6,
+        "as_of": "時点なし（『社員は6人です』）",
+        "source": "https://hcpt.jp/"
+      },
+      "capital": null,
+      "founded": 2010,
+      "business_summary": "ソフトウエア開発が主たる業務。自社SaaS（Blood Sugar Profiler）",
+      "ai_initiative": null,
+      "url": "https://hcpt.jp/",
+      "size_basis": "employees",
+      "checked": "2026-10-24",
+      "notes": "2010年12月24日に独立した会社として設立。新発田市に本社、新潟市に新潟事務所（公式トップ）。番地は公式に書かれておらず houjin.goo の値。houjin.goo の4ページ目（201件目以降）で見つけた。"
+    },
+    {
+      "name": "水島ソフトウェア開発株式会社",
+      "hq": "新潟県新発田市大手町1-9-10",
+      "municipality": "新発田市",
+      "town": "大手町",
+      "employees": null,
+      "capital": {
+        "value": "300万円",
+        "source": "https://www.mizusima-soft.co.jp/"
+      },
+      "founded": null,
+      "business_summary": "システムの開発と保守、パソコンの販売",
+      "ai_initiative": null,
+      "url": "https://www.mizusima-soft.co.jp/",
+      "size_basis": "capital",
+      "checked": "2026-10-24",
+      "notes": "公式に従業員数の記載なし。"
+    },
+    {
+      "name": "リンクチャネル株式会社",
+      "hq": "新潟県新発田市新栄町3丁目1番13号（新潟本社）",
+      "municipality": "新発田市",
+      "town": "新栄町",
+      "employees": null,
+      "capital": null,
+      "founded": 1997,
+      "business_summary": "システム開発（サイトのタイトル『新潟県のシステム開発会社』）。ハードオフコーポレーションの店舗事業のシステムを手がける",
+      "ai_initiative": null,
+      "url": "https://www.renk.co.jp/",
+      "size_basis": "none",
+      "checked": "2026-10-24",
+      "notes": "1997年7月1日にインフォノース株式会社として設立。サイトのタイトルに『ハードオフグループ』。長岡営業所（2000年開設）。公式に従業員数・資本金の記載を見つけられなかった（資本金がないので2位にしたが、規模は市内で最大の可能性が高い）。"
+    }
+  ],
+  "ojiya": [
+    {
+      "name": "株式会社トラスト",
+      "hq": "新潟県小千谷市東栄1丁目1番15号",
+      "municipality": "小千谷市",
+      "town": "東栄",
+      "employees": {
+        "value": 49,
+        "as_of": "時点なし（お知らせでは『従業員50名』）",
+        "source": "https://trust-coms.com/company/"
+      },
+      "capital": {
+        "value": "2,100万円",
+        "source": "https://trust-coms.com/company/"
+      },
+      "founded": 2000,
+      "business_summary": "DX支援、AWS開発、システム開発、販売管理システム『販太郎』",
+      "ai_initiative": "現場の安全をAIで見守る『現場安全AI』。2026年8月26日の経営会議でAIを経営基盤と位置づける方針（AI活用の基本原則）",
+      "url": "https://trust-coms.com/",
+      "size_basis": "employees",
+      "checked": "2026-10-24",
+      "notes": "2000年6月26日設立。東京オフィスあり。NICOの一覧に『新潟県初のAWSアドバンストティアサービスパートナー』。"
+    },
+    {
+      "name": "株式会社オーシーエス（OCS）",
+      "hq": "新潟県小千谷市城内1丁目9番1号",
+      "municipality": "小千谷市",
+      "town": "城内",
+      "employees": null,
+      "capital": {
+        "value": "5,000万円",
+        "source": "https://www.ojiya.co.jp/"
+      },
+      "founded": null,
+      "business_summary": "自社パッケージの企画・開発・導入支援（パッケージ開発事業）、ITコンサルティング",
+      "ai_initiative": null,
+      "url": "https://www.ojiya.co.jp/",
+      "size_basis": "capital",
+      "checked": "2026-10-24",
+      "notes": "公式に従業員数の記載を見つけられなかった。"
+    }
+  ],
+  "kamo": [],
+  "tokamachi": [
+    {
+      "name": "株式会社オスポック",
+      "hq": "新潟県十日町市馬場癸1536番地157（通称 十日町市珠川）",
+      "municipality": "十日町市",
+      "town": "馬場",
+      "employees": {
+        "value": 129,
+        "as_of": "2025年11月1日現在",
+        "source": "https://www.osppoc.com/company/aboutus/"
+      },
+      "capital": {
+        "value": "5,000万円",
+        "source": "https://www.osppoc.com/company/aboutus/"
+      },
+      "founded": null,
+      "business_summary": "ソフトウェア開発（旧 十日町ソフト開発）、インターネットプロバイダ事業『Tiara』（沿革）",
+      "ai_initiative": null,
+      "url": "https://www.osppoc.com/",
+      "size_basis": "employees",
+      "checked": "2026-10-24",
+      "notes": "第三セクター: 十日町織物工業協同組合の電算センターから、十日町市・川西町・津南町・中里村・十日町農協・十日町織物工業協同組合・十日町商工会議所・日本電気の出資で第三セクターの『十日町ソフト開発株式会社』に改組（沿革）。会社概要の株主は十日町市・日本電気株式会社・魚沼農業協同組合・十日町織物工業協同組合（出資比率は記載なし）。所属団体に NEC情報サービス事業グループ（NEC-NETグループ）。"
+    },
+    {
+      "name": "スリーエスシステム株式会社",
+      "hq": "新潟県十日町市伊達甲960番地1",
+      "municipality": "十日町市",
+      "town": "伊達",
+      "employees": {
+        "value": 21,
+        "as_of": "時点なし",
+        "source": "https://sss-system.co.jp/"
+      },
+      "capital": {
+        "value": "1,000万円",
+        "source": "https://sss-system.co.jp/"
+      },
+      "founded": 1991,
+      "business_summary": "コンピューターソフトウェアの設計・開発",
+      "ai_initiative": null,
+      "url": "https://sss-system.co.jp/",
+      "size_basis": "employees",
+      "checked": "2026-10-24",
+      "notes": "1991年4月設立。新潟ソフトストラクチャと同じ番地（houjin.goo も同住所）。"
+    },
+    {
+      "name": "株式会社新潟ソフトストラクチャ",
+      "hq": "新潟県十日町市伊達甲960-1",
+      "municipality": "十日町市",
+      "town": "伊達",
+      "employees": null,
+      "capital": {
+        "value": "15,000,000円",
+        "source": "https://www.niigatass.com/company/"
+      },
+      "founded": 1997,
+      "business_summary": "ソフトウェア開発、コンピュータ機器の販売（IoT）",
+      "ai_initiative": null,
+      "url": "https://www.niigatass.com/",
+      "size_basis": "capital",
+      "checked": "2026-10-24",
+      "notes": "1997年5月設立。公式に従業員数の記載なし。"
+    },
+    {
+      "name": "株式会社ロジックベース",
+      "hq": "新潟県十日町市山野田268番地2",
+      "municipality": "十日町市",
+      "town": "山野田",
+      "employees": null,
+      "capital": null,
+      "founded": 2000,
+      "business_summary": "SaaS、IoT、Webアプリ・スマートフォンアプリの開発、防犯カメラシステム",
+      "ai_initiative": null,
+      "url": "https://logicbase.jp/",
+      "size_basis": "none",
+      "checked": "2026-10-24",
+      "notes": "2000年3月設立。公式の所在地（山野田）は houjin.goo（新宮乙174番地3）と違う（両方を書く）。公式に従業員数・資本金の記載なし。"
+    }
+  ],
+  "mitsuke": [
+    {
+      "name": "株式会社トラス・テック（TRUSTEC）",
+      "hq": "新潟県見附市本所1丁目19番6号",
+      "municipality": "見附市",
+      "town": "本所",
+      "employees": {
+        "value": 48,
+        "as_of": "2026年1月現在",
+        "source": "https://www.trustec.ne.jp/company/"
+      },
+      "capital": {
+        "value": "1,400万円",
+        "source": "https://www.trustec.ne.jp/company/"
+      },
+      "founded": 1998,
+      "business_summary": "ソフトウェア開発（会社概要『事業の内容』）",
+      "ai_initiative": "AI搭載の行動記録アプリ『aREC』を App Store で配信",
+      "url": "https://www.trustec.ne.jp/",
+      "size_basis": "employees",
+      "checked": "2026-10-24",
+      "notes": "1998年2月設立（有限会社トラステックとして起業）。houjin.goo の表記は『株式会社トラステック』。"
+    }
+  ],
+  "murakami": [],
+  "tsubame": [
+    {
+      "name": "株式会社ルミネス",
+      "hq": "新潟県燕市八王寺656",
+      "municipality": "燕市",
+      "town": "八王寺",
+      "employees": null,
+      "capital": {
+        "value": "1,000万円",
+        "source": "https://lumines.co.jp/"
+      },
+      "founded": 2006,
+      "business_summary": "ECサイト構築・移行・運用支援、『LUMINES Commerce』『LUMINES Payments』の開発・運営",
+      "ai_initiative": "サービス料金にAIの利用枠（ユニット制）",
+      "url": "https://lumines.co.jp/",
+      "size_basis": "capital",
+      "checked": "2026-10-24",
+      "notes": "2006年11月1日設立。従業員数は公式で『非公開』。NICO の新潟県DXパートナー。"
+    },
+    {
+      "name": "TIFFIN株式会社",
+      "hq": "新潟県燕市小高6245-1（本社）",
+      "municipality": "燕市",
+      "town": "小高",
+      "employees": null,
+      "capital": null,
+      "founded": 2024,
+      "business_summary": "業務システム開発、Web・EC・スマホアプリ開発、電子機器の開発製造、組込み・制御ソフト、AI開発・RAG、ITコンサルティング",
+      "ai_initiative": "フィジカルAI・AIカメラ、AI開発・RAG、音声認識AI、音声合成『akari voice』・AI Worker『AI DRIVE』の提供",
+      "url": "https://www.tiffin.one/",
+      "size_basis": "none",
+      "checked": "2026-10-24",
+      "notes": "2024年10月10日設立。公式は本社を燕市小高、三条営業所を三条市石上1丁目10番33号と書く。NICO の新潟県DXパートナー一覧は所在地を『三条市石上1丁目10番33号』としており、公式の本社と違う（両方を書く）。公式に従業員数・資本金の記載なし。"
+    }
+  ],
+  "itoigawa": [
+    {
+      "name": "株式会社上越第一コンピュータ（JDC）",
+      "hq": "新潟県糸魚川市横町3-7-21",
+      "municipality": "糸魚川市",
+      "town": "横町",
+      "employees": null,
+      "capital": {
+        "value": "10,000千円",
+        "source": "https://online-jdc.com/"
+      },
+      "founded": 1985,
+      "business_summary": "パソコン・周辺機器販売、自社パッケージの販売",
+      "ai_initiative": null,
+      "url": "https://online-jdc.com/",
+      "size_basis": "capital",
+      "checked": "2026-10-24",
+      "notes": "昭和60年8月1日設立。機器販売の比重が大きい。公式に従業員数の記載なし。"
+    },
+    {
+      "name": "株式会社エスシーエム（SCM）",
+      "hq": "新潟県糸魚川市寺町2丁目8-20",
+      "municipality": "糸魚川市",
+      "town": "寺町",
+      "employees": null,
+      "capital": {
+        "value": "1,000万円",
+        "source": "https://www.scmcorp.co.jp/"
+      },
+      "founded": null,
+      "business_summary": "コンピューターの販売・リース・修理、コンピューターソフトの開発",
+      "ai_initiative": null,
+      "url": "https://www.scmcorp.co.jp/",
+      "size_basis": "capital",
+      "checked": "2026-10-24",
+      "notes": "公式に従業員数の記載なし。"
+    }
+  ],
+  "myoko": [
+    {
+      "name": "株式会社システム・インテグレイター",
+      "hq": "新潟県妙高市田口1469-5",
+      "municipality": "妙高市",
+      "town": "田口",
+      "employees": {
+        "value": 30,
+        "as_of": "時点なし",
+        "source": "https://www.sysi.co.jp/sysiweb/company.html"
+      },
+      "capital": {
+        "value": "2,000万円",
+        "source": "https://www.sysi.co.jp/sysiweb/company.html"
+      },
+      "founded": 1988,
+      "business_summary": "コンピューターに関するソフトウェアの研究開発・開発・販売、コンピューター教育の企画・研修",
+      "ai_initiative": null,
+      "url": "https://www.sysi.co.jp/",
+      "size_basis": "employees",
+      "checked": "2026-10-24",
+      "notes": "1988年4月設立。"
+    }
+  ],
+  "gosen": [],
+  "joetsu": [
+    {
+      "name": "JCCソフト株式会社",
+      "hq": "新潟県上越市黒井2598番地30（本社）",
+      "municipality": "上越市",
+      "town": "黒井",
+      "employees": {
+        "value": 130,
+        "as_of": "2024年1月現在（本社・東京本社・新潟支社・大阪事業所の合計）",
+        "source": "https://jccinc.co.jp/about/company/"
+      },
+      "capital": {
+        "value": "7,000万円",
+        "source": "https://jccinc.co.jp/about/company/"
+      },
+      "founded": 1978,
+      "business_summary": "企業・自治体向けのシステム開発・ソリューション",
+      "ai_initiative": "『AIソリューション』のページ、データ利活用",
+      "url": "https://jccinc.co.jp/",
+      "size_basis": "employees",
+      "checked": "2026-10-24",
+      "notes": "1978年9月設立（上越コンピューターサービスとして）。会社概要に『本社』（上越市）と『東京本社』（東京都文京区湯島）を併記。従業員数の時点が2024年1月で古い。"
+    },
+    {
+      "name": "株式会社ジェーミックス",
+      "hq": "新潟県上越市本町5丁目5番9号（上越本社）",
+      "municipality": "上越市",
+      "town": "本町",
+      "employees": {
+        "value": 68,
+        "as_of": "2026年3月31日現在（役員を除く）",
+        "source": "https://www.jmixnet.co.jp/profile.html"
+      },
+      "capital": {
+        "value": "5,000万円",
+        "source": "https://www.jmixnet.co.jp/profile.html"
+      },
+      "founded": 2000,
+      "business_summary": "ケーブルテレビISPサポート事業（サポートセンター）、学校・教育機関向けICT、企業・自治体向けICT、データセンター",
+      "ai_initiative": "『上越妙高AI x IoTビジネス共創ラボ』",
+      "url": "https://www.jmixnet.co.jp/",
+      "size_basis": "employees",
+      "checked": "2026-10-24",
+      "notes": "2000年2月1日設立。サポートセンター事業の比重が大きく、システム開発専業ではない。東京事務所（新宿区）。"
+    },
+    {
+      "name": "株式会社リード・システム",
+      "hq": "新潟県上越市木田一丁目8番地17号 オーエスビル3階",
+      "municipality": "上越市",
+      "town": "木田",
+      "employees": {
+        "value": 19,
+        "as_of": "時点なし",
+        "source": "http://www.leadsystem.co.jp/company.html"
+      },
+      "capital": {
+        "value": "1,000万円",
+        "source": "http://www.leadsystem.co.jp/company.html"
+      },
+      "founded": 1991,
+      "business_summary": "医療機器ソフトウェア開発、医療系システム開発",
+      "ai_initiative": null,
+      "url": "http://www.leadsystem.co.jp/",
+      "size_basis": "employees",
+      "checked": "2026-10-24",
+      "notes": "1991年設立。"
+    },
+    {
+      "name": "株式会社ジェイテック",
+      "hq": "新潟県上越市大字富岡539-7",
+      "municipality": "上越市",
+      "town": "富岡",
+      "employees": null,
+      "capital": {
+        "value": "3,000万円",
+        "source": "https://www.jtecnet.co.jp/"
+      },
+      "founded": null,
+      "business_summary": "WEBサイト制作・CMS構築・運営支援（Web事業）、建設ソリューション販売（ITソリューション事業）",
+      "ai_initiative": null,
+      "url": "https://www.jtecnet.co.jp/",
+      "size_basis": "capital",
+      "checked": "2026-10-24",
+      "notes": "有限会社として上越市中通町で設立、のち富岡へ本社移転。公式に従業員数の記載なし。"
+    }
+  ],
+  "agano": [
+    {
+      "name": "有限会社情報画廊",
+      "hq": "新潟県阿賀野市榎船渡266",
+      "municipality": "阿賀野市",
+      "town": "榎船渡",
+      "employees": {
+        "value": 4,
+        "as_of": "2016年5月現在（古い）",
+        "source": "https://joho-g.co.jp/company.html"
+      },
+      "capital": {
+        "value": "300万円",
+        "source": "https://joho-g.co.jp/company.html"
+      },
+      "founded": 1997,
+      "business_summary": "ソフトウェア開発・受託・パッケージソフト開発販売",
+      "ai_initiative": null,
+      "url": "https://joho-g.co.jp/",
+      "size_basis": "employees",
+      "checked": "2026-10-24",
+      "notes": "1997年設立。従業員数の時点が2016年5月で古い。前回は houjin.goo のみで未確認にしていたが、公式URL（joho-g.co.jp）を houjin.goo の詳細ページから特定した。"
+    }
+  ],
+  "sado": [],
+  "uonuma": [
+    {
+      "name": "株式会社ソフト・ドゥ",
+      "hq": "新潟県魚沼市小出島85番地11",
+      "municipality": "魚沼市",
+      "town": "小出島",
+      "employees": {
+        "value": 17,
+        "as_of": "2025年12月現在",
+        "source": "https://www.softdo.co.jp/summary"
+      },
+      "capital": {
+        "value": "1,000万円",
+        "source": "https://www.softdo.co.jp/summary"
+      },
+      "founded": 2000,
+      "business_summary": "パソコン用ソフトウェア開発、組込ソフトウェア開発",
+      "ai_initiative": null,
+      "url": "https://www.softdo.co.jp/",
+      "size_basis": "employees",
+      "checked": "2026-10-24",
+      "notes": "2000年4月設立。"
+    },
+    {
+      "name": "有限会社トラスト",
+      "hq": "新潟県魚沼市中原167番地3",
+      "municipality": "魚沼市",
+      "town": "中原",
+      "employees": null,
+      "capital": {
+        "value": "300万円",
+        "source": "https://trustown.net/"
+      },
+      "founded": 2004,
+      "business_summary": "システム開発、ホームページ作成、アプリ開発、パソコン修理",
+      "ai_initiative": null,
+      "url": "https://trustown.net/",
+      "size_basis": "capital",
+      "checked": "2026-10-24",
+      "notes": "2004年設立。十日町営業所あり。小千谷市の株式会社トラストとは別の会社。"
+    }
+  ],
+  "minamiuonuma": [
+    {
+      "name": "有限会社インディーテクノロジー",
+      "hq": "新潟県南魚沼市麓430",
+      "municipality": "南魚沼市",
+      "town": "麓",
+      "employees": {
+        "value": 3,
+        "as_of": "時点なし",
+        "source": "https://www.indytech.jp/campany"
+      },
+      "capital": {
+        "value": "300万円",
+        "source": "https://www.indytech.jp/campany"
+      },
+      "founded": 2003,
+      "business_summary": "PC・ネットワーク構築・機器販売、運用管理、業務プログラム作成、テープ反訳（会議録作成）。電気通信事業者（総務大臣届出）",
+      "ai_initiative": null,
+      "url": "https://www.indytech.jp/",
+      "size_basis": "employees",
+      "checked": "2026-10-24",
+      "notes": "1997年3月に個人事業として開始、2003年11月7日に法人化。社員3名の小さな会社で、業務プログラム作成は事業の一部。"
+    },
+    {
+      "name": "株式会社ラビットヒル",
+      "hq": "新潟県南魚沼市水尾431-7",
+      "municipality": "南魚沼市",
+      "town": "水尾",
+      "employees": null,
+      "capital": {
+        "value": "100万円",
+        "source": "https://www.rabbitt-hill.com/"
+      },
+      "founded": 2009,
+      "business_summary": "Webサイトの企画・制作・開発・運営・コンサル、コンピュータ・システム及びソフトウェアの企画・制作・開発・保守",
+      "ai_initiative": null,
+      "url": "https://www.rabbitt-hill.com/",
+      "size_basis": "capital",
+      "checked": "2026-10-24",
+      "notes": "2009年1月設立。公式に従業員数の記載なし。houjin.goo の4ページ目で見つけた。"
+    }
+  ],
+  "tainai": [
+    {
+      "name": "三和システム・エンジニアリング株式会社",
+      "hq": "新潟県胎内市表町100-25 フラワービル2F",
+      "municipality": "胎内市",
+      "town": "表町",
+      "employees": {
+        "value": 12,
+        "as_of": "時点なし",
+        "source": "https://www.sanwasys.co.jp/company.html"
+      },
+      "capital": {
+        "value": "1,000万円",
+        "source": "https://www.sanwasys.co.jp/company.html"
+      },
+      "founded": 1998,
+      "business_summary": "ローコード・ノーコード・スクラッチ開発、Webサイト制作、生成AI導入支援",
+      "ai_initiative": "生成AI導入支援（企業の独自データを使う社内生成AIツールの導入・運用支援）",
+      "url": "https://www.sanwasys.co.jp/",
+      "size_basis": "employees",
+      "checked": "2026-10-24",
+      "notes": "1998年12月設立。"
+    }
+  ],
+  "seiro": [],
+  "tagami": [],
+  "aga": [],
+  "izumozaki": [],
+  "yuzawa-town": [
+    {
+      "name": "エイチ・アイ・シー株式会社",
+      "hq": "新潟県南魚沼郡湯沢町湯沢493-5",
+      "municipality": "湯沢町",
+      "town": "湯沢",
+      "employees": {
+        "value": 3,
+        "as_of": "時点なし",
+        "source": "https://hic.ne.jp/about"
+      },
+      "capital": {
+        "value": "15,000千円",
+        "source": "https://hic.ne.jp/about"
+      },
+      "founded": 1996,
+      "business_summary": "主たる業務: SecureRDP販売元、コンピュータネットワーク構築・情報通信工事、コンピュータシステムインテグレーション、情報機器・通信機器販売",
+      "ai_initiative": null,
+      "url": "https://hic.ne.jp/",
+      "size_basis": "employees",
+      "checked": "2026-10-24",
+      "notes": "平成8年6月23日設立。南魚沼郡湯沢町（秋田県湯沢市ではない）。"
+    }
+  ],
+  "tsunan": [
+    {
+      "name": "トラストラボ株式会社",
+      "hq": "新潟県中魚沼郡津南町谷内3491",
+      "municipality": "津南町",
+      "town": "谷内",
+      "employees": null,
+      "capital": {
+        "value": "6,000,000円",
+        "source": "https://trustlab.jp/"
+      },
+      "founded": 2010,
+      "business_summary": "Webサイトの制作・保守・更新、WordPressへのリニューアル・内製化支援、DX支援、生成AI支援",
+      "ai_initiative": "生成AI支援（業務に合わせた活用整理、導入相談）",
+      "url": "https://trustlab.jp/",
+      "size_basis": "capital",
+      "checked": "2026-10-24",
+      "notes": "2010年設立。所在地（谷内3491）は NICO の新潟県DXパートナー詳細ページの値で、公式トップは『津南町』まで。公式に従業員数の記載なし。"
+    }
+  ],
+  "yahiko": [],
+  "kariwa": [],
+  "sekikawa": [],
+  "awashimaura": [],
+  "_reference": {
+    "niigata-city": {
+      "next_candidates": [
+        {
+          "name": "東京アプリケーションシステム株式会社（TASC）",
+          "ward": "中央区",
+          "employees": "140名（2025年4月1日現在）",
+          "capital": "5,000万円",
+          "note": "中央区万代三丁目1番1号 新潟日報メディアシップ11階。IT販売・ソフトウェア開発。厚木市で設立後、本社を新潟市へ移転（社名に『東京』があるが本社は新潟市）。SAAFホールディングスのグループ企業。前回は5位だったが、メビウスを本表に加えたため次点に移した。",
+          "source": "https://www.tasc.co.jp/company-profile"
+        },
+        {
+          "name": "株式会社エヌ・テイ・エス（NTS）",
+          "ward": "中央区",
+          "employees": "138名（2026年4月1日現在）",
+          "capital": "1,000万円",
+          "note": "中央区米山1丁目11番地11 昴ビル。1988年7月設立、ソフトウェア開発。株式会社日本ファシリティの出資会社として設立、BSNグループ（公式に『BSNグループ行動規範』）。",
+          "source": "https://www.kk-nts.co.jp/company/overview/"
+        },
+        {
+          "name": "株式会社アルコン",
+          "ward": "中央区",
+          "employees": "137名（2026年10月1日現在）",
+          "capital": "2,000万円",
+          "note": "中央区天神1丁目13-5（新潟本社）、東京支店。平成2年8月8日設立、ソフトウェア受託開発・クラウドサービス。",
+          "source": "https://alcom.co.jp/company/"
+        },
+        {
+          "name": "株式会社キザシオ（旧 シーイーシー新潟情報サービス）",
+          "ward": "中央区",
+          "employees": "134名（時点なし）",
+          "capital": "5,000万円",
+          "note": "中央区鐙2丁目10番6号。昭和49年8月30日設立、IT戦略支援・コンサル、システム開発、データセンター。中越運送を中核とする中越グループ（NICO名簿）。**全社で生成AIを使える環境整備と教育、『GAI-U SUPPORT』で顧客の生成AI導入支援**。長岡支店。",
+          "source": "https://kizacio.co.jp/company/"
+        },
+        {
+          "name": "株式会社Matchbox Technologies",
+          "ward": "中央区",
+          "employees": "連結541名うち正社員111名（2026年2月28日現在）",
+          "capital": "5.4億円（資本準備金含む）",
+          "note": "中央区女池上山3-14-10（新潟本社）、東京本部。2015年7月1日設立、スポットワーク環境を作るクラウド『matchbox』の提供（自社SaaS。受託開発会社ではない）。",
+          "source": "https://matchboxtech.co.jp/about-us"
+        },
+        {
+          "name": "株式会社ジャパンネット",
+          "ward": "中央区",
+          "employees": "98名（2026年3月）",
+          "capital": "2,000万円",
+          "note": "中央区天神尾1丁目8番1号。システムインテグレーション、複合機販売・保守。",
+          "source": "https://www.japannet.co.jp/company/"
+        },
+        {
+          "name": "株式会社イーエムエス新潟（EMS-N）",
+          "employees": "90名（グループ全体140名、令和7年3月現在）",
+          "capital": "未確認",
+          "note": "新潟本社（新潟市）、長岡支店、東京支社。平成23年5月設立。グループ本社は岩手県盛岡市（EMS北日本）。業務内容の詳細は今回確認していない。",
+          "source": "https://ems-n.jp/company"
+        },
+        {
+          "name": "株式会社マルス",
+          "ward": "中央区",
+          "employees": "77名（時点なし）",
+          "capital": "2,300万円",
+          "note": "中央区万代4-7-26。ITビジネス・ソリューション。",
+          "source": "https://www.kkmars.co.jp/about"
+        },
+        {
+          "name": "株式会社サンケイ情報ファシリティ",
+          "ward": "中央区",
+          "employees": "77名（2024年8月現在、古い）",
+          "capital": "未確認",
+          "note": "中央区米山4丁目18番1号。システム・ソフトウェア開発、コンサル、情報機器販売。",
+          "source": "https://sjf.co.jp/information/"
+        },
+        {
+          "name": "株式会社シアンス",
+          "ward": "中央区",
+          "employees": "65名（2026年3月31日現在）",
+          "capital": "未確認",
+          "note": "中央区万代2-3-16 リバービューSDビル10F。システムコンサル・開発、ニアショア開発、Web・アプリ開発、Webサイト制作。NICO の新潟県DXパートナー。",
+          "source": "https://www.siance.co.jp/company/"
+        },
+        {
+          "name": "株式会社マルゴシステム",
+          "ward": "中央区",
+          "employees": "53名（2026年4月現在）",
+          "capital": "5,000万円",
+          "note": "中央区鐙西2-18-1 第一和高ビル。システム受託開発・パッケージ販売。佐渡市の株式会社マルゴのIT機器営業部門を併合し佐渡事業所を開設（沿革）。",
+          "source": "https://www.marugo-system.co.jp/about/"
+        },
+        {
+          "name": "株式会社インプレッシヴ",
+          "ward": "中央区",
+          "employees": "52名（時点なし）",
+          "capital": "未確認",
+          "note": "中央区米山4丁目1番31号 紫竹総合ビル5F。GIS・サービス業向けシステム・AI関連・スマホアプリ・業務系システム、**イールドマネジメントAIの開発に着手**。東京営業所。",
+          "source": "https://www.impressive.jp/about/"
+        },
+        {
+          "name": "株式会社北越",
+          "ward": "中央区",
+          "employees": "51名（2025年4月現在）",
+          "capital": "未確認",
+          "note": "中央区上大川前通7番町1237-4。1970年設立、システム開発・ソフトウェア開発。",
+          "source": "https://www.hokuetsu.info/company.html"
+        },
+        {
+          "name": "株式会社ジェイ・エス・エス（JSS）",
+          "ward": "中央区",
+          "employees": "50名（時点なし）",
+          "capital": "3,650万円",
+          "note": "中央区西堀通3番町790番地。2000年9月にNSGグループ商社のシステム開発事業から分社。スマホアプリ・パッケージ・クラウド。",
+          "source": "https://www.jss-net.com/company/"
+        },
+        {
+          "name": "株式会社コンピュータ・ワークス",
+          "ward": "中央区",
+          "employees": "45名（時点なし）",
+          "capital": "1,000万円",
+          "note": "中央区弁天1丁目4番24号 大興ビル8階。1996年6月20日設立、業務システムの受託開発、技術者派遣。",
+          "source": "https://www.computer-works.co.jp/about/"
+        },
+        {
+          "name": "株式会社フジテック",
+          "ward": "中央区",
+          "employees": "39人（2026年4月現在）",
+          "capital": "1,500万円",
+          "note": "中央区紫竹山2丁目5番18号。1984年9月1日設立、公共・製造・流通のシステム開発。",
+          "source": "https://www.fjtec.co.jp/company/about/"
+        },
+        {
+          "name": "株式会社ウイング",
+          "ward": "中央区",
+          "employees": "公式に記載なし",
+          "capital": "93,225,000円",
+          "note": "**新潟本社**（中央区米山2-4-1）と**東京本社**（東京都千代田区神田松永町）を併記。1992年に燕市で設立。ローコード開発ツール『GeneXus』、**生成AI×ローコード『G.RAD.E for AI-D』、新潟県『AI・IoT活用ビジネス創出実証業務』採択**。公式に従業員数の記載なし。",
+          "source": "https://www.weing.co.jp/company/"
+        },
+        {
+          "name": "株式会社アイビーシステム",
+          "ward": "北区",
+          "employees": "公式に記載なし",
+          "capital": "2,200万円",
+          "note": "北区すみれ野2-1-12。1995年6月1日創業、地域密着の独立系システムハウス、タイに関連会社。AIを活用したシステムを掲げる。",
+          "source": "https://www.ib-system.co.jp/"
+        },
+        {
+          "name": "株式会社エクセルシステム",
+          "ward": "中央区",
+          "employees": "公式に記載なし",
+          "capital": "20,000千円",
+          "note": "中央区東幸町12番1号（エクセルグループ本社）。ソフトウェア開発・販売、IT技術者派遣、IT機器販売。",
+          "source": "https://www.excl.co.jp/"
+        }
+      ],
+      "unverified": [
+        {
+          "name": "株式会社ビーアイテック",
+          "note": "中央区米山1丁目11番地11（houjin.goo）。BSNアイネットの沿革に『関連会社（株）パソコ設立（現：ビーアイテック）』。公式サイトのトップに会社概要がなく、所在地・人数を公式で確認できず。"
+        },
+        {
+          "name": "株式会社Gugenka",
+          "note": "中央区南出来島（houjin.goo、50〜100人の幅）。公式サイトの本文から会社概要を取れなかった。"
+        },
+        {
+          "name": "株式会社新潟人工知能研究所・株式会社ガゾウ・株式会社ガゾウAX・ドコドア株式会社・奏風システムズ株式会社・株式会社ティーケーネットサービス・芝通アドバンス株式会社・株式会社oRo code MOC ほか",
+          "note": "NICO の新潟県DXパートナー（いずれも新潟市）。公式サイトは今回確認していない。"
+        },
+        {
+          "name": "シーアイエス株式会社・株式会社U-any・株式会社システムクリエイション",
+          "note": "houjin.goo の4ページ目。シーアイエスは東区物見山4-11-29・1986年4月設立（公式、人数なし）、U-any は中央区堀之内南・従業員4名・資本金600万円（公式）、システムクリエイション（東区大形本町、houjin.goo 10〜30人の幅）は公式URLが名前解決できなかった。いずれも事業内容は未確認。"
+        },
+        {
+          "name": "株式会社エスエフシー新潟",
+          "note": "中央区南出来島（houjin.goo）。医療機関用システムの開発販売。公式サイトで会社概要の人数を取れなかった。"
+        }
+      ],
+      "excluded_business": [
+        {
+          "name": "新潟通信機株式会社",
+          "ward": "中央区",
+          "employees": "180名（時点なし）",
+          "capital": "7,500万円",
+          "note": "中央区上所中三丁目14番8号。業務用無線機・GPS位置動態管理システムの製造販売（タクシー・教習所・バス向け）。無線機メーカーなので本表外。",
+          "source": "https://www.niigata-t.co.jp/"
+        },
+        {
+          "name": "日佑電子株式会社（日佑技研）",
+          "ward": "秋葉区",
+          "employees": "165名（2025年9月現在）",
+          "capital": "1億8,732万円",
+          "note": "秋葉区朝日。電子機器の製造（本社工場・新津工場）。houjin.goo の『日佑技研』（秋葉区朝日230番地）は公式で日佑電子のグループとして沿革に出るだけ。",
+          "source": "https://www.nichiyu-e.co.jp/"
+        },
+        {
+          "name": "株式会社シーキューブ",
+          "ward": "中央区",
+          "employees": "60名（採用ページ、時点なし）",
+          "capital": "未確認",
+          "note": "中央区上近江1丁目7-13。CAD/CAM/CAE・BIM/CIMシステムの販売・サポート（販売が主業）。",
+          "source": "https://www.ccube.co.jp/recruit"
+        },
+        {
+          "name": "にいがたAIビジネス株式会社（NAB）",
+          "ward": "中央区",
+          "employees": "公式に記載なし",
+          "capital": "1,000,000円",
+          "note": "中央区本町通7番町1098-1 WORKWITH本町3F。2025年1月7日設立。生成AI導入コンサル・研修・『にいがたAIコミュニティ』運営が主業で、特定課題向けのAIツール開発もする。システム開発・Web開発の会社ではないので本表外（下の『照合の依頼』を参照）。",
+          "source": "https://www.nabai.jp/company"
+        }
+      ],
+      "excluded_hq_elsewhere": [
+        {
+          "name": "リコージャパン 新潟支社・株式会社ラクス 新潟営業所・富士通フロンテック 新潟工場（燕市）",
+          "note": "NICO の新潟県DXパートナー一覧に載るが、本社は県外。"
+        },
+        {
+          "name": "オーエムネットワーク株式会社",
+          "note": "公式に『新潟本社』（中央区東大通）と『東京本社』を併記、さらに『本店所在地』は東京都港区東新橋と書く。本店が県外なので本表外。"
+        }
+      ]
+    },
+    "nagaoka": {
+      "next_candidates": [
+        {
+          "name": "株式会社システムコム",
+          "employees": "25人（2026年4月現在）",
+          "capital": "1,800万円",
+          "note": "長岡本社 東坂之上町1-2-6 GrowINビル8F。1997年12月1日設立、システム分析・企画、ソフトウェア開発。",
+          "source": "https://www.system-com.co.jp/company-info/company-profile/"
+        },
+        {
+          "name": "株式会社ソリマチ技研",
+          "employees": "公式に記載なし",
+          "capital": "4,000万円",
+          "note": "公式に『長岡本社』（長岡市中島6-2-21）と『新潟本社』（新潟市中央区明石1-7-17）を併記。1983年4月設立、システム構築・パッケージ、電子マネー関連の技術研究。ソリマチテックグループ。**AIテクノロジーを全社員が修得する方針（ヒューマンオートメーション）**。",
+          "source": "https://www.s-giken.co.jp/company"
+        },
+        {
+          "name": "株式会社サン・システム",
+          "employees": "公式に記載なし",
+          "capital": "100,000,000円",
+          "note": "関東町5-5 長岡ファーストビル。1997年8月設立、病院向け物流管理システム。",
+          "source": "https://www.sunsystemcorp.com/"
+        },
+        {
+          "name": "株式会社アイテック",
+          "employees": "公式に記載なし",
+          "capital": "10,000,000円",
+          "note": "中興野16番地1。平成19年10月設立、アクシアルリテイリンググループのICT企業（小売業向け）。生成AIの活用を含む先進技術への投資の記載。",
+          "source": "https://www.itecinc.jp/company/"
+        },
+        {
+          "name": "株式会社BELLSOFT",
+          "employees": "公式に記載なし",
+          "capital": "1,000万円",
+          "note": "公式の本社は稲保4-750-4（houjin.goo は亀貝町468番地。沿革に『長岡市亀貝町へ新社屋』もあり、住所が資料で違う）。1999年1月創業、システム請負開発・パッケージ・Web制作。",
+          "source": "https://bellsoft.jp/"
+        },
+        {
+          "name": "株式会社第一情報サービス",
+          "employees": "公式に記載なし",
+          "capital": "未確認",
+          "note": "寺島町（NIIGATA OFFICE 本社）、TOKYO OFFICE。1981年12月創業、貸衣裳管理システム『COPORO』。",
+          "source": "https://www.djs.co.jp/"
+        },
+        {
+          "name": "AXコンサルティング株式会社",
+          "employees": "400名（グループ全体と読める）",
+          "capital": "4,150万円",
+          "note": "呉服町2丁目2番地33 ソリマチ第1ビル。ソリマチテックグループ。**生成AIを核としたDX支援**（AIツール体験会など）。会社概要の『従業員数 400名』は『総資本金』と並んでおりグループ全体の値と読める（単体の人数は不明）。",
+          "source": "https://www.axconsulting.jp/"
+        }
+      ],
+      "unverified": [
+        {
+          "name": "株式会社エリシアシステム・株式会社ティー・アンド・ケー・株式会社インプルーブ・株式会社KCS・ナガイSCT株式会社",
+          "note": "houjin.goo のみ。エリシアは公式サイトで会社概要を取れず、ティー・アンド・ケーは公式URL（efu.co.jp）が開けなかった。"
+        },
+        {
+          "name": "株式会社タワシテック",
+          "note": "大荒戸町66-6、2018年3月5日設立、資本金400万円。産業用機器装置の製造販売・制御設計が主業で、システム開発会社ではない（参考）。"
+        }
+      ],
+      "excluded_business": [
+        {
+          "name": "株式会社エヌ・シィ・ティ",
+          "note": "長岡市干場。ケーブルテレビ・通信事業（houjin.goo は『通信業界』）。本表外。"
+        },
+        {
+          "name": "JPC株式会社",
+          "note": "蓮潟町。産業機械の設計・製造販売、人材派遣、SE・プログラマー業務請負。製造・派遣が主で本表外。"
+        }
+      ],
+      "excluded_hq_elsewhere": [
+        {
+          "name": "株式会社ExaScaler",
+          "note": "houjin.goo は長岡市表町4丁目3番地9（株式会社PZと同じ住所）。公式の沿革では東京都港区で設立し千代田区へ本社移転、2022年11月にクロスタス株式会社に合併。県内本社とは確認できないので本表外。"
+        }
+      ]
+    },
+    "sanjo": {
+      "next_candidates": [
+        {
+          "name": "ナピア情報システム株式会社",
+          "employees": "公式に記載なし",
+          "capital": "未確認",
+          "note": "三条市石上2丁目7番48号（houjin.goo）。業務用ソフトウェアの開発・販売・保守。新潟市で設立、のちに三条市へ本社移転（沿革）。",
+          "source": "https://www.napia.co.jp/"
+        },
+        {
+          "name": "株式会社オフ・ビート・ワークス",
+          "employees": "公式に記載なし",
+          "capital": "1,000万円",
+          "note": "本店 三条市吉野屋886番地。平成元年2月設立、コンピューターソフトウェアの開発（BLE関連の iOS・Windows アプリなど）。houjin.goo の4ページ目で見つけた。",
+          "source": "https://www.offbeat.co.jp/"
+        },
+        {
+          "name": "有限会社システムズオンライン",
+          "employees": "公式に記載なし",
+          "capital": "500万円",
+          "note": "三条市旭町（houjin.goo）。1985年12月創業、ファイルメーカーPro・4th Dimension を中心としたシステム開発、保守契約。houjin.goo の4ページ目で見つけた。",
+          "source": "https://www.syson.co.jp/company"
+        },
+        {
+          "name": "株式会社アイサポート",
+          "employees": "公式に記載なし",
+          "capital": "未確認",
+          "note": "須頃1丁目55（本社）、東京オフィス。Webサイト制作・アクセス解析・SEO。**生成AIの安全運用・利用ガイドラインの記事**。",
+          "source": "https://www.is1.co.jp/"
+        }
+      ]
+    },
+    "kashiwazaki": {
+      "unverified": [
+        {
+          "name": "株式会社JIVE",
+          "note": "柏崎市田中10-31 2F（NICO の新潟県DXパートナー詳細、2025年6月13日）。公式サイト jivejp.com で会社概要を取れなかった。"
+        },
+        {
+          "name": "アイビーリサーチ株式会社",
+          "note": "柏崎市大字上田尻819番地1（houjin.goo）。公式サイトに特許明細書の生成AI『AIP s』の導入事例。会社概要（人数・事業の主従）は未確認。"
+        },
+        {
+          "name": "株式会社ハローリンク",
+          "note": "柏崎市荒浜（houjin.goo）。公式は確認していない。"
+        }
+      ]
+    },
+    "joetsu": {
+      "excluded_business": [
+        {
+          "name": "株式会社カワイ精工",
+          "employees": "24名（時点なし）",
+          "capital": "1,750万円",
+          "note": "上越市大字三田245番地1（公式・法人番号4110001018935）。事業内容は精密プラスチック金型の設計・製作・販売、射出成形（本社金型工場・清里成形工場）。サイトのタイトルは『金型・成形・システム開発』で、NICO の新潟県DXパートナー（Webシステム・スクラッチ開発・サーバー構築、機械学習・ChatGPT等のAI）。一菱金属（燕市）の工場管理システムを開発（NICO 取組事例 2026年10月16日）。**主業は金型・成形なので本表外**（山形県でロジック・ラボを外したのと同じ扱い）。",
+          "source": "https://www.kawai-seiko.co.jp/company/company.html"
+        }
+      ],
+      "unverified": [
+        {
+          "name": "株式会社ジェー・シー・エスコンピュータ・サービス",
+          "note": "上越市春日野1丁目3番5号（houjin.goo、50〜100人の幅）。公式サイト jcscs.co.jp は、ブラウザの User-Agent・Referer・Accept-Language を付けても https/http・www の有無の4通りすべて 403（2026-10-24）。公式で人数が分かれば上越市の3位になる可能性がある。"
+        },
+        {
+          "name": "株式会社SIC桑原",
+          "note": "上越市大字西田中（houjin.goo、30〜50人の幅）。公式URLを特定できなかった。"
+        },
+        {
+          "name": "株式会社横瀬オーディオ",
+          "note": "上越市（houjin.goo は IT業界・100〜1000人の幅）。公式サイト（横瀬グループ）から会社概要を取れず、事業の主従も未確認。"
+        }
+      ]
+    },
+    "shibata": {
+      "excluded_business": [
+        {
+          "name": "株式会社テレパーク",
+          "employees": "42名（2026年9月現在）",
+          "capital": "未確認",
+          "note": "新発田市富塚町3-288-6。auショップ4店舗の運営と法人向けソリューション（携帯・OA機器・AI・セキュリティ）。AI活用セミナー。携帯販売店が主業なので本表外。",
+          "source": "https://www.telepark.co.jp/"
+        }
+      ],
+      "unverified": [
+        {
+          "name": "有限会社ソフトワークス",
+          "note": "新発田市住吉町（houjin.goo）。公式サイト（e-softworks.co.jp）で所在地以外を取れなかった。"
+        },
+        {
+          "name": "LiteSpace",
+          "note": "新発田市天王甲18番地（公式・NICO）。プログラミング教室・AIアプリ。法人格の表記がなく個人事業と思われるので本表外。"
+        },
+        {
+          "name": "新潟ラインズ株式会社・株式会社新潟通信サービス",
+          "note": "houjin.goo のみ。新潟ラインズの公式URLはサーバーのホスト名だけが返った。"
+        }
+      ]
+    },
+    "tokamachi": {
+      "excluded_business": [
+        {
+          "name": "リュウド株式会社",
+          "note": "十日町市太平187（旧松代町）、資本金92,150千円。照明機器などの製造販売とソフト・ハード・クラウドの開発。製造が主業と読めるので本表外。 https://www.reudo.co.jp/"
+        }
+      ]
+    },
+    "uonuma": {
+      "unverified": [
+        {
+          "name": "有限会社エジソン",
+          "note": "魚沼市古新田23-20、2001年7月設立（公式）。PC・機器の修理・サポート、導入相談、技術通訳。開発会社ではないので参考。"
+        },
+        {
+          "name": "泰和興産株式会社",
+          "note": "魚沼市根小屋（houjin.goo、30〜50人の幅）。公式サイトに製品カテゴリ『システム開発』『ソフトウェア開発』はあるが、会社概要（所在地・人数）を取れなかった。"
+        }
+      ]
+    },
+    "minamiuonuma": {
+      "unverified": [
+        {
+          "name": "株式会社システムサポート",
+          "note": "南魚沼市浦佐1137 USビル2F（公式の会社概要ページ。文字コードが崩れて社名・電話は推定）。事業内容・人数は取れず。"
+        },
+        {
+          "name": "株式会社Academix",
+          "note": "南魚沼市上原400-3（NICO の新潟県DXパートナー詳細、2025年12月4日）。教育DX。公式サイトから会社概要を取れなかった。"
+        },
+        {
+          "name": "有限会社桐生データサービス",
+          "note": "南魚沼市塩沢470番地6、資本金500万円。コンピュータの販売・保守・指導（PCA認定）。開発会社ではないので参考。"
+        }
+      ]
+    },
+    "tsubame": {
+      "unverified": [
+        {
+          "name": "株式会社アイケー",
+          "note": "燕市（NICO の新潟県DXパートナー。houjin.goo は燕市小池5091番地11・資本金2,000万円・従業員3名で secondary）。生産管理システムの導入支援。公式URLを特定できなかった。"
+        }
+      ]
+    },
+    "agano": {
+      "unverified": [
+        {
+          "name": "株式会社WIN-WIN",
+          "note": "阿賀野市金田町15番1号（houjin.goo の IT業界）。事業内容・公式URLは未確認。"
+        }
+      ]
+    },
+    "kamo": {
+      "unverified": [
+        {
+          "name": "株式会社ICN",
+          "note": "加茂市赤谷20番4号（houjin.goo の通信業界）。公式URL（icn.ne.jp）はサーバー管理画面だけで会社情報なし。"
+        },
+        {
+          "name": "株式会社エレク",
+          "note": "加茂市千刈（houjin.goo の通信機器業界、50〜100人の幅）。houjin.goo のURLは加茂商工会議所のサイトで、公式サイトを特定できなかった。"
+        }
+      ]
+    },
+    "tagami": {
+      "note": "houjin.goo の田上町『IT業界』は有限会社アルゴニクス（製造業〈パルプ・紙〉と併記）の1件のみで、システム開発会社とは確認できなかった。"
+    },
+    "murakami": {
+      "note": "houjin.goo の村上市は村上精密株式会社・三和電器産業株式会社（いずれも通信機器業界）の2件のみ。システム開発会社は見つからなかった。"
+    },
+    "sado": {
+      "branches": [
+        {
+          "name": "株式会社マルゴシステム 佐渡事業所",
+          "note": "本社は新潟市中央区（佐渡市の株式会社マルゴのIT機器営業部門を併合して開設）。佐渡市本社のシステム開発会社は見つからなかった。"
+        }
+      ]
+    }
+  },
+  "_notes": [
+    "業界団体の名簿: 依頼にあった『新潟県情報サービス産業協会』は、公式サイト・会員名簿とも見つけられなかった（WebSearch とドメインの推測。nisa.or.jp は長野県情報サービス振興協会）。正式名称も未確認。『新潟県情報産業協会』『長岡地区ソフトウェア産業協議会』『長岡アイティ事業協同組合』『新潟市のIT協会』でも名簿は見つからなかった（長岡の2団体は長岡市の資料に名前だけ出る）。代わりに NICO（公益財団法人にいがた産業創造機構）の『新潟県DXパートナー一覧』（2026年10月20日更新）と houjin.goo の『IT業界』一覧を母集団にした。NICO 名簿は所在地が市までで、TIFFIN（名簿は三条市、公式の本社は燕市）のように公式と違う例がある。記事では公式サイトの値だけを使う。",
+    "県内で公式の従業員数が最も多いのは長岡市のNS・コンピュータサービス（624名、2026年4月1日、日本精機グループ）。新潟市ではキヤノンイメージングシステムズ（575名、2026年6月、キヤノンの子会社）、BSNアイネット（382名、2026年6月）、メビウス（315名、2026年4月1日、三井情報と資本提携）が上位。",
+    "大手・金融機関・放送局・自治体の関係: キヤノンイメージングシステムズ（キヤノン）、BSNアイネット・エヌ・テイ・エス（BSNグループ）、第四北越ITソリューションズ（第四北越フィナンシャルグループ）、ビット・エイ（コメリグループ）、NS・コンピュータサービス（日本精機グループ）、アイテック（アクシアルリテイリンググループ）、リンクチャネル（ハードオフグループ）、キザシオ（中越グループ）、東京アプリケーションシステム（SAAFホールディングス）、メビウス（三井情報と資本提携）、オスポック（第三セクター）、カシックス（第三セクター、株主に柏崎市・東京電力ホールディングスほか。従業員113名はマイナビ2027の値で secondary）。記事で『地元企業』と書くときは親会社・出資者を書く。",
+    "カシックスの株主に東京電力ホールディングスが入っている（公式の会社概要）。柏崎刈羽原子力発電所と結びつけて書かない（共通の依頼の注意）。",
+    "AIを公式に明記している会社（本表）: ビット・エイ（コメリ店舗向けAIチャットの実証、2026年6月〜）、BSNアイネット（窓口AIアバター、AI体験フェア）、キヤノンイメージングシステムズ（AI活用サービス）、NTC（AIチャットボット『KiiteMi』）、NS・コンピュータサービス（RPA・AI-OCR、高校で生成AI講座）、トラスト（小千谷市、現場安全AI、AIを経営基盤に位置づけ）、創風システム（SoFu AI）、三和システム・エンジニアリング（生成AI導入支援）、TIFFIN（AI開発・RAG・AIカメラ）、トラス・テック（AI搭載アプリ aREC）、カシックス（自治体向けRPA・AI-OCR・チャットボット）、トラストラボ（生成AI支援）、メビウス（NICO名簿の紹介文・大学ガイドの業種欄で AI・機械学習）。_reference: キザシオ（全社の生成AI環境整備と顧客の生成AI導入支援）、ウイング（生成AI×ローコード、県のAI・IoT実証業務に採択）、インプレッシヴ（イールドマネジメントAI）、AXコンサルティング（生成AIを核としたDX支援）、カワイ精工（RAG・ローカルAIの記事）。",
+    "本社の会社が公式で確認できた市町村は、新潟市・長岡市・三条市・柏崎市・新発田市・小千谷市・十日町市・見附市・燕市・上越市・妙高市・糸魚川市・魚沼市・南魚沼市・胎内市・湯沢町・津南町と阿賀野市の18市町（阿賀野市の情報画廊は追加調査で公式を確認）。加茂市は houjin.goo に候補があったが公式で確認できなかった。村上市・田上町は IT業界の法人がシステム開発会社ではなかった。五泉市・佐渡市・聖籠町・阿賀町・出雲崎町・弥彦村・刈羽村・関川村・粟島浦村は候補自体が見つからなかった（houjin.goo の市町村別件数表示・NICO名簿に出ない）。",
+    "従業員数の時点が古い・時点なし: JCCソフト（2024年1月、本社・東京本社ほかの合計）、サンケイ情報ファシリティ（2024年8月）。時点なし: ソリマチ（国内205名）、和同情報システム（50名）、コンピュータシステム（25名）、システムエース（22名）、ユニテック（87名）、創風システム（41名）、トラスト（49名）、スリーエスシステム（21名）、システム・インテグレイター（30名）、三和システム・エンジニアリング（12名）。",
+    "本社の書き方が2つある会社: ソリマチ（新潟本社 長岡市／東京本社）、JCCソフト（本社 上越市／東京本社）、ユニテック（本店 柏崎市／本社 東京都）、ウイング（新潟本社／東京本社）、ソリマチ技研（長岡本社／新潟本社）、Matchbox Technologies（新潟本社／東京本部）、メビウス（新潟本社／東京本社）、オーエムネットワーク（新潟本社／東京本社、本店は東京都港区のため本表外）。",
+    "住所が資料で違う: TIFFIN（公式 本社 燕市小高／NICO 三条市石上＝公式では三条営業所）、ロジックベース（公式 山野田／houjin.goo 新宮乙）、BELLSOFT（公式 稲保／houjin.goo 亀貝町）。",
+    "社名の表記: 『株式会社トラス・テック』（公式のロゴ表記 TRUSTEC。houjin.goo は『トラステック』）、『株式会社NTC』（houjin.goo は『エヌティーシー』『エヌ・テー・シー』の2件）、東京アプリケーションシステムは本社が新潟市。小千谷市の『株式会社トラスト』と魚沼市の『有限会社トラスト』は別会社。"
+  ]
+}

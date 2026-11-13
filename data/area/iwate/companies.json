@@ -1,0 +1,965 @@
+{
+ "_meta": {
+  "checked": "2026-10-18",
+  "scope": "岩手県33市町村。本社（公式サイトの本社/所在地）が当該市町村にあり、公式サイトで受託システム開発・ソフトウェア開発・Web制作・ITサービスを事業として明示する法人。県外に本社がある会社の県内支店・事業所・開発センターは載せない（県外にも拠点を持つ県内本社の会社はnotesに記載）。規模は公式サイト記載の従業員数順。従業員数がない会社は資本金で後ろに並べ、どちらもない会社は最後。盛岡市は上位13社を本表に、残りを _reference に置いた。",
+  "candidate_sources": [
+   "岩手県情報サービス産業協会（IISA）の会員一覧（正会員51社・賛助会員12社。従業員数・掲載時点の記載なし。県外本社の会社の盛岡支店・事業所を含む） https://iisa-iwate.jp/member/",
+   "全国法人検索（houjin.goo.to、国税庁の法人番号データにもとづく）の岩手県「IT業界」一覧（101社）。詳細ページから公式URLを取得 https://houjin.goo.to/corporations/prefs/iwate/category-it/list",
+   "岩手県『滝沢市IPUイノベーションパーク運営計画2024』の立地・入居企業一覧（27社、令和6年3月時点） https://www.pref.iwate.jp/_res/projects/default_project/_page_/001/078/145/ipukeikaku2024.pdf",
+   "WebSearch（担当上限12回のうち7回を使用）"
+  ],
+  "search_limits": "IISAの会員一覧は従業員数・時点がないため、規模は各社の公式サイトで取った。候補は IISA名簿・houjin.goo・IPU運営計画の3つが中心で、個人事業主・小規模なWeb制作者は網羅していない。公式サイトが開けなかった会社（DNSエラー・503・404・証明書エラーで本文なし）や、会社概要に所在地・規模がない会社は本表に入れず _reference に置いた。証明書エラーのサイトはHTTP/検証なしで取得した（notesに記載）。WebFetchで取得できないShift_JISのページや JavaScript で描画される会社概要は curl で公式サイトのHTMLを直接取得して読んだ。町村部（雫石町など）は名簿と houjin.goo に出た分だけで、網羅性は保証できない。",
+  "ordering": "従業員数（公式）の多い順 → 従業員数がない会社は資本金（公式）→ どちらもない会社は最後。"
+ },
+ "morioka": [
+  {
+   "name": "株式会社アイシーエス",
+   "hq": "岩手県盛岡市松尾町17番10号",
+   "municipality": "盛岡市",
+   "town": "松尾町",
+   "employees": {
+    "value": 496,
+    "as_of": "2026年7月1日現在",
+    "source": "https://www.ics.co.jp/company/profile/"
+   },
+   "capital": {
+    "value": "3,500万円",
+    "source": "https://www.ics.co.jp/company/profile/"
+   },
+   "founded": 1966,
+   "business_summary": "自治体向け総合行政クラウド、電子カルテクラウド『MediClover』などの自社開発パッケージ、受託計算、組込みソフトウェア開発、SI。導入実績14県197市町村53医療機関（2026年8月時点、トップページ）",
+   "ai_initiative": null,
+   "url": "https://www.ics.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-18",
+   "notes": "1966年9月に『株式会社岩手電子計算センター』として設立。**秋田支店・青森支店・仙台支店**（県外）。AIはE資格（日本ディープラーニング協会）保有者13名の記載のみで、AI製品・サービスの記載はない。"
+  },
+  {
+   "name": "イーストライズ株式会社",
+   "hq": "岩手県盛岡市大通3-2-8 岩手金属工業会館",
+   "municipality": "盛岡市",
+   "town": "大通",
+   "employees": {
+    "value": 303,
+    "as_of": "2026年10月時点（連結、うち女性60名）",
+    "source": "https://www.east-rise.com/company/profile/"
+   },
+   "capital": {
+    "value": "1億円",
+    "source": "https://www.east-rise.com/company/profile/"
+   },
+   "founded": 2013,
+   "business_summary": "業務システム・Webシステム・組込みシステムのソフトウェア開発、ニアショア開発・テレワーク開発、技術者派遣、ネットワーク設計・構築支援",
+   "ai_initiative": null,
+   "url": "https://www.east-rise.com/",
+   "size_basis": "employees",
+   "checked": "2026-10-18",
+   "notes": "人数は連結の値。**宮城・東京・福岡・大阪など県外約20拠点**（一関は県内）。"
+  },
+  {
+   "name": "株式会社システムエイド",
+   "hq": "岩手県盛岡市三ツ割四丁目2番8号",
+   "municipality": "盛岡市",
+   "town": "三ツ割",
+   "employees": {
+    "value": 159,
+    "as_of": "2024年4月現在（契約社員・パート社員を含む）",
+    "source": "http://www.system-aid.co.jp/system-aid/saidinfo.html"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "http://www.system-aid.co.jp/system-aid/saidinfo.html"
+   },
+   "founded": 1991,
+   "business_summary": "医療機関向けの自社開発システム（栄養管理・物品管理・病床管理・預り金管理・がん検診）、電子カルテ・医事システムの販売、病院業務のアウトソーシング（医療事務・SPD等）、人材派遣",
+   "ai_initiative": null,
+   "url": "http://www.system-aid.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-18",
+   "notes": "人数は病院受託業務の要員を含む会社全体の値で、時点がやや古い。グループに株式会社東北メディカルエイドサービス。HTTPSは証明書エラーのためHTTPで取得。"
+  },
+  {
+   "name": "株式会社リードコナン",
+   "hq": "岩手県盛岡市太田七丁目2番5号",
+   "municipality": "盛岡市",
+   "town": "太田",
+   "employees": {
+    "value": 105,
+    "as_of": "2025年9月1日時点（男性81名・女性24名）",
+    "source": "https://www.leadkonan.co.jp/company/"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.leadkonan.co.jp/company/"
+   },
+   "founded": null,
+   "business_summary": "ICTコンサル、サーバー・ネットワーク構築、学校向けICT提案・構築、業務支援システム・Webアプリ開発、Webサイト制作、機器のレンタル・販売・修理、データ復旧",
+   "ai_initiative": null,
+   "url": "https://www.leadkonan.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-18",
+   "notes": "北上支社（県内）、**山陰開発センター（島根県松江市）**。設立年は公式で未確認。"
+  },
+  {
+   "name": "株式会社アイビーシー・ソフトアルファ",
+   "hq": "岩手県盛岡市志家町6-1 IBC放送会館",
+   "municipality": "盛岡市",
+   "town": "志家町",
+   "employees": {
+    "value": 76,
+    "as_of": "時点なし",
+    "source": "https://www.ibcsoft.ne.jp/company/"
+   },
+   "capital": {
+    "value": "6,500万円",
+    "source": "https://www.ibcsoft.ne.jp/company/"
+   },
+   "founded": 1991,
+   "business_summary": "ソフトウェア開発・Web制作（『給食ナビ-α』『ADマネ-α』等）、人材派遣、広告・事業企画",
+   "ai_initiative": null,
+   "url": "https://www.ibcsoft.ne.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-18",
+   "notes": "表記は『株式会社IBCソフトアルファ』とも。IBC岩手放送と学校法人龍澤学館の共同出資で設立。**東京支社（中央区日本橋小伝馬町）**。人数の時点なし。"
+  },
+  {
+   "name": "キーウェア東北株式会社",
+   "hq": "岩手県盛岡市大通3-3-10 七十七日生盛岡ビル2F",
+   "municipality": "盛岡市",
+   "town": "大通",
+   "employees": {
+    "value": 71,
+    "as_of": "2026年4月1日現在（契約社員含む）",
+    "source": "https://www.keyware.co.jp/tohoku/about/profile/index.html"
+   },
+   "capital": {
+    "value": "5,000万円",
+    "source": "https://www.keyware.co.jp/tohoku/about/profile/index.html"
+   },
+   "founded": 2022,
+   "business_summary": "システムインテグレーション、ソフトウェア開発、販売",
+   "ai_initiative": null,
+   "url": "https://www.keyware.co.jp/tohoku/index.html",
+   "size_basis": "employees",
+   "checked": "2026-10-18",
+   "notes": "キーウェアソリューションズ株式会社（東京）の100%子会社。2022年7月創立。仙台営業所あり。"
+  },
+  {
+   "name": "株式会社岩手県農協情報電算センター",
+   "hq": "岩手県盛岡市黒川",
+   "municipality": "盛岡市",
+   "town": "黒川",
+   "employees": {
+    "value": 47,
+    "as_of": "令和8年3月末",
+    "source": "https://www.jaiwate.or.jp/densan-center/company"
+   },
+   "capital": {
+    "value": "4億4,000万円",
+    "source": "https://www.jaiwate.or.jp/densan-center/company"
+   },
+   "founded": 1978,
+   "business_summary": "県内JAグループ向けの情報システム（信用事業・経済事業）の開発・運用・保守、受託計算、JA向け電気通信事業",
+   "ai_initiative": null,
+   "url": "https://www.jaiwate.or.jp/densan-center/",
+   "size_basis": "employees",
+   "checked": "2026-10-18",
+   "notes": "JA系。外部向けの受託開発は未確認。公式の所在地は町名（黒川）まで取得（法人番号の所在地は黒川7地割19番地）。"
+  },
+  {
+   "name": "株式会社イーアールアイ",
+   "hq": "岩手県盛岡市上堂三丁目8-44",
+   "municipality": "盛岡市",
+   "town": "上堂",
+   "employees": {
+    "value": 37,
+    "as_of": "時点なし（常勤役員含む）",
+    "source": "https://www.erii.co.jp/company/overview/"
+   },
+   "capital": {
+    "value": "5,524万円",
+    "source": "https://www.erii.co.jp/company/overview/"
+   },
+   "founded": 2003,
+   "business_summary": "組込み機器の企画・設計・開発・製造・販売。組込みソフトウェア、ヘルスケア＆インダストリアルシステム、IoTデバイス・アプリ、屋内位置測位",
+   "ai_initiative": null,
+   "url": "https://www.erii.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-18",
+   "notes": "**東京事務所（港区新橋）**。人数の時点なし。"
+  },
+  {
+   "name": "株式会社ノーザンシステムサービス",
+   "hq": "岩手県盛岡市本宮4丁目3-5 マップセンタービル",
+   "municipality": "盛岡市",
+   "town": "本宮",
+   "employees": {
+    "value": 34,
+    "as_of": "時点なし（男21名・女13名、学生アルバイト5名を含む）",
+    "source": "https://www.nssv.co.jp/company.html"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.nssv.co.jp/company.html"
+   },
+   "founded": 2001,
+   "business_summary": "ソフトウェア受託開発と運用保守、大規模Webアプリ、GIS・データ可視化、Webサイト、e-learning、スマホアプリ",
+   "ai_initiative": "トップページに農業分野・防災分野のAI関連システムの開発、AI分野の研究開発を掲載（https://www.nssv.co.jp/）",
+   "url": "https://www.nssv.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-18",
+   "notes": "創業2001年（沿革）。会社概要ページにはAIサービスの記載はなく、トップページの記載のみ。"
+  },
+  {
+   "name": "株式会社シンエイシステム",
+   "hq": "岩手県盛岡市本宮四丁目31-5",
+   "municipality": "盛岡市",
+   "town": "本宮",
+   "employees": {
+    "value": 33,
+    "as_of": "時点なし",
+    "source": "https://www.shineisystem.co.jp/company/index.html"
+   },
+   "capital": {
+    "value": "3,000万円",
+    "source": "https://www.shineisystem.co.jp/company/index.html"
+   },
+   "founded": 1973,
+   "business_summary": "IT業務改善の支援、ソフトウェア設計・開発（会計システム『助っ人中島くん』、食品製造・医療機器販売・運送業向け販売管理）、ハード販売、保守、サプライ",
+   "ai_initiative": null,
+   "url": "https://www.shineisystem.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-18",
+   "notes": "2026年1月に本社移転のお知らせ（houjin.goo は旧住所の南大通）。**北東北営業所（青森県弘前市）**、大船渡サービスセンター。"
+  },
+  {
+   "name": "株式会社サイバーコア",
+   "hq": "岩手県盛岡市盛岡駅西通2-9-1 マリオス10F",
+   "municipality": "盛岡市",
+   "town": "盛岡駅西通",
+   "employees": {
+    "value": 32,
+    "as_of": "2026年3月1日時点（サイバーコアベトナム含む、役員含まず）",
+    "source": "https://cybercore.co.jp/jp/about"
+   },
+   "capital": {
+    "value": "1億円",
+    "source": "https://cybercore.co.jp/jp/about"
+   },
+   "founded": 2007,
+   "business_summary": "画像処理・AIソリューション。AIアルゴリズム開発・軽量化、エッジ実装、システム開発。人流・交通量解析『CityEye』、行動解析『BehaveEye』、検品AI『DetectEye』、顔認証打刻",
+   "ai_initiative": "AIアルゴリズム開発を中核事業として明示。ReID、LLM・VLM・生成AI関連、世界のAIコンペでの優勝実績、エッジAIによる『AI搭載型乗合バス 車内事故防止システム』の実証採用（2026年9月7日ニュース）（https://cybercore.co.jp/jp/）",
+   "url": "https://cybercore.co.jp/jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-18",
+   "notes": "2007年3月に前身の株式会社ユニテックを設立。2023年8月に電気興業株式会社（DKK）グループに参画（株主に電気興業・ソルクシーズ）。**東京オフィス**・ベトナムオフィスあり。"
+  },
+  {
+   "name": "クラリスアート株式会社",
+   "hq": "岩手県盛岡市盛岡駅前通15-18 Lavieビル",
+   "municipality": "盛岡市",
+   "town": "盛岡駅前通",
+   "employees": {
+    "value": 31,
+    "as_of": "2025年10月1日現在",
+    "source": "https://www.clariceart.co.jp/about"
+   },
+   "capital": {
+    "value": "2,200万円",
+    "source": "https://www.clariceart.co.jp/about"
+   },
+   "founded": 2016,
+   "business_summary": "システム開発（GISを使った開発に注力）、システム運用、労働者派遣、有料職業紹介",
+   "ai_initiative": null,
+   "url": "https://www.clariceart.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-18",
+   "notes": ""
+  },
+  {
+   "name": "株式会社ワイズマン",
+   "hq": "岩手県盛岡市盛岡駅西通2丁目11番1号",
+   "municipality": "盛岡市",
+   "town": "盛岡駅西通",
+   "employees": null,
+   "capital": {
+    "value": "1億円",
+    "source": "https://www.wiseman.co.jp/corp/profile/"
+   },
+   "founded": 1983,
+   "business_summary": "介護・福祉事業所、医療施設、地方自治体向けシステム（介護ソフト・電子カルテ、医療・介護連携サービス『MeLL＋』）の開発・販売・サポート、人材サービス、介護ポータル『ケアリポ』",
+   "ai_initiative": "AIケアプラン、リハビリ計画書作成支援AI、音声記録AIを製品として掲載。2026年3月24日に『音声記録AIオプション』をリリース（https://www.wiseman.co.jp/）",
+   "url": "https://www.wiseman.co.jp/",
+   "size_basis": "capital",
+   "checked": "2026-10-18",
+   "notes": "従業員数は公式の会社概要・採用ページ（数字で見るワイズマン）で確認できず、並べ順のルールで最後に置いた（実際の規模は表中の上位とみられるが公式値なし）。支店は札幌・盛岡・仙台・宇都宮・**東京**・長岡・金沢・名古屋・大阪・岡山・松山・広島・福岡（https://www.wiseman.co.jp/corp/branch/）。法人番号は東京の登記番号帯（2010001…）だが公式の本社は盛岡市。"
+  }
+ ],
+ "miyako": [],
+ "ofunato": [
+  {
+   "name": "アローリンクス株式会社",
+   "hq": "岩手県大船渡市盛町馬場23-7 大船渡テレワークセンター101",
+   "municipality": "大船渡市",
+   "town": "盛町",
+   "employees": {
+    "value": 11,
+    "as_of": "2025年11月現在",
+    "source": "https://arrow-links.com/company"
+   },
+   "capital": {
+    "value": "300万円",
+    "source": "https://arrow-links.com/company"
+   },
+   "founded": 2010,
+   "business_summary": "基幹システム・Webアプリケーションの開発、モバイルアプリ制作、Webサイト制作・運用、ITコンサル、紙媒体デザイン、地域ブランディング",
+   "ai_initiative": null,
+   "url": "https://arrow-links.com/",
+   "size_basis": "employees",
+   "checked": "2026-10-18",
+   "notes": ""
+  },
+  {
+   "name": "有限会社システム・ラボ",
+   "hq": "岩手県大船渡市大船渡町字猪頭58-28",
+   "municipality": "大船渡市",
+   "town": "大船渡町",
+   "employees": null,
+   "capital": {
+    "value": "300万円",
+    "source": "http://www.system-lab.co.jp/company.html"
+   },
+   "founded": 1990,
+   "business_summary": "ソフトウェア開発（監視・制御系、医療請求、臨床検査支援、勤怠管理等の実績）、システム機器・通信機器販売",
+   "ai_initiative": null,
+   "url": "http://www.system-lab.co.jp/",
+   "size_basis": "capital",
+   "checked": "2026-10-18",
+   "notes": "HTTPSは接続拒否のためHTTPで取得。サイトの著作権表記は2019年まで。"
+  },
+  {
+   "name": "株式会社ピースネット",
+   "hq": "岩手県大船渡市大船渡町赤沢12-17",
+   "municipality": "大船渡市",
+   "town": "大船渡町",
+   "employees": null,
+   "capital": null,
+   "founded": null,
+   "business_summary": "ソフトウェア開発・販売。建設業向け『上出来BESTシリーズ』『TS-FIELD』『Cons-FIELD 3D』『CM-Bridge』",
+   "ai_initiative": null,
+   "url": "https://www.peacenet.co.jp/contents/index.htm",
+   "size_basis": "none",
+   "checked": "2026-10-18",
+   "notes": "会社案内（https://www.peacenet.co.jp/contents/other-companyinformation.htm）に規模・設立年の記載なし。ページはShift_JISでWebFetchでは文字化けするためcurlで取得。"
+  }
+ ],
+ "hanamaki": [],
+ "kitakami": [
+  {
+   "name": "株式会社システムベース",
+   "hq": "岩手県北上市村崎野19地割116番地4",
+   "municipality": "北上市",
+   "town": "村崎野",
+   "employees": {
+    "value": 185,
+    "as_of": "2026年7月時点",
+    "source": "https://www.systembase.co.jp/about/"
+   },
+   "capital": {
+    "value": "3,000万円",
+    "source": "https://www.systembase.co.jp/about/"
+   },
+   "founded": 1973,
+   "business_summary": "総合情報サービス（クラウド、データ処理）、個別・パッケージソフトウェアの設計・開発（業務パッケージ、帳票ツール、生産管理・勤怠管理）、機器販売、保守",
+   "ai_initiative": "『ITソリューションフェア2026』（2026年7月16日）のテーマに『現場で使えるAI・DX』を掲げる。自社のAI製品の記載はない（https://www.systembase.co.jp/）",
+   "url": "https://www.systembase.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-18",
+   "notes": "拠点は本社（北上市）、盛岡センター、大船渡センターで、すべて県内。"
+  },
+  {
+   "name": "株式会社MERCIT",
+   "hq": "岩手県北上市本通り1丁目5-11 glee 2F",
+   "municipality": "北上市",
+   "town": "本通り",
+   "employees": {
+    "value": 78,
+    "as_of": "2026年10月1日現在",
+    "source": "https://mercit.co.jp/about/"
+   },
+   "capital": {
+    "value": "2,000万円",
+    "source": "https://mercit.co.jp/about/"
+   },
+   "founded": 2022,
+   "business_summary": "SES・受託開発、プログラミング体験会、求人情報サイト『岩手の会社』の運営、店舗運営",
+   "ai_initiative": null,
+   "url": "https://mercit.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-18",
+   "notes": "読みはメルシット。第2開発センター（北上市）、盛岡サテライト、**八戸・秋田・仙台の開発センター、函館サテライトオフィス**。"
+  },
+  {
+   "name": "有限会社イグノス",
+   "hq": "岩手県北上市相去町山田2-18 北上オフィスプラザ109号",
+   "municipality": "北上市",
+   "town": "相去町",
+   "employees": null,
+   "capital": {
+    "value": "965万円",
+    "source": "http://www.igunoss.co.jp/about/profile.html"
+   },
+   "founded": 2004,
+   "business_summary": "画像処理による外観検査・寸法・色味測定装置の開発・設計・製作、ラインセンサシステム開発キット『IP-View』、LED輝度検査システム、受託開発、コンサルティング",
+   "ai_initiative": "特許第7851027号『学習済みモデルの作成方法、画像処理方法、プログラム、及び画像処理装置』の登録と、それを具現化した『SortOutLearning』を掲載（http://www.igunoss.co.jp/）",
+   "url": "http://www.igunoss.co.jp/",
+   "size_basis": "capital",
+   "checked": "2026-10-18",
+   "notes": "花巻開発センター（花巻市起業化支援センター内）。HTTPSは接続拒否のためHTTPで取得。従業員数の記載なし。"
+  },
+  {
+   "name": "SOFTDOING株式会社",
+   "hq": "岩手県北上市大曲町3-25",
+   "municipality": "北上市",
+   "town": "大曲町",
+   "employees": null,
+   "capital": {
+    "value": "100万円",
+    "source": "https://www.softdoing.co.jp/company2"
+   },
+   "founded": 2006,
+   "business_summary": "Web制作（Wixパートナープログラム最高位『レジェンドレベル』）、DX支援、クラウド・データ活用・BPOなどのコンサル",
+   "ai_initiative": "サービス一覧に『AI（人工知能）』『Intelligent Automation』を掲載（内容の詳細は未確認）（https://www.softdoing.co.jp/）",
+   "url": "https://www.softdoing.co.jp/",
+   "size_basis": "capital",
+   "checked": "2026-10-18",
+   "notes": "創業2006年9月（会社概要の表組みが崩れており、創業と資本金の対応は配置から判断）。従業員数の記載なし。"
+  }
+ ],
+ "kuji": [],
+ "tono": [],
+ "ichinoseki": [
+  {
+   "name": "ソフトスタジオ株式会社",
+   "hq": "岩手県一関市千厩町千厩字境田66-3",
+   "municipality": "一関市",
+   "town": "千厩町",
+   "employees": null,
+   "capital": null,
+   "founded": 2011,
+   "business_summary": "iOS/Android/Mac/Windowsアプリ開発、Webアプリ開発、ホームページ作成、IT機器レンタル、講習会",
+   "ai_initiative": "トレイルカメラとAIを使った『動物検知通知サービス』を2026年9月4日に提供開始（クマ検知後3〜5分でメール通知）。ツキノワグマ等の出没監視実証（2026年7月）（https://soft-studio.jp/）",
+   "url": "https://soft-studio.jp/",
+   "size_basis": "none",
+   "checked": "2026-10-18",
+   "notes": "2011年1月に神奈川県相模原市で法人化、2023年4月に一関市千厩町へ移転。2026年4月にIISA入会。会社概要はJavaScriptで読み込まれる（https://soft-studio.jp/content/company.html で確認）。規模の記載なし。"
+  },
+  {
+   "name": "アイエステクノ株式会社",
+   "hq": "岩手県一関市大町4番18号",
+   "municipality": "一関市",
+   "town": "大町",
+   "employees": null,
+   "capital": null,
+   "founded": 2010,
+   "business_summary": "ホームページ作成・運用、オープンソースによるシステム制作、業務改善ソフト・生産管理・勤怠管理・見積請求システム、Webアプリ、Androidアプリ、監視カメラ設置、PC販売・修理",
+   "ai_initiative": "『デジタル化・AI導入補助金2026』のIT導入支援事業者に採択された旨を掲載。AI技術そのものの開発・提供の記載はない（https://istechno.co.jp/）",
+   "url": "https://istechno.co.jp/",
+   "size_basis": "none",
+   "checked": "2026-10-18",
+   "notes": "従業員数・資本金の記載なし。"
+  },
+  {
+   "name": "株式会社etc",
+   "hq": "岩手県一関市花泉町花泉津村沢82-2",
+   "municipality": "一関市",
+   "town": "花泉町",
+   "employees": null,
+   "capital": null,
+   "founded": 2002,
+   "business_summary": "業務用ソフトウェアの開発・仕入・販売・保守。栄養業務支援ソフト『メニューボックス』",
+   "ai_initiative": null,
+   "url": "https://www.etc-software.co.jp/",
+   "size_basis": "none",
+   "checked": "2026-10-18",
+   "notes": "2002年2月設立、2007年10月に有限会社から株式会社へ。従業員数・資本金の記載なし。"
+  }
+ ],
+ "rikuzentakata": [],
+ "kamaishi": [
+  {
+   "name": "株式会社プラネックス",
+   "hq": "岩手県釜石市野田町2-23-2",
+   "municipality": "釜石市",
+   "town": "野田町",
+   "employees": null,
+   "capital": {
+    "value": "1,600万円",
+    "source": "https://www.goushou.com/company/"
+   },
+   "founded": 1990,
+   "business_summary": "食品業向け製造・在庫・販売管理パッケージ『豪商』の開発・販売・サポート（導入470社以上、全国パートナー20社以上）、釜石周辺でのWeb制作・PCサポート",
+   "ai_initiative": null,
+   "url": "https://www.goushou.com/",
+   "size_basis": "capital",
+   "checked": "2026-10-18",
+   "notes": "IISA正会員。従業員数の記載なし。"
+  }
+ ],
+ "ninohe": [
+  {
+   "name": "有限会社泉山電子会計センター",
+   "hq": "岩手県二戸市福岡字五日町73",
+   "municipality": "二戸市",
+   "town": "福岡",
+   "employees": {
+    "value": 9,
+    "as_of": "時点なし",
+    "source": "http://denkosoft.la.coocan.jp/html/izumiyama_imfomation.html"
+   },
+   "capital": null,
+   "founded": 1975,
+   "business_summary": "システムコンサルティング、ソフトウェア・ハードウェア開発、計算受託・情報処理（会計・年末調整・販売管理などオーダーメイドのシステム）",
+   "ai_initiative": null,
+   "url": "http://denkosoft.la.coocan.jp/html/izumiyama.html",
+   "size_basis": "employees",
+   "checked": "2026-10-18",
+   "notes": "1975年に税理士事務所の会計情報処理会社として創業。IISA正会員。人数の時点なし、資本金の記載なし。"
+  }
+ ],
+ "hachimantai": [],
+ "oshu": [
+  {
+   "name": "株式会社アイディーエス",
+   "hq": "岩手県奥州市水沢横町94",
+   "municipality": "奥州市",
+   "town": "水沢横町",
+   "employees": {
+    "value": 62,
+    "as_of": "2026年7月1日現在（役員を除く）",
+    "source": "https://www.ids-soft.co.jp/about-us/"
+   },
+   "capital": {
+    "value": "4,000万円",
+    "source": "https://www.ids-soft.co.jp/about-us/"
+   },
+   "founded": 1978,
+   "business_summary": "ERP（GRANDITの販売・導入・開発受託・保守）、財務管理システム『COURAGEUX』、貸付金管理システム『LIBERTE』、在庫管理システムの開発・販売、ソフトウェア技術者派遣",
+   "ai_initiative": null,
+   "url": "https://www.ids-soft.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-18",
+   "notes": "**東京営業所（江東区東陽）**。"
+  },
+  {
+   "name": "株式会社ニューロンシステム",
+   "hq": "岩手県奥州市水沢区水沢工業団地1-50",
+   "municipality": "奥州市",
+   "town": "水沢工業団地",
+   "employees": null,
+   "capital": null,
+   "founded": null,
+   "business_summary": "Windowsアプリ、Webアプリ、Android・iOSアプリの開発（事例に営業開発支援、自動販売機販売管理、会員制Webショップ、栄養アセスメント支援）",
+   "ai_initiative": null,
+   "url": "http://www.newlon.co.jp/",
+   "size_basis": "none",
+   "checked": "2026-10-18",
+   "notes": "HTTPSは接続拒否のためHTTPで取得。サイトの事例欄は『Coming Soon』のままで更新が少ない。規模不明。"
+  }
+ ],
+ "takizawa": [
+  {
+   "name": "岩手インフォメーション・テクノロジー株式会社",
+   "hq": "岩手県滝沢市巣子152-409 滝沢市IPU第2イノベーションセンター",
+   "municipality": "滝沢市",
+   "town": "巣子",
+   "employees": {
+    "value": 33,
+    "as_of": "2026年1月現在",
+    "source": "https://www.iwate-it.co.jp/?page_id=45"
+   },
+   "capital": {
+    "value": "2,000万円",
+    "source": "https://www.iwate-it.co.jp/?page_id=45"
+   },
+   "founded": 2006,
+   "business_summary": "業種別の業務管理ソフト開発。保育ICT『おが～る』シリーズ（登降園・日誌・指導計画など）、自治体向け『おが～るウェブレポ』",
+   "ai_initiative": null,
+   "url": "https://www.iwate-it.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-18",
+   "notes": "IPUイノベーションパーク入居（2009年7月〜）。**山形開発室（山形県米沢市）**。"
+  },
+  {
+   "name": "リビングシステムインターナショナル株式会社",
+   "hq": "岩手県滝沢市鵜飼下高柳14-14",
+   "municipality": "滝沢市",
+   "town": "鵜飼",
+   "employees": null,
+   "capital": {
+    "value": "2,000万円",
+    "source": "https://www.happypoint.jp/company/about"
+   },
+   "founded": 1974,
+   "business_summary": "ポイントカード・ICカードシステムの開発販売（『ハッピーポイントサービス』『ロイポ』）、駐車場システム、ソフトウェア開発・POSシステム販売、商品券管理ソフト",
+   "ai_initiative": null,
+   "url": "https://www.happypoint.jp/company/",
+   "size_basis": "capital",
+   "checked": "2026-10-18",
+   "notes": "略称LSI。1974年に東京で設立、1981年に秋田市へ本社移転、現在の本社は滝沢市。カード・機器販売の比重が大きく、受託開発専業ではない。従業員数の記載なし。"
+  },
+  {
+   "name": "株式会社クロスリンクシステムズ",
+   "hq": "岩手県滝沢市巣子95-2 SUGO-TEC-BUILDING 1F",
+   "municipality": "滝沢市",
+   "town": "巣子",
+   "employees": null,
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://x-link.jp/company/"
+   },
+   "founded": 2004,
+   "business_summary": "路面監視カメラの保守管理とシステム開発（岩手県の道路情報提供サービス）、モバイル回線利用のクラウド型監視カメラ『X-IMPACT』、見守りシステム『絆ONE』、ハード・ソフト（Webアプリ・組込み）の受託設計開発",
+   "ai_initiative": "実績・製品に『AI（人工知能）モバイルボックス』を掲載（https://x-link.jp/）",
+   "url": "https://x-link.jp/",
+   "size_basis": "capital",
+   "checked": "2026-10-18",
+   "notes": "開発センターは滝沢市IPUイノベーションセンター209研究室。従業員数の記載なし。"
+  },
+  {
+   "name": "株式会社イワテシガ",
+   "hq": "岩手県滝沢市葉の木沢山31-81-D",
+   "municipality": "滝沢市",
+   "town": "葉の木沢山",
+   "employees": null,
+   "capital": {
+    "value": "100万円",
+    "source": "https://r4hs.com/"
+   },
+   "founded": 2007,
+   "business_summary": "AI/IoT時代のITエンジニア・データサイエンティスト向け技術研修、IoT・Web・クラウドのシステム開発、見守り・医療系システムの保守運用",
+   "ai_initiative": "『生成AI時代の技術研修とシステム開発（AI/IoT/クラウド/Web/スマホ）』を掲げ、AI/IoTの先端技術研修を実施（https://r4hs.com/）",
+   "url": "https://r4hs.com/",
+   "size_basis": "capital",
+   "checked": "2026-10-18",
+   "notes": "英文 R4HS Inc.。IPA未踏ソフトウェア創造事業の採択を機に大学の客員教員と学生が創業。取締役に岩手県立大学名誉教授。小規模。"
+  },
+  {
+   "name": "株式会社プライムソフトウェア",
+   "hq": "岩手県滝沢市鵜飼狐洞128-2",
+   "municipality": "滝沢市",
+   "town": "鵜飼",
+   "employees": null,
+   "capital": null,
+   "founded": null,
+   "business_summary": "自社開発ソフトの販売・サポート（学生寮管理、社会福祉法人向け予算会計、介護保険（ケアプラン・請求）、給与、会費収納管理）",
+   "ai_initiative": null,
+   "url": "http://www.primesoftware.co.jp/",
+   "size_basis": "none",
+   "checked": "2026-10-18",
+   "notes": "HTTPSは証明書不一致のためHTTPで取得。会社概要ページなし（所在地はページ下部の表記）。規模不明。"
+  }
+ ],
+ "shizukuishi": [],
+ "kuzumaki": [],
+ "iwate-town": [],
+ "shiwa": [
+  {
+   "name": "有限会社ホロニック・システムズ",
+   "hq": "岩手県紫波郡紫波町上平沢字馬場7番地3",
+   "municipality": "紫波町",
+   "town": "上平沢",
+   "employees": null,
+   "capital": null,
+   "founded": 1997,
+   "business_summary": "ソフトウェアの受託開発とR&D（医療：遺伝カウンセリング用家系図ソフト『f-tree』〔岩手医科大学と共同開発〕、製造現場のセンサ監視・ロボット制御、半導体製造装置制御ソフト、車両の計器表示試作、IoT振動センサー）",
+   "ai_initiative": null,
+   "url": "https://www.holonic-systems.com/",
+   "size_basis": "none",
+   "checked": "2026-10-18",
+   "notes": "公式トップに『岩手県紫波町にて1997年の設立』とあるが、番地まで載った会社概要は見つからず、hq の番地は法人番号（houjin.goo）の所在地。規模の記載なし。グループに東北医工（tohoku-ms.com）。"
+  }
+ ],
+ "yahaba": [],
+ "nishiwaga": [],
+ "kanegasaki": [],
+ "hiraizumi": [],
+ "sumita": [],
+ "otsuchi": [],
+ "yamada": [],
+ "iwaizumi": [],
+ "karumai": [],
+ "hirono": [],
+ "ichinohe": [],
+ "tanohata": [],
+ "fudai": [],
+ "noda": [],
+ "kunohe": [],
+ "_reference": {
+  "morioka": {
+   "next_candidates": [
+    {
+     "name": "テクノ株式会社",
+     "employees": "27名（時点なし）",
+     "capital": "1,000万円",
+     "note": "自治体・学校向けシステム導入・サポート、福祉関連システムの販売と個別開発、一般企業向けシステム開発。盛岡市厨川3丁目10-1。1985年設立。",
+     "source": "https://pc-techno.co.jp/company/"
+    },
+    {
+     "name": "株式会社システムエンジニアリング",
+     "employees": "14名（2026年5月現在）",
+     "capital": "2,000万円",
+     "note": "システム構築・保守、SaaS『SmileWorker』、プロバイダ『おでんせネット』、ERP販売。盛岡市中央通3-15-29。1979年設立。仙台Office。代表メッセージとコラムでAI・MCPに言及（自社AI製品はなし）。",
+     "source": "https://senet.co.jp/company/"
+    },
+    {
+     "name": "株式会社情報システム研究所",
+     "employees": "10名（うちSE7名、時点なし）",
+     "capital": "1,500万円",
+     "note": "経営情報システムの開発・運用サポート。盛岡市南大通3-2-3（houjin.goo は旧住所の高松）。遠野事務所あり。設立年は公式内で2000年と2004年が混在。",
+     "source": "https://www.gensys.co.jp/"
+    },
+    {
+     "name": "株式会社シー・ソフト",
+     "employees": "役員2名・社員6名（2025年4月）",
+     "capital": "302万円",
+     "note": "業務システムの請負開発（スクラッチ、クラウドERP導入支援）。登記上の本店は盛岡市山岸三丁目35番17号、営業・開発拠点は盛岡市内丸16-15。2013年設立。",
+     "source": "https://www.csoft.co.jp/company/"
+    },
+    {
+     "name": "株式会社ACD",
+     "employees": "7名（時点なし）",
+     "capital": "500万円",
+     "note": "金融機関向け業務システムを中心としたソフト設計・開発・保守、Web口座振替受付サービス。盛岡市中央通一丁目6番30号。2014年設立。",
+     "source": "https://acd.jp.net/company"
+    },
+    {
+     "name": "株式会社プラスプラス",
+     "employees": "公式に記載なし",
+     "capital": "34,000,480円",
+     "note": "**フィジカルAI・デジタルツイン基盤『Smart3tene』、AIアバター『3teneAI』、AI検索の引用モニタリング『Easy AIO』**、VTuberアプリ『3tene』。本社 盛岡市北飯岡（番地なし）、大船渡支店。2001年設立。",
+     "source": "https://www.plusplus.jp/company"
+    },
+    {
+     "name": "株式会社エムハート",
+     "employees": "公式に記載なし",
+     "capital": "2,500万円（資本準備金2,500万円）",
+     "note": "医療用システム・医療機器（ホルター心電計『My holter』）の開発・販売。**クラウド心電図解析で『AIアルゴリズムを用いた独自の解析サービス』**（トップページ）。盛岡市中央通二丁目11番12号。2016年設立。2025年6月30日以降フクダ電子51%・シーエーシー49%の構成に変わる予定とのお知らせ。",
+     "source": "https://emheart.co.jp/company/"
+    },
+    {
+     "name": "株式会社キクサー",
+     "employees": "公式に記載なし",
+     "capital": "1,490万円",
+     "note": "ソフトウェアテスト、品質向上支援、開発支援。盛岡市茶畑2丁目24番10号 チャバタケdoors 3F。2023年12月設立。",
+     "source": "https://qixar.co.jp/company/"
+    },
+    {
+     "name": "株式会社アークネット",
+     "employees": "公式に記載なし",
+     "capital": "1,400万円",
+     "note": "流通小売業向けPOS分析システム『APEX-II』等のパッケージ、ソフト受託開発、機器販売。盛岡市中央通一丁目6-30。1988年設立。",
+     "source": "https://www.ark-nets.com/company"
+    },
+    {
+     "name": "ルネッサンス ルパン株式会社",
+     "employees": "公式に記載なし",
+     "capital": "1,000万円",
+     "note": "サーバー・ネットワーク構築などのインフラ支援。本社 盛岡市中央通三丁目3-20、仙台BASE。2014年設立。2026年7月17日に『事業譲渡契約締結のお知らせ』（内容未確認）。",
+     "source": "https://r-lupin.co.jp/company/"
+    },
+    {
+     "name": "株式会社岩手ソフトエンジニアリング",
+     "employees": "公式に記載なし",
+     "capital": "1,000万円",
+     "note": "コンピュータシステム設計・プログラム開発（金融・農協・自治体会計・Web系）、SE派遣。盛岡市前九年一丁目6-27。1982年設立。**東京事務所（台東区浅草橋）**。HTTPSは証明書不一致のためHTTPで取得。",
+     "source": "http://iseinc.co.jp/ise.company/company.htm"
+    },
+    {
+     "name": "株式会社ナイツ",
+     "employees": "公式に記載なし",
+     "capital": "500万円",
+     "note": "ソフト開発・販売（自社製品LIMS）、サーバ運営、ホームページ制作。盛岡市本宮二丁目15番15号。2009年設立。",
+     "source": "https://www.nites.co.jp/company/index.html"
+    },
+    {
+     "name": "株式会社ビットエイジ",
+     "employees": "公式に記載なし",
+     "capital": "300万円",
+     "note": "医療系システム（院内トリアージ『Tri@ER』等）、電子ペーパー・VRソリューション、DXコンサル。盛岡市西仙北1丁目32番25号。2006年設立。",
+     "source": "https://www.bitage.co.jp/about/summary/"
+    },
+    {
+     "name": "株式会社岩手デジタルシステム",
+     "employees": "公式に記載なし",
+     "capital": "240万円",
+     "note": "ホームページ制作、データベースシステム開発、組込み機器開発。盛岡市上田1丁目11番29号NFビル2F。2005年設立。鎌倉事務所（神奈川県）。",
+     "source": "https://iwate-ds.jp/company/"
+    },
+    {
+     "name": "株式会社ネクスト",
+     "employees": "公式に記載なし",
+     "capital": "公式に記載なし",
+     "note": "地場企業向けDX支援、ニアショア開発、受託開発、kintone導入・カスタマイズ、RPA。盛岡市大通1-1-16 岩手教育会館3階。1988年創業。デジタル化・AI活用セミナーへの登壇あり（自社AI製品の記載なし）。",
+     "source": "https://www.next-ltd.jp/about/"
+    },
+    {
+     "name": "エクナ株式会社",
+     "employees": "公式に記載なし",
+     "capital": "公式に記載なし",
+     "note": "行政・企業・医療向けシステム販売、複合機販売、PC・サーバー・ネットワーク構築、プロバイダ、ホームページ製作。本社 盛岡市みたけ三丁目18番33号（houjin.goo は旧住所の中央通）。『おかげさまで50年』。県内6拠点と仙台。採用ページは401。",
+     "source": "https://www.echna.co.jp/company/"
+    },
+    {
+     "name": "株式会社ジェイ・テック",
+     "employees": "公式に記載なし",
+     "capital": "公式に記載なし",
+     "note": "介護職の勤務表自動作成『Dispatcher』、建築・設備CAD・積算ソフトの開発・販売。盛岡市青山四丁目27番14号。HTTPSは証明書期限切れのためHTTPで取得。",
+     "source": "http://www.jtecweb.com/company/"
+    },
+    {
+     "name": "株式会社ラング",
+     "employees": "公式に記載なし",
+     "capital": "公式に記載なし",
+     "note": "考古学向け3D計測・画像処理（PEAKIT）、3Dスキャナー。盛岡市永井20地割61番地5。",
+     "source": "https://www.lang-co.jp/"
+    },
+    {
+     "name": "株式会社熊谷総合研究所",
+     "employees": "公式に記載なし",
+     "capital": "公式に記載なし",
+     "note": "ソフト開発、ITコンサル、システム設計・運用保守。公式の所在地は盛岡市上堂三丁目19番16号（houjin.goo は西青山）。新着情報が2010年で止まっている。",
+     "source": "https://www.skuma.net/index.html"
+    }
+   ],
+   "needs_manual_check": [
+    {
+     "name": "東北銀ソフトウエアサービス株式会社",
+     "note": "houjin.goo の公式URL（tohokugin-soft.co.jp）が名前解決できない。盛岡市茶畑2丁目25番46号。",
+     "source": "https://houjin.goo.to/corporations/9400001001056"
+    },
+    {
+     "name": "有限会社エースソフト",
+     "note": "業務システムの設計・開発・保守（IPUイノベーションセンター204入居、本社は盛岡市下田）。公式サイトが503。",
+     "source": "https://www.acesoft.jp"
+    }
+   ],
+   "excluded": [
+    {
+     "name": "株式会社エヌエスシー",
+     "reason": "本社 宮城県仙台市（IISA名簿は盛岡市開運橋通の事業所）"
+    },
+    {
+     "name": "株式会社東北システムズ・サポート",
+     "reason": "本社 宮城県仙台市"
+    },
+    {
+     "name": "株式会社クロスリード",
+     "reason": "本社 宮城県仙台市（クロスキャットの子会社）"
+    },
+    {
+     "name": "SCSKニアショアシステムズ株式会社",
+     "reason": "本社 東京都江東区（岩手開発センター）"
+    },
+    {
+     "name": "株式会社NS・コンピュータサービス",
+     "reason": "本社 新潟県長岡市（盛岡の岩手センター）"
+    },
+    {
+     "name": "株式会社マーブル",
+     "reason": "公式に約8,700名・国内53拠点とあり、本社所在地は公式で取れず（会社概要が403）。IISA名簿の盛岡市盛岡駅前通は拠点とみられる"
+    },
+    {
+     "name": "アイシン・ソフトウェア、日立ソリューションズ東日本、JR東日本情報システム、NTTデータ東北、日本インフォメーション、東京システムズ、SCSKサービスウェア、イーエムエス、アベールジャパン、ヴェス、SES等",
+     "reason": "IISA名簿に載る県外本社の会社の盛岡事業所・支店"
+    },
+    {
+     "name": "株式会社岩手ソフトウェアセンター",
+     "reason": "研修・資格試験・貸会議室が事業（盛岡市盛岡駅西通 マリオス9F）"
+    },
+    {
+     "name": "株式会社タックエンジニアリング",
+     "reason": "測量・調査が主（ソフト開発の明記なし）"
+    },
+    {
+     "name": "北日本通信株式会社",
+     "reason": "情報通信工事（エクシオグループの子会社）"
+    },
+    {
+     "name": "アーク株式会社",
+     "reason": "賃貸保証・携帯ショップ・ゴルフショップ等。東京本社も併記"
+    },
+    {
+     "name": "有限会社岩手総合電子",
+     "reason": "業務用無線の販売・保守"
+    },
+    {
+     "name": "株式会社JIM JIM",
+     "reason": "映画配信サイトを2023年8月に閉鎖"
+    }
+   ],
+   "not_checked": [
+    "株式会社ナレロー（公式サイトが移転、移転先未確認）",
+    "ベストビジネス株式会社・有限会社シー・アイ・システム・モバイルコミュニケーションズ株式会社（公式サイトの応答が空）",
+    "有限会社ソフトフォーユー・有限会社ファブリック・太平工業株式会社（未確認）",
+    "株式会社デカルト・株式会社ラリマー・有限会社エボテック・株式会社インフィニティソリューションズ（houjin.goo に公式URLなし）"
+   ]
+  },
+  "takizawa": {
+   "note": "IPUイノベーションパーク（2024年3月時点27社）のうち滝沢市本社は、岩手インフォメーション・テクノロジー、クロスリンクシステムズ（本表）、株式会社東北制御設計（企業立地区画、制御盤のPLCプログラム。公式URLを取得できず）、株式会社カモシカ（Web制作、シェアデスク。公式未確認）、ぴたデジ株式会社（一般企業のデジタル導入支援、201研究室。公式未確認）、滝沢ロボティクス合同会社（ロボット）、株式会社環境アシスト（PCB廃棄物）。ハルシステム・イイガ・ぴーぷる・東京システムズ・ヴェス・サステナ・フォーラムエイト・ゴーイングドットコム・アルチザネットワークス・テムテック研究所・ワイ・デー・ケー（東京）、TOTALMASTERS（三重）は県外本社。エースソフト（204）は本社 盛岡市。",
+   "source": "https://www.pref.iwate.jp/_res/projects/default_project/_page_/001/078/145/ipukeikaku2024.pdf"
+  },
+  "kitakami": {
+   "note": "株式会社AIC（Web制作・印刷、クーポンサイト。規模・会社概要は未確認）、株式会社建設サポート（ITコンサル・建設ASP。公式サイトの本文を取得できず）は要手動確認。株式会社S.I.T（通信機器・複合機・防犯カメラ販売）は対象外。株式会社セレクティは本社 仙台市（北上市は岩手支店）で対象外。"
+  },
+  "oshu": {
+   "note": "株式会社創造ファクトリ（公式URL先がプレースホルダー）は要手動確認。有限会社アンサーポイント（PC修理・データ復旧）、株式会社STAGEUP（人材）は対象外。有限会社テクノシステム（奥州市）は houjin.goo のURL先が千葉県市原市の電気工事会社で一致せず。オオイテクノ水沢事業所は県外本社。"
+  },
+  "ichinoseki": {
+   "note": "株式会社アイマーク（公式サイトが404）、岩手システムサービス有限会社・株式会社ユーティーエー東山（公式URLなし）は未確認。一関三光株式会社は樹脂成形で対象外。ヘプタゴンの岩手オフィス（一関市大町）は本社 青森県三沢市。"
+  },
+  "hanamaki": {
+   "note": "プロフェクト株式会社（中小製造業向け生産管理システム。本店は花巻市中根子だが公式の『本社』は東京都港区浜松町）は県外本社扱いで本表外。株式会社日泉（冠婚葬祭向け筆文字システム・葬祭業管理ソフト・機器販売。南城。会社概要未確認）は要手動確認。株式会社新興製作所（メカトロ機器製造）、株式会社JNグループ（持株会社）は対象外。花巻市に本社の開発会社は公式で確認できず。"
+  },
+  "rikuzentakata": {
+   "note": "株式会社三陸情報サービス（自社製品のソフト開発・SI・Web。公式サイトに会社概要・所在地がなく、法人番号の所在地は高田町字馬場前103番地1）は要手動確認。"
+  },
+  "tono": {
+   "note": "株式会社夕黄旺（houjin.goo のIT業界、附馬牛町）は公式サイトが初期ページで未確認。情報システム研究所（盛岡市）の遠野事務所がある。"
+  },
+  "kamaishi": {
+   "note": "有限会社プロファイル（定内町）は公式サイトの応答が空で未確認。日鉄ソリューションズ北海道（IISA名簿で釜石市鈴子町）は本社 札幌・室蘭。"
+  },
+  "ninohe": {
+   "note": "株式会社スマート（石切所）、有限会社ノイ・コミュニケーション（金田一）は houjin.goo に公式URLなしで未確認。"
+  },
+  "hachimantai": {
+   "note": "有限会社ソフトハウスタカハシ（大更、1991年設立。業務ソフト販売・指導・サポート、OA機器・防犯カメラ販売、ホームページ制作。盛岡営業所）は販売・サポート中心で本表外。https://so11.com/aboutus/"
+  },
+  "iwate-town": {
+   "note": "有限会社ヤスミ（本社 岩手町沼宮内、店名テクノハウス エイトピア。建設業向けソフトの販売・サポート、役員7人・社員31人〔令和8年3月1日〕、仙台・秋田・関東・北陸・福岡・沖縄に営業所）は販売・サポートで開発会社ではないため本表外。米穀・農業資材販売も兼業。https://www.8-pia.com/corpinfo"
+  },
+  "hirono": {
+   "note": "株式会社ワードシステムズ（種市）は公式サイトがPHPエラーで未確認。"
+  },
+  "kanegasaki": {
+   "note": "有限会社オフィス・ゆうとぴあ（houjin.goo のIT業界）は公式URLなしで未確認。"
+  },
+  "shiwa": {
+   "note": "株式会社フルーツネット（houjin.goo では紫波町桜町）は公式の所在地が宮城県仙台市で対象外。"
+  },
+  "miyako": {
+   "note": "有限会社島香無線（houjin.goo のIT業界）は船舶・業務用無線機の販売・工事で対象外。"
+  },
+  "tanohata": {
+   "note": "有限会社菊地電子工業（houjin.goo のIT業界）はコネクター製造で対象外。"
+  }
+ },
+ "_notes": [
+  "岩手県情報サービス産業協会（IISA）の会員一覧には従業員数と掲載時点がない。正会員51社のうち、県外本社の会社の盛岡事業所・支店が約20社含まれる（アイシン・ソフトウェア、SCSKニアショアシステムズ、NTTデータ東北など）。記事では公式サイトの値だけを使う。",
+  "県外にも拠点を持つ県内本社の会社: アイシーエス（秋田・青森・仙台支店）、イーストライズ（東京・福岡など約20拠点）、IBCソフトアルファ（東京支社）、イーアールアイ（東京事務所）、サイバーコア（東京オフィス・ベトナム）、岩手ソフトエンジニアリング（東京事務所）、アイディーエス（東京営業所）、ワイズマン（東京など全国の支店）、MERCIT（八戸・秋田・仙台・函館）、リードコナン（島根県松江市）、シンエイシステム（弘前市）、岩手インフォメーション・テクノロジー（山形県米沢市）、システムエンジニアリング・ルネッサンスルパン（仙台）、岩手デジタルシステム（鎌倉）。親会社がある会社: キーウェア東北（キーウェアソリューションズの100%子会社）、サイバーコア（電気興業グループ）、エムハート（フクダ電子・シーエーシー）。",
+  "AIを公式に明記している会社: サイバーコア（盛岡市、AIアルゴリズム開発・画像認識が中核、LLM・VLM）、ワイズマン（盛岡市、AIケアプラン・音声記録AI）、ノーザンシステムサービス（盛岡市、農業・防災分野のAI関連システム開発）、クロスリンクシステムズ（滝沢市、AIモバイルボックス）、イワテシガ（滝沢市、AI/IoT研修・開発）、イグノス（北上市、学習済みモデルの特許・SortOutLearning）、ソフトスタジオ（一関市、AIによるクマ等の動物検知通知サービス、2026年9月開始）、SOFTDOING（北上市、サービス一覧に『AI』）。次点: プラスプラス（盛岡市、フィジカルAI・AIアバター）、エムハート（盛岡市、心電図のAI解析）。AIに触れる程度: システムベース（フェアのテーマ『現場で使えるAI・DX』）、アイエステクノ（デジタル化・AI導入補助金の支援事業者）、ネクスト（AI活用セミナー登壇）、システムエンジニアリング（コラム）、アイシーエス（E資格13名）。",
+  "本社の会社が公式で確認できた市町村は、盛岡市・滝沢市・北上市・奥州市・一関市・大船渡市・釜石市・二戸市・紫波町の9市町。花巻市・陸前高田市・遠野市・八幡平市・岩手町・洋野町・金ケ崎町・宮古市・田野畑村は候補があったが公式で確認できないか対象外（_reference）。久慈市と、雫石町・葛巻町・矢巾町・西和賀町・平泉町・住田町・大槌町・山田町・岩泉町・軽米町・一戸町・普代村・野田村・九戸村は候補自体が見つからなかった。",
+  "houjin.goo の所在地が旧住所の例: シンエイシステム（南大通→本宮）、情報システム研究所（高松→南大通）、エクナ（中央通→みたけ）、熊谷総合研究所（西青山→上堂）、S.I.T（相去町→本石町）。houjin.goo のURL先が別会社の例: テクノシステム（奥州市→千葉県の電気工事会社）。"
+ ]
+}

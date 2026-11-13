@@ -1,0 +1,1957 @@
+{
+ "_meta": {
+  "checked": "2026-11-06",
+  "scope": "茨城県44市町村（32市10町2村）。本社（公式サイトの本社・本店・所在地）が当該市町村にあり、公式サイトでシステム開発・ソフトウェア開発・Web開発・情報処理サービス・SI を事業として明示する法人。鹿児島・岡山・広島と同じく、本表には『公式サイト（コーポレートサイトまたは自社の採用サイト）で本社所在地と時点つきの従業員数の両方を確認できた会社』だけを入れた（市町村ごとに最大8社、従業員数の多い順）。**時点が2023年以前の人数・時点のない人数は次点（next_candidates）**。公式に人数がない・開けなかった会社は unverified、県外本社の拠点は _reference._outside_hq。",
+  "candidate_sources": [
+   "**一般社団法人茨城県情報サービス産業協会（IBIS）** https://www.ibis.or.jp/ の『会員企業』https://www.ibis.or.jp/member : 正会員83・賛助会員7（2026-11-06に取得、名簿の時点の記載なし）。社名・住所・URL・得意分野の印（業務システム・Web・AI・DX・RPA など）。協会の名称はサイトのタイトル「【IBIS】社団法人茨城県情報サービス産業協会」と、カストマシステム・エムシー・システムゼロワンなどの会社概要の所属団体の欄で確かめた（サイトのタイトルは「社団法人」、会社概要の一部は「一般社団法人」と書く。法人格は確かめていない）。設立日 平成8年7月22日（協会概要）。全国地域情報産業団体連合会（ANIA）の会員リンク集には載っていない",
+   "茨城県『チャレンジいばらき就職フェア』の参加企業一覧・企業PRシート（県のしごと情報いばらき）。令和7年度の水戸会場（7月8日）・つくば会場（6月22日）の参加企業一覧（業種順、PDF テキスト）と、令和7年度10月30日・令和8年度6月21日/7月6日/10月9日の PR シート（画像PDF。所在地を目で読み、ホームページの QR コードを OpenCV で読んだ）。https://www.pref.ibaraki.jp/shokorodo/rosei/rodo/r8challenge0706am.html など。IBIS 未加入の会社（日本コンピュータシステム・アイ・テー・シー・コスダック・サポートワーカー・クロス・アイ）はここから見つけた",
+   "日立グループの情報系子会社: 日立産業制御ソリューションズ（茨城本社 日立市）を公式で確かめた。インフォメーション・ディベロプメント・日本テクノストラクチャアは本社が東京",
+   "IIS（いばらき中小企業グローバル推進機構）の企業情報・市の企業紹介は見ていない（IBIS の名簿で足りたため）",
+   "就職サイト（マイナビ）・比較サイト（compalyze など）・イプロス: secondary。社名と所在地の手がかりにだけ使った",
+   "WebSearch（担当上限12回のうち10回を使用）"
+  ],
+  "columns": "name / hq（公式の本社住所）/ municipality / town / employees{value,as_of,source} / capital / founded / business_summary / ai_initiative / url / size_basis / checked / notes",
+  "industry_stats": {
+   "source": "令和3年経済センサス‐活動調査 事業所に関する集計 産業横断的集計 第6-1表（民営事業所、2021年6月1日）statInfId=000040067880 https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040067880&fileKind=0 （stats 担当が取得したファイルを使い回し、自治体コード 08000・08201 などの行を抽出。stats.md の ec_6_1 と同じ表）",
+   "ibaraki_pref": {
+    "G_情報通信業": {
+     "establishments": 846,
+     "workers": 19466
+    },
+    "37_通信業": {
+     "establishments": 29,
+     "workers": 273
+    },
+    "39_情報サービス業": {
+     "establishments": 573,
+     "workers": 14921
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": 78,
+     "workers": 3065
+    },
+    "AR_全産業（公務を除く）": {
+     "establishments": 108602,
+     "workers": 1237104
+    },
+    "share_note": "情報通信業の従業者は全産業の1.6%（19,466÷1,237,104）、情報サービス業は1.2%（14,921÷1,237,104）。自分で計算"
+   },
+   "by_municipality": {
+    "水戸市": {
+     "code": "08201",
+     "G_情報通信業": {
+      "establishments": 154,
+      "workers": 3109
+     },
+     "39_情報サービス業": {
+      "establishments": 95,
+      "workers": 2385
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 18,
+      "workers": 117
+     },
+     "全産業": {
+      "establishments": 12442,
+      "workers": 144093
+     }
+    },
+    "日立市": {
+     "code": "08202",
+     "G_情報通信業": {
+      "establishments": 85,
+      "workers": 6265
+     },
+     "39_情報サービス業": {
+      "establishments": 69,
+      "workers": 6098
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 3,
+      "workers": 47
+     },
+     "全産業": {
+      "establishments": 6148,
+      "workers": 83009
+     }
+    },
+    "土浦市": {
+     "code": "08203",
+     "G_情報通信業": {
+      "establishments": 55,
+      "workers": 1096
+     },
+     "39_情報サービス業": {
+      "establishments": 34,
+      "workers": 917
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 5,
+      "workers": 10
+     },
+     "全産業": {
+      "establishments": 5869,
+      "workers": 76348
+     }
+    },
+    "古河市": {
+     "code": "08204",
+     "G_情報通信業": {
+      "establishments": 22,
+      "workers": 127
+     },
+     "39_情報サービス業": {
+      "establishments": 13,
+      "workers": 55
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 3,
+      "workers": 5
+     },
+     "全産業": {
+      "establishments": 5686,
+      "workers": 58498
+     }
+    },
+    "石岡市": {
+     "code": "08205",
+     "G_情報通信業": {
+      "establishments": 11,
+      "workers": 79
+     },
+     "39_情報サービス業": {
+      "establishments": 8,
+      "workers": 71
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 1,
+      "workers": 1
+     },
+     "全産業": {
+      "establishments": 2846,
+      "workers": 25465
+     }
+    },
+    "結城市": {
+     "code": "08207",
+     "G_情報通信業": {
+      "establishments": 4,
+      "workers": 22
+     },
+     "39_情報サービス業": {
+      "establishments": 1,
+      "workers": 3
+     },
+     "40_インターネット附随サービス業": null,
+     "全産業": {
+      "establishments": 2132,
+      "workers": 21727
+     }
+    },
+    "龍ケ崎市": {
+     "code": "08208",
+     "G_情報通信業": {
+      "establishments": 13,
+      "workers": 35
+     },
+     "39_情報サービス業": {
+      "establishments": 6,
+      "workers": 20
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 3,
+      "workers": 4
+     },
+     "全産業": {
+      "establishments": 2335,
+      "workers": 27548
+     }
+    },
+    "下妻市": {
+     "code": "08210",
+     "G_情報通信業": {
+      "establishments": 8,
+      "workers": 22
+     },
+     "39_情報サービス業": {
+      "establishments": 4,
+      "workers": 16
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 1,
+      "workers": 2
+     },
+     "全産業": {
+      "establishments": 2035,
+      "workers": 19328
+     }
+    },
+    "常総市": {
+     "code": "08211",
+     "G_情報通信業": {
+      "establishments": 9,
+      "workers": 25
+     },
+     "39_情報サービス業": {
+      "establishments": 5,
+      "workers": 14
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 2,
+      "workers": 8
+     },
+     "全産業": {
+      "establishments": 2607,
+      "workers": 30109
+     }
+    },
+    "常陸太田市": {
+     "code": "08212",
+     "G_情報通信業": {
+      "establishments": 8,
+      "workers": 59
+     },
+     "39_情報サービス業": {
+      "establishments": 7,
+      "workers": 58
+     },
+     "40_インターネット附随サービス業": null,
+     "全産業": {
+      "establishments": 1621,
+      "workers": 12394
+     }
+    },
+    "高萩市": {
+     "code": "08214",
+     "G_情報通信業": {
+      "establishments": 2,
+      "workers": 14
+     },
+     "39_情報サービス業": null,
+     "40_インターネット附随サービス業": null,
+     "全産業": {
+      "establishments": 1037,
+      "workers": 10613
+     }
+    },
+    "北茨城市": {
+     "code": "08215",
+     "G_情報通信業": {
+      "establishments": 5,
+      "workers": 38
+     },
+     "39_情報サービス業": {
+      "establishments": 5,
+      "workers": 38
+     },
+     "40_インターネット附随サービス業": null,
+     "全産業": {
+      "establishments": 1494,
+      "workers": 17076
+     }
+    },
+    "笠間市": {
+     "code": "08216",
+     "G_情報通信業": {
+      "establishments": 7,
+      "workers": 13
+     },
+     "39_情報サービス業": {
+      "establishments": 4,
+      "workers": 7
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 1,
+      "workers": 4
+     },
+     "全産業": {
+      "establishments": 3132,
+      "workers": 26878
+     }
+    },
+    "取手市": {
+     "code": "08217",
+     "G_情報通信業": {
+      "establishments": 22,
+      "workers": 132
+     },
+     "39_情報サービス業": {
+      "establishments": 13,
+      "workers": 117
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 1,
+      "workers": 3
+     },
+     "全産業": {
+      "establishments": 2721,
+      "workers": 30589
+     }
+    },
+    "牛久市": {
+     "code": "08219",
+     "G_情報通信業": {
+      "establishments": 25,
+      "workers": 150
+     },
+     "39_情報サービス業": {
+      "establishments": 16,
+      "workers": 125
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 2,
+      "workers": 4
+     },
+     "全産業": {
+      "establishments": 2339,
+      "workers": 24150
+     }
+    },
+    "つくば市": {
+     "code": "08220",
+     "G_情報通信業": {
+      "establishments": 158,
+      "workers": 4603
+     },
+     "39_情報サービス業": {
+      "establishments": 111,
+      "workers": 1592
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 16,
+      "workers": 2790
+     },
+     "全産業": {
+      "establishments": 8208,
+      "workers": 132661
+     }
+    },
+    "ひたちなか市": {
+     "code": "08221",
+     "G_情報通信業": {
+      "establishments": 82,
+      "workers": 2133
+     },
+     "39_情報サービス業": {
+      "establishments": 74,
+      "workers": 2121
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 2,
+      "workers": 3
+     },
+     "全産業": {
+      "establishments": 5066,
+      "workers": 67565
+     }
+    },
+    "鹿嶋市": {
+     "code": "08222",
+     "G_情報通信業": {
+      "establishments": 13,
+      "workers": 132
+     },
+     "39_情報サービス業": {
+      "establishments": 3,
+      "workers": 103
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 2,
+      "workers": 2
+     },
+     "全産業": {
+      "establishments": 2300,
+      "workers": 31220
+     }
+    },
+    "潮来市": {
+     "code": "08223",
+     "G_情報通信業": null,
+     "39_情報サービス業": null,
+     "40_インターネット附随サービス業": null,
+     "全産業": {
+      "establishments": 1109,
+      "workers": 9264
+     }
+    },
+    "守谷市": {
+     "code": "08224",
+     "G_情報通信業": {
+      "establishments": 18,
+      "workers": 41
+     },
+     "39_情報サービス業": {
+      "establishments": 12,
+      "workers": 28
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 2,
+      "workers": 3
+     },
+     "全産業": {
+      "establishments": 2160,
+      "workers": 23554
+     }
+    },
+    "常陸大宮市": {
+     "code": "08225",
+     "G_情報通信業": {
+      "establishments": 6,
+      "workers": 11
+     },
+     "39_情報サービス業": {
+      "establishments": 5,
+      "workers": 10
+     },
+     "40_インターネット附随サービス業": null,
+     "全産業": {
+      "establishments": 1589,
+      "workers": 15009
+     }
+    },
+    "那珂市": {
+     "code": "08226",
+     "G_情報通信業": {
+      "establishments": 13,
+      "workers": 69
+     },
+     "39_情報サービス業": {
+      "establishments": 9,
+      "workers": 60
+     },
+     "40_インターネット附随サービス業": null,
+     "全産業": {
+      "establishments": 1808,
+      "workers": 17398
+     }
+    },
+    "筑西市": {
+     "code": "08227",
+     "G_情報通信業": {
+      "establishments": 18,
+      "workers": 49
+     },
+     "39_情報サービス業": {
+      "establishments": 8,
+      "workers": 25
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 1,
+      "workers": 1
+     },
+     "全産業": {
+      "establishments": 4338,
+      "workers": 41671
+     }
+    },
+    "坂東市": {
+     "code": "08228",
+     "G_情報通信業": {
+      "establishments": 3,
+      "workers": 13
+     },
+     "39_情報サービス業": {
+      "establishments": 1,
+      "workers": 2
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 1,
+      "workers": 1
+     },
+     "全産業": {
+      "establishments": 2438,
+      "workers": 24394
+     }
+    },
+    "稲敷市": {
+     "code": "08229",
+     "G_情報通信業": null,
+     "39_情報サービス業": null,
+     "40_インターネット附随サービス業": null,
+     "全産業": {
+      "establishments": 1607,
+      "workers": 15792
+     }
+    },
+    "かすみがうら市": {
+     "code": "08230",
+     "G_情報通信業": {
+      "establishments": 5,
+      "workers": 28
+     },
+     "39_情報サービス業": {
+      "establishments": 2,
+      "workers": 18
+     },
+     "40_インターネット附随サービス業": null,
+     "全産業": {
+      "establishments": 1439,
+      "workers": 15154
+     }
+    },
+    "桜川市": {
+     "code": "08231",
+     "G_情報通信業": {
+      "establishments": 2,
+      "workers": 28
+     },
+     "39_情報サービス業": {
+      "establishments": 2,
+      "workers": 28
+     },
+     "40_インターネット附随サービス業": null,
+     "全産業": {
+      "establishments": 1830,
+      "workers": 13572
+     }
+    },
+    "神栖市": {
+     "code": "08232",
+     "G_情報通信業": {
+      "establishments": 18,
+      "workers": 172
+     },
+     "39_情報サービス業": {
+      "establishments": 14,
+      "workers": 136
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 3,
+      "workers": 25
+     },
+     "全産業": {
+      "establishments": 4117,
+      "workers": 51873
+     }
+    },
+    "行方市": {
+     "code": "08233",
+     "G_情報通信業": {
+      "establishments": 2,
+      "workers": 6
+     },
+     "39_情報サービス業": {
+      "establishments": 1,
+      "workers": 1
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 1,
+      "workers": 5
+     },
+     "全産業": {
+      "establishments": 1450,
+      "workers": 11199
+     }
+    },
+    "鉾田市": {
+     "code": "08234",
+     "G_情報通信業": {
+      "establishments": 3,
+      "workers": 5
+     },
+     "39_情報サービス業": {
+      "establishments": 1,
+      "workers": 1
+     },
+     "40_インターネット附随サービス業": null,
+     "全産業": {
+      "establishments": 1608,
+      "workers": 12878
+     }
+    },
+    "つくばみらい市": {
+     "code": "08235",
+     "G_情報通信業": {
+      "establishments": 9,
+      "workers": 197
+     },
+     "39_情報サービス業": {
+      "establishments": 5,
+      "workers": 191
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 2,
+      "workers": 2
+     },
+     "全産業": {
+      "establishments": 1394,
+      "workers": 18180
+     }
+    },
+    "小美玉市": {
+     "code": "08236",
+     "G_情報通信業": {
+      "establishments": 3,
+      "workers": 4
+     },
+     "39_情報サービス業": null,
+     "40_インターネット附随サービス業": null,
+     "全産業": {
+      "establishments": 1754,
+      "workers": 22056
+     }
+    },
+    "茨城町": {
+     "code": "08302",
+     "G_情報通信業": {
+      "establishments": 2,
+      "workers": 3
+     },
+     "39_情報サービス業": {
+      "establishments": 2,
+      "workers": 3
+     },
+     "40_インターネット附随サービス業": null,
+     "全産業": {
+      "establishments": 1195,
+      "workers": 13452
+     }
+    },
+    "大洗町": {
+     "code": "08309",
+     "G_情報通信業": {
+      "establishments": 5,
+      "workers": 67
+     },
+     "39_情報サービス業": {
+      "establishments": 3,
+      "workers": 65
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 1,
+      "workers": 1
+     },
+     "全産業": {
+      "establishments": 820,
+      "workers": 7746
+     }
+    },
+    "城里町": {
+     "code": "08310",
+     "G_情報通信業": {
+      "establishments": 1,
+      "workers": 1
+     },
+     "39_情報サービス業": {
+      "establishments": 1,
+      "workers": 1
+     },
+     "40_インターネット附随サービス業": null,
+     "全産業": {
+      "establishments": 602,
+      "workers": 4232
+     }
+    },
+    "東海村": {
+     "code": "08341",
+     "G_情報通信業": {
+      "establishments": 18,
+      "workers": 471
+     },
+     "39_情報サービス業": {
+      "establishments": 16,
+      "workers": 469
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 2,
+      "workers": 2
+     },
+     "全産業": {
+      "establishments": 1125,
+      "workers": 17250
+     }
+    },
+    "大子町": {
+     "code": "08364",
+     "G_情報通信業": {
+      "establishments": 4,
+      "workers": 14
+     },
+     "39_情報サービス業": null,
+     "40_インターネット附随サービス業": null,
+     "全産業": {
+      "establishments": 880,
+      "workers": 5559
+     }
+    },
+    "美浦村": {
+     "code": "08442",
+     "G_情報通信業": {
+      "establishments": 5,
+      "workers": 64
+     },
+     "39_情報サービス業": {
+      "establishments": 2,
+      "workers": 2
+     },
+     "40_インターネット附随サービス業": null,
+     "全産業": {
+      "establishments": 588,
+      "workers": 6465
+     }
+    },
+    "阿見町": {
+     "code": "08443",
+     "G_情報通信業": {
+      "establishments": 15,
+      "workers": 127
+     },
+     "39_情報サービス業": {
+      "establishments": 12,
+      "workers": 114
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 3,
+      "workers": 13
+     },
+     "全産業": {
+      "establishments": 1498,
+      "workers": 19697
+     }
+    },
+    "河内町": {
+     "code": "08447",
+     "G_情報通信業": {
+      "establishments": 1,
+      "workers": 2
+     },
+     "39_情報サービス業": null,
+     "40_インターネット附随サービス業": null,
+     "全産業": {
+      "establishments": 311,
+      "workers": 2543
+     }
+    },
+    "八千代町": {
+     "code": "08521",
+     "G_情報通信業": {
+      "establishments": 1,
+      "workers": 3
+     },
+     "39_情報サービス業": {
+      "establishments": 1,
+      "workers": 3
+     },
+     "40_インターネット附随サービス業": null,
+     "全産業": {
+      "establishments": 878,
+      "workers": 7573
+     }
+    },
+    "五霞町": {
+     "code": "08542",
+     "G_情報通信業": null,
+     "39_情報サービス業": null,
+     "40_インターネット附随サービス業": null,
+     "全産業": {
+      "establishments": 421,
+      "workers": 8064
+     }
+    },
+    "境町": {
+     "code": "08546",
+     "G_情報通信業": {
+      "establishments": 4,
+      "workers": 22
+     },
+     "39_情報サービス業": {
+      "establishments": 1,
+      "workers": 9
+     },
+     "40_インターネット附随サービス業": {
+      "establishments": 2,
+      "workers": 12
+     },
+     "全産業": {
+      "establishments": 1271,
+      "workers": 10989
+     }
+    },
+    "利根町": {
+     "code": "08564",
+     "G_情報通信業": {
+      "establishments": 7,
+      "workers": 15
+     },
+     "39_情報サービス業": {
+      "establishments": 7,
+      "workers": 15
+     },
+     "40_インターネット附随サービス業": null,
+     "全産業": {
+      "establishments": 354,
+      "workers": 2269
+     }
+    }
+   },
+   "notes": [
+    "情報サービス業（39）の従業者は日立市6,098人が県の40.9%（6,098÷14,921）、水戸市2,385人16.0%、ひたちなか市2,121人14.2%、つくば市1,592人10.7%、土浦市917人6.1%。自分で計算",
+    "インターネット附随サービス業（40）は県計78所・3,065人のうちつくば市が16所・2,790人（91.0%）。中分類の値なので個別の事業所の名前は分からない。記事でつくば市の「IT 企業の集積」と結びつけない（1〜2の大きな事業所の値の可能性）",
+    "「-」は該当なし（潮来市・稲敷市・五霞町は情報通信業そのものが「-」）。秘匿（X）の行はなかった",
+    "東海村は情報サービス業16所・469人（村の全産業17,250人の2.7%）と、町村では際立って多い"
+   ]
+  }
+ },
+ "mito": [
+  {
+   "name": "株式会社ユードム",
+   "hq": "茨城県水戸市城南1-5-11（本社）。東京本社（東京都千代田区富士見2-7-2）・土浦支社・名古屋あり",
+   "municipality": "水戸市",
+   "town": "城南",
+   "employees": {
+    "value": 429,
+    "as_of": "429名（2026年4月1日現在）／ユードムグループ計540名",
+    "source": "https://www.udom.co.jp/company/index.html"
+   },
+   "capital": {
+    "value": "9,520万円",
+    "source": "https://www.udom.co.jp/company/index.html"
+   },
+   "founded": 1976,
+   "business_summary": "1976年9月設立。システム及びソフトウェアの設計・開発及び保守。2023年4月にコスモ開発をグループ化。グループに土浦市のデンサン",
+   "ai_initiative": "**生成AIコンサルティング**: アーストラベル水戸（水戸市）向けに Google Workspace Studio・Gemini・GAS で名簿と入金データの照合を自動化（自社の PR TIMES 2026-05-12。cases.md の1番）。トップのお知らせに「ユードム、茨城県産業技術イノベーションセンターの中小企業AI活用支援事業に採択。」 https://www.udom.co.jp/",
+   "url": "https://www.udom.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "**東京本社もある**（二本社の表記）が、会社概要の「本社所在地」は水戸市。IBIS 会員（会長会社かは見ていない）。他県の記事に出ない"
+  },
+  {
+   "name": "常陽コンピューターサービス株式会社",
+   "hq": "茨城県水戸市西原2-16-25（所在地）",
+   "municipality": "水戸市",
+   "town": "西原",
+   "employees": {
+    "value": 138,
+    "as_of": "138名（男性66名、女性72名）（2025年4月1日現在）",
+    "source": "https://www.joyonet.jp/company/index.html"
+   },
+   "capital": {
+    "value": "4,750万円（株主 常陽銀行 100％）",
+    "source": "https://www.joyonet.jp/company/index.html"
+   },
+   "founded": 1973,
+   "business_summary": "1973年4月設立（常陽銀行事務センター内）。IT コンサルティング、データ処理サービス（給与計算アウトソーシング、口座振替集中サービス、公金収納情報データ化）、ソフトウェア開発・クラウドサービス",
+   "ai_initiative": "トップメッセージで「近年は、クラウド化やAIなどの技術革新が急速に進展しており」と触れるだけ。AI の製品・事例は書かれていない https://www.joyonet.jp/company/topmessage.html",
+   "url": "https://www.joyonet.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "**常陽銀行の100％子会社**（記事で「地元の独立系」と書かない）。IBIS 会員。他県の記事に出ない"
+  },
+  {
+   "name": "デジタルサーブ株式会社",
+   "hq": "茨城県水戸市白梅2-3-16（本社）。東京支店（港区港南）・第２開発センター（水戸市城南）",
+   "municipality": "水戸市",
+   "town": "白梅",
+   "employees": {
+    "value": 93,
+    "as_of": "93名（2026年4月1日現在）",
+    "source": "https://www.digital-serve.co.jp/company/"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.digital-serve.co.jp/company/"
+   },
+   "founded": 1993,
+   "business_summary": "平成5年10月設立（有限会社アルテック）。システム開発（金融・業務系）、RPA・AI-OCR の販売",
+   "ai_initiative": "トップに「Smart AI OCR」（「手書き書類や帳票の文字読取を行い、データ化するAI技術を使ったOCRサービス」）と「Smart RPA ・ Smart AI OCR の販売を開始しました。」 https://www.digital-serve.co.jp/",
+   "url": "https://www.digital-serve.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "IBIS 会員。マイナビの「85名」（secondary）とは時点が違う。他県の記事に出ない"
+  },
+  {
+   "name": "株式会社コンピューター総合研究所",
+   "hq": "茨城県水戸市宮町2-3-8 水戸駅前総研ビル（本社）。東京営業所あり",
+   "municipality": "水戸市",
+   "town": "宮町",
+   "employees": {
+    "value": 91,
+    "as_of": "91名（2024年4月現在）",
+    "source": "https://www.tokyo-cal.co.jp/company-profile"
+   },
+   "capital": {
+    "value": "4,000万円",
+    "source": "https://www.tokyo-cal.co.jp/company-profile"
+   },
+   "founded": 1986,
+   "business_summary": "1986年12月23日設立。システムの受託開発、第三者検証、SES、IoT・AIサービス事業",
+   "ai_initiative": "会社概要の事業内容に「IoT・AIサービス事業」。製品名・事例は会社概要には書かれていない https://www.tokyo-cal.co.jp/company-profile",
+   "url": "https://www.tokyo-cal.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "ドメインは tokyo-cal だが本社は水戸市。**人数の時点が2024年4月**。IBIS 会員。他県の記事に出ない"
+  },
+  {
+   "name": "東水戸データーサービス株式会社",
+   "hq": "茨城県水戸市笠原町600-116（所在地）",
+   "municipality": "水戸市",
+   "town": "笠原町",
+   "employees": {
+    "value": 72,
+    "as_of": "72名（令和8年4月現在）",
+    "source": "https://www.e-hds.com/company.html"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.e-hds.com/company.html"
+   },
+   "founded": 1996,
+   "business_summary": "1996年12月設立。データエントリサービス、スタッフ派遣（プログラマ・SE）、デジタルプリント・スキャニング、システム開発（施設・販売・在庫・会計管理）。取引先は官公庁・自治体・公共団体など",
+   "ai_initiative": "会社概要に AI の記載は見つからなかった",
+   "url": "https://www.e-hds.com/",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "主な業務はデータ入力（情報処理サービス）で、システム開発も事業に書いている（鹿児島の南日本情報処理センターと同じ扱いで本表に入れた。親が外してよい）。IBIS 会員。他県の記事に出ない"
+  },
+  {
+   "name": "株式会社日本コンピュータシステム",
+   "hq": "茨城県水戸市中央1丁目3番38号（所在地）",
+   "municipality": "水戸市",
+   "town": "中央",
+   "employees": {
+    "value": 61,
+    "as_of": "61名（2026年4月・関連会社含む）",
+    "source": "https://www.kkjcs.co.jp/company/"
+   },
+   "capital": {
+    "value": "2,000万円",
+    "source": "https://www.kkjcs.co.jp/company/"
+   },
+   "founded": 1991,
+   "business_summary": "1991年（平成3年）4月設立。コンピュータソフトウェアの開発（受託開発・派遣）。上海の合弁会社・ハノイの事務所（関連会社）",
+   "ai_initiative": "会社概要に AI の記載は見つからなかった",
+   "url": "https://www.kkjcs.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "**人数は関連会社を含む**。IBIS の会員一覧には載っていない（県の就職フェアの PR シートから見つけた）。他県の記事に出ない"
+  }
+ ],
+ "hitachi": [
+  {
+   "name": "株式会社日立産業制御ソリューションズ",
+   "hq": "茨城県日立市大みか町五丁目1番26号（茨城本社）。東京本社は東京都台東区秋葉原6番1号",
+   "municipality": "日立市",
+   "town": "大みか町",
+   "employees": {
+    "value": 3524,
+    "as_of": "3,524名（［2026年4月］）",
+    "source": "https://info.hitachi-ics.co.jp/company/summary.html"
+   },
+   "capital": {
+    "value": "30億円（日立製作所 100％出資）",
+    "source": "https://info.hitachi-ics.co.jp/company/summary.html"
+   },
+   "founded": 2014,
+   "business_summary": "2014年（平成26年）4月設立。産業ソリューション、社会・公共ソリューション、CASE・IoT 向けデジタルエンジニアリングソリューション。売上高 828億円（2025年度）",
+   "ai_initiative": "会社案内のトップに「AIを活用した画像応用技術の実績、さらに生成AI・製造DX・SDxなどの最先端テクノロジーへの取り組んでいます」（原文のまま）https://info.hitachi-ics.co.jp/company/index.html",
+   "url": "https://www.hitachi-ics.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "**東京本社・茨城本社の二本社**（会社概要）で、**日立製作所の100％子会社**。中小企業の目安から大きく外れるので、記事では「日立グループの情報制御のソフト会社」程度にとどめるか、親が本表から外す判断をしてよい（鹿児島のソフトマックスは本社が東京だったので外した。ここは茨城本社が明記されている）。IBIS の会員一覧には載っていない。他県の記事に出ない"
+  },
+  {
+   "name": "株式会社茨城計算センター",
+   "hq": "茨城県日立市森山町4-8-2（本社）",
+   "municipality": "日立市",
+   "town": "森山町",
+   "employees": {
+    "value": 271,
+    "as_of": "令和6年4月1日現在 271名（グループ 761名）",
+    "source": "https://www.iacnet.co.jp/company.html"
+   },
+   "capital": {
+    "value": "2,000万円",
+    "source": "https://www.iacnet.co.jp/company.html"
+   },
+   "founded": 1965,
+   "business_summary": "1965年4月8日設立。地方自治体向けの業務システムの開発・運用、共同利用型のデータセンター、クラウドサービス、アウトソーシング、プログラム受託、OA 機器の販売",
+   "ai_initiative": "会社概要に AI の記載は見つからなかった",
+   "url": "https://www.iacnet.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "IBIS 会員。**人数の時点が令和6年4月**（2年半前）。マイナビの「335名」（secondary）とは数え方・時点が違う。他県の記事に出ない"
+  },
+  {
+   "name": "株式会社ユーメック",
+   "hq": "茨城県日立市大みか町4丁目25番11号（所在地）",
+   "municipality": "日立市",
+   "town": "大みか町",
+   "employees": {
+    "value": 117,
+    "as_of": "117名（2026年3月現在）",
+    "source": "https://www.yumec.net/outline.html"
+   },
+   "capital": {
+    "value": "6,500万円",
+    "source": "https://www.yumec.net/outline.html"
+   },
+   "founded": 1978,
+   "business_summary": "1978年3月29日設立（弓山産業の電子技術サービス部から独立）。上下水道・鉄道・電力など社会インフラの制御システムのハード・ソフトウェア設計、システム検査・現地試運転、電力・交通のアプリケーション開発。売上 13億7,000万円（2025年度）。主な取引先は日立製作所の大みか・水戸事業所など",
+   "ai_initiative": "会社概要に AI の記載は見つからなかった",
+   "url": "https://www.yumec.net/",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "「エンジニアリング会社」と名乗る（設計・検査が中心でソフト開発も含む）。IBIS 会員。他県の記事に出ない"
+  },
+  {
+   "name": "ティ・エス・ネットワークス株式会社",
+   "hq": "茨城県日立市幸町1丁目3番8号 東鉱ビル3F（本社）",
+   "municipality": "日立市",
+   "town": "幸町",
+   "employees": {
+    "value": 77,
+    "as_of": "77名（2026年4月時点）",
+    "source": "https://www.tsn.co.jp/about/"
+   },
+   "capital": {
+    "value": "3,000万円",
+    "source": "https://www.tsn.co.jp/about/"
+   },
+   "founded": 2009,
+   "business_summary": "平成21年4月設立。システム開発関連事業・パッケージシステム関連事業（「3Riseシリーズ」 Web-EDI連携型 販売生産手配システムなど）",
+   "ai_initiative": "会社概要に AI の記載は見つからなかった",
+   "url": "https://www.tsn.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "IBIS 会員。社長あいさつに「茨城に本社を構え」。他県の記事に出ない"
+  },
+  {
+   "name": "株式会社サイバーテック",
+   "hq": "茨城県日立市幸町二丁目1番22号 R&Dビル3F・4F（所在地）",
+   "municipality": "日立市",
+   "town": "幸町",
+   "employees": {
+    "value": 56,
+    "as_of": "56名（男性46名、女性10名）2025年7月現在",
+    "source": "https://www.cybtech.co.jp/company.html"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.cybtech.co.jp/company.html"
+   },
+   "founded": 1999,
+   "business_summary": "平成11年1月20日設立。システム開発、制御系ソフトウェア開発、情報処理サービス、ネットワークサービス、機械系CAD設計など。主要取引先は日立製作所・日立パワーソリューションズ・日立産業制御ソリューションズなど",
+   "ai_initiative": "会社概要に AI の記載は見つからなかった",
+   "url": "https://www.cybtech.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "IBIS 会員。宮崎県の companies.json に同じ名前の別会社（宮崎）が出るが別法人。茨城の会社は他県の記事に出ない"
+  },
+  {
+   "name": "株式会社システムクラフト",
+   "hq": "茨城県日立市水木町2丁目43番15号 みかの原ビル1F（2025年3月に本社移転。沿革）",
+   "municipality": "日立市",
+   "town": "水木町",
+   "employees": {
+    "value": 28,
+    "as_of": "28名（男20名 女8名）2026年05月01日現在",
+    "source": "https://www.sc-net.co.jp/company/"
+   },
+   "capital": {
+    "value": "1,100万円",
+    "source": "https://www.sc-net.co.jp/company/"
+   },
+   "founded": 1987,
+   "business_summary": "1987年7月設立。システム開発関連事業・ネットワーク関連事業・人材派遣関連事業。売上高 2億5,185万円（2026年3月実績）",
+   "ai_initiative": "会社概要に AI の記載は見つからなかった",
+   "url": "https://www.sc-net.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "IBIS 会員。会社概要の表に住所がなく、所在地は沿革の「本社移転 ⇒ 茨城県日立市水木町2丁目43番15号 みかの原ビル1F」（2025年3月）と IBIS の一覧で確かめた。他県の記事に出ない"
+  }
+ ],
+ "tsuchiura": [
+  {
+   "name": "関東情報サービス株式会社",
+   "hq": "茨城県土浦市卸町一丁目1番1号 関鉄つくばビル（本社）。営業部オフィス（土浦市西根西）・つくばオフィス",
+   "municipality": "土浦市",
+   "town": "卸町",
+   "employees": {
+    "value": 230,
+    "as_of": "230名（2026年4月現在）",
+    "source": "https://www.kisl.co.jp/company/"
+   },
+   "capital": {
+    "value": "4,000万円",
+    "source": "https://www.kisl.co.jp/company/"
+   },
+   "founded": 1971,
+   "business_summary": "1971年10月16日設立（土浦市）。業務システム・基幹系システムの開発・運用保守、ソフトウェアの品質検証、キャリアサービス",
+   "ai_initiative": "**法人向け生成AIサービス「KiSChat」**: トップに「入力した内容がAIの学習に使われないため、社外秘の情報も安心してご利用いただけます。社内の規程やマニュアルを読み込ませれば、自社の情報に基づいた回答が得られます。」、事業内容に「新技術のAI活用」 https://www.kisl.co.jp/",
+   "url": "https://www.kisl.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "IBIS 会員。他県の記事に出ない"
+  },
+  {
+   "name": "アイ・テー・シー株式会社",
+   "hq": "茨城県土浦市卸町1-1-1 関鉄つくばビル5階（本社）。東京事業所（千代田区内神田）",
+   "municipality": "土浦市",
+   "town": "卸町",
+   "employees": {
+    "value": 73,
+    "as_of": "73名 (2025年10月)",
+    "source": "https://www.itckk.co.jp/about/"
+   },
+   "capital": {
+    "value": "3000万円",
+    "source": "https://www.itckk.co.jp/about/"
+   },
+   "founded": 1991,
+   "business_summary": "1991年5月31日設立。車載機器・計測機器の組込みシステム開発、公共サービス・企業基幹システムの開発・保守・運用支援、研究機関での AI・ロボットなど先端技術の研究支援",
+   "ai_initiative": "企業情報に「研究機関における人工知能（AI）やロボットなど、先端技術の研究支援」、トップに「AI、ロボット等先端技術を提供いたします。」 https://www.itckk.co.jp/about/",
+   "url": "https://www.itckk.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "IBIS の会員一覧には載っていない（県の就職フェアの PR シート・参加企業一覧から見つけた）。他県の記事に出ない"
+  },
+  {
+   "name": "株式会社デンサン",
+   "hq": "茨城県土浦市港町二丁目2番10号（本社）。東京事務所あり",
+   "municipality": "土浦市",
+   "town": "港町",
+   "employees": {
+    "value": 68,
+    "as_of": "68名（2026年4月1日現在）／ユードムグループ計540名",
+    "source": "https://www.den3.co.jp/about/"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.den3.co.jp/about/"
+   },
+   "founded": 1984,
+   "business_summary": "1984年4月設立。業務系・制御系ソフトウェア設計開発、運用、保守、ネットワーク構築支援",
+   "ai_initiative": "会社概要に AI の記載は見つからなかった",
+   "url": "https://www.den3.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "**ユードム（水戸市）のグループ会社**（代表取締役社長はユードムと同じ森 淳一）。IBIS 会員。宮崎市・四国中央市の記事に出る「デンサン」は別会社（別ドメイン densan）"
+  }
+ ],
+ "koga": [],
+ "ishioka": [],
+ "yuki": [],
+ "ryugasaki": [],
+ "shimotsuma": [],
+ "joso": [],
+ "hitachiota": [],
+ "takahagi": [],
+ "kitaibaraki": [],
+ "kasama": [],
+ "toride": [],
+ "ushiku": [],
+ "tsukuba": [],
+ "hitachinaka": [
+  {
+   "name": "株式会社ＮＥＳＩ",
+   "hq": "茨城県ひたちなか市東石川 3600-3（本社）",
+   "municipality": "ひたちなか市",
+   "town": "東石川",
+   "employees": {
+    "value": 360,
+    "as_of": "360名（令和7年4月現在）",
+    "source": "https://www.nesi.co.jp/company/"
+   },
+   "capital": {
+    "value": "20百万円",
+    "source": "https://www.nesi.co.jp/company/"
+   },
+   "founded": 1984,
+   "business_summary": "昭和59年（1984）3月、原子力システム株式会社として東京都港区で設立。2014年3月に本店をひたちなか市に移転。総合情報システムサービス（主要取引先は日本原子力研究開発機構・量子科学技術研究開発機構・日本原燃・富士通・茨城県など）",
+   "ai_initiative": "会社概要に AI の記載は見つからなかった（IBIS の一覧では得意分野に「AI」の印）",
+   "url": "https://www.nesi.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "**主な取引先が原子力の研究機関・事業者**。記事では原子力に触れず「研究機関などの情報システムの会社」程度にする（_brief の原子力の扱い）。青森県の companies.json に「本社は茨城県ひたちなか市」として対象外で出る。IBIS 会員"
+  },
+  {
+   "name": "株式会社Ｃ＆Ａホールディングス",
+   "hq": "茨城県ひたちなか市東石川3-1-3 C&Aビル（本社）",
+   "municipality": "ひたちなか市",
+   "town": "東石川",
+   "employees": {
+    "value": 131,
+    "as_of": "131名（2026年10月現在）※グループ全体146名",
+    "source": "https://canda.co.jp/about/"
+   },
+   "capital": {
+    "value": "4,000万円",
+    "source": "https://canda.co.jp/about/"
+   },
+   "founded": 2001,
+   "business_summary": "2001年4月2日設立（有限会社シーアンドエーソリューション）。システムソリューション、SE サービス、ネットワークエンジニアリング、ソフトウェア受託開発、システム維持・保守。売上 26億5,000万円（2025年）。主要取引先は NTT データグループ・SCSK・筑波銀行など",
+   "ai_initiative": "会社概要に AI の記載は見つからなかった",
+   "url": "https://canda.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "IBIS 会員（同じビルに iCA も会員）。他県の記事に出ない"
+  },
+  {
+   "name": "株式会社 コスダック",
+   "hq": "茨城県ひたちなか市足崎1474番地270（本社）。東京営業所・つくばオフィス",
+   "municipality": "ひたちなか市",
+   "town": "足崎",
+   "employees": {
+    "value": 97,
+    "as_of": "97名 ※令和6年4月末日現在",
+    "source": "https://www.cosdac.co.jp/gai.html"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.cosdac.co.jp/gai.html"
+   },
+   "founded": 2001,
+   "business_summary": "平成13年4月2日設立（有限会社ビジネステック水戸として水戸市で創業）。システム構築コンサルティング、業務システム設計・ソフトウェア開発、ネットワーク管理・保守、ホームページ作成、ハード・パッケージ販売",
+   "ai_initiative": "会社概要に AI の記載は見つからなかった",
+   "url": "https://www.cosdac.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "**人数の時点が令和6年4月**。IBIS の会員一覧には載っていない。他県の記事に出ない"
+  },
+  {
+   "name": "株式会社サポートワーカー",
+   "hq": "茨城県ひたちなか市表町2番3号（所在地）",
+   "municipality": "ひたちなか市",
+   "town": "表町",
+   "employees": {
+    "value": 30,
+    "as_of": "約30名 (2024年4月現在)",
+    "source": "https://supportworker.co.jp/company.html"
+   },
+   "capital": {
+    "value": "三千万円",
+    "source": "https://supportworker.co.jp/company.html"
+   },
+   "founded": 1997,
+   "business_summary": "1997年12月16日設立。システム開発支援、システム保守・運用、ソフトウェアの研究開発・請負、ハードウェアの設計開発、技術者派遣。主要取引先は日立産業制御ソリューションズ・日立製作所・日立パワーソリューションズ",
+   "ai_initiative": "会社概要に AI の記載は見つからなかった",
+   "url": "https://supportworker.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "**人数が「約30名」で時点が2024年4月**。IBIS の会員一覧には載っていない。他県の記事に出ない"
+  },
+  {
+   "name": "株式会社I-RIS",
+   "hq": "茨城県ひたちなか市西大島 1-9-45 MDsite 3F（本社）",
+   "municipality": "ひたちなか市",
+   "town": "西大島",
+   "employees": {
+    "value": 7,
+    "as_of": "7名（2025年4月1日現在）",
+    "source": "http://www.ibaraki-ris.co.jp/?page_id=89"
+   },
+   "capital": {
+    "value": "1,000,000円",
+    "source": "http://www.ibaraki-ris.co.jp/?page_id=89"
+   },
+   "founded": 2015,
+   "business_summary": "2015年9月1日設立。システム受託開発。主要取引先は日立製作所・日立パワーソリューションズ・日立Astemo",
+   "ai_initiative": "会社概要に AI の記載は見つからなかった（IBIS の一覧では得意分野に「AI」の印）",
+   "url": "http://www.ibaraki-ris.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "IBIS 会員。他県の記事に出ない"
+  }
+ ],
+ "kashima": [],
+ "itako": [],
+ "moriya": [],
+ "hitachiomiya": [],
+ "naka": [],
+ "chikusei": [],
+ "bando": [],
+ "inashiki": [],
+ "kasumigaura": [],
+ "sakuragawa": [],
+ "kamisu": [
+  {
+   "name": "株式会社 ユメニティ",
+   "hq": "茨城県神栖市大野原3-10-1 池田ビル2F（所在地のページ）",
+   "municipality": "神栖市",
+   "town": "大野原",
+   "employees": {
+    "value": 49,
+    "as_of": "49名(男性41名 女性8名)（2025年4月現在）",
+    "source": "https://www.umenity.co.jp/company/"
+   },
+   "capital": {
+    "value": "2,000万円",
+    "source": "https://www.umenity.co.jp/company/"
+   },
+   "founded": 1998,
+   "business_summary": "1998年3月2日設立（有限会社ユ・メニティシステム）。2005年5月に本社を鹿島郡神栖町大野原へ移転。主要取引先はキヤノンITソリューションズ・日鉄ソリューションズ東日本・NECソリューションイノベータ・ユードムなど（ソフト開発の受託とみられるが、事業内容の文は会社概要の表で確かめていない）",
+   "ai_initiative": "会社概要に AI の記載は見つからなかった",
+   "url": "https://www.umenity.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "IBIS 会員。鹿行地域で本表に入るのはこの1社だけ。他県の記事に出ない"
+  }
+ ],
+ "namegata": [],
+ "hokota": [],
+ "tsukubamirai": [],
+ "omitama": [],
+ "ibaraki-town": [],
+ "oarai": [],
+ "shirosato": [],
+ "daigo": [],
+ "ami": [],
+ "kawachi": [],
+ "yachiyo": [],
+ "goka": [],
+ "sakai-town": [],
+ "tone": [],
+ "tokai": [
+  {
+   "name": "株式会社 クロス・アイ",
+   "hq": "茨城県那珂郡東海村舟石川駅東4丁目8番9号 東昭ビルド3階 302号室（本社）",
+   "municipality": "東海村",
+   "town": "舟石川駅東",
+   "employees": {
+    "value": 18,
+    "as_of": "18名 （2026年4月現在）",
+    "source": "https://www.x-eye.co.jp/"
+   },
+   "capital": {
+    "value": "350万円",
+    "source": "https://www.x-eye.co.jp/"
+   },
+   "founded": 2019,
+   "business_summary": "2019年11月1日設立（東海村で創業）。システム開発。主要取引先はアズワン（日立市）・インフォメーション・ディベロプメント・日立社会情報サービス",
+   "ai_initiative": "会社概要に AI の記載は見つからなかった",
+   "url": "https://www.x-eye.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "IBIS の会員一覧には載っていない（県の就職フェアの PR シートから見つけた）。他県の記事に出ない"
+  }
+ ],
+ "miho": [],
+ "_reference": {
+  "mito": {
+   "next_candidates": [
+    {
+     "name": "株式会社アプリシエイト",
+     "hq": "茨城本社 茨城県水戸市三の丸1丁目1-3 ステーションフロント水戸 6F/7F、東京本社 東京都千代田区神田駿河台3-4",
+     "municipality": "水戸市",
+     "town": "三の丸",
+     "employees": {
+      "value": 130,
+      "as_of": "130名（時点の記載なし）",
+      "source": "https://all-appreciate.com/company/about/"
+     },
+     "capital": {
+      "value": "1億円",
+      "source": "https://all-appreciate.com/company/about/"
+     },
+     "founded": 2011,
+     "business_summary": "2011年3月3日創業。ソフトウェア開発（「ソフトウェア開発のジャンルにおいて最高品質の技術を提供する」）",
+     "ai_initiative": "記載なし",
+     "url": "https://all-appreciate.com/",
+     "size_basis": "employees",
+     "checked": "2026-11-06",
+     "notes": "**茨城本社・東京本社の二本社**で、人数に時点がない。大子町・常磐大学と連携協定。IBIS の会員一覧には載っていない"
+    },
+    {
+     "name": "株式会社アクトシステム",
+     "hq": "茨城県水戸市白梅3-12-10（本社）",
+     "municipality": "水戸市",
+     "town": "白梅",
+     "employees": {
+      "value": 45,
+      "as_of": "45名（うち女性13名）。時点の記載なし",
+      "source": "https://www.actsystem-inc.co.jp/company/index.html"
+     },
+     "capital": {
+      "value": "3000万円",
+      "source": "https://www.actsystem-inc.co.jp/company/index.html"
+     },
+     "founded": 1994,
+     "business_summary": "1994年6月6日設立（日立市で制御系ソフト開発会社として。のち水戸市へ本社移転）。アプリケーションソフト・情報システムの設計開発、Web、IT コンサル、パッケージ",
+     "ai_initiative": "記載なし",
+     "url": "https://www.actsystem-inc.co.jp/",
+     "size_basis": "employees",
+     "checked": "2026-11-06",
+     "notes": "人数に時点がない。広島県の「アクトシステムズ」（福山市）とは別会社"
+    },
+    {
+     "name": "株式会社トキワ",
+     "hq": "茨城県水戸市元石川町276-22（所在地）",
+     "municipality": "水戸市",
+     "town": "元石川町",
+     "employees": {
+      "value": 40,
+      "as_of": "40名（時点の記載なし）",
+      "source": "https://www.tokiwa-jp.com/companyprofile/companyoverview/"
+     },
+     "capital": {
+      "value": "40,000 千円",
+      "source": "https://www.tokiwa-jp.com/companyprofile/companyoverview/"
+     },
+     "founded": 1973,
+     "business_summary": "1973年2月28日創立。IT コンサルティング・インテグレーション、医療・介護施設向けシステム、Web、サーバー、ネットワーク・電話設備、情報通信機器の製造",
+     "ai_initiative": "**トップに「オンプレミス生成AI」「オンプレミス環境向け対話型生成AI基盤Private AI Platform on PRIMERGYをご紹介します。」**（富士通の製品の紹介） https://www.tokiwa-jp.com/",
+     "url": "https://www.tokiwa-jp.com/",
+     "size_basis": "employees",
+     "checked": "2026-11-06",
+     "notes": "人数に時点がない（マイナビは36名、secondary）"
+    },
+    {
+     "name": "株式会社 ユートピア",
+     "hq": "茨城県水戸市南町2丁目6番18号（オカバ水戸ビル6階）",
+     "municipality": "水戸市",
+     "town": "南町",
+     "employees": {
+      "value": 31,
+      "as_of": "31名（時点の記載なし）",
+      "source": "https://you-topia.co.jp/info"
+     },
+     "capital": {
+      "value": "800万円",
+      "source": "https://you-topia.co.jp/info"
+     },
+     "founded": 2007,
+     "business_summary": "2007年2月22日設立。ソフトウェアの設計・開発（Windows アプリ・組込み・FPGA など）",
+     "ai_initiative": "記載なし",
+     "url": "https://you-topia.co.jp/",
+     "size_basis": "employees",
+     "checked": "2026-11-06",
+     "notes": "人数に時点がない"
+    },
+    {
+     "name": "株式会社ロジックデザイン",
+     "hq": "茨城県水戸市大工町3-4-24 ハイジマビル2F（水戸本社）。宇都宮システムセンター",
+     "municipality": "水戸市",
+     "town": "大工町",
+     "employees": {
+      "value": 31,
+      "as_of": "31人（2022年12月31日現在）",
+      "source": "https://www.logic-design.co.jp/company/"
+     },
+     "capital": {
+      "value": "（会社概要で未確認）",
+      "source": "https://www.logic-design.co.jp/company/"
+     },
+     "founded": 1993,
+     "business_summary": "1993年4月設立の独立系ソフトハウス",
+     "ai_initiative": "記載なし",
+     "url": "https://www.logic-design.co.jp/",
+     "size_basis": "employees",
+     "checked": "2026-11-06",
+     "notes": "**人数の時点が2022年末で古い**ので次点"
+    },
+    {
+     "name": "株式会社ＴＥＣＯ",
+     "hq": "茨城県水戸市泉町3丁目7-30 ラ・フォンテーヌ201（IBIS の一覧。沿革に「本社を水戸市泉町に移転」）",
+     "municipality": "水戸市",
+     "town": "泉町",
+     "employees": {
+      "value": 30,
+      "as_of": "30名（時点の記載なし）",
+      "source": "https://www.tecosys.co.jp/info.html"
+     },
+     "capital": {
+      "value": "1,800万円",
+      "source": "https://www.tecosys.co.jp/info.html"
+     },
+     "founded": 2019,
+     "business_summary": "2019年7月10日設立（合同会社）。取引先は日立製作所・ユードム・C&A など（ソフト開発の受託とみられる）",
+     "ai_initiative": "記載なし",
+     "url": "https://www.tecosys.co.jp/",
+     "size_basis": "employees",
+     "checked": "2026-11-06",
+     "notes": "人数に時点がない"
+    },
+    {
+     "name": "株式会社 コムテック",
+     "hq": "茨城県水戸市千波町2466（所在地）",
+     "municipality": "水戸市",
+     "town": "千波町",
+     "employees": {
+      "value": 16,
+      "as_of": "16名（男14名、女2名）。時点の記載なし",
+      "source": "http://cmtc.co.jp/"
+     },
+     "capital": {
+      "value": "資本金1,000万円",
+      "source": "http://cmtc.co.jp/"
+     },
+     "founded": 1991,
+     "business_summary": "平成3年11月創業、平成16年9月株式会社へ。計測制御ソフトウェアの設計・開発",
+     "ai_initiative": "記載なし",
+     "url": "http://cmtc.co.jp/",
+     "size_basis": "employees",
+     "checked": "2026-11-06",
+     "notes": "人数に時点がない。守谷市のニチコムの関連会社欄の「株式会社コムテック」と同じ会社かは確かめていない"
+    }
+   ],
+   "unverified": [
+    "株式会社アイアイエス（水戸市城南1丁目7-5〔県の就職フェアの PR シート、2017年設立、ソフトウェア開発〕。公式の URL 未確認）",
+    "株式会社エムエス（水戸市姫子1丁目89番地1〔県の PR シート〕。公式の URL 未確認）",
+    "株式会社インフィックス（水戸市五軒町1-3-4、2001年5月設立。公式に人数がない）・株式会社ケルタ（水戸市南町、2016年設立。人数なし）・株式会社プライム（水戸市元吉田町。人数なし）・デジタルスクエア株式会社（水戸市大町、2002年設立。人数なし）・サーマルエンジニアリング株式会社（水戸市千波町、平成19年設立、ソフト開発・ネットワーク保守。人数なし）",
+    "株式会社クリアタクト（503）・株式会社ケーシーエス（403）・株式会社フロンティアシステム（TLS の鍵が古く接続できない）: IBIS の住所は水戸市"
+   ],
+   "excluded": [
+    "株式会社メディアクロス水戸（水戸市酒門町。印刷・地域情報誌。社員数45名〔時点なし〕）"
+   ]
+  },
+  "hitachi": {
+   "next_candidates": [
+    {
+     "name": "株式会社 セイワ・エフ・エス・ビー",
+     "hq": "茨城県日立市大みか町4-29-25（本社）。勝田事務所（ひたちなか市西大島）",
+     "municipality": "日立市",
+     "town": "大みか町",
+     "employees": {
+      "value": 45,
+      "as_of": "45名（時点の記載なし）",
+      "source": "https://www.seiwa-fsb.co.jp/companyprofile/"
+     },
+     "capital": {
+      "value": "2,150万円",
+      "source": "https://www.seiwa-fsb.co.jp/companyprofile/"
+     },
+     "founded": 2000,
+     "business_summary": "平成12年3月21日創立（有限会社セイワソフト、高萩市）。2021年7月に日立市大みか町に新社屋。主要取引先は日立製作所・日立パワーソリューションズなど",
+     "ai_initiative": "会社概要に AI の記載は見つからなかった",
+     "url": "https://www.seiwa-fsb.co.jp/",
+     "size_basis": "employees",
+     "checked": "2026-11-06",
+     "notes": "人数に時点がないので次点"
+    },
+    {
+     "name": "有限会社ドリームズ・カム・トゥルー",
+     "hq": "茨城県日立市大みか町3-21-12（本社／サポートセンター）。テクニカルセンター（千葉県柏市）",
+     "municipality": "日立市",
+     "town": "大みか町",
+     "employees": {
+      "value": 31,
+      "as_of": "31名（時点の記載なし）",
+      "source": "https://www.dreamscometrue.jp/contents/profile/index.html"
+     },
+     "capital": {
+      "value": "9,000,000円",
+      "source": "https://www.dreamscometrue.jp/contents/profile/index.html"
+     },
+     "founded": 1994,
+     "business_summary": "1994年10月13日設立。スマートフォンアプリ・PC パッケージソフト（「88星座図鑑」など）・受託開発・技術者派遣・Web 制作",
+     "ai_initiative": "記載なし",
+     "url": "https://www.dreamscometrue.jp/",
+     "size_basis": "employees",
+     "checked": "2026-11-06",
+     "notes": "人数に時点がないので次点。会社名を使った詐欺サイトへの注意を公式が掲示している"
+    }
+   ],
+   "unverified": [
+    "アイ・イー・シー株式会社（茨城県日立市大みか町1-11-10〔IBIS・県の PR シート〕。ソフトウェア・ハードウェア・保守。公式 https://www.iecha.co.jp/ はトップが JS 中心で、会社概要のページを見つけられなかった）",
+    "アイエンジニアリング株式会社（本社 日立市大みか町1-11-10 アイ・イー・シー別館、1996年2月1日設立、資本金1,000万円、システム開発・Web・ICT 教育支援。公式の会社概要に人数がない https://iengz.co.jp/company/outline/ ）",
+    "ＩＣＲテクノロジー株式会社（本社 日立市幸町1-20-2、開発センター 大みか町。電力・交通・医療のシステム開発。公式に人数がない https://www.icr-technology.co.jp/company.html ）",
+    "株式会社来希（日立市幸町1-4-8〔県の PR シート・IBIS〕。公式 https://www.k-raiki.co.jp/ は curl・WebFetch とも 503）",
+    "株式会社アズワン（日立市大みか町3-25-3〔県の PR シート〕。公式の URL を見つけられなかった）",
+    "株式会社ネクシモ（日立市大みか町4-27-32〔IBIS〕。公式の会社概要に人数がない）",
+    "株式会社シースリー（日立市大みか町1-27-7〔IBIS〕。公式は接続が切れた）・株式会社エムシーエー（大みか町〔IBIS〕。開いていない）",
+    "泰榮エンジニアリング株式会社（日立市助川町〔IBIS〕。機械設計が主。人数を確かめていない）"
+   ],
+   "excluded": [
+    "株式会社エイディエス（日立市多賀町。携帯電話の販売店。県の就職フェアでは情報通信業） https://aramaki-ads.com/about/ads/"
+   ]
+  },
+  "tsuchiura": {
+   "unverified": [
+    "株式会社ソフィア（土浦市桜町4丁目3-18 土浦ブリックビル2F。**トップに「AI(人工知能)事業」「AI (機械学習)導入支援サービス、コンサルティング」「AI (人工知能)による生育診断システムの実験検討」** https://www.sophia-sys.co.jp/ 。公式に人数がなく、マイナビの39名は secondary）",
+    "常磐システムエンジニアリング株式会社（土浦市港町。会社概要のページを見つけられなかった）・筑波総研株式会社（土浦市中央。接続できない）・株式会社エイビット（土浦市大和町、2001年設立、人数なし）・株式会社Web Connection（土浦市西根南、2023年設立、人数なし）"
+   ],
+   "next_candidates": [],
+   "excluded": []
+  },
+  "ryugasaki": {
+   "unverified": [
+    "株式会社 ニューライフ（龍ケ崎市出し山町145番地〔IBIS は「竜ヶ崎市」と表記〕。会社概要のページを開けなかった）"
+   ],
+   "next_candidates": [],
+   "excluded": []
+  },
+  "toride": {
+   "next_candidates": [
+    {
+     "name": "株式会社トータルシステムデザイン",
+     "hq": "茨城県取手市取手2-10-15 ナガタニビル5F（所在地）",
+     "municipality": "取手市",
+     "town": "取手",
+     "employees": {
+      "value": 50,
+      "as_of": "50名（男性34名：女性16名）。時点の記載なし",
+      "source": "https://www.kktsd.jp/company/outline.html"
+     },
+     "capital": {
+      "value": "1400万円（払込済）",
+      "source": "https://www.kktsd.jp/company/outline.html"
+     },
+     "founded": 1984,
+     "business_summary": "1984年6月設立。2013年に取手市取手に本社移転。売上高 6.99億（2026年5月期）。取引先は大塚商会・富士通・国土地理院・県内市町村役場など（SI・業務システム）",
+     "ai_initiative": "記載なし（IBIS の一覧では得意分野に DX の印）",
+     "url": "https://www.kktsd.jp/",
+     "size_basis": "employees",
+     "checked": "2026-11-06",
+     "notes": "人数に時点がない。IBIS 会員。取手市で見つかった唯一の候補"
+    }
+   ],
+   "excluded": [
+    "株式会社KSK（取手市新町。建設コンサルタント）"
+   ],
+   "unverified": []
+  },
+  "tsukuba": {
+   "next_candidates": [
+    {
+     "name": "ペンギンシステム株式会社",
+     "hq": "茨城県つくば市千現2-1-6 つくば研究支援センター CB10（所在地）",
+     "municipality": "つくば市",
+     "town": "千現",
+     "employees": {
+      "value": 29,
+      "as_of": "役員・社員数 29名（時点の記載なし）",
+      "source": "https://www.penguins.co.jp/company/"
+     },
+     "capital": {
+      "value": "2,500万円",
+      "source": "https://www.penguins.co.jp/company/"
+     },
+     "founded": 1983,
+     "business_summary": "1983年3月18日設立。コンピュータ・ソフトウェア・システムの設計・開発・運用・コンサルティング。文部科学省科研費の指定研究機関",
+     "ai_initiative": "公式に AI の事業の記載なし（2021年に将棋と AI の講演を開催した記録だけ）",
+     "url": "https://www.penguins.co.jp/",
+     "size_basis": "employees",
+     "checked": "2026-11-06",
+     "notes": "人数に時点がなく役員を含む。代表は一般社団法人茨城研究開発型企業交流協会（IRDA）の会長"
+    }
+   ],
+   "unverified": [
+    "株式会社アイナス（つくば市千現1-17-28-302、1992年6月25日設立、ソフトウェア受託開発・プロジェクト管理システム。公式に人数がない https://www.inas-net.co.jp/company/index.html ）",
+    "株式会社つくば情報システム（つくば市千現〔IBIS〕。会社概要が JS で開けなかった）",
+    "株式会社エイ・イー・エス（県の PR シートの所在地は「つくば市竹園1-6-1 つくばビルディング7階」。宇宙分野のエンジニアリング〔検索の要約、secondary〕。公式の URL・本社を確かめていない）"
+   ],
+   "excluded": [
+    "関彰商事株式会社（IBIS の住所はつくば市。エネルギー・自動車・IT などの総合商社でシステム開発が主ではない）",
+    "エキスパート株式会社（つくば市。保険代理店）"
+   ]
+  },
+  "hitachinaka": {
+   "next_candidates": [
+    {
+     "name": "インターソシオシステム株式会社",
+     "hq": "茨城県ひたちなか市春日町8-4（本社所在地）",
+     "municipality": "ひたちなか市",
+     "town": "春日町",
+     "employees": {
+      "value": 46,
+      "as_of": "46名（2018年01月現在）",
+      "source": "https://www.socio.co.jp/?page_id=13"
+     },
+     "capital": {
+      "value": "2,900万円",
+      "source": "https://www.socio.co.jp/?page_id=13"
+     },
+     "founded": 1995,
+     "business_summary": "旧勝田市馬渡で設立（平成7年）。ソフトウェア受託開発、IT ソリューション、保守運用、労働者派遣",
+     "ai_initiative": "記載なし",
+     "url": "https://www.socio.co.jp/",
+     "size_basis": "employees",
+     "checked": "2026-11-06",
+     "notes": "**人数の時点が2018年1月で古い**ので次点"
+    }
+   ],
+   "unverified": [
+    "アイムス株式会社（ひたちなか市田彦1637-5、2002年5月設立、資本金4,000万円。公式に人数がない）",
+    "株式会社エムシー（ひたちなか市東石川1622-5、1991年3月25日設立。公式に人数がない。IBIS 会員）",
+    "三和システム株式会社（沿革では本社をひたちなか市松戸町に移転〔1985年〕、トップの文は「三和システム(本社・東京オフィス)」。ゴルフ場の基幹パッケージ。人数・本社の表記を確かめきれていない）",
+    "株式会社ネクストコード（ひたちなか市新光町38 ひたちなかテクノセンター2F〔県の PR シート〕。公式 n-code.co.jp は証明書の検証に失敗）",
+    "株式会社エスディーエル（ひたちなか市元町10-11）・株式会社ネクサスソフトウェア（ひたちなか市勝田中央10-7）: 県の PR シートだけ。公式の URL 未確認",
+    "株式会社ｉＣＡ・株式会社システムリンク・株式会社シスペック・テクノソフト株式会社・株式会社東和電子: IBIS の住所はひたちなか市。人数を確かめていない"
+   ],
+   "excluded": [
+    "株式会社日本アクシス（ひたちなか市新光町。研究開発支援・実験設備。従業員171名〔2025年7月1日〕。株主 オープンアップグループ）",
+    "株式会社ひたちなかテクノセンター（県・市などが出資する産業支援の施設の会社）"
+   ]
+  },
+  "kashima": {
+   "unverified": [
+    "株式会社サクラ（鹿嶋市鉢形台2-17-3-101〔IBIS〕。公式は接続できない）"
+   ],
+   "next_candidates": [],
+   "excluded": []
+  },
+  "moriya": {
+   "excluded": [
+    "株式会社ニチコム（守谷市本町288-1。携帯電話の販売・情報通信関連。システム開発ではない）",
+    "メークス株式会社（守谷市。基礎鉄筋の製造販売）"
+   ],
+   "next_candidates": [],
+   "unverified": []
+  },
+  "naka": {
+   "unverified": [
+    "ＪＰＣ株式会社（那珂市横堀851-12〔IBIS〕。主要取引先に高エネルギー加速器研究機構。会社概要に人数を見つけられなかった）"
+   ],
+   "next_candidates": [],
+   "excluded": []
+  },
+  "chikusei": {
+   "excluded": [
+    "日本デイリーネット株式会社（筑西市。県の PR シートは情報通信業の欄の会社だが、公式の事業は配送センターの運営・倉庫業。本社機能は愛知県へ移転済み〔沿革〕）"
+   ],
+   "next_candidates": [],
+   "unverified": []
+  },
+  "tokai": {
+   "next_candidates": [
+    {
+     "name": "株式会社 アイエスアイ",
+     "hq": "茨城県那珂郡東海村舟石川駅西一丁目２-１ ポケットプラザビル １階（本社所在地）",
+     "municipality": "東海村",
+     "town": "舟石川駅西",
+     "employees": {
+      "value": 45,
+      "as_of": "45名（時点の記載なし）",
+      "source": "https://www.isi-mail.co.jp/isi/company/"
+     },
+     "capital": {
+      "value": "1,000万円",
+      "source": "https://www.isi-mail.co.jp/isi/company/"
+     },
+     "founded": 2003,
+     "business_summary": "平成15年7月設立。地域企業の IoT・DX による生産性改善（CSR の欄）",
+     "ai_initiative": "記載なし",
+     "url": "https://www.isi-mail.co.jp/isi/",
+     "size_basis": "employees",
+     "checked": "2026-11-06",
+     "notes": "人数に時点がない。北海道の companies に出る「アイエスアイ」は別会社"
+    },
+    {
+     "name": "株式会社システムゼロワン",
+     "hq": "茨城県那珂郡東海村舟石川駅東三丁目1番26 東成ビル2F（本社所在地）",
+     "municipality": "東海村",
+     "town": "舟石川駅東",
+     "employees": {
+      "value": 24,
+      "as_of": "２４名(業務委託含む)。時点の記載なし",
+      "source": "https://www.system-01.com/company/information.html"
+     },
+     "capital": {
+      "value": "１０００万円",
+      "source": "https://www.system-01.com/company/information.html"
+     },
+     "founded": 2004,
+     "business_summary": "2004年4月設立（有限会社）。2015年に本社を東海村に移転（常陸太田市商工会にも加盟）",
+     "ai_initiative": "記載なし",
+     "url": "https://www.system-01.com/",
+     "size_basis": "employees",
+     "checked": "2026-11-06",
+     "notes": "人数に時点がなく業務委託を含む"
+    },
+    {
+     "name": "カストマシステム株式会社",
+     "hq": "公式の会社概要に本社の住所がない。IBIS の一覧は「茨城県那珂郡東海村舟石川駅西1-3-3」、県の就職フェアの参加企業一覧は「カストマシステム 株式会社 茨城本社」",
+     "municipality": "東海村（IBIS の一覧）",
+     "town": "舟石川駅西",
+     "employees": {
+      "value": 204,
+      "as_of": "204名（2025年4月1日現在）",
+      "source": "https://www.csys.co.jp/corporate/profile.html"
+     },
+     "capital": {
+      "value": "7,000万円",
+      "source": "https://www.csys.co.jp/corporate/profile.html"
+     },
+     "founded": 1990,
+     "business_summary": "1990年11月14日設立。業種 情報処理サービス業。主要取引先は国土地理院・日本原子力研究開発機構・JAXA・産総研・物材機構・防災科研など",
+     "ai_initiative": "記載なし（IBIS の一覧では得意分野に「AI」の印）",
+     "url": "https://www.csys.co.jp/",
+     "size_basis": "employees",
+     "checked": "2026-11-06",
+     "notes": "**公式で本社の所在を確かめられなかった**（会社概要の表に住所がなく、アクセスのページは接続が切れた）。「茨城本社」という呼び方から別の本社がある可能性。所在が確かめられれば東海村の1位（親が判断）。所属団体に「茨城県情報サービス産業協会（IBIS）」"
+    }
+   ],
+   "unverified": [
+    "株式会社ヒューマンサポートテクノロジー（照合の節を参照。公式に人数がない）",
+    "株式会社 ポラリス（東海村舟石川駅西1-6-5、平成10年2月設立。情報処理システム開発と原子力の放射線管理。公式に人数がない）",
+    "NAIS株式会社（東海村村松416-1、平成2年6月設立。原子力の安全解析が主。会社概要に「AIサービス」、沿革に「茨城大学様とAIについて共同研究協定を結ぶ」〔令和6年6月〕。公式に人数がない〔マイナビ45名は secondary〕。**原子力の事業なので記事の AI の話には使わない**）"
+   ],
+   "excluded": [
+    "株式会社アセンド（東海村村松。原子力施設の技術サービス）",
+    "エイ・ティ・エス株式会社（東海村。放射性物質の輸送容器の設計）"
+   ]
+  },
+  "_outside_hq": [
+   {
+    "name": "株式会社インフォメーション・ディベロプメント",
+    "hq": "東京都千代田区（〒102-0076。公式の会社概要）",
+    "ibaraki_site": "日立市大みか町4丁目26-5（IBIS の一覧）。従業員数 1,931名（2026年9月30日現在、全社）。AI 研修・「ID AI コンシェルジュ」などを公式に掲載",
+    "source": "https://www.idnet.co.jp/corporate/about.html"
+   },
+   {
+    "name": "日本テクノストラクチャア株式会社",
+    "hq": "東京都府中市府中町1丁目10番3号（本社）",
+    "ibaraki_site": "日立技術センター（日立市久慈町。県の PR シート・IBIS）。社員数 287名（2026年6月、全社）",
+    "source": "https://www.nihon-tesco.co.jp/tesco/company/"
+   },
+   {
+    "name": "株式会社CEVOL",
+    "hq": "東京都豊島区（沿革「本社移転 ⇒東京都豊島区」）",
+    "ibaraki_site": "茨城事業所（ひたちなか市、2015年開設）。社員数31名（2026年07月01日現在、全社）",
+    "source": "https://www.cevol.jp/company/"
+   },
+   {
+    "name": "株式会社東日本計算センター",
+    "hq": "福島県いわき市平字研町2番地（県の PR シート）",
+    "ibaraki_site": "県の就職フェアに参加（茨城の拠点は確かめていない）",
+    "source": "https://www.eac-inc.co.jp/"
+   },
+   {
+    "name": "アクモス株式会社",
+    "hq": "県外（IBIS の名称が「茨城本部」）",
+    "ibaraki_site": "水戸市宮町一丁目2番4号 マイムビル10階（IBIS）。消防通信指令システム",
+    "source": "https://www.ibis.or.jp/member"
+   },
+   {
+    "name": "アルテンジャパン株式会社",
+    "hq": "県外とみられる（IBIS・県の PR シートの名称が「茨城本社」。公式 tounichi-g.co.jp は証明書の検証に失敗、http は「無効なURL」）",
+    "ibaraki_site": "日立市大みか町2丁目23番15号（IBIS）。WebSearch の要約では、県の資料に「株式会社東日本技術研究所は、本社（日立市）」とある（secondary）。社名の変遷は確かめていない",
+    "source": "https://www.ibis.or.jp/member"
+   },
+   {
+    "name": "NTT-ATテクノコミュニケーションズ・ジーシーシー・ジャパンテクニカルソフトウェア・レキオスソフト・エスティック・ドットネクスト・スタイル・マクニカ・バックス情報システム・ラフトレイド・エンジニアリング・コア・コスモ開発（ユードムグループ、東京都台東区）・エヌシーアイ総合システム（東京都中野区）・日本テクニカルシステム",
+    "hq": "県外",
+    "ibaraki_site": "IBIS の一覧で名称に「水戸事業所」「茨城支社」「水戸オフィス」「東関東カンパニー」などとある県内の拠点（コスモ開発・エヌシーアイは県外の住所のまま会員）",
+    "source": "https://www.ibis.or.jp/member"
+   },
+   {
+    "name": "日鉄ソリューションズ東日本株式会社",
+    "hq": "県外",
+    "ibaraki_site": "鹿島オフィス 鹿嶋市光3番地（日本製鉄 東日本製鉄所 鹿島地区と同じ住所。IBIS）",
+    "source": "https://www.ibis.or.jp/member"
+   },
+   {
+    "name": "東日本電信電話・日立製作所・富士通Japan",
+    "hq": "東京",
+    "ibaraki_site": "茨城支店（水戸市。IBIS の正会員・賛助会員）",
+    "source": "https://www.ibis.or.jp/member"
+   }
+  ],
+  "_verification": [
+   {
+    "name": "株式会社川崎製作所",
+    "requested": "ひたちなか市",
+    "corporate_number": "1050001006692",
+    "houjin": "本店 茨城県ひたちなか市新光町５５２番地７１（最終更新 令和2年3月26日。平成29年9月7日に「ひたちなか市阿字ケ浦町８２２番地の１」から移転）",
+    "official": "会社概要 https://www.kawasaki-ss.jp/company/outline/ : 住所 茨城県ひたちなか市新光町552-71、創立 1964年4月2日、設立 1978年4月28日、資本金 4千万円、代表取締役 川崎 達郎。主要取引先 IHI・三菱重工業・川崎重工業・日立ハイテク など。沿革に「新本社工場完成」（2017年）",
+    "employees": "**公式に従業員数の記載なし**（会社概要・採用の募集要項〔本社工場〕を見た）。厚労省「若者雇用促進総合サイト」の紹介ページ（所在地 新光町552-71、業種 製造業）にも人数は見つからなかった https://wakamono-koyou-sokushin.mhlw.go.jp/search/service/tokusetu/miryoku/08_ibaraki/kawasakiseisakusyo.html",
+    "result": "本社の所在（ひたちなか市新光町）は公式・法人番号で一致。従業員数は確かめられない。**創業の年が公式の中で食い違う**: 会社概要は「創立 1964年4月2日」、沿革は「1968年 05月 川崎長一郎個人にて創業」"
+   },
+   {
+    "name": "株式会社ハリガイ工業",
+    "requested": "常総市",
+    "corporate_number": "9050001030009",
+    "houjin": "本店 茨城県常総市大生郷町６１３９番地１（最終更新 平成30年8月2日）",
+    "official": "会社概要 https://www.harigai-kogyo.com/about-2/ : 本社 〒300-2521 茨城県常総市大生郷町6139-1、設立 1996年3月、資本金 1,900万円、事業 ゴム成型（ゴム成型加工部品の設計・開発及び製造）・製造受託・物流支援。沿革 2012年に大生郷工業団地内の本社工場へ本社機能を移管",
+    "employees": "**100名（2026年6月現在）**（公式の会社概要）。イプロスの掲載も100名（secondary）。WebSearch の要約に出た「160名」は確かめられなかった（secondary）",
+    "result": "本社（常総市大生郷町）・従業員数とも公式で確認。公式サイトに「吸着パッド」の語は見つからなかった（ITIC の資料の記述は cases.md のとおり）"
+   },
+   {
+    "name": "アーストラベル水戸株式会社",
+    "requested": "水戸市",
+    "corporate_number": "8050001005589",
+    "houjin": "本店 茨城県水戸市白梅２丁目６番４２号（最終更新 令和6年2月2日。令和6年2月1日に「水戸市白梅３丁目６番１１号」から移転）。法人番号指定年月日 平成27年10月5日",
+    "official": "会社概要 https://earthtravel2019.com/company/ : アーストラベル水戸(株)、〒310-0804 茨城県水戸市白梅2丁目6−42 ジャパンビル2階、代表取締役 尾崎 精彦。沿革「2007~2019 教育旅行・行政案件（主に茨城県庁）・企業案件に携わる。代表は稲葉英二。」「2020 … 12月 第三者承継し尾崎精彦が代表取締役に就任。」",
+    "employees": "**公式に従業員数の記載なし**（会社概要・メンバーのページ）。ユードムの PR TIMES の会社概要にも人数はない",
+    "result": "本社（水戸市白梅2-6-42）は公式・法人番号で一致。従業員数は確かめられない。**設立年が食い違う**: ユードムの PR TIMES（2026-05-12）の会社概要は「設立 ： 2019年」だが、公式の沿革は2007年から事業があり、法人番号の指定は平成27年（2015年）。cases.md の「設立 2019年」は使わず、「2020年12月に第三者承継（事業承継）」の事実を使うほうが安全"
+   },
+   {
+    "name": "株式会社ヒューマンサポートテクノロジー",
+    "requested": "東海村",
+    "corporate_number": "4050001037264",
+    "houjin": "本店 茨城県那珂郡東海村大字白方１７５２－１６シャルム東海店舗Ｂ号室（最終更新 令和6年8月27日。令和6年8月21日に「村松北２丁目１－８トーカイプラザＤ号室」から移転）",
+    "official": "企業情報 http://hstec.jp/aboutus （https は証明書の名前が合わず、http で開けた）: 所在地 〒319-1106 茨城県那珂郡東海村白方1752-16 シャルム東海店舗B号室、事業内容 ソフトウェア開発／画像認識システム開発／ホームページ管理等、代表取締役 小野 浩二。主な事業は画像認識・解析システムの開発（検査システム・ロボット制御の対象物検出・万引き防止システム）",
+    "employees": "**公式に従業員数の記載なし**（企業情報・採用情報）。第三者サイト（AI PICKS）の要約に「従業員規模は数名」（secondary、ページは 403 で開けない）",
+    "result": "本社（東海村白方）は公式・法人番号で一致。従業員数は確かめられない。**設立日が公式の中で食い違う**: 会社概要は「設 立 2012年3月16日」、沿革は「2012年3月 個人事業主として企業」「2014年3月 株式会社ヒューマンサポートテクノロジーとして法人化」。記事で設立年を書かない。群馬県の資料に出る「株式会社ヒューマンサポート（安中市）」は別会社"
+   }
+  ],
+  "_factories": {
+   "note": "stats 担当からの依頼。記事では会社名を出さず1〜2文にする前提。公式の拠点ページで所在を確かめた分だけ",
+   "confirmed": [
+    {
+     "company": "株式会社日立製作所",
+     "site": "大みか事業所",
+     "address": "茨城県日立市大みか町五丁目2番1号",
+     "facts": "操業開始 1969年、敷地面積 201,000m2、就業人員 約2,450人（2020年1月10日のニュースリリース「大みか事業所の概要」）。社会インフラ向け情報制御システムの開発・提供。世界経済フォーラムの「Lighthouse」に日本企業で初めて選ばれた（同リリース）",
+     "source": "https://www.hitachi.co.jp/New/cnews/month/2020/01/0110.html",
+     "note": "人員は2020年の値。日立市の電機の大きな事業所の例"
+    },
+    {
+     "company": "株式会社日立産業制御ソリューションズ",
+     "site": "茨城本社",
+     "address": "茨城県日立市大みか町五丁目1番26号",
+     "facts": "社員数 3,524名（2026年4月、全社）。日立製作所100％出資",
+     "source": "https://info.hitachi-ics.co.jp/company/summary.html",
+     "note": "本表にも入れた（二本社）"
+    },
+    {
+     "company": "コマツ（株式会社小松製作所）",
+     "site": "茨城工場",
+     "address": "〒312-0004 茨城県ひたちなか市長砂 163-46",
+     "facts": "公式の拠点一覧に工場として掲載（人員は見ていない）",
+     "source": "https://www.komatsu.jp/ja/aboutus/locations",
+     "note": "ひたちなか市の常陸那珂港区の建設機械工場"
+    },
+    {
+     "company": "日本製鉄株式会社",
+     "site": "東日本製鉄所 鹿島地区",
+     "address": "〒314-0014 茨城県鹿嶋市光3番地",
+     "facts": "昭和43年12月1日開所、銑鋼一貫製鉄所（自動車・家電向けの薄板鋼板、鋼管、形鋼など）、従業員数 約3,000人（概要のページ。時点の記載なし）",
+     "source": "https://www.nipponsteel.com/works/east-nippon/kashima/outline/ ・住所は https://www.nipponsteel.com/works/east-nippon/kashima/access/",
+     "note": "鹿嶋市の鉄鋼業11所・4,649人（stats.md）の中心とみられるが、統計の値を1社の値として書かない"
+    },
+    {
+     "company": "信越化学工業株式会社",
+     "site": "鹿島工場",
+     "address": "〒314-0102 茨城県神栖市東和田１番地",
+     "facts": "敷地面積 約41万m2、主要生産品目 塩化ビニル樹脂、合成石英製品",
+     "source": "https://www.shinetsu.co.jp/jp/company/plant/",
+     "note": "鹿島臨海工業地帯（神栖市側）"
+    },
+    {
+     "company": "三菱ケミカル株式会社",
+     "site": "茨城事業所",
+     "address": "〒314-0102 茨城県神栖市東和田17-1",
+     "facts": "公式の事業所一覧に掲載（人員・品目は見ていない）。同社は筑波地区（〒300-1295 茨城県牛久市東猯穴町1000）も掲載",
+     "source": "https://www.mcgc.com/group/outline/mcc/location/plant.html",
+     "note": "鹿島臨海工業地帯（神栖市側）"
+    },
+    {
+     "company": "日野自動車株式会社",
+     "site": "古河工場",
+     "address": "〒306-0110 茨城県古河市名崎1番地",
+     "facts": "公式の国内拠点に掲載。2026年6月30日に地域生物多様性増進法の「自然共生サイト」の認定（公式のお知らせ）",
+     "source": "https://www.hino.co.jp/corp/about_us/network/japan.html",
+     "note": "古河市の工業団地の例"
+    }
+   ],
+   "not_confirmed": [
+    "土浦市（神立地区の工業団地）の日立建機 土浦工場: 公式 hitachicm.com が 403 で確かめられなかった",
+    "ひたちなか市の日立Astemo（佐和）・日立ハイテク（那珂地区）: 公式の拠点ページが 404・403 で確かめられなかった",
+    "日立市の非鉄金属（市の製造品出荷額の41.1%、stats.md）の会社: 確かめていない（JX金属・プロテリアルなどの公式の拠点ページを開いていない）",
+    "坂東市・筑西市・境町・五霞町の工業団地の会社: 確かめていない"
+   ]
+  }
+ },
+ "_notes": [
+  "本表は公式サイトで本社所在地と時点つきの従業員数の両方を確認できた会社だけ。該当は日立市6社・水戸市6社・ひたちなか市5社・土浦市3社・東海村1社・神栖市1社の6市村22社。つくば市は確認済みの会社がなく（ペンギンシステムは時点なしで次点）、ほかの26市・10町・1村は本表『なし』（確かめられなかった）。",
+  "公式の人数（多い順）: 日立産業制御ソリューションズ（日立市、3,524名、2026年4月、二本社・日立100%子会社）、ユードム（水戸市、429名、2026年4月1日）、ＮＥＳＩ（ひたちなか市、360名、令和7年4月）、茨城計算センター（日立市、271名、令和6年4月1日）、関東情報サービス（土浦市、230名、2026年4月）、常陽コンピューターサービス（水戸市、138名、2025年4月1日、常陽銀行100%）、C&Aホールディングス（ひたちなか市、131名、2026年10月）、ユーメック（日立市、117名、2026年3月）、コスダック（ひたちなか市、97名、令和6年4月末）、デジタルサーブ（水戸市、93名、2026年4月1日）、コンピューター総合研究所（水戸市、91名、2024年4月）、ティ・エス・ネットワークス（日立市、77名、2026年4月）、アイ・テー・シー（土浦市、73名、2025年10月）、東水戸データーサービス（水戸市、72名、令和8年4月）、デンサン（土浦市、68名、2026年4月1日、ユードムグループ）、日本コンピュータシステム（水戸市、61名、2026年4月、関連会社含む）、サイバーテック（日立市、56名、2025年7月）、ユメニティ（神栖市、49名、2025年4月）、サポートワーカー（ひたちなか市、約30名、2024年4月）、システムクラフト（日立市、28名、2026年5月1日）、クロス・アイ（東海村、18名、2026年4月）、I-RIS（ひたちなか市、7名、2025年4月1日）。",
+  "**グループ会社・親会社がある会社**: 日立産業制御ソリューションズ（日立製作所100%）、常陽コンピューターサービス（常陽銀行100%）、デンサン（ユードムグループ）。記事で『地元の独立系』とまとめない。日立市・ひたちなか市の会社の多くは主要取引先が日立グループ（会社概要の取引先の欄）。",
+  "AI関連の公式の記載: **関東情報サービス（法人向け生成AI『KiSChat』）**、**ユードム（生成AIコンサルティング。アーストラベル水戸の照合の自動化、ITIC の中小企業AI活用支援事業に採択）**、**デジタルサーブ（AI-OCR『Smart AI OCR』）**、コンピューター総合研究所（事業内容に『IoT・AIサービス事業』）、アイ・テー・シー（研究機関の AI・ロボットの研究支援）、日立産業制御ソリューションズ（AI の画像応用・生成AI の取り組み）。次点・未確認のうちトキワ（オンプレミス生成AI 基盤の紹介）、ソフィア（土浦市。AI 事業・機械学習の導入支援。人数なし）、NAIS（東海村。原子力の AI 解析・茨城大と共同研究。**原子力なので記事では使わない**）、ヒューマンサポートテクノロジー（画像認識）。",
+  "業界団体: 茨城県情報サービス産業協会（IBIS、https://www.ibis.or.jp/ 、平成8年7月22日設立）。会員企業一覧（正会員83・賛助会員7、2026-11-06取得）。本表の22社のうち IBIS の会員は16社（日立産業制御ソリューションズ・日本コンピュータシステム・アイ・テー・シー・コスダック・サポートワーカー・クロス・アイは一覧にない）。IBIS は2026年8月に「生成AI活用・開発人材育成講座」の事前説明会を案内している（お知らせの題名）。",
+  "経済センサス（令和3年、2021年6月1日）: 県の情報通信業 846所・19,466人（全産業の1.6%）、うち情報サービス業 573所・14,921人（1.2%）、インターネット附随サービス業 78所・3,065人（つくば市が2,790人で91.0%）。情報サービス業の従業者は日立市6,098人（40.9%）・水戸市2,385人・ひたちなか市2,121人・つくば市1,592人・土浦市917人・東海村469人。",
+  "照合（cases 担当から）: 川崎製作所・ハリガイ工業・アーストラベル水戸・ヒューマンサポートテクノロジーの本社は公式・法人番号で一致。従業員数を公式で確かめられたのはハリガイ工業（100名、2026年6月現在）だけ。川崎製作所（創立1964年と創業1968年）、アーストラベル水戸（PR の設立2019年と、沿革の2007年〜・法人番号指定2015年）、ヒューマンサポートテクノロジー（設立2012年3月16日と法人化2014年3月）は公式の中や資料の間で年が食い違う。",
+  "他県のページとの重複: 本表・次点の会社は articles/・data/area/（ibaraki を除く）に出ない（grep で確認、2026-11-06）。同じ名前の別会社が他県の data に出る（サイバーテック〔宮崎〕・デンサン〔宮崎・愛媛の記事〕・アクトシステムズ〔広島〕・アイエスアイ〔北海道〕・ヒューマンサポート〔群馬〕）。ＮＥＳＩは青森県の companies.json に『本社は茨城県ひたちなか市』として出る。",
+  "WebSearch は12回のうち10回を使用。"
+ ]
+}

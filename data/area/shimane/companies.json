@@ -1,0 +1,704 @@
+{
+ "_meta": {
+  "checked": "2026-10-31",
+  "scope": "島根県19市町村。本社（公式サイトの本社・本店・所在地）が当該市町村にあり、公式サイトで受託システム開発・ソフトウェア開発・Web制作・情報処理サービスを事業として明示する法人。長野県などと同じく、本表には『公式サイトで本社所在地と従業員数の両方を確認できた会社』だけを入れた。従業員数が公式にない会社、公式サイトの本文を取れない会社は _reference に置いた。県外に本社がある会社の県内拠点は本表に入れず _reference._outside_hq に記録した。県の『しまねIT企業ガイド』の地域検索は『事業所がある地域』で並べており本社の地域ではない（例: 出雲本社のエスティックが松江にも載る）。各市町村の本表は最大5社、公式の従業員数の多い順。松江市は条件を満たす会社が17社あり、6位以下は next_candidates に置いた（いずれも公式で本社・人数を確認済み）。",
+  "candidate_sources": [
+   "一般社団法人島根県情報産業協会（SHIA、松江市母衣町180-25 米井ビル3F）の正会員名簿 https://www.shia.or.jp/members/sei/ （【令和8年10月1日現在】）と賛助会員名簿 https://www.shia.or.jp/members/sanjyo/ （【令和8年9月8日現在】）。会員ごとの紹介ページ（page1.html など）に『全従業員数』があるが日付がなく古いもの（オネスト『2017年4月1日』）もあるので、人数は使わず候補探しだけに使った。確認日 2026-10-31",
+   "島根県 商工労働部 産業振興課 産業デジタル推進室『しまねIT企業ガイド』 https://www.pref.shimane.lg.jp/industry/syoko/sangyo/itsangyo/business_guide/ 。地域検索（松江・安来・雲南・奥出雲・出雲・大田・邑智・江津・浜田・益田・津和野・隠岐）と各社の PDF（本社所在地・事業所・設立・従業員数〈内 技術者数〉）。PDF は会社ごとに作成時期が違い（PDF の作成日は2024年4月〜2026年8月など）、人数の時点がないものが多い。候補探しと、公式で人数を取れない会社の参考値（secondary）に使った",
+   "島根県 企業立地課『新規立地計画認定』 https://www.pref.shimane.lg.jp/industry/enterprise/richi/nintei/ （令和4〜8年度の一覧）。県外本社の会社の県内事業所の新設・増設の確認に使った",
+   "WebSearch（担当上限15回のうち9回を使用）"
+  ],
+  "columns": "name / hq（公式の本社住所）/ municipality / town / employees{value,as_of,source} / capital / founded / business_summary / ai_initiative / url / size_basis / checked / notes"
+ },
+ "matsue": [
+  {
+   "name": "株式会社ジェットシステム",
+   "hq": "島根県松江市平成町182-7",
+   "municipality": "松江市",
+   "town": "平成町",
+   "employees": {
+    "value": 456,
+    "as_of": "2026年9月30日現在（単体。グループ総数621名）",
+    "source": "https://www.jetsystem.co.jp/company"
+   },
+   "capital": {
+    "value": "1億8,000万円",
+    "source": "https://www.jetsystem.co.jp/company"
+   },
+   "founded": 1988,
+   "business_summary": "1988年にシステム開発・販売会社として創業。システム開発・販売、POSシステム、パソコンサポート（大手家電量販店と業務提携）、リモートサポート、SE派遣など（トップメッセージ・沿革・トップページ）",
+   "ai_initiative": "公式の会社概要・トップページに AI の記載は確認できず",
+   "url": "https://www.jetsystem.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-31",
+   "notes": "公式の会社概要の従業員数は『グループ総数 621名（2026年9月30日現在）』の内訳として【ジェットシステム】456名・【ジェイハウス】90名・【ベルクリック】22名・【TAMAYA】53名。県のIT企業ガイドの PDF は『720名（650名）』『売上 800,000万円』（時点なし）で公式と違う。事業所に東京都新宿区四谷（ガイド）。**県内のIT企業で公式の人数が最多**。PCサポートなど IT 以外に近い事業も含むので、記事では『システム開発・販売とパソコンサポートの会社』と書く"
+  },
+  {
+   "name": "株式会社テクノプロジェクト",
+   "hq": "島根県松江市学園南2丁目10-14 タイムプラザビル",
+   "municipality": "松江市",
+   "town": "学園南",
+   "employees": {
+    "value": 261,
+    "as_of": "時点の記載なし（ページの更新日 2026.06.30）",
+    "source": "https://www.tpj.co.jp/corporate/corporate"
+   },
+   "capital": {
+    "value": "1億円（授権資本4億円）",
+    "source": "https://www.tpj.co.jp/corporate/corporate"
+   },
+   "founded": 1984,
+   "business_summary": "システムインテグレーション事業、特定業種ソリューション開発、クラウドサービス提供、ICT のコンサルティング・計画・実行支援、デジタル人材育成",
+   "ai_initiative": "代表メッセージに『医学論文査読AI』『害虫被害予察AI』『スーパーマーケット需要予測AI』、ヘルスケア分野で『地域医療連携やAIを用いた診察環境の向上』 https://www.tpj.co.jp/corporate/corporate",
+   "url": "https://www.tpj.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-31",
+   "notes": "主要株主に山陰中央テレビジョン放送株式会社と富士通株式会社（公式の会社概要）。グループの関係: ティーエスケイ情報システムの株主（8%）、SacoS の株主（JA しまねと共同）。人数の時点がない。県のIT企業ガイドの PDF は 253名（212名）"
+  },
+  {
+   "name": "株式会社マツケイ",
+   "hq": "島根県松江市乃木福富町735番地211",
+   "municipality": "松江市",
+   "town": "乃木福富町",
+   "employees": {
+    "value": 127,
+    "as_of": "2026年4月現在",
+    "source": "https://www.matsukei.co.jp/company/"
+   },
+   "capital": {
+    "value": "5,000万円",
+    "source": "https://www.matsukei.co.jp/company/"
+   },
+   "founded": 1970,
+   "business_summary": "システム開発、データセンター、データエントリー、プリンティングの4分野。旧社名 松江計算センター。業績15.4億円（2026年3月期）",
+   "ai_initiative": "公式の会社概要に AI の記載は確認できず",
+   "url": "https://www.matsukei.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-31",
+   "notes": "サテライトオフィス 千鳥オフィス（松江市千鳥町、2024年12月開設）。県の立地計画認定『令和7年2月：株式会社マツケイが松江市内に事業所を増設』。湖南テクノパーク内"
+  },
+  {
+   "name": "和幸情報システム株式会社",
+   "hq": "島根県松江市伊勢宮町560番地",
+   "municipality": "松江市",
+   "town": "伊勢宮町",
+   "employees": {
+    "value": 66,
+    "as_of": "2026年1月現在",
+    "source": "https://www.wisys.co.jp/company/info"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.wisys.co.jp/company/info"
+   },
+   "founded": 1987,
+   "business_summary": "受託・パッケージのソフトウェア開発、ASP サービス、技術者派遣、サーバ・ネットワークの設計構築、コンピュータ機器の販売、システムの運用・保守、ニアショア開発、ホームページ制作",
+   "ai_initiative": "公式の会社概要に AI の記載は確認できず",
+   "url": "https://www.wisys.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-31",
+   "notes": "和幸グループ（和幸株式会社・和幸冷温・和幸電通）。グループのサイト https://www.wako-grp.com/about/ は従業員数を『230名（和幸グループ計）※2025年現在』、和幸情報システムの『設立 令和6年7月1日・資本金5,000万円』と書き、公式サイト（設立1987年4月・資本金1,000万円）と食い違う（持株会社化などによる再設立の可能性があるが確かめていない）。県のガイドの PDF は 68名（61名）（2025年7月現在）。出雲オフィス（県の立地計画認定 令和4年10月）、東京オフィス"
+  },
+  {
+   "name": "ティーエスケイ情報システム株式会社",
+   "hq": "島根県松江市学園南二丁目10番14号 タイムプラザビル3階",
+   "municipality": "松江市",
+   "town": "学園南",
+   "employees": {
+    "value": 60,
+    "as_of": "令和8年8月1日現在",
+    "source": "https://www.tskis.jp/company/"
+   },
+   "capital": {
+    "value": "1億円",
+    "source": "https://www.tskis.jp/company/"
+   },
+   "founded": 1998,
+   "business_summary": "情報通信機器・放送機器の販売・賃貸・保守、関連ソフトウェアの開発・販売・保守、コンサルティング、設備の設計・施工・運用受託、コンテンツ制作など",
+   "ai_initiative": "会社概要に AI の記載はない。お知らせに『山陰企業のためのAI活用とセキュリティ対策セミナー』の告知 https://www.tskis.jp/",
+   "url": "https://www.tskis.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-31",
+   "notes": "1998年2月4日に山陰中央テレビジョン放送の OA 事業局が分社して設立。**株主 山陰中央テレビジョン放送 92%、テクノプロジェクト 8%**。機器販売・保守の比重が大きい境界の会社。県のガイドでは出雲・江津・浜田にも事業所の記載"
+  }
+ ],
+ "izumo": [
+  {
+   "name": "株式会社プロビズモ",
+   "hq": "島根県出雲市駅南町2-4-15",
+   "municipality": "出雲市",
+   "town": "駅南町",
+   "employees": {
+    "value": 261,
+    "as_of": "2026年4月1日現在",
+    "source": "https://www.probizmo.co.jp/aboutus/company/"
+   },
+   "capital": {
+    "value": "9,985万円",
+    "source": "https://www.probizmo.co.jp/aboutus/company/"
+   },
+   "founded": 2001,
+   "business_summary": "アプリケーション開発・保守・運用を中心に、IT コンサルティング、IT インフラ構築、ネットワークの保守・運用",
+   "ai_initiative": "会社概要に AI の記載はない。採用ページの対談に『生成AIの台頭などIT業界の変化が激しい今』『下流工程の多くは、生成AIの進化により』の記述（事業としての AI サービスではない）https://www.probizmo.co.jp/",
+   "url": "https://www.probizmo.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-31",
+   "notes": "**株主 株式会社テクノプロ**（公式の会社概要）。東京支社・倉吉事業所。県の立地計画認定『令和5年12月：株式会社プロビズモが松江市内及び出雲市内で事業所を増設』。**出雲市で公式の人数が最多**"
+  },
+  {
+   "name": "株式会社イーグリッド",
+   "hq": "島根県出雲市常松町526",
+   "municipality": "出雲市",
+   "town": "常松町",
+   "employees": {
+    "value": 125,
+    "as_of": "2026年10月時点",
+    "source": "https://www.e-grid.co.jp/company/"
+   },
+   "capital": {
+    "value": "9,634万円（資本準備金含む）",
+    "source": "https://www.e-grid.co.jp/company/"
+   },
+   "founded": 2010,
+   "business_summary": "ソフトウェア開発、Web制作・デジタルマーケティング、AI導入支援・DXコンサルティング、自社プロダクトの4事業",
+   "ai_initiative": "**事業に『AI導入伴走・DXコンサルティング事業』『AI駆動ソフトウェア開発』『AI研修』『導入伴走支援』** https://www.e-grid.co.jp/company/",
+   "url": "https://www.e-grid.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-31",
+   "notes": "東京・大阪・神戸・米子・広島のオフィスと出雲市のソフトウェア開発センター。県の立地計画認定『令和4年7月：株式会社イーグリッドが出雲市内で事業所を増設』。県のガイドの PDF は 127名（99名）・資本金4,000万円（古い）"
+  },
+  {
+   "name": "株式会社日本ハイソフト",
+   "hq": "島根県出雲市西新町1丁目2548-7",
+   "municipality": "出雲市",
+   "town": "西新町",
+   "employees": {
+    "value": 70,
+    "as_of": "時点の記載なし",
+    "source": "http://www.jhsc.co.jp/company_profile/index.html"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "http://www.jhsc.co.jp/company_profile/index.html"
+   },
+   "founded": 1984,
+   "business_summary": "業務パッケージ（販売管理・財務管理・工事管理の400シリーズ・Winシリーズ、勤怠Touch・給与見えるくん・請求書見えるくん）、リスクアセスメントシリーズ（化学物質・機械安全・SDS読取くん）、受託開発",
+   "ai_initiative": "公式の会社概要に AI の記載は確認できず",
+   "url": "http://www.jhsc.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-31",
+   "notes": "西日本事業部（大阪市西区）、開発センター（出雲市芦渡町）、研修センター（出雲市）。県のガイドの PDF は『本社：50名（48名）』で公式の70名と違う（時点なし）。関連会社 いずもトータルネット（ガイド）"
+  },
+  {
+   "name": "株式会社エスティック",
+   "hq": "島根県出雲市白枝町607番地6",
+   "municipality": "出雲市",
+   "town": "白枝町",
+   "employees": {
+    "value": 23,
+    "as_of": "令和8年4月現在",
+    "source": "https://www.stic.co.jp/company/outline.html"
+   },
+   "capital": {
+    "value": "4,500万円",
+    "source": "https://www.stic.co.jp/company/outline.html"
+   },
+   "founded": 1989,
+   "business_summary": "コンピュータ機器の販売・保守、ソフトウェアの受託開発・販売、ネットワーク構築、ERP・グループウェア（Notes）、ホームページ作成、電子入札の設定支援、IT 研修。ほかに LED 商品・ユニフォーム販売、不動産、喫茶店、派遣",
+   "ai_initiative": "公式の会社概要に AI の記載は確認できず",
+   "url": "https://www.stic.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-31",
+   "notes": "年商7億8千万円（令和7年9月期）。松江支店（松江市浜乃木）。**機器販売・保守が中心で IT 以外の事業もある境界の会社**。本表に入れたが、記事で紹介するなら『機器販売とソフト開発の会社』と書く"
+  }
+ ],
+ "hamada": [
+  {
+   "name": "株式会社コンピュータ・コンサルタント",
+   "hq": "島根県浜田市朝日町70-5 朝日セカンドビル2・3階",
+   "municipality": "浜田市",
+   "town": "朝日町",
+   "employees": {
+    "value": 20,
+    "as_of": "時点の記載なし",
+    "source": "https://com-con-web.com/About/Top"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://com-con-web.com/About/Top"
+   },
+   "founded": 1983,
+   "business_summary": "コンピュータ関連システムのソフトウェア開発・販売、ハードウェア・サプライ販売、パッケージソフトの設定・教育、WAN・LAN 構築",
+   "ai_initiative": "公式の会社概要に AI の記載は確認できず",
+   "url": "https://com-con-web.com/",
+   "size_basis": "employees",
+   "checked": "2026-10-31",
+   "notes": "松江営業所（松江市西嫁島）。SHIA の名簿の URL は http://www.com-con.co.jp で、公式サイトは com-con-web.com に移っている。県のガイドの PDF は 17名（16名）。**浜田市で公式の人数が最多**"
+  },
+  {
+   "name": "株式会社浜田コンピュータシステム",
+   "hq": "島根県浜田市下府町327-85（石央物流団地内）",
+   "municipality": "浜田市",
+   "town": "下府町",
+   "employees": {
+    "value": 16,
+    "as_of": "時点の記載なし",
+    "source": "https://www.h-com.co.jp/guide"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.h-com.co.jp/guide"
+   },
+   "founded": 1979,
+   "business_summary": "OA 機器の販売・保守、ソフトウェアの開発・保守、ホームページの制作・保守",
+   "ai_initiative": "公式の会社概要に AI の記載は確認できず",
+   "url": "https://www.h-com.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-31",
+   "notes": "1979年11月19日創業（有限会社）、1990年6月に株式会社。所属団体に浜田商工会議所・石央商工会。OA 機器販売とソフト開発の両方"
+  }
+ ],
+ "masuda": [
+  {
+   "name": "株式会社マイメディア",
+   "hq": "島根県益田市東町31番102号",
+   "municipality": "益田市",
+   "town": "東町",
+   "employees": {
+    "value": 18,
+    "as_of": "時点の記載なし",
+    "source": "https://www.mimedia.co.jp/companyinfo/index.html"
+   },
+   "capital": {
+    "value": "5,750万円",
+    "source": "https://www.mimedia.co.jp/companyinfo/index.html"
+   },
+   "founded": 1984,
+   "business_summary": "業務システム開発、業務システム運用支援、情報機器販売、インターネットプロバイダー事業",
+   "ai_initiative": "公式の会社概要に AI の記載は確認できず",
+   "url": "https://www.mimedia.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-31",
+   "notes": "東京支店（東京都中央区日本橋大伝馬町）。1984年6月4日に有限会社、1990年に株式会社。県のガイドの PDF は 23名（16名）、SHIA の紹介は全従業員39名（いずれも時点なし）で公式の18名と違う。トップに『お墓のご相談』のリンクもある。**益田市で公式の人数が最多**"
+  },
+  {
+   "name": "株式会社マスダシステム開発",
+   "hq": "島根県益田市中吉田町277-1",
+   "municipality": "益田市",
+   "town": "中吉田町",
+   "employees": {
+    "value": 17,
+    "as_of": "2026年7月現在",
+    "source": "https://www.msd-sk.com/corporate/"
+   },
+   "capital": {
+    "value": "500万円",
+    "source": "https://www.msd-sk.com/corporate/"
+   },
+   "founded": 2006,
+   "business_summary": "システム開発（事業内容の本文は取れなかった。県のガイドの PDF では運用・保守なども）",
+   "ai_initiative": "公式の会社概要に AI の記載は確認できず",
+   "url": "https://www.msd-sk.com/",
+   "size_basis": "employees",
+   "checked": "2026-10-31",
+   "notes": "2006年4月11日に有限会社として設立、同年5月1日に株式会社へ。2026年7月22日のお知らせ『本社移転のお知らせ』（県のガイドの PDF の本社は益田市あけぼの本町2番地6号で旧所在地）。ガイドは『本社：18名（16名）』"
+  }
+ ],
+ "oda": [],
+ "yasugi": [],
+ "gotsu": [],
+ "unnan": [],
+ "okuizumo": [],
+ "iinan": [],
+ "kawamoto": [],
+ "misato-town-shimane": [],
+ "onan": [],
+ "tsuwano": [],
+ "yoshika": [],
+ "ama": [],
+ "nishinoshima": [],
+ "okinoshima": [],
+ "chibu": [],
+ "_reference": {
+  "matsue": {
+   "next_candidates": [
+    {
+     "name": "株式会社オネスト",
+     "employees": "60名（時点なし）",
+     "capital": "4,000万円",
+     "note": "本社・ソフト研究開発センター 松江市東出雲町意宇南6丁目3番地1。1995年4月20日設立。生産計画・生産管理・調達のコンサル、製造業向けパッケージ（Web-EDI『e商買SP®』）とクラウド、金融・製造・電力向けの受託開発。東京オフィス（品川区）・出雲開発センター。AI の記載なし。**青森県の cases.md に出る『株式会社オネスト（東京都豊島区）』は所在地が違い別会社の可能性が高い（未確認）**",
+     "source": "https://www.onest.co.jp/6/14/"
+    },
+    {
+     "name": "株式会社ＳａｃｏＳ（サコス）",
+     "employees": "社員44名（直接採用34名、嘱託・パート10名）。外注要員9名（時点なし）",
+     "capital": "記載なし",
+     "note": "松江市袖師町10番3号。令和6年2月7日設立。**株主 島根県農業協同組合（JA しまね）・テクノプロジェクト**。英文の説明は Shimane agricultural and regional information center。保有資格に『生成AIパスポート』1名",
+     "source": "https://sacos.jp/company/"
+    },
+    {
+     "name": "株式会社ペンタスネット",
+     "employees": "41名（2026年4月現在）",
+     "capital": "4,900万円",
+     "note": "松江市北陵町43番地（ソフトビジネスパーク島根）。1993年4月1日設立（旧社名 株式会社島根ワコム）。業務システムの構築・運用、各種サイト・アプリの構築、教育事業。県の立地計画認定『令和5年9月：出雲市内で事業所を増設』。AI の記載なし",
+     "source": "https://www.pentas-net.co.jp/company.html"
+    },
+    {
+     "name": "株式会社八雲ソフトウェア",
+     "employees": "36名（男性19名・女性17名、2026年4月1日現在）",
+     "capital": "1,000万円",
+     "note": "島根本社 松江市朝日町478番地18 松江テルサ別館2階。2013年2月14日設立。ソフトウェア開発、DX、kintone、研修、派遣。東京支社・和歌山支社。株主 松本隆義。DX 事業に『kintone、LINE WORKS、RPA、AI-OCRなど、多種多様なツールに対応』",
+     "source": "http://www.8clouds.co.jp/company/profile/"
+    },
+    {
+     "name": "株式会社システムリンク",
+     "employees": "20名（うちパート1名、時点なし）",
+     "capital": "800万円",
+     "note": "松江市浜乃木6-2-12 日昇ビル2F。1991年4月1日設立。ソフトウェアの開発・保守、機器・ソフト販売、情報処理サービス、派遣。サイトのメニューに『ディープラーニングG検定受験記』『AI実装検定受験記』（社員の資格の記事）",
+     "source": "https://www.sys-link.jp/%e4%bc%9a%e7%a4%be%e6%83%85%e5%a0%b1/"
+    },
+    {
+     "name": "有限会社Willさんいん",
+     "employees": "社員16名（2025年4月現在）、外部講師10名",
+     "capital": "記載なし",
+     "note": "本社 松江市朝日町498番地 松江センタービル8F。2001年6月25日設立（2015年1月に有限会社ウイルさんいんから登記名変更）。人材育成（IT・簿記などの講座）・Web制作・システム開発。**隠岐支店（隠岐の島町有木月無13番38）、川本サテライトオフィス（川本町大字川下1222番地、かわもとテレワークスペースOTO-LaVo内）**。人材育成が大きい境界の会社",
+     "source": "https://www.will3in.co.jp/company/"
+    },
+    {
+     "name": "株式会社イプシロンソフトウェア",
+     "employees": "役員1名・正社員13名・非正規0名（2026年9月1日現在）",
+     "capital": "1,000万円",
+     "note": "松江市白潟本町13番地4 大樹生命松江ビル2階。2016年6月1日設立。コンピューターゲーム事業、ソフトウェア・スマホアプリ開発。地域の中小企業向けの受託は前に出していない",
+     "source": "https://www.epsilon-software.co.jp/company_about"
+    },
+    {
+     "name": "株式会社ティーエム21",
+     "employees": "11名（2025年7月1日時点）",
+     "capital": "1,000万円",
+     "note": "松江市北陵町52-2 ゆめっくす北陵2階14号室。2001年10月10日設立。ホームページ制作、CMS『スサノオ神話』、EC・SNS 広告の運用代行、Webシステム開発。旧ドメイン tm-21.com（SHIA の名簿）は確認日に 503、新しい tm-21.co.jp で確認",
+     "source": "https://www.tm-21.co.jp/company/1573"
+    },
+    {
+     "name": "有限会社ヒューマンネット",
+     "employees": "11名（時点なし）",
+     "capital": "350万円",
+     "note": "松江市南田町130-1 フォートビル3F。平成6年10月7日設立。ソフトウェア開発、通信システム、インターネット、ホームページ作成、POS 管理など業務システム",
+     "source": "http://www.humannet.biz/gaiyou.html"
+    },
+    {
+     "name": "株式会社アイテック",
+     "employees": "10名（時点なし）",
+     "capital": "3,000万円",
+     "note": "松江市学園1丁目7番30号 インフィニティビル2F。1981年9月29日設立。地域の企業・病院向けのソリューション、クラウドを使ったシステム開発",
+     "source": "https://www.itec.shimane.jp/?page_id=41"
+    },
+    {
+     "name": "株式会社松江情報センター（Web-さんいん）",
+     "employees": "10名（時点なし）",
+     "capital": "3,500万円",
+     "note": "松江市母衣町180番地20。1986年5月1日設立。ホームページ制作、システム受託、プロバイダー・レンタルサーバ。届出電気通信事業者。SHIA の事務局と同じ母衣町",
+     "source": "https://www.matsue-joho-center.jp/company/"
+    },
+    {
+     "name": "株式会社SOLA",
+     "employees": "7名（令和6年9月現在）",
+     "capital": "300万円",
+     "note": "松江市浜乃木2-6-9 宅和ビル2階。2005年設立。ネットワーク・システム開発（県のガイド）。会社概要は curl で取得、WebFetch では確認日に 503",
+     "source": "http://www.sola-corp.jp/company.html"
+    }
+   ],
+   "unverified": [
+    "株式会社アイ・コミュニケーション（松江市北陵町46-4。2008年4月1日設立、資本金1億円。双方向告知通信システム・テレビ電話端末のサービス・ソフト開発。**主な株主 NTT東日本・日本電通・山陰合同銀行**。公式の会社概要に人数なし。SHIA の紹介は情報サービス従事21名・資本金208,375千円で公式と違う。東京支社）https://www.i-communication.co.jp/company/profile",
+    "株式会社ネットワーク応用通信研究所（NaCl。松江市学園南二丁目12番5号 HOYOパークサイドビル2F。2001年7月17日設立、資本金4,650万円。Ruby/Rails を中心にした OSS のシステム開発・保守、Ruby の教育。公式に人数なし。県のガイドの PDF は『本社：27名（22名）』と東京支社）https://www.netlab.jp/company.html",
+    "ファーエンドテクノロジー株式会社（本店 松江市朝日町498番地 松江センタービル。2008年9月9日設立、資本金800万円。SaaS『My Redmine』、Redmine の開発・普及、情報セキュリティ支援、Web制作。公式に人数なし。県のガイドの PDF は 16名（7名）。ブログに『MCPを利用してPlanioをClaudeから操作する』（2026-10-28）https://www.farend.co.jp/profile/outline/",
+    "株式会社アキュートシスコム（松江市乃白町334番地6。公式サイトが確認日に 503。県のガイドの PDF は 2005年8月23日設立・資本金8百万円・54名（51名）。PDF の作成日 2026-08-13）http://www.acute-sc.co.jp/",
+    "株式会社システム工房エム（松江市西津田三丁目2番3号。昭和59年創業・昭和62年5月法人化、資本金3,000万円。Ruby/Rails の Web アプリ開発、Web制作、大学向けレポート評価・返却システム。主な販売先 島根県・県警・県内の市町村・学校。公式に人数なし。県のガイドの PDF は 11名（9名））http://www.kouboum.co.jp/info/",
+    "ピーシーエッグ株式会社（松江市北陵町52-2。2000年11月設立、資本金1,000万円。ネットワーク構築・システム開発・ホームページ制作・オンライン配信。公式に人数なし。ガイドの PDF は 5名（3名））https://www.pc-egg.com/company",
+    "OSS-Vision株式会社（松江市北田町93番地2。代表取締役CEO 井上浩、専務取締役CTO まつもとゆきひろ。プロダクトマネジメント育成、イベント情報共有『Eventist』、コンサル。**DX認定事業者（2026年8月1日認定）**、『AI時代に求められる「何をつくるかを見極める力」を育てる「OSS流プロダクトマネジメント」』。設立・人数なし）https://www.oss-vision.com/",
+    "株式会社ブレイブスタジオ（松江市朝日町480-8。2018年11月1日設立、資本金500万円、8人。県のガイドの PDF のみ。公式は未確認）",
+    "株式会社ルーツ（松江市朝日町498。2006年7月3日設立、7名（6名）。県のガイドの PDF のみで、URL は Facebook）",
+    "株式会社柳館（松江市西津田3-1-50。2014年10月1日設立、1名。県のガイドの PDF のみ）",
+    "株式会社トラストソフトウェア（SHIA 名簿では松江市学園南1丁目15-10 松江アイビル202。公式サイトの本文が社名だけで取れなかった）",
+    "株式会社アバンセ（SHIA 名簿では松江市学園南。名簿の URL は 404）",
+    "株式会社ビジネスインフォーメイションガーヴァン（県のガイドに掲載、PDF は画像で読めず、公式サイトに接続できなかった）",
+    "株式会社マース（松江市北堀町318-2F、2025年11月28日移転。WEB・パンフレット・チラシ・映像の制作、地域情報『ぢげもん』。会社概要なし）http://www.merce.co.jp/",
+    "LeadingTone（屋号。代表 岩石睦。IT支援・業務効率化支援、**DX・AI導入支援**『最新のAIツールやクラウドサービスの導入により…』。法人格・人数なし）https://leadingtone.jp/"
+   ],
+   "excluded": [
+    "セコム山陰株式会社（松江市北陵町34番地、216名・2026年4月1日、1972年設立、資本金290,389,512円。主要株主 セコム。**事業の中心はセキュリティ（機械警備・常駐警備・現金護送）で、情報系（データセンター・ISP・システム開発・Web構築）は一部**。境界の業種として本表に入れなかった）https://www.secom-sanin.co.jp/company/company-overview.html",
+    "小松電機産業株式会社（松江市乃木福富町735-188 松江湖南テクノパーク内、100名・時点なし、資本金1億円。高速シートシャッター『門番』と上下水道の監視システム『やくも水神』のメーカー。2020年に AI 顔認証ソフト『SAFR』を入室管理に組み合わせ。**製造業なので本表に入れなかった**）http://www.komatsuelec.co.jp/company/information.html",
+    "株式会社ミック（松江市学園南二丁目10番14号 タイムプラザ1F、資本金4,500万円。事務用機器・電子応用機器の販売・保守、ネットワーク構築。公式に人数なし。**OA 機器販売が中心**）https://www.mic-ltd.co.jp/company/company.html",
+    "有限会社ピー・エム・エー（松江市菅田町180、従業員4名・2024年10月現在。提携工事会社5社。OA・通信の設置工事が中心とみられる）https://pma-oa.com/gaiyou/",
+    "株式会社藤井基礎設計事務所（建設コンサルタント。県のガイドに掲載。公式サイトに接続できなかった）",
+    "協和通信工業株式会社・島根電工株式会社・日海通信工業 松江支店（通信・電気工事）、株式会社谷口印刷（印刷、Web制作も）、山陰ケーブルビジョン（CATV）、山陰中央テレビジョン放送（放送）、株式会社ごうぎんキャリアデザイン、特定非営利活動法人プロジェクトゆうあい（いずれも SHIA の正会員だが IT 開発の会社ではない）",
+    "株式会社山陰合同銀行・株式会社島根銀行・専門学校（SHIA の賛助会員）"
+   ]
+  },
+  "izumo": {
+   "next_candidates": [],
+   "unverified": [
+    "株式会社島根情報処理センター（SJC。出雲市今市町321-3。**公式サイト www.sjc-inc.co.jp が確認日に 403**、Internet Archive はこのコンテナから接続できなかった。県のガイドの PDF（作成日 2026-02-02）は 1972年6月1日設立・資本金8,000万円・89名（78名）、システム開発・運用・保守、受託計算、データ入力。SHIA の紹介は全従業員37名・昭和44年6月1日設立で食い違う。県の立地計画認定『令和7年3月：出雲市内に事業所を増設』）",
+    "株式会社シーエスエー（出雲市上塩冶町153-1。**公式サイト raiden.co.jp が確認日に 503**。県のガイドの PDF（2024年4月作成）は 1990年3月12日設立・資本金1,000万円・55名（30名）。県の立地計画認定『令和8年7月：株式会社シーエスエーが出雲市内に事業所を増設』）",
+    "いずもトータルネット株式会社（公式サイト izumo-it.co.jp が 403。ガイドの PDF は 2000年8月16日設立・資本金2,500万円・6名（4名）、関連会社 日本ハイソフト・島根情報処理センター・JA しまね。ネットワーク構築・データセンター・クラウド）",
+    "株式会社イーストバック（公式の会社概要は本社 出雲市日下町721、2010年10月20日設立、資本金300万円、受託システム開発・IT コンサル・プログラミング教育。人数なし。**県のガイドの PDF は本社 松江市西茶町40-1・3名（3名）で、本社の所在地が公式と違う**。SHIA の名簿は出雲市日下町）https://www.eastback.co.jp/",
+    "株式会社バイタルリード（出雲市荻杼町274-2、65名・2025年9月1日現在、1998年4月8日設立。**建設コンサルタント・測量・旅行業の登録**があり、道路・除雪の情報システム（ゆきぞう）なども開発。境界の業種なので本表に入れなかった。広島支店・東京支店）https://www.vitallead.co.jp/companyprofile/"
+   ],
+   "excluded": [
+    "出雲ケーブルビジョン株式会社（CATV）"
+   ]
+  },
+  "masuda": {
+   "next_candidates": [
+    {
+     "name": "株式会社ソコロシステムズ",
+     "employees": "10名（令和3年9月現在、古い）",
+     "capital": "1,000万円（2020年4月）",
+     "note": "益田市三宅町1-19。2000年12月1日設立。パソコン本体・関連機器の販売・修理、IT 関連サービス、パソコン講習、職業訓練。浜田営業所（浜田市朝日町1469-3）。**PC 販売・訓練が中心の境界の会社で、人数の時点が古い**",
+     "source": "https://www.socorro.co.jp/company_profile/"
+    }
+   ],
+   "unverified": [],
+   "excluded": []
+  },
+  "hamada": {
+   "next_candidates": [],
+   "unverified": [
+    "株式会社エボル（本社 浜田市国分町273-25 コーポ協和A101。2022年3月1日設立、前身は2007年8月1日創業の個人事業 SHM。インターネットのシステム構築、Web制作、広告制作。人数・資本金なし。ブログに『AIはここまで来た。WEB制作のプロが「Claude Code」…』『llms.txtだけではAI検索対策として十分ではない？』の記事。県のガイドの PDF の住所は国分町27-25で公式と番地が違う）https://team-evol.com/aboutus/"
+   ],
+   "excluded": []
+  },
+  "unnan": {
+   "next_candidates": [],
+   "unverified": [],
+   "excluded": [
+    "株式会社えすみ（本社 雲南市木次町下熊谷1545-3、51名・時点なし、資本金1,000万円、大正5年創業。オフィスサプライ・家具・OA 機器・情報システム・教育用機器・家電の販売。SHIA の賛助会員。**事務用品・OA 機器の販売店なので本表に入れなかった**。松江・出雲・大田（西部営業所）に営業所）https://www.esumi-net.co.jp/about.html"
+   ]
+  },
+  "_outside_hq": {
+   "description": "県外に本社がある会社の県内拠点（本表に入れない）。本社は公式サイトまたは県の IT 企業ガイドの PDF で確認。県の立地計画認定だけで知った会社は本社を確かめていない",
+   "items": [
+    {
+     "name": "エクスウェア株式会社",
+     "hq": "東京都港区芝浦（東京本社、公式）",
+     "shimane": "島根支社・MOMONGA LAB 島根（松江市朝日町498 松江センタービル7階）",
+     "source": "https://www.xware.co.jp/company/",
+     "note": "公式トップは従業員数119人。SHIA の紹介は全98名のうち島根県内18名"
+    },
+    {
+     "name": "株式会社オプティマ",
+     "hq": "東京都品川区大崎（公式、374人・時点なし）",
+     "shimane": "松江市下東川津町（SHIA 名簿）",
+     "source": "https://www.opt.co.jp/aboutus/companyprofile/",
+     "note": "トップに『AIソリューション開発』"
+    },
+    {
+     "name": "テラテクノロジー株式会社",
+     "hq": "東京都豊島区東池袋（公式、373名・2026年4月1日）",
+     "shimane": "松江R&Dセンター（松江市菅田町）",
+     "source": "https://www.teratech.co.jp/company/overview/"
+    },
+    {
+     "name": "株式会社イード",
+     "hq": "東京都中野区（公式、連結289名・2026年3月末）",
+     "shimane": "松江ブランチ（松江市津田町307 泰ビル302号）",
+     "source": "https://www.iid.co.jp/company/",
+     "note": "メディア・リサーチの会社"
+    },
+    {
+     "name": "株式会社ヒューマンシステム",
+     "hq": "東京都港区芝（SHIA の紹介）",
+     "shimane": "ソフトビジネスパーク島根（松江市北陵町46-7）。県の立地認定 2014年9月操業",
+     "source": "https://www.shia.or.jp/members/sei/"
+    },
+    {
+     "name": "日本システム開発株式会社",
+     "hq": "名古屋市中村区・東京都新宿区（SHIA の紹介。全従業員496名、うち島根県内11名）",
+     "shimane": "松江市朝日町 松江SKYビル3F",
+     "source": "https://www.shia.or.jp/members/sei/",
+     "note": "gov 担当の照合依頼『徳島県のページの同名会社か』は cases 担当へ"
+    },
+    {
+     "name": "株式会社アイティープロデュース",
+     "hq": "東京都台東区台東4-11-4（県のガイド、93名（85名））",
+     "shimane": "出雲支店（出雲市駅南町2-3-1 エイコー駅南ビル4F）。県の立地認定『令和5年9月 松江市内に拠点を増設』『令和8年8月 江津市内に事業所を増設』",
+     "source": "https://www.pref.shimane.lg.jp/industry/syoko/sangyo/itsangyo/business_guide/"
+    },
+    {
+     "name": "株式会社アイティーエスピー",
+     "hq": "東京（公式の会社概要に東京本社〔台東区〕・大阪オフィス、社員数40名。県のガイドの PDF は本社 千代田区外神田・16名で食い違う）",
+     "shimane": "出雲市駅南町2-3-1 エイコー駅南ビル3F（SHIA 名簿）",
+     "source": "https://it-sp.co.jp/company/"
+    },
+    {
+     "name": "株式会社ガリレオスコープ",
+     "hq": "東京本社（公式、28名）",
+     "shimane": "松江市玉湯町大谷299-3（SHIA 名簿）",
+     "source": "https://galileoscope.co.jp/corporate"
+    },
+    {
+     "name": "株式会社ホープシステム",
+     "hq": "大阪市北区梅田（公式、46名）",
+     "shimane": "松江市千鳥町（SHIA 名簿）",
+     "source": "https://hope-sys.com/hopesystem-company/"
+    },
+    {
+     "name": "株式会社八興システムズ",
+     "hq": "東京都港区芝浦（公式。沿革は『令和7年1月 本社を東京都千代田区に移転』で食い違う）",
+     "shimane": "出雲市渡橋町398 正友ビル2階（SHIA 名簿）",
+     "source": "https://www.yakou-systems.com/company/"
+    },
+    {
+     "name": "株式会社コミュニティ・クリエイション（コミクリ）",
+     "hq": "東京都三鷹市下連雀（東京本社、公式、59名・2025年6月）",
+     "shimane": "松江オフィス（松江市朝日町498 松江センタービル8F）。Ruby 図書館システム・施設予約・子育て支援システム",
+     "source": "https://www.comcre.co.jp/company-overview/"
+    },
+    {
+     "name": "株式会社CMC Solutions",
+     "hq": "公式サイトが 403 で未確認。県のガイドの PDF は本社欄が空で事業所 松江市北陵町46番1、CMC GROUP（株式会社シイエム・シイ）、114名（96名）2020年10月1日",
+     "shimane": "松江市北陵町46番1",
+     "source": "https://www.pref.shimane.lg.jp/industry/syoko/sangyo/itsangyo/business_guide/matsue.html",
+     "note": "本社が県内か県外か確かめられなかった"
+    },
+    {
+     "name": "株式会社スマートスタイル",
+     "hq": "東京都港区南青山（SHIA 名簿）",
+     "shimane": "未確認（公式サイト 403）",
+     "source": "https://www.shia.or.jp/members/sei/"
+    },
+    {
+     "name": "株式会社アズム",
+     "hq": "東京都港区南青山（SHIA 名簿）",
+     "shimane": "未確認",
+     "source": "https://www.shia.or.jp/members/sei/"
+    },
+    {
+     "name": "エフ・エスソフトウエア開発株式会社",
+     "hq": "東京都新宿区西新宿（県のガイド）",
+     "shimane": "島根開発センター（松江市黒田町）",
+     "source": "https://www.shia.or.jp/members/sei/"
+    },
+    {
+     "name": "株式会社ピーエスシー",
+     "hq": "東京都港区浜松町（県のガイド、778名・2025年4月1日）",
+     "shimane": "松江ラボ（松江市殿町198-1）。県の立地認定『令和7年12月 松江市内に事業所を増設』",
+     "source": "https://www.pref.shimane.lg.jp/industry/enterprise/richi/nintei/reiwa7richi.html"
+    },
+    {
+     "name": "株式会社リードコナン",
+     "hq": "岩手県盛岡市（県のガイド）",
+     "shimane": "山陰開発センター（松江市北陵町1 テクノアークしまね南館2F）。県の立地認定『令和7年11月 増設』",
+     "source": "https://www.pref.shimane.lg.jp/industry/enterprise/richi/nintei/reiwa7richi.html"
+    },
+    {
+     "name": "株式会社Relic",
+     "hq": "東京都渋谷区恵比寿（県のガイド）",
+     "shimane": "松江市御手船場町551 ニッセイ松江ビル8F。県の立地認定『令和4年9月 新設』",
+     "source": "https://www.pref.shimane.lg.jp/industry/enterprise/richi/nintei/reiwa4richi.html"
+    },
+    {
+     "name": "株式会社ユニオンシンク",
+     "hq": "未確認（SHIA の電話は大阪 06）",
+     "shimane": "松江市西茶町40番地1。県の立地認定『令和7年1月 新設』",
+     "source": "https://www.pref.shimane.lg.jp/industry/enterprise/richi/nintei/reiwa6richi.html"
+    },
+    {
+     "name": "株式会社モンスター・ラボ",
+     "hq": "東京（SHIA の紹介）",
+     "shimane": "島根開発拠点（松江市白潟本町33 出雲ビル）",
+     "source": "https://www.shia.or.jp/members/sei/"
+    },
+    {
+     "name": "株式会社コプロシステム",
+     "hq": "未確認",
+     "shimane": "松江オペレーションセンター（松江市北陵町52-2）",
+     "source": "https://www.shia.or.jp/members/sei/"
+    },
+    {
+     "name": "株式会社ケイズ",
+     "hq": "鳥取県米子市（県のガイド、本社160名）",
+     "shimane": "島根支店",
+     "source": "https://www.pref.shimane.lg.jp/industry/syoko/sangyo/itsangyo/business_guide/matsue.html"
+    },
+    {
+     "name": "サイバートラスト株式会社／株式会社CIC（セントラル情報センター）／株式会社ソニックムーブ／株式会社スプリングボード／ダットジャパン株式会社／株式会社テラスカイ／株式会社パソナ／フェンリル株式会社／株式会社Brushup／株式会社メドレー／株式会社アイル",
+     "hq": "東京・大阪・札幌など（県のガイドの PDF・SHIA 名簿）",
+     "shimane": "いずれも松江市の拠点（メドレーは『Tech Studio MATSUE』2021年9月、テラスカイは県の立地認定 令和5年12月、パソナは DX HUB 島根）",
+     "source": "https://www.pref.shimane.lg.jp/industry/syoko/sangyo/itsangyo/business_guide/matsue.html"
+    },
+    {
+     "name": "株式会社ケー・エス・イー",
+     "hq": "東京都千代田区（SHIA 名簿、本社43名）",
+     "shimane": "島根開発センター（出雲市今市町115-1 NTT出雲ビル、17名）。県の立地認定『令和5年6月 出雲市内に事業所を増設』",
+     "source": "https://www.shia.or.jp/members/sanjyo/"
+    },
+    {
+     "name": "HappyLifeCreators株式会社",
+     "hq": "大阪市淀川区（県のガイド）",
+     "shimane": "出雲ラボ（出雲市大社町日御碕）",
+     "source": "https://www.pref.shimane.lg.jp/industry/syoko/sangyo/itsangyo/business_guide/izumo.html"
+    },
+    {
+     "name": "株式会社SICデジタル",
+     "hq": "大阪府吹田市（県のガイド）",
+     "shimane": "安来市安来町862-5。県の立地認定『令和5年10月 安来市内に事業所を新設』",
+     "source": "https://www.pref.shimane.lg.jp/industry/syoko/sangyo/itsangyo/business_guide/yasugi.html"
+    },
+    {
+     "name": "株式会社バント",
+     "hq": "東京都渋谷区広尾（県のガイド、本社14人）",
+     "shimane": "島根支社（雲南市木次町木次1-26、11人）。デジタルマーケティング、取引先に島根県・雲南市など",
+     "source": "https://www.pref.shimane.lg.jp/industry/syoko/sangyo/itsangyo/business_guide/unnan.html"
+    },
+    {
+     "name": "株式会社セラク",
+     "hq": "東京都新宿区（県のガイド、連結3,357名）",
+     "shimane": "奥出雲町三沢501-1 古民家オフィスみらいと奥出雲",
+     "source": "https://www.pref.shimane.lg.jp/industry/syoko/sangyo/itsangyo/business_guide/okuizumo.html"
+    },
+    {
+     "name": "株式会社ニッポー",
+     "hq": "埼玉県川口市（県のガイド）",
+     "shimane": "奥出雲町下横田750-1",
+     "source": "https://www.pref.shimane.lg.jp/industry/syoko/sangyo/itsangyo/business_guide/okuizumo.html"
+    },
+    {
+     "name": "トレンダーズ株式会社",
+     "hq": "東京都渋谷区（県のガイド）",
+     "shimane": "大田市大田町大田259-5",
+     "source": "https://www.pref.shimane.lg.jp/industry/syoko/sangyo/itsangyo/business_guide/ohda_ohchi.html"
+    },
+    {
+     "name": "バルトソフトウェア株式会社",
+     "hq": "県外（県のガイドの PDF に大阪市中央区本町の住所と『本社・和歌山：36名』。レイアウトが崩れて本社の欄を断定できない）",
+     "shimane": "津和野町森村ロ75番地の2（4名）。取引先にオムロン・パナソニック・BIPROGY",
+     "source": "https://www.pref.shimane.lg.jp/industry/syoko/sangyo/itsangyo/business_guide/tsuwano.html"
+    },
+    {
+     "name": "県の立地計画認定だけで確認した事業所（本社は未確認）",
+     "hq": "未確認",
+     "shimane": "アクシスITパートナーズ（松江市 令和8年4月新設。WebSearch の要約では本社 鳥取市）、エムアンドシーシステム（益田市 令和8年10月新設）、OneWorldLink（出雲市 令和8年6月増設）、ナイスビジネスサポート（安来市 令和8年4月新設、BPO）、コムニック（松江市 令和7年7月新設）、グローバルビジョンテクノロジー（益田市 令和6年8月新設）、スチームシップ（雲南市 令和6年3月新設）、QualityCube（出雲市 令和6年2月新設）、OSBS（江津市 令和6年1月新設）、シフトプラス（浜田市 令和5年7月新設）、イデアルアーキテクツ（出雲市 令和5年5月新設）、エスプールグローカル（浜田市 令和4年11月新設）、NTTコムオンライン・マーケティング・ソリューション（松江市 令和4年10月新設）。業種は IT 以外（BPO・コールセンター）を含む",
+     "source": "https://www.pref.shimane.lg.jp/industry/enterprise/richi/nintei/"
+    },
+    {
+     "name": "通信・大手の支店（SHIA 会員）",
+     "hq": "県外",
+     "shimane": "NTTドコモビジネスソリューションズ島根支店、エネコム島根支店、NTT西日本島根支店、日立システムズ山陰営業所、日立製作所山陰支店、富士通Japan、ダイワボウ情報システム松江支店、インターネットイニシアティブ中四国支店（広島市）、NTTデータ中国（広島市）、コア山陰技術センター",
+     "source": "https://www.shia.or.jp/members/sanjyo/"
+    }
+   ]
+  }
+ },
+ "_notes": [
+  "本表は公式サイトで本社所在地と従業員数の両方を確認できた会社だけ。該当があったのは松江市（本表5社＋次点12社＝17社）・出雲市（4社）・浜田市（2社）・益田市（2社＋次点1社）の4市。残り15市町村は本表『なし』。",
+  "県内で公式の従業員数が最も多いのはジェットシステム（松江市、単体456名・グループ621名、2026年9月30日）。次いでテクノプロジェクト（松江市、261名・時点なし）とプロビズモ（出雲市、261名・2026年4月1日）、マツケイ（松江市、127名）、イーグリッド（出雲市、125名・2026年10月）、日本ハイソフト（出雲市、70名・時点なし）、和幸情報システム（松江市、66名）。",
+  "資本関係: テクノプロジェクト（主要株主 山陰中央テレビジョン放送・富士通）、ティーエスケイ情報システム（山陰中央テレビジョン放送 92%・テクノプロジェクト 8%）、SacoS（JA しまね・テクノプロジェクト）、プロビズモ（株主 テクノプロ）、アイ・コミュニケーション（NTT東日本・日本電通・山陰合同銀行）、和幸情報システム（和幸グループ）、セコム山陰（セコム）。",
+  "AI関連の公式の記載: イーグリッド（AI導入伴走・DXコンサル、AI駆動ソフトウェア開発、AI研修）、テクノプロジェクト（医学論文査読AI・害虫被害予察AI・スーパーマーケット需要予測AI）、八雲ソフトウェア（AI-OCR などのツールに対応）。人数を確かめられなかった会社・次点では OSS-Vision（AI時代のプロダクトマネジメント、DX認定）、LeadingTone（DX・AI導入支援、個人事業）、エボル（Claude Code の記事）、ファーエンドテクノロジー（MCP で Planio を Claude から操作するブログ）、ティーエスケイ情報システム（AI活用セミナーの告知）、小松電機産業（AI顔認証、製造業で対象外）。",
+  "Ruby との関わり（公式で読めた範囲）: ネットワーク応用通信研究所（Ruby/Rails 中心の開発、Ruby の教育）、システム工房エム（Ruby/Rails の Web アプリ）、OSS-Vision（CTO まつもとゆきひろ、Ruby グッズの売上の一部を Ruby アソシエーションに寄付）、ファーエンドテクノロジー（Redmine〔Ruby 製〕）、コミクリ（県外本社。Ruby 図書館システム）。",
+  "業界団体: 一般社団法人島根県情報産業協会（SHIA、松江市母衣町180-25 米井ビル3F、0852-32-1601）。正会員名簿は令和8年10月1日現在（約70社）、賛助会員名簿は令和8年9月8日現在。正会員にも県外本社の拠点（エクスウェア・オプティマ・日本システム開発・ヒューマンシステム・テラテクノロジー・イード・モンスター・ラボ・Relic・リードコナン など）と、IT 以外（放送・CATV・電気通信工事・印刷・銀行系・NPO）が入っている。WebSearch の要約では県の資料に『89社（正会員70社、賛助会員19社）』（2025年9月1日現在）とあるが、元の PDF は開いていない（stats/gov 担当の照合用）。",
+  "県の『しまねIT企業ガイド』（産業振興課 産業デジタル推進室）は会社ごとの PDF に本社・事業所・人数を載せるが、地域検索は事業所の地域で、本社の地域ではない。人数は公式と食い違う会社が多い（ジェットシステム 720 vs 公式456、日本ハイソフト 本社50 vs 公式70、マイメディア 23 vs 公式18、ペンタスネット 46 vs 公式41、八雲ソフトウェア 42 vs 公式36）。記事ではガイドの人数を使わない。",
+  "県外本社の拠点が多い: 松江市には東京・大阪などに本社がある会社の開発拠点が多数（エクスウェア、オプティマ、テラテクノロジー、PSC、リードコナン、Relic、テラスカイ、メドレー、パソナ など）。県の立地計画認定（令和4〜8年度）にも IT・BPO の事業所の新設・増設が続く。町村では奥出雲町（セラク・ニッポー）、雲南市（バント）、安来市（SICデジタル）、大田市（トレンダーズ）、津和野町（バルトソフトウェア）、江津市（アイティープロデュース・OSBS）に県外本社の拠点がある。**『◯◯町の IT 企業』として紹介するときは『県外に本社がある会社の拠点』と書く**。",
+  "他県のページとの重複: 本表・次点の会社を詳述した他県のページはない（grep で確認）。『オネスト』は青森県の cases.md に『株式会社オネスト（東京都豊島区）』として出るが、松江のオネスト（本社 松江市東出雲町、東京オフィスは品川区）とは所在地が違い、別会社の可能性が高い（未確認）。",
+  "WebSearch は15回のうち9回を使用。"
+ ]
+}

@@ -1,0 +1,755 @@
+{
+ "_meta": {
+  "checked": "2026-11-11",
+  "scope": "兵庫県41市町（29市12町）。本社（公式サイトの本社・本店・所在地）が当該市町にあり、国税庁 法人番号の登記の本店が同じ市町で、公式サイトでシステム開発・ソフトウェア開発・Web開発・情報処理サービス・SI を事業として明示する法人。本表は「公式サイトで本社所在地と時点つきの従業員数の両方を確認できた会社」だけ（市町ごとに最大5社、従業員数の多い順。神戸市は市全体で5社、区を ward に書く）。大手のグループ会社は parent に親会社",
+  "candidate_sources": [
+   "兵庫県情報サービス産業協会は確認できなかった。JISA 会員一覧の団体会員（https://www.jisa.or.jp/about_jisa/list/tabid/739/Default.aspx 、2026-11-11）に兵庫の団体なし",
+   "国税庁 法人番号公表サイト 基本3情報ダウンロード 兵庫県 全件（28_hyogo_all_20261030.csv、206,383行）https://www.houjin-bangou.nta.go.jp/download/zenken/ から商号の語で2,384件を抽出",
+   "gBizINFO https://info.gbiz.go.jp/hojin/ichiran?hojinBango=<法人番号> で2,386件の従業員数・ホームページ・厚生年金の被保険者数（参考値）",
+   "個別に照合: さくらケーシーエス・ドーン・ブレイン",
+   "比較サイト・求人サイト（compalyze・mynavi・paiza など）: secondary。社名の手がかりだけ",
+   "WebSearch（担当上限10回のうち6回）"
+  ],
+  "columns": "name / hq / municipality / ward（神戸市のみ）/ town / corporate_number / houjin_honten / employees{value,as_of,source} / capital / founded / business_summary / ai_initiative / url / size_basis / checked / notes / parent / boundary",
+  "industry_stats": {
+   "source": "令和3年経済センサス‐活動調査 第6-1表（民営、2021年6月1日）statInfId=000040067880",
+   "pref": {
+    "G_情報通信業": [
+     1800,
+     26824
+    ],
+    "39_情報サービス業": [
+     1108,
+     19880
+    ],
+    "40_インターネット附随サービス業": [
+     221,
+     1437
+    ]
+   },
+   "note": "市町・区の値は companies.md の表。神戸市が情報サービス業の従業者の59.2%（中央区だけで37.1%）、尼崎市11.5%、姫路市8.6%"
+  },
+  "ai_providers": [
+   "コベルコシステム（AI Innovation Center・生成AI CoE）",
+   "日本ビジネスデータープロセシングセンター（AIソリューション・TOMOT・AIレセチェッカー）",
+   "monoAI technology（ゲームAI・AIQA）",
+   "ブレイン（BakeryScan・EatScan。次点）",
+   "ユーコット・インフォテクノ（AIエージェントの事例。要確認）"
+  ]
+ },
+ "kobe": [
+  {
+   "name": "株式会社日本ビジネスデータープロセシングセンター",
+   "hq": "【神戸本社】〒650-0032 兵庫県神戸市中央区伊藤町119 大樹生命神戸三宮ビル 3F（会社概要）",
+   "municipality": "神戸市",
+   "ward": "中央区",
+   "town": "伊藤町",
+   "corporate_number": "8140001012270",
+   "houjin_honten": "兵庫県神戸市中央区伊藤町１１９番地",
+   "employees": {
+    "value": 5392,
+    "as_of": "5,392名（2026年10月1日現在）",
+    "source": "https://ssl.nihon-data.jp/company/"
+   },
+   "capital": {
+    "value": "5,000万円",
+    "source": "https://ssl.nihon-data.jp/company/"
+   },
+   "founded": null,
+   "business_summary": "〈ITソリューション事業〉ICTコンサルティング・SI・業務システム・クラウド・セキュリティ・運用・パッケージ／〈医療関連事業〉医療事務・診療報酬請求／〈公共福祉事業〉要介護認定事務・自治体窓口業務／〈AI・ロボティクス・IoT 事業〉",
+   "ai_initiative": "事業内容に〈AI・ロボティクス・IoT 事業〉「AIソリューション」「AI・ロボット・IoTブランド「TOMOT」」、トップに「AIレセチェッカー」（提供側）",
+   "url": "https://ssl.nihon-data.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "gBizINFO の従業員数 4,601人（時点不明）。人数は医療事務・公共福祉を含む全社。記事で「5,392名のシステム会社」と書かない",
+   "boundary": "IT＋医療事務・自治体窓口のBPO"
+  },
+  {
+   "name": "コベルコシステム株式会社",
+   "hq": "【本社】〒657-0845 兵庫県神戸市灘区岩屋中町4丁目2番7号 シマブンビル（【東京本社】東京都港区高輪2丁目22番1号もある）",
+   "municipality": "神戸市",
+   "ward": "灘区",
+   "town": "岩屋中町",
+   "corporate_number": "7140001007718",
+   "houjin_honten": "兵庫県神戸市灘区岩屋中町４丁目２番７号",
+   "employees": {
+    "value": 1938,
+    "as_of": "1938人（2026年4月1日現在, 関連会社597人含む）",
+    "source": "https://www.kobelcosys.co.jp/company/about.html"
+   },
+   "capital": {
+    "value": "4億円",
+    "source": "https://www.kobelcosys.co.jp/company/about.html"
+   },
+   "founded": 1987,
+   "business_summary": "ビジネスシステムの設計・開発・保守、ネットワーク、アウトソーシング。1987年7月1日にコベルコシステム株式会社に商号変更。県内に灘浜・西神・加古川・高砂の事業所",
+   "ai_initiative": "トップのお知らせに「企業のAI活用を構想から定着までワンストップで支援する「AI Innovation Center」の提供を開始」「全社横断の「生成AI CoE」立ち上げ」（提供側） https://www.kobelcosys.co.jp/",
+   "url": "http://www.kobelcosys.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "関連会社597人（コベルコソフトサービス）を含む人数。二重に数えない",
+   "parent": "日本アイ・ビー・エム株式会社 51％・株式会社神戸製鋼所 49％"
+  },
+  {
+   "name": "株式会社さくらケーシーエス",
+   "hq": "本社 〒650-0036 神戸市中央区播磨町21-1（東京本社 東京都中央区日本橋室町4-5-1 もある）",
+   "municipality": "神戸市",
+   "ward": "中央区",
+   "town": "播磨町",
+   "corporate_number": "3140001007886",
+   "houjin_honten": "兵庫県神戸市中央区播磨町２１番１",
+   "employees": {
+    "value": 1098,
+    "as_of": "1,098名【2026年４月１日現在（連結）】",
+    "source": "https://www.kcs.co.jp/ja/company/summary.html"
+   },
+   "capital": {
+    "value": "20億5,460万円",
+    "source": "https://www.kcs.co.jp/ja/company/summary.html"
+   },
+   "founded": 1969,
+   "business_summary": "1969年3月29日設立。東証スタンダード上場。売上高237億円（2026年3月期連結）。金融機関・地方自治体・一般事業法人向けの情報サービス",
+   "ai_initiative": "会社概要・トップに AI の製品・導入支援の記載は見つからなかった（AI のサイバー攻撃のセミナーの告知だけ）",
+   "url": "https://www.kcs.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "商号に語がないので個別に照合。子会社 KCSソリューションズ（100％）",
+   "parent": "主要株主 三井住友銀行・三井住友ファイナンス＆リース・富士通Japan（SMBCグループ）"
+  },
+  {
+   "name": "コベルコソフトサービス株式会社",
+   "hq": "本社 〒657-0845 兵庫県神戸市灘区岩屋中町4丁目2番7号",
+   "municipality": "神戸市",
+   "ward": "灘区",
+   "town": "岩屋中町",
+   "corporate_number": "6140001007719",
+   "houjin_honten": "兵庫県神戸市灘区岩屋中町４丁目２番７号シマブンビル",
+   "employees": {
+    "value": 597,
+    "as_of": "597名（2026年4月1日現在）",
+    "source": "https://www.kobelcosoft-service.co.jp/about/corporate/"
+   },
+   "capital": {
+    "value": "5,750万円",
+    "source": "https://www.kobelcosoft-service.co.jp/about/corporate/"
+   },
+   "founded": null,
+   "business_summary": "事業内容「システム保守/開発」「インフラ運用/構築」（会社概要）。事業拠点は神戸市・加古川市・高砂市・山口県下関市・東京23区・栃木県真岡市。2002年7月にコベルコソフト関西とコベルコソフト東京が合併（沿革）。プライバシーマーク認定",
+   "ai_initiative": "トップ・会社概要に AI の記載なし（D5確認 2026-11-11）",
+   "url": "https://www.kobelcosoft-service.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "コベルコシステムの会社概要の「関連会社」にコベルコソフトサービスがあり、コベルコシステムの従業員数「1938人（2026年4月1日現在, 関連会社597人含む）」の597人はコベルコソフトサービスの「597名（2026年4月1日現在）」と同じ数（D5確認）。二重に数えない。神戸本社の住所はコベルコシステムと同じシマブンビル（6階）",
+   "parent": "コベルコシステム株式会社 100％"
+  },
+  {
+   "name": "株式会社SRIシステムズ",
+   "hq": "本社 〒651-0072 神戸市中央区脇浜町2丁目11番14号 現代神戸ビル5階",
+   "municipality": "神戸市",
+   "ward": "中央区",
+   "town": "脇浜町",
+   "corporate_number": "5140001008692",
+   "houjin_honten": "兵庫県神戸市中央区脇浜町２丁目１１番１４号",
+   "employees": {
+    "value": 235,
+    "as_of": "235人 (2026年1月時点)",
+    "source": "http://www.srisys.co.jp/company/outline/"
+   },
+   "capital": {
+    "value": "1億円",
+    "source": "http://www.srisys.co.jp/company/outline/"
+   },
+   "founded": 1998,
+   "business_summary": "1998年8月3日設立（住友ゴムコンピュータサービス・住友ゴムテクノサービスが母体）。情報システムの開発・運用・維持。事業所は住友ゴムの工場内（白河・豊田・泉大津・都城・加古川）",
+   "ai_initiative": "トップに記載は見つからなかった",
+   "url": "http://www.srisys.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "gBizINFO の被保険者 243人。会社概要に株主・出資比率の記載はない（母体が住友ゴムの2社、事業所が住友ゴムの工場内、サイトのメニューに「DUNLOPグループの事業紹介」。D5確認）→「住友ゴム工業のグループ」と書き、「子会社」「100%出資」と書かない",
+   "parent": "住友ゴム工業のグループ"
+  }
+ ],
+ "himeji": [
+  {
+   "name": "日東コンピューターサービス株式会社",
+   "hq": "本店 〒670-0913 兵庫県姫路市西駅前町７３番地 姫路ターミナルスクエア（東京本社・神戸本社という名前の拠点もある）",
+   "municipality": "姫路市",
+   "town": "西駅前町",
+   "corporate_number": "5140001060545",
+   "houjin_honten": "兵庫県姫路市西駅前町７３番地（2024-12-02 変更）",
+   "employees": {
+    "value": 253,
+    "as_of": "253名（2026年4月時点）",
+    "source": "https://www.nittohcs.jp/profile/"
+   },
+   "capital": {
+    "value": "3,000万円",
+    "source": "https://www.nittohcs.jp/profile/"
+   },
+   "founded": 1980,
+   "business_summary": "昭和55年2月1日に相生市で設立。ビジネス系ソフトウェアの設計・開発（ISO 9001・27001）、コンサルティング・運用保守、労働者派遣の許可",
+   "ai_initiative": "記載は見つからなかった",
+   "url": "https://www.nittohcs.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "沿革「2003年に東京本社を、2012年に神戸本社を開設し、本店（姫路市）との連携」。2025年に本店を姫路ターミナルスクエアへ移転"
+  }
+ ],
+ "amagasaki": [],
+ "akashi": [
+  {
+   "name": "ベニックソリューション株式会社",
+   "hq": "〒673-8666 兵庫県明石市川崎町1番1号 川崎重工業（株）明石工場内",
+   "municipality": "明石市",
+   "town": "川崎町",
+   "corporate_number": "4140001024872",
+   "houjin_honten": "兵庫県明石市川崎町１番１号",
+   "employees": {
+    "value": 388,
+    "as_of": "388人（2026年6月1日現在）",
+    "source": "https://www.benic.co.jp/company/outline.html"
+   },
+   "capital": {
+    "value": "5,000万円（100％川崎重工業株式会社出資）",
+    "source": "https://www.benic.co.jp/company/outline.html"
+   },
+   "founded": 2001,
+   "business_summary": "2001年2月9日設立。川崎重工業グループの情報システム子会社。SAP・GRANDIT の導入・運用保守、ネットワーク、IoT、クラウド（Concur・Salesforce・ServiceNow）。売上高16,132百万円（2026年3月期）",
+   "ai_initiative": "記載は見つからなかった",
+   "url": "https://www.benic.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "gBizINFO の被保険者 324人",
+   "parent": "川崎重工業株式会社 100％"
+  }
+ ],
+ "nishinomiya": [],
+ "sumoto": [],
+ "ashiya-city": [],
+ "itami": [],
+ "aioi": [],
+ "toyooka-city": [
+  {
+   "name": "株式会社システムリサーチ",
+   "hq": "本社/本店 〒669-5341 兵庫県豊岡市日高町国分寺158番地1",
+   "municipality": "豊岡市",
+   "town": "日高町国分寺",
+   "corporate_number": "1140001056258",
+   "houjin_honten": "兵庫県豊岡市日高町国分寺１５８番地１",
+   "employees": {
+    "value": 131,
+    "as_of": "131名（令和8年4月現在）※役員除く",
+    "source": "https://www.sr-co.co.jp/about/outline/"
+   },
+   "capital": {
+    "value": "6,000万円",
+    "source": "https://www.sr-co.co.jp/about/outline/"
+   },
+   "founded": 1985,
+   "business_summary": "昭和60年4月設立（但馬電算から分離独立）。ソフトウェア開発・ネットワーク・サーバ構築・パッケージ製品の販売、NEC の販売取扱店。年商35.6億円（令和8年3月）",
+   "ai_initiative": "トップに記載は見つからなかった",
+   "url": "https://www.sr-co.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "gBizINFO の被保険者 135人"
+  }
+ ],
+ "kakogawa": [
+  {
+   "name": "株式会社ファインシステム",
+   "hq": "本社 〒675-0063兵庫県加古川市加古川町平野185-1（加古川ブランチ・東京支社あり）",
+   "municipality": "加古川市",
+   "town": "加古川町平野",
+   "corporate_number": "1140001044733",
+   "houjin_honten": "兵庫県加古川市加古川町平野１８５番地の１",
+   "employees": {
+    "value": 56,
+    "as_of": "従業員数56名（2026年8月 現在）",
+    "source": "https://fine-system.co.jp/company/outline/"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://fine-system.co.jp/company/outline/"
+   },
+   "founded": 1986,
+   "business_summary": "1986年11月15日創立。IT事業（システム開発・運用保守、SES、パッケージ）・デザイン事業（ホームページ・動画など）・スポーツイベント事業",
+   "ai_initiative": "記載は見つからなかった",
+   "url": "https://fine-system.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "gBizINFO の従業員数36人・被保険者57人。兵庫県中小企業家同友会（東播支部）に加盟"
+  }
+ ],
+ "ako": [],
+ "nishiwaki": [],
+ "takarazuka": [],
+ "miki-city": [],
+ "takasago": [],
+ "kawanishi-city": [],
+ "ono-city": [],
+ "sanda": [],
+ "kasai": [],
+ "tambasasayama": [],
+ "yabu": [],
+ "tamba": [],
+ "minamiawaji": [],
+ "asago": [],
+ "awaji": [],
+ "shiso": [],
+ "kato": [],
+ "tatsuno-city": [],
+ "inagawa": [],
+ "taka": [],
+ "inami-town-hyogo": [],
+ "harima": [],
+ "ichikawa": [],
+ "fukusaki": [],
+ "kamikawa": [],
+ "taishi": [],
+ "kamigori": [],
+ "sayo": [],
+ "kami-town-hyogo": [],
+ "shinonsen": [],
+ "_reference": {
+  "kobe": {
+   "next_candidates": [
+    {
+     "name": "monoAI technology株式会社",
+     "ward": "中央区",
+     "hq": "神戸本社 〒650-0021 兵庫県神戸市中央区三宮町一丁目8番1号 さんプラザ3階34号室（神戸本社と東京本社の二本社制）",
+     "corporate_number": "3011101065465",
+     "houjin_honten": "兵庫県神戸市中央区三宮町１丁目８番１号さんプラザ３階３４号室",
+     "employees": {
+      "value": 126,
+      "as_of": "126名（2025年末時点）",
+      "source": "https://monoai.co.jp/company/"
+     },
+     "meets_criteria": true,
+     "rank": 6,
+     "business_summary": "XR事業。2013年1月設立、資本金50百万円",
+     "ai_initiative": "ゲームAI専門会社モリカトロンを子会社化、AIQA事業を分社（沿革）（提供側）",
+     "notes": "株式会社モノビット（2020-01-01）・モノビットエンジン株式会社（2024-04-01）が合併して解散。愛媛県松山市の記事に市の「AIナビ」の委託先として名前"
+    },
+    {
+     "name": "株式会社ユーコット・インフォテクノ",
+     "ward": "中央区",
+     "hq": "〒651-0084 神戸市中央区磯辺通3丁目2番17号 ワールド三宮ビル7F（公式）",
+     "corporate_number": "1140001011510",
+     "houjin_honten": "兵庫県神戸市中央区多聞通５丁目１番６号（公式の住所と違う。区は同じ）",
+     "employees": {
+      "value": 33,
+      "as_of": "33名（2026年2月現在）",
+      "source": "https://www.ucot.co.jp/info"
+     },
+     "meets_criteria": true,
+     "rank": 7,
+     "parent": "ＵＣＣジャパン株式会社 100％（UCCグループ）",
+     "ai_initiative": "導入事例に「【AIエージェント】」（Salesforce Agentforce）。事例のページは未確認"
+    },
+    {
+     "name": "アルファテクノロジー株式会社",
+     "ward": "中央区",
+     "hq": "〒650-0044 兵庫県神戸市中央区東川崎町1丁目7-4 ハーバーランドダイヤニッセイビル15F",
+     "corporate_number": "9140001006040",
+     "employees": {
+      "value": 50,
+      "as_of": "時点の記載なし",
+      "source": "https://www.alpha-tec.co.jp/company"
+     },
+     "meets_criteria": false,
+     "notes": "gBizINFO 従業員数34人・被保険者53人"
+    },
+    {
+     "name": "株式会社ドーン",
+     "ward": "中央区",
+     "hq": "(本社) 〒651-0086 兵庫県神戸市中央区磯上通 2-2-21 三宮グランドビル5F",
+     "corporate_number": "9140001018622",
+     "employees": {
+      "value": null,
+      "as_of": "公式の会社概要に人数なし",
+      "source": "https://www.dawn-corp.co.jp/company/outline/"
+     },
+     "meets_criteria": false,
+     "notes": "東証上場。クラウドサービス（SaaS）・地理情報システム。gBizINFO 従業員数66人・被保険者69人"
+    },
+    {
+     "name": "株式会社デジタルキューブ",
+     "ward": "中央区",
+     "hq": "神戸本社 〒650-0021 兵庫県神戸市中央区三宮町3丁目7番6号 神戸元町ユニオンビル",
+     "corporate_number": "7140001029282",
+     "employees": {
+      "value": null,
+      "as_of": "公式に人数なし",
+      "source": "https://www.digitalcube.jp/company/about-us/"
+     },
+     "meets_criteria": false,
+     "notes": "TOKYO PRO Market 上場（263A）。ホスティング・自社プロダクト・受託開発。gBizINFO 従業員数27人"
+    },
+    {
+     "name": "株式会社KCSソリューションズ",
+     "ward": "中央区",
+     "hq": "本社 〒650-0015 神戸市中央区多聞通3丁目3番9号 神戸楠公前ビル",
+     "corporate_number": "6140001007363",
+     "employees": {
+      "value": null,
+      "as_of": "公式に人数なし",
+      "source": "https://www.kcs.co.jp/kcss/company/outline.html"
+     },
+     "meets_criteria": false,
+     "parent": "株式会社さくらケーシーエス 100％",
+     "notes": "人材派遣・BPO・データエントリーが中心（境界）。gBizINFO 従業員数324人"
+    }
+   ],
+   "unverified": [
+    "株式会社神戸デジタル・ラボ（中央区京町72番地、9140001002865。公式 www.kdl.co.jp は 403。gBizINFO 従業員数153人・被保険者176人）",
+    "エーステクノロジー（中央区、9140001023457。被保険者83人・従業員数170人。WEBシステムの受託開発・飲食）",
+    "クイック・ネットワーク（中央区、161人）",
+    "日精テクノロジー（中央区、105人）",
+    "JBトールシステム（中央区、95人）",
+    "ハーバー・ソフトウェア（中央区、88人）",
+    "カリーナシステム（中央区、81人）",
+    "モイネットシステム（長田区、77人）",
+    "ニッタテクノソリューションズ（長田区、73人）",
+    "ITC（長田区、61人）",
+    "エンジニアネットワーク（中央区、60人）",
+    "システム・ナロウズ（中央区、55人）",
+    "神戸ソフトクリエイト（北区、28人）"
+   ],
+   "excluded": [
+    "日本ワークシステム（派遣・警備）",
+    "日本ネットワークサービス（ビル管理）",
+    "日本ＤＸアンテナ（西区、製造業）",
+    "スミフルプロセスネットワーク（東灘区、果物の加工）",
+    "トモエシステム（兵庫区、機械部品の販売）",
+    "神栄テクノロジー（計測機器の製造）"
+   ]
+  },
+  "himeji": {
+   "next_candidates": [],
+   "unverified": [
+    "サントクコンピユータサービス（飾磨区中島、4140001059118、被保険者88人。公式 URL 不明）",
+    "神田ビジネスソリューション（4330001019993、85人）",
+    "畿内情報サービス（16人）"
+   ],
+   "excluded": [
+    "グローリーテクニカルソリューションズ株式会社（被保険者362人。グローリーのグループの貨幣処理機器などの保守）",
+    "旭テクノロジー（プラント・ドローン）"
+   ]
+  },
+  "akashi": {
+   "next_candidates": [],
+   "unverified": [],
+   "excluded": [
+    "川重テクノロジー（分析・試験・解析）"
+   ]
+  },
+  "kakogawa": {
+   "next_candidates": [
+    {
+     "name": "株式会社高砂コンピューターサービス",
+     "hq": "所在地(本社) 〒675-0037 兵庫県加古川市加古川町本町360-5",
+     "corporate_number": "4140001043146",
+     "houjin_honten": "兵庫県加古川市加古川町本町３６０番地の５",
+     "employees": {
+      "value": 100,
+      "as_of": "「正社員 100名」（時点なし）",
+      "source": "https://www.takasago-cs.co.jp/company/"
+     },
+     "meets_criteria": false,
+     "notes": "名前は「高砂」でも本社は加古川市（1972年に高砂市で設立、数年後に加古川市へ）。売上高41億（2025年度）。加盟団体に「兵庫県データ・サービス協議会(DS会)」"
+    }
+   ],
+   "unverified": [
+    "富士コンピュータ株式会社（加古川町稲屋790-1、4140001043501。gBizINFO 従業員数141人。公式サイト見つからず。業界団体の資料に167人・企業情報サイトに「AIロボット開発」= secondary）",
+    "北斗システム（26人）"
+   ],
+   "excluded": [
+    "BAN-BANネットワークス（ケーブルテレビとみられる。未確認）"
+   ]
+  },
+  "toyooka-city": {
+   "next_candidates": [],
+   "unverified": [
+    "エイジシステム（被保険者42人）"
+   ],
+   "excluded": []
+  },
+  "nishiwaki": {
+   "next_candidates": [
+    {
+     "name": "株式会社ブレイン",
+     "hq": "本社 〒677-0033 兵庫県西脇市鹿野町1352（東京営業所あり）",
+     "corporate_number": "6140001075856",
+     "houjin_honten": "兵庫県西脇市鹿野町１３５２番地",
+     "employees": {
+      "value": null,
+      "as_of": "公式の従業員数の行は HTML でコメントアウト（「31人（男19人 女12人）」、画面に出ない）",
+      "source": "https://www.bb-brain.co.jp/company_info/"
+     },
+     "meets_criteria": false,
+     "ai_initiative": "BakeryScan（パン識別AIレジ）・EatScan（食事識別AIレジ）・がん細胞診断支援（提供側）",
+     "notes": "愛媛県砥部町のページで詳述済み（「従業員23名」と書いている）。地元のページでは1〜2文。gBizINFO 従業員数30人"
+    }
+   ],
+   "unverified": [],
+   "excluded": []
+  },
+  "nishinomiya": {
+   "next_candidates": [],
+   "unverified": [
+    "新明和ソフトテクノロジ株式会社（田近野町6番84号、1140001069045、本店 西宮市。新明和工業のグループ会社一覧に事業と住所はあるが人数なし。自社サイト見つからず。gBizINFO 182人・求人サイト 185名〔2026年8月、secondary〕。求人サイトに「本社は宝塚市」の記載＝食い違い）"
+   ],
+   "excluded": [
+    "GEOソリューションズ（測量）"
+   ]
+  },
+  "takasago": {
+   "next_candidates": [],
+   "unverified": [],
+   "excluded": [
+    "MHIソリューションテクノロジーズ株式会社（4240001012628、本店 高砂市。総合エンジニアリング業、三菱重工グループ。システム開発とは確かめていない）"
+   ]
+  },
+  "others": "尼崎市 近畿システム管理（225人）・グローバルソリューション（172人）、伊丹市 システム・エージ（32人）、宝塚市 デジタルコミュニケーション（26人）、川西市 ユーシステム（53人）、三木市 ネクストワンズソリューション（44人）、加西市 ワールド・システム・カンパニー（25人）などは公式未確認（gBizINFO の被保険者数、参考）",
+  "_factories": {
+   "note": "stats 担当からの照合。記事では会社名なしの1〜2文か、会社名を書くかを後で決める。公式の拠点ページで所在を確かめた分だけ（2026-11-11）。統計の値を1社の値として書かない",
+   "confirmed": [
+    {
+     "company": "株式会社神戸製鋼所",
+     "site": "神戸本社",
+     "address": "〒651-8585 兵庫県神戸市中央区脇浜海岸通2-2-4",
+     "municipality": "神戸市中央区",
+     "facts": "国内拠点の本社",
+     "source": "https://www.kobelco.co.jp/about-kobelco/domestic-location.html"
+    },
+    {
+     "company": "株式会社神戸製鋼所",
+     "site": "神戸線条工場（鉄鋼アルミ）・神戸発電所（電力）",
+     "address": "〒657-0863 兵庫県神戸市灘区灘浜東町2",
+     "municipality": "神戸市灘区",
+     "facts": "生産拠点",
+     "stats": "灘区の鉄鋼業 4所・1,024人（ec_6_1）",
+     "source": "https://www.kobelco.co.jp/about-kobelco/domestic-location.html"
+    },
+    {
+     "company": "株式会社神戸製鋼所",
+     "site": "加古川製鉄所（鉄鋼アルミ）・技術開発センター（加古川市尾上町池田2222-1）",
+     "address": "〒675-0137 兵庫県加古川市金沢町1",
+     "municipality": "加古川市",
+     "facts": "生産拠点",
+     "stats": "加古川市の鉄鋼（出荷額の61.9%、mfg2025）",
+     "source": "https://www.kobelco.co.jp/about-kobelco/domestic-location.html"
+    },
+    {
+     "company": "株式会社神戸製鋼所",
+     "site": "高砂製作所（素形材・機械）",
+     "address": "〒676-8670 兵庫県高砂市荒井町新浜2-3-1",
+     "municipality": "高砂市",
+     "source": "https://www.kobelco.co.jp/about-kobelco/domestic-location.html"
+    },
+    {
+     "company": "株式会社神戸製鋼所",
+     "site": "播磨工場（機械）",
+     "address": "〒675-0155 兵庫県加古郡播磨町新島41",
+     "municipality": "播磨町",
+     "source": "https://www.kobelco.co.jp/about-kobelco/domestic-location.html"
+    },
+    {
+     "company": "株式会社神戸製鋼所",
+     "site": "神戸総合技術研究所",
+     "address": "〒651-2271 兵庫県神戸市西区高塚台1-5-5",
+     "municipality": "神戸市西区",
+     "source": "https://www.kobelco.co.jp/about-kobelco/domestic-location.html"
+    },
+    {
+     "company": "川崎重工業株式会社",
+     "site": "神戸本社・神戸工場（船舶・エネルギー）",
+     "address": "神戸本社 〒650-8680 神戸市中央区東川崎町1丁目1番3号（神戸クリスタルタワー）、神戸工場 〒650-8670 神戸市中央区東川崎町3丁目1番1号",
+     "municipality": "神戸市中央区",
+     "source": "https://www.khi.co.jp/corporate/network/ （/corporate/network/js/index.json）"
+    },
+    {
+     "company": "川崎重工業株式会社",
+     "site": "西神工場（航空宇宙）・西神戸工場（油圧機器・ロボット）",
+     "address": "西神工場 〒651-2271 神戸市西区高塚台2丁目8番1号、西神戸工場 〒651-2239 神戸市西区櫨谷町松本234番地",
+     "municipality": "神戸市西区",
+     "source": "https://www.khi.co.jp/corporate/network/"
+    },
+    {
+     "company": "川崎重工業株式会社",
+     "site": "明石工場（航空宇宙・モーターサイクル＆エンジン・ロボット。技術開発本部も構内）",
+     "address": "〒673-8666 兵庫県明石市川崎町1番1号",
+     "municipality": "明石市",
+     "facts": "カワサキモータース株式会社（グループ会社）の本社・本社工場も同じ住所",
+     "stats": "明石市の輸送用機械（出荷額の47.5%）",
+     "source": "https://www.khi.co.jp/corporate/network/"
+    },
+    {
+     "company": "川崎重工業株式会社",
+     "site": "播磨工場（鉄道車両・エネルギー）",
+     "address": "〒675-0180 兵庫県加古郡播磨町新島8番地",
+     "municipality": "播磨町",
+     "facts": "川崎車両の播磨工場も同じ住所",
+     "source": "https://www.khi.co.jp/corporate/network/"
+    },
+    {
+     "company": "川崎車両株式会社（川崎重工業のグループ会社）",
+     "site": "神戸本社",
+     "address": "〒652-0884 神戸市兵庫区和田山通2丁目1番18号",
+     "municipality": "神戸市兵庫区",
+     "source": "https://www.khi.co.jp/corporate/network/"
+    },
+    {
+     "company": "カワサキモータース株式会社（川崎重工業のグループ会社）",
+     "site": "加古川工場",
+     "address": "〒675-0112 兵庫県加古川市平岡町山之上向原170番地",
+     "municipality": "加古川市",
+     "source": "https://www.khi.co.jp/corporate/network/"
+    },
+    {
+     "company": "三菱重工業株式会社",
+     "site": "神戸造船所 神戸工場",
+     "address": "〒652-8585 兵庫県神戸市兵庫区和田崎町一丁目1番1号",
+     "municipality": "神戸市兵庫区",
+     "facts": "主要製品: 潜水艦・海洋開発機器・原子力発電プラント・宇宙機器・料金収受機械・ITS製品・大型冷凍機・食品包装機械",
+     "source": "https://www.mhi.com/jp/company/location/kobew"
+    },
+    {
+     "company": "三菱重工業株式会社",
+     "site": "神戸造船所 二見工場",
+     "address": "〒674-0093 兵庫県明石市二見町南二見1番地",
+     "municipality": "明石市",
+     "facts": "名前は「神戸」でも所在は明石市",
+     "source": "https://www.mhi.com/jp/company/location/kobew"
+    },
+    {
+     "company": "三菱重工業株式会社",
+     "site": "高砂製作所 高砂工場",
+     "address": "〒676-8686 兵庫県高砂市荒井町新浜2丁目1番1号",
+     "municipality": "高砂市",
+     "facts": "発電用ガスタービン・蒸気タービン・ポンプ",
+     "source": "https://www.mhi.com/jp/company/location/takasagow"
+    },
+    {
+     "company": "日本製鉄株式会社",
+     "site": "瀬戸内製鉄所 広畑地区",
+     "address": "〒671-1188 兵庫県姫路市広畑区富士町1番地",
+     "municipality": "姫路市広畑区",
+     "facts": "高級薄板商品の供給拠点。操業開始1939年10月15日、敷地約600万m2",
+     "source": "https://www.nipponsteel.com/works/setouchi/hirohata/outline/"
+    },
+    {
+     "company": "株式会社ダイセル",
+     "site": "姫路製造所 網干工場",
+     "address": "〒671-1281 兵庫県姫路市網干区新在家1239",
+     "municipality": "姫路市網干区",
+     "facts": "酢酸セルロース／アセテート・トウ／CMC／HEC／酢酸／チオグリコール酸／1,3-ブチレングリコール。本社は大阪本社・東京本社",
+     "source": "https://www.daicel.com/corporate/network/workplace/"
+    },
+    {
+     "company": "株式会社ダイセル",
+     "site": "姫路製造所 広畑工場",
+     "address": "〒671-1123 兵庫県姫路市広畑区富士町12",
+     "municipality": "姫路市広畑区",
+     "facts": "AS樹脂／ABS樹脂／エンプラアロイなどの樹脂コンパウンド品／長繊維強化樹脂",
+     "source": "https://www.daicel.com/corporate/network/workplace/"
+    },
+    {
+     "company": "株式会社ダイセル",
+     "site": "播磨工場",
+     "address": "〒671-1681 兵庫県たつの市揖保川町馬場805",
+     "municipality": "たつの市",
+     "facts": "自動車エアバッグ用インフレータ／シートベルトプリテンショナー用ガス発生器／電流遮断器",
+     "source": "https://www.daicel.com/corporate/network/workplace/"
+    },
+    {
+     "company": "株式会社ダイセル",
+     "site": "神崎工場",
+     "address": "〒661-0964 兵庫県尼崎市神崎町12-1",
+     "municipality": "尼崎市",
+     "facts": "包装用フィルムほか各種コーティングフィルム",
+     "source": "https://www.daicel.com/corporate/network/workplace/"
+    },
+    {
+     "company": "住友ゴム工業株式会社",
+     "site": "本社・タイヤテクニカルセンター",
+     "address": "本社 〒651-0072 兵庫県神戸市中央区脇浜町3-6-9、タイヤテクニカルセンター 神戸市中央区筒井町2-1-1",
+     "municipality": "神戸市中央区",
+     "source": "https://www.srigroup.co.jp/corporate/company.html"
+    },
+    {
+     "company": "住友ゴム工業株式会社",
+     "site": "市島工場（スポーツ用品）・ゴルフ科学センター",
+     "address": "〒669-4323 兵庫県丹波市市島町梶原5",
+     "municipality": "丹波市",
+     "source": "https://www.srigroup.co.jp/corporate/map_ja/index.html"
+    },
+    {
+     "company": "住友ゴム工業株式会社",
+     "site": "加古川工場（産業品）",
+     "address": "〒675-0011 兵庫県加古川市野口町北野410-1",
+     "municipality": "加古川市",
+     "facts": "タイヤの工場は県外",
+     "source": "https://www.srigroup.co.jp/corporate/map_ja/index.html"
+    },
+    {
+     "company": "株式会社カネカ",
+     "site": "高砂工業所",
+     "address": "〒676-8688 兵庫県高砂市高砂町宮前町1-8",
+     "municipality": "高砂市",
+     "stats": "高砂市の化学工業 8所・1,934人（ec_6_1）",
+     "source": "https://www.kaneka.co.jp/corporate/office/"
+    },
+    {
+     "company": "株式会社IHI",
+     "site": "相生工場",
+     "address": "〒678-0041 兵庫県相生市相生5292",
+     "municipality": "相生市",
+     "facts": "ボイラ・LNGタンク・各種パイプユニット・化学プラント用塔槽類・鋳造品",
+     "stats": "相生市のはん用機械（出荷額の65.3%）",
+     "source": "https://www.ihi.co.jp/company/offices/"
+    },
+    {
+     "company": "住友電気工業株式会社",
+     "site": "伊丹製作所",
+     "address": "公式の一覧に「兵庫県, 日本」だけ（住所なし）",
+     "municipality": "未確認",
+     "facts": "特殊金属線、粉末合金、焼結製品、ダイヤ製品、化合物半導体",
+     "source": "https://sumitomoelectric.com/jp/company/office_group_companies"
+    },
+    {
+     "company": "三菱電機株式会社",
+     "site": "伊丹製作所（尼崎市）ほか",
+     "address": "stats.md の (A)",
+     "municipality": "尼崎市・神戸市・赤穂市・姫路市・三田市",
+     "source": "https://www.mitsubishielectric.co.jp/corporate/gaiyo/network/"
+    }
+   ],
+   "not_confirmed": [
+    "関西ペイント株式会社（www.kansai.co.jp は 403）",
+    "住友電工 伊丹製作所の住所",
+    "小野市の鉄鋼・丹波篠山市の化学・高砂市の窯業の会社"
+   ]
+  },
+  "_no_main_guide": {
+   "阪神南（尼崎・西宮・芦屋）": "神戸市",
+   "阪神北（伊丹・宝塚・川西・三田・猪名川）": "神戸市",
+   "東播磨（高砂・稲美・播磨）": "加古川市・明石市",
+   "北播磨（西脇・三木・小野・加西・加東・多可）": "加古川市・神戸市・姫路市（西脇はブレインが次点）",
+   "中播磨（市川・福崎・神河）": "姫路市",
+   "西播磨（相生・赤穂・たつの・宍粟・太子・上郡・佐用）": "姫路市",
+   "但馬（養父・朝来・香美・新温泉）": "豊岡市",
+   "丹波（丹波篠山・丹波）": "神戸市・豊岡市",
+   "淡路（洲本・南あわじ・淡路）": "神戸市・明石市",
+   "note": "地域は県民局・県民センターの所管。距離・隣接は確かめていない"
+  }
+ },
+ "_notes": [
+  "本表は神戸市5社（日本ビジネスデータープロセシングセンター〔境界〕・コベルコシステム・さくらケーシーエス・コベルコソフトサービス・SRIシステムズ）・姫路市1（日東コンピューターサービス）・明石市1（ベニックソリューション）・加古川市1（ファインシステム）・豊岡市1（システムリサーチ）。ほかの24市・12町は本表なし",
+  "兵庫県情報サービス産業協会は実在を確かめられなかった。記事で協会名を書かない",
+  "大手のグループ会社が多い（IBM・神戸製鋼所、川崎重工、住友ゴム、SMBC、UCC、新明和工業）。「地元の独立系」とまとめない",
+  "コベルコシステムの1,938人はコベルコソフトサービス597人を含む。二重に数えない",
+  "名前と所在の市が違う: 高砂コンピューターサービス（加古川市）、三菱重工 神戸造船所 二見工場（明石市）、三菱電機 伊丹製作所（尼崎市）",
+  "ブレインは愛媛県砥部町、monoAI technology は愛媛県松山市の記事に出ている"
+ ]
+}

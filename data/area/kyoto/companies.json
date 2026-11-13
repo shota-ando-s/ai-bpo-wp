@@ -1,0 +1,526 @@
+{
+ "_meta": {
+  "checked": "2026-11-11",
+  "scope": "京都府26市町村（15市10町1村）。本社（公式サイトの本社・所在地）が当該市町村にあり、公式サイトでシステム開発・ソフトウェア開発・Web・情報処理サービス・AIを事業として明示する法人。本表には『公式サイトで本社所在地と従業員数の両方を確認できた会社』だけを入れた（時点がない会社は as_of に『時点なし』）。本店所在地は国税庁 法人番号の基本3情報（京都府 全件、令和8年10月30日時点）で確かめた。大企業・金融機関・外資のグループ会社は _reference._group_it に分けた。京都市は従業員数の多い順に7社（区名つき）。京都市以外は京田辺市・福知山市の各1社だけ（ほかは『確かめられなかった』で、会社がないという意味ではない）。",
+  "candidate_sources": [
+   "一般社団法人 京都府情報産業協会の会員一覧 https://www.ict-kyoto.jp/member/list/ （正会員45・賛助会員9。人数は自己申告で時点なし。JISA の団体会員で実在を確認。2026-11-11）",
+   "公益財団法人京都産業21『京都ICTソリューション企業ガイド』Ver.3.2（2026年1月6日改訂、52社） https://www.ki21.jp/wordpress/wp-content/uploads/2019/10/20260106_solution_guide_3.2-3.pdf （人数は会社の申告で時点なし。2026-11-11）",
+   "国税庁 法人番号公表サイト 基本3情報 京都府全件（26_kyoto_all_20261030.csv、116,051行）から商号で1,550件を抽出 https://www.houjin-bangou.nta.go.jp/download/zenken/ （2026-11-11）",
+   "経済産業省 gBizINFO https://info.gbiz.go.jp/hojin/ichiran?hojinBango=<法人番号> （1,550件。職場情報総合サイトの従業員数と厚生年金の被保険者数。本表の人数には使わない。2026-11-11）",
+   "京都府『京都企業紹介』五十音順の一覧（か行・は行は開けず） https://www.pref.kyoto.jp/sangyo-sien/gojyuuonnjyunn/index.html",
+   "WebSearch（担当上限10回のうち2回を使用）"
+  ],
+  "columns": "name / hq（公式の本社住所）/ municipality / town / employees{value,as_of,source} / capital / founded / business_summary / ai_initiative / url / size_basis / checked / notes"
+ },
+ "kyoto-city": [
+  {
+   "name": "株式会社トーセ",
+   "hq": "京都市下京区東洞院通四条下ル（本店は乙訓郡大山崎町下植野二階下13）",
+   "municipality": "京都市",
+   "town": "下京区",
+   "employees": {
+    "value": 550,
+    "as_of": "2026年8月31日現在（単体。連結592名）",
+    "source": "https://www.tose.co.jp/company/profile.html"
+   },
+   "capital": {
+    "value": "9億6,700万円",
+    "source": "https://www.tose.co.jp/company/profile.html"
+   },
+   "founded": 1979,
+   "business_summary": "ゲームソフト・スマートフォンアプリなどデジタルコンテンツの企画・開発・運営（受託）。東証スタンダード",
+   "ai_initiative": null,
+   "url": "https://www.tose.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "法人番号 2130001030304、本店 大山崎町（登記と本社が違う）。業務システムの会社ではない。AI の記載は確かめていない"
+  },
+  {
+   "name": "株式会社システムディ",
+   "hq": "京都市中京区烏丸通三条上る場之町603番地",
+   "municipality": "京都市",
+   "town": "中京区",
+   "employees": {
+    "value": 325,
+    "as_of": "時点なし（子会社を含む。同じ表の株主数は2026年4月30日現在）",
+    "source": "https://www.systemd.co.jp/company/"
+   },
+   "capital": {
+    "value": "4億8,426万円",
+    "source": "https://www.systemd.co.jp/company/"
+   },
+   "founded": null,
+   "business_summary": "学校（校務支援）・自治体（公会計）・運動施設管理などのパッケージソフトとサービス",
+   "ai_initiative": "プレスリリース（2026-07-13）『管理部門の規程運用と従業員の規程活用をAIで高度化』 https://www.systemd.co.jp/",
+   "url": "https://www.systemd.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "法人番号 8130001021041。gBizINFO 303人・被保険者305人"
+  },
+  {
+   "name": "京都電子計算株式会社",
+   "hq": "京都市下京区木津屋橋通新町西入東塩小路町601番地 NUPビルディング京都駅前",
+   "municipality": "京都市",
+   "town": "下京区",
+   "employees": {
+    "value": 319,
+    "as_of": "2026年4月1日現在",
+    "source": "https://www.kip.co.jp/company/about/"
+   },
+   "capital": {
+    "value": "5,000万円",
+    "source": "https://www.kip.co.jp/company/about/"
+   },
+   "founded": 1964,
+   "business_summary": "自治体・大学・病院・マスコミなど公共性の高い分野の情報システム。資本系列『独立系』",
+   "ai_initiative": "サービスに『答弁生成支援サービス「Ansクイック」』『AI-OCRサービス』『RPA配信サービス』",
+   "url": "https://www.kip.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "法人番号 2130001023349。京情協の会員ページは293人（時点なし）"
+  },
+  {
+   "name": "株式会社ラプラス・システム",
+   "hq": "京都市伏見区京町1-245",
+   "municipality": "京都市",
+   "town": "伏見区",
+   "employees": {
+    "value": 221,
+    "as_of": "2026年3月末現在",
+    "source": "https://www.lapsys.co.jp/company"
+   },
+   "capital": {
+    "value": "1億円",
+    "source": "https://www.lapsys.co.jp/company"
+   },
+   "founded": 1990,
+   "business_summary": "科学技術系ソフトウェア、太陽光発電の計測・表示システム、太陽光発電シミュレーションなど",
+   "ai_initiative": null,
+   "url": "https://www.lapsys.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "法人番号 5130001038914。gBizINFO 224人・被保険者225人"
+  },
+  {
+   "name": "株式会社ケーケーシー情報システム",
+   "hq": "京都市上京区千本通元誓願寺上る南辻町369番地の3",
+   "municipality": "京都市",
+   "town": "上京区",
+   "employees": {
+    "value": 194,
+    "as_of": "2026年10月1日現在",
+    "source": "https://www.kkcis.kyoto/company/overview/"
+   },
+   "capital": {
+    "value": "1億円",
+    "source": "https://www.kkcis.kyoto/company/overview/"
+   },
+   "founded": 1972,
+   "business_summary": "市町村・公団体・民間の IT 活用計画からシステム開発・導入・運用支援まで",
+   "ai_initiative": null,
+   "url": "https://www.kkcis.kyoto/",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "法人番号 9130001002908。株主 富士通株式会社29.5%・大阪中小企業投資育成21.0%・役員従業員持株会27.4%（子会社ではないが最大株主は富士通）。gBizINFO 197人・被保険者201人"
+  },
+  {
+   "name": "株式会社近畿リサーチセンター",
+   "hq": "京都市中京区室町御池下ル円福寺町338 樋口・進和ビル5階",
+   "municipality": "京都市",
+   "town": "中京区",
+   "employees": {
+    "value": 122,
+    "as_of": "2025年4月現在",
+    "source": "https://www.krcinc.co.jp/company/outline/"
+   },
+   "capital": {
+    "value": "払込資本金1,500万円",
+    "source": "https://www.krcinc.co.jp/company/outline/"
+   },
+   "founded": 1964,
+   "business_summary": "システム開発・パソコン販売・システム運用・アウトソーシング（情報処理会社）",
+   "ai_initiative": null,
+   "url": "https://www.krcinc.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "法人番号 3130001020543。京情協の会員ページは112人"
+  },
+  {
+   "name": "カゴヤ・ジャパン株式会社",
+   "hq": "京都市中京区三条通烏丸西入御倉町85-1 KDX烏丸ビル8F",
+   "municipality": "京都市",
+   "town": "中京区",
+   "employees": {
+    "value": 103,
+    "as_of": "2024年4月現在（従業員総数）",
+    "source": "https://www.kagoya.jp/corporate/recruit/about/"
+   },
+   "capital": {
+    "value": "1億円",
+    "source": "https://www.kagoya.jp/corporate/recruit/about/"
+   },
+   "founded": 1983,
+   "business_summary": "レンタルサーバー・VPS・クラウド・メールなどのホスティング（受託開発ではない）",
+   "ai_initiative": null,
+   "url": "https://www.kagoya.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "法人番号 5130001038690。人数が2年半前"
+  }
+ ],
+ "fukuchiyama": [
+  {
+   "name": "井上株式会社",
+   "hq": "京都府福知山市篠尾新町3丁目3番地",
+   "municipality": "福知山市",
+   "town": "篠尾新町",
+   "employees": {
+    "value": 116,
+    "as_of": "時点なし（社員数）",
+    "source": "https://www.inouekabu.com/company/profile/"
+   },
+   "capital": {
+    "value": "4,000万円",
+    "source": "https://www.inouekabu.com/company/profile/"
+   },
+   "founded": 1952,
+   "business_summary": "北近畿を中心に電気設備の卸・販売・製作・施工とソフトウェア開発。事業の分類に農業・IoT・DX・AIソリューション",
+   "ai_initiative": "事業・事例の分類に『AIソリューション』。府の『京都企業紹介』にブドウの摘粒を補助する AI（2021年の実証、cases.md）",
+   "url": "https://www.inouekabu.com/",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "法人番号 5130001040952。**主業は電気設備の卸・施工で、IT 専業ではない**（gBizINFO の業種は卸売業、小売業。116人・被保険者126人）。京都ICTソリューション企業ガイドは所在地を京都市南区上鳥羽・104名・資本金400万円と書き、公式と食い違う"
+  }
+ ],
+ "maizuru": [],
+ "ayabe": [],
+ "uji": [],
+ "miyazu": [],
+ "kameoka": [],
+ "joyo": [],
+ "muko": [],
+ "nagaokakyo": [],
+ "yawata": [],
+ "kyotanabe": [
+  {
+   "name": "シスポート株式会社",
+   "hq": "京都府京田辺市河原平田23番地の16",
+   "municipality": "京田辺市",
+   "town": "河原平田",
+   "employees": {
+    "value": 10,
+    "as_of": "2024/01/01現在",
+    "source": "https://www.sysport.co.jp/company/summary/"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.sysport.co.jp/company/summary/"
+   },
+   "founded": 1981,
+   "business_summary": "業務用アプリケーションソフト（売上管理・請求管理など）の開発・販売、ユーザーサポート、システム管理のアウトソーシング",
+   "ai_initiative": null,
+   "url": "https://www.sysport.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-11",
+   "notes": "法人番号 5130001038749。京都ICTソリューション企業ガイドは11名"
+  }
+ ],
+ "kyotango": [],
+ "nantan": [],
+ "kizugawa": [],
+ "oyamazaki": [],
+ "kumiyama": [],
+ "ide": [],
+ "ujitawara": [],
+ "kasagi": [],
+ "wazuka": [],
+ "seika": [],
+ "kyotamba": [],
+ "ine": [],
+ "yosano": [],
+ "minamiyamashiro": [],
+ "_reference": {
+  "unverified": [
+   {
+    "name": "株式会社とめ研究所",
+    "municipality": "京都市下京区",
+    "houjin": "7130001026256 京都市下京区中堂寺南町１３４番地",
+    "employees_public_db": "京都ICTソリューション企業ガイド 180名",
+    "business": "ソフトウェア開発・最適化・多変量解析・ディープラーニング（公式トップ）",
+    "why": "公式の会社情報のページが 404、人数を確かめられず"
+   },
+   {
+    "name": "株式会社クレオテック",
+    "municipality": "京都市北区",
+    "houjin": "3130001004678 京都市北区平野上八丁柳町２８番地",
+    "employees_public_db": "京情協の会員ページ 399人",
+    "business": "学園の事務業務アウトソーシング・教育分野の ICT 活用サポート（京情協）",
+    "why": "公式サイトが curl で接続リセット、WebFetch で 503"
+   },
+   {
+    "name": "オムロンデジタル株式会社",
+    "municipality": "向日市",
+    "houjin": "1130001016808 向日市寺戸町九ノ坪５３番地",
+    "employees_public_db": "gBizINFO 430人・被保険者513人",
+    "business": "ソフトウェア開発業（gBizINFO）",
+    "why": "公式サイトが 403。オムロンのグループ（_group_it 扱い）"
+   },
+   {
+    "name": "ムラタシステム株式会社",
+    "municipality": "京都市南区",
+    "houjin": "1130001011825 京都市南区吉祥院南落合町３番地",
+    "employees_public_db": "gBizINFO 270人・被保険者288人（事業所 伏見区竹田向代町136）",
+    "business": "情報通信業（gBizINFO）",
+    "why": "公式未確認。村田機械のグループ"
+   },
+   {
+    "name": "株式会社日新システムズ",
+    "municipality": "京都市下京区",
+    "houjin": "2130001018398",
+    "employees_public_db": "gBizINFO 223人・被保険者244人",
+    "business": "制御系・組込系ソフトウェアの受託開発（gBizINFO）",
+    "why": "公式の会社概要を開けず。親会社未確認"
+   },
+   {
+    "name": "バンネットワーク株式会社",
+    "municipality": "京都市中京区",
+    "houjin": "—",
+    "employees_public_db": "gBizINFO 154人・被保険者142人",
+    "business": "システム運用（gBizINFO）",
+    "why": "公式サイトが開けず"
+   },
+   {
+    "name": "株式会社AIVICK",
+    "municipality": "京都市南区（東京都港区にも本社）",
+    "houjin": "—",
+    "employees_public_db": "gBizINFO 70人・被保険者57人",
+    "business": "コンピューターシステムの設計・開発（gBizINFO）",
+    "why": "公式の会社概要に人数なし"
+   },
+   {
+    "name": "合資会社アイメディア",
+    "municipality": "福知山市",
+    "houjin": "—",
+    "employees_public_db": "京都ICTソリューション企業ガイド 7名",
+    "business": "『福知山市にあるシステム開発会社』（公式）",
+    "why": "公式の会社概要が読み込み型で人数が取れず"
+   },
+   {
+    "name": "HILLTOP株式会社",
+    "municipality": "宇治市",
+    "houjin": "6130001034516 宇治市大久保町成手１番地３０",
+    "employees_public_db": "gBizINFO 135人・被保険者126人",
+    "business": "精密部品の機械加工・装置開発・DXソリューション。グループの ThinkR（同じ住所）が自動プログラミング『COMlogiQ』と AI を開発",
+    "why": "公式に人数なし。IT 専業ではない"
+   },
+   {
+    "name": "株式会社Geek Guild",
+    "municipality": "京都市西京区",
+    "houjin": "6130001062442 京都市西京区御陵大原１番地３６京大桂ベンチャープラザ北館３１０号室",
+    "employees_public_db": "gBizINFO 被保険者2人",
+    "business": "社内LLM・AIエージェントの導入支援、LLM 推論最適化『Cache AI』（公式）",
+    "why": "公式に人数なし"
+   }
+  ],
+  "closed": [
+   {
+    "name": "ムラテック情報システム株式会社",
+    "houjin": "1130001011833 京都市南区",
+    "status": "2020-04-01 に村田機械株式会社（7130001000054）に合併（法人番号の閉鎖事由 合併）"
+   },
+   {
+    "name": "京都システムズ株式会社",
+    "houjin": "4130001019428 京都市下京区",
+    "status": "2019-10-03 に合併（承継法人 7120001093280。商号未確認）"
+   },
+   {
+    "name": "リアルワールドデータ株式会社",
+    "houjin": "4130001055704 京都市下京区",
+    "status": "2023-08-14 に合併（承継法人 6010403010531）。府の『京都企業紹介』の一覧には残る"
+   },
+   {
+    "name": "ムラタシステム株式会社（別番号）",
+    "houjin": "3130001060911 京都市下京区紺屋町",
+    "status": "2023-01-04 閉鎖（同名の 1130001011825 は存続）"
+   }
+  ],
+  "_outside_hq": [
+   {
+    "name": "株式会社DTS WEST",
+    "note": "登記 京都市下京区（9130001017781）、公式の本社 大阪市中央区安土町2-3-13（296名、2026年4月1日現在、主要株主 DTS）。京都の会社に数えない"
+   },
+   {
+    "name": "株式会社ネクステージ",
+    "note": "登記 京都市下京区（6011501018565）、公式の本社 東京都中央区日本橋茅場町（118名、時点なし、京都支社あり）。京都の会社に数えない"
+   },
+   {
+    "name": "株式会社トーセ",
+    "note": "本店 大山崎町、本社 京都市下京区。kyoto-city の表に入れた"
+   },
+   {
+    "name": "京都電機器株式会社",
+    "note": "登記 京都市下京区（1130001019471）、公式の本社 宇治市槇島町十六19-1（235名、時点なし）。IT 企業ではない（照合）"
+   },
+   {
+    "name": "株式会社京都マテリアルズ",
+    "note": "本社 京都市伏見区（2130001048775）、綾部ハイテック工場 綾部市有岡町田坂28。人数は公式になし（照合）"
+   },
+   {
+    "name": "オフィスピコッツ",
+    "note": "ガイドの所在地は南丹市園部町。公式の本社は京都市下京区玉津島町294、南丹は営業所"
+   }
+  ],
+  "_group_it": [
+   {
+    "name": "京セラコミュニケーションシステム株式会社",
+    "municipality": "京都市伏見区",
+    "employees": {
+     "value": 4317,
+     "as_of": "2026年3月末現在（連結）"
+    },
+    "parent": "京セラ76.6%・KDDI23.4%",
+    "source": "https://www.kccs.co.jp/company/overview/"
+   },
+   {
+    "name": "SGシステム株式会社",
+    "municipality": "京都市南区（東京本社もある）",
+    "employees": {
+     "value": 2720,
+     "as_of": "2026年4月1日現在（正社員1,533人・契約社員1,187人）"
+    },
+    "parent": "SGホールディングスのグループ",
+    "source": "https://www.sg-systems.co.jp/company/outline/"
+   },
+   {
+    "name": "株式会社ハイシンク創研",
+    "municipality": "京都市下京区",
+    "employees": {
+     "value": 191,
+     "as_of": "2024年12月現在（単体。連結12,000名）"
+    },
+    "parent": "株式会社ハイシンクジャパン100%",
+    "source": "https://www.lhcc.co.jp/company"
+   },
+   {
+    "name": "トナミシステムソリューションズ株式会社",
+    "municipality": "京都市中京区",
+    "employees": {
+     "value": 169,
+     "as_of": "2026年4月1日現在（WebFetch の要約）"
+    },
+    "parent": "JPトナミグループ株式会社",
+    "source": "https://www.tonami-syssol.co.jp/outline"
+   },
+   {
+    "name": "株式会社京信システムサービス",
+    "municipality": "京都市南区",
+    "employees": {
+     "value": 133,
+     "as_of": "2026年4月1日現在"
+    },
+    "parent": "京都信用金庫・日立製作所 他",
+    "source": "https://kssinet.co.jp/corporate/company/"
+   },
+   {
+    "name": "株式会社SCREEN ICT ソフトウエア",
+    "municipality": "京都市右京区",
+    "employees": {
+     "value": 132,
+     "as_of": "時点なし"
+    },
+    "parent": "SCREENグループ",
+    "source": "https://www.screen.co.jp/icts/overview"
+   },
+   {
+    "name": "中信コンピューターアンドコミュニケーション株式会社",
+    "municipality": "京都市南区",
+    "employees": {
+     "value": null,
+     "as_of": "京情協46人・ガイド49名（公式未確認）"
+    },
+    "parent": "京都中央信用金庫のグループ（京情協）",
+    "source": "https://www.ict-kyoto.jp/member/list/"
+   },
+   {
+    "name": "ミラクシアエッジテクノロジー株式会社",
+    "municipality": "長岡京市",
+    "employees": {
+     "value": 397,
+     "as_of": "2026年3月1日現在"
+    },
+    "parent": "Winbond Electronics Corporation（2023年から）",
+    "ai": "エッジAIカメラ・AI 小型化・実装最適化",
+    "source": "https://www.miraxia.com/about/profile/"
+   },
+   {
+    "name": "サイレックス・テクノロジー株式会社",
+    "municipality": "精華町",
+    "employees": {
+     "value": 196,
+     "as_of": "2026年4月現在（正社員。グループ全体290名）"
+    },
+    "parent": "村田機械100%",
+    "note": "ワイヤレス機器のメーカー",
+    "source": "https://www.silex.jp/company/outline"
+   }
+  ],
+  "_large_sites": {
+   "note": "記事では会社名を1〜2文。統計の値を会社の値と書かない。詳細は companies.md の『大企業の拠点』",
+   "items": [
+    {
+     "name": "株式会社村田製作所 本社・長岡事業所（研究開発）",
+     "site": "長岡京市東神足1丁目10番1号・天神2丁目26番10号",
+     "source": "https://corporate.murata.com/ja-jp/company/muratalocations/branch"
+    },
+    {
+     "name": "月桂冠株式会社 本社ほか",
+     "site": "京都市伏見区南浜町247番地",
+     "source": "https://www.gekkeikan.co.jp/company/guide/branch/"
+    },
+    {
+     "name": "宝酒造株式会社 本社所在地",
+     "site": "京都市伏見区竹中町609番地",
+     "source": "https://www.takarashuzo.co.jp/company/profile/"
+    },
+    {
+     "name": "京セラ株式会社 本社・京都伏見事業所・京都綾部工場・けいはんなリサーチセンター",
+     "site": "伏見区竹田鳥羽殿町6番地・伏見区久我本町11-17・綾部市味方町1・精華町光台3丁目5-3",
+     "source": "https://www.kyocera.co.jp/company/location_jp/region/area/asia/japan/kinki-region.html"
+    },
+    {
+     "name": "ジャパン マリンユナイテッド株式会社 舞鶴事業所",
+     "site": "舞鶴市字余部下1180番地",
+     "source": "https://www.jmuc.co.jp/company/location/"
+    },
+    {
+     "name": "日本板硝子株式会社 舞鶴事業所・京都事業所",
+     "site": "舞鶴市大波下小字浜田255番地・京都市南区久世大薮町469番地",
+     "source": "https://www.nsg.co.jp/ja-jp/about-nsg/company/listofoffices/maizuru"
+    },
+    {
+     "name": "ローム株式会社 本社",
+     "site": "京都市右京区西院溝崎町21",
+     "source": "https://www.rohm.co.jp/company/about/profile"
+    },
+    {
+     "name": "ニデック株式会社 本社",
+     "site": "京都市南区久世殿城町338番地",
+     "source": "https://www.nidec.com/jp/corporate/about/outline/"
+    },
+    {
+     "name": "株式会社島津製作所 本社",
+     "site": "京都市中京区西ノ京桑原町1番地",
+     "source": "https://www.shimadzu.co.jp/aboutus/company/profile.html"
+    }
+   ]
+  }
+ },
+ "_notes": [
+  "本表は京都市7社（トーセ550名〔単体〕・システムディ325名〔子会社含む〕・京都電子計算319名・ラプラス・システム221名・ケーケーシー情報システム194名・近畿リサーチセンター122名・カゴヤ・ジャパン103名）、京田辺市のシスポート（10名）、福知山市の井上株式会社（116名、主業は電気設備）。ほかの24市町村は本表なし（確かめられなかった）。",
+  "京都府情報産業協会（www.ict-kyoto.jp）は実在。会員ページの人数は時点がなく公式と食い違うので使わない。",
+  "京都市の大きな IT 企業の多くはグループ会社（京セラ・SGHD・SCREEN・村田機械・オムロン・金融機関・外資）。_group_it に分けた。",
+  "登記と本社が違う: DTS WEST（本社 大阪）・ネクステージ（本社 東京）・トーセ（本店 大山崎町）・京都電機器（本社 宇治市）。",
+  "照合の結果は companies.md の『照合』の節。ユー・イングリッシュは精華町ではなく京都市伏見区。京都マテリアルズは本社 伏見区・工場 綾部市。",
+  "WebSearch は10回のうち2回を使用。"
+ ]
+}

@@ -1,0 +1,225 @@
+# 静岡県 12町（東伊豆町・河津町・南伊豆町・松崎町・西伊豆町・函南町・清水町・長泉町・小山町・吉田町・川根本町・森町）2026年度
+# 確認日 2026-11-11。根拠は subsidy_b_areas.md
+# 生成AI・AI導入・IT導入・DX を名指しで補助する町独自の制度は、12町とも確認できなかった
+# 国の「デジタル化・AI導入補助金」（national.yml の digital-ai-donyu）への町の上乗せ（addon）は12町とも見つからない
+# IT・ホームページ・研修に使える町独自の制度: 清水町 中小企業支援補助金（販売力促進: ホームページ作成費など 1/2・年5万円）・経営革新計画支援補助金（研修費・ホームページ作成費・外注費など 1/2・50万円）、河津町 小規模事業者強化事業費補助金（ホームページ制作・ネット販路整備 1/2・30万円、事業開始は申請後10月末まで）
+# 創業・設備（備品）に使える町の制度: 東伊豆町 創業支援事業補助金、松崎町 起業等支援事業補助金、清水町 産業創出支援事業費補助金、小山町 賑わい商業創出支援事業助成金、吉田町 産業振興事業費補助金（新規創業）、川根本町 起業及び事業継続チャレンジ補助金、長泉町 起業・創業支援事業費補助金（R8受付終了）
+# 独自の事業者向け補助（IT・創業・設備・研修）が見つからなかった町: 南伊豆町（融資のみ）・西伊豆町（融資・利子補給のみ）・函南町（企業立地奨励金・創業相談のみ）・森町（企業立地のみ。ブランド向上支援は受付終了）
+# 県の制度・県域の機関・23市は subsidy_a 担当
+# 期間の status は data/subsidies/README.md の値（open / closed / rolling / unknown）。来年度の見込み（next_expected）は書かない
+
+# ---- 東伊豆町 ----
+- id: shizuoka-higashiizu-sogyo-shien
+  name: 東伊豆町創業支援事業補助金
+  org: 東伊豆町（観光産業課 観光商工係、0557-95-6301）
+  area: shizuoka/higashiizu
+  max_yen: 1200000
+  rate: 町内者は補助対象経費の2/3以内、町外者は1/2以内。上限 飲食業120万円、その他の業種100万円
+  rate_num: 0.667
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 新たに開設する事業所の外装・内装・設備の工事、什器備品等の購入・設置（事業の用に供するもの）、商号登記の登録免許税（個人）、法人設立・商号登記の司法書士・行政書士等の書類作成経費。交付決定年度と前年度の創業に係る経費。消費税・振込手数料・送料・クーポン等は対象外
+  conditions: 特定創業支援事業（商工団体等による経営・財務・人材育成・販路開拓の継続的な支援、原則4回以上・1か月以上）の支援を受けた証明が要る。この要綱か東伊豆町新規事業参入者支援補助金を受けたことがある者は対象外。国・県などの創業関連の補助を受ける経費は対象外
+  period: {status: rolling}
+  url: https://www.town.higashiizu.lg.jp/shigoto_sangyo/sangyo_shinkou/1/1181.html
+  checked: 2026-11-11
+  confidence: official
+  note: ページ（更新日 2024年12月02日）に受付期間の記載がなく「予算の範囲内」（要綱 https://www.town.higashiizu.lg.jp/material/files/group/7/kan_sougyousienzigyou_kouhuyoukou_R5_1.pdf 、5ページ、第4条）。創業の内装・設備・備品の補助で、ソフトウェア・クラウド利用料の記載はない。今年度の予算・残額は町に確認が要る
+  fuenn_note: 東伊豆町で創業する人が、店舗・事務所の内外装や設備・備品の費用を、町内者は2/3（最大100万円、飲食業120万円）補助する町の制度です。商工会などの特定創業支援事業を受けた証明が必要です。AI・ソフトウェアの利用料は対象として書かれていません。
+
+# ---- 河津町 ----
+- id: shizuoka-kawazu-shokibo-kyoka
+  name: 河津町小規模事業者強化事業費補助金
+  org: 河津町（産業振興課）
+  area: shizuoka/kawazu
+  max_yen: 300000
+  rate: 事業費10万円以上60万円以内の1/2（補助金額5万円以上30万円以内）。2回目以降の申請は1件5万円以上10万円以下
+  rate_num: 0.5
+  min_cost_yen: 100000
+  small_only: true
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: ホームページ等の制作（新規制作・リニューアル。機器購入費・自作の経費・維持管理費は対象外）、インターネットを活用した販路整備（ネットからの注文やメール配信システムの整備。自作・維持管理費は対象外）、商標登録・意匠登録、事業者紹介チラシの作成
+  conditions: 河津町に町税を納める個人事業者、町内に本店・支店等の登記がある法人、町内で新規に事業を始める者。対象業種は各種小売・卸売・サービス・建設業など。申請後10月末までに事業開始し、翌年3月25日までに完了。過去に交付を受けた事業者は5年以上経過後に再申請可
+  period: {status: unknown}
+  url: https://www.town.kawazu.shizuoka.jp/jigyousha/kouri/
+  checked: 2026-11-11
+  confidence: official
+  note: ページに受付期間・年度・更新日の表示がない。「申請後10月末までに事業開始」とあるので、2026年度分は2026-11-11 時点で新たに始めるのは難しいとみられる（町に確認が要る）。目的は集客増加・収益向上・販路開拓
+  fuenn_note: 河津町の小規模事業者が、ホームページの制作・リニューアルやネット注文・メール配信の仕組みづくりの費用を1/2（5万〜30万円）補助する町の制度です。申請後10月末までに事業を始める決まりなので、申請の時期は町の産業振興課に確認してください。
+
+- id: shizuoka-kawazu-shukuhaku-keieiryoku
+  name: 河津町宿泊業の経営力基盤強化事業費補助金
+  org: 河津町（産業振興課）
+  area: shizuoka/kawazu
+  max_yen: null
+  rate: 業務効率化・生産性向上は、1施設当たり補助対象経費20万円を下限・300万円を上限とし、その1/4（県の宿泊業の経営力基盤強化事業費補助金と並行補助）
+  rate_num: 0.25
+  min_cost_yen: 200000
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 宿泊事業者等が実施する業務効率化・生産性向上の取組（別表は画像で個別の経費は読めていない）、従業員の住環境の改善（社員寮の整備）
+  conditions: 河津町内に宿泊施設を有する宿泊事業者（旅館業法第3条第1項の許可。店舗型性風俗特殊営業を除く）とその共同事業体
+  period: {status: unknown}
+  url: https://www.town.kawazu.shizuoka.jp/jigyousha/keieiryokukibankyoukajigyou/
+  checked: 2026-11-11
+  confidence: official
+  note: 町のページは観光サイトの案内 https://kankou.town.kawazu.shizuoka.jp/information/4143/ （更新日 2024-12-20）へリンク。要綱「令和６年７月29日要綱第25号」https://kankou.town.kawazu.shizuoka.jp/wp/wp-content/uploads/2024/08/6c2573fa712266064f00f2621ca42ebf-1.pdf の別表で「１施設当たり20万円を下限、300万円を上限とする」「１／４」。手続きの表 …/cbdb9e09f756b9b642058f48b73f37a2.pdf の提出期限は令和7年1月22日・2月14日（令和6年度分）。令和8年度の受付は確認できない。県の要綱は subsidy_a の shizuoka-shukuhaku-keieiryoku
+  fuenn_note: 河津町の宿泊事業者が、業務効率化・生産性向上の取組（対象経費20万〜300万円）に町1/4・県1/4の補助を受けられる制度です。公開されているのは令和6年度分の手続きで、今年度の受付は河津町産業振興課に確認してください。
+
+# ---- 松崎町 ----
+- id: shizuoka-matsuzaki-kigyo-shien
+  name: 松崎町起業等支援事業補助金
+  org: 松崎町（担当課はページに表示なし）
+  area: shizuoka/matsuzaki
+  max_yen: 1000000
+  rate: 事業所等整備・設備等導入は補助対象経費（20万円以上）の1/2以内、1事業所等につき100万円が限度。事業所等借上は賃借料の1/2以内・月額3万円が限度（1年分）
+  rate_num: 0.5
+  min_cost_yen: 200000
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 事業所等の新築・増改築と付帯工事、事業を営むために直接必要となる設備・機械・備品等の新規導入または更新（浄化槽・車両・間接的な経費は対象外）、事業所等の賃借料
+  conditions: 町内で起業する者（開業届・法人設立で新たに事業を始める者）と、既に町内に事業所等を有し既存事業と異なる新たな事業を始める者（事業展開者）。中小企業基本法の業種（規模を超える者を含む）。農林漁業・金融保険・娯楽業などは対象外。5年以上継続の見込み、交付決定年度内に事業開始。町内の業者が施工・納入。同一事業者1回限り。他の補助金の対象経費は除く
+  period: {status: rolling}
+  url: https://www.town.matsuzaki.shizuoka.jp/docs/2018060500055/
+  checked: 2026-11-11
+  confidence: official
+  note: ページ（公開日 2023年09月12日）と要綱（松崎町告示第８５号、令和５年６月１５日）https://www.town.matsuzaki.shizuoka.jp/docs/2018060500055/file_contents/R5_youkou.pdf （8ページ）p1〜p2・p7 別表。受付期間の記載なし（予算の範囲内）。ソフトウェアの記載はない
+  fuenn_note: 松崎町で起業する人や、既存の事業者が新しい事業を始めるときに、事業に直接必要な設備・機械・備品の導入費用を1/2（最大100万円、20万円以上）補助する町の制度です。町内の業者からの購入が条件です。
+
+# ---- 清水町 ----
+- id: shizuoka-shimizu-chusho-shien
+  name: 清水町中小企業支援補助金（県外販路拡大支援事業・販売力促進支援事業）
+  org: 清水町（産業観光課 産業振興係、055-981-8239）
+  area: shizuoka/shimizu-town-shizuoka
+  max_yen: 100000
+  rate: 県外販路拡大支援（展示会等の出展料、オンラインを含む）1/2以内・年10万円、販売力促進支援（広報費）1/2以内・年5万円
+  rate_num: 0.5
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 商品・サービス等の販路開拓のための展示会等（オンラインを含む）の出展料等。広報費（広報宣伝費、ホームページ作成費、パンフレット等の印刷費、ダイレクトメール等の郵送料等。切手の購入は除く）
+  conditions: 町内に本社または主たる事業所を有し事業を営む中小企業者、町税等の滞納がないこと。事業開始前に相談・申請
+  period: {status: rolling}
+  url: https://www.town.shimizu.shizuoka.jp/chiiki/chiiki00262.html
+  checked: 2026-11-11
+  confidence: official
+  note: ページ（2026年4月1日 更新）の表で補助率・上限（年あたり）。受付期間の記載なし。要綱 https://www.town.shimizu.shizuoka.jp/content/300353719.pdf （改正 令和７年４月１日告示第50号）。上限が小さく、ホームページ作成費に使える程度
+  fuenn_note: 清水町の中小企業が、展示会への出展（年10万円まで）や、ホームページ作成・パンフレットなどの広報費（年5万円まで）を1/2補助する町の制度です。事業を始める前に町に相談・申請してください。
+
+- id: shizuoka-shimizu-keiei-kakushin
+  name: 清水町経営革新計画支援補助金
+  org: 清水町（産業観光課 産業振興係）
+  area: shizuoka/shimizu-town-shizuoka
+  max_yen: 500000
+  rate: 当該補助金以外の補助金を差し引いた額の1/2以内、上限50万円（承認を受けた1つの計画につき1回）
+  rate_num: 0.5
+  targets: {efficiency: ○, consulting: △, training: ○}
+  expenses: 承認された経営革新計画に基づく新商品・新技術・新役務の開発（開発・試作・改良・デザイン改善・求評）と販路開拓（調査・指導、ノウハウ習得のための研修・講習会、情報収集）。経費は謝金（専門家）、旅費、研究開発事業費（原材料・機械装置・産業財産権・調査研究・外注・技術コンサルタント料）、需用費、役務費（広告宣伝・ホームページ作成費など）、使用料・賃借料、検査器具、研修費・講習費、委託費
+  conditions: 町内に本社または主たる事業所を有する中小企業者で、国または県の承認を受けた経営革新計画を保有し、町税等の滞納がないこと
+  period: {status: rolling}
+  url: https://www.town.shimizu.shizuoka.jp/chiiki/chiiki00291.html
+  checked: 2026-11-11
+  confidence: official
+  note: 要綱（清水町告示第51号、令和4年4月21日）https://www.town.shimizu.shizuoka.jp/content/300345534.pdf 第6条「当該補助金以外の補助金を差し引いた２分の１以内とし、上限を50万円」、別表 https://www.town.shimizu.shizuoka.jp/content/300345535.pdf 。ページに受付期間・更新日の表示なし。経営革新計画（県の承認）が前提。他の補助金を差し引いた残りが対象で、国の補助への上乗せの計算（addon）としては書いていない
+  fuenn_note: 清水町の中小企業が、県の承認を受けた経営革新計画にそって新しい商品・サービスを開発したり、そのための研修・外注・専門家の指導を受けたりする費用を1/2（最大50万円）補助する町の制度です。経営革新計画の承認が先に必要です。
+
+- id: shizuoka-shimizu-sangyo-soshutsu
+  name: 清水町産業創出支援事業費補助金
+  org: 清水町（産業観光課 産業振興係）
+  area: shizuoka/shimizu-town-shizuoka
+  max_yen: 300000
+  rate: 補助対象経費の1/2以内、上限30万円
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 創業等の申請書類作成費、法人登記、事務所等の新築工事費、事務所等の賃貸料（1か月）、設備費（機械装置・工具・器具の購入費または1か月のリース・レンタル料）、備品購入費（消耗品除く）、広報費（広報宣伝費・ホームページ作成費・パンフレット・名刺など）
+  conditions: 町内で創業・第二創業・新事業展開をしようとする者、または交付申請時に創業から1年を経過しない者。町税等の滞納なし、個人は町内に住民登録、法人は町内に主たる事業所の登記。清水町創業支援等事業計画の認定連携創業支援等事業者か清水町商工会の支援を受けていること。融資決定が確認できる書類の写しが要る。事業開始前に相談
+  period: {status: rolling}
+  url: https://www.town.shimizu.shizuoka.jp/chiiki/chiiki00384.html
+  checked: 2026-11-11
+  confidence: official
+  note: ページ（2026年4月1日 更新）に受付期間の記載なし
+  fuenn_note: 清水町で創業する人が、設備・備品・ホームページ作成などの費用を1/2（最大30万円）補助する町の制度です。商工会などの創業支援を受けていることが条件です。
+
+# ---- 長泉町 ----
+- id: shizuoka-nagaizumi-sogyo
+  name: 長泉町起業・創業支援事業費補助金
+  org: 長泉町（産業振興課 にぎわい企画チーム）
+  area: shizuoka/nagaizumi
+  max_yen: 2000000
+  rate: 補助限度額 一般区域100万円、町立地適正化計画の都市機能誘導区域のうち商業機能を誘導する区域または町の特定創業支援等事業の証明を受けた創業者200万円（補助率はページの本文から読み取れなかった）。マーケティング調査費・専門家謝金・ウェブサイト等作成費の合計は補助限度額の1/4以内
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 官公庁への書類作成費、設立登記費用、事業所の新築・増改築・修繕の直接工事費、備品購入費（事業でのみ使用し10万円以上。車両・PC端末・タブレット端末など汎用性の高い備品は含まない）、マーケティング調査費、専門家謝金、ウェブサイト作成費など（マーケティング費用・専門家謝金・ウェブサイト作成費だけでの申請は不可）
+  conditions: 町税等完納、町内に事業所等を設置（予定含む）する創業者（当該年度末までに開業・設立、または開業・設立から5年未満）・第二創業者。病院・介護保険施設等・賃貸業は対象外。受給後5年間、毎年度末に経営状況を町に報告
+  period: {status: closed}
+  url: https://www.town.nagaizumi.lg.jp/work_industry/for_enterprises/9677.html
+  checked: 2026-11-11
+  confidence: official
+  note: ページ（更新日 2026年07月02日）「※予算上限に達したため、令和8年度の受付を終了させていただきました」。補助率は表の見出しにあるとみられ、テキストでは取れなかった
+  fuenn_note: 長泉町で起業・創業する人の店舗工事・備品・専門家謝金・ウェブサイト作成などを補助する町の制度です。2026年度は予算に達して受付を終了しました。
+
+- id: shizuoka-nagaizumi-sangaku
+  name: 長泉町中小企業産学共同研究支援補助金
+  org: 長泉町（産業振興課）
+  area: shizuoka/nagaizumi
+  max_yen: 200000
+  rate: 企業が産学共同研究について大学等に支払う経費の1/2以内、上限20万円（1つの研究につき1回）
+  rate_num: 0.5
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 大学・短期大学・工業高等専門学校と共に行う研究（製品・技術・製造方法・ソフトウェアの開発又は改良に関する研究など）で企業が大学等に支払う経費
+  conditions: 町内に事業所を有する中小企業で町税等の未納がないこと。同一の製品等に関する研究は補助期間3年が限度
+  period: {status: unknown}
+  url: https://www.town.nagaizumi.lg.jp/work_industry/co_support/2/9676.html
+  checked: 2026-11-11
+  confidence: official
+  note: 「中小企業支援補助制度」のページ（更新日 2026年10月09日。同じ内容のページ https://www.town.nagaizumi.lg.jp/work_industry/for_enterprises/3576.html もある）の冒頭に「【予算上限に達したため、令和8年度の受付を終了させていただきました】」とあり、すぐ下の新製品等開発事業補助金だけを指すのか、ページの制度すべてを指すのかが読み取れない。同じページに新製品等開発事業補助金（経営革新計画、2/3・100万円）・販路拡大事業補助金（展示会・宣伝材料、2/3・20万円）・BCP策定等補助金（10万円）・産業財産権取得補助金（1/2・30万円）。要綱 https://www.town.nagaizumi.lg.jp/soshiki/sangyo/downlord/2/673.html
+  fuenn_note: 長泉町の中小企業が、大学・高専とソフトウェアや製品の共同研究をするときに大学等に払う費用を1/2（最大20万円）補助する町の制度です。2026年度の受付状況は町の産業振興課に確認してください。
+
+# ---- 小山町 ----
+- id: shizuoka-oyama-nigiwai-shogyo
+  name: 小山町賑わい商業創出支援事業助成金
+  org: 小山町（経済産業部 商工観光課）
+  area: shizuoka/oyama-town
+  max_yen: 2000000
+  rate: 起業は交付対象経費の1/2〜2/3・上限最大200万円、事業承継・第二創業・新分野進出は1/2〜2/3・上限最大133万円、新商品開発は1/2〜2/3・上限最大20万円（事業所の所在地・定住の有無等により上限額が異なる）
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 交付要綱（8.13MB の PDF、今回は未読）による
+  conditions: 町内に事業所を置き、日本標準産業分類の「卸売業，小売業」または「宿泊業，飲食サービス業」を営む者。起業・事業承継で経営者となる者か中小企業者。小山町商工会の会員（交付決定後に会員となる見込みを含む）
+  period: {status: unknown}
+  url: https://www.fuji-oyama.jp/page/4511.html
+  checked: 2026-11-11
+  confidence: official
+  note: ページ（更新日 2026年3月19日）に受付期間の記載なし。対象経費は要綱 PDF（未読）で、IT・ソフトウェアが入るかは未確認。推薦書（様式第1号の3）が要る
+  fuenn_note: 小山町で小売・卸売・宿泊・飲食の事業を起業・承継・新分野進出する事業者に、経費の1/2〜2/3（起業は最大200万円）を助成する町の制度です。小山町商工会の会員であることが条件です。対象経費の詳細は町の商工観光課に確認してください。
+
+# ---- 吉田町 ----
+- id: shizuoka-yoshida-sangyo-shinko-sogyo
+  name: 吉田町産業振興事業費補助金（新規創業事業）
+  org: 吉田町（産業課、0548-33-2122）
+  area: shizuoka/yoshida
+  max_yen: 1000000
+  rate: 新規創業は補助対象経費の1/2以内・上限50万円。店舗を構える飲食業は2/3以内・上限100万円（同一事業者1回限り）
+  rate_num: 0.5
+  small_only: true
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 事業所等の開設に係る設備・機械装置等の購入費、設備設置費その他事業所等開設に係る経費（建物・土地の購入費を除く）
+  conditions: 町内で創業を予定し、または創業から1年を経過しない個人・団体・小規模企業者（中小企業基本法第2条第5項）。国内に居住し20歳以上など。事前相談を受け付けている
+  period: {status: rolling}
+  url: https://www.town.yoshida.shizuoka.jp/3610.htm
+  checked: 2026-11-11
+  confidence: official
+  note: ページに受付期間・更新日の表示なし（「予算の範囲内」）。同じ制度の団体向けの区分（特産品開発・6次産業化・イベント交流、2/3または1/2・1事業100万円）もある
+  fuenn_note: 吉田町で創業する小規模企業者が、事業所の開設に必要な設備・機械の費用を1/2（最大50万円、店舗を構える飲食業は2/3・100万円）補助する町の制度です。まず町の産業課に事前相談してください。
+
+# ---- 川根本町 ----
+- id: shizuoka-kawanehon-kigyo-challenge
+  name: 川根本町起業及び事業継続チャレンジ補助金
+  org: 川根本町（産業振興課 商工業室）
+  area: shizuoka/kawanehon
+  max_yen: 1000000
+  rate: 起業は事業経費の1/2以内・上限100万円（物件賃借料は家賃の1/2以内・月額2万5千円）。事業継続は事業経費の1/3以内・上限50万円
+  rate_num: 0.5
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 起業は事務所・店舗・作業場などの新築・増改築と付帯工事、経営に直接必要となる備品・設備の導入、事業の拠点となる建物の賃借料。事業継続は既存店舗・事業所の生産性・サービス向上のための建物改築・増築（付帯工事費は対象外）
+  conditions: 事前に川根本町商工会の指導の下で経営計画書を作成し申請書に添付。施工業者・物品の調達先は町内の事業者（不可能な場合を除く）。起業は申請年度内に起業し、実績報告日までに事業主・代表者が町民となる。事業継続は申請の前年度の10月31日までに事前相談書を提出
+  period: {status: rolling}
+  url: https://www.town.kawanehon.shizuoka.jp/kurashi_tetsuduki/hojokinitiran/jigyousya/12399.html
+  checked: 2026-11-11
+  confidence: official
+  note: ページ（更新日 2026年04月14日）に受付期間の記載なし。チラシ https://www.town.kawanehon.shizuoka.jp/material/files/group/23/R7Challengehojo_paper.pdf ・申請の手引き …/Challengehojo_tebiki.pdf （未読）。事業継続の区分は建物の改築・増築だけで、設備・ソフトウェアは対象として書かれていない。2027年度に事業継続で申請するための事前相談の期限は2026-10-31（過ぎた）とみられる（ページの文言からの読み取り）
+  fuenn_note: 川根本町で起業する人が、店舗・事務所の工事や経営に必要な備品・設備の費用を1/2（最大100万円）補助する町の制度です。川根本町商工会の指導で経営計画書を作ることが条件で、購入先は原則町内の事業者です。

@@ -1,0 +1,747 @@
+# 新潟県10市（小千谷・加茂・十日町・糸魚川・妙高・五泉・阿賀野・佐渡・魚沼・胎内）と10町村（聖籠・田上・阿賀・出雲崎・湯沢〔南魚沼郡〕・津南・弥彦・刈羽・関川・粟島浦）2026年度
+# 確認日 2026-10-24。根拠は subsidy_b_areas.md
+# AI を名指しする市町村独自の制度は2つ（どちらも研修の補助）
+#   - 十日町市 デジタル人材育成支援事業補助金（研修要件に「IoT、AI、クラウド、ビッグデータ、RPA」。2/3・上限1万円）
+#   - 阿賀野市 中小企業人材育成支援事業補助金（DXに資する研修の例に中小企業大学校の生成AI講座を列挙。1/2・1人2万円・年5万円、〜2027-03-31）
+#   十日町市 デジタル技術導入支援事業補助金はチラシの活用例に「AI-OCRを導入し、手書き伝票をデータ化」とある（要領・ページにAIの語はない）
+# デジタル化・DX・システム導入に使える市町村独自の制度
+#   - 受付中・随時: 十日町市 デジタル技術導入支援（2/3・30万円）、妙高市 がんばる企業応援（IT利活用・ECサイト構築など10区分。1/2・30万円、〜2026-11-30）、魚沼市 働きやすい職場環境づくり推進のデジタル活用支援（1/2・10万円、予算残23.1万円＝2026-09-25時点）、刈羽村 生産性向上促進（ソフトウェア製品購入費を含む。2/3・100万円）
+#   - 2026年度の受付終了: 糸魚川市 DX推進補助金（1/2・50万円。2026-07-01〜08-31）、加茂市 収益力向上支援（ソフトウェア・クラウド・システム導入。1/2・50万円、予算到達）、阿賀野市 地域ビジネス継続サポート（デジタル化対応設備。予算到達で2026-06-10受付終了）
+# ホームページ・EC・キャッシュレスに使える制度: 小千谷市 EC活用支援（2026年度のみ3/4・20万円）、田上町 販路開拓支援（HP新規作成・リニューアル 1/2・20万円）、魚沼市 がんばる地元のお店支援（ウェブサイト構築費。〜2026-12-18）・企業魅力発信（HP。受付終了）、胎内市 キャッシュレス 3/4・5万円、出雲崎町 キャッシュレス（2025年度のページのまま）
+# 国の補助金への上乗せ（addon）は書いていない。国のデジタル化・AI導入補助金・省力化投資補助金への上乗せを明記した制度は20市町村とも見つからなかった。十日町市の2制度は「他の公的な補助金の交付を受けている場合は、その金額を除いた額」を対象にする（併用時は（経費−国の補助額）×2/3 になる）が、上乗せの制度とは書かれていないため addon・addon_to は付けていない。刈羽村 生産性向上促進は国・県の補助を受ける事業を対象外にしている
+# 受付期間の記載がなく「予算の範囲内」「予算額に達するまで」とある制度は period.status を rolling にした。ページが2025年度以前のままで2026年度の実施を判断できない制度は unknown にした
+# 県・県域の機関（NICO など）・国の制度は subsidy_a 担当のため入れていない。融資・利子補給・保証料補給・企業立地・雇用奨励・省エネ設備・店舗改修・移住支援・個人向けの資格取得助成、団体向けの制度は YAML に入れていない（subsidy_b_areas.md の「IT向けではない制度」に記した）
+# 相談窓口（十日町市 デジタル化・DXなんでも相談窓口、小千谷市 DXスキルアップセミナー・個別DX相談会）は補助金ではないため YAML に入れず、subsidy_b_areas.md に記した
+
+# ---- 小千谷市 ----
+- id: niigata-ojiya-ec
+  name: 小千谷市EC（電子商取引）活用支援事業補助金【令和8年度のみ拡充】
+  org: 小千谷市（商工振興課）
+  area: niigata/ojiya
+  max_yen: 200000
+  rate: 3/4以内（上限20万円）。本則は1/2・10万円で、要綱附則で令和8年度だけ3/4・20万円に引き上げ
+  rate_num: 0.75
+  targets: {efficiency: ○, consulting: ×, training: ×}
+  expenses: 自社ウェブサイトへのEC機能の導入・拡充（決済機能・セキュリティ・外国語変換など）、ECモール（Amazon・楽天市場・新潟直送計画など）への出店（月額出店料は初回契約の6か月分のみ）、商品・企業紹介の画像・動画制作費（EC導入等と同時の場合）。通信費・物品購入費・消費税は対象外。国等の補助を受ける場合はその額を控除
+  conditions: 市内に事業所があり1年以上事業を営む中小企業者（農業・林業・漁業・金融保険業を除く）で市税を完納。補助事業の実施前に申請。1年度1回
+  period: {status: rolling, start: 2026-04-01}
+  url: https://www.city.ojiya.niigata.jp/soshiki/syoko/hojyokin.html
+  checked: 2026-10-24
+  confidence: official
+  note: 商工業振興補助事業のページ（更新2026-04-01）に「申請受付期間 令和8年4月1日～ ※各補助金の予算に達した時点で受付を終了」。事業開始前（契約前・申請書類提出前）に商工振興課へ連絡するよう案内。交付要綱 https://www.city.ojiya.niigata.jp/uploaded/attachment/43112.pdf （第5条が経費、第6条が補助額、附則2が令和8年度の特例）。AIの語はない。問い合わせは 商工振興課地域産業係 0258-83-3556
+  fuenn_note: 小千谷市の中小企業が自社サイトにEC機能を付けたり、Amazon・楽天市場などのECモールに出店したりする費用の3/4（上限20万円）を市が補助します。2026年度だけの拡充で、予算に達すると終了するので、契約前に市の商工振興課へ連絡してください。
+
+- id: niigata-ojiya-kenshu
+  name: 小千谷市中小企業研修補助事業
+  org: 小千谷市（商工振興課）
+  area: niigata/ojiya
+  max_yen: 50000
+  rate: 1/3以内（上限5万円、研修ごとに1事業所1人）
+  rate_num: 0.333
+  targets: {efficiency: ×, consulting: ×, training: △}
+  expenses: 中小企業大学校またはにいがた産業創造機構（NICO）の研修受講料
+  conditions: 市内に事業所を有する中小企業（製造業等3億円以下または300人以下など）
+  period: {status: rolling, start: 2026-04-01}
+  url: https://www.city.ojiya.niigata.jp/soshiki/syoko/hojyokin.html
+  checked: 2026-10-24
+  confidence: official
+  note: 予算到達で終了。交付要綱 https://www.city.ojiya.niigata.jp/uploaded/attachment/43107.pdf 。研修機関が中小企業大学校とNICOに限られ、民間のAI研修は対象外。中小企業大学校の生成AI講座なら対象になり得るが、市のページにAIの記載はない。問い合わせは 商工振興課地域産業係 0258-83-3556
+
+- id: niigata-ojiya-hanro
+  name: 小千谷市国内・海外販路開拓支援事業補助金【令和8年度のみ拡充】
+  org: 小千谷市（商工振興課）
+  area: niigata/ojiya
+  max_yen: 600000
+  rate: 2/3以内。国内の展示会等は上限40万円（事業協同組合50万円）、海外は60万円
+  rate_num: 0.667
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 展示会等（オンラインを含む）の出展料・小間料・登録料、設営・装飾費、オンライン商談に要する機器のレンタル費、オンライン商談の商談機能の拡充に係る経費、輸送費（自社輸送を除く）。対象経費の合計10万円以上
+  conditions: 市内に事業所があり1年以上事業を営む製造業または情報サービス業で市税を完納。その場で販売する展示会・一般非公開の展示会は対象外
+  period: {status: rolling, start: 2026-04-01}
+  url: https://www.city.ojiya.niigata.jp/soshiki/syoko/hojyokin.html
+  checked: 2026-10-24
+  confidence: official
+  note: 予算到達で終了。交付要綱 https://www.city.ojiya.niigata.jp/uploaded/attachment/43111.pdf 。max_yen は海外出展の上限。問い合わせは 商工振興課地域産業係 0258-83-3556
+
+- id: niigata-ojiya-jibasan
+  name: 小千谷市地場産品開発支援事業補助金【令和8年度のみ拡充】
+  org: 小千谷市（商工振興課）
+  area: niigata/ojiya
+  max_yen: 300000
+  rate: 2/3以内（上限30万円）
+  rate_num: 0.667
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 新商品の開発・既存商品の改良の試作費・広告費・デザイン料、小千谷まるごと市場商品・ふるさと納税返礼品の改良のデザイン料
+  conditions: 市内に事業所があり1年以上事業を営む食料品事業者・雑貨等製造事業者（中小企業者）。おぢやブラッシュアップ相談会または新潟県よろず支援拠点で相談支援を受けていること
+  period: {status: rolling, start: 2026-04-01}
+  url: https://www.city.ojiya.niigata.jp/soshiki/syoko/hojyokin.html
+  checked: 2026-10-24
+  confidence: official
+  note: 予算到達で終了。交付要綱 https://www.city.ojiya.niigata.jp/uploaded/attachment/43108.pdf 。問い合わせは 商工振興課地域産業係 0258-83-3556
+
+# ---- 加茂市 ----
+- id: niigata-kamo-shueki
+  name: 加茂市収益力向上支援事業費補助金（令和8年度）
+  org: 加茂市（商工観光課）
+  area: niigata/kamo
+  max_yen: 1000000
+  rate: 既存事業改善枠・新規事業展開枠とも1/2以内・上限50万円。両枠を併用すると1事業者100万円
+  rate_num: 0.5
+  targets: {efficiency: ○, consulting: △, training: ×}
+  expenses: 設備購入費、ソフトウェア購入費（ソフトウェア・クラウドサービス等の購入・導入）、システム導入費（開発・導入）、専門家謝金、その他市長が認める経費（交付決定日以降の支出）。単なる機器購入・設備更新は対象外
+  conditions: 市内に主たる事務所・事業所を有する中小企業者（個人含む）。同一年度内に国・県の同様の補助金の交付を受けていない。市税等の完納。既存事業改善枠は「設備やシステムの導入による業務の効率化」「人的作業に依存する業務へのデジタル技術の導入による省人化・省力化」など
+  period: {status: closed, start: 2026-04-01, end: 2026-08-31}
+  url: https://www.city.kamo.niigata.jp/docs/323785.html
+  checked: 2026-10-24
+  confidence: official
+  note: 国の物価高騰対応重点支援地方交付金を活用（予算5,000万円）。申請期間は2026-04-01〜08-31だが、ページ見出しは「申請受付を終了いたしました」で「予算の上限に達しました」。受付を終えた日はページにない（end は申請期間の末日）。ページに更新日の表示なし。AIの語はない。問い合わせは 商工観光課 商工振興係 0256-52-0080
+
+- id: niigata-kamo-kenshu
+  name: 加茂市中小企業研修受講料補助金
+  org: 加茂市（商工観光課）
+  area: niigata/kamo
+  max_yen: 15000
+  rate: 研修受講料の1/3（上限1万5千円、各研修ごとに1事業所1人）
+  rate_num: 0.333
+  targets: {efficiency: ×, consulting: ×, training: △}
+  expenses: 中小企業大学校三条校・web校、燕三条地場産業振興センター、にいがた産業創造機構、三条テクノスクール、ポリテクセンター新潟、ポリテクカレッジ新潟など市長が認める研修機関の受講料
+  conditions: 市内の中小企業
+  period: {status: closed}
+  url: https://www.city.kamo.niigata.jp/docs/29850.html
+  checked: 2026-10-24
+  confidence: official
+  note: 「中小企業者向けの支援一覧」（加茂市の支援制度 2026-06-25更新）に「令和8年度の申請受付は終了しました」。終了日の記載なし。交付要綱は2026-04-01付。問い合わせは 商工観光課 商工振興係 0256-52-0080
+
+- id: niigata-kamo-tenjikai
+  name: 加茂市国内展示会出展小間料補助金
+  org: 加茂市（商工観光課）
+  area: niigata/kamo
+  max_yen: 100000
+  rate: 出展小間料の1/2（上限10万円）
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 国内で開催される展示会の出展小間料
+  conditions: 市内の中小企業で製造した製品等を出展する者
+  period: {status: closed}
+  url: https://www.city.kamo.niigata.jp/docs/29850.html
+  checked: 2026-10-24
+  confidence: official
+  note: 支援一覧（2026-06-25更新）に「令和8年度の申請受付は終了しました」。問い合わせは 商工観光課 商工振興係 0256-52-0080
+
+- id: niigata-kamo-jibasan
+  name: 加茂市地場産品開発等支援事業費補助金（令和8年度）
+  org: 加茂市（商工観光課 ふるさと寄付金係）
+  area: niigata/kamo
+  max_yen: 1000000
+  rate: 1/2以内（上限100万円）
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: ふるさと納税返礼品の開発・改良の経費（交付要綱別表）
+  conditions: 加茂市ふるさと納税の返礼品事業者または見込みのある者。同一年度内に国・県の同様の補助を受けていない。事前相談
+  period: {status: closed, end: 2026-08-31}
+  url: https://www.city.kamo.niigata.jp/docs/307526.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ見出しは「令和8年度の申請期限を延長しました！」で、申請期間は「令和8年8月31日(月)まで」。2026-10-24時点で期限を過ぎている。問い合わせは 商工観光課 0256-52-0080
+
+- id: niigata-kamo-sogyo
+  name: 加茂市創業チャレンジ支援事業費補助金（令和8年度）
+  org: 加茂市（商工観光課）
+  area: niigata/kamo
+  max_yen: 500000
+  rate: 1/2以内（創業塾受講者は2/3以内）、上限50万円
+  rate_num: 0.5
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 交付要綱別表3の経費
+  conditions: 小売業等を営む目的で市内に事業所を設置して創業する個人・法人（創業日から3か月以内）。加茂商工会議所の経営指導。フランチャイズ・事業承継は対象外
+  period: {status: closed, start: 2026-05-22, end: 2026-08-31}
+  url: https://www.city.kamo.niigata.jp/docs/47931.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ見出しは「申請期限を延長しました！」、申請期限は2026-05-22〜08-31。別表3の経費区分は読んでいない。問い合わせは 商工観光課 商工振興係 0256-52-0080
+
+# ---- 十日町市 ----
+- id: niigata-tokamachi-digital
+  name: 十日町市重点支援臨時対応デジタル技術導入支援事業補助金
+  org: 十日町市（産業観光部 産業政策課）
+  area: niigata/tokamachi
+  max_yen: 300000
+  rate: 2/3（上限30万円）
+  rate_num: 0.667
+  targets: {efficiency: ○, consulting: △, training: ×}
+  expenses: システム構築費、機器等整備費、システム運用関連費、専門家委託費（技術コンサルティング業務等）、その他市長が認める経費。汎用機器は原則対象外（別表の汎用品は専用使用が確認できる場合のみ）。消費税は対象外。他の補助金を受ける場合はその額を差し引く
+  conditions: 市内に本社または主たる事業所を有する事業者（市長が認める団体・個人を含む）。事業開始から3か月以上経過し生産性向上が比較できること。市税完納。人員削減目的の事業、老朽化による単純な入れ替えは対象外。専門家の指導だけ受けて導入まで行わない事業は対象外。2026-04-01以降かつ交付決定後に実施し、2027-02-28までに支払いまで完了。同一年度1回
+  period: {status: rolling, start: 2026-04-01, end: 2027-02-28}
+  url: https://www.city.tokamachi.lg.jp/shigoto_sangyo/sangyoshinko/chushokigyonadoshien/10489.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ（更新2026-06-16）に「申請期間 令和8年4月1日から予算額に達するまで」。end は事業完了の期限。交付要領 https://www.city.tokamachi.lg.jp/material/files/group/15/R8youryou_digitalgijutsu.pdf 、チラシ https://www.city.tokamachi.lg.jp/material/files/group/15/R8chirashi_digitalgijutsu.pdf （活用例にAI-OCRによる手書き伝票のデータ化、セルフレジ、勤怠管理システム、デジタルサイネージなど）。同じ内容のページが組織別にもある https://www.city.tokamachi.lg.jp/soshiki/sangyokankobu/sangyoseisakuka/1/gyomu/10476.html 。要領・ページ本文にAIの語はなく、ページ末尾に国の「中小企業デジタル化・AI導入支援事業」へのリンクがある。他の公的補助金を差し引いた額が対象のため、国の補助と併用すると（経費−国の補助額）×2/3（上限30万円）になるが、上乗せ制度とは書かれていないので addon は付けていない。問い合わせは 産業政策課 産業振興係 025-757-3139、t-sangyo@city.tokamachi.lg.jp
+  fuenn_note: 十日町市の事業者が、システムの構築・運用やデジタル機器の導入、専門家の技術コンサルティングに使う費用の2/3（上限30万円）を市が補助します。チラシにはAI-OCRで手書き伝票をデータ化する例が載っています。予算に達すると終了するので、交付決定の前に着手しないよう注意してください。
+
+- id: niigata-tokamachi-digital-jinzai
+  name: 十日町市デジタル人材育成支援事業補助金
+  org: 十日町市（産業観光部 産業政策課）
+  area: niigata/tokamachi
+  max_yen: 10000
+  rate: 2/3（上限1万円）
+  rate_num: 0.667
+  targets: {efficiency: ×, consulting: ×, training: ○}
+  expenses: IoT・AI・クラウド・ビッグデータ・RPAなどデジタル化・DXを推進する人材の育成のための研修。社外研修への派遣（受講料・教材費）、社外講師の招へい（謝金・旅費）。消費税は対象外
+  conditions: 市内に本社または主たる事業所を有する事業者。事業開始前に申請。同一受講者の同一研修は1回限り。他の公的補助金を受ける場合はその額を除く
+  period: {status: rolling}
+  url: https://www.city.tokamachi.lg.jp/soshiki/sangyokankobu/sangyoseisakuka/1/gyomu/10920.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ更新2026-04-01、受付期間の記載なし。研修要件に「AI」を名指ししている。上限1万円と小さい。交付要領 https://www.city.tokamachi.lg.jp/material/files/group/15/outline_development_of_DHR.pdf 。上限1万円が1回あたりか年度あたりかはページから読み取れない。問い合わせは 産業政策課 産業振興係 025-757-3139
+  fuenn_note: 十日町市の事業者が、従業員にAI・IoT・クラウド・RPAなどの研修を受けさせたり、社外から講師を招いたりする費用の2/3（上限1万円）を市が補助します。研修の前に市の産業政策課へ申請してください。
+
+- id: niigata-tokamachi-jinzai-ikusei
+  name: 十日町市中小企業人材育成支援事業補助金（研修受講料の補助）
+  org: 十日町市（産業観光部 産業政策課）
+  area: niigata/tokamachi
+  max_yen: 5000
+  rate: 研修受講料の1/2（受講生1人1回5千円まで）
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: △}
+  expenses: 中小企業大学校等の各種研修機関の研修受講料（消費税は対象外）
+  conditions: 市内に事業所を有する中小企業等。事業開始前に申請。同一受講者の同一研修は1回限り
+  period: {status: rolling}
+  url: https://www.city.tokamachi.lg.jp/shigoto_sangyo/sangyoshinko/chushokigyonadoshien/2938.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ更新2026-04-01、受付期間の記載なし。地域産業総合振興支援事業費補助金交付要綱に基づく。ほかに移住者の職業訓練授業料（1/2・5千円）の補助あり。問い合わせは 産業政策課 025-757-3139
+
+- id: niigata-tokamachi-hanro
+  name: 十日町市事業所販路拡大支援事業補助金
+  org: 十日町市（産業観光部 産業政策課）
+  area: niigata/tokamachi
+  max_yen: 200000
+  rate: 1/2（国内出展10万円、海外出展20万円まで）
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 出展料、出展時用品レンタル料、展示装飾費、会場借上料、車両借上料、運送料、広告宣伝費（海外は渡航費・通訳雇用費も）
+  conditions: 市内に本社または主たる事業所を有する事業者。事業開始前に申請。同一年度2回まで
+  period: {status: closed}
+  url: https://www.city.tokamachi.lg.jp/soshiki/sangyokankobu/sangyoseisakuka/1/gyomu/10465.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ（更新2026-09-28）に「予算額に達したため、現在は申請受け付けを停止」「年度内に予算の調整ができた場合は、受け付けを再開する可能性」。旧制度の販路拡大支援事業補助金（1/2、国内5万円・海外10万円）のページ https://www.city.tokamachi.lg.jp/shigoto_sangyo/sangyoshinko/chushokigyonadoshien/2954.html も残っているが、上限を拡充した本制度を案内している。問い合わせは 産業政策課 025-757-3139
+
+- id: niigata-tokamachi-jibasan
+  name: 十日町市重点支援臨時対応地場産品開発販売支援事業補助金
+  org: 十日町市（産業観光部 産業政策課）
+  area: niigata/tokamachi
+  max_yen: 300000
+  rate: 3/4（上限30万円）。過去に交付を受けた事業者は1/2（上限15万円）
+  rate_num: 0.75
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 開発に係る経費（消耗品・原材料・製造設備機械等・コンサルタント等への委託費）、発信力強化に係る経費（地場産品の画像・動画作成、チラシ・パッケージ作成、ECサイト等への掲載〔ふるさと納税ポータルを含む〕、SNSを活用した情報発信）
+  conditions: 市内に本社または主たる事業所を有する事業者。事業開始前に申請。商品の完成が支払いの要件
+  period: {status: unknown}
+  url: https://www.city.tokamachi.lg.jp/soshiki/sangyokankobu/sangyoseisakuka/1/gyomu/10311.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ更新2026-04-01。「9月末までに申請額が予算に達した場合は、申請受付を一旦中止します。10月以降予算の調整ができ次第、申請を再開します」とあるが、2026-10-24時点で中止・再開の掲載はなく、受付中かどうか分からない。問い合わせは 産業政策課 025-757-3139
+
+# ---- 糸魚川市 ----
+- id: niigata-itoigawa-dx
+  name: 糸魚川市DX推進補助金（令和8年度）
+  org: 糸魚川市（産業労働課 産業政策係）
+  area: niigata/itoigawa
+  max_yen: 500000
+  rate: 1/2以内（上限50万円）
+  rate_num: 0.5
+  targets: {efficiency: ○, consulting: ○, training: △}
+  expenses: コンサルティング費用（ITコンサルの専門家利用料等）、サービス・製品開発費（外注費・原材料費等）、システム導入費（外注費・ソフトウェア使用料・購入費・ホームページ制作費・機材購入費等）、DX人材育成・教育費（講座受講料・講師謝礼・講師派遣旅費等）、その他付帯費用。自社人件費、パソコン・プリンタ等の汎用品、通信費・消耗品、租税公課は対象外
+  conditions: 市内に事業所を有する中小企業・小規模事業者（個人事業主含む）で市税の滞納がない。データやデジタル技術の活用によりDXに取り組む事業。2026-04-01以降の経費で2027-03-31までに支払い完了。国・県等の補助と経費が重複しなければ併用可。有識者の審査会でプレゼン審査。取組実績・成果の公表、事例発表への協力。年度1回
+  period: {status: closed, start: 2026-07-01, end: 2026-08-31}
+  url: https://www.city.itoigawa.lg.jp/page/2019.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ更新2026-07-08。交付要領 https://www.city.itoigawa.lg.jp/uploaded/attachment/18979.pdf 、制度概要チラシ https://www.city.itoigawa.lg.jp/uploaded/attachment/18980.pdf 。AIの語はページ・要領・チラシとも見当たらない。採択は令和7年度5社、6年度2社、5年度1社、4年度6社、3年度5社。問い合わせは 産業労働課 産業政策係 025-552-1511
+  fuenn_note: 糸魚川市の中小企業がDXに取り組むITコンサル・システム導入・DX人材の講座受講などの費用の1/2（上限50万円）を市が補助する制度です。2026年度の申請期間（7月1日〜8月31日）は終わっています。毎年度募集しているので、次年度の募集を市の産業労働課で確かめてください。
+
+- id: niigata-itoigawa-tenjikai
+  name: 糸魚川市展示会等出展支援事業補助金
+  org: 糸魚川市（産業労働課）
+  area: niigata/itoigawa
+  max_yen: 250000
+  rate: 国内の展示会・見本市・商談会（オンライン含む）2/3・5万円、物産展1/2・3万円、国外2/3・25万円
+  rate_num: 0.667
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 市外（国外を含む）・オンラインで開催される展示会・見本市・商談会・物産展への出展経費（令和8年度制度概要）
+  conditions: 市内に主たる事業所を有する中小企業者・中小企業団体、ふるさと糸魚川応援寄附金の返礼品登録事業者。1事業者2回まで。自社主催・特定顧客向け・開催1か月以上のものは対象外
+  period: {status: rolling}
+  url: https://www.city.itoigawa.lg.jp/page/2017.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページは2025-04-01更新だが「令和8年度 制度概要」PDFを掲載。受付期間の記載なし。max_yen は国外出展の上限。問い合わせは 産業労働課 025-552-1511
+
+# ---- 妙高市 ----
+- id: niigata-myoko-ganbaru
+  name: 令和8年度 妙高市がんばる企業応援補助金（妙高市地域経済活性化支援事業）
+  org: 妙高市（観光商工課 商工・労働グループ）
+  area: niigata/myoko
+  max_yen: 300000
+  rate: 1/2以内（上限30万円、特定創業者は40万円）
+  rate_num: 0.5
+  targets: {efficiency: ○, consulting: ×, training: △}
+  expenses: 10区分の取組の経費（別表）。販路開拓（販促PR・展示会出展）、新規事業展開、業務の効率化・生産性の向上（設備投資・業務改善・IT利活用）、人材育成・人材確保（職員研修など）、海外需要の取込、働き方改革の制度化（勤怠管理ソフトウェア導入など）、創業、IT導入（制度改正対応型＝インボイス・電子帳簿保存への対応）、業態転換（ECサイト構築費など）。保有機械の更新、既存営業で当然必要な備品、定期的な広報、他の補助金を受けた経費は対象外
+  conditions: 市内で中小企業を営む・創業する法人・個人（個人は市内在住）。新井商工会議所または妙高市商工会の会員（または速やかに入会）。市税の滞納がない。協力機関の経営指導員の助言で書類を作成し、着手前に申請（交付決定前の着手は対象外）。3年以上営業継続。同一年度1回
+  period: {status: open, start: 2026-04-01, end: 2026-11-30}
+  url: https://www.city.myoko.niigata.jp/docs/947.html
+  checked: 2026-10-24
+  confidence: official
+  note: チラシ「R8妙高市がんばる企業応援補助金チラシ」（ページの関連ファイル）に受付期間 2026-04-01〜2026-11-30、受付順に審査、予算額に達した時点で終了予定、2027年3月末までに実績報告。ページに更新日の表示なし。AIの語はない（「IT利活用」）。問い合わせは 観光商工課 商工・労働グループ 0255-74-0019、kankoshoko@city.myoko.niigata.jp。協力機関は新井商工会議所 0255-72-2425、妙高市商工会 0255-86-2378
+  fuenn_note: 妙高市の中小企業がIT利活用による業務効率化、勤怠管理ソフトの導入、ECサイトの構築、職員研修などに取り組む費用の1/2（上限30万円）を市が補助します。受付は2026年11月30日までで、予算に達すると早く終わることがあります。商工会議所・商工会の助言を受けて、着手前に申請してください。
+
+- id: niigata-myoko-jinzai
+  name: 妙高市地域人材育成支援助成金（事業者）
+  org: 妙高市（観光商工課）
+  area: niigata/myoko
+  max_yen: 30000
+  rate: 受験料・受講料の1/2（上限3万円。大型特殊・第二種免許・介護研修は10万円）
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: △}
+  expenses: 資格試験の受験料と資格取得に必須の受講料。対象は国家資格、公的研修（中小企業大学校・にいがた産業創造機構が当該年度に実施する研修を含む）、技能検定、一部の民間資格
+  conditions: 市内で事業を営む中小企業者で市税の滞納がない。66歳未満の雇用者の資格取得。他の公的制度の助成を受けていない。同一年度に従業員1人2資格まで
+  period: {status: rolling}
+  url: https://www.city.myoko.niigata.jp/docs/540.html
+  checked: 2026-10-24
+  confidence: official
+  note: 市民本人も申請できる制度（事業者分を記載）。受付期間の記載なし。対象の民間資格はチラシで確認が必要（今回チラシは読んでいない）。問い合わせは 観光商工課
+
+# ---- 五泉市 ----
+- id: niigata-gosen-jibasan-seicho
+  name: 五泉市地場産業成長支援事業補助金
+  org: 五泉市（商工観光課）
+  area: niigata/gosen
+  max_yen: 200000
+  rate: 10/10以内（上限20万円）
+  rate_num: 1.0
+  targets: {efficiency: ×, consulting: △, training: ×}
+  expenses: 展示会等に出品する商品開発の経費。報償費（コンサル・専門家への謝礼）、費用弁償費、委託費（試験・分析・デザイン・設計）、原材料費、消耗品費、設備借上料、出展手数料、通信運搬費
+  conditions: 市内に事業所を有する中小企業者・市内に住所を有する個人事業主（農林漁業を除く）で市税の滞納がない。1事業者1申請。交付決定日以降の経費で、申請年度内に完了
+  period: {status: open, start: 2026-07-21, end: 2026-11-30}
+  url: https://www.city.gosen.lg.jp/industry_business/1/1/9883.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ最終更新2026-07-10。予算の範囲内。IT・DX向けの経費区分はない。チラシ https://www.city.gosen.lg.jp/material/files/group/8/jibatirasi.pdf 。問い合わせは 商工観光課 0250-43-3911（代表）
+
+- id: niigata-gosen-tokusanhin
+  name: 五泉市特産品商品開発補助金（令和8年度）
+  org: 五泉市（商工観光課）
+  area: niigata/gosen
+  max_yen: 200000
+  rate: 1/2以内（上限20万円）
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 報償費、費用弁償費、委託費（試験・分析・デザイン・設計）、原材料費、消耗品費、設備借上料、設備導入費、広告宣伝費、通信運搬費
+  conditions: 2事業者以上が協力する新商品開発で、ふるさと納税返礼品の対象となり継続販売するもの（飲食店の新メニューは対象外）。農林漁業者は対象外。書類審査とプレゼン審査（公募型プロポーザル）
+  period: {status: open, start: 2026-04-01, end: 2026-10-30}
+  url: https://www.city.gosen.lg.jp/industry_business/1/12129.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ（最終更新2026-09-04）で受付期間を2026-10-30まで延長。IT向けの制度ではない。問い合わせは 商工観光課 0250-43-3911（代表）
+
+# ---- 阿賀野市 ----
+- id: niigata-agano-jinzai-ikusei
+  name: 阿賀野市中小企業人材育成支援事業補助金（DX人材の育成を含む）
+  org: 阿賀野市（商工観光課 商工振興係）
+  area: niigata/agano
+  max_yen: 50000
+  rate: 1/2（1人あたり上限2万円、研修ごとに1事業所3人まで、年間1事業所上限5万円）
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: ○}
+  expenses: a. 研修機関（中小企業大学校三条校、にいがた産業創造機構、新潟職業能力開発短期大学校、阿賀野市商工会、金融機関）の人材育成研修の受講料。b. DXに資する研修等の受講料（ITパスポート・基本情報技術者試験の受験料、インターネット上のセミナー参加費など。民間機関の研修も対象になり得る）
+  conditions: 市内に事業所を有する中小企業者。2026-04-01以降に受講する研修。交付決定（申請後1〜2週間）より前に受講する研修は対象外
+  period: {status: open, start: 2026-04-01, end: 2027-03-31}
+  url: https://www.city.agano.niigata.jp/sangyo_business/sangyoshinko/chushokigyotoshien/12922.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ更新2026-06-19。予算上限に達し次第締切。DXに資する研修の例として中小企業大学校の「はじめて触る生成AIの活用講座【新発田市開催】」「自動化×生成AI超入門講座」「生成AIを活用した事業計画策定講座」「生成AI時代の新マーケティング戦略」「業務マニュアルの作り方・活かし方［生成AI応用編］」「生成AIで始めるデータ分析基礎」「全業種対応！DX実行計画書策定講座」を列挙（講座は中小企業大学校の主催）。民間の研修が対象になるかは商工観光課に確認とある。チラシ https://www.city.agano.niigata.jp/material/files/group/17/jinzaiikuseitirashi_R8.pdf 、DX推進用チラシ https://www.city.agano.niigata.jp/material/files/group/17/dxsuisinnyou2.pdf 。問い合わせは 商工観光課 商工振興係 0250-61-2479
+  fuenn_note: 阿賀野市の中小企業が従業員に生成AI講座などDXに役立つ研修を受けさせる費用の1/2（1人2万円、年5万円まで）を市が補助します。民間の研修も対象になる場合があるので、申し込む前に市の商工観光課に確認し、交付決定を受けてから受講してください。
+
+- id: niigata-agano-business-keizoku
+  name: 阿賀野市地域ビジネス継続サポート補助金
+  org: 阿賀野市（商工観光課）
+  area: niigata/agano
+  max_yen: 500000
+  rate: 中小企業者1/2、小規模事業者2/3。上限50万円（デジタル化対応設備導入は30万円）
+  rate_num: 0.5
+  rate_small_num: 0.667
+  targets: {efficiency: ○, consulting: ×, training: ×}
+  expenses: 事業継続のための設備（在庫管理設備、防犯カメラ、サーバー等のデータバックアップ機器、セルフレジ、ハンディ端末など）、販路開拓（販促PR・展示会出展費など）、海外需要の取り込み、デジタル化対応設備（電子帳簿対応設備・キャッシュレス決済端末など）
+  conditions: 市内に本社または事業所を有し1年以上事業を営む中小企業・個人事業主。市税の滞納がない。阿賀野市商工会の経営指導員の指導。交付決定前に導入した設備は対象外
+  period: {status: closed, start: 2026-04-01, end: 2026-06-10}
+  url: https://www.city.agano.niigata.jp/sangyo_business/sangyoshinko/chushokigyotoshien/15897.html
+  checked: 2026-10-24
+  confidence: official
+  note: 国の物価高騰対応重点支援地方交付金を活用（予算3,000万円）。当初の受付期間は2026-04-01〜2027-01-29だったが、ページ（更新2026-06-11）に「受付終了（令和8年6月10日現在）予算上限に達したため」。end は終了の掲載日。問い合わせは 商工観光課 0250-61-2479
+
+# ---- 佐渡市 ----
+- id: niigata-sado-koyo-kikai
+  name: 令和9年度 佐渡市雇用機会拡充事業補助金（特定有人国境離島地域）
+  org: 佐渡市（地域産業振興課）
+  area: niigata/sado
+  max_yen: 15750000
+  rate: 補助対象経費の3/4。補助金の上限は創業600万円、事業拡大1,575万円、設備投資を伴わない事業拡大1,200万円（国の令和9年度予算概算要求に基づく予定額）
+  rate_num: 0.75
+  targets: {efficiency: △, consulting: ×, training: △}
+  expenses: 設備費・システム費（またはその減価償却費）、改修費、広告宣伝費、店舗等借入費、人件費、研究開発費、市外からの事務所・従業員の移転費、従業員の教育訓練経費、感染防止対策費
+  conditions: 佐渡市内で創業（事業承継を含む）、市内の事業所で事業拡大、または主に佐渡の商品・サービスを販売するため市外で創業する者で、雇用増を伴うもの。事前相談が必須（2026-09-18〜10-30）。事前協議書の提出（2026-11-17〜11-27午後5時）。事業期間は交付決定（2027-04-01予定）〜2028-02-29
+  period: {status: open, start: 2026-09-18, end: 2026-11-27}
+  url: https://www.city.sado.niigata.jp/soshiki/2015/54572.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ更新2026-09-18。国の特定有人国境離島地域社会維持推進交付金を財源とする市の補助（令和9年度事業の公募）。公募要領 https://www.city.sado.niigata.jp/uploaded/attachment/62270.pdf （日程はp1〜2、スケジュールはp14）。2026-10-24時点で事前相談の期間中。end は事前協議書の提出期限。AIの語は見ていない（要領の全文は読んでいない）。佐渡ビジネスコンテスト2027と併用応募できる。問い合わせは 地域産業振興課 産業振興係 0259-67-7863
+
+- id: niigata-sado-jinzairyoku
+  name: 佐渡市中小企業人材力向上支援事業補助金
+  org: 佐渡市（地域産業振興課）
+  area: niigata/sado
+  max_yen: 100000
+  rate: 50％以内（1人10万円、同一年度1事業所10人〔回〕まで）
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: △}
+  expenses: 従業員の業務に必要な市外での国家資格・公的資格・民間資格の受験料（受講料）、資格取得に必須の講習の経費、船賃（2等往復が原則）・宿泊料
+  conditions: 市内の中小企業者。試験に合格した場合のみ交付。資格取得後に申請（事後申請）
+  period: {status: rolling, start: 2026-04-01, end: 2027-03-31}
+  url: https://www.city.sado.niigata.jp/soshiki/2015/4053.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ更新2026-04-01（令和8年度から制度内容・様式を変更）。受付は申請年度の4月から翌年3月末まで、予算上限に達すると受付停止（経費負担後でも交付されない）ため事前に問い合わせるよう案内。研修受講だけでは対象外で、資格取得が要件。問い合わせは 地域産業振興課 産業振興係 0259-67-7863
+
+- id: niigata-sado-bussanten
+  name: 佐渡市物産展等出展支援事業補助金（旧 地場産品販路開拓支援事業）
+  org: 佐渡市（地域産業振興課）
+  area: niigata/sado
+  max_yen: 200000
+  rate: 50％以内（1回につき見本市・商談会等20万円、物産展10万円。同一年度3回以内）
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 出展小間代、小間装飾料、製品運送料、基本工事料、光熱水道料、旅費（船賃・宿泊費。1回2人まで）
+  conditions: 市内に工場または事業所を有する事業者。島内産品（市内で生産・主要原材料が市内産・主要工程を市内で行うもの）の出展。補助事業の着手前に申請
+  period: {status: rolling}
+  url: https://www.city.sado.niigata.jp/soshiki/2015/4052.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ更新2026-07-31、「随時受け付けます」「予算がなくなり次第受付を終了」。問い合わせは 地域産業振興課 0259-67-7863
+
+# ---- 魚沼市 ----
+- id: niigata-uonuma-hatarakiyasui
+  name: 魚沼市働きやすい職場環境づくり推進事業補助金（デジタル活用支援事業・職場内研修会等開催支援事業ほか）
+  org: 魚沼市（産業経済部 商工課）
+  area: niigata/uonuma
+  max_yen: 100000
+  rate: デジタル活用支援事業は1/2以内・上限10万円（働き方改革認定等企業は20万円）。職場内研修会等開催支援事業は1/2以内・上限5万円（同10万円）。ほかに施設整備（10万円）・制度整備（5万円）・職場環境PR（5万円）
+  rate_num: 0.5
+  targets: {efficiency: ○, consulting: ×, training: △}
+  expenses: デジタル活用支援事業＝業務効率化・長時間労働抑制を目的とするシステム（クラウドシステムを含む）・ソフトウェアの導入・改修（複数年分の一括払いは法定耐用年数を考慮）。パソコン・タブレット・プリンタなど汎用品は対象外。職場内研修会等開催支援事業＝外部講師の謝金（交通費含む）・会場借上料・資料代（外部講師なしの研修は対象外）。他の補助事業の対象経費は対象外
+  conditions: 市内に本社・主たる事業所・工場等を有し、代表者を除く従業員が3人以上、市内に常時2人以上勤務する場所がある中小企業者。市税の滞納がない。交付決定前の契約・発注は対象外。事業区分ごとに年度1回
+  period: {status: rolling}
+  url: https://www.city.uonuma.lg.jp/site/shigoto-net/1012182.html
+  checked: 2026-10-24
+  confidence: official
+  note: 市の情報サイト「しごとNetうおぬま」（商工課）のページ。ページ更新2026-09-28に「予算の執行状況（令和8年9月25日現在）予算額1,000,000円、交付決定済769,000円、予算残額231,000円」。受付期間の記載なし。令和8年度から施設整備・制度整備・職場環境PRの上限を変更。働き方改革認定等企業はNi-ful・にいがた健康経営推進企業・えるぼし・くるみん・ユースエール等。まとめページ「デジタル活用に使える支援制度」https://www.city.uonuma.lg.jp/site/shigoto-net/1015653.html （令和7年度はデジタル活用で2社が利用）。AIの語はない。問い合わせは 産業経済部 商工課 商工係 025-792-9753
+  fuenn_note: 魚沼市の従業員3人以上の中小企業が、業務効率化のためにクラウドシステムやソフトウェアを導入する費用の1/2（上限10万円、働き方改革の認定企業は20万円）を市が補助します。2026年9月25日時点の予算残額は23万1千円なので、早めに市の商工課へ相談してください。
+
+- id: niigata-uonuma-jinzai-ikusei
+  name: 魚沼市中小企業等人材育成支援事業補助金
+  org: 魚沼市（産業経済部 商工課）
+  area: niigata/uonuma
+  max_yen: 100000
+  rate: 従業員20人以上の事業者は1/2以内、小規模企業者は2/3以内。1件5万円、1事業者年度10万円まで
+  rate_num: 0.5
+  rate_small_num: 0.667
+  targets: {efficiency: ×, consulting: ×, training: △}
+  expenses: 業務に必要な研修の受講費・宿泊費（研修機関の宿泊施設に限る）、業務に必要な資格・免許・検定の受験料・登録料。パソコン・語学・一般教養等の講座は対象外
+  conditions: 市内に本社・主たる事業所・工場等を有する中小企業者・小規模企業者・組合・医療法人・社会福祉法人・NPO法人など。2026-04-01〜2027-03-31の日付の修了証書・合格通知があるもの（事後申請）
+  period: {status: open, start: 2026-09-01, end: 2026-10-31}
+  url: https://www.city.uonuma.lg.jp/site/shigoto-net/2340.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ更新2026-04-01。申請受付は上半期2026-09-01〜10-31、下半期2027-02-01〜03-31（どちらに申請してもよい）。交付決定額が予算に達した時点で終了。period は上半期の受付。「パソコン講座」が対象外のため、AI・IT研修が対象になるかは市への確認が必要（対象の確認はメールフォームで受け付け）。問い合わせは 商工課 025-792-9753
+
+- id: niigata-uonuma-miryoku
+  name: 魚沼市企業魅力発信・認知度向上促進事業補助金
+  org: 魚沼市（産業経済部 商工課）
+  area: niigata/uonuma
+  max_yen: 200000
+  rate: ホームページ新設・改修1/3以内・20万円（通算1回）、企業紹介動画1/2以内・20万円、展示会出展1/2以内・20万円
+  rate_num: 0.333
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 外部委託によるホームページの新設・改修とドメイン新規取得（ハードウェア・ソフトウェア・サーバー費用は除く）、外部委託による企業紹介動画の制作、展示会出展の小間料・用品レンタル料・広告宣伝費・輸送料など。販売促進が主目的のものは対象外
+  conditions: 市内に本社・主たる事業所・工場等を有する中小企業者・組合・商工会・団体等で、市の調査に協力できる者。市税の滞納がない
+  period: {status: closed}
+  url: https://www.city.uonuma.lg.jp/site/shigoto-net/1012184.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ（更新2026-09-07）に「予算額に達したため、今年度の受付は終了しました」。令和7年度にHPの補助率を1/2→1/3に変更。令和7年度はHPで4社、動画で2社が利用（まとめページ）。rate_num はHPの値。問い合わせは 商工課 025-792-9753
+
+- id: niigata-uonuma-ganbaru-hansoku
+  name: 魚沼市がんばる地元のお店支援事業補助金（販売促進事業）
+  org: 魚沼市（産業経済部 商工課）
+  area: niigata/uonuma
+  max_yen: 200000
+  rate: 一般枠1/3以内、魚沼応援枠（地域資源の活用・地域課題の解決）1/2以内。上限は単独申請20万円（共同申請は2者40万円など）
+  rate_num: 0.333
+  targets: {efficiency: △, consulting: ×, training: △}
+  expenses: 研修費（講師謝金・研修受講費）、使用料・賃借料、広告宣伝費（チラシ・新聞・雑誌・SNS広告）、備品購入費（汎用品は対象外）、外注費（ウェブサイト構築費・パッケージデザイン料など）
+  conditions: 市内に本社等を有し一般消費者向けに商品販売・サービス提供を行う市内中小企業者（フランチャイズ等は対象外）。市内商工会の助言・支援を受けて実施。年度1回
+  period: {status: open, end: 2026-12-18}
+  url: https://www.city.uonuma.lg.jp/site/shigoto-net/1012727.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ更新2026-04-01。申請期限2026-12-18、期限前に予算額に達した場合は終了。制度は2028-03-31まで。ほかに店舗リフォーム事業・商業基盤施設整備事業のメニューあり。申請の手引き（PDF）は読んでいない。問い合わせは 商工課 025-792-9753
+
+# ---- 胎内市 ----
+- id: niigata-tainai-sodateru-ikusei
+  name: 令和8年度胎内市中小企業等支援事業補助金 ④育てる支援事業（人材育成）
+  org: 胎内市（商工観光課 商工振興係）
+  area: niigata/tainai
+  max_yen: 100000
+  rate: 10/10（上限10万円。上限額まで複数回申請可）
+  rate_num: 1.0
+  targets: {efficiency: ×, consulting: ×, training: ○}
+  expenses: 役員・従業員の研修会等への参加、または研修会等の開催に係る経費
+  conditions: 胎内市内の中小企業者等。すでに発注・申込をした事業は対象外のため事前相談が必要
+  period: {status: rolling, start: 2026-04-01}
+  url: https://www.city.tainai.niigata.jp/sangyo/shokogyo/cyusyoukigyoutousien.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ更新2026-04-01（受付開始2026-04-01、予算には限り）。補助率・上限は「令和8年度胎内市中小企業等支援事業補助金一覧」https://www.city.tainai.niigata.jp/sangyo/shokogyo/documents/itirann.pdf 、チラシ https://www.city.tainai.niigata.jp/sangyo/shokogyo/documents/tirasi.pdf 。研修の分野の限定は一覧に書かれていない（AIの語はない）。問い合わせは 商工観光課 商工振興係 0254-43-6111、syoukou@city.tainai.lg.jp
+  fuenn_note: 胎内市の中小企業が、役員・従業員を研修会に参加させたり社内で研修会を開いたりする費用を、上限10万円まで全額補助する市の制度です。申込や発注の前に市の商工観光課へ相談してください。
+
+- id: niigata-tainai-sogyogo
+  name: 令和8年度胎内市中小企業等支援事業補助金 ③創業後支援事業
+  org: 胎内市（商工観光課 商工振興係）
+  area: niigata/tainai
+  max_yen: 300000
+  rate: ①経営改善計画書整備費 10/10・上限10万円。②経営改善取り組み経費 プレゼン有は10/10・評価により上限10〜30万円、プレゼン無は1/2・上限10万円
+  rate_num: 1.0
+  targets: {efficiency: △, consulting: ○, training: ×}
+  expenses: 中小企業診断士・税理士などの専門家と連携した経営改善計画の作成・見直しの経費、計画に基づく改善の事業費（取組の一環としての機器購入も可）
+  conditions: 創業後3年を経過している事業者。①②それぞれで申請可、各1回限り。事前相談
+  period: {status: rolling, start: 2026-04-01}
+  url: https://www.city.tainai.niigata.jp/sangyo/shokogyo/cyusyoukigyoutousien.html
+  checked: 2026-10-24
+  confidence: official
+  note: 一覧PDF https://www.city.tainai.niigata.jp/sangyo/shokogyo/documents/itirann.pdf 。IT・AIの名指しはない。問い合わせは 商工観光課 商工振興係 0254-43-6111
+
+- id: niigata-tainai-hanro
+  name: 令和8年度胎内市中小企業等支援事業補助金 ⑦販路開拓支援事業
+  org: 胎内市（商工観光課 商工振興係）
+  area: niigata/tainai
+  max_yen: 150000
+  rate: 1/2。県内出展および出展を伴わない事業は上限5万円、県外出展は上限15万円（3回まで）
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 展示商談会等（販売を伴うイベントを含む）への参加経費と自社PR経費（展示商談会に参加しない事業も可）
+  conditions: 胎内市内の中小企業者等。事前相談
+  period: {status: rolling, start: 2026-04-01}
+  url: https://www.city.tainai.niigata.jp/sangyo/shokogyo/cyusyoukigyoutousien.html
+  checked: 2026-10-24
+  confidence: official
+  note: 一覧PDF https://www.city.tainai.niigata.jp/sangyo/shokogyo/documents/itirann.pdf 。自社PR経費にホームページが入るかは一覧に書かれていない。問い合わせは 商工観光課 0254-43-6111
+
+- id: niigata-tainai-cashless
+  name: 令和8年度胎内市中小企業等支援事業補助金 ⑨キャッシュレス決済導入支援事業
+  org: 胎内市（商工観光課 商工振興係）
+  area: niigata/tainai
+  max_yen: 50000
+  rate: 3/4（上限5万円、同一年度1回）
+  rate_num: 0.75
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: キャッシュレス決済端末本体機器、暗証番号入力用のキーパッドなどキャッシュレス決済の導入経費
+  conditions: 胎内市内の中小企業者等。事前相談
+  period: {status: rolling, start: 2026-04-01}
+  url: https://www.city.tainai.niigata.jp/sangyo/shokogyo/cyusyoukigyoutousien.html
+  checked: 2026-10-24
+  confidence: official
+  note: 一覧PDF https://www.city.tainai.niigata.jp/sangyo/shokogyo/documents/itirann.pdf 。問い合わせは 商工観光課 0254-43-6111
+
+# ---- 聖籠町 ----
+- id: niigata-seiro-jinzai-ikusei
+  name: 聖籠町中小企業人材育成事業補助金
+  org: 聖籠町（産業観光課 地域振興係）
+  area: niigata/seiro
+  max_yen: 30000
+  rate: 研修受講料の1/2（1人3万円まで、1企業毎年度5人まで）
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: △}
+  expenses: 国・地方公共団体が中小企業者向けに行う研修、中小企業大学校・新潟職業能力開発短期大学校・にいがた産業創造機構の研修、その他町長が必要と認める研修の受講料
+  conditions: 町内に事業所を有する中小企業者（農業・林業・漁業を除く）。受講決定の日から受講の7日前までに申請
+  period: {status: rolling}
+  url: https://www.town.seiro.niigata.jp/1/11/2/2/1/378.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ更新2026-09-25、受付期間の記載なし。AIの語はない。問い合わせは 産業観光課（代表 0254-27-2111）
+
+# ---- 田上町 ----
+- id: niigata-tagami-hanro
+  name: 田上町販路開拓支援事業補助金
+  org: 田上町（産業振興課 商工観光係）
+  area: niigata/tagami
+  max_yen: 200000
+  rate: 1/2以内（上限20万円）
+  rate_num: 0.5
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 広告宣伝事業（広告掲載、パンフレット等の印刷製本、ホームページの新規作成・リニューアル、見本市等の出展料・借上料）、商品開発・改良事業（試作品の原材料・デザイン料・設計費）、その他町長が認める販路開拓の経費
+  conditions: 町内に主たる事業所等を有する法人・個人。事業実施前に申請（着手済みは対象外）。過去に交付を受けた者は対象外。田上町商工会のヒアリングと推薦書
+  period: {status: unknown}
+  url: https://www.town.tagami.niigata.jp/docs/8918.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページに年度・受付期間・更新日の表示がなく、2026年度の実施をページから判断できない（「助成金・制度融資」の一覧に掲載中）。問い合わせは 産業振興課 商工観光係 0256-57-6225、t2251@town.tagami.lg.jp
+
+- id: niigata-tagami-kenshu
+  name: 田上町中小企業大学校受講料補助金
+  org: 田上町（産業振興課 商工観光係）
+  area: niigata/tagami
+  rate: 研修受講料の1/3（各研修ごとに1事業所1人）
+  rate_num: 0.333
+  targets: {efficiency: ×, consulting: ×, training: △}
+  expenses: 中小企業大学校三条校が新潟県内で実施する研修の受講料
+  conditions: 町内に事業所を有する中小企業（工業・鉱業等1億円以下または300人以下など）の経営者・従業員。研修の受講前に申請
+  period: {status: unknown}
+  url: https://www.town.tagami.niigata.jp/docs/8579.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページに上限額・年度・更新日の記載なし（max_yen は書いていない）。問い合わせは 産業振興課 商工観光係 0256-57-6225
+
+# ---- 阿賀町 ----
+- id: niigata-aga-chiiki-challenge
+  name: 阿賀町地域チャレンジ支援事業（特産品開発・魅力向上支援ほか）
+  org: 阿賀町（政策推進課）
+  area: niigata/aga
+  max_yen: 500000
+  rate: 特産品開発・魅力向上支援は2/3・上限50万円。地域チャレンジ支援は一般1/2（非営利2/3）・30万円、企画・準備支援は一般1/2（非営利2/3）・100万円
+  rate_num: 0.667
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 特産品となり得る商品の開発、既存商品の改良、パッケージの作成やデザイン等の改良の経費
+  conditions: 特産品開発・魅力向上支援は町内に事業所を有する事業者。地域チャレンジ支援・企画準備支援は地域団体・3名以上の町民の団体・町内に営業所等がある法人など
+  period: {status: rolling}
+  url: https://www.town.aga.niigata.jp/sangyo_business/chiikidukuri/3183.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ更新2026-05-01、R8チラシ https://www.town.aga.niigata.jp/material/files/group/21/R8chiki-challenge_flyer02.pdf を掲載。受付期間の記載なし（チラシは読んでいない）。IT向けの経費区分はない。max_yen・rate_num は特産品開発・魅力向上支援の値。問い合わせは 政策推進課 0254-92-3114
+
+# ---- 出雲崎町 ----
+- id: niigata-izumozaki-cashless
+  name: 出雲崎町キャッシュレス決済促進事業補助金
+  org: 出雲崎町（産業観光課 商工観光係）
+  area: niigata/izumozaki
+  max_yen: 50000
+  rate: 決済端末等購入は3/4以内・上限5万円。決済手数料は10/10・月5千円まで（連続12か月）
+  rate_num: 0.75
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: キャッシュレス決済端末本体・汎用端末・キーパッド・非接触リーダライタ・バーコードリーダ・サインパッド等、キャッシュレス決済事業者に払う決済手数料（12か月）。工事費・手数料・割賦払いは対象外
+  conditions: 町内に店舗を有し、出雲崎町商工会または観光協会に加入（予定含む）。令和7年4月1日以降に導入する方。端末の売買契約前・決済導入前に申出。1店舗1回。端末購入補助だけの利用は不可
+  period: {status: unknown}
+  url: https://www.town.izumozaki.niigata.jp/chosei/shokou/cashless.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページの公開・最終更新は2025-03-14で「令和7年4月1日以降に導入する方」とあり、2026年度も受け付けているかは分からない（町の「補助事業・助成金等」一覧には掲載中）。問い合わせは 産業観光課 商工観光係
+
+# ---- 湯沢町（南魚沼郡）----
+- id: niigata-yuzawa-town-kigyo
+  name: 湯沢町起業サポート補助金（令和8年度申請分）
+  org: 湯沢町（企画観光課）
+  area: niigata/yuzawa-town
+  max_yen: 500000
+  rate: 1/2（上限50万円）
+  rate_num: 0.5
+  targets: {efficiency: △, consulting: ×, training: △}
+  expenses: 事業所の改装費（賃貸物件のみ）ほか（概要PDF）。二次情報では研修参加・資格取得などの知識・技術習得費も対象とされる（町のページでは未確認）
+  conditions: 町内に事業所を設置し通年営業する事業を起業する人（開業届・設立申告前）。町に住民登録。湯沢町インキュベーションセンターに利用登録し、令和7・8年度の起業創業セミナー等を受講済み。企画観光課へ事前相談
+  period: {status: rolling}
+  url: https://www.town.yuzawa.lg.jp/kurashinojoho/kanko_sangyo_business/4/6692.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ更新2026-04-01、受付期間の記載なし。既存事業者は対象外（起業前の人向け）。対象経費の続きは概要PDFにあり今回読んでいない。問い合わせは 企画観光課
+
+# ---- 津南町 ----
+- id: niigata-tsunan-tokusan-hanro
+  name: 津南町特産品開発・販路拡大事業補助金
+  org: 津南町（観光地域づくり課 商工観光班）
+  area: niigata/tsunan
+  max_yen: 200000
+  rate: 特産品開発事業1/2・上限20万円、販路拡大事業1/2・上限10万円（年度内2回まで）
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 特産品開発（開発費、品質検査・成分分析、パッケージ制作、許認可・商標出願、広告宣伝費など）。販路拡大（町外の商談会・展示会・物産展の小間料・出展負担金・装飾費・輸送費・印刷製本費・備品借上料など）
+  conditions: 町内に事業所を設置（予定含む）する法人・個人事業主。額の確定後3年を超えて事業継続。町税等の滞納がない。町のロゴ「ゆきみず だいち つなんまち」の活用
+  period: {status: open, start: 2026-10-13, end: 2027-01-29}
+  url: https://www.town.tsunan.niigata.jp/soshiki/kankou/tokusankaihatsu.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ更新2026-10-13。IT向けの経費区分はない。問い合わせは 観光地域づくり課 商工観光班 025-765-5454
+
+- id: niigata-tsunan-jinzai-ikusei
+  name: 津南町中小企業人材育成事業補助金
+  org: 津南町（観光地域づくり課）
+  area: niigata/tsunan
+  max_yen: 30000
+  rate: 受講料・宿泊料の1/3（1人3万円、1事業者1年度9万円まで）
+  rate_num: 0.333
+  targets: {efficiency: ×, consulting: ×, training: △}
+  expenses: 中小企業大学校、その他民間を含む研修機関等が実施する研修で町長が認めるものの受講料・宿泊料
+  conditions: 町内に事業所を有する中小企業者と従業員。受講の10日前までに申請
+  period: {status: unknown}
+  url: https://www.town.tsunan.niigata.jp/soshiki/kankou/jinzai-ikusei.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ更新2020-08-26のままで、2026年度の実施をページから判断できない（観光地域づくり課の一覧には掲載中）。民間の研修機関も町長が認めれば対象。問い合わせは 観光地域づくり課 商工観光班 025-765-5454
+
+# ---- 弥彦村 ----
+- id: niigata-yahiko-challenge
+  name: 弥彦村商工業者チャレンジサポート補助金（令和8年度）
+  org: 弥彦村（産業部 観光商工課）
+  area: niigata/yahiko
+  max_yen: 1000000
+  rate: 1/2以内（上限100万円）
+  rate_num: 0.5
+  targets: {efficiency: △, consulting: △, training: ×}
+  expenses: 創・開業等支援＝事業所開設の改修費・設備機器購入費、事業所賃借料、人材採用経費（リクルートサイト利用料等）。事業承継支援＝開設経費、外部専門家の指導（株価算定・承継計画・コンサル等）、人材採用経費。消耗品は対象外
+  conditions: 村内に事業所を新設する者、村内で創業・新規事業を行う者、事業承継する者。弥彦村商工会への加入と商工会での事業計画書の審査。交付決定〜2027-03-10に完了
+  period: {status: closed}
+  url: https://www.vill.yahiko.niigata.jp/life/?content=1091
+  checked: 2026-10-24
+  confidence: official
+  note: ページ（更新2026-07-14）に「令和8年度の募集は終了しました」。終了日の記載なし。問い合わせは 観光商工課 0256-94-1025、kankou@vill.yahiko.niigata.jp
+
+# ---- 刈羽村 ----
+- id: niigata-kariwa-seisansei
+  name: 令和8年度刈羽村生産性向上促進補助金
+  org: 刈羽村（産業政策課）
+  area: niigata/kariwa
+  max_yen: 1000000
+  rate: 2/3以内（上限100万円。予算等により減額の場合あり）
+  rate_num: 0.667
+  targets: {efficiency: ○, consulting: △, training: ×}
+  expenses: 機械装置費、ソフトウェア製品購入費、技術導入費、機械装置等の据付け・運搬費
+  conditions: 村内に主たる事務所・事業所を有し村内で1年以上事業を営む中小企業者・小規模企業者で村税の滞納がない。労働生産性が年平均1％以上向上し、3年後に概ね3％以上伸びる新規設備等の導入・更新・改良。国・県その他の公的機関の補助を受ける事業は対象外。書面審査。事前連絡のうえ持参
+  period: {status: rolling, start: 2026-04-01, end: 2027-03-31}
+  url: https://www.vill.kariwa.niigata.jp/www/info/detail.jsp?id=8948
+  checked: 2026-10-24
+  confidence: official
+  note: ページ更新2026-04-01、「募集期間 令和８年４月１日（水）から予算額に達するまで」。end は補助対象期間の末日。案内チラシ https://www.vill.kariwa.niigata.jp/open/info/000000051_0000029894.pdf （読んでいない）。国の補助を受ける事業は対象外なので、国のデジタル化・AI導入補助金とは併用できない。AIの語はない。問い合わせは 産業政策課 0257-45-3913
+  fuenn_note: 刈羽村の中小企業が、労働生産性を上げるための機械装置やソフトウェア製品を導入する費用の2/3（上限100万円）を村が補助します。国や県の補助金を使う事業は対象外です。予算に達すると終わるので、村の産業政策課に事前に連絡してください。
+
+# ---- 関川村 ----
+- id: niigata-sekikawa-kogyo-kenshu
+  name: 関川村工業等導入促進対策補助金（従業員研修）
+  org: 関川村（地域政策課 地域振興班）
+  area: niigata/sekikawa
+  max_yen: 100000
+  rate: 対象経費の2/3。常時雇用者50人未満は上限5万円、50人以上は10万円。新たに工場等を開設し村内から新規採用した場合は初年度の研修に1人10万円・1事業者50万円
+  rate_num: 0.667
+  targets: {efficiency: ×, consulting: ×, training: △}
+  expenses: 研修のために必要な交通費・宿泊費・研修費等
+  conditions: 村内で営業を行う、または行おうとする事業所。研修実施の2週間前（新規採用の研修は3か月前）までに申請。1事業所年1回
+  period: {status: unknown}
+  url: https://www.vill.sekikawa.niigata.jp/life/3289/3290/3293/index.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ最終更新2021-01-19のままで、2026年度の実施をページから判断できない（商工業の一覧には掲載中）。研修の分野の限定はページにない。max_yen は既存事業所（50人以上）の上限。問い合わせは 地域政策課 地域振興班 0254-64-1478、chiiki-shinko@vill.sekikawa.lg.jp

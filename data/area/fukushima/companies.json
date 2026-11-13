@@ -1,0 +1,663 @@
+{
+ "_meta": {
+  "checked": "2026-10-24",
+  "scope": "福島県59市町村。本社（公式サイトの本社/所在地）が当該市町村にあり、公式サイトで受託システム開発・ソフトウェア開発・Web制作・ITサービスを事業として明示する法人。今回の依頼に従い、本表には『公式サイトで本社所在地と従業員数の両方を確認できた会社』だけを入れた（山形県の表と違い、資本金だけの会社は本表に入れず _reference に置いた）。県外に本社がある会社の県内事業所（クレスコ・ジェイキューブ郡山事業所、日本ナレッジ郡山センター、MA Solutions など）は載せない。親会社・株主がある会社は notes に書いた。本社を2か所に置く会社（朝日システム〈福島本社・東京本社〉）は、福島本社がシステム開発の主拠点なので本表に入れて注記した。パソコン販売・OA機器販売が主業の会社（ユニテックデーターアシスト、進和ビジネス）は _reference に置いた。各市町村の本表は最大5社。",
+  "candidate_sources": [
+   "一般社団法人福島県情報産業協会（FIIA）の会員名簿 https://www.fiia.jp/membertype/regular/ 。2026-10-24 時点でサイト全体が HTTP 401 を返して開けなかったため、Internet Archive の保存版（正会員一覧 2026年6月11日保存 http://web.archive.org/web/20260611040745/https://www.fiia.jp/membertype/regular/ 、各社の会員ページ、賛助会員一覧）で、正会員28・賛助会員9の社名・本社所在地・URL・事業内容を見た。従業員数の記載はない",
+   "全国法人検索（houjin.goo.to、国税庁の法人番号データにもとづく）の福島県『IT業界』一覧（134社、2ページとも取得）と、タグ『システム開発』『ソフトウエア』『システム』の一覧 https://houjin.goo.to/corporations/prefs/fukushima/category-it/list 。従業員数の区分は参考にとどめ、本表には使っていない。ホームページURLは伏せ字で取れなかった",
+   "JETRO福島の県内企業データベース（ソフトウェア・情報サービス 4件）https://www.jetro.go.jp/jetro/japan/fukushima/company/",
+   "福島労働局の企業紹介PDF（シンクの従業員数・住所の照合）https://jsite.mhlw.go.jp/fukushima-roudoukyoku/content/contents/002589094.pdf",
+   "キャリタス就活（アクシス〈喜多方市〉の公式URL探し。secondary）https://job.career-tasu.jp/corp/00222817/ 、マイナビ2027（バックス情報システムの従業員数。secondary）https://job.mynavi.jp/27/pc/search/corp200441/outline.html 、比較サイト imitsu（候補探しのみ。secondary）https://imitsu.jp/list/web-system/fukushima/",
+   "WebSearch（担当上限16回のうち12回を使用）"
+  ],
+  "search_limits": "規模・所在地・事業内容は各社の公式サイトで確認した（確認日 2026-10-24）。FIIA の現行サイトは 401 で開けず、名簿は2026年6月の保存版による。公式サイトが開けなかった会社（東邦情報システム tohojoho.jp は接続拒否、エクステック extech-kk.jp は応答なし、協創 kyoso.biz は接続拒否、デロイト トーマツ ウェブレッジ webrage.jp は 503、エヌ・シー・イー nce.co.jp はメンテナンス中）、JavaScript で本文を読み込むため本文が取れなかった会社（シンク sync.co.jp、デザイニウム、Eyes, JAPAN）、公式に従業員数がない会社は本表に入れず _reference に置いた。houjin.goo の一覧とWebSearchに出た会社以外は網羅していない（個人事業主・小規模なWeb制作者は拾えていない）。並べ順は公式の従業員数の多い順。"
+ },
+ "fukushima-city": [
+  {
+   "name": "朝日システム株式会社",
+   "hq": "福島県福島市三河南町6番11号（福島本社）",
+   "municipality": "福島市",
+   "town": "三河南町",
+   "employees": {
+    "value": 184,
+    "as_of": "2026年4月現在",
+    "source": "https://www.asahisys.co.jp/wp/company.html（表示値は https://www.asahisys.co.jp/setting/setting.xml から読み込み）"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.asahisys.co.jp/setting/setting.xml"
+   },
+   "founded": 1980,
+   "business_summary": "情報システムの企画コンサルティング、システム分析設計、ネットワーク構築、プログラム開発、保守運用。自治体・医療・金融、GIS、気象・官公庁システム",
+   "ai_initiative": "公式の会社概要ページでAIの記載は確認していない（トップページにチャットボットの接続先〈dialogflow〉がある）",
+   "url": "https://www.asahisys.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-24",
+   "notes": "1980年10月設立。会社概要は『福島本社』と『東京本社』（千代田区神田多町）を併記し、仙台オフィス・会津オフィス（会津坂下町）がある。FIIA名簿（保存版）の本社所在地は福島市伏拝字台田1-2で、公式の三河南町と違う。FIIA正会員（2026年6月保存版の名簿）"
+  },
+  {
+   "name": "月電ソフトウェア株式会社",
+   "hq": "福島県福島市太平寺字沖高68番地",
+   "municipality": "福島市",
+   "town": "太平寺",
+   "employees": {
+    "value": 130,
+    "as_of": "令和7年7月現在（男108名・女22名）",
+    "source": "https://www.tsukiden.co.jp/about/"
+   },
+   "capital": {
+    "value": "2,600万円",
+    "source": "https://www.tsukiden.co.jp/about/"
+   },
+   "founded": 1989,
+   "business_summary": "システム開発（主要取引先 MHIパワーコントロールシステムズ、デンソー、デンソーテクノ、日情システムソリューションズ等）。売上高 17億6,550万円（令和7年7月現在の表示）",
+   "ai_initiative": "確認せず",
+   "url": "https://www.tsukiden.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-24",
+   "notes": "1989年3月設立。本社／福島太平寺開発センター、東京営業所。houjin.goo の表記は『月電ソフトウエア』。FIIA正会員（2026年6月保存版の名簿）"
+  },
+  {
+   "name": "株式会社福島県中央計算センター",
+   "hq": "福島県福島市新町7番22号",
+   "municipality": "福島市",
+   "town": "新町",
+   "employees": {
+    "value": 99,
+    "as_of": "2026年4月1日現在（男74名・女25名）",
+    "source": "https://www.fcc-ltd.co.jp/about/"
+   },
+   "capital": {
+    "value": "1,800万円",
+    "source": "https://www.fcc-ltd.co.jp/about/"
+   },
+   "founded": 1967,
+   "business_summary": "システムインテグレーション、アウトソーシング、ソフトウェア開発、ネットワーク構築、OA機器販売、データソリューション。主な取引先に福島県・福島市・飯舘村・広野町・桑折町・川俣町・相馬市、福島テレビ",
+   "ai_initiative": "確認せず",
+   "url": "https://www.fcc-ltd.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-24",
+   "notes": "1967年5月23日設立。略称FCC。自治体の行政事務の受託から始まった会社。FIIA正会員（2026年6月保存版の名簿）"
+  },
+  {
+   "name": "株式会社エフイーシー",
+   "hq": "福島県福島市鎌田字川添3-8",
+   "municipality": "福島市",
+   "town": "鎌田",
+   "employees": {
+    "value": 30,
+    "as_of": "時点なし（『30名（関連含む）』。同じ表の年商は2005年実績で、表全体が古い可能性）",
+    "source": "https://www.fec.co.jp/profile/"
+   },
+   "capital": {
+    "value": "4,600万円",
+    "source": "https://www.fec.co.jp/profile/"
+   },
+   "founded": 1980,
+   "business_summary": "工場現場の専用ハードウェア設計から業務アプリの設計開発までのシステム開発、機器販売・ネットワーク施工・電気工事、ITコンサルティング",
+   "ai_initiative": "確認せず",
+   "url": "https://www.fec.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-24",
+   "notes": "1980年4月創立（電子機器製造会社として設立、平成12年にIT関連事業に特化）。人数は関連会社を含む。FIIA正会員（2026年6月保存版の名簿）"
+  }
+ ],
+ "aizuwakamatsu": [
+  {
+   "name": "株式会社GClue",
+   "hq": "福島県会津若松市一箕町鶴賀字上居合134-3（会津本社）",
+   "municipality": "会津若松市",
+   "town": "一箕町鶴賀",
+   "employees": {
+    "value": 20,
+    "as_of": "時点なし",
+    "source": "https://www.gclue.jp/p/blog-page.html"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.gclue.jp/p/blog-page.html"
+   },
+   "founded": 2001,
+   "business_summary": "クラウド構築、アプリ開発、AIシステム開発、IoTシステム開発、人材育成",
+   "ai_initiative": "主な事業内容に『AIシステム開発』。トップページに『AI × IoT × Robotics』",
+   "url": "https://www.gclue.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-24",
+   "notes": "2001年8月設立。東京支社（千代田区外神田）。関連会社 株式会社FaBo。会社概要はブログ形式のサイトの固定ページで、更新日は不明"
+  }
+ ],
+ "koriyama": [
+  {
+   "name": "株式会社エフコム",
+   "hq": "福島県郡山市堤下町13番8号（エディソン・エフコムビル）",
+   "municipality": "郡山市",
+   "town": "堤下町",
+   "employees": {
+    "value": 363,
+    "as_of": "2026年6月1日現在",
+    "source": "https://www.f-com.co.jp/corporate/about/"
+   },
+   "capital": {
+    "value": "2億7千万円",
+    "source": "https://www.f-com.co.jp/corporate/about/"
+   },
+   "founded": 1980,
+   "business_summary": "システムや情報機器の導入企画・設計・構築・運用保守（ライフサイクルマネジメント）、アウトソーシング、ICT教育、情報機器・サプライ品販売。売上高 14,985,452千円（2025年度）",
+   "ai_initiative": "確認せず",
+   "url": "https://www.f-com.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-24",
+   "notes": "1980年9月12日設立。株主 株式会社エフコムホールディングス。富士通系情報処理サービス業グループ（FCA）加盟。郡山・福島・会津・仙台・東京に事業所。FIIA正会員（2026年6月保存版の名簿）"
+  },
+  {
+   "name": "福島コンピューターシステム株式会社",
+   "hq": "福島県郡山市大槻町字北八耕地13番地",
+   "municipality": "郡山市",
+   "town": "大槻町",
+   "employees": {
+    "value": 341,
+    "as_of": "令和8年5月1日現在（男281名・女60名）",
+    "source": "https://www.fcs.co.jp/company/outline/"
+   },
+   "capital": null,
+   "founded": 1983,
+   "business_summary": "システム開発（FIIA名簿・公式の事業紹介による）。相双営業所（南相馬市）、田村開発センター（田村市テレワークセンター テラス石森内）、茨城・栃木営業所、東京オフィス",
+   "ai_initiative": "確認せず",
+   "url": "https://www.fcs.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-24",
+   "notes": "創立は1983年12月（沿革『創立10周年 1993年12月』から）。関連会社に福島情報処理センター。資本金は今回取得したテキストでは確認していない。FIIA正会員（2026年6月保存版の名簿）"
+  },
+  {
+   "name": "株式会社福島情報処理センター",
+   "hq": "福島県郡山市桑野三丁目18番24号",
+   "municipality": "郡山市",
+   "town": "桑野",
+   "employees": {
+    "value": 240,
+    "as_of": "時点なし",
+    "source": "https://fic.co.jp/about/gaiyo/"
+   },
+   "capital": {
+    "value": "2,000万円",
+    "source": "https://fic.co.jp/about/gaiyo/"
+   },
+   "founded": 1965,
+   "business_summary": "自治体向けソリューション、システムインテグレーション、システム開発、パッケージ販売、医事会計・電子カルテ、データセンター（F@RDS）",
+   "ai_initiative": "確認せず",
+   "url": "https://fic.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-24",
+   "notes": "昭和40年8月 郡山電子計算センターとして設立。会津営業所。福島コンピューターシステムの関連会社（FCSの会社概要に記載）。グループに株式会社FICリース。FIIA正会員（2026年6月保存版の名簿）"
+  },
+  {
+   "name": "株式会社ティービーケー・システムエンジニアリング",
+   "hq": "福島県郡山市菜根5丁目17-1（郡山本社）",
+   "municipality": "郡山市",
+   "town": "菜根",
+   "employees": {
+    "value": 91,
+    "as_of": "2025年4月1日現在",
+    "source": "https://www.tbkse.co.jp/about/"
+   },
+   "capital": {
+    "value": "2,000万円",
+    "source": "https://www.tbkse.co.jp/about/"
+   },
+   "founded": 2001,
+   "business_summary": "システムエンジニアリング（受託開発）。東京事業所（渋谷区恵比寿西）",
+   "ai_initiative": "確認せず",
+   "url": "https://www.tbkse.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-24",
+   "notes": "2001年8月1日設立。FIIA名簿（保存版）の本社所在地は郡山市図景1-6-5 図景ACビル3Fで、公式の菜根と違う（houjin.goo は菜根）。FIIA正会員（2026年6月保存版の名簿）"
+  },
+  {
+   "name": "プリマックス株式会社",
+   "hq": "福島県郡山市桑野5-13-6",
+   "municipality": "郡山市",
+   "town": "桑野",
+   "employees": {
+    "value": 36,
+    "as_of": "2023年10月現在（古い）",
+    "source": "https://www.primax.co.jp/company"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.primax.co.jp/company"
+   },
+   "founded": 2001,
+   "business_summary": "コンピュータシステムのサポート、営業部・システム開発課（ネットワーク設計等）、アグリ事業部、リトルプラネット モルティ郡山の運営",
+   "ai_initiative": "確認せず",
+   "url": "https://www.primax.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-24",
+   "notes": "2001年3月 有限会社設立、2002年8月株式会社に改組。会津支店（会津若松市）、福島営業所（福島市）。機器販売・保守サポートの比重が大きく、受託開発専業ではない。同じ36名でエヌケー・テック（時点なし）を次点にした"
+  }
+ ],
+ "iwaki": [
+  {
+   "name": "株式会社東日本計算センター",
+   "hq": "福島県いわき市平字研町2",
+   "municipality": "いわき市",
+   "town": "平",
+   "employees": {
+    "value": 339,
+    "as_of": "2025年11月現在",
+    "source": "https://www.eac-inc.co.jp/company/summary.php"
+   },
+   "capital": {
+    "value": "4,000万円",
+    "source": "https://www.eac-inc.co.jp/company/summary.php"
+   },
+   "founded": null,
+   "business_summary": "自治体・医療ソリューション、DX・RPA、百貨店グループ・カード業務のBPO、ネットワーク・セキュリティ、鉄道運行系システム開発、車載組込ソフト、ロボットソフトウェアの研究開発（FIIA名簿の事業内容）",
+   "ai_initiative": "確認せず（FIIA名簿にDX・RPAソリューション）",
+   "url": "https://www.eac-inc.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-24",
+   "notes": "FIIAの事務局を本社内に置く。関連会社 東日本ソフトウェアビジネス・東日本システムエンジニアリング（同じ住所・同じ代表者。人数は公式に別掲なし）。東京統括事業所、郡山・会津若松・横浜・日立に拠点。設立年は今回確認していない。FIIA正会員（2026年6月保存版の名簿）"
+  },
+  {
+   "name": "株式会社システムフォワード",
+   "hq": "福島県いわき市中央台飯野4-2-4 いわきニュータウンセンタービル4F",
+   "municipality": "いわき市",
+   "town": "中央台飯野",
+   "employees": {
+    "value": 33,
+    "as_of": "時点なし（男13名・女20名）",
+    "source": "https://www.sysforward.co.jp/company/profile/"
+   },
+   "capital": null,
+   "founded": null,
+   "business_summary": "クラウドサービスの企画・開発・運営、クラウド対応システム開発",
+   "ai_initiative": "確認せず",
+   "url": "https://www.sysforward.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-24",
+   "notes": "東京オフィス（千代田区丸の内）。プライバシーマーク、ISO/IEC 27001。資本金・設立は今回取得したテキストで確認していない"
+  },
+  {
+   "name": "株式会社A.M.Y.クリエイティブ",
+   "hq": "福島県いわき市泉町4-6-11",
+   "municipality": "いわき市",
+   "town": "泉町",
+   "employees": {
+    "value": 25,
+    "as_of": "時点なし（パートナー含む）",
+    "source": "https://amy-creative.co.jp/company/"
+   },
+   "capital": {
+    "value": "2,000万円",
+    "source": "https://amy-creative.co.jp/company/"
+   },
+   "founded": 2012,
+   "business_summary": "システム・サービス企画開発、Webコンテンツ制作、エンターテイメント、文教ソリューション、システムエンジニアリングサービス",
+   "ai_initiative": "確認せず",
+   "url": "https://amy-creative.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-24",
+   "notes": "平成24年6月設立（本社と東京支社〈新宿区〉を同時設立）。人数はパートナーを含む"
+  }
+ ],
+ "shirakawa": [],
+ "sukagawa": [
+  {
+   "name": "株式会社クラフト",
+   "hq": "福島県須賀川市森宿字ウツロ田42-24",
+   "municipality": "須賀川市",
+   "town": "森宿",
+   "employees": {
+    "value": 54,
+    "as_of": "2025年5月現在",
+    "source": "https://www.craftinc.co.jp/company/"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.craftinc.co.jp/company/"
+   },
+   "founded": 1982,
+   "business_summary": "業務系・制御系アプリケーションの受託開発、Webシステム、スマートフォン向けシステム、システムコンサルティング、自社パッケージの開発・販売",
+   "ai_initiative": "確認せず",
+   "url": "https://www.craftinc.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-24",
+   "notes": "1982年12月設立（『システムT・Y』として3名で設立、1989年に株式会社クラフト）。FIIA正会員（2026年6月保存版の名簿）"
+  }
+ ],
+ "kitakata": [
+  {
+   "name": "株式会社アクシス",
+   "hq": "福島県喜多方市松山町村松字馬道上3313番地4",
+   "municipality": "喜多方市",
+   "town": "松山町村松",
+   "employees": {
+    "value": 53,
+    "as_of": "2026年4月時点",
+    "source": "https://www.f-axis.co.jp/company/about/"
+   },
+   "capital": {
+    "value": "1億円",
+    "source": "https://www.f-axis.co.jp/company/about/"
+   },
+   "founded": 2002,
+   "business_summary": "クラウドを含むデータセンター事業、情報セキュリティ・ソリューション、システム構築・開発・保守（自治体・文教向け）",
+   "ai_initiative": "公式の製品一覧に『AI-さらば外字くん』",
+   "url": "https://www.f-axis.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-24",
+   "notes": "株式会社ラック100%出資。1989年5月にA&Iシステム（現ラック）・喜多方市役所・会津喜多方商工会議所の三者合意で創立、2002年4月1日に分社して設立。東京都港区の上場会社『株式会社アクシス』（axis-net.co.jp）とは別会社。houjin.goo の喜多方市の『株式会社アクシス』と同じ住所"
+  }
+ ],
+ "soma": [],
+ "nihonmatsu": [],
+ "tamura": [],
+ "minamisoma": [],
+ "date": [],
+ "motomiya": [],
+ "koori": [],
+ "kunimi": [],
+ "kawamata": [],
+ "kagamiishi": [],
+ "shimogo": [],
+ "tadami": [],
+ "minamiaizu": [],
+ "nishiaizu": [],
+ "bandai": [],
+ "inawashiro": [],
+ "aizubange": [],
+ "yanaizu": [],
+ "mishima-town": [],
+ "kaneyama-town": [],
+ "aizumisato": [],
+ "yabuki": [],
+ "tanagura": [],
+ "yamatsuri": [],
+ "hanawa": [],
+ "ishikawa-town": [],
+ "asakawa": [],
+ "furudono": [],
+ "miharu": [],
+ "ono-town": [],
+ "hirono": [],
+ "naraha": [],
+ "tomioka-town": [],
+ "okuma": [],
+ "futaba": [],
+ "namie": [],
+ "shinchi": [],
+ "otama": [],
+ "tenei": [],
+ "hinoemata": [],
+ "kitashiobara": [],
+ "yugawa": [],
+ "showa-village": [],
+ "nishigo": [],
+ "izumizaki": [],
+ "nakajima": [],
+ "samegawa": [],
+ "tamakawa": [],
+ "hirata": [],
+ "kawauchi": [],
+ "katsurao": [],
+ "iitate": [],
+ "_reference": {
+  "fukushima-city": {
+   "next_candidates": [
+    {
+     "name": "東邦情報システム株式会社",
+     "employees": "未確認（公式サイト tohojoho.jp が接続拒否）",
+     "capital": "未確認",
+     "note": "福島市飯坂町平野字桜田3-4 東邦銀行事務センター内（FIIA名簿）。東邦銀行の子会社（同行の有価証券報告書の沿革に1983年10月 東邦コンピューターサービス設立〈現・東邦情報システム〉）。東邦銀行の情報系システムの企画・開発・運用、一般企業・自治体向けITソリューション。公式で人数が分かれば福島市の上位に入る可能性が高い",
+     "source": "FIIA保存版 https://web.archive.org/web/2026/https://www.fiia.jp/members/tis/"
+    },
+    {
+     "name": "株式会社福島県農協電算センター（JA福島電算センター）",
+     "employees": "公式に記載なし",
+     "capital": "4億5千万円",
+     "note": "福島市北矢野目字下成田22-3。昭和52年4月設立。株主は県内全JA・JA福島中央会・厚生連・全農福島・共済連福島。各電算システムの受託開発・運用。FIIA賛助会員",
+     "source": "https://www.ja-fcenter.co.jp/company/"
+    },
+    {
+     "name": "エクステック株式会社",
+     "employees": "未確認（公式サイト extech-kk.jp が応答なし）",
+     "capital": "未確認",
+     "note": "福島市天神町8-19 司ビル2 3階（FIIA名簿）。コンピューターシステム・WEBシステムの設計・開発",
+     "source": "FIIA保存版"
+    },
+    {
+     "name": "株式会社福島電子計算センター",
+     "employees": "公式に記載なし",
+     "capital": "1,000万円（沿革の平成7年増資）",
+     "note": "福島市松木町10-8。昭和42年1月設立。計算の受託・データ入力、システム開発、OA機器販売。FIIA正会員",
+     "source": "https://fdkc.jp/company.html"
+    },
+    {
+     "name": "進和ビジネス株式会社",
+     "employees": "男子10名・女子2名（時点なし。同じ表の売上は平成20年度で古い）",
+     "capital": "1,000万円",
+     "note": "福島市鎌田字卸町23-6。日本電気特約店・アスクル販売店などのOA機器・事務用品販売が主業のため本表外。FIIA正会員",
+     "source": "http://www.shinwa-b.co.jp/company/company.html"
+    }
+   ],
+   "unverified": [
+    "システム・コア、トランター、ネクストシステム、シリコンゲート、福島情報サービス、ホロニック、Like-s、日本総合開発ほか（houjin.goo のみ。公式URL未確認）"
+   ]
+  },
+  "koriyama": {
+   "next_candidates": [
+    {
+     "name": "エヌケー・テック株式会社",
+     "employees": "36名（時点なし）",
+     "capital": "3,500万円",
+     "note": "郡山市鶴見坦1-14-5。平成3年2月設立。ホームページ制作、Webアプリ、スマホアプリ、パソコン教室・職業訓練。プライバシーマーク",
+     "source": "https://www.multi.ne.jp/company"
+    },
+    {
+     "name": "株式会社コンピューターシステムハウス",
+     "employees": "14名（時点なし）",
+     "capital": "未確認",
+     "note": "郡山市喜久田町卸三丁目37-2。ソフトウェア開発、Webシステム開発、ネットワーク構築。持株会社 株式会社INFホールディングス。東京・京都オフィス",
+     "source": "https://www.csh-web.co.jp/outline/"
+    },
+    {
+     "name": "デロイト トーマツ ウェブレッジ株式会社",
+     "employees": "未確認（webrage.jp が503）",
+     "capital": "未確認",
+     "note": "FIIA名簿の本社所在地は郡山市西田町大田字込内664。デロイト トーマツ グループ。ソフトウェアテスト等。公式で本社と人数を確認できず",
+     "source": "FIIA保存版 https://web.archive.org/web/2026/https://www.fiia.jp/members/webrage/"
+    },
+    {
+     "name": "株式会社コンピュータービジネス",
+     "employees": "未確認（新サイト net-cb.com の本文が取れず）",
+     "capital": "未確認",
+     "note": "郡山市字古川80-1（FIIA名簿）",
+     "source": "FIIA保存版"
+    },
+    {
+     "name": "株式会社クロスソフトウェア",
+     "employees": "公式に記載なし",
+     "capital": "未確認",
+     "note": "郡山市久留米一丁目104-1（FIIA名簿）。業務用ソフト開発、ドローン画像解析アプリ、自社パッケージ。公式の採用ページに本社（郡山市）と東京勤務",
+     "source": "https://www.cross-soft.co.jp/kaisha/kaisha1.htm"
+    },
+    {
+     "name": "ラシンエンタープライズ有限会社",
+     "employees": "公式に記載なし",
+     "capital": "未確認",
+     "note": "郡山市本町一丁目5-10 カナヤマ第一ビル2階。平成17年9月設立。ソフト開発・販売、オペレーション受託",
+     "source": "https://www.lashin.jp/company.html"
+    },
+    {
+     "name": "株式会社アディカ",
+     "employees": "公式に記載なし",
+     "capital": "未確認",
+     "note": "郡山市。ITサポート、Web制作、映像制作、システム開発",
+     "source": "https://adica.co.jp/about"
+    },
+    {
+     "name": "株式会社ワイアードブレインズ",
+     "employees": "公式に記載なし",
+     "capital": "未確認",
+     "note": "郡山市。デザイン・Web・動画制作",
+     "source": "https://www.wired-brains.co.jp/"
+    }
+   ],
+   "excluded": [
+    "株式会社クレスコ・ジェイキューブ（FIIA賛助会員。名簿は郡山の住所だが公式の本社は東京都港区。郡山事業所。単独325名は会社全体）",
+    "日本ナレッジ株式会社（本社 東京都台東区、郡山センター）",
+    "MA Solutions（本社 東京都台東区。houjin.goo では郡山市島）",
+    "株式会社アサカ理研（FIIA正会員。品質管理システムの開発・販売を名簿に記載。本表の確認対象にしなかった）",
+    "ITコンシェルジュ（個人事業。郡山市大槻町）",
+    "株式会社NCE（nce.co.jp がメンテナンス中で確認できず）"
+   ]
+  },
+  "iwaki": {
+   "next_candidates": [
+    {
+     "name": "バックス情報システム株式会社",
+     "employees": "公式に記載なし（マイナビ2027 は62名・2026年6月現在。secondary）",
+     "capital": "1,000万円（マイナビ）",
+     "note": "いわき市小名浜大原字丁新地211-1（いわき本社）。1997年10月設立。ITソリューション開発、クラウド『連絡王』、データセンター、デジタル化加工。茨城支社",
+     "source": "https://www.bacs-j.co.jp/about-us/"
+    },
+    {
+     "name": "株式会社FSK",
+     "employees": "公式に記載なし",
+     "capital": "1,600万円",
+     "note": "いわき市内郷御厩町3-168。昭和38年6月1日設立。ソフトウェア開発、情報処理の受託、アウトソーシング、SI。南相馬・東京に拠点",
+     "source": "https://www.fsk-brain.co.jp/company/outline/"
+    },
+    {
+     "name": "株式会社東日本ソフトウェアビジネス／株式会社東日本システムエンジニアリング",
+     "employees": "公式に別掲なし",
+     "capital": "未確認",
+     "note": "いずれも本社 いわき市平字研町2（東日本計算センターの関連会社、同じ代表者）。金融系・エネルギー系の業務システム、新幹線運行管理など交通制御・鉄鋼プラント制御",
+     "source": "https://www.eac-inc.co.jp/company/summary.php"
+    },
+    {
+     "name": "株式会社協創",
+     "employees": "未確認（kyoso.biz が接続拒否）",
+     "capital": "未確認",
+     "note": "いわき市平谷川瀬字吉野作183-1（FIIA名簿）。WEB・C/Sの設計製造、SES",
+     "source": "FIIA保存版"
+    }
+   ],
+   "unverified": [
+    "テック、インフォテック、フレア（houjin.goo の『株式会社フレア』と同名の flare.co.jp は配食サービスで別会社の可能性）、いわき電算、ミューテックス、フォワードほか（公式URL未確認）"
+   ]
+  },
+  "aizuwakamatsu": {
+   "next_candidates": [
+    {
+     "name": "株式会社シンク",
+     "employees": "公式で取れず（福島労働局の企業紹介PDF は68名〈男59・女9〉、時点はPDFに記載の範囲）",
+     "capital": "未確認",
+     "note": "会津若松市インター西105番地（FIIA名簿）。ソフトウェア・Web・業務・組込み系のシステム開発、サーバー構築。公式サイト sync.co.jp は JavaScript で本文を読み込み、会社概要を取得できなかった。公式で確かめれば会津若松市の1位",
+     "source": "https://jsite.mhlw.go.jp/fukushima-roudoukyoku/content/contents/002589094.pdf"
+    },
+    {
+     "name": "株式会社Eyes, JAPAN",
+     "employees": "公式で取れず（JETRO福島のデータベースは25名、時点なし）",
+     "capital": "500万円（JETRO）",
+     "note": "会津若松市。1997年設立。会津大学発のソフトウェア研究開発。公式 nowhere.co.jp は本文が取れなかった",
+     "source": "https://www.jetro.go.jp/jetro/japan/fukushima/company/eyes_japan.html"
+    },
+    {
+     "name": "株式会社会津ラボ",
+     "employees": "公式に記載なし",
+     "capital": "29,915,000円",
+     "note": "本社 会津若松市インター西53番地、AiCTオフィス。2007年1月設立（会津大学発ベンチャー）。スマートフォンアプリ・Web・クラウド。主要株主 株式会社フォー・クオリア",
+     "source": "https://aizulab.com/company/"
+    },
+    {
+     "name": "株式会社PLISE",
+     "employees": "公式に記載なし",
+     "capital": "未確認",
+     "note": "会津事務所 会津若松市一箕町鶴賀字上居合134-3 Vアクセスビル2階（公式は『会津事務所』と書き本社と明記せず）。2011年設立の会津大学発ベンチャー。システム受託開発（Webシステム、AI駆動開発）。株式会社メイガスのグループ",
+     "source": "https://www.plise.co.jp/"
+    },
+    {
+     "name": "株式会社デザイニウム",
+     "employees": "未確認（公式サイトの会社ページが取れず）",
+     "capital": "未確認",
+     "note": "houjin.goo で会津若松市。XR・地域DX。会津オフィス",
+     "source": "https://www.designium.jp/"
+    }
+   ],
+   "unverified": [
+    "エムテックス、エクスファンディア、トコム、C.S.D、ニセンエックス、エヌ・エス・シー、データアシストイン会津、SHINコンサルティングほか（houjin.goo のみ）"
+   ],
+   "excluded": [
+    "スマートシティAiCT の入居企業は、入居企業名簿を見つけられず照合していない。県外本社の企業の会津拠点は本社扱いにしない"
+   ]
+  },
+  "sukagawa": {
+   "next_candidates": [
+    {
+     "name": "株式会社日本アドシス",
+     "employees": "公式に記載なし",
+     "capital": "1,000万円",
+     "note": "須賀川市森宿字狐石128-27。1996年4月設立。ソフトウェア受託開発、Web制作、機器販売、ネットワーク構築。東京事業所。FIIA正会員",
+     "source": "https://www.jadsys.co.jp/company/"
+    }
+   ],
+   "unverified": [
+    "新日本ソフト、エリアス、マクロウェア、制御システム、ぱすわーど（houjin.goo のみ）"
+   ]
+  },
+  "tanagura": {
+   "next_candidates": [
+    {
+     "name": "株式会社ユニテックデーターアシスト",
+     "employees": "9名（2026年5月現在）",
+     "capital": "1,500万円",
+     "note": "東白川郡棚倉町棚倉字広畑184-1 インテルセインビル1F（本社・棚倉店）、白河店。昭和47年9月6日設立。パソコン販売・修理・教室が主業で、ソフト開発・HP制作も行う。主業がパソコン販売のため本表外。FIIA正会員",
+     "source": "https://dataassist.co.jp/company/"
+    }
+   ]
+  },
+  "minamisoma": {
+   "next_candidates": [
+    {
+     "name": "株式会社Grune AI Technologies",
+     "employees": "公式に記載なし",
+     "capital": "3,300万円（資本準備金含む）",
+     "note": "houjin.goo（法人番号データ）の所在地は南相馬市原町区日の出町182番地の4。公式は南相馬市を『福島オフィス』と書き、サイトの見出しは『仙台のAI企業』。平成28年11月15日設立。AIコンサル・AIアプリ開発・Web・スマホアプリ",
+     "source": "https://grune.co.jp/about-us/"
+    }
+   ]
+  },
+  "shinchi": {
+   "unverified": [
+    "株式会社夢デザイン総合研究所（houjin.goo のタグ『ソフトウエア』で新地町。公式URL未確認。WebSearchの要約に教育ICT・71人とあるが元ページは削除済み）"
+   ]
+  },
+  "others_unverified": {
+   "shirakawa": "アイティエス（新白河4丁目）、テレメディア東北（通信）",
+   "nihonmatsu": "みやま電器・未来テレトピア（通信機器・通信）",
+   "tamura": "大内情報（通信機器）。福島コンピューターシステムの田村開発センターは拠点",
+   "date": "CIA（houjin.goo タグ『システム開発』）",
+   "soma": "コンタクト（同）、モリタ（通信機器）",
+   "motomiya": "アシスト、エーアイティ研究所",
+   "kagamiishi": "Amour",
+   "nishiaizu": "AIS",
+   "namie": "プレステージ",
+   "tomioka-town": "アドック",
+   "furudono": "houjin.goo のIT業界1社（名称未確認）",
+   "hirata": "グランドデザイン",
+   "miharu": "ウェブリッジ（公式URL未確認。webridge.co.jp は東京本社の別会社）",
+   "aizubange": "朝日システムの会津オフィスは拠点"
+  }
+ },
+ "_notes": [
+  "本表は公式サイトで本社所在地と従業員数の両方を確認できた会社だけ。該当があったのは福島市（4社）・郡山市（5社）・いわき市（3社）・須賀川市（1社）・喜多方市（1社）・会津若松市（1社）の6市。ほかの53市町村は本表『なし』。",
+  "県内で公式の従業員数が最も多いのは郡山市のエフコム（363名、2026年6月1日。株主 エフコムホールディングス）、次いで福島コンピューターシステム（341名、令和8年5月1日）、いわき市の東日本計算センター（339名、2025年11月）。",
+  "親会社・出資者: アクシス（喜多方市、ラック100%。喜多方市役所・会津喜多方商工会議所との三者合意で創立）、エフコム（エフコムホールディングス）、福島情報処理センター（福島コンピューターシステムの関連会社）、東邦情報システム（東邦銀行の子会社、公式未確認）、福島県農協電算センター（県内全JAなどが株主）、会津ラボ（主要株主 フォー・クオリア）、PLISE（メイガスのグループ）。記事で『地元企業』と書くときは親会社・出資者を書く。",
+  "FIIA（福島県情報産業協会）の現行サイトは2026-10-24に401で開けず、名簿は2026年6月の Internet Archive 保存版。名簿と公式で住所が違う会社: 朝日システム（名簿 伏拝 → 公式 三河南町）、ティービーケー・システムエンジニアリング（名簿 図景 → 公式 菜根）。",
+  "会津若松市は、シンク（労働局PDFで68名）・Eyes, JAPAN（JETROで25名）・会津ラボ・PLISEなど本社の会社は多いが、公式で従業員数を確認できたのはGClueだけ。シンクの公式サイトはJavaScriptで本文を読み込むため取れなかった。ブラウザで開ければ確認できる可能性が高い。スマートシティAiCTの入居企業名簿は見つからなかった。",
+  "AIを公式に明記している会社（本表）: GClue（AIシステム開発）、アクシス（AI-さらば外字くん）。_reference: Grune AI Technologies（AIコンサル・開発、所在地の扱いに注意）、PLISE（AI駆動開発）。他社のAI記載は今回確認していない。",
+  "従業員数の時点がない・古い会社: 福島情報処理センター（240名、時点なし）、エフイーシー（30名・関連含む、時点なし、表の年商は2005年実績）、システムフォワード（33名）、A.M.Y.クリエイティブ（25名・パートナー含む）、GClue（20名）、プリマックス（2023年10月）。",
+  "相双地域（避難指示が出た町村を含む）で本社のシステム開発会社は公式で確認できなかった。houjin.goo には浪江町・富岡町・双葉町に通信機器・IT業界の法人があるが、公式URLと事業実態を確認していない。"
+ ]
+}

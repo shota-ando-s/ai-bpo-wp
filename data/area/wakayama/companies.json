@@ -1,0 +1,1331 @@
+{
+ "_meta": {
+  "checked": "2026-11-07",
+  "scope": "和歌山県30市町村（9市20町1村）。本店（法人番号）・本社（公式サイト）が当該市町村にあり、公式サイトでシステム開発・ソフトウェア開発・Web開発・情報処理サービス・SI・クラウドを事業として明示する法人。鹿児島・岡山などと同じく、本表には『公式サイト（コーポレートサイトまたは自社の採用サイト）で本社所在地と従業員数の両方を確認できた会社』だけを入れた。**和歌山県では公式に人数を書かない会社が多く、本表は和歌山市の3社だけ**。県が運営する就職サイト『UIわかやま就職ガイド』（企業が登録した値）で人数が分かる会社は _reference.<slug>.ui_guide_only に置いた（紀陽情報システム 287名・クオリティソフト 153名など。親が本表に上げてよい）。人数がない・公式サイトを開けなかった会社は unverified、県外に本社がある会社の県内拠点は _reference._outside_hq",
+  "candidate_sources": [
+   "**一般社団法人和歌山情報サービス産業協会（WAKASA）** https://www.wakasa.or.jp/ 『会員一覧』https://www.wakasa.or.jp/other/list.aspx （時点の記載なし。正会員・賛助会員・特別会員 約70件。県外本社の支店・学校・金融機関・製造業を含む）。依頼の『和歌山県情報サービス産業協会』は**この名前（『和歌山情報サービス産業協会』、県の字が入らない）**。名前はクオリティソフト・スマート・インサイトの会社概要の加盟団体の欄でも確かめた。1992年設立、事務局 和歌山市布引466",
+   "和歌山県 企業立地課『わかやま×ICT』の進出企業一覧 https://ritti.pref.wakayama.jp/ict/company/ （『合計 49 社が進出』和歌山市29社・田辺市5社・白浜町15社。時点の記載なし）",
+   "和歌山県『UIわかやま就職ガイド』の企業検索（業種『情報通信業』、2027年春 21件・2026年春 25件）https://www.wakayama-uiturn.jp/student/recruit/archive?search=1&search_year=2027&tob[]=5 。各社のページに企業が登録した従業員数・設立・資本金",
+   "和歌山県 労働政策課『奨学金返還助成制度』の参画企業一覧（2028年3月卒業予定者向け、2026年4月1日時点）https://www.pref.wakayama.lg.jp/prefg/060600/01shin/uturnshushoku/syougakukin_001_d/fil/sankakukigyou.pdf と2027年3月卒業予定者向け 26sankakukigyou.pdf",
+   "国税庁 法人番号公表サイト（名称・都道府県『和歌山県』で検索。『ソフト』『システム』『情報』『コンピュータ』『データ』『テクノ』『デジタル』の部分一致も試した〔『システム』106件・『テクノ』56件などで、先頭10件だけ見た〕）",
+   "cases.md・gov_ai.md の会社（クオリティソフト・TechnologyDock・Kaze・組込ＡＩ研究所・ノーリツプレシジョン、県の誘致IT企業研究セミナーの登壇9社、オプティムの有田川町への進出）",
+   "わかやま産業振興財団の IT 企業の一覧: 見つからなかった（WebSearch 1回。財団の支援策の紹介資料だけ）。県の物品・役務の入札参加資格者名簿: 県のページに名簿の公開がなく、電子調達システムの中で見ていない",
+   "WebSearch（担当上限12回のうち9回を使用）"
+  ],
+  "columns": "name / hq（公式の本社住所）/ municipality / town / corporate_number（法人番号）/ employees{value,as_of,source} / capital / founded / business_summary / business_type / ai_initiative / group / url / size_basis / checked / notes",
+  "industry_stats": {
+   "source": "令和3年経済センサス‐活動調査 事業所に関する集計 産業横断的集計 第6-1表（民営事業所、2021年6月1日）statInfId=000040067880 https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040067880&fileKind=0 （2026-11-07 にダウンロードし、地域区分 30000・302xx・30xxx の行を抽出）",
+   "30000_和歌山県": {
+    "AR_全産業（S_公務を除く）": {
+     "establishments": 45309,
+     "workers": 378695
+    },
+    "G_情報通信業": {
+     "establishments": 268,
+     "workers": 2870
+    },
+    "39_情報サービス業": {
+     "establishments": 133,
+     "workers": 1434
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": 31,
+     "workers": 338
+    }
+   },
+   "30201_和歌山市": {
+    "AR_全産業（S_公務を除く）": {
+     "establishments": 16223,
+     "workers": 171048
+    },
+    "G_情報通信業": {
+     "establishments": 164,
+     "workers": 2053
+    },
+    "39_情報サービス業": {
+     "establishments": 93,
+     "workers": 1121
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": 13,
+     "workers": 190
+    }
+   },
+   "30202_海南市": {
+    "AR_全産業（S_公務を除く）": {
+     "establishments": 2450,
+     "workers": 20545
+    },
+    "G_情報通信業": {
+     "establishments": 6,
+     "workers": 110
+    },
+    "39_情報サービス業": {
+     "establishments": 4,
+     "workers": 17
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": 2,
+     "workers": 93
+    }
+   },
+   "30203_橋本市": {
+    "AR_全産業（S_公務を除く）": {
+     "establishments": 2390,
+     "workers": 18748
+    },
+    "G_情報通信業": {
+     "establishments": 10,
+     "workers": 32
+    },
+    "39_情報サービス業": {
+     "establishments": 3,
+     "workers": 17
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": 1,
+     "workers": 1
+    }
+   },
+   "30204_有田市": {
+    "AR_全産業（S_公務を除く）": {
+     "establishments": 1456,
+     "workers": 10123
+    },
+    "G_情報通信業": {
+     "establishments": 2,
+     "workers": 6
+    },
+    "39_情報サービス業": {
+     "establishments": 2,
+     "workers": 6
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": null,
+     "workers": null
+    }
+   },
+   "30205_御坊市": {
+    "AR_全産業（S_公務を除く）": {
+     "establishments": 1732,
+     "workers": 11448
+    },
+    "G_情報通信業": {
+     "establishments": 7,
+     "workers": 65
+    },
+    "39_情報サービス業": {
+     "establishments": 2,
+     "workers": 8
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": 2,
+     "workers": 3
+    }
+   },
+   "30206_田辺市": {
+    "AR_全産業（S_公務を除く）": {
+     "establishments": 4486,
+     "workers": 29913
+    },
+    "G_情報通信業": {
+     "establishments": 26,
+     "workers": 195
+    },
+    "39_情報サービス業": {
+     "establishments": 13,
+     "workers": 59
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": 2,
+     "workers": 32
+    }
+   },
+   "30207_新宮市": {
+    "AR_全産業（S_公務を除く）": {
+     "establishments": 2209,
+     "workers": 12913
+    },
+    "G_情報通信業": {
+     "establishments": 14,
+     "workers": 103
+    },
+    "39_情報サービス業": {
+     "establishments": 2,
+     "workers": 7
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": 1,
+     "workers": 2
+    }
+   },
+   "30208_紀の川市": {
+    "AR_全産業（S_公務を除く）": {
+     "establishments": 2188,
+     "workers": 20052
+    },
+    "G_情報通信業": {
+     "establishments": 5,
+     "workers": 14
+    },
+    "39_情報サービス業": {
+     "establishments": 4,
+     "workers": 13
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": 1,
+     "workers": 1
+    }
+   },
+   "30209_岩出市": {
+    "AR_全産業（S_公務を除く）": {
+     "establishments": 1594,
+     "workers": 14435
+    },
+    "G_情報通信業": {
+     "establishments": 6,
+     "workers": 29
+    },
+    "39_情報サービス業": {
+     "establishments": 3,
+     "workers": 8
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": 2,
+     "workers": 2
+    }
+   },
+   "30304_紀美野町": {
+    "AR_全産業（S_公務を除く）": {
+     "establishments": 468,
+     "workers": 2473
+    },
+    "G_情報通信業": {
+     "establishments": 1,
+     "workers": 1
+    },
+    "39_情報サービス業": {
+     "establishments": null,
+     "workers": null
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": 1,
+     "workers": 1
+    }
+   },
+   "30341_かつらぎ町": {
+    "AR_全産業（S_公務を除く）": {
+     "establishments": 746,
+     "workers": 6162
+    },
+    "G_情報通信業": {
+     "establishments": 1,
+     "workers": 5
+    },
+    "39_情報サービス業": {
+     "establishments": null,
+     "workers": null
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": null,
+     "workers": null
+    }
+   },
+   "30343_九度山町": {
+    "AR_全産業（S_公務を除く）": {
+     "establishments": 166,
+     "workers": 971
+    },
+    "G_情報通信業": {
+     "establishments": null,
+     "workers": null
+    },
+    "39_情報サービス業": {
+     "establishments": null,
+     "workers": null
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": null,
+     "workers": null
+    }
+   },
+   "30344_高野町": {
+    "AR_全産業（S_公務を除く）": {
+     "establishments": 335,
+     "workers": 2081
+    },
+    "G_情報通信業": {
+     "establishments": 1,
+     "workers": 19
+    },
+    "39_情報サービス業": {
+     "establishments": null,
+     "workers": null
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": null,
+     "workers": null
+    }
+   },
+   "30361_湯浅町": {
+    "AR_全産業（S_公務を除く）": {
+     "establishments": 718,
+     "workers": 4239
+    },
+    "G_情報通信業": {
+     "establishments": 4,
+     "workers": 8
+    },
+    "39_情報サービス業": {
+     "establishments": null,
+     "workers": null
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": 2,
+     "workers": 2
+    }
+   },
+   "30362_広川町": {
+    "AR_全産業（S_公務を除く）": {
+     "establishments": 287,
+     "workers": 1737
+    },
+    "G_情報通信業": {
+     "establishments": null,
+     "workers": null
+    },
+    "39_情報サービス業": {
+     "establishments": null,
+     "workers": null
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": null,
+     "workers": null
+    }
+   },
+   "30366_有田川町": {
+    "AR_全産業（S_公務を除く）": {
+     "establishments": 1381,
+     "workers": 9347
+    },
+    "G_情報通信業": {
+     "establishments": 3,
+     "workers": 13
+    },
+    "39_情報サービス業": {
+     "establishments": 2,
+     "workers": 2
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": null,
+     "workers": null
+    }
+   },
+   "30381_美浜町": {
+    "AR_全産業（S_公務を除く）": {
+     "establishments": 320,
+     "workers": 1734
+    },
+    "G_情報通信業": {
+     "establishments": 1,
+     "workers": 1
+    },
+    "39_情報サービス業": {
+     "establishments": null,
+     "workers": null
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": 1,
+     "workers": 1
+    }
+   },
+   "30382_日高町": {
+    "AR_全産業（S_公務を除く）": {
+     "establishments": 278,
+     "workers": 1707
+    },
+    "G_情報通信業": {
+     "establishments": 1,
+     "workers": 1
+    },
+    "39_情報サービス業": {
+     "establishments": null,
+     "workers": null
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": null,
+     "workers": null
+    }
+   },
+   "30383_由良町": {
+    "AR_全産業（S_公務を除く）": {
+     "establishments": 319,
+     "workers": 1810
+    },
+    "G_情報通信業": {
+     "establishments": null,
+     "workers": null
+    },
+    "39_情報サービス業": {
+     "establishments": null,
+     "workers": null
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": null,
+     "workers": null
+    }
+   },
+   "30390_印南町": {
+    "AR_全産業（S_公務を除く）": {
+     "establishments": 393,
+     "workers": 2442
+    },
+    "G_情報通信業": {
+     "establishments": 1,
+     "workers": 2
+    },
+    "39_情報サービス業": {
+     "establishments": 1,
+     "workers": 2
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": null,
+     "workers": null
+    }
+   },
+   "30391_みなべ町": {
+    "AR_全産業（S_公務を除く）": {
+     "establishments": 627,
+     "workers": 4438
+    },
+    "G_情報通信業": {
+     "establishments": null,
+     "workers": null
+    },
+    "39_情報サービス業": {
+     "establishments": null,
+     "workers": null
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": null,
+     "workers": null
+    }
+   },
+   "30392_日高川町": {
+    "AR_全産業（S_公務を除く）": {
+     "establishments": 446,
+     "workers": 2858
+    },
+    "G_情報通信業": {
+     "establishments": 1,
+     "workers": 8
+    },
+    "39_情報サービス業": {
+     "establishments": null,
+     "workers": null
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": null,
+     "workers": null
+    }
+   },
+   "30401_白浜町": {
+    "AR_全産業（S_公務を除く）": {
+     "establishments": 1022,
+     "workers": 9441
+    },
+    "G_情報通信業": {
+     "establishments": 7,
+     "workers": 198
+    },
+    "39_情報サービス業": {
+     "establishments": 4,
+     "workers": 174
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": 1,
+     "workers": 8
+    }
+   },
+   "30404_上富田町": {
+    "AR_全産業（S_公務を除く）": {
+     "establishments": 610,
+     "workers": 5282
+    },
+    "G_情報通信業": {
+     "establishments": null,
+     "workers": null
+    },
+    "39_情報サービス業": {
+     "establishments": null,
+     "workers": null
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": null,
+     "workers": null
+    }
+   },
+   "30406_すさみ町": {
+    "AR_全産業（S_公務を除く）": {
+     "establishments": 246,
+     "workers": 1195
+    },
+    "G_情報通信業": {
+     "establishments": 1,
+     "workers": 1
+    },
+    "39_情報サービス業": {
+     "establishments": null,
+     "workers": null
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": 1,
+     "workers": 1
+    }
+   },
+   "30421_那智勝浦町": {
+    "AR_全産業（S_公務を除く）": {
+     "establishments": 970,
+     "workers": 5354
+    },
+    "G_情報通信業": {
+     "establishments": 2,
+     "workers": 2
+    },
+    "39_情報サービス業": {
+     "establishments": null,
+     "workers": null
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": null,
+     "workers": null
+    }
+   },
+   "30422_太地町": {
+    "AR_全産業（S_公務を除く）": {
+     "establishments": 151,
+     "workers": 587
+    },
+    "G_情報通信業": {
+     "establishments": 1,
+     "workers": 1
+    },
+    "39_情報サービス業": {
+     "establishments": null,
+     "workers": null
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": 1,
+     "workers": 1
+    }
+   },
+   "30424_古座川町": {
+    "AR_全産業（S_公務を除く）": {
+     "establishments": 149,
+     "workers": 714
+    },
+    "G_情報通信業": {
+     "establishments": null,
+     "workers": null
+    },
+    "39_情報サービス業": {
+     "establishments": null,
+     "workers": null
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": null,
+     "workers": null
+    }
+   },
+   "30427_北山村": {
+    "AR_全産業（S_公務を除く）": {
+     "establishments": 38,
+     "workers": 193
+    },
+    "G_情報通信業": {
+     "establishments": null,
+     "workers": null
+    },
+    "39_情報サービス業": {
+     "establishments": null,
+     "workers": null
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": null,
+     "workers": null
+    }
+   },
+   "30428_串本町": {
+    "AR_全産業（S_公務を除く）": {
+     "establishments": 911,
+     "workers": 4705
+    },
+    "G_情報通信業": {
+     "establishments": 3,
+     "workers": 3
+    },
+    "39_情報サービス業": {
+     "establishments": null,
+     "workers": null
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": null,
+     "workers": null
+    }
+   },
+   "share_note": "県の情報通信業の従業者 2,870人は全産業 378,695人の0.76%、情報サービス業 1,434人は0.38%（自分で計算）。和歌山市が情報サービス業の従業者の78.2%（1,121÷1,434）。白浜町の情報サービス業は4所・174人で和歌山市に次ぐ（田辺市 59人より多い）。『-』は該当なし"
+  }
+ },
+ "wakayama-city": [
+  {
+   "name": "株式会社サイバーリンクス（東証スタンダード 3683）",
+   "hq": "和歌山県和歌山市紀三井寺849番地の3（本社。公式の会社概要）",
+   "municipality": "和歌山市",
+   "town": "紀三井寺",
+   "corporate_number": "3170001001614",
+   "employees": {
+    "value": 631,
+    "as_of": "従業員数（2025/12/31）903名（連結）631名（単体）",
+    "source": "https://www.cyber-l.co.jp/company/outline/"
+   },
+   "capital": {
+    "value": "895百万円",
+    "source": "https://www.cyber-l.co.jp/company/outline/"
+   },
+   "founded": 1964,
+   "business_summary": "1964年5月28日設立。売上高（2025年12月期）18,136百万円（連結）・13,511百万円（単体）。流通クラウド事業（卸売業向けクラウドEDI、食品小売業向け基幹業務クラウド、棚割システムなど）、官公庁クラウド事業（行政情報システム、校務支援クラウド、地域医療連携など）、ケーブルテレビ・ISP、トラスト事業（マイナンバーカードを活用したトラストサービス）、ドコモショップ。グループ会社 南大阪電子計算センター（大阪府貝塚市）・シナジー（沖縄県宜野湾市）",
+   "business_type": [
+    "パッケージ・クラウド（SaaS）",
+    "自治体向けシステム",
+    "通信（CATV・ISP）",
+    "携帯電話販売"
+   ],
+   "ai_initiative": "公式のトップ・会社概要に AI の記載は見つからなかった（2026-11-07）",
+   "group": "上場会社（親会社の記載なし）。子会社 南大阪電子計算センター・シナジー",
+   "url": "https://www.cyber-l.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-07",
+   "notes": "県の『UIわかやま就職ガイド』では『正規社員 590名・非正規社員 41名』（時点の記載なし）https://www.wakayama-uiturn.jp/student/recruit/page/?slug=3683cyberlinks 。単体の631名と合う（590+41）。**ドコモショップの販売員を含む人数**で、システム開発の人数ではない。WAKASA の会員一覧には載っていない（住所が同じ紀三井寺849-3『CL南別館』の株式会社アーツテックラボが会員）。他県の companies に出ない"
+  },
+  {
+   "name": "株式会社サンレックス",
+   "hq": "和歌山県和歌山市久保丁4-65（本社。公式の企業情報）",
+   "municipality": "和歌山市",
+   "town": "久保丁",
+   "corporate_number": "6170001001438",
+   "employees": {
+    "value": 42,
+    "as_of": "『男女比 … ( 男性30名 : 女性12名 )』（採用ページ『数字で見るサンレックス』。時点の記載なし。同じ欄の自己資本比率は『令和６年３月末時点』）",
+    "source": "https://www.sunrex.co.jp/recruit/"
+   },
+   "capital": {
+    "value": "5,000万円",
+    "source": "https://www.sunrex.co.jp/about/"
+   },
+   "founded": 1984,
+   "business_summary": "会社概要の設立 1984年5月26日（採用ページの『数字で見る』は『設立 1974 年』で食い違う）。流通業向けアプリケーション・ネットワークシステムの構築、パッケージソフトの販売（Web-EDI『REXASS』。『全国累計6,000社以上に導入』は自社の表現）。東京支社（港区三田）・福岡営業所・沖縄営業所",
+   "business_type": [
+    "パッケージ・SaaS（EDI）",
+    "受託開発・カスタマイズ"
+   ],
+   "ai_initiative": "事業としての AI の記載なし。ブランドコンセプトに『AIをはじめとしたテクノロジーの進化により、社会のあり方が大きく変わろうとしている今』とあるだけ",
+   "group": "親会社・グループの記載は見つからなかった（独立系かどうかは確かめていない）",
+   "url": "https://www.sunrex.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-07",
+   "notes": "県の UIわかやま就職ガイドでも『正規社員 42名（男性30名／女性12名）非正規社員 1名』『設立 昭和59年5月26日』https://www.wakayama-uiturn.jp/student/recruit/page/?slug=SUNREX 。WAKASA の会員一覧には載っていない。1984年 富士通と代理店契約（沿革）"
+  },
+  {
+   "name": "株式会社BEE",
+   "hq": "和歌山県和歌山市卜半町31（公式の会社概要の所在地。2022年11月25日に移転）",
+   "municipality": "和歌山市",
+   "town": "卜半町",
+   "corporate_number": "4170001005069",
+   "employees": {
+    "value": 21,
+    "as_of": "21名（2025年11月現在）",
+    "source": "https://bee-design.co.jp/about"
+   },
+   "capital": {
+    "value": "90万円",
+    "source": "https://bee-design.co.jp/about"
+   },
+   "founded": 2004,
+   "business_summary": "2004年7月7日設立。Web制作・ホームページ制作、ブランディング・デザイン、システム開発・DX支援（業務システム開発、Webアプリ・スマホアプリ開発、CMS、HubSpot・Google Workspace の導入支援、Webチャットボット導入支援）、マーケティング支援。ISO/IEC 27001 認証",
+   "business_type": [
+    "Web制作",
+    "受託開発（Web・アプリ）",
+    "DX支援"
+   ],
+   "ai_initiative": "サービス一覧に『Webチャットボット導入支援サービス』『SEO（LLMO、AIO）』。AI を事業の柱とする記載はない",
+   "group": "親会社・グループの記載は見つからなかった（独立系かどうかは確かめていない）",
+   "url": "https://bee-design.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-07",
+   "notes": "WAKASA の会員一覧の住所は旧住所（和歌山市板屋町22番地 和歌山大同生命ビル4F）のまま。県の UIわかやま就職ガイドは『正規社員 18名・非正規社員 5名』https://www.wakayama-uiturn.jp/student/recruit/page/?slug=bee-design 。法人番号の所在地は卜半町31番地で公式と一致"
+  }
+ ],
+ "kainan": [],
+ "hashimoto": [],
+ "arida": [],
+ "gobo": [],
+ "tanabe": [],
+ "shingu-city": [],
+ "kinokawa": [],
+ "iwade": [],
+ "kimino": [],
+ "katsuragi-town": [],
+ "kudoyama": [],
+ "koya": [],
+ "yuasa": [],
+ "hirogawa": [],
+ "aridagawa": [],
+ "mihama-town": [],
+ "hidaka-town-wakayama": [],
+ "yura": [],
+ "inami": [],
+ "minabe": [],
+ "hidakagawa": [],
+ "shirahama": [],
+ "kamitonda": [],
+ "susami": [],
+ "nachikatsuura": [],
+ "taiji": [],
+ "kozagawa": [],
+ "kitayama-village": [],
+ "kushimoto": [],
+ "_reference": {
+  "wakayama-city": {
+   "next_candidates": [],
+   "ui_guide_only": [
+    {
+     "name": "紀陽情報システム株式会社",
+     "hq": "和歌山県和歌山市中之島2240番地（紀陽銀行向芝オフィス内）",
+     "corporate_number": "1170001000923",
+     "employees_ui_guide": {
+      "value": 287,
+      "as_of": "正規社員 287名（男性144名／女性143名）※2026年4月現在",
+      "also": "県 労働政策課の企業紹介ページ『273名（令和6年4月現在）』https://www.pref.wakayama.lg.jp/prefg/060600/d00215868.html"
+     },
+     "business_summary": "1985年2月設立（UI ガイド『昭和60年2月1日』）、資本金 8,000万円、売上高 46億円（2026年3月期）。金融機関向けシステム、自治体向け総合行政システム、保健所向け生活衛生情報管理システム、企業向けシステム導入のコンサルティング・開発・決済サービス。和歌山本社・東京支社・大阪開発センター",
+     "ai_initiative": "県の企業紹介に『新技術へのチャレンジ』とあるだけ。公式サイトは開けず確かめていない",
+     "url": "https://www.k-js.co.jp/",
+     "group": "**紀陽フィナンシャルグループ（紀陽銀行）のソフトウェア会社**（県の企業紹介ページ『紀陽フィナンシャルグループのソフトウェア会社です』）。地元の独立系ではない",
+     "checked": "2026-11-07",
+     "notes": "**公式サイト k-js.co.jp は 2026-11-07 に curl で接続リセット・503、WebFetch も 503、Internet Archive も開けず**、公式で人数を確かめられなかった。人数は県の就職サイトの値（企業が登録）。WAKASA の正会員。県の奨学金返還助成制度の参画企業（2028年3月卒業予定者向け、2026年4月1日時点）。人数は県内の IT 企業で2番目の規模の値で、親が本表に上げてよい",
+     "source_ui_guide": "https://www.wakayama-uiturn.jp/student/recruit/page/?slug=kiyojohosystem"
+    },
+    {
+     "name": "株式会社正和情報サービス",
+     "hq": "和歌山県和歌山市小人町6番地",
+     "corporate_number": "7170001001767",
+     "employees_ui_guide": {
+      "value": 15,
+      "as_of": "正規社員 15名（男性12名／女性3名）非正規社員 2名（時点の記載なし）"
+     },
+     "business_summary": "設立 昭和57年7月3日（創業 昭和56年1月1日）、資本金 1千万円、売上高 1.7億円。自治体向け健康管理システムの販売・導入・運用支援（県の参画企業一覧では『ガバメントクラウド上に構築された地方自治体向け健康管理システム』）、企業向け基幹システムのスクラッチ開発、クラウドサービス（ホスティング・ASP）、IT機器販売・ネットワーク構築",
+     "ai_initiative": "記載なし（公式サイトを開けなかった）",
+     "url": "https://www.seiwajoho.co.jp/",
+     "group": null,
+     "checked": "2026-11-07",
+     "notes": "公式サイトは curl・WebFetch とも 403。WAKASA の正会員。県の奨学金返還助成制度の参画企業",
+     "source_ui_guide": "https://www.wakayama-uiturn.jp/student/recruit/page/?slug=seiwajoho"
+    },
+    {
+     "name": "befriend株式会社",
+     "hq": "和歌山県和歌山市中之島2287",
+     "corporate_number": null,
+     "employees_ui_guide": {
+      "value": 4,
+      "as_of": "正規社員 4名（男性2名／女性2名）非正規社員 9名（時点の記載なし）"
+     },
+     "business_summary": "2013年2月設立、資本金 300万円。地域情報サイト『まいぷれ』の運営、広告・店舗販促物・Webサイト制作、インターネットマーケティング支援",
+     "ai_initiative": "確かめていない",
+     "url": "http://befriends.co.jp/",
+     "group": null,
+     "checked": "2026-11-07",
+     "notes": "Web制作・地域メディア。システム開発が主ではないので、本表に上げるなら境界の業種として扱う。法人番号・公式サイトは確かめていない",
+     "source_ui_guide": "https://www.wakayama-uiturn.jp/student/recruit/page/?slug=befriend"
+    }
+   ],
+   "unverified": [
+    "株式会社Kaze（**和歌山市加太1421番地**〔公式の会社情報・法人番号 5170001019043〕、**2026年4月1日設立**、代表取締役CEO 中村 仁。事業内容『ソフトウェアの開発・運用、AIを活用した業務改善支援』）https://kaze.jp/company 。**トップに『Kazeは、AIを業務に組み込むエキスパートです。業務の設計からシステム開発、AIが実際に働く運用まで、一貫して手がけます。』、サービスに『AI導入・業務改善』『システム・AI開発』『ローカルLLM導入』**。従業員数の記載なし。PR TIMES の会社概要では資本金100万円。訪問介護の AI 記録アプリ『Kaigos』の顧客検証（cases.md の和歌山市8番）。**AI を事業の柱とする県内の会社で、記事の候補**",
+    "株式会社組込ＡＩ研究所（和歌山市栄谷976番地240〔法人番号 1170001016184〕。『組込AI機器開発販売』、県の DX 導入事例集の会社概要で『従業員数︓ 2名』〔事例集の発行時。cases.md〕）: 公式サイトを探していない。AI を作る側",
+    "アットシグナル株式会社（本社 和歌山市黒田1-1-19 阪和第一ビル〔公式・法人番号 9170001014643〕、2017年4月1日設立、資本金4,950万円。M2M/IoT・クラウドの高齢者見守り、ホームページ改ざん検知などのセキュリティ。東京オフィスあり）https://www.at-signal.jp/company/about/ : 公式に『役職員数 7名』とあるが、**同じ表の末尾に『※ 2017年4月1日現在』**とあり、現在の値とは言えない。AI の記載なし。WAKASA 正会員",
+    "株式会社ジーアイソフト（WAKASA の一覧は『株式会社 ＧＩソフト 和歌山市太田６１７－１９』、法人番号 7170001001461 の所在地は『和歌山市平尾５８１番地』で**食い違う**）: 公式サイトを見つけられなかった（WebSearch 1回。求人サイト paiza に『1990年の設立』『システム設計やソフトウェア開発』とあるだけ〔secondary〕）",
+    "シティコンピュータ株式会社（和歌山市北出島12番8 シティビル〔WAKASA・法人番号 6170001001487〕）: 公式サイトを見つけられなかった",
+    "株式会社アーツテックラボ（和歌山市紀三井寺849-3 CL南別館2F〔WAKASA〕・法人番号 7170001005058 の所在地は紀三井寺849番地の3＝サイバーリンクスの本社と同じ番地）: 公式サイト・サイバーリンクスとの資本関係は確かめていない（サイバーリンクスの会社概要のグループ会社には載っていない）",
+    "株式会社アールエックスラボ（WAKASA は和歌山市口須佐84-5、法人番号 8170001006955 は和歌山市美園町2丁目89番地）、株式会社ピーシーハウス（WAKASA は黒田34-1、法人番号 3170001002752 は狐島385番地の1）、テクノパル（和歌山市和歌浦中2-2-21。法人番号は見つからなかった）、OFFICEシエル（直川）: WAKASA の住所だけ。公式サイトを見ていない",
+    "株式会社サイバーコア（WAKASA の一覧は和歌山市毛見228の62）: **同じ名前の別の会社がある**。公式サイト https://cybercore.co.jp/ の株式会社サイバーコア（AI の画像解析）は法人番号 1400001004347 で**本店 岩手県盛岡市**（data/area/iwate/companies.json に出る）。和歌山には別の株式会社サイバーコア（法人番号 9170001004207、和歌山市友田町5丁目46番地1）がある。WAKASA の会員がどちらかは確かめていない。**記事で『和歌山市の AI 企業』と書かない**",
+    "株式会社共栄テクシード（WAKASA の一覧は紀の川市桃山町調月1624-8、**法人番号 5170001000944 の本店は和歌山市新在家72番地の3**）: 公式サイトを見ていない。本店は和歌山市として扱い、紀の川市の本表に入れない"
+   ],
+   "excluded": [
+    "製造業の会員（WAKASA）: 株式会社島精機製作所（坂田）・紀州技研工業（布引。WAKASA の事務局の住所と同じ）・菱岡工業（中島）・太洋テクノレックス（有本）・阪和電子工業（大垣内）・アドバン工業（栄谷）・和歌山ディスプレイ（出島）・宮崎エンジニアリング（六十谷）: 主な事業がシステム開発ではない",
+    "ノーリツプレシジョン株式会社（和歌山市梅原579-1、『従業員数：単体300名』〔cases.md〕）: AI の牛の分娩検知『牛わか』などを作るが、主な事業は機器の製造。本表に入れない（cases.md の『AI を作る側・参考』）",
+    "メディア・印刷・通信工事・機器販売: テレビ和歌山・和歌山リビング新聞社・西岡総合印刷・株式会社ウイング（印刷・Web）・株式会社和通建（電気通信工事）・中央通信機器・ASMILE（プリンター複合機・通信機器の販売）・株式会社稲葉・あさひC&COffice、ワコウコンサルタント（建設コンサルタント）",
+    "県外本社の和歌山市の拠点は _reference._outside_hq"
+   ]
+  },
+  "kainan": {
+   "next_candidates": [],
+   "ui_guide_only": [
+    {
+     "name": "株式会社スマート・インサイト",
+     "hq": "和歌山県海南市大野中790番地8（公式の会社紹介『本社所在地』）",
+     "corporate_number": "7170001006246",
+     "employees_ui_guide": {
+      "value": 13,
+      "as_of": "正規社員 13名（男性4名／女性9名）非正規社員 2名（時点の記載なし）"
+     },
+     "business_summary": "2007年5月9日設立、資本金 300万円。ネットワーク設計・構築・運用・保守、サーバー構築・管理、Web制作・運用、ドメイン名取得、アプリケーション開発、ITコンサルティング。電気通信事業者の届出、ISO/IEC 27001 認証。『あなたの会社の情報システム室として』と中小企業の IT をまとめて受ける",
+     "ai_initiative": "公式のトップ・会社紹介に AI の記載は見つからなかった",
+     "url": "http://smart-insight.jp/",
+     "group": null,
+     "checked": "2026-11-07",
+     "notes": "**公式サイトで本社（海南市）は確かめた**が、公式に従業員数がない。加盟団体に『一般社団法人和歌山情報サービス産業協会（WAKASA）』。県の奨学金返還助成制度の参画企業。インフラ・Web が中心",
+     "source_ui_guide": "https://www.wakayama-uiturn.jp/student/recruit/page/?slug=smart-insight"
+    }
+   ],
+   "unverified": [],
+   "excluded": [
+    "アイレス電子工業株式会社（海南市且来840〔公式・法人番号 4170001005556〕。UI ガイド『正規社員 87名・非正規 23名』『電気機械製造、ソフトウェア開発・販売』、売上高22億円）https://www.ailes.co.jp : LED 表示器・工場向けシステム・IoT の製造が主。WAKASA 正会員。システム開発会社として扱うなら境界の業種",
+    "株式会社U-Connect（海南市藤白、WAKASA 正会員）: 公式サイト u-connect.co.jp はミドリムシ・健康食品の販売元。対象外"
+   ]
+  },
+  "arida": {
+   "next_candidates": [],
+   "ui_guide_only": [],
+   "unverified": [
+    "ルアリダワークス（WAKASA の一覧は『和歌山県有田市初島町浜1297-1』）: 法人番号で見つからなかった（個人事業か屋号の可能性）。公式サイトを見ていない"
+   ],
+   "excluded": []
+  },
+  "gobo": {
+   "next_candidates": [],
+   "ui_guide_only": [],
+   "unverified": [],
+   "excluded": [
+    "株式会社日高新報社（御坊市。UI ガイドの業種は情報通信業）: 新聞社。対象外"
+   ]
+  },
+  "tanabe": {
+   "next_candidates": [],
+   "ui_guide_only": [
+    {
+     "name": "株式会社五大オーエー",
+     "hq": "和歌山県田辺市中屋敷町16-1 多屋ビル1F（公式のフッター）",
+     "corporate_number": "7170001009380",
+     "employees_ui_guide": {
+      "value": 9,
+      "as_of": "正規社員 9名（男性8名／女性２名）非正規社員 1名（時点の記載なし。男女の内訳の合計は10名で食い違う）"
+     },
+     "business_summary": "平成8年9月設立、資本金 1,535万円。社会福祉法人向けのクラウドシステム『WESSY』（会計・介護保険・勤怠管理・給与・障がい福祉）の開発・保守",
+     "ai_initiative": "公式のトップに AI の記載なし",
+     "url": "https://godaioa.com/",
+     "group": null,
+     "checked": "2026-11-07",
+     "notes": "公式サイトに会社概要の人数なし（www.godaioa.com は 503、godaioa.com は開けた）。WAKASA の会員一覧には載っていない",
+     "source_ui_guide": "https://www.wakayama-uiturn.jp/student/recruit/page/?slug=godaioa"
+    }
+   ],
+   "unverified": [
+    "特定非営利活動法人和歌山ＩＴ教育機構（田辺市新庄町3353-9 和歌山県立情報交流センター内。WAKASA 正会員）: 会社ではない",
+    "県外本社の田辺市の拠点（ギガプライズ・IP DREAM・Ultimate Life・クレアネット・エスプールグローカル）は _reference._outside_hq"
+   ],
+   "excluded": []
+  },
+  "shingu-city": {
+   "next_candidates": [],
+   "ui_guide_only": [],
+   "unverified": [
+    "株式会社紀南コンピューターサービス（新宮市丹鶴1丁目2番5〔法人番号 9170001011426〕。WAKASA の一覧は『株式会社 紀南コンピュータサービス 新宮市丹鶴1丁目2番5-R5号』）: 公式サイトを見つけられなかった（WebSearch 1回）。人数・事業内容は確かめていない"
+   ],
+   "excluded": []
+  },
+  "kinokawa": {
+   "next_candidates": [],
+   "ui_guide_only": [],
+   "unverified": [
+    "共栄テクシード: WAKASA の住所は紀の川市だが、法人番号の本店は和歌山市（wakayama-city の unverified）"
+   ],
+   "excluded": []
+  },
+  "aridagawa": {
+   "next_candidates": [],
+   "ui_guide_only": [],
+   "unverified": [
+    "株式会社TechnologyDock（**和歌山本社 有田郡有田川町徳田709-1**〔公式の会社概要・法人番号 2170001016670〕、東京オフィス 渋谷スクランブルスクエア SHIBUYA QWS。代表取締役 神山 裕介〔2026年2月 有田川町議会議員に当選〕。2021年に起業）https://technologydock.jp/company : **公式に『東京で培ったAI・データ分析技術を、地方産業の発展に活かす』『AI活用教育、農業DX』『選果機の「判定エンジン」をAI技術で刷新。設備更新コスト1/10を目指す挑戦』**（cases.md の有田川町1番。PR TIMES の『数分の一以下』と公式の『1/10を目指す』は表現が違う）。従業員数の記載なし。WAKASA の会員一覧には載っていない",
+    "株式会社オプティム（本店 佐賀県佐賀市）の有田川町の新オフィス（2026-05-26 進出協定）は _reference._outside_hq"
+   ],
+   "excluded": []
+  },
+  "minabe": {
+   "next_candidates": [],
+   "ui_guide_only": [],
+   "unverified": [],
+   "excluded": [
+    "株式会社GROWLAND（みなべ町北道150-2。UI ガイドの業種に情報通信業があるが、事業は『農業機械、肥料、農薬、農業資材等の販売・修理』など）: 対象外"
+   ]
+  },
+  "shirahama": {
+   "next_candidates": [],
+   "ui_guide_only": [
+    {
+     "name": "クオリティソフト株式会社",
+     "hq": "和歌山県西牟婁郡白浜町中1701-3（本社。公式の会社概要）",
+     "corporate_number": "5010001015074",
+     "employees_ui_guide": {
+      "value": 153,
+      "as_of": "正規社員 153名（男性110名／女性43名）非正規社員 23名（時点の記載なし）"
+     },
+     "business_summary": "1984年2月24日設立（東京で創業）、資本金 1億1203万5000円。クラウドサービスとパッケージソフトウェア（IT資産管理『ISM CloudOne』など）の開発・販売、ドローンソリューション。東京本部（千代田区麹町）・西日本支社・仙台支社・松本研究開発センター・水天宮テクニカルセンター・名古屋オフィス。オープンイノベーション施設『INNOVATION SPRINGS』（白浜町）を運営",
+     "ai_initiative": "公式のトップ・会社概要に AI の記載は見つからなかった。PR TIMES の自社の発表（2026-04-01）に『SaaS・国産クラウド基盤・生成AI・ドローンソリューション事業を手がける』",
+     "url": "https://www.qualitysoft.com/",
+     "group": "グループ会社・関連会社に クオリティホールディングス株式会社（白浜町中1701-3、法人番号 6170001019100）・Quality Cloud株式会社（東京）・闊利達軟件（上海）（公式の会社概要）。親会社かどうかは書かれていない",
+     "checked": "2026-11-07",
+     "notes": "**本店が白浜町**（法人番号 5010001015074 の所在地は白浜町中1701番3）。公式の会社概要に従業員数がないので、人数は県の就職サイトの値。**本店移転の年が資料で違う**: PR TIMES（2026-04-01）は『2016年には創業の地である東京から和歌山県白浜町に本店所在地を移転』、県の ICT 企業誘致サイトの進出企業一覧は『進出年度：H27（2015年度）』『※東京から本社移転』。登記の日は確かめていない。WAKASA 正会員。**主な拠点は東京などにもあり、白浜町の社員数は確かめていない**。県の誘致IT企業研究セミナー（2026-12-16）の登壇企業",
+     "source_ui_guide": "https://www.wakayama-uiturn.jp/student/recruit/page/?slug=qualitysoft"
+    }
+   ],
+   "unverified": [],
+   "excluded": []
+  },
+  "_outside_hq": [
+   {
+    "name": "トランスコスモス（株）",
+    "hq": "東京都豊島区",
+    "wakayama_site": "和歌山市（県の ICT 企業誘致サイトの『和歌山市』の欄）",
+    "entry_year": "H14",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "ウォーターワンスタッフ（株）",
+    "hq": "和歌山県和歌山市（県の一覧の表記。UI ガイドは本社 神奈川県横浜市西区、和歌山コールセンター 和歌山市東蔵前丁）",
+    "wakayama_site": "和歌山市（県の ICT 企業誘致サイトの『和歌山市』の欄）",
+    "entry_year": "H15",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": "県の一覧の本社所在地『和歌山県和歌山市』と、UI ガイドの所在地『神奈川県横浜市西区平沼１-1-3』が食い違う。コールセンター。システム開発ではない"
+   },
+   {
+    "name": "（株）ユアブレインズ",
+    "hq": "大阪府大阪市",
+    "wakayama_site": "和歌山市（県の ICT 企業誘致サイトの『和歌山市』の欄）",
+    "entry_year": "H19",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "ビーウィズ（株）",
+    "hq": "東京都新宿区",
+    "wakayama_site": "和歌山市（県の ICT 企業誘致サイトの『和歌山市』の欄）",
+    "entry_year": "H19",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "ヤマトコンタクトサービス（株）",
+    "hq": "東京都豊島区",
+    "wakayama_site": "和歌山市（県の ICT 企業誘致サイトの『和歌山市』の欄）",
+    "entry_year": "H22",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "（株）エス・ティ・ワールド",
+    "hq": "東京都渋谷区",
+    "wakayama_site": "和歌山市（県の ICT 企業誘致サイトの『和歌山市』の欄）",
+    "entry_year": "H23",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "（株）ぼん家具",
+    "hq": "和歌山県海南市",
+    "wakayama_site": "和歌山市（県の ICT 企業誘致サイトの『和歌山市』の欄）",
+    "entry_year": "H29",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": "県の一覧で本社所在地が海南市。家具の EC で IT 企業ではない"
+   },
+   {
+    "name": "スターティア（株）",
+    "hq": "東京都新宿区",
+    "wakayama_site": "和歌山市（県の ICT 企業誘致サイトの『和歌山市』の欄）",
+    "entry_year": "H30",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "（株）BizPlatform",
+    "hq": "埼玉県さいたま市",
+    "wakayama_site": "和歌山市（県の ICT 企業誘致サイトの『和歌山市』の欄）",
+    "entry_year": "R元",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "（株）Link-U Technologies",
+    "hq": "東京都千代田区",
+    "wakayama_site": "和歌山市（県の ICT 企業誘致サイトの『和歌山市』の欄）",
+    "entry_year": "R2",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "（株）SAKURUG",
+    "hq": "東京都渋谷区",
+    "wakayama_site": "和歌山市（県の ICT 企業誘致サイトの『和歌山市』の欄）",
+    "entry_year": "R2",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "（株）Relic",
+    "hq": "東京都渋谷区",
+    "wakayama_site": "和歌山市（県の ICT 企業誘致サイトの『和歌山市』の欄）",
+    "entry_year": "R3",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": "他県の companies に出る（八雲・Relic は data/area/shimane、ウイズ・ワンは data/area/yamaguchi）"
+   },
+   {
+    "name": "（株）マックスサポート",
+    "hq": "東京都新宿区",
+    "wakayama_site": "和歌山市（県の ICT 企業誘致サイトの『和歌山市』の欄）",
+    "entry_year": "R4",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "（株）Will Smart",
+    "hq": "東京都江東区",
+    "wakayama_site": "和歌山市（県の ICT 企業誘致サイトの『和歌山市』の欄）",
+    "entry_year": "R4",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "エコービジネスソフトウェア（株）",
+    "hq": "大阪府大阪市",
+    "wakayama_site": "和歌山市（県の ICT 企業誘致サイトの『和歌山市』の欄）",
+    "entry_year": "R4",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "（株）隈研吾建築都市設計事務所",
+    "hq": "東京都港区",
+    "wakayama_site": "和歌山市（県の ICT 企業誘致サイトの『和歌山市』の欄）",
+    "entry_year": "R4",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": "IT 企業ではない（県の一覧に載る進出企業）"
+   },
+   {
+    "name": "omeroid（株）",
+    "hq": "東京都中央区",
+    "wakayama_site": "和歌山市（県の ICT 企業誘致サイトの『和歌山市』の欄）",
+    "entry_year": "R4",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "（株）写易",
+    "hq": "千葉県船橋市",
+    "wakayama_site": "和歌山市（県の ICT 企業誘致サイトの『和歌山市』の欄）",
+    "entry_year": "R5",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "（株）Respawn",
+    "hq": "東京都世田谷区",
+    "wakayama_site": "和歌山市（県の ICT 企業誘致サイトの『和歌山市』の欄）",
+    "entry_year": "R5",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "（株）Alpaca.Lab",
+    "hq": "沖縄県中城村",
+    "wakayama_site": "和歌山市（県の ICT 企業誘致サイトの『和歌山市』の欄）",
+    "entry_year": "R5",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "（株）日本ユニスト",
+    "hq": "大阪府大阪市",
+    "wakayama_site": "和歌山市（県の ICT 企業誘致サイトの『和歌山市』の欄）",
+    "entry_year": "R5",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "（株）PPFパートナーズ",
+    "hq": "大阪府大阪市",
+    "wakayama_site": "和歌山市（県の ICT 企業誘致サイトの『和歌山市』の欄）",
+    "entry_year": "R6",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "（株）第一コンピュータリソース",
+    "hq": "愛知県名古屋市",
+    "wakayama_site": "和歌山市（県の ICT 企業誘致サイトの『和歌山市』の欄）",
+    "entry_year": "R6",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "アイシグリーンシステム（株）",
+    "hq": "福岡県春日市",
+    "wakayama_site": "和歌山市（県の ICT 企業誘致サイトの『和歌山市』の欄）",
+    "entry_year": "R7",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "スタートアップ税理士法人",
+    "hq": "東京都新宿区",
+    "wakayama_site": "和歌山市（県の ICT 企業誘致サイトの『和歌山市』の欄）",
+    "entry_year": "R7",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": "IT 企業ではない（県の一覧に載る進出企業）"
+   },
+   {
+    "name": "（株）八雲ソフトウェア",
+    "hq": "島根県松江市",
+    "wakayama_site": "和歌山市（県の ICT 企業誘致サイトの『和歌山市』の欄）",
+    "entry_year": "R7",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": "他県の companies に出る（八雲・Relic は data/area/shimane、ウイズ・ワンは data/area/yamaguchi）"
+   },
+   {
+    "name": "株式会社ドクターブリッジ",
+    "hq": "東京都渋谷区",
+    "wakayama_site": "和歌山市（県の ICT 企業誘致サイトの『和歌山市』の欄）",
+    "entry_year": "R8",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "株式会社ウイズ・ワン",
+    "hq": "東京都中央区",
+    "wakayama_site": "和歌山市（県の ICT 企業誘致サイトの『和歌山市』の欄）",
+    "entry_year": "R8",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": "他県の companies に出る（八雲・Relic は data/area/shimane、ウイズ・ワンは data/area/yamaguchi）"
+   },
+   {
+    "name": "株式会社オプティム",
+    "hq": "佐賀県佐賀市",
+    "wakayama_site": "和歌山市（県の ICT 企業誘致サイトの『和歌山市』の欄）",
+    "entry_year": "R8",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": "**県の一覧では『和歌山市』の欄に置かれているが、県の発表（2026-05-21）は『株式会社オプティムが有田川町に新オフィスを開設』（進出協定調印式 2026-05-26、知事・有田川町長が出席）**。有田川町の拠点として扱う（gov_ai.md の『IT企業の誘致』）。法人番号で本店が佐賀県佐賀市かは確かめていない（data/area/saga/companies.json に出る）。和歌山拠点で『みかんや梅の生産者が農薬散布等の農作業を容易に外部に委託する仕組み』の開発"
+   },
+   {
+    "name": "（株）ギガプライズ",
+    "hq": "東京都渋谷区",
+    "wakayama_site": "田辺市",
+    "entry_year": "H15",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "（株）IP DREAM",
+    "hq": "東京都品川区",
+    "wakayama_site": "田辺市",
+    "entry_year": "H21",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "（株）Ultimate Life",
+    "hq": "大阪府大阪市",
+    "wakayama_site": "田辺市",
+    "entry_year": "H30",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "（株）クレアネット",
+    "hq": "大阪府大阪市",
+    "wakayama_site": "田辺市",
+    "entry_year": "H30",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "（株）エスプールグローカル",
+    "hq": "東京都千代田区",
+    "wakayama_site": "田辺市",
+    "entry_year": "R4",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "（株）ゼネラルステッカー",
+    "hq": "東京都世田谷区",
+    "wakayama_site": "白浜町",
+    "entry_year": "H23",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": "IT 企業ではない（県の一覧に載る進出企業）"
+   },
+   {
+    "name": "メディスト（株）",
+    "hq": "東京都文京区",
+    "wakayama_site": "白浜町",
+    "entry_year": "H26",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "メディストサニテ（株）",
+    "hq": "白浜町（※創業）",
+    "wakayama_site": "白浜町",
+    "entry_year": "H27",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": "県の一覧で本社所在地が白浜町。県外本社の拠点ではない（クオリティソフトは _reference.shirahama.ui_guide_only）"
+   },
+   {
+    "name": "（株）セールスフォース・ジャパン",
+    "hq": "東京都千代田区",
+    "wakayama_site": "白浜町",
+    "entry_year": "H27",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "クオリティソフト（株）",
+    "hq": "白浜町（※東京から本社移転）",
+    "wakayama_site": "白浜町",
+    "entry_year": "H27",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": "県の一覧で本社所在地が白浜町。県外本社の拠点ではない（クオリティソフトは _reference.shirahama.ui_guide_only）"
+   },
+   {
+    "name": "（株）ブイキューブ",
+    "hq": "東京都港区",
+    "wakayama_site": "白浜町",
+    "entry_year": "H29",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "（株）ウフル",
+    "hq": "東京都港区",
+    "wakayama_site": "白浜町",
+    "entry_year": "H30",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "（株）Office Concierge",
+    "hq": "東京都渋谷区",
+    "wakayama_site": "白浜町",
+    "entry_year": "R2",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "（株）スマサポ",
+    "hq": "東京都中央区",
+    "wakayama_site": "白浜町",
+    "entry_year": "R2",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "（株）Relic",
+    "hq": "東京都渋谷区",
+    "wakayama_site": "白浜町",
+    "entry_year": "R3",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": "他県の companies に出る（八雲・Relic は data/area/shimane、ウイズ・ワンは data/area/yamaguchi）"
+   },
+   {
+    "name": "（株）網屋",
+    "hq": "東京都中央区",
+    "wakayama_site": "白浜町",
+    "entry_year": "R4",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "（株）Pictoria",
+    "hq": "東京都港区",
+    "wakayama_site": "白浜町",
+    "entry_year": "R5",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "（株）Respawn",
+    "hq": "東京都世田谷区",
+    "wakayama_site": "白浜町",
+    "entry_year": "R5",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "（株）エムアンドティーティー",
+    "hq": "沖縄県北谷町",
+    "wakayama_site": "白浜町",
+    "entry_year": "R6",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "日本電気（株）",
+    "hq": "東京都港区",
+    "wakayama_site": "白浜町",
+    "entry_year": "H28",
+    "source": "https://ritti.pref.wakayama.jp/ict/company/",
+    "notes": ""
+   },
+   {
+    "name": "バルトソフトウェア株式会社",
+    "hq": "大阪府大阪市中央区本町2丁目5番7号（UI ガイド）",
+    "wakayama_site": "和歌山市六番丁24 ニッセイ和歌山ビル6F（WAKASA 正会員・県の奨学金返還助成制度の参画企業）",
+    "entry_year": null,
+    "source": "https://www.wakasa.or.jp/other/list.aspx",
+    "notes": "県の ICT 企業誘致サイトの一覧には載っていない。data/area/shimane/companies に出る"
+   },
+   {
+    "name": "ワム・システム・デザイン株式会社",
+    "hq": "大阪市（WAKASA は浪速区難波中、UI ガイドは北区梅田）",
+    "wakayama_site": "和歌山市東蔵前丁3-17 南海和歌山市駅ビル7階（UI ガイド）",
+    "entry_year": null,
+    "source": "https://www.wakasa.or.jp/other/list.aspx",
+    "notes": "WAKASA 正会員"
+   },
+   {
+    "name": "株式会社Vitalize",
+    "hq": "東京都新宿区（UI ガイド）",
+    "wakayama_site": "和歌山市美園町3-34 けやきONE 306",
+    "entry_year": null,
+    "source": "https://www.wakayama-uiturn.jp/student/recruit/page/?slug=vitalizewakayama",
+    "notes": ""
+   },
+   {
+    "name": "三菱電機ソフトウエア・NTT西日本・富士通Japan・あさかわシステムズ（泉佐野市）・南大阪電子計算センター（貝塚市。サイバーリンクスの子会社）",
+    "hq": "県外",
+    "wakayama_site": "和歌山支所・和歌山支店など（WAKASA の会員）",
+    "entry_year": null,
+    "source": "https://www.wakasa.or.jp/other/list.aspx",
+    "notes": "あさかわシステムズは法人番号 6170001000084 の所在地が和歌山市小松原通3丁目69番地（WAKASA は大阪府泉佐野市）。本店・本社は確かめていない"
+   }
+  ]
+ },
+ "_notes": [
+  "本表（公式で本社と人数を確認）は和歌山市の3社（サイバーリンクス 631名単体・サンレックス 42名・BEE 21名）だけ。ほかの8市・20町・1村は本表『なし』（確かめられなかった）。",
+  "県の就職サイト（UIわかやま就職ガイド。企業が登録した値）で人数が分かる会社: 紀陽情報システム（和歌山市、287名〔2026年4月〕、紀陽フィナンシャルグループ）、クオリティソフト（**白浜町**、正規153名）、正和情報サービス（和歌山市、15名）、スマート・インサイト（**海南市**、13名）、五大オーエー（**田辺市**、9名）、befriend（和歌山市、4名）。親が本表に上げるかを決める。",
+  "**グループ会社**: 紀陽情報システムは紀陽フィナンシャルグループ（紀陽銀行）のソフトウェア会社。クオリティソフトはクオリティホールディングス（白浜町）を関連会社に挙げる。サイバーリンクスは上場会社で子会社に南大阪電子計算センター・シナジー。記事で『地元の独立系』とまとめない。",
+  "**AI を事業として公式に書く会社**: Kaze（和歌山市加太、2026年4月設立『AIを業務に組み込むエキスパート』、AI導入・業務改善、ローカルLLM導入）、TechnologyDock（有田川町、AI・データ分析、選果機の AI、AI活用教育）。どちらも人数がなく unverified。組込ＡＩ研究所（和歌山市、組込 AI 機器、2名〔事例集〕）。BEE はチャットボット導入支援・LLMO/AIO の SEO。クオリティソフトは PR TIMES で『生成AI』を事業に挙げるが公式サイトの記載は見つからなかった。サイバーリンクス・サンレックス・スマート・インサイト・五大オーエーは AI の事業の記載なし。",
+  "**同名の会社に注意**: WAKASA 会員の『株式会社サイバーコア（和歌山市毛見）』と、AI の画像解析の株式会社サイバーコア（本店 岩手県盛岡市、公式 cybercore.co.jp）は別の法人の可能性が高い。",
+  "**住所の食い違い**: 共栄テクシード（WAKASA 紀の川市・法人番号 和歌山市）、ジーアイソフト（WAKASA 太田・法人番号 平尾）、BEE（WAKASA は旧住所）、アールエックスラボ・ピーシーハウス（WAKASA と法人番号で番地が違う）、オプティム（県の一覧は和歌山市の欄・県の発表は有田川町）、ウォーターワンスタッフ（県の一覧は本社和歌山市・UI ガイドは横浜市）。",
+  "業界団体: 一般社団法人和歌山情報サービス産業協会（WAKASA、1992年設立、和歌山市布引466）。ほかに会社概要の加盟団体の欄に 和歌山県情報化推進協議会（WIDA）・特定非営利活動法人和歌山IT教育機構（WITE）（クオリティソフト）。",
+  "県外本社の進出: 県の ICT 企業誘致サイトの一覧で『合計 49 社が進出』（和歌山市29・田辺市5・白浜町15。時点の記載なし。県内本社のクオリティソフト・メディストサニテ・ぼん家具・ウォーターワンスタッフ〔表記〕と、IT でない会社を含む）。gov_ai.md の二次情報の『13社（2002〜2014年）』『入居企業15社（令和4年5月末）』とは数え方が違う。",
+  "他県の companies との重複: 本表・ui_guide_only・unverified の県内本社の会社は他県の companies.json・articles に出ない（grep）。県外本社の拠点のうちバルトソフトウェア・八雲ソフトウェア・Relic（島根）、ウイズ・ワン（山口）、オプティム（佐賀・群馬）、サイバーコア〔盛岡〕（岩手）が他県に出る。"
+ ]
+}
