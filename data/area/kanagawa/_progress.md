@@ -19,7 +19,7 @@
 - outside/serp（18回）・cases2（10回）完了。WebSearch 計72回＋companies。仕様の共通部分を docs/area-writing-spec-kanagawa.md に。県のサイト（pref.kanagawa.jp）は個別ページのリンクに所管への問い合わせ・バナーの条件があるので、記事ではリンクせず資料名を書く案（ユーザーの判断に回す）
 - 仕様の下書き D12・D345 を組み立てて docs/area-writing-spec-kanagawa.md に（判断はすべて案どおり、D2-3 だけ案B＝PLAN の業態・規模を直した）。診断のデータの下書きは _subsidies_kanagawa.yml（28制度）・_areas_snippet.yml（33市町村）
 - **書き上がった記事は全ページそろうまで main に入れない**: `.git/info/exclude` に `articles/2026-11-12-area-kanagawa-*.md`。横浜市の書き直しは一時のファイル `articles/2026-11-12-area-kanagawa-yokohama.md`、県ページは `data/area/kanagawa/_wip_pref.md` に書き、最後に親が既存のファイルに移す（ファイル名・slug・parent は変えない）。退避は scratchpad の backup_wip.sh で `area-kanagawa-wip` ブランチへ（担当が終わるたびに）
-- **次にやること**: 執筆 W1〜W11（同時2人まで）→ W12（県ページ）→ 全ページの確認 → 共通ファイル（kanagawa.yml＋areas.yml を同じコミット・build・地域ガイド・area-todo・手順書・memory）→ 記事を main に入れる
+- 2026-11-13: 執筆 W1〜W11（33市町村）・W12（県ページ）完了。全ページ check_article ERROR 0、area_uniq 最低68.5%（平塚市）、_calc.py OK、禁止ドメインへのリンク0本。横浜市・県ページを既存のファイル（2026-10-17-area-yokohama.md・2026-10-14-area-kanagawa.md）に移し、一時のファイルと exclude を消した。補助金診断のデータ（kanagawa.yml 28制度・areas.yml 33市町村）は先に main に入れた。地域ガイドの首都圏の段の神奈川県の行、area-todo・手順書・memory を更新。**完了。投稿はユーザーが Mac で「投稿して」**
 
 ## 再開するとき
 1. `git pull origin main`、この _progress.md の「次にやること」から
