@@ -16,7 +16,8 @@
 - cases 完了（18回）。数値つきで未使用は5件（ガレージカメイ・コイワイ・インフォマティクス・RAMXEED・横浜綜合法律事務所）。subsidy（15回まで）を起動
 - gov 完了（13回）。choson（10回まで）を起動。WebSearch 計35回
 - subsidy（4回）・choson（5回）完了。WebSearch 計44回。companies（10回まで）を起動
-- **次にやること**: outside/serp・cases2 → 仕様の下書き（D12・D345）→ 執筆
+- outside/serp（18回）・cases2（10回）完了。WebSearch 計72回＋companies。仕様の共通部分を docs/area-writing-spec-kanagawa.md に。県のサイト（pref.kanagawa.jp）は個別ページのリンクに所管への問い合わせ・バナーの条件があるので、記事ではリンクせず資料名を書く案（ユーザーの判断に回す）
+- **次にやること**: 仕様の下書き（D12・D345）→ 執筆
 
 ## 再開するとき
 1. `git pull origin main`、この _progress.md の「次にやること」から
