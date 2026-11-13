@@ -5,7 +5,7 @@
 同時に埼玉・千葉（と北海道の続き）を別のセッションで作っている。共有メモは `data/area/_shutoken/shared.md`。試算は他県との重なりを許容し、神奈川県の中だけ時間・金額・規模を重ねない（2026-11-11 ユーザー決定）。
 
 ## 市町村と slug（33市町村。県コード14）
-- 一覧は data/area/kanagawa/_brief.md。**既存ページ2つはファイル名・slug・parent を変えない**: 県 `articles/2026-10-14-area-kanagawa.md`（slug `kanagawa`、parent `area`）、横浜市 `articles/2026-10-17-area-yokohama.md`（slug `yokohama`、parent `area/kanagawa`）。新しい31ページは `articles/2026-11-12-area-kanagawa-<slug>.md`
+- 一覧は data/area/kanagawa/_brief.md。**既存ページ2つはファイル名・slug・parent を変えない**: 県 `articles/2026-10-14-area-kanagawa.md`（slug `kanagawa`、parent `area`）、横浜市 `articles/2026-10-17-area-yokohama.md`（slug `yokohama`、parent `area/kanagawa`）。新しい32ページは `articles/2026-11-12-area-kanagawa-<slug>.md`
 - 大和市 `yamato-city`（熊本県山都町 `yamato`、鹿児島県大和村 `yamato-village` と分ける）、川崎市 `kawasaki`（宮城・福岡の川崎町は `kawasaki-town`）
 - scripts/area_uniq.py に kanagawa を足した（横浜市の旧ファイル名も拾う）
 
