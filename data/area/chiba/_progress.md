@@ -28,14 +28,14 @@
 ## 状態
 - [x] ネットワーク確認（pref.chiba.lg.jp・soumu.go.jp とも WebFetch で開けた。2026-11-12）
 - [x] _brief.md・wages.md・area_uniq.py に chiba
-- [ ] 調査（9担当）
-- [ ] 試算の PLAN（_calc.py）
-- [ ] 執筆仕様 docs/area-writing-spec-chiba.md
-- [ ] 記事 55本（県1＋市町村54）
-- [ ] data/subsidies/chiba.yml・areas.yml・build
-- [ ] 地域ガイド・area-todo.md・area-new-prefecture.md・memory
-- [ ] チェック
-- [ ] main に push
+- [x] 調査（9担当）
+- [x] 試算の PLAN（_calc.py）
+- [x] 執筆仕様 docs/area-writing-spec-chiba.md
+- [x] 記事 55本（県1＋市町村54）
+- [x] data/subsidies/chiba.yml・areas.yml・build
+- [x] 地域ガイド・area-todo.md・area-new-prefecture.md・memory
+- [x] チェック
+- [x] main に push
 
 ## 実績メモ
 - 2026-11-12 開始。WebSearch 0回
@@ -85,3 +85,9 @@
 - W12 完了（我孫子市 約8,560字・88.9%・226h/96.3万、八街市 8,150・87.9%・370h/129.5万〔DX計画の PDF に生成AIの利用推進〕、匝瑳市 8,190・87.0%・110.25h/38.8万、南房総市 9,400・85.2%・155h/49.3万、ERROR 0、WS0）。**南房総市・館山市のトライアル補助金の対象業種に医療・福祉がない（人材育成は小売もない）** → 親が館山市のページに1文足した。診断データの conditions には業種が書いてある。我孫子市の担当課は環境経済部 企業立地推進課（04-7185-2214）。W14 起動
 - W13 完了（鎌ケ谷市 約7,670字・91.8%・130.5h/41.5万、印西市 7,410・90.9%・403h/120.1万、山武市 7,360・85.8%〔最初55.4%〕・123.25h/43.1万、いすみ市 7,320・88.0%・145h/51.3万〔リンク0本〕、ERROR 0、WS0）。印西市が起業家向けの生成AI講座（9/1・9/8、終了）を開いていた。W15（県ページ）起動
 - 茂原市の研修の補助金を _subsidies_chiba.yml（16制度）に足し、_areas_snippet.yml の茂原市の none を外した（none 48）
+- W14 完了（四街道市 約8,100字・93.8%・150h/47.7万、白井市 8,100・94.1%・152.5h/53.4万、富里市 8,250・93.8%・112.5h/33.5万、勝浦市 7,900・93.8%・107.25h/26.9万〔リンク0本〕、ERROR 0、WS0）。**市町村54ページそろう**。全ページの area_uniq を回す
+- data/subsidies/chiba.yml（16制度）と areas.yml の千葉県の行（54市町村、none 48、code chiba/ichikawa→chiba/ichikawa-city）を同じコミットで入れて build → 1322制度。他県の制度1306・地域は build の前後で同じ
+- 地域ガイドの千葉の行の差分は scratchpad/area_guide_chiba.patch（記事と同じコミットで入れる）
+- W15 県ページ完了（約17,600字、ERROR 0、市町村リンク54/54、WS0。茂原市を足して「研修費を含めて5市」、企業事例が見つからなかったのは44）。**記事55本そろう**
+- 最終確認（2026-11-13）: 55ページ check_article ERROR 0、_calc.py OK、全54ページの area_uniq 66.1〜（最低 長生村、_uniq_all.txt）、リンク0本の6市町のドメイン・旧ブランド・「東京の会社」・醤油・神奈川/埼玉のページへのリンク 0件、parent は全ページ area/chiba
+- 記事55本・地域ガイドの千葉の行・area-todo・area-new-prefecture・memory を main に push（投稿・デプロイはユーザーが Mac で「投稿して」）
