@@ -1,0 +1,131 @@
+{
+ "_meta": {
+  "checked": "2026-11-13",
+  "scope": "空知総合振興局の24市町村。本社（公式サイトの本社・所在地）が当該市町村にあり、公式サイトでシステム開発・ソフトウェア開発・Web開発・情報処理サービスを事業として明示する法人。段階1・胆振・渡島・上川・十勝と同じく、本表には『公式サイトで本社所在地と従業員数（時点つき）の両方を確認できた会社』だけを入れた。",
+  "candidate_sources": [
+   "一般社団法人北海道IT推進協会（HICTA）の会員名簿 https://www.hicta.or.jp/profile/memberlist/ （2026-11-12 に十勝の担当が取得したものを再利用）。24市町村の住所の会員は株式会社ひらめきしゅうたくん（岩見沢市）・株式会社美唄未来開発センター（美唄市）の2件",
+   "比較ビズの一覧（https://www.biz.ne.jp/list/web-system/01_hokkaido/<市>/ ・/list/hp-design/…）は岩見沢市・滝川市・深川市・美唄市・砂川市・芦別市・赤平市・夕張市・三笠市とも 404（掲載なし、2026-11-13）",
+   "PR TIMES の市町村別の一覧・キーワード検索（テックファースト〔本社 東京・岩見沢に拠点〕）",
+   "北海道新聞の空知の地域面の見出し（スマートリンク北海道〔岩見沢市〕、はまなすインフォメーション〔岩見沢市の第三セクター〕）",
+   "WebSearch（companies 4回。空知の IT 企業の団体の名簿・美唄市地域社会DX推進協議会の構成員は見つからなかった）"
+  ],
+  "columns": "name / hq（公式の本社住所）/ municipality / town / employees{value,as_of,source} / capital / founded / business_summary / ai_initiative / url / size_basis / checked / notes"
+ },
+ "yubari": [],
+ "iwamizawa": [],
+ "bibai": [],
+ "ashibetsu": [],
+ "akabira": [],
+ "mikasa": [],
+ "takikawa": [],
+ "sunagawa": [],
+ "utashinai": [],
+ "fukagawa": [],
+ "nanporo": [],
+ "naie": [],
+ "kamisunagawa": [],
+ "yuni": [],
+ "naganuma": [],
+ "kuriyama": [],
+ "tsukigata": [],
+ "urausu": [],
+ "shintotsukawa": [],
+ "moseushi": [],
+ "chippubetsu": [],
+ "uryu": [],
+ "hokuryu": [],
+ "numata-town-hokkaido": [],
+ "_reference": {
+  "iwamizawa": {
+   "next_candidates": [
+    {
+     "name": "株式会社ひらめきしゅうたくん",
+     "hq": "〒068-0834 北海道岩見沢市駒園７丁目２番７号（公式サイトの会社概要）",
+     "municipality": "岩見沢市",
+     "town": "駒園",
+     "employees": {
+      "value": null,
+      "as_of": "記載なし",
+      "source": "https://syutakun.com/"
+     },
+     "capital": {
+      "value": "１００万円",
+      "source": "https://syutakun.com/"
+     },
+     "founded": 2024,
+     "business_summary": "設立 ２０２４年５月。「LINE公式アカウント、LINE拡張ツール「L message（エルメ）」の構築、運用代行」「AIアプリ開発・AIBOT付きLINE公式アカウント構築」「AI・LINEスクールの運営・講師」「DX化支援」ほか。HICTA 会員（地区会区分 D）",
+     "ai_initiative": "AI アプリ開発・AI ボット付きの LINE 公式アカウントの構築を事業に掲げる（公式サイト）。2025年9月 岩見沢市人材育成・活躍支援促進事業の LINE 研修に登壇（公式サイトの実績欄）",
+     "url": "https://syutakun.com/",
+     "checked": "2026-11-13",
+     "notes": "公式サイトに人数がない（サイトは JS で描画。会社概要の値は配信の JS ファイルから読んだ）。2024年設立の小さな会社。articles・data/area に0件"
+    }
+   ],
+   "unverified": [
+    {
+     "name": "株式会社はまなすインフォメーション",
+     "hq": "岩見沢市（自治体ネットワークセンター3階・新産業支援センターの指定管理。gov_sorachi.md）",
+     "municipality": "岩見沢市",
+     "notes": "北海道新聞（/article/1399044/ の冒頭）に「市の第三セクター」。ISP（AS24262、市のページ）で、市の事業者向け生成 AI 研修の受付。公式サイト・人数を確かめていない（WebSearch 1回で見つからず）"
+    },
+    {
+     "name": "スマートリンク北海道",
+     "hq": "岩見沢市（北海道新聞 /article/1264010/ の見出し。WebSearch の要約に法人情報サイトの「岩見沢市有明町南1番地12」＝secondary）",
+     "municipality": "岩見沢市",
+     "notes": "「農業IT（情報技術）ベンチャー」（北海道新聞 2026-01-18 の冒頭）。公式サイトは見つからなかった。農業の IT 企業でシステム開発の会社か未確認"
+    }
+   ],
+   "excluded": [
+    {
+     "name": "テックファースト株式会社・サティス株式会社",
+     "reason": "本社 東京都千代田区。テックファーストは「北海道岩見沢市有明南1-29 新産業支援センター」に拠点（PR TIMES 000000003.000173438）。本社が空知ではない"
+    },
+    {
+     "name": "こぶし建設株式会社",
+     "reason": "建設会社（AI の安全システムを共同開発。cases_sorachi.md）。開発会社ではない"
+    }
+   ]
+  },
+  "bibai": {
+   "unverified": [
+    {
+     "name": "株式会社美唄未来開発センター",
+     "hq": "〒079-0261 美唄市字茶志内７２６番２（茶志内町３区） 美唄ハイテクセンタービル（HICTA の名簿）",
+     "municipality": "美唄市",
+     "notes": "HICTA 会員（地区会区分 Ｄ）。名簿のリンク http://www.bibai.net/bmc/ は curl・WebFetch とも 503（2026-11-13）で、事業内容・人数を確かめていない"
+    }
+   ],
+   "excluded": [
+    {
+     "name": "株式会社ホワイトデータセンター・株式会社共同通信デジタル",
+     "reason": "データセンター（大企業の話。gov_sorachi.md）。開発会社として確かめていない"
+    },
+    {
+     "name": "一般社団法人GovTech美唄（アスノシステムほか）",
+     "reason": "一般社団法人。構成の4社の本社は東京・宮城"
+    }
+   ]
+  },
+  "ashibetsu": {
+   "excluded": [
+    {
+     "name": "株式会社ビックボイス",
+     "reason": "「市内に事業所がある東京のIT企業」（北海道新聞 /article/1305010/・/1316843/ の冒頭）。本社が東京"
+    }
+   ]
+  },
+  "akabira": {
+   "excluded": [
+    {
+     "name": "アーキット合同会社",
+     "reason": "本社 札幌市北区（植村建設〔赤平市〕と AI を共同開発。cases_sorachi.md）"
+    }
+   ]
+  }
+ },
+ "_notes": [
+  "本表は24市町村すべて0。岩見沢市の次点1（ひらめきしゅうたくん。公式に人数がない）、未確認は岩見沢市2（はまなすインフォメーション・スマートリンク北海道）・美唄市1（美唄未来開発センター）。",
+  "本表が空の市町村は『会社がない』ではなく『確かめられなかった』。母集団は HICTA の名簿・PR TIMES・北海道新聞の見出しだけ（比較ビズは空知の市の一覧がない）。記事で『市内に開発会社はない』と書かない。",
+  "美唄市DX推進計画 p.21 の『美唄市地域社会DX推進協議会』（市・商工会議所・市内 IT 事業者等、令和6年11月設置）の構成員の名簿は見つからなかった。",
+  "WebSearch は companies 4回。ヘッダーの偽装はしていない。"
+ ]
+}
