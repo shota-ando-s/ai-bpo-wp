@@ -73,3 +73,7 @@
 - D1 0（完了: spec/D1.md・_calc.py の PLAN 63行 OK。製造21・医療福祉15・運輸10・卸小売8・宿泊飲食6・建設2・情報通信1、18〜148名、月66〜640h・約22.6万〜242.5万円）。判断13点とも案どおり（spec/_decisions.md）。D25（事例・地元IT企業、WS0）起動
 - D25 0（完了: spec/D25.md。詳述4ページ、H2 3 に事例ありは15ページ・なし48ページ、地元IT 本表10社で食い違いなし）。判断 D2 12点・D5 9点とも案どおり
 - D34 0（完了: spec/D34.md・_subsidies_saitama.yml 35制度〔open20・rolling4・unknown1・closed10〕・_areas_snippet.yml 63行〔none 42〕。作業用コピーで build 1297→1326、他県不変、768通り×3日付でエラー0）。判断 D3 10点・D4 12点とも案どおり、D4-2 だけ代案（県DX導入支援の next_expected を外した）
+- 仕様 docs/area-writing-spec-saitama.md を組み立てた（_common＋案の扱い＋D1＋D25＋D34）
+- 書きかけの記事は .git/info/exclude で未追跡。書き終えた分は `bash data/area/saitama/_wip_push.sh` で area-saitama-wip ブランチに退避（再起動で消えたら `git fetch origin area-saitama-wip && git checkout FETCH_HEAD -- 'articles/2026-11-12-area-saitama*.md'` で戻す）
+- 執筆の割り当て: W1 さいたま市・東秩父村・北本市 / W2 川口市・小鹿野町・伊奈町・鶴ヶ島市 / W3 川越市・長瀞町・宮代町・和光市 / W4 所沢市・神川町・杉戸町・蕨市 / W5 越谷市・皆野町・三芳町・東松山市 / W6 熊谷市・横瀬町・ときがわ町・八潮市 / W7 春日部市・美里町・鳩山町・朝霞市 / W8 草加市・上里町・吉見町・飯能市 / W9 上尾市・寄居町・川島町・吉川市 / W10 久喜市・小川町・志木市・本庄市 / W11 狭山市・嵐山町・戸田市・幸手市 / W12 入間市・滑川町・新座市・羽生市 / W13 深谷市・越生町・富士見市・白岡市 / W14 秩父市・毛呂山町・三郷市・蓮田市 / W15 鴻巣市・加須市・ふじみ野市・日高市 / W16 行田市・坂戸市・桶川市・松伏町 / W17 県ページ
+- W1・W2 起動
