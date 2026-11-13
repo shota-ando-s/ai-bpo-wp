@@ -1,0 +1,41 @@
+# 神奈川県 13町1村（葉山町・寒川町・大磯町・二宮町・中井町・大井町・松田町・山北町・開成町・箱根町・真鶴町・湯河原町・愛川町・清川村）2026年度
+# 確認日 2026-11-13。根拠は subsidy_b_areas.md
+# 形は data/subsidies/README.md（period の status は open / closed / rolling / unknown）。来年度の見込み（next_expected）は書かない。area は kanagawa/<slug>
+# 県の制度・県域の機関・19市は subsidy_a 担当（subsidy_a.yml）
+# まとめは subsidy_b_areas.md の冒頭
+
+# ---- 中井町 ----
+- id: kanagawa-nakai-akiya-sogyo
+  name: 中井町空き家活用新規創業支援補助金
+  org: 中井町（企画課）
+  area: kanagawa/nakai
+  max_yen: 300000
+  rate: 補助対象経費の1/2、上限30万円
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 空き家とこれに付帯する設備の取得に要する売買契約に係る経費
+  conditions: 空き家を活用して新規創業する事業者（個人事業主・法人）。事業開始日から5年以上その空き家で事業を継続できること、地域の活性化等の地域貢献に資する事業（別表の対象事業）を行うこと。過去にその空き家の取得で国・県・町の類似の補助を受けていないこと。町税の滞納がないこと。申請は基準日（事業の開始日）から1年以内、役場に直接
+  period: {status: rolling}
+  url: https://www.town.nakai.kanagawa.jp/shigoto_sangyo/chushokigyonadoshien/3591.html
+  checked: 2026-11-13
+  confidence: official
+  note: ページ（更新日 2025年05月15日）「令和7年5月15日から、新たに「空き家活用新規創業支援補助金」を開始しました。」受付期間の表示はなく、申請期限は事業開始日から1年以内。対象は空き家の取得費だけで、IT・ソフトウェアは対象外。要綱 https://www.town.nakai.kanagawa.jp/material/files/group/2/kouhuyoukou.pdf は未読
+  fuenn_note: 中井町で空き家を買って新しく事業を始める人に、空き家の取得費の1/2（最大30万円）を補助する町の制度です。AI・ITの費用は対象になりません。
+
+# ---- 大井町 ----
+- id: kanagawa-oi-business-dx
+  name: 大井町中小企業ビジネスDX応援事業費補助金
+  org: 大井町（地域振興課、0465-85-5013）
+  area: kanagawa/oi
+  max_yen: 150000
+  rate: 総事業費の1/2以内、上限15万円（要綱 別表第2。デジタル化推進事業・広報及びマーケティング事業。申請は同年度内に各事業1回）
+  rate_num: 0.5
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: デジタル化推進事業（キャッシュレス決済端末、POSレジ導入、その他町長が認めるもの）、広報及びマーケティング事業（ホームページ作成・更新、Web広告掲載料金、マーケティング調査費用、ECサイト利用料金、その他町長が認めるもの）。町内の事業所に係る経費のみ。月額定額制料金は初月から同年度2月末日まで
+  conditions: 中小企業基本法第2条第1項の中小企業者（業種別の資本金・従業員の基準）とその団体。町内で1年以上継続して同一事業を営み今後も町内で営む予定、町内に住所（法人は事業所）、町税の滞納なし。事業に着手する前に申請（月額定額制料金は金額確定後、同年度2月末日までに申請）。同年度に町の他の補助事業の交付決定を受けた事業は対象外
+  period: {status: rolling}
+  url: https://www.town.oi.kanagawa.jp/soshiki/10/business-dx.html
+  checked: 2026-11-13
+  confidence: official
+  note: ページ（更新日 2026年5月1日）「DX導入に係る経費の一部を補助する制度です。補助率は、総事業費の1/2（上限15万円）」「事業実施前に交付申請が必要」。交付要綱 https://www.town.oi.kanagawa.jp/uploaded/attachment/19336.pdf （4ページ、令和8年5月1日施行）第1条「ＤＸの推進による経営基盤強化事業」、第4条2項・第5条・第6条、別表第1・第2。受付期間・予算額の表示はなく「予算の範囲内」。上限15万円が事業ごとか申請者ごとかは別表の書き方では確定できない（1つの表に2事業と「２分の１以内 15万円」）。生成AI・業務ソフトは例示になく「その他、町長が認めるもの」に当たるかは町に確認が要る。国のデジタル化・AI導入補助金への上乗せの規定はない（addon なし）
+  fuenn_note: 大井町の中小企業が、キャッシュレス決済・POSレジやホームページ・ECサイトなどのデジタル化の費用を1/2（最大15万円）補助する町の制度です（2026年5月開始）。事業を始める前の申請が必要です。AIツールが対象になるかは、町の地域振興課に事前に相談してください。
