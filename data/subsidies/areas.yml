@@ -1,22 +1,36 @@
 # 診断ツールの地域リスト。code は各YAMLの area と対応させる
-# none: true は独自の制度がない区市（2026-10-14確認）。note は表示する補足
+# none: true は独自の制度がない区市（東京都の23区は2026-11-14確認）。note は表示する補足
 - code: tokyo
   name: 東京都
   cities:
-    - {code: tokyo/shinagawa, name: 品川区}
+    - {code: tokyo/chiyoda-ku, name: 千代田区}
+    - {code: tokyo/chuo-ku, name: 中央区}
     - {code: tokyo/minato, name: 港区}
-    - {code: tokyo/sumida, name: 墨田区}
-    - {code: tokyo/itabashi, name: 板橋区}
-    - {code: tokyo/koto, name: 江東区}
-    - {code: tokyo/chiyoda, name: 千代田区, none: true, note: まちみらい千代田の無料デジタル化相談（最大5回）があります}
-    - {code: tokyo/chuo, name: 中央区, none: true, note: 無料の出張経営相談（IT活用も可）があります}
     - {code: tokyo/shinjuku, name: 新宿区, none: true}
+    - {code: tokyo/bunkyo, name: 文京区}
+    - {code: tokyo/taito, name: 台東区}
+    - {code: tokyo/sumida, name: 墨田区}
+    - {code: tokyo/koto, name: 江東区}
+    - {code: tokyo/shinagawa, name: 品川区}
+    - {code: tokyo/meguro, name: 目黒区}
+    - {code: tokyo/ota-ku, name: 大田区, none: true}
+    - {code: tokyo/setagaya, name: 世田谷区}
     - {code: tokyo/shibuya, name: 渋谷区, none: true}
-    - {code: tokyo/ota, name: 大田区, none: true}
+    - {code: tokyo/nakano-ku, name: 中野区}
+    - {code: tokyo/suginami, name: 杉並区}
+    - {code: tokyo/toshima-ku, name: 豊島区}
+    - {code: tokyo/kita-ku, name: 北区}
+    - {code: tokyo/arakawa, name: 荒川区}
+    - {code: tokyo/itabashi, name: 板橋区}
+    - {code: tokyo/nerima, name: 練馬区}
+    - {code: tokyo/adachi, name: 足立区}
+    - {code: tokyo/katsushika, name: 葛飾区}
+    - {code: tokyo/edogawa, name: 江戸川区}
+    # 多摩はパイロット（2026-10-14）のまま。段階3で26市・3町・1村を足し、確かめ直す
     - {code: tokyo/tachikawa, name: 立川市}
     - {code: tokyo/hachioji, name: 八王子市}
     - {code: tokyo/machida, name: 町田市, none: true}
-    - {code: tokyo/fuchu, name: 府中市, none: true}
+    - {code: tokyo/fuchu-city-tokyo, name: 府中市, none: true}
     - {code: tokyo/chofu, name: 調布市, none: true}
 - code: kanagawa
   name: 神奈川県
