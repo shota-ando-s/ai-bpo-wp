@@ -8,10 +8,10 @@
 
 | 段階 | 範囲 | 状態 |
 |---|---|---|
-| 1 | 都全体の調査・都のページ | 調査は完了（stats・gov）。**都のページは段階2の23区と一緒に書く**（23区へのリンクを入れるため） |
-| 2 | 23区 | 調査中（govsub_1・govsub_2・cases 完了、companies・cases2 作業中）。PLAN push 済み。診断データ push 済み |
-| 3 | 多摩（26市・3町・1村） | 未 |
-| 4 | 島しょ（2町・7村） | 未 |
+| 1 | 都全体の調査・都のページ | **完了・main に push（2026-11-14）**。都のページは23区へのリンクつき、多摩・島しょは名前だけ「準備中」 |
+| 2 | 23区 | **完了・main に push（2026-11-14）**。23ページとも check_article ERROR 0、固有80.3〜97.0%、_calc.py OK。診断データ・地域ガイドも。投稿はユーザーが Mac で「投稿して」 |
+| 3 | 多摩（26市・3町・1村） | **未（次のセッション）** |
+| 4 | 島しょ（2町・7村） | **未（次のセッション）** |
 
 ## 実績メモ
 - 2026-11-14 ネットワーク確認（metro.tokyo.lg.jp・soumu.go.jp とも開けた）。ローカルが detached だったので origin/main に合わせ直した。_brief.md（62区市町村・slug）。既存 slug とぶつかる 千代田区 chiyoda-ku・中央区 chuo-ku・大田区 ota-ku・中野区 nakano-ku・府中市 fuchu-city-tokyo・日野市 hino-city・瑞穂町 mizuho-town・三宅村 miyake-village・利島村 toshima-village-tokyo、紛らわしい 豊島区 toshima-ku・北区 kita-ku
@@ -27,6 +27,13 @@
 - **WebSearch 累計 77（段階2の調査を終えた時点）**。執筆は0回の予定
 - 執筆 W1（千代田・墨田・練馬）・W2（中央・大田・中野）起動
 
-## 次にやること
-- 執筆 W1〜W8（23区）→ W9（都のページ）。担当割りは docs/area-writing-spec-tokyo.md の「執筆の担当割り」。書き終えた記事は `.git/info/exclude`（`articles/2026-11-14-area-tokyo*.md`）で main に入れず、`data/area/tokyo/_wip_push.sh <files>` で area-tokyo-wip ブランチに退避する。全ページそろったら exclude を外して main に入れ、地域ガイド・area-todo・手順書・memory を更新
-- **再開するとき**: `git fetch origin area-tokyo-wip` して `git checkout origin/area-tokyo-wip -- articles/` で書き終えた記事を戻し、表で終わっていない担当から
+- 執筆 W1〜W8（23区）・W9（都のページ）完了。全国の生成AI導入率は45.6%にそろえた（親が W1・W3 ほか6ページを直した）。他県のページへのリンクは仕様が名指しした5本（座間・川崎・伊万里・上峰・周南）だけ
+- exclude を外して24ページを main に入れ、地域ガイド（首都圏の段の東京都の行・出典・一文。全4都県そろったので表の下の共通の出典行を「都県ごとの段落」に直した）・area-todo（東京都の節）・手順書・memory を更新
+- **WebSearch 累計 77（段階1・2を終えた時点）**
+
+## 次にやること（段階3: 多摩）
+1. `git pull origin main`、この _progress.md と docs/area-writing-spec-tokyo.md（共通部分・執筆で分かったこと）を読む。WebSearch はセッションで200回まで
+2. 段階3の調査: 多摩の30市町村（26市・瑞穂町・日の出町・奥多摩町・檜原村）の行政・補助金（gov_ai.md の総務省の表に62行あり。リンクの条件も）、事例（cases.md の末尾に八王子・国分寺、cases2.md に東久留米の候補）、IT企業（companies の CSV は scratchpad にあったので作り直す）。stats.md には多摩の値の表がある（区市町村の節は未作成）。商工会のない檜原村・奥多摩町の受け持ちを確かめる
+3. tokyo.yml の多摩のパイロット2制度（tachikawa-digital・hachioji-jinzai）を確かめ直し、areas.yml の多摩を30市町村に（府中市 `fuchu-city-tokyo`）
+4. PLAN を _calc.py に足す（23区の時間・金額・従業員数と重ねない）→ 仕様に多摩の補足 → 執筆（exclude と _wip_push.sh で全ページそろうまで main に入れない）→ 都のページの多摩の「準備中」をリンクに
+5. 段階4（島しょ9町村）は docs/area-writing-spec-hokkaido.md の島の町村の書き方を足す
