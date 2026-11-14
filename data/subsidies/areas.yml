@@ -6,23 +6,23 @@
     - {code: tokyo/chiyoda-ku, name: 千代田区}
     - {code: tokyo/chuo-ku, name: 中央区}
     - {code: tokyo/minato, name: 港区}
-    - {code: tokyo/shinjuku, name: 新宿区, none: true}
+    - {code: tokyo/shinjuku, name: 新宿区, none: true, note: 新宿区には2026年度、IT・AIの導入や研修に使える区独自の補助金はありません（2026-11-14確認）。新宿ビジネスステーション（BIZ新宿4階）で経営相談とアドバイザー派遣を受けられます}
     - {code: tokyo/bunkyo, name: 文京区}
     - {code: tokyo/taito, name: 台東区}
     - {code: tokyo/sumida, name: 墨田区}
     - {code: tokyo/koto, name: 江東区}
     - {code: tokyo/shinagawa, name: 品川区}
     - {code: tokyo/meguro, name: 目黒区}
-    - {code: tokyo/ota-ku, name: 大田区, none: true}
-    - {code: tokyo/setagaya, name: 世田谷区}
-    - {code: tokyo/shibuya, name: 渋谷区, none: true}
+    - {code: tokyo/ota-ku, name: 大田区, none: true, note: 大田区の中小製造業向けのデジタル化支援は補助金ではなく、ITコーディネータの無償の伴走（業務改善サポート事業）で、令和8年度の募集は7月31日で終わりました（2026-11-14確認）。大田区産業振興協会のビジネスサポートサービスは年度内20時間まで無料で専門家に相談できます}
+    - {code: tokyo/setagaya, name: 世田谷区, note: 世田谷区の中小事業者経営支援補助金は予算に達して2026年度の受付を終えました（2026-11-14確認）。世田谷区産業振興公社の総合経営相談（無料）があります}
+    - {code: tokyo/shibuya, name: 渋谷区, none: true, note: 渋谷区には2026年度、IT・AIの導入や研修に使える区独自の補助金はありません（2026-11-14確認）。区の商工相談（中小企業診断士、予約制）で経営の相談ができます}
     - {code: tokyo/nakano-ku, name: 中野区}
-    - {code: tokyo/suginami, name: 杉並区}
+    - {code: tokyo/suginami, name: 杉並区, note: 杉並区のデジタル化推進事業助成は9月28日に予算に達して受付を終えました（2026-11-14確認）。事業所アドバイザー派遣（無料・年2回）があります}
     - {code: tokyo/toshima-ku, name: 豊島区}
     - {code: tokyo/kita-ku, name: 北区}
     - {code: tokyo/arakawa, name: 荒川区}
     - {code: tokyo/itabashi, name: 板橋区}
-    - {code: tokyo/nerima, name: 練馬区}
+    - {code: tokyo/nerima, name: 練馬区, note: AI・ITの相談は練馬ビジネスサポートセンター（ネリサポ）の専門相談（デジタルサポート、無料）で受けられます（2026-11-14確認）。公社の専門家派遣の費用の補助はデジタル分野が対象外です}
     - {code: tokyo/adachi, name: 足立区}
     - {code: tokyo/katsushika, name: 葛飾区}
     - {code: tokyo/edogawa, name: 江戸川区}
