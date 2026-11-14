@@ -114,3 +114,6 @@
 | kusatsu-city | 滋賀県草津市 | 群馬県草津町が `kusatsu`。滋賀は `kusatsu-city`（2026-11-07 滋賀） |
 | hino-town-shiga | 滋賀県日野町 | 鳥取県日野町が `hino`。滋賀は `hino-town-shiga`（2026-11-07 滋賀） |
 | konan-shiga | 滋賀県湖南市 | 高知県香南市が `konan`。滋賀は `konan-shiga`（2026-11-07 滋賀） |
+| osaka-city / sakai-city | 大阪市 / 堺市（政令市、各1ページ） | 府ページは `osaka`。堺市は福井県坂井市 `sakai`・茨城県境町 `sakai-town` と分ける（2026-11-14 大阪） |
+| ikeda-city / ibaraki-city / izumi-city | 大阪府池田市 / 茨木市 / 和泉市 | 福井県池田町 `ikeda`、茨城県 `ibaraki`・茨城町 `ibaraki-town`、鹿児島県出水市 `izumi` と分ける（2026-11-14 大阪） |
+| misaki-town / taishi-town-osaka | 大阪府岬町 / 太子町（南河内郡） | 岡山県美咲町 `misaki`、兵庫県太子町 `taishi` と分ける（2026-11-14 大阪） |
