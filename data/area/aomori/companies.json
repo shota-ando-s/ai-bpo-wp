@@ -1,0 +1,1133 @@
+{
+ "_meta": {
+  "checked": "2026-10-17",
+  "scope": "青森県40市町村。本社（公式サイトの本社/所在地）が当該市町村にあり、公式サイトで受託システム開発・ソフトウェア開発・Web制作・ITサービスを事業として明示する法人。東京に本社がある会社の県内支店・事業所は載せない（東京にも拠点を持つ県内本社の会社はnotesに記載）。規模は公式サイト記載の従業員数順。従業員数がない会社は資本金で後ろに並べた。青森市・八戸市・弘前市は上位10社程度を本表に、残りを _reference に置いた。",
+  "candidate_sources": [
+   "全国法人検索（houjin.goo.to、国税庁の法人番号データにもとづく）の青森県「IT業界」一覧（list表示94社）と市町村別のIT業界一覧（青森市・八戸市・弘前市・黒石市・五所川原市・十和田市・三沢市・おいらせ町・六ヶ所村・東通村・階上町）。詳細ページから公式URLを取得 https://houjin.goo.to/corporations/prefs/aomori/category-it/list",
+   "イノベーション・ネットワークあおもり（青森県）の『青森県IT関連企業ガイド一覧』81件（2026-10-17時点、全6ページ。県外本社の会社の県内事業所も含む。従業員数は各社の登録値で時点なし） https://innovation-net-aomori.ina.pref.aomori.lg.jp/portal/company/?term=itguide",
+   "マイナビ2028の本社所在地「青森県」検索結果（先頭ページ）で業種にソフトウエア・情報処理を含む企業 https://job.mynavi.jp/28/pc/search/hq02.html",
+   "アイミツの八戸市・弘前市のシステム開発会社一覧（候補の洗い出しのみ）",
+   "WebSearch（担当上限12回のうち8回を使用）"
+  ],
+  "search_limits": "青森県情報サービス産業協会（AISA）の会員名簿は公開ページを見つけられなかった（WebSearch 2回、www.aisa.or.jp は名前解決できず）。21あおもり産業総合支援センターのITベンダー紹介ページも見つけられなかった（県のDX総合窓口の資料に『県内IT企業46社』とあるが社名一覧は非公開）。そのため候補は houjin.goo と県のIT関連企業ガイドが中心。公式サイトが開けなかった会社（SSLエラー・403・閉鎖）や、会社概要に所在地・規模がない会社は本表に入れず _reference に置いた。個人事業主・小規模なWeb制作者は網羅していない。町村部は県のガイドと houjin.goo の市町村別一覧に出た分だけで、網羅性は保証できない。",
+  "ordering": "従業員数（公式）の多い順 → 従業員数がない会社は資本金（公式）→ どちらもない会社は最後。"
+ },
+ "aomori-city": [
+  {
+   "name": "株式会社ビジネスサービス",
+   "hq": "青森県青森市新町2丁目6-29",
+   "municipality": "青森市",
+   "town": "新町",
+   "employees": {
+    "value": 328,
+    "as_of": "2026年4月現在",
+    "source": "https://www.kbs-web.com/company/"
+   },
+   "capital": {
+    "value": "1億円",
+    "source": "https://www.kbs-web.com/company/"
+   },
+   "founded": 1975,
+   "business_summary": "自治体・学校・民間企業のネットワークシステム、受託システム開発、ホームページ制作。ドコモショップ、パソコンショップ『パワーデポ』、インターネットプロバイダ『Jomon Internet』も運営",
+   "ai_initiative": null,
+   "url": "https://www.kbs-web.com/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "従業員数はショップ部門を含む会社全体の値。カクヒログループ（株式会社角弘）。2026年7月にDX展示会『ジモリューションショー』を主催（cases.md 参照）。"
+  },
+  {
+   "name": "株式会社青森電子計算センター",
+   "hq": "青森県青森市大字三内字丸山393番地270",
+   "municipality": "青森市",
+   "town": "三内",
+   "employees": {
+    "value": 299,
+    "as_of": "令和8年7月末現在（男204名・女95名）",
+    "source": "https://www.acsc.co.jp/company.html"
+   },
+   "capital": {
+    "value": "2億円",
+    "source": "https://www.acsc.co.jp/company.html"
+   },
+   "founded": 1965,
+   "business_summary": "自治体・病院・民間企業向けのシステムインテグレーション、ソフトウェア開発、情報処理サービス（自治体向け mACS シリーズ）",
+   "ai_initiative": null,
+   "url": "https://www.acsc.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "設立 昭和40年8月16日。本社分室（青森市新町 角弘ビル）、八戸支店、弘前営業所のほか **東京支店（港区芝）** あり。本社は青森市。県のIT関連企業ガイドの登録値は312名（時点なし、不採用）。"
+  },
+  {
+   "name": "株式会社リンクステーション",
+   "hq": "青森県青森市浜館2丁目1番1号",
+   "municipality": "青森市",
+   "town": "浜館",
+   "employees": {
+    "value": 247,
+    "as_of": "2025年12月現在（採用ページ、男性44.0%・女性56.0%）",
+    "source": "https://www.linkst.jp/recruit/"
+   },
+   "capital": {
+    "value": "7,000万円",
+    "source": "https://www.linkst.jp/outline/"
+   },
+   "founded": 2003,
+   "business_summary": "ソフトウェア開発。票券管理システム『Gettii』（2005年〜）によるチケット販売の総合支援、ポータルサイト・ファンクラブ運営、公演情報登録・チケット配送の代行",
+   "ai_initiative": "グループ会社に株式会社Link AI Strategy。沿革に『Monitly.AI株式会社がグループイン』（2025年11月）",
+   "url": "https://www.linkst.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "会社概要ページに従業員数なし（採用ページの値）。**東京オフィス（豊島区東池袋）**、八戸・弘前・津軽・秋田・大阪オフィス、ベトナム・タイの関連会社。県のガイド登録値は127名（不採用）。"
+  },
+  {
+   "name": "株式会社エービッツ",
+   "hq": "青森県青森市新町二丁目6番25号 新町キューブ4・5階",
+   "municipality": "青森市",
+   "town": "新町",
+   "employees": {
+    "value": 95,
+    "as_of": "2026年4月現在",
+    "source": "https://www.a-bits.co.jp/company/kaisyagaiyo/"
+   },
+   "capital": {
+    "value": "2億9,160万円",
+    "source": "https://www.a-bits.co.jp/company/kaisyagaiyo/"
+   },
+   "founded": 1968,
+   "business_summary": "官公庁向け・民間企業向けシステム（財務・建設業等）、データハウジング・クラウド、アウトソーシング",
+   "ai_initiative": null,
+   "url": "https://www.a-bits.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "株式会社青森コンピュータセンターとして創業（県のガイドの紹介文）。会社概要ページにAIの記述なし。"
+  },
+  {
+   "name": "株式会社アイ・シー・シーコンピューターシステム",
+   "hq": "青森県青森市第二問屋町4丁目11番18号",
+   "municipality": "青森市",
+   "town": "第二問屋町",
+   "employees": {
+    "value": 86,
+    "as_of": "2025年3月末現在",
+    "source": "https://www.webicc.co.jp/company.html"
+   },
+   "capital": {
+    "value": "7,000万円",
+    "source": "https://www.webicc.co.jp/company.html"
+   },
+   "founded": 1987,
+   "business_summary": "システムインテグレーション、アウトソーシング、エンジニア派遣、ネットワーク構築、システム機器販売",
+   "ai_initiative": null,
+   "url": "https://www.webicc.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "同じ住所（ソフトアカデミービル）に青森ヒューマンシステム、ソフトアカデミーあおもり、エヌアンドエストラストがある。"
+  },
+  {
+   "name": "株式会社青森共同計算センター",
+   "hq": "青森県青森市第二問屋町三丁目10番26号",
+   "municipality": "青森市",
+   "town": "第二問屋町",
+   "employees": {
+    "value": 84,
+    "as_of": "2025年4月現在",
+    "source": "https://www.jacopen.co.jp/company/profile"
+   },
+   "capital": {
+    "value": "5,000万円",
+    "source": "https://www.jacopen.co.jp/company/profile"
+   },
+   "founded": 1976,
+   "business_summary": "情報処理サービス、アウトソーシング、ICT機器の導入支援・販売・サポート",
+   "ai_initiative": "トップページのお知らせに『生成AIの最新動向と企業における活用セミナーのご案内』（2026年8月21日）",
+   "url": "https://www.jacopen.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "マイナビ2028に掲載（業種 ソフトウエア・情報処理）。"
+  },
+  {
+   "name": "株式会社バランテック",
+   "hq": "青森県青森市橋本2丁目19番21号",
+   "municipality": "青森市",
+   "town": "橋本",
+   "employees": {
+    "value": 56,
+    "as_of": "2022年4月現在（古い）",
+    "source": "https://www.balantec.co.jp/company.html"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.balantec.co.jp/company.html"
+   },
+   "founded": null,
+   "business_summary": "自治体システム開発、金融システム開発、医療システム開発、WEB事業、サポート事業",
+   "ai_initiative": null,
+   "url": "https://www.balantec.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "仙台事業所あり。従業員数の時点が古い（県のガイド登録値は45名、時点なし）。"
+  },
+  {
+   "name": "株式会社青森県農協電算センター",
+   "hq": "青森県青森市東大野二丁目1番地15 農協会館3階",
+   "municipality": "青森市",
+   "town": "東大野",
+   "employees": {
+    "value": 36,
+    "as_of": "時点記載なし",
+    "source": "https://www.ja-aomoricc.co.jp/"
+   },
+   "capital": {
+    "value": "公式に記載なし",
+    "source": null
+   },
+   "founded": 1974,
+   "business_summary": "電子計算機・諸機械による受託処理（JAグループの情報処理）、不動産賃貸",
+   "ai_initiative": null,
+   "url": "https://www.ja-aomoricc.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "JA系の情報処理会社。外部の中小企業向けの受託開発をしているかは公式で確認できない。会社概要の掲載ページURLは未特定（crawl でトップ配下から取得）。"
+  },
+  {
+   "name": "株式会社ワイエスケイ情報システム",
+   "hq": "青森県青森市卸町1-1 青森市中央卸売市場内",
+   "municipality": "青森市",
+   "town": "卸町",
+   "employees": {
+    "value": 14,
+    "as_of": "2024年1月現在（男10名・女4名）",
+    "source": "https://www.ysk-js.jp/"
+   },
+   "capital": {
+    "value": "1,200万円",
+    "source": "https://www.ysk-js.jp/"
+   },
+   "founded": 1986,
+   "business_summary": "アプリケーションソフトの設計・開発、ネットワークシステムの構築。卸売市場（水産・青果・花卉）向けシステム、営業倉庫・生産管理システム",
+   "ai_initiative": "『市場の未来を拓くAI活用セミナー～生鮮卸売市場におけるAI利活用～』を2026年10月15日に開催（公式のお知らせ、2026年7月14日掲載）",
+   "url": "https://www.ysk-js.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": ""
+  },
+  {
+   "name": "株式会社ハートソリューションズ",
+   "hq": "青森県青森市花園1-8-4",
+   "municipality": "青森市",
+   "town": "花園",
+   "employees": {
+    "value": 5,
+    "as_of": "時点記載なし",
+    "source": "https://www.heart-s.com/"
+   },
+   "capital": {
+    "value": "2,000万円",
+    "source": "https://www.heart-s.com/"
+   },
+   "founded": null,
+   "business_summary": "ITサービス（houjin.goo のIT業界に分類。事業内容の詳細は公式の会社概要で要確認）",
+   "ai_initiative": null,
+   "url": "https://www.heart-s.com/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "**東京営業所（千代田区外神田）** あり。事業内容を十分に確認できていない。"
+  },
+  {
+   "name": "株式会社ページワン",
+   "hq": "青森県青森市橋本二丁目13-5 グランスクエア青森6F",
+   "municipality": "青森市",
+   "town": "橋本",
+   "employees": null,
+   "capital": {
+    "value": "5,500万円（資本準備金含む）",
+    "source": "https://www.pageone.ne.jp/company/"
+   },
+   "founded": 1994,
+   "business_summary": "Microsoft製品（Azure、Microsoft 365、Power Platform）による情報系インフラ構築、アプリケーション開発、導入コンサルティング、運用サポート",
+   "ai_initiative": "生成AIソリューション（Vitamin AI・Intellectra・LT-AI）の特設サイトを公開（2026年5月22日）。Azure OpenAI Service 導入支援、伴走型の生成AI導入支援",
+   "url": "https://www.pageone.ne.jp/",
+   "size_basis": "capital",
+   "checked": "2026-10-17",
+   "notes": "会社概要に従業員数なし（県のガイド登録値16名、不採用）。**東京支社（神田錦町）** あり。1994年3月に有限会社として設立、2012年7月に株式会社へ。"
+  }
+ ],
+ "hirosaki": [
+  {
+   "name": "マルマンコンピュータサービス株式会社",
+   "hq": "青森県弘前市大字宮川3丁目5番地2",
+   "municipality": "弘前市",
+   "town": "宮川",
+   "employees": {
+    "value": 70,
+    "as_of": "2024年8月現在",
+    "source": "https://mcs-kk.co.jp/info/"
+   },
+   "capital": {
+    "value": "3,000万円",
+    "source": "https://mcs-kk.co.jp/info/"
+   },
+   "founded": 1986,
+   "business_summary": "ソフトウェア開発・販売・導入・保守、コンピュータ販売。看護師向け業務支援システム『ナース物語』シリーズ",
+   "ai_initiative": null,
+   "url": "https://mcs-kk.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "**東京支店**（電話 03-、沿革に東京事務所 台東区）あり。物流管理システム『サプライ物語』は新規販売終了（2026年9月30日のお知らせ）。県のガイド登録値68名（不採用）。"
+  },
+  {
+   "name": "株式会社エムシーエス",
+   "hq": "青森県弘前市大字神田2丁目5番地9",
+   "municipality": "弘前市",
+   "town": "神田",
+   "employees": {
+    "value": 67,
+    "as_of": "2026年4月1日現在",
+    "source": "https://kk-mcs.jp/company/profile/"
+   },
+   "capital": {
+    "value": "1億円",
+    "source": "https://kk-mcs.jp/company/profile/"
+   },
+   "founded": 2014,
+   "business_summary": "医療ソフトウェア業務（開発・販売・導入サポート・保守）。電子カルテ『MI・RA・Is V』、看護支援『ナース物語 ナイスプランIII』、リハビリ支援『リハ物語』",
+   "ai_initiative": null,
+   "url": "https://kk-mcs.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "CEホールディングス（東証上場）グループ、同社が51%出資。**東京支店（北区上中里）** あり。"
+  },
+  {
+   "name": "株式会社テラソリューション",
+   "hq": "青森県弘前市高田2丁目13-18",
+   "municipality": "弘前市",
+   "town": "高田",
+   "employees": {
+    "value": 31,
+    "as_of": "2026年4月1日現在",
+    "source": "http://www.terasol.co.jp/"
+   },
+   "capital": {
+    "value": "1,500万円",
+    "source": "http://www.terasol.co.jp/"
+   },
+   "founded": 2007,
+   "business_summary": "ソフトウェアの開発・販売（物流・販売管理、ネット通販管理、看護支援システムの受託開発）、システム導入コンサルテーション、運用・サポート",
+   "ai_initiative": null,
+   "url": "http://www.terasol.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "県のガイド（2020年版の個票）では22名。公式値を採用。"
+  },
+  {
+   "name": "株式会社パッション",
+   "hq": "青森県弘前市上鞘師町18-1 弘前商工会議所会館3F",
+   "municipality": "弘前市",
+   "town": "上鞘師町",
+   "employees": {
+    "value": 30,
+    "as_of": "時点記載なし",
+    "source": "https://passion-s.jp/company/profile/"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://passion-s.jp/company/profile/"
+   },
+   "founded": 2006,
+   "business_summary": "Apple製品向けシステム開発（iPhone・iPadアプリの受託開発）、組込みシステム開発、Apple製品向け品質テスト検証、Apple社への申請代行",
+   "ai_initiative": "『Apple × AI × 受託開発』を掲げ、アプリ開発にAI技術を組み合わせた提案をすると記載",
+   "url": "https://passion-s.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "会社概要に記載の拠点は本社のみ（アイミツには東京都中央区の事務所の記載があるが公式で未確認）。"
+  },
+  {
+   "name": "アイエーネットワーク株式会社",
+   "hq": "青森県弘前市大字田園1-12-1",
+   "municipality": "弘前市",
+   "town": "田園",
+   "employees": {
+    "value": 14,
+    "as_of": "2025年7月現在",
+    "source": "https://www.ianet.co.jp/"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.ianet.co.jp/"
+   },
+   "founded": null,
+   "business_summary": "ネットワークセキュリティ、無線LAN環境の構築（houjin.goo の紹介文。公式の事業内容ページは未精査）",
+   "ai_initiative": null,
+   "url": "https://www.ianet.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "ソフトウェア開発よりネットワーク構築が中心の可能性。"
+  },
+  {
+   "name": "株式会社コンシス",
+   "hq": "青森県弘前市百石町38-1",
+   "municipality": "弘前市",
+   "town": "百石町",
+   "employees": {
+    "value": 10,
+    "as_of": "時点記載なし",
+    "source": "https://www.consis.jp/"
+   },
+   "capital": {
+    "value": "500万円",
+    "source": "https://www.consis.jp/"
+   },
+   "founded": 2010,
+   "business_summary": "Webコンサルティング、Webサイト企画・制作・運営",
+   "ai_initiative": null,
+   "url": "https://www.consis.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "農業情報サイト『ハーベストマーケット』を開設（2012年）。県のガイド登録値11名（不採用）。"
+  },
+  {
+   "name": "株式会社アソシオ",
+   "hq": "青森県弘前市早稲田2-12-20",
+   "municipality": "弘前市",
+   "town": "早稲田",
+   "employees": null,
+   "capital": {
+    "value": "2,000万円",
+    "source": "https://www.associo.co.jp/"
+   },
+   "founded": null,
+   "business_summary": "医療・福祉分野などのITサービス（公式のサービス分野に医療・福祉。詳細は要確認）",
+   "ai_initiative": null,
+   "url": "https://www.associo.co.jp/",
+   "size_basis": "capital",
+   "checked": "2026-10-17",
+   "notes": "公式に従業員数なし。事業内容の詳細は未精査。"
+  },
+  {
+   "name": "モダンスキル有限会社",
+   "hq": "青森県弘前市大町3丁目11-9 サンデュエル弘前駅前1305号",
+   "municipality": "弘前市",
+   "town": "大町",
+   "employees": null,
+   "capital": {
+    "value": "300万円",
+    "source": "https://www.modernskill.jp/"
+   },
+   "founded": null,
+   "business_summary": "自動車整備業・医療機関向けのITソリューション（日医標準レセプトソフトの導入支援など。houjin.goo の紹介文と公式の会社概要）",
+   "ai_initiative": null,
+   "url": "https://www.modernskill.jp/",
+   "size_basis": "capital",
+   "checked": "2026-10-17",
+   "notes": ""
+  },
+  {
+   "name": "有限会社パルネット弘前",
+   "hq": "青森県弘前市小比内1-1-22 コーポ三上7号",
+   "municipality": "弘前市",
+   "town": "小比内",
+   "employees": null,
+   "capital": {
+    "value": "300万円",
+    "source": "http://www.palnet-hirosaki.com/"
+   },
+   "founded": null,
+   "business_summary": "電子機器製品開発の試作、組み込みソフト・アプリケーションソフト開発",
+   "ai_initiative": null,
+   "url": "http://www.palnet-hirosaki.com/",
+   "size_basis": "capital",
+   "checked": "2026-10-17",
+   "notes": "県のガイドの住所は弘前市金属町2-43（公式は小比内）。"
+  }
+ ],
+ "hachinohe": [
+  {
+   "name": "サクサシステムエンジニアリング株式会社",
+   "hq": "青森県八戸市北インター工業団地1-3-54",
+   "municipality": "八戸市",
+   "town": "北インター工業団地",
+   "employees": {
+    "value": 172,
+    "as_of": "2024年4月現在（やや古い）",
+    "source": "http://www.saxasystem.jp/"
+   },
+   "capital": {
+    "value": "1億円",
+    "source": "http://www.saxasystem.jp/"
+   },
+   "founded": 1989,
+   "business_summary": "通信システム・情報システムのソフトウェア開発、システム開発、運用保守（通信機器・情報機器のソフト、業務アプリ、Webアプリ）",
+   "ai_initiative": null,
+   "url": "http://www.saxasystem.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "サクサグループ（親会社は東京の上場会社サクサ）。大興電機製作所が八戸市の誘致企業としてタイコーシステムエンジニアリングを設立したのが始まり。八戸第二オフィスあり。"
+  },
+  {
+   "name": "株式会社吉田システム",
+   "hq": "青森県八戸市北インター工業団地1丁目3-64",
+   "municipality": "八戸市",
+   "town": "北インター工業団地",
+   "employees": {
+    "value": 84,
+    "as_of": "2025年12月9日現在",
+    "source": "https://www.ys-sys.co.jp/company/profile/"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.ys-sys.co.jp/company/profile/"
+   },
+   "founded": null,
+   "business_summary": "IT機器の販売・メンテナンス、業務アプリケーション開発（ICTコンサルティング、オーダーメイド開発）",
+   "ai_initiative": null,
+   "url": "https://www.ys-sys.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "YSグループ（吉田産業）。houjin.goo の所在地（八戸市廿三日町）は旧住所の可能性。"
+  },
+  {
+   "name": "株式会社サン・コンピュータ",
+   "hq": "青森県八戸市北インター工業団地一丁目5番10号",
+   "municipality": "八戸市",
+   "town": "北インター工業団地",
+   "employees": {
+    "value": 75,
+    "as_of": "令和7年11月1日現在",
+    "source": "https://www.sancom.co.jp/company/"
+   },
+   "capital": {
+    "value": "5,000万円",
+    "source": "https://www.sancom.co.jp/company/"
+   },
+   "founded": 1985,
+   "business_summary": "ソフトウェア設計・開発・販売、ネットワーク構築、コンピュータ機器・サプライ販売、ITコンサルティング。ローコード開発（GeneXus・WebPerformer・Magic xpa）",
+   "ai_initiative": "トップページに『AIソリューション』のメニューと『高セキュリティ且つ“誰でも使える”生成AIで業務改革』の製品紹介。ブログでAgentic RAG等を解説",
+   "url": "https://www.sancom.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "**関東事業所（千代田区神田鍛冶町）**、むつ事業所（むつ市新町）あり。"
+  },
+  {
+   "name": "広和計装株式会社",
+   "hq": "青森県八戸市大字長苗代字上碇田6番地1",
+   "municipality": "八戸市",
+   "town": "長苗代",
+   "employees": {
+    "value": 45,
+    "as_of": "時点記載なし（男性35名・女性10名）",
+    "source": "https://kowa-keiso.jp/"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://kowa-keiso.jp/"
+   },
+   "founded": 1988,
+   "business_summary": "FA（制御系）アプリケーションの開発、FAシステムと連携する.NETアプリケーションの開発",
+   "ai_initiative": null,
+   "url": "https://kowa-keiso.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "関東支店（横浜市港北区新横浜）あり。ISO/IEC27001認証。"
+  },
+  {
+   "name": "株式会社ライトカフェU.",
+   "hq": "青森県八戸市三日町2 明治安田生命八戸ビル6F",
+   "municipality": "八戸市",
+   "town": "三日町",
+   "employees": {
+    "value": 31,
+    "as_of": "時点記載なし（グループ全体963名）",
+    "source": "https://u.lightcafe.co.jp/"
+   },
+   "capital": {
+    "value": "500万円",
+    "source": "https://u.lightcafe.co.jp/"
+   },
+   "founded": 2023,
+   "business_summary": "クラウドエンジニアリング、アプリケーション開発",
+   "ai_initiative": null,
+   "url": "https://u.lightcafe.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "親会社ライトカフェのサテライトオフィスとして設立、青森県・八戸市の誘致企業（県のガイドの紹介文）。公式は『青森八戸本社』と表記。"
+  },
+  {
+   "name": "株式会社アイティコワーク",
+   "hq": "青森県八戸市江陽5丁目15-12",
+   "municipality": "八戸市",
+   "town": "江陽",
+   "employees": {
+    "value": 23,
+    "as_of": "2024年4月現在",
+    "source": "https://www.itcowork.co.jp/"
+   },
+   "capital": {
+    "value": "公式で未確認",
+    "source": null
+   },
+   "founded": null,
+   "business_summary": "GeneXusを使用したシステム開発（ウェブシステム）、スマートフォンアプリ開発",
+   "ai_initiative": null,
+   "url": "https://www.itcowork.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "houjin.goo の所在地は八戸市是川（旧住所の可能性）。資本金は県のガイド登録値150万円（不採用）。"
+  },
+  {
+   "name": "株式会社ジーアイテック",
+   "hq": "青森県八戸市大字新井田字西平28番地24",
+   "municipality": "八戸市",
+   "town": "新井田",
+   "employees": {
+    "value": 13,
+    "as_of": "2026年7月時点",
+    "source": "https://www.gitec.co.jp/company/"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.gitec.co.jp/company/"
+   },
+   "founded": 2006,
+   "business_summary": "業務システム開発、Webサイト制作、デジタルマーケティング、業務改善支援",
+   "ai_initiative": "生成AI導入支援（ChatGPT・Claude活用、AIエージェント開発。業務への生成AI適用判定・PoC・本番運用まで伴走）。コラム『中小企業の生成AI導入、最初の3ステップ｜青森の会社向け』（2026年10月5日）",
+   "url": "https://www.gitec.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "県のガイド登録値は28名（不採用）。"
+  },
+  {
+   "name": "株式会社リーディングシステム",
+   "hq": "青森県八戸市大字売市字右水門下8番地22",
+   "municipality": "八戸市",
+   "town": "売市",
+   "employees": {
+    "value": 11,
+    "as_of": "令和7年6月1日現在",
+    "source": "https://www.leadingsystem.co.jp/"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.leadingsystem.co.jp/"
+   },
+   "founded": 1988,
+   "business_summary": "ソフトウェア・ハードウェア販売、システム開発（一般企業・官公庁・教育機関）",
+   "ai_initiative": null,
+   "url": "https://www.leadingsystem.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "2021年10月25日に本社移転。青森サポートセンター（青森市中央1丁目）あり。同住所に有限会社ワーカホリック。"
+  },
+  {
+   "name": "株式会社フージェット",
+   "hq": "青森県八戸市十三日町25 オオハシヒルズ4F 401",
+   "municipality": "八戸市",
+   "town": "十三日町",
+   "employees": {
+    "value": 5,
+    "as_of": "時点記載なし（内女性2名）",
+    "source": "https://www.fudget.co.jp/"
+   },
+   "capital": {
+    "value": "999万円",
+    "source": "https://www.fudget.co.jp/"
+   },
+   "founded": 2017,
+   "business_summary": "組込ソフト開発、スマートフォン/タブレットアプリ・Webアプリ開発、IoTシステムの開発・販売",
+   "ai_initiative": null,
+   "url": "https://www.fudget.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-10-17",
+   "notes": "業務内容の紹介文に『IoT・VR・AIなど』とあるが、AIの具体的な取り組みの記載はない。"
+  },
+  {
+   "name": "株式会社サンライズ",
+   "hq": "青森県八戸市南白山台一丁目5-33",
+   "municipality": "八戸市",
+   "town": "南白山台",
+   "employees": null,
+   "capital": {
+    "value": "1,500万円",
+    "source": "https://www.sunrise-mmc.co.jp/"
+   },
+   "founded": 1985,
+   "business_summary": "技術プロジェクトの受託（開発・設計・試作・製造・評価）、ソフトウェア開発（モバイル、クラウド、Windowsアプリ）、特定労働者派遣",
+   "ai_initiative": "開発分野の説明に『AI関連』の開発を挙げる（具体的な製品・事例の記載はない）",
+   "url": "https://www.sunrise-mmc.co.jp/",
+   "size_basis": "capital",
+   "checked": "2026-10-17",
+   "notes": "公式に従業員数なし（県のガイド登録値18名、不採用）。"
+  }
+ ],
+ "kuroishi": [],
+ "goshogawara": [
+  {
+   "name": "株式会社ExKode",
+   "hq": "青森県五所川原市烏森39-9",
+   "municipality": "五所川原市",
+   "town": "烏森",
+   "employees": null,
+   "capital": {
+    "value": "100万円",
+    "source": "https://exkode.com/company-information-en.html"
+   },
+   "founded": 2013,
+   "business_summary": "ソフトウェアの開発・販売（動画キャプチャソフト『Dxtory』、PackBit Codec）",
+   "ai_initiative": null,
+   "url": "https://exkode.com/",
+   "size_basis": "capital",
+   "checked": "2026-10-17",
+   "notes": "会社情報は英語ページ（KARASUMORI 39-9, GOSYOGAWARA-SHI）。従業員数の記載なし。自社製品のソフト会社で、受託開発をしているかは未確認。"
+  }
+ ],
+ "towada": [],
+ "misawa": [
+  {
+   "name": "株式会社ヘプタゴン",
+   "hq": "青森県三沢市大字三沢字堀口164-336 シェアオフィスブルー内",
+   "municipality": "三沢市",
+   "town": "三沢",
+   "employees": null,
+   "capital": null,
+   "founded": 2012,
+   "business_summary": "クラウド（AWS）専業のインテグレーター。フルマネージドサービス、デベロップメントサービス（Web・モバイルアプリのバックエンド開発）、伴走支援、クラウドよろず相談窓口",
+   "ai_initiative": "生成AI・機械学習の開発、『生成AI社内文書検索システム構築支援』。ABA青森朝日放送の議事録作成システムをAWSの生成AI『GenU』で開発（cases.md の事例3）",
+   "url": "https://heptagon.co.jp/",
+   "size_basis": "none",
+   "checked": "2026-10-17",
+   "notes": "会社概要に従業員数・資本金なし（県のガイド登録値10名・資本金250万円、不採用）。岩手オフィス（一関市）、仙台オフィスあり。三沢オフィスでISO27001認証。"
+  }
+ ],
+ "mutsu": [],
+ "tsugaru": [],
+ "hirakawa": [],
+ "hiranai": [],
+ "imabetsu": [],
+ "sotogahama": [],
+ "ajigasawa": [],
+ "fukaura": [],
+ "fujisaki": [],
+ "owani": [],
+ "itayanagi": [],
+ "tsuruta": [],
+ "nakadomari": [],
+ "noheji": [],
+ "shichinohe": [],
+ "rokunohe": [],
+ "yokohama-town": [],
+ "tohoku": [],
+ "oirase": [
+  {
+   "name": "株式会社エス・ティー・シックス",
+   "hq": "青森県上北郡おいらせ町緑ヶ丘一丁目50番地2092",
+   "municipality": "おいらせ町",
+   "town": "緑ヶ丘",
+   "employees": null,
+   "capital": {
+    "value": "5,000万円",
+    "source": "https://st6.co.jp/company-2/"
+   },
+   "founded": 1994,
+   "business_summary": "プロジェクト情報共有パッケージ製品（エンタープライズ向け）の提供とソリューション提案、オンラインサポート",
+   "ai_initiative": null,
+   "url": "https://st6.co.jp/",
+   "size_basis": "capital",
+   "checked": "2026-10-17",
+   "notes": "株式会社ウェッブアイ（本社 東京都江東区）の100%子会社。2011年3月に東京都江東区から本店をおいらせ町へ移転し、県・町と企業誘致の基本協定。**東京事務所（江東区有明、ウェッブアイ内）**あり。従業員数の記載なし。"
+  },
+  {
+   "name": "オフィスカナン株式会社",
+   "hq": "青森県上北郡おいらせ町青葉3-50-79 H233L",
+   "municipality": "おいらせ町",
+   "town": "青葉",
+   "employees": null,
+   "capital": {
+    "value": "127万円",
+    "source": "https://office-canaan.com/"
+   },
+   "founded": 2017,
+   "business_summary": "Web事業（Webサイト・動画制作、Web広告などのコンサルティング）、飲食サポート事業、人材支援事業",
+   "ai_initiative": null,
+   "url": "https://office-canaan.com/",
+   "size_basis": "capital",
+   "checked": "2026-10-17",
+   "notes": "県のガイドの住所は若葉5丁目（公式は青葉3丁目）。県のガイド登録値2名。小規模。"
+  }
+ ],
+ "oma": [],
+ "sannohe": [],
+ "gonohe": [],
+ "takko": [],
+ "nanbu": [],
+ "hashikami": [],
+ "yomogita": [],
+ "nishimeya": [],
+ "inakadate": [],
+ "rokkasho": [],
+ "higashidori": [],
+ "kazamaura": [],
+ "sai": [],
+ "shingo": [],
+ "_reference": {
+  "aomori-city": {
+   "next_candidates": [
+    {
+     "name": "株式会社DYNAMO",
+     "employees": "公式に記載なし",
+     "capital": "1,200万円",
+     "note": "全国のカーディーラー向け業務システム（Webアプリ）の開発・提供、WEBサイト制作。本社 青森市浜田1-7-6、R&D Lab 青森市古川。2003年設立。",
+     "source": "https://www.dynamo7.jp/"
+    },
+    {
+     "name": "青森ヒューマンシステム株式会社",
+     "employees": "公式に記載なし（『従業員は全て青森県内出身者』）",
+     "capital": "公式に記載なし",
+     "note": "ソフトウエア開発。青森市第二問屋町4-11-18 ソフトアカデミービル4F。1999年設立。",
+     "source": "https://www.ahs.aomori.jp/company.html"
+    },
+    {
+     "name": "株式会社サイバープロジェクト",
+     "employees": "公式に記載なし",
+     "capital": "800万円（平成30年3月31日現在）",
+     "note": "Web・システムインテグレーション、eコマース、IT・工業製品販売。IoT・AIセンシング（画像・映像・音響解析）、農業ドローンの研究開発。青森市浪館前田二丁目4番15号。2009年設立。",
+     "source": "https://www.cyberproject.co.jp/"
+    },
+    {
+     "name": "有限会社ＡＸＩＳ",
+     "employees": "公式に記載なし",
+     "capital": "500万円",
+     "note": "コンピュータソフトウェア受託開発、労働者派遣。青森市浜田2丁目8-5（WebFetchはHTTPSで接続拒否、HTTPで取得）。",
+     "source": "http://www.aomori-axis.com/"
+    },
+    {
+     "name": "株式会社ワールドコミュニケーションズ",
+     "employees": "公式に記載なし（県のガイド登録値9名）",
+     "capital": "1,000万円",
+     "note": "業務アプリ（販売管理等）、Web制作・Webアプリ、ECサイト。青森市勝田1-19-4。1996年設立。",
+     "source": "https://www.world-com.jp/"
+    },
+    {
+     "name": "株式会社ラボテック",
+     "employees": "公式に記載なし",
+     "capital": "800万円",
+     "note": "ソフトウェア開発、ハードウェア導入、建築デザイン。青森市千刈1丁目21-22 2F。",
+     "source": "https://lab-tech.co.jp/"
+    },
+    {
+     "name": "有限会社ちよやシステムサービス",
+     "employees": "公式に記載なし",
+     "capital": "300万円",
+     "note": "コンピュータシステムの企画・開発・運用・保守、ネットワーク設計・施工。青森市古舘1丁目5-34。",
+     "source": "https://www.chsing.net/"
+    },
+    {
+     "name": "ソリッドアドバンス株式会社",
+     "employees": "30名（パート・契約社員含む、時点なし）",
+     "capital": "1億2,165万円（資本準備金5,000万円含む、2016年11月時点）",
+     "note": "CRMパッケージ『All Gather CRM』、ネットワークインフラ。公式の所在地欄は東京オフィス（中央区京橋）と青森オフィス（青森市橋本）を並記し『本社』の表記がない。法人番号の所在地は青森市橋本。本社の扱いは要確認のため次点。",
+     "source": "https://www.solid-adv.co.jp/about-us/our-company/"
+    },
+    {
+     "name": "株式会社シンク",
+     "employees": "公式に記載なし（県のガイド登録値23名）",
+     "capital": "公式で未確認",
+     "note": "三菱電機・富士通の代理店として情報処理機器の販売が主体（県のガイド）。青森市中央1丁目23-4 ダイヤビル。",
+     "source": "https://sinc.jp/"
+    },
+    {
+     "name": "株式会社アシスト",
+     "employees": "公式に記載なし",
+     "capital": "1,000万円",
+     "note": "ITソリューション（インターネット関連）と通信機器販売。公式の所在地は青森市中央1丁目24-4（houjin.goo は浜田）。",
+     "source": "https://www.asisuto.co.jp/"
+    },
+    {
+     "name": "有限会社東日本コンピュータ",
+     "employees": "公式に記載なし",
+     "capital": "公式で未確認",
+     "note": "建築・設備・電気・土木のハードウェア・ソフトウェアの販売・サポート。青森市勝田1丁目17-21。開発は主でない。",
+     "source": "https://higasi.jp/"
+    }
+   ],
+   "needs_manual_check": [
+    {
+     "name": "株式会社エスアイシー",
+     "note": "県のガイドではホームページ制作・CMS構築、7名。公式の会社概要で規模を取れなかった。青森市大字四ッ石字里見20-8。",
+     "source": "http://www.sica.co.jp/"
+    },
+    {
+     "name": "Wanonz（ウェブデザイン工房）",
+     "note": "Web制作。公式の所在地は『青森県青森市』まで。法人格を確認できない。",
+     "source": "https://www.wanonz.com/"
+    }
+   ],
+   "excluded": [
+    {
+     "name": "株式会社ネットワークス",
+     "reason": "houjin.goo のURL先は新潟県長岡市の運送会社で、青森市の法人と一致しない"
+    },
+    {
+     "name": "株式会社ゲイターズ",
+     "reason": "投資用自動売買ソフトと投資教育。受託開発ではない"
+    },
+    {
+     "name": "株式会社ネクシス",
+     "reason": "通信機器・防犯設備の販売・施工が主"
+    },
+    {
+     "name": "有限会社ソフトパレード",
+     "reason": "パソコン出張修理・中古品販売が主"
+    },
+    {
+     "name": "ワタナベサービス株式会社",
+     "reason": "印刷業が基本（県のガイド）"
+    },
+    {
+     "name": "株式会社みちのく計画",
+     "reason": "測量・ドローン空撮"
+    },
+    {
+     "name": "株式会社ソフトアカデミーあおもり",
+     "reason": "研修・職業訓練が主"
+    },
+    {
+     "name": "株式会社グローバルワイズ",
+     "reason": "本社 名古屋市（県のガイドの登録住所）"
+    },
+    {
+     "name": "株式会社アイシーエス",
+     "reason": "本社 岩手県盛岡市（県のガイド）"
+    },
+    {
+     "name": "ブレイン株式会社",
+     "reason": "本社 東京都港区（県のガイド）"
+    },
+    {
+     "name": "テクバン、リコージャパン、NTTドコモビジネスソリューションズ等",
+     "reason": "県外本社の青森事業所・支社"
+    }
+   ],
+   "not_checked": [
+    "青い森データソリューション株式会社（公式の会社概要に資本金1,000万円のみ）",
+    "株式会社エヌアンドエストラスト（公式で情報を取れず）",
+    "キタヤマコンピュータシステム株式会社（公式サイトの取得に失敗）",
+    "有限会社オープンワークス（会社概要を取れず）",
+    "有限会社メディアネット・有限会社工藤通信青森・株式会社イー・アンド・シー・有限会社ビレッジアップシステム・株式会社シーエーピーシステム（houjin.goo に公式URLなし）"
+   ]
+  },
+  "hachinohe": {
+   "next_candidates": [
+    {
+     "name": "株式会社CSコム",
+     "employees": "公式に記載なし（県のガイド登録値11名）",
+     "capital": "1,000万円",
+     "note": "製造業・医療分野のシステム開発、ハードウェア制御（県のガイド）。八戸市大字番町3番地 NCビル6F。2010年設立。",
+     "source": "http://www.cscom-corp.co.jp/"
+    },
+    {
+     "name": "有限会社ソフトクック",
+     "employees": "公式に記載なし（県のガイド登録値5名）",
+     "capital": "公式で未確認",
+     "note": "基幹業務クラウドシステム開発、電子請求書発行システム。八戸市八太郎一丁目1番8号。平成元年設立。",
+     "source": "http://www.softcook.net/"
+    },
+    {
+     "name": "有限会社エヌティエス",
+     "employees": "4名（時点なし）",
+     "capital": "公式で未確認",
+     "note": "企業内・院内のコンピュータネットワーク構築・運用・保守。開発は主でない。八戸市小中野三丁目24-19。",
+     "source": "https://www.nts-ltd.co.jp/"
+    },
+    {
+     "name": "株式会社コネクトグローカル",
+     "employees": "5名（令和5年7月1日現在）",
+     "capital": "300万円",
+     "note": "ITコンサルティング、ITソリューション。八戸市石堂一丁目30-14。2020年設立。",
+     "source": "https://www.c-glocal.com/"
+    },
+    {
+     "name": "株式会社テクノル",
+     "employees": "233名（2026年3月31日現在、パート含む）",
+     "capital": "2,000万円",
+     "note": "富士フイルムBI製複合機・プリンターの販売・保守、PC・サーバー販売、ネットワーク構築。OA機器販売が主のため次点。吉田産業70%出資。八戸市廿三日町2 YSビル3F。",
+     "source": "https://www.technol.co.jp/"
+    },
+    {
+     "name": "株式会社ハイネット",
+     "employees": "公式に記載なし",
+     "capital": "公式で未確認",
+     "note": "インターネットサービスプロバイダ、レンタルサーバー、ネットショップ・ホームページ制作。八戸市城下4-12-13。",
+     "source": "https://www.hi-net.ne.jp/"
+    },
+    {
+     "name": "有限会社オラネット",
+     "employees": "公式で未確認（県のガイド登録値10名）",
+     "capital": "公式で未確認",
+     "note": "ホームページ制作専門。八戸市北白山台5丁目2-5 東奥日報社八戸ビル3F。",
+     "source": "https://www.oranet.jp/"
+    },
+    {
+     "name": "株式会社スタジオエムディ",
+     "employees": "公式で未確認（県のガイド登録値2名）",
+     "capital": "公式で未確認",
+     "note": "ホームページの企画・制作・運営、ネットショップ運営。2026年7月1日から八戸市番町22-1 番町NDビル。",
+     "source": "http://studiomd.jp/"
+    },
+    {
+     "name": "株式会社スマーティ",
+     "employees": "公式に記載なし",
+     "capital": "公式に記載なし",
+     "note": "八戸市下長4丁目19-3。公式の会社概要は代表者・所在地のみで事業内容を十分に確認できない。",
+     "source": "https://smarty.co.jp/"
+    }
+   ],
+   "needs_manual_check": [
+    {
+     "name": "株式会社サンライズ・エー・イー",
+     "note": "ICTを使ったシステム・ソフトウェア開発、ロボット・AI技術（houjin.goo・県のガイド）。県のガイド登録値35名。公式サイト（sae.co.jp）は403で開けず。県のガイドの住所は八戸市北白山台二丁目8番35号（houjin.goo は新井田）。",
+     "source": "https://www.sae.co.jp/"
+    },
+    {
+     "name": "データトラン有限会社・有限会社TAC-SYSTEM・株式会社ソフトステート・株式会社エーアイシステム",
+     "note": "houjin.goo で八戸市のIT業界。公式サイトの取得に失敗（会社概要を確認できず）。エーアイシステムは『事務系から制御系までのソフトハウス』（houjin.goo の紹介文）。"
+    },
+    {
+     "name": "株式会社群青企画",
+     "note": "公式サイトにソフトウェア開発と事業の検証の記載（顧客の見守りシステムでAI活用の声）。会社概要（規模）を取れなかった。八戸市一番町。",
+     "source": "https://www.gunjou.co.jp/"
+    }
+   ],
+   "excluded": [
+    {
+     "name": "株式会社アイティークレスト",
+     "reason": "2025年10月1日に株式会社共同物流サービスと機能統合し、同社のアイティークレスト事業部になった（公式 hoc-cnet.co.jp）"
+    },
+    {
+     "name": "三八五流通計算センター株式会社",
+     "reason": "三八五グループ（物流）の会社。公式URLはグループサイト"
+    },
+    {
+     "name": "株式会社アットマーク",
+     "reason": "auショップ・住宅相談窓口の運営"
+    },
+    {
+     "name": "株式会社フォリウム",
+     "reason": "本社 東京都港区（県のガイド）"
+    },
+    {
+     "name": "株式会社ソフテック 八戸事業所",
+     "reason": "本社 東京都新宿区（県のガイド）。高知県のソフテックとは別会社"
+    },
+    {
+     "name": "株式会社ぴーぷる 八戸工業大学内オフィス",
+     "reason": "本社 東京都台東区"
+    },
+    {
+     "name": "株式会社興和・ITH合同会社・有限会社サウンドクリエイト",
+     "reason": "測量・ドローン・映像制作が主"
+    }
+   ]
+  },
+  "hirosaki": {
+   "next_candidates": [
+    {
+     "name": "株式会社ブルーマウステクノロジー",
+     "employees": "公式に記載なし（県のガイド登録値4名）",
+     "capital": "公式で未確認",
+     "note": "IoT・クラウドによる電力消費量の見える化『OZUpad』、デマンド計測。弘前市早稲田二丁目3番地18（県のガイドは城東3-13-55）。2002年設立。",
+     "source": "http://ozupad.com/"
+    },
+    {
+     "name": "モバイルシステム株式会社",
+     "employees": "公式に記載なし",
+     "capital": "公式に記載なし",
+     "note": "Webデザイン・情報発信（houjin.goo の紹介文）。弘前市大字南大町1-7-5。",
+     "source": "http://www.mobile-system.info/"
+    },
+    {
+     "name": "有限会社津軽サイバーメディア",
+     "employees": "県のガイド登録値1名",
+     "capital": "県のガイド登録値300万円",
+     "note": "ECサイト・法人向けWebサイトの構築・保守。弘前市大字桔梗野1丁目6番地9。小規模。",
+     "source": "http://sakura.tsugaru.com/tcm/"
+    }
+   ],
+   "needs_manual_check": [
+    {
+     "name": "株式会社ジェイエスイー",
+     "note": "医療・運輸・LPガス・土地改良区・農業・通販・製造業向けのオーダーメイドシステム、顔認証入退室製品（公式トップ）。会社概要（所在地・規模）を公式で取れなかった。県のガイドでは弘前市堅田1-5-1、9名、資本金1,000万円。",
+     "source": "https://www.jsenet.co.jp/"
+    },
+    {
+     "name": "株式会社ウェバランス",
+     "note": "弘前市駅前町9-20 ヒロロ5F（houjin.goo）。公式サイト www.webalance.co.jp は名前解決できず。"
+    },
+    {
+     "name": "日本アイワシステム株式会社",
+     "note": "アイミツの弘前市のシステム開発会社一覧に掲載（弘前市城東北1丁目9-12）。公式サイト未確認。"
+    }
+   ],
+   "excluded": [
+    {
+     "name": "株式会社ストラテジーテック・コンサルティング",
+     "reason": "本社 東京都中央区。弘前はデジタルイノベーションセンター"
+    },
+    {
+     "name": "ミル株式会社",
+     "reason": "EC運営・広告"
+    },
+    {
+     "name": "株式会社東北データーサービス",
+     "reason": "PC製作・保守とイベント運営"
+    },
+    {
+     "name": "パソコンITシステム",
+     "reason": "個人事業（Jimdoのサイト）"
+    },
+    {
+     "name": "有限会社アインス・ナノズ株式会社・有限会社北都無線・株式会社五鈷鈴・有限会社ファミリー通信",
+     "reason": "houjin.goo に公式URLなし。未確認"
+    }
+   ]
+  },
+  "kuroishi": {
+   "note": "本社の会社を公式で確認できなかった。有限会社グローシステムサービス（houjin.goo の所在地 黒石市大字黒石字建石。公式は『青森を拠点とするソフトウェア開発会社』とあるが所在地・規模の記載を取れず）、ラビットソフト開発（県のガイドでは黒石市道北町21、1名の個人事業。公式サイト取得失敗）は要手動確認。ラム・システム株式会社（オフィス機器販売）と岩木山ラジコン空港株式会社（ドローンスクール）は対象外。"
+  },
+  "goshogawara": {
+   "note": "株式会社M＆Co.（Webサイト制作・業務システム開発・アプリ開発を公式で確認。所在地は公式で取れず、県のガイドでは五所川原市幾世森147・5名・資本金1,500万円）は要手動確認。デジタルビュア株式会社（五所川原市字一ツ谷、公式サイトは証明書エラーで開けず）は未確認。"
+  },
+  "towada": {
+   "note": "本社の会社を公式の会社概要で確認できなかった。有限会社エムディ（土木・建築・測量・設備業向けソフトの開発・販売、電子小黒板付カメラアプリ。十和田市元町西五丁目16-16。公式サイトは証明書エラーで開けず。県のガイド登録値6名）、株式会社ビーコーズ（十和田市西三番町1-24のウェブ制作会社。公式はJavaScript描画で会社概要を読めず。県のガイド登録値3名）は要手動確認。株式会社メカネットワーク（本社 十和田市三本木字一本木沢75-5、電気通信事業・コンサルティング）は開発会社ではないため対象外。"
+  },
+  "misawa": {
+   "note": "リバースコンサルティング株式会社（統計・データ分析の教育・コンサルティング、三沢市大町2-4-7 三沢シェアオフィスBlue。公式サイト取得失敗）は未確認。有限会社ヒーローネットは houjin.goo に公式URLなし。"
+  },
+  "mutsu": {
+   "note": "株式会社ノースブレーブ（むつ市柳町、houjin.goo の紹介文ではソフトウェア開発・ホームページ作成・サーバホスティング）は公式サイトが古いSSLで開けず要手動確認。株式会社レイト（むつ市大湊新町）は公式サイト取得失敗。有限会社C’sファクトリー（むつ市大平町48-6、従業員6人、公式）はパソコン販売・修理・操作指導・ドローン空撮で開発会社ではないため対象外。サン・コンピュータ（八戸市）のむつ事業所がある。"
+  },
+  "rokkasho": {
+   "note": "青森レコードマネジメントサービス株式会社（本社 六ヶ所村大字尾駮字野附1-38、社員98名＝2026年3月1日現在、資本金2,000万円、日本レコードマネジメント100%出資）は文書・記録情報管理の会社で、システム開発会社ではないため対象外。株式会社NESI（六ヶ所村の事務所、本社は茨城県ひたちなか市）は県外本社のため対象外。"
+  },
+  "noheji": {
+   "note": "ハイブリッドシステム株式会社（野辺地町野辺地26-1 NTTビル3階の事務所、本社は新潟県長岡市＝県のガイド）は県外本社のため対象外。"
+  },
+  "hashikami": {
+   "note": "有限会社ビジネスエンパワーズ（法人番号の所在地は階上町）は公式サイトの本社表記が東京都台東区のため対象外。"
+  },
+  "rokunohe": {
+   "note": "セコニック株式会社 青森支店（六戸町金矢、本社は福島市）は県外本社のため対象外。"
+  },
+  "tsuruta": {
+   "note": "エイチピースタイリング（鶴田町鶴田相原、県のガイド登録値1名）はWebコンサルティング・アクセシビリティ支援・生成AI活用支援・障害者向けICT講習を公式で確認したが、法人格を確認できない（個人事業の可能性）。生成AIの研修講師（板柳町社会福祉協議会、青森県社会福祉士会西北支部など）の実績を公式に掲載。"
+  },
+  "ajigasawa": {
+   "note": "みんなでIT（鯵ヶ沢町、県のガイド登録値1名）は個人のパソコン講習講師で法人ではないため対象外。"
+  }
+ },
+ "_notes": [
+  "県のIT関連企業ガイド（イノベーション・ネットワークあおもり）の従業員数は各社の登録値で時点がない。公式と違う例: 青森電子計算センター ガイド312名→公式299名（令和8年7月末）、リンクステーション ガイド127名→公式247名（2025年12月、採用ページ）、ジーアイテック ガイド28名→公式13名（2026年7月）、テラソリューション ガイド22名→公式31名。記事では公式サイトの値だけを使う。",
+  "東京にも拠点を持つ県内本社の会社: 青森電子計算センター（東京支店）、リンクステーション（東京オフィス）、ページワン（東京支社）、ハートソリューションズ（東京営業所）、サン・コンピュータ（関東事業所＝千代田区）、マルマンコンピュータサービス（東京支店）、エムシーエス（東京支店）、エス・ティー・シックス（東京事務所、親会社ウェッブアイが東京本社）。サクサシステムエンジニアリングは東京の上場会社サクサの子会社、エムシーエスはCEホールディングス（東証上場）の51%子会社、ライトカフェU.は親会社ライトカフェの子会社。",
+  "AIを公式に明記している会社: ジーアイテック（八戸市、生成AI導入支援・AIエージェント開発）、サン・コンピュータ（八戸市、生成AIソリューション）、ページワン（青森市、Vitamin AI等の生成AIソリューション・Azure OpenAI導入支援）、ヘプタゴン（三沢市、生成AI社内文書検索・GenU）、パッション（弘前市、Apple×AI）、リンクステーション（青森市、グループにLink AI Strategy・Monitly.AI）、青森共同計算センター（青森市、生成AI活用セミナー）、ワイエスケイ情報システム（青森市、卸売市場のAI活用セミナー）、サンライズ（八戸市、AI関連開発）、サイバープロジェクト（青森市、次点、AIセンシング研究）。",
+  "本社の会社が公式で確認できた市町村は、青森市・八戸市・弘前市・五所川原市・三沢市・おいらせ町の6市町だけ。黒石市・十和田市・むつ市は候補があるが公式で確認できず（_reference）。つがる市・平川市と、おいらせ町以外の町村（31町村）は該当なし。",
+  "houjin.goo の所在地が旧住所の例: 吉田システム（houjin.goo 廿三日町→公式 北インター工業団地）、アイティコワーク（是川→江陽）、アシスト（浜田→中央）。"
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "_meta": {
+  "checked": "2026-11-13",
+  "scope": "日高振興局の7町と檜山振興局の7町。本社（公式サイトの本社・所在地）が当該町にあり、公式サイトでシステム開発・ソフトウェア開発・Web開発・情報処理サービスを事業として明示する法人。段階1〜釧路・根室と同じく、本表には『公式サイトで本社所在地と従業員数（時点つき）の両方を確認できた会社』だけを入れた。",
+  "candidate_sources": [
+   "一般社団法人北海道IT推進協会（HICTA）の会員名簿 https://www.hicta.or.jp/profile/memberlist/ （2026-11-12 に十勝の担当が取得したものを再利用）。14町の住所の会員は0件",
+   "PR TIMES の市町村別の一覧（14町）・キーワード検索、北海道新聞の町別のタグの見出し（約4,550本）",
+   "WebSearch（companies 2回）"
+  ],
+  "columns": "name / hq（公式の本社住所）/ municipality / town / employees{value,as_of,source} / capital / founded / business_summary / ai_initiative / url / size_basis / checked / notes"
+ },
+ "hidaka-town": [],
+ "biratori": [],
+ "niikappu": [],
+ "urakawa": [],
+ "samani": [],
+ "erimo": [],
+ "shinhidaka": [],
+ "esashi-hiyama": [],
+ "kaminokuni": [],
+ "assabu": [],
+ "otobe": [],
+ "okushiri": [],
+ "imakane": [],
+ "setana": [],
+ "_reference": {
+  "niikappu": {
+   "excluded": [
+    {
+     "name": "一般社団法人ナンモダ",
+     "reason": "本社 新冠町。野菜直売所の運営団体で、サインポスト（東京）の AI レジを導入した側（2020-04-04 の発表）。開発会社ではない"
+    }
+   ]
+  },
+  "urakawa": {
+   "excluded": [
+    {
+     "name": "有限会社神馬建設",
+     "reason": "建設業（浦河町向が丘西）"
+    },
+    {
+     "name": "SWAT Mobility Japan株式会社・株式会社ゴンドラ・株式会社Gaika",
+     "reason": "町の AI 交通・DX 協定・採用広報の提供側。本社 東京"
+    }
+   ]
+  },
+  "hidaka-town": {
+   "excluded": [
+    {
+     "name": "株式会社駅探・株式会社未来シェア",
+     "reason": "町の AI デマンドバス『すこバス』の提供側。本社 東京・函館市"
+    }
+   ]
+  },
+  "erimo": {
+   "excluded": [
+    {
+     "name": "株式会社FoundingBase",
+     "reason": "百人浜オートキャンプ場の運営受託と無人受付システムの実証。本社 東京都世田谷区"
+    }
+   ]
+  },
+  "biratori": {
+   "excluded": [
+    {
+     "name": "プレイネクストラボ株式会社",
+     "reason": "町の LINE 公式アカウントの提供側。本社 東京都品川区"
+    },
+    {
+     "name": "WFPダチョウファーム",
+     "reason": "農業法人（AI を使う側）。開発会社ではない"
+    }
+   ]
+  },
+  "assabu": {
+   "excluded": [
+    {
+     "name": "株式会社キッチハイク",
+     "hq": "〒043-1104 北海道檜山郡厚沢部町上里９２ 移住交流センター内（2025-11-14 に東京都台東区から移転。会社の PR TIMES の発表 000000251.000006899、2025-10-21）",
+     "reason": "保育園留学・食とブランドプロデュースの『ブランドプロデュース＆プラットフォームカンパニー』で、受託開発の会社ではない。公式サイト kitchhike.com は国外からの接続を拒否（403）で、本社表記・従業員数を公式で確かめられなかった"
+    }
+   ]
+  },
+  "kaminokuni": {
+   "excluded": [
+    {
+     "name": "電源開発株式会社（Ｊパワー）",
+     "reason": "上ノ国データセンター（仮称）の事業者。大企業・本社 東京"
+    },
+    {
+     "name": "株式会社NTTドコモ・CROSS Business Producers株式会社",
+     "reason": "町の実証・地域活性化起業人の派遣元。本社 東京"
+    },
+    {
+     "name": "一般社団法人e-NaKa",
+     "reason": "カミGO! の運行事業者（町のページ）。開発会社ではない"
+    }
+   ]
+  },
+  "otobe": {
+   "excluded": [
+    {
+     "name": "株式会社バカン",
+     "reason": "避難所受付の実証の提供側。本社 東京"
+    }
+   ]
+  }
+ },
+ "_notes": [
+  "本表は14町とも0社。次点・未確認も0。本表が空の町は『会社がない』ではなく『確かめられなかった』",
+  "商工会・商工会議所の会員名簿、町の入札参加資格者名簿、法人番号公表サイトは見ていない",
+  "法人番号での照合はしていない",
+  "WebSearch は companies に2回。確認日 2026-11-13"
+ ]
+}

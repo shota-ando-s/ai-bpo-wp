@@ -1,0 +1,281 @@
+.hikitsugi-shindan {
+	--hs-accent: #1f5fbf;
+	--hs-green: #1a7f4b;
+	--hs-border: #d9dee6;
+	--hs-bg: #f6f8fb;
+	--hs-muted: #5b6573;
+	margin: 2em 0;
+}
+
+.hs-form fieldset {
+	border: 1px solid var(--hs-border);
+	border-radius: 8px;
+	padding: 1em 1.2em;
+	margin: 0 0 1em;
+	min-width: 0;
+}
+
+.hs-form legend {
+	font-weight: 700;
+	padding: 0 .4em;
+}
+
+.hs-row {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr));
+	gap: .8em;
+}
+
+.hs-row[hidden] {
+	display: none;
+}
+
+.hs-form label {
+	display: flex;
+	flex-direction: column;
+	gap: .3em;
+	font-size: .95em;
+}
+
+.hs-form select,
+.hs-form input[type="number"] {
+	box-sizing: border-box;
+	width: 100%;
+	min-width: 0;
+	padding: .5em;
+	border: 1px solid var(--hs-border);
+	border-radius: 6px;
+	font-size: 1em;
+}
+
+.hs-radios {
+	display: flex;
+	flex-wrap: wrap;
+	gap: .6em 1.4em;
+}
+
+.hs-radios label {
+	flex-direction: row;
+	align-items: center;
+}
+
+.hs-hint,
+.hs-note,
+.hs-legend {
+	color: var(--hs-muted);
+	font-size: .85em;
+}
+
+.hs-button {
+	display: inline-block;
+	background: var(--hs-accent);
+	color: #fff !important;
+	border: 0;
+	border-radius: 6px;
+	padding: .8em 1.6em;
+	font-size: 1em;
+	font-weight: 700;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.hs-button:hover {
+	opacity: .9;
+}
+
+.hs-result {
+	margin-top: 2em;
+	scroll-margin-top: 80px;
+}
+
+.hs-summary strong {
+	color: var(--hs-accent);
+}
+
+.hs-callout {
+	background: var(--hs-bg);
+	border-left: 4px solid var(--hs-accent);
+	padding: .8em 1em;
+}
+
+.hs-warn {
+	border-left-color: #c47a00;
+}
+
+.hs-plan {
+	border: 2px solid var(--hs-accent);
+	border-radius: 10px;
+	padding: 1em 1.2em;
+	margin: 1.2em 0;
+}
+
+.hs-plan h3 {
+	margin-top: 0;
+}
+
+.hs-plan-figures {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
+	gap: .8em;
+	margin-bottom: .8em;
+}
+
+.hs-plan-figures div {
+	background: var(--hs-bg);
+	border-radius: 8px;
+	padding: .6em .8em;
+	display: flex;
+	flex-direction: column;
+}
+
+.hs-plan-figures span {
+	font-size: .85em;
+	color: var(--hs-muted);
+}
+
+.hs-plan-figures strong {
+	font-size: 1.3em;
+}
+
+.hs-plan-figures .hs-big {
+	font-size: 1.6em;
+	color: var(--hs-accent);
+}
+
+.hs-green {
+	color: var(--hs-green);
+}
+
+.hs-plan-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: .95em;
+}
+
+.hs-plan-table td {
+	border-top: 1px solid var(--hs-border);
+	padding: .4em 0;
+}
+
+.hs-plan-table td:last-child {
+	text-align: right;
+	white-space: nowrap;
+	font-weight: 700;
+}
+
+.hs-org {
+	display: block;
+	color: var(--hs-muted);
+	font-size: .85em;
+}
+
+.hs-group {
+	margin-top: 1.6em;
+}
+
+.hs-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
+	gap: 1em;
+}
+
+.hs-card {
+	border: 1px solid var(--hs-border);
+	border-radius: 8px;
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	gap: .5em;
+}
+
+.hs-card-head {
+	display: flex;
+	gap: .6em;
+	align-items: flex-start;
+}
+
+.hs-card h4 {
+	margin: 0;
+	font-size: 1em;
+	line-height: 1.4;
+}
+
+.hs-rating {
+	flex: none;
+	width: 1.8em;
+	height: 1.8em;
+	border-radius: 50%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+	color: #fff;
+}
+
+.hs-rating-a {
+	background: var(--hs-green);
+}
+
+.hs-rating-b {
+	background: var(--hs-accent);
+}
+
+.hs-rating-c {
+	background: #8a94a3;
+}
+
+.hs-dl {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: .2em .8em;
+	margin: 0;
+	font-size: .88em;
+}
+
+.hs-dl dt {
+	color: var(--hs-muted);
+	white-space: nowrap;
+}
+
+.hs-dl dd {
+	margin: 0;
+}
+
+.hs-card-amount strong {
+	color: var(--hs-green);
+	font-size: 1.15em;
+}
+
+.hs-muted {
+	color: var(--hs-muted);
+	font-size: .88em;
+}
+
+.hs-fuenn {
+	background: #eef4ff;
+	border-radius: 6px;
+	padding: .5em .7em;
+	font-size: .88em;
+	margin: 0;
+}
+
+.hs-card .hs-note {
+	margin: 0;
+}
+
+.hs-card-foot {
+	margin-top: auto;
+	display: flex;
+	justify-content: space-between;
+	gap: .5em;
+	font-size: .82em;
+	color: var(--hs-muted);
+}
+
+.hs-cta {
+	background: var(--hs-bg);
+	border-radius: 10px;
+	padding: 1.2em;
+	text-align: center;
+	margin-top: 2em;
+}

@@ -1,0 +1,555 @@
+{
+ "_meta": {
+  "checked": "2026-11-06",
+  "scope": "石狩振興局の8市町村（札幌市・江別市・千歳市・恵庭市・北広島市・石狩市・当別町・新篠津村）と道のページ用の道内の業界団体。本社（公式サイトの本社・本社所在地）が当該市町村にあり、公式サイトでシステム開発・ソフトウェア開発・情報処理サービスを事業として明示する法人。福島以降の基準どおり、本表には『公式サイトで本社所在地と従業員数（時点つき）の両方を確認できた会社』だけを入れた。札幌市は公式の従業員数の多い順に8社、9位以下の確認済みは _reference.sapporo.next_candidates。道外本社の会社の道内拠点は _reference._outside_hq。2本社制の会社は notes に書いた。",
+  "candidate_sources": [
+   "**一般社団法人北海道IT推進協会（HICTA）の会員名簿** https://www.hicta.or.jp/profile/memberlist/ （2026-11-06 取得、住所つき192件）。依頼の『北海道IT推進協会』はこの団体（名前は協会のサイトのタイトル・沿革、北洋システム開発・エコモット・HBA の会社概要の加盟団体の欄で確認）",
+   "札幌市イノベーション推進コンソーシアム会員一覧（26年10月16日時点）https://www.city.sapporo.jp/keizai/top/topics/it/documents/20261016_list.pdf （住所なし。インフィニットループはここで拾った）",
+   "求人サイト paiza（千歳市の候補）・compalyze（江別市の候補）: secondary。手がかりだけ",
+   "WebSearch（担当上限20回のうち15回。companies 7回・serp 8回）"
+  ],
+  "columns": "name / hq（公式の本社住所）/ municipality / town / employees{value,as_of,source} / capital / founded / business_summary / ai_initiative / url / size_basis / checked / notes",
+  "industry_stats": {
+   "source": "stats.md（stats 担当。令和3年経済センサス‐活動調査、2021年6月1日）を参照。本担当は取り直していない",
+   "sapporo": "情報通信業 1,690所・36,201人（道の情報通信業44,321人の81.7%）、うち情報サービス業 1,054所・23,267人（道27,528人の84.5%）。中央区だけで情報サービス業 622所・15,901人（stats.md）",
+   "ishikari": "情報サービス業 6所・14人（stats.md）",
+   "others": "江別市・千歳市・恵庭市・北広島市・当別町・新篠津村の情報通信業の値は stats.md に書かれていない（必要なら stats 担当に頼む）"
+  }
+ },
+ "sapporo": [
+  {
+   "name": "株式会社HBA",
+   "hq": "北海道札幌市中央区北4条西7丁目1番地8（本社所在地）",
+   "municipality": "札幌市",
+   "town": "中央区北4条西",
+   "employees": {
+    "value": 843,
+    "as_of": "843名（2026年4月1日現在）",
+    "source": "https://www.hba.co.jp/corporate/outline/"
+   },
+   "capital": {
+    "value": "3億24百万円",
+    "source": "https://www.hba.co.jp/corporate/outline/"
+   },
+   "founded": 1964,
+   "business_summary": "1964年4月16日設立。売上高278億円（2025年度実績）。システムインテグレーション、クラウドサービス、ソフトウェア開発、アウトソーシングサービス。関連企業 データー・プロダクト、CS、エイチシーエム、HBA(Thailand)",
+   "ai_initiative": "トップページの製品・サービスに『課題・目的：AI・ロボット・XR』の分類で『HBA AI ECOSYSTEM』『CHAT GEAR』『映像AIソリューション』『HSR 屋外作業支援ロボットソリューション』https://www.hba.co.jp/ 。導入先・効果の数値は見ていない",
+   "url": "https://www.hba.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "会社概要の所属団体に『NEC情報サービス事業グループ』（資本関係ではない。株主は会社概要に書かれていない）・JISA・北海道IT推進協会（会社概要の表記は『社団法人北海道IT推進協会』）。HICTA の会員名簿の住所は『北4条西7丁目1番地』で、会社概要の『1番地8』と枝番が違う（会社概要を採用）。他県の記事に出ない"
+  },
+  {
+   "name": "株式会社つうけんアドバンスシステムズ",
+   "hq": "北海道札幌市中央区南1条西11丁目1番地 コンチネンタルビル8階（本社 西11丁目ビル。ほかに本社 白石ビル〔白石区本通19丁目南6番8号〕）",
+   "municipality": "札幌市",
+   "town": "中央区南1条西",
+   "employees": {
+    "value": 443,
+    "as_of": "443名（2026年4月1日時点）",
+    "source": "https://www.tads.co.jp/company/profile/"
+   },
+   "capital": {
+    "value": "3億5千万円",
+    "source": "https://www.tads.co.jp/company/profile/"
+   },
+   "founded": 2001,
+   "business_summary": "2001年10月1日、つうけんのマルチメディア事業本部を分社して『情報通信技術（特にソフト開発）に特化した事業体』として設立（沿革）。売上高142億円（2025年度実績）。東京事業所あり。電気通信事業・電気通信工事業・労働者派遣の許可、ISMS・EMS・Pマーク",
+   "ai_initiative": "会社概要・トップページに AI の記載は見つからなかった",
+   "url": "https://www.tads.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "**株主 コムシス情報システム株式会社（80%）・株式会社つうけん（20%）**（会社概要）。コムシスグループ（親のつうけんは2010年にコムシスホールディングスと経営統合〔沿革〕）。『地元の独立系』とは書かない。他県の記事に出ない"
+  },
+  {
+   "name": "株式会社北海道日立システムズ",
+   "hq": "北海道札幌市中央区大通西3丁目11番地 北洋ビル9階（本社）",
+   "municipality": "札幌市",
+   "town": "中央区大通西",
+   "employees": {
+    "value": 439,
+    "as_of": "439名（2026年4月1日時点）",
+    "source": "http://www.hokkaido-hitachi-systems.co.jp/corporate_info/outline.html"
+   },
+   "capital": {
+    "value": "80百万円",
+    "source": "http://www.hokkaido-hitachi-systems.co.jp/corporate_info/outline.html"
+   },
+   "founded": 1965,
+   "business_summary": "1965年10月1日設立。システム構築、システム運用・監視・保守、ネットワークサービス、情報・通信関連機器とソフトウェアの販売・開発",
+   "ai_initiative": "トップページに『AIやIoTをはじめとする新たなテクノロジーを駆使したシステム設計・開発/構築から運用、保守』、イベント『北のITシーズフェア2026～AIとの共生～』（2026年11月5日〜6日、リアル開催）の告知 http://www.hokkaido-hitachi-systems.co.jp/ 。製品・事例は見ていない",
+   "url": "http://www.hokkaido-hitachi-systems.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "**日立グループ**（会社概要の関連会社に日立製作所・日立システムズ、サイトに『日立システムズグループ一覧』）。出資比率は会社概要に書かれていない。ページは Shift_JIS。他県の記事に出ない"
+  },
+  {
+   "name": "日鉄ソリューションズ北海道株式会社",
+   "hq": "北海道札幌市中央区北4条西5丁目1-3 日本生命北門館ビル10階（札幌本社）。**室蘭本社**（室蘭市みゆき町2丁目13-1）との2本社",
+   "municipality": "札幌市",
+   "town": "中央区北4条西",
+   "employees": {
+    "value": 338,
+    "as_of": "338名（2026年4月現在）",
+    "source": "https://www.nssol.nipponsteel.com/hokkaido/company/"
+   },
+   "capital": {
+    "value": "8,000万円",
+    "source": "https://www.nssol.nipponsteel.com/hokkaido/company/"
+   },
+   "founded": 1985,
+   "business_summary": "1985年11月25日設立（北海道ニックス）。売上高82.1億円（2026年3月末決算）。情報システムの企画・設計・開発・構築・運用・保守。室蘭・釜石の鉄鋼オフィス（日本製鉄の構内）、東京オフィス。2019年5月27日に札幌本社を開設して室蘭本社と2本社化（沿革）",
+   "ai_initiative": "会社概要に AI の記載は見つからなかった",
+   "url": "https://www.nssol.nipponsteel.com/hokkaido/",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "**日本製鉄・日鉄ソリューションズのグループ**（沿革。出資比率は会社概要に書かれていない）。**2本社（札幌・室蘭）**なので室蘭市のページ（段階2）でも候補になる。岩手の companies.md に『本社 札幌・室蘭』と一言だけ出る（詳述なし）"
+  },
+  {
+   "name": "株式会社NTTデータ北海道",
+   "hq": "北海道札幌市北区北10条西3丁目9-2 THE PLACE SAPPORO（本社所在地）",
+   "municipality": "札幌市",
+   "town": "北区北10条西",
+   "employees": {
+    "value": 315,
+    "as_of": "315名（2026年4月1日現在）",
+    "source": "https://www.nttdata-hokkaido.co.jp/company/outline.html"
+   },
+   "capital": {
+    "value": "1億円",
+    "source": "https://www.nttdata-hokkaido.co.jp/company/outline.html"
+   },
+   "founded": null,
+   "business_summary": "データ通信システムの開発・運営・保守の受託、ソフトウェア・装置の開発、電気通信事業、事務代行、労働者派遣。主な取引先は道内の企業・官庁・財団法人など、NTTデータグループ。協力会社約40社。設立年は会社概要の抜き出しで見ていない",
+   "ai_initiative": "ソリューションの一覧に『要介護認定支援AIサービス（Aitice®）』（自治体・官公庁、#AI）、自治体向けサービス NaNaTsu（#AI #OCR #RPA）https://www.nttdata-hokkaido.co.jp/ 。どちらも行政向け",
+   "url": "https://www.nttdata-hokkaido.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "**株主 株式会社NTTデータ（100%）**（会社概要）。他県の記事に出ない"
+  },
+  {
+   "name": "SCSK北海道株式会社",
+   "hq": "北海道札幌市中央区北一条西5丁目1番4 アーバンネット札幌リンクタワー9F（本社。公式の所在地のページ https://www.scsk-hokkaido.co.jp/company/access/ ）。帯広オフィスあり",
+   "municipality": "札幌市",
+   "town": "中央区北1条西",
+   "employees": {
+    "value": 227,
+    "as_of": "227名 2026（令和8）年4月現在",
+    "source": "https://www.scsk-hokkaido.co.jp/profile/"
+   },
+   "capital": {
+    "value": "1億円",
+    "source": "https://www.scsk-hokkaido.co.jp/profile/"
+   },
+   "founded": 1990,
+   "business_summary": "1990年1月8日設立登記。コンピュータ・ソフトウェアの開発・販売・賃貸、情報サービス、ハードウェアの販売。事業案内に DX支援サービス・一次産業・食と観光・流通サービス（食品製造販売業のクラウドERP、モバイルの点検ソリューション）",
+   "ai_initiative": "会社概要・トップページに AI の記載は見つからなかった",
+   "url": "https://www.scsk-hokkaido.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "**株主 SCSK株式会社**（会社概要。比率の記載なし）。情報セキュリティの認証範囲に『本社、南1条オフィス』。他県の記事に出ない"
+  },
+  {
+   "name": "北都システム株式会社",
+   "hq": "北海道札幌市厚別区厚別中央2条3丁目5番11号（本社所在地）",
+   "municipality": "札幌市",
+   "town": "厚別区厚別中央",
+   "employees": {
+    "value": 200,
+    "as_of": "200名（2025年4月1日現在）",
+    "source": "https://www.hscnet.co.jp/company/"
+   },
+   "capital": {
+    "value": "7,000万円",
+    "source": "https://www.hscnet.co.jp/company/"
+   },
+   "founded": 1994,
+   "business_summary": "1994年5月18日設立（2024年に30周年）。新横浜オフィス・大阪オフィス、関連会社 萩原北都テクノ。労働者派遣、ISO/IEC 27001、ASP・SaaS の安全・信頼性情報開示認定、電気通信事業届出",
+   "ai_initiative": "会社概要・トップページに AI の記載は見つからなかった",
+   "url": "https://www.hscnet.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "人数の時点が2025年4月1日で、ほかの7社（2026年）より1年古い。株主は会社概要に書かれていない。他県の記事に出ない"
+  },
+  {
+   "name": "株式会社デジック",
+   "hq": "北海道札幌市中央区大通西5丁目11番地 大五ビル（本社）",
+   "municipality": "札幌市",
+   "town": "中央区大通西",
+   "employees": {
+    "value": 189,
+    "as_of": "189名 / グループ連結 242名（2026年4月現在）",
+    "source": "https://www.dgic.co.jp/company/"
+   },
+   "capital": {
+    "value": "9,000万円",
+    "source": "https://www.dgic.co.jp/company/"
+   },
+   "founded": 1987,
+   "business_summary": "1987年8月 エヌシー情報処理株式会社として設立。システムインテグレーション、制御・業務アプリ・組込ソフトウェア開発、プロダクツ開発、通信システム開発、ホスティング。東京オフィス（神田）。子会社 デジックアドヴァンス。一般第二種電気通信事業者、ISMS",
+   "ai_initiative": "**トップページに『With AI 一歩先へ』『デジックはAI技術と人の力で、未来の安心を支え続けます。』、ページ名『北海道・札幌のニアショアシステム開発・AI導入支援』、事業内容に『AI・DXサポート事業』**。沿革に『2020 顔認証システムSAFR 及び RPA分野への進出』https://www.dgic.co.jp/ 。AI・DXサポート事業のページの中身・事例は開いていない",
+   "url": "https://www.dgic.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "代表者 中村 真規（会社概要）。北海道新聞の記事（2026年、検索の要約）では中村真規氏は『北海道情報システム産業協会』の会長（secondary）。株主は会社概要に書かれていない。他県の記事に出ない"
+  }
+ ],
+ "ebetsu": [],
+ "chitose": [],
+ "eniwa": [
+  {
+   "name": "株式会社ハイテックシステム",
+   "hq": "北海道恵庭市戸磯76番地22（恵庭テクノパーク）（所在地。『本社工場および倉庫』）",
+   "municipality": "恵庭市",
+   "town": "戸磯",
+   "employees": {
+    "value": 19,
+    "as_of": "社員数 19名（2022年4月1日現在）",
+    "source": "https://www.hitech-system.co.jp/company/"
+   },
+   "capital": {
+    "value": "3,600万円",
+    "source": "https://www.hitech-system.co.jp/company/"
+   },
+   "founded": 1991,
+   "business_summary": "1991年2月4日創立。計測制御システム（センサー・FA・自動制御・情報通信制御、計測制御配電盤の企画・設計・製作・据付）、マイコン応用製品の試作開発、**産業用の計測・監視・制御システムのプログラム開発**、電子回路・プリント基板。主要取引先 北海道電力・北海電気工事・北電総合設計・電源開発・ファームノート・エコモットなど。2017年12月に地域未来牽引企業に選定",
+   "ai_initiative": "会社概要に AI の記載は見つからなかった",
+   "url": "https://www.hitech-system.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "**境界の業種**: 主な事業は計測制御システムで、ソフトウェアは制御・組込みのプログラム開発。**人数の時点が2022年4月1日で古い**。本表の条件（本社と時点つきの人数）は満たすので本表に置いたが、記事で『恵庭市のシステム開発会社』と書くなら『計測制御システム・組込みソフトの会社』と書く。HICTA の会員（石狩振興局で札幌市以外の住所の会員はこの1社だけ）。山口の『ハイテックシステムズ』（下関市）とは別の会社"
+  }
+ ],
+ "kitahiroshima-city": [],
+ "ishikari": [],
+ "tobetsu": [],
+ "shinshinotsu": [],
+ "_reference": {
+  "sapporo": {
+   "next_candidates": [
+    {
+     "name": "株式会社インフィニットループ",
+     "hq": "北海道札幌市中央区北一条東四丁目1番地1 サッポロファクトリー1条館（札幌本社）",
+     "municipality": "札幌市",
+     "town": "中央区北1条東",
+     "employees": {
+      "value": 185,
+      "as_of": "人員185名（※2024年4月現在）。内訳 役員・社員153名、パート・アルバイト3名、学生アルバイト7名、その他の常駐スタッフ22名",
+      "source": "https://www.infiniteloop.co.jp/company/overview/"
+     },
+     "capital": {
+      "value": "1000万円",
+      "source": "https://www.infiniteloop.co.jp/company/overview/"
+     },
+     "founded": 2007,
+     "business_summary": "2007年法人化。VR/AR開発、ゲーム開発、Webサービス開発、スマートフォンアプリ、Linuxサーバ構築・保守。仙台支社。関連会社 バーチャルキャストほか",
+     "ai_initiative": "会社概要に AI の記載は見つからなかった",
+     "url": "https://www.infiniteloop.co.jp/",
+     "size_basis": "employees",
+     "checked": "2026-11-06",
+     "notes": "**人数は2024年4月の値で古い**。役員・社員だけなら153名でデジック（189名）より少ない。HICTA の会員名簿には載っていない（札幌市イノベーション推進コンソーシアムの会員一覧 No.46 に載る）。他県の記事に出ない"
+    },
+    {
+     "name": "エコモット株式会社",
+     "hq": "北海道札幌市中央区北一条東1丁目2-5 カレスサッポロビル7F（本社所在地）",
+     "municipality": "札幌市",
+     "town": "中央区北1条東",
+     "employees": {
+      "value": 165,
+      "as_of": "165名（2026年8月末時点 連結）",
+      "source": "https://www.ecomott.co.jp/company/"
+     },
+     "capital": {
+      "value": "6億1,796万円（2026年8月末現在）",
+      "source": "https://www.ecomott.co.jp/company/"
+     },
+     "founded": 2007,
+     "business_summary": "2007年2月19日設立（白石区）。IoTインテグレーション事業。東証グロース・札証アンビシャス上場（証券コード3987）。東京・青森営業所、本社技術センター、グループ会社 GRIFFY",
+     "ai_initiative": "**『IoT・AIソリューションカンパニー』、事業に『IoT・AIビジネス共創』『AI研究開発』**（トップページ）。加入団体に『AIxIoTビジネス共創ラボ』『北海道AIxIoTビジネス共創ラボ』 https://www.ecomott.co.jp/",
+     "url": "https://www.ecomott.co.jp/",
+     "size_basis": "employees",
+     "checked": "2026-11-06",
+     "notes": "**人数は連結**（単体の人数は見ていない）。代表取締役 入澤 拓也は、札幌市の有識者名簿（検索の要約）で北海道IT推進協会の会長。宮城の cases.md に水産加工のフィジカルAIの話で名前が出る（宮城との関係の文脈。北海道のページで事例を詳述するなら重複を確かめる）"
+    },
+    {
+     "name": "北海道アイエスビー株式会社",
+     "hq": "北海道札幌市東区北6条東4丁目1番地7 de AUNEさっぽろ13階（本社所在地）",
+     "municipality": "札幌市",
+     "town": "東区北6条東",
+     "employees": {
+      "value": 143,
+      "as_of": "143名（令和8年4月現在）",
+      "source": "https://www.hisb.co.jp/about_us/"
+     },
+     "capital": {
+      "value": "2,000万円",
+      "source": "https://www.hisb.co.jp/about_us/"
+     },
+     "founded": 1979,
+     "business_summary": "昭和54年4月18日設立（創立 昭和52年12月1日）。売上高30.59億円（令和7年度実績）。主要取引先に アイ・エス・ビー、北海道大学、NEC など。東京統括事業部あり",
+     "ai_initiative": "会社概要に AI の記載は見つからなかった（組織図に『ICA技術推進部』があるが中身は見ていない）",
+     "url": "https://www.hisb.co.jp/",
+     "size_basis": "employees",
+     "checked": "2026-11-06",
+     "notes": "サイトに『ISBグループ理念体系』『グループ会社』（アイ・エス・ビー〔東京〕のグループとみられるが、出資関係は会社概要に書かれていない）。他県の記事に出ない"
+    },
+    {
+     "name": "北洋システム開発株式会社",
+     "hq": "北海道札幌市豊平区月寒東2条9丁目7番1号（所在地）",
+     "municipality": "札幌市",
+     "town": "豊平区月寒東",
+     "employees": {
+      "value": 91,
+      "as_of": "役職員数 91名（2026年4月1日現在）",
+      "source": "http://www.hsd-hh.co.jp/company/outline.html"
+     },
+     "capital": {
+      "value": "2,500万円",
+      "source": "http://www.hsd-hh.co.jp/company/outline.html"
+     },
+     "founded": 1985,
+     "business_summary": "1985年7月2日、北洋銀行の100%出資で設立。北洋銀行のシステム開発・運用、代金回収サービス・コンビニ収納代行。2000年9月に日立製作所・北洋銀行ほかの出資を受け一般事業法人に転換（沿革）",
+     "ai_initiative": "会社概要に AI の記載は見つからなかった",
+     "url": "http://www.hsd-hh.co.jp/",
+     "size_basis": "employees",
+     "checked": "2026-11-06",
+     "notes": "**地銀系**: 主要株主 日立製作所・北洋銀行・同グループ会社ほか（会社概要）。人数は役職員数。他県の記事に出ない"
+    },
+    {
+     "name": "ビットスター株式会社",
+     "hq": "北海道札幌市中央区南1条西4-5-1 札幌大手町ビルB1（札幌本社）",
+     "municipality": "札幌市",
+     "town": "中央区南1条西",
+     "employees": {
+      "value": 84,
+      "as_of": "84名（2026年4月1日現在）",
+      "source": "https://bitstar.jp/company/about/"
+     },
+     "capital": {
+      "value": "1,000万円（2017年1月1日現在）",
+      "source": "https://bitstar.jp/company/about/"
+     },
+     "founded": 2008,
+     "business_summary": "2008年3月設立。インターネットサービス事業（サーバ）、サービスインテグレート、ソフトウェア開発・Web制作、バーチャルオフィス。東京・福岡オフィス",
+     "ai_initiative": "会社概要に AI の記載は見つからなかった",
+     "url": "https://bitstar.jp/",
+     "size_basis": "employees",
+     "checked": "2026-11-06",
+     "notes": "**グループ会社 さくらインターネット株式会社**（会社概要の『グループ会社』の欄。出資比率の記載なし）。加盟団体に北海道ニュートピアデータセンター研究会。他県の記事に出ない"
+    },
+    {
+     "name": "株式会社シイエヌエス北海道",
+     "hq": "北海道札幌市北区北七条西4丁目3-1 新北海道ビル（本社所在地）",
+     "municipality": "札幌市",
+     "town": "北区北7条西",
+     "employees": {
+      "value": 43,
+      "as_of": "43名（2026年11月1日現在）",
+      "source": "https://www.cns-hokkaido.co.jp/about/"
+     },
+     "capital": {
+      "value": "2,500万円",
+      "source": "https://www.cns-hokkaido.co.jp/about/"
+     },
+     "founded": 2016,
+     "business_summary": "2016年4月1日設立。売上高8億2,910万円（2026年5月期）。アプリケーション開発・インフラ構築、クラウド構築、**データ分析・AI事業**、DX支援。主要取引先 コープさっぽろ・NTTデータ北海道・KDDIアジャイル開発センター・シイエヌエス",
+     "ai_initiative": "事業内容に『データ分析・AI事業』（会社概要）",
+     "url": "https://www.cns-hokkaido.co.jp/",
+     "size_basis": "employees",
+     "checked": "2026-11-06",
+     "notes": "シイエヌエス（東京）のグループとみられる（主要取引先にシイエヌエス。出資関係は見ていない）。他県の記事に出ない"
+    },
+    {
+     "name": "ユーザーサイド株式会社",
+     "hq": "北海道札幌市北区北9条西3丁目19-1 ノルテプラザ（本社所在地）",
+     "municipality": "札幌市",
+     "town": "北区北9条西",
+     "employees": {
+      "value": 40,
+      "as_of": "40名（2025年6月末時点）",
+      "source": "https://www.userside.inc/company/"
+     },
+     "capital": {
+      "value": "6,700万円",
+      "source": "https://www.userside.inc/company/"
+     },
+     "founded": 2005,
+     "business_summary": "2005年2月15日設立。総合ITサービス（ITインフラの設計・構築・運用、ソフトウェア開発、セキュリティ、DX支援、データセンター、光コラボ、Web制作）。東京営業所",
+     "ai_initiative": "**事業内容に『生成AI活用支援』**（会社概要）",
+     "url": "https://www.userside.inc/",
+     "size_basis": "employees",
+     "checked": "2026-11-06",
+     "notes": "主要株主 那須 伸二・HDC・テラスホールディングス。他県の記事に出ない"
+    },
+    {
+     "name": "株式会社テクノフェイス",
+     "hq": "北海道札幌市中央区北1条西3丁目3番地 敷島北一条ビル（所在地）",
+     "municipality": "札幌市",
+     "town": "中央区北1条西",
+     "employees": {
+      "value": 36,
+      "as_of": "36名（2026年8月現在）",
+      "source": "https://www.technoface.co.jp/company/about/"
+     },
+     "capital": {
+      "value": "9,900万円",
+      "source": "https://www.technoface.co.jp/company/about/"
+     },
+     "founded": 2002,
+     "business_summary": "2002年4月15日設立。決算期3月。加盟団体に北海道オープンデータ推進協議会など",
+     "ai_initiative": "会社概要に AI の記載は見つからなかった（事業領域のページは開いていない）",
+     "url": "https://www.technoface.co.jp/",
+     "size_basis": "employees",
+     "checked": "2026-11-06",
+     "notes": "株主 北海道アルバイト情報社・調和技研・ソフトコム・NTTドコモソリューションズ・**北洋銀行**・オープンループほか。他県の記事に出ない"
+    }
+   ],
+   "unverified": [
+    "クリプトン・フューチャー・メディア株式会社（本社 札幌市中央区北3条西4丁目1-1 日本生命札幌ビル11F、平成7年7月設立。音楽制作ソフトウェアの開発・配信、モバイルコンテンツ、WEBシステムの開発・運営）https://www.crypton.co.jp/cfm/aboutus_info : 会社情報のページに従業員数がない",
+    "株式会社ヒューネス（北区北13条西4丁目1 塚本ビル2階〔HICTA〕）・株式会社ジャパンテクニカルソフトウェア 北海道本社（北区北21条西3丁目1-14〔HICTA〕。会社全体の本社がどこかは見ていない）: 公式サイトが curl・WebFetch とも開けなかった（503・応答なし）",
+    "システムデザイン開発株式会社（中央区南1条西10丁目1番2 SDDビル〔HICTA〕）・株式会社エクサネットHAL（厚別区）: トップページが数百バイトで中身を取れず、会社概要を見ていない",
+    "ULSパブリス株式会社（HICTA の名簿は『札幌本社』）: 公式は『東京本社と札幌本社の2カ所に活動の中心』。人数を見ていない。2本社制",
+    "HICTA の名簿の札幌市の住所の会員は約180件（支店・営業所を含む）。本表・次点の確認に使ったのは約30社で、ほかの会員（アートシステム、アイ・ティ・エス、アジェンダ、アドニス、インフォネット、ウイン・コンサル、ASE、HiSC、HDC、エスアイ・システム、SOC、M.C.S、LIC、ヴァンガードネットワークス、キットアライブ、サイバーシスコム、システムバンク、正文舎、GKI、ソフテック、テクノウイング、D&H、ディーディーエル、電通システム、ナスカコンピュータ、ニッポンダイナミックシステムズ、日本システム機器、日本トータルシステム、ニューイング、ネクステック、ノーステクノロジー、HARP、ファーストブレス、フュージョン、北央情報サービス、北明システム、北海道電子機器、マキシマ、ミクロスソフトウエア、メガ・テクノロジー、メディア・マジック、ユニットシステムエンジニアリング、リッジワークス、流研、リンケージサービス、ログオンシステム など）の人数は見ていない。**この中に本表の8位（189名）より多い会社がある可能性は残る**"
+   ],
+   "excluded": [
+    "株式会社恵和ビジネス（札幌本社 中央区南2条西12丁目324-1、**東京本社**〔中央区日本橋箱崎町〕もある2本社。292名〔2026年6月1日現在〕、資本金2億975万円）http://www.keiwa-biz.co.jp/company/outline/ : 役員の部署名がエントリー事業部・BF/DP事業本部・BPO営業・ICT本部で、データ入力・BPO が中心とみられるため、システム開発の会社の本表には入れなかった（親が判断してよい。入れるなら HBA・TADS・日立に次ぐ4位）",
+    "北海道総合通信網株式会社（HOTnet。本社 中央区北1条東2丁目5番3、288名〔2026年4月1日現在〕、資本金59億円、1989年4月1日設立）https://www.hotnet.co.jp/corporate/outline/ : 電気通信事業者（事業目的の1番目が電気通信事業）。システム開発の会社ではない",
+    "株式会社つうけん（本社 中央区北4条西15丁目、連結1,948名・単体1,029名〔2026.3.31〕）https://www.tsuken.co.jp/company/summary/ : 通信設備エンジニアリング（工事）。ソフト開発は子会社のつうけんアドバンスシステムズ（本表2位）",
+    "ユニオンデーターシステム株式会社（白石区本郷通13丁目南5-9、社員数41名〔時点なし〕）http://www.union-data.co.jp/company/profile.html : 測量業・建設コンサルタントが主で、システム開発は業務内容の一部",
+    "ノーステック・システム株式会社（札幌本社 中央区北二条西3丁目、16人〔2025/6現在〕、名古屋にも事務所）https://northtech-system.com/company : 規模が小さく次点に入れていない（本社・人数は確認済み）",
+    "札幌商工会議所・サツドラホールディングス・総合商研・北ガスサービス・横山プリントサービス社 など: HICTA の会員だが IT 企業ではない"
+   ]
+  },
+  "eniwa": {
+   "next_candidates": [],
+   "unverified": [],
+   "excluded": []
+  },
+  "chitose": {
+   "next_candidates": [],
+   "unverified": [
+    "北海道日興電気通信株式会社（求人サイト paiza の掲載で『千歳本社』北海道千歳市泉沢1007番地132、全社150名、1991年設立、映像監視システムの自社製品開発〔.NET〕）https://paiza.jp/career/job_offers/15558 （secondary、2026-11-06 WebFetch）: **公式サイトを見つけられず**、本社・人数を公式で確かめていない。静岡県浜松市の日興電気通信株式会社との関係も見ていない。公式で確かめられれば千歳市の本表の候補"
+   ],
+   "excluded": []
+  },
+  "ebetsu": {
+   "next_candidates": [],
+   "unverified": [
+    "合同会社AIM（江別市、2024年設立、AIソリューション開発・AI導入のコンサルティング）: compalyze（比較サイト、secondary）の検索の要約だけ https://compalyze.co.jp/company/2430003015850 。公式サイト・人数は見ていない"
+   ],
+   "excluded": []
+  },
+  "_outside_hq": [
+   {
+    "name": "さくらインターネット株式会社",
+    "hq": "大阪府大阪市北区大深町6-38 グラングリーン大阪 北館 JAM BASE 3F（本社所在地。会社概要）",
+    "hokkaido_site": "石狩データセンター（北海道石狩市。番地は非公開）。札幌の開発・運用拠点は見ていない。グループ会社のビットスター（札幌本社）は次点に置いた",
+    "source": "https://www.sakura.ad.jp/corporate/corp/profile/"
+   },
+   {
+    "name": "伊藤忠テクノソリューションズ（CTC）",
+    "hq": "道外",
+    "hokkaido_site": "札幌開発センター 札幌市中央区北2条西1丁目1-1 マルイト札幌ビル（HICTA。タグに AI・AWS・アジャイル）",
+    "source": "https://www.hicta.or.jp/profile/memberlist/"
+   },
+   {
+    "name": "FPTニアショアジャパン株式会社",
+    "hq": "道外",
+    "hokkaido_site": "札幌ニアショア開発センター 札幌市中央区北3条西4丁目1番地 D-LIFEPLACE札幌（HICTA）",
+    "source": "https://www.hicta.or.jp/profile/memberlist/"
+   },
+   {
+    "name": "株式会社日立ソリューションズ東日本",
+    "hq": "道外（宮城県仙台市とみられるが公式で見ていない）",
+    "hokkaido_site": "北海道事業所 札幌市中央区北2条西4丁目1番地（HICTA）",
+    "source": "https://www.hicta.or.jp/profile/memberlist/"
+   },
+   {
+    "name": "株式会社アイエスアイ",
+    "hq": "道外",
+    "hokkaido_site": "札幌R&Dセンター 札幌市白石区東札幌5条1丁目1-1 札幌市産業振興センター3階（HICTA）",
+    "source": "https://www.hicta.or.jp/profile/memberlist/"
+   },
+   {
+    "name": "株式会社インタラクティブ・コミュニケーション・デザイン・株式会社コスモ・コンピューティングシステム・インディゴ・INTLOOP・アイムファクトリー・キャル・リッケイ・ビックボイス・FIT's・エスシーシー・オービックビジネスコンサルタント・アシスト・NTTアドバンステクノロジ・NTTドコモビジネス・NTT東日本・アライドテレシス・エクシオグループ",
+    "hq": "道外",
+    "hokkaido_site": "札幌の開発センター・支店・営業所・オフィス（HICTA の名簿の名前に『札幌開発センター』『札幌支社』『北海道支店』などとある）",
+    "source": "https://www.hicta.or.jp/profile/memberlist/"
+   },
+   {
+    "name": "株式会社キューブシステム",
+    "hq": "東京都品川区大崎2-11-1 大崎ウィズタワー（東京本社。公式のフッター）",
+    "hokkaido_site": "HICTA の名簿の『株式会社北海道キューブシステム』（中央区北1条西7丁目）は別法人とみられる。人数・本社は見ていない",
+    "source": "https://www.cubesystem.co.jp/company/"
+   }
+  ]
+ },
+ "_associations": [
+  {
+   "name": "一般社団法人北海道IT推進協会（HICTA）",
+   "url": "https://www.hicta.or.jp/",
+   "member_list": "https://www.hicta.or.jp/profile/memberlist/",
+   "facts": "沿革『2003年、北海道ソフトウェア協会、日本システムハウス協会北海道支部、北海道コンピュータディーラー協会、北海道マルチメディア協会が統合して誕生』（https://www.hicta.or.jp/profile/ ）。会員名簿（正会員・賛助会員・特別団体会員）を 2026-11-06 に curl で取得し、住所つきで192件を数えた（札幌市約180件、ほかに恵庭市1・函館市3・旭川市3・苫小牧市・釧路市・岩見沢市・美唄市・帯広市各1。支店・営業所・団体を含む）。会員ごとに地区会区分と技術タグ（AI・ディープラーニングなど）が載る。会長は札幌市の有識者名簿（PDF、検索の要約）で入澤拓也氏（エコモット代表）、副会長 朝倉由紀子氏（secondary）",
+   "checked": "2026-11-06"
+  },
+  {
+   "name": "一般社団法人北海道情報システム産業協会（HISA）",
+   "url": "未確認（hisa.gr.jp は 503・hisa.or.jp は無関係のサイト）",
+   "member_list": "未確認",
+   "facts": "**HICTA とは別の団体**。経済産業省（北海道経済産業局）の2023年の資料・北海道新聞2026年の記事（検索の要約、secondary）で会長 中村真規氏（デジック代表）。公式サイトを開けず、正式名称・会員名簿を確かめていない",
+   "checked": "2026-11-06"
+  },
+  {
+   "name": "札幌市イノベーション推進コンソーシアム（地域DX推進ラボ『札幌イノベーション推進ラボ』）",
+   "url": "https://www.city.sapporo.jp/keizai/top/topics/it/documents/20261016_list.pdf",
+   "member_list": "https://www.city.sapporo.jp/keizai/top/topics/it/documents/20261016_list.pdf",
+   "facts": "札幌市の『会員一覧（26年10月16日時点）』PDF（7ページ）。会員名だけで住所はない。IT企業のほか、士業・金融・専門学校・団体を含む（北海道ITコーディネータ協議会、道銀地域総合研究、北海道二十一世紀総合研究所など）。2026-08-25・09-15 版もある",
+   "checked": "2026-11-06"
+  },
+  {
+   "name": "北海道ITコーディネータ協議会",
+   "url": "未確認",
+   "member_list": "未確認",
+   "facts": "札幌市イノベーション推進コンソーシアムの会員一覧 No.7 に名前がある。公式サイトは開いていない",
+   "checked": "2026-11-06"
+  },
+  {
+   "name": "一般財団法人さっぽろ産業振興財団",
+   "url": "未確認",
+   "member_list": "-",
+   "facts": "今回は開いていない（gov_ai.md の担当範囲）。検索の要約で、Inankl 株式会社と共催の生成AIセミナー（2026-09-28、無料）の記載（secondary、終了）",
+   "checked": "2026-11-06"
+  }
+ ],
+ "_crosscheck": {
+  "sakura_ishikari_dc": {
+   "result": "**石狩市で確認**。さくらインターネットの適時開示『固定資産の取得（石狩データセンター追加投資）に関するお知らせ』（2024年1月31日、TDnet）https://www2.jpx.co.jp/disc/37780/140120240130521256.pdf p.1 の対象資産『石狩データセンターコンテナ型データセンター』『石狩データセンター３号棟Ａゾーン』の所在地がどちらも『北海道石狩市』。番地は書かれていない（2011年の報道で建設地の住所は非公開、secondary）。会社の公式ページ https://www.sakura.ad.jp/corporate/information/datacenter/ は『北海道、東京、大阪の3拠点』『石狩データセンター』『追加の燃料は石狩市役所、経済産業省など関係各所からのご支援』と書くが、所在の市町村を明記していない。本社は大阪市北区（会社概要）",
+   "checked": "2026-11-06"
+  },
+  "new_chitose_airport": {
+   "result": "運営会社 北海道エアポート株式会社の会社概要 https://www.hokkaido-airports.com/ja/corporate/company/ : 所在地『〒066-0012 北海道千歳市美々987番地22 ターミナルアネックスビル 5F』、設立日 2019年8月23日、事業目的に新千歳空港を含む道内7空港の運営等。運営空港のページ https://www.hokkaido-airports.com/ja/corporate/company/airports/ : 新千歳空港『運営開始 2020年6月、面積 728ha、滑走路 (A)3,000m×60m (B)3,000m×60m、運用時間 24時間』。**空港の敷地が千歳市だけにあるかは確かめていない**（会社の所在地が千歳市美々）。空港サイトのお知らせに『千歳市空港開港100年記念 メモリーアーカイブプロジェクト』（2026-10-15）",
+   "checked": "2026-11-06"
+  },
+  "escon_field": {
+   "result": "北海道ボールパークFビレッジの公式サイトの運営会社のページ https://www.hkdballpark.com/company/ : 株式会社ファイターズ スポーツ＆エンターテイメント、所在地『〒061-1116 北海道北広島市Ｆビレッジ1番地』、設立日 2019年10月1日、出資比率 北海道日本ハムファイターズ34.17%・日本ハム32.91%・電通グループ16.67%・民間都市開発推進機構16.25%、事業内容『ボールパーク全体のマネジメント業務、球場運営業務、プロ野球関連興行業務など』。同サイトに『エスコンフィールド』の名前（小学生以下の入場無料化など）。球場単体の住所の表記は見ていない（アクセスのページに住所なし）",
+   "checked": "2026-11-06"
+  },
+  "ebetsu_universities": {
+   "result": "公式サイトのフッター・トップで江別市の住所を確認: **北海道情報大学**（〒069-8585 江別市西野幌59番2）https://www.do-johodai.ac.jp/ 、**酪農学園大学**（〒069-8501 江別市文京台緑町582番地）https://www.rakuno.ac.jp/ 、**札幌学院大学 江別キャンパス**（〒069-8555 江別市文京台11番地。[本部] は新札幌キャンパス 札幌市厚別区厚別中央1条5丁目1-1）https://www.sgu.ac.jp/ 。**北翔大学**は公式サイトが『緊急システムメンテナンスのお知らせ』（503）で所在地を確かめられなかった。酪農学園大学のトップに『酪農学園大学×コープさっぽろ×カゴメ㈱×江別市』の学生考案サラダ（2026-11-02 プレスリリース）",
+   "checked": "2026-11-06"
+  },
+  "rapidus_iim": {
+   "result": "Rapidus 株式会社 公式『IIM』のページ https://www.rapidus.inc/iim/ : 『IIM（Innovative Integration for Manufacturing、通称：イーム）は、Rapidus株式会社が北海道千歳市美々758-62に建設中の研究製造拠点』『IIM-1 所在地：〒066-0012 北海道千歳市美々758-62』『2023年9月起工、2025年4月パイロットライン稼働開始、2027年量産開始予定』『2024年12月、「IIM-1」に蘭ASML社製のEUV露光装置が搬入』『2nm GAA』。stats.md の記録（番地は公式に書かれていない）は、このページに番地がある点で更新が要る",
+   "checked": "2026-11-06"
+  }
+ },
+ "_notes": [
+  "本表: 札幌市8社（＋確認済みの次点8社）、恵庭市1社（境界の業種・2022年の人数）。江別市・千歳市・北広島市・石狩市・当別町・新篠津村は0（確かめられなかった。千歳市・江別市は unverified に候補あり）。",
+  "札幌市の公式の人数（多い順）: HBA 843名（2026-04-01）、つうけんアドバンスシステムズ 443名（2026-04-01）、北海道日立システムズ 439名（2026-04-01）、日鉄ソリューションズ北海道 338名（2026-04）、NTTデータ北海道 315名（2026-04-01）、SCSK北海道 227名（2026-04）、北都システム 200名（2025-04-01）、デジック 189名（単体、2026-04）。次点: インフィニットループ 185名（2024-04、役員・社員は153名）、エコモット 165名（連結、2026-08末）、北海道アイエスビー 143名（令和8年4月）、北洋システム開発 91名（役職員、2026-04-01）、ビットスター 84名（2026-04-01）、シイエヌエス北海道 43名（2026-11-01）、ユーザーサイド 40名（2025-06末）、テクノフェイス 36名（2026-08）。",
+  "**グループ会社・地銀系**: 本表8社のうち5社が大手のグループ（TADS＝コムシス情報システム80%・つうけん20%、北海道日立システムズ＝日立、日鉄ソリューションズ北海道＝日本製鉄系、NTTデータ北海道＝NTTデータ100%、SCSK北海道＝SCSK）。次点に地銀系（北洋システム開発＝北洋銀行・日立）、さくらインターネットのグループ（ビットスター）、ISB グループ（北海道アイエスビー）。記事で『札幌の地元IT企業の上位』とまとめるときは書き分ける。独立系とみられるのは HBA・北都システム・デジック（株主の記載がなく、断定はしない）。",
+  "AI関連の公式の記載: **デジック（『With AI 一歩先へ』、AI・DXサポート事業、AI導入支援）**、**エコモット（IoT・AIソリューションカンパニー、AI研究開発）**、**HBA（HBA AI ECOSYSTEM・CHAT GEAR・映像AIソリューション）**、北海道日立システムズ（AI・IoT を使った設計・開発の記載、『北のITシーズフェア2026～AIとの共生～』）、NTTデータ北海道（要介護認定支援AI Aitice、行政向け）、シイエヌエス北海道（データ分析・AI事業）、ユーザーサイド（生成AI活用支援）。AI の記載が見つからなかった: TADS・日鉄ソリューションズ北海道・SCSK北海道・北都システム・インフィニットループ・北海道アイエスビー・北洋システム開発・ビットスター・テクノフェイス。",
+  "母集団は HICTA の会員名簿（約180件の札幌の住所）と札幌市のコンソーシアムの名簿で、人数を見たのは約30社。HICTA に入っていない会社・名簿で人数を見ていない会社に本表の8位より大きい会社がある可能性がある（_reference.sapporo.unverified）。記事で『札幌最大』『市内唯一』と書かない。",
+  "他県のページとの重複: 本表・次点の会社は articles/・data/area/（hokkaido を除く）に出ない（grep、2026-11-06）。例外: 日鉄ソリューションズ北海道（岩手の companies.md に一言）、エコモット（宮城の cases.md に名前）。",
+  "WebSearch は20回のうち15回を使用（コンテナの再起動の前は0回）。"
+ ]
+}

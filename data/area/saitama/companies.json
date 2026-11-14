@@ -1,0 +1,2057 @@
+{
+  "_meta": {
+    "checked": "2026-11-13",
+    "scope": "埼玉県63市町村（40市22町1村）。公式サイトで本社所在地と時点つきの従業員数の両方を確かめ、法人番号公表サイト（埼玉県全件 CSV 2026-10-30）の登記の本店が同じ市町村の、システム開発・ソフトウェア開発・SI の会社だけを本表に入れた（愛知と同じ基準）。市町村ごとに5社まで。さいたま市は独立系（category=independent）と大手グループ（category=major_group、parent_group に親会社）を分けた。境界の業種は boundary。",
+    "candidate_sources": [
+      "公益社団法人埼玉県情報サービス産業協会（SISIA。JISA の団体会員一覧に「(公社)埼玉県情報サービス産業協会」 https://www.jisa.or.jp/about_jisa/list/tabid/739/Default.aspx 、2026-11-13取得）。公式 https://www.sisia.or.jp/ は確認日に「メンテナンス中」で会員名簿は見られなかった（所在地 〒338-0001 さいたま市中央区上落合2-3-2 Mio新都心、TEL 048-844-5510 はメンテナンスのページに表示）。Internet Archive は開けなかった",
+      "SISIA ビジネス部会「2024年度年活動報告」（埼玉IT活用経営支援ネットワーク会議 資料、令和7年3月11日、PDF https://www.saitama-bizmatch.jp/assets/member_file/511284/sisia.pdf p.13 の展示企業）",
+      "国税庁 法人番号公表サイト 基本3情報ダウンロード 埼玉県全件 11_saitama_all_20261030.csv（269,599行）https://www.houjin-bangou.nta.go.jp/download/zenken/ 。株式会社・有限会社・合同会社で閉鎖していない法人のうち、商号に IT の語（ソフト・コンピ・情報システム・情報処理・情報サービス・データ・ＩＴ・アイティ・システムズ・システム開発・デジタル・インフォ・ネットワーク・ＤＸ・ＡＩ・アプリ・ウェブ・ＷＥＢ・テクノロジ・ソリューション・システム）を含む3,691件（住宅・建設・介護・工業などの語を含むものは除く）",
+      "gBizINFO https://info.gbiz.go.jp/hojin/ichiran?hojinBango=<法人番号> の厚生年金保険の適用事業所の被保険者数（3,691件、参考値。本表の人数には使わない）と、上位約220件の事業概要・企業ホームページ・業種",
+      "WebSearch 8回（担当上限10回）"
+    ],
+    "columns": "name / hq / municipality / town / corporate_number / houjin_honten / employees{value,as_of,source} / capital / founded / business_summary / ai_initiative / url / size_basis / checked / notes / category / parent_group / boundary",
+    "industry_stats": {
+      "source": "令和3年経済センサス‐活動調査 第6-1表（民営事業所、2021年6月1日）statInfId=000040067880 https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040067880&fileKind=0 （stats 担当が取得した ec_6_1 から抽出、2026-11-13）",
+      "note": "null は該当なし（「-」）。秘匿なし",
+      "values": {
+        "全国": {
+          "code": "00000",
+          "G_情報通信業": {
+            "establishments": 76559,
+            "workers": 1986839
+          },
+          "39_情報サービス業": {
+            "establishments": 43471,
+            "workers": 1319758
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 8791,
+            "workers": 202284
+          },
+          "全産業": {
+            "establishments": 5156063,
+            "workers": 57949915
+          }
+        },
+        "埼玉県": {
+          "code": "11000",
+          "G_情報通信業": {
+            "establishments": 2173,
+            "workers": 24759
+          },
+          "39_情報サービス業": {
+            "establishments": 1356,
+            "workers": 16950
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 221,
+            "workers": 2330
+          },
+          "全産業": {
+            "establishments": 230278,
+            "workers": 2602009
+          }
+        },
+        "さいたま市": {
+          "code": "11100",
+          "G_情報通信業": {
+            "establishments": 612,
+            "workers": 11871
+          },
+          "39_情報サービス業": {
+            "establishments": 378,
+            "workers": 8338
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 59,
+            "workers": 513
+          },
+          "全産業": {
+            "establishments": 40233,
+            "workers": 517261
+          }
+        },
+        "さいたま市西区": {
+          "code": "11101",
+          "G_情報通信業": {
+            "establishments": 18,
+            "workers": 164
+          },
+          "39_情報サービス業": {
+            "establishments": 10,
+            "workers": 19
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 4,
+            "workers": 10
+          },
+          "全産業": {
+            "establishments": 2085,
+            "workers": 26043
+          }
+        },
+        "さいたま市北区": {
+          "code": "11102",
+          "G_情報通信業": {
+            "establishments": 61,
+            "workers": 748
+          },
+          "39_情報サービス業": {
+            "establishments": 44,
+            "workers": 540
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 3,
+            "workers": 3
+          },
+          "全産業": {
+            "establishments": 4453,
+            "workers": 59775
+          }
+        },
+        "さいたま市大宮区": {
+          "code": "11103",
+          "G_情報通信業": {
+            "establishments": 150,
+            "workers": 4331
+          },
+          "39_情報サービス業": {
+            "establishments": 91,
+            "workers": 3333
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 22,
+            "workers": 328
+          },
+          "全産業": {
+            "establishments": 7313,
+            "workers": 125510
+          }
+        },
+        "さいたま市見沼区": {
+          "code": "11104",
+          "G_情報通信業": {
+            "establishments": 45,
+            "workers": 400
+          },
+          "39_情報サービス業": {
+            "establishments": 27,
+            "workers": 72
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 4,
+            "workers": 5
+          },
+          "全産業": {
+            "establishments": 3922,
+            "workers": 40157
+          }
+        },
+        "さいたま市中央区": {
+          "code": "11105",
+          "G_情報通信業": {
+            "establishments": 55,
+            "workers": 1531
+          },
+          "39_情報サービス業": {
+            "establishments": 40,
+            "workers": 892
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 3,
+            "workers": 16
+          },
+          "全産業": {
+            "establishments": 2974,
+            "workers": 47791
+          }
+        },
+        "さいたま市桜区": {
+          "code": "11106",
+          "G_情報通信業": {
+            "establishments": 25,
+            "workers": 347
+          },
+          "39_情報サービス業": {
+            "establishments": 11,
+            "workers": 322
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 2,
+            "workers": 2
+          },
+          "全産業": {
+            "establishments": 2404,
+            "workers": 29032
+          }
+        },
+        "さいたま市浦和区": {
+          "code": "11107",
+          "G_情報通信業": {
+            "establishments": 128,
+            "workers": 3410
+          },
+          "39_情報サービス業": {
+            "establishments": 67,
+            "workers": 2446
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 10,
+            "workers": 94
+          },
+          "全産業": {
+            "establishments": 5609,
+            "workers": 59873
+          }
+        },
+        "さいたま市南区": {
+          "code": "11108",
+          "G_情報通信業": {
+            "establishments": 89,
+            "workers": 811
+          },
+          "39_情報サービス業": {
+            "establishments": 58,
+            "workers": 643
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 7,
+            "workers": 8
+          },
+          "全産業": {
+            "establishments": 4583,
+            "workers": 51146
+          }
+        },
+        "さいたま市緑区": {
+          "code": "11109",
+          "G_情報通信業": {
+            "establishments": 26,
+            "workers": 53
+          },
+          "39_情報サービス業": {
+            "establishments": 18,
+            "workers": 41
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 2,
+            "workers": 5
+          },
+          "全産業": {
+            "establishments": 2927,
+            "workers": 30179
+          }
+        },
+        "さいたま市岩槻区": {
+          "code": "11110",
+          "G_情報通信業": {
+            "establishments": 15,
+            "workers": 76
+          },
+          "39_情報サービス業": {
+            "establishments": 12,
+            "workers": 30
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 2,
+            "workers": 42
+          },
+          "全産業": {
+            "establishments": 3963,
+            "workers": 47755
+          }
+        },
+        "川越市": {
+          "code": "11201",
+          "G_情報通信業": {
+            "establishments": 108,
+            "workers": 1054
+          },
+          "39_情報サービス業": {
+            "establishments": 72,
+            "workers": 806
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 11,
+            "workers": 159
+          },
+          "全産業": {
+            "establishments": 10770,
+            "workers": 136645
+          }
+        },
+        "熊谷市": {
+          "code": "11202",
+          "G_情報通信業": {
+            "establishments": 66,
+            "workers": 724
+          },
+          "39_情報サービス業": {
+            "establishments": 48,
+            "workers": 605
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 5,
+            "workers": 50
+          },
+          "全産業": {
+            "establishments": 7800,
+            "workers": 86008
+          }
+        },
+        "川口市": {
+          "code": "11203",
+          "G_情報通信業": {
+            "establishments": 164,
+            "workers": 1659
+          },
+          "39_情報サービス業": {
+            "establishments": 96,
+            "workers": 657
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 21,
+            "workers": 533
+          },
+          "全産業": {
+            "establishments": 19059,
+            "workers": 179305
+          }
+        },
+        "行田市": {
+          "code": "11206",
+          "G_情報通信業": {
+            "establishments": 27,
+            "workers": 125
+          },
+          "39_情報サービス業": {
+            "establishments": 19,
+            "workers": 81
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 2,
+            "workers": 3
+          },
+          "全産業": {
+            "establishments": 2958,
+            "workers": 30658
+          }
+        },
+        "秩父市": {
+          "code": "11207",
+          "G_情報通信業": {
+            "establishments": 18,
+            "workers": 32
+          },
+          "39_情報サービス業": {
+            "establishments": 6,
+            "workers": 11
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 4,
+            "workers": 7
+          },
+          "全産業": {
+            "establishments": 3101,
+            "workers": 24295
+          }
+        },
+        "所沢市": {
+          "code": "11208",
+          "G_情報通信業": {
+            "establishments": 124,
+            "workers": 577
+          },
+          "39_情報サービス業": {
+            "establishments": 82,
+            "workers": 430
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 7,
+            "workers": 15
+          },
+          "全産業": {
+            "establishments": 9413,
+            "workers": 105213
+          }
+        },
+        "飯能市": {
+          "code": "11209",
+          "G_情報通信業": {
+            "establishments": 20,
+            "workers": 100
+          },
+          "39_情報サービス業": {
+            "establishments": 10,
+            "workers": 51
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 2,
+            "workers": 2
+          },
+          "全産業": {
+            "establishments": 2771,
+            "workers": 26909
+          }
+        },
+        "加須市": {
+          "code": "11210",
+          "G_情報通信業": {
+            "establishments": 7,
+            "workers": 95
+          },
+          "39_情報サービス業": {
+            "establishments": 6,
+            "workers": 94
+          },
+          "40_インターネット附随サービス業": null,
+          "全産業": {
+            "establishments": 3714,
+            "workers": 44011
+          }
+        },
+        "本庄市": {
+          "code": "11211",
+          "G_情報通信業": {
+            "establishments": 14,
+            "workers": 228
+          },
+          "39_情報サービス業": {
+            "establishments": 9,
+            "workers": 187
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 3,
+            "workers": 16
+          },
+          "全産業": {
+            "establishments": 3239,
+            "workers": 35532
+          }
+        },
+        "東松山市": {
+          "code": "11212",
+          "G_情報通信業": {
+            "establishments": 19,
+            "workers": 135
+          },
+          "39_情報サービス業": {
+            "establishments": 11,
+            "workers": 48
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 2,
+            "workers": 57
+          },
+          "全産業": {
+            "establishments": 3375,
+            "workers": 41175
+          }
+        },
+        "春日部市": {
+          "code": "11214",
+          "G_情報通信業": {
+            "establishments": 53,
+            "workers": 253
+          },
+          "39_情報サービス業": {
+            "establishments": 38,
+            "workers": 218
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 2,
+            "workers": 11
+          },
+          "全産業": {
+            "establishments": 6882,
+            "workers": 67902
+          }
+        },
+        "狭山市": {
+          "code": "11215",
+          "G_情報通信業": {
+            "establishments": 39,
+            "workers": 173
+          },
+          "39_情報サービス業": {
+            "establishments": 23,
+            "workers": 98
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 5,
+            "workers": 14
+          },
+          "全産業": {
+            "establishments": 4373,
+            "workers": 57256
+          }
+        },
+        "羽生市": {
+          "code": "11216",
+          "G_情報通信業": {
+            "establishments": 4,
+            "workers": 9
+          },
+          "39_情報サービス業": {
+            "establishments": 3,
+            "workers": 8
+          },
+          "40_インターネット附随サービス業": null,
+          "全産業": {
+            "establishments": 2109,
+            "workers": 24355
+          }
+        },
+        "鴻巣市": {
+          "code": "11217",
+          "G_情報通信業": {
+            "establishments": 27,
+            "workers": 192
+          },
+          "39_情報サービス業": {
+            "establishments": 17,
+            "workers": 142
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 4,
+            "workers": 6
+          },
+          "全産業": {
+            "establishments": 3225,
+            "workers": 30854
+          }
+        },
+        "深谷市": {
+          "code": "11218",
+          "G_情報通信業": {
+            "establishments": 14,
+            "workers": 60
+          },
+          "39_情報サービス業": {
+            "establishments": 10,
+            "workers": 46
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 2,
+            "workers": 3
+          },
+          "全産業": {
+            "establishments": 5136,
+            "workers": 58229
+          }
+        },
+        "上尾市": {
+          "code": "11219",
+          "G_情報通信業": {
+            "establishments": 50,
+            "workers": 381
+          },
+          "39_情報サービス業": {
+            "establishments": 35,
+            "workers": 187
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 5,
+            "workers": 156
+          },
+          "全産業": {
+            "establishments": 6043,
+            "workers": 67522
+          }
+        },
+        "草加市": {
+          "code": "11221",
+          "G_情報通信業": {
+            "establishments": 56,
+            "workers": 464
+          },
+          "39_情報サービス業": {
+            "establishments": 36,
+            "workers": 340
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 7,
+            "workers": 45
+          },
+          "全産業": {
+            "establishments": 7081,
+            "workers": 71466
+          }
+        },
+        "越谷市": {
+          "code": "11222",
+          "G_情報通信業": {
+            "establishments": 88,
+            "workers": 533
+          },
+          "39_情報サービス業": {
+            "establishments": 57,
+            "workers": 357
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 9,
+            "workers": 45
+          },
+          "全産業": {
+            "establishments": 10579,
+            "workers": 112120
+          }
+        },
+        "蕨市": {
+          "code": "11223",
+          "G_情報通信業": {
+            "establishments": 34,
+            "workers": 1999
+          },
+          "39_情報サービス業": {
+            "establishments": 19,
+            "workers": 1857
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 3,
+            "workers": 18
+          },
+          "全産業": {
+            "establishments": 2340,
+            "workers": 22306
+          }
+        },
+        "戸田市": {
+          "code": "11224",
+          "G_情報通信業": {
+            "establishments": 51,
+            "workers": 209
+          },
+          "39_情報サービス業": {
+            "establishments": 30,
+            "workers": 129
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 6,
+            "workers": 18
+          },
+          "全産業": {
+            "establishments": 5202,
+            "workers": 66334
+          }
+        },
+        "入間市": {
+          "code": "11225",
+          "G_情報通信業": {
+            "establishments": 47,
+            "workers": 267
+          },
+          "39_情報サービス業": {
+            "establishments": 26,
+            "workers": 117
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 5,
+            "workers": 14
+          },
+          "全産業": {
+            "establishments": 4639,
+            "workers": 51999
+          }
+        },
+        "朝霞市": {
+          "code": "11227",
+          "G_情報通信業": {
+            "establishments": 59,
+            "workers": 375
+          },
+          "39_情報サービス業": {
+            "establishments": 38,
+            "workers": 299
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 2,
+            "workers": 5
+          },
+          "全産業": {
+            "establishments": 3602,
+            "workers": 44746
+          }
+        },
+        "志木市": {
+          "code": "11228",
+          "G_情報通信業": {
+            "establishments": 26,
+            "workers": 81
+          },
+          "39_情報サービス業": {
+            "establishments": 14,
+            "workers": 48
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 5,
+            "workers": 7
+          },
+          "全産業": {
+            "establishments": 2039,
+            "workers": 17100
+          }
+        },
+        "和光市": {
+          "code": "11229",
+          "G_情報通信業": {
+            "establishments": 47,
+            "workers": 232
+          },
+          "39_情報サービス業": {
+            "establishments": 33,
+            "workers": 191
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 4,
+            "workers": 4
+          },
+          "全産業": {
+            "establishments": 1952,
+            "workers": 29101
+          }
+        },
+        "新座市": {
+          "code": "11230",
+          "G_情報通信業": {
+            "establishments": 58,
+            "workers": 370
+          },
+          "39_情報サービス業": {
+            "establishments": 25,
+            "workers": 87
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 8,
+            "workers": 139
+          },
+          "全産業": {
+            "establishments": 4474,
+            "workers": 50852
+          }
+        },
+        "桶川市": {
+          "code": "11231",
+          "G_情報通信業": {
+            "establishments": 16,
+            "workers": 123
+          },
+          "39_情報サービス業": {
+            "establishments": 11,
+            "workers": 99
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 1,
+            "workers": 1
+          },
+          "全産業": {
+            "establishments": 2184,
+            "workers": 24145
+          }
+        },
+        "久喜市": {
+          "code": "11232",
+          "G_情報通信業": {
+            "establishments": 28,
+            "workers": 381
+          },
+          "39_情報サービス業": {
+            "establishments": 17,
+            "workers": 219
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 4,
+            "workers": 96
+          },
+          "全産業": {
+            "establishments": 4731,
+            "workers": 58633
+          }
+        },
+        "北本市": {
+          "code": "11233",
+          "G_情報通信業": {
+            "establishments": 13,
+            "workers": 35
+          },
+          "39_情報サービス業": {
+            "establishments": 10,
+            "workers": 25
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 2,
+            "workers": 7
+          },
+          "全産業": {
+            "establishments": 1889,
+            "workers": 19238
+          }
+        },
+        "八潮市": {
+          "code": "11234",
+          "G_情報通信業": {
+            "establishments": 21,
+            "workers": 104
+          },
+          "39_情報サービス業": {
+            "establishments": 15,
+            "workers": 48
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 1,
+            "workers": 1
+          },
+          "全産業": {
+            "establishments": 4342,
+            "workers": 45901
+          }
+        },
+        "富士見市": {
+          "code": "11235",
+          "G_情報通信業": {
+            "establishments": 31,
+            "workers": 327
+          },
+          "39_情報サービス業": {
+            "establishments": 15,
+            "workers": 58
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 3,
+            "workers": 40
+          },
+          "全産業": {
+            "establishments": 2863,
+            "workers": 26592
+          }
+        },
+        "三郷市": {
+          "code": "11237",
+          "G_情報通信業": {
+            "establishments": 30,
+            "workers": 186
+          },
+          "39_情報サービス業": {
+            "establishments": 20,
+            "workers": 166
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 4,
+            "workers": 10
+          },
+          "全産業": {
+            "establishments": 5073,
+            "workers": 54271
+          }
+        },
+        "蓮田市": {
+          "code": "11238",
+          "G_情報通信業": {
+            "establishments": 17,
+            "workers": 48
+          },
+          "39_情報サービス業": {
+            "establishments": 13,
+            "workers": 40
+          },
+          "40_インターネット附随サービス業": null,
+          "全産業": {
+            "establishments": 1669,
+            "workers": 18521
+          }
+        },
+        "坂戸市": {
+          "code": "11239",
+          "G_情報通信業": {
+            "establishments": 16,
+            "workers": 275
+          },
+          "39_情報サービス業": {
+            "establishments": 14,
+            "workers": 126
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 2,
+            "workers": 149
+          },
+          "全産業": {
+            "establishments": 2642,
+            "workers": 29442
+          }
+        },
+        "幸手市": {
+          "code": "11240",
+          "G_情報通信業": {
+            "establishments": 10,
+            "workers": 44
+          },
+          "39_情報サービス業": {
+            "establishments": 5,
+            "workers": 35
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 1,
+            "workers": 1
+          },
+          "全産業": {
+            "establishments": 1848,
+            "workers": 17692
+          }
+        },
+        "鶴ヶ島市": {
+          "code": "11241",
+          "G_情報通信業": {
+            "establishments": 10,
+            "workers": 371
+          },
+          "39_情報サービス業": {
+            "establishments": 8,
+            "workers": 368
+          },
+          "40_インターネット附随サービス業": null,
+          "全産業": {
+            "establishments": 1976,
+            "workers": 22394
+          }
+        },
+        "日高市": {
+          "code": "11242",
+          "G_情報通信業": {
+            "establishments": 13,
+            "workers": 29
+          },
+          "39_情報サービス業": {
+            "establishments": 9,
+            "workers": 18
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 1,
+            "workers": 5
+          },
+          "全産業": {
+            "establishments": 1714,
+            "workers": 24682
+          }
+        },
+        "吉川市": {
+          "code": "11243",
+          "G_情報通信業": {
+            "establishments": 16,
+            "workers": 77
+          },
+          "39_情報サービス業": {
+            "establishments": 9,
+            "workers": 40
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 2,
+            "workers": 23
+          },
+          "全産業": {
+            "establishments": 2075,
+            "workers": 23200
+          }
+        },
+        "ふじみ野市": {
+          "code": "11245",
+          "G_情報通信業": {
+            "establishments": 24,
+            "workers": 83
+          },
+          "39_情報サービス業": {
+            "establishments": 15,
+            "workers": 61
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 1,
+            "workers": 1
+          },
+          "全産業": {
+            "establishments": 2796,
+            "workers": 29512
+          }
+        },
+        "白岡市": {
+          "code": "11246",
+          "G_情報通信業": {
+            "establishments": 3,
+            "workers": 12
+          },
+          "39_情報サービス業": {
+            "establishments": 2,
+            "workers": 11
+          },
+          "40_インターネット附随サービス業": null,
+          "全産業": {
+            "establishments": 1334,
+            "workers": 14074
+          }
+        },
+        "伊奈町": {
+          "code": "11301",
+          "G_情報通信業": {
+            "establishments": 7,
+            "workers": 25
+          },
+          "39_情報サービス業": {
+            "establishments": 4,
+            "workers": 19
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 1,
+            "workers": 1
+          },
+          "全産業": {
+            "establishments": 1233,
+            "workers": 14190
+          }
+        },
+        "三芳町": {
+          "code": "11324",
+          "G_情報通信業": {
+            "establishments": 10,
+            "workers": 52
+          },
+          "39_情報サービス業": {
+            "establishments": 6,
+            "workers": 14
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 1,
+            "workers": 2
+          },
+          "全産業": {
+            "establishments": 1538,
+            "workers": 28538
+          }
+        },
+        "毛呂山町": {
+          "code": "11326",
+          "G_情報通信業": {
+            "establishments": 6,
+            "workers": 10
+          },
+          "39_情報サービス業": {
+            "establishments": 3,
+            "workers": 3
+          },
+          "40_インターネット附随サービス業": null,
+          "全産業": {
+            "establishments": 1056,
+            "workers": 12304
+          }
+        },
+        "越生町": {
+          "code": "11327",
+          "G_情報通信業": {
+            "establishments": 1,
+            "workers": 1
+          },
+          "39_情報サービス業": {
+            "establishments": 1,
+            "workers": 1
+          },
+          "40_インターネット附随サービス業": null,
+          "全産業": {
+            "establishments": 422,
+            "workers": 3067
+          }
+        },
+        "滑川町": {
+          "code": "11341",
+          "G_情報通信業": {
+            "establishments": 4,
+            "workers": 21
+          },
+          "39_情報サービス業": {
+            "establishments": 2,
+            "workers": 8
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 1,
+            "workers": 12
+          },
+          "全産業": {
+            "establishments": 538,
+            "workers": 9366
+          }
+        },
+        "嵐山町": {
+          "code": "11342",
+          "G_情報通信業": {
+            "establishments": 6,
+            "workers": 18
+          },
+          "39_情報サービス業": {
+            "establishments": 5,
+            "workers": 14
+          },
+          "40_インターネット附随サービス業": null,
+          "全産業": {
+            "establishments": 682,
+            "workers": 9034
+          }
+        },
+        "小川町": {
+          "code": "11343",
+          "G_情報通信業": {
+            "establishments": 7,
+            "workers": 25
+          },
+          "39_情報サービス業": {
+            "establishments": 2,
+            "workers": 17
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 2,
+            "workers": 3
+          },
+          "全産業": {
+            "establishments": 1020,
+            "workers": 8755
+          }
+        },
+        "川島町": {
+          "code": "11346",
+          "G_情報通信業": {
+            "establishments": 5,
+            "workers": 133
+          },
+          "39_情報サービス業": {
+            "establishments": 2,
+            "workers": 7
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 2,
+            "workers": 125
+          },
+          "全産業": {
+            "establishments": 846,
+            "workers": 12334
+          }
+        },
+        "吉見町": {
+          "code": "11347",
+          "G_情報通信業": {
+            "establishments": 3,
+            "workers": 3
+          },
+          "39_情報サービス業": {
+            "establishments": 1,
+            "workers": 1
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 2,
+            "workers": 2
+          },
+          "全産業": {
+            "establishments": 600,
+            "workers": 7664
+          }
+        },
+        "鳩山町": {
+          "code": "11348",
+          "G_情報通信業": {
+            "establishments": 5,
+            "workers": 12
+          },
+          "39_情報サービス業": {
+            "establishments": 5,
+            "workers": 12
+          },
+          "40_インターネット附随サービス業": null,
+          "全産業": {
+            "establishments": 393,
+            "workers": 3601
+          }
+        },
+        "ときがわ町": {
+          "code": "11349",
+          "G_情報通信業": {
+            "establishments": 3,
+            "workers": 3
+          },
+          "39_情報サービス業": {
+            "establishments": 2,
+            "workers": 2
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 1,
+            "workers": 1
+          },
+          "全産業": {
+            "establishments": 544,
+            "workers": 5082
+          }
+        },
+        "横瀬町": {
+          "code": "11361",
+          "G_情報通信業": {
+            "establishments": 1,
+            "workers": 5
+          },
+          "39_情報サービス業": null,
+          "40_インターネット附随サービス業": null,
+          "全産業": {
+            "establishments": 310,
+            "workers": 2567
+          }
+        },
+        "皆野町": {
+          "code": "11362",
+          "G_情報通信業": {
+            "establishments": 1,
+            "workers": 5
+          },
+          "39_情報サービス業": null,
+          "40_インターネット附随サービス業": null,
+          "全産業": {
+            "establishments": 477,
+            "workers": 3866
+          }
+        },
+        "長瀞町": {
+          "code": "11363",
+          "G_情報通信業": {
+            "establishments": 2,
+            "workers": 4
+          },
+          "39_情報サービス業": {
+            "establishments": 1,
+            "workers": 1
+          },
+          "40_インターネット附随サービス業": null,
+          "全産業": {
+            "establishments": 404,
+            "workers": 2587
+          }
+        },
+        "小鹿野町": {
+          "code": "11365",
+          "G_情報通信業": {
+            "establishments": 1,
+            "workers": 21
+          },
+          "39_情報サービス業": null,
+          "40_インターネット附随サービス業": null,
+          "全産業": {
+            "establishments": 566,
+            "workers": 4425
+          }
+        },
+        "東秩父村": {
+          "code": "11369",
+          "G_情報通信業": {
+            "establishments": 1,
+            "workers": 1
+          },
+          "39_情報サービス業": null,
+          "40_インターネット附随サービス業": null,
+          "全産業": {
+            "establishments": 122,
+            "workers": 737
+          }
+        },
+        "美里町": {
+          "code": "11381",
+          "G_情報通信業": {
+            "establishments": 1,
+            "workers": 1
+          },
+          "39_情報サービス業": null,
+          "40_インターネット附随サービス業": {
+            "establishments": 1,
+            "workers": 1
+          },
+          "全産業": {
+            "establishments": 416,
+            "workers": 5982
+          }
+        },
+        "神川町": {
+          "code": "11383",
+          "G_情報通信業": {
+            "establishments": 1,
+            "workers": 9
+          },
+          "39_情報サービス業": {
+            "establishments": 1,
+            "workers": 9
+          },
+          "40_インターネット附随サービス業": null,
+          "全産業": {
+            "establishments": 454,
+            "workers": 4719
+          }
+        },
+        "上里町": {
+          "code": "11385",
+          "G_情報通信業": {
+            "establishments": 7,
+            "workers": 36
+          },
+          "39_情報サービス業": {
+            "establishments": 4,
+            "workers": 29
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 1,
+            "workers": 2
+          },
+          "全産業": {
+            "establishments": 955,
+            "workers": 11970
+          }
+        },
+        "寄居町": {
+          "code": "11408",
+          "G_情報通信業": {
+            "establishments": 3,
+            "workers": 4
+          },
+          "39_情報サービス業": {
+            "establishments": 1,
+            "workers": 1
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 1,
+            "workers": 2
+          },
+          "全産業": {
+            "establishments": 1173,
+            "workers": 14233
+          }
+        },
+        "宮代町": {
+          "code": "11442",
+          "G_情報通信業": {
+            "establishments": 6,
+            "workers": 18
+          },
+          "39_情報サービス業": {
+            "establishments": 4,
+            "workers": 13
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 1,
+            "workers": 3
+          },
+          "全産業": {
+            "establishments": 935,
+            "workers": 6793
+          }
+        },
+        "杉戸町": {
+          "code": "11464",
+          "G_情報通信業": {
+            "establishments": 8,
+            "workers": 43
+          },
+          "39_情報サービス業": {
+            "establishments": 5,
+            "workers": 38
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 1,
+            "workers": 1
+          },
+          "全産業": {
+            "establishments": 1430,
+            "workers": 15039
+          }
+        },
+        "松伏町": {
+          "code": "11465",
+          "G_情報通信業": {
+            "establishments": 4,
+            "workers": 16
+          },
+          "39_情報サービス業": {
+            "establishments": 3,
+            "workers": 15
+          },
+          "40_インターネット附随サービス業": {
+            "establishments": 1,
+            "workers": 1
+          },
+          "全産業": {
+            "establishments": 919,
+            "workers": 7705
+          }
+        }
+      }
+    }
+  },
+  "saitama-city": [
+    {
+      "name": "パシフィックシステム株式会社",
+      "hq": "〒338-0837 埼玉県さいたま市桜区田島8-4-19（本社。ほかに東京オフィス〔中央区日本橋室町〕・文京分室など）",
+      "municipality": "さいたま市",
+      "town": "桜区田島",
+      "corporate_number": "4030001034271",
+      "houjin_honten": "埼玉県さいたま市桜区田島８丁目４番１９号",
+      "employees": {
+        "value": 634,
+        "as_of": "634名（2026年3月末 グループ含む）",
+        "source": "https://www.pacific-systems.co.jp/company/outline/"
+      },
+      "capital": {
+        "value": "4億9千5百万円",
+        "source": "https://www.pacific-systems.co.jp/company/outline/"
+      },
+      "founded": 1980,
+      "business_summary": "設立 1980年8月。売上規模123億円（2026年3月末 連結売上）。「40年以上の実績とノウハウをもとに、画像センシング、AI、生コンシステム等、ソリューションの総合提案」（トップ）。業界別に製造業・生コン・コンクリート・運輸・物流・鉱業・建設・食品・農業・JA など",
+      "ai_initiative": "トップに「AIスランプ予測システム PreSLump AI®」「AIロボットピッキング」、ニュース 2026.10.20「新しいソリューション「AI映像解析システム AI BOX」を公開」（curl 2026-11-13）。県の資料（SISIA の自治体DXセミナー2024の展示）に「救急統計システムAMBULYZE（アンビュライズ）Web」",
+      "url": "https://www.pacific-systems.co.jp/company/outline/",
+      "notes": "公式 URL は県の「埼玉ロボティクスネットワーク」企業データベース https://www.pref.saitama.lg.jp/robotics/database/590.html （2024-02-27掲載、WebFetch）で知った（同ページの従業員数 489人は古い値）。WebSearch の要約では 2025年11月26日に東証スタンダードの上場を廃止（**公式では確かめていない**）。人数は**グループ含む**。gBizINFO の厚生年金の被保険者 491人。**宮崎県日向市に同名の別会社（株式会社パシフィックシステム、pacific-system.com）があり日向市の記事で使用済み**。混同しない",
+      "category": "major_group",
+      "parent_group": "株主 太平洋セメント株式会社（会社概要。「太平洋セメントグループの一員」）",
+      "checked": "2026-11-13",
+      "size_basis": "employees"
+    },
+    {
+      "name": "株式会社システムインテグレータ",
+      "hq": "さいたま本社 〒330-6032 埼玉県さいたま市中央区新都心11番地2 ランド・アクシス・タワー（明治安田生命さいたま新都心ビル）32階（ほかに大阪支社・福岡支社）",
+      "municipality": "さいたま市",
+      "town": "中央区新都心",
+      "corporate_number": "7030001003876",
+      "houjin_honten": "埼玉県さいたま市中央区新都心１１番地２",
+      "employees": {
+        "value": 279,
+        "as_of": "社員数 279名（取締役、監査役、執行役員を含む）※2026年11月2日現在",
+        "source": "https://corporate.sint.co.jp/company/profile"
+      },
+      "capital": {
+        "value": "367,712千円（資本準備金 357,712千円）",
+        "source": "https://corporate.sint.co.jp/company/profile"
+      },
+      "founded": 1995,
+      "business_summary": "設立 1995年3月。東京証券取引所 スタンダード市場（3826）。事業内容「パッケージ・ソフトウェアおよびクラウドサービス（SaaS）の企画開発・販売、コンサルティング（ERP、生産管理ツール、開発支援ツール、プロジェクト管理ツールなど）」。加入団体 MIJS・次世代ERPコンソーシアム（GRANDIT）。子会社 株式会社システム開発研究所（大阪市）・KEYSTONE SOLUTIONS（ベトナム・ダナン市）",
+      "ai_initiative": "事業内容に「AIを使った製品・サービスの企画開発および販売、AI関連のソリューションの提供・支援およびコンサルティング」、主な製品の最初に「AI」（会社概要、curl 2026-11-13）",
+      "url": "https://corporate.sint.co.jp/company/profile",
+      "notes": "独立系（上場。株主は見ていない）。人数に役員を含む。gBizINFO 273人。他県の data/area・articles に出る「システムインテグレータ」は一般名詞で、この会社ではない（2026-11-13 grep）",
+      "category": "independent",
+      "checked": "2026-11-13",
+      "size_basis": "employees"
+    },
+    {
+      "name": "日新火災情報システム株式会社",
+      "hq": "〒330-9311 埼玉県さいたま市浦和区上木崎2-7-5 日新火災さいたま本社",
+      "municipality": "さいたま市",
+      "town": "浦和区上木崎",
+      "corporate_number": "5030001006393",
+      "houjin_honten": "埼玉県さいたま市浦和区上木崎２丁目７番５号",
+      "employees": {
+        "value": 203,
+        "as_of": "203名（2026年4月1日）",
+        "source": "https://www.nisshin-info.co.jp/company/"
+      },
+      "capital": {
+        "value": "2000万円",
+        "source": "https://www.nisshin-info.co.jp/company/"
+      },
+      "founded": 1988,
+      "business_summary": "設立 1988年11月1日。事業内容「損害保険業務支援システムの開発・保守および運用全般」。「東京海上グループの損害保険会社である日新火災のIT戦略を支える」",
+      "ai_initiative": "会社情報・トップに AI の語は見つからなかった（curl）",
+      "url": "https://www.nisshin-info.co.jp/company/",
+      "notes": "親会社向けが中心。gBizINFO 190人",
+      "category": "major_group",
+      "parent_group": "日新火災海上保険株式会社（100%）。東京海上グループ",
+      "checked": "2026-11-13",
+      "size_basis": "employees"
+    },
+    {
+      "name": "T&D情報システム株式会社",
+      "hq": "〒330-0075 埼玉県さいたま市浦和区針ヶ谷4-2-18 太陽生命浦和ビル（ほかに東京事業所・大阪事業所）",
+      "municipality": "さいたま市",
+      "town": "浦和区針ヶ谷",
+      "corporate_number": "5030001004959",
+      "houjin_honten": "埼玉県さいたま市浦和区針ヶ谷４丁目２番１８号",
+      "employees": {
+        "value": 102,
+        "as_of": "102名（2026年4月1日時点）",
+        "source": "https://www.td-system.co.jp/company/enterprise/"
+      },
+      "capital": {
+        "value": "3億円",
+        "source": "https://www.td-system.co.jp/company/enterprise/"
+      },
+      "founded": 1999,
+      "business_summary": "創業 1999年7月15日。主要取引先「T&Dフィナンシャル生命他、T&D保険グループ関連会社」。gBizINFO の事業概要「システム開発およびコンピュータ機器の運用管理」",
+      "ai_initiative": "トップ・企業概要に AI の語は見つからなかった（curl）",
+      "url": "https://www.td-system.co.jp/company/enterprise/",
+      "notes": "親会社向けが中心。gBizINFO 103人",
+      "category": "major_group",
+      "parent_group": "株主 株式会社T&Dホールディングス",
+      "checked": "2026-11-13",
+      "size_basis": "employees"
+    },
+    {
+      "name": "クリエイトソリューションズ株式会社",
+      "hq": "［本社］〒330-0854 埼玉県さいたま市大宮区桜木町1丁目12-7 大宮西口第二大栄ビル3F（ほかに［五島営業所］長崎県五島市）",
+      "municipality": "さいたま市",
+      "town": "大宮区桜木町",
+      "corporate_number": "1030001096736",
+      "houjin_honten": "埼玉県さいたま市大宮区桜木町１丁目１２番７号大宮西口第二大栄ビル３Ｆ",
+      "employees": {
+        "value": 60,
+        "as_of": "60名〈正社員／40名・パートナー／20名〉（2023年7月時点）",
+        "source": "https://www.create-solutions.co.jp/company/outline"
+      },
+      "capital": {
+        "value": "1,000万円",
+        "source": "https://www.create-solutions.co.jp/company/outline"
+      },
+      "founded": 2013,
+      "business_summary": "設立 2013年3月18日。事業内容「コンピュータシステム及びソフトウェアの企画・設計・開発・販売」「システムインテグレーション」「一般労働派遣事業（派11-300959）」。サービスに技術提供・監視システム構築・ソフトウェア開発・WEBサイト制作",
+      "ai_initiative": "会社概要に AI の語はなかった（トップは見出しだけ確認）",
+      "url": "https://www.create-solutions.co.jp/company/outline",
+      "notes": "**人数にパートナー（社外）20名を含み、時点が2023年7月と古い**。公式 URL は商号から推測したドメインで開いた（会社名・住所が登記と一致）。gBizINFO 46人（職場情報 40人）",
+      "category": "independent",
+      "boundary": "労働者派遣を含む",
+      "checked": "2026-11-13",
+      "size_basis": "employees"
+    }
+  ],
+  "kawaguchi": [],
+  "warabi": [
+    {
+      "name": "株式会社OKIソフトウェア",
+      "hq": "本社所在地 〒335-8510 埼玉県蕨市中央1-16-8 OKI蕨システムセンター内",
+      "municipality": "蕨市",
+      "town": "中央",
+      "corporate_number": "8030001021646",
+      "houjin_honten": "埼玉県蕨市中央１丁目１６番８号",
+      "employees": {
+        "value": 1160,
+        "as_of": "1,160人（2026年6月21日現在）",
+        "source": "https://www.oki-osk.jp/company/profile.html"
+      },
+      "capital": {
+        "value": "4億円",
+        "source": "https://www.oki-osk.jp/company/profile.html"
+      },
+      "founded": 1977,
+      "business_summary": "設立 1977年4月1日、合併 2010年10月1日。売上高 258億円（2025年度）。gBizINFO の事業概要「ソフトウェア／組込ソフトウェア 開発・設計・製造・保守」「システム構築サービス」「SI／ソリューションサービス（CTI・CRM・SCM、NMS他）」。2024年11月 ボッシュSDS・ノムラシステムと製造業向け SAP Cloud ERP テンプレートの共同開発（トップのニュース）",
+      "ai_initiative": "トップのメニュー「DX技術」に「AI・データ分析」、トップに「AI×音声認識×CRM」「AI自動支援機能を搭載」の記載（curl 2026-11-13）",
+      "url": "https://www.oki-osk.jp/company/profile.html",
+      "notes": "大手グループ（親会社向け・大手顧客向けが中心とみられる。中小企業の相談先として書かない）。gBizINFO 1,188人。**蕨市の情報サービス業 19所・1,857人（ec_6_1）の多くを占める可能性があるが、統計の値をこの会社の値と読める書き方をしない**。石川県の companies.json に「OKIソフトウェア北陸支社」（県外本社の拠点）として名前だけ出る",
+      "category": "major_group",
+      "parent_group": "株主 沖電気工業株式会社（100%）",
+      "checked": "2026-11-13",
+      "size_basis": "employees"
+    }
+  ],
+  "toda": [],
+  "asaka": [],
+  "shiki": [],
+  "wako": [],
+  "niiza": [],
+  "fujimi-city": [],
+  "fujimino": [],
+  "miyoshi-town": [],
+  "konosu": [],
+  "ageo": [],
+  "okegawa": [],
+  "kitamoto": [],
+  "ina-town": [],
+  "kasukabe": [],
+  "soka": [],
+  "koshigaya": [],
+  "yashio": [],
+  "misato-city": [],
+  "yoshikawa": [],
+  "matsubushi": [],
+  "gyoda": [],
+  "kazo": [],
+  "hanyu": [],
+  "kuki": [],
+  "hasuda": [],
+  "satte": [],
+  "shiraoka": [],
+  "miyashiro": [],
+  "sugito": [],
+  "tokorozawa": [],
+  "hanno": [],
+  "sayama": [],
+  "iruma": [],
+  "hidaka-city": [],
+  "kawagoe": [
+    {
+      "name": "株式会社タカインフォテクノ",
+      "hq": "本社 〒350-1123 埼玉県川越市脇田本町15番地10 大樹生命川越駅前ビル9F",
+      "municipality": "川越市",
+      "town": "脇田本町",
+      "corporate_number": "8030001057574",
+      "houjin_honten": "埼玉県川越市脇田本町１５番地１０",
+      "employees": {
+        "value": 225,
+        "as_of": "225名（2026年4月1日現在）",
+        "source": "https://www.taka-infotechno.co.jp/corporate"
+      },
+      "capital": {
+        "value": "5,000万円",
+        "source": "https://www.taka-infotechno.co.jp/corporate"
+      },
+      "founded": 1979,
+      "business_summary": "設立 1979年（昭和54年）2月23日。沿革「1979年2月 入力データ作成を主業務として川越市に設立」「1981年4月 ソフトウェア開発業務開始」「1998年9月 社名 株式会社タカデータサービスを株式会社タカインフォテクノに変更」「2017年3月 …労働者派遣事業許可を取得(派11-300785)」「2017年8月 埼玉県情報サービス産業協会(SISIA)へ加盟」「2018年2月 宮城県仙台市に仙台事業所開設」。サービス: オンサイトIT支援サービス・受託システム開発・DXソリューション。加入団体に JISA・埼玉県DXコンソーシアム・Koedo Tech Consortium など",
+      "ai_initiative": "企業概要・トップに AI の語は見つからなかった（curl。サービス名は「DXソリューション」）",
+      "url": "https://www.taka-infotechno.co.jp/corporate",
+      "notes": "独立系（株主は見ていない）。SISIA の会員（沿革）。gBizINFO 229人",
+      "category": "independent",
+      "boundary": "オンサイトIT支援（常駐）・労働者派遣を含む",
+      "checked": "2026-11-13",
+      "size_basis": "employees"
+    }
+  ],
+  "higashimatsuyama": [],
+  "sakado": [
+    {
+      "name": "株式会社アーベルソフト",
+      "hq": "本社所在地 〒350-0229 埼玉県坂戸市薬師町 10-2（ほかに札幌支社）",
+      "municipality": "坂戸市",
+      "town": "薬師町",
+      "corporate_number": "6030001068664",
+      "houjin_honten": "埼玉県坂戸市薬師町１０番地２",
+      "employees": {
+        "value": 74,
+        "as_of": "74名（2026年6月時点）",
+        "source": "https://www.abelsoft.co.jp/company"
+      },
+      "capital": {
+        "value": "5,000万円",
+        "source": "https://www.abelsoft.co.jp/company"
+      },
+      "founded": 1984,
+      "business_summary": "設立 1984年8月20日。事業内容「コンピュータソフトウェアの企画、開発、販売及び保守」「サーバー及びネットワーク機器の設計、構築及び保守」。所属団体に SISIA・埼玉県商工会連合会など。取引先の自治体に「総務省 埼玉県 埼玉県朝霞市 埼玉県越生町 埼玉県志木市 埼玉県秩父市 埼玉県毛呂山町 埼玉県鳩山町」",
+      "ai_initiative": "トップのサービス一覧の最初に「生成AIソリューション」（「生成AIや機械学習を活用したソリューション」）。SISIA の資料（埼玉県自治体DXセミナー2024の展示、2024-07-24）に「生成AIと連携した革新的な対話型チャットボット」「AIチャットボットDialog Play®」",
+      "url": "https://www.abelsoft.co.jp/company",
+      "notes": "独立系（役員は同姓が多い。株主は見ていない）。公式 URL は商号から推測したドメインで開いた（住所が登記と一致）。gBizINFO 77人",
+      "category": "independent",
+      "checked": "2026-11-13",
+      "size_basis": "employees"
+    }
+  ],
+  "tsurugashima": [],
+  "moroyama": [],
+  "ogose": [],
+  "namegawa": [],
+  "ranzan": [],
+  "ogawa-town": [],
+  "kawajima": [],
+  "yoshimi": [],
+  "hatoyama": [],
+  "tokigawa": [],
+  "higashichichibu": [],
+  "kumagaya": [
+    {
+      "name": "株式会社アチピレーションテクノロジー",
+      "hq": "所在地 〒360-0843 埼玉県熊谷市三ヶ尻2349",
+      "municipality": "熊谷市",
+      "town": "三ヶ尻",
+      "corporate_number": "5030002112819",
+      "houjin_honten": "埼玉県熊谷市三ヶ尻２３４９",
+      "employees": {
+        "value": 81,
+        "as_of": "人数 81人(男62人：女19人)2025年4月1日現在",
+        "source": "https://acp-tech.jp/about"
+      },
+      "capital": {
+        "value": "23,000,000円",
+        "source": "https://acp-tech.jp/about"
+      },
+      "founded": 1998,
+      "business_summary": "創業 1997年1月、設立 1998年1月（沿革）。事業内容「ソフトウェア開発・設計」「ハードウェア開発・設計」「スマートフォンアプリ開発」「ホームページ制作」「システムコンサルタント」「労働者派遣事業」。所属団体に「公益社団法人 埼玉県情報サービス産業協会」・熊谷商工会議所",
+      "ai_initiative": "会社概要に AI の語はなかった（curl）",
+      "url": "https://acp-tech.jp/about",
+      "notes": "gBizINFO の企業ホームページの欄は http://www.ak-system.co.jp/ （acp-tech.jp へのリンクがある）。gBizINFO 96人（職場情報 52人）。**人数の時点が2025年4月**",
+      "category": "independent",
+      "boundary": "ハードウェア開発・労働者派遣を含む",
+      "checked": "2026-11-13",
+      "size_basis": "employees"
+    }
+  ],
+  "honjo": [
+    {
+      "name": "株式会社グローバルソフトウェア",
+      "hq": "本社 〒367-0044 埼玉県本庄市見福三丁目11番10号",
+      "municipality": "本庄市",
+      "town": "見福",
+      "corporate_number": "4030001060202",
+      "houjin_honten": "埼玉県本庄市見福３丁目１１番１０号",
+      "employees": {
+        "value": 109,
+        "as_of": "109名（令和5年7月31日現在）",
+        "source": "http://www.globals.jp/corporate"
+      },
+      "capital": {
+        "value": "5000万円",
+        "source": "http://www.globals.jp/corporate"
+      },
+      "founded": 1978,
+      "business_summary": "創立 昭和53年2月。事業内容「医療システム開発」「通信システム開発・検証」「システム受託開発（組み込み系・基幹業務系）」「IT技術者派遣事業」。保有資格に労働者派遣事業者（派11-300635）・埼玉県物品関係等競争入札参加資格（電算業務）",
+      "ai_initiative": "トップ・企業概要に AI の語は見つからなかった（curl）",
+      "url": "http://www.globals.jp/corporate",
+      "notes": "**人数の時点が令和5年（2023年）7月と古い**。gBizINFO 108人（職場情報 111人）",
+      "category": "independent",
+      "boundary": "IT技術者派遣を含む",
+      "checked": "2026-11-13",
+      "size_basis": "employees"
+    }
+  ],
+  "fukaya": [],
+  "misato-town-saitama": [],
+  "kamikawa-town": [],
+  "kamisato": [],
+  "yorii": [],
+  "chichibu": [],
+  "yokoze": [],
+  "minano": [],
+  "nagatoro": [],
+  "ogano": [],
+  "_reference": {
+    "saitama-city": {
+      "next_candidates": [
+        {
+          "name": "AGS株式会社",
+          "hq": "登記の本店 埼玉県さいたま市浦和区針ヶ谷４丁目３番２５号",
+          "corporate_number": "2030001000011",
+          "employees": {
+            "value": null,
+            "as_of": "公式を開けず",
+            "source": "https://www.ags.co.jp/ （curl は接続リセット・502、WebFetch は 503。2026-11-13）"
+          },
+          "notes": "gBizINFO の厚生年金の被保険者 945人、職場情報総合サイトの従業員数 800人、事業概要「情報処理サービス ソフトウェア開発 その他情報サービス システム機器販売」（gBizINFO、参考値）。SISIA の資料（埼玉県自治体DXセミナー2024の展示）に「生成AI技術プラットフォーム「LoGoシリーズ」」「字幕表示システム「Cotopat」」。**幸手市の発表（2026-05-25、cases2.md）で、市の国保システムの保守の委託先として名前が出る（再委託先がサイバー攻撃を受けた件）**。公式が開ければ大手グループか独立系かを確かめて本表の1位候補"
+        },
+        {
+          "name": "株式会社ミツウロコクリエイティブソリューションズ",
+          "hq": "所在地 埼玉県さいたま市大宮区下町１-８-１ 大宮下町一丁目ビル",
+          "corporate_number": "3030001016733",
+          "employees": {
+            "value": null,
+            "as_of": "会社概要に人数なし",
+            "source": "https://www.mitsuuroko-creativesolutions.com/profile.html"
+          },
+          "notes": "設立 昭和60年10月1日、資本金30,000,000円、株主 株式会社ミツウロコグループホールディングス 100％。LPガス販売店向けシステム・料金収納代行・シェアードサービス。沿革「1985年 株式会社アイコンを設立…本社熊谷市筑波2-48」。gBizINFO 110人（職場情報 103人）",
+          "parent_group": "ミツウロコグループホールディングス"
+        },
+        {
+          "name": "ぶぎんシステムサービス株式会社",
+          "hq": "所在地 さいたま市大宮区北袋町1-307 武蔵野銀…（武蔵野銀行のグループ会社のページ）",
+          "corporate_number": "4030001007401",
+          "employees": {
+            "value": null,
+            "as_of": "人数の記載なし",
+            "source": "https://www.musashinobank.co.jp/company/about/group.html"
+          },
+          "notes": "「情報処理に関する総合的なサービス」「集金代行サービス」「パソコンから汎用機までのソフト開発のほか、ホームページの作成、LANの構築支援」。自社サイトは見つけられなかった。gBizINFO 39人",
+          "parent_group": "武蔵野銀行のグループ会社"
+        },
+        {
+          "name": "AGSビジネスコンピューター株式会社",
+          "hq": "登記の本店 埼玉県さいたま市大宮区北袋町１丁目２９９番地１２",
+          "corporate_number": "6030001003828",
+          "employees": {
+            "value": null,
+            "as_of": "公式を開けず",
+            "source": "https://www.ags-bc.co.jp （curl 接続リセット、WebFetch 503）"
+          },
+          "notes": "gBizINFO 166人（職場情報 122人）。AGS のグループとみられる（公式で確かめていない）"
+        }
+      ],
+      "unverified": [
+        "株式会社エムエスシステム（緑区美園、2030001080656。gBizINFO 93人。公式未確認）",
+        "株式会社マルサンシステム（桜区、7030001007836。69人）",
+        "ノグチコンピュータサービス株式会社（中央区下落合、8030001006762。61人）",
+        "サイカンシステム株式会社（大宮区上小町、7030001014262。56人）",
+        "株式会社ＥＣＡＤソリューションズ（中央区新都心、5030001123288。被保険者51人・職場情報56人、ソフトウェア開発・販売）",
+        "三松システムコンサルティング株式会社（大宮区、38人）",
+        "株式会社データ総研（北区土呂町、33人）",
+        "関東ソフトウェア株式会社（北区日進町、30人）",
+        "株式会社日本ソフトウェアサービス（南区、17人）"
+      ],
+      "excluded": [
+        "ＮＩＴＴＯＫＵ株式会社（大宮区、自動巻線機・FA設備の製造。gBizINFO 649人）",
+        "クリーンシステム株式会社（浦和区、245人。商号の「システム」で拾った）",
+        "クラリオンライフサイクルソリューションズ株式会社（中央区、172人。業種は見ていない）",
+        "株式会社インフォゲート（大宮区、一般貨物自動車運送・倉庫など）",
+        "株式会社メディカル情報サービス（大宮区、医療情報ソリューションの導入・運用支援とコールセンター。境界）",
+        "ソフトロニクス株式会社（桜区、精密小型モータの開発・製造。公式）",
+        "埼玉アンテナシステム株式会社（南区）"
+      ]
+    },
+    "warabi": {
+      "excluded": [
+        "株式会社DNPデータテクノ（錦町4-5-1、1050001028118。gBizINFO の被保険者 3,033人。DNP のグループ会社一覧で「各種帳票およびプラスチックカードの製造・販売」 https://www.dnp.co.jp/corporate/location/list/index.html 、「国内製造拠点」にも載る。gBizINFO の事業概要は「IPS（Information Processing Solution）分野 請求書、お取引明細、ダイレクトメール…の情報処理、出力、加工」→ 印刷・BPO の境界。システム開発会社として扱わない）"
+      ],
+      "unverified": [
+        "株式会社沖ソフトウェアエキスパートサービス（中央1-16-8、OKIソフトウェアと同じ番地、4030001022210。gBizINFO 158人。公式未確認）"
+      ]
+    },
+    "kawaguchi": {
+      "unverified": [
+        "株式会社クレオンシステムズ（西青木、6030001077987。gBizINFO 71人。公式を見つけられず）",
+        "エムラインシステム株式会社（東本郷、63人）",
+        "株式会社三和ソリューション（末広、57人）",
+        "株式会社アイゼン・ソリューション（栄町、8030001082952。被保険者31人、職場情報 30人、業種 情報通信業）"
+      ],
+      "excluded": [
+        "株式会社ＷＩＴＨ（飯塚、1,078人。保育園の運営）"
+      ]
+    },
+    "kawagoe": {
+      "unverified": [
+        "サンエイ・ソフトウエア・ジャパン株式会社（松江町、7030001054762。68人。公式を見つけられず）",
+        "株式会社ビージーシステム（登記 田町、公式の住所は川越市笠幡85-3。2030001055427。27人。公式 https://www.bgsystem.co.jp/corporate.html に「武州ガスグループから生まれたIT技術の専門家」、人数は見ていない）"
+      ]
+    },
+    "kumagaya": {
+      "unverified": [
+        "株式会社統計データーセンター（宮町、27人）",
+        "株式会社データ総研熊谷（中央、16人）"
+      ],
+      "excluded": [
+        "サイシンシステム株式会社（葛和田、業種 製造業）"
+      ]
+    },
+    "tokorozawa": {
+      "unverified": [
+        "埼玉情報サービス株式会社（東町16-1、2030001024101。44人）",
+        "株式会社システムネットワーク（御幸町、38人）"
+      ],
+      "excluded": [
+        "株式会社バンガードシステムズ（東所沢、電子機械器具製造業）"
+      ]
+    },
+    "sayama": {
+      "unverified": [
+        "日本情報システム株式会社（狭山台、7030001026539。56人）",
+        "朝日システムズ株式会社（水野、207人・職場情報 290人、業種「サービス業（他に分類されないもの）」。事業は見ていない）"
+      ],
+      "excluded": [
+        "マザーサンヤチヨ・オートモーティブシステムズ株式会社（柏原、輸送用機器）",
+        "株式会社ランシステム（商号の「システム」で拾った）"
+      ]
+    },
+    "hasuda": {
+      "unverified": [
+        "株式会社ＩＴＣ（本町、8030001034490。69人）"
+      ],
+      "excluded": [
+        "東光東芝メーターシステムズ株式会社（計量器の製造）"
+      ]
+    },
+    "hanno": {
+      "unverified": [
+        "株式会社武蔵野コンピューターコンサルタント（八幡町、7030001089387。23人）"
+      ]
+    },
+    "shiraoka": {
+      "unverified": [
+        "京葉オペレーションシステム株式会社（下大崎、7030001031646。gBizINFO 561人。事業は見ていない。商号で拾った）"
+      ]
+    },
+    "niiza": {
+      "excluded": [
+        "株式会社システムアドバンス（大和田、業種 製造業）"
+      ],
+      "unverified": [
+        "株式会社ネットワークジャパン（大和田、173人。事業は見ていない）"
+      ]
+    },
+    "gyoda": {
+      "excluded": [
+        "株式会社キャンドックスシステムズ（押上町、計測システム・同軸ケーブルなどのハードウェア。公式 https://www.candox.co.jp/ ）"
+      ]
+    },
+    "hanyu": {
+      "excluded": [
+        "株式会社ダイチューテクノロジーズ（産業用電子機器・生産設備の開発・製造）"
+      ]
+    },
+    "koshigaya": {
+      "unverified": [
+        "株式会社ＡＩコンツェルン（120人。商号の「ＡＩ」で拾った。事業は見ていない）"
+      ]
+    },
+    "namegawa": {
+      "excluded": [
+        "クノールブレムゼ商用車システムジャパン株式会社（商用車のブレーキ等とみられる。商号で拾った）"
+      ]
+    },
+    "chichibu": {
+      "excluded": [
+        "株式会社アズコムデータセキュリティ（みどりが丘、文書の保管・集配・倉庫業務。gBizINFO 91人）"
+      ]
+    },
+    "toda": {
+      "excluded": [
+        "株式会社ＴＳビルシステム（ビル管理・警備）",
+        "エスペックサーマルテックシステム株式会社"
+      ]
+    },
+    "_factories": {
+      "checked": "2026-11-13",
+      "note": "記事では社名を出さないか、ここで公式に確かめた社名・拠点名だけを使う。統計の値（stats.md の (A)）を1社・1工場の値として書かない",
+      "items": [
+        {
+          "municipality": "寄居町",
+          "company": "本田技研工業株式会社",
+          "site": "埼玉製作所 完成車工場",
+          "address": "〒369-1216 埼玉県大里郡寄居町富田2354",
+          "official": "「2013年に稼動し」「年間25万台の生産能力を持つ四輪完成車工場」。主な製品 CIVIC・CIVIC TYPE-R・FREED・STEPWGN・ZR-V・PRELUDE",
+          "url": "https://global.honda/jp/saitama/yorii/",
+          "method": "WebFetch（curl は 403）",
+          "stats": "寄居町の輸送用機械 ec_6_1 20所・3,623人。町の値に他社も入る"
+        },
+        {
+          "municipality": "小川町",
+          "company": "本田技研工業株式会社",
+          "site": "埼玉製作所 エンジン工場",
+          "address": "埼玉県比企郡小川町ひばり台2-1-1",
+          "official": "埼玉製作所は「完成車工場（寄居町）」と「エンジン工場（小川町）」の2拠点の総称",
+          "url": "https://global.honda/jp/saitama/",
+          "method": "WebFetch"
+        },
+        {
+          "municipality": "狭山市",
+          "company": "本田技研工業株式会社",
+          "site": "（旧）埼玉製作所 狭山完成車工場",
+          "status": "2017年10月4日の発表「狭山と寄居の完成車工場を、最新の生産技術が備わる寄居完成車工場に集約します。」「この集約は、2021年度を目処に完了する予定です。」。県の資料（2021年12月17日の懇談会）「狭山完成車工場での生産終了のタイミング」。埼玉製作所のページ（2026-11-13）に狭山の記載なし。集約の完了日・跡地は確かめていない",
+          "url": "https://global.honda/jp/news/2017/c171004.html",
+          "url2": "https://www.pref.saitama.lg.jp/documents/219821/r031217hondagikenkougyousayama.pdf",
+          "stats": "狭山市の輸送用機械は2025年6月1日時点で14所・1,354人・4,762.9億円（mfg2025）。どの会社かは統計では分からない"
+        },
+        {
+          "municipality": "さいたま市北区",
+          "company": "大正製薬株式会社",
+          "site": "大宮工場・総合研究所・大宮物流センター",
+          "address": "埼玉県さいたま市北区吉野町1丁目403番地（大宮工場・物流センター〒331-9520、総合研究所〒331-9530）",
+          "url": "https://www.taisho.co.jp/company/facility/",
+          "method": "curl",
+          "stats": "北区の化学工業 934.6億円（区の58.4%）。他社も入る"
+        },
+        {
+          "municipality": "羽生市",
+          "company": "大正製薬株式会社",
+          "site": "羽生工場",
+          "address": "〒348-8540 埼玉県羽生市小松台1丁目603番地27号",
+          "url": "https://www.taisho.co.jp/company/facility/",
+          "method": "curl"
+        },
+        {
+          "municipality": "さいたま市南区",
+          "company": "株式会社ロッテ",
+          "site": "浦和工場・中央研究所",
+          "address": "〒336-8601 埼玉県さいたま市南区沼影3-1-1",
+          "url": "https://www.lotte.co.jp/corporate/about/outline/list.html",
+          "method": "curl",
+          "stats": "南区の食料品 1,307.5億円（区の84.2%）。他社も入る"
+        },
+        {
+          "municipality": "狭山市",
+          "company": "株式会社ロッテ",
+          "site": "狭山工場",
+          "address": "〒350-1331 埼玉県狭山市新狭山1-2-1",
+          "url": "https://www.lotte.co.jp/corporate/about/outline/list.html",
+          "method": "curl"
+        },
+        {
+          "municipality": "所沢市",
+          "company": "山崎製パン株式会社",
+          "site": "埼玉工場（埼玉第一工場）",
+          "address": "〒359-0012 埼玉県所沢市坂之下85",
+          "official": "「埼玉工場」には「埼玉第二東村山工場」（東京都東村山市）も含まれる",
+          "url": "https://www.yamazakipan.co.jp/company/zigyousho/index.html",
+          "method": "curl"
+        },
+        {
+          "municipality": "久喜市",
+          "company": "大日本印刷株式会社・グループ会社",
+          "site": "久喜工場／(株)DNP高機能マテリアル／(株)DNPファインオプトロニクス",
+          "address": "〒346-0035 埼玉県久喜市清久町1-5 清久工業団地内",
+          "url": "https://www.dnp.co.jp/corporate/location/factory/index.html",
+          "method": "curl"
+        },
+        {
+          "municipality": "狭山市",
+          "company": "DNPのグループ会社",
+          "site": "(株)DNPテクノパック／(株)DNPイメージングコム",
+          "address": "〒350-1328 埼玉県狭山市広瀬台2-6-1",
+          "url": "https://www.dnp.co.jp/corporate/location/factory/index.html",
+          "method": "curl"
+        },
+        {
+          "municipality": "蕨市",
+          "company": "DNPのグループ会社",
+          "site": "(株)DNPデータテクノ",
+          "address": "〒335-0005 埼玉県蕨市錦町4-5-1",
+          "official": "グループ会社一覧に「各種帳票およびプラスチックカードの製造・販売」",
+          "url": "https://www.dnp.co.jp/corporate/location/factory/index.html",
+          "method": "curl"
+        },
+        {
+          "municipality": "戸田市",
+          "company": "DNPのグループ会社",
+          "site": "(株)エヌビーシー",
+          "address": "〒335-0033 埼玉県戸田市笹目北町10-11",
+          "url": "https://www.dnp.co.jp/corporate/location/factory/index.html",
+          "method": "curl"
+        },
+        {
+          "municipality": "ふじみ野市",
+          "company": "DNPのグループ会社",
+          "site": "(株)DNPファインオプトロニクス（拠点名「上福岡」）",
+          "address": "〒356-8507 埼玉県ふじみ野市福岡2-2-1",
+          "url": "https://www.dnp.co.jp/corporate/location/factory/index.html",
+          "method": "curl"
+        },
+        {
+          "municipality": "三芳町",
+          "company": "DNPのグループ会社",
+          "site": "(株)DNP出版プロダクツ／(株)DNPモビリティ＆リビング／(株)DNP高機能マテリアル（拠点名「鶴瀬」）",
+          "address": "〒354-8558 埼玉県入間郡三芳町竹間沢311",
+          "url": "https://www.dnp.co.jp/corporate/location/factory/index.html",
+          "method": "curl"
+        },
+        {
+          "municipality": "白岡市",
+          "company": "DNPのグループ会社",
+          "site": "(株)DNP出版プロダクツ",
+          "address": "〒349-0204 埼玉県白岡市篠津字立野1100-1",
+          "url": "https://www.dnp.co.jp/corporate/location/factory/index.html",
+          "method": "curl"
+        }
+      ],
+      "not_verified": [
+        "熊谷市の化学工業（9所・1,141人・5,842.1億円、市の52.8%）の会社: WebSearch 3回で特定できず。求人サイトに共立製薬「埼玉工場」（熊谷市冑山9-10）の記載（二次情報、verified: false）。記事で会社名を書かない",
+        "コーセー（狭山市）・資生堂（久喜市）・TOPPAN の工場は拠点ページの中身が取れず未確認",
+        "東松山市・三芳町・朝霞市・坂戸市・嵐山町の食料品、行田市・滑川町・上尾市・鶴ヶ島市の輸送用機械、川越市の化学・情報通信機械、入間市の非鉄金属は調べていない"
+      ]
+    },
+    "_logistics": {
+      "checked": "2026-11-13",
+      "items": [
+        {
+          "municipality": "さいたま市北区",
+          "company": "大正製薬株式会社",
+          "site": "大宮物流センター",
+          "address": "〒331-9520 埼玉県さいたま市北区吉野町1丁目403番地",
+          "url": "https://www.taisho.co.jp/company/facility/"
+        }
+      ],
+      "note": "ほかの大手の物流センターは調べていない。物流の集積は stats.md の統計で書く"
+    },
+    "_outside_hq": {
+      "note": "県外本社の会社の県内拠点は今回まとめていない（SISIA の会員名簿が見られなかったため）。SISIA の資料の展示企業に富士通Japan株式会社・ミツイワ株式会社（どちらも県外本社とみられる、公式未確認）"
+    }
+  },
+  "_notes": [
+    "会社の所在地は横浜なので記事で「埼玉の会社」「首都圏の会社」と書かない（当社の話）",
+    "統計の値（情報サービス業・工場の業種）を特定の会社の値と読める書き方をしない（蕨市の情報サービス業 1,857人と OKIソフトウェア・DNPデータテクノ など）",
+    "大手グループの情報子会社（OKIソフトウェア・パシフィックシステム・日新火災情報システム・T&D情報システム）は親会社・グループ向けの事業が中心のことが多い。中小企業の相談先として書かない",
+    "人数の時点が古い・社外を含む: グローバルソフトウェア（令和5年7月）・クリエイトソリューションズ（2023年7月、パートナー20名を含む）・アチピレーションテクノロジー（2025年4月）・パシフィックシステム（グループ含む）",
+    "同名の別会社: 宮崎県日向市の株式会社パシフィックシステム（記事で使用済み）",
+    "AGS株式会社は公式サイトが確認日に開けなかった（503）。本表に入れていない"
+  ]
+}

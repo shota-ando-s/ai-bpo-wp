@@ -1,0 +1,424 @@
+#!/usr/bin/env python3
+"""三重県29市町の試算の割り当てを計算し、重なりを確かめる（2026-11-11）。
+
+data/area/shiga/_calc.py を元に作った。県ページ（/area/mie/）には試算を入れないので、PLAN は29行。
+
+前提: 月の削減時間 = 対象人数 × 1人の月の業務量 × 25%
+      月の時間換算額 = 月の削減時間 × 時間単価（wages.md の人件費時給〔全国の時給①×1.2〕を十円単位に丸めた値）
+      万円は小数1桁に四捨五入して比べる（記事の「約◯万円」と同じ）。
+
+確かめること:
+  0. **静岡・愛知・三重・京都の取り決め**: 月の削減時間（0.25時間刻み）×4 を4で割った余りが 2（三重県）の時間だけを使う
+     （端数が .50 の時間。data/area/_tokai/shared.md）
+  1. 29ページの中で、月の削減時間・月の時間換算額（万円、小数1桁）・従業員数が重ならない
+  2. 既存の全県の地域ページ（articles/2026-1?-*-area-*.md、三重県を除く）の「## 試算」の節の「◯時間」「◯万円」と重ならない
+  3. 全県の data/area/*/_calc.py の PLAN（三重県を除く。glob で全部読む）の月の削減時間・月の時間換算額と重ならない。
+     読めないファイルは警告。REQUIRED の県はファイルがなければ NG。金額が静岡・愛知・京都と重なったら、先に push した府県を優先する
+  4. 時間は0.25時間刻み。金額が四捨五入の境目（◯.◯5万円）から100円より離れている
+  5. 試算の業種（業態）・規模が cases.md・cases_outside.md の事例の会社と同じにならない（CASES と照合）
+  6. slug が _brief.md の29市町と一致する
+  7. 試算の業種が wages.md の9業種にある（農業・漁業・林業は試算の業種にしない）
+使い方: python3 -B data/area/mie/_calc.py          （末尾に OK / NG を出す）
+        python3 -B data/area/mie/_calc.py free <業種> <最小時間> <最大時間>   （空いている時間と金額を並べる）
+他県の PLAN は後から変わることがあるので、push の直前に git pull してもう一度実行する。
+"""
+import ast
+import glob
+import importlib.util
+import io
+import os
+import re
+import sys
+from collections import Counter
+from contextlib import redirect_stdout
+from decimal import Decimal, ROUND_HALF_UP
+
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
+ART = os.path.join(ROOT, "articles")
+HERE = os.path.dirname(os.path.abspath(__file__))
+SELF = "mie"
+KYUSHU_MOD = 2  # 静岡・愛知・三重・京都の割り当て（月の削減時間×4 を4で割った余り）。三重県は 2（端数 .50）
+DIV = 4
+
+# wages.md の人件費時給（時給①×1.2 を十円単位に丸めた値。記事でも「約◯円」と書く値）。9業種とも入れる（他県の PLAN を読むため）
+RATE = {
+    "製造業": 3500,
+    "卸売業・小売業": 3540,
+    "建設業": 3520,
+    "運輸業・郵便業": 2980,
+    "医療・福祉": 3180,
+    "宿泊・飲食サービス業": 2510,
+    "不動産・物品賃貸業": 3790,
+    "学術研究・専門技術サービス": 4320,
+    "情報通信業": 4260,
+}
+WAGES_MD = set(RATE)
+
+SLUGS = {
+    # 市（14）
+    "tsu", "yokkaichi", "ise", "matsusaka", "kuwana", "suzuka", "nabari", "owase", "kameyama", "toba",
+    "kumano-city", "inabe", "shima", "iga",
+    # 町（15）
+    "kisosaki", "toin", "komono", "asahi-town", "kawagoe-town", "taki", "meiwa", "odai", "tamaki", "watarai",
+    "taiki", "minamiise", "kihoku", "mihama-town-mie", "kiho",
+}
+
+# 九州以外で照合が必須の県（2026-11-04 にある _calc.py）。ファイルがなければ NG
+REQUIRED = ("gifu", "hiroshima", "nagano", "okayama", "shimane", "tottori", "yamaguchi", "yamanashi",
+            "fukuoka", "saga", "nagasaki", "kumamoto", "oita", "miyazaki", "kagoshima",
+            "gunma", "ibaraki", "tochigi", "okinawa", "hokkaido", "shiga", "nara", "wakayama")
+
+# cases.md・cases_outside.md・subsidy_a_areas.md（採択・交付決定の手がかり）の事例の会社（2026-11-04）
+# (会社名, 市町村〔県外は「県外」、所在を確かめていないものは「所在未確認」〕, 業態のキー,
+#  従業員数〔(下限, 上限)。1つの値なら (n, n)。分からなければ None〕, AI の事例か〔実証・採択・交付決定・使用済み・目標を含む〕)
+# cases2.md（2026-11-04 の補充調査）の会社も足した（「# cases2.md」の行）。cases2.md が更新されたら足して再実行する
+CASES = [
+    # cases.md（2026-11-11）。cases_outside.md・cases2.md の会社はあとで足す
+    ("三重県環境保全事業団（みえDXトライアルサポート事例集 R7 事例05、生成AIで資料作成 最大約80%〔推測〕、111名）", "津市", {"環境分析", "廃棄物処理", "財団"}, (111, 111), True),
+    ("整備工場東海（国の統計をAIに読ませて売上を予測）", "桑名市", {"自動車整備"}, (101, 101), True),
+    ("ぎゅーとら（AIの需要予測で発注の実証、2026-10、報道）", "伊勢市", {"スーパー", "小売"}, (2399, 2399), True),
+    ("ソルバ（AIの顧問サービスを売る側）", "四日市市", {"情報サービス", "コンサルティング"}, None, True),
+    # cases2.md（2026-11-11）
+    ("北勢ダイキャスト工業（NAGOYA DX アワード2024、AI の記載なし）", "桑名市", {"鋳物", "ダイカスト", "鋳造"}, None, False),
+    ("大洋産業（鋳造、AI の記述なし）", "桑名市", {"鋳物", "鋳造", "鉄鋼"}, None, False),
+    ("松井機工（NAGOYA DX アワード2024、AI の記載なし）", "玉城町", {"機械加工", "金属製品"}, None, False),
+    ("三重電子（NAGOYA DX アワード2024、AI の記載なし）", "明和町", {"電子部品", "電気機械"}, None, False),
+    ("裕進運輸（NAGOYA DX アワード2024、AI の記載なし）", "菰野町", {"運送", "道路貨物運送"}, None, False),
+    ("南紀の柑橘の AI 防除機（東海農政局 スマート農業の実証）", "御浜町", {"柑橘", "農業"}, None, True),
+    ("土実樹農園（鳥羽商船高専の鳥獣害AIの実証の場）", "南伊勢町", {"農業", "柑橘"}, None, True),
+    ("相差の宿5施設（AIカメラで入浴者を数える 2021年度の実証）", "鳥羽市", {"旅館", "宿泊"}, None, True),
+    ("志摩市 R7 事例集の8社（AI なし）", "志摩市", {"ホテル", "宿泊"}, None, False),
+    # cases_outside.md（2026-11-11）
+    ("東和理研（めっき、AI見積の実証、所在未確認）", "所在未確認", {"めっき", "表面処理"}, None, True),
+    ("zero one（福島市の総合建設、50名弱、経営層の生成AI研修）", "県外", {"総合工事業", "建設", "土木"}, (45, 49), True),
+]
+
+# (市町, slug, 業種, 業態, 業態のキー, 従業員数, 対象業務, 対象人数, 1人の月の業務量[時間])
+# 業種は stats.md の「市町ごとの主要産業の候補」の (B) 中小企業の業種から選ぶ。大企業の工場と読める中分類、農林漁業は試算の業種にしない。
+PLAN = [
+    ('津市', 'tsu', '情報通信業', 'ソフトウェア業（企業・団体向けの業務システムの受託開発・保守）', {'業務システム', '情報サービス', 'ソフトウェア受託開発'}, 68,
+     '顧客からの問い合わせ・不具合連絡への一次回答の下書きと、打合せ記録の要約、仕様書・提案書の下書き', 36, 26.5),
+    ('四日市市', 'yokkaichi', '建設業', '設備工事業（工場・プラントの電気・配管の設備工事）', {'電気工事', '管工事', '設備工事'}, 86,
+     '工事日報・安全書類（作業計画書・KY記録）の取りまとめと、元請・工場の担当者への工程・作業の連絡文、見積書の下書き', 50, 29.0),
+    ('伊勢市', 'ise', '製造業', '食料品（土産の菓子・餅の製造と販売）', {'菓子', '土産菓子', '食料品'}, 58,
+     '土産物店・通販の取引先からの賞味期限・アレルゲン・在庫の問い合わせへの回答と、商品の表示の文、製造の記録の取りまとめ', 40, 34.75),
+    ('松阪市', 'matsusaka', '運輸業・郵便業', '道路貨物運送（食品・日用品の店舗への配送）', {'運送', '道路貨物運送'}, 72,
+     '荷主からの配送状況・納品時刻の問い合わせへの回答と、配車の連絡、運転日報・点呼記録の取りまとめ', 44, 32.5),
+    # 桑名市: 当初の「鉄鋼（鋳物）」は同じ市の大洋産業・北勢ダイキャスト工業と業態が重なるので、製造業のまま業態を変えた（時間・金額は同じ。2026-11-11）
+    ('桑名市', 'kuwana', '製造業', '食料品（業務用の総菜・弁当の製造）', {'食料品', '総菜', '弁当'}, 54,
+     '取引先の飲食店・小売店からの原材料・アレルゲン・配送の問い合わせへの回答と、商品の規格書・表示の文、製造・衛生の記録の取りまとめ', 46, 31.0),
+    ('鈴鹿市', 'suzuka', '製造業', '輸送用機械（自動車部品のプレス加工・溶接）', {'輸送用機械', '自動車部品', 'プレス加工'}, 92,
+     '取引先からの図面変更・納期の問い合わせへの回答と、作業手順書・検査記録・不具合の報告書の取りまとめ', 52, 29.5),
+    ('名張市', 'nabari', '製造業', '生産用機械（工場の省力化設備・治具の設計製作）', {'省力化設備', '治具', '生産用機械'}, 48,
+     '顧客との仕様の打合せ記録の要約と、見積書・取扱説明書・設計変更の連絡書の下書き', 43, 34.0),
+    ('尾鷲市', 'owase', '製造業', '食料品（干物・練り製品などの水産加工）', {'水産加工', '水産食料品', '食料品'}, 40,
+     '量販店・通販の取引先からの原材料・産地・賞味期限の問い合わせへの回答と、商品の表示の文、製造の記録の取りまとめ', 36, 38.5),
+    ('亀山市', 'kameyama', '製造業', 'プラスチック製品（樹脂部品の射出成形・組立）', {'射出成形', 'プラスチック製品'}, 78,
+     '取引先からの金型・納期・品質の問い合わせへの回答と、成形条件・検査記録の取りまとめ、不具合の報告書の下書き', 51, 30.0),
+    # 鳥羽市: 当初の「旅館」は同じ市の相差の宿5施設（AIカメラの実証）と業態が重なるので、宿泊・飲食サービス業のまま業態を変えた（時間・金額は同じ。2026-11-11）
+    ('鳥羽市', 'toba', '宿泊・飲食サービス業', '飲食店（観光客向けの海鮮料理店。団体の予約と土産物の販売を含む）', {'飲食店', '海鮮料理'}, 56,
+     '予約サイト・電話・メールの団体予約と問い合わせへの返信の下書きと、仕入れ・席の手配の連絡、メニュー・店内案内の多言語の文の作成', 50, 31.0),
+    ('熊野市', 'kumano-city', '医療・福祉', '特別養護老人ホーム（デイサービスを併設）', {'特別養護老人ホーム', '介護'}, 52,
+     '介護記録の要約と、家族への連絡文・お便り、ケアマネジャーへの報告書・会議録の作成', 44, 30.5),
+    ('いなべ市', 'inabe', '製造業', '窯業・土石（コンクリート二次製品の製造）', {'窯業・土石', 'コンクリート製品'}, 43,
+     '建設会社・商社の取引先からの規格・納期・数量の問い合わせへの回答と、見積書・納品書の作成、製造・検査の記録の取りまとめ', 38, 37.0),
+    ('志摩市', 'shima', '宿泊・飲食サービス業', 'リゾートホテル（宿泊・宴会・婚礼）', {'宿泊', 'ホテル'}, 96,
+     '予約・宴会の問い合わせへの返信の下書きと、宴会・婚礼の打合せ記録の要約、館内案内・メニューの多言語の文の作成', 53, 30.0),
+    ('伊賀市', 'iga', '製造業', '金属製品（機械部品の切削加工）', {'切削加工', '金属製品', '機械部品'}, 62,
+     '取引先からの図面・納期の問い合わせへの回答と、見積書の作成、検査記録・作業日報の取りまとめ', 49, 30.0),
+    ('木曽岬町', 'kisosaki', '運輸業・郵便業', '道路貨物運送（港の輸入貨物・工場の製品の輸送）', {'運送', '道路貨物運送'}, 36,
+     '配車表の下書きと、荷主への到着予定・遅延の連絡、運転日報・点呼記録の集計', 28, 45.5),
+    ('東員町', 'toin', '製造業', '生産用機械（工場の自動化設備・搬送装置の製作）', {'搬送装置', '自動化設備', '生産用機械'}, 30,
+     '顧客との仕様の打合せ記録の要約と、見積書・取扱説明書の下書き、設計変更の連絡書の作成', 24, 49.75),
+    ('菰野町', 'komono', '製造業', '金属製品（板金・溶接による部品の製造）', {'溶接', '板金', '金属製品'}, 53,
+     '取引先からの図面変更・納期の問い合わせへの回答と、作業手順書・検査記録・不具合の報告書の取りまとめ', 47, 30.0),
+    ('朝日町', 'asahi-town', '製造業', '金属製品（めっき・表面処理の加工）', {'表面処理', 'めっき', '金属製品'}, 32,
+     '取引先からの処理の仕様・納期の問い合わせへの回答と、検査成績書・作業記録の取りまとめ、見積書の作成', 28, 44.5),
+    ('川越町', 'kawagoe-town', '運輸業・郵便業', '倉庫業（港湾地区の工場の部品・製品の保管と配送）', {'倉庫業', '運輸'}, 59,
+     '荷主からの在庫・入出庫の問い合わせへの回答と、入出庫の記録・在庫報告の作成、配送業者への手配の連絡', 40, 34.25),
+    ('多気町', 'taki', '製造業', '電気機械（電子機器・制御機器の組立）', {'電気機械', '組立', '電子機器'}, 46,
+     '取引先からの仕様・納期の問い合わせへの回答と、作業手順書・検査記録の取りまとめ、不具合の報告書の下書き', 41, 34.0),
+    ('明和町', 'meiwa', '卸売業・小売業', '米穀の卸売・小売（米の精米・配達と通販）', {'小売', '米穀', '卸売'}, 28,
+     '飲食店・個人客からの在庫・配達・品種の問い合わせへの回答と、商品の説明文、注文と配達の記録の取りまとめ', 25, 50.0),
+    ('大台町', 'odai', '製造業', '木材・木製品（製材・プレカット）', {'プレカット', '製材', '木材・木製品'}, 35,
+     '工務店からの見積・納期・寸法の問い合わせへの回答と、加工指示書・出荷の記録の取りまとめ', 31, 38.0),
+    ('玉城町', 'tamaki', '運輸業・郵便業', '道路貨物運送（工場の部品・製品の輸送）', {'運送', '道路貨物運送'}, 45,
+     '荷主からの配送状況の問い合わせへの回答と、配車の連絡、運行の記録・点呼記録の取りまとめ', 40, 32.75),
+    ('度会町', 'watarai', '製造業', '製茶（伊勢茶の荒茶・仕上げ茶の製造と販売）', {'飲料', '茶', '製茶'}, 27,
+     '問屋・小売店・通販の取引先からの在庫・産地・品質の問い合わせへの回答と、商品の説明文、製造の記録の取りまとめ', 24, 48.25),
+    ('大紀町', 'taiki', '医療・福祉', '通所介護・訪問介護の事業所', {'通所介護', '訪問介護', '介護'}, 39,
+     '介護記録の要約と、家族への連絡文、ケアマネジャーへの報告書・サービス担当者会議の記録の作成', 35, 38.0),
+    ('南伊勢町', 'minamiise', '卸売業・小売業', '水産物の卸売（鮮魚・養殖魚の卸と通販）', {'鮮魚', '水産物卸', '卸売'}, 16,
+     '飲食店・量販店の取引先からの入荷・規格・価格の問い合わせへの回答と、商品の説明文、出荷の記録の取りまとめ', 8, 48.25),
+    ('紀北町', 'kihoku', '製造業', '家具・装備品（ヒノキの木工品・建具の製造）', {'建具', '木工', '家具・装備品'}, 34,
+     '工務店・小売店・通販の取引先からの見積・納期・仕様の問い合わせへの回答と、商品の説明文、製作の記録の取りまとめ', 30, 43.0),
+    ('御浜町', 'mihama-town-mie', '製造業', '食料品（みかんの加工品＝ジュース・ゼリーの製造）', {'食料品', '飲料', '果実加工'}, 33,
+     '通販・土産物店の取引先からの原材料・賞味期限・在庫の問い合わせへの回答と、商品の表示の文、製造の記録の取りまとめ', 29, 46.0),
+    # 紀宝町: 県外の zero one（総合建設、50名弱）と規模が近いので 49名→64名にした（時間・金額は同じ。2026-11-11）
+    ('紀宝町', 'kiho', '建設業', '総合工事業（土木・道路の工事）', {'土木', '建設', '総合工事業'}, 64,
+     '工事日報・安全書類の取りまとめと、発注者への工程の連絡文、工事写真の整理', 44, 29.5),
+]
+
+
+def man(yen):
+    """円 → 万円（小数1桁、四捨五入）。yen は Decimal"""
+    return (yen / Decimal(10000)).quantize(Decimal("0.1"), rounding=ROUND_HALF_UP)
+
+
+def read_plan_text(src):
+    """岡山県の形の PLAN を文字列で切り出す（行頭の `PLAN = [` から行頭の `]` まで）。docstring の「PLAN = [」は拾わない"""
+    m = re.search(r"^PLAN = \[", src, re.M)
+    if not m:
+        raise ValueError("行頭の PLAN = [ がない")
+    j = src.index("\n]\n", m.start())
+    return ast.literal_eval(src[m.start() + 7:j + 2])
+
+
+def load_plan(path):
+    """他県の _calc.py を import して PLAN を返す（main は __name__ のガードで動かない）。だめなら文字列で読む。読めなければ例外"""
+    pref = os.path.basename(os.path.dirname(path))
+    sys.dont_write_bytecode = True  # 他県のフォルダに __pycache__ を作らない
+    try:
+        spec = importlib.util.spec_from_file_location("plan_" + pref, path)
+        mod = importlib.util.module_from_spec(spec)
+        with redirect_stdout(io.StringIO()):
+            spec.loader.exec_module(mod)
+        return list(mod.PLAN)
+    except Exception:  # noqa: BLE001 import できなければ文字列で読む
+        return read_plan_text(open(path, encoding="utf-8").read())
+
+
+def other_plans():
+    """全県の _calc.py の PLAN を読み、(県, 市町村, 削減時間, 万円) を返す。
+    九州以外の必須の県のファイルがなければ None を入れる（NG）。読めないファイルは警告だけ（NG にしない）。"""
+    out, read, warn = [], {}, []
+    paths = sorted(glob.glob(os.path.join(ROOT, "data", "area", "*", "_calc.py")))
+    found = {os.path.basename(os.path.dirname(p)): p for p in paths}
+    for pref in REQUIRED:
+        if pref not in found:
+            print(f"NG {pref} の _calc.py がない（必須）")
+            out.append(None)
+    for pref, path in found.items():
+        if pref == SELF:
+            continue
+        try:
+            rows = load_plan(path)
+        except Exception as e:  # noqa: BLE001
+            warn.append(f"{pref} の _calc.py の PLAN が読めない（{type(e).__name__}: {e}）。照合から外した")
+            continue
+        n_skip = 0
+        for r in rows:
+            try:
+                city, ind, n, hrs = r[0], r[2], r[-2], r[-1]
+            except Exception:  # noqa: BLE001
+                n_skip += 1
+                continue
+            if ind not in RATE:
+                n_skip += 1
+                continue
+            h = Decimal(str(n)) * Decimal(str(hrs)) * Decimal("0.25")
+            out.append((pref, city, h, man(h * RATE[ind])))
+        if n_skip:
+            warn.append(f"{pref} の PLAN に読めない行・時給の分からない業種が {n_skip}行ある（RATE に足す）")
+        read[pref] = len(rows)
+    return out, read, warn
+
+
+def existing():
+    """既存の地域ページの「## 試算」の節から、結果の時間・万円と、見出しの従業員数を拾う（岡山県・佐賀県の _calc.py と同じ拾い方）。"""
+    hours, mans, sizes, per_file = {}, {}, {}, {}
+    files = [f for f in sorted(glob.glob(os.path.join(ART, "2026-1?-*-area-*.md"))) if f"-area-{SELF}" not in f]
+    n_sec = 0
+    skip_h_label = re.compile(r"人数|業務量|使う人|人と時間|時間（仮定）|1人|時給|時間単価|1時間あたり")
+    skip_m_label = re.compile(r"時給|時間単価|1時間あたり|月額|引|回収|費用|利用料|料金")
+    cut_line = re.compile(r"毎月勤労統計|総実労働|かんたんAI|月額|差し引|引いた|引いても|払っても|払った|残り|残ります|初期費用|回収|戻る|取り戻せる")
+    for f in files:
+        t = open(f, encoding="utf-8").read()
+        m = re.search(r"^## 試算.*?(?=^## )", t, re.M | re.S)
+        if not m:
+            continue
+        n_sec += 1
+        sec = m.group(0)
+        name = os.path.basename(f)
+        fh, fm = set(), set()
+        for line in sec.splitlines():
+            if line.startswith("|"):
+                cells = [x.strip() for x in line.strip().strip("|").split("|")]
+                if len(cells) < 2 or set(cells[0]) <= set("-: "):
+                    continue
+                label, val = cells[0], " ".join(cells[1:])
+                take_h = not skip_h_label.search(label)
+                take_m = not skip_m_label.search(label)
+                if re.search(r"減る|削減時間|浮く|減らせる|取り戻す|試算|結果|当社|項目|月の|削減|換算|効果", label):
+                    take_h = take_m = True
+                if re.match(r"[*約月]*\d", label):
+                    val = " ".join(cells)
+                    take_h = take_m = True
+                if take_h and re.search(r"人数|業務量|使う人|時給", label) and "削減" not in label:
+                    take_h = False
+            else:
+                val = cut_line.split(line)[0]
+                take_h = take_m = True
+            v = re.sub(r"（[^）]*）|\([^)]*\)", "", val)
+            if take_h:
+                for x in re.findall(r"([\d,]+(?:\.\d+)?)\s*時間", v):
+                    fh.add(Decimal(x.replace(",", "")))
+            if take_m:
+                for a, b in re.findall(r"(\d+)万([\d,]+)円", v):
+                    fm.add((Decimal(a) + Decimal(b.replace(",", "")) / 10000).quantize(Decimal("0.1"), rounding=ROUND_HALF_UP))
+                for x in re.findall(r"([\d,]+(?:\.\d+)?)\s*万円", v):
+                    fm.add(Decimal(x.replace(",", "")))
+        for x in fh:
+            hours.setdefault(x, name)
+        for x in fm:
+            mans.setdefault(x, name)
+        per_file[name] = (len(fh), len(fm))
+        for x in re.findall(r"従業員\s*(\d+)\s*名", sec.splitlines()[0]):
+            sizes.setdefault(int(x), name)
+    return len(files), n_sec, hours, mans, sizes, per_file
+
+
+def used_values():
+    """既存の記事と他県の PLAN で使われている時間・万円（探索用。main と同じ集め方）"""
+    _, _, ex_h, ex_m, _, _ = existing()
+    op, _, _ = other_plans()
+    h = set(ex_h) | {r[2] for r in op if r}
+    m = set(ex_m) | {r[3] for r in op if r}
+    return h, m
+
+
+def in_range(size, csize):
+    lo, hi = csize
+    return lo * 0.85 <= size <= hi * 1.15
+
+
+def border_ok(yen):
+    """四捨五入の境目（◯.◯5万円＝千円の位で500円）から100円より離れているか"""
+    return abs(int(yen % 1000) - 500) > 100
+
+
+def main():
+    n_files, n_sec, ex_h, ex_m, ex_s, per_file = existing()
+    empty = [k for k, v in per_file.items() if v[1] == 0]
+    if empty:
+        print("NG 試算の金額を拾えなかった既存の記事:", empty)
+    by_pref = Counter(re.sub(r"^2026-1\d-\d+-area-([a-z]+).*", r"\1", k) for k in per_file)
+    print(f"既存の地域ページ: {n_files}本（うち試算の節があるもの {n_sec}本。県別 {dict(sorted(by_pref.items()))}）。"
+          f"拾った値: 時間 {len(ex_h)}種・万円 {len(ex_m)}種・規模 {len(ex_s)}種")
+    op, read, warn = other_plans()
+    ok = None not in op
+    pl_h, pl_m = {}, {}
+    for r in op:
+        if r is None:
+            continue
+        pref, city, h, m = r
+        pl_h.setdefault(h, f"{pref} {city}（_calc.py の PLAN）")
+        pl_m.setdefault(m, f"{pref} {city}（_calc.py の PLAN）")
+    print(f"他県の PLAN: {len(read)}県 {sum(read.values())}行（{', '.join(f'{k} {v}' for k, v in read.items())}）。"
+          f"時間 {len(pl_h)}種・万円 {len(pl_m)}種")
+    for w in warn:
+        print("（警告）", w)
+
+    seen_h, seen_m, seen_s = {}, {}, {}
+    notes = []
+    print("| 市町村 | 業種（業態） | 従業員 | 対象人数×業務量×25% | 月の削減時間 | 時間単価 | 月の時間換算額 | 年間 | ×4 を4で割った余り |")
+    print("|---|---|---|---|---|---|---|---|---|")
+    for (city, slug, ind, sub, keys, size, task, n, hrs) in PLAN:
+        if ind not in WAGES_MD:
+            print(f"  NG {city} の業種 {ind} は wages.md にない（農林漁業は試算の業種にしない）")
+            ok = False
+            continue
+        h = Decimal(str(n)) * Decimal(str(hrs)) * Decimal("0.25")
+        yen = h * RATE[ind]
+        m = man(yen)
+        y = man(yen * 12)
+        q = h * 4
+        res = int(q) % DIV if q % 1 == 0 else None
+        print(f"| {city} | {ind}（{sub}） | {size}名 | {n}名×{hrs}時間×25% | {h.normalize():f}時間 | 約{RATE[ind]:,}円 | 約{m}万円 | 約{y}万円 | {res} |")
+        if q % 1 != 0:
+            print(f"  NG {city} の時間が0.25時間刻みでない ({h})")
+            ok = False
+        elif res != KYUSHU_MOD:
+            print(f"  NG {city} の時間 {h} は4府県の割り当て（×4 を4で割った余り {KYUSHU_MOD}）に合わない（余り {res}）")
+            ok = False
+        for label, key, seen, exd, pld in (("時間", h, seen_h, ex_h, pl_h), ("金額", m, seen_m, ex_m, pl_m)):
+            if key in seen:
+                print(f"  NG 三重県の中で{label}が重なる: {city} と {seen[key]} ({key})")
+                ok = False
+            seen[key] = city
+            if key in exd:
+                print(f"  NG 既存の記事と{label}が重なる: {city} と {exd[key]} ({key})")
+                ok = False
+            if key in pld:
+                print(f"  NG 他県の PLAN と{label}が重なる: {city} と {pld[key]} ({key})")
+                ok = False
+        if size in seen_s:
+            print(f"  NG 三重県の中で規模が重なる: {city} と {seen_s[size]} ({size}名)")
+            ok = False
+        seen_s[size] = city
+        if not border_ok(yen):
+            print(f"  NG {city} の金額が四捨五入の境目に近い（{yen}円）")
+            ok = False
+        if n > size:
+            print(f"  NG {city} の対象人数が従業員数より多い")
+            ok = False
+        for (cname, ccity, ckeys, csize, is_ai) in CASES:
+            if "業種未確認" in ckeys:
+                if ccity == city:
+                    notes.append(f"{city}: 業種を確かめていない事例 {cname} がある（試算は {sub}・{size}名。試算の節で事例の会社に触れない）")
+                continue
+            if not (keys & ckeys):
+                continue
+            if not is_ai:
+                if (csize is not None and in_range(size, csize)) or (csize is None and ccity == city):
+                    notes.append(f"{city}: 試算（{sub}・{size}名）と業態が近い AI ではない事例 {cname}（{csize or '規模不明'}）")
+                continue
+            if csize is not None and in_range(size, csize):
+                print(f"  NG {city} の試算（{sub}・{size}名）が事例 {cname}（{'・'.join(sorted(ckeys))}・{csize[0]}〜{csize[1]}名）に近い")
+                ok = False
+            elif csize is None and ccity == city:
+                print(f"  NG {city} の試算（{sub}）が同じ市町村の事例 {cname}（規模不明）と同じ業態")
+                ok = False
+            elif ccity in ("所在未確認", "県外"):
+                notes.append(f"{city}: 試算（{sub}・{size}名）と業態のキーが重なる{ccity}の事例 {cname}"
+                             f"（{'規模不明' if csize is None else f'{csize[0]}〜{csize[1]}名で範囲外'}・別の市町村なので NG にしない）")
+    slugs = [p[1] for p in PLAN]
+    if set(slugs) != SLUGS or len(slugs) != len(set(slugs)):
+        print("NG slug が _brief.md と違う:", set(slugs) ^ SLUGS, [s for s, c in Counter(slugs).items() if c > 1])
+        ok = False
+    if not PLAN:
+        print("NG PLAN が空")
+        print("NG")
+        return
+    n_ex_size = sum(1 for p in PLAN if p[5] in ex_s)
+    print(f"\n市町村ページ: {len(PLAN)}、市町村名の重なり: {len(PLAN) - len({p[0] for p in PLAN})}")
+    print(f"時間の範囲 {min(seen_h).normalize():f}〜{max(seen_h).normalize():f}時間、金額の範囲 約{min(seen_m)}〜{max(seen_m)}万円、規模 {min(seen_s)}〜{max(seen_s)}名")
+    print(f"（参考）既存の記事の試算の見出しと同じ規模: {n_ex_size}件（規模の重なりは三重県の中だけを NG にする）")
+    for x in notes:
+        print("（参考）", x)
+    print("業種の内訳:", dict(Counter(p[2] for p in PLAN)))
+    print("OK" if ok and not empty and len(PLAN) == 29 else "NG")
+
+
+def free(ind, lo, hi):
+    """業種 ind で、lo〜hi 時間の空いている（時間, 万円）を並べる"""
+    h_used, m_used = used_values()
+    mine_h = {Decimal(str(p[7])) * Decimal(str(p[8])) * Decimal("0.25") for p in PLAN}
+    mine_m = {man(Decimal(str(p[7])) * Decimal(str(p[8])) * Decimal("0.25") * RATE[p[2]]) for p in PLAN}
+    h = Decimal(str(lo))
+    out = []
+    while h <= Decimal(str(hi)):
+        if int(h * 4) % DIV == KYUSHU_MOD and h not in h_used and h not in mine_h:
+            yen = h * RATE[ind]
+            m = man(yen)
+            if m not in m_used and m not in mine_m and border_ok(yen):
+                out.append(f"{h.normalize():f}h/{m}万")
+        h += Decimal("0.25")
+    print(f"{ind} {lo}〜{hi}時間の空き {len(out)}件:", " ".join(out))
+
+
+if __name__ == "__main__":
+    if len(sys.argv) >= 5 and sys.argv[1] == "free":
+        free(sys.argv[2], float(sys.argv[3]), float(sys.argv[4]))
+    else:
+        main()

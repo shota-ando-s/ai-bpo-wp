@@ -1,0 +1,614 @@
+{
+ "_meta": {
+  "checked": "2026-11-06",
+  "scope": "群馬県35市町村。本店（国税庁 法人番号公表サイトの本店所在地）が当該市町村にあり、公式サイトで受託システム開発・ソフトウェア開発・Web制作・情報処理サービスを事業として明示する法人。福島・山梨と同じく、本表には『公式サイトで本社所在地と従業員数の両方を確認できた会社』だけを入れた。従業員数が公式にない会社、公式サイトの本文を取れない会社は _reference に置いた。県外に本店がある会社の県内拠点は載せない。公式が『群馬本社』と『東京本社』を併記する会社（ジーシーシー）は法人番号の本店所在地（前橋市）で判断した。各市町村の本表は最大5社、公式の従業員数の多い順。",
+  "candidate_sources": [
+   "一般社団法人群馬県情報サービス産業協会（法人番号 1070005008279、本店 前橋市南町2丁目50番地の1。国税庁で確認）。**公式サイト・会員名簿は見つけられなかった**（WebSearch 4回）。会員であることは各社の公式の会社概要の記載で確かめた（システム・アルファ、スリーアイ、OPENER）",
+   "群馬県 デジタルトランスフォーメーション課『群馬県情報化推進協議会 賛助会員によるプレゼン事業』 https://www.pref.gunma.jp/07/b2700030.html （2023-02-07更新。県内本社はジーシーシー・システム・アルファ・ブレインファーム・両毛システムズ。ほかは県外本社）",
+   "群馬県『ぐんまDX技術革新補助金・ぐんま技術革新チャレンジ補助金』の採択一覧 https://www.pref.gunma.jp/06/g1600876.html （2026-08-06更新。WebFetch の要約）",
+   "国税庁 法人番号公表サイト https://www.houjin-bangou.nta.go.jp/ （本店所在地の確認。検索 POST、2026-11-06）",
+   "全国法人リスト houjin.jp の『群馬県〇〇市 情報・通信』（市町村別 https://houjin.jp/cities/10xxx/industries/5 、255件。**secondary**。候補の名前と公式サイトの URL を知るためだけに使った）",
+   "WebSearch（担当上限12回のうち10回を使用）"
+  ],
+  "columns": "name / hq（公式の本社住所）/ municipality / town / employees{value,as_of,source} / capital / founded / business_summary / ai_initiative / url / houjin_bangou / size_basis / checked / notes"
+ },
+ "maebashi": [
+  {
+   "name": "株式会社ジーシーシー",
+   "hq": "群馬県前橋市上大島町96（代表住所。群馬本社は前橋市天川大島町1292）",
+   "municipality": "前橋市",
+   "town": "上大島町",
+   "employees": {
+    "value": 754,
+    "as_of": "2026年2月現在",
+    "source": "https://www.gcc.co.jp/company/data/"
+   },
+   "capital": {
+    "value": "9,000万円",
+    "source": "https://www.gcc.co.jp/company/data/"
+   },
+   "founded": 1965,
+   "business_summary": "地方自治体向けの情報システム（住民情報・庁内情報のパッケージ、システム開発）、アウトソーシング、データセンター、運用保守、BCP。売上高190億7,000万円（2025年度実績）。高崎支社・利根沼田サテライトオフィス（沼田市）、東京本社（新宿区）・東京支社・東京西支社・埼玉支社・茨城支社・横浜オフィス",
+   "ai_initiative": "トップ・会社概要・サービスの各ページで AI の製品・サービスの記載は確認できなかった（WebFetch でもなし）。執行役員CTO の担当に『先進テクノロジー推進担当』",
+   "url": "https://www.gcc.co.jp/",
+   "houjin_bangou": "8070001001545",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "昭和40年12月27日設立。**公式は『群馬本社』と『東京本社』を併記。国税庁の本店は前橋市上大島町96番地**。グループに ジーシーシー自治体サービス（前橋市）・ジーシーシースタッフ（高崎市）・ジーシーシーアグリテック（前橋市）・ジーシーシーデータソリューション（前橋市）・exus。県の情報化推進協議会の賛助会員のプレゼン（2023-02-07更新）に名前"
+  },
+  {
+   "name": "システム・アルファ株式会社",
+   "hq": "群馬県前橋市大友町2-23-5 アルファビル",
+   "municipality": "前橋市",
+   "town": "大友町",
+   "employees": {
+    "value": 190,
+    "as_of": "令和8年3月時点",
+    "source": "https://www.system-alpha.co.jp/company/about.html"
+   },
+   "capital": {
+    "value": "7,000万円",
+    "source": "https://www.system-alpha.co.jp/company/about.html"
+   },
+   "founded": 1981,
+   "business_summary": "システムインテグレーション（基幹系業務・販売管理・生産管理）、Webシステム開発、ネットワーク構築、情報セキュリティ、ソフトウェア受託開発、複合機販売、IT保守、BPO、ドコモショップ運営、LINE WORKS 等の Bot 開発。売上高73億6,621万円（令和8年3月期）。東京支社（港区）",
+   "ai_initiative": "トップで AI の製品・サービスの記載は確認できなかった（WebFetch でもなし）",
+   "url": "https://www.system-alpha.co.jp/",
+   "houjin_bangou": "9070001001511",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "昭和56年9月3日創業（富士通コンピュータ・OA機器ディーラーとして前橋市に設立）。**『群馬県情報サービス産業協会会員』と公式に記載**。富士通グループコアパートナー。**ドコモショップ運営・複合機販売を含む（事業が広い）**"
+  },
+  {
+   "name": "ぐんぎんシステムサービス株式会社",
+   "hq": "群馬県前橋市元総社町171番地1",
+   "municipality": "前橋市",
+   "town": "元総社町",
+   "employees": {
+    "value": 140,
+    "as_of": "2026年6月25日現在（『役職員数』。役員を含む）",
+    "source": "https://www.gss.co.jp/company/index.html"
+   },
+   "capital": {
+    "value": "3,000万円（株主 群馬銀行他）",
+    "source": "https://www.gss.co.jp/company/index.html"
+   },
+   "founded": 1986,
+   "business_summary": "群馬銀行グループのシステム開発会社。金融システム開発、機器販売、コンサルティング",
+   "ai_initiative": "会社案内・トップで AI の記載は確認できなかった",
+   "url": "https://www.gss.co.jp/",
+   "houjin_bangou": "1070001001056",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "1986年7月26日設立。**群馬銀行グループ**（地銀の子会社。一般の中小企業向けの受託は記事で言い切らない）"
+  },
+  {
+   "name": "有限会社シーワン",
+   "hq": "群馬県前橋市荒牧町1-9-12-201",
+   "municipality": "前橋市",
+   "town": "荒牧町",
+   "employees": {
+    "value": 4,
+    "as_of": "時点なし",
+    "source": "https://www.c1-net.com/outline/"
+   },
+   "capital": null,
+   "founded": 2005,
+   "business_summary": "ウェブサイト制作・運営、ソフトウェア開発",
+   "ai_initiative": "AI の記載は確認できなかった",
+   "url": "https://www.c1-net.com/",
+   "houjin_bangou": "1070002008059",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "2005年11月設立（出資金400万円）。小規模"
+  }
+ ],
+ "takasaki": [
+  {
+   "name": "株式会社高崎共同計算センター",
+   "hq": "群馬県高崎市下之城町936-20",
+   "municipality": "高崎市",
+   "town": "下之城町",
+   "employees": {
+    "value": 330,
+    "as_of": "2026年1月1日現在",
+    "source": "https://www.tkcc.net/company/"
+   },
+   "capital": {
+    "value": "5,000万円",
+    "source": "https://www.tkcc.net/company/"
+   },
+   "founded": 1968,
+   "business_summary": "Web系アプリ開発、車載・家電の組込みソフト開発・回路/基板設計、モデルベース開発、医療システム、製造業向け生産管理、アウトソーシング（教育分野の事務支援、カスタマーサービス、検定運営事務局、プリントサービス）。売上高72億3,000万円（2022年度）。下佐野センター（高崎市）、大阪プロダクション・ベース／大阪営業所",
+   "ai_initiative": "トップのサービス一覧に『IoT/AI IoTやAI等先進的な技術を用いて、お客様のニーズに合わせたサービスを提供します』（具体的な製品・事例は未確認）",
+   "url": "https://www.tkcc.net/",
+   "houjin_bangou": "9070001007459",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "昭和43年5月2日設立。代表取締役社長 井上彩。**ソフト開発とアウトソーシング（BPO）の両方**。IPROS の掲載 https://mono.ipros.com/company/detail/314036 から公式 URL を知った（secondary）"
+  },
+  {
+   "name": "株式会社インターゾーン",
+   "hq": "群馬県高崎市緑町2-1-12 緑町ビル2・3階",
+   "municipality": "高崎市",
+   "town": "緑町",
+   "employees": {
+    "value": 230,
+    "as_of": "2025年8月現在",
+    "source": "https://inter-zone.jp/company/"
+   },
+   "capital": {
+    "value": "2,400万円",
+    "source": "https://inter-zone.jp/company/"
+   },
+   "founded": 2000,
+   "business_summary": "自動車業界向けクラウドCRM『gnote』の開発・運用、コールセンター事業、ウェブマーケティング、BPO（中国大連の英特立有限公司）",
+   "ai_initiative": "トップに『自社開発だけでなく外部ツールと積極的に連携 gnote kintone 生成AI/外部ソフトウェア連携』。社員紹介・ブログに AI ツールの記事（議事録の AI ツール比較など）",
+   "url": "https://inter-zone.jp/",
+   "houjin_bangou": "1070001008836",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "2000年9月14日設立。代表取締役社長 鏡山健二。**SaaS 開発とコールセンター・BPO の会社で、受託開発の会社とは言い切れない**。230名はコールセンター等を含む全体の人数"
+  },
+  {
+   "name": "株式会社テクノソレイユ",
+   "hq": "群馬県高崎市下和田町4-10-2（高崎本社）",
+   "municipality": "高崎市",
+   "town": "下和田町",
+   "employees": {
+    "value": 87,
+    "as_of": "時点なし",
+    "source": "https://www.techno-soleil.co.jp/?page_id=16"
+   },
+   "capital": {
+    "value": "1,800万円",
+    "source": "https://www.techno-soleil.co.jp/?page_id=16"
+   },
+   "founded": 1991,
+   "business_summary": "システム開発保守（公共・金融・保険分野）、システム運用管理、クラウドソリューション『浄太クラウド』、給与計算システム『ソレイユ』、ゲームソフト。売上高 7億7,117万円（2026年3月期）。東京事務所（千代田区）",
+   "ai_initiative": "トップに『長年培った業務知識と最新AIを含めたIT技術を掛け合わせ、業務効率化から新規サービス創出まで』（具体的な製品・事例は未確認）",
+   "url": "https://www.techno-soleil.co.jp/",
+   "houjin_bangou": "2070001007754",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "1991年6月21日設立。代表取締役 齋藤宇広。プライバシーマーク・ISMS"
+  },
+  {
+   "name": "株式会社スリーアイ",
+   "hq": "群馬県高崎市上佐野町1085-3",
+   "municipality": "高崎市",
+   "town": "上佐野町",
+   "employees": {
+    "value": 35,
+    "as_of": "時点なし",
+    "source": "https://www.3i-net.co.jp/index.php/company/profile/"
+   },
+   "capital": {
+    "value": "3,000万円",
+    "source": "https://www.3i-net.co.jp/index.php/company/profile/"
+   },
+   "founded": 2000,
+   "business_summary": "情報システムの設計・開発・運用。ISO/IEC 27001、マイクロソフト認定パートナー、群馬県競争入札参加資格",
+   "ai_initiative": "トップ・会社概要で AI の記載は確認できなかった",
+   "url": "https://www.3i-net.co.jp/",
+   "houjin_bangou": "1070001008852",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "平成12年12月8日設立（ミリオン株式会社の高崎技術センターから分離独立）。**所属団体『（社）群馬県情報サービス産業協会』と公式に記載**。高崎市内に同名の別法人（株式会社スリーアイ、住吉町、9070001007351）あり、取り違えない"
+  },
+  {
+   "name": "株式会社ロジカルフォース",
+   "hq": "群馬県高崎市栄町4-11 原地所第2ビル4階",
+   "municipality": "高崎市",
+   "town": "栄町",
+   "employees": {
+    "value": 21,
+    "as_of": "時点なし",
+    "source": "https://www.lfc.co.jp/aboutus/"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.lfc.co.jp/aboutus/"
+   },
+   "founded": 1989,
+   "business_summary": "ホームページ制作（WordPress、ECサイト、採用サイト）、SEO、システム開発、サイト保守",
+   "ai_initiative": "サービスに『AI対策 “AIに選ばれるサイト”への対策』（AI 検索向けのサイト対策。AI の導入支援ではない）",
+   "url": "https://www.lfc.co.jp/",
+   "houjin_bangou": "2070001008810",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "平成元年4月26日設立。**Web制作が中心**"
+  }
+ ],
+ "kiryu": [
+  {
+   "name": "株式会社両毛システムズ",
+   "hq": "群馬県桐生市広沢町三丁目4025番地",
+   "municipality": "桐生市",
+   "town": "広沢町",
+   "employees": {
+    "value": 1066,
+    "as_of": "2026年3月期（第57期）の連結。ほかに平均臨時雇用者 358名。有価証券報告書（2026年6月23日提出）の『主要な経営指標等の推移（連結）』p.1–2。提出会社単体の人数は見ていない",
+    "source": "https://www.ryomo.co.jp/pdf/ir/yuukasyoken_202603.pdf"
+   },
+   "capital": {
+    "value": "19億6,690万円",
+    "source": "https://www.ryomo.co.jp/pdf/ir/yuukasyoken_202603.pdf"
+   },
+   "founded": 1970,
+   "business_summary": "公共（水道料金・公営企業会計など自治体向け）・医療・製造（スマートファクトリー、モデルベース開発）・印刷業向けのシステム、クラウド、データセンター。連結売上高257億3,500万円（2026年3月期）。東京支社（千代田区）、名古屋オフィス、ベトナム・フィリピンに子会社",
+   "ai_initiative": "製品一覧に『AI外観検査サービス』（良品画像を学習させ不良品を検出）、『AIチャットボット MyAssisChat®』（生成AIでチャットボットを作成・運用）、『生成AIによるソフトウェア開発効率化』（車載ソフト開発）、スマートファクトリーで IoT・AI・Digital Twin https://www.ryomo.co.jp/product/index_01.html",
+   "url": "https://www.ryomo.co.jp/",
+   "houjin_bangou": "2070001016771",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "1970年1月31日設立（両毛電子計算センター）。**会社概要の沿革に『株式会社ミツバ及び中部電力株式会社による公開買付に伴い東京証券取引所スタンダード市場上場を廃止』（2026年）**。会社概要に従業員数の記載はなく、人数は公式サイトに置かれた有価証券報告書の値。県の情報化推進協議会の賛助会員のプレゼンに名前。グループに両毛ビジネスサポート・両毛インターネットデータセンター（桐生市）"
+  },
+  {
+   "name": "株式会社ソフトウィング",
+   "hq": "群馬県桐生市広沢町5丁目1221-15",
+   "municipality": "桐生市",
+   "town": "広沢町",
+   "employees": {
+    "value": 12,
+    "as_of": "2020年5月末現在（古い）",
+    "source": "https://www.swg.co.jp/about/"
+   },
+   "capital": {
+    "value": "1,300万円（2013年3月末現在）",
+    "source": "https://www.swg.co.jp/about/"
+   },
+   "founded": null,
+   "business_summary": "コンサルティング、情報システム開発、Webアプリケーション開発、パッケージソフトウェアの開発販売。売上高 9,075万円（2012年度。古い）",
+   "ai_initiative": "AI の記載は確認できなかった",
+   "url": "https://www.swg.co.jp/",
+   "houjin_bangou": "8070001016205",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "**人数・資本金・売上の時点が古い**"
+  }
+ ],
+ "isesaki": [
+  {
+   "name": "株式会社OPENER",
+   "hq": "群馬県伊勢崎市三和町2742-3（OPENER本社）",
+   "municipality": "伊勢崎市",
+   "town": "三和町",
+   "employees": {
+    "value": 83,
+    "as_of": "2026年9月現在（『社員数』）",
+    "source": "http://www.opener.co.jp/about/outline"
+   },
+   "capital": {
+    "value": "5,000万円",
+    "source": "http://www.opener.co.jp/about/outline"
+   },
+   "founded": 1986,
+   "business_summary": "システムコンサルティング／インテグレーション、ソフトウェア・システム開発、保守受託、ホームページ制作、ITインフラ設計・構築、常駐型システム開発、プロバイダー（G-P@RK）、配線敷設工事、労働者派遣・有料職業紹介。OPENER沖縄（那覇市）・OPENER高崎・OPENER東北",
+   "ai_initiative": "お知らせに『KAOIRO -人口知能(AI)による顔認証技術を活用した「高速体温測定システム」の販売-』（2021年9月21日。製品の販売）",
+   "url": "http://www.opener.co.jp/",
+   "houjin_bangou": "9070001026541",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "1986年7月 有限会社ジー・エム・ケー設立、1988年11月株式会社に改組。**加盟団体『（一社）群馬県情報サービス産業協会（GISA）』『（一社）宮城県情報サービス産業協会（MISA）』と公式に記載**。伊勢崎市・玉村町に関連の別法人（OPENER PLACE・OPENER COLOR）"
+  },
+  {
+   "name": "株式会社ビッドシステム",
+   "hq": "群馬県伊勢崎市下触町108-10",
+   "municipality": "伊勢崎市",
+   "town": "下触町",
+   "employees": {
+    "value": 10,
+    "as_of": "時点なし（WebFetch で読んだ。ページは Shift_JIS で curl では文字化け）",
+    "source": "https://www.bid.co.jp/company_top.html"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.bid.co.jp/company_top.html"
+   },
+   "founded": 1997,
+   "business_summary": "ソフトウェアの開発・販売、コンサルティング・調査研究、Webアプリ開発、ホームページ作成、レンタルサーバーの手配・運営",
+   "ai_initiative": "AI の記載は確認できなかった",
+   "url": "https://www.bid.co.jp/",
+   "houjin_bangou": "9070001014331",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "1997年2月 前橋市で有限会社として設立、2000年2月 株式会社化"
+  },
+  {
+   "name": "株式会社タナカジマル",
+   "hq": "群馬県伊勢崎市宮子町3609-7（登記本社所在地）",
+   "municipality": "伊勢崎市",
+   "town": "宮子町",
+   "employees": {
+    "value": 4,
+    "as_of": "時点なし",
+    "source": "https://www.tanakajimaru.co.jp/corporate/"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.tanakajimaru.co.jp/corporate/"
+   },
+   "founded": 2000,
+   "business_summary": "TeamWorkEngine の開発・販売・導入・運用サポート、歯科技工所統合管理システム",
+   "ai_initiative": "AI の記載は確認できなかった",
+   "url": "https://www.tanakajimaru.co.jp/",
+   "houjin_bangou": "7070001014366",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "平成12年12月21日設立。小規模"
+  }
+ ],
+ "ota": [
+  {
+   "name": "株式会社日東システムテクノロジーズ",
+   "hq": "群馬県太田市吉沢町1405-7（本社オフィス）",
+   "municipality": "太田市",
+   "town": "吉沢町",
+   "employees": {
+    "value": 158,
+    "as_of": "2026年4月現在",
+    "source": "https://www.nittosys.co.jp/p0402companyprofile.php"
+   },
+   "capital": {
+    "value": "3,000万円",
+    "source": "https://www.nittosys.co.jp/p0402companyprofile.php"
+   },
+   "founded": 1982,
+   "business_summary": "学校向け（学籍管理システム infoClipper、学生募集業務の infoCloud、ベスト進学ネット、看護師になろう）、RINGUAL の開発・販売・サポート。太田第二オフィスなど",
+   "ai_initiative": "トップ・会社概要で AI の記載は確認できなかった",
+   "url": "https://www.nittosys.co.jp/",
+   "houjin_bangou": "3070001019922",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "昭和57年9月20日設立（旧 日東システム開発）。グループ会社 日東電機製作所・特電大泉製作所"
+  },
+  {
+   "name": "株式会社システムブレイン",
+   "hq": "群馬県太田市飯塚町1458番地1（群馬本社）",
+   "municipality": "太田市",
+   "town": "飯塚町",
+   "employees": {
+    "value": 32,
+    "as_of": "2026年4月現在",
+    "source": "https://www.sysbrain.co.jp/companyinfo/"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://www.sysbrain.co.jp/companyinfo/"
+   },
+   "founded": 1994,
+   "business_summary": "ITソリューションの企画・提案・開発・導入・運用保守、通信技術を使うコンテンツの企画開発、情報セキュリティ、ホームページ制作",
+   "ai_initiative": "トップに『AI／RPAツール導入支援 AIを利用した業務改善や定型業務の自動化を実現するRPAツールの導入支援』『定型業務の自動化／効率化 AI活用や繰り返し作業の自動化』",
+   "url": "https://www.sysbrain.co.jp/",
+   "houjin_bangou": "9070001019421",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "1994年9月設立。**中小企業向けの AI 導入支援を公式に明記している県内の会社の1つ**"
+  },
+  {
+   "name": "東毛情報開発株式会社",
+   "hq": "群馬県太田市中根町129-5",
+   "municipality": "太田市",
+   "town": "中根町",
+   "employees": {
+    "value": 21,
+    "as_of": "時点なし（『社員数 21人』）",
+    "source": "http://www.t-jk.co.jp/kaisyajoho_gaiyo.html"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "http://www.t-jk.co.jp/kaisyajoho_gaiyo.html"
+   },
+   "founded": 1987,
+   "business_summary": "システムの設計・開発、IT技術のコンサルタント、IT技術者の派遣、ネットワーク/サーバの設計・構築・運用。主要取引先に明電システムソリューションなど",
+   "ai_initiative": "AI の記載は確認できなかった",
+   "url": "http://www.t-jk.co.jp/",
+   "houjin_bangou": "9070001019792",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "1987年10月2日設立。代表取締役 出牛健一。求人サイト（type）の掲載は20名で、公式の21人と1人違う"
+  },
+  {
+   "name": "株式会社インターウェイブシステムズ",
+   "hq": "群馬県太田市岩瀬川町257番地1",
+   "municipality": "太田市",
+   "town": "岩瀬川町",
+   "employees": {
+    "value": 19,
+    "as_of": "2024年4月現在（やや古い）",
+    "source": "https://interwv.co.jp/company/"
+   },
+   "capital": {
+    "value": "1,000万円",
+    "source": "https://interwv.co.jp/company/"
+   },
+   "founded": 2010,
+   "business_summary": "システムコンサルティング、システム開発、デバイス販売・設置・保守、労働者派遣",
+   "ai_initiative": "AI の記載は確認できなかった",
+   "url": "https://interwv.co.jp/",
+   "houjin_bangou": "3070001024609",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "2010年3月1日設立。代表取締役 金子彰"
+  },
+  {
+   "name": "有限会社コムウェア",
+   "hq": "群馬県太田市台之郷町601-2（本社。本社事務所は台之郷町638-2）",
+   "municipality": "太田市",
+   "town": "台之郷町",
+   "employees": {
+    "value": 12,
+    "as_of": "時点なし",
+    "source": "https://www.com-ware.jp/company/"
+   },
+   "capital": {
+    "value": "300万円",
+    "source": "https://www.com-ware.jp/company/"
+   },
+   "founded": 1991,
+   "business_summary": "ソフトウェア開発。主要取引先にパナソニックAP空調・冷設機器、両毛システムズなど。東京営業所（千代田区）",
+   "ai_initiative": "AI の記載は確認できなかった",
+   "url": "https://www.com-ware.jp/",
+   "houjin_bangou": "7070002029223",
+   "size_basis": "employees",
+   "checked": "2026-11-06",
+   "notes": "平成3年3月設立"
+  }
+ ],
+ "numata": [],
+ "tatebayashi": [],
+ "shibukawa": [],
+ "fujioka": [],
+ "tomioka": [],
+ "annaka": [],
+ "midori": [],
+ "shinto": [],
+ "yoshioka": [],
+ "ueno-village": [],
+ "kanna": [],
+ "shimonita": [],
+ "nanmoku": [],
+ "kanra": [],
+ "nakanojo": [],
+ "naganohara": [],
+ "tsumagoi": [],
+ "kusatsu": [],
+ "takayama-village-gunma": [],
+ "higashiagatsuma": [],
+ "katashina": [],
+ "kawaba": [],
+ "showa-village-gunma": [],
+ "minakami": [],
+ "tamamura": [],
+ "itakura": [],
+ "meiwa": [],
+ "chiyoda": [],
+ "oizumi": [],
+ "ora": [],
+ "_reference": {
+  "maebashi": {
+   "next_candidates": [],
+   "unverified": [
+    "株式会社城西システム（前橋市問屋町1丁目1番地1号 NF2ビル4F〔法人番号 2070001001658〕。1989年設立。アプリケーション開発。**会社案内に従業員数の記載なし**）https://www.josai.co.jp/profile.html",
+    "**株式会社数理設計研究所**（法人番号 5070001004435、本店 前橋市上佐鳥町54番地の2）。県のぐんまDX技術革新補助金に令和3・5・6・7・8年度採択（R8『軌道上エッジAIを実現する教育用極超小型衛星の開発』）。宇宙産業用電子機器・衛星通信の開発で、**ソフト受託の会社ではない。公式サイトは開いていない**",
+    "**株式会社C&T**（法人番号 5070001028962、本店 前橋市石倉町4丁目4番地10 石倉マンション205号）。R7 ぐんまDX技術革新補助金『両手が使えるAI通訳WEBソリューション…』、R5 チャレンジ補助金『電話で言語通話を可能にする電話システム』。**公式サイトは開いていない、人数不明**",
+    "株式会社ブレインファーム（法人番号 5070003000424、本店 前橋市上泉町1135番地 上泉コーポ203）。県の情報化推進協議会の賛助会員のプレゼン（2023）に名前。**公式サイトを見つけられなかった**",
+    "株式会社リネイル（前橋市西片貝町4丁目6番地2、houjin.jp の業種は情報・通信）。トップのお知らせに『AIのみで作成したゲームを実際にご体験いただけるコーナー』（イベント出展）。**ゲーム開発と見られ、会社概要・人数は確認していない**"
+   ],
+   "excluded": [
+    "日本ハイコム株式会社（前橋市石倉町5-14-18。自動車生産ラインの生産準備・生産設備の設計製作。**IT ではない**）",
+    "株式会社globeコーポレーション（80名・2022年4月。サッカー教室など。IT ではない）、モテコ出版（広告代理店）など houjin.jp の『情報・通信』に入っている IT 以外の会社"
+   ]
+  },
+  "takasaki": {
+   "next_candidates": [],
+   "unverified": [
+    "株式会社メディア・バンク（高崎市飯塚町794-2。1984年設立。ウェブサイトの企画・制作・運用、ウェブマーケティング、システム開発、リサイクルトナー販売。**人数の記載なし**）http://mediabank.jp/",
+    "スタジオ・スイロ（高崎市）。県の採択一覧で『大規模言語モデルを活用した Web サイト制作サービスの開発』（WebFetch の要約は**令和5年度** チャレンジ補助金1次募集。cases.md は令和4年度と記録→要照合）。法人番号・公式サイトは確認していない",
+    "FUTURENAUT株式会社（法人番号 7070003003516、本店 高崎市上並榎町1300番地 高崎経済大学内）。コオロギ養殖で IT 会社ではない（照合のみ）",
+    "群馬インターネット株式会社・ブロードバンド群馬株式会社（高崎市上中居町684番地、wind.ne.jp。ISP。公式の文字コードで本文を取れず）"
+   ],
+   "excluded": []
+  },
+  "kiryu": {
+   "next_candidates": [],
+   "unverified": [
+    "**株式会社アイ・エス・プライム**（桐生市本町3丁目5-3〔法人番号 4070001024814〕。2010年4月設立、資本金300万円。業務システム開発、EC サイト制作、ウェブ解析、IoT、**『DX支援（AI活用・導入サポート）』『AI業務活用コンサルティング』、代表が2025年に生成AIパスポート取得と記載**。**人数の記載なし**）https://is-prime.co.jp/company/",
+    "株式会社両毛インターネットデータセンター（桐生市広沢町3丁目4025番地。両毛システムズのグループ。公式サイトを開けなかった）"
+   ],
+   "excluded": []
+  },
+  "isesaki": {
+   "next_candidates": [],
+   "unverified": [
+    "エクシオ・コアイノベーション株式会社（旧 サンデンシステムエンジニアリング。houjin.jp の所在は伊勢崎市宮子町3450番地8。**国税庁の検索では群馬県で出なかった**〔本店が県外の可能性〕。公式サイトを確かめていない）",
+    "株式会社大倉コンピューター（伊勢崎市中央町23番3号、houjin.jp の設立1981年。公式 oookura.com は接続できず）"
+   ],
+   "excluded": []
+  },
+  "ota": {
+   "next_candidates": [
+    {
+     "name": "株式会社ディーアイシー",
+     "employees": "常勤6名・在宅2名（時点なし。『スタッフ数』）",
+     "capital": null,
+     "note": "公式の所在地は太田市東本町26-9 シティコーポ1F東、**法人番号 1070001022432 の本店は太田市由良町985番地7**（同じ市で住所が違う）。2000年10月創業。ホームページ制作・WordPress・Webシステム開発（PHP）・SEO。ブログに『会社のホームページはもういらない？AI×ゼロクリック時代とは？』（2026-09-18）",
+     "source": "https://www.d-ic.com/company"
+    }
+   ],
+   "unverified": [
+    "コムベックス株式会社（太田市清原町5番地の12、houjin.jp。公式 combex.co.jp は本文を取れなかった。**comvex.co.jp は東京都港区の別会社**）",
+    "**石川建設株式会社**（照合のみ。建設業）: 太田市の同名法人は 3070001018684（本店 太田市浜町10番33号）の1件。同じ住所に石川建設ホールディングス株式会社（1070001042141）。沼田市にも同名の別法人（8070001026187、沼田市利根町平川1911番地1）"
+   ],
+   "excluded": []
+  },
+  "fujioka": {
+   "next_candidates": [],
+   "unverified": [
+    "株式会社システムハウスグローバル（藤岡市上栗須479-1〔法人番号 2070001012449〕。昭和59年4月1日創業、平成元年12月7日設立、資本金1,000万円。システム開発、業務改善パッケージ、WEB制作、ICTトータルサポート、部品の @PartsLink。東京オフィス（品川区）。**人数の記載なし**）https://www.global-jp.com/about"
+   ],
+   "excluded": [
+    "株式会社アイテクシステム（藤岡市上落合889番地1。18名・平成28年1月。**制御盤・FAシステムの会社で IT ではない**）"
+   ]
+  },
+  "tomioka": {
+   "next_candidates": [],
+   "unverified": [
+    "有限会社データバンクソフトウェア（富岡市神農原400-3〔法人番号 7070002017062〕。1996年8月創業、2004年7月設立。ITコンサル・ソフトウェア開発・販売・保守、ホームページ。**人数の記載なし**）https://www.databanksoft.com/about"
+   ],
+   "excluded": []
+  },
+  "annaka": {
+   "next_candidates": [],
+   "unverified": [
+    "有限会社アスカソフト（安中市松井田町二軒在家694-1〔法人番号 1070002014560〕。平成8年6月1日設立、資本金300万円。**人数の記載なし**）http://www.aska-soft.co.jp/profile/index.html",
+    "**株式会社LUC**（照合のみ。IT ではない）: 法人番号 7070001010134、本店 安中市松井田町五料118番地1。公式 https://u-luc.co.jp/ の所在地も同じ。バッテリー（電池加工）・運送・海外引越し・飲食。リコーの事例に95人"
+   ],
+   "excluded": []
+  },
+  "midori": {
+   "next_candidates": [],
+   "unverified": [
+    "株式会社アイクルー（みどり市笠懸町阿左美1435-8〔法人番号 6070001017155〕。平成11年4月20日設立。製造業向け生産管理システム、情報処理技術者育成講座。**人数の記載なし**）https://www.isclue.co.jp/pub/about.html",
+    "ケーイー・ソリューションズ株式会社（みどり市笠懸町阿左美325-5〔法人番号 7070001025009〕。資本金500万円。**人数・事業の詳細の記載を取れなかった**）https://www.kesol.co.jp/company.html"
+   ],
+   "excluded": []
+  },
+  "tamamura": {
+   "next_candidates": [],
+   "unverified": [
+    "株式会社英技研（法人番号 9070001014273、本店 玉村町大字上之手2103番地）。県の採択一覧に『AIを活用した錠剤判定アプリの開発』（令和4年度 チャレンジ補助金2次募集〔WebFetch の要約。cases.md は令和3年度〕）。**公式サイトは開いていない**"
+   ],
+   "excluded": [
+    "株式会社ケアコム（照合のみ）: **国税庁の本店は東京都調布市多摩川3丁目35番地4（4012401007627）**。群馬県の検索で同名法人は出なかった。県の採択一覧の所在は玉村町（事業所）。ナースコール機器のメーカーで、県外本社"
+   ]
+  },
+  "numata": {
+   "next_candidates": [],
+   "unverified": [
+    "関越ネットワークシステム株式会社（沼田市上原町1756番地381、kannet.ne.jp『関越インターネット』。ISP で開発会社とは言い切れない。人数は確認していない）"
+   ],
+   "excluded": []
+  },
+  "_outside_vendors": {
+   "next_candidates": [],
+   "unverified": [],
+   "excluded": [
+    "県の情報化推進協議会 賛助会員のプレゼン（2023-02-07更新）の県外本社: TKC・富士通（群馬支店）・日本電気・日立システムズ・NTT東日本・ドコモビジネスソリューションズ群馬支店・パスコ・国際航業・富士ゼロックス群馬・フジクラ・日本マイクロソフトなど。**県内本社ではないので本表に入れない**（本担当は各社の本店を個別には確かめていない）",
+    "cases.md・gov_ai.md に出た県外のベンダー（電通総研〔太田市の生成AI〕、Arent〔石川建設の PROCOLLA〕、オプティム、リコー、ナレッジセンス〔県の ChatSense〕、Polimill〔館林市〕）は県外本社として扱う（本担当では本店を確かめていない。各担当の記載による）"
+   ]
+  }
+ },
+ "_notes": [
+  "本表は公式サイトで本社所在地と従業員数の両方を確認できた会社だけ（本店は国税庁の法人番号で確認）。該当は前橋市4社・高崎市5社・桐生市2社・伊勢崎市3社・太田市5社の5市（19社）。残り30市町村は本表『なし』。",
+  "県内で公式の人数が多いのは 両毛システムズ（桐生市、連結1,066名・2026年3月期、有価証券報告書）、ジーシーシー（前橋市、754名・2026年2月）、高崎共同計算センター（高崎市、330名・2026年1月1日）、インターゾーン（高崎市、230名・2025年8月、コールセンター含む）、システム・アルファ（前橋市、190名・令和8年3月）、日東システムテクノロジーズ（太田市、158名・2026年4月）、ぐんぎんシステムサービス（前橋市、役職員140名・2026年6月25日）。",
+  "大手との資本関係: 両毛システムズは2026年にミツバ・中部電力の公開買付で上場廃止（公式の沿革）。ぐんぎんシステムサービスは群馬銀行グループ。ジーシーシーは『群馬本社』と『東京本社』を併記（本店は前橋市）。",
+  "AI関連の公式の記載: 両毛システムズ（AI外観検査サービス、生成AIチャットボット MyAssisChat、生成AIによる車載ソフト開発の効率化）、システムブレイン（太田市、AI／RPAツール導入支援）、インターゾーン（gnote と生成AI の連携）、高崎共同計算センター（IoT/AI のサービス）、テクノソレイユ（『最新AIを含めたIT技術』）、OPENER（AI 顔認証の体温測定システムの販売、2021年）。人数がない会社ではアイ・エス・プライム（桐生市、AI活用・導入サポート）。ジーシーシー・システム・アルファ・ぐんぎんシステムサービスは公式のトップで AI の記載なし。",
+  "業界団体: 一般社団法人群馬県情報サービス産業協会（法人番号 1070005008279、本店 前橋市南町2丁目50番地の1）。**公式サイト・会員名簿は見つからなかった**。会員であることを公式に書く会社はシステム・アルファ・スリーアイ・OPENER（GISA の略称は OPENER の会社概要の表記）。",
+  "事業が広い・境界の会社（本表に入れたが執筆時に注意）: システム・アルファ（ドコモショップ運営・複合機販売を含む）、インターゾーン（コールセンター・BPO が大きい）、高崎共同計算センター（アウトソーシングを含む）、ロジカルフォース（Web制作が中心）、OPENER（派遣・配線工事を含む）、ぐんぎんシステムサービス（銀行グループの金融システム）。",
+  "東毛・中毛以外（北毛・吾妻・利根沼田・西毛の町村）は、houjin.jp の『情報・通信』にも IT 開発の会社がほとんどなく、公式の会社概要まで届いた会社はなかった。本表がないのは『会社がない』ではなく『確かめられなかった』。",
+  "他県のページとの重複: 本表・参考の会社を詳述した他県のページはない（grep -rln で articles/ と data/area/ を確認。栃木の companies.md の『システムブレイン』の一致は真岡市の『システムブレインズ』で別会社）。",
+  "WebSearch は12回のうち10回を使用。"
+ ]
+}

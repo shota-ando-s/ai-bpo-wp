@@ -1,0 +1,396 @@
+/* ============================================================
+   かんたんAI LP スタイルシート（手書き。ビルド不要）
+   ------------------------------------------------------------
+   レイアウト・配色・タイポは lp/lp-markup.php のインラインスタイルが持つ。
+   デザイン元がすべてインライン指定のため、ピクセル単位の再現性を優先して
+   その方式を維持している。仕様書は docs/hikitsugi-lp-design.md。
+
+   このファイルに置くのは、インラインスタイルでは書けないものだけ：
+     1. グローバル（body・リンク・box-sizing）
+     2. @keyframes
+     3. :hover（インラインスタイルに勝つため !important が必要）
+     4. スクロール連動の2状態（ヘッダー背景・追従CTAバー）
+     5. prefers-reduced-motion
+
+   ※ 以前は Tailwind のビルド生成物だったが、デザイン刷新に伴い廃止した。
+      `npm run build:lp` は無い。このファイルを直接編集する。
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   1. グローバル
+   ------------------------------------------------------------ */
+html {
+	scroll-behavior: smooth;
+}
+
+body.lp-body {
+	margin: 0;
+	background: #ffffff;
+	color: #333333;
+	font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	text-wrap: pretty;
+}
+
+.lp-body *,
+.lp-body *::before,
+.lp-body *::after {
+	box-sizing: border-box;
+}
+
+.lp-body a {
+	color: #0f2961;
+	text-decoration: none;
+}
+
+.lp-body a:hover {
+	color: #1c4295;
+}
+
+.lp-body input,
+.lp-body select,
+.lp-body button,
+.lp-body textarea {
+	font-family: inherit;
+}
+
+/* sticky ヘッダーの下にアンカー先が潜り込まないようにする */
+.lp-body [id] {
+	scroll-margin-top: 84px;
+}
+
+/* ------------------------------------------------------------
+   2. @keyframes
+   ------------------------------------------------------------ */
+
+/* ファーストビュー／ヘッダーの装飾レイヤー */
+@keyframes geoDotA {
+	from { transform: translate3d(-7px, 4px, 0); }
+	to   { transform: translate3d(7px, -4px, 0); }
+}
+
+@keyframes geoSpin {
+	from { transform: rotate(0deg); }
+	to   { transform: rotate(360deg); }
+}
+
+@keyframes geoFloat {
+	from { transform: translate3d(0, -14px, 0) rotate(45deg); }
+	to   { transform: translate3d(0, 14px, 0) rotate(45deg); }
+}
+
+/* AIチャット／AI自動化アプリのモック（6秒ループ） */
+@keyframes mockIn {
+	0%, 4%    { opacity: 0; transform: translateY(6px); }
+	12%, 88%  { opacity: 1; transform: none; }
+	96%, 100% { opacity: 0; transform: none; }
+}
+
+@keyframes mockCheck {
+	0%, 4%    { opacity: 0; transform: scale(0.5); }
+	12%, 88%  { opacity: 1; transform: scale(1); }
+	96%, 100% { opacity: 0; transform: scale(1); }
+}
+
+@keyframes mockDots {
+	0%, 3%    { opacity: 0; }
+	5%        { opacity: 1; }
+	16%       { opacity: 0.35; }
+	17%, 100% { opacity: 0; }
+}
+
+/* ------------------------------------------------------------
+   3. :hover
+   ------------------------------------------------------------
+   対象要素は色をインラインで持っているので、!important でないと勝てない。
+   ------------------------------------------------------------ */
+.lp-hv-ink:hover       { color: #333333 !important; }
+.lp-hv-white:hover     { color: #ffffff !important; }
+.lp-hv-navy:hover      { background: #1c4295 !important; }
+.lp-hv-navy-pale:hover { background: #e4ecf9 !important; }
+
+/* チェックリスト配布バナー（LINEグリーン #06C755 の押下色） */
+.lp-hv-line:hover {
+	background: #05b04c !important;
+	color: #ffffff !important;
+}
+
+/* 記事カード（ピックアップ・新着）。枠を締めて浮かせるだけに留める */
+.lp-card-post {
+	transition: box-shadow 200ms ease;
+}
+
+.lp-card-post:hover {
+	box-shadow: inset 0 0 0 1px #0f2961, 0 8px 20px rgba(15, 41, 97, 0.12) !important;
+	color: #333333 !important;
+}
+
+/* ------------------------------------------------------------
+   3-2. クロージングフォーム（Contact Form 7）
+   ------------------------------------------------------------
+   フォーム本体は CF7（フォームID は functions.php の
+   HIKITSUGI_LP_CF7_ID）。CF7 は独自のマークアップを吐くうえ、
+   wpautop で <p> / <br> を挟んでくるので、ここで design どおりに戻す。
+   セレクタは .lp-form 配下に閉じてあるので /contact/ の
+   既存フォーム（cf7-field-wrap 系）には影響しない。
+   ------------------------------------------------------------ */
+
+/* フォーム外枠（デザインの白いカード） */
+.lp-body .lp-form {
+	margin: clamp(36px, 8vw, 64px) auto 0;
+	padding: clamp(24px, 6vw, 44px);
+	width: 100%;
+	max-width: 640px;
+	background: #ffffff;
+	color: #333333;
+	border-radius: 10px;
+	text-align: left;
+}
+
+/* CF7 が先頭に出す隠しフィールドの fieldset。
+   ブラウザ既定の枠が空の箱として見えてしまうので消す。 */
+.lp-body .lp-form .hidden-fields-container {
+	display: none;
+}
+
+/* wpautop が挟む <p> / <br> を無効化する。
+   段落ではなく単なる整形の副産物なので、余白も改行も持たせない。 */
+.lp-body .lp-form p {
+	margin: 0;
+}
+
+.lp-body .lp-form br {
+	display: none;
+}
+
+/* 各項目：ラベル＋入力欄の縦積み。CF7 が <p> を挟んでも同じ見た目になるよう
+   .lp-fgroup とその中の <p> の両方を flex にしておく。 */
+.lp-body .lp-fgroup,
+.lp-body .lp-fgroup > p {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.lp-body .lp-fgroup + .lp-fgroup,
+.lp-body .lp-fbox,
+.lp-body .lp-fsubmit {
+	margin-top: 22px;
+}
+
+.lp-body .lp-flabel {
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.lp-body .lp-freq {
+	color: #0f2961;
+}
+
+/* CF7 は入力欄を <span class="wpcf7-form-control-wrap"> で包む。
+   インラインのままだと width:100% が効かない。 */
+.lp-body .lp-form .wpcf7-form-control-wrap {
+	display: block;
+}
+
+/* font-size:16px は必須（iOS Safari の自動ズーム防止） */
+.lp-body .lp-form .lp-field {
+	width: 100%;
+	padding: 14px;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333333;
+	border: 1px solid #bfcbde;
+	border-radius: 6px;
+	background: #fbfcfe;
+	min-height: 48px;
+}
+
+.lp-body .lp-form .lp-field:focus {
+	outline: 2px solid #0f2961;
+	outline-offset: -1px;
+}
+
+/* チェックボックス：枠全体をクリック可能な面にする */
+.lp-body .lp-fbox > p,
+.lp-body .lp-fbox {
+	display: block;
+}
+
+.lp-body .lp-fbox .wpcf7-list-item {
+	margin: 0;
+	display: block;
+}
+
+/* 選択肢が複数あるときは箱同士を離す */
+.lp-body .lp-fbox .wpcf7-list-item + .wpcf7-list-item {
+	margin-top: 12px;
+}
+
+/* 「ご希望」のような選択肢グループの見出し */
+.lp-body .lp-fbox-label {
+	display: block;
+	margin-bottom: 8px;
+}
+
+.lp-body .lp-fbox label {
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+	padding: 14px;
+	font-size: 15px;
+	line-height: 1.7;
+	border: 1px solid #dfe7f3;
+	border-radius: 6px;
+	background: #fbfcfe;
+	cursor: pointer;
+}
+
+.lp-body .lp-fbox input[type="checkbox"] {
+	flex: 0 0 auto;
+	width: 20px;
+	height: 20px;
+	margin: 2px 0 0;
+	accent-color: #0f2961;
+}
+
+.lp-body .lp-fbox .wpcf7-list-item-label {
+	flex: 1 1 auto;
+}
+
+/* 送信ボタン */
+.lp-body .lp-form .lp-btn {
+	width: 100%;
+	padding: 20px;
+	min-height: 56px;
+	background: #0f2961;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: clamp(15px, 4vw, 18px);
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: background 200ms ease;
+}
+
+.lp-body .lp-form .lp-btn:hover {
+	background: #1c4295;
+}
+
+.lp-body .lp-fnote {
+	margin-top: 16px !important;
+	font-size: 12.5px;
+	line-height: 1.8;
+	color: #5a6376;
+}
+
+/* CF7 のバリデーション／送信結果メッセージ */
+.lp-body .lp-form .wpcf7-not-valid-tip {
+	margin-top: 6px;
+	font-size: 13px;
+	line-height: 1.6;
+	color: #b4322a;
+}
+
+.lp-body .lp-form .lp-field.wpcf7-not-valid {
+	border-color: #b4322a;
+}
+
+/* 結果メッセージ欄は送信結果が出るまで空。枠だけ見えないよう畳んでおく。 */
+.lp-body .lp-form .wpcf7-response-output {
+	display: none;
+	margin: 22px 0 0 !important;
+	padding: 14px 16px;
+	border: 1px solid #bfcbde;
+	border-radius: 6px;
+	font-size: 14px;
+	line-height: 1.8;
+}
+
+.lp-body .lp-form.invalid .wpcf7-response-output,
+.lp-body .lp-form.unaccepted .wpcf7-response-output,
+.lp-body .lp-form.payment-required .wpcf7-response-output,
+.lp-body .lp-form.spam .wpcf7-response-output,
+.lp-body .lp-form.failed .wpcf7-response-output,
+.lp-body .lp-form.aborted .wpcf7-response-output,
+.lp-body .lp-form.sent .wpcf7-response-output {
+	display: block;
+}
+
+.lp-body .lp-form.invalid .wpcf7-response-output,
+.lp-body .lp-form.failed .wpcf7-response-output,
+.lp-body .lp-form.aborted .wpcf7-response-output {
+	border-color: #b4322a;
+	color: #b4322a;
+}
+
+.lp-body .lp-form.sent .wpcf7-response-output {
+	border-color: #1f7a4d;
+	color: #1f7a4d;
+}
+
+/* 送信中スピナー */
+.lp-body .lp-form .wpcf7-spinner {
+	margin: 12px auto 0;
+	display: block;
+}
+
+/* ------------------------------------------------------------
+   4. スクロール連動の2状態
+   ------------------------------------------------------------
+   JS（lp-markup.php 末尾）が body に .lp-is-scrolled / .lp-is-cta を付け外しする。
+   ------------------------------------------------------------ */
+
+/* ヘッダー：最上部は動くドット柄が透けて見え、24px 超で白レイヤーをかぶせる */
+.lp-header-veil {
+	opacity: 0;
+	transition: opacity 220ms ease;
+}
+
+.lp-is-scrolled .lp-header-veil {
+	opacity: 1;
+}
+
+/* 追従CTAバー：スクロール進捗 30% 以上で下から出す */
+.lp-sticky-cta {
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(100%);
+	transition: opacity 200ms ease, transform 240ms ease, visibility 0s linear 240ms;
+}
+
+.lp-is-cta .lp-sticky-cta {
+	opacity: 1;
+	visibility: visible;
+	transform: none;
+	transition: opacity 200ms ease, transform 240ms ease, visibility 0s;
+}
+
+/* ------------------------------------------------------------
+   5. prefers-reduced-motion
+   ------------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+
+	.sky-layer {
+		animation: none !important;
+	}
+
+	/* モックは「再生が終わった状態」で固定する */
+	[style*="animation:mock"] {
+		animation: none !important;
+		opacity: 1 !important;
+		transform: none !important;
+	}
+
+	.lp-header-veil,
+	.lp-sticky-cta {
+		transition-duration: 1ms;
+	}
+
+	.lp-sticky-cta {
+		transform: none;
+	}
+}

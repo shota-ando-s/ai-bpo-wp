@@ -1,0 +1,184 @@
+# 埼玉県 さいたま市・南部・南西部・県央の16市町（さいたま市・川口市・蕨市・戸田市・朝霞市・志木市・和光市・新座市・富士見市・ふじみ野市・三芳町・鴻巣市・上尾市・桶川市・北本市・伊奈町）の AI・IT・DX・研修・省力化・生産性向上に使える市町独自の補助金（2026年度）。2026-11-12に16市町の公式サイトの事業者向けの分類ページ・補助金のページを開いて確認（curl で原文）
+# 受付状況は 2026-11-12 時点。期間の status は data/subsidies/README.md の値（open / closed / rolling / unknown）を使う
+# 市町ごとの確認したページ・制度がない市町は subsidy_1_areas.md
+# 要約は subsidy_1_areas.md の冒頭
+# パイロット（2026-10-14、data/subsidies/saitama.yml）の id は saitama-city-dx・kawaguchi-dx-addon・ageo-dx・toda-dx。ここでは依頼の形（saitama-<slug>-<短い名前>）で付け直した
+
+- id: saitama-saitama-city-dx
+  name: 令和８年度さいたま市DX推進補助金
+  org: 公益財団法人さいたま市産業創造財団
+  area: saitama/saitama-city
+  max_yen: 400000
+  rate: 補助対象経費の2/3以内、上限40万円
+  rate_num: 0.667
+  targets: {efficiency: ○, consulting: △, training: △}
+  expenses: 生産性向上に資するシステム・ソフトウェア購入費（ライセンス利用料含む）、システム構築費、導入関連経費（付随する機器、導入検討の専門家費用、研修に関する経費。対象経費合計の1/3以内、PC・タブレットは10万円まで）、クラウドサービス利用料（実施期間の月額のみ）、技術導入費（外部からの技術指導）。対象領域に「分析･自動化(AI) AI、チャットボットツール、電子決済システム等」。RPA・OCR・オンラインストレージ・Microsoft Office・リース料・ホームページ制作・ECサイトは対象外
+  conditions: さいたま市内に本店または事業所がある中小企業者・個人事業主など。採択決定日後に導入するものが対象。公募締切後に審査（先着順ではない）、採択20件程度。事業は令和9年2月28日までに終了
+  period: {status: closed, start: 2026-04-06, end: 2026-05-20}
+  next_expected: 2027-04
+  stacking: {exclusive_with: [digital-ai-donyu]}
+  url: https://www.sozo-saitama.or.jp/topic/dx-subsidy/
+  checked: 2026-11-12
+  confidence: official
+  note: 財団のページ（2026年04月10日掲載、タイトル「【公募終了】令和８年度さいたま市DX推進補助金について」。curl で原文）。公募要領 https://www.sozo-saitama.or.jp/sozowp/wp-content/uploads/2026/03/dx-suishinhojyokinkouboyouryo.pdf（PDF p.4〜5 に対象領域・対象経費、対象外経費「⑮補助対象経費が他の補助事業と重複しているもの（他の補助事業を活用し安価で提供されるプラットフォーム利用料含む）」）。同じ経費で国のデジタル化・AI導入補助金と重ねることはできない（exclusive_with は要領の「重複」の記述から当社が付けた）。パイロット（2026-10-14）は efficiency △ だったが、要領に AI・チャットボットが対象領域として書かれているので ○ にした。研修・専門家費用は導入関連経費（1/3以内）に含まれるので △
+  fuenn_note: さいたま市内の中小企業が、AI・チャットボットを含む業務システムやクラウドサービスを入れる費用を2/3（上限40万円）補助する制度です（さいたま市産業創造財団）。2026年度の公募は5月20日で終わりました。来年度の公募（例年4月）は財団のページで確かめてください。
+
+- id: saitama-saitama-city-dx-new-business
+  name: デジタル技術活用新ビジネス・新サービス開発補助金
+  org: 公益財団法人さいたま市産業創造財団
+  area: saitama/saitama-city
+  max_yen: 5000000
+  rate: 補助率2/3（さいたま市内に本店がある中小企業等・中堅企業等）、上限500万円、採択2件程度
+  rate_num: 0.667
+  targets: {efficiency: △, consulting: △, training: ×}
+  expenses: システム構築、クラウド利用料、知的財産権等関連経費、専門家謝金・旅費、通信運搬費、旅費など
+  conditions: 最新のデジタル技術を活用し、データ分析等を行いながら新しいビジネス・サービスを開発する事業（業務の効率化だけの導入は対象にならない）
+  period: {status: closed, start: 2026-04-06, end: 2026-05-29}
+  next_expected: 2027-04
+  url: https://www.sozo-saitama.or.jp/topic/dx-new-business/
+  checked: 2026-11-12
+  confidence: official
+  note: 財団のページ（2026年04月10日掲載、タイトル「【公募終了】」。curl で原文）。公募要領は開いていない（国の補助金との併用の可否は未確認）
+  fuenn_note: さいたま市内の中小企業が、AIなどのデジタル技術で新しいビジネスやサービスを開発する費用を2/3（上限500万円）補助する制度です。2026年度の公募は5月29日で終わりました。
+
+- id: saitama-saitama-city-fukugyo
+  name: さいたま市副業人材活用推進補助金
+  org: 公益財団法人さいたま市産業創造財団
+  area: saitama/saitama-city
+  max_yen: 288000
+  rate: 1か月あたり最大9万6,000円または使用料の40%の低い方（最長3か月）、補助上限28万8,000円
+  rate_num: 0.4
+  max_months: 3
+  targets: {efficiency: ×, consulting: △, training: ×}
+  expenses: 副業人材マッチングサービスへの支払いだけ（Lotsful は人材への支払いを含む契約額、SkillShift・複業クラウドは掲載料）。直接雇用の経費は対象外
+  conditions: さいたま市内の個人事業を含む中小企業者・中堅企業者（大企業・みなし大企業は対象外）。新規案件のみ。「単純労働」「軽作業」「(専門性のない)事務員」などには使えない。交付決定後、契約を完了した先着順で確定。採択10件程度
+  period: {status: open, start: 2026-06-01, end: 2026-11-30}
+  url: https://www.sozo-saitama.or.jp/topic/fukugyo_hojo/
+  checked: 2026-11-12
+  confidence: official
+  note: 財団のページ（2026年11月02日更新、タイトル「11/30締切(早期終了あり･残1枠)」）「※2026年１１月２日現在 残り枠１件です」「枠オーバーとなった場合も残予算により調整出来る場合があります」。補助率・上限は公募要領 https://www.sozo-saitama.or.jp/sozowp/wp-content/uploads/2026/06/R8_fukugyo_kouboyouryou.pdf PDF p.1〜2「（３）採択件数、金額、補助率」。支払いは2027年2月末締め・3月10日までに確認できる費用まで。埼玉県の副業・兼業人材活用促進事業補助金とは「関連はありません」。AI・DX の名指しはないが、DX の専門人材を副業で使う費用に使える。パイロットでは「ページに記載なし」だった補助率を要領で確かめた
+  fuenn_note: さいたま市内の中小企業が、副業人材のマッチングサービスで専門人材を使う費用の40%（月9.6万円・3か月まで）を補助する制度です。締切は11月30日で、11月2日時点で残り1枠です。ふえんのサービス利用料そのものは対象になりません。
+
+- id: saitama-kawaguchi-dx-addon
+  name: 川口市DX推進補助金（国の補助金への上乗せ）
+  org: 川口市（経済部 経営支援課）
+  area: saitama/kawaguchi
+  max_yen: 500000
+  addon: {kind: remaining, ratio: 0.5}
+  rate: （DX・デジタル化への取り組みに要した経費〔国の補助対象経費に限る〕−国の補助金の交付確定金額）×1/2、上限50万円（1,000円未満切捨て）。1事業者1回
+  targets: {efficiency: ○, consulting: △, training: ×}
+  expenses: 国の補助金（ものづくり補助金、デジタル化・AI導入補助金〔旧IT導入補助金〕、小規模事業者持続化補助金、事業再構築補助金、中小企業新事業進出補助金、中小企業省力化投資補助金）で補助対象になった経費のうち、①人工知能やロボット等を活用した製造工程・作業工程の自動化等のシステム・設備、②経理・会計などバックオフィス業務の効率化・デジタル化のシステム・設備、③電子商取引・キャッシュレス決済などのシステム・設備
+  conditions: 川口市内の中小企業・小規模事業者等（法人は市内に本店、または全従業員50人以上かつその1/2以上が市内の事業所に勤務。個人は市内に住所と事業所）。令和8年4月1日以降に国の補助金の交付確定通知を受けていること。システム開発事業者等の自社のシステム開発・商品開発は対象外。市税の未納がないこと。採択予定25件程度
+  period: {status: open, start: 2026-05-01, end: 2027-02-26}
+  stacking: {addon_to: [digital-ai-donyu, shinjigyo-monodukuri, shoryokuka-ippan]}
+  url: https://www.city.kawaguchi.lg.jp/soshiki/01110/021/12/38430.html
+  checked: 2026-11-12
+  confidence: official
+  note: 市のページ（更新日 2026年04月30日。curl で原文）「国の補助金に上乗せし市が補助金を支給します。（採択予定件数：25件程度）」「【申請期間】令和8年5月1日（金曜日）から令和9年2月26日（金曜日）（※最終日の消印有効）」。申請要領 https://www.city.kawaguchi.lg.jp/material/files/group/103/R8dxyouryou2.pdf「申請期間内であっても予算の上限に達し次第、受付を終了いたします」。持続化補助金・事業再構築補助金・新事業進出補助金も上乗せ先（addon_to には national.yml にある id〔digital-ai-donyu・shinjigyo-monodukuri・shoryokuka-ippan〕だけ書いた）。パイロット（2026-10-14、kawaguchi-dx-addon）と期間・上限・計算は同じ。パイロットにない国の補助金（省力化投資補助金ほか）を足した
+  fuenn_note: 川口市内の中小企業が国のデジタル化・AI導入補助金などでAIやバックオフィスのシステムを入れたとき、自己負担分の1/2（上限50万円）を市が上乗せする制度です。国の補助金の交付確定を受けてから、2027年2月26日まで（予算に達し次第終了）申請できます。
+
+- id: saitama-kawaguchi-senmonka-haken
+  name: 中小企業経営支援専門家派遣事業補助金
+  org: 川口市（経済部 経営支援課）
+  area: saitama/kawaguchi
+  max_yen: null
+  rate: 埼玉県産業振興公社の専門家派遣の利用者負担の一部（率・上限は概要PDFで未確認）
+  targets: {efficiency: ×, consulting: △, training: ×}
+  expenses: 公益財団法人埼玉県産業振興公社の「専門家派遣事業」の費用
+  conditions: 公社の専門家派遣を利用した市内中小企業者
+  period: {status: unknown}
+  url: https://www.city.kawaguchi.lg.jp/soshiki/01110/021/12/3566.html
+  checked: 2026-11-12
+  confidence: official
+  note: 市のページ（更新日 2025年10月16日）。概要 PDF（67.4KB）は開いていない。2026年度の受付期間・補助率は未確認。AI・DX の名指しはない（公社の専門家派遣に IT・DX の専門家がいれば使える）
+
+- id: saitama-toda-dx
+  name: 2026年度（令和8年度）戸田市DX推進補助金
+  org: 戸田市（環境経済部 経済戦略室）
+  area: saitama/toda
+  max_yen: 500000
+  rate: 補助対象経費（税抜）の合計額の1/2、上限50万円（1,000円未満切捨て）。1事業者1会計年度1回
+  rate_num: 0.5
+  max_months: 12
+  targets: {efficiency: ○, consulting: ○, training: ○}
+  expenses: コンサルティング費用（データやデジタル技術の活用に必要なITコンサルティング。専門家への謝金等）、サービス・製品開発費、システム導入費（外注費・ソフトウェア購入費・機材購入費等）、システム使用料等（ソフトウェア使用料・クラウドサービス利用料、導入月から12か月分）、DX人材教育費（講座受講料・講師謝礼・講師派遣旅費等）、その他市長が必要と認める経費。人件費・保守管理を主とする経費（トラブル対処・SEO施策・ヘルプデスク等）は対象外
+  conditions: 中小企業者・小規模企業者（個人事業主含む）で市内に本店（個人は主たる事業所と住民登録）、市内で1年以上継続して事業を営む、市税等の滞納なし。みなし大企業・風俗営業・大規模小売店舗・連鎖化事業などは対象外。「自社の課題解決策としてDXに取り組む事業」。当該年度4月1日以降の経費。年度内に完了し実績報告。書類に不備のない順に受理
+  period: {status: open, start: 2026-04-01}
+  stacking: {exclusive_with: [digital-ai-donyu, shinjigyo-monodukuri, shoryokuka-ippan, jinzai-reskilling]}
+  url: https://www.city.toda.saitama.jp/soshiki/214/keizai-dxhojyo.html
+  checked: 2026-11-12
+  confidence: official
+  note: 市のページ（更新日 2026年4月1日。curl で原文）「申請受付 2026年4月1日（水曜）から」「申請額が予算額に達した場合、達した日をもって終了します」。申請状況「予算額 5,000,000円 申請済額(2026年10月29日時点) 3,658,000円 予算残額(2026年10月29日時点) 1,342,000円」。「国、県又はその他各種団体等の他の補助金と重複する事業については、補助対象外」「他の補助金等の交付を受けて補助対象事業を行う中小企業等」は対象外（上乗せではない）。締切日の記載なし（年度内に完了・年度末の指定日までに実績報告）。年度をまたぐシステム使用料は「当該年度とその翌年度の両方で手続が可能」（翌年度の予算成立が条件）。チラシ https://www.city.toda.saitama.jp/uploaded/attachment/78757.pdf 。パイロット（2026-10-14、toda-dx）は県の DX ポータル https://www.saitamadx.com/shien/13875/ の二次情報だったが、市のページで上限・補助率・受付開始日を確かめ official にした。パイロットで「ほかの区分は未確認」だった対象経費（システム導入・使用料・DX人材教育費）を足した
+  fuenn_note: 戸田市内の中小企業が、AIなどのツールの導入・クラウド利用料（12か月分）・ITコンサルティング・DXの研修にかける費用を1/2（上限50万円）補助する市の制度です。予算に達し次第終了で、10月29日時点の予算残額は134.2万円です。国のデジタル化・AI導入補助金と同じ事業には使えません。
+
+- id: saitama-fujimi-city-challenge-dx
+  name: 富士見市中小企業チャレンジ支援事業補助金（デジタル・トランスフォーメーション化事業 （イ）生産性向上支援事業）
+  org: 富士見市（産業経済課）
+  area: saitama/fujimi-city
+  max_yen: 100000
+  rate: 1/2以内、限度額10万円（1,000円未満切捨て）。国・県の補助金を受ける場合は、その補助金を控除した後の額が補助対象経費
+  rate_num: 0.5
+  addon: {kind: remaining, ratio: 0.5}
+  targets: {efficiency: ○, consulting: ×, training: ×}
+  expenses: ビジネスのデジタル化に向けた設備費用及び業務効率化のためのソフト購入費用。シンクライアント以外のパソコン・タブレット・スマートフォンの購入・レンタルは対象外
+  conditions: 市内に本社又は事業所があり事業を営む中小企業者等。交付決定前の着手は不可（原則として事業開始の1か月前に申請）。同一事業で過去に補助を受けた者は不可。市税の滞納なし。年度末（3月末日）までに実績報告
+  period: {status: open, start: 2026-04-01}
+  stacking: {addon_to: [digital-ai-donyu]}
+  url: https://www.city.fujimi.saitama.jp/60jigyo/06sangyou/syoukou/jigyousya-sien/tyusyoukigyoutyarenz.html
+  checked: 2026-11-12
+  confidence: official
+  note: 市のページ（最終更新日 2026年4月1日。curl で原文）「受付期間 令和8年4月1日から予算終了まで」。パンフレット https://www.city.fujimi.saitama.jp/60jigyo/06sangyou/syoukou/jigyousya-sien/tyusyoukigyoutyarenz.files/R8panfu2.pdf 別表①「(イ)生産性向上支援事業 ビジネスのデジタル化に向けた設備費用及び業務効率化のためのソフト購入費用 1/2以内 10万円」、「補助対象事業者が国又は県から補助対象事業に係る補助金の交付を受ける場合には、当該補助金を控除した後の額を補助対象経費とします」（国の補助金と併用でき、残りの1/2を補助する形なので addon の remaining にした。単独でも使える）。予算の残りはページにない。同じ補助金の DX化事業の (ア)テレワーク環境整備事業（1/2・30万円、県の経営革新計画の承認企業で常時雇用2人以上）・(ウ)キャッシュレス決済導入事業（研修会・コンサル 1/2・10万円、備品・工事 1/2・1店舗5万円）は AI の利用者向けではないので別の id にしていない。クラウドの利用料が「ソフト購入費用」に入るかは未確認
+  fuenn_note: 富士見市内の中小企業が、業務効率化のソフトを買う費用を1/2（上限10万円）補助する市の制度です（中小企業チャレンジ支援事業補助金のDX化事業）。予算がなくなるまで受け付けており、国のデジタル化・AI導入補助金を受けた場合は、その残りの額が対象になります。事業を始める1か月前までに申請が必要です。
+
+- id: saitama-fujimi-city-challenge-jinzai
+  name: 富士見市中小企業チャレンジ支援事業補助金（人材育成事業）
+  org: 富士見市（産業経済課）
+  area: saitama/fujimi-city
+  max_yen: 20000
+  rate: 1/2以内、1名につき2万円（同日程の講習会は2名まで）
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: △}
+  expenses: 事業経営上有用な専門性の高い資格の取得を伴う講習会の受講料（教材費を含む）と受験料
+  conditions: 市内に本社又は事業所がある中小企業者等。交付決定前の着手は不可
+  period: {status: open, start: 2026-04-01}
+  url: https://www.city.fujimi.saitama.jp/60jigyo/06sangyou/syoukou/jigyousya-sien/tyusyoukigyoutyarenz.html
+  checked: 2026-11-12
+  confidence: official
+  note: パンフレット（R8）別表①「3.人材育成事業」。資格の取得を伴う講習会が対象で、資格のない AI 研修は対象にならない見込み（どの資格が当たるかはページにない）。受付は令和8年4月1日から予算終了まで
+
+- id: saitama-ageo-dx
+  name: 上尾市ＳＤＧｓ・ＤＸ推進補助金（ＤＸ部門）
+  org: 上尾市（商工課）
+  area: saitama/ageo
+  max_yen: 250000
+  rate: 補助対象経費（税抜）×1/2、上限25万円
+  rate_num: 0.5
+  targets: {efficiency: ○, consulting: ○, training: ×}
+  expenses: ソフトウェア導入費（業務用ソフトウェア等の購入）、システム構築費（業務用システムの構築、クラウドサービス等の月額料金〔補助事業の期間分。年額は月割り〕）、デジタル機器購入費、デジタル技術の導入・活用の指導を受ける外部の専門家等への謝金。既存の機材・ソフトの入替・延長契約、ホームページ・チラシ作成、店舗改装、単なるインボイス対応・キャッシュレス導入、汎用性の高い物品は対象外
+  conditions: 中小企業者・小規模企業者（個人事業主含む）で、申請日の6か月以上前から市内に事業所等があり営業を続けていること、市税の納税義務者であること。交付申請の前に上尾中小企業サポートセンターの専門家の指導を受けて事業計画を策定。交付決定日以降に実施する事業。申請順に審査（受付後2週間を目途に交付決定）。実績報告は事業終了後30日以内か令和9年2月26日の早い日まで
+  period: {status: open, start: 2026-06-01, end: 2027-01-29}
+  stacking: {exclusive_with: [digital-ai-donyu, shinjigyo-monodukuri, shoryokuka-ippan]}
+  url: https://www.city.ageo.lg.jp/page/395426.html
+  checked: 2026-11-12
+  confidence: official
+  note: 市のページ（掲載日 2026年5月25日更新。curl で原文）「申請受付期間 令和8年6月1日(月曜日)から令和9年1月29日(金曜日)まで（必着）※予算額に達した場合は、期間中でも受付を終了します。」。DX部門の申請の手引き https://www.city.ageo.lg.jp/uploaded/attachment/119052.pdf「イ 補助事業と同一の経費に対し、他の公共団体等から補助金の交付を受けている事業」は対象外（国の補助金と同じ経費には使えない）。交付要領 https://www.city.ageo.lg.jp/uploaded/attachment/119071.pdf「令和８年度に限り」。補助対象の例「オンラインで受注できるシステムの導入」「マーケティング支援ツール」「会計システムの導入」「Ｒｐａによる定型業務の自動化」（AI の名指しはない）。同じ制度の ＳＤＧｓ部門（新商品・サービスの開発、1/2・上限50万円）は IT 導入の区分ではないので別の id にしていない。予算の残りはページにない。パイロット（2026-10-14、ageo-dx）と上限・期間・経費は同じ。パイロットの「先着順」はページの「申請順に審査」と合う
+  fuenn_note: 上尾市内の中小企業が、上尾中小企業サポートセンターの専門家の指導を受けて、業務効率化のソフトウェア・クラウドサービス（事業期間分）や専門家の指導料にかける費用を1/2（上限25万円）補助する市の制度です。2027年1月29日まで（予算に達し次第終了）申請できます。国の補助金と同じ経費には使えません。
+
+- id: saitama-ageo-setsubi-ouen
+  name: 上尾市小規模事業者等設備導入応援補助金
+  org: 上尾市（商工課）
+  area: saitama/ageo
+  max_yen: 10000000
+  rate: 補助対象経費の総額の2/3以内、上限1,000万円（対象経費が総額400万円を超える事業が対象）。1事業者1回
+  rate_num: 0.667
+  min_cost_yen: 4000000
+  targets: {efficiency: ○, consulting: ×, training: ×}
+  expenses: 省人化・省力化・業務効率化に役立てる機械・装置・システム・ソフトウェア等の購入（新設・更新。システム構築費・運搬費含む）、据付工事、設置に必要な外部技術指導等。リース・レンタル・割賦は対象外
+  conditions: 市内の小規模事業者等（中小企業者のうち市の定める条件に当たる者、小規模企業者）。市税等の滞納なし。国・地方公共団体等の補助金を受ける予定の設備は対象外。交付決定後に着手し、令和9年2月26日までに完了・報告
+  period: {status: closed, start: 2026-04-20, end: 2026-04-30}
+  stacking: {exclusive_with: [digital-ai-donyu, shoryokuka-ippan, shinjigyo-monodukuri]}
+  url: https://www.city.ageo.lg.jp/page/412445.html
+  checked: 2026-11-12
+  confidence: official
+  note: 市のページ（掲載日 2026年5月1日更新、タイトル「【受付終了】」。curl で原文）。国の「物価高騰対応重点支援地方創生臨時交付金」を使った令和7年度12月補正の事業。「申請受付期間 令和8年4月20日(月曜日)から30日(木曜日)」「予算総額：1億2,000万円に達し次第終了」「対象となる事業について国や県の補助金等とは併用できません」。省人化の定義に「機械化・自動化・IT化等により代替」。交付金を使った単年度の事業で、来年度があるかは不明（next_expected は書かない）
+  fuenn_note: 上尾市内の小規模事業者が、省人化・業務効率化のための機械・システム・ソフトウェアを400万円を超えて入れる費用を2/3（上限1,000万円）補助した市の制度です。受付は2026年4月20日〜30日で終わりました。

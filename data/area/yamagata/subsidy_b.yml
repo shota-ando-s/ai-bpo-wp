@@ -1,0 +1,669 @@
+# 山形県内19町3村（山辺・中山・河北・西川・朝日・大江・大石田・金山・最上・舟形・真室川・大蔵・鮭川・戸沢・高畠・川西・小国・白鷹・飯豊・三川・庄内・遊佐）2026年度
+# 確認日 2026-10-24。根拠は subsidy_b_areas.md
+# 生成AI・AI導入・AI研修を名指しで補助する町村独自の制度は、22町村とも確認できなかった
+# 「デジタル化」「DX」を補助メニューに明記している町村の制度
+#   - 大江町 商売繁盛創出支援事業補助金「デジタル化支援事業」（デジタル化・DX化・キャッシュレス。HP作成費・備品購入費など。1/2・上限20万円。随時、予算到達で終了）
+#   - 飯豊町 中小企業振興事業費補助金「商業活性化支援事業 ②デジタル化推進費」（キャッシュレス・EC販売システム・デジタルオーダーシステム・専門家相談経費。1/2・上限30万円。2026年度は第3次募集が2026-10-15で終了）
+# ホームページ作成・ネット販売・キャッシュレスに使える町村独自の制度: 三川町（経営強化支援 情報発信事業 1/2・10万円ほか）、朝日町（ネットショップ出店の初期登録料・月額利用料 1/2）、戸沢村（中小企業者等支援事業 2/3・40万円）、鮭川村（受付終了）、金山町（新規開発 販路拡大）、大蔵村（持続化支援）、西川町（持続化チャレンジ）
+# 研修費に使える町村独自の制度: 飯豊町（人材育成 1/2・10万円、受付終了）、大江町（企業人材スキルアップ 1/2・10万円）、三川町（研修・技術資格取得 1/2・5万円）、真室川町（技能向上支援。研修会の開催・受講 1/2・年10万円）、遊佐町（技術者養成研修 2/3・年20万円）、白鷹町（リスキリング支援 1/3・5万円、窓口は商工会）、山辺町（企業人材育成 1/2・5万円）、中山町（講習受講 2/3・1.5万円）、高畠町（新事業活動推進サポート。研修会の開催 1/2・30万円）
+# 国の補助金への上乗せ: 大蔵村 小規模事業者持続化補助金（全国商工会連合会の持続化補助金に採択された場合、補助対象経費から75万円を引いた額を上限25万円まで村が補助）。持続化補助金は national.yml に未登録のため addon・addon_to は書いていない
+# 国のデジタル化・AI導入補助金（旧IT導入補助金）・中小企業省力化投資補助金に町村が上乗せする制度は、22町村とも確認できなかった
+# 町村のページに受付期間の記載がなく「予算の範囲内で随時」「予算に達し次第終了」とある制度は period.status を rolling にした。ページが前年度以前のままで2026年度の実施をページから判断できない制度は unknown にした
+# 鶴岡市の企業研修助成金（庄内地域産業振興センター）は三川町・庄内町の企業も対象の広域の制度（subsidy_a 担当の確認。2026-07-24に予算到達で受付終了）。町独自の制度ではないので、この YAML には入れていない
+# 山形県の制度・県域の機関（やまがた産業支援機構など）・国の制度は別担当（subsidy_a）のため入れていない。融資・利子補給・保証料補給・企業立地の奨励金・雇用の奨励金・物価高騰対策の支援金・賃上げ支援金・移住支援金・個人向けの資格取得助成は YAML に入れていない（subsidy_b_areas.md の「IT向けではない制度」に記した）
+
+# ---- 大江町 ----
+- id: yamagata-oe-shobai-hanjo
+  name: 令和8年度大江町商売繁盛創出支援事業補助金（デジタル化支援事業ほか）
+  org: 大江町
+  area: yamagata/oe
+  max_yen: 200000
+  rate: デジタル化支援事業は1/2（上限20万円）。ほかに店舗改修支援1/3（上限50万円、事業費50万円以上）、新商品開発支援1/2（30万円）、既存商品リニューアル支援1/2（20万円）、法人化支援1/2（10万円）、店舗PR支援1/2（10万円）。全メニューから1つだけ申請できる
+  rate_num: 0.5
+  targets: {efficiency: ○, consulting: △, training: ×}
+  expenses: デジタル化支援事業＝HP作成費、備品購入費、その他町長が必要と認める経費（例はHP作成、POSシステムの初期費用）。新商品開発・リニューアルは専門家謝金・コンサルタント料・デザイン料・市場調査費・研修受講料など（要綱別表1）。汎用性の高いもの・中古品は対象外
+  conditions: 町内に住所及び事業所を有する個人事業主・団体（3人以上）・法人（代表者が町外でも可）。町税等の完納。製造業・小売業・サービス業・情報通信業など山形県商工業振興資金の対象業種（別表2の業種を除く）。事業完了後に売上高10％以上の向上を目標とし、大江町商工会の指導で経営デザインシートを作成。事業実施の1か月前までに相談。国・県等の補助の対象経費は除く。大江町創業支援事業補助金との併用不可。3か年の実施状況報告あり
+  period: {status: rolling, end: 2027-03-12}
+  url: https://www.town.oe.yamagata.jp/industry/commerce/kigyou/95
+  checked: 2026-10-24
+  confidence: official
+  note: ページに受付期間の記載はなく「予算に達した時点で終了」。end は要綱第9条の実績報告の期限（事業完了後30日または2027-03-12のいずれか早い日）。交付要綱 https://www.town.oe.yamagata.jp/files/original/202609100830548463358fd67.pdf 、別表1 https://www.town.oe.yamagata.jp/files/original/20260910083054842a7fce630.pdf （補助対象経費・補助率は1ページの表）。max_yen・rate_num はデジタル化支援事業の値。問い合わせは 地域振興課 商工振興係 0237-62-2139
+  fuenn_note: 大江町の事業者が、デジタル化・DX化・キャッシュレス決済に取り組む費用（ホームページ作成費・POSシステムの初期費用など）の1/2（上限20万円）を町が補助します。予算に達すると終了するので、事業の1か月前までに町へ相談してください。
+
+- id: yamagata-oe-skillup
+  name: 令和8年度大江町企業人材スキルアップ支援事業補助金
+  org: 大江町
+  area: yamagata/oe
+  max_yen: 100000
+  rate: 1/2以内（1回の資格技能研修につき10万円、1事業所1年度10万円まで）
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: ○}
+  expenses: 資格・免許・技能の習得のために事業所が負担する経費（資格取得・講習会など）。消費税は対象外。国・県等の補助の対象経費は除く
+  conditions: 町内に所在する事業所で町税等を完納。対象は事業経営に必要な技能資格、新分野進出に必要な資格技能、事業経営に関係し専門性のある資格技能など。汎用性・趣味性の高い資格は対象外。試験・講習開始日の14日前までに申請
+  period: {status: rolling}
+  url: https://www.town.oe.yamagata.jp/industry/commerce/kigyou/939
+  checked: 2026-10-24
+  confidence: official
+  note: ページに受付期間の記載なし。交付要綱 https://www.town.oe.yamagata.jp/files/original/20260910143003960898bef13.pdf 。AI研修が対象になるかは要綱に明記がない（「事業の経営に関係し専門性のある資格技能」に当たるかは町の判断）。問い合わせは 地域振興課 商工振興係 0237-62-2139
+  fuenn_note: 大江町の事業所が従業員に資格取得や講習会を受けさせる費用の1/2（年10万円まで）を町が補助します。対象になるかは試験・講習の14日前までに町へ確認してください。
+
+- id: yamagata-oe-sogyo
+  name: 令和8年度大江町創業支援事業補助金
+  org: 大江町
+  area: yamagata/oe
+  max_yen: 1500000
+  rate: 新規創業2/3、第二創業1/2（いずれも上限100万円、代表者45歳未満は150万円）
+  rate_num: 0.667
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 交付要綱別表2の経費（中古品・汎用性や趣味性の高いものは対象外）
+  conditions: 申請時点で創業開始前で3年以上継続できる者。町内に住所及び事業所を有する（事業完了日までの転入を含む）。代表者18歳以上。大江町商工会の会員（または交付決定後に加入）で、商工会から創業の指導を3回以上受けた者。町税等の完納。過去に本補助金を受けていない。審査会あり。事業実施の2か月前までに相談。商売繁盛創出支援事業補助金との併用不可
+  period: {status: rolling}
+  url: https://www.town.oe.yamagata.jp/industry/commerce/kigyou-shien/1001
+  checked: 2026-10-24
+  confidence: official
+  note: ページに「只今、随時受付しています」「予算に達した時点で終了」。交付要綱 https://www.town.oe.yamagata.jp/files/original/20260910143059434bf588add.pdf 、別表2 https://www.town.oe.yamagata.jp/files/original/2026091014305942629f16241.pdf （別表2の経費区分は今回読んでいない）。rate_num は新規創業の値。問い合わせは 地域振興課 商工振興係 0237-62-2139
+
+- id: yamagata-oe-hanro
+  name: 令和8年度大江町町外販路開拓支援事業補助金
+  org: 大江町
+  area: yamagata/oe
+  max_yen: 100000
+  rate: 1/2（上限10万円、1か年度1回）
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 町外の商談会・見本市・物産展等の出展料・小間借上料、小間装飾費、旅費（宿泊料は別表2の上限あり）、広報宣伝費、輸送費（要綱別表1）
+  conditions: 町内に住所を有する法人・個人（農業・林業・漁業を主とする者を除く）で町税の滞納がない。事業開始日の14日前までに申請。過去の年度に参加した商談会も対象
+  period: {status: rolling}
+  url: https://www.town.oe.yamagata.jp/industry/commerce/kigyou/816
+  checked: 2026-10-24
+  confidence: official
+  note: 補助率・上限は交付要綱第5条 https://www.town.oe.yamagata.jp/files/original/20260910142923583fda8612a.pdf 。ページに受付期間の記載なし。販路開拓（出展）向けで、IT・AIには使えない。問い合わせは 地域振興課 商工振興係 0237-62-2139
+
+# ---- 飯豊町 ----
+- id: yamagata-iide-shogyo-digital
+  name: 令和8年度飯豊町中小企業振興事業費補助金（商業活性化支援事業 デジタル化推進費ほか）
+  org: 飯豊町
+  area: yamagata/iide
+  max_yen: 300000
+  rate: 1/2以内（上限30万円）。一般機能強化費・デジタル化推進費・新商品開発費のうち1つだけ申請できる
+  rate_num: 0.5
+  targets: {efficiency: ○, consulting: ○, training: ×}
+  expenses: ②デジタル化推進費＝キャッシュレス決済の導入経費、EC販売システム導入経費、デジタルオーダーシステム導入経費、その他デジタル化に資する経費及びそれらの検討のための専門家相談経費（システム等導入に伴うPC・タブレット等の購入は対象、ハード機器のみの購入は対象外）。①一般機能強化費＝店舗等改修費、機械器具・備品の購入費、広告宣伝費。③新商品開発費＝専門家相談経費、試作品作成の設備使用料、プロモーション経費（要綱別表）
+  conditions: 中小企業基本法の中小企業者で、町内に事業所を有し本社を置く企業（町内の従業員・生産額等が5割以上の企業を含む）・町内に住所を有する個人。国税・地方税・町の公的な納付金の滞納がない。小規模事業者は商工会等の指導で経営計画書を作成。ハード事業は町内事業者と契約。①は機能強化の効果・数値目標を示す。審査会で交付可否を決定。交付決定前の契約は対象外
+  period: {status: closed, start: 2026-10-01, end: 2026-10-15}
+  url: https://www.town.iide.yamagata.jp/012/r8chuushoukigyoushinkoujigyouhihojokin3.html
+  checked: 2026-10-24
+  confidence: official
+  note: 2026年度は第1次（2026-05-01〜05-29）、第2次（08-03〜08-31）、第3次（10-01〜10-15）の3回募集し、いずれも受付終了。period は第3次の値。交付要綱（2026-04-23施行）https://www.town.iide.yamagata.jp/012/r8_chuushou-youkou.pdf （別表は最終ページ）。実績報告は2027-03-15まで。デジタル化推進費の検討のための専門家相談経費も対象。問い合わせは 商工観光課 産業連携室 0238-87-0569
+  fuenn_note: 飯豊町の中小企業が、キャッシュレス決済・ネット販売（EC）・デジタルオーダーなどのデジタル化と、その検討のための専門家相談にかける費用の1/2（上限30万円）を町が補助する制度があります。2026年度の募集（3回）は終わりました。
+
+- id: yamagata-iide-jinzai
+  name: 令和8年度飯豊町中小企業振興事業費補助金（人材確保支援事業）
+  org: 飯豊町
+  area: yamagata/iide
+  max_yen: 1000000
+  rate: ①人材確保事業1/2以内（上限100万円）、②人材育成事業1/2以内（上限10万円）
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: ○}
+  expenses: ①就職・転職サイト掲載費、マッチング手数料、合同企業説明会等への参加費、ホームページやパンフレット等の作成費。②人材育成を目的とした教育・研修・資格取得に要する費用（要綱別表）
+  conditions: 商業活性化支援事業と同じ（町内に本社を置く中小企業者等、滞納なし）。①は町内事業所への採用・配属が目的。②は町内事業所の経営者・従業員が対象
+  period: {status: closed, start: 2026-10-01, end: 2026-10-15}
+  url: https://www.town.iide.yamagata.jp/012/r8chuushoukigyoushinkoujigyouhihojokin3.html
+  checked: 2026-10-24
+  confidence: official
+  note: 第1次〜第3次とも受付終了（商業活性化支援事業と同じ日程）。training の判定は②人材育成事業（1/2・10万円）による。max_yen は①の値。問い合わせは 商工観光課 産業連携室 0238-87-0569
+
+- id: yamagata-iide-sogyo
+  name: 令和8年度飯豊町中小企業振興事業費補助金（創業支援事業）
+  org: 飯豊町
+  area: yamagata/iide
+  max_yen: 2000000
+  rate: 1/2以内（法人200万円、個人100万円。事業承継による新規創業も同じ）
+  rate_num: 0.5
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 創業や新しい業種で事業を開始するために必要な経費（施設整備費、機械装置費、備品費、広告宣伝費、調査費、委託費、印刷費等）（要綱別表）
+  conditions: 町内で新たに会社を設立・事業を開始する者（既創業者は2025-08-30以降に創業した者）。産業分類の中分類以上（建設業は大分類以上）が異なる新しい業種の開始も対象。小規模企業者は商工会等の指導で経営計画書を作成
+  period: {status: closed, start: 2026-05-01, end: 2026-05-29}
+  url: https://www.town.iide.yamagata.jp/012/r8chuushoukigyoushinkoujigyouhihojokin.html
+  checked: 2026-10-24
+  confidence: official
+  note: 創業支援事業は第1次募集（2026-05-01〜05-29）だけで、第2次・第3次は人材確保支援と商業活性化支援だけ。問い合わせは 商工観光課 産業連携室 0238-87-0569
+
+# ---- 三川町 ----
+- id: yamagata-mikawa-keiei-kyoka
+  name: 令和8年度三川町経営強化支援事業費補助金
+  org: 三川町
+  area: yamagata/mikawa
+  max_yen: 100000
+  rate: いずれも1/2以内。事業継続事業10万円、販路拡大事業5万円/件、研修・技術資格取得事業5万円/件、情報発信事業10万円（情報発信は1回限り、ほかは1会計年度1回）
+  rate_num: 0.5
+  targets: {efficiency: △, consulting: ×, training: △}
+  expenses: 事業継続事業＝生産性向上のための機械装置・工具器具等の備品購入費（専用性のあるもの、中古可）、キャッシュレス決済の導入に係る備品購入費（ソフトウェア購入費等を含む）、届出・許可の経費。販路拡大事業＝町外の商談会・見本市の交通費・宿泊費・出展料等。研修・技術資格取得事業＝業務上必要な資格の取得・技術の研修への参加経費。情報発信事業＝ホームページの新規作成・更新等（維持管理費は対象外）
+  conditions: 町内に本店・主たる工場等を有する法人（中小企業者に限る）・団体・個人、またはそれらが構成員の2/3を占める団体等。事業実施前に申請（交付決定前の支払いは対象外）。汎用性のある設備は対象外
+  period: {status: rolling, start: 2026-04-01, end: 2027-03-31}
+  url: https://www.town.mikawa.yamagata.jp/business/shoukou/shien/shoukou9920250815.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ更新2026-07-06。対象期間は2026-04-01〜2027-03-31、「予算の範囲内、上限に達し次第受付を締め切り」。交付要綱 https://www.town.mikawa.yamagata.jp/business/shoukou/shien/shoukou9920250815.files/R8keieikyouka.pdf 。研修の対象に AI 研修が入るかは要綱に明記がない。問い合わせは 産業振興課 商工観光係（代表 0235-66-3111）
+  fuenn_note: 三川町の事業者は、ホームページの作成・更新（1/2・上限10万円）、キャッシュレス決済の導入（1/2・上限10万円）、業務に必要な研修への参加（1/2・1件5万円）に町の補助を使えます。2027年3月31日までの事業が対象で、予算に達すると締め切られます。
+
+- id: yamagata-mikawa-sogyo
+  name: 令和8年度三川町創業支援事業費補助金
+  org: 三川町
+  area: yamagata/mikawa
+  max_yen: 300000
+  rate: 広告宣伝費・委託費・備品購入費・看板設置費は1/2以内（合計20万円）、事務所・店舗の賃借料は1か月5万円まで（10万円）
+  rate_num: 0.5
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 広告宣伝費（チラシ・パンフレット等）、委託費（デザイン、Webページ作成等）、備品購入費（税込10万円未満で減価償却資産にならないもの）、看板設置費、事務所・店舗の賃借料
+  conditions: 2026-04-01〜2027-03-31に町内で創業する、事業を営んでいない個人（法人設立を含む）。3年以上継続の見込み。フランチャイズは対象外。出羽商工会の会員（加入申込を含む）。町税の滞納がない。事業実施前に申請
+  period: {status: rolling, start: 2026-04-01, end: 2027-03-31}
+  url: https://www.town.mikawa.yamagata.jp/business/shoukou/shien/shoukousougyou.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ更新2026-05-13。「予算の範囲内、上限に達し次第締め切り」。max_yen は20万円と賃借料10万円の合計。交付要綱 https://www.town.mikawa.yamagata.jp/business/shoukou/shien/shoukousougyou.files/R8sougyou.pdf 。問い合わせは 産業振興課 商工観光係
+
+# ---- 朝日町 ----
+- id: yamagata-asahi-town-shotengai-challenge
+  name: 令和8年度朝日町商店街魅力創出チャレンジ事業補助金（個店活性化事業 インターネットショップ出店ほか）
+  org: 朝日町
+  area: yamagata/asahi-town
+  max_yen: 350000
+  rate: インターネットショップ出店は初期登録料1/2（上限5万円）・運営月額利用料1/2（月2.5万円、最長12か月）。ほかに商店街連携1/2（15万円）、店内ディスプレイ改善1/3（10万円）、外国人観光客受入れ環境整備1/2（20万円）、個店連携2/3（20万円）など
+  rate_num: 0.5
+  targets: {efficiency: △, consulting: △, training: ×}
+  expenses: インターネットショップ出店に係る出店初期登録料及び運営月額利用料。第3者からの企画（アドバイス）による店内ディスプレイの改善、消費者モニターの試食会・アンケート、音声翻訳機などの備品購入等（事業区分ごと）
+  conditions: 町内の商店街・個店・旅館飲食業の団体等（事業区分ごと）。同一事業者に事業区分ごとに1回限り（月額利用料は12か月に満たない残月数を翌年度に申請可）
+  period: {status: open, end: 2026-12-28}
+  url: https://www.town.asahi.yamagata.jp/portal/business/shokogyo/6741.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ更新2026-04-16、申請期限2026-12-28。max_yen はネットショップの初期登録5万円＋月額2.5万円×12か月の合計。交付要綱 https://www.town.asahi.yamagata.jp/material/files/group/7/tyarenzizigyou.pdf 。問い合わせは 総合産業課（代表 0237-67-2111）
+  fuenn_note: 朝日町の個店がインターネットショップに出店するときの初期登録料（1/2・上限5万円）と月額利用料（1/2・月2.5万円、最長12か月）を町が補助します。申請期限は2026年12月28日です。
+
+- id: yamagata-asahi-town-sogyo
+  name: 令和8年度朝日町創業支援事業費補助金
+  org: 朝日町
+  area: yamagata/asahi-town
+  max_yen: 2000000
+  rate: 創業・事業の多角化（中分類）・空き店舗を活用した新事業は60％以内（上限200万円）、既存事業者の多角化（小分類）は10％以内（上限50万円）
+  rate_num: 0.6
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 交付要綱で定める創業等の経費（ページに内訳の記載なし）
+  conditions: 町内で新たに創業・事業の多角化をする者、空き店舗を活用して新たに事業を行う者（詳細は要綱）
+  period: {status: open, end: 2026-12-28}
+  url: https://www.town.asahi.yamagata.jp/portal/business/shokogyo/9679.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ更新2026-07-06、申請期限2026-12-28。交付要綱 https://www.town.asahi.yamagata.jp/material/files/group/7/R8sougyousien.pdf （対象経費は今回読んでいない）。問い合わせは 総合産業課
+
+# ---- 中山町 ----
+- id: yamagata-nakayama-seicho-shien
+  name: 令和8年度中山町中小企業成長支援事業補助金（資格取得・講習等受講）
+  org: 中山町
+  area: yamagata/nakayama
+  max_yen: 100000
+  rate: 資格取得は受験料・検定料の2/3（1人3万円、1事業者10万円まで）、講習等受講は受講料の2/3（1事業者1.5万円まで）。ほかに正社員雇用1人20万円
+  rate_num: 0.667
+  targets: {efficiency: ×, consulting: ×, training: △}
+  expenses: 業務の維持・拡大に必要な資格等の受験料・検定料、講習等の受講料
+  conditions: 町内に事業所を有する事業者（法人・個人事業主）。2026-04-01〜2027-03-19に実施・合格したもの
+  period: {status: open, start: 2026-04-01, end: 2027-03-19}
+  url: https://www.town.nakayama.yamagata.jp/nogyo_syokogyo/sougyo_keiei_chushoshien/1284.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ更新2026-04-01、申請期限2027-03-19。講習受講の上限は1事業者1.5万円と小さい。交付要綱 https://www.town.nakayama.yamagata.jp/material/files/group/8/seityousien801.pdf 。max_yen は資格取得の1事業者上限。問い合わせは 産業振興課 商工観光グループ 023-662-2114
+
+- id: yamagata-nakayama-kaigyo-challenge
+  name: 中山町開業チャレンジ補助金
+  org: 中山町
+  area: yamagata/nakayama
+  max_yen: 1500000
+  rate: 4/5（上限150万円）。2026-04-01以降の転入者20万円、35歳未満10万円、空き家・空き店舗の購入20万円を加算
+  rate_num: 0.8
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 設備購入費（内外装工事・機械設備等、税込10万円以上）、備品購入費（工具器具・備品・特定業務用ソフトウェア・パソコン・タブレット・スマートフォン等、税込2万円以上の業務専用のもの）、官公庁等申請費、保険料、広報費（名刺・ホームページ制作・開設・パンフレット・ロゴデザイン等）
+  conditions: 前年度3月11日〜当該年度3月10日に町内で商工業事業を開業する、事業を営んでいない個人（法人設立を含む）。実績報告までに創業塾の修了または特定創業支援事業の証明。中山町商工会等の開業相談・計画策定支援。2年以上継続の意思。フランチャイズ・大規模小売店舗は対象外。過去に本補助金・旧開業支援事業補助金を受けた者は対象外
+  period: {status: open, start: 2026-04-01, end: 2027-03-12}
+  url: https://www.town.nakayama.yamagata.jp/nogyo_syokogyo/sougyo_keiei_chushoshien/3048.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ更新2026-04-01、申請期間2026-04-01〜2027-03-12。max_yen は加算前の上限。交付規程 https://www.town.nakayama.yamagata.jp/material/files/group/8/kaigyoutyare01.pdf 。問い合わせは 産業振興課 商工観光グループ 023-662-2114
+
+# ---- 山辺町 ----
+- id: yamagata-yamanobe-jinzai-ikusei
+  name: 山辺町企業人材育成促進支援事業補助金
+  org: 山辺町
+  area: yamagata/yamanobe
+  max_yen: 50000
+  rate: 1/2以内（1申請5万円、1事業所年度10万円まで）
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: △}
+  expenses: 研修訓練受講事業＝やまがた産業支援機構・中小企業大学校仙台校・山形県工業技術センター・山形職業能力開発専門校・山形職業能力開発促進センターが実施する技術者研修・訓練の受講料。資格技能取得事業＝対象の国家資格・技能検定の取得費用（受講料・受験料など）
+  conditions: 町内で事業を営む中小企業等（町税等の完納）。資格技能取得は資格取得者を1年間継続雇用する事業所、または町内事業所に就労する本人。予算の範囲内のため事前連絡が必須。研修・資格取得の完了から30日以内または年度末のいずれか早い日に申請
+  period: {status: rolling}
+  url: https://www.town.yamanobe.yamagata.jp/soshiki/9/yamanobebejinzaiikusei.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ更新2026-08-01。受付期間の記載なし（事後申請）。研修は5つの公的機関が実施するものに限られ、民間のAI研修は対象外。問い合わせは 山辺町 商工担当（soshiki/9）
+
+- id: yamagata-yamanobe-sogyo-startup
+  name: やまのべ創業スタートアップ支援補助金
+  org: 山辺町
+  area: yamagata/yamanobe
+  max_yen: 1000000
+  rate: 1/2以内（ソフト支援50万円、ハード支援100万円）
+  rate_num: 0.5
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: ソフト支援＝官公署への申請等の書類作成・手続、備品等の購入、販路開拓の広告宣伝費・パンフレット印刷費・ホームページ作成費等。ハード支援＝開業に必要な施設・設備の新設（住居部分を除く）
+  conditions: 町内で事業を開始する創業者。開業届後・設立登記後に申請。夏の「創業塾」受講が要件の一つ。4月から7月末までに事前連絡が必要
+  period: {status: unknown}
+  url: https://www.town.yamanobe.yamagata.jp/soshiki/9/sogyou-startup.html
+  checked: 2026-10-24
+  confidence: official
+  note: 制度のページは2025-04-11更新のまま。町の「町内の商工業を補助金などで支援します」（2026-03-30更新、https://www.town.yamanobe.yamagata.jp/soshiki/9/syoukou-hojyo-shien.html ）に掲載があり「6月末までに相談」とある。2026年度の事前連絡の期間（7月末まで）は過ぎている。交付要綱（Word）https://www.town.yamanobe.yamagata.jp/uploaded/attachment/7891.docx
+
+# ---- 河北町 ----
+- id: yamagata-kahoku-mirai-sogyo
+  name: 河北町みらい応援創業支援事業費補助金
+  org: 河北町
+  area: yamagata/kahoku
+  max_yen: 2000000
+  rate: 1/2以内（1事業者200万円）。ほかに開業支援資金の利子補給（利息同額、限度300万円、最長10年）
+  rate_num: 0.5
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 施設整備及び機械器具購入費等、事業に必要なソフト開発及び購入等（交付決定年度の3月末日までに支払いが完了したもの）
+  conditions: 町内に本店・主たる事業所を設けて起業する中小企業者等で、山形県商工業振興資金「開業支援資金第1号」の認定を受け融資を受ける者。交付決定前に着手していない。町税等の滞納がない。過去に本補助金を受けていない。河北町商工会の指導を継続して受けられる。5年以上継続の意思。国・県等の補助金はその額を減額
+  period: {status: rolling}
+  url: https://www.town.kahoku.yamagata.jp/sigoto_sangyou/sienseidoitiran/5701.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ更新2026-04-01、受付期間の記載なし。県の開業支援資金の利用が条件。対象業種は https://www.town.kahoku.yamagata.jp/material/files/group/10/taisho.pdf 。問い合わせは 商工観光課 地域産業振興係 0237-73-5162
+
+- id: yamagata-kahoku-katsuryoku
+  name: 河北町活力と魅力ある産業・企業支援事業費補助金
+  org: 河北町
+  area: yamagata/kahoku
+  max_yen: 500000
+  rate: 特産品事業1/2、店舗整備事業1/3、活性化事業（商工団体等）1/2。いずれも上限50万円
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 特産品事業＝町内の一次・二次産品を活用した新たな特産品開発に必要な設備の導入経費（事業規模10万円以上）。店舗整備事業＝町内業者施工の商業店舗の新築・改装・移転（100万円以上、備品は対象外）。活性化事業＝イベント・パンフレット作成等
+  conditions: 中小企業者等（中小企業者と個人事業主）・商工団体等で町税などの滞納がない。年度内に完了、交付決定前の着手は不可、他の補助金を受けない事業。申請前に河北町商工会または地域産業振興係に相談
+  period: {status: unknown}
+  url: https://www.town.kahoku.yamagata.jp/sigoto_sangyou/sienseidoitiran/2908.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページは2025-04-01更新で年度の記載がなく、2026年度の受付はページから判断できない。設備・店舗向けで、IT・AIには使えない。問い合わせは 商工観光課 地域産業振興係 0237-73-5162
+
+# ---- 西川町 ----
+- id: yamagata-nishikawa-jizokuka-challenge
+  name: 西川町小規模事業者持続化チャレンジ補助金
+  org: 西川町
+  area: yamagata/nishikawa
+  max_yen: 300000
+  rate: 対象事業費の2/3または30万円のいずれか低い額（事業費30万円以上）
+  rate_num: 0.667
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 持続可能な経営を目指して行う小規模な改装・導線改善、新分野への参入に向けた初期事業（実施に直接必要な機器・備品の購入を含む）。単なる既存設備の更新・美観の向上は対象外
+  conditions: 町内に店舗等を有する、事業主・代表者が町内に居住する小規模事業者（製造業等20人以下、卸売・小売・サービス業5人以下）で創業10年以上。町税等の滞納がない。町内の建築・建設業者等の施工（改修の場合）。他の制度で補助を受けた経費は除く
+  period: {status: rolling}
+  url: https://www.town.nishikawa.yamagata.jp/soshiki/kasegu/10358.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ更新2026-06-24。受付期間の記載はなく「町へ相談」。対象者の要件はページの「対象対象者」欄（店舗等の改修工事向けの小規模事業者物価高騰支援事業補助金と共通の記載）による。同じページの小規模事業者物価高騰支援事業補助金（1/3・上限300万円、増改築工事300万円以上）は店舗の省エネ改修向け
+  fuenn_note: 西川町の創業10年以上の小規模事業者が、新分野に参入するための初期事業（必要な機器・備品の購入を含む）などに取り組む費用の2/3（上限30万円、事業費30万円以上）を町が補助します。町に相談してください。
+
+- id: yamagata-nishikawa-kigyo-challenge
+  name: 西川町起業チャレンジ支援（起業補助金）
+  org: 西川町
+  area: yamagata/nishikawa
+  max_yen: 1500000
+  rate: 対象経費の10/10（上限150万円）
+  rate_num: 1.0
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 事業所等の開設に係る設備・備品購入費、設備設置費等
+  conditions: 町の住民基本台帳に記録されている20歳以上の者で町税等の滞納がない。国・県等から起業の補助を受けていない。許認可が必要な業種は許認可済み。既存の法人・個人事業主の新分野参入も対象。対象業種は鉱業・建設業・製造業・情報通信業・卸売小売業・宿泊飲食サービス業など
+  period: {status: rolling}
+  url: https://www.town.nishikawa.yamagata.jp/soshiki/kasegu/1414.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ（題名「あなたの起業チャレンジを150万円支援！」）更新2026-04-01。受付期間・要綱の記載なし、町へ相談
+
+# ---- 大石田町 ----
+- id: yamagata-oishida-shinjigyo-challenge
+  name: 令和8年度大石田町新事業チャレンジ支援事業補助金
+  org: 大石田町
+  area: yamagata/oishida
+  max_yen: 600000
+  rate: 10/10（上限50万円。ふるさと納税の返礼品登録または代表者40歳以下で10万円加算、最大60万円）
+  rate_num: 1.0
+  targets: {efficiency: △, consulting: △, training: ×}
+  expenses: 市場調査費、デザイン開発費、原材料・副資材費、機械装置・工具器具費（リース・レンタル・購入）、構築物関係費、外注加工費、技術指導費（専門家の謝金・委託費）、工業所有権・認証取得費、広告宣伝費、印刷製本費、直接人件費（対象経費の1/5以内）。パソコン・OS・表計算ソフト等の汎用品は対象外
+  conditions: 町内に本社・主たる事業所を有する中小企業者等。新製品・新技術の開発、新分野への進出に取り組む事業（生産設備の導入が主目的の事業、開発そのものの委託は対象外）。審査会で申請者が説明。2027-02-28までに完了
+  period: {status: closed, start: 2026-06-10, end: 2026-09-11}
+  url: https://www.town.oishida.yamagata.jp/life/hojo/newchallenge.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ更新2026-05-01。受付は2026-06-10〜09-11で終了。交付要綱（2026-05-01大石田町要綱第32号）https://www.town.oishida.yamagata.jp/life/hojo/newchallenge.files/R8challenge.pdf 。問い合わせは みらい共創戦略課 商工観光グループ 0237-35-2111
+
+- id: yamagata-oishida-mirai-zukuri
+  name: 令和8年度おおいしだ未来づくり支援事業補助金
+  org: 大石田町
+  area: yamagata/oishida
+  max_yen: 500000
+  rate: 10/10（未来のまちづくり〔イベント開催型〕上限50万円、未来のひとづくり〔地域課題解決型〕上限30万円）。継続事業は最大3年で2回目8/10・3回目6/10
+  rate_num: 1.0
+  targets: {efficiency: ×, consulting: ×, training: △}
+  expenses: 報償費・謝礼（講師等）、旅費（講師等）、消耗品費（1品2万円未満）、食糧費（講師の弁当等）、印刷製本費、修繕料（申請額の1/2以内）、広告料、手数料、保険料、通信運搬費、委託料（申請額の1/2以内、専門的知識・技術を要する業務の外部委託）、使用料・賃借料（機器等のリース料・会場使用料）、工事請負費（1/2以内）、原材料費、備品購入費（申請額の3/10以内、1品2万円以上）など（別表2）。デジタル化・IT導入を名指しする経費区分はない。団体の事務所の通信費（電話・インターネット料金）は対象外
+  conditions: 町内の各地区（複数地区の合同可）や町内に活動拠点を置く公益的な活動を行う団体など（個人は対象外）。新規事業のみ（継続は最大3年）。単なる修繕・備品購入だけの事業は対象外。ひとづくり型の対象は、人材育成・地域づくりを目的とした研修等（勉強会・先進地視察ほか）、自然・景観・生活環境の保全、健康づくり、インバウンド対応、広域の活性化・関係人口の増加を目的とした事業（別表1）。審査委員会で採択
+  period: {status: closed, end: 2026-10-23}
+  url: https://www.town.oishida.yamagata.jp/life/hojo/miraidukuri.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ更新2026-09-01、募集期限2026-10-23（必着）で確認日の前日に締め切り。「採択事業数によっては再度募集する場合がある」。地域・団体の公益的な活動向けで、企業の業務のデジタル化・IT導入には使えない（担当は企画情報課 政策企画グループで商工の制度ではない）。勉強会・研修の講師謝礼は対象になりうるため training は △。別表1 https://www.town.oishida.yamagata.jp/life/hojo/miraidukuri.files/1hojotaisyoujigyou.pdf 、別表2 https://www.town.oishida.yamagata.jp/life/hojo/miraidukuri.files/2hojotaisyoukeihi.pdf 。問い合わせは 企画情報課 政策企画グループ 0237-35-2111
+
+# ---- 金山町 ----
+- id: yamagata-kaneyama-town-shinki-kaihatsu
+  name: 金山町新規開発事業補助金
+  org: 金山町
+  area: yamagata/kaneyama-town
+  max_yen: 400000
+  rate: 1/2（上限20万円）。新商品開発等と販路拡大を同一事業で行う場合は2/3（上限40万円）。販路拡大だけの場合は交付決定から連続3年間で合計20万円まで
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 町内産の農林水産物等を活用した新商品等の調査・研究・試作、県外の物産展・見本市等への参加、ホームページ等による新商品等の販売
+  conditions: 町内に住所を有する事業所・団体・個人（町内産農林水産物を活用するか町内事業者と共同で行う町外事業者も可）。交付決定後に事業着手
+  period: {status: rolling}
+  url: https://www.town.kaneyama.yamagata.jp/kurashi/shigoto_sangyo/shoko/1680.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ更新2026-03-31、受付期間・年度の記載なし。ホームページでの販売は「新商品開発等」の販路拡大として対象。制度チラシ https://www.town.kaneyama.yamagata.jp/material/files/group/7/sinkikaihatu.pdf 。問い合わせは まちづくり課 商工観光係 0233-29-5640
+
+# ---- 最上町 ----
+- id: yamagata-mogami-jinzai-ikusei
+  name: 令和8年度最上町人材育成支援事業
+  org: 最上町
+  area: yamagata/mogami
+  max_yen: 80000
+  rate: 企業は経費の2/3以内（1人8万円、1事業所同年度2人まで）、個人は1/2以内（1人6万円）
+  rate_num: 0.667
+  targets: {efficiency: ×, consulting: ×, training: △}
+  expenses: 資格取得に必ず要する講習等の受講料（教材費含む）、受験料、資格登録料など（2万円以上）。交通費・旅費は対象外
+  conditions: 町内に住所を有する満65歳までの者で、国家資格・国家検定（例に情報処理技術者を含む）等を取得予定の者、またはその経費を負担する町内の事業所。厚生労働省の教育訓練給付を受けていない。受講前に申請
+  period: {status: closed, end: 2026-09-30}
+  url: https://town.mogami.lg.jp/data/news/news_view.php?news_id=612
+  checked: 2026-10-24
+  confidence: official
+  note: チラシ（2026-04-20登録）https://town.mogami.lg.jp/data/upload/2026-04-20_09-00-32_14.pdf に申請期限2026-09-30（予算がなくなり次第終了）。資格取得向けで、研修だけの受講は対象外。問い合わせは 最上町産業振興センター 0233-43-2340
+
+# ---- 真室川町 ----
+- id: yamagata-mamurogawa-gino-kojo
+  name: 令和8年度真室川町技能向上支援補助金
+  org: 真室川町
+  area: yamagata/mamurogawa
+  max_yen: 100000
+  rate: 1/2（1年度につき事業①〜③合わせて10万円まで）
+  rate_num: 0.5
+  targets: {efficiency: ×, consulting: ×, training: ○}
+  expenses: 事業者＝講習等の受講料・教材費・受験料・免許登録料、研修会等の受講料・旅費・宿泊費、研修会等を実施するための会場借上料・講師の謝金
+  conditions: 町内に主たる事業所を有する事業者、または町民を雇用する町外事業者（町民の従業員分のみ）で税金の滞納がない。対象は①従業員の資格・免許取得、②従業員の研修会等の受講、③従業員向けの研修会等の開催で、事業者が経費を負担し国等の補助を受けていないもの。求職者・個人事業者向けの区分もある
+  period: {status: open, end: 2027-03-31}
+  url: https://www.town.mamurogawa.yamagata.jp/shigoto_sangyo/1/1874.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ更新2026-05-27。回覧チラシ https://www.town.mamurogawa.yamagata.jp/material/files/group/9/ginoukairann.pdf に申請期限2027-03-31。社内研修会の開催（講師謝金・会場借上料）も対象。AI 研修が「職務上必要となる技能」に当たるかは町の判断。問い合わせは 企画課 産業交流係 0233-62-2050
+  fuenn_note: 真室川町の事業者が従業員向けに研修会を開く費用（講師の謝金・会場借上料）や、研修会を受講させる費用の1/2（年10万円まで）を町が補助します。申請期限は2027年3月31日です。
+
+# ---- 大蔵村 ----
+- id: yamagata-okura-jizokuka
+  name: 令和8年度大蔵村小規模事業者持続化補助金（持続化支援事業）
+  org: 大蔵村
+  area: yamagata/okura
+  max_yen: 300000
+  rate: 国の持続化補助金に採択された場合は補助対象経費から75万円を差し引いた額（上限25万円）。不採択の場合は1/3以内（上限30万円）、持続化補助金に申請しなかった場合は1/3以内（上限20万円）
+  rate_num: 0.333
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 持続化補助金公募要領またはそれに準ずる取組の経費（販路開拓のための機械装置等・広告宣伝費、生産性向上のための機械装置等・店舗改装など）
+  conditions: 村内に住所・事業所を有する小規模事業者（個人）、本店所在地を村内に有し通年で事業を営む小規模事業者（法人）。村税・料等の滞納がない。持続化補助金以外の補助金等の交付を受けていない。年度内1事業者1回
+  period: {status: rolling, end: 2027-02-28}
+  url: https://www.vill.ohkura.yamagata.jp/shigoto_sangyo/koyo_shugyo/hojokin_joseikin/1979.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページは2025-04-09更新だが、掲載の要綱は「令和8年度大蔵村小規模事業者持続化補助金交付要綱」https://www.vill.ohkura.yamagata.jp/material/files/group/1/R8shoukibojigyoushajizokukahojokinkoufuyoukou.pdf （別表2が補助額）。受付期間の記載はなく、end は実績報告の期限（完了後30日または2027-02末のいずれか早い日）。全国商工会連合会の小規模事業者持続化補助金への上乗せ（採択時）を含む。持続化補助金は national.yml に未登録のため addon・addon_to は書いていない（採択時の計算は「経費−75万円」で上限25万円）。rate_num は不採択時の村独自補助の値。問い合わせは 企画課 商工観光係
+  fuenn_note: 大蔵村の小規模事業者は、国の小規模事業者持続化補助金に採択されると、経費のうち75万円を超える分を村が上限25万円まで上乗せします。持続化補助金に不採択でも経費の1/3（上限30万円）を村が補助します。
+
+- id: yamagata-okura-sogyo
+  name: 令和8年度大蔵村小規模事業者持続化補助金（創業支援事業）
+  org: 大蔵村
+  area: yamagata/okura
+  max_yen: 300000
+  rate: 2/3以内（上限30万円）
+  rate_num: 0.667
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 店舗の建築費・改装工事費（土地取得は対象外）、創業に係る機械等（備品を含む、中古可、専用性のあるもの）購入費、広告宣伝費（チラシ作成やWebサイト掲載の費用等）、その他創業に要する経費
+  conditions: 村内で新たに事業を開始する者または創業後1年未満の者で、1年以上継続して営業する者。創業計画書を提出
+  period: {status: rolling, end: 2027-02-28}
+  url: https://www.vill.ohkura.yamagata.jp/shigoto_sangyo/koyo_shugyo/hojokin_joseikin/1979.html
+  checked: 2026-10-24
+  confidence: official
+  note: 持続化支援事業と同じ要綱の別表2。問い合わせは 企画課 商工観光係
+
+# ---- 鮭川村 ----
+- id: yamagata-sakegawa-shokibo
+  name: 令和8年度鮭川村小規模企業者支援事業補助金
+  org: 鮭川村
+  area: yamagata/sakegawa
+  max_yen: 500000
+  rate: 起業支援・持続化支援とも2/3以内（上限50万円）
+  rate_num: 0.667
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 起業支援＝店舗の建築・改装費、起業に係る備品購入費（専用性のあるもの、中古可）、広告宣伝費など。持続化支援＝商工業機能の維持・向上・販路開拓等のための改装工事費、備品購入費、届出・許可等の経費、広告宣伝費、ホームページ作成費など
+  conditions: 村内に売上を生ずる主たる事業所がある小規模企業者（卸売・小売・サービス業5人以下、製造業その他20人以下）。起業支援は村内で起業し1年以上事業を展開する事業、持続化支援は1年以上継続して同一事業を営む事業者
+  period: {status: closed, start: 2026-04-13, end: 2026-05-29}
+  url: https://www.vill.sakegawa.yamagata.jp/topics/1670
+  checked: 2026-10-24
+  confidence: official
+  note: ページ更新2026-04-13。2026年度の募集期間は2026-04-13〜05-29で終了。村の「産業情報 > 商工」のページは「現在、情報はありません」で、制度は「お知らせ」にだけ載っている。問い合わせは 産業振興課 林政商工係（代表 0233-55-2111）
+
+# ---- 戸沢村 ----
+- id: yamagata-tozawa-chusho-shien
+  name: 令和8年度戸沢村中小企業者等支援事業補助金
+  org: 戸沢村
+  area: yamagata/tozawa
+  max_yen: 400000
+  rate: 2/3以内（上限40万円、1事業者1回）
+  rate_num: 0.667
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 備品購入費（中古可、1件10万円以上、専用性のあるもの）、届出・許可等の経費、広告宣伝費・ホームページ作成費（チラシ・ポスター・カタログ・看板・新聞広告・ホームページ掲載・TV・ラジオ等）、その他事業推進に要する経費（要綱別表）
+  conditions: 村内に住所・主たる事業所を有する個人、代表者の住所と本店所在地が村内の法人で、通年で事業を営み1年以上同一事業を継続している者。村税等（各種保険料・使用料を含む）の滞納がない。売上を生ずる主たる事業所が村外の者は対象外。事業期間は交付決定から2027-02-28まで
+  period: {status: rolling, end: 2027-02-28}
+  url: https://www.vill.tozawa.yamagata.jp/tantokaichiran/machidukurika/
+  checked: 2026-10-24
+  confidence: official
+  note: まちづくり課のページに要綱・チラシ・様式（2026-04-17登録）を掲載。チラシ https://www.vill.tozawa.yamagata.jp/files/libs/4764/202604171516037234.pdf 、交付要綱（2026-04-01施行）https://www.vill.tozawa.yamagata.jp/files/libs/4766/20260417151710682.pdf 。受付期間の記載はなく「予算の範囲内」。end は事業期間の末日。村のサイトの「事業者の皆様へ」には載っていない。問い合わせは まちづくり課 商工観光係 0233-72-2152
+  fuenn_note: 戸沢村で1年以上事業を続けている事業者が、ホームページ作成・広告宣伝や業務に使う備品（1件10万円以上）にかける費用の2/3（上限40万円）を村が補助します。事業は2027年2月28日までに終える必要があります。
+
+# ---- 高畠町 ----
+- id: yamagata-takahata-shinjigyo-support
+  name: 令和8年度高畠町新事業活動推進サポート事業補助金
+  org: 高畠町
+  area: yamagata/takahata
+  max_yen: 300000
+  rate: 1/2以内（最大30万円）
+  rate_num: 0.5
+  targets: {efficiency: △, consulting: △, training: △}
+  expenses: 新ビジネスモデルを構築するための情報収集事業（研修会の開催等）、新商品・サービスの開発及びテストマーケティング、民泊の開始、クラウドファンディングの実施、事業継続計画（BCP）の策定。経費は謝金・旅費・事業費・開発費等
+  conditions: 町内に住所を有する中小企業者・小規模企業者またはその団体、農業法人・農業者の団体、町の人材育成事業への参加者を有する中小企業者等。審査会で選定
+  period: {status: rolling}
+  url: https://www.town.takahata.yamagata.jp/soshiki/9/1647.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ更新2026-07-21。公募の締切は2026-06-26だったが「予算の範囲内で随時申請を受付」。公募要領 https://www.town.takahata.yamagata.jp/uploaded/attachment/4180.pdf 。問い合わせは 商工観光課（代表 0238-52-1111）
+  fuenn_note: 高畠町の中小企業が、新しいビジネスモデルづくりのための研修会の開催や新サービスの開発に取り組む費用（謝金・旅費・開発費など）の1/2（最大30万円）を町が補助します。予算の範囲で随時受け付けているので、町の商工観光課に相談してください。
+
+- id: yamagata-takahata-pilot-project
+  name: 令和8年度高畠町地域課題解決型パイロットプロジェクト事業補助金
+  org: 高畠町
+  area: yamagata/takahata
+  max_yen: 3000000
+  rate: 1/2以内（最大300万円）。ハード事業費（物品購入費・修繕費等）は総事業費の2割以内
+  rate_num: 0.5
+  targets: {efficiency: △, consulting: △, training: ×}
+  expenses: 専門家謝金、専門家・事業者旅費、事業費（会場借料・会議費・広告宣伝費・市場調査費・委託料・役務費など）、その他（人件費・試作費など）
+  conditions: 町内に住所を有する中小企業者等・農業法人等・創業5年未満の者など。外部専門家・金融機関・行政・商工団体等と連携し、複数分野に横断する地域課題（商店街の空きスペース活用・デマンド交通・空き家の利活用等）の解決に取り組む事業。審査会で選定
+  period: {status: rolling}
+  url: https://www.town.takahata.yamagata.jp/soshiki/9/1644.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ更新2026-06-12。公募の締切は2026-05-14だったが「予算の範囲内で随時受付」。地域課題の解決が目的で、自社の業務効率化には使いにくい。公募要領 https://www.town.takahata.yamagata.jp/uploaded/attachment/4016.pdf 。問い合わせは 商工観光課
+
+- id: yamagata-takahata-setsubi-toshi
+  name: 令和8年度高畠町中小企業設備投資等補助事業
+  org: 高畠町
+  area: yamagata/takahata
+  max_yen: 3000000
+  rate: 設備投資型は対象事業費の10％以内（上限300万円）、所有型は10％以内（上限500万円）。ものづくり補助金・中小企業新事業進出補助金に不採択となり計画を見直して申請した場合、または町の人材育成事業への参加者がいる場合は30％以内
+  rate_num: 0.1
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 設備投資型（対象事業費200万円以上）＝工場等の内部造作、建物附属設備、生産性・収益性向上に資する機械・装置の購入（汎用性の高い機械・車両等を除く）
+  conditions: 町内に本店・主たる工場を有する製造業・建設業・情報通信業・サービス業・小売業等の中小企業者等、または町内に工場等を新設する町外の中小企業者等
+  period: {status: closed, end: 2026-03-10}
+  url: https://www.town.takahata.yamagata.jp/soshiki/9/1645.html
+  checked: 2026-10-24
+  confidence: official
+  note: 2026年度分の提出期限は2026-03-10で終了（ページ更新2026-02-26）。国のものづくり補助金等の不採択者に補助率を上げる仕組みで、国の補助金への上乗せではない。max_yen は設備投資型の値。公募要領 https://www.town.takahata.yamagata.jp/uploaded/attachment/3505.pdf
+
+- id: yamagata-takahata-sogyo
+  name: 令和8年度高畠町創業者支援事業補助金
+  org: 高畠町
+  area: yamagata/takahata
+  max_yen: 300000
+  rate: 1/2以内（最大30万円）
+  rate_num: 0.5
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 創業経費（機械設備・装置・備品等の取得費、内装等の工事費、広報費、研修費等）、家賃（月5万円以上の賃借料の6か月分）
+  conditions: 2026年度中に町内で創業する者または創業後2年未満の者で、高畠町商工会の「創業セミナー」（特定創業支援事業）の証明を受けた（または受ける見込みの）者。2016〜2025年度に町の創業支援補助金を受けた者は対象外。審査会で選定
+  period: {status: rolling}
+  url: https://www.town.takahata.yamagata.jp/soshiki/9/1646.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページ更新2026-07-21。公募の締切は2026-06-26だったが「予算の範囲内で随時申請を受付」。公募要領 https://www.town.takahata.yamagata.jp/uploaded/attachment/4184.pdf
+
+# ---- 川西町 ----
+- id: yamagata-kawanishi-town-innovation
+  name: 川西町中小企業イノベーション支援事業補助金
+  org: 川西町にぎわいづくり協議会（事務局 川西町商工観光課）
+  area: yamagata/kawanishi-town
+  max_yen: 1000000
+  rate: ハード事業1/3以内（上限100万円、補助対象経費10万円以上）、ソフト事業1/2以内（上限50万円）。どちらか一方のみ
+  rate_num: 0.5
+  targets: {efficiency: △, consulting: △, training: ×}
+  expenses: ハード事業＝新たな事業に必要な機械・装置の取得費、建物・建物付属設備の取得改修費（工事請負費・備品購入費）。ソフト事業＝新たなサービス提供に必要な経費、新たな販路の開拓に必要な経費（専門家の謝金、印刷製本費、専門知識や技術を要する業務の外部委託費）。研修費・旅費・汎用性のある備品・通常の設備更新は対象外
+  conditions: 町内に1年以上本社・事業所を有する中小企業者（農業・林業・漁業等を除く）。国・県・町等の重複する補助を受けていない。町税等の完納。新分野進出・新製品の開発生産・シェアオフィス等の環境整備・新サービスや販路の開発。審査会あり
+  period: {status: rolling}
+  url: https://www.town.kawanishi.yamagata.jp/sangyo/syokogyo/challenge.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページに「第2次募集受付中：随時お問い合わせください（予算に達した時点で受付終了）」。ページ・概要に年度・更新日の記載なし。概要 https://www.town.kawanishi.yamagata.jp/sangyo/syokogyo/inovesion-gaiyo-2.pdf 、要綱 https://www.town.kawanishi.yamagata.jp/sangyo/syokogyo/inovesion-youko-2.pdf 。実施主体は町ではなくにぎわいづくり協議会。rate_num はソフト事業の値。問い合わせは 商工観光課 商工労政係 0238-42-6645
+
+- id: yamagata-kawanishi-town-startup
+  name: 川西町創業スタートアップ支援事業補助金
+  org: 川西町にぎわいづくり協議会（事務局 川西町商工観光課）
+  area: yamagata/kawanishi-town
+  max_yen: 600000
+  rate: 2/3以内（上限50万円。空き店舗・空き家の活用、転入後3年以内の創業で10万円加算）
+  rate_num: 0.667
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 広報費、展示会等出展費、旅費（展示会・商談会、従業員の研修参加の交通費）、店舗の改装費・既存家屋の解体撤去費、市場調査等の費用など（概要5）
+  conditions: 交付申請年度中に町内で創業し事業所を設置する者。川西町創業支援事業計画の特定創業支援事業による支援を受けた者。川西町商工会の会員（予定を含む）。重複する補助を受けていない。対象外業種あり（医療・学校教育・フランチャイズ等）
+  period: {status: rolling}
+  url: https://www.town.kawanishi.yamagata.jp/sangyo/syokogyo/sogyo_sokushin.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページに「第2次募集受付中」「予算額に達した時点で受付終了」。概要 https://www.town.kawanishi.yamagata.jp/sangyo/syokogyo/startup-gaiyo-2.pdf （対象経費の表は2ページ以降、今回は一部だけ確認）。問い合わせは 商工観光課 商工労政係 0238-42-6645
+
+# ---- 白鷹町 ----
+- id: yamagata-shirataka-reskilling
+  name: 白鷹町（人材育成支援）リスキリング支援事業補助金
+  org: 白鷹町（実施主体 白鷹町商工会）
+  area: yamagata/shirataka
+  max_yen: 50000
+  rate: 1/3以内（1事業者5万円）
+  rate_num: 0.333
+  targets: {efficiency: ×, consulting: ×, training: ○}
+  expenses: 研修・講習会の入学料・受講料（教材費を含む）、資格等の受験料・登録料、その他商工会が適当と認める指定経費。旅費・振込手数料、国・県等の補助を受ける経費は対象外。研修修了証明書等が発行される研修に限る
+  conditions: 町内に事業所を有する法人・個人事業主（農林水産業・銀行業等の除外業種、町税滞納者を除く）。町内事業所に勤務する従業員（住所は問わない）、個人事業主・役員本人も対象。事業者の営利事業に直接関係する資格・免許・技能・研修（自社主催は除く）。汎用的な免許・ビジネスマナー等の専門性のない研修・創業や多角化の研修は対象外。商工会に交付申請
+  period: {status: rolling, end: 2027-03-15}
+  url: https://www.town.shirataka.lg.jp/2303.htm
+  checked: 2026-10-24
+  confidence: official
+  note: 事業概要（R8）https://www.town.shirataka.lg.jp/secure/7066/R8zinzaiikuseigaiyou.pdf に「申請受付 随時」「2027-03-15までに実績報告ができるもの」。end は実績報告の期限。書類の提出先・問い合わせは白鷹町商工会 0238-85-0055
+  fuenn_note: 白鷹町の事業者が、従業員（役員・個人事業主本人を含む）に業務に直接関係する研修・講習を受けさせる費用の1/3（1事業者5万円まで）を補助します。窓口は白鷹町商工会で、2027年3月15日までに実績報告できる研修が対象です。
+
+- id: yamagata-shirataka-sogyo
+  name: 令和8年度白鷹町創業支援事業等補助金（創業支援事業・事業多角化支援事業）
+  org: 白鷹町
+  area: yamagata/shirataka
+  max_yen: 800000
+  rate: 条件により1/3・1/2・2/3（要綱別表1）。基本額50万円、創業前の申請は空き店舗・空き家30万円・40歳未満20万円・移住者30万円のいずれか1つを加算（最大80万円）
+  rate_num: 0.5
+  targets: {efficiency: △, consulting: ×, training: △}
+  expenses: 施設整備費、機械器具購入費（税抜単価1万円以上）、ソフトウェア購入費（汎用品除く）、広告宣伝費（チラシ、ウェブサイト作成等）、研修費
+  conditions: 町に居住する個人（実績報告までの移住を含む）または町内に事業所を有する法人で、町内で創業（創業後1年以内を含む）または事業多角化（製品・サービスと市場の両方に新規性）をする者。おおむね5年以上継続。満20歳以上。創業は白鷹町商工会の指導を受ける。農林漁業は対象外。同一経費に他の補助を受けない。1回限り
+  period: {status: rolling, end: 2027-03-16}
+  url: https://www.town.shirataka.lg.jp/1897.htm
+  checked: 2026-10-24
+  confidence: official
+  note: 受付随時（町予算の範囲内）。end は実績報告の期限（完了後14日または2027-03-16のいずれか早い日）。交付要綱（2026-06-18改正後）https://www.town.shirataka.lg.jp/secure/5373/youkou0618.pdf 、別表1 https://www.town.shirataka.lg.jp/secure/5373/beppyou1.pdf （補助率の条件は別表1で、今回は要綱本文の別表冒頭だけ確認）。rate_num は仮に1/2。問い合わせは 商工観光課 商工振興係 0238-87-0696
+
+# ---- 遊佐町 ----
+- id: yamagata-yuza-gijutsusha-kenshu
+  name: 遊佐町中小企業等技術者養成研修補助制度
+  org: 遊佐町
+  area: yamagata/yuza
+  max_yen: 200000
+  rate: 2/3以内（1者につき年額20万円）
+  rate_num: 0.667
+  targets: {efficiency: ×, consulting: ×, training: ○}
+  expenses: 研修に参加する場合の受講料・交通費・宿泊費等。業務上直接必要な資格の取得、技術の研修への参加・研修会の開催、その他技術向上等のため町長が認めた研修
+  conditions: 町内に事業所・事務所を有し事業を営む法人・個人事業主。事前に認定申請（資格取得計画書・研修の概要・旅費の明細）。研修終了後1か月以内に実績報告
+  period: {status: rolling}
+  url: https://www.town.yuza.yamagata.jp/archive/contents-2442
+  checked: 2026-10-24
+  confidence: official
+  note: ページ（更新日表示は2025-03-26）に「令和8年度の予算が残りわずかとなりました」「予算上限に達した場合は申請受付終了」。要綱 https://www.town.yuza.yamagata.jp/uploads/public/archive_0000002697_00/遊佐町中小企業等技術者養成研修補助制度要綱.pdf （今回は読んでいない）。問い合わせは 産業課 産業創造係 0234-72-4522
+  fuenn_note: 遊佐町の事業者が業務に必要な研修に参加する費用（受講料・交通費・宿泊費）の2/3（年20万円まで）を町が補助します。2026年度の予算は残りわずかと町が案内しているので、早めに町へ確認してください。
+
+- id: yamagata-yuza-setsubi-toshi
+  name: 遊佐町中小企業設備投資支援事業補助金
+  org: 遊佐町
+  area: yamagata/yuza
+  max_yen: 1000000
+  rate: 補助対象経費の10％（上限100万円、投下固定資産総額100万円以上）
+  rate_num: 0.1
+  targets: {efficiency: △, consulting: ×, training: ×}
+  expenses: 事業の拡大・高度化・継続のため、事業効率の向上に資する建物（工場・倉庫・店舗等）の新増設、構築物、機械及び装置の設置に要する経費。リース・複数事業者による購入は対象外
+  conditions: 町内に事業所を有し1年以上事業を営む法人・個人。町税・水道料金・下水道使用料の滞納がない。他の公的機関から補助を受けていない。事業認定後に着工
+  period: {status: unknown}
+  url: https://www.town.yuza.yamagata.jp/archive/p20250402152610
+  checked: 2026-10-24
+  confidence: official
+  note: ページは2025-04-02更新で年度の記載がなく、2026年度の受付はページから判断できない（「助成・支援」の一覧には掲載が続いている）。ソフトウェアが対象になるかは記載がない。問い合わせは 産業課 産業創造係 0234-72-4522
+
+# ---- 小国町 ----
+- id: yamagata-oguni-town-kigyoka
+  name: 小国町起業化資金助成金
+  org: 小国町
+  area: yamagata/oguni-town
+  max_yen: 300000
+  rate: 2/3（上限20万円。女性が起業する場合は30万円）
+  rate_num: 0.667
+  targets: {efficiency: ×, consulting: ×, training: ×}
+  expenses: 事業拠点費（設備費・備品費・内装費）、商品化促進費、宣伝広告費等
+  conditions: 町内に居住し町内で起業（新規開業・開店）する者。すでに起業している者は対象外。金融保険業・風俗業は対象外
+  period: {status: unknown}
+  url: https://www.town.oguni.yamagata.jp/soshiki/sangyo/1294.html
+  checked: 2026-10-24
+  confidence: official
+  note: ページは2022-04-13更新のままで、2026年度の実施・受付はページから判断できない。同じページの地域起業成長促進事業補助金（起業後3年以内の法人化に定額10万円）も同様。問い合わせは 産業振興課 商工労働政策担当 0238-62-2416

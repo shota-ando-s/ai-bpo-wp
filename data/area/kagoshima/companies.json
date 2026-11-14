@@ -1,0 +1,585 @@
+{
+ "_meta": {
+  "checked": "2026-11-04",
+  "scope": "鹿児島県43市町村（19市20町4村）。本社（公式サイトの本社・本店・所在地）が当該市町村にあり、公式サイトでシステム開発・ソフトウェア開発・Web開発・情報処理サービス・SI を事業として明示する法人。岡山・広島などと同じく、本表には『公式サイト（コーポレートサイトまたは自社の採用サイト）で本社所在地と従業員数の両方を確認できた会社』だけを入れた。従業員数が公式にない会社・公式サイトを開けなかった会社は _reference の unverified に置いた。県外に本社がある会社の県内拠点は _reference._outside_hq。鹿児島市は公式の従業員数の多い順に8社（岡山市・広島市と同じ上限）。9位以下の確認済み7社は _reference.kagoshima-city.next_candidates に同じ形で置いた（親が本表に上げてよい）。ほかの市町村は見つかった全社。",
+  "candidate_sources": [
+   "**一般社団法人鹿児島県情報サービス産業協会（KISA）** https://www.kisa.or.jp/ の『KISA会員企業一覧（2026年10月2日現在）』https://www.kisa.or.jp/introduction/ : 85件（正会員・賛助会員。県外本社の支店・学校・金融機関を含む）。社名・住所・ホームページの URL が載る。依頼の『県の情報サービス産業協会』はこの団体（名称は KISA のサイト・現場サポート・ソフトウェア開発技術・ソフト流通センターの会社概要の加盟団体の欄で確認）。会員企業スキルマップ（Excel）は開いていない",
+   "鹿児島市企業立地ガイド『立地協定』のページ（最近・過去の立地協定。各社の所在地・事業内容・計画の従業員数と公式サイトのリンク）https://www.city.kagoshima.lg.jp/san-sousyutu/kigyoritchi/ritchikyote/index.html 。従業員数は**計画値**なので本表には使っていない",
+   "鹿児島県『(株)ソフトウェア開発技術は鹿児島市と立地協定を締結しました』https://www.pref.kagoshima.jp/af03/sangyo-rodo/kigyo/richikyoutei/r3/softowea.html",
+   "鹿児島大学 キャリアセンターの企業説明会の参加企業一覧（PDF）https://www.kagoshima-u.ac.jp/job/2024030708detail.pdf （南日本情報処理センター・現場サポート・富士通鹿児島インフォネット・ソフトマックス・ソフト流通センター・リリー・南国システムサービスなど）",
+   "cases の担当から: 富士通鹿児島インフォネット・アイテップ（cases.md の1番）、現場サポート（2番）、ZIFISH・システムビジョン・FineMetrics（採択テーマ）",
+   "国の DX 認定の事業者一覧: IPA の一覧ページ（https://www.ipa.go.jp/digital/dx-nintei/dx-nintei-lists.html）は404で、見ていない",
+   "就職サイト（マイナビ）・比較サイト（compalyze など）: secondary。社名と所在地の手がかりにだけ使った",
+   "WebSearch（担当上限12回のうち11回を使用）"
+  ],
+  "columns": "name / hq（公式の本社住所）/ municipality / town / employees{value,as_of,source} / capital / founded / business_summary / ai_initiative / url / size_basis / checked / notes",
+  "industry_stats": {
+   "source": "令和3年経済センサス‐活動調査 事業所に関する集計 産業横断的集計 第6-1表（民営事業所、2021年6月1日）statInfId=000040067880 https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040067880&fileKind=0 （stats 担当が取得したファイルから、自治体コード 46000・46201 などの行を抽出）",
+   "kagoshima_pref": {
+    "G_情報通信業": {
+     "establishments": 492,
+     "workers": 6584
+    },
+    "39_情報サービス業": {
+     "establishments": 262,
+     "workers": 3440
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": 54,
+     "workers": 605
+    },
+    "AR_全産業（公務を除く）": {
+     "establishments": 71793,
+     "workers": 659951
+    },
+    "share_note": "情報通信業の従業者は全産業の1.0%（6,584÷659,951）、情報サービス業は0.5%（3,440÷659,951）。自分で計算"
+   },
+   "kagoshima_city": {
+    "G_情報通信業": {
+     "establishments": 327,
+     "workers": 5582
+    },
+    "39_情報サービス業": {
+     "establishments": 198,
+     "workers": 2921
+    },
+    "40_インターネット附随サービス業": {
+     "establishments": 37,
+     "workers": 480
+    },
+    "share_note": "県の情報サービス業の従業者の84.9%（2,921÷3,440）が鹿児島市。自分で計算"
+   },
+   "39_情報サービス業_by_municipality": "霧島市 9所・196人、鹿屋市 10所・98人、奄美市 7所・84人、薩摩川内市 5所・45人、指宿市 3所・31人、出水市 4所・16人、姶良市 7所・14人、いちき串木野市 3所・10人、中種子町 2所・7人、垂水市 2所・4人、南種子町 3所・3人、天城町 1所・3人、龍郷町 1所・2人、枕崎市・日置市・曽於市・南九州市・伊佐市・肝付町 各1所・1人、大崎町 1所（従業者は『-』）。ほかの市町村は『-』（事業所なし）"
+  }
+ },
+ "kagoshima-city": [
+  {
+   "name": "株式会社南日本情報処理センター",
+   "hq": "鹿児島県鹿児島市東開町4-104（本社）",
+   "municipality": "鹿児島市",
+   "town": "東開町",
+   "employees": {
+    "value": 431,
+    "as_of": "431名（令和8年10月1日現在）",
+    "source": "http://www.kk-mic.jp/management/profile/corp/index.html"
+   },
+   "capital": {
+    "value": "払込済資本金 7,000万円（授権資本金 8,000万円）",
+    "source": "http://www.kk-mic.jp/management/profile/corp/index.html"
+   },
+   "founded": 1969,
+   "business_summary": "1969年10月15日創立。コンピュータによる業務処理の受託、コンピュータ・電子機器・通信機器の販売、ソフトウェアの開発・販売、電気工事・電気通信工事、教育・コンサルティング。主要取引先は地方自治体・公営企業体・組合団体・学校・一般企業・医療機関。鴨池新町ビル・東京支社がある。決算期9月末",
+   "ai_initiative": "採用（インターンシップ）のページに『県内外の様々な産業や領域でAIやRPA、IoT、ロボット、データ解析等を含む新しい技術や高度な手法を活かした提案を行い』http://www.kk-mic.jp/management/recruit/internship/winter.html 。AI の製品・事例は会社概要では確かめていない",
+   "url": "http://www.kk-mic.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-04",
+   "notes": "**主要株主は南日本新聞社・日本電気（NEC）**（会社概要）。サイトのフッターに『南日本新聞GROUP　NEC-NET GROUP』。JISA・KISA 会員、NEC 販売特約店。『地元の独立系』とは書かない。売上 84億5,300万円（2025年9月決算）はマイナビの掲載（secondary）で、公式では確かめていない。他県の記事に出ない"
+  },
+  {
+   "name": "株式会社現場サポート",
+   "hq": "鹿児島県鹿児島市武1丁目35-4（本社Office）",
+   "municipality": "鹿児島市",
+   "town": "武",
+   "employees": {
+    "value": 140,
+    "as_of": "140名（2026/09時点）。採用サイトの会社概要。コーポレートサイトの会社概要には人数がない",
+    "source": "https://recruit.genbasupport.com/about/outline/"
+   },
+   "capital": {
+    "value": "1,880万円",
+    "source": "https://www.genbasupport.com/company/"
+   },
+   "founded": 2005,
+   "business_summary": "2005年8月11日設立（かごしま産業支援センターの平成17年度かごしま起業家応援プログラム採択）。建設業向けパッケージソフトウェア・クラウドサービス（現場クラウドシリーズ・Conneポストなど）の企画・開発・販売・サポート。福岡Office・鹿児島中央サテライトオフィス（JR鹿児島中央ビル7F）・GenbaTerrace（鹿児島市喜入瀬々串町）。売上 22億7,000万円（2026/06時点、採用サイト）",
+   "ai_initiative": "コーポレートサイト・採用サイトの会社概要に AI の記載は見つからなかった。生成AIでサポート業務の手間を減らした取り組みは、かごしま産業支援センター『情報KISC』2026年2月号 p.13（鹿児島県経営品質協議会の受賞理由。cases.md の2番）で、会社の公式発表ではない",
+   "url": "https://www.genbasupport.com/",
+   "size_basis": "employees",
+   "checked": "2026-11-04",
+   "notes": "加盟団体に KISA・鹿児島県経営品質協議会・建設情報化協議会ほか。鹿児島市と立地協定（JR鹿児島中央ビル7階、5年目102人の計画）https://www.city.kagoshima.lg.jp/san-sousyutu/kigyoritchi/ritchikyote/gennbasupport.html 。cases.md の『126名』は情報KISC の誌面の値で、公式の140名（2026/09）と時点が違う。他県の記事に出ない"
+  },
+  {
+   "name": "日本システム株式会社",
+   "hq": "鹿児島県鹿児島市荒田2丁目56番10号（本社）",
+   "municipality": "鹿児島市",
+   "town": "荒田",
+   "employees": {
+    "value": 138,
+    "as_of": "138名（男性109名・女性29名）。時点の記載なし",
+    "source": "https://www.jpsys.co.jp/about/"
+   },
+   "capital": {
+    "value": "2,800万円",
+    "source": "https://www.jpsys.co.jp/about/"
+   },
+   "founded": 1978,
+   "business_summary": "1978年10月2日設立（カシオ計算機の代理店として営業開始）。医療・福祉向けシステム（病院・診療所・リハビリ施設）、一般企業向けの販売管理・基幹システム・配車システム・POS の導入・開発",
+   "ai_initiative": "トップページ・会社概要に AI の記載は見つからなかった",
+   "url": "https://www.jpsys.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-04",
+   "notes": "KISA 会員。他県の記事に出ない"
+  },
+  {
+   "name": "株式会社ソフト流通センター",
+   "hq": "鹿児島県鹿児島市中央町22番16号 アエールプラザ4階（本社）",
+   "municipality": "鹿児島市",
+   "town": "中央町",
+   "employees": {
+    "value": 115,
+    "as_of": "『SRC 115名』。表示に時点がない（ページの HTML のコメントアウト部分に『関連会社22名・合計137名（2026年4月1日時点）』があるが、画面には出ない）",
+    "source": "https://srckagoshima.co.jp/SRC_C/part_1.html"
+   },
+   "capital": {
+    "value": "5,000万円",
+    "source": "https://srckagoshima.co.jp/SRC_C/part_1.html"
+   },
+   "founded": 1984,
+   "business_summary": "1984年9月27日設立（東京都千代田区で日刊工業新聞社とコアグループの合弁として）。2000年1月に新生SRCとして事業開始、**2018年6月に本社を東京から鹿児島へ移転**（沿革に『東京23区から鹿児島への本社移転は史上初』）。ソフトウェア受託開発（組込系・ビジネス系）、自社製品（鶏卵業向け『卵御殿』、葬祭業向けなど）。霧島支店（霧島市国分中央）・関東営業所（世田谷区）・サテライトオフィス（JR鹿児島中央ビル7・8階）",
+   "ai_initiative": "トップページ・会社概要に AI の記載は見つからなかった",
+   "url": "https://srckagoshima.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-04",
+   "notes": "**主要株主 株式会社コア**（東京。会社概要）。子会社 システムファクトリーかごしま（SFK）。加盟団体に KISA・JASA・鹿児島商工会議所・霧島商工会議所。鹿児島市と立地協定（2026-03-23 更新の市のページ。JR鹿児島中央ビル7・8階、5年目113人の計画）https://www.city.kagoshima.lg.jp/san-sousyutu/kigyoritchi/ritchikyote/src3.html 。県の『かごしま企業学生サポーター』の記事は108名（作成 2025-01）で時点が違う。他県の記事に出ない"
+  },
+  {
+   "name": "株式会社ARS（アルス）",
+   "hq": "鹿児島県鹿児島市新屋敷町15-19 エーアールエス新屋敷ビル（本社）",
+   "municipality": "鹿児島市",
+   "town": "新屋敷町",
+   "employees": {
+    "value": 114,
+    "as_of": "114名（2026年4月現在、役員を含む）。採用サイトの会社概要",
+    "source": "https://recruit.arssystem.jp/company/"
+   },
+   "capital": {
+    "value": "1,000万円（10,000千円）",
+    "source": "https://recruit.arssystem.jp/company/"
+   },
+   "founded": 2003,
+   "business_summary": "2003年11月設立。システム技術開発、医療・福祉分野の IT 推進（クリニック向けの受付・予約・問診・決済の ACE シリーズ）、Web サービスの構築・運営、システムコンサルティング。福岡オフィスあり",
+   "ai_initiative": "コーポレートサイトのお知らせに『【AI音声記録】ドクターカー運用支援のPoCを開始します』（2026/10/22）、『【勉強会】AI を用いたコードレビュー』『【社外講義】生成AIが変える開発の未来』https://www.arssystem.co.jp/ 。AI を事業の柱とまでは書いていない（PoC の開始で結果はない）",
+   "url": "https://www.arssystem.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-04",
+   "notes": "KISA 会員。マイナビの『105名（2026年7月現在）』（secondary）は公式の114名と違う（公式を採用）。コーポレートサイトの会社概要 https://www.arssystem.co.jp/company/ は本文を取り出せなかった。他県の記事に出ない"
+  },
+  {
+   "name": "株式会社WISHシステムコンサルティング",
+   "hq": "鹿児島県鹿児島市東千石町14-10 天文館NNビル7F（本社）",
+   "municipality": "鹿児島市",
+   "town": "東千石町",
+   "employees": {
+    "value": 102,
+    "as_of": "102名（2026年4月1日現在）",
+    "source": "https://wish-sc.co.jp/companyprofile"
+   },
+   "capital": {
+    "value": "3,000万円",
+    "source": "https://wish-sc.co.jp/companyprofile"
+   },
+   "founded": 2005,
+   "business_summary": "2005年4月20日設立（有限会社として、本店 鹿児島市）。システム開発、DX ソリューション。鹿児島サテライトオフィス（JR鹿児島中央ビル6F）・福岡オフィス",
+   "ai_initiative": "会社概要に AI の記載は見つからなかった",
+   "url": "http://www.wish-sc.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-04",
+   "notes": "KISA 会員。マイナビの98名（secondary）は公式の102名と違う（公式を採用）。鹿児島市と立地協定の記録あり（市の過去の立地協定の一覧）。他県の記事に出ない"
+  },
+  {
+   "name": "パステムソリューションズ株式会社",
+   "hq": "鹿児島県鹿児島市下荒田四丁目46番20号 鹿児島銀行鴨池ビル3階・4階（本社。2026年8月3日から）",
+   "municipality": "鹿児島市",
+   "town": "下荒田",
+   "employees": {
+    "value": 78,
+    "as_of": "78名（2026年8月現在）",
+    "source": "https://www.necps.jp/company/company-information/"
+   },
+   "capital": {
+    "value": "5,000万円",
+    "source": "https://www.necps.jp/company/company-information/"
+   },
+   "founded": 1989,
+   "business_summary": "1989年8月設立（創業1959年）。コンピュータ・情報処理機器・通信機器の販売・保守、ソフトウェア・ハードウェアの開発・販売、情報処理サービス、システム構築の教育、コンサルティング、電気・電気通信工事、労働者派遣。NEC 販売特約店",
+   "ai_initiative": "会社概要に AI の記載は見つからなかった",
+   "url": "https://www.necps.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-04",
+   "notes": "**2026年1月に鹿児島銀行グループの会社になった**（本社移転のお知らせ 2026-07-02 https://www.necps.jp/information2026_2/ ）。役員に鹿児島銀行の専務取締役・執行役員・取締役。JISA 正会員・KISA 会員。他県の記事に出ない"
+  },
+  {
+   "name": "アイテップ株式会社",
+   "hq": "鹿児島県鹿児島市大黒町2番11号 南星いづろビル6階（本社）",
+   "municipality": "鹿児島市",
+   "town": "大黒町",
+   "employees": {
+    "value": 65,
+    "as_of": "65名。時点の記載なし",
+    "source": "https://itep.jp/company/about/"
+   },
+   "capital": {
+    "value": "1億円",
+    "source": "https://itep.jp/company/about/"
+   },
+   "founded": 1983,
+   "business_summary": "1983年8月8日設立（本坊グループと加根又本店の出資）。システムコンサルティング、導入支援、システム開発、IT インフラ、運用サポート、ハードウェア販売。酒造業向けの製品（『三酒の神器』）。熊本営業所",
+   "ai_initiative": "トップページに『アイテップでは、お客様の事業に貢献するために、AIビジネスに乗り出しました』『まだ始めたばかりですが、AI関連の情報収集や、AI人材（ソフトウェアエンジニア、AIビジネスデザイナー）の育成に積極的に取り組んでいます』。セミナー『鹿児島×AI＆DXの未来』を主催。SDGs のページに RPA/AI-OCR 製品の取り扱い https://itep.jp/ 。JA鹿児島県中央会の生成AI 実証の体制に入っている（ネオジャパンの発表 2026-10-28。cases.md の1番）",
+   "url": "https://itep.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-04",
+   "notes": "**本坊グループ**（代表取締役会長 本坊 修。沿革に南国殖産・山形屋・日本IBM・JBCCホールディングスの資本参加）。出資比率は確かめていない。KISA 会員。他県の記事に出ない"
+  }
+ ],
+ "kanoya": [],
+ "makurazaki": [],
+ "akune": [],
+ "izumi": [],
+ "ibusuki": [],
+ "nishinoomote": [],
+ "tarumizu": [],
+ "satsumasendai": [],
+ "hioki": [],
+ "soo": [],
+ "kirishima": [],
+ "ichikikushikino": [],
+ "minamisatsuma": [],
+ "shibushi": [],
+ "amami": [
+  {
+   "name": "有限会社アイ．タイムズ",
+   "hq": "鹿児島県奄美市名瀬幸町21-9-3F（本社オフィス）",
+   "municipality": "奄美市",
+   "town": "名瀬幸町",
+   "employees": {
+    "value": 60,
+    "as_of": "60名（2026/04月現在）",
+    "source": "https://www.itimes.co.jp/info/"
+   },
+   "capital": {
+    "value": "950万円",
+    "source": "https://www.itimes.co.jp/info/"
+   },
+   "founded": 2000,
+   "business_summary": "2000年11月20日設立。『本社を奄美大島におき奄美・福岡・鹿児島の開発拠点にて、企業向けのソフトウェア開発を手掛ける企業』。奄美ニアショア開発センター（奄美市名瀬末広町）、福岡・鹿児島・宮崎オフィス。子会社 Mirai Logic株式会社。法人番号 9340002020615",
+   "ai_initiative": "トップページ・会社情報に AI の記載は見つからなかった",
+   "url": "https://www.itimes.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-04",
+   "notes": "**奄美市に本社がある**（離島の IT 企業の例）。KISA 会員（会員一覧の住所も奄美市名瀬幸町）。鹿児島市と立地協定（ソフトプラザかごしま503号室、5年目21人の計画）https://www.city.kagoshima.lg.jp/san-sousyutu/kigyoritchi/ritchikyote/i_times.html 。他県の記事に出ない"
+  }
+ ],
+ "minamikyushu": [],
+ "isa": [],
+ "aira": [],
+ "satsuma": [],
+ "nagashima": [],
+ "yusui": [],
+ "osaki-town": [],
+ "higashikushira": [],
+ "kinko": [],
+ "minamiosumi": [],
+ "kimotsuki": [],
+ "nakatane": [],
+ "minamitane": [],
+ "yakushima": [],
+ "setouchi-town": [],
+ "tatsugo": [],
+ "kikai": [],
+ "tokunoshima": [],
+ "amagi": [],
+ "isen": [],
+ "wadomari": [],
+ "china": [],
+ "yoron": [],
+ "mishima-village": [],
+ "toshima-village": [],
+ "yamato-village": [],
+ "uken": [],
+ "_reference": {
+  "kagoshima-city": {
+   "next_candidates": [
+    {
+     "name": "南国システムサービス株式会社",
+     "hq": "鹿児島県鹿児島市鴨池新町6番6号 鴨池南国ビル9階（本社）",
+     "municipality": "鹿児島市",
+     "town": "鴨池新町",
+     "employees": {
+      "value": 53,
+      "as_of": "53名（男44名・女9名）（2026年10月現在）",
+      "source": "https://www.nss-nangoku-group.com/about/companyinfo/"
+     },
+     "capital": {
+      "value": "5千万円",
+      "source": "https://www.nss-nangoku-group.com/about/companyinfo/"
+     },
+     "founded": 2006,
+     "business_summary": "2006年9月21日設立。情報処理の開発受託、電子化登録の受託など（個人情報保護方針の利用目的の記載）。売上 15.6億円（2026年9月期）。福岡支社・東京支社（南国殖産東京支店内）",
+     "ai_initiative": "会社概要に AI の記載は見つからなかった",
+     "url": "https://www.nss-nangoku-group.com/",
+     "size_basis": "employees",
+     "checked": "2026-11-04",
+     "notes": "**株主 南国殖産・日立製作所・日立ソリューションズ西日本**（会社概要。比率は書かれていない）。南国殖産グループ。KISA 会員。他県の記事に出ない"
+    },
+    {
+     "name": "株式会社エム・エム・シー",
+     "hq": "鹿児島県鹿児島市大黒町1番1号 ハルタビル3F（所在地）",
+     "municipality": "鹿児島市",
+     "town": "大黒町",
+     "employees": {
+      "value": 49,
+      "as_of": "49人（男性35人、女性14人）。時点の記載なし",
+      "source": "https://www.mmc-net.co.jp/aboutus/"
+     },
+     "capital": {
+      "value": "3000万円",
+      "source": "https://www.mmc-net.co.jp/aboutus/"
+     },
+     "founded": 1981,
+     "business_summary": "1981年2月3日設立（南日本マイクロコンピュータ株式会社）。システムインテグレーション、ネットワーク設計・構築・保守、ソフトウェア開発・自社パッケージ（校務システム『See-Smile』〔鹿児島市・鹿児島県に導入〕など）、IT 研修、機器販売・通信工事",
+     "ai_initiative": "会社概要に AI の記載は見つからなかった",
+     "url": "https://www.mmc-net.co.jp/",
+     "size_basis": "employees",
+     "checked": "2026-11-04",
+     "notes": "KISA 会員。他県の記事に出ない"
+    },
+    {
+     "name": "株式会社鹿児島インサイト",
+     "hq": "鹿児島県鹿児島市中町7-1 コアナ天文館3F-A（所在地）",
+     "municipality": "鹿児島市",
+     "town": "中町",
+     "employees": {
+      "value": 39,
+      "as_of": "39名（令和8年4月1日現在）",
+      "source": "https://www.kinsight.co.jp/company.html"
+     },
+     "capital": {
+      "value": "1,500万円",
+      "source": "https://www.kinsight.co.jp/company.html"
+     },
+     "founded": 2018,
+     "business_summary": "2018年2月1日設立。情報処理システムの受託開発・開発支援、コンサルタント業務、インターネット事業の技術提供、労働者派遣。『仕事の大半は首都圏のシステム開発』（リモート開発のページ）。取引先にリコーITソリューションズ・BIPROGY・ソフトマックスなど",
+     "ai_initiative": "会社概要に AI の記載は見つからなかった",
+     "url": "https://www.kinsight.co.jp/",
+     "size_basis": "employees",
+     "checked": "2026-11-04",
+     "notes": "2024年12月に鹿児島市・鹿児島県と立地協定（沿革。市のページは5年目57人の計画）https://www.city.kagoshima.lg.jp/san-sousyutu/kigyoritchi/ritchikyote/kagoshimainsight.html 。KISA の会員一覧には載っていない。他県の記事に出ない"
+    },
+    {
+     "name": "株式会社エス・テー・ラボ",
+     "hq": "鹿児島県鹿児島市中央町10番地 キャンセビル 6F（本社所在地）",
+     "municipality": "鹿児島市",
+     "town": "中央町",
+     "employees": {
+      "value": 33,
+      "as_of": "33名（2026年4月）",
+      "source": "http://www.stlabj.co.jp/profile.html"
+     },
+     "capital": {
+      "value": "1,500万円",
+      "source": "http://www.stlabj.co.jp/profile.html"
+     },
+     "founded": 2002,
+     "business_summary": "平成14年10月設立（有限会社として）。鹿児島と関東で事業展開するソフトウェア開発会社。金融からエネルギーまでの業界向けシステム開発、医療・スマート農業（IoT）向けのサービス開発、インフラ構築、労働者派遣",
+     "ai_initiative": "トップページに『AI・クラウド技術を駆使した先進のソフトウェア開発』『ＡＩ、ＩｏＴを活用したサービス開発　先進的な技術を活用し、運用支援から需要予測、スマート農業等のサービスを提供』http://www.stlabj.co.jp/ 。製品名・事例は書かれていない",
+     "url": "http://www.stlabj.co.jp/",
+     "size_basis": "employees",
+     "checked": "2026-11-04",
+     "notes": "KISA 会員。他県の記事に出ない"
+    },
+    {
+     "name": "株式会社システムメディア",
+     "hq": "鹿児島県鹿児島市谷山港1-3-48（本社）",
+     "municipality": "鹿児島市",
+     "town": "谷山港",
+     "employees": {
+      "value": 28,
+      "as_of": "28名（2026年4月現在）",
+      "source": "http://www.sys-media.co.jp/company/overview.php"
+     },
+     "capital": {
+      "value": "1,000万円",
+      "source": "http://www.sys-media.co.jp/company/overview.php"
+     },
+     "founded": 1997,
+     "business_summary": "創業 平成8年8月1日、設立 平成9年4月1日。ソフトウェア開発、Web システム構築・Web サイト制作、クラウドサービス、ネットワーク設計・構築、基幹業務（奉行クラウド）、農業の青色申告支援システム『aosin.』。医療情報技師8名など",
+     "ai_initiative": "会社概要・事業内容に AI の事業の記載は見つからなかった（資格の『工事担任者 AI･DD総合種』は通信工事の資格で、人工知能ではない）",
+     "url": "http://www.sys-media.co.jp/",
+     "size_basis": "employees",
+     "checked": "2026-11-04",
+     "notes": "KISA 会員。他県の記事に出ない"
+    },
+    {
+     "name": "株式会社クローバーシステム",
+     "hq": "鹿児島県鹿児島市加治屋町13番4号 MAX加治屋町ビル3F（所在地）",
+     "municipality": "鹿児島市",
+     "town": "加治屋町",
+     "employees": {
+      "value": 26,
+      "as_of": "26名。時点の記載なし",
+      "source": "http://clov4.co.jp/company.php"
+     },
+     "capital": {
+      "value": "500万円（5,000,000円）",
+      "source": "http://clov4.co.jp/company.php"
+     },
+     "founded": 2009,
+     "business_summary": "2009年7月17日設立（鹿児島を拠点としたソフトウェア開発会社）。IT サービス・システム開発・販売、情報処理サービス、コンサルタント、労働者派遣。主要取引先にソフトマックス・南国システムサービス",
+     "ai_initiative": "会社概要に AI の記載は見つからなかった",
+     "url": "http://clov4.co.jp/",
+     "size_basis": "employees",
+     "checked": "2026-11-04",
+     "notes": "KISA 会員。鹿児島市と立地協定（市のページ。平成29年1月1日現在19人、5年目38人の計画）https://www.city.kagoshima.lg.jp/san-sousyutu/kigyoritchi/ritchikyote/clover.html 。他県の記事に出ない"
+    },
+    {
+     "name": "株式会社リリー",
+     "hq": "鹿児島県鹿児島市高麗町27番19号（本社）",
+     "municipality": "鹿児島市",
+     "town": "高麗町",
+     "employees": {
+      "value": 9,
+      "as_of": "役員・正社員 9名。時点の記載なし",
+      "source": "https://www.lilli.co.jp/corporate/"
+     },
+     "capital": {
+      "value": "1,000万円",
+      "source": "https://www.lilli.co.jp/corporate/"
+     },
+     "founded": 2017,
+     "business_summary": "2017年1月4日設立。共創ものづくり（システム開発・Web 制作・デザイン）、事業づくり伴走、企業ブランディング・マーケティング支援、インキュベーション施設運営",
+     "ai_initiative": "会社概要の事業内容に『AI・DX活用の伴走』。トップページに『創業から掲げてきた『共創型開発』を、AIの時代にふさわしい形へ』https://www.lilli.co.jp/",
+     "url": "https://www.lilli.co.jp/",
+     "size_basis": "employees",
+     "checked": "2026-11-04",
+     "notes": "KISA 会員。鹿児島市と立地協定（デザイン部門の事業所、5年目19人の計画）https://www.city.kagoshima.lg.jp/san-sousyutu/kigyoritchi/ritchikyote/lilli.html 。人数は役員と正社員だけ。他県の記事に出ない"
+    }
+   ],
+   "unverified": [
+    "株式会社富士通鹿児島インフォネット（KISA の一覧の住所 鹿児島市高麗町43番20号 キラメキ南国ビル。cases.md では法人番号 1340001003743・1986年7月8日設立）。公式の会社概要 https://global.fujitsu/ja-jp/subsidiaries/kfn/about/corporate は確認日に curl・WebFetch とも HTTP 429 で開けなかった。**WebSearch の要約（公式ページの抜き出し）では『社員数 214名（2026年4月1日）』『資本金1億円、富士通65%・JA鹿児島県連35%』『売上74億7,000万円（2025年度）』**。ページを開けていないので本表に入れていない（`verified: false`）。開ければ鹿児島市の2位になる。JA鹿児島県中央会の生成AI 実証の体制に入る（cases.md の1番）",
+    "株式会社アンクス（鹿児島市千日町13番18号 光学堂ビル8階〔KISA の一覧〕。1989年設立、システム受託開発・技術者派遣。鹿児島市の立地協定のページは5年目112人の計画）https://www.city.kagoshima.lg.jp/san-sousyutu/kigyoritchi/ritchikyote/amkus.html 。公式 https://www.ankusu.com/ は curl で証明書の検証に失敗、WebFetch は 503。**KISA の一覧のリンク先 software-ams.com は中国語の『建設中』のページになっている**（ドメインが別人のものになった可能性。会員一覧のリンクとして使わない）",
+    "株式会社ソフトウェア開発技術（鹿児島市中央町9-1 鹿児島中央第一生命ビルディング8階、2009年8月設立、資本金1500万円。所属団体に KISA）https://www.soft-dt.com/company 。会社概要に人数がない。県のページ（立地協定）は『従業員数：31人（令和4年12月末現在）』https://www.pref.kagoshima.jp/af03/sangyo-rodo/kigyo/richikyoutei/r3/softowea.html 。採用ページの社員の声に『現在は、AI技術を活用したプロジェクトに参加しています』",
+    "monoDuki合同会社（**本社 鹿児島市易居町1-2 鹿児島市役所みなと大通り別館6階**、Agri/Robotics Lab は霧島市溝辺町。2023年2月14日設立）https://www.monoduki.com/about/company 。**事業内容の1番目が『AI導入・定着支援（業務改善・DX推進）』、キャッチコピー『現場仕事に、AIを根付かせる』**。人数の記載なし。AI を事業にする会社の候補",
+    "FlapLabo合同会社（本店 鹿児島市荒田1丁目31-10、2022年1月11日設立、資本金200万円。ソフトウェアのテスト・検証）https://flaplabo.co.jp/about/ 。人数なし。トップページのお知らせに『品質を見る目を育てるAI「Qowl」提供開始』『Keepdata株式会社と連携し、AI時代の品質づくりに挑戦します』",
+    "株式会社F-ITコンサル（鹿児島市草牟田二丁目13-9 Fビル2階、令和3年設立〔平成30年開業〕）https://fitconsul.jp/aboutus/ 。人数なし。市の立地協定は5年目39人の計画",
+    "株式会社インパクト（本社 鹿児島市加治屋町13-4 MAX加治屋町ビル4F、1999年6月17日設立、資本金1,000万円。トップページに『新しい時代の ICT、IoT、AIシステム』）https://www.inpact.co.jp/ 。人数なし",
+    "株式会社ティーエスアイ（本社 鹿児島市武1丁目23-25、昭和62年9月9日設立〔医療法人三篤会の出資〕、資本金1,000万円。医療・介護〔ORCA・調剤〕、トップページに『AIケアプラン』）http://www.tsi-net.jp/about/ 。人数なし",
+    "トータル・ソフトウェア株式会社（本社 鹿児島市紫原3丁目21番地7、1979年6月1日創業、資本金1,000万円。栄養管理・栄養指導のパッケージ・クラウド）https://www.tsc-inc.co.jp/company/ 。人数なし",
+    "株式会社鹿児島頭脳センター（鹿児島市名山町4番3号 鹿児島県地域振興公社ビル6F、平成2年4月2日設立、資本金1億円。**頭脳立地法による第三セクター。2022年から県が筆頭株主の『地域第三セクター』**、出資者17団体・企業）http://www.kbc3.co.jp/company/about/ 。人数なし",
+    "日本電算株式会社（本社 鹿児島市鴨池新町6-5 前田ビル3F、1983年1月25日設立、資本金1,000万円。岡山市に営業所）https://nihondensan.com/outline/ 。人数なし",
+    "株式会社フォーエバー（本社 鹿児島市中央町22-16 アエールプラザ2F、1996年11月1日設立、資本金1,200万円。Web ソリューション・kintone、ラーニングセンター。コラムに kintone AI・生成AI の記事）https://www.forever.co.jp/company/ 。人数なし",
+    "ユニバーサルソフト株式会社（本社 鹿児島市加治屋町18-8 大樹生命鹿児島ビル6階、昭和59年2月1日設立、資本金2,435万円。スクラッチ開発・パッケージ・Web。AI-OCR・RPA 連携サービスのページあり）https://unis-soft.co.jp/company/ 。公式に人数なし。マイナビは25名（2026年09月時点、secondary）",
+    "鹿児島情報サービス株式会社（鹿児島本社 鹿児島市西田2丁目28-8、国分営業所〔霧島市〕。パソコンスクールも運営）https://www.kis-kk.co.jp/company/ 。人数なし",
+    "株式会社エヌ・ケイ・カスタマイズ（公式の本社 鹿児島市星ヶ峯6-29-3、2019年5月1日設立、資本金1000万円。RPA〔ロボパット〕・システム開発）https://nkcustomize.co.jp/ 。人数なし。**KISA の一覧の住所（鹿児島市小松原1丁目4-8）と公式が違う**",
+    "株式会社システムファクトリーかごしま（SFK。本社 鹿児島市中央町22番16号 アエールプラザ4階、2008年4月8日設立、資本金2,000万円。**ソフト流通センターの子会社**）https://www.k-sfk.jp/company 。全体の人数なし（派遣労働者数9名〔2026年3月末〕だけ）。ソフト流通センターのページのコメントアウト部分に22名",
+    "株式会社OuEN（鹿児島市易居町、2023年10月30日設立。動画・映像制作、Web 制作、SNS 運用）https://ouen-allc.co.jp/about/ 。人数なし。システム開発が主ではない",
+    "株式会社エム・ディ・エス（鹿児島市東開町4-104〔KISA〕。https://www.kk-mds.jp/ は接続できず）、株式会社トウコン・鹿児島（http://www.tcsy.co.jp/ は403）、富士電通株式会社（http://www.fujidentsu.co.jp/ は403）、白露カンパニー株式会社（接続タイムアウト）、株式会社コレクトプラン（https://www.correctplan.com/ 。会社概要を見つけられず）、株式会社ケイ・シー・エス・株式会社シナプス・株式会社さくら未来研究所（KISA の一覧に URL なし）: KISA の一覧の住所だけ",
+    "株式会社ZIFISH（鹿児島市武1丁目2-10 JR鹿児島中央ビル4F。『ICTとAIを活用した水産業の生産性最大化』が県の新事業創出支援事業 令和7年度の採択）・株式会社システムビジョン（鹿児島市坂之上。『ＡＩとロボットを活用したボトルチェッカ装置の開発』）: cases.md の採択の表。公式サイトは見ていない",
+    "SCSKニアショアシステムズ株式会社（KISA の一覧では鹿児島市加治屋町12-5 鹿児島東京海上日動ビル4F）: https://www.scsk-nearshore.co.jp/ は確認日にメンテナンス表示で、本社の所在地を確かめられなかった。鹿児島市の立地協定のページは『SCSK株式会社及びSCSKニアショアシステムズ株式会社』https://www.city.kagoshima.lg.jp/san-sousyutu/kigyoritchi/ritchikyote/scsk.html"
+   ],
+   "excluded": [
+    "一般社団法人鹿児島県情報サービス産業協会（団体）、公益財団法人かごしま産業支援センター（賛助会員）",
+    "KBCC鹿児島情報ビジネス公務員専門学校・KCS鹿児島情報専門学校・鹿児島キャリアデザイン専門学校・志學館大学（学校）、鹿児島銀行・鹿児島信用金庫・鹿児島相互信用金庫（金融機関）: KISA の会員だが情報サービス業の会社ではない",
+    "新和技術コンサルタント（建設コンサルタント）、アジア印刷（印刷）、日本ガス・ニチガスアドバンス（ガス）、株式会社コンサル41（経営コンサル。設立2020年）: KISA の会員だが主な事業がシステム開発ではない",
+    "株式会社FineMetrics: KISA の一覧の住所は鹿児島市名山町（鹿児島大学ベンチャービジネスラボラトリー内）だが、**公式の本社所在地は〒240-8501（横浜国立大学）**https://finemetrics.co.jp/company-info/ 。県外本社として _outside_hq に置いた"
+   ]
+  },
+  "kanoya": {
+   "next_candidates": [],
+   "unverified": [
+    "鹿児島応用技術株式会社（KAT。**本社 鹿屋市大手町1番1号 リナシティかのや1F**、鹿児島事業所〔鹿児島市与次郎〕・東京事業所。昭和60年3月設立、資本金4,000万円、主要株主 アイ・ティー・エス・ジャパン・三和物産。アプリケーション開発・SE サービス・SI）http://kat.omega.ne.jp/company/profile.htm 。公式に『社員 17名』とあるが、**ページの更新表示が『Last Updated: 04/02/17』**（2004年とみられる）で現在の値とは言えないため本表に入れなかった。KISA の会員（一覧の住所も鹿屋市）"
+   ],
+   "excluded": []
+  },
+  "kirishima": {
+   "next_candidates": [],
+   "unverified": [],
+   "excluded": [
+    "スマートコンサル（所在地 霧島市隼人町野久美田669-2）https://smartconsul.jp/businessinformation/ : KISA の会員（一覧の住所は鹿児島市田上）だが、事業は地域共創型ビジネス支援・6次産業化支援・補助金の活用支援・ホームページ制作などで、システム開発が主ではない。人数なし",
+    "株式会社ソフト流通センター 霧島支店（霧島市国分中央1丁目3番42号 JR九州国分ビル3階）・鹿児島情報サービス 国分営業所・monoDuki の Agri/Robotics Lab（霧島市溝辺町）: 鹿児島市に本社がある会社の拠点"
+   ]
+  },
+  "_outside_hq": [
+   {
+    "name": "ソフトマックス株式会社（東証スタンダード上場）",
+    "hq": "**本社 東京都品川区北品川4-7-35 御殿山トラストタワー7階、本店 鹿児島県鹿児島市加治屋町12-11**（公式の会社概要）",
+    "kagoshima_site": "本店（鹿児島市）・鹿児島の事業所。1974年1月に鹿児島市で設立（有報の沿革。検索の要約）。従業員数248名（2025年12月31日現在）、資本金448,445,148円。総合医療情報システム（電子カルテ・オーダリング）の開発・販売・保守。**本表の『本社』の条件に合わないので、ここに置いた（本店は鹿児島市）。親が判断してよい**",
+    "source": "https://www.s-max.co.jp/company/outline/"
+   },
+   {
+    "name": "九州デジタルソリューションズ株式会社",
+    "hq": "熊本市西区春日1丁目12番3号（KISA の一覧）",
+    "kagoshima_site": "鹿児島事業所 鹿児島市山之口町1番10号 鹿児島中央ビルディング5階（KISA）。鹿児島市の立地協定のページは下荒田4丁目46番20号 鹿児島銀行鴨池ビル3階（5年目19人の計画）",
+    "source": "https://www.city.kagoshima.lg.jp/san-sousyutu/kigyoritchi/ritchikyote/kds.html"
+   },
+   {
+    "name": "株式会社FineMetrics",
+    "hq": "〒240-8501（横浜国立大学。公式の本社所在地）",
+    "kagoshima_site": "鹿児島市名山町9-15 マークメイザン304号 鹿児島大学ベンチャービジネスラボラトリー内（KISA）。AI を活用した知財業務支援システム",
+    "source": "https://finemetrics.co.jp/company-info/"
+   },
+   {
+    "name": "京セラコミュニケーションシステム株式会社",
+    "hq": "県外（京セラグループ。本社所在地は公式で確かめていない）",
+    "kagoshima_site": "鹿児島市中央町18番1号 南国センタービル2階。事業内容『京セラの業務や工場のデジタル化に向けたシステム開発』『AIやIT等を活用した地域活性化を目的とした事業』（1年目100人の計画）",
+    "source": "https://www.city.kagoshima.lg.jp/san-sousyutu/kigyoritchi/ritchikyote/kccs.html"
+   },
+   {
+    "name": "コムテック株式会社",
+    "hq": "東京（市のページ）",
+    "kagoshima_site": "南九州センター 鹿児島市武1丁目2番10号 JR鹿児島中央ビル1003・1004（5年目61人の計画）",
+    "source": "https://www.city.kagoshima.lg.jp/san-sousyutu/kigyoritchi/ritchikyote/comtec.html"
+   },
+   {
+    "name": "セントラルソフト株式会社",
+    "hq": "東京（市のページ）",
+    "kagoshima_site": "鹿児島支店 鹿児島市中央町9番地1 鹿児島中央第一生命ビルディング6階（5年目27人の計画）",
+    "source": "https://www.city.kagoshima.lg.jp/san-sousyutu/kigyoritchi/ritchikyote/central-soft.html"
+   },
+   {
+    "name": "アルサーガパートナーズ株式会社",
+    "hq": "東京（市のページ）",
+    "kagoshima_site": "鹿児島市武1丁目2番10号 JR鹿児島中央ビル710・711（ITコンサルティング、5年目48人の計画）",
+    "source": "https://www.city.kagoshima.lg.jp/san-sousyutu/kigyoritchi/ritchikyote/arsagapartners.html"
+   },
+   {
+    "name": "株式会社データ・アプリケーション／株式会社鹿児島データ・アプリケーション（子会社）",
+    "hq": "東京（市のページ）",
+    "kagoshima_site": "鹿児島オフィス 鹿児島市武1-2-10 JR鹿児島中央ビル4F（KISA）。子会社の鹿児島データ・アプリケーションは鹿児島市山之口町12番14号（EDI パッケージの開発・保守、5年目30人の計画）",
+    "source": "https://www.city.kagoshima.lg.jp/san-sousyutu/kigyoritchi/ritchikyote/kada.html"
+   },
+   {
+    "name": "株式会社アドカン",
+    "hq": "大阪市中央区平野町2-6-13（KISA）",
+    "kagoshima_site": "鹿児島事業所 鹿児島市武1-2-10 JR鹿児島中央ビル4・5階",
+    "source": "https://www.kisa.or.jp/introduction/"
+   },
+   {
+    "name": "株式会社BBSマネージドサービス",
+    "hq": "東京都港区西新橋（KISA）",
+    "kagoshima_site": "鹿児島BPOセンター 鹿児島市中央町11番地",
+    "source": "https://www.kisa.or.jp/introduction/"
+   },
+   {
+    "name": "GROWIT株式会社・株式会社シスメトン・株式会社リーディングソリューション・株式会社キーバインド・株式会社日本システムデザイン・株式会社HTSライズ・GMOペパボ株式会社・シフトプラス株式会社・株式会社BANANA・株式会社サックル",
+    "hq": "大阪・神奈川・東京など（市のページ・KISA）",
+    "kagoshima_site": "鹿児島市内の事業所・支店（市の立地協定。計画の従業員数）",
+    "source": "https://www.city.kagoshima.lg.jp/san-sousyutu/kigyoritchi/ritchikyote/index.html"
+   },
+   {
+    "name": "NTT西日本・NTTドコモビジネスソリューションズ・QTnet・九州日立システムズ・富士フイルムビジネスイノベーションジャパン・富士電機ITソリューション・リコージャパン・ダイワボウ情報システム・日立製作所・IIJ など",
+    "hq": "県外",
+    "kagoshima_site": "鹿児島支店・支社（KISA の会員一覧）",
+    "source": "https://www.kisa.or.jp/introduction/"
+   }
+  ]
+ },
+ "_notes": [
+  "本表は公式サイトで本社所在地と従業員数の両方を確認できた会社だけ。該当は鹿児島市（8社＋next_candidates 7社）・奄美市（1社）の2市。ほかの17市・20町・4村は本表『なし』（確かめられなかった）。鹿屋市（鹿児島応用技術）は公式の人数が古いページの値なので unverified、霧島市は候補が拠点・境界の業種だけ。",
+  "公式の人数（多い順）: 南日本情報処理センター（鹿児島市東開町、431名、令和8年10月1日）、現場サポート（武、140名、2026/09、採用サイト）、日本システム（荒田、138名、時点なし）、ソフト流通センター（中央町、115名、表示に時点なし）、ARS（新屋敷町、114名、2026年4月、役員含む）、WISHシステムコンサルティング（東千石町、102名、2026年4月1日）、パステムソリューションズ（下荒田、78名、2026年8月）、アイテップ（大黒町、65名、時点なし）、アイ．タイムズ（**奄美市**名瀬幸町、60名、2026/04）、南国システムサービス（鴨池新町、53名、2026年10月）、エム・エム・シー（大黒町、49人、時点なし）、鹿児島インサイト（中町、39名、令和8年4月1日）、エス・テー・ラボ（中央町、33名、2026年4月）、システムメディア（谷山港、28名、2026年4月）、クローバーシステム（加治屋町、26名、時点なし）、リリー（高麗町、9名＝役員・正社員、時点なし）。",
+  "**グループ会社**: 南日本情報処理センター（主要株主 南日本新聞社・NEC）、パステムソリューションズ（2026年1月から鹿児島銀行グループ）、南国システムサービス（株主 南国殖産・日立製作所・日立ソリューションズ西日本）、アイテップ（本坊グループ。南国殖産・山形屋・日本IBM・JBCC の資本参加の沿革）、ソフト流通センター（主要株主 コア〔東京〕。2018年に東京から本社移転）、富士通鹿児島インフォネット（富士通65%・JA鹿児島県連35%〔検索の要約〕、unverified）、鹿児島頭脳センター（県が筆頭株主の第三セクター、unverified）。記事で『地元の独立系』とまとめない。",
+  "AI関連の公式の記載: **アイテップ（『AIビジネスに乗り出しました』、AI人材の育成、セミナー『鹿児島×AI＆DXの未来』、RPA/AI-OCR）**、**エス・テー・ラボ（『AI・クラウド技術を駆使した先進のソフトウェア開発』『ＡＩ、ＩｏＴを活用したサービス開発』）**、**リリー（事業内容に『AI・DX活用の伴走』）**、ARS（AI音声記録のドクターカー運用支援 PoC の開始〔2026/10/22〕、生成AIの社外講義）、南日本情報処理センター（採用ページで AI・RPA・IoT の提案に触れる）。unverified のうち **monoDuki（事業内容の1番目が AI導入・定着支援）**、FlapLabo（品質の AI『Qowl』）、インパクト・ティーエスアイ（AIケアプラン）・ユニバーサルソフト（AI-OCR）・フォーエバー（kintone AI のコラム）。現場サポートは公式に AI の記載がなく、生成AIの取り組みは情報KISC の誌面（cases.md）。岡山のせとうちシステムのように『AI を事業の柱』と書く会社は本表にはない。",
+  "業界団体: 一般社団法人鹿児島県情報サービス産業協会（KISA、https://www.kisa.or.jp/ 、旧 鹿児島県ソフトウェア振興協会〔検索の要約、secondary〕）。会員企業一覧（2026年10月2日現在、85件）を開けた。本表の16社のうち鹿児島インサイトを除く15社が会員。",
+  "経済センサス（令和3年、2021年6月1日）: 県の情報通信業 492所・6,584人、うち情報サービス業 262所・3,440人（鹿児島市が198所・2,921人で84.9%）、インターネット附随サービス業 54所・605人。鹿児島市以外で情報サービス業の従業者が多いのは霧島市196人・鹿屋市98人・奄美市84人・薩摩川内市45人。",
+  "他県のページとの重複: 本表・候補の会社は articles/・data/area/（kagoshima を除く）に出ない（grep で確認、2026-11-04）。",
+  "WebSearch は12回のうち11回を使用。"
+ ]
+}
