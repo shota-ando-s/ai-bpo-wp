@@ -1,0 +1,903 @@
+{
+ "_meta": {
+  "checked": "2026-11-14",
+  "scope": "大阪府43市町村（33市9町1村）。本社（公式サイトの本社・本店・所在地）が当該市町村にあり、国税庁 法人番号の登記の本店が同じ市町村で、公式サイトでシステム開発・ソフトウェア開発・情報処理サービス・SI を事業として明示する法人。本表は「公式サイトで本社所在地と時点つきの従業員数の両方を確認できた会社」だけ（市町村ごとに最大5社、大阪市は市全体で10社〔区を ward に書く〕、従業員数の多い順）。大手のグループ会社は parent に親会社",
+  "candidate_sources": [
+   "府の情報サービス産業の団体は確認できなかった。JISA 会員一覧の団体会員（https://www.jisa.or.jp/about_jisa/list/tabid/739/Default.aspx 、2026-11-14、32団体）に大阪府の団体なし（賛助会員に (一財)関西情報センター）",
+   "国税庁 法人番号公表サイト 基本3情報ダウンロード 大阪府 全件（27_osaka_all_20261030.csv、488,772行。token 付きフォームに POST、fileNo 28438）https://www.houjin-bangou.nta.go.jp/download/zenken/ から商号の語で7,708件を抽出",
+   "gBizINFO https://info.gbiz.go.jp/hojin/ichiran?hojinBango=<法人番号> で7,708件すべての従業員数・ホームページ・厚生年金の被保険者数（参考値）",
+   "比較サイト・求人サイト・データベースサイト（doda・data-max・イプロスなど）: secondary。社名の手がかりだけ",
+   "WebSearch（担当上限10回のうち9回）"
+  ],
+  "columns": "name / hq / municipality / ward（大阪市のみ）/ town / corporate_number / houjin_honten / employees{value,as_of,source} / capital / founded / business_summary / ai_initiative / url / size_basis / checked / notes / parent / listed / boundary",
+  "industry_stats": {
+   "source": "令和3年経済センサス‐活動調査 第6-1表（民営、2021年6月1日）statInfId=000040067880（stats 担当の抽出値。stats.md と一致）",
+   "pref": {
+    "G_情報通信業": [
+     6909,
+     182399
+    ],
+    "39_情報サービス業": [
+     4162,
+     112661
+    ],
+    "40_インターネット附随サービス業": [
+     825,
+     15491
+    ]
+   },
+   "note": "市町村・区の値は companies.md の表。大阪市が情報サービス業の従業者の91.0%（中央区・北区・淀川区・西区で82.6%）。大阪市以外で1,000人超は吹田市2,744人・豊中市1,879人・門真市1,030人（19所。1所あたり54.2人）。田尻町・千早赤阪村は「-」"
+  },
+  "ai_providers": [
+   "シルバーエッグ・テクノロジー（吹田市。次点。AI のマーケティング・Aigent）",
+   "ＮＴＴデータ関西（AI×データ活用のセミナー）",
+   "スミセイ情報システム（AWS との AI 技術連携）",
+   "パーソルＡＶＣテクノロジー（福島の記録に「AI蔵Lab」。このページでは未確認）"
+  ]
+ },
+ "osaka-city": [
+  {
+   "name": "株式会社ソフトウェア・サービス",
+   "hq": "大阪本社 〒532-0004 大阪府大阪市淀川区 西宮原2丁目6番1号（アクセス）",
+   "municipality": "大阪市",
+   "ward": "淀川区",
+   "town": "西宮原",
+   "corporate_number": "4120001103331",
+   "houjin_honten": "大阪府大阪市淀川区西宮原２丁目６番１号",
+   "employees": {
+    "value": 1900,
+    "as_of": "1,900名(2026年4月1日現在)",
+    "source": "https://www.softs.co.jp/company/index.html"
+   },
+   "capital": {
+    "value": "8億4700万円",
+    "source": "https://www.softs.co.jp/company/index.html"
+   },
+   "founded": null,
+   "business_summary": "医療機関向けの電子カルテ『e-カルテ®』・オーダエントリー『NEWTONS』を中心としたソフトウェアの開発・販売",
+   "ai_initiative": "トップに「AI方針」のリンクだけ",
+   "url": "https://www.softs.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-14",
+   "notes": "医療機関向けパッケージが中心。中小企業の受託開発の相談先とは違う",
+   "boundary": "医療向けパッケージ"
+  },
+  {
+   "name": "ナビオコンピュータ株式会社",
+   "hq": "大阪本社 〒541-0043 大阪市中央区高麗橋4-3-7 ナビオビル（東京本社もある）",
+   "municipality": "大阪市",
+   "ward": "中央区",
+   "town": "高麗橋",
+   "corporate_number": "1120001086265",
+   "houjin_honten": "大阪府大阪市中央区高麗橋４丁目３番７号",
+   "employees": {
+    "value": 1792,
+    "as_of": "1,792人（令和8年4月現在）",
+    "source": "https://www.navio.co.jp/company/"
+   },
+   "capital": {
+    "value": "払込資本金 80百万円",
+    "source": "https://www.navio.co.jp/company/"
+   },
+   "founded": "1969-04-23",
+   "business_summary": "ソフト開発関連・システムサービス関連・ICTサポート関連・ICTプラットフォーム関連",
+   "ai_initiative": null,
+   "url": "https://www.navio.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-14",
+   "notes": "福岡県の companies.json に名前だけ出る"
+  },
+  {
+   "name": "スミセイ情報システム株式会社",
+   "hq": "大阪本社 〒532-0003 大阪市淀川区宮原4-1-14 住友生命新大阪北ビル（大阪本社・東京本社）",
+   "municipality": "大阪市",
+   "ward": "淀川区",
+   "town": "宮原",
+   "corporate_number": "1120001056193",
+   "houjin_honten": "大阪府大阪市淀川区宮原４丁目１番１４号",
+   "employees": {
+    "value": 1600,
+    "as_of": "1,600名(2026年4月現在)",
+    "source": "https://www.slcs.co.jp/company/"
+   },
+   "capital": {
+    "value": "3億円",
+    "source": "https://www.slcs.co.jp/company/"
+   },
+   "founded": "1971-05",
+   "business_summary": "システムコンサルティング・システム開発・運用管理・SI・ERP",
+   "ai_initiative": "トップに「生命保険業務の高度化に向け、AWSとのAI技術連携を強化」（2026.10.16）（提供側）",
+   "url": "https://www.slcs.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-14",
+   "notes": "gBizINFO の被保険者は府内0人・全体1,396人",
+   "parent": "住友生命保険相互会社（株主）"
+  },
+  {
+   "name": "株式会社ＮＴＴデータ関西",
+   "hq": "本社所在地 〒530-0003 大阪府大阪市北区堂島3-1-21 NTTDATA堂島ビル",
+   "municipality": "大阪市",
+   "ward": "北区",
+   "town": "堂島",
+   "corporate_number": "4120001054120",
+   "houjin_honten": "大阪府大阪市北区堂島３丁目１番２１号",
+   "employees": {
+    "value": 1321,
+    "as_of": "1,321名 (2026年4月1日現在)",
+    "source": "https://www.nttdata-kansai.co.jp/company/outline.aspx"
+   },
+   "capital": {
+    "value": "4億円",
+    "source": "https://www.nttdata-kansai.co.jp/company/outline.aspx"
+   },
+   "founded": null,
+   "business_summary": "公共・法人・金融分野向けシステムインテグレーション",
+   "ai_initiative": "トップに「AI×データ活用・連携×最新トレンド DX」展示会・セミナー、「化学メーカーのAI・データ活用を支える業務基盤」（提供側）",
+   "url": "https://www.nttdata-kansai.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-14",
+   "notes": "岩手県の記事に一関市の「生成AIによる生活保護業務のDX化」の共同先として名前",
+   "parent": "株式会社ＮＴＴデータ（100％）"
+  },
+  {
+   "name": "株式会社関電システムズ",
+   "hq": "本社所在地 〒530-8226 大阪府大阪市北区中之島3丁目6番16号 関電ビルディング13階",
+   "municipality": "大阪市",
+   "ward": "北区",
+   "town": "中之島",
+   "corporate_number": "1140001068336",
+   "houjin_honten": "大阪府大阪市北区中之島３丁目６番１６号関電ビルディング",
+   "employees": {
+    "value": 812,
+    "as_of": "812名（2026年6月1日現在）",
+    "source": "https://kanden-sys.jp/about/about.html"
+   },
+   "capital": {
+    "value": "9,000万円",
+    "source": "https://kanden-sys.jp/about/about.html"
+   },
+   "founded": null,
+   "business_summary": "関西電力・関西電力送配電の経営・業務改革を支える情報通信システム",
+   "ai_initiative": null,
+   "url": "https://kanden-sys.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-14",
+   "notes": "売上高 52,853百万円（2025年度実績）。親会社向けが中心",
+   "parent": "関西電力株式会社（100%出資）"
+  },
+  {
+   "name": "株式会社オービーシステム",
+   "hq": "大阪本社 〒541-0046 大阪市中央区平野町2-3-7 アーバンエース北浜ビル（東京本社もある）",
+   "municipality": "大阪市",
+   "ward": "中央区",
+   "town": "平野町",
+   "corporate_number": "5120001030401",
+   "houjin_honten": "大阪府大阪市中央区平野町２丁目３番７号",
+   "employees": {
+    "value": 665,
+    "as_of": "（連結）665名（2026年4月1日現在）",
+    "source": "https://www.obs.co.jp/company/overview/"
+   },
+   "capital": {
+    "value": "1億90百万円",
+    "source": "https://www.obs.co.jp/company/overview/"
+   },
+   "founded": "1972-08",
+   "business_summary": "システムインテグレーション・ソフトウェア開発",
+   "ai_initiative": null,
+   "url": "https://www.obs.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-14",
+   "notes": "人数は連結。JISA 正会員",
+   "listed": "東京証券取引所スタンダード市場（5576）"
+  },
+  {
+   "name": "アトラス情報サービス株式会社",
+   "hq": "本社所在地 〒541-0041 大阪市中央区北浜3丁目1番6号（サン北浜ビル）",
+   "municipality": "大阪市",
+   "ward": "中央区",
+   "town": "北浜",
+   "corporate_number": "7120001073852",
+   "houjin_honten": "大阪府大阪市中央区北浜３丁目１番６号",
+   "employees": {
+    "value": 609,
+    "as_of": "609名（2025年12月現在）",
+    "source": "https://www.atlas-is.co.jp/company/"
+   },
+   "capital": {
+    "value": "90,000,000円",
+    "source": "https://www.atlas-is.co.jp/company/"
+   },
+   "founded": "1964-12",
+   "business_summary": "保健・福祉・介護・医療情報ソリューション、システムソリューション、BPO（gBizINFO）",
+   "ai_initiative": "トップにコラム「AIで手軽にデータ化できる時代…」（記事だけ）",
+   "url": "https://www.atlas-is.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-14",
+   "notes": "JISA 正会員"
+  },
+  {
+   "name": "中央コンピューター株式会社",
+   "hq": "本店 大阪市北区中之島6丁目2番27号　中之島センタービル20F",
+   "municipality": "大阪市",
+   "ward": "北区",
+   "town": "中之島",
+   "corporate_number": "4120001067097",
+   "houjin_honten": "大阪府大阪市北区中之島６丁目２番２７号",
+   "employees": {
+    "value": 606,
+    "as_of": "606人（2026年6月1日 現在）",
+    "source": "https://www.chuo-computer.co.jp/company/about/"
+   },
+   "capital": {
+    "value": "7,000万円",
+    "source": "https://www.chuo-computer.co.jp/company/about/"
+   },
+   "founded": "1968-12-03",
+   "business_summary": "アプリケーション開発・システム管理ソリューション・システムコンサルテーション・インフラ構築（gBizINFO）",
+   "ai_initiative": null,
+   "url": "https://www.chuo-computer.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-14",
+   "notes": "北海道の記事の「中央コンピューターサービス」は別会社",
+   "parent": "株主 株式会社オプテージ・富士通株式会社（比率は未確認）"
+  },
+  {
+   "name": "ノバシステム株式会社",
+   "hq": "大阪本社 〒550-0002 大阪府大阪市西区江戸堀1-3-15 新石原ビル9階",
+   "municipality": "大阪市",
+   "ward": "西区",
+   "town": "江戸堀",
+   "corporate_number": "8120001046444",
+   "houjin_honten": "大阪府大阪市西区江戸堀１丁目３番１５号",
+   "employees": {
+    "value": 547,
+    "as_of": "547名（2026年1月現在）",
+    "source": "https://www.nova-system.com/profile"
+   },
+   "capital": {
+    "value": "298,105千円",
+    "source": "https://www.nova-system.com/profile"
+   },
+   "founded": "1982-09-10",
+   "business_summary": "ソフトウェア開発（gBizINFO）",
+   "ai_initiative": null,
+   "url": "https://www.nova-system.com/",
+   "size_basis": "employees",
+   "checked": "2026-11-14",
+   "notes": null,
+   "listed": "東証スタンダード市場（5257）"
+  },
+  {
+   "name": "ＮＣＤソリューションズ株式会社",
+   "hq": "所在地 〒540-0031 大阪市中央区北浜東4番33号 北浜ネクスビル",
+   "municipality": "大阪市",
+   "ward": "中央区",
+   "town": "北浜東",
+   "corporate_number": "9120001078263",
+   "houjin_honten": "大阪府大阪市中央区北浜東４番３３号",
+   "employees": {
+    "value": 264,
+    "as_of": "264名(2026年4月1日現在)",
+    "source": "https://www.ncdsol.co.jp/information/company/"
+   },
+   "capital": {
+    "value": "9,600万円",
+    "source": "https://www.ncdsol.co.jp/information/company/"
+   },
+   "founded": "1969-03-08",
+   "business_summary": "システムインテグレーション・ソフトウェア開発（gBizINFO）",
+   "ai_initiative": null,
+   "url": "https://www.ncdsol.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-14",
+   "notes": "JISA 正会員",
+   "parent": "ＮＣＤ株式会社（100%出資）"
+  }
+ ],
+ "sakai-city": [],
+ "toyonaka": [],
+ "ikeda-city": [],
+ "suita": [
+  {
+   "name": "北港情報サービス株式会社",
+   "hq": "本社 〒564-0051 大阪府吹田市豊津町8-7 宝ビル 6F",
+   "municipality": "吹田市",
+   "town": "豊津町",
+   "corporate_number": "1120901008368",
+   "houjin_honten": "大阪府吹田市豊津町８番７号",
+   "employees": {
+    "value": 138,
+    "as_of": "138名　※2026年10月1日現在",
+    "source": "http://www.hokkohj.co.jp/company"
+   },
+   "capital": {
+    "value": "4800万円(グループ合計1億1000万円)",
+    "source": "http://www.hokkohj.co.jp/company"
+   },
+   "founded": "1977-07-01",
+   "business_summary": "IT・システム開発・インフラ・セキュリティ支援。労働者派遣事業（派２７－３０１２３６）",
+   "ai_initiative": null,
+   "url": "http://www.hokkohj.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-14",
+   "notes": "株主に株式会社エフ・クラウド・北港運輸株式会社・北港商事株式会社など",
+   "boundary": "派遣を含む"
+  }
+ ],
+ "minoh": [],
+ "toyono": [],
+ "nose": [],
+ "takatsuki": [
+  {
+   "name": "パーソルＡＶＣテクノロジー株式会社",
+   "hq": "本社所在地 〒569-1194 大阪府高槻市幸町1番1号",
+   "municipality": "高槻市",
+   "town": "幸町",
+   "corporate_number": "7120001158232",
+   "houjin_honten": "大阪府高槻市幸町１番１号",
+   "employees": {
+    "value": 1185,
+    "as_of": "1,185名（※契約社員含む｜2026年4月1日時点）",
+    "source": "https://www.persol-avct.co.jp/company/profile/"
+   },
+   "capital": {
+    "value": "1億円",
+    "source": "https://www.persol-avct.co.jp/company/profile/"
+   },
+   "founded": "1997-09-01",
+   "business_summary": "映像・音響機器、情報通信機器のソフトウェア、機構、電気回路の設計・開発・評価、モバイルアプリケーション、クラウドシステム",
+   "ai_initiative": "福島県の cases2.md に酒造業務支援サービス「AI蔵Lab」の記録（このページでは未確認）",
+   "url": "https://www.persol-avct.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-14",
+   "notes": "前身は松下AVCソフト（松下電器産業100%出資）。守口開発センター（大阪）もある",
+   "parent": "主要株主 パーソルクロステクノロジー株式会社、パナソニックホールディングス株式会社",
+   "boundary": "機器の組込み・設計の受託"
+  },
+  {
+   "name": "株式会社大和コンピューター",
+   "hq": "大阪本社 〒569-0054 大阪府高槻市若松町36-18（東京本社 港区白金台もある）",
+   "municipality": "高槻市",
+   "town": "若松町",
+   "corporate_number": "1120901011371",
+   "houjin_honten": "大阪府高槻市若松町３６番１８号",
+   "employees": {
+    "value": 184,
+    "as_of": "184名（2025.7.31時点）",
+    "source": "https://www.daiwa-computer.co.jp/corporate/outline/"
+   },
+   "capital": {
+    "value": "3億8225万9475円（2025.7.31時点）",
+    "source": "https://www.daiwa-computer.co.jp/corporate/outline/"
+   },
+   "founded": "1977-06",
+   "business_summary": "ソフトウェア開発関連・クラウドサービス",
+   "ai_initiative": "メールマガジン「第270号：組織のAI導入準備状況を測る10の質問」（記事だけ）",
+   "url": "https://www.daiwa-computer.co.jp/",
+   "size_basis": "employees",
+   "checked": "2026-11-14",
+   "notes": "山口県の「大和コンピューターセンター」は別会社",
+   "listed": "東証スタンダード市場（「数字でわかる」のページ）"
+  }
+ ],
+ "ibaraki-city": [],
+ "settsu": [],
+ "shimamoto": [],
+ "moriguchi": [],
+ "hirakata": [],
+ "neyagawa": [],
+ "daito": [],
+ "kadoma": [],
+ "shijonawate": [],
+ "katano": [],
+ "yao": [],
+ "kashiwara": [],
+ "higashiosaka": [],
+ "tondabayashi": [],
+ "kawachinagano": [],
+ "matsubara": [],
+ "habikino": [],
+ "fujiidera": [],
+ "osakasayama": [],
+ "taishi-town-osaka": [],
+ "kanan": [],
+ "chihayaakasaka": [],
+ "izumiotsu": [],
+ "izumi-city": [],
+ "takaishi": [],
+ "tadaoka": [],
+ "kishiwada": [],
+ "kaizuka": [],
+ "izumisano": [],
+ "sennan": [],
+ "hannan": [],
+ "kumatori": [],
+ "tajiri": [],
+ "misaki-town": [],
+ "_reference": {
+  "osaka-city": {
+   "next_candidates": [
+    {
+     "name": "株式会社ＪＲ西日本ＩＴソリューションズ",
+     "ward": "淀川区",
+     "hq": "〒532-0003 大阪市淀川区宮原4丁目1番6号 アクロス新大阪",
+     "corporate_number": "6120901006755",
+     "employees": {
+      "value": 600,
+      "as_of": "約600名（時点なし）",
+      "source": "https://www.j-wits.co.jp/company/data/"
+     },
+     "meets_criteria": false,
+     "parent": "西日本旅客鉄道株式会社（100%出資子会社）"
+    },
+    {
+     "name": "日本システム技術株式会社",
+     "ward": "北区",
+     "corporate_number": "3120001072817",
+     "houjin_honten": "大阪府大阪市北区中之島２丁目３番１８号",
+     "employees": {
+      "value": null,
+      "as_of": "公式未確認（jast.jp が 503）",
+      "source": null
+     },
+     "meets_criteria": false,
+     "notes": "gBizINFO 被保険者1,349人・従業員数1,202人。DX＆SI・パッケージ・医療ビッグデータ"
+    },
+    {
+     "name": "コンピューターマネージメント株式会社",
+     "ward": "北区",
+     "hq": "【本社】〒530-0001 大阪府大阪市北区梅田一丁目13番１号 大阪梅田ツインタワーズ・サウス19階",
+     "corporate_number": "8120001028938",
+     "employees": {
+      "value": null,
+      "as_of": "公式に人数を見つけられなかった",
+      "source": "https://www.cmknet.co.jp/company/"
+     },
+     "meets_criteria": false,
+     "notes": "gBizINFO 被保険者764人・従業員数638人。JISA 正会員"
+    },
+    {
+     "name": "パナソニックデジタル株式会社",
+     "ward": "北区",
+     "corporate_number": "1120001110280",
+     "houjin_honten": "大阪府大阪市北区末広町２番４０号",
+     "employees": {
+      "value": null,
+      "as_of": "公式未確認",
+      "source": null
+     },
+     "meets_criteria": false,
+     "notes": "gBizINFO 被保険者1,474人・従業員数2,200人。ホームページ欄の URL は 404。パナソニックグループ"
+    },
+    {
+     "name": "ダイワボウ情報システム株式会社",
+     "ward": "北区",
+     "corporate_number": "6120001083217",
+     "employees": {
+      "value": null,
+      "as_of": "公式未確認",
+      "source": null
+     },
+     "meets_criteria": false,
+     "boundary": "販売が中心（gBizINFO の業種 卸売業）",
+     "notes": "被保険者2,494人"
+    }
+   ],
+   "unverified": [
+    "ユニバーサルコンピューター（中央区、被保険者653人）",
+    "パナソニックアドバンストテクノロジー（中央区城見、498人）",
+    "ＮＴＴデータＳＢＣ（中央区備後町、426人）",
+    "栗菱コンピューターズ（中央区、372人）",
+    "センコー情報システム（中央区、229人）",
+    "日本コンピューターサイエンス（北区、458人）",
+    "ＮＴＴデータセキスイシステムズ（北区、448人）",
+    "ＡＣＮソリューション（北区、428人）",
+    "日鉄ソリューションズ関西（北区、406人）",
+    "日本ウェブサービス（北区、413人）",
+    "大京システム開発（西区、243人）",
+    "電算情報技研（西区、117人）",
+    "フィラーシステムズ（西区、117人）",
+    "イーエムシステムズ（淀川区、497人）",
+    "システムスクエア（淀川区、279人）",
+    "ヤンマー情報システムサービス（淀川区、226人）",
+    "日本ソフトウエア（福島区、123人）"
+   ],
+   "excluded": [
+    "ＮＡＮＫＡＩ（不動産）",
+    "京セラドキュメントソリューションズ（複合機の製造）",
+    "ＴＡＫシステムズ（建築・派遣）",
+    "日本ネットワークサポート（製造）",
+    "ヤンマーパワーテクノロジー（エンジン）",
+    "関西ビジネスインフォメーション・データリレーションマーケティング・ＮＴＴデータ・マーケティングアクト（コンタクトセンター・BPO）",
+    "フジオフードシステム（飲食）",
+    "グリーンシステム（ゴルフ場の管理）",
+    "ソフト９９オートサービス（自動車整備）"
+   ]
+  },
+  "suita": {
+   "next_candidates": [
+    {
+     "name": "シルバーエッグ・テクノロジー株式会社",
+     "hq": "大阪本社 〒564-0063 大阪府吹田市江坂町1-23-43 ファサード江坂ビル10F",
+     "corporate_number": "2120901013128",
+     "houjin_honten": "大阪府吹田市江坂町１丁目２３番４３号",
+     "employees": {
+      "value": null,
+      "as_of": "公式に人数なし",
+      "source": "https://www.silveregg.co.jp/company.html"
+     },
+     "meets_criteria": false,
+     "ai_initiative": "事業内容「AI技術をベースにしたデジタルマーケティングサービスの開発・提供」、Aigent7・Reco Talent（提供側）",
+     "notes": "2026年3月 東証グロース上場廃止・株式会社イルグルムの連結子会社。gBizINFO 従業員数50人・被保険者47人"
+    },
+    {
+     "name": "株式会社インフォアライブ",
+     "hq": "本社住所 〒564-0051 大阪府吹田市豊津町8-7宝ビル4F",
+     "corporate_number": "9120901014284",
+     "employees": {
+      "value": null,
+      "as_of": "公式に人数なし",
+      "source": "https://infoalive.com/company/profile/"
+     },
+     "meets_criteria": false,
+     "notes": "ウェブサイト企画・構築・運用。gBizINFO 13人"
+    }
+   ],
+   "unverified": [
+    "ジェーイーテクノロジー（62人）",
+    "ノダＲＦテクノロジーズ（60人）",
+    "日本ＡＩコンサルティング（13人、生成AI研究・開発）"
+   ],
+   "excluded": [
+    "ＪＲ西日本電気システム（電気設備）",
+    "ＤＡＩＷＡ　ＣＹＣＬＥ（自転車販売）",
+    "デコラティブシステム（製造業）",
+    "バリューネットワーク（フランチャイズ）"
+   ]
+  },
+  "kadoma": {
+   "unverified": [
+    "パナソニックシステムデザイン株式会社（8120001058472、本店 門真市大字門真１００６番地、被保険者535人・従業員数555人、業種 情報通信業。公式サイトを見つけられなかった）"
+   ],
+   "excluded": [
+    "パナソニックライティングシステムズ・パナソニックＨＶＡＣ＆ＣＣシステムズ（照明・空調の製造・販売）"
+   ]
+  },
+  "toyonaka": {
+   "unverified": [
+    "りそなデジタル・アイ株式会社（1120901024704、本店 豊中市新千里西町１丁目２番１３号、被保険者323人・従業員数297人。公式サイトを見つけられなかった。株主構成は二次情報だけ）"
+   ]
+  },
+  "fujiidera": {
+   "next_candidates": [
+    {
+     "name": "株式会社システムトラスト",
+     "corporate_number": "7120101032849",
+     "houjin_honten": "大阪府藤井寺市林１丁目９番８号",
+     "hq": "公式 〒530-0041 大阪府大阪市北区 天神橋4-7-13 イトーピア扇町ビル6F（登記の本店と違う）",
+     "employees": {
+      "value": null,
+      "as_of": "公式に人数なし",
+      "source": "http://www.system-trust.com/"
+     },
+     "meets_criteria": false,
+     "boundary": "派遣の許可あり",
+     "notes": "藤井寺市の会社とは書かない"
+    }
+   ]
+  },
+  "higashiosaka": {
+   "unverified": [
+    "ビッグサポートシステムズ（85人）",
+    "ＤＡＩＭＯＮ（72人）",
+    "システムクリエイト（56人）",
+    "ＤＮシステム（41人）",
+    "ＭＣシステムズ西日本（33人）",
+    "ロイヤルソフトセンター（32人。イプロスに東大阪市長堂3-25-14・PDF校正ソフト＝secondary）",
+    "Ａｉソリューションズ（30人）"
+   ],
+   "excluded": [
+    "ＢＩＧ　ＤＡＩＳＨＯＷＡ（製造業）",
+    "クラスターテクノロジー・ＴＡＩＳＥＩ（製造業）",
+    "ＨＩＴ’Ｓ－Ｖ（内装工事）"
+   ]
+  },
+  "hirakata": {
+   "unverified": [
+    "ヒューマンソフト株式会社（3120001154160、38人）"
+   ],
+   "excluded": [
+    "関西リサイクルシステムズ（家電リサイクル）"
+   ]
+  },
+  "ibaraki-city": {
+   "unverified": [
+    "アルファーシステム（44人）",
+    "サンフロロシステム（65人）"
+   ]
+  },
+  "sakai-city": {
+   "unverified": [
+    "ジェイエフエフシステムズ（堺区、149人）",
+    "ジェイテクノシステムズ（堺区、70人）",
+    "ワークソリューション（北区、353人）",
+    "アルゴシステム（美原区、96人）"
+   ],
+   "excluded": [
+    "ＫＡＩＮＯ　Ｉｎｔｅｒｎａｔｉｏｎａｌ（美容業）"
+   ]
+  },
+  "moriguchi": {
+   "unverified": [
+    "株式会社ＳＯＡシステムビジネス（9010401089152、本店 守口市八島町１番１２号、12人。生産管理・販売管理システムの販売。会社概要が文字コードで読めず）"
+   ],
+   "excluded": [
+    "日本旅行コーポレートソリューションズ（旅行）"
+   ]
+  },
+  "matsubara": {
+   "unverified": [
+    "ビーエムコンピューター・システム（46人）"
+   ]
+  },
+  "katano": {
+   "unverified": [
+    "東邦システム（28人）"
+   ]
+  },
+  "yao": {
+   "excluded": [
+    "ジェイテクトマシンシステム（製造業）",
+    "オーエヌテクノロジー（製造業）"
+   ]
+  },
+  "daito": {
+   "excluded": [
+    "大同ＤＭソリューション（特殊鋼の加工・販売）"
+   ]
+  },
+  "izumi-city": {
+   "excluded": [
+    "オーナンバインターコネクトテクノロジー（電線製造）",
+    "エースシステム（機械製造）"
+   ]
+  },
+  "tondabayashi": {
+   "excluded": [
+    "理光フロートテクノロジー（製造業）"
+   ]
+  },
+  "sennan": {
+   "excluded": [
+    "日航関西エアカーゴ・システム（航空貨物）"
+   ]
+  },
+  "_factories": {
+   "note": "stats・cases 担当からの照合。公式の拠点ページで所在を確かめた分だけ（2026-11-14）。統計の値を1社の値として書かない",
+   "confirmed": [
+    {
+     "company": "ダイハツ工業株式会社",
+     "site": "本社・本社（池田）工場 第1地区・第2地区",
+     "address": "本社 〒563-8651（563-0044） 大阪府池田市ダイハツ町1番1号、第1地区 池田市桃園2丁目1番1号",
+     "municipality": "池田市",
+     "facts": "従業員数 13,009名（2026年4月1日時点）、資本金284億円",
+     "stats": "池田市の輸送用機械 4所・7,033人（市の出荷額の93.4%）",
+     "source": "https://www.daihatsu.com/jp/company/access/index.html"
+    },
+    {
+     "company": "株式会社小松製作所（コマツ）",
+     "site": "大阪工場",
+     "address": "〒573-1011 大阪府枚方市上野 3-1-1",
+     "municipality": "枚方市",
+     "stats": "枚方市の生産用機械 52所・5,585人（市の出荷額の55.5%）",
+     "source": "https://www.komatsu.jp/ja/aboutus/locations"
+    },
+    {
+     "company": "三井化学株式会社",
+     "site": "大阪工場",
+     "address": "〒592-8501 大阪府高石市高砂1-6",
+     "municipality": "高石市",
+     "stats": "高石市の化学工業 16所（市の出荷額の81.2%）",
+     "source": "https://jp.mitsuichemicals.com/jp/corporate/group/domestic_works/index.htm"
+    },
+    {
+     "company": "コスモ石油株式会社",
+     "site": "堺製油所",
+     "address": "大阪府堺市西区築港新町3-16 〒592-8551",
+     "municipality": "堺市西区",
+     "stats": "堺市西区の石油製品 3所・931人（府の石油製品の96.7%）",
+     "source": "https://www.cosmo-energy.co.jp/ja/company/group/cosmo-coc/office.html"
+    },
+    {
+     "company": "ダイキン工業株式会社",
+     "site": "堺製作所 金岡工場・臨海工場",
+     "address": "金岡工場 〒591-8511 大阪府堺市北区金岡町 1304、臨海工場 〒592-8331 大阪府堺市西区築港新町 3-12",
+     "municipality": "堺市北区・西区",
+     "stats": "堺市北区のはん用機械（区の88.2%）",
+     "source": "https://www.daikin.co.jp/corporate/overview/summary/locations/jp"
+    },
+    {
+     "company": "ダイキン工業株式会社",
+     "site": "淀川製作所・テクノロジー・イノベーションセンター",
+     "address": "〒566-8585 大阪府摂津市西一津屋 1-1",
+     "municipality": "摂津市",
+     "stats": "摂津市の化学工業 22所・2,669人。淀川製作所が化学の事業所かは確かめていない",
+     "source": "https://www.daikin.co.jp/corporate/overview/summary/locations/jp"
+    },
+    {
+     "company": "ダイキン工業株式会社",
+     "site": "本社江坂ビル",
+     "address": "〒564-0062 大阪府吹田市垂水町 3-21-10",
+     "municipality": "吹田市",
+     "facts": "本社は大阪市北区梅田1-13-1。単独 8,212名・連結 104,095名（2026年3月31日現在）",
+     "source": "https://www.daikin.co.jp/corporate/overview/summary/data"
+    },
+    {
+     "company": "ホシデン株式会社",
+     "site": "本社・八尾の事業所",
+     "address": "〒581-0071 大阪府八尾市北久宝寺1-4-33、〒581-0874 大阪府八尾市教興寺1-123-1",
+     "municipality": "八尾市",
+     "stats": "八尾市の電子部品 2,075.7億円（市の1位21.2%）",
+     "source": "https://www.hosiden.com/company/profile/network.html"
+    },
+    {
+     "company": "ホシデン精工株式会社",
+     "site": "本社",
+     "address": "〒582-0027 大阪府柏原市円明町15-1",
+     "municipality": "柏原市",
+     "source": "https://www.hosiden.com/company/profile/network.html"
+    },
+    {
+     "company": "塩野義製薬株式会社",
+     "site": "医薬研究センター・神崎川オフィス",
+     "address": "〒561-0825 大阪府豊中市二葉町3丁目1番1号（医薬研究センター）",
+     "municipality": "豊中市",
+     "stats": "豊中市の学術・開発研究機関 18所・1,051人",
+     "source": "https://www.shionogi.com/jp/ja/company/outline/office1.html"
+    },
+    {
+     "company": "塩野義製薬株式会社",
+     "site": "高槻研究センター",
+     "address": "〒569-1125 大阪府高槻市紫町1‐1",
+     "municipality": "高槻市",
+     "source": "https://www.shionogi.com/jp/ja/company/outline/office1.html"
+    },
+    {
+     "company": "シオノギファーマ株式会社",
+     "site": "摂津工場",
+     "address": "〒566-0022 大阪府摂津市三島2丁目5番1号",
+     "municipality": "摂津市",
+     "source": "https://www.shionogi.com/jp/ja/company/outline/office1.html"
+    },
+    {
+     "company": "小野薬品工業株式会社",
+     "site": "水無瀬研究所",
+     "address": "〒618-8585 大阪府三島郡島本町桜井3丁目1番1号",
+     "municipality": "島本町",
+     "stats": "島本町の学術・開発研究機関 2所・924人",
+     "source": "https://www.ono-pharma.com/ja/company/about/office"
+    },
+    {
+     "company": "株式会社エクセディ",
+     "site": "本社",
+     "address": "〒572-8570 大阪府寝屋川市木田元宮1丁目1番1号",
+     "municipality": "寝屋川市",
+     "facts": "cases.md の (A)",
+     "source": "https://www.exedy.com/ja/company/japan.html"
+    },
+    {
+     "company": "株式会社三社電機製作所",
+     "site": "本社",
+     "address": "大阪市東淀川区西淡路3丁目1番56号",
+     "municipality": "大阪市東淀川区",
+     "facts": "連結 1,399人・単体 711人。cases.md の (A)",
+     "source": "https://www.sansha.co.jp/company/outline.html"
+    },
+    {
+     "company": "パナソニック ホールディングス株式会社",
+     "site": "本店",
+     "address": "門真市大字門真１００６番地（法人番号の本店）",
+     "municipality": "門真市",
+     "verified": false,
+     "facts": "公式サイトは 403。パナソニック株式会社（3120001236504）は 2026-04-07 閉鎖（CSV）",
+     "source": "国税庁 法人番号 府の全件 CSV（2026-10-30）"
+    }
+   ],
+   "not_checked": [
+    "門真市の生産用機械（市の51.2%）",
+    "堺市堺区の生産用機械",
+    "大阪狭山市の輸送用機械",
+    "泉佐野市の食料品"
+   ],
+   "cases_A_honten": {
+    "カナデビア株式会社": "3120001031541 大阪市住之江区南港北１丁目７番８９号",
+    "関西テレビ放送株式会社": "9120001059627 大阪市北区扇町２丁目１番７号",
+    "Ｐｅａｃｈ・Ａｖｉａｔｉｏｎ株式会社": "7120101047384 泉佐野市泉州空港北１番地",
+    "奥野製薬工業株式会社": "4120001076494 大阪市中央区道修町４丁目７番１０号",
+    "旭工精株式会社": "7122001000191 東大阪市柏田西２丁目１７番３５号",
+    "福島工業株式会社": "府の CSV で閉鎖していないのは堺市北区の 3120101007053 だけ。西淀川区はフクシマガリレイ 3120001264653・ガリレイホールディングス 9120001050544（対応は未確認）"
+   }
+  },
+  "_cases_check": [
+   {
+    "name": "株式会社シー・ビー・エィ（obdx の表記 シー・ビィ・エィ）",
+    "corporate_number": "8120001081169",
+    "houjin_honten": "大阪市中央区南久宝寺町２丁目４番５号",
+    "official": "岸和田市上松町3丁目10番46号（事業所）・(本社) 大阪市中央区南久宝寺町2-4-5、資本金1,000万円、従業員数の記載なし",
+    "gbiz_insured": "中央区の適用事業所 0人",
+    "source": "http://cba-labo.co.jp/company.html"
+   },
+   {
+    "name": "医療法人正幸会（正幸会病院）",
+    "corporate_number": "6120005017971",
+    "houjin_honten": "門真市中町１１番５４号",
+    "official": "公式未確認",
+    "gbiz_insured": "52人",
+    "notes": "豊中市の医療法人正幸会つじクリニック（3120905004089）は別法人"
+   },
+   {
+    "name": "日本電設資材株式会社",
+    "corporate_number": "3120001072932",
+    "houjin_honten": "守口市八雲東町２丁目４７番２２号",
+    "official": "本社 守口市八雲東町2丁目47-22、資本金9,900万円、218名（2025年12月時点）、電設機器・産業機器の専門商社",
+    "gbiz_insured": "272人",
+    "notes": "卸売業で資本金1億円以下なので中小企業に当たる",
+    "source": "https://www.n-ds.co.jp/company/outline.html"
+   },
+   {
+    "name": "株式会社エムケー",
+    "corporate_number": "5120001208815",
+    "houjin_honten": "門真市島頭２丁目１３番１８号",
+    "official": "門真市島頭2丁目13-18、設立 平成29年10月5日、資本金1,000万円、産業廃棄物収集運搬業・整理事業、人数なし",
+    "gbiz_insured": "26人",
+    "notes": "府内に同名の法人が少なくとも5つ",
+    "source": "https://mkct.co.jp/profile"
+   },
+   {
+    "name": "光研化成株式会社",
+    "corporate_number": "8120001155690",
+    "houjin_honten": "守口市金田町３丁目２－７",
+    "official": "会社概要のページを見つけられなかった",
+    "gbiz_insured": "22人"
+   },
+   {
+    "name": "だんらん住宅株式会社",
+    "corporate_number": "8120001113161",
+    "houjin_honten": "大阪市北区天神橋３丁目２番２８－１１０２号",
+    "official": "大阪市北区天神橋3-2-28 ノーブル南森町1102号、設立 1998年11月27日、資本金1,000万円、人数なし",
+    "gbiz_insured": "1人",
+    "source": "https://www.danran-j.jp/company.html"
+   },
+   {
+    "name": "株式会社デジック",
+    "corporate_number": "2122001019344",
+    "houjin_honten": "八尾市竹渕東１丁目２０９番地",
+    "official": "公式未確認（digic.co.jp は別会社）",
+    "gbiz_insured": "15人"
+   },
+   {
+    "name": "ビューティードア株式会社",
+    "corporate_number": "2120101022359",
+    "houjin_honten": "堺市堺区北庄町２丁２番２２号",
+    "official": "公式未確認（beautydoor.co.jp は 401）",
+    "gbiz_insured": "4人",
+    "notes": "富田林市に同名の別法人 9120101031551"
+   },
+   {
+    "name": "株式会社小西金型工学",
+    "corporate_number": "2122001002325",
+    "houjin_honten": "東大阪市中石切町６丁目４番４７号",
+    "gbiz_insured": "2人"
+   }
+  ]
+ },
+ "_notes": [
+  "本表は大阪市10社（独立系5・大手グループ5）・高槻市2・吹田市1の計13社。ほかの40市町村は本表なし（目安の30社に届かない）",
+  "府の情報サービス産業の団体は確かめられなかった。記事で「大阪府情報サービス産業協会」と書かない",
+  "大手のグループ会社が多い（住友生命・NTTデータ・関西電力・NCD・オプテージ/富士通・パーソル/パナソニック）。「地元の独立系」とまとめない",
+  "門真市の情報サービス業 19所・1,030人はパナソニックのグループの事業所と読めるが、会社は公式で確かめていない",
+  "シー・ビー・エィは本店が大阪市中央区（岸和田市は事業所）。システムトラストは本店が藤井寺市で公式の所在地は大阪市北区",
+  "ＮＴＴデータ関西は岩手県の記事に一関市の共同先として出ている。パーソルＡＶＣテクノロジーは福島県の調査データに AI蔵Lab の提供元として記録"
+ ]
+}
