@@ -22,6 +22,11 @@
 - 補助金診断: tokyo.yml を都8制度＋23区41制度＋多摩のパイロット2制度（51制度）、areas.yml の東京を23区＋多摩のパイロット5市に。build 1,390→1,425制度（他県不変）。push。区の「公社の専門家派遣の利用料の補助」（1回あたりの定額）は addon の計算式にないので addon を付けずに載せた
 - cases（17回）完了。数値つきで未使用の公的な事例はサカツ（豊島区）・NextNinja（品川区）だけ。事例のない区5つ → cases2（12回まで）を起動
 - WebSearch 累計 48＋companies・cases2
+- companies（15回）: 16区・42社、7区（杉並・荒川・板橋・練馬・足立・葛飾・江戸川）は本表なし。cases2（12回）: 5区は公的な事例0、IVRy の取材記事（中野・杉並・練馬）を足した
+- 仕様の下書き D345（2回）・D12（0回）。判断はすべて案どおり。板橋区の試算は「光学機器の部品の製造」、葛飾区は「金属製品（ねじ・部品など）の製造」に直した。areas.yml の6区に note
+- **WebSearch 累計 77（段階2の調査を終えた時点）**。執筆は0回の予定
+- 執筆 W1（千代田・墨田・練馬）・W2（中央・大田・中野）起動
 
 ## 次にやること
-- companies・cases2 の結果を受け取る → 仕様の下書き D12・D345 → 執筆（23区を3ページずつ＋都のページ）
+- 執筆 W1〜W8（23区）→ W9（都のページ）。担当割りは docs/area-writing-spec-tokyo.md の「執筆の担当割り」。書き終えた記事は `.git/info/exclude`（`articles/2026-11-14-area-tokyo*.md`）で main に入れず、`data/area/tokyo/_wip_push.sh <files>` で area-tokyo-wip ブランチに退避する。全ページそろったら exclude を外して main に入れ、地域ガイド・area-todo・手順書・memory を更新
+- **再開するとき**: `git fetch origin area-tokyo-wip` して `git checkout origin/area-tokyo-wip -- articles/` で書き終えた記事を戻し、表で終わっていない担当から
