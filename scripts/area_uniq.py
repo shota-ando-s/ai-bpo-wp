@@ -40,6 +40,7 @@
     python3 scripts/area_uniq.py aichi              # 愛知の全ページ（名古屋市は nagoya、津島市 tsushima-city・江南市 konan-city・東海市 tokai-city・高浜市 takahama-city・みよし市 miyoshi-city・あま市 ama-city・美浜町 mihama-town-aichi）
     python3 scripts/area_uniq.py hyogo              # 兵庫の全ページ（神戸市 kobe・川西市 kawanishi-city・香美町 kami-town-hyogo）
     python3 scripts/area_uniq.py kanagawa           # 神奈川の全ページ（横浜市はパイロットのファイル名 2026-10-17-area-yokohama.md のまま、県ページは 2026-10-14-area-kanagawa.md）
+    python3 scripts/area_uniq.py tokyo              # 東京都の全ページ（都・23区・多摩・島しょ）
     python3 scripts/area_uniq.py chiba              # 千葉の全ページ（千葉市 chiba-city。市川市 ichikawa-city・館山市 tateyama-city・野田市 noda-city・佐倉市 sakura-city・旭市 asahi-city・勝浦市 katsuura-city・八千代市 yachiyo-city・栄町 sakae-town・東庄町 tonosho-town・一宮町 ichinomiya-town・大多喜町 otaki-town）
     python3 scripts/area_uniq.py hokkaido           # 北海道の全ページ（札幌市は sapporo、北広島市は kitahiroshima-city。振興局ごとに段階で作る）
 
