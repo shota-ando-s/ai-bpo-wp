@@ -27,14 +27,14 @@
 
 ## 状態
 - [x] _brief.md・wages.md・area_uniq.py に osaka・共有メモに slug（2026-11-14）
-- [ ] 調査（10担当）
-- [ ] 試算の PLAN（_calc.py）
-- [ ] 執筆仕様 docs/area-writing-spec-osaka.md
-- [ ] 記事 44本（府1＋市町村43）
-- [ ] data/subsidies/osaka.yml・areas.yml・build
-- [ ] 地域ガイド・area-todo.md・area-new-prefecture.md・memory
-- [ ] チェック（check_article・area_uniq・_calc.py・試算の結果表・書いてはいけない局名）
-- [ ] main に push（投稿・デプロイはユーザーが Mac で「投稿して」）
+- [x] 調査（10担当）
+- [x] 試算の PLAN（_calc.py）
+- [x] 執筆仕様 docs/area-writing-spec-osaka.md
+- [x] 記事 44本（府1＋市町村43）
+- [x] data/subsidies/osaka.yml・areas.yml・build
+- [x] 地域ガイド・area-todo.md・area-new-prefecture.md・memory
+- [x] チェック（check_article・area_uniq・_calc.py・試算の結果表・書いてはいけない局名）
+- [x] main に push（投稿・デプロイはユーザーが Mac で「投稿して」）
 
 ## 再開するとき
 - 調査の担当が止まったら、ファイルの続きから書くよう新しい担当に頼む（ファイルは節ごとに書き足してある）
@@ -87,3 +87,5 @@
 - W13 完了（池田市 約7,750字・90.9%・171h/42.9万、松原市 7,860・89.0%・253.75h/88.8万、貝塚市 7,780・93.7%・236h/82.6万、ERROR 0、WS0）。W15 起動
 - W15 完了（河内長野市 約9,362字・93.5%・255h/81.1万、ERROR 0、WS0。商工会の12/8 講座は定員に達し次第締切）。W16（府ページ）起動
 - W14 完了（大東市 約8,190字・88.0%・173.25h/60.6万、富田林市 8,100・92.3%・160h/56.0万、泉佐野市 8,210・95.1%・315h/93.9万、ERROR 0、WS0）。**市町村ページ43本そろう**
+- W16 完了（府ページ 約17,200字・固有97.3%〔scratchpad の写しで京都・兵庫・埼玉の府県ページとも比べた〕、ERROR 0、府のサイトへのリンク0本）
+- 全ページの確認: check_article ERROR 0（44本）、area_uniq 最低71.2%（交野市。_uniq_all.txt）、_calc.py OK、試算の結果表は全43ページ2行、府のドメインへのリンク0本、営利断り・連絡が要る市町村のドメインへのリンク0本、書いてはいけない局名0件、既存の slug と重なりなし。地域ガイドの近畿の段に大阪府。記事44本を main に入れた（area-osaka-wip ブランチは退避用で不要）
