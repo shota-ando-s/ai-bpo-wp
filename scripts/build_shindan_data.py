@@ -68,8 +68,18 @@ def main():
         print("\n".join(errors), file=sys.stderr)
         sys.exit(1)
 
+    generated = datetime.date.today().isoformat()
+    # 中身が前と同じなら日付も前のままにする。日付だけ変わると、post_changed.py の
+    # 「作り直した JSON がコミットと同じか」の確認が、データを変えていない日にも止まる
+    try:
+        with open(OUT, encoding="utf-8") as f:
+            prev = json.load(f)
+        if prev.get("areas") == areas and prev.get("subsidies") == subsidies:
+            generated = prev.get("generated", generated)
+    except (OSError, ValueError):
+        pass
     data = {
-        "generated": datetime.date.today().isoformat(),
+        "generated": generated,
         "areas": areas,
         "subsidies": subsidies,
     }

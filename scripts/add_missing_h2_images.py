@@ -95,7 +95,7 @@ def main():
     for f in files:
         try:
             r = add_images(f, dry_run)
-        except Exception as e:  # 1ページの失敗で全体を止めない
+        except (Exception, SystemExit) as e:  # 1ページの失敗で全体を止めない（親ページが未投稿だと post.find_existing が sys.exit する）
             print(f"エラー: {f}: {e}", file=sys.stderr)
             r = "error"
         counts[r] = counts.get(r, 0) + 1
