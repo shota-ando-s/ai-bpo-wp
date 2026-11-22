@@ -10,8 +10,8 @@
 |---|---|---|
 | 1 | 都全体の調査・都のページ | **完了・main に push（2026-11-14）**。都のページは23区へのリンクつき、多摩・島しょは名前だけ「準備中」 |
 | 2 | 23区 | **完了・main に push（2026-11-14）**。23ページとも check_article ERROR 0、固有80.3〜97.0%、_calc.py OK。診断データ・地域ガイドも。投稿はユーザーが Mac で「投稿して」 |
-| 3 | 多摩（26市・3町・1村） | **作業中（2026-11-22）**。調査・PLAN・仕様（spec/D_tama.md）は push 済み。執筆 T1〜T10 |
-| 4 | 島しょ（2町・7村） | **調査中（2026-11-22）**。依頼文 _brief_shima.md、govsub_shima（gov_ai_5.md・subsidy_5*） |
+| 3 | 多摩（26市・3町・1村） | **完了・main に push（2026-11-22、589c173）**。30ページとも check_article ERROR 0、固有85.2%以上、_calc.py OK |
+| 4 | 島しょ（2町・7村） | **完了・main に push（2026-11-22、589c173）**。9ページ。都のページは62区市町村の一覧に、地域ガイドも |
 
 ## 実績メモ
 - 2026-11-14 ネットワーク確認（metro.tokyo.lg.jp・soumu.go.jp とも開けた）。ローカルが detached だったので origin/main に合わせ直した。_brief.md（62区市町村・slug）。既存 slug とぶつかる 千代田区 chiyoda-ku・中央区 chuo-ku・大田区 ota-ku・中野区 nakano-ku・府中市 fuchu-city-tokyo・日野市 hino-city・瑞穂町 mizuho-town・三宅村 miyake-village・利島村 toshima-village-tokyo、紛らわしい 豊島区 toshima-ku・北区 kita-ku
@@ -45,3 +45,9 @@
 - 書き上がった多摩の記事は .git/info/exclude（articles/2026-11-22-area-tokyo-*.md）で main に入れず、_wip_push.sh で area-tokyo-wip に退避。**コンテナが替わったら exclude を足し直し、area-tokyo-wip から記事を取り出す**
 - 執筆: T1（八王子・国分寺・清瀬）起動。残り T2〜T10（spec/D_tama.md の担当割り）
 - 段階4: _brief_shima.md、govsub_shima 起動。次は stats/cases（島の観光・水産・交通の統計）
+- 執筆 T1〜T10（多摩）・S1〜S3（島しょ）・T11（都のページ・世田谷区の1文）完了。補助金診断 tokyo.yml 74制度・areas.yml 東京62区市町村（7f02015）。area-todo・手順書・memory を更新
+- **WebSearch 累計 49（このセッション）**。.git/info/exclude の行は外した（area-tokyo-wip ブランチは退避用で、もう使わない）
+
+## 次にやること
+- **投稿**: ユーザーが Mac で「投稿して」（多摩30・島しょ9・都のページ・世田谷区・大田区・地域ガイド・補助金診断のデプロイ）
+- 投稿後: slug の衝突の確かめ、「リンクしたら連絡」の6市町村への連絡（ユーザーの判断）、締切の過ぎた記載の直し（area-todo の東京都の節の表。最初は 11/24 都の躍進 第14回、11/25 八丈町の雇用機会拡充事業、11/30 立川市・東久留米市、12/1 国の7次）
