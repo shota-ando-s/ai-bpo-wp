@@ -10,8 +10,8 @@
 |---|---|---|
 | 1 | 都全体の調査・都のページ | **完了・main に push（2026-11-14）**。都のページは23区へのリンクつき、多摩・島しょは名前だけ「準備中」 |
 | 2 | 23区 | **完了・main に push（2026-11-14）**。23ページとも check_article ERROR 0、固有80.3〜97.0%、_calc.py OK。診断データ・地域ガイドも。投稿はユーザーが Mac で「投稿して」 |
-| 3 | 多摩（26市・3町・1村） | **未（次のセッション）** |
-| 4 | 島しょ（2町・7村） | **未（次のセッション）** |
+| 3 | 多摩（26市・3町・1村） | **作業中（2026-11-22）**。調査・PLAN・仕様（spec/D_tama.md）は push 済み。執筆 T1〜T10 |
+| 4 | 島しょ（2町・7村） | **調査中（2026-11-22）**。依頼文 _brief_shima.md、govsub_shima（gov_ai_5.md・subsidy_5*） |
 
 ## 実績メモ
 - 2026-11-14 ネットワーク確認（metro.tokyo.lg.jp・soumu.go.jp とも開けた）。ローカルが detached だったので origin/main に合わせ直した。_brief.md（62区市町村・slug）。既存 slug とぶつかる 千代田区 chiyoda-ku・中央区 chuo-ku・大田区 ota-ku・中野区 nakano-ku・府中市 fuchu-city-tokyo・日野市 hino-city・瑞穂町 mizuho-town・三宅村 miyake-village・利島村 toshima-village-tokyo、紛らわしい 豊島区 toshima-ku・北区 kita-ku
@@ -37,3 +37,11 @@
 3. tokyo.yml の多摩のパイロット2制度（tachikawa-digital・hachioji-jinzai）を確かめ直し、areas.yml の多摩を30市町村に（府中市 `fuchu-city-tokyo`）
 4. PLAN を _calc.py に足す（23区の時間・金額・従業員数と重ねない）→ 仕様に多摩の補足 → 執筆（exclude と _wip_push.sh で全ページそろうまで main に入れない）→ 都のページの多摩の「準備中」をリンクに
 5. 段階4（島しょ9町村）は docs/area-writing-spec-hokkaido.md の島の町村の書き方を足す
+
+## 2026-11-22 セッション（段階3・4）
+- ネットワーク確認（metro.tokyo.lg.jp 開けた）。国のデジタル化・AI導入補助金 7次 2026-12-01 17時を事務局のスケジュールで確認（8次は未掲載）。大田区のページの申込締切（11/19）を過ぎたセミナーを消した
+- 調査: govsub_3（八王子〜国立、WebSearch 4回）・govsub_4（福生〜奥多摩、2回）・stats_tama（2回）・cases_tama（14回）・companies_tama（11回）。**WebSearch 累計 33（このセッション）**
+- PLAN（多摩30）を _calc.py に（OK）。仕様の下書き D_tama（0回）、判断は全部案どおり（仕様の末尾「段階3の補足」）
+- 書き上がった多摩の記事は .git/info/exclude（articles/2026-11-22-area-tokyo-*.md）で main に入れず、_wip_push.sh で area-tokyo-wip に退避。**コンテナが替わったら exclude を足し直し、area-tokyo-wip から記事を取り出す**
+- 執筆: T1（八王子・国分寺・清瀬）起動。残り T2〜T10（spec/D_tama.md の担当割り）
+- 段階4: _brief_shima.md、govsub_shima 起動。次は stats/cases（島の観光・水産・交通の統計）
